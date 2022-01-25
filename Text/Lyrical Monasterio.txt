@@ -2098,7 +2098,7 @@ CardStat = 9482
 global.CardName[CardStat] = 'Spokesperson of Heavenly Voice, Herjuel'
 global.CardText[CardStat] = 'Lyrical Monasterio/Angel
 
-White Wings (Active when your bind only has odd grades)-[AUTO]: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with the White Wings ability other than "Speaker of Heavenly Voice, Heluel" from your drop, and call it to an open RC.'
+White Wings (Active when your bind only has odd grades) - AUTO: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with the White Wings ability other than "Speaker of Heavenly Voice, Heluel" from your drop, and call it to an open RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -2196,7 +2196,7 @@ CardStat = 9505
 global.CardName[CardStat] = 'Symphonic Sky, Liudmila'
 global.CardText[CardStat] = 'Lyrical Monasterio/Angel
 
-AUTO RC: At the end of the battle this unit boosted, COST [Soul Blast 1], perform all of the following according to the Songs sung this turn.
+AUTO [RC]: At the end of the battle this unit boosted, COST [Soul Blast 1], perform all of the following according to the Songs sung this turn.
 •"Romantic Happiness" - Choose one of your units, and it gets power +5000 until end of turn.
 •"Twilight Sound of Waves" - Look at the top card of your deck.
 •"Madder Red Runway" - You may return this unit to your hand.
@@ -2206,3 +2206,109 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9506
+{
+global.CardName[CardStat] = 'Smiling Together, Jizyah'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [GC]: All of your units with "Earnescorrect" in their card names get shield +10000.
+
+CONT [GC]: All of your rear-guards with "Earnescorrect" in their card names cannot be hit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9507
+{
+global.CardName[CardStat] = 'Awaiting Smile, Maruel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+Black Wings (Active when bind only has even grades) - AUTO [RC]: At the end of the battle this unit boosted, you may return this unit to your hand.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9508
+{
+global.CardName[CardStat] = 'Featured Newcomer, Musepaal'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC] 1/Turn: When your other rear-guard is placed in the same column as this unit, COST [Soul Blast 1], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9509
+{
+global.CardName[CardStat] = 'Cutie Topic, Rabeena'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9510
+{
+global.CardName[CardStat] = 'Sniping Eyeful, Leranje'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+ACT [VC/RC] 1/Turn: COST [Soul Blast 1 & Discard a card from your hand], and draw a card.
+
+Powerful - CONT [VC]: If your soul has no cards, when you would ride an "Attract Peach, Ertines" from your ride deck, you can ride without discarding a card from your hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9511
+{
+global.CardName[CardStat] = 'Attract Peach, Ertines'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+CONT [VC/RC]: During the battle that this unit attacks, this unit gets power +2000.
+
+Powerful - CONT [VC]: If your soul has no cards, when you would ride a "Coming Beauty, Erminia" from your ride deck, you can ride without discarding a card from your hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9512
+{
+global.CardName[CardStat] = 'Coming Beauty, Erminia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+ACT [VC]: COST [Counter Blast 1], and this unit gets power +5000 until end of turn.
+
+Powerful - AUTO [VC]: At the end of the battle this unit attacked, if the total number of cards in your soul and face up in your damage zone is zero, COST [discard a card from your hand], choose one of your rear-guards with the Powerful ability, and stand it. Reduce the next time you Counter Blast this turn by 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9513
+{
+global.CardName[CardStat] = 'Bathing Fountain, Telues'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+Powerful - AUTO [RC]: When this unit attacks a vanguard, if your soul has no cards, COST [Counter Blast 1], until end of that battle, this unit gets "AUTO [RC]: When this units attack hits, draw a card.", choose one of your other units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
