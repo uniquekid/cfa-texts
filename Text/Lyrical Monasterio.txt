@@ -899,7 +899,7 @@ global.DCards[CardStat] = 6
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 50000
 
 
 CardStat = 8859
@@ -913,7 +913,7 @@ global.DCards[CardStat] = 6
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 50000
 
 
 CardStat = 8860
@@ -927,7 +927,7 @@ global.DCards[CardStat] = 6
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 8817
 {
@@ -996,7 +996,7 @@ global.DCards[CardStat] = 6
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 50000
 
 
 CardStat = 8862
@@ -1010,7 +1010,7 @@ global.DCards[CardStat] = 6
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 50000
 
 
 CardStat = 8863
@@ -2287,7 +2287,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9512
 {
-global.CardName[CardStat] = 'Coming Beauty, Erminia'
+global.CardName[CardStat] = 'Coming Beauty, Herminia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 ACT [VC]: COST [Counter Blast 1], and this unit gets power +5000 until end of turn.
@@ -2376,4 +2376,94 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9520
+{
+global.CardName[CardStat] = 'Exalted Fingertips, Edelgard'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO [RC]: When this unit attacks, this unit gets power +2000 until end of that battle for each of your other <Ghost> rear-guards.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9521
+{
+global.CardName[CardStat] = 'Coiling Lyric, Ashley'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT [RC]: If you have no other front row rear-guards, this unit cannot be chosen by your opponents card effects and cannot be attacked.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9527
+{
+global.CardName[CardStat] = 'Sunset Glow, Riana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC]: When your other rear-guard is returned to your hand, if this unit is on your RC, COST [Counter Blast 1], choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9528
+{
+global.CardName[CardStat] = 'Head to the Pinnacle, Katlein'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & discard two cards from your hand], and draw two cards.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9529
+{
+global.CardName[CardStat] = 'Detour Together, Elvi'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [Front Row RC]: All of your rear-guards with different card names as this unit cannot be chosen by your opponents card effects.
+
+AUTO [RC]: When this unit’s attack hits a vanguard, you may Counter Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9530
+{
+global.CardName[CardStat] = 'Snowskip, Parvi'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Front Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9531
+{
+global.CardName[CardStat] = 'Transparent Snowy Night, Beretoi'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Draw Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 5000
