@@ -2393,7 +2393,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9521
 {
-global.CardName[CardStat] = 'Coiling Lyric, Ashley'
+global.CardName[CardStat] = 'Circling Lyric, Ashley'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 CONT [RC]: If you have no other front row rear-guards, this unit cannot be chosen by your opponents card effects and cannot be attacked.'
@@ -2482,7 +2482,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9533
 {
-global.CardName[CardStat] = 'Shining Pride, Ilmeri'
+global.CardName[CardStat] = 'Radiance Pride, Irmeli'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 ACT [RC] 1/Turn: COST [Soul Blast 1 & retire this unit], choose up to 2 normal units that are not grade 1 from your drop, and shuffle them to the deck.'
@@ -2506,7 +2506,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9535
 {
-global.CardName[CardStat] = 'Bashful Striver, Kinki'
+global.CardName[CardStat] = 'Bashful Striver, Kinkee'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 AUTO [RC]: When placed, choose a grade 2 or less "Astesice" normal unit from your drop, and you may put it into your soul. If you put a card, COST [Counter Blast 1], this unit gains power +10000 until end of turn.'
@@ -2581,7 +2581,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9543
 {
-global.CardName[CardStat] = 'Shining Coat, Marcia'
+global.CardName[CardStat] = 'Shiny Coat, Marucia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 CONT [RC]: During your turn, if there are three or more Gem cards in your drop, this unit gets power +5000. '
@@ -2593,7 +2593,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9544
 {
-global.CardName[CardStat] = 'Calm Without a Care, Ersilia'
+global.CardName[CardStat] = 'Nonchalant and Composed, Ercilia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, choose a card from your soul, put it into your drop, and this unit gets power +5000 until end of battle. (This effect is mandatory)'
@@ -2605,7 +2605,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9545
 {
-global.CardName[CardStat] = 'Happy Tasting, Tigre'
+global.CardName[CardStat] = 'Happy Tasting, Tigr'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 Powerful - CONT [GC]: If your soul has no cards, this unit gets shield +5000.'
@@ -2653,3 +2653,69 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9549
+{
+global.CardName[CardStat] = 'Blessed Light of the Clear Sky, Rashiel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+White Wings (Active when bind only has odd grades) - CONT [RC]: During your turn, this unit gets power +5000. During your opponents turn, this unit gets "Intercept", and shield +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9550
+{
+global.CardName[CardStat] = 'Tightening Heart, Lufina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9551
+{
+global.CardName[CardStat] = 'Myamya Ensemble, Nara'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC during your main phase, COST [Counter Blast 1], choose a card from your soul, call it to an open RC. Then, choose a card from your hand for each card in your soul, and discard it.
+
+Powerful - AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if your soul has no cards, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 9552
+{
+global.CardName[CardStat] = 'Singing Princess of Peacefulness, Oltans'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)
+'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 9553
+{
+global.CardName[CardStat] = 'Challenge to Self, Trudie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this card is discarded from your deck or hand during your turn, if you have a vanguard with "Wilista" in its card name, COST [Counter Blast 1], search your deck or drop zone for up to one Gem card, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
