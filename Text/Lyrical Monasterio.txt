@@ -2806,7 +2806,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 Friend - CONT [VC/RC]: If you have another unit in the same column as this unit, that unit and this unit become "Friends".
 
-CONT [VC]: If you have another "Friend", when you would ride "MiMish, Fortia" from your ride deck, you can ride without discarding a card from your hand.'
+CONT [VC]: If you have another "Friends", when you would ride "MiMish, Fortia" from your ride deck, you can ride without discarding a card from your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -2845,7 +2845,7 @@ CardStat = 9563
 global.CardName[CardStat] = 'After School as Always, Yulia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [RC]: When this unit boosts a "Friend", this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit boosts a "Friends", this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -2907,7 +2907,7 @@ CardStat = 9568
 global.CardName[CardStat] = 'Senior’s Margin, Altariel'
 global.CardText[CardStat] = 'Lyrical Monasterio/Angel
 
-CONT [RC]: If this unit is a "Friend", this unit gets "Boost".'
+CONT [RC]: If this unit is a "Friends", this unit gets "Boost".'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -2929,3 +2929,31 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9570
+{
+global.CardName[CardStat] = 'Earnest Look, Ivetta'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+Friend - CONT [RC]: If you have another unit in the same column as this unit, that unit and this unit become "Friends".
+
+CONT [RC]: If you have another "Friends", this unit gets power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9571
+{
+global.CardName[CardStat] = 'Hoppin’Stellar, Merti'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+Friend - CONT [RC]: If you have another unit in the same column as this unit, that unit and this unit become "Friends".
+
+AUTO: When this unit is placed on RC during your main phase, COST [Counter Blast 1], choose up to one card with grade equal to or less than your vanguard from your hand, and call it to RC. If you called a card, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
