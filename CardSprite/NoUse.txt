@@ -1,0 +1,350 @@
+n = x
+
+global.AllCard = 9589
+global.Versia = 408
+global.GameUpdateText = 'NEW FEATURES:
+- Fixed a bug where opponent’s deck would become invisible
+- Locking a unit causes its additional power to reset
+- Gear Puppy Protecting Memories is now considered a grade 4 in the bind zone
+- Visual improvements to mouse cursor
+- Changed appearance of banned and restricted plaques in deck builder
+- Fixed a bug where "number of cards in originalDress" label would not disappear upon closing the overdress view
+- Fixed a bug where some card movements would still use precise animations even if you turned them off
+- Fixed a bug where attacking from the back row would make cards in order/ride deck zone rotate as well
+- Fixed a bug where attacking from the back row would make cards rest and stand simultaneously
+- Minor performance improvements
+- You can now change fullscreen mode via Alt+Enter as well as F4
+'
+
+CardStat = 1
+{
+global.CardName[CardStat] = 'Flogal'
+global.CardText[CardStat] = 'How much longer are you sleeping? Wake up!'
+}
+
+CardStat = 2
+{
+global.CardName[CardStat] = 'Battle Sister, Cocoa'
+global.CardText[CardStat] = 'AUTO: When this unit is placed on VC or RC, if you have an <Oracle Think Tank> vanguard, look at the top card of your deck, and put that card on the top or the bottom of your deck.'
+}
+
+
+CardStat = 5818
+
+{
+
+global.CardName[5818] = 'Accel Gift I'
+
+global.CardText[5818] = 'When an Accel gift I marker is acquired, it acts as an additional RC in your front row for the rest of the game. Also, the unit on this circle gets power +10000 during your turn only.
+'
+
+global.CardInClan[5818] = 29
+
+}
+
+CardStat = 5819
+
+{
+
+global.CardName[5819] = 'Protect Gift I'
+
+global.CardText[5819] = 'CONT: Sentinel.
+
+AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.
+'
+
+global.CardInClan[5819] = 29
+
+}
+
+CardStat = 5820
+
+{
+
+global.CardName[5820] = 'Force Gift I'
+
+global.CardText[5820] = 'When a Force gift I marker is acquired, put it on top of one of your vanguard or RC, and it remains there for the rest of the game. Also, any unit on the chosen circle gets power +10000 during your turn only.
+'
+
+global.CardInClan[5820] = 29
+
+}
+
+CardStat = 6130
+
+{
+
+global.CardName[6130] = 'Plant Token'
+
+global.CardText[6130] = 'This is a Plant Token that is represented as card, and cannot be put in the deck.
+'
+
+global.CardInClan[6130] = 29
+
+global.PowerStat[6130] = 5000
+
+}
+
+CardStat = 6670
+
+{
+
+global.CardName[6670] = 'Force Gift II'
+
+global.CardText[6670] = 'When a Force gift II marker is acquired, put it on top of one of your vanguard or RC, and it remains there for the rest of the game. Also, any unit on the chosen circle has its original critical as 2. (Stacking doesn’t increase it to 3 or 4.)
+'
+
+global.CardInClan[6670] = 29
+
+}
+
+CardStat = 6671
+
+{
+
+global.CardName[6671] = 'Accel Gift II'
+
+global.CardText[6671] = 'When an Accel gift II marker is acquired, it acts as an additional RC in your front row for the rest of the game. When acquired, you draw a card. Also, the unit on this circle gets power +5000 during your turn only.
+'
+
+global.CardInClan[6671] = 29
+
+}
+
+CardStat = 6672
+
+{
+
+global.CardName[6672] = 'Protect Gift II'
+
+global.CardText[6672] = 'When a Protect gift II marker is acquired, put it on top of one of your RC, and it remains there for the rest of the game. Also, any unit on the chosen circle gets power +5000 and shield +10000.
+'
+
+global.CardInClan[6672] = 29
+
+}
+
+CardStat = 6675
+
+{
+
+global.CardName[6675] = 'Vision Token'
+
+global.CardText[6675] = 'This represents a Vision token, and cannot be put in a deck.
+
+CONT [RC]: Perform drive check for the battle it attacked.
+'
+
+global.CardInClan[6675] = 29
+
+global.PowerStat[6675] = 13000
+
+}
+
+CardStat = 6915
+
+{
+
+global.CardName[6915] = 'Astral Plane'
+
+global.CardText[6915] = 'This RC becomes an Astral Plane. The following rules apply to the Astral Plane:
+You may call <Astral Deity> regardless of grade.
+If a card other than a <Astral Deity> is placed on the astral plane, put it to the drop zone.
+Units on the astral plane may attack from the back row, and perform drive checks. Cards revealed from that drive check go to the soul instead of being added to hand.
+At the end of your turn, put the unit on the astral plane to the bottom of your deck
+
+(SHIFT + click to delete Astral Plane.)'
+
+global.CardInClan[6915] = 29
+
+}
+
+CardStat = 7069
+
+{
+
+global.CardName[7069] = 'Evil Decoy Token'
+
+global.CardText[7069] = '(This represents an evil decoy token, and cannot be put in a deck. It does not have boost, and has intercept.)
+
+CONT [RC]: It cannot attack, and can intercept from the back row.
+'
+
+global.CardInClan[7069] = 29
+
+global.PowerStat[7069] = 0
+
+}
+
+CardStat = 7202
+
+{
+
+global.CardName[7202] = 'Plant Token (10,000)'
+
+global.CardText[7202] = 'This represents a plant token that has been strengthened and called by a special ability, and cannot be put in a deck. It has both boost and intercept.
+'
+
+global.CardInClan[7202] = 29
+
+global.PowerStat[7202] = 10000
+
+}
+
+CardStat = 7342
+
+{
+
+global.CardName[7342] = 'Quick Shield'
+
+global.CardText[7342] = 'One of your attacked units gets power+5000 until end of that battle!
+
+(Card Type:Blitz Order can be used during guard step.)
+
+(This card is regarded as being from all clans.)
+
+(This card is a ticket card, and cannot be put in a deck.)
+'
+
+global.CardInClan[7342] = 29
+
+global.PowerStat[7342] = 0
+
+}
+
+CardStat = 7403
+
+{
+
+global.CardName[7403] = 'Ahshas Flower Fairy'
+
+global.CardText[7403] = '(This card represents an Ahshas Flower Fairy token, and cannot be put in a deck.)
+
+CONT [RC]: This unit has the same card name as your vanguard with "Ahsha" in its card name.
+
+AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unit’s power and critical to match that unit’s until end of that battle.
+'
+
+global.CardInClan[7403] = 29
+
+global.PowerStat[7403] = 13000
+
+}
+
+
+CardStat = 7628
+
+{
+
+global.CardName[7628] = 'Treasures'
+
+global.CardText[7628] = '(This represents a Treasures marker, and cannot be put in a deck.)
+'
+
+global.CardInClan[7628] = 29
+
+}
+
+CardStat = 7949
+
+{
+
+global.CardName[7949] = 'Mask of Domination'
+
+global.CardText[7949] = 'This card represents a Mask of Domination token, and cannot be put in a deck.
+'
+
+global.CardInClan[7949] = 29
+
+global.PowerStat[7949] = 0
+
+}
+global.CanAttackFromBackRow[CardStat] = 1
+
+CardStat = 8096
+
+{
+
+global.CardName[8096] = 'Meers Present'
+
+global.CardText[8096] = 'This represents Meers Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.
+'
+
+global.CardInClan[8096] = 29
+
+global.PowerStat[8096] = 0
+
+}
+
+CardStat = 8425
+
+{
+
+global.CardName[8425] = 'Shadow Army'
+
+global.CardText[8425] = 'Shadow Army/Brandt Gate
+
+This represents a Shadow Army token, and cannot be put in a deck.
+'
+
+global.CardInClan[8425] = 29
+
+global.PowerStat[8425] = 15000
+
+}
+
+CardStat = 8811
+
+{
+
+global.CardName[8811] = 'Monster BOX'
+
+global.CardText[8811] = 'This represents a Monster BOX, and cannot be put in a deck.
+'
+
+global.CardInClan[8811] = 29
+
+global.PowerStat[8811] = 0
+
+}
+
+CardStat = 9175
+{
+global.CardName[CardStat] = 'Bone Soldier Token'
+global.CardText[CardStat] = 'Shaman King/Bone
+
+(This represents a Bone Soldier token, and cannot be put in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9583
+{
+global.CardName[CardStat] = 'Plant Token (overDress)'
+global.CardText[CardStat] = 'Stoicheia/Plant
+
+(This represents a Plant Token, and cannot be put in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9584
+{
+global.CardName[CardStat] = 'Momokke'
+global.CardText[CardStat] = 'Dragon Empire/Stoicheia/Flame Dragon
+
+(This represents a Momokke Token, and cannot be put in a deck)
+
+ACT [RC] 1/Turn: COST [Retire one or more of your other rear-guards], and this unit gets power +5000 until end of turn for each unit retired for this cost.
+
+Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
+CONT [RC]: If you have a unit with "Radylina" in its card name in the same column as this unit, this unit can attack from the back row.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
