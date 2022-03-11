@@ -1435,11 +1435,192 @@ global.CardName[CardStat] = 'Spirit of Sword, Yoh Asakura'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
 CONT: This card can only ride on a grade 3 unit with "Yoh Asakura" in its card name.
+
 AUTO: When this unit is placed on VC, this unit gets power +10000/ critical +1 until end of turn.
-OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], draw a card, and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000".'
+
+OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], until end of turn, all of your front row units get power +10000, and when this unit would attack, it battles all of your opponent’s units in a column.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 9
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9605
+{
+global.CardName[CardStat] = 'Evil Slaying Exorcism, Anna Kyoyama'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one each of "Shikigami, Senki" and "Shikigami, Goki", call them to RC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9606
+{
+global.CardName[CardStat] = 'Shikigami, Senki'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+CONT [RC]: If you have a unit with "Anna Kyoyama" in its card name, and have "Shikigami, Goki" in the same column as this unit, this unit gets power +5000/critical +1. (Active on your opponent’s turn too)
+
+AUTO [RC]: At the end of each turn, if you do not have a unit with "Anna Kyoyama" in its card name, retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9607
+{
+global.CardName[CardStat] = 'Shikigami, Goki'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+CONT [RC]: If you have a unit with "Anna Kyoyama" in its card name, and have "Shikigami, Senki" in the same column as this unit, this unit gets power +10000. (Active on your opponent’s turn too)
+
+AUTO [RC]: At the end of each turn, if you do not have a unit with "Anna Kyoyama" in its card name, retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9609
+{
+global.CardName[CardStat] = 'Black Jaguar, Chocolove'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9610
+{
+global.CardName[CardStat] = 'Together with the Jaguar’s Soul, Chocolove'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is placed by riding from "Black Jaguar, Chocolove", search your deck for up to one "The Amazing One who Runs Around at Super High Speed, Mic", call it to your back row center RC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9611
+{
+global.CardName[CardStat] = 'The Amazing One who Runs Around at Super High Speed, Mic'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+AUTO: When this unit is put into the soul for the cost of OverSoul, you may Soul Charge 1. If you Soul Charge a trigger unit, choose up to one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9612
+{
+global.CardName[CardStat] = 'SHAFT, Chocolove'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO [VC]: When this unit attacks while boosted by a unit with "Mic" in its card name, your opponent chooses a card from their hand, and reveals it. You choose up to one card from your hand with the same grade as that card, and reveal it. If you revealed, you draw a card, and this unit gets power -5000 until end of battle.
+
+CONT [RC]: During your turn, this unit gets power +2000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9613
+{
+global.CardName[CardStat] = 'The Winds of Laughter that Blows Away Evil, Chocolove'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Mic" in its card name into your soul], and until end of turn, your opponent cannot intercept, and all of your opponent’s grade 3 or greater units get power -5000.
+
+AUTO [VC]: At the end of the battle this unit attacked, if this unit OverSoul this turn, COST [Counter Blast 2], stand this unit, and it gets Drive-2 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 9
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9616
+{
+global.CardName[CardStat] = 'Highspeed world, Mic'
+global.CardText[CardStat] = 'Shaman King/Spirit/Critical Trigger
+'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9617
+{
+global.CardName[CardStat] = 'Reliable Jaguar Partner, Mic'
+global.CardText[CardStat] = 'Shaman King/Spirit/Draw Trigger
+'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 9618
+{
+global.CardName[CardStat] = 'Receiving Successor of the Jaguar Soul, Mic'
+global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
+
+You may only have up to four cards with "HEAL" in a deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9620
+{
+global.CardName[CardStat] = 'Head of Shugendou, Mikihisa Asakura'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+ACT [RC] 1/Turn: COST [Soul Blast 1], choose one of your <Shaman>, and it gets power +2000 until end of turn. If your vanguard OverSoul this turn, it gets power +5000 instead of +2000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9621
+{
+global.CardName[CardStat] = 'Mountain God, Shigaraki'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+AUTO: When this unit is retired from RC by your opponent’s card effects, COST [Soul Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9622
+{
+global.CardName[CardStat] = 'Mountain God, Imari'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+ACT [RC] 1/Turn: If you have a "Mountain God, Shigaraki" on your RC, COST [Counter Blast 1], choose one of your units with "Asakura" in its card name, and increase or decrease this unit’s power to match the chosen unit’s until the end of turn. (Match the power at that time)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

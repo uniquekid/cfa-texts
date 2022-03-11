@@ -3307,7 +3307,7 @@ CardStat = 9415
 global.CardName[CardStat] = 'Brillian Blister '
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [Back Row RC]: At the end of your turn, if your opponent has no stand rear-guards, you may return this unit to your hand. If you returned to your hand, and if your hand has six or less cards, COST [Soul Blast 1], and draw a card.
+AUTO [Back Row RC]: At the end of your turn, if your opponent does not have any stand rear-guards, you may return this unit to your hand. If you returned it, and your hand has six or less cards, COST [Soul Blast 1], and draw a card.
 
 AUTO: When this unit is put on GC, if your opponents vanguard is rest, COST [Soul Blast 1 & discard a card from your hand], choose one of your opponents rear-guards, rest it, and that unit cannot stand until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -3321,9 +3321,9 @@ CardStat = 9416
 global.CardName[CardStat] = 'Machining Armor Beetle '
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [RC] 1/Turn: COST [Rest another rear-guard], choose one of your opponents rear-guards, rest it, and that unit cannot stand during the next stand phase. This unit gets power +6000 until end of turn.
+ACT [RC] 1/Turn: COST [Rest one of your other rear-guards], choose one of your opponents rear-guards, rest it, and that unit cannot stand during the next stand phase. This unit gets power +6000 until end of turn.
 
-CONT [RC]: If this unit is rest, all of your opponents rear-guards in the same column as this unit loses "Intercept" and "Boost", and cannot get them.'
+CONT [RC]: If this unit is rest, all of your opponents rear-guards in the same column as this unit lose "Intercept" and "Boost", and cannot gain those skills.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
@@ -3335,7 +3335,7 @@ CardStat = 9417
 global.CardName[CardStat] = 'Martial Arts Mutant, Master Beetle '
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [VC/RC] 1/Turn: COST [Counter Blast 1], choose two of your opponents rear-guards, rest them, and they cannot stand during the next stand phase. If this unit is on VC, this unit gets all of the chosen units original power until end of turn.
+ACT [VC/RC] 1/Turn: COST [Counter Blast 1], choose two up to two of your opponents rear-guards, rest them, and they cannot stand during the next stand phase. If this unit is on VC, this unit gets the original power of all of the chosen units until end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & discard a card from your hand], and this unit gets drive +1 until end of that battle for every three of your and your opponents rest rear-guards.'
 global.UnitGrade[CardStat] = 3
