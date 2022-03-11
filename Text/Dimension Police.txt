@@ -4472,20 +4472,19 @@ global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 15000
 
-CardStat = 9444
+CardStat = 9442
 {
-global.CardName[CardStat] = 'Original Saver, Zero '
-global.CardText[CardStat] = 'Dimension Police/Alien
+global.CardName[CardStat] = 'Eternity Chaser'
+global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO: When this unit attacks from VC or is rode upon, COST [Counter Blast 1 & Soul Blast 1], draw a card, choose one of your opponents units, and increase or decrease its power to 0 until end of turn. (power becomes 0 at that time)
+AUTO: When this unit is rode upon, COST [discard a card from your hand], choose up to one grade 3 normal unit from your hand, and reveal it. If you revealed a card, search your deck for up to one grade 3 card with a different card name from that revealed card, reveal it, put it into your hand, and shuffle your deck.
 
-AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a grade 3 card from your hand], and increase or decrease the critical of the attacking unit to 0 until end of that battle. (critical becomes 0 at that time)'
-global.UnitGrade[CardStat] = 3
+AUTO [Back Row RC]: When your opponents rear-guard attacks, if that units power is 25000 or less, COST [Soul Blast 1 & retire this unit], choose one of your units, and it does not get hit until end of that battle. (Includes power from boost and your opponents card effects)'
+global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
-global.BlueTokenAdd[CardStat] = 1
-global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
 
 CardStat = 9443
 {
@@ -4494,7 +4493,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: When this unit is rode upon, choose one of your vanguards, and it gets power +10000 until end of turn. Then, COST [discard a card from your hand], and call this card to RC.
 
-AUTO [RC]: When this unit attacks, if your grade 3 unit was placed this turn, this unit gets power +5000 until end of that battle. At the end of that battle, COST [retire this unit], and draw a card.'
+AUTO [RC]: When this unit attacks, if your grade 3 unit was placed this turn, this unit gets power +5000 until end of that battle. Then, at the end of that battle, COST [retire this unit], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -4502,16 +4501,17 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
 
-CardStat = 9442
+CardStat = 9444
 {
-global.CardName[CardStat] = 'Eternity Chaser'
-global.CardText[CardStat] = 'Dimension Police/Battleroid
+global.CardName[CardStat] = 'Original Saver, Zero '
+global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO: When this unit is rode upon, COST [discard a card from your hand], choose up to one grade 3 normal unit from your hand, and reveal it. If you revealed a card, search your deck for up to one grade 3 card with a different card name than the revealed card, reveal it, put it into your hand, and shuffle your deck.
+AUTO: When this unit attacks from VC or is rode upon, COST [Counter Blast 1 & Soul Blast 1], draw a card, choose one of your opponents units, and increase or decrease its power to 0 until end of turn. (Its power at that time becomes 0)
 
-AUTO [Back Row RC]: When your opponents rear-guard attacks, if that units power is 25000 or less, COST [Soul Blast 1 & retire this unit], choose one of your units, and it cannot be hit until end of that battle. (Look at the power including boost and opponents card abilities)'
-global.UnitGrade[CardStat] = 1
+AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a grade 3 card from your hand], and increase or decrease that attacking units critical to 0 until end of that battle. (Its critical at that time becomes 0)'
+global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
-global.PowerStat[CardStat] = 8000
-global.DefensePowerStat[CardStat] = 10000
+global.BlueTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

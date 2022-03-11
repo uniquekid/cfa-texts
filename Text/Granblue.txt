@@ -4018,31 +4018,30 @@ global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 15000
 
-CardStat = 9440
+CardStat = 9438
 {
-global.CardName[CardStat] = 'Ice Prison Hades Emperor, Cocytus "ßeverse" '
+global.CardName[CardStat] = 'Dragon Undead, Ghoul Dragon '
 global.CardText[CardStat] = 'Granblue/Skeleton
 
-AUTO [Drop]: At the end of the battle your vanguard with "Cocytus" in its card name attacked a grade 3 or greater vanguard, if it was the first battle of that turn, COST [Counter Blast 1 & discard four cards from your hand], and lock all of your rear-guards. Then, if you have five locked cards, ride this card as stand, and for each grade 3 card in your soul, choose one of your locked cards, unlock it, and this unit gets power +10000 until end of turn.
+ACT [Bind Zone]: COST [Counter Blast 1 & Retire one of your rear-guards], choose up to six other normal units from your bind zone, return them to your deck and shuffle it. If you returned four or more, call this card to RC.
 
-AUTO [VC]: When this unit is attacked, COST [retire three rear-guards], and this unit gets power +10000 until end of that battle for every ten cards in your drop.'
-global.UnitGrade[CardStat] = 3
+AUTO [RC]: When this unit attacks a vanguard, COST [Soul Blast 1 & retire one of your other rear-guards], choose one of your opponents rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 8
 }
-global.GreenTokenAdd[CardStat] = 1
-global.PowerStat[CardStat] = 12000
-global.DefensePowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9439
 {
 global.CardName[CardStat] = 'Witch Doctor of the Dead Sea, Negrobolt '
 global.CardText[CardStat] = 'Granblue/Demon
 
-AUTO [VC]: At the beginning of your ride phase or main phase, bind all cards from your drop that are not trigger units. (This effect is mandatory)
+AUTO [VC]: At the beginning of your ride phase or main phase, bind all of the non-trigger unit cards in your drop. (This effect is mandatory)
 
 AUTO [VC]: When this unit attacks, for every ten cards in your drop, until end of turn, this unit gets critical +1, and all of your front row units get power +20000.
 
-CONT [VC]: All of your units get shield+5000 for every ten cards in your drop.'
+CONT [VC]: All of your units get shield +5000 for every ten cards in your drop.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -4050,16 +4049,17 @@ global.GreenTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.DefensePowerStat[CardStat] = 0
 
-CardStat = 9438
+CardStat = 9440
 {
-global.CardName[CardStat] = 'Dragon Undead, Ghoul Dragon '
+global.CardName[CardStat] = 'Ice Prison Hades Emperor, Cocytus "ßeverse" '
 global.CardText[CardStat] = 'Granblue/Skeleton
 
-ACT [Bind Zone]: COST [Counter Blast 1 & Retire a rear-guard], choose up to six other normal units from your bind zone, return them to your deck and shuffle it. If you returned four or more cards, call this card to RC.
+AUTO [Drop]: At the end of the battle your vanguard with "Cocytus" in its card name attacked a grade 3 or greater vanguard, if it is the first battle of this turn, COST [Counter Blast 1 & discard four cards from your hand], and lock all of your rear-guards. Then, if you have five locked cards, ride this card as stand, and for each grade 3 card in your soul, choose one of your locked cards, unlock it, and this unit gets power +10000 until end of turn.
 
-AUTO [RC]: When this unit attacks a vanguard, COST [Soul Blast 1 & retire another rear-guard], choose one of your opponents rear-guards, and retire it.'
-global.UnitGrade[CardStat] = 2
+AUTO [VC]: When this unit is attacked, COST [retire three of your rear-guards], and this unit gets power +10000 until end of that battle for every ten cards in your drop.'
+global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
-global.PowerStat[CardStat] = 9000
-global.DefensePowerStat[CardStat] = 5000
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
