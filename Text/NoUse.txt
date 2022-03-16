@@ -3,18 +3,15 @@ n = x
 global.AllCard = 9654
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Fixed a bug where opponent’s deck would become invisible
-- Locking a unit causes its additional power to reset
-- Gear Puppy Protecting Memories is now considered a grade 4 in the bind zone
-- Visual improvements to mouse cursor
-- Changed appearance of banned and restricted plaques in deck builder
-- Fixed a bug where "number of cards in originalDress" label would not disappear upon closing the overdress view
-- Fixed a bug where some card movements would still use precise animations even if you turned them off
-- Fixed a bug where attacking from the back row would make cards in order/ride deck zone rotate as well
-- Fixed a bug where attacking from the back row would make cards rest and stand simultaneously
-- Minor performance improvements
-- You can now change fullscreen mode via Alt+Enter as well as F4
+- Record of Ragnarok auto update system integration
+- Glitter and Volund card icons
+- Choosing to create 0 tokens does not let you choose the token type anymore
+- Tokens are now removed from game instead of being put into drop zone
+- Empty cards will not spawn anymore if you have no cards in deck
+- Small ipmprovements to robustness of auto update system
 '
+
+global.VolundKeyword = "Volund"
 
 CardStat = 1
 {
@@ -54,6 +51,7 @@ AUTO [GC]: When placed, COST [discard a card from your hand], and one of your un
 '
 
 global.CardInClan[5819] = 29
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -82,6 +80,7 @@ global.CardText[6130] = 'This is a Plant Token that is represented as card, and 
 global.CardInClan[6130] = 29
 
 global.PowerStat[6130] = 5000
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -138,6 +137,7 @@ CONT [RC]: Perform drive check for the battle it attacked.
 global.CardInClan[6675] = 29
 
 global.PowerStat[6675] = 13000
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -173,6 +173,7 @@ CONT [RC]: It cannot attack, and can intercept from the back row.
 global.CardInClan[7069] = 29
 
 global.PowerStat[7069] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -188,6 +189,7 @@ global.CardText[7202] = 'This represents a plant token that has been strengthene
 global.CardInClan[7202] = 29
 
 global.PowerStat[7202] = 10000
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -209,6 +211,7 @@ global.CardText[7342] = 'One of your attacked units gets power+5000 until end of
 global.CardInClan[7342] = 29
 
 global.PowerStat[7342] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -228,6 +231,7 @@ AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its car
 global.CardInClan[7403] = 29
 
 global.PowerStat[7403] = 13000
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -260,6 +264,7 @@ global.PowerStat[7949] = 0
 
 }
 global.CanAttackFromBackRow[CardStat] = 1
+global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 8096
 
@@ -273,6 +278,7 @@ global.CardText[8096] = 'This represents Meers Present, and cannot be put in a d
 global.CardInClan[8096] = 29
 
 global.PowerStat[8096] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -290,6 +296,7 @@ This represents a Shadow Army token, and cannot be put in a deck.
 global.CardInClan[8425] = 29
 
 global.PowerStat[8425] = 15000
+global.RemoveFromDrop[CardStat] = 1
 
 }
 
@@ -319,6 +326,7 @@ global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 9583
 {
@@ -331,6 +339,7 @@ global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 9584
 {
@@ -348,3 +357,4 @@ global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
