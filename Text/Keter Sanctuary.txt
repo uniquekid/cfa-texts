@@ -628,7 +628,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8604
 {
-global.CardName[CardStat] = '  Fullbau'
+global.CardName[CardStat] = 'Fullbau  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/High Beast
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
@@ -659,7 +659,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 8606
 {
-global.CardName[CardStat] = '  Blaster Dark'
+global.CardName[CardStat] = 'Blaster Dark  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 AUTO: When this unit is placed on VC or RC, COST [Counter Blast 1 & retire another rear-guard], choose one of your opponent’s rear-guards, retire it, and this unit gets drive +1 until end of turn.
@@ -675,7 +675,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8607
 {
-global.CardName[CardStat] = '  Blaster Javelin'
+global.CardName[CardStat] = 'Blaster Javelin   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 AUTO: When this unit is rode upon by "Blaster Dark", reveal the top card of your deck, call it to RC as rest if it is a unit card, and discard it if it isn’t.
@@ -772,7 +772,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8617
 {
-global.CardName[CardStat] = '  Black Sage, Charon'
+global.CardName[CardStat] = 'Black Sage, Charon  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Giant
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Blaster" in its card name, COST [rest this unit], look at the top card of your deck, and you may call it to RC if it is a unit card. At the end of that turn, retire that called unit. (Put it on the top of the deck if you did not call.)'
@@ -786,7 +786,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8618
 {
-global.CardName[CardStat] = '  Darkness Maiden, Macha'
+global.CardName[CardStat] = 'Darkness Maiden, Macha  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Blaster" in its card name, this unit gets power +5000 until end of turn. Then, COST [Soul Blast 1 & retire another rear-guard], look at five cards from the top of your deck, choose up to one grade 1 or less unit card from among them, call it to RC, and shuffle your deck.'
@@ -1689,3 +1689,59 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9623
+{
+global.CardName[CardStat] = 'Witch of Prohibition, Ernmas'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is retired from RC by the ability of your vanguard with "Blaster" in its card name during your turn, COST [Soul Blast 2], choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9624
+{
+global.CardName[CardStat] = 'Kind Light Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO [RC] 1/Turn: When this unit stand by your card’s ability, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9648
+{
+global.CardName[CardStat] = 'Skull Witch, Nemain  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
+
+CONT [RC]: During your turn, if you have a vanguard with "Blaster" in its card name, this unit gets power +5000.
+
+AUTO: When this unit is placed on RC, if your vanguard’s clan is only <<Shadow Paladin>>, COST [Counter Blast 1 & put a card from your hand into your soul], and draw two cards.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9649
+{
+global.CardName[CardStat] = 'Phantom Blaster Overlord  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Abyss Dragon
+
+CONT [VC]: If your soul has a "Phantom Blaster Dragon", this unit gets critical +1.
+
+AUTO [VC]: When this unit attacks, COST [retire two of your rear-guards], choose a "Blaster Dark" from your soul or drop, call it to RC, and if your opponent’s vanguard is grade 3 or greater, that called unit and this unit get power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
