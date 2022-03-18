@@ -1079,7 +1079,7 @@ AUTO: When this unit is placed on RC, if you have a vanguard with "Faust VIII" i
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 9
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -1651,3 +1651,27 @@ global.DCards[CardStat] = 9
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9669
+{
+global.CardName[CardStat] = 'These Legs Are for Her, Faust VIII'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Yoh Asakura" or "Wooden Sword Ryu" in its card name, COST [Counter Blast 1], choose a <Shaman> with grade equal to or less than your vanguard’s from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9670
+{
+global.CardName[CardStat] = 'Enter the Ultra-Pompadour, Wooden Sword Ryu'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO [RC] 1/Turn: When the attack of your grade 3 or greater vanguard with "Yoh Asakura" or "Faust VIII" in its card name hits a vanguard, COST [Soul Blast 2], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
