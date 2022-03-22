@@ -1757,3 +1757,110 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9676
+{
+global.CardName[CardStat] = 'Knight of Loyalty, Bedivere  '
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
+
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one "Knight of Friendship, Kay", call it to a RC in the same column as this unit, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 15
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9677
+{
+global.CardName[CardStat] = 'Knight of Friendship, Kay  '
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
+
+CONT [RC]: During the battle this unit boosts "Knight of Loyalty, Bedivere", this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 15
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9689
+{
+global.CardName[CardStat] = 'Invigorate Sage'
+global.CardText[CardStat] = 'Keter Sanctuary/Human/Heal Trigger
+
+AUTO: When this unit is placed on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9691
+{
+global.CardName[CardStat] = 'Beneath the Brilliant Light, Thegrea'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by "Harsh Training, Thegrea", reveal the top card of your deck, and if it is a grade 2 or less unit card, you may call it to RC as rest. (Return it to its original spot if you do not call)
+
+Glitter (This card is a Glitter that seeks the Fire Regalis)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9692
+{
+global.CardName[CardStat] = 'Harsh Training, Thegrea'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by a grade 3 unit with "Thegrea" in its card name, look at the five cards from the top of your deck, choose up to one card with "Thegrea" or "Maple" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
+
+Glitter (This card is a Glitter that seeks the Fire Regalis) '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9693
+{
+global.CardName[CardStat] = 'One Who Walks the Path of Light, Thegrea'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: The normal ride from hand of a unit with "Thegrea" in its different card name from this unit on this unit also becomes a Persona Ride.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top five cards of your deck, choose up to one grade 2 or less unit card from among them, call it to RC, and shuffle your deck. If "One Who Blooms in the Dark, Thegrea" is in your soul, choose up to two instead of one.
+
+AUTO [VC]: At the end of the battle that this unit attacked, if this unit was placed by riding from "One Who Blooms in the Dark, Thegrea" this turn, COST [discard a card from your hand], choose one of your rear-guards, and stand it.
+
+Glitter (This card is a Glitter that seeks the Fire Regalis) '
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Thegrea'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9694
+{
+global.CardName[CardStat] = 'One Who Blooms in the Dark, Thegrea'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: The normal ride from hand of a unit with "Thegrea" in its different card name from this unit on this unit also becomes a Persona Ride.
+
+ACT [VC] 1/Turn: COST [Retire two of your grade 2 or less rear-guards], choose one of your opponent’s rear-guards, and retire it. If "One Who Walks the Path of Light, Thegrea" is in your soul, retire all of your opponent’s rear-guards in the same column as the chosen unit.
+
+AUTO [VC] 1/Turn: At the end of the battle that this unit attacked, if this unit was placed by riding from "One Who Walks the Path of Light, Thegrea" this turn, COST [Counter Blast 1 & discard a card from your hand], stand this unit, and it gets drive -1 until end of turn.
+
+Glitter (This card is a Glitter that seeks the Fire Regalis) '
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Thegrea'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
