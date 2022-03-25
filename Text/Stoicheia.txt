@@ -1800,7 +1800,7 @@ AUTO: When this unit intercepts, COST [discard a card from your hand], look at t
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
-global.PowerStat[CardStat] = 10000
+global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9690
@@ -1828,6 +1828,30 @@ AUTO [RC]: At the end of the battle that this unit attacked, COST [Soul Blast on
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9711
+{
+global.CardName[CardStat] = 'Wild-fire Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO [RC]: When this unit attacks a grade 3 or greater, if it is the fourth battle of that turn or more, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9713
+{
+global.CardName[CardStat] = 'Harpoon Soldier of Resentment'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+CONT [RC]: During your turn, this unit gets power +5000 for each order card in your bind zone.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
