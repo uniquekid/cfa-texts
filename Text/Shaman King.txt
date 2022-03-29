@@ -1460,7 +1460,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9606
 {
-global.CardName[CardStat] = 'Shikigami, Senki'
+global.CardName[CardStat] = 'Shikigami, Zenki'
 global.CardText[CardStat] = 'Shaman King/Spirit
 
 CONT [RC]: If you have a unit with "Anna Kyoyama" in its card name, and have "Shikigami, Goki" in the same column as this unit, this unit gets power +5000/critical +1. (Active on your opponent’s turn too)
@@ -1477,7 +1477,7 @@ CardStat = 9607
 global.CardName[CardStat] = 'Shikigami, Goki'
 global.CardText[CardStat] = 'Shaman King/Spirit
 
-CONT [RC]: If you have a unit with "Anna Kyoyama" in its card name, and have "Shikigami, Senki" in the same column as this unit, this unit gets power +10000. (Active on your opponent’s turn too)
+CONT [RC]: If you have a unit with "Anna Kyoyama" in its card name, and have "Shikigami, Zenki" in the same column as this unit, this unit gets power +10000. (Active on your opponent’s turn too)
 
 AUTO [RC]: At the end of each turn, if you do not have a unit with "Anna Kyoyama" in its card name, retire this unit.'
 global.UnitGrade[CardStat] = 1
@@ -1763,3 +1763,34 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 10000
+
+CardStat = 9718
+{
+global.CardName[CardStat] = 'Super Bushin, Tao Ren'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+CONT: This card can only be ridden from a grade 3 card with "Tao Ren" in its card name.
+
+AUTO: When this unit is placed on VC, search your deck for up to one grade 3 or greater card with "Tao Ren" in its card name, reveal it and put it into your hand, and shuffle your deck.
+
+OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Bason" in its card name into your soul], choose three of your opponent’s rear-guards, retire them, and this unit gets power +10000 until end of turn for every five cards in your drop.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 9
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+CardStat = 9719
+{
+global.CardName[CardStat] = 'Narrow Survive, Bason'
+global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
+
+You may only have up to four cards with "HEAL" in a deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
