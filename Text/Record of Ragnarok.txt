@@ -564,3 +564,200 @@ global.DCards[CardStat] = 10
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9757
+{
+global.CardName[CardStat] = 'Apprentice Valkyrie, Goll'
+global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
+
+AUTO: When this unit is placed on RC, if your vanguard is a <Humanity> or <Valkyrie>, COST [Counter Blast 1], choose <Valkyrie> with grade equal to or less than your vanguard and different card name from this card from your drop, and call it to RC.
+
+AUTO [RC]: When this unit boosts a unit with "Brunhilde" in its card name, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9758
+{
+global.CardName[CardStat] = 'The Man with the Greatest Will, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard is a <Valkyrie> or has "Adam" in its card name, this unit gets power +5000 until end of that battle.
+
+CONT [RC/GC]: If your vanguard is a <Humanity> or <Valkyrie>, and if your opponent’s vanguard is grade 3 or grater, this unit cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9769
+{
+global.CardName[CardStat] = 'Instinctual Stance, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+AUTO: When this unit is rode upon by "Father of All Mankind, Adam", search your deck for up to one "Wife Driven Out of Eden, Eve", call it to RC, and shuffle your deck. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9770
+{
+global.CardName[CardStat] = 'Wife Driven Out of Eden, Eve'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+ACT [Back Row Center RC]: If your vanguard is "Father of All Mankind, Adam", COST [rest this unit], Soul Charge 1, choose one of your units with "Adam" in its card name, and it gets this unit’s power until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9771
+{
+global.CardName[CardStat] = 'Father of All Mankind, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+Volund
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], all of your rear-guards get power +5000 until end of turn.
+
+AUTO [VC]: When this unit attacks, if you have two or more rear-guards, this unit gets power +5000 until end of that battle. If you have four or more rear-guards, get power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 10
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9772
+{
+global.CardName[CardStat] = 'Valkyries’ Seventh Sister, Reginleif'
+global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
+
+Volund - "Father of All Mankind, Adam" (Play this as an Arms Order, and Arm it to the specified unit on (VC). If this card that was Armed is no longer a unit, and a new [Volund] was Armed, put this card into the drop)
+
+CONT [VC]: If this card is Armed to your vanguard, all the following effects are active.
+• ACT 1/Turn: COST [Soul Blast 2], and draw a card.
+• AUTO: When your vanguard is attacked, COST [Counter Blast 1 & bind a "Valkyries’ Seventh Sister, Reginleif" from your hand], and increase or decrease the power of the unit Armed with this card to match the power of the attacking unit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.Arms[CardStat] = 1
+
+CardStat = 9773
+{
+global.CardName[CardStat] = 'Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9774
+{
+global.CardName[CardStat] = 'It’s Me <3, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When placed by riding on "Zeus", look at the top 7 cards of your deck, add a Zeus Unit Card or a Zeus Order to your hand from among them and shuffle the rest into the bottom of your deck.
+CONT [RC]: During your turn this unit gains power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9775
+{
+global.CardName[CardStat] = 'The Fist That Surpassed Time, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When placed by riding on "It’s Me <3, Zeus", look at the top 5 cards of your deck, call a Grade 2 or lower <Deity> from among them to RC, shuffle the rest on the bottom of your deck.
+
+AUTO [VC/RC]: When it attacks, if your front row has 3 or more Gods, this unit gains power +5000 until the end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9776
+{
+global.CardName[CardStat] = 'Zeus’ Final Form, "Adamas"'
+global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
+
+Play if you have a Vanguard with "Zeus" in its name!
+
+Choose a "Zeus" from your soul, call it to RC, and until end of turn, your front row units power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9777
+{
+global.CardName[CardStat] = 'God Father of the Cosmos, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+ACT [VC] 1/Turn: COST [rest a rear-guard] Search your deck for a "Zeus" order, add it to your hand hand and shuffle your deck.
+
+AUTO [VC]: When this unit attacks attacks, COST [Counter Blast 1], Choose one of rear-guards with "Zeus" in its name and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 10
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9778
+{
+global.CardName[CardStat] = 'Passed-down Legend, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
+
+Play this card if you have a Vanguard with "Zeus" in its name and COST [Counter Blast 1]!
+
+Your Vanguard gains critical +1 until end of turn and your front row gets power +10000 until end of turn. Then, you may discard a card from hand. If you did not, choose two face-up cards in your damage zone, turn them face-down.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 10
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9779
+{
+global.CardName[CardStat] = 'All-knowing and All-powerful God, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO [RC]: When this unit attacks, if you have a Grade 3 "Zeus" Vanguard and you have 2 or more face-down cards in damage, this unit gains power +5000 until end of turn.
+
+AUTO [RC]: When this unit’s attack hits, if all your front row rear-guards are Rest, COST [Soul Blast 1], Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9780
+{
+global.CardName[CardStat] = 'Noble Style for Draw'
+global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
+
+CONT [GC]: If your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 10
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000

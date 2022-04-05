@@ -1855,3 +1855,46 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9763
+{
+global.CardName[CardStat] = 'Spiritualist of the Sea of Corpses, Grave = Zorga'
+global.CardText[CardStat] = 'Stoicheia/Ghost
+
+CONT [VC]: If you "Alchemagic" and order this turn, all of your front row units get power +5000.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1 & Discard a card from your hand], choose a Normal Order from your drop, put it into your hand, and when you would play a normal order, you can bind a normal order with a different card name from your drop, and Alchemagic. (Combine the costs, and add the effect to the back!)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9764
+{
+global.CardName[CardStat] = 'Clouding Miasma'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Play this with COST [Counter Blast 1]!
+
+Choose a grade 3 or less card from your drop, and call it to RC. If this is part of "Alchemagic", choose one of your vanguards, and it gets "CONT [VC]: All of your front row units get power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9765
+{
+global.CardName[CardStat] = 'Alchemic Hedgehog'
+global.CardText[CardStat] = 'Stoicheia/High Beast/Heal Trigger
+
+AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000

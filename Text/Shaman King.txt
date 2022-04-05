@@ -931,7 +931,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9235
 {
-global.CardName[CardStat] = 'A Battle of Fate, Tao Ren'
+global.CardName[CardStat] = 'Battle of Fate, Tao Ren'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
 AUTO [VC]: When this units attack while boosted by a rear-guard with "Bason" in its card name hits, draw a card.
@@ -1889,7 +1889,7 @@ CardStat = 9751
 global.CardName[CardStat] = 'Results of the Training From Hell'
 global.CardText[CardStat] = 'Shaman King/Draw Trigger
 
-CONT [GC]: If your opponents vanguard is grade 3 or greater, this unit gets shield +5000.'
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -1959,4 +1959,161 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 9
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9759
+{
+global.CardName[CardStat] = 'Doll Master, Marion Phauna'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+CONT [RC]: During your turn, if your opponent’s rear-guard was retired by your card’s effect this turn, or you have a grade 3 or greater vanguard with "Hao" in its card name, this unit gets power +5000.
+
+AUTO: When this unit is bound from RC by the ability of your vanguard with "Hao" in its card name, put this card into your soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9760
+{
+global.CardName[CardStat] = 'Magnum Craft, Chuck'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+ACT [Drop]: If "Doll Master, Marion Phauna" is on your RC, COST [Soul Blast 2], call this card to an open RC in the same column as your "Doll Master, Marion Phauna", and you cannot call "Magnum Craft, Chuck" from your drop until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9761
+{
+global.CardName[CardStat] = 'Ectoplasmer, Kanna Bismarch'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Hao" in its card name, COST [Soul Blast 1], search your deck or drop for up to one "Old Iron Ashcroft", call it to RC, and if you searched your deck, shuffle your deck.
+
+AUTO [RC]: When this unit’s attack hits a vanguard while boosted by "Old Iron Ashcroft", choose one of your opponent’s grade 2 or greater rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9762
+{
+global.CardName[CardStat] = 'Old Iron Ashcroft'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+AUTO [RC]: When your "Ectoplasmer, Kanna Bismarch" in the same column as this unit is attacked, COST [Soul Blast 1], and that unit cannot be hit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9781
+{
+global.CardName[CardStat] = 'The Vision of a Shaman Kingdom, Hao'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9782
+{
+global.CardName[CardStat] = 'Bottomless Spiritual Power, Hao'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is rode upon by "Merciless Smile, Hao", look at seven cards from the top of your deck, choose up to one card from among them with "Spirit of Fire" in its card name, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9783
+{
+global.CardName[CardStat] = 'Merciless Smile, Hao'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is rode upon by "Great Diviner, Hao", choose a <Shaman> from your drop, and call it to RC.
+
+CONT [RC]: During your turn, this unit gets power +2000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9784
+{
+global.CardName[CardStat] = 'Great Diviner, Hao'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at two cards from the top of your deck, call them to RC, or discard them.
+
+OverSoul - ACT [VC] 1/Turn: COST [Put one of your rear-guards with "Spirit of Fire" in its card name into your soul], and this unit gets power +10000 until end of turn. Then, COST [bind three of your rear-guards], choose a card with "Spirit of Fire" in its card name from your soul or drop, call it to your back row center RC, and that unit can attack from the back row until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 9
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9785
+{
+global.CardName[CardStat] = 'Lord of Flames, Spirit of Fire'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+AUTO: If you have a vanguard with "Hao" in its card name, this cost is reduced by Soul Blast 2. When this unit is placed on RC, COST [Soul Blast 2], until end of turn, this unit gets critical +1, and for the battle this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 9
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9786
+{
+global.CardName[CardStat] = 'Burning Overrun, Spirit of Fire'
+global.CardText[CardStat] = 'Shaman King/Spirit/Critical Trigger
+
+'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9787
+{
+global.CardName[CardStat] = 'Water Overcoming Fire, Spirit of Fire'
+global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
+
+You may only have up to four cards with "HEAL" in a deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9788
+{
+global.CardName[CardStat] = 'Spiritual State, Spirit of Fire'
+global.CardText[CardStat] = 'Shaman King/Spirit/Draw Trigger
+
+'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
