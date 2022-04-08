@@ -4856,8 +4856,8 @@ global.CardName[CardStat] = 'Escutcheo Bubble Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon/Heal Trigger
 
 AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
 AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
@@ -4890,9 +4890,9 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 AUTO [VC]: When your rear-guard attacks, this unit gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to this units power.
-•25000 or more - This unit gets critical +1 until end of turn.
-•30000 or more - You may switch all of your rear-guards between the front and back rows.
-•35000 or more - All of your front row rear-guards get power +10000 until end of turn.'
+• 25000 or more - This unit gets critical +1 until end of turn.
+• 30000 or more - You may switch all of your rear-guards between the front and back rows.
+• 35000 or more - All of your front row rear-guards get power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -4929,3 +4929,39 @@ global.CardInClan[CardStat] = 3
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9818
+{
+global.CardName[CardStat] = 'Blue Furious Charge Dragon, Furiargus Dragon'
+global.CardText[CardStat] = 'Aqua Force/Tear Dragon
+
+Stride.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & turn a card from your G zone face up], you get an Imaginary Gift:Accel, choose up to the same number of your rear-guards as the number of face up cards in your G zone, and stand them. Then, choose up to one of your rear-guards, move it to an open additional RC, and it gets power +10000 until end of turn.
+
+(SHIFT + left mouse button to create Accel gift.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 3
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.AccelAdd[CardStat] = 1
+
+CardStat = 9819
+{
+global.CardName[CardStat] = 'Rebellious Heavenly Flow General, Dianera'
+global.CardText[CardStat] = 'Aqua Force/Aquaroid
+
+G guardian.
+
+AUTO: When this unit is put on GC, COST [Counter Blast 1], and perform the following depending on which battle of this turn it is.
+• First battle - Choose one of your units, and it gets power +5000 until end of turn.
+• Fourth battle or more - This unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 3
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000

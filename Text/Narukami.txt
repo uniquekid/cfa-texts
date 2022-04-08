@@ -5100,7 +5100,7 @@ CardStat = 9454
 global.CardName[CardStat] = 'Sealed Demon Dragon, Dungaree '
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [VC]: At the beginning of your battle phase, if your opponents vanguard is grade 3 or greater, you may bind the top card of your deck.
+AUTO [VC]: At the beginning of your battle phase, if your opponent’s vanguard is grade 3 or greater, you may bind the top card of your deck.
 
 AUTO [VC/RC]: When this unit attacks, put all of the cards in your bind zone into your drop. Perform all of the following according to the number of cards put. (This effect is mandatory)
 •2 or less - This unit gets power -10000/critical -1/drive -2 until end of turn.
@@ -5112,3 +5112,36 @@ global.CardInClan[CardStat] = 19
 global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 17000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9793
+{
+global.CardName[CardStat] = 'Conquering Supreme Dragon, Exterminate Dragon'
+global.CardText[CardStat] = 'Narukami/Thunder Dragon
+
+Stride.
+
+AUTO: When this unit is placed on VC, COST [Soul Blast 1], and draw a card for each of your opponent’s front row open RC.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and all of your front row units get power +10000 until end of turn for each of your opponent’s front row open RC.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 19
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+
+CardStat = 9794
+{
+global.CardName[CardStat] = 'Sky Guardian Supreme Dragon, Counteract Dragon'
+global.CardText[CardStat] = 'Narukami/Thunder Dragon
+
+G guardian.
+
+AUTO: When this unit is put on GC, your opponent chooses up to two of their front row rear-guards, and binds them. If two cards were not bound, until end of that battle, this unit gets shield +10000, and if no cards were not bound, it gets shield +10000.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 19
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
