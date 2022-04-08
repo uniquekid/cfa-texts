@@ -44,6 +44,16 @@ AUTO: When this unit is placed on VC, COST [Counter Blast 2 & Soul Blast 1 card 
 ACT [VC] 1/Turn: If your opponents vanguard is grade 3 or greater, COST [Soul Blast 1], choose two of your <Humanity> or <Valkyrie>, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectArgument1[CardStat] = 'Humanity'
+global.SearchEffectArgument2[CardStat] = 'Valkyrie'
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -117,6 +127,15 @@ AUTO: When this unit is placed by riding from "Thor", look at seven cards from t
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectArgument1[CardStat] = 'Thor'
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -337,7 +356,7 @@ CardStat = 9663
 global.CardName[CardStat] = 'Unwavering Determination, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-ACT [VC] 1/Turn: COST [Discard a grade 3 or greater card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Humanity> and <Valkyrie> gain power +5000." until the end of turn.
+ACT [VC] 1/Turn: COST [Discard a grade 3 or greater unit card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Humanity> and <Valkyrie> gain power +5000." until the end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose a <Humanity> or <Valkyrie> from your drop zone, call it to RC, and the called unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -668,10 +687,20 @@ CardStat = 9774
 global.CardName[CardStat] = 'It’s Me <3, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/Deity
 
-AUTO: When placed by riding on "Zeus", look at the top 7 cards of your deck, add a Zeus Unit Card or a Zeus Order to your hand from among them and shuffle the rest into the bottom of your deck.
+AUTO: When placed by riding on "Zeus", look at seven cards from the top your deck, choose up to one unit card with "Zeus" in its card name or Zeus order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
+
 CONT [RC]: During your turn this unit gains power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectArgument1[CardStat] = 'Zeus'
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -686,6 +715,15 @@ AUTO: When placed by riding on "It’s Me <3, Zeus", look at the top 5 cards of yo
 AUTO [VC/RC]: When it attacks, if your front row has 3 or more Gods, this unit gains power +5000 until the end of battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectArgument1[CardStat] = 'Zeus'
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -697,7 +735,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
 
 Play if you have a Vanguard with "Zeus" in its name!
 
-Choose a "Zeus" from your soul, call it to RC, and until end of turn, your front row units power +5000.'
+Choose a "Zeus" from your soul, call it to RC, and until end of turn, your front row units get power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 global.CardInClan[CardStat] = 30
@@ -707,7 +745,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9777
 {
-global.CardName[CardStat] = 'God Father of the Cosmos, Zeus'
+global.CardName[CardStat] = 'Godfather of Cosmos, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/Deity
 
 ACT [VC] 1/Turn: COST [rest a rear-guard] Search your deck for a "Zeus" order, add it to your hand hand and shuffle your deck.
@@ -737,10 +775,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9779
 {
-global.CardName[CardStat] = 'All-knowing and All-powerful God, Zeus'
+global.CardName[CardStat] = 'Almighty God, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/Deity
 
-AUTO [RC]: When this unit attacks, if you have a Grade 3 "Zeus" Vanguard and you have 2 or more face-down cards in damage, this unit gains power +5000 until end of turn.
+AUTO [RC]: When this unit attacks, if you have a Grade 3 vanguard with "Zeus" in its card name, and you have 2 or more face-down cards in damage, this unit gains power +5000 until end of turn.
 
 AUTO [RC]: When this unit’s attack hits, if all your front row rear-guards are Rest, COST [Soul Blast 1], Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
@@ -751,13 +789,101 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9780
 {
-global.CardName[CardStat] = 'Noble Style for Draw'
+global.CardName[CardStat] = 'Noble Style'
 global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
 
-CONT [GC]: If your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
+CONT [GC]: If you have a <Deity> vanguard and your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
 global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9795
+{
+global.CardName[CardStat] = 'Demise Keeper, Heimdall'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When this unit is placed on RC, you and your opponent Counter Charge 1. (Must be performed)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9796
+{
+global.CardName[CardStat] = 'Goddess of Beauty, Aphrodite'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO [RC]: When your other <Deity> attacks, COST [rest this unit], and that unit gets power +5000 until end of that battle.
+
+AUTO [Back Row RC]: When your unit’s attack hits a vanguard, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9799
+{
+global.CardName[CardStat] = 'God of War, Ares'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO [RC]: When this unit attacks, if your vanguard is a grade 3 or greater <Deity>, COST [Counter Blast 1 & Soul Blast 1], draw a card, and this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9800
+{
+global.CardName[CardStat] = 'Cheering Second Son, Abel'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+AUTO: When this unit is placed on RC, if your VC or RC has a unit with "Adam" in its card name and a "Wife Driven Out of Eden, Eve", COST [Counter Blast 1], draw a card, choose a card from your hand, and call it to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9815
+{
+global.CardName[CardStat] = 'The Deadliest and Wildest Warrior, Lu Bu Fengxian'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Lu Bu Fengxian" in its card name, COST [Counter Blast 1], you and your opponent reveal the top card of your decks, and call them to an open RC. The AUTO abilities of your opponent’s cards do not activate from this call.
+
+CONT [RC]: During the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9816
+{
+global.CardName[CardStat] = 'Counter Attacking Sword, Kojiro Sasaki'
+global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+
+AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Kojirou Sasaki" in its card name, COST [Soul Blast 1], until end of that battle, this unit gets power +5000, and your opponent cannot intercept. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9817
+{
+global.CardName[CardStat] = 'Devoting Oneself, Hrist'
+global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
+
+AUTO [RC]: When this unit boosts a rear-guard with "Kojirou Sasaki" in its card name, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Kojirou Sasaki" in its card name, your opponent chooses a card from their drop, and binds it. Then, if there are three or more cards in your opponent’s bind zone, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
