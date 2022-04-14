@@ -5301,9 +5301,42 @@ global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
 AUTO: When this unit is placed on VC, look at five cards from the top of your deck, choose up to one grade 2 or less card with "Extreme Battler" in its card name from among them, call it to RC, and shuffle your deck.
 
-AUTO [RC]: When your other unit is stand by a cards ability, if this unit is on an addition RC, until end of turn, that stand unit gets power +5000, and this unit gets power +5000.'
+AUTO [RC]: When your other unit is stand by a card’s ability, if this unit is on an addition RC, until end of turn, that stand unit gets power +5000, and this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9851
+{
+global.CardName[CardStat] = 'Fighting Emperor Dragon, Merciless Dragon'
+global.CardText[CardStat] = 'Nova Grappler/Space Dragon
+
+Stride.
+
+AUTO [VC]: When your rear-guard stand by a card’s ability, COST [Counter Blast 1 & discard two cards from hand], stand this unit, and if it is your main phase, attack your opponent’s vanguard with this unit.
+
+AUTO [VC]: At the end of the battle this unit attacked, this unit gets drive -1 until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 4
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+
+CardStat = 9852
+{
+global.CardName[CardStat] = 'Meteokaiser, Stiffneid'
+global.CardText[CardStat] = 'Nova Grappler/Battleroid
+
+G guardian.
+
+AUTO: When this unit is put on GC, COST [Counter Blast one or more cards], and this unit gets shield +5000 until end of that battle for each face down card in your damage zone. If you paid Counter Blast 2 or more for this cost, draw a card, and if you paid Counter Blast 3 or more, draw a card.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 4
+global.ExtraDeck[CardStat] = 1
+global.OldCardStat[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000

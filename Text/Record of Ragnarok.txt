@@ -721,8 +721,9 @@ global.DCards[CardStat] = 10
 global.SearchEffect[CardStat] = 1
 global.SearchEffectPosition[CardStat] = 'V'
 global.SearchEffectLookAtQuantity[CardStat] = 5
-global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectMode[CardStat] = 'CheckRaceAndGradeOrLess'
 global.SearchEffectArgument1[CardStat] = 'Deity'
+global.SearchEffectArgument3[CardStat] = 2
 global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
 global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
 global.SearchEffectFindQuantity[CardStat] = 1
@@ -913,3 +914,134 @@ global.DCards[CardStat] = 10
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9858
+{
+global.CardName[CardStat] = 'Conquest Deity, Adamas'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO [VC/RC]: At the end of your turn, if your damage zone has four or less cards, put the top card of your deck face down in your damage zone.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9861
+{
+global.CardName[CardStat] = 'Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9862
+{
+global.CardName[CardStat] = 'Small Fry, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When placed by riding on "Poseidon", look at seven cards from the top your deck, choose up to one unit card with "Poseidon" in its card name or Poseidon Order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
+
+CONT [RC]: During your turn this unit gains power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 10
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectMode[CardStat] = 'CheckRaceOrName'
+global.SearchEffectArgument1[CardStat] = 'Poseidon'
+global.SearchEffectArgument2[CardStat] = 'Poseidon'
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9863
+{
+global.CardName[CardStat] = 'True Nature Revealed, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When this unit is rode upon by "Tyrant of Ocean, Poseidon", call this card to RC.
+
+CONT: When you would retire units for the cost of your vanguard’s ability, this card may be regarded as retiring two.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9864
+{
+global.CardName[CardStat] = 'Tyrant of Ocean, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+ACT [VC] 1/Turn: COST [rest a rear-guard], search your deck for up to one Poseidon Order, reveal it and put it into your hand, and shuffle your deck.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & retire one or more rear-guards], for each unit retired for this cost, this unit gets power +5000 until end of turn. If two or more were retired, this unit gets Drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 10
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9865
+{
+global.CardName[CardStat] = 'Greek Mythology’s Most Fearsome God, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Deity
+
+AUTO: When this unit would be retired for the cost of one of your card’s effect, COST [Soul Blast 1], call this card to RC as rest, if you have a Vanguard with "Poseidon" in its card name, stand this unit, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9866
+{
+global.CardName[CardStat] = 'Chione Tyro Demeter'
+global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Poseidon
+
+Play if you have a Vanguard with "Poseidon" in its name!
+
+Look at seven cards from the top of your deck, choose up to one unit card with "Poseidon" in its card name that has the same grade or less than your vanguard, call it to RC, shuffle the rest and put them on the bottom of your deck. Choose up to one of your vanguards, and it get power +10000 until end of turn.
+
+(Put onto Guardian circle to activate search effect)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 10
+global.CardInClan[CardStat] = 30
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'G'
+global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectMode[CardStat] = 'CheckNameAndGradeOrLess'
+global.SearchEffectArgument1[CardStat] = 'Poseidon'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.SearchEffectFindQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9867
+{
+global.CardName[CardStat] = 'Passed-down Legend, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Poseidon
+
+Play this with COST [Counter Blast 1] if you have a Vanguard with "Poseidon" in its name!
+
+All of your front row rear-guards get power +10000 until end of turn. If your rear-guard was retired this turn, choose up to one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 10
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
