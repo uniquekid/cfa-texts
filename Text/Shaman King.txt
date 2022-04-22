@@ -2472,7 +2472,7 @@ CardStat = 9897
 global.CardName[CardStat] = 'Revenger, Lyserg Diethel'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-OverSoul - ACT [VC] 1/Turn:COST [Put one of your rear-guards with "Morphine" in its card name into your soul], and this unit gets power +10000 until end of turn. Search your deck for up to one Lyserg Order, reveal it and put it into your hand, and shuffle your deck.
+OverSoul - ACT [VC] 1/Turn: COST [Put one of your rear-guards with "Morphine" in its card name into your soul], and this unit gets power +10000 until end of turn. Search your deck for up to one Lyserg Order, reveal it and put it into your hand, and shuffle your deck.
 
 CONT [VC]: If this unit OverSoul this turn, when this unit would put a card from the top of your deck into your trigger zone for drive check, perform "look at two cards from the top of your deck, put one card from among them into your trigger zone, and put the rest on the bottom of your deck" instead.'
 global.UnitGrade[CardStat] = 3
@@ -2526,6 +2526,57 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9901
 {
 global.CardName[CardStat] = 'Amazing Perception Ability, Morphine'
+global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
+
+You may only have up to four cards with "HEAL" in a deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 9
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9905
+{
+global.CardName[CardStat] = 'Ultra Senji Ryakketsu, Shamanic Oracle'
+global.CardText[CardStat] = 'Shaman King
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 9906
+{
+global.CardName[CardStat] = 'Impaled Punishment, Boris Tepes Dracula'
+global.CardText[CardStat] = 'Shaman King/Shaman
+
+AUTO: When this unit is bound from RC by the ability of your vanguard with "Hao" in its card name, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9907
+{
+global.CardName[CardStat] = 'Loyal Servant, Blamuro'
+global.CardText[CardStat] = 'Shaman King/Spirit
+
+CONT [RC]: During the battle this unit boosted "Impaled Punishment, Boris Tepes Dracula", this unit gets power +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 9
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9908
+{
+global.CardName[CardStat] = 'Wagering Spirit’s Body and Soul, Amidamaru'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
 You may only have up to four cards with "HEAL" in a deck.'
