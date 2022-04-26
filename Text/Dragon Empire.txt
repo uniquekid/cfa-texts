@@ -2146,8 +2146,8 @@ global.CardName[CardStat] = 'Sealed Blaze Dragon, Samsara'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT [RC]: This unit gets all of the following according to the Arms on your VC.
-• Right Deity Arms: During your turn, this unit gets power +5000
-• Left Deity Arms: This unit gets "Intercept"'
+• Right Deity Arms - During your turn, this unit gets power +5000
+• Left Deity Arms - This unit gets "Intercept"'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2176,4 +2176,31 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9935
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Aaushniya'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is placed on RC, perform all of the following according to the Arms on your VC.
+• Right Deity Arms - This unit gets power +10000 until end of turn.
+• Left Deity Arms - COST [Counter Blast 1], choose a grade 1 or less card from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9936
+{
+global.CardName[CardStat] = 'Blaze Maiden, Amelia'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+ACT [RC]: If you have a vanguard with "Nirvana" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & put this unit into your soul], choose up to one unit card with "Nirvana" in its card name from your hand, and ride it as stand. If you rode a card, you cannot ride by card effects until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
