@@ -6093,7 +6093,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 ACT [VC]: COST [Lock one of your rear-guards with "Revenger" in its card name], choose three of your units with "Revenger" in their card names, and they get power +5000 until end of turn.
 
-AUTO [VC] 1/Turn: This abilitys cost is reduced by Counter Blast 1 for each of your locked cards. At the end of the battle this unit attacked, COST [Counter Blast 3 & discard three cards from your hand], choose up to two of your stand rear-guards, and lock them. Then, if you have two or more locked cards or five cards in your damage zone, stand this unit.'
+AUTO [VC] 1/Turn: This ability’s cost is reduced by Counter Blast 1 for each of your locked cards. At the end of the battle this unit attacked, COST [Counter Blast 3 & discard three cards from your hand], choose up to two of your stand rear-guards, and lock them. Then, if you have two or more locked cards or five cards in your damage zone, stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -6145,3 +6145,18 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9938
+{
+global.CardName[CardStat] = 'Revenger, Dragruler Phantom '
+global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
+
+AUTO: When this unit is placed on VC by riding from a unit with "Revenger" in its card name during the ride phase, search your deck for up to one card with "Revenger" in its card name, call it to RC, and shuffle your deck. If your opponent’s damage zone has four or less cards, COST [Soul Blast 1 "Illusionary Revenger, Mordred Phantom"], choose one of your opponent’s vanguards, and deal it one damage.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], choose all of your front row "Blaster Dark" or units with "Revenger" in their card names, and retire all of your other rear-guards. All of your front row units get power +5000 until end of turn for each unit retired. If you retired two or more, stand all of your front row rear-guards.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.BlueTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
