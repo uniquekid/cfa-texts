@@ -4252,7 +4252,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9462
 {
-global.CardName[CardStat] = 'Amons Follower, Phu Geenlin '
+global.CardName[CardStat] = 'Amon’s Follower, Phu Geenlin '
 global.CardText[CardStat] = 'Dark Irregulars/Human
 
 ACT [VC/RC] 1/Turn: COST [Put a card from your hand into your soul], draw a card, your opponent chooses a card from their hand, and puts it into their soul. Then, your opponent may draw a card.
@@ -4266,7 +4266,7 @@ global.DefensePowerStat[CardStat] = 10000
 
 CardStat = 9463
 {
-global.CardName[CardStat] = 'Amons Follower, Ron Geenlin '
+global.CardName[CardStat] = 'Amon’s Follower, Ron Geenlin '
 global.CardText[CardStat] = 'Dark Irregulars/Human
 
 AUTO: When this unit is placed on VC or RC, Soul Charge 1. Your opponent chooses up to one card from their hand or rear-guards, and puts it into their soul. If they did not put a card into their soul, you Soul Charge 1.
@@ -4327,3 +4327,46 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9960
+{
+global.CardName[CardStat] = 'Amon’s Follower, Atrocious Blow '
+global.CardText[CardStat] = 'Dark Irregulars/Demon
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one grade 3 card with "Amon" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
+
+ACT [RC]: COST [rest this unit], Soul Charge 1, choose one of your units with "Amon" in its card name, and it gets power +1000 until end of turn for each card in your soul. '
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 9961
+{
+global.CardName[CardStat] = 'Amon’s Follower, Soul Sucker '
+global.CardText[CardStat] = 'Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon by a unit with "Amon" in its card name, Soul Charge 3.
+
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], Soul Charge 1, and this unit gets power +5000 until end of that battle. At the end of that battle, if you have a vanguard with "Amon" in its card name, and your soul has six or more cards, COST [put this unit into your soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 9962
+{
+global.CardName[CardStat] = 'Demon Marquis, Amon "ßeverse" '
+global.CardText[CardStat] = 'Dark Irregulars/Demon
+
+ACT [VC] 1/Turn: COST [Lock two of your rear-guards], and this unit gets power +2000 until end of turn for each card in your soul. If this unit’s power is 40000 or greater, this unit gets critical +1 until end of turn.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two cards from your soul with "Amon" in their card names, and call them to RC. At the end of that turn, put those called units into your soul. '
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 11
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
