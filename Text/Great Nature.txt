@@ -4029,3 +4029,33 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9966
+{
+global.CardName[CardStat] = 'Magic Scientist, Tester Fox '
+global.CardText[CardStat] = 'Great Nature/High Beast
+
+AUTO: When this unit is placed on VC or RC, COST [Counter Blast 1 & put two cards from your drop on the bottom of your deck in any order], and this unit gets power +5000 until end of turn. If you put one normal unit and one trigger unit for this cost, search your deck for up to one "Illusion Scientist, Researcher Fox", call it to RC, and shuffle your deck.
+
+ACT [VC/RC] 1/Turn: COST [Soul Blast 1], choose one of your rear-guards, and it gets power +10000 until end of turn. At the end of that turn, retire that unit, and if you retired "Illusion Scientist, Researcher Fox", draw a card. 
+'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 7
+}
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+global.OrangeTokenAdd[CardStat] = 1
+
+CardStat = 9967
+{
+global.CardName[CardStat] = 'Illusion Scientist, Researcher Fox'
+global.CardText[CardStat] = 'Great Nature/High Beast
+
+AUTO [Additional RC]: When a card is discarded from your deck, this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is retired from RC by your card’s ability, COST [Counter Blast 1], search your deck for up to one card with the same card name as your vanguard, reveal it and put it into your hand, and shuffle your deck. '
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 7
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
