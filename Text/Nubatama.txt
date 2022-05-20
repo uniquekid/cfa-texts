@@ -3573,3 +3573,57 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9978
+{
+global.CardName[CardStat] = 'Stealth Beast, Magami'
+global.CardText[CardStat] = 'Nubatama/High Beast
+
+ACT [RC] 1/Turn: COST [Retire one of your grade 0 rear-guards], and Soul Charge 1.
+
+AUTO [RC]: At the end of the battle this unit boosted a rear-guard, COST [Soul Blast 1], and return this unit and the boosted rear-guard to your hand. 
+'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 23
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 9979
+{
+global.CardName[CardStat] = 'Evil Stealth Dragon, Kageugachi'
+global.CardText[CardStat] = 'Nubatama/Abyss Dragon
+
+AUTO: When this unit is placed on VC or RC, call up to one Evil Decoy token to RC.
+
+ACT [VC/RC] 1/Turn: COST [Soul Blast 1], and until end of turn, all of your Evil Decoy tokens get "Boost", and power +5000.
+'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 23
+global.TokenSummoner[CardStat] = 7069
+global.TokenSummonerPosition[CardStat] = 'VR'
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 9980
+{
+global.CardName[CardStat] = 'Evil Stealth Dragon, Magoroku "Fuken"'
+global.CardText[CardStat] = 'Nubatama/Abyss Dragon
+
+CONT [VC]: During your turn, all of your front row units get power +5000 for each of your Evil Decoy tokens.
+
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and you have three or more Evil Decoy tokens, all of your front row units get critical +1.
+
+AUTO [VC]: When your rear-guard is returned to your hand by your card’s ability, call up to one Evil Decoy token to an open RC, COST [Counter Blast 1], get an Imaginary Gift:Protect, and put it on that circle. (You do not put if you chose Protect 1)
+
+(Shift + left mouse button to call Evil Decoy Token or create a protect gift.)'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 23
+global.TokenSummoner[CardStat] = 7069
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+global.ProtectAdd[CardStat] = 1
