@@ -4385,3 +4385,48 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 9990
+{
+global.CardName[CardStat] = 'Engaging Assistant'
+global.CardText[CardStat] = 'Pale Moon/Elf
+
+AUTO: When this unit is placed on VC or RC from hand, look at the top five cards of your deck, choose up to one grade 3 card from among them, put it into your soul, and shuffle your deck.
+
+ACT [RC]: COST [Retire this unit], choose a grade 3 card from your soul, and put it into your hand. If your vanguard is not "Sword Magician, Sarah", choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefenseStat[CardStat] = 10000
+
+CardStat = 9991
+{
+global.CardName[CardStat] = 'Pop Out Chimera'
+global.CardText[CardStat] = 'Pale Moon/Chimera
+
+CONT [RC/Deck/Soul/Trigger Zone]: This unit gets grade +1.
+
+AUTO: When this unit is placed on VC, COST [Counter Blast 1], and Soul Charge 3. If you Soul Charge one or more trigger units, draw a card.
+
+CONT [RC]: If you called two or more cards from soul this turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 9000
+global.DefenseStat[CardStat] = 5000
+
+CardStat = 9992
+{
+global.CardName[CardStat] = 'Sword Magician, Sarah '
+global.CardText[CardStat] = 'Pale Moon/Human
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], search your deck for up to one grade 3 card, call it to RC, shuffle your deck, and this unit gets "CONT [VC]: All of your grade 3 rear-guards get power +2000, and "Boost"." until end of turn.
+
+AUTO [VC]: At the end of the battle your drive check revealed a grade 3 or greater card, COST [put two normal units from your RC on the bottom of your deck in any order], choose up to two grade 3 cards from your soul, and call them to RC.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 18
+}
+global.OrangeTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
