@@ -5366,7 +5366,23 @@ global.CardText[CardStat] = 'Nova Grappler/Alien
 
 CONT [VC/RC]: During your turn, if you have no stand units, this unit gets power +3000 for each of your rear-guards.
 
-ACT [VC/RC] 1/Turn: COST [rest two of your rear-guards], and this unit gets "AUTO [VC/RC] 1/Turn:At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn." until end of turn. 
+ACT [VC/RC] 1/Turn: COST [rest two of your rear-guards], and this unit gets "AUTO [VC/RC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn." until end of turn. 
+'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 4
+}
+global.OrangeTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10002
+{
+global.CardName[CardStat] = 'Strongest Beast Deity, Ethics Buster Extreme '
+global.CardText[CardStat] = 'Nova Grappler/Battleroid
+
+AUTO [VC]: When your unit with "Beast Deity" in its card name is stand by a card’s ability, if your soul has a "Beast Deity, Ethics Buster", this unit gets power +5000 until end of turn.
+
+AUTO [VC] 1/Turn: When your drive check reveals a card with "Beast Deity" in its card name, COST [Counter Blast 1 & discard a card from your hand], choose one of your rear-guards with "Beast Deity" in its card name and grade equal to the card with "Beast Deity" in its card name revealed during that drive check, and stand it. If your damage zone has four or more cards, stand all of your units with "Beast Deity" in its card name and grade equal to the unit stand by this effect.
 '
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
