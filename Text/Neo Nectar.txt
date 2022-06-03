@@ -1,4 +1,3 @@
-
 x = 359
 
 CardStat = x
@@ -5773,3 +5772,72 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 10011
+{
+global.CardName[CardStat] = 'Recursion of Perpetuity, Gradioul Dragon'
+global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
+
+CONT [VC]: The Plant tokens you call are called as grade 0/power 10000/shield 10000/critical 1, and have "Boost" and "Intercept", and all of your Plant tokens can intercept from the back row.
+
+ACT [VC] 1/Turn: COST [Put a normal unit from your drop on the bottom of your deck], and call up to two Plant tokens to RC.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose up to two cards from your hand, and call them to RC with Plant tokens.
+
+(SHIFT + click to call tokens.)'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 9
+}
+global.BlueTokenAdd[CardStat] = 1
+global.TokenSummoner[CardStat] = 6130
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummoner2[CardStat] = 7202
+global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
+global.TokenSummoner2Button1[CardStat] = "5000"
+global.TokenSummoner2Button2[CardStat] = "10000"
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10012
+{
+global.CardName[CardStat] = 'Peace of Eternity, Gradioul Dragon'
+global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Recursion of Perpetuity, Gradioul Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, call up to one grade 0/power 10000/shield 10000/critical 1 Plant token with "Boost" and "Intercept".
+
+AUTO: When this unit is placed from hand on a RC with a power 10000 or greater Plant token, this unit gets power+15000 until end of turn. 
+
+(SHIFT + click to call tokens.)'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 9
+}
+global.TokenSummoner[CardStat] = 6130
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummoner2[CardStat] = 7202
+global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
+global.TokenSummoner2Button1[CardStat] = "5000"
+global.TokenSummoner2Button2[CardStat] = "10000"
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10013
+{
+global.CardName[CardStat] = 'Bud of Longevity, Gradioul Dragon'
+global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Peace of Eternity, Gradioul Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, call up to one grade 0/power 10000/shield 10000/critical 1 Plant token with "Boost" and "Intercept".
+
+AUTO: When this unit is placed from hand on a RC with a power 10000 or greater Plant token, draw a card, and this unit gets power+5000 until end of turn. 
+
+(SHIFT + click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 9
+}
+global.TokenSummoner[CardStat] = 6130
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummoner2[CardStat] = 7202
+global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
+global.TokenSummoner2Button1[CardStat] = "5000"
+global.TokenSummoner2Button2[CardStat] = "10000"
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
