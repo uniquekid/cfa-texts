@@ -4400,13 +4400,16 @@ global.CardText[CardStat] = 'Oracle Think Tank/Human
 
 AUTO [VC/Front Row RC]: At the end of the battle your vanguard with "Witch" in its card name attacked a grade 3 or greater vanguard, if it is the first battle of this turn, COST [Counter Blast 1 & discard two cards from your hand], choose up to one grade 3 card with "Witch" in its card name from your hand, and ride it as stand.
 
-AUTO: When this unit is rode upon, call this card to RC, or you get an Imaginary Gift: Protect.'
+AUTO: When this unit is rode upon, call this card to RC, or you get an Imaginary Gift: Protect.
+
+(Shift+click to generate Protect)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 10
 }
 global.GreenTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.DefensePowerStat[CardStat] = 0
+global.ProtectAdd[CardStat] = 1
 
 CardStat = 9680
 {
@@ -4452,3 +4455,46 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 10021
+{
+global.CardName[CardStat] = 'Battle Sister, Coca '
+global.CardText[CardStat] = 'Oracle Think Tank/Elf
+
+AUTO: When this unit is rode upon, you may call this card to RC.
+
+ACT [RC]: COST [rest this unit], look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 10
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 10022
+{
+global.CardName[CardStat] = 'Battle Sister, Mocha '
+global.CardText[CardStat] = 'Oracle Think Tank/Elf
+
+AUTO: When this unit is rode upon, COST [Soul Blast 1], look at the top two cards of your deck, choose one card from among them, put it into your hand, and put the rest on the top or bottom of your deck.
+
+CONT [RC/GC]: If you have three or more units with "Battle Sister" in their different card names, this unit gets power +5000/ shield +5000, and if your hand has four or more cards, it gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 10
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10023
+{
+global.CardName[CardStat] = 'Heretic Battle Sister, Fromage "ßeverse"'
+global.CardText[CardStat] = 'Oracle Think Tank/Elf
+
+CONT [VC]: During your turn, all of your units with "Battle Sister" in their card names get power +5000 for each of your locked cards.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Discard a card from your hand], look at the same number of cards from the top of your deck as the number of your units with "Battle Sister" in their different card names, choose any number of cards from among them, put them on the top of your deck in any order, and put the rest on the bottom of your deck in any order. Then, COST [lock one or more of your rear-guards with "Battle Sister" in their different card names], and draw a card for each card locked for this cost.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 10
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
