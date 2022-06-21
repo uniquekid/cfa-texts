@@ -2163,3 +2163,76 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10047
+{
+global.CardName[CardStat] = 'Youth Following in Footsteps, Youth'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10048
+{
+global.CardName[CardStat] = 'Determined to Break Away, Youth'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [VC/RC]: During the battle this unit attacked, this unit gets power +2000.
+
+AUTO: When this unit is rode upon by "Knight of Ardent Light, Youth", COST [Soul Blast 1], look at the top three cards of your deck, choose up to one card with "Youthberk" in its card name from among them and reveal it and put it into your hand, or choose up to one grade 2 or less unit card from among them and call it to RC, and put the rest on the bottom of your deck in any order.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10049
+{
+global.CardName[CardStat] = 'Knight of Ardent Light, Youth'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by a unit with the [RevolDress] ability, COST [Counter Blast 1], choose a grade 2 or greater card from your drop, and put it into your hand.
+
+AUTO [VC/RC]: When this unit is boosted, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10050
+{
+global.CardName[CardStat] = 'Youthberk "Protofall Arms"'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT:When this card would be rode upon, it is also regarded as "Youthberk "Skyfall Arms"".
+
+[RevolDress] - AUTO [VC]: At the end of the battle this unit attacked, choose up to one card with "RevolForm" in its card name from your hand, ride it as stand, and it gets drive -2 until end of turn.
+
+CONT [RC]: If your grade 3 or greater vanguard was placed this turn, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Youthberk "Skyfall Arms"'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10051
+{
+global.CardName[CardStat] = 'Youthberk "RevolForm: Zest"'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on VC by the RevolDress ability, until end of turn, this unit gets power +15000, and if you persona rode this turn, it gets critical +1.
+
+AUTO [VC]: At the end of your turn, choose a card with the [RevolDress] ability from your soul, and ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
