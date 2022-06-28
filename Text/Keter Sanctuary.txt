@@ -2189,6 +2189,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromVRBuff[CardStat] = 2000
 
 CardStat = 10049
 {
@@ -2268,7 +2269,7 @@ AUTO: When this card is discarded from your hand during your ride phase, you may
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10055
@@ -2306,3 +2307,52 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10060
+{
+global.CardName[CardStat] = 'Sturdiness Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO: When this unit intercepts, if your soul has a card with "RevolForm" in its card name, this unit gets shield +10000 until end of that battle. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10061
+{
+global.CardName[CardStat] = 'Heaven Shattering Fury'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Play this with COST [Counter Blast 1] if you have a vanguard with the [Revoldress] ability!
+
+Search your deck for up to one "Youthberk "RevolForm: Zest"", reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10062
+{
+global.CardName[CardStat] = 'Resolute Mage'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 10063
+{
+global.CardName[CardStat] = 'Recuperate Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Heal Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
