@@ -118,6 +118,8 @@ CardStat = 8282
 global.CardName[CardStat] = 'Dark Strain Dragon'
 global.CardText[CardStat] = 'Abyss Dragon/Keter Sanctuary
 
+(STANDARD EN & JP: Restricted to 1)
+
 ACT [RC]: If you have three or more grade 3 units, COST [Soul Blast 2], and all of your grade 3 units get "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
@@ -125,6 +127,7 @@ global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 8283
@@ -2379,4 +2382,28 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10096
+{
+global.CardName[CardStat] = 'Knight of Fierce Break, Friede'
+global.CardText[CardStat] = 'Keter Sanctuary/Warbeast
+
+CONT [GC]:If you have a vanguard with "Youth" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10097
+{
+global.CardName[CardStat] = 'Milch Weiss Schutzer'
+global.CardText[CardStat] = 'Keter Sanctuary/Golem
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Youth" in its card name, COST [Soul Blast 1], and this units gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
