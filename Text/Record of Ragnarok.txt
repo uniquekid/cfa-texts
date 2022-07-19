@@ -12,7 +12,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9630
 {
-global.CardName[CardStat] = 'Choice for Victory, Brunhilde'
+global.CardName[CardStat] = 'The Choice for Victory, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
 AUTO: When this unit is placed by riding from "Brunhilde", COST [Soul Blast 1], look at the top card of your deck, put it on the top or bottom of your deck, and draw a card.'
@@ -24,10 +24,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9631
 {
-global.CardName[CardStat] = 'Vigilant, Brunhilde'
+global.CardName[CardStat] = 'Watching for an Opportunity, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-AUTO: When this unit is placed by riding from "Choice for Victory, Brunhilde", reveal the top card of your deck, if that card is grade 2 or less <Humanity> or <Valkyrie> normal unit, call it to RC, and if it isnt, put the top card of your deck into your soul.'
+AUTO: When this unit is placed by riding from "The Choice for Victory, Brunhilde", reveal the top card of your deck, if that card is grade 2 or less <Man> or <Valkyrie> normal unit, call it to RC, and if it isnt, put the top card of your deck into your soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -36,12 +36,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9632
 {
-global.CardName[CardStat] = 'For the Survival of Humanity, Brunhilde'
+global.CardName[CardStat] = 'Man’s Survival at Stake, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-AUTO: When this unit is placed on VC, COST [Counter Blast 2 & Soul Blast 1 card with "Brunhilde" in its card name], look at seven cards from the top of your deck, choose up to one <Humanity> or <Valkyrie> from among them, call it to RC, shuffle the rest and put them on the bottom of your deck.
+AUTO: When this unit is placed on VC, COST [Counter Blast 2 & Soul Blast 1 card with "Brunhilde" in its card name], look at seven cards from the top of your deck, choose up to one <Man> or <Valkyrie> from among them, call it to RC, shuffle the rest and put them on the bottom of your deck.
 
-ACT [VC] 1/Turn: If your opponents vanguard is grade 3 or greater, COST [Soul Blast 1], choose two of your <Humanity> or <Valkyrie>, and they get power +5000 until end of turn.'
+ACT [VC] 1/Turn: If your opponents vanguard is grade 3 or greater, COST [Soul Blast 1], choose two of your <Man> or <Valkyrie>, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
 
@@ -49,7 +49,7 @@ global.SearchEffect[CardStat] = 1
 global.SearchEffectPosition[CardStat] = 'V'
 global.SearchEffectLookAtQuantity[CardStat] = 7
 global.SearchEffectMode[CardStat] = 'CheckRace'
-global.SearchEffectArgument1[CardStat] = 'Humanity'
+global.SearchEffectArgument1[CardStat] = 'Man'
 global.SearchEffectArgument2[CardStat] = 'Valkyrie'
 global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
 global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
@@ -61,10 +61,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9633
 {
-global.CardName[CardStat] = 'Premonitions of Miracles, Lu Bu Fengxian'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Potential to Exceed a God, Lu Bu'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is rode upon by "China’s Strongest Warrior, Lu Bu", draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO: When this unit is rode upon by "Most Powerful Chinese Hero, Lu Bu", draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -73,10 +73,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9634
 {
-global.CardName[CardStat] = 'China’s Strongest Hero, Lu Bu Fengxian'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Most Powerful Chinese Hero, Lu Bu'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-Volund
+Volundr
 
 ACT [VC]: If your VC is Armed, and your opponents vanguard is grade 3 or greater, COST [Soul Blast 2 & discard a card from your hand], and until end of turn, when this unit would attack, it battles all of your opponent’s units in one attack.
 
@@ -93,7 +93,7 @@ CardStat = 9635
 global.CardName[CardStat] = 'Fourth Valkyrie Sister, Randgriz'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-Volund - "China’s Strongest Warrior, Lu Bu Fengxian" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new Volund was Armed, put this card into the drop)
+Volundr - "Most Powerful Chinese Hero, Lu Bu" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new Volundr was Armed, put this card into the drop)
 
 CONT [VC]: If this card is Armed to the vanguard, the following effects are active.
 • CONT: During your turn, the Armed unit gets power +5000.
@@ -108,7 +108,7 @@ global.Arms[CardStat] = 1
 CardStat = 9636
 {
 global.CardName[CardStat] = 'Thor'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -119,8 +119,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9637
 {
-global.CardName[CardStat] = 'Finally Facing an Equal, Thor'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Finally Meeting a Rival, Thor'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is placed by riding from "Thor", look at seven cards from the top of your deck, choose up to one unit card with "Thor" in its card name or Thor order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
 
@@ -144,9 +144,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9638
 {
 global.CardName[CardStat] = 'All-out Mode, Thor'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO: When this unit is placed by riding from "Trying to Find a Suitable Opponent, Thor", draw a card, and this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed by riding from "Finally Meeting a Rival, Thor", draw a card, and this unit gets power +5000 until end of turn.
 
 AUTO [VC/RC]: When this unit attacks, if your opponent has two or less rear-guards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -158,7 +158,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9639
 {
 global.CardName[CardStat] = 'Berserker of Thunder, Thor'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 ACT [VC] 1/Turn: COST [rest one of your rear-guards], search your deck for up to one Thor order, reveal it and put it into your hand, and shuffle your deck.
 
@@ -172,8 +172,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9640
 {
-global.CardName[CardStat] = 'The Strongest Nordic God, Thunder God Thor'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Strongest Norse God, Thor'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Thor" in its card name, COST [Soul Blast 2], choose one of your opponent’s rear-guards in the same column as this unit, and retire it.
 
@@ -201,7 +201,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9642
 {
-global.CardName[CardStat] = 'Passed-down Legend, Thor'
+global.CardName[CardStat] = 'Legends Passed Down, Thor'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Thor
 
 Play this with COST [Counter Blast 1] if you have a vanguard with "Thor" in its card name!
@@ -216,8 +216,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9652
 {
-global.CardName[CardStat] = 'Searching for the Strongest Opponent, Lu Bu Fengxian'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Seeking the Strongest Opponent, Lu Bu'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 AUTO: When this unit is boosted by a <Valkyrie>, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -228,10 +228,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9653
 {
-global.CardName[CardStat] = 'Greatest Affection, Adam'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Prodigious Love, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-CONT [GC]: If your vanguard is grade 3 or greater <Humanity> or <Valkyrie>, this unit gets shield +5000.'
+CONT [GC]: If your vanguard is grade 3 or greater <Man> or <Valkyrie>, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -240,8 +240,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9654
 {
-global.CardName[CardStat] = 'This Is My Golden Age, Kojiro Sasaki'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity'
+global.CardName[CardStat] = 'Now in His Prime, Kojiro Sasaki'
+global.CardText[CardStat] = 'Record of Ragnarok/Man'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -250,10 +250,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9655
 {
-global.CardName[CardStat] = 'Born as the "Strongest"'
+global.CardName[CardStat] = 'The "Strongest" by Nature'
 global.CardText[CardStat] = 'Record of Ragnarok/Critical Trigger
 
-CONT: You may only have up to eight "Born as the "Strongest"" in a deck.'
+CONT: You may only have up to eight "The "Strongest" by Nature" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -263,10 +263,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9656
 {
-global.CardName[CardStat] = 'Battle of the Abyss'
+global.CardName[CardStat] = 'Battle in the Abyss'
 global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
 
-CONT: You may only have up to eight "Deepening Fight" in a deck.'
+CONT: You may only have up to eight "Battle in the Abyss" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -276,10 +276,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9657
 {
-global.CardName[CardStat] = 'Fighting Each Other is the Battle of Men'
+global.CardName[CardStat] = 'Men Battle with their Fists'
 global.CardText[CardStat] = 'Record of Ragnarok/Front Trigger
 
-CONT: You may only have up to eight "This is How a Man Fights" in a deck.'
+CONT: You may only have up to eight "Men Battle with their Fists" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -289,7 +289,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9658
 {
-global.CardName[CardStat] = 'Heaven’s Melody'
+global.CardName[CardStat] = 'Heavenly Melody'
 global.CardText[CardStat] = 'Record of Ragnarok/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
@@ -302,10 +302,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9659
 {
-global.CardName[CardStat] = 'Born as the "Strongest" '
+global.CardName[CardStat] = 'The "Strongest" by Nature '
 global.CardText[CardStat] = 'Record of Ragnarok/Critical Trigger
 
-CONT: You may only have up to eight "Born as the "Strongest"" in a deck.'
+CONT: You may only have up to eight "The "Strongest" by Nature" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -315,10 +315,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9660
 {
-global.CardName[CardStat] = 'Battle of the Abyss '
+global.CardName[CardStat] = 'Battle in the Abyss '
 global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
 
-CONT: You may only have up to eight "Deepening Fight" in a deck.'
+CONT: You may only have up to eight "Battle in the Abyss" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -328,10 +328,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9661
 {
-global.CardName[CardStat] = 'Fighting Each Other is the Battle of Men '
+global.CardName[CardStat] = 'Men Battle with their Fists '
 global.CardText[CardStat] = 'Record of Ragnarok/Front Trigger
 
-CONT: You may only have up to eight "This is How a Man Fights" in a deck.'
+CONT: You may only have up to eight "Men Battle with their Fists" in a deck.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -341,7 +341,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9662
 {
-global.CardName[CardStat] = 'Longing Eyes'
+global.CardName[CardStat] = 'Adoring Gaze'
 global.CardText[CardStat] = 'Record of Ragnarok/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
@@ -357,9 +357,9 @@ CardStat = 9663
 global.CardName[CardStat] = 'Unwavering Determination, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-ACT [VC] 1/Turn: COST [Discard a grade 3 or greater unit card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Humanity> and <Valkyrie> gain power +5000." until the end of turn.
+ACT [VC] 1/Turn: COST [Discard a grade 3 or greater unit card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Man> and <Valkyrie> gain power +5000." until the end of turn.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose a <Humanity> or <Valkyrie> from your drop zone, call it to RC, and the called unit gets power +5000 until end of turn.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose a <Man> or <Valkyrie> from your drop zone, call it to RC, and the called unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
 }
@@ -372,7 +372,7 @@ CardStat = 9664
 global.CardName[CardStat] = 'Ragnarok'
 global.CardText[CardStat] = 'Record of Ragnarok/Over Trigger
 
-Additional Effect - All of your front row <Humanity> and <Valkyrie> get power +10000 until end of turn, choose one of your rear-guards, and stand it!'
+Additional Effect - All of your front row <Man> and <Valkyrie> get power +10000 until end of turn, choose one of your rear-guards, and stand it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -385,7 +385,7 @@ CardStat = 9665
 global.CardName[CardStat] = 'Ragnarok '
 global.CardText[CardStat] = 'Record of Ragnarok/Over Trigger
 
-Additional Effect - All of your front row <Deity> get power +10000 until end of turn, choose one of your rear-guards, and stand it!'
+Additional Effect - All of your front row <God> get power +10000 until end of turn, choose one of your rear-guards, and stand it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -395,10 +395,10 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 9673
 {
-global.CardName[CardStat] = 'Devoting Oneself, Randgriz'
+global.CardName[CardStat] = 'Devoting Herself, Randgriz'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-AUTO [RC]: When this unit boosts a rear-guard with "Lu Bu Fengxian" in its card name, if your vanguard is a grade 3 or greater <Valkyrie> or with "Lu Bu Fengxian" in its card name, COST [Counter Blast 1], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+AUTO [RC]: When this unit boosts a rear-guard with "Lu Bu" in its card name, if your vanguard is a grade 3 or greater <Valkyrie> or with "Lu Bu" in its card name, COST [Counter Blast 1], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -407,7 +407,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9674
 {
-global.CardName[CardStat] = 'Devoting Oneself, Reginleif'
+global.CardName[CardStat] = 'Devoting Herself, Reginleif'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
 AUTO [RC]: When this unit boosts a rear-guard with "Adam" in its card name, if your vanguard is a grade 3 or greater <Valkyrie> or with "Adam" in its card name, COST [Counter Blast 1], and this unit gets power +5000 until end of turn. At the end of that battle, return the boosted unit to your hand.'
@@ -419,7 +419,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9675
 {
-global.CardName[CardStat] = 'Wishing the Victory of Humanity, Goll'
+global.CardName[CardStat] = 'Wishing for Man’s Victory, Goll'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
 CONT: Sentinel (You may only have up to four cards with "CONT: Sentinel" in a deck.)
@@ -433,10 +433,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9700
 {
-global.CardName[CardStat] = 'Talking with My Brother, Liu Bei Xuande'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Conversing with Brothers, Liu Bei'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-ACT [RC] 1/Turn: COST [Counter Blast 1], choose a "One Who Knows the "Strongest", Guan Yu" or "Heart-pounding Observation, Zhang Fei" from your drop, and call it to RC. If your VC has an Arms, choose two of your units, and they get power +5000 until end of turn.'
+ACT [RC] 1/Turn: COST [Counter Blast 1], choose a "Familiar with the "Strongest", Guan Yu" or "Excitedly Spectating, Zhang Fei" from your drop, and call it to RC. If your VC has an Arms, choose two of your units, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -445,10 +445,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9701
 {
-global.CardName[CardStat] = 'One Who Knows the "Strongest", Guan Yu Yunchang'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Familiar with the "Strongest", Guan Yu'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is placed on RC, if your vanguard is "China’s Strongest Hero, Lu Bu Fengxian", and "Talking with My Brother, Liu Bei Xuande" is on your RC, you may Soul Charge 1.'
+AUTO: When this unit is placed on RC, if your vanguard is "Most Powerful Chinese Hero, Lu Bu", and "Conversing with Brothers, Liu Bei" is on your RC, you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -457,10 +457,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9702
 {
-global.CardName[CardStat] = 'Heart-pounding Observation, Zhang Fei Yide'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Excitedly Spectating, Zhang Fei'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is put on GC, if your vanguard is "China’s Strongest Hero, Lu Bu Fengxian", COST [Soul Blast 2], look at the top card of your deck, and call it to GC.'
+AUTO: When this unit is put on GC, if your vanguard is "Most Powerful Chinese Hero, Lu Bu", COST [Soul Blast 2], look at the top card of your deck, and call it to GC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -474,7 +474,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Brunhilde
 
 Play this with COST [Counter Blast 1] if you have a vanguard with "Brunhilde" in its card name!
 
-Search your deck for up to one <Humanity>, call it to RC, and shuffle your deck.'
+Search your deck for up to one <Man>, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
 global.CardInClan[CardStat] = 30
@@ -497,10 +497,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9714
 {
-global.CardName[CardStat] = 'Rebellion Against the Deities, Brunhilde'
+global.CardName[CardStat] = 'Revolt Against the Gods, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], search your deck for up to one <Valkyrie> with the Volund ability or <Humanity>, reveal it and put it into your hand, and shuffle your deck. If you put a card into your hand, and this unit is on RC, choose a card from your hand, and discard it.'
+AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], search your deck for up to one <Valkyrie> with the Volundr ability or <Man>, reveal it and put it into your hand, and shuffle your deck. If you put a card into your hand, and this unit is on RC, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -509,10 +509,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9715
 {
-global.CardName[CardStat] = 'With The Lord, Red Hare'
+global.CardName[CardStat] = 'With its Master, Red Hare'
 global.CardText[CardStat] = 'Record of Ragnarok/Steed
 
-AUTO [RC]: At the end of the battle this unit boosted your vanguard with "Lu Bu Fengxian" in its card name, if your VC has an Arms card, and your damage zone has no face up cards, COST [put this unit into your soul & your hand has one or more cards, discard all of the cards from your hand], choose one of your vanguards, stand it, and it gets drive -1 until end of turn.'
+AUTO [RC]: At the end of the battle this unit boosted your vanguard with "Lu Bu" in its card name, if your VC has an Arms card, and your damage zone has no face up cards, COST [put this unit into your soul & your hand has one or more cards, discard all of the cards from your hand], choose one of your vanguards, stand it, and it gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -521,10 +521,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9716
 {
-global.CardName[CardStat] = 'Loyal Strategist, Chen Gong'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Strategist Brimming with Loyalty, Chen Gong'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Lu Bu Fengxian" in its card name, this unit gets power +2000 until end of turn, and if your VC has an Arms, Counter Charge 1.'
+AUTO: When this unit is placed on RC, if you have a vanguard with "Lu Bu" in its card name, this unit gets power +2000 until end of turn, and if your VC has an Arms, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -533,12 +533,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9723
 {
-global.CardName[CardStat] = 'Messenger of the Deities, Hermes'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Messenger of the Gods, Hermes'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO: When this unit is placed on RC from hand, if your vanguard is a <Deity>, you may Soul Charge 1.
+AUTO: When this unit is placed on RC from hand, if your vanguard is a <God>, you may Soul Charge 1.
 
-AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [Soul Blast 1], choose a <Deity> from your soul with grade equal to or less than your vanguard, and call it to your back row RC.'
+AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [Soul Blast 1], choose a <God> from your soul with grade equal to or less than your vanguard, and call it to your back row RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -547,10 +547,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9724
 {
-global.CardName[CardStat] = 'Boiling Fighting Spirit, Shiva'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Raring to Fight, Shiva'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-CONT [RC]: During your turn, if your vanguard is a grade 3 or greater <Deity>, this unit gets power +5000.'
+CONT [RC]: During your turn, if your vanguard is a grade 3 or greater <God>, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -559,8 +559,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9746
 {
-global.CardName[CardStat] = 'Cunning Deity, Loki'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'God of Cunning, Loki'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is placed on RC, COST [Soul Blast 2], reveal the top card of your deck, if that card is a <God>, call it to RC.
 
@@ -573,10 +573,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9747
 {
-global.CardName[CardStat] = 'Looking Intently, Aphrodite'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Fixated Gaze, Aphrodite'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO [RC]: When this unit boosts a <Deity>, this unit gets power +2000 until end of that battle.'
+AUTO [RC]: When this unit boosts a <God>, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -588,7 +588,7 @@ CardStat = 9757
 global.CardName[CardStat] = 'Apprentice Valkyrie, Goll'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-AUTO: When this unit is placed on RC, if your vanguard is a <Humanity> or <Valkyrie>, COST [Counter Blast 1], choose <Valkyrie> with grade equal to or less than your vanguard and different card name from this card from your drop, and call it to RC.
+AUTO: When this unit is placed on RC, if your vanguard is a <Man> or <Valkyrie>, COST [Counter Blast 1], choose <Valkyrie> with grade equal to or less than your vanguard and different card name from this card from your drop, and call it to RC.
 
 AUTO [RC]: When this unit boosts a unit with "Brunhilde" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -599,12 +599,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9758
 {
-global.CardName[CardStat] = 'The Man with the Greatest Will, Adam'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Man with the Greatest Heart, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard is a <Valkyrie> or has "Adam" in its card name, this unit gets power +5000 until end of that battle.
 
-CONT [RC/GC]: If your vanguard is a <Humanity> or <Valkyrie>, and if your opponent’s vanguard is grade 3 or grater, this unit cannot be chosen by your opponent’s card effects.'
+CONT [RC/GC]: If your vanguard is a <Man> or <Valkyrie>, and if your opponent’s vanguard is grade 3 or grater, this unit cannot be chosen by your opponent’s card effects.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -613,10 +613,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9769
 {
-global.CardName[CardStat] = 'Instinctual Stance, Adam'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Instinctive Stance, Adam'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is rode upon by "Father of All Mankind, Adam", search your deck for up to one "Wife Driven Out of Eden, Eve", call it to RC, and shuffle your deck. '
+AUTO: When this unit is rode upon by "Father of All Mankind, Adam", search your deck for up to one "Wife Exiled from Paradise, Eve", call it to RC, and shuffle your deck. '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -625,8 +625,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9770
 {
-global.CardName[CardStat] = 'Wife Driven Out of Eden, Eve'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Wife Exiled from Paradise, Eve'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 ACT [Back Row Center RC]: If your vanguard is "Father of All Mankind, Adam", COST [rest this unit], Soul Charge 1, choose one of your units with "Adam" in its card name, and it gets this unit’s power until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -638,9 +638,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9771
 {
 global.CardName[CardStat] = 'Father of All Mankind, Adam'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-Volund
+Volundr
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], all of your rear-guards get power +5000 until end of turn.
 
@@ -657,7 +657,7 @@ CardStat = 9772
 global.CardName[CardStat] = 'Seventh Valkyrie Sister, Reginleif'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-Volund - "Father of All Mankind, Adam" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new [Volund] was Armed, put this card into the drop)
+Volundr - "Father of All Mankind, Adam" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new Volundr was Armed, put this card into the drop)
 
 CONT [VC]: If this card is Armed to your vanguard, all the following effects are active.
 • ACT 1/Turn: COST [Soul Blast 2], and draw a card.
@@ -672,7 +672,7 @@ global.Arms[CardStat] = 1
 CardStat = 9773
 {
 global.CardName[CardStat] = 'Zeus'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -684,7 +684,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9774
 {
 global.CardName[CardStat] = 'It’s Me <3, Zeus'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When placed by riding on "Zeus", look at seven cards from the top your deck, choose up to one unit card with "Zeus" in its card name or Zeus order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
 
@@ -708,9 +708,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9775
 {
 global.CardName[CardStat] = 'The Fist That Surpassed Time, Zeus'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO: When placed by riding on "It’s Me <3, Zeus", look at the top 5 cards of your deck, call a Grade 2 or lower <Deity> from among them to RC, shuffle the rest on the bottom of your deck.
+AUTO: When placed by riding on "It’s Me <3, Zeus", look at the top 5 cards of your deck, call a Grade 2 or lower <God> from among them to RC, shuffle the rest on the bottom of your deck.
 
 AUTO [VC/RC]: When it attacks, if your front row has 3 or more Gods, this unit gains power +5000 until the end of battle.'
 global.UnitGrade[CardStat] = 2
@@ -720,7 +720,7 @@ global.SearchEffect[CardStat] = 1
 global.SearchEffectPosition[CardStat] = 'V'
 global.SearchEffectLookAtQuantity[CardStat] = 5
 global.SearchEffectMode[CardStat] = 'CheckRaceAndGradeOrLess'
-global.SearchEffectArgument1[CardStat] = 'Deity'
+global.SearchEffectArgument1[CardStat] = 'God'
 global.SearchEffectArgument3[CardStat] = 2
 global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
 global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
@@ -731,7 +731,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9776
 {
-global.CardName[CardStat] = 'Zeus’ Final Form, "Adamas"'
+global.CardName[CardStat] = 'Final Form of Zeus, "Adamas"'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
 
 Play if you have a Vanguard with "Zeus" in its name!
@@ -746,8 +746,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9777
 {
-global.CardName[CardStat] = 'Godfather of Cosmos, Zeus'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'God Father of the Cosmos, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 ACT [VC] 1/Turn: COST [rest a rear-guard] Search your deck for a "Zeus" order, add it to your hand hand and shuffle your deck.
 
@@ -761,12 +761,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9778
 {
-global.CardName[CardStat] = 'Passed-down Legend, Zeus'
+global.CardName[CardStat] = 'Legends Passed Down, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
 
-Play this card if you have a Vanguard with "Zeus" in its name and COST [Counter Blast 1]!
+Play this card with COST [Counter Blast 1] if you have a Vanguard with "Zeus" in its name!
 
-Your Vanguard gains critical +1 until end of turn and your front row gets power +10000 until end of turn. Then, you may discard a card from hand. If you did not, choose two face-up cards in your damage zone, turn them face-down.'
+Choose one of your vanguards, until end of turn, it gets +1 , and all of your front row units get power +10000. Choose a card from your hand, and you may discard it. If you did not discard, choose two face up cards in your damage zone, and turn them face down.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
 global.CardInClan[CardStat] = 30
@@ -776,8 +776,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9779
 {
-global.CardName[CardStat] = 'Almighty God, Zeus'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'All-knowing All-powerful God, Zeus'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO [RC]: When this unit attacks, if you have a Grade 3 vanguard with "Zeus" in its card name, and you have 2 or more face-down cards in damage, this unit gains power +5000 until end of turn.
 
@@ -790,10 +790,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9780
 {
-global.CardName[CardStat] = 'Noble Style'
+global.CardName[CardStat] = 'Underpinning Style'
 global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
 
-CONT [GC]: If you have a <Deity> vanguard and your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
+CONT [GC]: If you have a <God> vanguard and your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -803,8 +803,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9795
 {
-global.CardName[CardStat] = 'Demise Keeper, Heimdall'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Watchman of the Apocalypse, Heimdall'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is placed on RC, you and your opponent Counter Charge 1. (Must be performed)'
 global.UnitGrade[CardStat] = 1
@@ -816,9 +816,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9796
 {
 global.CardName[CardStat] = 'Goddess of Beauty, Aphrodite'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO [RC]: When your other <Deity> attacks, COST [rest this unit], and that unit gets power +5000 until end of that battle.
+AUTO [RC]: When your other <God> attacks, COST [rest this unit], and that unit gets power +5000 until end of that battle.
 
 AUTO [Back Row RC]: When your unit’s attack hits a vanguard, COST [Soul Blast 1], and stand this unit.'
 global.UnitGrade[CardStat] = 1
@@ -830,9 +830,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9799
 {
 global.CardName[CardStat] = 'God of War, Ares'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO [RC]: When this unit attacks, if your vanguard is a grade 3 or greater <Deity>, COST [Counter Blast 1 & Soul Blast 1], draw a card, and this unit gets power +5000.'
+AUTO [RC]: When this unit attacks, if your vanguard is a grade 3 or greater <God>, COST [Counter Blast 1 & Soul Blast 1], draw a card, and this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -842,9 +842,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9800
 {
 global.CardName[CardStat] = 'Cheering Second Son, Abel'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is placed on RC, if your VC or RC has a unit with "Adam" in its card name and a "Wife Driven Out of Eden, Eve", COST [Counter Blast 1], draw a card, choose a card from your hand, and call it to RC.'
+AUTO: When this unit is placed on RC, if your VC or RC has a unit with "Adam" in its card name and a "Wife Exiled from Paradise, Eve", COST [Counter Blast 1], draw a card, choose a card from your hand, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -853,10 +853,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9815
 {
-global.CardName[CardStat] = 'The Deadliest and Wildest Warrior, Lu Bu Fengxian'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Most Badass & Maniacal Warrior, Lu Bu'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Lu Bu Fengxian" in its card name, COST [Counter Blast 1], you and your opponent reveal the top card of your decks, and call them to an open RC. The AUTO abilities of your opponent’s cards do not activate from this call.
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Lu Bu" in its card name, COST [Counter Blast 1], you and your opponent reveal the top card of your decks, and call them to an open RC. The AUTO abilities of your opponent’s cards do not activate from this call.
 
 CONT [RC]: During the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. '
 global.UnitGrade[CardStat] = 2
@@ -867,8 +867,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9816
 {
-global.CardName[CardStat] = 'Counter Attacking Sword, Kojiro Sasaki'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Singular Counterstrike, Kojiro Sasaki'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Kojiro Sasaki" in its card name, COST [Soul Blast 1], until end of that battle, this unit gets power +5000, and your opponent cannot intercept. '
 global.UnitGrade[CardStat] = 2
@@ -879,7 +879,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9817
 {
-global.CardName[CardStat] = 'Devoting Oneself, Hrist'
+global.CardName[CardStat] = 'Devoting Herself, Hrist'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
 AUTO [RC]: When this unit boosts a rear-guard with "Kojiro Sasaki" in its card name, if you have a grade 3 or greater <Valkyrie> vanguard or vanguard with "Kojiro Sasaki" in its card name, your opponent chooses a card from their drop, and binds it. Then, if there are three or more cards in your opponent’s bind zone, you may Soul Charge 1.'
@@ -891,10 +891,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9832
 {
-global.CardName[CardStat] = 'God of Scrap and Build, Shiva'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'God of Destruction & Creation, Shiva'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-CONT [RC]: During your opponent’s turn, if your vanguard is a <Deity>, and your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+CONT [RC]: During your opponent’s turn, if your vanguard is a <God>, and your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -904,9 +904,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9833
 {
 global.CardName[CardStat] = 'Follower, Hermes'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO: When this unit is placed on RC, if you have a <Deity> vanguard, look at the top of your deck, and put it on the top of your deck or into your soul.'
+AUTO: When this unit is placed on RC, if you have a <God> vanguard, look at the top of your deck, and put it on the top of your deck or into your soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 }
@@ -915,8 +915,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9858
 {
-global.CardName[CardStat] = 'Conquest Deity, Adamas'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'God of Conquest, Adamas'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO [VC/RC]: At the end of your turn, if your damage zone has four or less cards, put the top card of your deck face down in your damage zone.'
 global.UnitGrade[CardStat] = 2
@@ -928,7 +928,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9861
 {
 global.CardName[CardStat] = 'Poseidon'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -939,8 +939,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9862
 {
-global.CardName[CardStat] = 'Small Fry, Poseidon'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Nothing but Filth before My Eyes, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When placed by riding on "Poseidon", look at seven cards from the top your deck, choose up to one unit card with "Poseidon" in its card name or Poseidon Order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
 
@@ -963,10 +963,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9863
 {
-global.CardName[CardStat] = 'True Nature Revealed, Poseidon'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'True Nature, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO: When this unit is rode upon by "Tyrant of Ocean, Poseidon", call this card to RC.
+AUTO: When this unit is rode upon by "Tyrant of the Oceans, Poseidon", call this card to RC.
 
 CONT: When you would retire units for the cost of your vanguard’s ability, this card may be regarded as retiring two.'
 global.UnitGrade[CardStat] = 2
@@ -977,8 +977,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9864
 {
-global.CardName[CardStat] = 'Tyrant of Ocean, Poseidon'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Tyrant of the Oceans, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 ACT [VC] 1/Turn: COST [rest a rear-guard], search your deck for up to one Poseidon Order, reveal it and put it into your hand, and shuffle your deck.
 
@@ -992,8 +992,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9865
 {
-global.CardName[CardStat] = 'Greek Mythology’s Most Fearsome God, Poseidon'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Most Fearsome Greek God, Poseidon'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When this unit would be retired for the cost of one of your card’s effect, COST [Soul Blast 1], call this card to RC as rest, if you have a Vanguard with "Poseidon" in its card name, stand this unit, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -1031,7 +1031,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9867
 {
-global.CardName[CardStat] = 'Passed-down Legend, Poseidon'
+global.CardName[CardStat] = 'Legends Passed Down, Poseidon'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Poseidon
 
 Play this with COST [Counter Blast 1] if you have a Vanguard with "Poseidon" in its name!
@@ -1047,7 +1047,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 9878
 {
 global.CardName[CardStat] = 'Unrivaled, Kojiro Sasaki'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard is a <Valkyrie> or has "Sasaki Kojiro" in its card name, COST [Soul Blast 3], draw a card, your opponent chooses a card from their drop, and binds it.'
 global.UnitGrade[CardStat] = 2
@@ -1058,8 +1058,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9879
 {
-global.CardName[CardStat] = 'Niten Ichi-ryu, Miyamoto Musashi'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Niten Ichiryu, Miyamoto Musashi'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 AUTO [RC]: At the end of the battle this unit boosted a unit with "Sasaki Kojiro" in its card name, COST [put this unit into your soul], choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -1071,9 +1071,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9902
 {
 global.CardName[CardStat] = 'Fastest Prediction, Kojiro Sasaki'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-AUTO: When this unit is rode upon by "History’s Greatest Loser, Kojiro Sasaki", reveal the top card of your deck, and if the revealed card is a <Man> you may Soul Charge 1.'
+AUTO: When this unit is rode upon by "History’s Strongest Loser, Kojiro Sasaki", reveal the top card of your deck, and if the revealed card is a <Man> you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 }
@@ -1082,10 +1082,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9903
 {
-global.CardName[CardStat] = 'History’s Greatest Loser, Kojiro Sasaki'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'History’s Strongest Loser, Kojiro Sasaki'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
-Volund
+Volundr
 
 CONT [VC]: When your opponent’s sentinel would be retired from GC, it is bound instead of being retired.
 
@@ -1102,7 +1102,7 @@ CardStat = 9904
 global.CardName[CardStat] = 'Second Valkyrie Sister, Hrist'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-Volund - "History’s Greatest Loser, Kojiro Sasaki" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new Volund was Armed, put this card into the drop)
+Volundr - "History’s Strongest Loser, Kojiro Sasaki" (Play this as an Arms Order, and Arm it to the specified unit on VC. If this card that was Armed is no longer a unit, and a new Volundr was Armed, put this card into the drop)
 
 CONT [VC]: If this card is Armed to your vanguard, all the following effects are active.
 • ACT 1/Turn: COST [Soul Blast 2], and all of your front row rear-guards get power +5000 until end of turn.
@@ -1130,8 +1130,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9910
 {
-global.CardName[CardStat] = 'The Greatest Nordic God, Odin'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardName[CardStat] = 'Supreme Norse God, Odin'
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 CONT: Sentinel.
 
@@ -1144,10 +1144,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 9911
 {
-global.CardName[CardStat] = 'The Long Awaited Encounter'
+global.CardName[CardStat] = 'Much Awaited Encounter'
 global.CardText[CardStat] = 'Record of Ragnarok/Critical Trigger
 
-AUTO [RC]: At the end of the battle it boosted, COST [Put this unit into your soul], choose one of your <Humanity> or <Valkyrie> and that unit gets power +2000 until end of turn.'
+AUTO [RC]: At the end of the battle it boosted, COST [Put this unit into your soul], choose one of your <Man> or <Valkyrie> and that unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -1157,10 +1157,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9912
 {
-global.CardName[CardStat] = 'The Long Awaited Encounter '
+global.CardName[CardStat] = 'Much Awaited Encounter '
 global.CardText[CardStat] = 'Record of Ragnarok/Critical Trigger
 
-AUTO [RC]: At the end of the battle it boosted, COST [Put this unit into your soul], choose one of your <Deity> and that unit gets power +2000 until end of turn.'
+AUTO [RC]: At the end of the battle it boosted, COST [Put this unit into your soul], choose one of your <God> and that unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -1170,10 +1170,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9913
 {
-global.CardName[CardStat] = 'Overheating Limit Rush'
+global.CardName[CardStat] = 'A Rush Bordering on Overheating'
 global.CardText[CardStat] = 'Record of Ragnarok/Front Trigger
 
-CONT [GC]: If you have a <Humanity> or <Valkyrie> vanguard, and your opponent’s vanguard is a grade 3 or greater, this unit gets shield +5000.'
+CONT [GC]: If you have a <Man> or <Valkyrie> vanguard, and your opponent’s vanguard is a grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -1183,10 +1183,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9914
 {
-global.CardName[CardStat] = 'Overheating Limit Rush '
+global.CardName[CardStat] = 'A Rush Bordering on Overheating '
 global.CardText[CardStat] = 'Record of Ragnarok/Front Trigger
 
-CONT [GC]: If you have a <Deity> vanguard, and your opponent’s vanguard is a grade 3 or greater, this unit gets shield +5000.'
+CONT [GC]: If you have a <God> vanguard, and your opponent’s vanguard is a grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -1196,10 +1196,10 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 9915
 {
-global.CardName[CardStat] = 'Noble Style '
+global.CardName[CardStat] = 'Underpinning Style '
 global.CardText[CardStat] = 'Record of Ragnarok/Draw Trigger
 
-CONT [GC]: If you have a <Humanity> or <Valkyrie> vanguard and your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
+CONT [GC]: If you have a <Man> or <Valkyrie> vanguard and your opponent’s vanguard is a grade 3 or greater unit, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 10
 }
@@ -1209,8 +1209,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9916
 {
-global.CardName[CardStat] = 'Cheering First Son, Cain'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Rousing Oldest Son, Cain'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 ACT [RC]: COST [Put this unit into your soul], choose one of your units with "Adam" in its card name, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -1221,8 +1221,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9917
 {
-global.CardName[CardStat] = 'Miyamoto Musashi’s Adopted Son, Miyamoto Iori'
-global.CardText[CardStat] = 'Record of Ragnarok/Humanity
+global.CardName[CardStat] = 'Adopted Son of Musashi Miyamoto, Iori Miyamoto'
+global.CardText[CardStat] = 'Record of Ragnarok/Man
 
 CONT [RC]: This unit gets power +2000 for every two cards in your opponent’s bind zone. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
@@ -1234,7 +1234,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9918
 {
 global.CardName[CardStat] = 'God of Peace, Forseti'
-global.CardText[CardStat] = 'Record of Ragnarok/Deity
+global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO [RC]: When this unit’s attack hits a vanguard, if your vanguard is a <God>, COST [Soul Blast 2], and draw a card.'
 global.UnitGrade[CardStat] = 2
@@ -1245,7 +1245,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9919
 {
-global.CardName[CardStat] = 'This is the Moment History Changes'
+global.CardName[CardStat] = 'The Moment History is Transformed'
 global.CardText[CardStat] = 'Record of Ragnarok/Over Trigger
 
 Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
