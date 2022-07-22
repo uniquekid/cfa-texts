@@ -2365,7 +2365,7 @@ CardStat = 10075
 global.CardName[CardStat] = 'Magic of Mutation, Memerul'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [retire this unit], choose up to one Critical trigger or Front trigger from your drop, and put it into your hand.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [retire this unit], choose a critical trigger or Front trigger from your drop, and put it into your hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -2466,7 +2466,7 @@ CardStat = 10138
 global.CardName[CardStat] = 'Enucleate Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO [RC]: When your vanguard is placed by riding from a grade 3 unit, COST [Soul Blast 1 & retire this unit], and Counter Charge 1, choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO [RC]: When your vanguard is placed by riding from a grade 3, COST [Soul Blast 1 & retire this unit], and Counter Charge 1, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -2501,3 +2501,58 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10141
+{
+global.CardName[CardStat] = 'Decisive Axe Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
+
+CONT [RC]: During the battle this unit attacked, if your vanguard rode by a card effect this turn, your opponent cannot call normal units from hand to GC. 
+'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10142
+{
+global.CardName[CardStat] = 'Departure to the Dawn'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Play this with COST [Counter Blast 1]!
+
+Look at the top five cards of your deck, choose up to one card with "Revolform" in its card name from among them and reveal it and put it into your hand, or choose up to one grade 2 or less card from among them and call it to RC. Shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10146
+{
+global.CardName[CardStat] = 'Quadracast Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Sorceress" in its card name, look at the top two cards of your deck, put them on the top of your deck in any order, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10147
+{
+global.CardName[CardStat] = 'Octaray Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose up to two cards from among them, put them into your hand, and put the rest on the top of your deck in any order. If you put two cards into your hand, choose a card from your hand, and put it on the bottom of your deck.
+
+AUTO [RC]: When this unit attacks, if you persona rode this turn, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

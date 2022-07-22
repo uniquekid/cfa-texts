@@ -2077,7 +2077,7 @@ CardStat = 9696
 global.CardName[CardStat] = 'Burning Horn Dragon  '
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Kagero
 
-AUTO:When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, reveal up to one card with "Overlord" in its card name, put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge (1).
+AUTO:When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, reveal up to one card with "Overlord" in its card name, put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge 1.
 
 AUTO [RC]:When your vanguard with "Overlord" in its card name attacks, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -2235,9 +2235,9 @@ CardStat = 10042
 global.CardName[CardStat] = 'Dragritter, Harb'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-CONT: When this card would be discarded for the cost of your vanguard with "Overlord" in its card name’s ability, it may be regarded as discarding two cards.
+CONT: When this card would be discarded for the cost of the ability of your vanguard with "Overlord" in its card name, it may be regarded as discarding two cards.
 
-AUTO: When this card is discarded from hand for the cost of your vanguard with "Overlord" in its card name’s ability, you may call this card to your back row RC. If you called, this unit gets power +5000 until end of turn.'
+AUTO: When this card is discarded from hand for the cost of the ability of your vanguard with "Overlord" in its card name, you may call this card to your back row RC. If you called, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2304,3 +2304,15 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+
+CardStat = 10145
+{
+global.CardName[CardStat] = 'Blaze Maiden, Shadia'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is placed on RC from hand, if you have two or more normal units with "Blaze Maiden" in their card names, COST [Soul Blast 1], search your deck for up to one "Trickstar" or "Trickmoon", discard it, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

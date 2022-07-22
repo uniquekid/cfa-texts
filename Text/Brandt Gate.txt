@@ -848,7 +848,7 @@ CardStat = 8639
 global.CardName[CardStat] = 'Twisting Bulldoze'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO [RC]: When this unit attacks, if you have more rear-guards than your opponent, COST [Counter Blast 1], Soul Charge 1, and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if the number of your rear-guards is more than your opponent’s, COST [Counter Blast 1], Soul Charge 1, and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -1354,9 +1354,9 @@ CardStat = 9296
 global.CardName[CardStat] = 'Invasion Monster, Azuzuradon'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC]: When this unit attacks, your opponents unit being attacked gets power -2000 until end of that battle.
+AUTO [RC]: When this unit attacks, your opponent’s attacked unit gets power -2000 until end of that battle.
 
-AUTO [RC]: When this unit is attacked, your opponents unit that attacked gets power -2000 until end of that battle.'
+AUTO [RC]: When this unit is attacked, your opponent’s attacking unit gets power -2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -2045,7 +2045,7 @@ CardStat = 10120
 global.CardName[CardStat] = 'Heroes Base "A.E.G.I.S."'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Base
 
-AUTO: When this card is put into the Order Zone, look at seven cards from the top of your deck, choose up to three cards with "Hero" in their card names, reveal them, put up to one card from among them into your hand, and scout up to two cards into your Base, and shuffle your deck.
+AUTO: When this card is put into the Order Zone, look at the top seven cards your deck, choose up to three cards with "Hero" in their card names, reveal them, put up to one card from among them into your hand, and scout up to two cards into your Base, and shuffle your deck.
 
 ACT [Order Zone]: COST [rest this card & discard a card from your hand], choose one of your scouted cards with a grade less than or equal to your vanguard’s grade, and call it to RC.
 
@@ -2076,7 +2076,7 @@ CardStat = 10122
 global.CardName[CardStat] = 'Galactic Hero, Wired Crossten'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-ACT [VC] 1/Turn: COST [Scout a card with "Hero" in its card name from your hand into your Base], and draw a card.
+ACT [VC] 1/Turn: COST [Scout a card with "Hero" in its card name from your hand into your Base], and draw a card. (Put the scouted card into your Order Zone face up)
 
 AUTO [RC] 1/Turn: When this unit moves to another RC during your battle phase, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -2090,7 +2090,7 @@ CardStat = 10123
 global.CardName[CardStat] = 'Galactic Hero, Unite Dyanos'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-CONT [VC]: All of your front row rear-guards with "Hero" in their card names get power +5000. (Active during your opponent’s turn as well)
+CONT [VC]: All of your front row rear-guards with "Hero" in their card names get power +5000. (Active on opponent’s turn too)
 
 AUTO [VC]: When this unit attacks, if your Order Zone has a Base card, COST [Counter Blast 1], this unit gets power +15000 until end of that battle, and if your Order Zone has three or more Base cards, it gets critical +1.'
 global.UnitGrade[CardStat] = 3
@@ -2106,7 +2106,7 @@ CardStat = 10124
 global.CardName[CardStat] = 'Galactic Hero, Direct Folie'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [Back Row Center RC]: At the end of the battle that your grade 3 vanguard with "Hero" in its card name attacked, COST [Soul Blast 1 & rest this unit], choose two of your rear-guards in the same column as each other, and exchange their positions.'
+AUTO [Back Row Center RC]: At the end of the battle that your grade 3 vanguard with "Hero" in its card name attacked, COST [Soul Blast 1 & rest this unit], choose two of your rear-guards in the same column as each other, and switch their positions.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -2118,7 +2118,7 @@ CardStat = 10125
 global.CardName[CardStat] = 'Galactic Hero, Flaton Sphire'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s rear-guards in the same column as this unit, and retire it.
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s front row rear-guards in the same column as this unit, and retire it.
 
 CONT [RC]: During your turn, if your Order Zone has a Base card, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -2143,12 +2143,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10127
 {
-global.CardName[CardStat] = 'From here on is the Destination of the Experiment'
+global.CardName[CardStat] = 'From Here On Now, The Point of the Experiment'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Research
 
 CONT [Order Zone]: All of your rear-guards with "Obscudeid" in their card names cannot be retired by your opponent’s card effects.
 
-ACT [Order Zone]: If your order zone has four or more Research cards, COST [Put this card into your soul], Counter Charge 1, choose a card with "Obscudeid" in its card name from your drop zone, and put it into your hand.'
+ACT [Order Zone]: If your order zone has four or more Research cards, COST [put this card into your soul], Counter Charge 1, choose a card with "Obscudeid" in its card name from your drop zone, and put it into your hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -2163,7 +2163,7 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
 
-AUTO [Drop]: When a Set Order you played from hand is put into your Order Zone, COST [Counter Blast 1], and call this card to RC.'
+AUTO [Drop]: When a Set Order you played from hand is put into the Order Zone, COST [Counter Blast 1], and call this card to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
