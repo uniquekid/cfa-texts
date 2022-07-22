@@ -2225,7 +2225,7 @@ CardStat = 10111
 global.CardName[CardStat] = 'Merciless Count, Botis'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC]: When you Soul-Blast 2 or more at the same time for your card’s ability’s cost, this unit gets power +5000 until end of turn. If you Soul-Blast 3 or more at the same time, COST [Counter Blast 1], choose a card from your drop, put it into your soul, choose up to one of your opponent’s rear-guards with the same grade as that card, and retire it. (Count the number of Soul-Blast for one cost)'
+AUTO [RC]: When you Soul Blast 2 or more at the same time for your card’s ability’s cost, this unit gets power +5000 until end of turn. If you Soul Blast 3 or more at the same time, COST [Counter Blast 1], choose a card from your drop, put it into your soul, choose up to one of your opponent’s rear-guards with the same grade as that card, and retire it. (Count the number of Soul Blast for one cost)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 }
@@ -2250,7 +2250,7 @@ CardStat = 10113
 global.CardName[CardStat] = 'Diabolos Diver, Julian'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], and this unit gets power +2000 until end of turn for each card in your damage zone. If you have a vanguard with "Bruce" in its card name, Soul Charge 1 for every two cards in your damage zone. Choose up to the same number of cards Soul Charge by this effect from your soul, and call them to open (RC).'
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], and this unit gets power +2000 until end of turn for each card in your damage zone. If you have a vanguard with "Bruce" in its card name, Soul Charge 1 for every two cards in your damage zone. Choose up to the same number of cards Soul Charge by this effect from your soul, and call them to open RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 }
@@ -2279,10 +2279,62 @@ CardStat = 10135
 global.CardName[CardStat] = 'Desire Devil, Hikou'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [Soul]: When your grade 3 or greater vanguard with "Greedon" in its card name attacks, COST [bind one other "Desire Devil, Hikou" from your soul as face up], and call this card to a back row RC.'
+AUTO [Soul]: When your grade 3 or greater vanguard with "Greedon" in its card name attacks, COST [bind another "Desire Devil, Hikou" from your soul face up], and call this card to a back row RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
-global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10143
+{
+global.CardName[CardStat] = 'Diabolos Digger, Basil'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: When this unit attacks while boosted, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10144
+{
+global.CardName[CardStat] = 'Diabolos Girls, Kristen'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC from soul, if you are in "Final Rush", Soul Charge 2 for every two cards in your damage zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10149
+{
+global.CardName[CardStat] = 'One Who Governs Chaos'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+Play this with COST [Counter Blast 1]!
+
+Look at the top five cards of your deck, choose up to the same number of cards from among them as the number of cards with "Kheios" in their different card names from your soul, put them into your soul, and shuffle your deck. Then, if your soul has eight or more cards with different card names, choose up to one card from your soul, call it to RC, choose one of your rear-guards with "Mikani" in its card name, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10148
+{
+global.CardName[CardStat] = 'Direful Doll, Amandine'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+CONT [RC]: During your turn, if your soul has ten or more cards, this unit gets power +10000.
+
+ACT [RC] 1/Turn: COST [Counter Blast 1], and until end of turn, when you would Soul Charge by your card’s ability, increase that amount by 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

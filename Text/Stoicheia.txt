@@ -2135,7 +2135,7 @@ CardStat = 10098
 global.CardName[CardStat] = 'Energetic Rythm, Biara'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO [RC]: When the attack this unit boosted hits a Vanguard, COST [Put a Grade 2 or less card from your hand into the soul], draw 1 card.'
+AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [Put a Grade 2 or less card from your hand into the soul], draw 1 card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -2257,3 +2257,57 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 9583
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+CardStat = 10150
+{
+global.CardName[CardStat] = 'Determination of the Pair'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+(After a Set Order is played, put it into your Order Zone.)
+Play this with COST [Counter Blast 1 & retire a rear-guard] if you have a vanguard with "Rorowa" in its card name!
+
+AUTO: When this card is put into the Order Zone, search your deck for up to one card with "Radylina" in its card name, reveal it and put it into your hand, and shuffle your deck.
+
+CONT [Order Zone]: During your turn, if you have a vanguard with "Rorowa" in its card name, all of your back row token units get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10151
+{
+global.CardName[CardStat] = 'Ensemble of Smiles, Amalie'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO [RC]: When this unit boosts, if you have another grade 1 or less rear-guard, this unit gets power +2000 until end of that battle. Then, if it is boosting a grade 3 or greater vanguard, COST [Counter Blast 1 & Soul Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10152
+{
+global.CardName[CardStat] = 'Marching Debut, Purite'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+CONT [RC]: During your turn, if you have three or more grade 1 or less rear-guards, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10153
+{
+global.CardName[CardStat] = 'Recorder Racoon'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO [RC]: When this unit boosts, if you have a vanguard with "Lianorn" in its card name, your opponent cannot intercept until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
