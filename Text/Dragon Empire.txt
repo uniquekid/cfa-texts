@@ -2272,7 +2272,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10064
 {
 global.CardName[CardStat] = 'Equipped Steel Dragon, Balcon'
-global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
 ACT [RC] 1/Turn: COST [Counter Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -2307,7 +2307,7 @@ global.PowerStat[CardStat] = 0
 
 CardStat = 10145
 {
-global.CardName[CardStat] = 'Blaze Maiden, Shadia'
+global.CardName[CardStat] = 'Blaze Maiden, Shahdiya'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO: When this unit is placed on RC from hand, if you have two or more normal units with "Blaze Maiden" in their card names, COST [Soul Blast 1], search your deck for up to one "Trickstar" or "Trickmoon", discard it, and shuffle your deck.'
@@ -2316,3 +2316,114 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10158
+{
+global.CardName[CardStat] = 'Surprise Egg'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10159
+{
+global.CardName[CardStat] = 'Heart-pounding Blaze Maiden, Rino'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by "Snuggling Blaze Maiden, Reiyu", search your deck for up to one "Trickstar", call it to RC, and shuffle your deck.
+
+CONT [RC]: During your turn, if you have a <Prayer Dragon> unit in the same column as this unit, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10160
+{
+global.CardName[CardStat] = 'Snuggling Blaze Maiden, Reiyu'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by "Chakrabarthi Phoenix Dragon, Nirvana Jheva", look at the top seven cards of your deck, choose up to one <Prayer Dragon> from among them, reveal it and put it into your hand, and shuffle your deck.
+
+CONT [RC]: During your turn, if you have a <Prayer Dragon> unit in the same column as this unit, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10161
+{
+global.CardName[CardStat] = 'Chakrabarthi Phoenix Dragon, Nirvana Jheva'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+ACT [VC] 1/turn: COST [Discard a card from your hand], choose up to one "Trickstar" and <Prayer Dragon> each from your drop, and call them to RC.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards in the X-overDress state, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10162
+{
+global.CardName[CardStat] = 'Sword Equip Dragon, Galondight'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit becomes an originalDress, choose one of this card’s outerDress units, until end of turn, it gets power +5000, and the outerDress is "Jeweled Sword Equip, Garou Vairina", it gets power+5000. (An outerDress is the unit that this card is the originalDress of)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10163
+{
+global.CardName[CardStat] = 'Jeweled Sword Equip, Garou Vairina'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+
+CONT [RC]: If this unit is in the X-overDress state, this unit gets power +10000, and for the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time. (Active on opponent’s turn too)
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10164
+{
+global.CardName[CardStat] = 'Flash Equip Dragon, Bramahda'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit becomes an originalDress, COST [Counter Blast 1], draw two cards, choose a a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10165
+{
+global.CardName[CardStat] = 'Brilliant Equip, Bram Vairina'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+
+CONT [RC]: During your turn, if this unit is in the X-overDress state, this unit gets power +10000, and if your opponent’s vanguard is grade 3 or greater, it gets power +10000.
+
+AUTO [RC] 1/Turn: When this unit’s attack hits a vanguard, if this unit is in the X-overDress state, COST [Soul Blast 1], choose a column, and retire all of your opponent’s rear-guards in that column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
