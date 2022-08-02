@@ -1839,7 +1839,7 @@ CardStat = 9519
 global.CardName[CardStat] = 'Return Stroke Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponents front row rearguards, retire it, and this unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponents front row rear-guards, retire it, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2495,3 +2495,17 @@ global.DCards[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+CardStat = 10189
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Shabda'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+CONT [RC]: During your turn, if your VC has two or more Arms, this unit gets power +5000.
+
+AUTO [Drop]: When your unit is placed on RC from drop, if your vanguard is "Sealed Blaze Maiden, Bavsargra", COST [Counter Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
