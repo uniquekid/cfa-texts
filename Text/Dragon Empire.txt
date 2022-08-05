@@ -1839,7 +1839,7 @@ CardStat = 9519
 global.CardName[CardStat] = 'Return Stroke Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponents front row rearguards, retire it, and this unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponents front row rear-guards, retire it, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2362,7 +2362,7 @@ CardStat = 10161
 global.CardName[CardStat] = 'Chakrabarthi Phoenix Dragon, Nirvana Jheva'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-ACT [VC] 1/turn: COST [Discard a card from your hand], choose up to one "Trickstar" and <Prayer Dragon> each from your drop, and call them to RC.
+ACT [VC] 1/Turn: COST [Discard a card from your hand], choose up to one "Trickstar" and <Prayer Dragon> each from your drop, and call them to RC.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards in the X-overDress state, and stand it.'
 global.UnitGrade[CardStat] = 3
@@ -2377,7 +2377,7 @@ CardStat = 10162
 global.CardName[CardStat] = 'Sword Equip Dragon, Galondight'
 global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
-AUTO: When this unit becomes an originalDress, choose one of this card’s outerDress units, until end of turn, it gets power +5000, and the outerDress is "Jeweled Sword Equip, Garou Vairina", it gets power+5000. (An outerDress is the unit that this card is the originalDress of)'
+AUTO: When this card becomes an originalDress, choose one of this card’s outerDress units, until end of turn, it gets power +5000, and if the outerDress is "Jeweled Sword Equip, Garou Vairina", it gets power+5000. (An outerDress is the unit that this card is the originalDress of)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2404,7 +2404,7 @@ CardStat = 10164
 global.CardName[CardStat] = 'Flash Equip Dragon, Bramahda'
 global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
-AUTO: When this unit becomes an originalDress, COST [Counter Blast 1], draw two cards, choose a a card from your hand, and discard it.'
+AUTO: When this card becomes an originalDress, COST [Counter Blast 1], draw two cards, choose a a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2427,3 +2427,118 @@ global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10169
+{
+global.CardName[CardStat] = 'Piercing Thoughts'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order
+
+Play this with COST [Counter Blast 1 & discard a card from your hand]!
+
+Choose up to two cards with the X-overDress ability from your drop, and put them into your hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10170
+{
+global.CardName[CardStat] = 'Sharp Equip Dragon, Adamaros'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card becomes an originalDress, COST [Counter Blast 1], choose one of this card’s outerDress units, and it gets power +10000 until end of turn. (An outerDress is the unit with this card as an originalDress)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10171
+{
+global.CardName[CardStat] = 'Wall Equip Dragon, Vilskil'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card’s outerDress is retired from RC or GC, COST [Soul Blast 2], and call this card to an open RC. (An outerDress is the unit with this card as an originalDress)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10172
+{
+global.CardName[CardStat] = 'Rigid Wall Equip, Vils Vairina'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+
+AUTO: When this unit is placed on RC by X-overDress, choose a card with the X-overDress ability from your drop other than "Rigid Wall Equip, Vils Vairina", and put it into your hand.
+
+CONT [RC/GC]: If this unit is in the X-overDress state, this unit cannot be chosen by your opponent’s card effects, and gets power +5000/shield +10000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10176
+{
+global.CardName[CardStat] = 'Thundering Dragon King of Battle Dust, Shadlanahda'
+global.CardText[CardStat] = 'Dragon Empire/Plasma Dragon/Over Trigger
+
+Additional Effect - Choose one of your vanguards, and stand it!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+CardStat = 10189
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Shabda'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+CONT [RC]: During your turn, if your VC has two or more Arms, this unit gets power +5000.
+
+AUTO [Drop]: When your unit is placed on RC from drop, if your vanguard is "Sealed Blaze Maiden, Bavsargra", COST [Counter Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10211
+{
+global.CardName[CardStat] = 'Blaze Sense Monk, Hakume'
+global.CardText[CardStat] = 'Dragon Empire/Human/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10212
+{
+global.CardName[CardStat] = 'Blaze Maiden, Arche'
+global.CardText[CardStat] = 'Dragon Empire/Human/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 10213
+{
+global.CardName[CardStat] = 'Blaze Maiden, Leonie'
+global.CardText[CardStat] = 'Dragon Empire/Human/Heal Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
