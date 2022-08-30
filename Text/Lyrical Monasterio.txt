@@ -3453,7 +3453,7 @@ global.CardName[CardStat] = 'Mystica Pellucid, Jennifer'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 ACT [RC] 1/Turn: If you have four or more units, COST [discard a card from your hand], choose a normal order from your drop, and it gets "CONT: This card can be played from the drop, and when it would be put into your drop after being played, put it on the bottom of your deck instead." until end of turn.'
-global.UnitGrade[CardStat] = 2
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
@@ -3826,12 +3826,12 @@ CardStat = 10288
 global.CardName[CardStat] = 'Flower Cannonball'
 global.CardText[CardStat] = 'Lyrical Monasterio/Set Order/Cannonball
 
-Play this with COST [Counter Blast (1)]!
+Play this with COST [Counter Blast 1]!
 
 AUTO: When this card is put into your Order Zone, draw a card.
 
 ACT [Order Zone]: If you have a grade 3 or greater card with "Michu" in its card name, COST [put this card into your drop], and change all of your vanguard’s Cannonball abilities to "AUTO [VC]: When this unit attacks, COST [Soul Blast 2], choose three of your units, and they get power +10000 until end of turn." until end of turn.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
 }
@@ -3903,3 +3903,124 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10299
+{
+global.CardName[CardStat] = 'Transluscent Sparkle, Aura'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When the attack this unit boosted hits, COST [retire this unit], search your deck for up to one order card, reveal it and put it into your hand, and shuffle your deck.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10300
+{
+global.CardName[CardStat] = 'Hydrangea Waiting for Clear Weather, Philine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO: When this unit is placed on RC by the ability of your grade 3 or greater vanguard, this unit gets power +10000 until end of turn.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10301
+{
+global.CardName[CardStat] = 'Physical Training from Scratch, Luticia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10302
+{
+global.CardName[CardStat] = 'Staying in Even on Days Off, Luticia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is rode upon by a grade 2 with "Luticia" in its card name, COST [Put a card from hand on the bottom of deck], search your deck for up to one Cursed Play card, reveal it and put it into your hand, and shuffle your deck.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10303
+{
+global.CardName[CardStat] = 'Heavily Leaning on Expectations, Luticia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+CONT [VC]: If your soul has a Cursed Play card, when you would ride a grade 3 card with "Luticia" in its card name from your ride deck, you can ride with "Soul Blast 1  card with "Luticia" in its card name" instead of "Choose a card from your hand, and discard it".' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10304
+{
+global.CardName[CardStat] = 'Grimoire Etoile, Luticia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [VC]: When you play a normal order, this unit gets power +5000 until end of turn.
+
+AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], and perform all of the following according to the number of Cursed Play cards in your soul.
+· Two or more - Draw a card, and this unit gets power +5000 until end of turn.
+· Four or more - At the end of that battle, COST [Discard a card from hand], stand this unit, and it gets drive -1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10305
+{
+global.CardName[CardStat] = 'Overflow Happiness, Naustria'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Luticia" in its card name, look at the top three cards of your deck, choose one card from among them, put it into your soul, and put the rest on the bottom of your deck in any order. 
+
+AUTO [RC]: When this unit attacks, if your soul has two or more Cursed Play cards, this unit gets power +5000 until end of that battle. If your soul has four or more Cursed Play cards, power +15000 instead of +5000.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10306
+{
+global.CardName[CardStat] = 'Cursed Sugar Sparkle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Cursed Play
+
+Play this if you have a vanguard with "Luticia" in its card name!
+
+Put this card into your soul, and Soul Charge 1, Choose up to one card from your soul with grade less than or equal to your vanguard, call it to RC, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10307
+{
+global.CardName[CardStat] = 'Anathema Slap Twinkle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Blitz Order/Cursed Play
+
+Play this if you have a vanguard with "Luticia" in its card name!
+
+Put this card into your soul, choose one of your units, and it gets power +15000 until end of that battle. If your soul has four or more Cursed Play cards, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
