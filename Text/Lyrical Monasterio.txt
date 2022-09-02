@@ -3114,9 +3114,9 @@ CardStat = 10185
 global.CardName[CardStat] = 'Boisterous High Tension, Roxella'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-Friend - CONT [RC]: If you have another unit in the same column as this unit, that unit and this unit become "Friends".
+Friend - CONT [RC]: If you have another unit in the same column as this unit, that unit and this unit become "Friends."
 
-AUTO [RC]: When this unit attacks a vanguard, if you have three or more other "Friends", this unit gets power +5000 until end of that battle. If you have five or more, choose one of your rear-guards with the "Friend" ability not in the same column as this unit, and you may return it to your hand. '
+AUTO [RC]: When this unit attacks a vanguard, if you have three or more other "Friends", this unit gets power +5000 until end of that battle. If you have five or more, choose one of your rear-guards with the Friend ability not in the same column as this unit, and you may return it to your hand. '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -3692,7 +3692,7 @@ global.CardName[CardStat] = 'Fondant Solace, Mediell'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 ACT [VC] 1/Turn: COST [Counter Blast 2], reveal the top card of your deck, and perform one of the following according to that card’s type.
-· Normal Unit - Put the revealed card into your hand, choose a card from your drop, call it to RC, and that called unit gets critical +1 until end of turn.
+· Normal Unit - Put that revealed card into your hand, choose a card from your drop, call it to RC, and that called unit gets critical +1 until end of turn.
 · Trigger Unit - Counter Charge 1, choose a card from your drop, and call it to RC. (Return the revealed card to its original spot)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
@@ -4024,3 +4024,285 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10308
+{
+global.CardName[CardStat] = 'Splash Delight, Pelsis'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Lilfa" in its card name, Soul Charge 1, and this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10309
+{
+global.CardName[CardStat] = 'Squeeze Out, Unity'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When placed on RC from hand, COST[Counter Blast 1], choose a card from your order zone, return it to hand' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10310
+{
+global.CardName[CardStat] = 'Class is Boring, Modito'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When placed on RC, if you have a grade 3 or greater vanguard with "Luticia" in its card name, COST [Counter Blast 1], choose up to one Cursed Play card from your drop, and put it to your hand.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10311
+{
+global.CardName[CardStat] = 'Sudden Shower, Luela'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+ACT [RC] 1/Turn: If you have a vanguard with "Mediell" in its card name COST[Counter Blast 1], look at the top card of your deck, put it on the top of your deck or into your soul, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10312
+{
+global.CardName[CardStat] = 'Flapping Wind Sound, Cliche'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on RC from drop, choose one of your vanguards with "Mediell" in its card name, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10313
+{
+global.CardName[CardStat] = 'Water Ball Diva, Prissy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+CONT [RC]: If your Order Zone has a Set Order, this unit gets Shield +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10314
+{
+global.CardName[CardStat] = 'Literally Act, Karissa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit attacks a vanguard, if your soul has two or more Cursed Play cards, COST [Soul Blast 1], this unit gets power +10000 until end of that battle. At the end of that battle, put this unit into your soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10315
+{
+global.CardName[CardStat] = 'Helianthus Girl, Faune'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [RC]: During your turn, if you have another back row rear-guard, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10316
+{
+global.CardName[CardStat] = 'Crepuscule, Agrea'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+Powerful - AUTO [RC]: When this unit attacks, if there are no cards in your soul, this unit gets power +5000 for battle.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10317
+{
+global.CardName[CardStat] = 'Drifting in Paradise, Ryutivin'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+ACT [RC] 1/Turn: if you have two or more Cursed Play cards in your soul, COST [Soul Blast 1] get power +10000 for turn' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10318
+{
+global.CardName[CardStat] = 'Well-Informed, Federma'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [RC] 1/Turn: If you played a Magazine order this turn COST [Counter Blast 1], this unit gets power +10000 until the end of turn' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10319
+{
+global.CardName[CardStat] = 'Innocence Resonating Across the Blue Sky, Alviel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+CONT [RC]: If this unit is a Friend, this unit gets "AUTO: When it intercepts, it gets shield +10000 until the end of that battle.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10320
+{
+global.CardName[CardStat] = 'Refresh Breeze, Aill'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [GC]: During battle your vanguard with "Mediell" is attacked, this gets shield +5000.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10321
+{
+global.CardName[CardStat] = 'Gentle Benevolence, Mime'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When placed, if you have a vanguard with "Hazelitt" this gets +5000 until end of turn.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10322
+{
+global.CardName[CardStat] = 'Not Good With Heat, York'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When placed from hand, COST [Soul Blast 1] to look at five cards from the top of your deck, choose up to 1 "Lyrical ShootingStarS", reveal it, put it to hand, and shuffle deck.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10323
+{
+global.CardName[CardStat] = 'Searching for a Big One! Brea'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit boosts, if your soul has two or more Cursed Play cards, this unit gets power +5000 until end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10324
+{
+global.CardName[CardStat] = 'Going Home In Scarlet, Merilyn'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit boosts, if your rear-guard was put to the bottom of your deck during this turn, this unit gets power +5000 until the end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10325
+{
+global.CardName[CardStat] = 'Minimal Style, Fuuka'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [RC]: During your turn, this unit gets power +5000, and if there are one or more cards in your soul, this unit cannot attack nor Boost.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10326
+{
+global.CardName[CardStat] = 'Playing with Wings, Raquel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When put on GC, if you have two or more grade 2 or greater rear-guards in your back row, this unit gets shield +5000 until end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10327
+{
+global.CardName[CardStat] = 'Temptation of Frozen Desserts, Ripley'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit attacks, if you have two or more grade 2 or greater rear-guards in your back row, this unit gets power +5000 until end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10328
+{
+global.CardName[CardStat] = 'Leaning Against The Wisteria Trellis, Weple'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+ACT [RC]: COST [Put this unit and a Blitz Order from your hand to your soul], choose one of your vanguards and that unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10329
+{
+global.CardName[CardStat] = 'Soak in the Coolness, Yuuto'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [RC]: If you have a vanguard with "Mediell" in its name, COST [Put this unit to your soul], look at the top card of your deck and put it on the top or bottom of your deck. If you put it on the bottom of your deck, choose one of your units and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10330
+{
+global.CardName[CardStat] = 'Moffi Master, Touna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit boosts, COST [Soul Blast 1] and for each of your other Friends, this unit gets power +2000 until end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
