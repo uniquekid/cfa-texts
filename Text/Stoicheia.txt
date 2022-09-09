@@ -2538,7 +2538,33 @@ CardStat = 10341
 global.CardName[CardStat] = 'Festoso Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Lianorn" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one grade 3 or less card from among them, call it to RC, it gets "Boost" until end of turn, and put the rest on the bottom of your deck in any order.'
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Lianorn" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one grade 3 or less card from among them, call it to RC, it gets "Boost" until end of turn, and discard the rest.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10342
+{
+global.CardName[CardStat] = 'Benevolence Maiden, Aracelise'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], discard the top three cards of your deck, choose a card from your drop, call it to RC if it is grade 2 or less, and put it into your hand if it has the same name as your vanguard.
+'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10343
+{
+global.CardName[CardStat] = 'Ferocious Hunter'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO [RC]: When this unit’s attack hits a vanguard, choose one of your rear-guards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
