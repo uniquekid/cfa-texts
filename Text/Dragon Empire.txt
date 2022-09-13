@@ -2575,7 +2575,9 @@ global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
 AUTO: When this unit is placed on RC by a card’s ability, this unit gets power +5000 until end of turn.
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard in the same column as this unit is retired your card’s ability, COST [Counter Blast 1], and draw a card.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard in the same column as this unit is retired your card’s ability, COST [Counter Blast 1], and draw a card.
+
+(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2589,7 +2591,9 @@ global.CardText[CardStat] = 'Dragon Empire/Blaze Dragon
 
 CONT [RC]: During your turn, if your VC has two or more Arms, this unit gets power +5000.
 
-ACT [RC]: If there is an Arms card on your VC, COST [retire this unit], choose an Arms card from your hand or drop, and Arm it to one of your vanguards. If you Armed a card, you cannot Arm your vanguard until end of turn. '
+ACT [RC]: If there is an Arms card on your VC, COST [retire this unit], choose an Arms card from your hand or drop, and Arm it to one of your vanguards. If you Armed a card, you cannot Arm your vanguard until end of turn.
+
+(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2601,7 +2605,9 @@ CardStat = 10334
 global.CardName[CardStat] = 'Beautiful Bullet of Dust Storm, Jodie'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-ACT [RC] 1/Turn: If you have a vanguard with "Eugene" in its card name, COST [Soul Blast 1], choose a grade 2 or less normal unit from your drop other than a sentinel, and put it on the top or bottom of your deck.'
+ACT [RC] 1/Turn: If you have a vanguard with "Eugene" in its card name, COST [Soul Blast 1], choose a grade 2 or less normal unit from your drop other than a sentinel, and put it on the top or bottom of your deck.
+
+(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2619,3 +2625,53 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10355
+{
+global.CardName[CardStat] = 'Thrust Equip Dragon, Varsavul'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit becomes an originalDress, COST [Counter Blast 1], choose a grade 1 or less <Prayer Dragon> from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10356
+{
+global.CardName[CardStat] = 'Thundering Artillery Dragon, Salvorex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+CONT [RC]: During your turn, this unit gets power +10000, and if your opponent’s front row has a rear-guard, this unit cannot attack the vanguard.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10357
+{
+global.CardName[CardStat] = 'Blaze Maiden, Sienna'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO [RC]: When this unit attacks a vanguard, if have a rear-guard with two or more originalDress, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10358
+{
+global.CardName[CardStat] = 'Hailing Bullet of Dust Storm, Nawfal'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+ACT [RC]: If you have a vanguard with "Eugene" in its card name, COST [bind this unit], choose up to two normal units from your drop other than sentinels, and put them into your soul. If your opponent’s rear-guard was retired this turn, you may put all of the chosen cards on the top of your deck in any order instead of into your soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
