@@ -2736,9 +2736,54 @@ CardStat = 10338
 global.CardName[CardStat] = 'Knight of Severing, Teutates'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-ACT [RC]: If you have three or more grade 3 or greater units, COST [retire this unit], choose one of your opponent’s rear-guards, and put it on the bottom of their deck.'
+AUTO [RC]: When your vanguard with critical 2 or greater attacks, COST [Soul Blast 1], and that unit and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10359
+{
+global.CardName[CardStat] = 'Wayward Therapy Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT: This card cannot be ridden, and cannot be normal called to RC from hand.
+
+AUTO: When this unit is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC. 
+'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10360
+{
+global.CardName[CardStat] = 'Witch of Accumulation, Sequana'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if you have a vanguard with "Youthberk" in its card name, this unit gets power +2000.
+
+AUTO [RC]: When your unit is placed on VC by the RevolDress ability, COST [put this unit into your soul], choose one of your vanguards, and increase or decrease its drive to 1 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10361
+{
+global.CardName[CardStat] = 'Youthberk "RevolForm: Tempest"'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on VC by the RevolDress ability, all of your front row units get power +5000 until end of turn. Then, COST [Counter Blast 1], reveal the top two cards of your deck, choose one of your opponent’s rear-guards with the same grade as any of the cards from among them, and put it on the bottom of their deck. Put all of the revealed cards into your hand.
+
+AUTO [VC]: At the end of your turn, choose a card with the RevolDress ability from your soul, and ride it as rest.
+'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
