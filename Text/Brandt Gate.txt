@@ -2352,7 +2352,7 @@ global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
 CONT: This card cannot be played.
 
-Operate - AUTO [Order Zone]: When this card is operated, choose one of your opponent’s rear-guards, retire it, choose one of your opponent’s vanguards, and it gets power -5000 until end of turn. COST [Counter Blast 1 & Return a rear-guard to your hand], call this card as a power 23000/critical 1 normal unit to an open RC as Stand. If you called, put that unit into your Order Zone at the end of turn. 
+Operate - AUTO [Order Zone]: When this card is operated, choose one of your opponent’s rear-guards, retire it, choose one of your opponent’s vanguards, and it gets power -5000 until end of turn. COST [Counter Blast 1 & Return a rear-guard to your hand], call this card as a power 23000/critical 1 normal unit to an open RC as stand. If you called, put that unit into your Order Zone at the end of turn. 
 '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
@@ -2476,4 +2476,43 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10384
+{
+global.CardName[CardStat] = 'Blitz Accounting Section Chief, Zoldio'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO [RC]: When your "Mobile Fortress of Obliteration, Freischutz Maximum" is operated, if you did not Counter Charge this turn, COST [Soul Blast 1], and Counter Charge 1.
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10385
+{
+global.CardName[CardStat] = 'Blitz Top Sales, Anrege'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+ACT [RC]: If you have a vanguard with "Welstra" in its card name, COST [retire this unit], search your deck or drop for up to one "Heavy Strike Cannon Fortress, Freischutz" or "Mobile Fortress of Obliteration, Freischutz Maximum", reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10386
+{
+global.CardName[CardStat] = 'Blitz Security, Wachten'
+global.CardText[CardStat] = 'Brandt Gate/High Beast
+
+AUTO: When this unit is put on GC, if your Order Zone has a Product, this unit gets shield +5000 until end of that battle.
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
