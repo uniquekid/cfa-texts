@@ -2555,7 +2555,7 @@ CardStat = 10342
 global.CardName[CardStat] = 'Benevolence Maiden, Aracelise'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], discard the top three cards of your deck, choose a card from your drop, call it to RC if it is grade 2 or less, and put it into your hand if it has the same name as your vanguard.
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], discard the top three cards of your deck, choose a card from your drop, call it to RC if it is grade 2 or less, and put it into your hand if it has the same card name as your vanguard.
 '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
@@ -2598,4 +2598,41 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10378
+{
+global.CardName[CardStat] = 'Sylvan Horned Beast, Tigarta'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO [Front Row RC]: When your other unit in the same column as this unit attacks, that unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10379
+{
+global.CardName[CardStat] = 'Noblesse Flitt'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10380
+{
+global.CardName[CardStat] = 'Assist-fire Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO [Back Row Center RC]:When your rear-guard attacks, if it is the first battle of this turn, that unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 5000

@@ -2389,9 +2389,9 @@ CardStat = 10163
 global.CardName[CardStat] = 'Jeweled Sword Equip, Garou Vairina'
 global.CardText[CardStat] = 'Dragon Empire/Talisman
 
-X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by stacking it on all of the specified units instead of normal calling it to RC)
 
-CONT [RC]: If this unit is in the X-overDress state, this unit gets power +10000, and for the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time. (Active on opponent’s turn too)
+CONT [RC]: If this unit is in the X-overDress state, this unit gets power +10000, and for the battle this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time. (Active on opponent’s turn too)
 '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -2416,7 +2416,7 @@ CardStat = 10165
 global.CardName[CardStat] = 'Brilliant Equip, Bram Vairina'
 global.CardText[CardStat] = 'Dragon Empire/Talisman
 
-X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by stacking it on all of the specified units instead of normal calling it to RC)
 
 CONT [RC]: During your turn, if this unit is in the X-overDress state, this unit gets power +10000, and if your opponent’s vanguard is grade 3 or greater, it gets power +10000.
 
@@ -2472,7 +2472,7 @@ CardStat = 10172
 global.CardName[CardStat] = 'Rigid Wall Equip, Vils Vairina'
 global.CardText[CardStat] = 'Dragon Empire/Talisman
 
-X-overDress - One "Trickstar" and <Prayer Dragon> each (You may place it by stacking all of the specified units under it instead of normal calling it to RC)
+X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by stacking it on all of the specified units instead of normal calling it to RC)
 
 AUTO: When this unit is placed on RC by X-overDress, choose a card with the X-overDress ability from your drop other than "Rigid Wall Equip, Vils Vairina", and put it into your hand.
 
@@ -2631,7 +2631,7 @@ CardStat = 10355
 global.CardName[CardStat] = 'Thrust Equip Dragon, Varsavul'
 global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
-AUTO: When this unit becomes an originalDress, COST [Counter Blast 1], choose a grade 1 or less <Prayer Dragon> from your drop, and call it to RC.'
+AUTO: When this card becomes an originalDress, COST [Counter Blast 1], choose a grade 1 or less <Prayer Dragon> from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2728,3 +2728,32 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10377
+{
+global.CardName[CardStat] = 'Flaring Cannon Equip, Baur Vairina'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by stacking it on all of the specified units instead of normal calling it to RC)
+
+ACT [RC]: If this unit is in the X-overDress state, COST [Soul Blast 2], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [RC]: When this unit in the X-overDress state attacks a vanguard, this unit gets power +2000 until end of that battle for each of your opponent’s open RC. Then, if your opponent has one or less rear-guards, COST [Counter Blast 1], until end of that battle, this unit gets drive -1, and this unit performs drive check.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10383
+{
+global.CardName[CardStat] = 'Break Equip Dragon, Urbargo'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card becomes an originalDress, COST [Counter Blast 1], Soul Charge 1, choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
