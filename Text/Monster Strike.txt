@@ -1336,7 +1336,7 @@ global.CardText[CardStat] = 'Monster Strike/Set Order
 
 [Pickup Gacha] (If there are two or more [Pickup Gacha] cards in your Order Zone, put them into your drop until you have one card remaining)
 
-CONT [Order Zone]: All of your cards with "Excalibur" or "Basara" or "Moses" or "Hallelujah" or "Neo" or "Canon" or "Binah" or "Amida" or "Solomon" or "Holmes" or "Arsene" or "Abyss" in their card names become "Super Beast God Festival Pull Target". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [[Rest] this card], look at the top five cards of your deck, choose up to one "Super Beast God Festival Pull Target" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
+CONT [Order Zone]: All of your cards with "Excalibur" or "Basara" or "Moses" or "Hallelujah" or "Neo" or "Canon" or "Binah" or "Amida" or "Solomon" or "Holmes" or "Arsene" or "Abyss" in their card names become "Super Beast God Festival Pull Target". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Super Beast God Festival Pull Target" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 global.CardInClan[CardStat] = 30
@@ -1360,7 +1360,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10405
 {
-global.CardName[CardStat] = 'Abyss Tuner Abyss'
+global.CardName[CardStat] = 'Abyssal "Tuner", Abyss'
 global.CardText[CardStat] = 'Monster Strike/Fiend
 
 CONT [GC]: If your vanguard is a "Super Beast God Festival Pull Target", this unit gets shield +5000.
@@ -1404,7 +1404,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10408
 {
-global.CardName[CardStat] = 'Arsene: Abyss Mode'
+global.CardName[CardStat] = 'Arsene: Anarchy Mode'
 global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], choose a grade 0 card from your drop, and call it to RC.
@@ -1415,3 +1415,109 @@ global.DCards[CardStat] = 7
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10411
+{
+global.CardName[CardStat] = 'Twisted Severences'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Event] (If there are two or more [Event] cards in your Order Zone, put them into your drop until you have one card remaining)
+AUTO: When this card is put into your Order Zone, draw a card.
+CONT [Order Zone]: All of your cards with "Division" or "Doubt" or "Eliminator" or "Ignore" or "Unfair" in their card names become "Gouzetsu-Twisted Severences". You cannot rest "Gacha Redora".
+CONT [Order Zone]: All of your "Gouzetsu-Twisted Severences" get shield +5000.
+AUTO [Order Zone]: When your "Gouzetsu-Twisted Severences" vanguard attacks, if you have three cards with the same card name as your vanguard in your soul or Monster BOX, COST [rest this card], choose one of your vanguards, and it gets drive +1 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10412
+{
+global.CardName[CardStat] = 'Pure Holy Dragon, Sanctuary Dragon'
+global.CardText[CardStat] = 'Monster Strike/Dragon
+
+AUTO: When this unit is placed on VC, if your Order Zone has a card with the [Event] ability, COST [reveal a card from your hand], search your deck for up to one card with the same card name as the card revealed for this cost, put it into your Monster BOX face up, and shuffle your deck.
+
+ACT [RC]: If your Order Zone has a card with the [Event] ability, COST [Counter Blast 1], choose a card from your damage zone, put it into your soul, and put this unit into your damage zone face up.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10413
+{
+global.CardName[CardStat] = 'World Shaker, Unfair'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT [VC]: During your turn, this unit gets power +2000 for each card in your opponent’s bind zone.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & discard a card], choose a "Gold Egg" from your soul, and ride it as stand. If you rode a card, until end of turn, that unit gets critical +1, and it gets power +10000 for every three cards in your opponent’s bind zone. At the end of that turn, choose a "World Shaker, Unfair" from your soul or drop, and ride it as stand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10414
+{
+global.CardName[CardStat] = 'World Eraser, Ignore'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+ACT [RC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s front row rear-guards, and bind it. If you could not bind a card, your opponent binds the top card of their deck.
+
+AUTO [RC]: When this unit attacks, if your opponent’s bind zone has three or more cards, Soul Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10415
+{
+global.CardName[CardStat] = 'World Disturber, Doubt'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+AUTO: When this unit is placed on RC, your opponent chooses a card from their drop, and binds it. If they could not bind a card, your opponent binds the top card of their deck.
+
+CONT [RC]: If your opponent’s bind zone has three or more cards, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10416
+{
+global.CardName[CardStat] = 'World Abandoner, Eliminator'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT [RC]: If your opponent’s bind zone has three or more cards, this unit gets "Intercept".
+
+AUTO: When this unit is retired from RC or GC, your opponent chooses a card from their drop, and binds it. If they could not bind a card, your opponent binds the top card of their deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10417
+{
+global.CardName[CardStat] = 'World Cutter, Division'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT [Front Row RC]: During your turn, if your opponent’s bind zone has three or more cards, all of your front row unit get power +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [Soul Blast 1], your opponent chooses a card from their drop, and binds it. If they could not bind a card, your opponent binds the top card of their deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
