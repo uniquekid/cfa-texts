@@ -754,7 +754,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 8739
 {
-global.CardName[CardStat] = 'Knockin on Heavens Door, Uriel'
+global.CardName[CardStat] = 'Knockin’ on Heaven’s Door, Uriel'
 global.CardText[CardStat] = 'Monster Strike/Fairy Tribe
 
 AUTO [VC]: When this unit attacks, if you persona rode this turn, choose any number of cards from your soul, call them to open RC, and put the rest of your soul into your drop.
@@ -1515,6 +1515,101 @@ global.CardText[CardStat] = 'Monster Strike/Occult
 CONT [Front Row RC]: During your turn, if your opponent’s bind zone has three or more cards, all of your front row unit get power +5000.
 
 AUTO [RC]: At the end of the battle this unit attacked, COST [Soul Blast 1], your opponent chooses a card from their drop, and binds it. If they could not bind a card, your opponent binds the top card of their deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10419
+{
+global.CardName[CardStat] = 'Evil-exterminating Wise Leader, Prince Shotoku'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO [RC]: When this unit boosts, choose up to one unit card from your hand, and reveal it. If you revealed a card, choose a card with the same grade as that card from your Monster BOX, and swap them.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10420
+{
+global.CardName[CardStat] = 'Contractor Driving the Galaxy Crazy, Ether'
+global.CardText[CardStat] = 'Monster Strike/Nebulan
+
+CONT [RC]: If your Monster BOX has ten or more cards, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10421
+{
+global.CardName[CardStat] = 'Passionate Fairy from the Flower Nation, Bougainvillea'
+global.CardText[CardStat] = 'Monster Strike/Sprite
+
+AUTO [Drop]: When you persona ride, if you do not have a unit with "Bougainvillea" in its card name, you may call this card to RC. If you called a card, this unit gets power +5000 until end of turn. (If there are 2 copies of this card in drop, you can only call one)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10422
+{
+global.CardName[CardStat] = 'Serene Fairy from the Flower Nation, Ajisai'
+global.CardText[CardStat] = 'Monster Strike/Sprite
+
+CONT [RC]: If this unit was placed on RC other than from hand this turn, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10423
+{
+global.CardName[CardStat] = 'Challenge to the Heavens'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Event] (If there are two or more [Event] cards in your Order Zone, put them into your drop until you have one card remaining)
+
+CONT [Order Zone]: All of your cards with "Michael" or "Camael" or "Ramiel" or "Raphael" or "Gabriel" or "Zadkiel" or "Binah" or "Uriel" or "Sandalphon" or "Lucifer" or "Metatron" in their card names become "Guardians of the Heavens".
+
+ACT [Order Zone] 1/Turn: COST [Put one of your "Guardians of the Heavens" rear-guards into your Monster BOX face up], choose a unit card from your Monster BOX with a different card name from the card put for this cost and a grade equal to or less than your vanguard, and call it to RC.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10424
+{
+global.CardName[CardStat] = 'Revered Guardian, Michael'
+global.CardText[CardStat] = 'Monster Strike/Sprite
+
+AUTO [RC]: When this unit attacks if your vanguard is a grade 3 or greater "Guardians of the Heavens", you may have this unit get power +10000 until end of turn. If you do, at the end of that battle, put this unit into your soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10425
+{
+global.CardName[CardStat] = 'Highway to Hell, Uriel'
+global.CardText[CardStat] = 'Monster Strike/Sprite
+
+CONT: This card can only be ridden from a grade 3 with "Uriel" in its card name.
+
+AUTO: When this unit is placed on VC, COST [Counter Blast 1], retire all of your opponent’s rear-guards, and this unit gets power +10000 until end of turn.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [put two of your rear-guards into your soul], choose a "Knockin’ on Heaven’s Door, Uriel" from your soul, ride it as stand, and it gets power +10000/drive-1 until end of turn. '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 7
 global.PersonaRide[CardStat] = 1
