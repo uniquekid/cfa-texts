@@ -2660,13 +2660,14 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10389
 {
 global.CardName[CardStat] = 'Steady Spiky'
-global.CardText[CardStat] = 'Stoicheia/Human
+global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1 & put a grade 0 card from your hand into your soul], choose a grade 1 card from your soul, and put it into your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10401
 {
@@ -2682,6 +2683,38 @@ AUTO [VC]: When your opponent’s rear-guard is retired during your turn, COST [pu
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if the sum of the grades of <<Dark States>> cards in your soul is thirteen or more, COST [Counter Blast 2], stand this unit, and it gets drive -1 until end of turn. '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10452
+{
+global.CardName[CardStat] = 'Steam Breath Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
+
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
+
+ACT [Hand]: If you have a "Chronojet Dragon" crest, COST [discard this card], search your deck or drop for up to one card with "Chronojet" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10453
+{
+global.CardName[CardStat] = 'Steam Fighter, Balih'
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
+
+CONT [RC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): During your turn, if any players’ rear-guards were put on the bottom of the deck this turn, this unit gets power +10000.
+
+AUTO: When this card is discarded from hand for the cost of Stride, draw a card. 
+'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
