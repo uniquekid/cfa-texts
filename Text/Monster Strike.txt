@@ -3,7 +3,7 @@ CardStat = 8502
 global.CardName[CardStat] = 'Gold Egg'
 global.CardText[CardStat] = 'Monster Strike/Egg
 
-AUTO [VC]: When you stand up, you become Striker! (When you become Striker, put the Gacha Redora from the ride deck into the Order Zone, and get the Monster BOX!)
+AUTO [VC]: When you stand up, you become a Striker! (When you become Striker, put the Gacha Redora from the ride deck into the Order Zone, and get the Monster BOX!)
 
 (SHIFT + click to create the Monster BOX.)'
 global.UnitGrade[CardStat] = 0
@@ -19,9 +19,9 @@ CardStat = 8503
 global.CardName[CardStat] = 'Gacha Redora'
 global.CardText[CardStat] = 'Monster Strike/Set Order/Gacha
 
-ACT [Order Zone]: COST [Put this card to rest], and put the top card of your deck face up to your Monster BOX.
+ACT [Order Zone]: COST [rest this card], and put the top card of your deck into your Monster BOX face up.
 
-ACT [Order Zone] 1/Fight: If yours and your opponent’s vanguard are grade 3 or greater, COST [Counter Blast 2 & put this card to rest], put the top 10 cards from your deck face up to your Monster BOX. Then, choose up to 3 in your Monster BOX, and call them to your RC.'
+ACT [Order Zone] 1/Fight: If your and your opponent’s vanguards are grade 3 or greater, COST [Counter Blast 2 & rest this card], and put the top ten cards of your deck into your Monster BOX face up. Then, choose up to three cards from your Monster BOX, and call them to RC.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 global.CardInClan[CardStat] = 30
@@ -1331,12 +1331,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10403
 {
-global.CardName[CardStat] = 'Super Beast God Festival 2022'
+global.CardName[CardStat] = 'Super Beast Deity Festival 2022'
 global.CardText[CardStat] = 'Monster Strike/Set Order
 
 [Pickup Gacha] (If there are two or more [Pickup Gacha] cards in your Order Zone, put them into your drop until you have one card remaining)
 
-CONT [Order Zone]: All of your cards with "Excalibur" or "Basara" or "Moses" or "Hallelujah" or "Neo" or "Canon" or "Binah" or "Amida" or "Solomon" or "Holmes" or "Arsene" or "Abyss" in their card names become "Super Beast God Festival Pull Target". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Super Beast God Festival Pull Target" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
+CONT [Order Zone]: All of your cards with "Excalibur" or "Basara" or "Moses" or "Hallelujah" or "Neo" or "Canon" or "Binah" or "Amida" or "Solomon" or "Holmes" or "Arsene" or "Abyss" in their card names become "Super Beast Deity Festival Pull Targets". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Super Beast Deity Festival Pull Targets" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 global.CardInClan[CardStat] = 30
@@ -1351,7 +1351,7 @@ global.CardText[CardStat] = 'Monster Strike/Sprite
 
 AUTO: When this unit is placed on RC from drop, look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, this unit gets power +5000 until end of turn.
 
-AUTO [RC]: At the end of the battle this unit boosted, COST [retire this unit], choose one of your "Super Beast God Festival Pull Target" units, and it gets power +5000 until end of turn.'
+AUTO [RC]: At the end of the battle this unit boosted, COST [retire this unit], choose one of your "Super Beast Deity Festival Pull Targets" units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 7
 }
@@ -1363,7 +1363,7 @@ CardStat = 10405
 global.CardName[CardStat] = 'Abyssal "Tuner", Abyss'
 global.CardText[CardStat] = 'Monster Strike/Fiend
 
-CONT [GC]: If your vanguard is a "Super Beast God Festival Pull Target", this unit gets shield +5000.
+CONT [GC]: If your vanguard is a "Super Beast Deity Festival Pull Targets", this unit gets shield +5000.
 
 AUTO: When this unit is placed on RC by a card’s ability, until end of turn, this unit is regarded as a trigger unit, and gets power +5000.'
 global.UnitGrade[CardStat] = 0
@@ -1377,9 +1377,9 @@ CardStat = 10406
 global.CardName[CardStat] = 'Spirit Slayer Basara'
 global.CardText[CardStat] = 'Monster Strike/Samurai
 
-ACT [Monster BOX]: If your vanguard is a grade 3 or greater "Super Beast God Festival Pull Target", COST [put a card from your hand into your "Monster BOX" face up], and call this card to RC. If your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.
+ACT [Monster BOX]: If your vanguard is a grade 3 or greater "Super Beast Deity Festival Pull Targets", COST [put a card from your hand into your "Monster BOX" face up], and call this card to RC. If your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.
 
-AUTO [RC]: At the end of the battle this unit attacked, if your vanguard is a "Super Beast God Festival Pull Target", COST [retire this unit], and Counter Charge 1.'
+AUTO [RC]: At the end of the battle this unit attacked, if your vanguard is a "Super Beast Deity Festival Pull Targets", COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 7
 global.PersonaRide[CardStat] = 1
@@ -1392,7 +1392,7 @@ CardStat = 10407
 global.CardName[CardStat] = 'Neo: Reverse Mode'
 global.CardText[CardStat] = 'Monster Strike/Demihume
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two "Super Beast God Festival Pull Target" unit cards from your drop, call them to RC, and they get power +5000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two "Super Beast Deity Festival Pull Targets" unit cards from your drop, call them to RC, and they get power +5000 until end of turn.
 
 AUTO [VC] 1/Turn: During the battle this unit attacked, when your opponent’s guardian is first put, COST [Soul Blast 1], choose one guardian from among them, and retire it.'
 global.UnitGrade[CardStat] = 3
@@ -1409,7 +1409,7 @@ global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], choose a grade 0 card from your drop, and call it to RC.
 
-AUTO [RC]: At the end of the battle this unit attacked, if your vanguard is a "Super Beast God Festival Pull Target", COST [Counter Blast 1 & put this unit into your Monster BOX], choose a "Arsene: Phantom Mode" from your Monster BOX, call it to RC, and all of the costs of that unit’s abilities are reduced by Counter Blast 1 until end of turn.'
+AUTO [RC]: At the end of the battle this unit attacked, if your vanguard is a "Super Beast Deity Festival Pull Targets", COST [Counter Blast 1 & put this unit into your Monster BOX], choose a "Arsene: Phantom Mode" from your Monster BOX, call it to RC, and all of the costs of that unit’s abilities are reduced by Counter Blast 1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 7
 }
@@ -1423,9 +1423,9 @@ global.CardText[CardStat] = 'Monster Strike/Set Order
 
 [Event] (If there are two or more [Event] cards in your Order Zone, put them into your drop until you have one card remaining)
 AUTO: When this card is put into your Order Zone, draw a card.
-CONT [Order Zone]: All of your cards with "Division" or "Doubt" or "Eliminator" or "Ignore" or "Unfair" in their card names become "Gouzetsu-Twisted Severences". You cannot rest "Gacha Redora".
-CONT [Order Zone]: All of your "Gouzetsu-Twisted Severences" get shield +5000.
-AUTO [Order Zone]: When your "Gouzetsu-Twisted Severences" vanguard attacks, if you have three cards with the same card name as your vanguard in your soul or Monster BOX, COST [rest this card], choose one of your vanguards, and it gets drive +1 until end of that battle.'
+CONT [Order Zone]: All of your cards with "Division" or "Doubt" or "Eliminator" or "Ignore" or "Unfair" in their card names become "Gouzetsu -Twisted Severences-". You cannot rest "Gacha Redora".
+CONT [Order Zone]: All of your "Gouzetsu -Twisted Severences-" get shield +5000.
+AUTO [Order Zone]: When your "Gouzetsu -Twisted Severences-" vanguard attacks, if you have three cards with the same card name as your vanguard in your soul or Monster BOX, COST [rest this card], choose one of your vanguards, and it gets drive +1 until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 global.CardInClan[CardStat] = 30
@@ -1742,7 +1742,7 @@ global.CardName[CardStat] = 'Spirit-raising Girl of the Sea, Kiskill Lyra'
 global.CardText[CardStat] = 'Monster Strike/Sprite/Over Trigger
 
 Additional Effect - Perform one of the following.
-— If the number of cards in your damage zone is more than your opponent’s, heal cards from your damage zone until the number of cards is equal to your opponent’s.
+— If the number of cards in your damage zone is more than your opponent’s, heal cards from your damage zone until the number of cards is the same as your opponent’s.
 — Choose a card from your drop, call it to RC, and that unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
@@ -1820,7 +1820,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 10441
 {
-global.CardName[CardStat] = 'Prodigious Pop Band of Prophecies, Apocalyptic Fates'
+global.CardName[CardStat] = 'Prodigious Prophetical Pop Band, Apocalyptic Fates'
 global.CardText[CardStat] = 'Monster Strike/Demihume/Draw Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
@@ -1891,7 +1891,7 @@ global.CardText[CardStat] = 'Monster Strike/Set Order
 
 [Pickup Gacha] (If there are two or more [Pickup Gacha] cards in your Order Zone, put them into your drop until you have one card remaining)
 
-CONT [Order Zone]: All of your cards with "Onimaru Kunitsuna" or "Dojigiri Yasutsuna" or "Mikazuki Munechika" or "Odenta Mitsuyo" or "Juzumaru Tsunetsugu" in their card names become "Tenka-Goken". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Tenka-Goken" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
+CONT [Order Zone]: All of your cards with "Onimaru Kunitsuna" or "Dojigiri Yasutsuna" or "Mikazuki Munechika" or "Odenta Mitsuyo" or "Juzumaru Tsunetsugu" in their card names become "Tenka-Goken". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [rest this card], look at the top five cards of your deck, choose up to one "Tenka-Goken" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 global.CardInClan[CardStat] = 30
@@ -1965,9 +1965,203 @@ global.CardText[CardStat] = 'Monster Strike/Samurai
 
 CONT [RC]: During your turn, if your vanguard is a grade 3 or greater "Tenka-Goken", all of your units in the same column as this unit get power +5000.
 
-ACT [Drop]: If your vanguard is a "Tenka-Goken", and your place "Tenka-Goken of Departing Winds "True Strike", Mikazuki Munechika" has not been placed on RC from drop this turn, COST [put one of your rear-guards into your soul], and call this card to RC.'
+ACT [Drop]: If your vanguard is a "Tenka-Goken", and your "Tenka-Goken of Departing Winds "True Strike", Mikazuki Munechika" has not been placed on RC from drop this turn, COST [put one of your rear-guards into your soul], and call this card to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 7
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10454
+{
+global.CardName[CardStat] = 'Cheerleader Embracing a Radiant Dream, Candela'
+global.CardText[CardStat] = 'Monster Strike/Nebulan
+
+AUTO [VC]: When your "Bakuzetsu -Catalysts of Revolution-" unit card is discarded from your deck, you may put that unit into your soul. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards, and it gets power +10000 until end of turn. Then, COST [put a card with "Candela" in its card name from your soul on the bottom of your deck], and that unit gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10455
+{
+global.CardName[CardStat] = 'Love-sick Cursed Witch, Kairi'
+global.CardText[CardStat] = 'Monster Strike/Etherean
+
+ACT [Drop]: COST [Put a "Bakuzetsu -Catalysts of Revolution-" from your hand into your soul], discard the top three cards of your deck, and call this unit to RC.
+
+AUTO [RC] 1/Turn:A t the end of the battle your vanguard attacked, COST [Counter Blast 1 & put a card with "Kairi" in its card name from your soul on the bottom of your deck], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10456
+{
+global.CardName[CardStat] = 'Catalysts of Revolution'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Event] (If there are two or more [Event] cards in your Order Zone, put them into your drop until you have one card remaining)
+AUTO: When this card is put into your Order Zone, draw a card.
+CONT [Order Zone]: All of your cards with "Tera" or "Kairi" or "Gallon" or "Femto" or "Candela" in their card names become "Bakuzetsu -Catalysts of Revolution-". You cannot rest "Gacha Redora".
+ACT [Order Zone]: If your vanguard is a "Bakuzetsu -Catalysts of Revolution-", COST [rest this card], choose a card from your drop, and return it to your deck and shuffle it.
+AUTO [Order Zone]: When your "Bakuzetsu -Catalysts of Revolution-" vanguard attacks, if you have three cards with the same card name as your vanguard in your soul or Monster BOX, COST [rest this card], choose one of your vanguards, and it gets drive +1 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10457
+{
+global.CardName[CardStat] = 'Bounty Hunter Who Questions the Value of Life, Gallon'
+global.CardText[CardStat] = 'Monster Strike/Beast
+
+AUTO: When this unit is put on GC, discard the top three cards of your deck. Then, COST [put a card with "Gallon" in its card name from your soul on the bottom of your deck], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10458
+{
+global.CardName[CardStat] = 'Lie-divulging Genius Hacker, Tera'
+global.CardText[CardStat] = 'Monster Strike/Mech
+
+AUTO [RC]: When this unit attacks, discard the top three cards of your deck. Then, COST [put a card with "Tera" in its card name from your soul on the bottom of your deck], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10459
+{
+global.CardName[CardStat] = 'Twisted Emotions'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Event] (If there are two or more [Event] cards in your Order Zone, put them into your drop until you have one card remaining)
+AUTO: When this card is put into your Order Zone, draw a card.
+CONT][Order Zone]: All of your cards with "Sringara" or "Karna" or "Veera" or "Raudra" or "Adbhuta" in their card names become "Gouzetsu -Twisted Emotions-". You cannot rest "Gacha Redora".
+ACT [Order Zone]: COST [rest this card], choose a "Gouzetsu -Twisted Emotions-" unit card from your drop, and put it into your soul.
+AUTO [Order Zone]: When your "Gouzetsu -Twisted Emotions-" vanguard attacks, if you have three cards with the same card name as your vanguard in your soul or Monster BOX, COST [rest this card], choose one of your vanguards, and it gets drive +1 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10460
+{
+global.CardName[CardStat] = 'Full of Astonishment, Adbhuta'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT [VC]: All of your "Gouzetsu -Twisted Emotions-" unit cards get "Intercept", and get shield+5000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Put one of your rear-guards into your soul], and this unit gets all of the following until end of turn according to the number of "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 3 or more - "CONT [VC]: All of your "Gouzetsu -Twisted Emotions-" unit cards get power +5000."
+• 6 or more - "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, stand this unit, and it gets drive -1 until end of turn."'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10461
+{
+global.CardName[CardStat] = 'Making of Love, Sringara'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT [RC]: This unit gets all of the following according to the number of "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 3 or more - power +5000.
+• 6 or more - "Boost".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10462
+{
+global.CardName[CardStat] = 'One of Wicked Rages, Raudra'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+CONT: When this unit is placed on RC, COST [Counter Blast 1], and perform all of the following according to the number of "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 3 or more - Choose a card from your hand, put it into your soul, and draw a card,
+• 6 or more - Draw a card. (You do not draw a card if the number of cards in your soul becomes six by the 3 or more effect)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10463
+{
+global.CardName[CardStat] = 'Full of Depression and Remorse, Karna'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to the number of "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 3 or more - This unit gets power +5000 until end of that battle for every two "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 6 or more - Until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10464
+{
+global.CardName[CardStat] = 'Most Valiant One, Veera'
+global.CardText[CardStat] = 'Monster Strike/Occult
+
+ACT [Drop]:COST [Counter Blast 1], and perform all of the following according to the number of "Gouzetsu -Twisted Emotions-" unit cards in your soul.
+• 3 or more - Call this card to an open RC.
+• 6 or more - Choose a "Gouzetsu -Twisted Emotions-" unit card with a different card name from this card, and call it to an open RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10465
+{
+global.CardName[CardStat] = 'Wise Mage King of Bond-building, Solomon'
+global.CardText[CardStat] = 'Monster Strike/Paladin
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a card from your Monster BOX, and put it into your hand.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if a new card was put into your Monster BOX this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10466
+{
+global.CardName[CardStat] = 'Destroyer of Solitude-ending Dust, Femto'
+global.CardText[CardStat] = 'Monster Strike/Etherean
+
+AUTO: When this unit is placed on RC, discard the top three cards of your deck.
+
+ACT [RC] 1/Turn: COST [Counter Blast 1 & Put a card with "Femto" in its card name from your soul on the bottom of your deck], you choose a column, and retire all of your opponent’s rear-guards in that column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
