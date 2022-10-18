@@ -2690,12 +2690,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10452
 {
-global.CardName[CardStat] = 'Steam Breath Dragon'
+global.CardName[CardStat] = 'Steam Breath Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
 CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
-ACT [Hand]: If you have a "Chronojet Dragon" crest, COST [discard this card], search your deck or drop for up to one card with "Chronojet" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
+ACT [Hand]: If you have a "Chronojet Dragon" cråst, COST [discard this card], search your deck or drop for up to one card with "Chronojet" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
@@ -2705,7 +2705,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10453
 {
-global.CardName[CardStat] = 'Steam Fighter, Balih'
+global.CardName[CardStat] = 'Steam Fighter, Balih  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
 
 CONT [RC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): During your turn, if any players’ rear-guards were put on the bottom of the deck this turn, this unit gets power +10000.
@@ -2719,3 +2719,45 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10474
+{
+global.CardName[CardStat] = 'Chrono Dran'
+global.CardText[CardStat] = 'Dark States/Gear Dragon/Zodiac Time Beast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10475
+{
+global.CardName[CardStat] = 'Masergear Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
+
+AUTO: When this unit is placed by riding from "Chrono Dran", draw a card, and you get a "Chronojet Dragon" cråst.
+
+(You will be prompted to get the crest upon ride.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10476
+global.TokenSummonerPosition[CardStat] = 'V'
+
+CardStat = 10477
+{
+global.CardName[CardStat] = 'Smokegear Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
+
+AUTO: When this unit is rode upon by a grade 3 with "Chonojet" in its card name, COST [Soul Blast 1], search your deck for up to one grade 3 unit card, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
