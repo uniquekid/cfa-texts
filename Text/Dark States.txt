@@ -2695,7 +2695,7 @@ global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
 CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
-ACT [Hand]: If you have a "Chronojet Dragon" cråst, COST [discard this card], search your deck or drop for up to one card with "Chronojet" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
+ACT [Hand]: If you have a "Chronojet Dragon" crest, COST [discard this card], search your deck or drop for up to one card with "Chronojet" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
@@ -2734,12 +2734,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10475
 {
-global.CardName[CardStat] = 'Masergear Dragon'
+global.CardName[CardStat] = 'Masergear Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-AUTO: When this unit is placed by riding from "Chrono Dran", draw a card, and you get a "Chronojet Dragon" cråst.
+AUTO: When this unit is placed by riding from "Chrono Dran", draw a card, and you get a "Chronojet Dragon" crest.
 
-(You will be prompted to get the cråst upon ride.)'
+(You will be prompted to get the crest upon ride.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
@@ -2751,10 +2751,36 @@ global.TokenSummonerPosition[CardStat] = 'V'
 
 CardStat = 10477
 {
-global.CardName[CardStat] = 'Smokegear Dragon'
+global.CardName[CardStat] = 'Smokegear Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
 AUTO: When this unit is rode upon by a grade 3 with "Chonojet" in its card name, COST [Soul Blast 1], search your deck for up to one grade 3 unit card, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10488
+{
+global.CardName[CardStat] = 'Steam Scara, Gigi  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
+
+AUTO: When this unit is placed on RC, if you have a "Chronojet Dragon" crest, COST [Soul Blast 2], draw a card, and if this unit was placed by your card’s ability, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10489
+{
+global.CardName[CardStat] = 'Upstream Dragon  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
+
+AUTO [RC] Generation Break 1 (Active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle. At the end of that battle, COST [put this unit on the bottom of your deck], search your deck for up to one grade 1 card, call it to a back row RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
