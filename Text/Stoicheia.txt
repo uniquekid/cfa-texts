@@ -2487,9 +2487,7 @@ CardStat = 10330
 global.CardName[CardStat] = 'Knight of Sincerity, Alfonso'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is put on GC, if your back row has two or more grade 1 or less rear-guards, Soul Charge 1.
-
-(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
+AUTO: When this unit is put on GC, if your back row has two or more grade 1 or less rear-guards, Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -2501,9 +2499,7 @@ CardStat = 10331
 global.CardName[CardStat] = 'Trigeminal Assault'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO [RC] 1/Turn: At the end of the battle this unit boosted, COST [Soul Blast 2], and stand this unit.
-
-(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
+AUTO [RC] 1/Turn: At the end of the battle this unit boosted, COST [Soul Blast 2], and stand this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -2685,3 +2681,33 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10507
+{
+global.CardName[CardStat] = 'Signpost Fairy'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+CONT: When this unit is retired from RC by your card’s ability, if your vanguard is a Glitter, choose one of your grade 1 or less rear-guards, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10508
+{
+global.CardName[CardStat] = 'To the Shining Stage!'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Play this with COST [Soul Blast 1] if you have a vanguard with "Rororwa" in its card name!
+
+Choose up to one card with grade equal to or less than your vanguard from your drop, and call it to RC. Then, if you have a rear-guard with "Radylina" in its card name, you may call a Plant token to RC. (Plant tokens are grade 0/power 5000/critical 1 and have boost)
+
+(Shift + Click to generate a Plant Token)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'

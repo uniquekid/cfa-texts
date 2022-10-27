@@ -2315,7 +2315,7 @@ CardStat = 10149
 global.CardName[CardStat] = 'One Who Governs Chaos'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-Play this with COST [Counter Blast 1]!
+Play this with COST [Counter Blast 1] if you have a vanguard with "Kheios" in its card name!
 
 Look at the top five cards of your deck, choose up to the same number of cards from among them as the number of cards with "Kheios" in their different card names from your soul, put them into your soul, and shuffle your deck. Then, if your soul has eight or more cards with different card names, choose up to one card from your soul, call it to RC, choose one of your rear-guards with "Mikani" in its card name, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -2795,9 +2795,9 @@ global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
 (G Unit cannot be put in a main deck.)
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up & put a rear-guard on the bottom of your deck], search your deck for up to one card with grade equal to the card put on the bottom of your deck for this cost’s grade+1 call it to RC, and shuffle your deck. Choose one of your units, and it gets power +5000 for each face up card in your G zone.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up & put a rear-guard on the bottom of your deck], search your deck for up to one card with grade equal to the card put on the bottom of your deck for this cost’s grade+1, call it to RC, and shuffle your deck. Choose one of your units, and it gets power +5000 for each face up card in your G zone.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
@@ -2818,3 +2818,15 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10505
+{
+global.CardName[CardStat] = 'Dimness Fiend'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: When this unit boosts, if your soul has five or more cards, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

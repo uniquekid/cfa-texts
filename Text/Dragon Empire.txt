@@ -1891,7 +1891,9 @@ global.CardText[CardStat] = 'Dragon Empire/Stoicheia/Human
 ACT [RC]: If you do not have a Momokke token, COST [Counter Blast 1], and call up to one Momokke token to RC.
 
 Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
-AUTO [RC]: When this unit attacks, COST [Soul Blast 1], choose one of your token units in the same column as this unit, and this unit gets the power of that unit until end of that battle.(Includes increased values)'
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], choose one of your token units in the same column as this unit, and this unit gets the power of that unit until end of that battle.(Includes increased values)
+
+(Shift + Click to generate a Momokke Token)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.DCards2[CardStat] = 4
@@ -1975,7 +1977,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 9598
 {
 global.CardName[CardStat] = 'Fleeting Shine That Lights Life'
-global.CardText[CardStat] = 'Dragon Empire/Blitz Order/Fox Arts
+global.CardText[CardStat] = 'Dragon Empire/Blitz Order/Fox Art
 
 Play this card with COST [Soul Blast 2] if you have a vanguard with "Tamayura" in its card name!
 
@@ -2575,9 +2577,7 @@ global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
 AUTO: When this unit is placed on RC by a card’s ability, this unit gets power +5000 until end of turn.
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard in the same column as this unit is retired your card’s ability, COST [Counter Blast 1], and draw a card.
-
-(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard in the same column as this unit is retired your card’s ability, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2591,9 +2591,7 @@ global.CardText[CardStat] = 'Dragon Empire/Blaze Dragon
 
 CONT [RC]: During your turn, if your VC has two or more Arms, this unit gets power +5000.
 
-ACT [RC]: If there is an Arms card on your VC, COST [retire this unit], choose an Arms card from your hand or drop, and Arm it to one of your vanguards. If you Armed a card, you cannot Arm your vanguard until end of turn.
-
-(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
+ACT [RC]: If there is an Arms card on your VC, COST [retire this unit], choose an Arms card from your hand or drop, and Arm it to one of your vanguards. If you Armed a card, you cannot Arm your vanguard until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2605,9 +2603,7 @@ CardStat = 10334
 global.CardName[CardStat] = 'Beautiful Bullet of Dust Storm, Jodie'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-ACT [RC] 1/Turn: If you have a vanguard with "Eugene" in its card name, COST [Soul Blast 1], choose a grade 2 or less normal unit from your drop other than a sentinel, and put it on the top or bottom of your deck.
-
-(If the image of this card is incorrect delete the files named "n10330", "n10331", "n10332", "n10333", and "n10334" from your CardSprite and CardSpriteMini2 folders and reopen CFA)'
+ACT [RC] 1/Turn: If you have a vanguard with "Eugene" in its card name, COST [Soul Blast 1], choose a grade 2 or less normal unit from your drop other than a sentinel, and put it on the top or bottom of your deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2826,7 +2822,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10504
 {
 global.CardName[CardStat] = 'Scarlet of Fluttering Evanescent Life'
-global.CardText[CardStat] = 'Dragon Empire/Normal Order
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Fox Art
 
 Play this with COST [Soul Blast 2] if you have a vanguard with "Tamayura" in its card name!
 
@@ -2837,3 +2833,24 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10509
+{
+global.CardName[CardStat] = 'Unwavering Flame Sword, Radylina'
+global.CardText[CardStat] = 'Stoicheia/Human
+
+AUTO [RC]: At the beginning of your main phase, if you do not have a Momokke token on your RC, call up to one Momokke token to RC.
+
+Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
+AUTO [Hand]: At the end of the battle your rear-guard with "Radylina" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [retire one each of your rear-guards with "Radylina" in its card name and Momokke tokens], call this card to RC, and increase this unit’s power by the power of the Momokke token retired for the cost of this ability until end of turn.
+
+(Shift + Click to generate a Momokke Token)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.DCards2[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9584
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
