@@ -349,7 +349,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8353
 {
-global.CardName[CardStat] = 'Detonation Mutant, Bobalmine'
+global.CardName[CardStat] = 'Detonation Monster, Bobalmine'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: At the end of the battle this unit boosted, if your Order Zone has a Set Order, COST [put this unit into your soul], and Counter Charge 1.'
@@ -373,7 +373,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8361
 {
-global.CardName[CardStat] = 'Craggy Beast, Girgrand'
+global.CardName[CardStat] = 'Craggy Monster, Girgrand'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 CONT: Sentinel.
@@ -818,7 +818,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 8637
 {
-global.CardName[CardStat] = 'Harming Bite Mutant, Zabocanni'
+global.CardName[CardStat] = 'Harming Bite Monster, Zabocanni'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When this unit’s attack hits a vanguard, if this unit was boosted, COST [Counter Blast 1 & Soul Blast 1], draw a card.'
@@ -1977,7 +1977,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 9970
 {
-global.CardName[CardStat] = 'Adhesion Mutant, Nurvetron'
+global.CardName[CardStat] = 'Adhesion Monster, Nurvetron'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this card is discarded from hand during your turn, COST [Soul Blast 1], choose one of your units, and it gets power+5000 until end of turn.'
@@ -2517,7 +2517,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10487
 {
-global.CardName[CardStat] = 'Rippling Tremble Monster, Eldgremor'
+global.CardName[CardStat] = 'Rippling Quake Monster, Eredogrema'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on VC, reveal the top five cards of your deck, put all Set Orders from among them into your Order Zone, and shuffle your deck.
@@ -2572,3 +2572,103 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10522
+{
+global.CardName[CardStat] = 'Monster Creator, Arkhite'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO [VC]: When your rear-guard with "Monster" in its card name is placed, COST [put a card with the same card name as that unit from your Order Zone on the bottom of your deck], and that unit gets power +10000 until end of turn.
+
+AUTO [VC]: When this unit attacks, if your Order Zone has a Research card, COST [Counter Blast 1], and perform all of the following.
+• If your Order Zone has three or more Research cards, choose up to one of your rear-guards with "Monster" in its card name, and put it into your Order Zone.
+• Look at the top seven cards of your deck, choose up to one unit card with "Monster" in its card name, call it to RC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10523
+{
+global.CardName[CardStat] = 'Guardian of the Slumbering, Arkhite'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed by riding from "Searching for Monster Spirits, Arkhite", search your deck for up to one Research card, reveal it and put it into your hand, and shuffle your deck. 
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10524
+{
+global.CardName[CardStat] = 'Searching for Monster Souls, Arkhite'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed by riding from "A Moment of Rest, Arkhite", search your deck for up to one Research card, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10525
+{
+global.CardName[CardStat] = 'A Moment of Rest, Arkhite'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10526
+{
+global.CardName[CardStat] = 'Torrent Energy Research'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Research
+
+(After a Set Order is played, put it into your Order Zone.)
+
+AUTO: When this card is put into the Order Zone, reveal the top five cards of your deck, choose up to two cards with "Monster" in their card names from among them, put one card from among them into your hand, put one card from among them into your drop, and shuffle your deck.
+
+ACT [Order Zone]: COST [rest this card], choose up to one card with "Monster" in its card name from your drop, and put it into your Order Zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10527
+{
+global.CardName[CardStat] = 'Volcano Monster, Goukatera'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s rear-guards with grade equal to or less than the number of Research cards in your Order Zone, and retire it.
+
+AUTO [RC]: When this unit attacks, if your Order Zone has three or more Research cards, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10528
+{
+global.CardName[CardStat] = 'Radio Wave Monster, Weibiros'
+global.CardText[CardStat] = 'Brandt Gate/Aien
+
+AUTO: When this unit is placed on RC, if you have a Glitter with "Eva" in its card name or a vanguard with "Arkhite" in its card name on your VC, COST [Soul Blast 2], and draw a card.
+
+CONT [RC]: During your turn, if your Order Zone has three or more Research cards, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
