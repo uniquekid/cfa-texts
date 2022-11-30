@@ -2428,7 +2428,7 @@ CardStat = 10220
 global.CardName[CardStat] = 'Demonic Jewel Dragon, Rystal Galer'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO [RC]: When this unit attacks a vanguard, if you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability this turn, COST [put a card from your hand into your soul], draw a card, choose one of your opponent’s rear-guards, and retire it. (Count the number of Soul Blast for one cost)'
+AUTO [RC]: When this unit attacks a vanguard, if you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability this turn, COST [put a card from your hand into your soul], draw a card, choose one of your opponent’s rear-guards, and retire it. (Can only be used if you Soul Blast 4 or more cards at the same time)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 }
@@ -2441,7 +2441,7 @@ CardStat = 10222
 global.CardName[CardStat] = 'Power Gem Dragon'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO [RC]: When this unit boosts, if you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability this turn, COST [Counter Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into your hand, and put the rest into your soul. (Count the number of Soul Blast for one cost)'
+AUTO [RC]: When this unit boosts, if you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability this turn, COST [Counter Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into your hand, and put the rest into your soul. (Can only be used if you Soul Blast 4 or more cards at the same time)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -2625,7 +2625,7 @@ global.CardText[CardStat] = 'Stoicheia/Abyss Dragon
 
 AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if your soul has four or more cards with different grades, this unit gets power +10000 until end of turn.
 
-AUTO [RC]: When you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand this unit. (Count the number of Soul Blast for one cost)'
+AUTO [RC]: When you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand this unit. (Can only be used if you Soul Blast 4 or more cards at the same time)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -3073,3 +3073,28 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10577
+{
+global.CardName[CardStat] = 'Brick Guardna'
+global.CardText[CardStat] = 'Dark States/Golem
+
+AUTO: When this unit is put into your soul from RC, if your damage zone has four or more face down cards, COST [bind this card], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10578
+{
+global.CardName[CardStat] = 'Record Break Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card without the same card name as a card from your soul from among them, put it into your soul, and shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
