@@ -2952,7 +2952,7 @@ CardStat = 10580
 global.CardName[CardStat] = 'Sakura Romance Stealth Rogue, Shojodoji'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
-AUTO: When this unit is placed on CC, look at the top five cards of your deck, choose up to two normal units with "Stealth" in their card names from among them, reveal them, put one of the revealed cards into your soul, bind the rest of the revealed cards, and shuffle your deck.
+AUTO: When this unit is placed on VC, look at the top five cards of your deck, choose up to two normal units with "Stealth" in their card names from among them, reveal them, put one of the revealed cards into your soul, bind the rest of the revealed cards, and shuffle your deck.
 
 ACT [Bind Zone]: If you have a grade 1 or greater vanguard with "Stealth" in its card name, COST [Soul Blast 1], and call this card to RC.'
 global.UnitGrade[CardStat] = 1
@@ -3018,15 +3018,43 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10585
 {
-global.CardName[CardStat] = 'Stealth Fiend, Unpreceden'
+global.CardName[CardStat] = 'Stealth Dragon, Unpreceden'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-AUTO: When this unit is placed on RC by your card’s ability, if you have a vanguard with "Tamayura" or "Shojodoji" in its card name, COST [Soul Blast 1], and draw a card.
+AUTO: When this unit is placed on RC by a card’s ability, if you have a vanguard with "Tamayura" or "Shojodoji" in its card name, COST [Soul Blast 1], and draw a card.
 
-CONT [RC]: If two or more of your cards were put from RC into your soul this turn, this unit gets power+10000.'
+CONT [RC]: If two or more of your cards were put from RC into your soul this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10587
+{
+global.CardName[CardStat] = 'Explosive Dragon, Cramstego'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If three cards were not bound, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10588
+{
+global.CardName[CardStat] = 'Return to Afterlife'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order
+
+Play this if you have a vanguard with "Shojodoji" in its card name!
+
+You and your opponent each choose one of your RC, bind all of the cards on the chosen RC, and each player puts the cards bound by this effect into their hands at the end of that turn. If your and your opponent’s cards were each bound by this effect, put this card into your soul.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
