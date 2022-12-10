@@ -2565,7 +2565,7 @@ Play this if your vanguard is a Glitter with "Eva" in its card name!
 
 AUTO: When this card is put into the order zone, look at the top five cards of your deck, choose up to one card from among them, call it to RC, and shuffle your deck. 
 
-ACT [Order Zone] 1/turn: COST [Soul Blast 1 & rest three research cards in order zone], choose one of your Glitter units, and it gets power +5000 until end of turn.'
+ACT [Order Zone] 1/Turn: COST [Soul Blast 1 & rest three research cards in order zone], choose one of your Glitter units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -2732,7 +2732,7 @@ CardStat = 10589
 global.CardName[CardStat] = 'Fist Cannon Dragon, Dimetoria Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon
 
-AUTO: When this unit is placed on RC, COST [discard a card from your hand], look at the top cards of your deck equal to the number of Research cards with different card names in your order zone, choose 1 of them and add it to your hand, then shuffle your deck.'
+AUTO: When this unit is placed on RC, COST [discard a card from hand], look at the top cards of your deck equal to the number of Research cards with different card names in your order zone, choose a card from among them, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -2783,7 +2783,9 @@ CardStat = 10614
 global.CardName[CardStat] = 'Galactic B-Hero, Bold Seroth'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this card is discarded from hand for the cost of the ability of your Base in your order zone, COST [Counter Blast 1], call this card to RC, choose a card with "B-Hero" in its card name from your drop, and Scout it to your Base. (Put the scouted card into your Order Zone face up)'
+AUTO: When this card is discarded from hand for the cost of the ability of your Base in your order zone, COST [Counter Blast 1], call this card to RC, choose a card with "B-Hero" in its card name from your drop, and Scout it to your Base. (Put the scouted card into your order zone face up)
+
+CONT [RC]: During your turn, if your order zone has two or more Bases, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 global.DCards[CardStat] = 5
