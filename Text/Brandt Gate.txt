@@ -2787,6 +2787,18 @@ AUTO: When this card is discarded from hand for the cost of the ability of your 
 
 CONT [RC]: During your turn, if your order zone has two or more Bases, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10620
+{
+global.CardName[CardStat] = 'Gravidia Gaoguenie'
+global.CardText[CardStat] = 'Keter Sanctuary/Alien
+
+AUTO: When this card is put into your soul from deck, if you have a vanguard with "Nordlinger" in its card name, you may call this card to a back row RC.'
+global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 global.DCards[CardStat] = 5
 }
