@@ -2144,6 +2144,8 @@ CardStat = 10127
 global.CardName[CardStat] = 'Result of the Experiment Henceforth'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Research
 
+Play this if your vanguard is a Glitter with "Eva" in its card name!
+
 CONT [Order Zone]: All of your rear-guards with "Obscudeid" in their card names cannot be retired by your opponent’s card effects.
 
 ACT [Order Zone]: If your order zone has four or more Research cards, COST [put this card into your soul], Counter Charge 1, choose a card with "Obscudeid" in its card name from your drop zone, and put it into your hand.'
@@ -2798,6 +2800,51 @@ global.CardName[CardStat] = 'Gravidia Gaoguenie'
 global.CardText[CardStat] = 'Keter Sanctuary/Alien
 
 AUTO: When this card is put into your soul from deck, if you have a vanguard with "Nordlinger" in its card name, you may call this card to a back row RC.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 21
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10628
+{
+global.CardName[CardStat] = 'Lady Fencer of Quantum Recurrence'
+global.CardText[CardStat] = 'Brandt Gate/Cyberoid
+
+CONT [RC]: If your order zone has two or more cards, this unit gets [Power]+5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10633
+{
+global.CardName[CardStat] = 'Assault Flight Carrier, Lubetzal'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
+
+(After a set order is played, put it into the order zone.)
+
+AUTO: When this card is put into the order zone, if you have a vanguard with "Blitz" in its card name, draw a card, and Soul Charge 1.
+
+Operate - [AUTO][Order Zone]: When this card is operated, if it is your main phase, look at the top five cards of your deck, choose up to one unit card from among them with grade less than or equal to your vanguard, call it to RC, and shuffle your deck. If it is your battle phase, draw a card. 
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10634
+{
+global.CardName[CardStat] = 'Operate Master, Freiheit'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if your order zone has a set order, COST [Counter Blast 1 & discard a card from your hand], search your deck for up to one card with the same card name as your vanguard or a Product card, reveal it and put it into your hand, and shuffle your deck. If you have a vanguard with "Welstra" in its card name, choose up to one Product card from your hand, and put it into your order zone.
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Welstra" in its card name, COST [Soul Blast 2], choose a Product from your order zone, and operate it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 global.DCards[CardStat] = 5
