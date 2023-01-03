@@ -118,8 +118,6 @@ CardStat = 8282
 global.CardName[CardStat] = 'Dark Strain Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 
-(STANDARD EN & JP: Restricted to 1)
-
 ACT [RC]: If you have three or more grade 3 units, COST [Soul Blast 2], and all of your grade 3 units get "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
@@ -127,7 +125,6 @@ global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 8283
@@ -3227,8 +3224,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10639
 {
-global.CardName[CardStat] = 'Fallen Offspring of the Dragontree, Solda Zarkav'
-global.CardText[CardStat] = 'Keter Sanctuary/Hydragyrm
+global.CardName[CardStat] = 'Fallen of the Dragontree, Solda Zarkab'
+global.CardText[CardStat] = 'Keter Sanctuary/Hydragrum
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker.
 
@@ -3296,3 +3293,93 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10669
+{
+global.CardName[CardStat] = 'Divine Sister, Amaretti'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT [RC]: During your turn, all "Divine Sister, Cassatella" and "Divine Sister, Spumone" on your RC get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10670
+{
+global.CardName[CardStat] = 'Divine Sister, Cassatella'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC from hand, COST [Soul Blast 2], look at the top seven cards of your deck, choose up to one "Divine Sister, Spumone" from among them, call it to RC in the same column as this unit, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10671
+{
+global.CardName[CardStat] = 'Divine Sister, Spumone'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO [RC]: When this unit boosts "Divine Sister, Cassatella", draw a card, choose a card from your hand, put it on the bottom of your deck, and this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10675
+{
+global.CardName[CardStat] = 'Affectionate Harp Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Heal Trigger
+
+AUTO: When this unit is put on GC, if your vanguard’s grade is less than your opponent’s vanguard’s grade, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 10677
+{
+global.CardName[CardStat] = 'Destruction Dragon, Dirgeroar Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
+
+AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Youthberk" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and put it on the bottom of their deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10678
+{
+global.CardName[CardStat] = 'Knight of Vanquish Bow, Sfilt'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO [Back Row Center RC]: When your vanguard is placed on VC by the Revoldress ability, stand this unit, and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10679
+{
+global.CardName[CardStat] = 'Knight of Plowing, Dolbraig'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [Front Row RC]: When your vanguard is placed on VC by the Revoldress ability, choose one of your vanguards, and it gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [Soul Blast 1 card with "Revolform" in its card name], and this unit gets power +10000 until end of that battle. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.PersonaRide[CardStat] = 1

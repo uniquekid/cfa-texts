@@ -1444,8 +1444,6 @@ CardStat = 9369
 global.CardName[CardStat] = 'Sylvan Horned Beast Emperor, Magnolia Elder'
 global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 
-(STANDARD EN: You can only run this card if you do not have "Blue Artillery Dragon, Inlet Pulse Dragon" in your deck)
-
 AUTO: When this unit is placed on VC, choose a card from your soul, and you may call it to RC.
 
 CONT [VC]: If you have one or more cards in your soul or on your RC with "Magnolia" in their card names, all of your rear-guards can attack and intercept from the back row, and get power +5000.'
@@ -1455,7 +1453,6 @@ global.DCards[CardStat] = 4
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9370
@@ -1584,8 +1581,6 @@ CardStat = 9379
 global.CardName[CardStat] = 'Blue Artillery Dragon, Inlet Pulse Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-(STANDARD EN: You can only run this card if you do not have "Sylvan Horned Beast Emperor, Magnolia Elder" in your deck)
-
 AUTO [RC]: At the end of the battle this unit attacked a grade 3 or greater vanguard, if it was the first battle of this turn, and your vanguard is "Flagship Dragon, Flagburg Dragon", COST [Soul Blast 1], and stand this unit.
 
 AUTO [RC]: At the end of your turn, if the total number of attacks this turn is four or more, COST [put this unit into your soul], and draw a card.'
@@ -1595,7 +1590,6 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9380
@@ -3021,3 +3015,42 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10661
+{
+global.CardName[CardStat] = 'Tide Line Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Soul Blast 1], choose one of your other units, and that unit and this unit get power +10000 until end of turn. ("If you persona rode" is active even if persona ride activated outside normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10662
+{
+global.CardName[CardStat] = 'Fallen of the Dragontree, Bist Alvas'
+global.CardText[CardStat] = 'Stoicheia/Hydragrum
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker.
+
+ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], choose a Normal Order from your drop, and put it into your hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10676
+{
+global.CardName[CardStat] = 'Prince of Daffodils, Nilche'
+global.CardText[CardStat] = 'Dragon Empire/Ghost/Heal Trigger
+
+AUTO: When this unit is put on GC, if your vanguard’s grade is less than your opponent’s vanguard’s grade, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
