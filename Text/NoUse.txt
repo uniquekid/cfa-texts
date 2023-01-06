@@ -1,17 +1,22 @@
 n = x
 
 
-global.AllCard = 10679
+global.AllCard = 10690
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
 - Added support for Dragontree markers.
-- Fixed a number treasure marker related bugs.
+- Fixed a number of Treasures marker related bugs.
 - Removed visual gap between the first two different kinds of markers gained by a circle.
 - Markers are now displayed and removed/transferred consistently among different players’ circles
 - New feature - search by card name/text in a currently open zone. To use it, click a magnifying glass icon in the top left corner of a zone view OR hit Ctrl+F while a zone is open. Cards you searched for will be highlighted among others.
 - Updated icon for closing a zone view.
-- Ctrl key no longer closes or cancels anything. Please use Escape key instead.'
+- Ctrl key no longer closes or cancels anything. Please use Escape key instead.
+- Support for new plant gauge mechanic. Use corresponding button to convert existing Plant tokens into plant gauge OR create new gauge if a token is not selected - this works for any kind of Plant tokens.
+- Support for calling tokens upon ride AUTO abilities
+- You can press Ctrl+F in Deck Editor to open search as well
+- The text and art of all Markers and Tokens have been revised
+- Fixed a newly introduced bug when critical counter would be hidden by multiple kinds of markers'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -35,9 +40,9 @@ CardStat = 5818
 
 {
 
-global.CardName[5818] = 'Accel Gift I'
+global.CardName[5818] = 'Imaginary Gift#Accel I'
 
-global.CardText[5818] = 'When an Accel gift I marker is acquired, it acts as an additional RC in your front row for the rest of the game. Also, the unit on this circle gets power +10000 during your turn only.
+global.CardText[5818] = 'When acquired, put this marker as a new front row RC, and the unit on this RC gets power +10000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)
 '
 
 global.CardInClan[5818] = 29
@@ -48,12 +53,13 @@ CardStat = 5819
 
 {
 
-global.CardName[5819] = 'Protect Gift I'
+global.CardName[5819] = 'Imaginary Gift#Protect I'
 
-global.CardText[5819] = 'CONT: Sentinel.
+global.CardText[5819] = 'When acquired, add this marker to your hand! (You can only call it to GC)
 
-AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.
-'
+CONT: Sentinel.
+
+AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.'
 
 global.CardInClan[5819] = 29
 global.RemoveFromDrop[CardStat] = 1
@@ -64,10 +70,9 @@ CardStat = 5820
 
 {
 
-global.CardName[5820] = 'Force Gift I'
+global.CardName[5820] = 'Imaginary Gift#Force I'
 
-global.CardText[5820] = 'When a Force gift I marker is acquired, put it on top of one of your vanguard or RC, and it remains there for the rest of the game. Also, any unit on the chosen circle gets power +10000 during your turn only.
-'
+global.CardText[5820] = 'When acquired, put this marker on your VC or RC, and the unit on this circle gets power +10000 during your turn! (You may put it on the same circle. The power stacks too)'
 
 global.CardInClan[5820] = 29
 
@@ -77,10 +82,11 @@ CardStat = 6130
 
 {
 
-global.CardName[6130] = 'Plant Token'
+global.CardName[6130] = 'Plant'
 
-global.CardText[6130] = 'This is a Plant Token that is represented as card, and cannot be put in the deck.
-'
+global.CardText[6130] = 'Plant
+
+(This represents a plant token, and cannot be put in a deck.)'
 
 global.CardInClan[6130] = 29
 
@@ -93,10 +99,9 @@ CardStat = 6670
 
 {
 
-global.CardName[6670] = 'Force Gift II'
+global.CardName[6670] = 'Imaginary Gift#Force II'
 
-global.CardText[6670] = 'When a Force gift II marker is acquired, put it on top of one of your vanguard or RC, and it remains there for the rest of the game. Also, any unit on the chosen circle has its original critical as 2. (Stacking doesn’t increase it to 3 or 4.)
-'
+global.CardText[6670] = 'When acquired, put this marker on your VC or RC, and the original critical of the unit there becomes 2! (You may put it on the same circle, but the critical does not stack)'
 
 global.CardInClan[6670] = 29
 
@@ -106,10 +111,9 @@ CardStat = 6671
 
 {
 
-global.CardName[6671] = 'Accel Gift II'
+global.CardName[6671] = 'Imaginary Gift#Accel II'
 
-global.CardText[6671] = 'When an Accel gift II marker is acquired, it acts as an additional RC in your front row for the rest of the game. When acquired, you draw a card. Also, the unit on this circle gets power +5000 during your turn only.
-'
+global.CardText[6671] = 'When acquired, put this marker as a new front row RC, and draw a card. The unit there gets power +5000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
 
 global.CardInClan[6671] = 29
 
@@ -119,10 +123,9 @@ CardStat = 6672
 
 {
 
-global.CardName[6672] = 'Protect Gift II'
+global.CardName[6672] = 'Imaginary Gift#Protect II'
 
-global.CardText[6672] = 'When a Protect gift II marker is acquired, put it on top of one of your RC, and it remains there for the rest of the game. Also, any unit on the chosen circle gets power +5000 and shield +10000.
-'
+global.CardText[6672] = 'When acquired, put this marker on your RC, the unit there gets power +5000, and gets shield +10000 when it intercepts! (You may put it on the same circle. The effects stack too.)'
 
 global.CardInClan[6672] = 29
 
@@ -132,9 +135,9 @@ CardStat = 6675
 
 {
 
-global.CardName[6675] = 'Vision Token'
+global.CardName[6675] = 'Vision'
 
-global.CardText[6675] = 'This represents a Vision token, and cannot be put in a deck.
+global.CardText[6675] = '(This represents a Vision token, and cannot be put in a deck.)
 
 CONT [RC]: Perform drive check for the battle it attacked.
 '
@@ -152,11 +155,11 @@ CardStat = 6915
 
 global.CardName[6915] = 'Astral Plane'
 
-global.CardText[6915] = 'This RC becomes an Astral Plane. The following rules apply to the Astral Plane:
-You may call <Astral Deity> regardless of grade.
-If a card other than a <Astral Deity> is placed on the astral plane, put it to the drop zone.
-Units on the astral plane may attack from the back row, and perform drive checks. Cards revealed from that drive check go to the soul instead of being added to hand.
-At the end of your turn, put the unit on the astral plane to the bottom of your deck
+global.CardText[6915] = 'This RC is an Astral Plane. Astral Planes have the following rules.
+• Grade is ignored when calling an <Astral Deity>.
+• If the card on the Astral Plane is not an <Astral Deity>, put it into the drop zone.
+• The unit on the Astral Plane can attack from the back row, and performs drive checks. Cards revealed for those drive checks are put into your soul instead of your hand.
+• At the end of your turn, put the unit on the Astral Plane on the bottom of your deck.
 
 (SHIFT + click to delete Astral Plane.)'
 
@@ -168,9 +171,11 @@ CardStat = 7069
 
 {
 
-global.CardName[7069] = 'Evil Decoy Token'
+global.CardName[7069] = 'Evil Decoy'
 
-global.CardText[7069] = '(This represents an evil decoy token, and cannot be put in a deck. It does not have boost, and has intercept.)
+global.CardText[7069] = 'Evil Decoy
+
+(This represents an evil decoy token, and cannot be put in a deck. It does not have boost, and has intercept.)
 
 CONT [RC]: It cannot attack, and can intercept from the back row.
 '
@@ -186,10 +191,11 @@ CardStat = 7202
 
 {
 
-global.CardName[7202] = 'Plant Token (10,000)'
+global.CardName[7202] = 'Plant (10,000)'
 
-global.CardText[7202] = 'This represents a plant token that has been strengthened and called by a special ability, and cannot be put in a deck. It has both boost and intercept.
-'
+global.CardText[7202] = 'Plant
+
+(This represents a plant token that has been strengthened and called by a special ability, and cannot be put in a deck. It has both boost and intercept.)'
 
 global.CardInClan[7202] = 29
 
@@ -204,14 +210,13 @@ CardStat = 7342
 
 global.CardName[7342] = 'Quick Shield'
 
-global.CardText[7342] = 'One of your attacked units gets power+5000 until end of that battle!
+global.CardText[7342] = 'One of your attacked units gets power +5000 until end of that battle!
 
 (Card Type:Blitz Order can be used during guard step.)
 
 (This card is regarded as being from all clans.)
 
-(This card is a ticket card, and cannot be put in a deck.)
-'
+(This card is a ticket card, and cannot be put in a deck.)'
 
 global.CardInClan[7342] = 29
 
@@ -224,14 +229,15 @@ CardStat = 7403
 
 {
 
-global.CardName[7403] = 'Ahshas Flower Fairy'
+global.CardName[7403] = 'Ahsha’s Flower Fairy'
 
-global.CardText[7403] = '(This card represents an Ahshas Flower Fairy token, and cannot be put in a deck.)
+global.CardText[7403] = 'Plant
+
+(This card represents an Ahsha’s Flower Fairy token, and cannot be put in a deck.)
 
 CONT [RC]: This unit has the same card name as your vanguard with "Ahsha" in its card name.
 
-AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unit’s power and critical to match that unit’s until end of that battle.
-'
+AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unit’s power and critical to match that unit’s until end of that battle.'
 
 global.CardInClan[7403] = 29
 
@@ -245,10 +251,9 @@ CardStat = 7628
 
 {
 
-global.CardName[7628] = 'Treasure'
+global.CardName[7628] = 'Treasures'
 
-global.CardText[7628] = '(This represents a Treasure marker, and cannot be put in a deck.)
-'
+global.CardText[7628] = '(This represents a Treasures marker, and cannot be put in a deck.)'
 
 global.CardInClan[7628] = 29
 
@@ -260,8 +265,9 @@ CardStat = 7949
 
 global.CardName[7949] = 'Mask of Domination'
 
-global.CardText[7949] = 'This card represents a Mask of Domination token, and cannot be put in a deck.
-'
+global.CardText[7949] = 'Mask of Domination
+
+(This card represents a Mask of Domination token, and cannot be put in a deck.)'
 
 global.CardInClan[7949] = 29
 
@@ -277,8 +283,7 @@ CardStat = 8096
 
 global.CardName[8096] = 'Meers Present'
 
-global.CardText[8096] = 'This represents Meers Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.
-'
+global.CardText[8096] = '(This represents Meers Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
 
 global.CardInClan[8096] = 29
 
@@ -295,7 +300,7 @@ global.CardName[8425] = 'Shadow Army'
 
 global.CardText[8425] = 'Brandt Gate/Shadow Army
 
-This represents a Shadow Army token, and cannot be put in a deck.
+(This represents a Shadow Army token, and cannot be put in a deck.)
 '
 
 global.CardInClan[8425] = 29
@@ -326,10 +331,10 @@ global.PowerStat[8811] = 0
 
 CardStat = 9175
 {
-global.CardName[CardStat] = 'Bone Soldier Token'
+global.CardName[CardStat] = 'Skeleton Army Token'
 global.CardText[CardStat] = 'Shaman King/Bone
 
-(This represents a Bone Soldier token, and cannot be put in a deck.)'
+(This represents a Skeleton Army token, and cannot be put in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -339,8 +344,8 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 9583
 {
-global.CardName[CardStat] = 'Plant Token (overDress)'
-global.CardText[CardStat] = 'Stoicheia/Plant
+global.CardName[CardStat] = 'Plant (overDress)'
+global.CardText[CardStat] = 'Plant
 
 (This represents a Plant Token, and cannot be put in a deck.)'
 global.UnitGrade[CardStat] = 0
@@ -421,3 +426,22 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
+CardStat = 10687
+{
+global.CardName[CardStat] = 'Noblesse Rose'
+global.CardText[CardStat] = 'Plant
+
+(This represents a Noblesse Rose Token, and cannot be put in a deck)
+
+CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Granfia" in its card name, all of the following are active.
+• When your Plant token would be placed on RC, put it as a plant gauge for this unit instead. (This effect is mandatory)
+• This unit gets power +5000 for each of this unit’s gauges.
+• When you would retire a rear-guard for a cost, if you can pay by retiring Plant token rear-guard for it, you may pay by discarding a plant gauge.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
