@@ -2712,7 +2712,7 @@ CardStat = 10530
 global.CardName[CardStat] = 'Full Blown Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO [RC]: At the end of your turn, if your vanguard is a Glitter], COST [put this unit into your soul], and call up to two Plant tokens to RC. (Plant Tokens are grade 0/ power 5000/ critical 1 and have boost)
+AUTO [RC]: At the end of your turn, if your vanguard is a Glitter, COST [put this unit into your soul], and call up to two Plant tokens to RC. (Plant Tokens are grade 0/ power 5000/ critical 1 and have boost)
 
 (Shift + Click to generate a Plant Token)'
 global.UnitGrade[CardStat] = 3
@@ -3035,12 +3035,17 @@ global.CardText[CardStat] = 'Stoicheia/Hydragrum
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker.
 
-ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], choose a Normal Order from your drop, and put it into your hand.'
+ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], choose a Normal Order from your drop, and put it into your hand.
+
+(Shift + Click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 10676
 {
@@ -3054,3 +3059,126 @@ global.DCards[CardStat] = 4
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 10680
+{
+global.CardName[CardStat] = 'Burly Axe Beetle'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+CONT [RC]: During your turn, if "Bulky Saw Stag" is on your RC, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10681
+{
+global.CardName[CardStat] = 'Bulky Saw Stag'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+CONT [RC]: During your turn, if "Burly Axe Beetle" is on your RC, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10683
+{
+global.CardName[CardStat] = 'Gentle Prince, Granfia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10684
+{
+global.CardName[CardStat] = 'Future Lord, Granfia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit is rode upon by "Excellent Genius Wolf, Granfia", you may call a Plant token to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
+
+(Ride corresponding unit to activate this ability automatically.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSummonerRodeUponNumber[CardStat] = 10685
+global.TokenSummonerQuantity[CardStat] = 1
+
+CardStat = 10685
+{
+global.CardName[CardStat] = 'Genius Wise Wolf, Granfia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+CONT [VC]: If there a Plant token is on your RC, and your soul has a "Future Lord, Granfia", when you would ride a grade 3 card with "Granfia" in its card name from your ride deck, you can ride without discarding a card from your hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10686
+{
+global.CardName[CardStat] = 'Lavien Lord, Granfia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], turn all of the Plant tokens on your RC into plant gauges, call a Noblesse Rose token to your back row center RC, and put all of your plant gauges to that unit.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [if you have one or more Noblesse Rose tokens or plant gauges, put up to a total of five to drop], choose one of your rear-guards, and it gets power +5000 until end of turn for each card put into drop for this cost. If you put three or more cards, stand that unit.
+
+(Shift + Click to generate a Noblesse Rose Token)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 10687
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+CardStat = 10688
+{
+global.CardName[CardStat] = 'Hole-hole Mushroom'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+ACT [RC]: COST [Put this unit into your soul], call up to two Plant tokens to RC, and if you have a grade 3 or greater vanguard with "Granfia" in its card name, choose one of your rear-guards, and it gets power +5000 until end of turn. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
+
+(Shift + Click to generate a Plant Token)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+CardStat = 10689
+{
+global.CardName[CardStat] = 'Lan-lan Oragerine'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+AUTO: When this unit is placed on RC, you may call a Plant token to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
+
+AUTO [Front Row RC]: At the beginning of your battle phase, if you have a vanguard with "Granfia" in its card name, you may call a Plant token to RC.
+
+(Shift + Click to generate a Plant Token)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
