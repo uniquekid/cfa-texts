@@ -2940,7 +2940,7 @@ CardStat = 10579
 global.CardName[CardStat] = 'Can’t Quit Sake Stealth Rogue, Shojodoji'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
-AUTO:W hen this unit is rode upon, if you went second, draw a card.'
+AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
@@ -3251,3 +3251,44 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10692
+{
+global.CardName[CardStat] = 'Clad in Prayers'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order
+
+Play this if you have a vanguard with "Nirvana" in its card name, and one or more units each in the overDress state and the X-overDress state!
+
+Choose one of your units in the overDress state, it gets "AUTO [RC] 1/Turn: When your vanguard attacks, stand this unit." until end of turn, choose one of your units in the X-overDress state, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10693
+{
+global.CardName[CardStat] = 'Pierce Equip Dragon, Halbados'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Nirvana" in its card name, COST [Counter Blast 1 & put a card with "Vairina" in its card name from your drop on the bottom of your deck], look at the top five cards of your deck, choose up to one card with "Vairina" in its card name from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10694
+{
+global.CardName[CardStat] = 'Strike Equip Dragon, Stragallio'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Nirvana" in its card name, COST [discard a card from hand], search your deck for up to one card with the overDress ability or up to one "Trickstar", reveal it and put it into your hand, and shuffle your deck.
+
+AUTO: When this card becomes an originaldress, COST [Counter Blast 1], choose a "Trickstar" from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
