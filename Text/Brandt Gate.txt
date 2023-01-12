@@ -2840,7 +2840,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10634
 {
 global.CardName[CardStat] = 'Operate Master, Freiheit'
-global.CardText[CardStat] = 'Keter Sanctuary/Human
+global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO: When this unit is placed on RC, if your order zone has a set order, COST [Counter Blast 1 & discard a card from your hand], search your deck for up to one card with the same card name as your vanguard or a Product card, reveal it and put it into your hand, and shuffle your deck. If you have a vanguard with "Welstra" in its card name, choose up to one Product card from your hand, and put it into your order zone.
 
@@ -2906,4 +2906,93 @@ global.DCards[CardStat] = 5
 }
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10698
+{
+global.CardName[CardStat] = 'Blue Deathster, Sora Piriod'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10699
+{
+global.CardName[CardStat] = 'Blue Deathster, "Dark Justice" Findanis'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When rode upon by "Blue Deathster, "Heavenly Death Light" Stelvein", if you have "Blue Deathster, Sora Piriod" in your soul, search your deck for up to one grade 1 Strategy card, reveal it, put it to your hand, and shuffle your deck. If you did not reveal a card, you may call this to RC'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10700
+{
+global.CardName[CardStat] = 'Blue Deathster, "Heavenly Death Light" Stelvein'
+global.CardText[CardStat] = 'Keter Sanctuary/Battleroid
+
+AUTO: When rode upon by a grade 3 unit with "Avantgarda" in its card name, if you have "Blue Deathster, Sora Piriod" in your soul, search your deck for up to one grade 2 Strategy card, reveal it, put it to your hand, and shuffle your deck. If you did not reveal a card, you may call this to RC'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 21
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10701
+{
+global.CardName[CardStat] = 'Blue Deathster, "Skyrender" Avantgarda'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+ACT [VC] 1/Turn: If you have "Blue Deathster, Sora Piriod" in your soul, COST [Put a Strategy card from your order zone into your soul], draw a card, and until end of turn, this gets power +5000 and "AUTO [VC] 1/Turn: At the end of the battle it attacked, if that attack hit a vanguard or if you persona rode this turn, COST [Counter Blast 1 & discard a card from your hand], stand this unit, and it gets drive -1 until the end of the turn".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10702
+{
+global.CardName[CardStat] = 'Disruption Strategy: Elimination'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+AUTO: When put from order zone into your soul, choose one of your opponent’s rear-guards, retire it, choose one of your vanguards, and it gets power +5000 until the end of the turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10703
+{
+global.CardName[CardStat] = 'Bombing Strategy: Charge'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+AUTO: When put from order zone into your soul, choose one of your vanguards, and until end of turn, it gets power +10000, and your opponent cannot intercept nor play Blitz Orders.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10704
+{
+global.CardName[CardStat] = 'Blitzkreig Strategy: Death Wind'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+AUTO: When put from order zone into your soul, if your opponent’s vanguard is a grade 3 or greater, choose your vanguards, and until end of turn it gets "AUTO [VC]: When it attacks, all of your front row units get power +5000 until end of turn".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
