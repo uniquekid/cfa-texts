@@ -3194,9 +3194,9 @@ CardStat = 10710
 global.CardName[CardStat] = 'Diabolos, "Viamance" Bruce'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: At the beginning of your battle phase, if all of your units have "Diabolos" in their card names, until end of your opponent’s next turn, you "Final Rush", and if your opponent’s vanguard is grade 3 or greater, "Final Burst". ("Final Burst" is also "Final Rush")
+AUTO [VC]: At the beginning of your battle phase, if all of your units have "Diabolos" in their card names, until end of your opponent’s next turn, you "Final Rush", and if your opponent’s vanguard is grade 3 or greater, "Final Burst". ("Final Burst" is also "Final Rush")
 
-AUTO: When this unit attacks, if you are in "Final Burst", COST [Counter Blast 1], choose a column, stand all of your rear-guards with "Diabolos" in their card names in that column, and they get power +5000 until end of turn.'
+AUTO [VC]: When this unit attacks, if you are in "Final Burst", COST [Counter Blast 1], choose a column, stand all of your rear-guards with "Diabolos" in their card names in that column, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -3224,6 +3224,31 @@ global.CardText[CardStat] = 'Dark States/Demon
 CONT [RC/GC]: If you are in "Final Burst", this unit gets power +10000/shield +5000. (Active during your opponent’s turn as well)
 
 AUTO: When this unit is placed on RC, if your vanguard is "Diabolos, "Viamance" Bruce", COST [Counter Blast 1], Soul Charge 1, choose up to one grade 3 or less normal unit with "Diabolos" in its card name from your soul, and call it to an open RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10715
+{
+global.CardName[CardStat] = 'Diabolos Striker, Greg'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [Front Row RC]: When you "Final Burst", COST [Soul Blast 2], Counter Charge 1, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10719
+{
+global.CardName[CardStat] = 'Flower of Ruined Castle, Empousa'
+global.CardText[CardStat] = 'Dark States/Succubus
+
+AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability, if you did not stand a unit by a card’s ability this turn, you may stand this unit. If you stand, at the end of that turn, COST [put this unit into your soul], choose a grade 2 or greater unit card from your soul, and put it into your hand. (The end of that turn effect can only be used if stand by this card’s effect)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }

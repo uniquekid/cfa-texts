@@ -2961,7 +2961,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10702
 {
 global.CardName[CardStat] = 'Disturbance Tactic: Elimination'
-global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Tactic
 
 (After a set order is played, put it into your order zone)
 
@@ -2976,7 +2976,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10703
 {
 global.CardName[CardStat] = 'Bombing Tactic: Dustcoming'
-global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Tactic
 
 (After a set order is played, put it into your order zone)
 
@@ -2991,7 +2991,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10704
 {
 global.CardName[CardStat] = 'Blitzkrieg Tactic: Deathwind'
-global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Tactic
 
 (After a set order is played, put it into your order zone)
 
@@ -3013,4 +3013,35 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10717
+{
+global.CardName[CardStat] = 'Fallen of the Dragontree, Roid Akuzeryus'
+global.CardText[CardStat] = 'Brandt Gate/Hydragrum
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker.
+
+AUTO [RC] 1/Turn: When a set order you played from hand is put into the order zone, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one unit card from among them with grade less than or equal to your vanguard, call it to a RC in the same column as this unit, and shuffle your deck.
+
+(Shift + Click to get a Dragontree Marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+CardStat = 10718
+{
+global.CardName[CardStat] = 'Enlightened Age Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Soul Blast 1 & discard a card from hand], and this unit gets power +5000 until end of turn. Choose a set order from your drop, and put it into your hand. Choose a set order with a different card name from the card put into your hand by this effect from your drop, and put it into your hand. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
