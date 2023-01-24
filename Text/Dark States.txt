@@ -2590,7 +2590,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10376
 {
-global.CardName[CardStat] = 'Demonic Lord of Infernal Flames, Baphormedes'
+global.CardName[CardStat] = 'Demonic Lord of Hades Blaze, Baphormedes'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [VC]: When this unit attacks a vanguard, COST [put two grade 3 rear-guards into your soul], draw a card, and this unit gets power +10000 until end of that battle for every three grade 3 cards in your soul.
@@ -3248,7 +3248,7 @@ CardStat = 10719
 global.CardName[CardStat] = 'Flower of Ruined Castle, Empousa'
 global.CardText[CardStat] = 'Dark States/Succubus
 
-AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability, if you did not stand a unit by a card’s ability this turn, you may stand this unit. If you stand, at the end of that turn, COST [put this unit into your soul], choose a grade 2 or greater unit card from your soul, and put it into your hand. (The end of that turn effect can only be used if stand by this card’s effect)'
+AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability, if you did not stand a unit by a card’s ability this turn, you may stand this unit. If you stand, at the end of that turn, COST [retire this unit], choose a grade 2 or greater unit card from your soul, and put it into your hand. (The end of that turn effect can only be used if stand by this card’s effect)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -3272,3 +3272,57 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10722
+{
+global.CardName[CardStat] = 'Almajestar, Pypis=Mulchie'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10723
+{
+global.CardName[CardStat] = 'Almajestar, Schwart=Sparda'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is rode upon by "Almajestar, Turan=Dyna", Soul Charge 2, and if a [Critical] trigger was Soul Charge, draw a card.
+
+ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [bind a trigger unit from your soul], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10724
+{
+global.CardName[CardStat] = 'Almajestar, Turan=Dyna'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is rode upon by a unit with "Astroea" in its card name, choose a "Almajestar, Schwart=Sparda" from your soul, and call that card and this card to RC.
+
+ACT [RC] 1/Turn: If you have a vanguard with "Almajestar" in its card name, COST [Counter Blast 1], choose two trigger units from your drop, put them into your soul, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10725
+{
+global.CardName[CardStat] = 'Kitz Peak Griffin'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, choose two trigger units from your drop, and put them into your soul.
+
+CONT [RC/GC]: If your bind zone has a [Critical] trigger, this unit gets power +5000/shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
