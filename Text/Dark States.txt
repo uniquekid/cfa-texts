@@ -3262,7 +3262,7 @@ global.CardText[CardStat] = 'Dark States/Human
 
 AUTO [VC]: When a trigger unit is Soul Blast for the cost of this unit’s ability, choose one of your units, and it gets power +5000 until end of turn.
 
-AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 3], bind all of the [Critical] triggers Soul Blast for this cost, and perform all of the following according to the number of [Critical] triggers in your bind zone.
+AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 3], bind all of the critical triggers Soul Blast for this cost, and perform all of the following according to the number of critical triggers in your bind zone.
 • 1 or more - Choose one of your opponent’s rear-guards, and retire it.
 • 2 or more - This unit gets critical +1 until end of that battle.
 • 3 or more - This unit gets drive +1 until end of that battle. '
@@ -3290,7 +3290,7 @@ CardStat = 10723
 global.CardName[CardStat] = 'Almajestar, Schwart=Sparda'
 global.CardText[CardStat] = 'Dark States/Human
 
-AUTO: When this unit is rode upon by "Almajestar, Turan=Dyna", Soul Charge 2, and if a [Critical] trigger was Soul Charge, draw a card.
+AUTO: When this unit is rode upon by "Almajestar, Turan=Dyna", Soul Charge 2, and if a critical trigger was Soul Charge, draw a card.
 
 ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [bind a trigger unit from your soul], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -3320,7 +3320,51 @@ global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, choose two trigger units from your drop, and put them into your soul.
 
-CONT [RC/GC]: If your bind zone has a [Critical] trigger, this unit gets power +5000/shield +5000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your bind zone has a critical trigger, this unit gets power +5000/shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10729
+{
+global.CardName[CardStat] = 'Rolnik Cerberus'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+ACT [RC] 1/Turn: If you have a vanguard with "Almajestar" in its card name, COST [Counter Blast 1], choose two trigger units from your drop, put them into your soul, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10730
+{
+global.CardName[CardStat] = 'Dragontree Wretch, Demon Sherrider'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker.
+
+ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Soul Blast 2], choose a grade 1 or less card from your soul, and call it to a RC in the same column as this unit.
+
+(Shift + Click to get a Dragontree Marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+CardStat = 10731
+{
+global.CardName[CardStat] = 'Clean Sweep Dragon'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put them into soul. This unit gets power +5000 until end of turn for each card put into soul. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
