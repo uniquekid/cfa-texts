@@ -3144,7 +3144,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10756
 {
 global.CardName[CardStat] = 'Wohlheimer Dragon'
-global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
+global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
 CONT [RC]: During your turn, this unit gets power +2000 for each of your Dragontree markers on RC.'
 global.UnitGrade[CardStat] = 3
@@ -3157,7 +3157,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10759
 {
 global.CardName[CardStat] = 'Molecular Clause Dragon'
-global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
+global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
 AUTO [RC] 1/Turn: When your other unit is placed on RC from order zone by your card’s ability, that unit and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -3220,6 +3220,46 @@ AUTO [RC] Generation Break 1 (Active if you have one or more face up G units in 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10769
+{
+global.CardName[CardStat] = 'Arla Dargente'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: When your vanguard with "Avantgarda" in its card name attacks, this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC, if your Strategy card was put into soul from order zone this turn, COST [Soul Blast 1], search your deck or drop for up to one Strategy card with a different card name from a Strategy card put into soul this turn, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10770
+{
+global.CardName[CardStat] = 'Blue Deathster, Hanada Halfway'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Blue Deathster" in its card name, COST [Counter Blast 1], and draw a card.
+
+AUTO [RC]: When this unit boosts, if your Strategy card was put into order zone this turn, this unit gets power +2000 until end of that battle, and if this unit is in the back row center column, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10771
+{
+global.CardName[CardStat] = 'Blue Deathster, Reik Genevea'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: During your turn, if you have a vanguard with "Avantgarda" in its card name, this unit gets power +5000, and if your Strategy card was put into soul from order zone this turn, it gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
