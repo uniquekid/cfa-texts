@@ -2925,7 +2925,7 @@ CardStat = 10699
 global.CardName[CardStat] = 'Blue Deathster, "Dark Verdict" Findanis'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this unit is rode upon by "Blue Deathster, "Heavenly Death Ray" Stelvave", if your soul has a "Blue Deathster, Sora Period", search your deck for up to one grade 1 Strategy card, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, you may call this card to RC.'
+AUTO: When this unit is rode upon by "Blue Deathster, "Heavenly Death Ray" Stelvane", if your soul has a "Blue Deathster, Sora Period", search your deck for up to one grade 1 Strategy card, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, you may call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -3117,7 +3117,7 @@ global.CardText[CardStat] = 'Brandt Gate/Workeroid
 CONT [RC]: This unit gets all of the following according to the number of "Dispatch! The Three Cleaning Sisters!" in your order zone.
 • 1 or more - During your turn, this unit gets power +5000.
 • 2 or more - This unit cannot be chosen by your opponent’s card effects. (Active on opponent’s turn too)
-• 3 or more - If this unit is in the center column, all of your back row rear-guards get power +5000. (Active on opponent’s turn too)'
+• 3 or more - If this unit is in the back row center column, all of your back row rear-guards get power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -3231,7 +3231,7 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO [RC]: When your vanguard with "Avantgarda" in its card name attacks, this unit gets power +5000 until end of turn.
 
-AUTO: When this unit is placed on RC, if your Strategy card was put into soul from order zone this turn, COST [Soul Blast 1], search your deck or drop for up to one Strategy card with a different card name from a Strategy card put into soul this turn, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+AUTO: When this unit is placed on RC, if your Strategy card was put into soul from order zone this turn, COST [Soul Blast 1], search your deck or drop for up to one Strategy card with a different card name from a card put into soul this turn, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -3262,4 +3262,75 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10775
+{
+global.CardName[CardStat] = 'Astrolabe Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
+
+CONT [RC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): During your turn, if any player has a locked card, this unit gets power +10000.
+
+AUTO: When this card is discarded from hand for the cost of Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10776
+{
+global.CardName[CardStat] = 'Harbig Claw'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Beast
+
+CONT [GC]: If you have a vanguard with "Messiah" in its card name, this unit gets shield +5000.
+
+AUTO [RC]: When your other unit is unlocked, you may put this unit into your soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10777
+{
+global.CardName[CardStat] = 'Kaluzar Klein'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Golem
+
+CONT [RC]: During your turn, if any player has a locked card, this unit gets power +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have an "Alter Ego Messiah" crest, COST [retire this unit], look at the top three cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, put it on an open RC as a locked card, and put the rest on the bottom of your deck in any order. (Locked cards cannot do anything. They are unlocked and turned face up as stand at the end of their owner’s turn)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10778
+{
+global.CardName[CardStat] = 'Destiny Dealer  '
+global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyber Beast
+
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
+
+ACT [Hand]: If you have an "Alter Ego Messiah" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Messiah" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 24
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10779
+{
+global.CardName[CardStat] = 'Sacrifice Messiah '
+global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
+
+AUTO [RC] Generation Break 1 (Active if you have one or more face up G units in total on your VC or G zone): At the end of the battle this unit boosted, if you have a vanguard with "Messiah" in its card name, COST [lock this card], choose one of your vanguards, and it gets power +5000 until end of turn. Then, if you have no face up cards in your damage zone, Counter Charge 1. (Locked cards cannot do anything. They are unlocked and turned face up as stand at the end of their owner’s turn)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 24
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
