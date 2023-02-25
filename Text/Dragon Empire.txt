@@ -3145,6 +3145,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 CardStat = 10625
 {
@@ -3400,9 +3401,102 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 CONT: This card cannot be ridden.
 
-AUTO: When this unit is placed on :RC:, if your opponent’s rear-guard was not retired this turn, retire this unit.'
+AUTO: When this unit is placed on RC, if your opponent’s rear-guard was not retired this turn, retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10817
+{
+global.CardName[CardStat] = 'Thirst Ray Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+CONT [RC]: During your turn, if this unit is on a RC with a Dragontree marker, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10818
+{
+global.CardName[CardStat] = 'Scarlet Flame Recruit, Burkish'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10819
+{
+global.CardName[CardStat] = 'Scarlet Flame Bow Soldier, Agiredo'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+CONT [VC]: If your opponent has one or less rear-guards, when you would ride "Scarlet Flame Bow General, Dipernel" from your ride deck, you can ride without discarding a card from hand.
+
+AUTO [RC]: When this unit is rode upon, if your opponent has two or more rear-guards, you may call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10820
+{
+global.CardName[CardStat] = 'Scarlet Flame Bow General, Dipernel'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is rode upon by a unit with "Ghandeva" in its card name, choose one of your vanguards, and the cost of that unit’s original ACT ability is reduced by Counter Blast 1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10821
+{
+global.CardName[CardStat] = 'Scarlet Flame Marshal Dragon, Ghandeva'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO [VC]: When your opponent’s rear-guard is retired during your turn, choose a card from your drop, and you may bind it face down.
+
+CONT [VC]: During your turn, all of your front row unit gets power +2000 for each face down card in your bind zone. If there are five or more, this unit gets critical +1.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and choose five of your opponent’s rear-guards with different grades. Reveal the top five cards of your deck, retire all of the chosen units with the same grade as any of the revealed cards, shuffle your deck, and if the number of units retired is one or less, draw a card, choose a card from your drop, and bind it face down.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10822
+{
+global.CardName[CardStat] = 'Scarlet Flame Bow General, Stirguna'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Ghandeva" in its card name, COST [Soul Blast 1 & bind one of your other rear-guards face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, choose a card from your drop, and bind it face down.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10823
+{
+global.CardName[CardStat] = 'Dragritter, Alfakar'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO [RC]: When your vanguard with "Ghandeva" in its card name attacks a grade 3 or greater vanguard, COST [Counter Blast 1 & bind this unit face down], look at the top five cards of your deck, choose up to one grade 3 or less unit card from among them, call it to RC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
