@@ -1901,7 +1901,7 @@ AUTO [RC]: When this unit attacks, if your Order Zone has a Set Order, this unit
 Glitter - Eva (Active if your vanguard is a Glitter with "Eva" in its card name)
 AUTO: When this unit is placed on RC by a card’s ability, if your Order Zone has three or more Research cards, this unit gets critical +1 until end of turn.
 
-CONT [RC/GC]:This unit gets "Intercept", and shield +10000.'
+CONT [RC/GC]: This unit gets "Intercept", and shield +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.DCards2[CardStat] = 5
@@ -1984,6 +1984,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 9736
 {
@@ -2033,6 +2034,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 9740
 {
@@ -2210,7 +2212,7 @@ CardStat = 10050
 global.CardName[CardStat] = 'Youthberk "Protofall Arms"'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT:When this card would be rode upon, it is also regarded as "Youthberk "Skyfall Arms"".
+CONT: When this card would be rode upon, it is also regarded as "Youthberk "Skyfall Arms"".
 
 RevolDress - AUTO [VC]: At the end of the battle this unit attacked, choose up to one card with "RevolForm" in its card name from your hand, ride it as stand, and it gets drive -2 until end of turn.
 
@@ -2386,7 +2388,7 @@ CardStat = 10096
 global.CardName[CardStat] = 'Knight of Tempestuousness, Vriede'
 global.CardText[CardStat] = 'Keter Sanctuary/Warbeast
 
-CONT [GC]:If you have a vanguard with "Youth" in its card name, this unit gets shield +5000.'
+CONT [GC]: If you have a vanguard with "Youth" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -2404,6 +2406,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10117
 {
@@ -2553,6 +2556,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10177
 {
@@ -2895,7 +2899,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10510
 {
-global.CardName[CardStat] = 'Knight of Hammering, Sadie'
+global.CardName[CardStat] = 'Hammerbreaking Knight, Sadie'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on RC by a card’s ability, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of turn.'
@@ -2924,7 +2928,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10521
 {
-global.CardName[CardStat] = 'Malmoa Ehre'
+global.CardName[CardStat] = 'Marmor Ehre'
 global.CardText[CardStat] = 'Keter Sanctuary/Golem
 
 AUTO: When this unit is placed on RC, if your soul has a grade 3, COST [put a grade 3 card from your hand into your soul], draw a card, and this unit gets power +5000 until end of turn.'
@@ -2950,7 +2954,7 @@ global.EnableAttackFromBackRow[CardStat] = 1
 
 CardStat = 10545
 {
-global.CardName[CardStat] = 'Refining Magic, Fufupuri'
+global.CardName[CardStat] = 'Magic of Purification, Ffpuri'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, you may Soul Charge 1.'
@@ -3000,7 +3004,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10590
 {
-global.CardName[CardStat] = 'Great Sword of Ferocious Black Flames, Obscudeid'
+global.CardName[CardStat] = 'Great Sword of Fierce Black Flames, Obscudeid'
 global.CardText[CardStat] = 'Keter Sanctuary/Brandt Gate/Human
 
 CONT [RC/GC]: If your order zone has three or more set orders, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too) 
@@ -3017,7 +3021,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10592
 {
-global.CardName[CardStat] = 'Turnaround Magic, Tanaluru'
+global.CardName[CardStat] = 'Magic of Alteration, Turnarr'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: At the end of the battle this unit attacked while boosted, if your damage zone has three or more face down cards, COST [put this unit into your soul], and Counter Charge 1.'
@@ -3029,7 +3033,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10593
 {
-global.CardName[CardStat] = 'Knight of Horror, Dubthach'
+global.CardName[CardStat] = 'Knight of Harrowing Fear, Dubthach'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on RC from deck by your vanguards ability, until end of turn, this unit gets "Boost", and power +5000.'
@@ -3041,7 +3045,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10596
 {
-global.CardName[CardStat] = 'Wisdom of Beginning to Open Up the World'
+global.CardName[CardStat] = 'Wisdom of Beginning Thaat Cleared The World'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Counter Blast 1]!
@@ -3056,7 +3060,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10597
 {
-global.CardName[CardStat] = 'Knight of Endings, Diorruing'
+global.CardName[CardStat] = 'Knight of Excision, Diorruing'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this unit is placed on RC, if your vanguard’s clan is only one of the clans, COST [Soul Blast 1 & discard a card from hand], choose a card with the same clan your vanguard only has for its clan from your drop, and put it into your hand.
@@ -3381,6 +3385,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 10705
 {
@@ -3500,6 +3505,7 @@ global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10755
 {

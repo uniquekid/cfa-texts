@@ -1297,7 +1297,7 @@ Right Deity Arms - "Sealed Blaze Maiden, Bavsargra" (After being played, the spe
 
 Play this with COST [Soul Blast 1]!
 
-AUTO [VC]:When the unit Armed with this card attacks, that Armed unit gets power +10000 until end of that battle. At the end of that battle, if your opponent’s damage zone has four or less cards, COST [Counter Blast 2 & put this card into your drop], choose one of your opponent’s vanguards, and deal one damage.'
+AUTO [VC]: When the unit Armed with this card attacks, that Armed unit gets power +10000 until end of that battle. At the end of that battle, if your opponent’s damage zone has four or less cards, COST [Counter Blast 2 & put this card into your drop], choose one of your opponent’s vanguards, and deal one damage.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
@@ -1914,6 +1914,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 9594
 {
@@ -2079,9 +2080,9 @@ CardStat = 9696
 global.CardName[CardStat] = 'Burning Horn Dragon  '
 global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
-AUTO:When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, reveal up to one card with "Overlord" in its card name, put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge 1.
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, reveal up to one card with "Overlord" in its card name, put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge 1.
 
-AUTO [RC]:When your vanguard with "Overlord" in its card name attacks, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your vanguard with "Overlord" in its card name attacks, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 12
@@ -2658,6 +2659,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 10358
 {
@@ -2836,7 +2838,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10509
 {
-global.CardName[CardStat] = 'Unwavering Flame Sword, Radylina'
+global.CardName[CardStat] = 'Undoubting Flame Sword, Radylina'
 global.CardText[CardStat] = 'Stoicheia/Human
 
 AUTO [RC]: At the beginning of your main phase, if you do not have a Momokke token on your RC, call up to one Momokke token to RC.
@@ -2869,7 +2871,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10539
 {
-global.CardName[CardStat] = 'Thundering Bullet of Dust Storm, Sadid'
+global.CardName[CardStat] = 'Lightning Bullet of Dust Storm, Sadiid'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO: When this unit is placed on RC or put on GC, if you have more rear-guards than your opponent, this unit gets Power +5000/Shield +5000 until end of turn.'
@@ -2881,7 +2883,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10540
 {
-global.CardName[CardStat] = 'Ladies and Gentlemen! Ririmi'
+global.CardName[CardStat] = 'It’s Show Time! Ririmi'
 global.CardText[CardStat] = 'Dragon Empire/Workeroid
 
 AUTO: When this card is put to drop from your soul during your turn, COST [Counter Blast 1], and call this card to the back row RC of the same column as your front row unit with "Rarami" in its card name.
@@ -2913,7 +2915,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10556
 {
-global.CardName[CardStat] = 'Spear Knight of Clear Scales, Rimsviet'
+global.CardName[CardStat] = 'Spear Knight of Scales, Limzviit'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 AUTO: When this unit is retired from RC or GC, if your vanguard is a Glitter, you may put this card into your soul.'
@@ -2925,7 +2927,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10566
 {
-global.CardName[CardStat] = 'Vulcan Golem'
+global.CardName[CardStat] = 'Vulkaan Golem'
 global.CardText[CardStat] = 'Dragon Empire/Golem
 
 AUTO: When this unit is placed on RC, COST [put a normal unit with the same card name as any of your units from your drop on the bottom of your deck], and this unit gets power +5000 until end of turn.'
@@ -3033,7 +3035,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10587
 {
-global.CardName[CardStat] = 'Explosive Dragon, Cramstego'
+global.CardName[CardStat] = 'Frying Shot Dragon, Crumstego'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
 AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If three cards were not bound, this unit gets power +10000 until end of that battle.'
@@ -3046,7 +3048,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10588
 {
-global.CardName[CardStat] = 'Return to Afterlife'
+global.CardName[CardStat] = 'Return to The Other Shore'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
 Play this if you have a vanguard with "Shojodoji" in its card name!
@@ -3074,7 +3076,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10607
 {
-global.CardName[CardStat] = 'Heatbreath Wyvern'
+global.CardName[CardStat] = 'Heat Breath Wyvern'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO [RC]: When this unit boosts a Glitter, during that battle, this unit gets power +5000.'
@@ -3128,6 +3130,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10624
 {
@@ -3154,7 +3157,7 @@ global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT [GC]: If your soul has a card with "Overlord" in its card name, this unit gets shield +5000.
 
-ACT [RC]:If your opponent’s vanguard is grade 3 or greater, COST [retire this unit], choose a grade 3 card with "Overlord" in its card name from your drop, and put it into your soul.
+ACT [RC]: If your opponent’s vanguard is grade 3 or greater, COST [retire this unit], choose a grade 3 card with "Overlord" in its card name from your drop, and put it into your soul.
 '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -3379,6 +3382,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 10761
 {
@@ -3440,7 +3444,7 @@ global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 CONT [VC]: If your opponent has one or less rear-guards, when you would ride "Scarlet Flame Bow General, Dipernel" from your ride deck, you can ride without discarding a card from hand.
 
-AUTO [RC]: When this unit is rode upon, if your opponent has two or more rear-guards, you may call this card to RC.'
+AUTO: When this unit is rode upon, if your opponent has two or more rear-guards, you may call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
