@@ -2819,14 +2819,14 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10571
 {
-global.CardName[CardStat] = 'Judgement Maelstrom'
+global.CardName[CardStat] = 'Storm of Judgement'
 global.CardText[CardStat] = 'Stoicheia/Set Order/Blue Storm Armada
 
 Play this card if you have a vanguard with "Maelstrom" in its card name!
 
 AUTO: When this card is put into the Order Zone, perform all of the following.
 • Choose up to one <Tear Dragon> or unit card with only «Aqua Force» for its clan from your drop, and call it to RC.
-• Choose one of your rear-guards, and it gets power +5000 until end of turn for each of your other "Judgement Maelstrom" in your Order Zone.'
+• Choose one of your rear-guards, and it gets power +5000 until end of turn for each of your other "Storm of Judgement" in your Order Zone.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -3339,3 +3339,30 @@ global.DCards[CardStat] = 4
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+CardStat = 10845
+{
+global.CardName[CardStat] = 'Evocative Wheezing'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Play this with COST [Counter Blast 1]!
+
+Look at the top five cards of your deck, choose up to one card with grade greater than or equal to your vanguard, reveal it and put it into your hand, and discard the rest.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10846
+{
+global.CardName[CardStat] = 'Roundabout Navigating'
+global.CardText[CardStat] = 'Stoicheia/Ghost
+
+AUTO [RC]: When you Alchemagic an order and play it, COST [discard a card from hand], choose a grade 1 or less card from your drop, and call it to a RC in the same column as this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
