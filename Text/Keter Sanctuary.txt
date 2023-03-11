@@ -154,6 +154,7 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 }
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Hexaorb'
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3536,7 +3537,7 @@ CardStat = 10768
 global.CardName[CardStat] = 'Balmy Violinist'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-[AUTO][Back Row RC]: When your other unit is stand by your card’s ability, COST [put this unit into your soul], choose one of the stand units, and it gets power +5000 until end of turn.'
+AUTO [Back Row RC]: When your other unit is stand by your card’s ability, COST [put this unit into your soul], choose one of the stand units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -3593,4 +3594,50 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10856
+{
+global.CardName[CardStat] = 'Spiral Cutie Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC from hand, if you persona rode this turn, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into your hand, and put the rest on the top or bottom of your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10857
+{
+global.CardName[CardStat] = 'Effulgent Wizard'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck. If your vanguard is stand, you may put that looked card into your soul.
+
+AUTO [RC]: When your drive check reveals a trigger unit, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10858
+{
+global.CardName[CardStat] = 'Hexaorb Sorceress "Aquamarine"'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [VC]: This unit is also regarded as "Hexaorb Sorceress".
+
+CONT [VC]: If you persona rode this turn, this unit gets drive +1, and the power increase of your trigger effects increase by gets +10000.
+
+AUTO [RC]: When the drive check during the battle this unit attacked reveals a trigger unit, COST [Soul Blast 1], choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Hexaorb'
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
