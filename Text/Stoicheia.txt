@@ -3364,5 +3364,46 @@ AUTO [RC]: When you Alchemagic an order and play it, COST [discard a card from h
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
-global.PowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10854
+{
+global.CardName[CardStat] = 'Silent Hunter, Leopardia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO [RC]: When this unit boosts, if this unit is on a RC with a Dragontree marker, choose one of your front row rear-guards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10855
+{
+global.CardName[CardStat] = 'Silent Hunter, Leopardia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit is placed on RC, if you have a grade 0 rear-guard, Soul Charge 1, choose one of your grade 0 rear-guards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10860
+{
+global.CardName[CardStat] = 'Servitude of Funeral Procession, Lianorn Masques'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+CONT: This card can only be ridden from a grade 3 with "Lianorn" in its card name.
+
+ACT [VC] 1/Turn: COST [Remove a card with "Lianorn" in its different card name from this unit from your hand, soul, or drop], choose a grade 1 or less card from your drop, call it to RC, choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [VC]: When this unit attacks, choose up to three of your back row stand rear-guards with "Boost", and boost this unit. If you boosted with three or more units, at the end of that battle, COST [Counter Blast 1], choose two of your rear-guards, and stand them. '
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
