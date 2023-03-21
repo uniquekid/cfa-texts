@@ -1096,10 +1096,11 @@ ACT [VC]: COST [Soul Blast 1 "Truehearted Ruby"], until end of turn, this unit g
 ACT [VC]: COST [Soul Blast 1 "Everlasting Sapphire"], look at five cards from the top of your deck, choose up to two unit cards from among them, call them to open RC, discard the rest, and those units get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
-global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Wilista'
 
 
 CardStat = 8869
@@ -4449,3 +4450,55 @@ global.DCards[CardStat] = 6
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+CardStat = 10878
+{
+global.CardName[CardStat] = 'Full Marks for Exhilarating Energy, Trixie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT [RC]: If you played a Gem order this turn, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Wilista" in its card name, COST [put a card from hand into soul], look at the top five cards of your deck, choose up to two grade 3 cards with "Wilista" in their different original card names, reveal them and put them into your hand, and shuffle your deck. If you did not reveal any cards, draw a card.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10879
+{
+global.CardName[CardStat] = 'Festimagica, Wilista'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+DressUp - "Prismagica, Wilista" (During this fight, this card is also regarded as the specified card)
+
+AUTO: When this unit is placed on VC, COST [discard a card from hand], choose a Gem card from your soul or drop, and put it into hand.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1 Gem card], and perform all of the following according to the card name of the card Soul Blast for this cost.
+?"Everlasting Sapphire" - Look at the top five cards of your deck, choose up to two unit cards from among them, call them to RC, and shuffle the deck.
+?"Truehearted Ruby" - This unit gets power +15000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Wilista'
+
+CardStat = 10880
+{
+global.CardName[CardStat] = 'Crossing Illumirays'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Gem
+
+CONT: During this fight, this card is also regarded as "Truehearted Ruby" and "Everlasting Sapphire".
+
+Play this if you have a vanguard with "Wilista" in its card name!
+
+Put this card into soul, draw a card, choose one of your vanguards, until end of turn, it gets power +5000, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1 grade 3 card with "Wilista" in its card name], choose one of your rear-guards, and stand it.". You cannot play orders this turn. 
+'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
