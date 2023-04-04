@@ -1067,6 +1067,7 @@ AUTO [VC]: When this unit’s attack hits, draw a card, choose one of your rear-gu
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Clarissa'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4556,5 +4557,47 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top se
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
-global.PowerStat[CardStat] = 6000
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10908
+{
+global.CardName[CardStat] = 'Earnescorrect Follower, Payton'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this card is discarded from hand, if you have a vanguard with "Clarissa" in its card name, COST [Counter Blast 1], choose a grade 2 or less card with "Earnescorrect" in its card name not named "Earnescorrect Follower, Payton" from your drop, and you may put it into hand. (Active on opponent’s turn too)' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10909
+{
+global.CardName[CardStat] = 'Earnescorrect Follower, Neccela'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+ACT [RC/Hand): If you have a vanguard with "Clarissa" in its card name, COST [Counter Blast 1 & put this card into soul], choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks, if you played "Aim to be the Strongest Idol!" this turn, choose one of your rear-guards, and stand it." until end of turn.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10910
+{
+global.CardName[CardStat] = 'Holy Egg Festival Praxis Committee Chief, Clarissa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+DressUp - "Earnescorrect Leader, Clarissa" (During this fight, this card is also regarded as the specified card)
+
+ACT [VC] 1/Turn: If you persona rode this turn, this cost may be paid with "Soul Blast 1". COST [Discard a grade 3 card with "Clarissa" in its card name from hand], search your deck or drop for up to one "Aim to be the Strongest Idol!", reveal it and put it into hand, and if you searched the deck, shuffle the deck.
+
+AUTO [VC] 1/Turn: When this unit’s attack hits, draw two cards, and all of your rear-guards with "Earnescorrect" in their card names get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Clarissa'
