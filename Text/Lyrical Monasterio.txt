@@ -163,10 +163,11 @@ Black Wings - CONT [VC]: During your turn, all your opponent’s units get power -
 (White Wings is active when your bind only has odd grades, and Black Wings when it only has even grades.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
-global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Alestiel'
 
 
 CardStat = 8767
@@ -3622,10 +3623,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10266
 {
-global.CardName[CardStat] = 'Relation Weaver, Petrarca'
+global.CardName[CardStat] = 'Relation Weaver, Petralka'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1], reveal the top seven cards of your deck, and if all of the revealed cards not named "Relation Weaver, Petrarca" have different card names, choose up to one card from among the revealed cards, call it to RC, and it gets power +10000 until end of turn. If you chose "Relation Weaver, Petrarca", ride it as stand instead of calling to RC, and it gets drive -1 until end of turn. Shuffle your deck. (Riding also gets power +10000)'
+AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1], reveal the top seven cards of your deck, and if all of the revealed cards not named "Relation Weaver, Petralka" have different card names, choose up to one card from among the revealed cards, call it to RC, and it gets power +10000 until end of turn. If you chose "Relation Weaver, Petralka", ride it as stand instead of calling to RC, and it gets drive -1 until end of turn. Shuffle your deck. (Riding also gets power +10000)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -4601,3 +4602,51 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Clarissa'
+
+CardStat = 10913
+{
+global.CardName[CardStat] = 'Holy-angel of Blessings, Alestiel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+DressUp - "Archangel of Twin Wings, Alestiel" (During this fight, this card is also regarded as the specified card)
+
+AUTO [VC]: At the beginning of your main phase, choose a card from your bind zone, put it into hand, and bind the top card of your deck.
+
+Black Wings - ACT [VC] 1/Turn: COST [Discard a card from hand], search your deck for up to one card with the Black Wings ability, call it to RC, and shuffle your deck.
+
+White Wings - AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & discard a card from hand], search your deck or hand for up to one card with "Archangel of Twin Wings, Alestiel" as its original card name, ride it as stand, and it gets drive-1 until end of turn. If you searched your deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Alestiel'
+
+CardStat = 10914
+{
+global.CardName[CardStat] = 'Together with You, Seraphiel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+AUTO: When this unit is placed on RC, choose a grade 3 card with "Alestiel" in its card name from your drop, and put it on the bottom of your deck.
+
+White Wings - AUTO [Back Row RC]: When your unit with "Alestiel" in its card name is placed on VC during your battle phase, stand this unit.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10915
+{
+global.CardName[CardStat] = 'Enveloping Affection, Eliriel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Alestiel" in its card name, COST [Counter Blast 1], choose a card from your bind zone, and put it into hand. If you put a card, bind the top card of your deck.
+
+Black Wings - AUTO: When this unit is put on GC, choose one of the attacking units, and it gets power -5000 until end of turn.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
