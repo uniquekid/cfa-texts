@@ -1388,10 +1388,11 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
 AUTO [VC]: When your drive check reveals a <Ghost> normal unit, you may call that unit to an open front row RC. Then, if you called, COST [Counter Blast 1], this unit gets drive +1 until end of that battle. (During this battle, increase the drive of this unit by one. Even if this is the last drive check of the battle, you will still perform an additional drive check.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
-global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Feltyrosa'
 
 
 CardStat = 8893
@@ -4650,3 +4651,47 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10918
+{
+global.CardName[CardStat] = 'Night Sky Searing Divertimento, Ortrud'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Feltyrosa" in its card name, COST [Counter Blast 1 & put another rear-guard in the same column as this unit into soul], and draw a card.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10919
+{
+global.CardName[CardStat] = 'Traumerei of Grazing Hands, Roswitha'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO: When this unit is placed on RC other than from hand, if you have a vanguard with "Feltyrosa" in its card name, stand all of your rear-guards in the same column as this unit, and this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10920
+{
+global.CardName[CardStat] = 'Rondo of Plenilune, Feltyrosa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
+
+DressUp - "Rondo of Eventide Moon, Feltyrosa" (During this fight, this card is also regarded as the specified card)
+
+CONT [VC]: During your turn, if your soul has a grade 3 card with "Feltyrosa" in its card name, all of your front row units get power +10000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and until end of turn, this unit gets "AUTO [VC] 1/Turn: When your drive check reveals a <Ghost> normal unit or a grade 3 card with "Feltyrosa" in its card name, you may call that card to an open RC. If you called a card, this unit gets drive+1 until end of that battle." twice.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Feltyrosa'
