@@ -3593,3 +3593,63 @@ global.DCards[CardStat] = 4
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 10967
+{
+global.CardName[CardStat] = 'Knight of Forlornness, Aufstein'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [RC]: When this unit boosts a grade 3 or greater unit, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10970
+{
+global.CardName[CardStat] = 'Flow Strike Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT [RC]: This unit gets power +5000 for each Blue Armada card in your order zone. (Active on opponent’s turn too)
+
+AUTO [Back Row RC]: At the end of the battle your other rear-guard in the same column as this unit attacked, if you have a vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], choose one of your rear-guards, and swap the position of that unit with this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 10972
+{
+global.CardName[CardStat] = 'Reminiscence Flower Maiden, Claudine'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+ACT [VC] 1/Turn: COST [Retire three rear-guards], until end of turn, this unit gets "CONT [VC]: All of your token units get power +5000.", and drive+1.
+
+ACT [VC] 1/Turn: COST [Bind an order card from drop], and call up to two Plant tokens to RC.
+
+AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose one of your Plant tokens, stand it, and that unit gets power +5000 until end of turn for every two different order cards in total in your drop and bind zone.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 10973
+{
+global.CardName[CardStat] = 'Mystiark Habitat'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Look at the top seven cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.
+
+CONT [Deck]: When you would search or choose a unit card from deck, you may search or choose this card.
+
+CONT: When this card would be called to RC from deck, put it into hand instead of putting it into drop.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
