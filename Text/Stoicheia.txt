@@ -809,7 +809,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 8676
 {
-global.CardName[CardStat] = 'Schuldfisher Dragon'
+global.CardName[CardStat] = 'Shieldfisher Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 CONT [VC/RC]: If you did not call a rear-guard from other than hand this turn, this unit cannot attack.'
@@ -1718,6 +1718,8 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.TokenSummoner[CardStat] = 9583
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.PersonaRideCardName[CardStat] = 'A Viridescent Flash, Rorowa'
+
 
 CardStat = 9588
 {
@@ -3942,3 +3944,81 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11020
+{
+global.CardName[CardStat] = 'Sweet Honey Garden'
+global.CardText[CardStat] = 'Stoicheia/Blitz Order
+
+Play this with COST [Soul Blast 1]!
+
+Choose one of your units, and it gets power +15000 until end of that battle. If your drop has a blitz order, it gets power +25000 instead of +15000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11021
+{
+global.CardName[CardStat] = 'Viewpre Stinger'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+CONT [RC]: During your turn, if your drop has two or more blitz orders, this unit gets power +5000.
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], search your deck or drop for up to one "Sweet Honey Garden", reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11022
+{
+global.CardName[CardStat] = 'Hallucinatory Morpho'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO [RC]: When this unit attacks, if your drop has a blitz order, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1 & bind this unit], search your deck for up to one grade 2 or greater blitz order without Regalis Piece, reveal it and put it into hand, and shuffle the deck. If your drop has a blitz order, you may search for a normal order instead of a blitz order.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11023
+{
+global.CardName[CardStat] = 'Affectionate Hunter, Matthias'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Rorowa" in its card name, COST [Soul Blast 1 & retire two other rear-guards], choose a grade 2 or less card from your drop, and call it to :RC:.
+
+AUTO [Front Row RC]: At the beginning of your battle phase, if you have a unit with "Rorowa" in its card name and a unit with "Radylina" in its card name, you may call a Plant token to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+CardStat = 11024
+{
+global.CardName[CardStat] = 'A Viridescent Flash, Rorowa'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO: When this unit is placed by riding from "For One’s Precious Thing, Rorowa", call up to two Plant tokens to RC, and they get "AUTO:When this unit is retired from RC, draw a card." until end of your opponent’s next turn. Activate persona ride.
+
+AUTO [VC]: When this unit attacks, COST [bind a "For One’s Precious Thing, Rorowa" from soul], choose one of your Glitter rear-guards, until end of turn, that unit and this unit get power +5000, and this unit gets critical +1. At the end of that turn, ride the card bound for this cost as rest.
+
+Glitter (This card is a Glitter which seeks the Fire Regalis)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'V'
