@@ -3646,3 +3646,108 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11027
+{
+global.CardName[CardStat] = 'Silhouetteman'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11028
+{
+global.CardName[CardStat] = 'Garter Silhouette'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is placed by riding from "Silhouette Man", search your deck for up to one "Machineries Factory", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11029
+{
+global.CardName[CardStat] = 'Armed Arms, "L"'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC/RC]: When this unit attacks a grade 3 or greater vanguard, if you have a vanguard with "Silhouette" in its card name, COST [Counter Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.Arms[CardStat] = 1
+
+CardStat = 11030
+{
+global.CardName[CardStat] = 'Armed Arms, "R"'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC/RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, COST [Counter Blast 1], choose one of your opponent’s grade 2 or greater rear-guards, retire it, and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.Arms[CardStat] = 1
+
+CardStat = 11031
+{
+global.CardName[CardStat] = 'Machineries Factory'
+global.CardText[CardStat] = 'Brandt Gate/Set Order
+
+ACT [Order Zone]: COST [rest this card], look at the top seven cards of your deck, choose up to one card with "Armed Arms" in its card name from among them and reveal it, put it into your hand if your drop has a card with the same card name, and discard it if your drop does not have it. If you put a card into your hand, put this card into soul. Shuffle the deck.
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Silhouette" in its card name, COST [put this card into soul], choose up to two cards with "Armed Arms" in their different card names from your drop, and call them to open RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11032
+{
+global.CardName[CardStat] = 'Caezar, Silhouette'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is rode upon by "Gigant Arms, Silhouette", choose up to two cards with "Armed Arms" in their different card names from your drop, and call them to open RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11033
+{
+global.CardName[CardStat] = 'Gigant Arms, Silhouette'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power continuously, and they are moved to RC as rest at the end of turn)
+
+AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (It is no longer attached after being moved)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11034
+{
+global.CardName[CardStat] = 'Bustling Mechanic, Rodney'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+CONT [RC]: If you have a vanguard attached this turn, this unit gets power +10000.
+
+AUTO [Back Row RC]: At the end of the battle your vanguard with "Silhouette" in its card name attacked a grade 3 or greater vanguard, if your front row has no rear-guards, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
