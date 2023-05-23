@@ -1833,6 +1833,8 @@ CardStat = 9728
 global.CardName[CardStat] = 'Fountain of Knowledge, Eva'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
+(STANDARD JP: you can only run this card if you do not have Combine Rusher in your deck.)
+
 ACT [VC] 1/Turn: COST [Counter Blast 1], look at cards from the top of your deck equal to the number of Research cards in your Order Zone, choose up to one card from among them, put it into your hand put the rest on the bottom of your deck in any order, and this unit gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], search your deck or hand for up to one card with "Obscudeid" in its card name, and call it to RC. If you searched your deck, shuffle your deck.
@@ -1844,6 +1846,7 @@ global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 CardStat = 9734
 {
@@ -2164,6 +2167,8 @@ CardStat = 10131
 global.CardName[CardStat] = 'Combine Rusher'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
+(STANDARD JP: you can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
 
 AUTO [Drop]: When a Set Order you played from hand is put into the Order Zone, COST [Counter Blast 1], and call this card to RC.'
@@ -2173,6 +2178,7 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+global.CardLimidet[CardStat] = 1
 
 CardStat = 10132
 {
@@ -2447,10 +2453,10 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10363
 {
-global.CardName[CardStat] = 'Gravidia Hadril'
+global.CardName[CardStat] = 'Gravidia Hadrile'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC] 1/Turn: When your Meteorite is put into your order other than from drop, COST [Counter Blast 1], choose a Meteorite from your drop, put it into your Order Zone, and this unit gets power +5000 until end of turn.
+AUTO [RC] 1/Turn: When your Meteorite card is put into your order other than from drop, COST [Counter Blast 1], choose a Meteorite card from your drop, put it into your Order Zone, and this unit gets power +5000 until end of turn.
 '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
@@ -2529,7 +2535,7 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on VC, reveal the top five cards of your deck, put all Set Orders from among them into your Order Zone, and shuffle your deck.
 
-AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards, stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000/drive -2 until end of turn. Return all of the chosen cards from your Order Zone to your deck and shuffle it.'
+AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000/drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 }
@@ -3141,7 +3147,7 @@ global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
 AUTO: When this card is put from hand or order zone into your drop during your turn, put this card into your order zone or soul.
 
-Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 10000 / critical 1 normal unit with "Boost" to an open RC, and at the end of that turn, put that unit into the order zone.'
+Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 10000 / critical 1 normal unit with "Boost" to an open RC, and put that unit into the order zone at the end of that turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -3263,7 +3269,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10771
 {
-global.CardName[CardStat] = 'Blue Deathster, Reik Genevea'
+global.CardName[CardStat] = 'Blue Deathster, Req Gewehnr'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT [RC]: During your turn, if you have a vanguard with "Avantgarda" in its card name, this unit gets power +5000, and if your Strategy card was put into soul from order zone this turn, it gets power +5000.'
@@ -3892,3 +3898,30 @@ global.DCards[CardStat] = 5
 global.TriggerUnit[CardStat] = 5
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 11096
+{
+global.CardName[CardStat] = 'Fulfiller of Spherical Harmonics'
+global.CardText[CardStat] = 'Brandt Gate/Cyberoid
+
+AUTO: When this unit is retired from GC, COST [Soul Blast 1], and call this card to an open back row RC as rest.
+
+AUTO [RC]: At the end of the battle this unit boosted, if your vanguard is grade 4 or greater, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11097
+{
+global.CardName[CardStat] = 'Anomalous Pulsar Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
+
+AUTO [RC]: When this unit attacks, if your drop has two or more blitz orders, COST [Counter Blast 1], and until end of that battle, this unit’s attack will hit regardless of power if the total shield of your opponent’s guardians is not 15000 or greater.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
