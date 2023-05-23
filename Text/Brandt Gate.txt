@@ -1833,6 +1833,8 @@ CardStat = 9728
 global.CardName[CardStat] = 'Fountain of Knowledge, Eva'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
+(STANDARD JP: you can only run this card if you do not have Combine Rusher in your deck.)
+
 ACT [VC] 1/Turn: COST [Counter Blast 1], look at cards from the top of your deck equal to the number of Research cards in your Order Zone, choose up to one card from among them, put it into your hand put the rest on the bottom of your deck in any order, and this unit gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], search your deck or hand for up to one card with "Obscudeid" in its card name, and call it to RC. If you searched your deck, shuffle your deck.
@@ -1844,6 +1846,7 @@ global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 CardStat = 9734
 {
@@ -2164,6 +2167,8 @@ CardStat = 10131
 global.CardName[CardStat] = 'Combine Rusher'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
+(STANDARD JP: you can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
 
 AUTO [Drop]: When a Set Order you played from hand is put into the Order Zone, COST [Counter Blast 1], and call this card to RC.'
@@ -2173,6 +2178,7 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+global.CardLimidet[CardStat] = 1
 
 CardStat = 10132
 {
@@ -3263,7 +3269,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10771
 {
-global.CardName[CardStat] = 'Blue Deathster, Reik Genevea'
+global.CardName[CardStat] = 'Blue Deathster, Req Gewehnr'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT [RC]: During your turn, if you have a vanguard with "Avantgarda" in its card name, this unit gets power +5000, and if your Strategy card was put into soul from order zone this turn, it gets power +5000.'
