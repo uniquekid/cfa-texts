@@ -2684,7 +2684,7 @@ CardStat = 10401
 global.CardName[CardStat] = 'Purgatory Dragon Deity, Favrneel'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-CONT: You may only have up to one card named "Demonic Prison Dragon Emperor, Favrnir" in your deck.
+CONT: You may only have up to one card named "Purgatory Dragon Deity, Favrneel" in your deck.
 
 AUTO [VC]: At the beginning of your main phase, your opponent chooses one of their rear-guards, retires it, and if you did not ride this turn, this unit gets power +10000 / critical +1 until end of turn.
 
@@ -4039,3 +4039,43 @@ global.DCards[CardStat] = 2
 global.TriggerUnit[CardStat] = 5
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
+
+CardStat = 11148
+{
+global.CardName[CardStat] = 'Fighting Ogre of Swift-corpse Devil’s Cave'
+global.CardText[CardStat] = 'Dark States/Ogre
+
+AUTO [RC]: When this unit attacks while boosted by "Tiny Devil of Swift-corpse Devil’s Cave", COST [Rest a "Devil Knight of Swift-corpse Devil’s Cave" on RC], Soul Charge 1, and this unit gets power +10000/critical +1 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11149
+{
+global.CardName[CardStat] = 'Devil Knight of Swift-corpse Devil’s Cave'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [Front Row RC]: When this unit is rest for the cost of the ability of "Fighting Ogre of Swift-corpse Devil’s Cave", COST [Counter Blast 1], and stand this unit.
+
+AUTO [RC]: When this unit is stand by a card’s ability, this unit gets power +5000 until end of turn.
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11150
+{
+global.CardName[CardStat] = 'Tiny Devil of Swift-corpse Devil’s Cave'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one unit card with "Swift-corpse Devil’s Cave" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
