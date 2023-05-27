@@ -254,10 +254,16 @@ Note that older cards have these properties hard-coded into CFA client.
 ### :arrow_double_down: Attack from the back row
 
 ```
-global.CanAttackFromBackRow[CardStat] = 1 // display the button if this card is in the back row
-
-global.EnableAttackFromBackRow[CardStat] = 1 // if this card is on VC or RC, display the button for all of the back row
+global.CanAttackFromBackRow[CardStat] = 1
 ```
+
+Display the "Attack" button next to this card if it is in the back row.
+
+```
+global.EnableAttackFromBackRow[CardStat] = 1
+```
+
+If this card is on VC or RC, displays the "Attack" button for all of the back row cards.
 
 ### :wastebasket: Auto remove from Drop (for Tokens, Tickets, Markers)
 
