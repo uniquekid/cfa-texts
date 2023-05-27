@@ -154,7 +154,7 @@ After adding new cards, do not forget to update the `global.AllCard` parameter i
 
 This section covers specific syntax that is used by some cards in the database, starting from more common parameters to more obscure ones.
 
-### ? Triggers types
+### :star: Triggers types
 
 ```
 global.TriggerUnit[CardStat] = 1 // for Draw triggers
@@ -165,19 +165,19 @@ global.TriggerUnit[CardStat] = 5 // for Front triggers
 global.TriggerUnit[CardStat] = 6 // for Over triggers
 ```
 
-### ? Add card to G Deck
+### :gear: Add card to G Deck
 
 ```
 global.ExtraDeck[CardStat] = 1
 ```
 
-### ?? Qucik shield (for first vanguards from V Premium format)
+### :shield: Qucik shield (for first vanguards from V Premium format)
 
 ```
 global.QuickShieldAdd[CardStat] = 1
 ```
 
-### ?? Imaginary Gifts on ride (for cards from V Premium format)
+### :gift: Imaginary Gifts on ride (for cards from V Premium format)
 
 ```
 global.BlueTokenAdd[CardStat] = 1 // for Force
@@ -185,7 +185,7 @@ global.GreenTokenAdd[CardStat] = 1 // for Protect
 global.OrangeTokenAdd[CardStat] = 1 // for Accel
 ```
 
-### ??? Imaginary Gift generator - add to hand by clicking the card while holding Shift
+### :gift::heavy_plus_sign: Imaginary Gift generator - add to hand by clicking the card while holding Shift
 
 ```
 global.ForceAdd[CardStat] = 1 // for Force
@@ -195,13 +195,13 @@ global.GiftAdd[CardStat] = 1 // one of each (for VC only)
 global.GiftAddSelect[CardStat] = 1 // one of any kind (for VC only)
 ```
 
-### ?? Activated Persona Ride
+### :busts_in_silhouette: Activated Persona Ride
 
 ```
 global.PersonaRideAct[CardStat] = 1 // don't forget to add the tip after the card text
 ```
 
-### ???? Cross Persona Ride
+### :busts_in_silhouette::twisted_rightwards_arrows: Cross Persona Ride
 
 ```
 global.PersonaRideCardName[CardStat] = "Some Card Name" // the card will be considered having "Some Card Name" in addition to its original name when riding upon
@@ -211,7 +211,7 @@ global.PersonaRideCardName[CardStat] = "CommonName" // if two cards have the sam
 global.ForbidCrossPersonaRideUpon[CardStat] = 1 // forbids cross persona riding upon this card specifically (e.g. Epee Du Justice, Thegrea)
 ```
 
-### ?? Power buff on attack (prompt)
+### :dagger: Power buff on attack (prompt)
 
 ```
 global.AttackFromVBuff[CardStat] = 10000 // power value that can be added to the card when it attacks from VC
@@ -223,7 +223,7 @@ global.AttackFromVRBuff[CardStat] = 10000 // for either VC or RC
 Note that older cards have these properties hard-coded into CFA client.
 ```
 
-### ? Attack from the back row
+### :arrow_double_down: Attack from the back row
 
 ```
 global.CanAttackFromBackRow[CardStat] = 1 // display the button if this card is in the back row
@@ -231,13 +231,13 @@ global.CanAttackFromBackRow[CardStat] = 1 // display the button if this card is 
 global.EnableAttackFromBackRow[CardStat] = 1 // if this card is on VC or RC, display the button for all of the back row
 ```
 
-### ? Auto remove from Drop (for Tokens, Tickets, Markers)
+### :wastebasket: Auto remove from Drop (for Tokens, Tickets, Markers)
 
 ```
 global.RemoveFromDrop = 1
 ```
 
-### ? Arms
+### :crossed_swords: Arms
 
 ```
 global.Arms[CardStat] = 1 // can be used as Arms
@@ -247,25 +247,25 @@ global.LeftArms[CardStat] = 1 // only for Left Deity Arms (will always be attach
 global.RightArms[CardStat] = 1 // only for Right Deity Arms (will always be attached to the LEFT side of VC)
 ```
 
-### ?? Regalis Piece
+### :trophy: Regalis Piece
 
 ```
 global.RegalisPiece[CardStat] = 1 // displays an icon after this card is placed in Order Zone or GC to signify that the Regalis Piece was already played this game
 ```
 
-### ?? Astral Plane
+### :milky_way: Astral Plane
 
 ```
 global.Uranus[CardStat] = 1 // lets player open Astral Plane by Shift + clicking the card
 ```
 
-### ????? Treasure Markers
+### :pirate_flag: Treasure Markers
 
 ```
 global.MimicNotEvil[CardStat] = 1 // lets player place Treasure markers by Shift + clicking the card
 ```
 
-### ? Card legality in Premium/V Premium
+### :exclamation: Card legality in Premium/V Premium
 
 ```
 global.OldCardStat[CardStat] = 1 // makes the card illegal in V Premium (all cards without DCards are legal in V by default)
@@ -275,13 +275,13 @@ global.NewTriggerStat[CardStat] = 1 // makes the card's trigger power bonus equa
 Note that older cards have these properties hard-coded into CFA client.
 ```
 
-### Ultimate Stride G Zone auto removal
+### :skull: Ultimate Stride G Zone auto removal
 
 ```
 global.DeleteAllExtraInEndPhase[5235] = 1
 ```
 
-### ? Card restriction label (in deck editor)
+### :x: Card restriction label (in deck editor)
 
 ```
 global.CardLimidet[CardStat] = 1 // display the orange "Restricted" label
@@ -289,7 +289,7 @@ global.CardLimidet[CardStat] = 1 // display the orange "Restricted" label
 global.CardBanned[CardStat] = 1 // display the red "Banned" label
 ```
 
-### ?? Cards hidden in the editor
+### :eye: Cards hidden in the editor
 
 ```
 global.CardInClan[CardStat] = 29 // technical clan category that is never shown in the editor
@@ -299,19 +299,19 @@ global.DCards[CardStat] = 8 // technical nation category that is only shown if i
 global.DontShowInDeckEditor[CardStat] // hides the card in the editor regardless of clan/nation
 ```
 
-### Double-faced cards
+### :performing_arts: Double-faced cards
 
 ```
 global.AnotherSide[CardStat] = 1234 // that other side card should be hidden in deck editor (see previous section)
 ```
 
-### Re-assigned cards (for accidentally added duplicate cards)
+### :recycle: Re-assigned cards (for accidentally added duplicate cards)
 
 ```
 global.CardReassignedId[CardStat] = 1234 // this card will no longer be displayed in the deck editor; if a player loads a deck containing this card, it will be replaced with the card that has ID specified by this parameter
 ```
 
-### Card-specific effects
+### :information_source: Card-specific effects
 
 ```
 global.Reveal[CardStat] = 1 // effect specific to Starhulk, Gicurs and Starhulk, Letaluk
