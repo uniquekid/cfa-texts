@@ -39,7 +39,13 @@ After new card images are added, do not forget to update the `.md5sums` files by
 
 - `Text` version is used to trigger database updates, should be incremented by 1 upon every new release
 - `Client` version is used to trigger client updates, should be incremented by 1 upon every new release
-- `Sleeve` is used as a counter for maximum amount of sleeves in current version. Changing it will trigger client updates.
+- `Sleeve` is used as a counter for maximum amount of sleeves in current version. Changing it will trigger sleeve updates.
+
+### Branch workflow
+
+The first person starting to work on the next update should create that branch's update from `master`. The branch should be named `vXXX`, where `XXX` is the current Text version number + 1.
+
+Contributors that would like to add like something to that update should branch off of that branch. Preferably, the branch should be named something like `vXXX-feature-description`, but it doesn't really matter. After you pushed changes to your branch, create a Pull Request targeting the original `vXXX` branch. If that branch is already gone, re-merge with the latest vXXX branch (or create it from master) and re-target the Pull Request.
 
 ### Checksum Files
 
@@ -129,7 +135,7 @@ This line assigns the card's nation code. All cards in a file usually come from 
 
 If a card has multiple nations, add it to the file of the nation that comes first on the card itself, and then write the second one into `global.DCards2[CardStat]` property.
 
-If a clan has clan instead of or in addition to the nation, we add it using `global.CardInClan[CardStat]` property. One can be in multiple clans as well, using syntax similar to nations: `global.CardInClan2[CardStat]`. The game supports clan definitions of up to `global.CardInClan6[CardStat]`, but only two nations at the same time.
+If a card has a clan instead of or in addition to the nation, we add it using `global.CardInClan[CardStat]` property. One can be in multiple clans as well, using syntax similar to nations: `global.CardInClan2[CardStat]`. The game supports clan definitions of up to `global.CardInClan6[CardStat]`, but only two nations at the same time.
 
 For cards that belong to all clans and nations we use `Cray Elemental.txt` text file and a specific number.
 
@@ -171,7 +177,7 @@ global.TriggerUnit[CardStat] = 6 // for Over triggers
 global.ExtraDeck[CardStat] = 1
 ```
 
-### :shield: Qucik shield (for first vanguards from V Premium format)
+### :shield: Quick shield (for first vanguards from V Premium format)
 
 ```
 global.QuickShieldAdd[CardStat] = 1
@@ -198,30 +204,52 @@ global.GiftAddSelect[CardStat] = 1 // one of any kind (for VC only)
 ### :busts_in_silhouette: Activated Persona Ride
 
 ```
-global.PersonaRideAct[CardStat] = 1 // don't forget to add the tip after the card text
+global.PersonaRideAct[CardStat] = 1
 ```
+
+Don't forget to add the tip after the card text
 
 ### :busts_in_silhouette::twisted_rightwards_arrows: Cross Persona Ride
 
 ```
-global.PersonaRideCardName[CardStat] = "Some Card Name" // the card will be considered having "Some Card Name" in addition to its original name when riding upon
-
-global.PersonaRideCardName[CardStat] = "CommonName" // if two cards have the same PersonaRideCardName, Persona Ride will trigger (e.g. DressUp cards from Lyrical Monasterio)
-
-global.ForbidCrossPersonaRideUpon[CardStat] = 1 // forbids cross persona riding upon this card specifically (e.g. Epee Du Justice, Thegrea)
+global.PersonaRideCardName[CardStat] = "Some Card Name"
 ```
+
+The card will be considered having "Some Card Name" in addition to its original name when riding upon
+
+```
+global.PersonaRideCardName[CardStat] = "CommonName"
+```
+
+If two cards have the same `PersonaRideCardName`, Persona Ride will trigger (e.g. DressUp cards from Lyrical Monasterio).
+
+```
+global.ForbidCrossPersonaRideUpon[CardStat] = 1
+```
+
+Forbids cross persona riding upon this card specifically (e.g. Epee Du Justice, Thegrea)
 
 ### :dagger: Power buff on attack (prompt)
 
 ```
-global.AttackFromVBuff[CardStat] = 10000 // power value that can be added to the card when it attacks from VC
+global.AttackFromVBuff[CardStat] = <power_value>
+```
 
-global.AttackFromVBuff[CardStat] = 10000 // same for RC
+`<power_value>` is a value that can be added to the card when it attacks from VC.
 
-global.AttackFromVRBuff[CardStat] = 10000 // for either VC or RC
+```
+global.AttackFromRBuff[CardStat] = <power_value>
+```
+
+Same, but works from RC in this case.
+
+```
+global.AttackFromVRBuff[CardStat] = <power_value>
+```
+
+Works both from VC and RC
 
 Note that older cards have these properties hard-coded into CFA client.
-```
 
 ### :arrow_double_down: Attack from the back row
 
@@ -240,86 +268,144 @@ global.RemoveFromDrop = 1
 ### :crossed_swords: Arms
 
 ```
-global.Arms[CardStat] = 1 // can be used as Arms
-
-global.LeftArms[CardStat] = 1 // only for Left Deity Arms (will always be attached to the RIGHT side of VC)
-
-global.RightArms[CardStat] = 1 // only for Right Deity Arms (will always be attached to the LEFT side of VC)
+global.Arms[CardStat] = 1
 ```
+
+This parameter signifies that the card can be used as arms. You can also assigned a fixed position to Arms by using one of the two next parameters:
+
+```
+global.LeftArms[CardStat] = 1
+```
+
+Only for Left Deity Arms (will always be attached to the RIGHT side of VC)
+
+```
+global.RightArms[CardStat] = 1
+```
+
+Only for Right Deity Arms (will always be attached to the LEFT side of VC)
 
 ### :trophy: Regalis Piece
 
 ```
-global.RegalisPiece[CardStat] = 1 // displays an icon after this card is placed in Order Zone or GC to signify that the Regalis Piece was already played this game
+global.RegalisPiece[CardStat] = 1
 ```
+
+This parameter lets the game display an icon after this card is placed in Order Zone or GC to signify that the Regalis Piece was already played this game.
 
 ### :milky_way: Astral Plane
 
 ```
-global.Uranus[CardStat] = 1 // lets player open Astral Plane by Shift + clicking the card
+global.Uranus[CardStat] = 1
 ```
+
+Lets the player open Astral Plane by Shift + clicking the card (don't forget to add the tip).
 
 ### :pirate_flag: Treasure Markers
 
 ```
-global.MimicNotEvil[CardStat] = 1 // lets player place Treasure markers by Shift + clicking the card
+global.MimicNotEvil[CardStat] = 1
 ```
+
+Lets the player place Treasure markers by Shift + clicking the card (don't forget to add the tip).
 
 ### :exclamation: Card legality in Premium/V Premium
 
 ```
-global.OldCardStat[CardStat] = 1 // makes the card illegal in V Premium (all cards without DCards are legal in V by default)
+global.OldCardStat[CardStat] = 1
+```
 
-global.NewTriggerStat[CardStat] = 1 // makes the card's trigger power bonus equal to 10000 instead of 5000 for Premium cards
+By default, all newly added cards cards without DCards are legal in V. But this parameter makes the card illegal in V Premium (i.e. only legal in Premium).
+
+```
+global.NewTriggerStat[CardStat] = 1
+```
+
+For Premium-only cards, this parameter makes the card's trigger power bonus equal to 10000 instead of 5000. V Premium only Cards give 10000 by default and this parameter should not be used.
 
 Note that older cards have these properties hard-coded into CFA client.
-```
 
 ### :skull: Ultimate Stride G Zone auto removal
 
 ```
-global.DeleteAllExtraInEndPhase[5235] = 1
+global.DeleteAllExtraInEndPhase[CardStat] = 1
 ```
 
 ### :x: Card restriction label (in deck editor)
 
 ```
-global.CardLimidet[CardStat] = 1 // display the orange "Restricted" label
-
-global.CardBanned[CardStat] = 1 // display the red "Banned" label
+global.CardLimidet[CardStat] = 1
 ```
+
+Display the orange "Restricted" label.
+
+```
+global.CardBanned[CardStat] = 1
+```
+
+Display the red "Banned" label.
 
 ### :eye: Cards hidden in the editor
 
 ```
-global.CardInClan[CardStat] = 29 // technical clan category that is never shown in the editor
-
-global.DCards[CardStat] = 8 // technical nation category that is only shown if it has another clan or nation (e.g. Touken Ranbu)
-
-global.DontShowInDeckEditor[CardStat] // hides the card in the editor regardless of clan/nation
+global.CardInClan[CardStat] = 29
 ```
+
+**29** is a technical clan category that is never shown in the editor.
+
+```
+global.DCards[CardStat] = 8
+```
+
+**8** is technical nation category that is only shown if it has another clan or nation (e.g. Touken Ranbu).
+
+```
+global.DontShowInDeckEditor[CardStat] = 1
+```
+
+This parameter explicitly hides the card in the editor regardless of its clan/nation.
 
 ### :performing_arts: Double-faced cards
 
 ```
-global.AnotherSide[CardStat] = 1234 // that other side card should be hidden in deck editor (see previous section)
+global.AnotherSide[CardStat] = <card_id>
 ```
+
+That other side card referenced by `<card_id>` should be hidden in the deck editor (see previous section).
 
 ### :recycle: Re-assigned cards (for accidentally added duplicate cards)
 
 ```
-global.CardReassignedId[CardStat] = 1234 // this card will no longer be displayed in the deck editor; if a player loads a deck containing this card, it will be replaced with the card that has ID specified by this parameter
+global.CardReassignedId[CardStat] = <card_id>
 ```
+
+The card that has gets parameter added will no longer be displayed in the deck editor.
+
+If a player loads a deck containing this card, it will be replaced with the card that has `<card_id>` specified by this parameter.
+
+This honours the constraints made on individual card quantity, so if total sum of old and newly replaced cards exceeds the maximum allowed amount, only that maximum amount of cards will be added to the deck and the player will be shown a message about insufficent deck size.
 
 ### :information_source: Card-specific effects
 
 ```
-global.Reveal[CardStat] = 1 // effect specific to Starhulk, Gicurs and Starhulk, Letaluk
-
-global.SceneEffect[CardStat] = 1 // effect specific to Masked Magician, Harri (V)
-
-global.CocoAdd[CardStat] = 1 // effect specific to Scarlet Witch, Coco - functionally identical to global.ProtectAdd[CardStat] = 1
+global.Reveal[CardStat] = 1
 ```
+
+Effect specific to **Starhulk, Gicurs** and **Starhulk, Letaluk**.
+
+```
+global.SceneEffect[CardStat] = 1
+```
+
+Effect specific to **Masked Magician, Harri (V)**.
+
+```
+global.CocoAdd[CardStat] = 1
+```
+
+Effect specific to **Scarlet Witch, Coco**
+
+Functionally it is identical to `global.ProtectAdd[CardStat] = 1` but is kept for backwards compatibility purposes.
 
 ## Token Generator Syntax
 
@@ -330,13 +416,13 @@ Note that it is not used for Imaginary Gift generation, those are covered separa
 ### :black_joker::heavy_plus_sign: Basic token generator
 
 ```
-global.TokenSummoner[CardStat] = 1001
+global.TokenSummoner[CardStat] = <card_id>
 ```
 
-ID of the card that will be generated by this card.
+`<card_id>` is a reference to the card that will be generated by the card that has this parameter.
 
 ```
-global.TokenSummonerPosition[CardStat] = 'VR'
+global.TokenSummonerPosition[CardStat] = '<V/R/VR/SHIFT/RodeUpon>'
 ```
 
 `'V'` for when placed on VC, `'R'` for when placed on RC, `'VR'` for when placed on either VC or RC. `'SHIFT'` allows to generate tokens by clicking the card while holding Shift key.
@@ -346,13 +432,13 @@ Don't forget to add the tip to the card text if you the use `'SHIFT'` option, th
 The last option for this parameter is `'RodeUpon'`, and it should be only specifically used in conjunction with `TokenSummonerRodeUponNumber` parameter:
 
 ```
-global.TokenSummonerRodeUponNumber[CardStat] = 1234
+global.TokenSummonerRodeUponNumber[CardStat] = <card_id>
 ```
 
-The token summoner effect is triggered when the card is ridden by a card with ID specified in that parameter.
+The token summoner effect is triggered when the card is ridden by a card with ID equals to `<card_id>`.
 
 ```
-global.TokenSummonerQuantity[CardStat] = 2
+global.TokenSummonerQuantity[CardStat] = <1/2>
 ```
 
 This is an optional parameter which is used to assign fixed quantity of tokens to generate. Currently only supports values of 1 and 2.
@@ -364,15 +450,17 @@ Otherwise, the first question will be: "How many tokens do you want to call?" wi
 ### :black_joker::heavy_plus_sign::thinking: Token generator with choice options
 
 ```
-global.TokenSummoner[CardStat] = 1001
-global.TokenSummoner2[CardStat] = 1002
-global.TokenSummoner3[CardStat] = 1003
+global.TokenSummoner[CardStat] = <card_id_1>
+global.TokenSummoner2[CardStat] = <card_id_2>
+global.TokenSummoner3[CardStat] = <card_id_3>
 ```
 
-IDs of the cards that can be generated by this card, assigned to different buttons for player to choose from. `TokenSummoner2` is mandatory for multiple choice, while `TokenSummoner3` is optional. Maximum of three options are supported.
+`<card_id_1>`, `<card_id_2>` and `<card_id_3>` are IDs of the cards that can be generated by this card, assigned to different buttons for player to choose from.
+
+Having `TokenSummoner2` parameter is mandatory for multiple choice, while `TokenSummoner3` is optional. Maximum of three options are supported.
 
 ```
-global.TokenSummonerPosition[CardStat] = 'VR'
+global.TokenSummonerPosition[CardStat] = '<V/R/VR/SHIFT/RodeUpon>'
 ```
 
 Works exactly the same as for token generator without choice options.
@@ -387,7 +475,7 @@ global.TokenSummoner2Button3[CardStat] = "15000"
 Text values for the prompt that allows choice selection. `TokenSummoner2Text` should contain the text of the question, `TokenSummoner2Button1` through 3 contain text for the three options (should be relatively short to fit in, please try it out in the Test room before submitting).
 
 ```
-global.TokenSummonerQuantity[CardStat] = 3
+global.TokenSummonerQuantity[CardStat] = <1/2>
 ```
 
 Works exactly the same as for token generator without choice options.
@@ -405,64 +493,64 @@ global.SearchEffect[CardStat] = 1
 Should be assigned to 1 to make the effect work.
 
 ```
-global.SearchEffectPosition[CardStat] = 'V'
+global.SearchEffectPosition[CardStat] = '<V/R/VR/SHIFT>'
 ```
 
 `'SHIFT'` / `'VR'` / `'V'` / `'R'` - position of activation, works similarly to `TokenSummoner`.
 
 ```
-global.SearchEffectLookAtQuantity[CardStat] = 7
+global.SearchEffectLookAtQuantity[CardStat] = <number>
 ```
 
-Number of cards to look at
+`<number>` is a number of cards to look at.
 
 ```
-global.SearchEffectMode[CardStat] = 'CheckRace'
+global.SearchEffectMode[CardStat] = <search_mode>
 ```
 
-Search effect mode. Can be one of the following:
+`<search_mode>` can be one of the following (specifically as a string):
 
-- `'Card'` - find by specified card ID (arguments 1, 2 and 3)
-- `'Clan'` - find by Clan ID (argument 1) and grade >= argument 2
-- `'NoClan'` - find any card with grade >= argument 2 (argument 1 should be omitted)
-- `'CheckGrade'` - find a card of specified grade only
-- `'CheckGradeOrLess'` - find any card with grade <= argument 2 (argument 1 should be omitted)
-- `'CheckNameAndGradeOrLess'` - find a card that has argument 1 as a substring in its name with grade <= argument 2. Set argument 1 to arbitrary huge number (e.g. 1000) to use just as a name search
-- `'CheckCrit'` - checks if card has a crit, arguments are ignored
-- `'CheckRace'` - checks is unit has said race (looks at the combination of forward slash "/" + name in card text). Argument 2 can be ignored or used as additional race.
-- `'CheckRaceOrName'` - checks is unit has said race (looks at the combination of forward slash "/" + name in card text) or has argument 2 as a substring in its name.
-
-```
-global.SearchEffectArgument1[CardStat] = 'Humanity'
-global.SearchEffectArgument2[CardStat] = 'Valkyrie'
-global.SearchEffectArgument3[CardStat] = 0
-```
-
-Search function aruments, use depends on `SearchEffectMode` parameter. Third argument is omitted unless `'Card'` search mode is used.
+- `'Card'` - find by specified card ID (arguments 1, 2 and 3).
+- `'Clan'` - find by Clan ID (argument 1) and grade ? argument 2.
+- `'NoClan'` - find any card with grade ? argument 2 (argument 1 should be omitted).
+- `'CheckGrade'` - find a card of specified grade only.
+- `'CheckGradeOrLess'` - find any card with grade ? argument 2 (argument 1 should be omitted).
+- `'CheckNameAndGradeOrLess'` - find a card that has argument 1 as a substring in its name with grade ? argument 2. Set argument 1 to arbitrary huge number (e.g. 1000) to use just as a name search.
+- `'CheckCrit'` - checks if card has a crit, arguments are ignored.
+- `'CheckRace'` - checks if a unit has said race (looks at the combination of forward slash "/" + name in card text). Argument 2 can be ignored or used as additional race.
+- `'CheckRaceOrName'` - checks if a unit has said race (looks at the combination of forward slash "/" + name in card text) or has argument 2 as a substring in its name.
 
 ```
-global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.SearchEffectArgument1[CardStat] = <argument_1>
+global.SearchEffectArgument2[CardStat] = <argument_2>
+global.SearchEffectArgument3[CardStat] = <argument_3>
 ```
 
-Where to put found cards.
-
-- `'AddToHand'` - put found cards into hand
-- `'V'` - ride found cards
-- `'SendToTopCard'` - send found cards to top of the deck
-  - `UpTo` can be added to the end of any of those arguments to make the choice cancellable at any point, e.g. `'AddToHandUpTo'`, `'VUpTo'` and `'SendToTopCardUpTo'`
+Search function arguments, use depends on `SearchEffectMode` parameter and can be either a string or a number. Third argument is omitted unless `'Card'` search mode is used.
 
 ```
-global.ActivateSearchRestAction[CardStat] = 'ShuffleBotDeck'
+global.ActivateSearchFoundAction[CardStat] = <found_action>
 ```
 
-What to do with the rest of the cards
+Where to put found cards. `<found_action>` can be one of the following (specifically as a string):
 
-- `'Shu'` - shuffle into the deck
-- `'SelectBot'` - select in which order to put cards to the bottom of the deck
-- `'ShuffleBotDeck'` - shuffle the rest and put them on the bottom of the deck (primary mode at this point)
+- `'AddToHand'` - put found cards into hand.
+- `'V'` - ride found cards.
+- `'SendToTopCard'` - send found cards to top of the deck.
+  - `UpTo` can be added to the end of any of those arguments to make the choice cancellable at any point, e.g. `'AddToHandUpTo'`, `'VUpTo'` and `'SendToTopCardUpTo'`.
 
 ```
-global.SearchEffectFindQuantity[CardStat] = 1
+global.ActivateSearchRestAction[CardStat] = <rest_action>
+```
+
+What to do with the rest of the cards. `<rest_action>` can be one of the following:
+
+- `'Shu'` - shuffle into the deck.
+- `'SelectBot'` - select in which order to put cards to the bottom of the deck.
+- `'ShuffleBotDeck'` - shuffle the rest and put them on the bottom of the deck (primary mode at this point).
+
+```
+global.SearchEffectFindQuantity[CardStat] = <number>
 ```
 
 Maximum amount of cards allowed to be taken.
