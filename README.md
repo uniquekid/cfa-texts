@@ -327,7 +327,7 @@ This section covers what is called "token generators". Those are the cards that 
 
 Note that it is not used for Imaginary Gift generation, those are covered separately in one of the sections before.
 
-### ??? Basic token generator
+### :black_joker::heavy_plus_sign: Basic token generator
 
 ```
 global.TokenSummoner[CardStat] = 1001
@@ -361,7 +361,7 @@ If you assign this parameter, the first question when the player clicks the card
 
 Otherwise, the first question will be: "How many tokens do you want to call?" with possible answers - 0/1/2.
 
-### ????? Token generator with choice options
+### :black_joker::heavy_plus_sign::thinking: Token generator with choice options
 
 ```
 global.TokenSummoner[CardStat] = 1001
