@@ -277,7 +277,7 @@ global.RemoveFromDrop = 1
 global.Arms[CardStat] = 1
 ```
 
-This parameter signifies that the card can be used as arms. You can also assigned a fixed position to Arms by using one of the two next parameters:
+This parameter signifies that the card can be used as arms. You can also assign a fixed position to Arms by using one of the two next parameters:
 
 ```
 global.LeftArms[CardStat] = 1
