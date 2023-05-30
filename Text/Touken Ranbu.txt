@@ -4336,3 +4336,92 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11190
+{
+global.CardName[CardStat] = 'Mikazuki Munechika Ubu no Sugata '
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11191
+{
+global.CardName[CardStat] = 'Mikazuki Munechika Sentou '
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is rode upon by a grade 2 card with "Mikazuki Munechika" in its card name, look at the top two cards of your deck, choose up to one grade 2 or less card from among them, call it to RC, and put the rest on the top or bottom of your deck in any order.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11192
+{
+global.CardName[CardStat] = 'Mikazuki Munechika Sentou Toku '
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT [VC]: If your soul has two or more cards with "Mikazuki Munechika" in their card name, when you would ride a grade 3 card with "Mikazuki Munechika" in its card name from your ride deck, you can ride without discarding from hand.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11193
+{
+global.CardName[CardStat] = 'Mikazuki Munechika Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT [VC]: During your turn, if you have three or more stand rear-guards, this unit gets power +5000/critical +1.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, call it to RC, and put the rest on the top or bottom of your deck in any order.
+
+AUTO [VC]: When this unit attacks a grade 3 or greater unit, COST [discard two cards from hand], choose two of your front row rear-guards, and stand them.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11194
+{
+global.CardName[CardStat] = 'Kogitsunemaru Kiwame '
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT [Front Row RC]: This unit cannot be chosen by your opponent’s card effects, and all of the cards in your hand get "CONT [Hand]: When you would discard cards from hand for the cost of your vanguard’s ability, it may be regarded as discarding two cards.".
+
+CONT [RC] Shinken Hissatsu (This ability is active if you have three or more damage): This unit gets power +10000. (Active on opponent’s turn too) 
+'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11195
+{
+global.CardName[CardStat] = 'Forge'
+global.CardText[CardStat] = 'Set Order
+
+CONT [Order Zone]: The ACT ability of "Forge" can only be used a total of once each turn.
+
+ACT [Order Zone] 1/Turn: COST [Put a card from drop on the bottom of the deck other than heal trigger or over trigger], reveal cards from the top of your deck until the number of normal units revealed is the same as the number of "Forge" in your order zone, choose a card from among the revealed normal units, and call it to RC as rest. If the called unit is less than or equal to your vanguard’s grade, stand that unit, and it gets power +5000 until end of turn for each other normal unit revealed by this effect. Shuffle the deck. 
+'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000

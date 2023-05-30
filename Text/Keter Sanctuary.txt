@@ -2885,7 +2885,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10418
 {
-global.CardName[CardStat] = 'Oath of Revenge, Thegrea'
+global.CardName[CardStat] = 'Oath of Vengeance, Thegrea'
 global.CardText[CardStat] = 'Keter Sanctuary/Set Order
 
 Play this if you have a vanguard with "Thegrea" in its card name!
@@ -3260,7 +3260,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10642
 {
-global.CardName[CardStat] = 'Knight of Destiny, Cordila'
+global.CardName[CardStat] = 'Knight of Old Fate, Cordiela'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [Back Row Center RC]: If your vanguard is "Majesty Lord Blaster", this unit gets all of the following.
@@ -3274,7 +3274,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10643
 {
-global.CardName[CardStat] = 'Knight of Severity, Creeduna'
+global.CardName[CardStat] = 'Knight of Severity, Cliodhna'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with "Blaster" in its card name, it may be regarded as retiring two rear-guards.
@@ -3522,7 +3522,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10762
 {
-global.CardName[CardStat] = 'Bringer of Soaring Wind, Lakche'
+global.CardName[CardStat] = 'Bringer of Soaring Wind, Lachte'
 global.CardText[CardStat] = 'Keter Sanctuary/Sylph
 
 AUTO [Back Row RC]: At the end of your turn, if you have a vanguard with "Gramgrace" in its card name, COST [retire this unit], choose a grade 3 unit card from your soul, and put it into your hand.'
@@ -4075,6 +4075,111 @@ AUTO: When this unit is placed on RC other than during the battle phase, if your
 AUTO [RC]: At the end of the battle this unit boosted, if your vanguard’s clan is only «Genesis», COST [put two rear-guards in the same column as this unit into soul], choose a card with only «Genesis» for its clan from your drop, and put it into hand. '
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11196
+{
+global.CardName[CardStat] = 'Crimson Lion Cub, Kyrph  '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 5
+
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11197
+{
+global.CardName[CardStat] = 'Knight of Elegant Skills, Gareth  '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+AUTO: When this unit is rode upon by "Knight of Superior Skills, Beaumains", search your deck for up to one "Reign Supreme, King of Beasts!", reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: During your turn, if you have a vanguard with "Ezel" in its card name, this unit gets power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11198
+{
+global.CardName[CardStat] = 'Knight of Superior Skills, Beaumains  '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+ACT [VC] 1/Turn: If your soul has "Knight of Elegant Skills, Gareth" and "Crimson Lion Cub, Kyrph", COST [discard a card from hand], choose up to one "Incandescent Lion, Blond Ezel" from your ride deck, ride it as stand, and it gets drive-1 until end of turn.
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Ezel" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11199
+{
+global.CardName[CardStat] = 'Incandescent Lion, Blond Ezel    '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+CONT [VC]: You can only ride cards with "Ezel" in their card name. 
+
+AUTO [VC]: At the beginning of your ride phase, if you have three or less units, COST [Soul Blast 1], look at the top three cards of your deck, choose up to one grade 3 or less unit card from among them, call it to an open RC, and put the rest on the bottom of the deck in any order.
+
+AUTO [VC]: When this unit attacks a grade 3 or greater vanguard, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to open RC, and this unit gets power +10000 until end of turn. Shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11200
+{
+global.CardName[CardStat] = 'Reign Supreme, King of Beasts!'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Play this if you have a vanguard with "Ezel" in its card name!
+
+Look at the top seven cards of your deck, choose up to one grade 3 or less unit card from among them, call it to :RC:, and it gets power +5000 until end of turn. Shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11201
+{
+global.CardName[CardStat] = 'Silver Fang Witch  '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with only «Gold Paladin» for its clan, this unit gets power +5000 until end of turn, COST [Counter Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11202
+{
+global.CardName[CardStat] = 'Listener of Truth, Dindrane  '
+global.CardText[CardStat] = 'Keter Sanctuary/Gold Paladin/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with only one clan, COST [Soul Blast 2], and Counter Charge 1.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Ezel" in its card name, COST [put one other rear-guard in the same column as this unit on the bottom of the deck], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
