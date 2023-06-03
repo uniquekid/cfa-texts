@@ -4431,25 +4431,20 @@ CardStat = 11204
 {
 global.CardName[CardStat] = 'Training Tools'
 global.CardText[CardStat] = 'Set Order
-
-(You can have a total of five cards in your ride deck made up of this card and unit cards without "Kiwame" in their card names, and one grade 0 to 2 unit cards each, and put this card face up)
-
+(You can have a total five cards in your ride deck: non-Kiwame unit cards with grades 0 through 2, this card and then any other non-Kiwame unit card, and put this card face-up)
 AUTO [Ride Deck]: When you stand up, put this card into your order zone, choose up to one unit card without "Kiwame" in its card name from your ride deck, put it into your order zone face up, and it becomes In Training.
-
 CONT [Order Zone]: Your vanguard loses all of their AUTO abilities and ACT abilities.
-
 CONT [Order Zone]: You cannot normal ride from hand, and when you would ride from your ride deck, you can ride without discarding a card from hand.
-
-ACT [Order Zone]: If your ride deck has no cards, and you did not ride this turn, COST [put a card In Training into soul], search your deck or hand for up to one card with both the card name of the card put into soul and "Kiwame" in its card name, ride it as stand, and if you searched the deck, shuffle the deck. If you rode a card, put this card into your soul, and you get a crest depending on your vanguard’s race. 
+ACT [Order Zone]: If your ride deck has no cards, and you did not ride this turn, COST [put a card In Training into soul], search your deck or hand for up to one card with both the card name of the card put into soul and "Kiwame" in its card name, ride it as stand, and if you searched the deck, shuffle the deck. If you rode a card, put this card into your soul, and you get a crest depending on your vanguard’s race. (Ride, then put into soul to get a race-based crest.)
 '
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.CardInClan2[CardStat] = 30
 global.DCards[CardStat] = 8
-global.DontShowInDeckEditor[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
 
 CardStat = 11205
 {
