@@ -1,7 +1,7 @@
 n = x
 
 
-global.AllCard = 11237
+global.AllCard = 11249
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -24,7 +24,9 @@ global.ToukenCrest[0] = 11213
 global.ToukenCrest[1] = 11214
 global.ToukenCrest[2] = 11215
 global.ToukenCrest[3] = 11216
-global.AllToukenCrest = 4
+global.ToukenCrest[4] = 11241
+global.ToukenCrest[5] = 11244
+global.AllToukenCrest = 6
 
 CardStat = 1
 {
@@ -487,7 +489,7 @@ global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
-CONT: All cards with the same card name as your vanguard becomes grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
 • AUTO [VC]: When this unit attacks, this unit gets power +10000 until end of that battle. Then, COST [Counter Blast 1], choose one of your grade 3 rear-guards, and stand it.
 • AUTO [VC]: When this unit’s attack hits a vanguard, discard the top card of your deck, and if you discarded a trigger unit, choose one of your opponent’s vanguards, and deal one damage. 
 
@@ -507,7 +509,7 @@ global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
-CONT: All cards with the same card name as your vanguard becomes grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
 • AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and until end of that battle, your opponent cannot call grade 1 or greater cards from their hand to GC.
 • CONT [VC]: During your opponent’s main phase, all of your rear-guards cannot be chosen by your opponent’s card effects.
 
@@ -527,7 +529,7 @@ global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
-CONT: All cards with the same card name as your vanguard becomes grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
 • AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and this unit gets power +10000 until end of that battle.
 • AUTO [VC] 1/Turn: When your rear-guard is attacked, COST [Soul Blast 1], and until end of that battle, if any of your rear-guard is hit, it does not retire. 
 
@@ -547,9 +549,49 @@ global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
-CONT: All cards with the same card name as your vanguard becomes grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
 • AUTO [VC]: At the beginning of your battle phase, all of your rear-guards get power +5000.
 • AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], reveal the top card of your deck, put it into hand, and increase this unit’s power by the original shield of the revealed card until the end of that battle. 
+
+(Shift+click to activate persona ride)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
+
+CardStat = 11241
+{
+global.CardName[CardStat] = 'Tachi’s Ability Kiwame'
+global.CardText[CardStat] = 'Crest
+
+CONT: You cannot ride a unit with a different card name from your vanguard.
+
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+• AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards and retire it if it is a trigger unit, and discard it if it is not.
+• AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 2], stand this unit, and it gets drive-1 until end of turn. 
+
+(Shift+click to activate persona ride)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
+
+CardStat = 11244
+{
+global.CardName[CardStat] = 'Yari’s Ability Kiwame'
+global.CardText[CardStat] = 'Crest
+
+CONT: You cannot ride a unit with a different card name from your vanguard.
+
+CONT: All cards with the same card name as your vanguard become grade 3/ power 13000/ critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+• CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.
+• AUTO [VC] 1/Turn: When this unit attacks, reveal the top card  of your deck, this unit gets power +26000 if it is a trigger unit, and discard it if it is not.
 
 (Shift+click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
