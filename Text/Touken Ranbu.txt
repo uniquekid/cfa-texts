@@ -152,7 +152,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Oodachi
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. 
 
-AUTO [VC] Homare (You can only pay the cost of Homare once in total each turn): [Choose a face down card named "Hotarumaru" from your G zone, and turn it face up & Choose five of your rear-guards, and rest them] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets drive-2 until end of turn.'
+AUTO [VC] Homare (You can only pay the cost of Homare once in total each turn): [Choose a face down card named "Hotarumaru" from your G zone, and turn it face up & Choose five of your rear-guards, and rest them] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets drive -2 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
@@ -873,7 +873,7 @@ global.CardName[4203] = 'Uguisumaru Toku'
 
 global.CardText[4203] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [VC] Shinken Hissatsu: During your turn, when your G unit Stride, choose up to three of your units, and they get power+3000 until end of turn.
+AUTO [VC] Shinken Hissatsu: During your turn, when your G unit Stride, choose up to three of your units, and they get power +3000 until end of turn.
 
 AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at seven cards from the top of your deck, search for up to one <Touken Danshi - Tachi> from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 '
@@ -1805,7 +1805,7 @@ global.CardText[5123] = 'Touken Ranbu/Touken Danshi - Tachi
 
 Stride.
 
-AUTO [VC] Shinken Hissatsu: [Counter Blast 1 & Choose a face down "Mikazuki Munechika -Hanamaru-" from your G zone, and turn it face up] When this unit attacks, you may pay the cost. If you do, choose three units in your front row, and they get power+3000 until end of turn. If the number of face up cards in your G zone is three or more, choose three of your rear-guards, stand them, and this unit gets critical +1 until end of turn.
+AUTO [VC] Shinken Hissatsu: [Counter Blast 1 & Choose a face down "Mikazuki Munechika -Hanamaru-" from your G zone, and turn it face up] When this unit attacks, you may pay the cost. If you do, choose three units in your front row, and they get power +3000 until end of turn. If the number of face up cards in your G zone is three or more, choose three of your rear-guards, stand them, and this unit gets critical +1 until end of turn.
 '
 
 global.UnitGrade[5123] = 4
@@ -3361,6 +3361,7 @@ CONT [VC]: If you have five rear-guards, all of your front row rear-guards get p
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Hachisuka Kotetsu Kiwame'
 }
 global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
@@ -4803,6 +4804,7 @@ global.CardName[CardStat] = 'Taikogane Sadamune Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 
 AUTO [RC]: When this unit boosts, if you have a unit with "Shokudaikiri Mitsutada" in its card name, choose a grade 2 or less card from your drop, put it into soul, and this unit gets power +2000 until end of that battle.
+
 AUTO [Back Row RC]: When your unit with "Ookurikara" in its card name attacks while not boosted, that unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
@@ -4856,6 +4858,7 @@ global.CardName[CardStat] = 'Nikkari Aoe Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a "Wakizashi’s Ability Kiwame" crest, COST [Soul Blast 1], draw a card, and put this unit on the top of your deck.
+
 CONT [GC]: If your damage zone has five or more cards, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
@@ -4870,6 +4873,7 @@ global.CardName[CardStat] = 'Hizamaru Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this card is discarded from deck during your turn, if you have a "Tachi’s Ability Kiwame" crest, call this card to RC or put it into hand.
+
 CONT [RC/GC]: If you have a unit with "Higekiri" in its card name, this unit gets power +10000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
@@ -4884,6 +4888,7 @@ global.CardName[CardStat] = 'Higekiri Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this card is discarded from deck during your turn, if you have a "Tachi’s Ability Kiwame" crest, call this card to RC or put it into hand.
+
 AUTO [RC] 1/Turn: At the end of the battle this unit attacked a grade 3 or greater unit, if your vanguard did not attack this turn, COST [discard a card from hand], choose one of your rear-guards with "Hizamaru" in its card name, and stand it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
@@ -4898,6 +4903,7 @@ global.CardName[CardStat] = 'Tonbokiri Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
 
 AUTO: When this card is discarded from deck during your turn, if you have a "Tachi’s Ability Kiwame" crest, call this card to RC or put it into hand.
+
 AUTO [RC] 1/Turn: At the end of the battle this unit attacked a grade 3 or greater unit, if your vanguard did not attack this turn, COST [discard a card from hand], choose one of your rear-guards with "Hizamaru" in its card name, and stand it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
@@ -4913,6 +4919,7 @@ global.CardName[CardStat] = 'Iwatooshi Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 
 AUTO: When this card is discarded from deck during your turn, if you have a "Naginata’s Ability Kiwame" crest, call this card to RC or put it into hand.
+
 AUTO [RC]: When this unit attacks a vanguard, if your opponent has no front row rear-guards in the same column as this unit, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
@@ -4928,7 +4935,9 @@ global.CardName[CardStat] = 'Hachisuka Kotetsu Kiwame Sentou'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
 CONT [VC/RC]: This unit is also regarded as "Hachisuka Kotetsu Kiwame".
+
 ACT [VC] 1/Turn: COST [Counter Blast 1], chooose three of your rear-guards, until end of turn, they get "Boost", and get power +5000.
+
 AUTO [VC]: If you persona rode this turn, this cost may be paid with Counter Blast 1. At the end of the battle this unit attacked, COST [put a card from RC or hand with the same card name as this unit into soul], choose one of your rear-guards, and stand it. If your soul has two or more grade 3 cards with "Hachisuka Kotetsu" in their card names, choose two instead of one.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
@@ -4958,6 +4967,7 @@ global.CardName[CardStat] = 'Koryuu Kagemitsu Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Hachisuka Kotetsu" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one unit card with a different card name from this unit and grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.
+
 AUTO [RC] Shinken Hissatsu (This ability is active if you have three or more damage): When this unit attacks or boosts, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
@@ -4972,6 +4982,7 @@ global.CardName[CardStat] = 'Ichigo Hitofuri Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this unit is placed on RC during your main phase, COST [Counter Blast 1], choose up to one unit card with "Toushirou: or "Gokotai" in its card name from your hand, and call it to RC. If you called a card, draw a card.
+
 AUTO [RC]: When this unit attacks, if you have a total of five or more cards with "Toushirou" or " Gokotai" in their different card names on your RC and in your drop, this unit gets power +10000 until end of that battle, and if you have fourteen or more, COST [discard a card from hand], and this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
