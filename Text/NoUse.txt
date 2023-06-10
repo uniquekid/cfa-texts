@@ -26,7 +26,8 @@ global.ToukenCrest[2] = 11215
 global.ToukenCrest[3] = 11216
 global.ToukenCrest[4] = 11241
 global.ToukenCrest[5] = 11244
-global.AllToukenCrest = 6
+global.ToukenCrest[6] = 11254
+global.AllToukenCrest = 7
 
 CardStat = 1
 {
@@ -592,6 +593,26 @@ CONT: You cannot ride a unit with a different card name from your vanguard.
 CONT: All cards with the same card name as your vanguard become grade 3 / power 13000 / critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
 • CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.
 • AUTO [VC] 1/Turn: When this unit attacks, reveal the top card  of your deck, this unit gets power +26000 if it is a trigger unit, and discard it if it is not.
+
+(Shift+click to activate persona ride)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
+
+CardStat = 11254
+{
+global.CardName[CardStat] = 'Naginata’s Ability Kiwame'
+global.CardText[CardStat] = 'Crest
+
+CONT: You cannot ride a unit with a different card name from your vanguard.
+
+CONT: All cards with the same card name as your vanguard become grade 3 / power 13000 / critical 1 units and have "Twin Drive!!", "Persona Ride", and all of following. (It loses all of its original power, shield, and abilities)
+• AUTO [VC]: At the behinning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards with grade less than or equal to the grade of the revealed card, until end of your opponent’s next turn, that unit cannot move to other RC or GC, or stand during the stand phase, and if the revealed card is a normal unit, discard it.
+• CONT [VC]: When this unit would attackm it battles all of your opponent’s front row units.
 
 (Shift+click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
