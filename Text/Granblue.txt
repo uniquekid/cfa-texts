@@ -14,7 +14,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Chappie the Ghostie'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica
 
-AUTO: When this unit called to the GC, search for 1 «Granblue» from your deck, send it to the drop zone, and shuffle that deck.'
+AUTO: When this unit is place on GC, search your deck for up to one «Granblue», put it into your drop zone, and shuffle your deck.'
 }
 
 CardStat = x+2
@@ -1864,27 +1864,13 @@ global.PowerStat[4071] = 9000
 
 
 CardStat = 4072
-
 {
-
-global.CardName[4072] = 'Skeleton Assault Soldier'
-
-global.CardText[4072] = 'Granblue/Skeleton
-
-AUTO: Hollow.
-
-CONT [RC]: If this unit is hollowed, it gets "AUTO: When this unit is put into your drop zone from RC, bind this card face-up".
-
-AUTO [Bind zone]: At the beginning of the guard step that your unit is attacked, you may call this card to GC.
-'
-
-global.UnitGrade[4072] = 1
-
-global.CardInClan[4072] = 8
-
+global.CardName[CardStat] = 'Skeleton Assault Soldier'
+global.CardText[CardStat] = ''
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 0
 }
-
-global.PowerStat[4072] = 6000
+global.CardReassignedId[CardStat] = 4028
 
 
 CardStat = 4073
