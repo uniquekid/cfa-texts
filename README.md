@@ -268,16 +268,25 @@ If this card is on VC or RC, displays the "Attack" button for all of the back ro
 ### :wastebasket: Auto remove from Drop (for Tokens, Tickets, Markers)
 
 ```
-global.RemoveFromDrop = 1
+global.RemoveFromDrop[CardStat] = 1
 ```
 
 ### :arrow_up_small: Increase Unit Garde in Deck (for Search Effect)
 
 ```
-UnitGradeIncrementInDeck = <number>
+global.UnitGradeIncrementInDeck[CardStat] = <number>
 ```
 
 The number can be used to increase the grade of a card in deck. To decrease the grade, assign negative number instead of positive. Can be used for Orders as well.
+
+### :purple_square::heavy_plus_sign: Increase Front Trigger Power
+
+```
+global.TriggerPowerUpEffect[CardStat, 0] = <power> // for VC or RC
+global.TriggerPowerUpEffect[CardStat, 1] = <power> // for VC only
+```
+
+`<power>` is a number that will be added if the card is present
 
 ### :crossed_swords: Arms
 
