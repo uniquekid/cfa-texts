@@ -1,32 +1,20 @@
-const fs = require('fs');
-const iconvLite = require('iconv-lite');
-const { dirname } = require('path');
-const requireFromString = require('require-from-string');
+const {
+  requireAllCFAscripts,
+  initGlobalCFAScope,
+  WIN_1251_REGEX,
+} = require('./utils');
 
-x = 0;
-CardStat = 0;
-global.PowerStat = [];
-global.DefensePowerStat = [];
-global.CardName = [];
-global.CardText = [];
+initGlobalCFAScope();
+requireAllCFAscripts();
 
-const content = fs.readFileSync(require.resolve('../Text/Anger Feather.txt'));
-const text = iconvLite
-  .decode(content, 'win1252')
-  .replaceAll("'", '`')
-  .replaceAll('{', '')
-  .replaceAll('}', '');
-
-function writeFileSync(path, contents, cb) {
-  fs.mkdirSync(dirname(path), { recursive: true }, function (err) {
-    if (err) return cb(err);
-
-    fs.writeFileSync(path, contents, cb);
+test('card titles only contain valid Windows-1251 characters', () => {
+  global.CardName.forEach((cardName) => {
+    expect(cardName).toMatch(WIN_1251_REGEX);
   });
-}
+});
 
-writeFileSync('./scripts/Anger Feather.js', text);
-
-require('./scripts/Anger Feather');
-
-// requireFromString(text);
+test('card texts only contain vaild Windows-1251 characters', () => {
+  global.CardText.forEach((cardText) => {
+    expect(cardText).toMatch(WIN_1251_REGEX);
+  });
+});
