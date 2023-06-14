@@ -271,6 +271,14 @@ If this card is on VC or RC, displays the "Attack" button for all of the back ro
 global.RemoveFromDrop = 1
 ```
 
+### :arrow_up_small: Increase Unit Garde in Deck (for Search Effect)
+
+```
+UnitGradeIncrementInDeck = <number>
+```
+
+The number can be used to increase the grade of a card in deck. To decrease the grade, assign negative number instead of positive. Can be used for Orders as well.
+
 ### :crossed_swords: Arms
 
 ```
