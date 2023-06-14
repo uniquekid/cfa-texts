@@ -189,7 +189,10 @@ global.QuickShieldAdd[CardStat] = 1
 global.BlueTokenAdd[CardStat] = 1 // for Force
 global.GreenTokenAdd[CardStat] = 1 // for Protect
 global.OrangeTokenAdd[CardStat] = 1 // for Accel
+global.BlueTokenBoth[CardStat] = 1 // gain both Force markers
 ```
+
+`BlueTokenBoth` is always used with `BlueTokenAdd`.
 
 ### :gift::heavy_plus_sign: Imaginary Gift generator - add to hand by clicking the card while holding Shift
 
@@ -401,6 +404,14 @@ global.AnotherSide[CardStat] = <card_id>
 ```
 
 That other side card referenced by `<card_id>` should be hidden in the deck editor (see previous section).
+
+### :page_facing_up::arrow_up_down: Extended text box
+
+```
+global.ExtendedTextBox = 1
+```
+
+Should only be used as last resort in situations when the text can absolutely not fit inside the normal text box even by removing extra line breaks.
 
 ### :recycle: Re-assigned cards (for accidentally added duplicate cards)
 
