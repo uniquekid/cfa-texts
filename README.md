@@ -291,6 +291,12 @@ global.RightArms[CardStat] = 1
 
 Only for Right Deity Arms (will always be attached to the LEFT side of VC)
 
+```
+global.ArmsAsUnit[CardStat] = 1
+```
+
+Arm as a Unit (it will give its power to the vanguard upon attacking) - e.g. "Armed Arms"
+
 ### :trophy: Regalis Piece
 
 ```
