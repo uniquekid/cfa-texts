@@ -167,10 +167,13 @@ CardStat = x+21
 global.CardName[CardStat] = 'Maiden of Trailing Rose'
 global.CardText[CardStat] = 'Neo Nectar/Dryad/Zoo
 
+(PREMIUM TH: Restricted to 1.)
+
 CONT [VC/RC]: If you have a non-«Neo Nectar» in your Vanguard or RC, this unit gets power -2000. 
 
 AUTO [VC]: [Counter Blast 1 & Choose a "Maiden of Trailing Rose" from your hand, and discard it] When this unit’s attack hits the Vanguard, you may pay the cost. If you do, look at the top five cards of your deck, choose up to two «Neo Nectar» among them, call them to separate RC, and shuffle your deck.'
 }
+global.CardLimidet[CardStat] = 1
 
 
 //add
@@ -971,6 +974,8 @@ CardStat = x+19
 global.CardName[CardStat] = 'Maiden of Gladiolus'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
+(PREMIUM TH: You can only run this card if you do not have Untainted Holy Damsel, Green Katrina or Cherry Blossom Blizzard Maiden, Lilga in your deck.)
+
 AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, choose another of your Rear-guards, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
@@ -1414,6 +1419,8 @@ CardStat = 3545
 global.CardName[3545] = 'Cherry Blossom Blizzard Maiden, Lilga'
 
 global.CardText[3545] = 'Neo Nectar/Bioroid
+
+(PREMIUM TH: You can only run this card if you do not have Untainted Holy Damsel, Green Katrina or Maiden of Gladiolus in your deck.)
 
 CONT: Sentinel.
 
@@ -4657,6 +4664,8 @@ CardStat = 6640
 global.CardName[CardStat] = 'Untainted Holy Damsel, Green Katrina'
 global.CardText[CardStat] = 'Neo Nectar/Sylph
 
+(PREMIUM TH: You can only run 1 of this card if you do not have Maiden of Gladiolus or Cherry Blossom Blizzard Maiden, Lilga in your deck.)
+
 Stride.
 
 AUTO [VC]: When placed, COST [turn a card in your G zone face up], call plant tokens to RC up to the same amount of face up cards in your G zone, and this unit gets "CONT [VC]: All of your plant tokens get power +10000" until end of turn.
@@ -4675,6 +4684,7 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 global.PowerStat[CardStat] = 15000
+global.CardLimidet[CardStat] = 1
 
 CardStat = 6720
 {
