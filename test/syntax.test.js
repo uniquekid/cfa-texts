@@ -134,6 +134,8 @@ describe('Card Text', () => {
       expect(cardText).not.toMatch(/Shield [^A-Zt]/);
       expect(cardText).not.toMatch(/[^\u2022] Grade/);
       expect(cardText).not.toMatch(/OverDress/);
+      expect(cardText).not.toMatch(/Rear-guard/);
+      expect(cardText).not.toMatch(/Vanguard/);
     });
   });
 
@@ -143,6 +145,8 @@ describe('Card Text', () => {
       expect(cardText).not.toMatch(/\[critical\]/i);
       expect(cardText).not.toMatch(/\[shield\]/i);
       expect(cardText).not.toMatch(/\(\\d\)/);
+      expect(cardText).not.toMatch(/\[(Generation|Limit) Break \d\]/i);
+      expect(cardText).not.toMatch(/\[1\/Turn]/i);
     });
   });
 

@@ -2899,7 +2899,7 @@ CardStat = 8474
 global.CardName[CardStat] = 'Kasen Kanesada Toku '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
-AUTO: When this unit is rode upon by "Kasen Kanesada Kiwame", Soul Charge 1, choose one of your vanguards, and it gets power +5000 until end of the turn.
+AUTO: When this unit is rode upon by "Kasen Kanesada Kiwame", Soul Charge 1, choose one of your vanguard’s, and it gets power +5000 until end of the turn.
 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
@@ -3334,6 +3334,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your op
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Mutsunokami Yoshiyuki Kiwame'
 }
 global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
@@ -3347,7 +3348,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
 CONT [VC]: If you persona rode this turn, this unit gets critical +1.
 
-AUTO [VC]: This cost may be paid with "Soul Blast 1 “Yamanbagiri Kunihiro Kiwame”". When this unit attacks, COST [Counter Blast 1], draw a card, choose up to one card from your hand, and call it to an open RC.'
+AUTO [VC]: This cost may be paid with "Soul Blast 1 "Yamanbagiri Kunihiro Kiwame"". When this unit attacks, COST [Counter Blast 1], draw a card, choose up to one card from your hand, and call it to an open RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.PersonaRide[CardStat] = 1
@@ -4501,7 +4502,7 @@ CardStat = 11208
 global.CardName[CardStat] = 'Hotarumaru Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
 
-AUTO [RC]: When this unit’s attack hits a grade 3 or greater vanguard, COST [Counter Blast 1 & rest one rear-guard], and stand this unit.
+AUTO [RC] 1/Turn: When this unit’s attack hits a grade 3 or greater vanguard, COST [Counter Blast 1 & rest a rear-guard], and stand this unit.
 
 AUTO [RC]: When this unit stand during your battle phase, this unit gets power +5000 until end of turn. If you have an "Ootachi’s Ability Kiwame" crest, it gets power +10000 instead of +5000.
 '
@@ -5032,3 +5033,295 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11255
+{
+global.CardName[CardStat] = 'Tomoegata Naginata Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
+
+AUTO: When this card is discarded from deck during your turn, if you have a "Naginata’s Ability Kiwame" crest, choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot move to toher RC or GC or stand during the stand phase.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if your opponent has no front row rear-guards, choose one of your other front row rear-guards, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11256
+{
+global.CardName[CardStat] = 'Shizukagata Naginata Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
+
+AUTO: When this card is discarded from deck during your turn, if you have a "Naginata’s Ability Kiwame" crest, choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot move to toher RC or GC or stand during the stand phase.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if your opponent has no front row rear-guards, COST [Counter Blast 1], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11257
+{
+global.CardName[CardStat] = 'Hyuuga Masamune Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO [RC]: When this unit boosts, if your vanguard did not attack this turn, look at the top card of your deck, and put it on the top or bottom of the deck. If you put it on the bottom of the deck, this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11258
+{
+global.CardName[CardStat] = 'Otegine Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
+
+CONT [RC]: If your opponent has a front row unit in the same column as this unit, this unit cannot attack.
+
+CONT [RC]: During your turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11259
+{
+global.CardName[CardStat] = 'Nihongou Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
+
+AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of this turn, COST [Counter Blast 1], draw a card, and put this unit on the top of your deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11260
+{
+global.CardName[CardStat] = 'Ningen Mukotsu'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
+
+CONT [RC] Shinken Hissatsu (This ability is active if you have three or more damage): This unit gets power +5000. (Active on opponent’s turn too.)
+
+AUTO [RC]: When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11266
+{
+global.CardName[CardStat] = 'Atsushi Toushirou Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, until end of your opponent’s next turn, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11267
+{
+global.CardName[CardStat] = 'Akita Toushirou Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO: When this unit is placed on RC from hand, COST [discard a card from hand], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11268
+{
+global.CardName[CardStat] = 'Houchou Toushirou Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+CONT [RC]: This unit gets power +2000 for each of your other units with "Toushirou", "Gokotai", or "Ichigo Hitofuri" in their card names. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11269
+{
+global.CardName[CardStat] = 'Mouri Toushirou Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO: When this unit is put on GC, if your vanguard’s grade is less than your opponent’s vanguard, Counter Charge 1, and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11270
+{
+global.CardName[CardStat] = 'Heshikiri Hasebe Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+AUTO [Front Row RC]: At the beginning of your main phase, if your have an "Uchigatana’s Ability Kiwame" crest, this unit gets power +15000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11271
+{
+global.CardName[CardStat] = 'Doudanuki Masakuni Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+AUTO [RC]: When this unit attacks, if this unit is boosted by a <Touken Danshi - Wakizashi>, or if you have an "Uchigatana’s Ability Kiwame" crest, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11272
+{
+global.CardName[CardStat] = 'Fudou Yukimitsu Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO [RC]: When this unit boosts a grade 2 or greater unit, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck. If this unit boosted a <Touken Danshi - Uchigatana>, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11273
+{
+global.CardName[CardStat] = 'Yamabushi Kunihiro Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+ACT [Drop]: If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and call this card to RC.
+
+AUTO: When this unit is placed on RC from deck or drop, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11274
+{
+global.CardName[CardStat] = 'Himetsuru Ichimonji'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC from hand, look at the top card of your deck, and put it on the top or bottom of the deck.
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle. At the end of that battle, draw a card, and retire this unit.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11275
+{
+global.CardName[CardStat] = 'Mutsunokami Yoshiyuki Kiwame Sentou'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+CONT [VC/RC]: This unit is also regarded as "Mutsunokami Yoshiyuki Kiwame".
+
+ACT [VC] 1/Turn: COST [Counter Blast 1]. choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn for each of your opponent’s open back row RC.
+
+AUTO [VC]: If you persona rode this turn, this cost may be paid with Counter Blast 1. When this unit attacks a vanguard, COST [put a card from RC or hand with the same card name as this unit into soul], look at the top seven cards of your deck, choose up to one card from among them, call it to RC , and shuffle the deck. If your soul has two or more grade 3 cards with "Mutsunokami Yoshiyuki" in their card names, choose up to two cards instead of one.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Mutsunokami Yoshiyuki Kiwame'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11276
+{
+global.CardName[CardStat] = 'Kenshin Kagemitsu Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+CONT [Back Row RC]: During your turn, all of your front row units in the same column as this unit get power +2000.
+
+AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, COST [Counter Blast 1 & discard a card from hand], search your deck for up to one card with the same card name as your vanguard, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11277
+{
+global.CardName[CardStat] = 'Taroutachi Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+AUTO: When this card is discarded from deck during your turn, if your have an "Ootachi’s Ability Kiwame" crest, call this card to RC or put it into hand.
+
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], choose one of your units with "Jiroutachi" in its card name, and that unit and this unit get power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11278
+{
+global.CardName[CardStat] = 'Jiroutachi Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+CONT: During your turn, if you have an "Ootachi’s Ability Kiwame" crest, this unit gets power +10000.
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1 & discard a card from your hand], search your deck for up to one card with Taroutachi in its name, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11279
+{
+global.CardName[CardStat] = 'Ishikirimaru Kiwame'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+AUTO [RC]: When this unit attacks a vanguard, if all of your units are rest, this unit gets power +10000 until end of that battle, and if your have an "Ootachi’s Ability Kiwame" crest, choose one of your opponent’s front row rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
