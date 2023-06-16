@@ -37,38 +37,6 @@ describe('Power Value', () => {
 });
 
 describe('Trigger ID', () => {
-  it('has a corresponding text entry if present', () => {
-    global.TriggerUnit.forEach((triggerUnit, cardStat) => {
-      switch (triggerUnit) {
-        case 1:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Draw Trigger/);
-          break;
-        case 2:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Critical Trigger/);
-          break;
-        case 3:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Stand Trigger/);
-          break;
-        case 4:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Heal Trigger/);
-          break;
-        case 5:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Front Trigger/);
-          break;
-        case 6:
-          expect(global.CardText[cardStat]).toMatch(/(^|\/)Over Trigger/);
-          break;
-        default:
-          expect(global.CardText[cardStat]).not.toMatch(
-            /(^|\/)(Draw|Critical|Stand|Heal|Front|Over) Trigger/
-          );
-          break;
-      }
-    });
-  });
-});
-
-describe('Trigger ID', () => {
   it('has a corresponding text entry if present and does not have it if it has no trigger', () => {
     global.TriggerUnit.forEach((triggerUnit, cardStat) => {
       switch (triggerUnit) {
