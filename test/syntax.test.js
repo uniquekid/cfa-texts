@@ -5,7 +5,7 @@ const {
   UNIVERSAL_LOWERCASE_WORDS_REGEX,
   CLAN_AND_NATION_LIST_REGEX,
   KEYWORD_ABILITY_LIST_REGEX,
-} = require('./utils');
+} = require('./util/utils');
 
 beforeAll(async () => {
   initGlobalCFAScope();

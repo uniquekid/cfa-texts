@@ -1,4 +1,7 @@
-const { initGlobalCFAScope, requireAllCFAscripts } = require('./utils');
+const fs = require('fs');
+const { initGlobalCFAScope, requireAllCFAscripts } = require('./util/utils');
+const sizeOf = require('image-size');
+const { readIniFileSync } = require('read-ini-file');
 
 beforeAll(async () => {
   initGlobalCFAScope();
@@ -157,5 +160,148 @@ describe('Regalis Piece', () => {
         expect(global.CardText[cardStat]).not.toMatch(regalisPieceRegex);
       }
     });
+  });
+});
+
+describe('Card Sprites', () => {
+  it('has a corresponding Large Card Sprite for every database entry', () => {
+    for (let cardStat = 1; cardStat <= global.AllCard; cardStat++) {
+      // skip card images that are missing
+      if (
+        (cardStat >= 6547 && cardStat <= 6566) ||
+        cardStat === 6806 ||
+        cardStat === 9167 ||
+        cardStat === 9192 ||
+        cardStat === 9193
+      ) {
+        continue;
+      }
+      // check that image exists
+      const filePath = `./CardSprite/n${cardStat}.jpg`;
+      expect(fs.existsSync(filePath)).toBeTruthy();
+      // get dimensions of a card image
+      const dimensions = sizeOf(filePath);
+      // skip weird card images
+      if (
+        cardStat === 435 || // Oracle Guardian, Hermes
+        cardStat === 1194 || // Blaster Mameshiba
+        cardStat === 10177 // Knight of Calm Harp, Curaaf (Korean WO)
+      ) {
+        continue;
+      }
+      // for newer images the width should always be between 298 and 300,
+      if (cardStat > 407) {
+        expect(dimensions.width).toBeGreaterThanOrEqual(298);
+        expect(dimensions.width).toBeLessThanOrEqual(300);
+      } else {
+        // otherwise check a broader range
+        expect(dimensions.width).toBeGreaterThan(294);
+        expect(dimensions.width).toBeLessThan(302);
+      }
+      // height should be in range of 437+/-12px
+      expect(dimensions.height).toBeGreaterThanOrEqual(425);
+      expect(dimensions.height).toBeLessThanOrEqual(449);
+    }
+  });
+
+  it('has a corresponding Small Card Sprite for every database entry', () => {
+    for (let cardStat = 1; cardStat <= global.AllCard; cardStat++) {
+      // skip card images that are missing
+      if (
+        (cardStat >= 6547 && cardStat <= 6566) ||
+        cardStat === 6806 ||
+        cardStat === 9167 ||
+        cardStat === 9192 ||
+        cardStat === 9193
+      ) {
+        continue;
+      }
+      // check that image exists
+      const filePath = `./CardSpriteMini2/n${cardStat}.jpg`;
+      expect(fs.existsSync(filePath)).toBeTruthy();
+      // get dimensions of a card image
+      const dimensions = sizeOf(filePath);
+      // skip weird card images
+      if (
+        cardStat === 435 || // Oracle Guardian, Hermes
+        cardStat === 1194 || // Blaster Mameshiba
+        cardStat === 10177 // Knight of Calm Harp, Curaaf (Korean WO)
+      ) {
+        continue;
+      }
+      // width should be in range of 75+/-3px
+      expect(dimensions.width).toBeGreaterThanOrEqual(72);
+      expect(dimensions.width).toBeLessThanOrEqual(78);
+      // height should be in range of 109+/-4px
+      expect(dimensions.height).toBeGreaterThanOrEqual(105);
+      expect(dimensions.height).toBeLessThanOrEqual(113);
+    }
+  });
+});
+
+describe('Sleeve Sprites', () => {
+  beforeAll(() => {
+    const { Version } = readIniFileSync('./Version.ini');
+    global.Version = Version;
+  });
+
+  it('has a corresponding Large Sleeve Sprite for every number until max sleeve number', () => {
+    for (let i = 0; i <= global.Version.Sleeve; i++) {
+      // skip sleeve images that are missing
+      if (i === 674) {
+        continue;
+      }
+      // check that image exists
+      const filePath = `./Sprite/Sleeves/s${i}.png`;
+      expect(fs.existsSync(filePath)).toBeTruthy();
+      // get dimensions of a card image
+      const dimensions = sizeOf(filePath);
+      // width should be in range of 295+/-5px
+      expect(dimensions.width).toBeGreaterThanOrEqual(290);
+      expect(dimensions.width).toBeLessThanOrEqual(300);
+      // height should be in range of 420+/-30px
+      expect(dimensions.height).toBeGreaterThanOrEqual(390);
+      expect(dimensions.height).toBeLessThanOrEqual(450);
+    }
+  });
+
+  it('has a corresponding Mini Sleeve Sprite for every number until max sleeve number', () => {
+    for (let i = 0; i <= global.Version.Sleeve; i++) {
+      // skip sleeve images that are missing
+      if (i === 674) {
+        continue;
+      }
+      // check that image exists
+      const filePath = `./Sprite/SleevesMini/s${i}.png`;
+      expect(fs.existsSync(filePath)).toBeTruthy();
+      // get dimensions of a card image
+      const dimensions = sizeOf(filePath);
+      // width should be in range of 60+/-4px
+      expect(dimensions.width).toBeGreaterThanOrEqual(56);
+      expect(dimensions.width).toBeLessThanOrEqual(64);
+      // height should be in range of 84+/-6px
+      expect(dimensions.height).toBeGreaterThanOrEqual(78);
+      expect(dimensions.height).toBeLessThanOrEqual(90);
+    }
+  });
+
+  it('has a corresponding Mini2 Sleeve Sprite for every number until max sleeve number', () => {
+    for (let i = 0; i <= global.Version.Sleeve; i++) {
+      // skip sleeve images that are missing
+      if (i === 674) {
+        continue;
+      }
+      // check that image exists
+      const filePath = `./Sprite/SleevesMini2/s${i}.png`;
+      expect(fs.existsSync(filePath)).toBeTruthy();
+      // get dimensions of a card image
+      const dimensions = sizeOf(filePath);
+      // width should be in range of 75+/-3px
+      expect(dimensions.width).toBeGreaterThanOrEqual(72);
+      expect(dimensions.width).toBeLessThanOrEqual(78);
+      // height should be in range of 105+/-7px
+      expect(dimensions.height).toBeGreaterThanOrEqual(98);
+      expect(dimensions.height).toBeLessThanOrEqual(112);
+    }
   });
 });
