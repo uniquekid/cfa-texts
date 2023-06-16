@@ -3,7 +3,7 @@ CardStat = 8773
 global.CardName[CardStat] = 'Fighting Together, Yoh Asakura'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], draw a card, and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000".
+OverSoul - ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], draw a card, and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000".
 
 AUTO [VC]: When this unit attacks, if your damage zone has four or more cards, COST [Counter Blast 1], and this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -388,7 +388,7 @@ CardStat = 9181
 global.CardName[CardStat] = 'Realizing the Same Dream as Her Brother, Pirica'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-ACT [Back row center RC]: If you have a vanguard with "Horohoro" in its card name, COST [Counter Blast 1 & rest this unit], choose a Horohoro order from your drop, and put it into your hand.'
+ACT [Back Row Center RC]: If you have a vanguard with "Horohoro" in its card name, COST [Counter Blast 1 & rest this unit], choose a Horohoro order from your drop, and put it into your hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 9
 }
@@ -980,6 +980,7 @@ Additional Effect - Choose one of your opponents vanguards, and deal one damage!
 Play Effect (Resolve this effect when played as an order!) - If your vanguard OverSoul this turn, retire all of your opponents rear-guards.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
+global.CardInClan[CardStat] = 30
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
@@ -1192,7 +1193,7 @@ CardStat = 9254
 global.CardName[CardStat] = 'Don’t Be Sad! Kororo'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -1391,8 +1392,8 @@ global.CardName[CardStat] = 'Goldva’s Orders'
 global.CardText[CardStat] = 'Shaman King/Normal Order
 
 Perform one of the effects below.
-- Draw a card.
-- Reveal the top two cards of your deck, put into your hand all the cards with "Silva"  or "Silver" in their card names, and discard the rest.'
+• Draw a card.
+• Reveal the top two cards of your deck, put into your hand all the cards with "Silva" or "Silver" in their card names, and discard the rest.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 9
@@ -1411,6 +1412,7 @@ Additional Effect - Choose one of your opponents vanguards, and deal one damage!
 Play Effect (Resolve this effect when played as an order!) - If your vanguard OverSoul this turn, retire all of your opponents rear-guards.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
+global.CardInClan[CardStat] = 30
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
@@ -1438,7 +1440,7 @@ CONT: This card can only ride on a grade 3 unit with "Yoh Asakura" in its card n
 
 AUTO: When this unit is placed on VC, this unit gets power +10000 / critical +1 until end of turn.
 
-OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], until end of turn, all of your front row units get power +10000, and when this unit would attack, it battles all of your opponent’s units in a column.'
+OverSoul - ACT [VC] 1/Turn: COST [Put a rear-guard with "Amidamaru" in its card name into your soul], until end of turn, all of your front row units get power +10000, and when this unit would attack, it battles all of your opponent’s units in a column.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 9
 global.PersonaRide[CardStat] = 1
@@ -1541,7 +1543,7 @@ CardStat = 9613
 global.CardName[CardStat] = 'Wind of Laughter that Blows Away Evil, Joco'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Mic" in its card name into your soul], and until end of turn, your opponent cannot intercept, and all of your opponent’s grade 3 or greater units get power -5000.
+OverSoul - ACT [VC] 1/Turn: COST [Put a rear-guard with "Mic" in its card name into your soul], and until end of turn, your opponent cannot intercept, and all of your opponent’s grade 3 or greater units get power -5000.
 
 AUTO [VC]: At the end of the battle this unit attacked, if this unit OverSoul this turn, COST [Counter Blast 2], stand this unit, and it gets drive -2 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -1581,7 +1583,7 @@ CardStat = 9618
 global.CardName[CardStat] = 'Inherited Soul of a Jaguar, Mic'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -1773,7 +1775,7 @@ CONT: This card can only be ridden from a grade 3 card with "Tao Ren" in its car
 
 AUTO: When this unit is placed on VC, search your deck for up to one grade 3 or greater card with "Tao Ren" in its card name, reveal it and put it into your hand, and shuffle your deck.
 
-OverSoul — ACT [VC] 1/Turn: COST [Put a rear-guard with "Bason" in its card name into your soul], choose three of your opponent’s rear-guards, retire them, and this unit gets power +10000 until end of turn for every five cards in your drop.'
+OverSoul - ACT [VC] 1/Turn: COST [Put a rear-guard with "Bason" in its card name into your soul], choose three of your opponent’s rear-guards, retire them, and this unit gets power +10000 until end of turn for every five cards in your drop.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 9
 global.PersonaRide[CardStat] = 1
@@ -1786,7 +1788,7 @@ CardStat = 9719
 global.CardName[CardStat] = 'Surviving a Close Call, Bason'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -2099,7 +2101,7 @@ CardStat = 9787
 global.CardName[CardStat] = 'Suikokuka, Spirit of Fire'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -2153,7 +2155,7 @@ CardStat = 9808
 global.CardName[CardStat] = 'Wudu-maer, Matilda Matisse'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-AUTO [RC]: When placed, if you have a Grade 3 or greater vanguard with "Hao" in its card name, COST [Soul Blast 1] to search your deck or drop for up to one "Trick or Treat, Jack", call it to RC, and if you searched your deck, shuffle your deck.
+AUTO [RC]: When placed, if you have a grade 3 or greater vanguard with "Hao" in its card name, COST [Soul Blast 1] to search your deck or drop for up to one "Trick or Treat, Jack", call it to RC, and if you searched your deck, shuffle your deck.
 
 AUTO: When bound from RC by the ability of your Vanguard with "Hao" in its name, put this card into your soul.'
 global.UnitGrade[CardStat] = 2
@@ -2313,7 +2315,7 @@ CardStat = 9842
 global.CardName[CardStat] = 'Light of Universal Laws, Shamash'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -2383,7 +2385,7 @@ CardStat = 9872
 global.CardName[CardStat] = 'Spirit Evolution, Tokageroh'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -2532,7 +2534,7 @@ CardStat = 9901
 global.CardName[CardStat] = 'Exceptional Sensing Ability, Morphea'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
@@ -2583,7 +2585,7 @@ CardStat = 9908
 global.CardName[CardStat] = 'Complete Body-and-Soul Devotion, Amidamaru'
 global.CardText[CardStat] = 'Shaman King/Spirit/Heal Trigger
 
-You may only have up to four cards with "HEAL" in a deck.'
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 9
 }
