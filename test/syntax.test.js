@@ -129,6 +129,8 @@ describe('Card Text', () => {
       expect(cardText).not.toMatch(/Soul blast/);
       expect(cardText).not.toMatch(/Counter charge/);
       expect(cardText).not.toMatch(/Soul charge/);
+      expect(cardText).not.toMatch(/[^\]][^ \(]Stand [^A-Zt]/);
+      expect(cardText).not.toMatch(/[^\]][^ \[]+Rest[^\w]/);
       expect(cardText).not.toMatch(/Power [^A-Z]/);
       expect(cardText).not.toMatch(/Critical [^A-Zt]/);
       expect(cardText).not.toMatch(/Shield [^A-Zt]/);
@@ -144,7 +146,15 @@ describe('Card Text', () => {
       expect(cardText).not.toMatch(/\[power\]/i);
       expect(cardText).not.toMatch(/\[critical\]/i);
       expect(cardText).not.toMatch(/\[shield\]/i);
+      expect(cardText).not.toMatch(/\[stand\]/i);
+      expect(cardText).not.toMatch(/\[rest\]/i);
       expect(cardText).not.toMatch(/\(\\d\)/);
+      expect(cardText).not.toMatch(/\(VC\)/);
+      expect(cardText).not.toMatch(/\(RC\)/);
+      expect(cardText).not.toMatch(/\(GC\)/);
+      expect(cardText).not.toMatch(/:VC:/);
+      expect(cardText).not.toMatch(/:RC:/);
+      expect(cardText).not.toMatch(/:GC:/);
       expect(cardText).not.toMatch(/\[(Generation|Limit) Break \d\]/i);
       expect(cardText).not.toMatch(/\[1\/Turn]/i);
     });
