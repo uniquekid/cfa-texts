@@ -100,7 +100,7 @@ describe('Card Text', () => {
 
     global.CardText.forEach((cardText, cardStat) => {
       if (global.CardInClan[cardStat] === 29) {
-        return; // if clan is in NoUse.txt or is an Order it most likely has a non-standard text, so we skip it
+        return; // if clan is in NoUse.txt it most likely has a non-standard text, so we skip it
       }
       expect(cardText).toMatch(textLineRegex);
     });
