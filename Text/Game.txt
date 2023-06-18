@@ -3,7 +3,7 @@ CardStat = 30032
 global.CardName[CardStat] = 'Male Knight'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC] 1/Turn: COST [Soul Blast 3], all your front row units get power +3000 until end of that turn, and when this unit would attack, it battles all of the units in your opponent’s front row.
+ACT [VC] 1/Turn: COST [Soul Blast 3], until end of turn, all of your front row units get power +3000, and when this unit would attack, it battles all of your opponent’s front row units.
 
 CONT [VC]: During your turn, this unit gets power +3000 for each card in your damage zone.'
 }
@@ -14,12 +14,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 30033
 {
-global.CardName[CardStat] = 'Male Swordman "Provoke"'
+global.CardName[CardStat] = 'Male Swordsman "Provoke"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC/RC] 1/Turn: COST [Counter Blast 1], your opponent moves all of their back row rear guard to an open front row RC. (Your opponent chooses the order of the movement, and can also change columns)
+ACT [VC/RC] 1/Turn: COST [Counter Blast 1], and your opponent moves each of his or her back row rear-guards to open front row RC. (Your opponent chooses the order to move the units, and he or she can also move them within the same row)
 
-AUTO [GC]: When placed, if you have more rear-guards than your opponent, this unit gets shield +10000 until end of that battle, and you can Soul Charge 1.'
+AUTO [GC]: When placed, if you have more rear-guards than your opponent, this unit gets shield +10000 until end of that battle, and you may Soul Charge 1.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -31,9 +31,9 @@ CardStat = 30034
 global.CardName[CardStat] = 'Female Thief'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, this unit can attack the back row until end of turn.
+AUTO [VC/RC]: When placed, this unit can attack your opponent’s back row units.
 
-AUTO [RC]: When placed, if your soul has two or less cards, [Soul Charge 1].'
+AUTO [RC]: When placed, if your soul has two or less cards, Soul Charge 1.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -45,9 +45,9 @@ CardStat = 30035
 global.CardName[CardStat] = 'Female Wizard'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When placed on an additional RC, COST [Soul Blast 1], and Counter Charge 1.
+AUTO [RC]: When placed, if this unit is on an additional RC, COST [Soul Blast 1], and Counter Charge 1.
 
-AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1], your opponent cannot call normal units to GC until end of turn, and at the end of that battle, you may put this unit into your soul and draw a card.'
+AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], and your opponent cannot call normal units to GC until end of turn. At the end of that battle, and you may put this unit into your soul. If you put it into your soul, draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -61,7 +61,7 @@ global.CardText[CardStat] = 'Game/Human
 
 CONT [RC]: If your vanguard is grade 3 or greater, this unit cannot be retired by card effects.
 
-AUTO [RC]: When this unit attacks while boosted, COST [Soul Blast 1], choose any number of cards in your damage zone, put them into your soul, and put the top card of your deck into your damage zone for each card put into your soul.'
+AUTO [RC]: When it attacks while boosted, COST [Soul Blast 1], choose any number of cards from your damage zone, put them into your soul, and for each card put into your soul by this effect, put the top card of your deck into your damage zone.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -73,7 +73,7 @@ CardStat = 30037
 global.CardName[CardStat] = 'Female Merchant'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [RC]: If this unit is on an additional RC, this unit gets "Intercept"'
+CONT [RC]: If this unit is on an additional RC, this unit gets "Intercept".'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -99,7 +99,7 @@ CardStat = 30039
 global.CardName[CardStat] = 'Female Swordsman'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1], this unit gets power +6000 until end of turn, if your vanguard is grade 3 or greater, reveal the top card of your deck, if the revealed card is a trigger unit, this unit gets critical +1 until end of turn, at the end of that turn, put this unit to your soul.'
+AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], until end of turn, this unit gets power +6000, if your vanguard is grade 3 or greater, reveal the top card of your deck, and if the revealed card is a trigger unit, this unit gets critical +1. At the end of that turn, put this unit to your soul.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -111,7 +111,7 @@ CardStat = 30040
 global.CardName[CardStat] = 'Female Magician'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired during your turn, you can Soul Charge 1, and choose up to one of your other units, and that unit gets power +2000 until end of turn.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired during your turn, you may Soul Charge 1. Choose up to one of your other units, and that unit gets power +2000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -197,7 +197,7 @@ CardStat = 30047
 global.CardName[CardStat] = 'Female Knight'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: At the end of the battle this unit attacked a vanguard, if this unit is on an additional RC, COST [Counter Blast 1 & Soul Blast 1], stand this unit, and this unit gets power -5000 until end of turn.'
+AUTO [RC]: At the end of the battle it attacked a vanguard, if this unit is on an additional RC, COST [Counter Blast 1 & Soul Blast 1], stand this unit, and it gets power -5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -209,9 +209,9 @@ CardStat = 30048
 global.CardName[CardStat] = 'Male Priest'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [VC/RC]: If you have a grade 3 card in your soul, this unit gets power +1000.
+CONT [VC/RC]: If your soul has a grade 3 card, this unit gets power +1000.
 
-AUTO [VC]: When placed COST [Counter Blast 2 & discard two cards from your hand], heal one card from your damage zone, and if this unit is ridden from a grade 3, you may draw a card.'
+AUTO [VC]: When placed, COST [Counter Blast 2 & discard two cards from your hand], heal a card from your damage zone, and if you rode from a grade 3, you may draw a card.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -223,9 +223,9 @@ CardStat = 30049
 global.CardName[CardStat] = 'Male Hunter'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, COST [Counter Blast 1], draw a card, and choose up to one of your units, that unit gets power +5000 and if this unit is on VC, that unit gets critical +1 until end of turn.
+AUTO [VC/RC]: When its attack hits a vanguard, COST [Counter Blast 1], draw a card, choose up to one of your units, until end of turn, that unit gets power +5000, and if this unit is on VC, that unit gets critical +1.
 
-AUTO [VC/RC]: When this unit attacks, COST [put one other rear-guard to your soul], this unit gets power +5000 until end of battle.'
+AUTO [VC/RC]: When it attacks, COST [put another rear-guard to your soul], and this unit gets power +5000 until end of that battle.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -237,7 +237,7 @@ CardStat = 30050
 global.CardName[CardStat] = 'Female Sage "Abracadabra"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC/RC]: COST [Counter Blast 3 & Soul Blast 1], put all of your rear-guards and all cards in your soul on the top of your deck, shuffle your deck, if two or more cards were put into your deck this way, look at five cards from the top of your deck, call up to five cards to different RC from among them, put the rest into your soul.'
+ACT [VC/RC]: COST [Counter Blast 3 & Soul Blast 1], put all of the cards from your soul and your rear-guards on the top of your deck, and shuffle your deck. If you put two or more cards on the top of your deck, look at five cards from the top of your deck, choose up to five cards from among them, call them to RC, and put the rest into your soul.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -249,9 +249,9 @@ CardStat = 30051
 global.CardName[CardStat] = 'Male Thief'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks, COST [Soul Blast 1] until end of battle, your opponent’s units must intercept as much as possible.
+AUTO [RC]: When it attacks, COST [Soul Blast 1], and your opponent’s units must intercept as much as possible until end of that battle.
 
-AUTO [RC]: At the beginning of your opponent’s end phase, COST [put this unit to soul], draw a card.'
+AUTO [RC]: At the beginning of your opponent’s end phase, COST [put this unit to your soul], and draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -263,9 +263,9 @@ CardStat = 30052
 global.CardName[CardStat] = 'Male Merchant'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [GC]: When retired from GC, you may put this unit to your soul.
+AUTO [GC]: When retired from GC, you may put this unit into your soul.
 
-AUTO [VC/RC]: When placed, you may draw a card, if you drew, discard a card from your hand.'
+AUTO [VC/RC]: When placed, you may draw a card. If you drew a card, discard a card from your hand.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -277,7 +277,7 @@ CardStat = 30053
 global.CardName[CardStat] = 'Female Acolyte "Blessing"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, choose up to one of your other units, that unit gets power +2000 until end of turn.
+AUTO [VC/RC]: When placed, choose up to one of your other units, and that unit gets power +2000 until end of turn.
 
 AUTO [RC]: When your vanguard is placed, choose one of your vanguards, and it gets power +5000 until end of turn.'
 }
@@ -317,7 +317,7 @@ CardStat = 30056
 global.CardName[CardStat] = 'Male Archer'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO: When this card is put into your soul by your card’s ability, COST [Counter Blast 1], call this unit from soul to RC, and this unit gets power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
+AUTO: When it is put into your soul by your card’s ability, COST [Counter Blast 1], call this card RC, and this unit gets power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -406,9 +406,9 @@ CardStat = 30063
 global.CardName[CardStat] = 'Female Hunter'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], when your opponent would call cards to GC from hand, they must call two or more at the same time.
+AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], and until end of that battle, when your opponent would call from his or her hand to GC, he or she must call two or more at the same time.
 
-ACT [RC] 1/Turn: COST [choose a card from your hand and put it to your soul], draw a card.'
+ACT [RC] 1/Turn: COST [Put a card from your hand into your soul], and draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -420,11 +420,11 @@ CardStat = 30064
 global.CardName[CardStat] = 'Male Blacksmith "Over Thrust"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], all your front row units get power +3000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and all your front row units get power +3000 until end of turn.
 
 AUTO [VC]: When your rear-guard is placed, that unit and this unit gets power +3000 until end of turn.
 
-AUTO [VC/RC]: When this unit attacks, COST [Soul Blast 1], this unit gets power +5000 until end of battle.'
+AUTO [VC/RC]: When it attacks, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -436,9 +436,9 @@ CardStat = 30065
 global.CardName[CardStat] = 'Female Alchemist "Bio Cannibalize"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC/RC] 1/Turn: COST [Soul Blast 1], call up to one homunculus token to RC, and this unit gets power +5000 until end of turn. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
+ACT [VC/RC] 1/Turn: COST [Soul Blast 1], call up to one Homonculus token to RC, and this unit gets power +5000 until end of turn. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Retire one of your token units], call up to one homunculus token to open RC, and that unit gets power +8000 until end of turn.
+AUTO [VC]: When it attacks, COST [Counter Blast 1 & retire one of your token units], call up to one Homonculus token to an open RC, and that unit gets power +8000 until end of turn.
 
 (Shift + click to call homunculus tokens.)'
 }
@@ -458,9 +458,9 @@ CardStat = 30066
 global.CardName[CardStat] = 'Female Crusader "Devotion"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [GC]: When placed, COST [discard a card from your hand], this unit gets shield +20000.
+AUTO [GC]: When placed, COST [discard a card from your hand], and this unit gets shield +20000.
 
-AUTO [RC]: When this unit attacks, if you have three or more rear-guards, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When it attacks, if you have three or more rear-guards, this unit gets power +5000 until end of that battle.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -472,7 +472,7 @@ CardStat = 30067
 global.CardName[CardStat] = 'Male Sage'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks while boossted, COST [Counter Blast 1 & Put one grade 0 rear-guard to soul], call one card from your soul to open RC'
+AUTO [RC]: When this unit attacks while boossted, COST [Counter Blast 1 & put one of your grade 0 rear-guards into soul], choose a card from your soul, and call it to an open RC.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -484,7 +484,7 @@ CardStat = 30068
 global.CardName[CardStat] = 'Female Blacksmith'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When this unit attacks, COST [Soul Blast 1 & Discard a card from your hand], Counter Charge 1, if your vanguard is grade 3 or greater, draw a card.'
+AUTO [VC/RC]: When it attacks, COST [Soul Blast 1 & discard a card from your hand], Counter Charge 1, and if your vanguard is grade 3 or greater, draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -496,7 +496,7 @@ CardStat = 30069
 global.CardName[CardStat] = 'Male Alchemist'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [RC] 1/Turn: COST [Soul Blast 1], call up to one homunculus token to open RC. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
+ACT [RC] 1/Turn: COST [Soul Blast 1], and call up to one Homonculus token to an open RC. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 (Shift + click to call homunculus tokens.)'
 }
@@ -547,7 +547,7 @@ CardStat = 30072
 global.CardName[CardStat] = 'Female Knight "Two-Hand Quicken"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When your vanguard attacks, COST [Counter Blast 1], stand this unit, and this unit gets power -3000 until end of turn.'
+AUTO [RC]: When your vanguard attacks, COST [Counter Blast 1], stand this unit, and it gets power -3000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -618,7 +618,7 @@ CardStat = 30078
 global.CardName[CardStat] = 'Female Alchemist "Potion Pitcher"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, COST [Soul Blast 1], call up to one homunculus token to RC (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
+AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to one Homonculus token to RC. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 AUTO [RC]: When your token unit is placed by your card’s ability, that unit gets power +3000 until end of turn.
 
@@ -641,7 +641,7 @@ CardStat = 30079
 global.CardName[CardStat] = 'Female Sage'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks, if this unit is on an additional RC, COST [Counter Blast 1 & retire one of your other rear-guards], draw two cards, and this unit gets power +5000 until end of turn.'
+AUTO [RC]: When it attacks, if this unit is on an additional RC, COST [Counter Blast 1 & retire another rear-guard], draw two cards, and this unit gets power +5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -653,9 +653,9 @@ CardStat = 30082
 global.CardName[CardStat] = 'Male Assassin "Sonic Blow"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & Retire three rear-guards], during that turn, you cannot get Imaginary Gift: Accel, choose a "Male Assassin "Sonic Blow"" from your hand, ride that card as stand, and that unit gets power +10000 until end of turn.
+AUTO [VC]: At the end of the battle it attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & retire three rear-guards], you cannot get Imaginary Gift: Accel until end of turn, choose a "Male Assassin "Sonic Blow"" from your hand, ride it as stand, and that unit gets power +10000 until end of turn.
 
-AUTO [VC/RC]: When this unit attacks, COST [Soul Blast 1], this unit gets power +5000 until end of battle.'
+AUTO [VC/RC]: When it attacks, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -667,9 +667,9 @@ CardStat = 30083
 global.CardName[CardStat] = 'Female Monk "Asura Strike"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC]: When placed, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1, discard any amount of cards], this unit gets power +10000 for each card discarded, if you discarded 3 or more, this unit gets critical +1 / drive +2 until end of turn.
+AUTO [VC]: When placed, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & discard any number of cards from your hand], until end of turn, this unit gets power +10000 for each card discarded for this cost, and if you discarded 3 or more cards, this unit gets critical +1 / drive +2.
 
-AUTO [VC/RC]: When this unit attacks, COST [Soul Blast 5], until end of battle, when your opponent would call guardians from his or her hand, he or she must call three or more at the same time.'
+AUTO [VC/RC]: When it attacks, COST [Soul Blast 5], and until end of that battle, when your opponent would call from his or her hand to GC, he or she must call three or more at the same time.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -681,7 +681,7 @@ CardStat = 30084
 global.CardName[CardStat] = 'Male Rogue'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], your opponent choose one of their rear-guards, retire that unit.'
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], your opponent choose one of his or her rear-guards, and retires it.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -697,7 +697,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [Soul]: When your "Male Assassin "Sonic Blow"" is placed on VC, you may call this card to RC, and this unit gets power +5000 until end of turn.
 
-AUTO [RC]: At the end of the battle this unit attacked, COST [put this unit to soul & retire one of your other rear-guards], choose one of your opponent’s rear-guards, retire that unit.'
+AUTO [RC]: At the end of the battle this unit attacked, COST [put this unit to soul & retire another other rear-guards], choose one of your opponent’s rear-guards, and retire it.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -710,7 +710,7 @@ CardStat = 30086
 global.CardName[CardStat] = 'Male Bard'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [RC] 1/Turn: COST [Counter Blast 1 & Rest this unit], draw a card, if you have a "Female Dancer" on your RC in the same column as this unit, stand this unit, and this unit gets power +5000 until end of turn.'
+ACT [RC] 1/Turn: COST [Counter Blast 1 & rest this unit], draw a card, and if you have a "Female Dancer" on your RC in the same column as this unit, stand this unit, and it gets power +5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -722,7 +722,7 @@ CardStat = 30087
 global.CardName[CardStat] = 'Female Dancer'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [RC] 1/Turn: COST [Rest this unit], choose one card from your damage zone or drop and put it to your soul, if you put a card from damage zone to soul, put the top card of your deck to your damage zone face down, and if you have a "Male Bard" on your RC in the same column as this unit, stand this unit, and this unit gets power +2000 until end of turn.'
+ACT [RC] 1/Turn: COST [rest this unit], choose a card from your damage zone or drop zone, put it to your soul, if you put a card from your damage zone, put the top card of your deck into your damage zone face down, and if you have a "Male Bard" on your RC in the same column as this unit, stand this unit, and it gets power +2000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -762,7 +762,7 @@ CardStat = 30090
 global.CardName[CardStat] = 'Female Hunter "Ankle Snare"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [RC] 1/Turn: COST [Soul Blast 1 & Rest this unit], choose one of your opponent’s rear-guards, that unit cannot stand during his or her stand phase.'
+ACT [RC] 1/Turn: COST [Soul Blast 1 & rest this unit], choose one of your opponent’s rear-guards, and it cannot stand during his or her next stand phase.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -835,7 +835,7 @@ global.CardText[CardStat] = 'Game/Human
 
 CONT [RC]: All your opponent’s rear-guards in the same column as this unit get power -2000.
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], reveal the top card of your deck, call that card to [RC]'
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], reveal the top card of your deck, and call it to RC.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -847,7 +847,7 @@ CardStat = 30097
 global.CardName[CardStat] = 'Female Dancer "Please Don’t Forget Me"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, look at five cards frop the top of your deck, reveal up to one "Male Assassin "Sonic Blow"" among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+AUTO [VC/RC]: When placed, look at five cards from the top of your deck, reveal up to one "Male Assassin "Sonic Blow"" from among them and put it into your hand, and shuffle your deck. If you put a card into your hand, discard a card from your hand.
 
 AUTO [RC]: When this unit is retired for your card’s cost, Counter Charge 1.'
 }
@@ -863,11 +863,11 @@ global.CardText[CardStat] = 'Game/Cat
 
 (V PREMIUM TH: you can only run this card if you do not have High Priest Margaretha in your deck.)
 
-AUTO [VC]: When placed, choose up to one Set Order from your hand or drop, put that card to Order Zone. If you put from your hand, draw a card.
+AUTO [VC]: When placed, choose up to one set order from your hand or drop, and put it into the order zone. If you put a card from your hand, draw a card.
 
-AUTO [VC]: When this unit attacks, if your Order Zone has two or more Set Orders, this unit gets power +5000 until end of that battle, if your Order Zone has four or more Set Orders, this unit gets drive +1 until end of that battle.
+AUTO [VC]: When this unit attacks, if your order zone has two or more set orders, until end of that battle, this unit gets power +5000, and if your order zone has four or more set orders, it gets drive +1.
 
-ACT [VC/RC] 1/Turn: if your Order Zone has two or more Set Orders, COST [discard a card from your hand], draw a card, and this unit gets power +5000 until end of turn.'
+ACT [VC/RC] 1/Turn: If your order zone has two or more set orders, COST [discard a card from hand], draw a card, and this unit gets power +5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -880,9 +880,9 @@ CardStat = 30099
 global.CardName[CardStat] = 'Valkyrie Randgris'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], this unit gets power +5000 until end of turn, search your hand or deck for up to one "Valkyrie Randgris", call that card to RC, and that unit gets power +10000 until end of turn, and if you searched your deck, shuffle your deck.
+AUTO [VC]: When it attacks, COST [Counter Blast 1 & Soul Blast 1], this unit gets power +5000 until end of turn, search your hand or deck for up to one "Valkyrie Randgris", call it to RC, it gets power +10000 until end of turn, and if you searched your deck, shuffle your deck.
 
-AUTO [RC]: When placed, COST [Soul Blast 1], choose up to four normal units from your drop, return them to your deck and shuffle your deck, if you returned two or more, this unit gets power +10000 until end of turn.'
+AUTO [RC]: When placed, COST [Soul Blast 1], choose up to four normal units from your drop, and return them to your deck and shuffle it. If you returned two or more cards, this unit gets power +10000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -894,9 +894,9 @@ CardStat = 30100
 global.CardName[CardStat] = 'Moonlight Flower'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [VC/RC] 1/Turn: When this unit attacks, choose up to two Set Orders from your drop, return them to your deck and shuffle your deck, if your returned two or more, draw a card, and this unit gets power +10000 until end of turn.
+AUTO [VC/RC] 1/Turn: When this unit attacks, choose up to two set orders from your drop, and return them to your deck and shuffle it. If you returned two or more cards, draw a card, and this unit gets power +10000 until end of turn.
 
-AUTO [RC]: When you play a Set Order, you may Soul Charge 1, and if your Order Zone has four or more Set Orders, you may draw a card.'
+AUTO [RC]: When you play a set order, you may Soul Charge 1. If your order zone has four or more set orders, you may draw a card.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -908,11 +908,11 @@ CardStat = 30101
 global.CardName[CardStat] = 'Female Summoner'
 global.CardText[CardStat] = 'Game/Cat
 
-AUTO [VC]: At the beginning of your ride phase, if "Wild Rider" is in your soul, search up to one "Male Summoner" from your deck, put that card into hand and shuffle your deck, if your put a card into your hand, discard a card.
+AUTO [VC]: At the beginning of your ride phase, if your soul has a "Wild Rider", search your deck for up to one "Male Summoner", reveal it and put it into your hand, and shuffle your deck. If you put a card into your hand, discard a card from your hand.
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], search up to one Set Order from your deck, put that card into your hand, shuffle your deck.
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], search your deck for up to one set order, reveal it and put it into your hand, and shuffle your deck.
 
-AUTO [VC/RC] 1/Turn: When this unit attacks, if your Order Zone has two or more Set Orders, COST [discard a card from your hand], draw a card, and this unit gets power +5000 until end of turn.'
+AUTO [VC/RC] 1/Turn: When this unit attacks, if your order zone has two or more set orders, COST [discard a card from your hand], draw a card, and this unit gets power +5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -924,7 +924,7 @@ CardStat = 30102
 global.CardName[CardStat] = 'Atroce'
 global.CardText[CardStat] = 'Game/High Beast
 
-CONT [RC]: If this unit is on an additional RC, this unit gets power +5000, and this unit cannot be chosen by your opponent’s card effects.'
+CONT [RC]: If this unit is on an additional RC, this unit gets power +5000, and cannot be chosen by your opponent’s card effects.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -936,9 +936,9 @@ CardStat = 30103
 global.CardName[CardStat] = 'Owl Duke'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], search up to one "Owl Baron" from your deck, call it to RC, shuffle your deck.
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], search your deck for up to one "Owl Baron", call it to RC, and shuffle your deck.
 
-AUTO [VC/RC] 1/Turn: When this unit attacks, if your Order Zone has two or more Set Orders, COST [discard a card from your hand], draw a card.'
+AUTO [VC/RC] 1/Turn: When this unit attacks, if your order zone has two or more set orders, COST [discard a card from your hand], and draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -950,9 +950,9 @@ CardStat = 30104
 global.CardName[CardStat] = 'Wild Rider'
 global.CardText[CardStat] = 'Game/Cat
 
-AUTO [VC]: At the beginning of your ride phase, if "Wild Rose" is in your soul, search up to one "Female Summoner" from your deck, put that card into your hand and shuffle your deck, if you put a card into your hand, discard a card from your hand.
+AUTO [VC]: At the beginning of your ride phase, if your soul has a "Wild Rose", search your deck for up to one "Female Summoner", reveal it and put it into your hand, and shuffle your deck. If you put a card into your hand, discard a card from your hand.
 
-AUTO [RC]: At the end of the battle this unit boosted, if your vanguard has "Summoner" in its card name, COST [put this unit into your soul], choose one Set Order from your drop, put that card into your hand, choose one of your units, that unit gets power +5000 until end of turn.'
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Summoner" in its card name, COST [put this unit into your soul], choose a set order from your drop, put it into your hand, choose one of your units, and it gets power +5000 until end of turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -964,8 +964,7 @@ CardStat = 30105
 global.CardName[CardStat] = 'Imp'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [RC]: When placed, COST [Counter Blast 1 & Put one card from your damage zone on the bottom from your deck], and deal your vanguard one damage. (Perform a damage check.) This ability may only be used by a card with the same card name once a turn.'
-}
+AUTO [RC]: When placed, COST [Counter Blast 1 & put a card from your damage zone on the bottom from your deck], and deal one damage to your vanguard. This ability may only be used by a card with the same card name once a turn. (Perform a damage check)
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
 global.PowerStat[CardStat] = 8000
@@ -976,7 +975,7 @@ CardStat = 30106
 global.CardName[CardStat] = 'Shinobi'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [RC]: When placed, COST [Counter Blast 1], call a grade 0 card from drop to RC, if your Order Zone has three or more Set Orders, you may call any grade instead.'
+AUTO [RC]: When placed, COST [Counter Blast 1], choose a grade 0 card from your drop, and call it to RC. If your order zone has three or more set orders, you may choose any card instead of a grade 0.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -988,9 +987,9 @@ CardStat = 30107
 global.CardName[CardStat] = 'Owl Baron'
 global.CardText[CardStat] = 'Game/Demon
 
-AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit on the bottom of your deck], search up to one "Cat Eye Stone" from your deck, put that card into your hand, shuffle your deck.
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit on the bottom of your deck], search your deck for up to one "Cat Eye Stone", reveal it and put it into your hand, and shuffle your deck.
 
-CONT [RC]: During the battle this unit boosts "Owl Duke", this unit gets power +3000.'
+CONT [RC]: During the battle this unit boosted an "Owl Duke", this unit gets power +3000.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -1073,13 +1072,13 @@ CardStat = 30114
 global.CardName[CardStat] = 'Male Shura'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [VC]: During your turn, this unit gains all of the following below according to the number of cards with "Monk" or "Shura" in their card names in your soul.
-• 2 or more - power +15000 / critical +1.
-• 3 or more - drive +1.
-• 4 or more - this unit gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [discard two cards from your hand], stand this unit, and this unit gets drive -1 until end of turn".
-• 5 or more - this unit gets "AUTO [VC]: When this unit attacks, COST [Soul Blast 2], when your opponent would call from his or her hand to GC for that battle, he or she must call three or more at the same time.
+CONT [VC]: During your turn, gain all of the following according to the number of cards with "Monk" or "Shura" in their card names in your soul.
+• 2 or more - This unit gets power +15000 / critical +1.
+• 3 or more - This unit gets drive +1.
+• 4 or more - This unit gets "AUTO [VC] 1/Turn: At the end of the battle it attacked, COST [discard two cards from your hand], stand this unit, and it gets drive -1 until end of turn".
+• 5 or more - This unit gets "AUTO [VC]: When it attacks, COST [Soul Blast 2], and until end of that battle, when your opponent would call cards from their hand to GC, they must call three or more at the same time.
 
-ACT [Hand]: If your vanguard has "Monk" or "Shura" in its card name, COST [put this card into your soul], draw a card.'
+ACT [Hand]: If you have a vanguard with "Monk" or "Shura" in its card name, COST [put this card into your soul], and draw a card.'
 }
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 32
@@ -1093,7 +1092,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [VC/RC]: When placed, until end of turn, your opponent cannot intercept, and this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle this unit attacked, COST [Soul Blast 1 & Return this unit to your hand], choose a normal unit on your or your opponent’s RC, and return them to hand.'
+AUTO [RC]: At the end of the battle it attacked, COST [Soul Blast 1 & return this unit to your hand], choose a normal unit on any player’s RC, and return it to hand.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -1105,9 +1104,9 @@ CardStat = 30116
 global.CardName[CardStat] = 'Male Gunslinger'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], choose a column, retire all of your opponent’s in that column.
+AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], choose a column, and retire all of your opponent’s rear-guards in that column.
 
-CONT [RC]: If there are no units in the same column as this unit, this unit gets power +5000 (Includes your opponent’s rear-guards)'
+CONT [RC]: If there are no other units in the same column as this unit, this unit gets power +5000. (Includes your opponent’s rear-guards)'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -1119,9 +1118,9 @@ CardStat = 30117
 global.CardName[CardStat] = 'Female Soul Linker'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC]: At the end of the battle this unit attacked, if your Order Zone has five or more Set Orders, COST [Counter Blast 1 & Retire three of your rear-guards], ride a card from your soul other than "Female Soul Linker" as stand, and that unit gets power +10000 until end of turn.
+AUTO [VC]: At the end of the battle this unit attacked, if your order zone has five or more set orders, COST [Counter Blast 1 & retire three of your rear-guards], choose a card not named "Female Soul Linker" from your soul, ride it as stand, and that unit gets power +10000 until end of turn.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to one Set Order from hand or drop, put that card into your hand, if you put from hand, draw a card.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to one set order from your hand or drop, and put it into the order zone. If you put a card from hand, draw a card.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -1133,13 +1132,13 @@ CardStat = 30118
 global.CardName[CardStat] = 'Male Super Novice'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When placed, COST [put one other rear-guard into your soul], and perform all of the following according to the card names of cards in your soul.
-• "Swordman" in its card name - this unit gets power +10000 until end of turn.
-• "Thief" in its card name - choose one of your opponent’s rear-guards, and return them to hand, if returned, your opponent chooses a card from their hand, discard that card.
+AUTO [RC]: When placed, COST [put another rear-guard into your soul], and perform all of the following according to the cards names of the cards in your soul.
+• "Swordsman" in its card name - This unit gets power +10000 until end of turn.
+• "Thief" in its card name - Choose one of your opponent’s rear-guards, and return it to hand. If you returned a card, your opponent chooses a card from their hand, and discards it.
 • "Magician" in its card name - Counter Charge 1 / Soul Charge 1.
-• "Acolyte" in its card name - choose two of your rear-guards, those unit gets power +5000 until end of turn.
-• "Merchant" in its card name - draw a card.
-• "Archer" in its card name - this unit gets "CONT [RC]: When this unit would attack, choose one of your opponent’s vanguards and a rear-guard, this unit battles all of the chosen units." until end of turn.'
+• "Acolyte" in its card name - Choose two of your rear-guards, and they gets power +5000 until end of turn.
+• "Merchant" in its card name - Draw a card.
+• "Archer" in its card name - This unit gets "CONT [RC]: When this unit would attack, choose one of your opponent’s vanguards and rear-guards each, and this unit battles all of the chosen units." until end of turn.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -1151,9 +1150,9 @@ CardStat = 30119
 global.CardName[CardStat] = 'Female Taekwon'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [Back row center RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
+CONT [Back Row cCnter RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
 
-AUTO [Additional RC] 1/Turn: At the end of the battle this unit attacked, if that attack did not hit, COST [Soul Blast 1], stand this unit.'
+AUTO [Additional RC] 1/Turn: At the end of the battle this unit attacked, if that attack did not hit, COST [Soul Blast 1], and stand this unit.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -1165,11 +1164,11 @@ CardStat = 30120
 global.CardName[CardStat] = 'Ancient Magic'
 global.CardText[CardStat] = 'Game/Set Order
 
-(After a Set Order is played, put it into your Order Zone.)
+(After a set order is played, put it into the order zone)
 
-Play this with COST [Soul Blast 1].
+Play this with COST [Soul Blast 1]!
 
-AUTO [Order Zone]: When your vanguard with "Summoner" in its card name attacks, if your opponent’s vanguard is a grade 3 or greater, and your Order Zone has three or more Set Orders, COST [put this card to drop], choose the same number of your rear-guards as the number of cards in your Order Zone, stand those units, and those unit gets power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
+AUTO [Order Zone]: When your vanguard with "Summoner" in its card name attacks, if your opponent’s vanguard is a grade 3 or greater, and your order zone has three or more set orders, COST [put this card to drop], choose the same number of your rear-guards as the number of cards in your order zone, stand them, and they get power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -1184,11 +1183,11 @@ global.CardText[CardStat] = 'Game/Set Order
 
 (V PREMIUM TH: Restricted to 1.)
 
-(After a Set Order is played, put it into your Order Zone.)
+(After a set order is played, put it into the order zone)
 
-AUTO: When this card is put to Order Zone, COST [Soul Blast 1], draw a card.
+AUTO: When this card is put into the order zone, COST [Soul Blast 1], and draw a card.
 
-CONT [Order Zone]: During your turn, if your vanguard has "Summoner" in its card name, all your front row units get power +2000.'
+CONT [Order Zone]: During your turn, if you have a vanguard with "Summoner" in its card name, all your front row units get power +2000.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -1202,11 +1201,11 @@ CardStat = 30122
 global.CardName[CardStat] = 'Cat Eye Stone'
 global.CardText[CardStat] = 'Game/Set Order
 
-(After a Set Order is played, put it into your Order Zone.)
+(After a set order is played, put it into the order zone)
 
-AUTO: When this card is put into Order Zone, COST [discard a card from your hand], draw a card.
+AUTO: When this card is put into the order zone, COST [discard a card from your hand], and draw a card.
 
-ACT [Order Zone]: If your vanguard has "Summoner" in its card name, COST [put this card to drop], Counter Charge 1 / Soul Charge 1.'
+ACT [Order Zone]: If you have a vanguard with "Summoner" in its card name, COST [put this card into your drop], and Counter Charge 1 / Soul Charge 1.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -1221,9 +1220,9 @@ global.CardText[CardStat] = 'Game/Human
 
 (V PREMIUM TH: you can only run this card if you do not have Male Summoner or Female Priest in your deck.)
 
-AUTO [GC]: When placed, COST [discard a grade 3 card with "Priest" in its card name from your hand], one of your vanguards cannot be hit until end of that battle.
+AUTO [GC]: When placed, COST [discard a grade 3 card with "Priest" in its card name from your hand], and one of your vanguards cannot be hit until end of that battle.
 
-AUTO [VC/RC]: When placed from hand, COST [Counter Blast 1 & Discard a card from your hand], search up to one "Acolyte" or "Priest" or "Monk" from your deck or drop, reveal and put it into your hand, shuffle your deck. If you have 2 or less additional RC, you get one Imaginary Gift: Accel.
+AUTO [VC/RC]: When placed from hand, COST [Counter Blast 1 & discard a card from your hand], search your deck or drop for up to one card with "Acolyte", "Priest", or "Monk" in its card name, reveal it and put it into your hand, and shuffle your deck. If you have 2 or less additional RC, get an Imaginary Gift: Accel.
 
 (Shift + left mouse button to create accel gift)'
 }
@@ -1240,9 +1239,9 @@ CardStat = 30124
 global.CardName[CardStat] = 'Lord Knight Seyren'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 grade 3], this unit gets power +15000 until end of turn, when this unit would attack, this unit battles all of your opponent’s front row units, if the card Soul Blast for this cost has "Knight" in its card name, Counter Charge 2.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 grade 3], until end of turn, this unit gets power +15000, and when this unit would attack, this unit battles all of your opponent’s front row units. If you Soul Blast a card with "Knight" in its card name for this cost, Counter Charge 2.
 
-AUTO [VC]: When this unit’s attack hits, COST [Counter Blast 1], choose one of your opponent’s rear-guard in the same column as the attacked unit, retire that unit, if you did not retire, draw a card.'
+AUTO [VC]: When this unit’s attack hits, COST [Counter Blast 1], choose one of your opponent’s rear-guards in the same column as the attacked unit, and retire it. If you did not retire a card, draw a card.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -1258,7 +1257,7 @@ CONT: This card’s name is also regarded as "Male Assassin "Sonic Blow"".
 
 CONT [VC]: During your turn, all your front row units get power +2000 for each "Male Assassin "Sonic Blow"" in your soul.
 
-ACT [VC]: COST [Counter Blast 1 & Put one card from your hand and one rear-guard into your soul], choose one "Male Assassin "Sonic Blow"" from your soul, ride that card as stand. This ability may only be used by a card with the same card name once a turn.'
+ACT [VC]: COST [Counter Blast 1 & Put a card from your hand and a rear-guard into your soul], choose a "Male Assassin "Sonic Blow"" from your soul, and ride it as stand. This ability may only be used by a card with the same card name once a turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -1270,13 +1269,13 @@ CardStat = 30126
 global.CardName[CardStat] = 'High Wizard Catherine'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], perform all of the following according to the sum of the grades of cards in your soul.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to the sum of the grades of the cards in your soul.
 • 6 or more - All your front row units get power +5000 until end of turn
-• 12 or more - Choose two of your opponent’s rear-guards, put those unit to your opponent’s soul.
-• 18 or more - Your opponent chooses a card from their hand, bind that card face down.
-• 24 or more - During this turn, your opponent can only call one card from hand to GC for each battle.
+• 12 or more - Choose two of your opponent’s rear-guards, and your opponent puts them into their soul.
+• 18 or more - Your opponent chooses a card from their hand, and binds it face down.
+• 24 or more - Until end of turn, your opponent can only call up to one card from his or her hand to GC for each battle.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1 grade 0], Soul Charge 2, if you Soul Charge one or more trigger units, draw a card.'
+ACT [VC] 1/Turn: COST [Soul Blast 1 grade 0], Soul Charge 2, and if you Soul Charge one or more trigger units, draw a card.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
@@ -1288,9 +1287,9 @@ CardStat = 30127
 global.CardName[CardStat] = 'Whitesmith Howard'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC]: When this unit attacks, COST [Soul Blast all of the cards from your soul], until end of that battle, this unit gets power +5000 for each card Soul Blast this way. If your damage zone has five cards, until end of that battle, your opponent cannot call sentinels from hand.
+AUTO [VC]: When this unit attacks, COST [Soul Blast all of the cards from your soul], and this unit gets power +5000 until end of that battle for each card Soul Blast for this cost. If your damage zone has five cards, until end of that battle, your opponent cannot call sentinels from their hand.
 
-ACT [VC/RC] 1/Turn: COST [put two cards from your hand into your soul], draw a card, if you have ten or more cards in your soul, this unit gets critical +1.'
+ACT [VC/RC] 1/Turn: COST [Put two cards from your hand into your soul], draw a card, and if your soul has ten or more cards, this unit gets critical +1 until end of turn.'
 }
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
