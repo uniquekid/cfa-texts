@@ -2041,7 +2041,7 @@ CardStat = 9465
 global.CardName[CardStat] = 'Delightful Encounter, Gertie'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
-AUTO [RC]: When this unit attacks, if your vanguards grade is less than or equal to your opponents, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your vanguards grade is less than or equal to your opponent’s, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -2403,7 +2403,7 @@ CardStat = 9521
 global.CardName[CardStat] = 'Circling Lyric, Ashley'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-CONT [RC]: If you have no other front row rear-guards, this unit cannot be chosen by your opponents card effects and cannot be attacked.'
+CONT [RC]: If you have no other front row rear-guards, this unit cannot be chosen by your opponent’s card effects and cannot be attacked.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -2439,7 +2439,7 @@ CardStat = 9529
 global.CardName[CardStat] = 'Detour Together, Elvi'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-CONT [Front Row RC]: All of your rear-guards with different card names as this unit cannot be chosen by your opponents card effects.
+CONT [Front Row RC]: All of your rear-guards with different card names as this unit cannot be chosen by your opponent’s card effects.
 
 AUTO [RC]: When this unit’s attack hits a vanguard, you may Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
@@ -3099,7 +3099,7 @@ CardStat = 10183
 global.CardName[CardStat] = 'Considerate Committee Chief, Shaznay'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-CONT [RC]: During your turn, if your opponents vanguard is grade 3 or greater, this unit gets power +5000.'
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -4861,3 +4861,20 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11283
+{
+global.CardName[CardStat] = 'Dearest Affinity, Lysette'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT [Deck]: This card becomes "Relation Weaver, Petralka".
+
+AUTO [VC]: At the end of your turn, choose a "Relation Weaver, Petralka" from your soul, and ride it as rest.
+
+CONT [RC]: During your turn, if your vanguard is "Relation Weaver, Petralka" this unit gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

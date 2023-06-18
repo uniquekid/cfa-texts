@@ -189,7 +189,10 @@ global.QuickShieldAdd[CardStat] = 1
 global.BlueTokenAdd[CardStat] = 1 // for Force
 global.GreenTokenAdd[CardStat] = 1 // for Protect
 global.OrangeTokenAdd[CardStat] = 1 // for Accel
+global.BlueTokenBoth[CardStat] = 1 // gain both Force markers
 ```
+
+`BlueTokenBoth` is always used with `BlueTokenAdd`.
 
 ### :gift::heavy_plus_sign: Imaginary Gift generator - add to hand by clicking the card while holding Shift
 
@@ -268,8 +271,25 @@ If this card is on VC or RC, displays the "Attack" button for all of the back ro
 ### :wastebasket: Auto remove from Drop (for Tokens, Tickets, Markers)
 
 ```
-global.RemoveFromDrop = 1
+global.RemoveFromDrop[CardStat] = 1
 ```
+
+### :arrow_up_small: Increase Unit Garde in Deck (for Search Effect)
+
+```
+global.UnitGradeIncrementInDeck[CardStat] = <number>
+```
+
+The number can be used to increase the grade of a card in deck. To decrease the grade, assign negative number instead of positive. Can be used for Orders as well.
+
+### :purple_square::heavy_plus_sign: Increase Front Trigger Power
+
+```
+global.TriggerPowerUpEffect[CardStat, 0] = <power> // for VC or RC
+global.TriggerPowerUpEffect[CardStat, 1] = <power> // for VC only
+```
+
+`<power>` is a number that will be added if the card is present
 
 ### :crossed_swords: Arms
 
@@ -290,6 +310,12 @@ global.RightArms[CardStat] = 1
 ```
 
 Only for Right Deity Arms (will always be attached to the LEFT side of VC)
+
+```
+global.ArmsAsUnit[CardStat] = 1
+```
+
+Arm as a Unit (it will give its power to the vanguard upon attacking) - e.g. "Armed Arms"
 
 ### :trophy: Regalis Piece
 
@@ -378,6 +404,14 @@ global.AnotherSide[CardStat] = <card_id>
 ```
 
 That other side card referenced by `<card_id>` should be hidden in the deck editor (see previous section).
+
+### :page_facing_up::arrow_up_down: Extended text box
+
+```
+global.ExtendedTextBox = 1
+```
+
+Should only be used as last resort in situations when the text can absolutely not fit inside the normal text box even by removing extra line breaks.
 
 ### :recycle: Re-assigned cards (for accidentally added duplicate cards)
 
