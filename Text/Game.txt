@@ -31,9 +31,7 @@ CardStat = 30034
 global.CardName[CardStat] = 'Female Thief'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, this unit can attack your opponent’s back row units.
-
-AUTO [RC]: When placed, if your soul has two or less cards, Soul Charge 1.'
+AUTO [VC/RC]: When placed, this unit can attack your opponent’s back row units until end of turn, if your soul has two or less cards, Soul Charge 1.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -47,7 +45,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [RC]: When placed, if this unit is on an additional RC, COST [Soul Blast 1], and Counter Charge 1.
 
-AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], and your opponent cannot call normal units to GC until end of turn. At the end of that battle, and you may put this unit into your soul. If you put it into your soul, draw a card.'
+AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], and your opponent cannot call normal units to GC until end of turn. At the end of that battle, put unit into your soul. If you put it into your soul, draw a card.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -61,7 +59,7 @@ global.CardText[CardStat] = 'Game/Human
 
 CONT [RC]: If your vanguard is grade 3 or greater, this unit cannot be retired by card effects.
 
-AUTO [RC]: When it attacks while boosted, COST [Soul Blast 1], choose any number of cards from your damage zone, put them into your soul, and for each card put into your soul by this effect, put the top card of your deck into your damage zone.'
+AUTO [RC]: When it attacks while boosted, COST [Soul Blast 1], choose any number of cards from your damage zone, put them into your soul, and for each card put into your soul by this effect, put the top card of your deck into your damage zone face down.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -237,7 +235,7 @@ CardStat = 30050
 global.CardName[CardStat] = 'Female Sage "Abracadabra"'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [VC/RC]: COST [Counter Blast 3 & Soul Blast 1], put all of the cards from your soul and your rear-guards on the top of your deck, and shuffle your deck. If you put two or more cards on the top of your deck, look at five cards from the top of your deck, choose up to five cards from among them, call them to RC, and put the rest into your soul.'
+ACT [VC/RC]: COST [Counter Blast 3 & Soul Blast 2], put all of the cards from your soul and your rear-guards on the top of your deck, and shuffle your deck. If you put two or more cards on the top of your deck, look at five cards from the top of your deck, choose up to five cards from among them, call them to RC, and put the rest into your soul.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -277,7 +275,7 @@ CardStat = 30053
 global.CardName[CardStat] = 'Female Acolyte "Blessing"'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [VC/RC]: When placed, choose up to one of your other units, and that unit gets power +2000 until end of turn.
+AUTO [RC]: When placed, choose up to one of your other units, and that unit gets power +2000 until end of turn.
 
 AUTO [RC]: When your vanguard is placed, choose one of your vanguards, and it gets power +5000 until end of turn.'
 }
@@ -472,7 +470,7 @@ CardStat = 30067
 global.CardName[CardStat] = 'Male Sage'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO [RC]: When this unit attacks while boossted, COST [Counter Blast 1 & put one of your grade 0 rear-guards into soul], choose a card from your soul, and call it to an open RC.'
+AUTO [RC]: When this unit attacks while boosted, COST [Counter Blast 1 & put one of your grade 0 rear-guards into soul], choose a card from your soul, and call it to an open RC.'
 }
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 32
@@ -496,7 +494,7 @@ CardStat = 30069
 global.CardName[CardStat] = 'Male Alchemist'
 global.CardText[CardStat] = 'Game/Human
 
-ACT [RC] 1/Turn: COST [Soul Blast 1], and call up to one Homonculus token to an open RC. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
+ACT [RC] 1/Turn: COST [Soul Blast 1], and call up to one Homonculus token to RC. (Homunculus tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 (Shift + click to call homunculus tokens.)'
 }
@@ -1093,7 +1091,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [VC/RC]: When placed, until end of turn, your opponent cannot intercept, and this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle it attacked, COST [Soul Blast 1 & return this unit to your hand], choose a normal unit on any player’s RC, and return it to hand.'
+AUTO [RC]: At the end of the battle it attacked, COST [Soul Blast 1 & return this unit to your hand], if your order zone has two or more set orders, choose a normal unit on any player’s RC, and return it to hand.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -1151,7 +1149,7 @@ CardStat = 30119
 global.CardName[CardStat] = 'Female Taekwon'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [Back Row cCnter RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
+CONT [Back Row Center RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
 
 AUTO [Additional RC] 1/Turn: At the end of the battle this unit attacked, if that attack did not hit, COST [Soul Blast 1], and stand this unit.'
 }
@@ -1223,7 +1221,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [GC]: When placed, COST [discard a grade 3 card with "Priest" in its card name from your hand], and one of your vanguards cannot be hit until end of that battle.
 
-AUTO [VC/RC]: When placed from hand, COST [Counter Blast 1 & discard a card from your hand], search your deck or drop for up to one card with "Acolyte", "Priest", or "Monk" in its card name, reveal it and put it into your hand, and shuffle your deck. If you have 2 or less additional RC, get an Imaginary Gift: Accel.
+AUTO [VC/RC]: When placed from hand, COST [Counter Blast 1 & discard a card from your hand], search your deck or drop for up to one card with "Acolyte", "Priest", or "Monk" in its card name, reveal it and put it into your hand, and shuffle your deck. If you have 2 or less additional RC, get an Imaginary Gift: Accel. This ability may only be used by a card with the same card name once a turn.
 
 (Shift + left mouse button to create accel gift)'
 }
