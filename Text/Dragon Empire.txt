@@ -3291,7 +3291,7 @@ global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
 AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Nirvana" in its card name, COST [discard a card from hand], search your deck for up to one card with the overDress ability or up to one "Trickstar", reveal it and put it into your hand, and shuffle your deck.
 
-AUTO: When this card becomes an originaldress, COST [Counter Blast 1], choose a "Trickstar" from your drop, and call it to RC.'
+AUTO: When this card becomes an originalDress, COST [Counter Blast 1], choose a "Trickstar" from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -4071,4 +4071,44 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11513
+{
+global.CardName[CardStat] = 'Blaze Battle Monk, Zanshou'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [RC]: All of your units with originalDress in the same column as this unit get power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11515
+{
+global.CardName[CardStat] = 'Quaking Bullet of Dust Storm, Roderick'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by "Cataclysmic Bullet of Dust Storm, Randor", if your opponent has no rear-guards, draw a card.
+
+ACT [Soul]: COST [Retire a rest rear-guard], call this card to RC, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11516
+{
+global.CardName[CardStat] = 'Wild Bullet of Dust Storm, Clifton'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by "Cataclysmic Bullet of Dust Storm, Randor", if your opponent has no rear-guards, draw a card.
+
+ACT [Soul]: COST [Retire a rest rear-guard], call this card to RC, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
