@@ -97,7 +97,7 @@ This line writes the card's name into the global array `CardName`.
 
 Notice how it uses single quotes to delimit string values. Single quotes in GML allow for use of double quotes inside the text, which can be quite useful for CFA. It also allows to use line breaks inside the string (which we will see actively being used in the next line).
 
-But it also means that single quotation marks cannot be used as apostrophes. Instead, CFA database uses a special character from Windows-1251 encoding called **"right single quotation mark"** - `’`. If you use Windows and have a numpad on your keyboard, you can add that character by inputting number 39 on your numpad while holding left Alt key. Alternatively, you can just copy it from somewhere. VSCode usually highlights this character in a yellow box as a warning for it's visual similarity to a normal single quote.
+But it also means that single quotation marks cannot be used as apostrophes. Instead, CFA database uses a special character from Windows-1251 encoding called **"right single quotation mark"** - `â€™`. If you use Windows and have a numpad on your keyboard, you can add that character by inputting number 39 on your numpad while holding left Alt key. Alternatively, you can just copy it from somewhere. VSCode usually highlights this character in a yellow box as a warning for it's visual similarity to a normal single quote.
 
 By the way, those curly braces before this line don't add anything to the syntax, they are just used for separating main database properties from mechanical properties such as power and shield, a tradition that goes back to the early days of CFA when power and shield values were added into a separate file `UnitPower.txt`.
 
@@ -331,7 +331,7 @@ This parameter lets the game display an icon after this card is placed in Order 
 global.Uranus[CardStat] = 1
 ```
 
-Lets the player open Astral Plane by Shift + clicking the card (don't forget to add the tip).
+Lets the player select between opening Astral Plane or generating Force Gift by Shift + clicking the card (don't forget to add the tip).
 
 ### :pirate_flag: Treasure Markers
 
@@ -347,7 +347,7 @@ Lets the player place Treasure markers by Shift + clicking the card (don't forge
 global.OldCardStat[CardStat] = 1
 ```
 
-By default, all newly added cards cards without DCards are legal in V. But this parameter makes the card illegal in V Premium (i.e. only legal in Premium).
+By default, all newly added cards without DCards are legal in V. But this parameter makes the card illegal in V Premium (i.e. only legal in Premium).
 
 ```
 global.NewTriggerStat[CardStat] = 1
@@ -419,7 +419,7 @@ Should only be used as last resort in situations when the text can absolutely no
 global.CardReassignedId[CardStat] = <card_id>
 ```
 
-The card that has gets parameter added will no longer be displayed in the deck editor.
+The card that has this parameter added will no longer be displayed in the deck editor.
 
 If a player loads a deck containing this card, it will be replaced with the card that has `<card_id>` specified by this parameter.
 
@@ -593,4 +593,4 @@ What to do with the rest of the cards. `<rest_action>` can be one of the followi
 global.SearchEffectFindQuantity[CardStat] = <number>
 ```
 
-Maximum amount of cards allowed to be taken.
+Maximum number of cards allowed to be taken.
