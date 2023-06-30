@@ -1591,8 +1591,7 @@ global.CardText[4562] = 'Murakumo/Abyss Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Soul Blast 1 & Choose a card from your hand, and discard it] Search your deck for up to five cards with "Hyakki" in its card name, call them to separate RC, shuffle your deck, until end of turn, those units get "CONT [RC] Generation Break 3: This unit can attack from the back row", and at the end of that turn, put those units on the bottom of your deck in any order.
-'
+ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Soul Blast 1 & Choose a card from your hand, and discard it] Search your deck for up to five cards with "Hyakki" in their card name, call them to separate RC, shuffle your deck, until end of turn, they get "CONT [RC] Generation Break 3: This unit can attack from the back row.", and at the end of that turn, put those units on the bottom of your deck in any order.'
 
 global.UnitGrade[4562] = 4
 
@@ -3039,7 +3038,7 @@ CardStat = 6909
 global.CardName[CardStat] = 'Central Arrester'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-CONT [RC]: If it is in the middle of the back row, this unit can attack a vanguard from the back row, and if you have a vanguard with "Dueling Dragon" in its card name, this unit gets power +5000 for each of your other units with "Arrester" in their card names.'
+CONT [RC]: If it is in the back row of the middle column, this unit can attack the vanguard from the back row, and if you have a vanguard with "Dueling Dragon" in its card name, this unit gets power +5000 for each of your other units with "Arrester" in their card names.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -3762,6 +3761,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
 
@@ -3851,7 +3851,7 @@ ACT [G zone]: If your vanguard is a grade 3 "Stealth Rogue of Revelation, Yasuie
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 AUTO [VC]: When this unit’s attack hits vanguard, choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to separate RC, shuffle your deck, and at the end of that turn, put the units called with this effect on the bottom of your deck in any order.
 
-(SHIFT + left mouse button to create Accel gifts.)'
+(SHIFT + left click to create Accel gifts.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1

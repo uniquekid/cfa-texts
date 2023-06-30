@@ -299,7 +299,7 @@ AUTO: When this card is put into the Order Zone, look at two cards from the top 
 
 ACT [Order Zone]: If you have a vanguard with "Faust VIII" in its card name, COST [bind three cards from your drop], call up to the same number of Skeleton Army tokens as the number of "Necromancy" in your Order Zone.
 
-(SHIFT + click to call Skeleton Army tokens.)'
+(SHIFT + left click to call Skeleton Army tokens.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 9
@@ -596,6 +596,7 @@ ACT [RC]: COST [Counter Blast 1], and until end of turn, this unit can attack yo
 CONT [RC]: During your turn, if you have "In Search of the Happy Place" in your Order Zone, all "Neverending Traveler, "Wooden Sword" Ryu" on your VC get power +5000, and this unit is also regarded as "Ryu’s Buddies".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 9
+global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1933,6 +1934,7 @@ CONT [RC]: During your turn, if there is a "Who Cares about Manliness? Peyote Di
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 9
 global.PersonaRide[CardStat] = 1
+global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2064,6 +2066,7 @@ OverSoul - ACT [VC] 1/Turn: COST [Put one of your rear-guards with "Spirit of Fi
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 9
 global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2326,7 +2329,7 @@ CardStat = 9845
 global.CardName[CardStat] = 'X-Laws, Meene Montgomery'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-CONT [RC]: If you have a vg with "Jeanne" in its card name, this unit can intercept from the backrow'
+CONT [RC]: If you have a vanguard with "Jeanne" in its card name, this unit can intercept from the backrow.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 9
 }

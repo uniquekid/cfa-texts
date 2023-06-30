@@ -3236,7 +3236,7 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your
 
 AUTO [Back Row RC] 1/Turn: When your rear-guard in the same column as this unit is placed in the front row, COST [Counter Blast 1], and draw a card.
 
-(Shift + Click to get a Dragontree Marker)'
+(SHIFT + left click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4235,4 +4235,16 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11520
+{
+global.CardName[CardStat] = 'Decorate Razor Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: When your other unit in the same column as this unit attacks, that unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000

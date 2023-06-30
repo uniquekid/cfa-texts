@@ -1,7 +1,7 @@
 n = x
 
 
-global.AllCard = 11518
+global.AllCard = 11532
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -162,7 +162,7 @@ global.CardText[6915] = 'This RC is an Astral Plane. Astral Planes have the foll
 • The unit on the Astral Plane can attack from the back row, and performs drive checks. Cards revealed for those drive checks are put into your soul instead of your hand.
 • At the end of your turn, put the unit on the Astral Plane on the bottom of your deck.
 
-(SHIFT + click to delete Astral Plane.)'
+(SHIFT + left click to delete Astral Plane.)'
 
 global.CardInClan[6915] = 29
 
@@ -375,7 +375,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
+global.CanAttackFromBackRow[CardStat] = 1
 
 CardStat = 10476
 {
@@ -491,7 +491,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: When this unit attacks, this unit gets power +10000 until end of that battle. Then, COST [Counter Blast 1], choose one of your grade 3 rear-guards, and stand it.
 • AUTO [VC]: When this unit’s attack hits a vanguard, discard the top card of your deck, and if you discarded a trigger unit, choose one of your opponent’s vanguards, and deal one damage. 
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -511,7 +511,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and until end of that battle, your opponent cannot call grade 1 or greater cards from their hand to GC.
 • CONT [VC]: During your opponent’s main phase, all of your rear-guards cannot be chosen by your opponent’s card effects.
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -531,7 +531,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and this unit gets power +10000 until end of that battle.
 • AUTO [VC] 1/Turn: When your rear-guard is attacked, COST [Soul Blast 1], and until end of that battle, if any of your rear-guard is hit, it does not retire. 
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -551,7 +551,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: At the beginning of your battle phase, all of your rear-guards get power +5000 until the end of turn.
 • AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], reveal the top card of your deck, put it into hand, and increase this unit’s power by the original shield of the revealed card until the end of that battle. 
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -571,7 +571,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards and retire it if it is a trigger unit, and discard it if it is not.
 • AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 2], stand this unit, and it gets drive -1 until end of turn. 
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -591,7 +591,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.
 • AUTO [VC] 1/Turn: When this unit attacks, reveal the top card  of your deck, this unit gets power +26000 if it is a trigger unit, and discard it if it is not.
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -611,7 +611,7 @@ CONT: All cards with the same card name as your vanguard become grade 3 / power 
 • AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards with grade less than or equal to the grade of the revealed card, until end of your opponent’s next turn, that unit cannot move to other RC or GC, or stand during the stand phase, and if the revealed card is a normal unit, discard it.
 • CONT [VC]: When this unit would attack it battles all of your opponent’s front row units.
 
-(Shift+click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -660,3 +660,21 @@ global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11531
+{
+global.CardName[CardStat] = 'Memories of the Quintuplets'
+global.CardText[CardStat] = 'Crest
+
+CONT: You cannot ride cards other than <Quintuplets>, and your order zone is also regarded as memory.
+
+CONT: When a card other than a <Quintuplets> would be put into your Memory, put it into drop instead.
+
+ACT 1/Turn: COST [Soul Blast 1], look at the same number of cards from the top of your deck as your vanguard’s grade, choose up to one <Quintuplets> from among them, put it into the memory, and put the rest on the bottom of deck in any order. If your memory has a card with the same card name as the chosen card, you may call it to RC instead of putting it into the memory. 
+'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1

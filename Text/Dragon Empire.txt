@@ -1894,7 +1894,7 @@ ACT [RC]: If you do not have a Momokke token, COST [Counter Blast 1], and call u
 Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
 AUTO [RC]: When this unit attacks, COST [Soul Blast 1], choose one of your token units in the same column as this unit, and this unit gets the power of that unit until end of that battle.(Includes increased values)
 
-(Shift + Click to generate a Momokke Token)'
+(SHIFT + left click to generate a Momokke Token)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.DCards2[CardStat] = 4
@@ -2847,7 +2847,7 @@ AUTO [RC]: At the beginning of your main phase, if you do not have a Momokke tok
 Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
 AUTO [Hand]: At the end of the battle your rear-guard with "Radylina" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [retire one each of your rear-guards with "Radylina" in its card name and Momokke tokens], call this card to RC, and increase this unit’s power by the power of the Momokke token retired for the cost of this ability until end of turn.
 
-(Shift + Click to generate a Momokke Token)'
+(SHIFT + left click to generate a Momokke Token)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.DCards2[CardStat] = 4
@@ -3109,7 +3109,7 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your
 
 AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired during your main phase, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one grade 1 or less unit card from among them, call it to RC, and shuffle your deck.
 
-(Shift + Click to get a Dragontree Marker)'
+(SHIFT + left click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -3135,14 +3135,14 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 10624
 {
-global.CardName[CardStat] = 'Illusion Demon Stealth Fiend, Megaronozuchi'
+global.CardName[CardStat] = 'Phantasmic Stealth Fiend, Megalonozuchi'
 global.CardText[CardStat] = 'Dragon Empire/Ghost
 
 ACT [VC] 1/Turn: COST [Bind one or more cards from your soul], and this unit gets "CONT [VC]: This unit gets all of the card names of the face up grade 1 or greater cards with "Stealth" in their card names in your bind zone." until end of turn.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & put two rear-guards into your soul], search your deck for up to two cards with the same card names as this unit, call them to RC, and they get power +5000 until end of turn. Shuffle your deck.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Put two rear-guards into soul], search your deck for up to two cards with the same card names as this unit, call them to RC, and they get power +5000 until end of turn. Shuffle the deck.
 
-CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your rear-guards with "Stealth" in the same card name as this unit can attack from the back row.'
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your rear-guards with "Stealth" in their same card name as this unit can attack from the back row.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -3997,7 +3997,7 @@ AUTO: When this unit is placed by riding from "Deepening Night, Tamayura", searc
 
 AUTO [VC]: When this unit attacks a vanguard, COST [bind a "Deepening Night, Tamayura" from soul], choose up to one card each with "Ririmi" or "Rarami" in their card names from your soul, call them to RC, and they get power +5000 until end of turn. At the end of that turn, ride the card bound for this cost as rest.
 
-(Shift+Click to activate persona ride)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -4107,6 +4107,134 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 AUTO [RC]: When this unit attacks or boosts, if your opponent’s rear-guard was retired by the ability of your vanguard this turn, this unit gets power +2000 until end of that battle for each of your opponent’s open RC.
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Eugene" in its card name, COST [retire this unit], choose up to three cards from your soul, and if you chose one or more cards, return them to the deck and shuffle it. If you did not Counter Charge this turn, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11522
+{
+global.CardName[CardStat] = 'Night After School Festival, Ichika Nakano'
+global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+AUTO: When this unit is placed on by riding from "The Quintessential Quintuplets", you get "Memory of the Quintuplets" crest.
+
+CONT [GC]: If your memory has three or more <Quintuplets> with different card names, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 11531
+global.TokenSummonerPosition[CardStat] = 'V'
+
+CardStat = 11523
+{
+global.CardName[CardStat] = 'Popular Actress Returning from America, Ichika Nakano'
+global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+AUTO: When this unit is placed by riding from a grade 1 <Quintuplets>, look at the top seven cards of your deck, choose up to one <Quintuplets> from among them, put it into your memory, and shuffle the deck.
+
+CONT [RC]: During your turn, if your opponent’s rear-guard was retired this turn, this unit gets power +5000. If your memory has five or more <Quintuplets> with different card names, get power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11524
+{
+global.CardName[CardStat] = 'The Quintessential Quintuplets, Ichika Nakano'
+global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplets> from among them, reveal them, choose up to one card from among the revealed cards, put it into hand, and put the rest of the revealed cards into the memory. Shuffle your deck.
+CONT [VC]: If your memory has six or more <Quintuplets> with different card names, when your opponent would call cards from their hand to GC, they must call two or more at the same time.
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, choose one of your <Quintuplets> rear-guards, and increase that unit’s and this unit’s power by the power of the unit retired by this ability until end of turn. If you did not retire a card, get power +10000 instead of the power of the unit retired by this ability.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11525
+{
+global.CardName[CardStat] = 'Memories of the School Festival - Ichika Nakano’s Side'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Quintuplets
+
+Play this if your vanguard is "The Quintessential Quintuplets, Ichika Nakano"!
+
+Choose up to two <Quintuplets> with the same card name from your drop, put one of them on the bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
+• 3 or more - Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
+• 5 or more - Counter Charge 1.
+• 7 or more - Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.
+'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11526
+{
+global.CardName[CardStat] = 'Actress in Incognito, Ichika Nakano'
+global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+AUTO: When this unit is placed on RC during your main phase, if your vanguard is a <Quintuplets>, look at the top three cards of your deck, choose up to one <Quintuplets> from among them, put it into the memory, and shuffle the deck.
+
+CONT [RC]: If your memory has three or more <Quintuplets>, this unit gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11527
+{
+global.CardName[CardStat] = 'Bittersweet Love, Ichika Nakano'
+global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+AUTO: When this unit is placed on RC, if your vanguard is "The Quintessential Quintuplets, Ichika Nakano", COST [Counter Blast 1 & put a <Quintuplets> from drop on the bottom of deck], choose one of your opponent’s rear-guards, and retire it. If your memory has five or more <Quintuplets> with different card names, you may draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11528
+{
+global.CardName[CardStat] = 'Onslaught Dragon, Firingrex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit boosts, if your vanguard’s critical is 2 or greater, COST [Counter Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11529
+{
+global.CardName[CardStat] = 'Dragritter, Basura'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this card is discarded from hand during your battle phase, put this card into soul, choose one of your opponent’s back row rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11530
+{
+global.CardName[CardStat] = 'Red Jeweled Beast, Garnet'
+global.CardText[CardStat] = 'Dragon Empire/High Beast
+
+AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
+• RC - Draw a card
+• GC - This unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
