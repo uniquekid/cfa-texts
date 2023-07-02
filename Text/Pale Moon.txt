@@ -183,12 +183,10 @@ CardStat = x+23
 global.CardName[CardStat] = 'Purple Trapezist'
 global.CardText[CardStat] = 'Pale Moon/Succubus/Dark Zone
 
-(PREMIUM JP & EN: You can only run this card if you do not have V Jumping Jill and/or Flying Peryton in your deck.)
-(PREMIUM TH: You can only run this card if you do not have V Jumping Jill in your deck.)
+(PREMIUM JP & EN & TH: You can only run this card if you do not have Flying Peryton or V Jumping Jill in your deck.)
 
 AUTO: [Choose another of your «Pale Moon» rear-guards, and put it into your soul] When this unit is placed on RC, if you have a «Pale Moon» Vanguard, you may pay the cost. If you do, choose a «Pale Moon» other than a card named "Purple Trapezist" from your soul, and call it to RC.'
 }
-
 global.CardLimidet[CardStat] = 1
 
 CardStat = x+24
@@ -1103,7 +1101,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Flying Peryton'
 global.CardText[CardStat] = 'Pale Moon/Chimera/Dark Zone
 
-(PREMIUM JP & EN: You can only run this card if you do not have V Jumping Jill and/or Purple Trapezist in your deck.)
+(PREMIUM JP & EN & TH: You can only run this card if you do not have Purple Trapezist or V Jumping Jill in your deck.)
 
 Magia - AUTO: Generation Break 1: When this unit is placed on RC, Soul Charge 1, choose up to one card from your soul, call it to RC in the same column as this unit, and at the end of that turn, put the unit called with this effect into your soul.'
 global.UnitGrade[CardStat] = 2
@@ -2782,27 +2780,17 @@ global.PowerStat[6000] = 12000
 global.CardLimidet[CardStat] = 1
 
 CardStat = 6001
-
 {
-
 global.CardName[6001] = 'Jumping Jill '
-
 global.CardText[6001] = 'Pale Moon/Workeroid
 
-(PREMIUM JP & EN: You can only run this card if you do not have Purple Trapezist and/or Flying Peryton in your deck.)
-(PREMIUM TH: You can only run this card if you do not have Purple Trapezist in your deck.)
+(PREMIUM JP & EN & TH: You can only run this card if you do not have Purple Trapezist or Flying Peryton in your deck.)
 
-AUTO [RC]: When placed from soul, COST [put one of your other rear-guards into your soul], call a card other than grade 2 from your soul to RC in the back row.
-'
-
+AUTO [RC]: When placed from soul, COST [put one of your other rear-guards into your soul], call a card other than grade 2 from your soul to RC in the back row.'
 global.UnitGrade[6001] = 2
-
 global.CardInClan[6001] = 18
-
 }
-
 global.PowerStat[6001] = 9000
-
 global.CardLimidet[CardStat] = 1
 
 
@@ -3502,8 +3490,6 @@ CardStat = 6696
 global.CardName[CardStat] = 'Fancy Megatrick, Darklord Princess'
 global.CardText[CardStat] = 'Pale Moon/Human
 
-(PREMIUM TH: Restricted to 2.)
-
 Stride.
 
 AUTO [VC]: At the end of the battle that it attacked a vanguard, COST [turn a card from your G zone face up], Stride a face up G unit from your G zone with power and the magia ability on VC as stand, and it gets drive -2 until end of turn. If you Stride, call this card to RC.'
@@ -3512,7 +3498,6 @@ global.CardInClan[CardStat] = 18
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
-global.CardLimidet[CardStat] = 1
 
 CardStat = 6726
 {
