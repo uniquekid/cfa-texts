@@ -3933,7 +3933,7 @@ global.CardName[5247] = 'Knight of Insolation, Carinus'
 
 global.CardText[5247] = 'Gold Paladin/Human
 
-(STANDARD JP: Restricted to 1.)
+(PREMIUM JP: Banned.)
 
 CONT [RC]: If you have a vanguard with the unite ability, this unit gets "CONT [RC]: Resist".
 
@@ -3943,7 +3943,7 @@ global.UnitGrade[5247] = 1
 global.CardInClan[5247] = 5
 }
 global.PowerStat[5247] = 7000
-global.CardLimidet[CardStat] = 1
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 5266
@@ -5799,13 +5799,15 @@ global.DefensePowerStat[CardStat] = 10000
 
 CardStat = 11108
 {
-global.CardName[CardStat] = 'Fast Chace Golden Knight, Campbell '
+global.CardName[CardStat] = 'Fast Chase Golden Knight, Campbell '
 global.CardText[CardStat] = 'Gold Paladin/Human
 
 Stride.
-ACT [G zone]: If your vanguard is a grade 3 "Sunrise Ray Knight, Gurguit", and you did not get an Imaginary Gift this fight, COST [choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit from your G zone face up], and get two Imaginary Gift:Accel.
+ACT [G Zone]: If your vanguard is a grade 3 "Sunrise Ray Knight, Gurguit", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
+
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
-AUTO [VC]: When this unit’s attack hits vanguard, look at five cards from the top of your deck, search for up to one card from among them, call it to RC, shuffle your deck, and that unit gets power +2000 until end of turn.
+
+AUTO [VC]: When this unit’s attack hits a vanguard, look at the top five cards of your deck, choose up to one card from among them, call it to RC, shuffle your deck, and it gets power +2000 until end of turn.
 
 (SHIFT + left click to create Accel gifts.)'
 global.UnitGrade[CardStat] = 4

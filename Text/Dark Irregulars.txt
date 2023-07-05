@@ -2957,27 +2957,21 @@ global.PowerStat[6027] = 9000
 
 
 CardStat = 6031
-
 {
-
 global.CardName[6031] = 'No Life King, Death Anchor '
-
 global.CardText[6031] = 'Dark Irregulars/Ghost
+
+(PREMIUM TH: You can only run this card if you do not have Evil God Pontiff, Gastille Daimonas in your G Zone.)
 
 AUTO [VC]: When placed, Soul Charge 1, and this unit gets power +2000 until end of turn for each card in your soul.
 
-AUTO [VC]: At the end of the battle that it attacked, if you have thirteen or more cards in your soul, COST [Counter Blast 1 & put a card from your hand and three rear-guards into your soul], ride a card from your soul as stand, and that unit gets critical +1 until end of turn.
-'
-
+AUTO [VC]: At the end of the battle that it attacked, if you have thirteen or more cards in your soul, COST [Counter Blast 1 & put a card from your hand and three rear-guards into your soul], ride a card from your soul as stand, and that unit gets critical +1 until end of turn.'
 global.UnitGrade[6031] = 3
-
 global.CardInClan[6031] = 11
-
 }
-
 global.GreenTokenAdd[6031] = 1
-
 global.PowerStat[6031] = 12000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 6032
@@ -3511,7 +3505,7 @@ global.CardName[CardStat] = 'Evil God Pontiff, Gastille Daimonas'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
 (PREMIUM JP & EN: Banned.)
-(PREMIUM TH: Restricted to 1.)
+(PREMIUM TH: You can only run 1 of this card if you do not have V No Life King, Death Anchor in your deck.)
 
 Stride.
 
@@ -4182,7 +4176,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 ACT [VC]: If your soul has ten or less cards, COST [Soul Blast 1], choose a card from your soul, and bind it face down.
 
 CONT [VC]: Get all of the effects below depending on the number of face down cards in your bind zone.
-— 5 or more - This unit gets power +5000. (Active on your opponent’s turn too.)
+— 5 or more - This unit gets power +5000. (Active on opponent’s turn too)
 — 7 or more - During your turn, this unit gets power +10000 / drive +1.
 — 10 or more - During your turn, this unit gets power +10000 / critical +2.
 
@@ -4411,11 +4405,11 @@ global.CardText[CardStat] = 'Dark Irregulars/Succubus
 
 Stride.
 
-ACT [G zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit from your G zone face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 
-AUTO [VC]: When this unit’s attack hits vanguard, Soul Charge 2, and if the number of cards in your soul is six or more, draw a card.
+AUTO [VC]: When this unit’s attack hits a vanguard, Soul Charge 2, and if the number of cards in your soul is six or more, draw a card.
 
 (SHIFT + left click to create Protect gifts.)'
 global.UnitGrade[CardStat] = 4

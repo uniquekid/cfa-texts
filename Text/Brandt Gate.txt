@@ -1001,7 +1001,7 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on VC or RC, if you have a Meteorite in your Order Zone, COST [Soul Blast 3], draw a card, and this unit gets power +5000 until end of turn.
 
-CONT [RC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000. (Active on opponent’s turn too.)'
+CONT [RC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -1030,7 +1030,7 @@ CardStat = 9044
 global.CardName[CardStat] = 'Gravidia Stanner'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-CONT [RC/GC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too.)'
+CONT [RC/GC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -1133,7 +1133,7 @@ CardStat = 9110
 global.CardName[CardStat] = 'Cardinal Draco, Destijade'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
-CONT [RC]: If your World is Dark Night, this unit gets power +2000. If it is Abyssal Dark Night instead, this unit gets power +5000. (Active on your opponent’s turn too.)
+CONT [RC]: If your World is Dark Night, this unit gets power +2000. If it is Abyssal Dark Night instead, this unit gets power +5000. (Active on opponent’s turn too)
 
 AUTO [RC]: At the end of the battle this unit attacked, COST [retire three Shadow Army tokens], and stand this unit.'
 global.UnitGrade[CardStat] = 2
@@ -3988,9 +3988,9 @@ CardStat = 11282
 global.CardName[CardStat] = 'Blitz Staff, Muna'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
-CONT [RC]: If your order zone has three or more cards, this unit cannot be chosen by your opponent’s card effects and gets power +5000.
+CONT [RC]: If your order zone has three or more cards, this unit cannot be chosen by your opponent’s card’s effects, and gets power +5000. (Includes opponent’s cards. Active on opponent’s turn too)
 
-AUTO [RC] 1/Turn: When any player’s unit is placed on RC from your order zone during any player’s main phase, COST [Soul Blast 1], and draw a card.'
+AUTO [RC] 1/Turn: When any unit is put from your order zone onto RC during any main phase, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -4003,9 +4003,35 @@ global.CardName[CardStat] = 'Midnight Recycleaners'
 global.CardText[CardStat] = 'Brandt Gate/Normal Order
 
 Look at the same number of cards from the top of your deck as the number of set orders in your order zone, choose one card from among them, bind it face down, and shuffle the deck. At the end of that turn, put the card bound by this effect into your hand.'
-global.UnitGrade[CardStat] = 3
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11551
+{
+global.CardName[CardStat] = 'Schwarzer Eins'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: When your grade 2 or greater set order is put into the order zone, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11552
+{
+global.CardName[CardStat] = 'Schwarzer Zwei'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: If your opponent’s rear-guard was retired by the ability of your set order this turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

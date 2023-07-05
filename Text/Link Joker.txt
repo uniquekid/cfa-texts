@@ -1718,7 +1718,7 @@ global.CardInClan[CardStat] = 24
 
 CardStat = x+4
 {
-global.CardName[CardStat] = 'Genesis Dragon, Judgment Messiah'
+global.CardName[CardStat] = 'Genesis Dragon, Judgement Messiah'
 global.CardText[CardStat] = 'Link Joker/Messiah/Star Gate/G-Unit
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
@@ -2183,7 +2183,7 @@ AUTO [RC]: [Counter Blast 1-card with "Deletor" in its card name & Retire this u
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
-global.CardLimidet[5851] = 1
+global.CardLimidet[CardStat] = 1
 
 CardStat = x+5
 {
@@ -4483,37 +4483,24 @@ global.PowerStat[5460] = 9000
 
 
 CardStat = 5465
-
 {
-
 global.CardName[5465] = 'Zeroth Dragon of Destroy Star, Stark'
-
 global.CardText[5465] = 'Star Gate/Zeroth Dragon
 
 Ultimate Stride.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, this unit gets drive -2, this unit does not rest for attack, and it can attack up to three times during this turn.
-'
-
-global.UnitGrade[5465] = 4
-
-global.CardInClan[5465] = 28
-
-global.CardInClan2[5465] = 6
-
-global.CardInClan3[5465] = 22
-
-global.CardInClan4[5465] = 24
-
-global.CardInClan5[5465] = 4
-
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, this unit gets drive -2, this unit does not rest for attack, and it can attack up to three times during this turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 33
+global.CardInClan2[CardStat] = 6
+global.CardInClan3[CardStat] = 32
+global.CardInClan4[CardStat] = 24
+global.CardInClan5[CardStat] = 35
+global.CardInClan6[CardStat] = 4
 global.ExtraDeck[5465] = 1
-
 global.DeleteAllExtraInEndPhase[5465] = 1
-
 }
-
-global.PowerStat[5465] = 25000
+global.PowerStat[CardStat] = 25000
 
 
 CardStat = 5469
@@ -5455,11 +5442,12 @@ CONT [G Zone]: This card cannot be turned face up by abilities. If this card is 
 
 AUTO [VC]: When it attacks, COST [Counter Blast 1], and increase or decrease the power of all of your opponent’s units to 0 until end of turn.'
 global.UnitGrade[CardStat] = 4
-global.CardInClan[CardStat] = 24
-global.CardInClan2[CardStat] = 28
-global.CardInClan3[CardStat] = 6
-global.CardInClan4[CardStat] = 22
-global.CardInClan5[CardStat] = 4
+global.CardInClan[CardStat] = 33
+global.CardInClan2[CardStat] = 6
+global.CardInClan3[CardStat] = 32
+global.CardInClan4[CardStat] = 24
+global.CardInClan5[CardStat] = 35
+global.CardInClan6[CardStat] = 4
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
@@ -6262,9 +6250,11 @@ global.CardName[CardStat] = 'Genesis Dragon, Judgement Messiah '
 global.CardText[CardStat] = 'Link Joker/Messiah
 
 Stride.
-ACT [G zone]: If your vanguard is a grade 3 "Alter Ego Messiah", and you did not get an Imaginary Gift this fight, COST [choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit from your G zone face up], and get two Imaginary Gift:Force.
+ACT [G Zone]: If your vanguard is a grade 3 "Alter Ego Messiah", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Force.
+
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
-AUTO [VC]: When this unit’s attack hits vanguard, Choose a rear-guard in your opponent’s back row, lock it, choose up to one locked card, and unlock it.
+
+AUTO [VC]: When this unit’s attack hits a vanguard, Choose a rear-guard in your opponent’s back row, lock it, choose up to one locked card, and unlock it.
 
 (SHIFT + left click to create Force gifts.)'
 global.UnitGrade[CardStat] = 4

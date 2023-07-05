@@ -113,7 +113,7 @@ CardStat = 11447
 global.CardName[CardStat] = 'Ultraman Taiga "Pose"'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [VC]: During your turn, if "Ultraman Titas "Pose"" and "Ultraman Fuma "Pose"" are on your RC, this unit gets power +10000.'
+CONT [RC]: During your turn, if "Ultraman Titas "Pose"" and "Ultraman Fuma "Pose"" are on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 35
 }
@@ -202,7 +202,7 @@ CardStat = 11454
 global.CardName[CardStat] = 'Ultraman Tregear'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [RC]: When your unit with "Ultraman" in its card name attacks, COST [Soul Blast 2], choose one of your Vanguards, and that unit gains power +10000 until the end of turn.'
+AUTO [RC]: When your unit with "Ultraman" in its card name attacks or is attacked, COST [Soul Blast 2], choose one of your Vanguards, and that unit gains power +10000 until the end of battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
@@ -211,10 +211,10 @@ global.DefensePowerStat[CardStat] = 10000
 
 CardStat = 11455
 {
-global.CardName[CardStat] = 'Ultraman Tregear "Trera Phatasma"'
+global.CardName[CardStat] = 'Ultraman Tregear "Trera Phantasma"'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [VC/RC]: When this unit unit attacksa vanguard, if opponent’s vanguard power is 8000 or lower this unit gets power +5000 until the end of turn.
+AUTO [VC/RC]: When this unit unit attacks a vanguard, if opponent’s vanguard power is 8000 or lower this unit gets power +5000 until the end of turn.
 
 CONT [VC/RC]: In the battle this unit attacks a vanguard, opponent cannot call normal units from hand to GC.'
 global.UnitGrade[CardStat] = 2
@@ -350,7 +350,7 @@ CardStat = 11466
 global.CardName[CardStat] = 'Ultraman Exceed X'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [VC/RC]: When it attacks, this unit gets power +3000 until the end of battle.
+AUTO [VC/RC]: When it attacks a vanguard, this unit gets power +3000 until the end of battle.
 
 AUTO: When this card is put to soul by a cost or effect of a card with "Ultraman X" or "Ultraman Exceed X" in its name, Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
@@ -471,7 +471,7 @@ CardStat = 11475
 global.CardName[CardStat] = 'Ultraman Orb Orb Origin'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [RC]: If your soul has “Ultra Galaxy Fight New Generation Heroes” , this unit gets “Intercept”.'
+CONT [RC]: If your soul has “Ultra Galaxy Fight New Generation Heroes” , this unit gets "Intercept".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
@@ -704,7 +704,7 @@ CardStat = 11493
 global.CardName[CardStat] = 'Zenkaiser'
 global.CardText[CardStat] = 'Live Action/Hero
 
-ACT [VC]: COST [Discard one or more cards with the sum of their grades being 3 or greater from your hand], search your deck for up to one grade 4 card with “ZenkaiOh” in its card name, ride it as stand, and shuffle your deck. At the end of the turn, retire that unit, and ride a grade 3 card with “Zenkaiser” in its card name from your soul as rest.
+ACT [VC] 1/Turn: COST [Discard one or more cards with the sum of their grades being 3 or greater from your hand], search your deck for up to one grade 4 card with “ZenkaiOh” in its card name, ride it as stand, and shuffle your deck. At the end of the turn, retire that unit, and ride a grade 3 card with “Zenkaiser” in its card name from your soul as rest.
 
 AUTO: When rode upon, COST [put a normal unit each from your soul and your drop zone to the bottom of your deck], reveal the top two cards of your deck, put one card among them to hand, and the other to your soul'
 global.UnitGrade[CardStat] = 3
