@@ -1018,7 +1018,7 @@ CardStat = 9076
 global.CardName[CardStat] = 'Stealth Dragon, Fushimachi Madoka'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-CONT [RC/GC]: If your opponent’s drop has four or more cards, this unit gets power +2000 / shield +5000. Then, if there are eight or more, it gets shield +5000. (Active on your opponent’s turn too.)'
+CONT [RC/GC]: If your opponent’s drop has four or more cards, this unit gets power +2000 / shield +5000. Then, if there are eight or more, it gets shield +5000. (Active on your opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -1059,7 +1059,7 @@ global.CardText[CardStat] = 'Dragon Empire/Talisman
 
 overDress - Unit in the overDress state (You may place it by stacking it on the specified unit instead of normal calling it to RC.)
 
-CONT [RC]: This unit gets the original power of all of its originalDress. (Active on opponent’s turn too.)
+CONT [RC]: This unit gets the original power of all of its originalDress. (Active on opponent’s turn too)
 
 AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if this unit is in the overDress state, COST [Counter Blast 1], and this unit gets power +15000 / critical +1 until end of that battle. At the end of that battle, put all of this unit’s originalDress into the drop. (overDress state ends if there is no originalDress.)'
 global.UnitGrade[CardStat] = 3
@@ -4115,10 +4115,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11522
 {
-global.CardName[CardStat] = 'Night After School Festival, Ichika Nakano'
+global.CardName[CardStat] = 'Night After the School Festival, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplets
 
-AUTO: When this unit is placed on by riding from "The Quintessential Quintuplets", you get "Memory of the Quintuplets" crest.
+AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get "Memory of the Quintuplets" crest.
 
 CONT [GC]: If your memory has three or more <Quintuplets> with different card names, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
@@ -4148,7 +4148,7 @@ CardStat = 11524
 global.CardName[CardStat] = 'The Quintessential Quintuplets, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplets
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplets> from among them, reveal them, choose up to one card from among the revealed cards, put it into hand, and put the rest of the revealed cards into the memory. Shuffle your deck.
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplets> from among them, reveal them, choose one card from among the revealed cards, put it into hand, and put the rest of the revealed cards into the memory, and shuffle the deck.
 CONT [VC]: If your memory has six or more <Quintuplets> with different card names, when your opponent would call cards from their hand to GC, they must call two or more at the same time.
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, choose one of your <Quintuplets> rear-guards, and increase that unit’s and this unit’s power by the power of the unit retired by this ability until end of turn. If you did not retire a card, get power +10000 instead of the power of the unit retired by this ability.'
 global.UnitGrade[CardStat] = 3
@@ -4165,11 +4165,10 @@ global.CardText[CardStat] = 'Dragon Empire/Normal Order/Quintuplets
 
 Play this if your vanguard is "The Quintessential Quintuplets, Ichika Nakano"!
 
-Choose up to two <Quintuplets> with the same card name from your drop, put one of them on the bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
-• 3 or more - Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
-• 5 or more - Counter Charge 1.
-• 7 or more - Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.
-'
+Choose up to two <Quintuplets> with the same card name from your drop, put one on bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
+• 3 or more different card names- Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
+• 5 or more different card names- Counter Charge 1.
+• 7 or more different card names- Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -4181,6 +4180,8 @@ CardStat = 11526
 {
 global.CardName[CardStat] = 'Actress in Incognito, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplets
+
+(This card is also treated as having "Stealth" in its card name.)
 
 AUTO: When this unit is placed on RC during your main phase, if your vanguard is a <Quintuplets>, look at the top three cards of your deck, choose up to one <Quintuplets> from among them, put it into the memory, and shuffle the deck.
 
@@ -4240,3 +4241,31 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11548
+{
+global.CardName[CardStat] = 'Scarlet Flame Artillery Soldier, Arsharp'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC]: When this unit attacks or boosts, this unit gets power +2000 until end of that battle for each card in your bind zone. If it gets power +10000 or more, retire this unit at the end of that battle. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11549
+{
+global.CardName[CardStat] = 'Scarlet Flame War General, Bravaldin'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+CONT [Deck]: While this card is revealed by the ability of your vanguard with "Gandeeva" in its card name, this card is also regarded as grade 1 and 2.
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Gandeeva" in its card name, COST [bind a card from hand face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, and this unit gets power +5600 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

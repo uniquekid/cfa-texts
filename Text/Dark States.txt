@@ -1572,7 +1572,7 @@ CardStat = 9331
 global.CardName[CardStat] = 'Steam Knight, Amar Sin'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-CONT [RC]: If you have five or more cards in your soul, this unit gets power +5000. (Active on opponent’s turn too.)'
+CONT [RC]: If you have five or more cards in your soul, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -4140,15 +4140,165 @@ global.DCards[CardStat] = 2
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 11519
 {
 global.CardName[CardStat] = 'Unfathomable Juggler'
 global.CardText[CardStat] = 'Dark States/Warbeast
 
-CONT [RC]: If your rear-guard was put into soul by the ability of your vanguard this turn, this unit gets power +10000.
-'
+CONT [RC]: If your rear-guard was put into soul by the ability of your vanguard this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11538
+{
+global.CardName[CardStat] = 'Clock Hands Dracokid'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11539
+{
+global.CardName[CardStat] = 'Divagating Chopper'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon, draw a card, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11540
+{
+global.CardName[CardStat] = 'Recklessly-charging Gear Rhinos'
+global.CardText[CardStat] = 'Dark States/Gear Beast
+
+CONT [VC]: When your would ride from your ride deck, you may "Soul Blast 1" instead of "Choose a card from your hand and discard it."'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11541
+{
+global.CardName[CardStat] = 'Purple Jeweled Beast, Almethys'
+global.CardText[CardStat] = 'Dark States/High Beast
+
+AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
+• RC - Counter Charge 1
+• GC - This unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11542
+{
+global.CardName[CardStat] = 'Night After the School Festival, Nino Nakano'
+global.CardText[CardStat] = 'Dark States/Quintuplets
+
+AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get "Memory of the Quintuplets" crest.
+
+CONT [GC]: If your memory has three or more <Quintuplets> with different card names, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 11531
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 11543
+{
+global.CardName[CardStat] = 'Honeymoon with Everyone, Nino Nakano'
+global.CardText[CardStat] = 'Dark States/Quintuplets
+
+AUTO: When this unit is placed by riding from a grade 1 <Quintuplets>, look at the top seven cards of your deck, choose up to one <Quintuplets> from among them, put it into your memory, and shuffle the deck.
+
+AUTO [RC] 1/Turn: When the attack of your <Quintuplets> does not hit, this unit gets power +5000 until end of turn. If your memory has five or more <Quintuplets> with different card names, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11544
+{
+global.CardName[CardStat] = 'The Quintessential Quintuplets, Nino Nakano'
+global.CardText[CardStat] = 'Dark States/Quintuplets
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplets> from among them, reveal them, choose one card from among the revealed cards, put it into hand, and put the rest of the revealed cards into the memory, and shuffle the deck.
+
+CONT [VC]: If your memory has six or more <Quintuplets> with different card names, this unit gets critical +1.
+
+AUTO [VC] 1/Turn: When this unit’s attack did not hit, COST [Counter Blast 1], stand this unit, and increase of decrease this unit’s critical and drive to 1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11545
+{
+global.CardName[CardStat] = 'Opening Act, Nino Nakano'
+global.CardText[CardStat] = 'Dark States/Quintuplets
+
+AUTO: When this unit is placed on RC during your main phase, if your vanguard is a <Quintuplets>, look at the top three cards of your deck, choose up to one <Quintuplets> from among them, put it into the memory, and shuffle the deck.
+
+CONT [RC]: If your memory has three or more <Quintuplets>, this unit gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11546
+{
+global.CardName[CardStat] = 'Love is Full Speed Ahead, Nino Nakano'
+global.CardText[CardStat] = 'Dark States/Quintuplets
+
+AUTO 1/Turn: When this unit’s attack does not hit, if your vanguard is "The Quintessential Quintuplets, Nino Nakano", COST [Counter Blast 1 & put a <Quintuplets> from drop on bottom of deck], and stand this unit. If your memory has five or more <Quintuplets> with different card names, you may draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11547
+{
+global.CardName[CardStat] = 'Memories of the School Festival - Nino Nakano’s Side'
+global.CardText[CardStat] = 'Dark States/Normal Order/Quintuplets
+
+Play this if your vanguard is "The Quintessential Quintuplets, Nino Nakano"!
+
+Choose up to two <Quintuplets> with the same card name from your drop, put one on bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
+• 3 or more different card names- Choose up to one <Quintuplets> from your drop, call it to RC, and it gets power +5000 until end of turn.
+• 5 or more different card names- Counter Charge 1.
+• 7 or more different card names- Choose one of your vanguards, and it gets "CONT [VC]: All of your front row <Quintuplets> rear-guards get power +15000." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
