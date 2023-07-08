@@ -77,7 +77,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 11444
 {
 global.CardName[CardStat] = 'Ultraman Fuma "Evade"'
-global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger'
+global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 35
 }
@@ -216,7 +218,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [VC/RC]: When this unit attacks a vanguard, if opponent’s vanguard power is 8000 or lower this unit gets power +5000 until the end of turn.
 
-CONT [VC/RC]: In the battle this unit attacks a vanguard, opponent cannot call normal units from hand to GC.'
+CONT [VC/RC]: During the battle that this unit attacks a vanguard, opponent cannot call normal units from hand to GC.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 35
 }
@@ -265,7 +267,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 11459
 {
 global.CardName[CardStat] = 'Ultrawoman Grigio'
-global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger'
+global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 35
 }
@@ -289,7 +293,7 @@ CardStat = 11461
 global.CardName[CardStat] = 'Ultraman Gruebe'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [VC]: When placed, COST [Counter Blast 1], draw a card, until end of turn, all of your front row units get power +10000, and if this unit was placed by riding from a grade 3, this unit gets critical+1.'
+AUTO [VC]: When placed, COST [Counter Blast 1], draw a card, until end of turn, all of your front row units get power +10000, and if this unit was placed by riding from a grade 3, this unit gets critical +1.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 35
 }
@@ -378,7 +382,7 @@ CardStat = 11468
 global.CardName[CardStat] = 'Ultraman Exceed X "Beta Spark Armor"'
 global.CardText[CardStat] = 'Live Action/Hero
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & put a rearguard with "Ultraman" in its card name into your soul], draw a card, this unit gets power +15000 until end of turn, and if you put card with "Ultraman X" or "Ultraman Exceed X" in name into your soul for this unit’s cost, this unit gets Drive +1 until the end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & put a rear-guard with "Ultraman" in its card name into your soul], draw a card, this unit gets power +15000 until end of turn, and if you put card with "Ultraman X" or "Ultraman Exceed X" in name into your soul for this unit’s cost, this unit gets drive +1 until the end of turn.
 
 CONT [VC/RC]: If you have card with "Ultraman X" or "Ultraman Exceed X" in name in your soul and your opponent’s Vanguard is a grade 3 or Greater, this unit gets critical +1. '
 global.UnitGrade[CardStat] = 3
@@ -422,7 +426,9 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 11471
 {
 global.CardName[CardStat] = 'Ultraman Zero Darkness'
-global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger'
+global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 35
 }
@@ -668,7 +674,7 @@ CardStat = 11490
 global.CardName[CardStat] = 'Ultra Dark-Killer "Force Field"'
 global.CardText[CardStat] = 'Live Action/Alien
 
-AUTO [RC]: When this unit boosts, if the power of your opponent’s vanguards is 8000 or less, COST [Soul Blast 1], until the end of that battle, when your opponent calls a guardian from hand, they must call two or more cards at the same time.'
+AUTO [RC]: When this unit boosts, if the power of your opponent’s vanguards is 8000 or less, COST [Soul Blast 1], until the end of that battle, when your opponent would call a card from hand to GC, they must call two or more cards at the same time.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
@@ -704,9 +710,9 @@ CardStat = 11493
 global.CardName[CardStat] = 'Zenkaiser'
 global.CardText[CardStat] = 'Live Action/Hero
 
-ACT [VC] 1/Turn: COST [Discard one or more cards with the sum of their grades being 3 or greater from your hand], search your deck for up to one grade 4 card with “ZenkaiOh” in its card name, ride it as stand, and shuffle your deck. At the end of the turn, retire that unit, and ride a grade 3 card with “Zenkaiser” in its card name from your soul as rest.
+ACT [VC] 1/Turn: COST [Discard one or more cards with the sum of their grades being 3 or greater from your hand], search your deck for up to one grade 4 card with “ZenkaiOh” in its card name, ride it as stand, and shuffle your deck. At the end of the turn, ride a grade 3 card with “Zenkaiser” in its card name from your soul as rest.
 
-AUTO: When rode upon, COST [put a normal unit each from your soul and your drop zone to the bottom of your deck], reveal the top two cards of your deck, put one card among them to hand, and the other to your soul'
+AUTO: When rode upon, COST [put a normal unit each from your soul and your drop zone to the bottom of your deck], reveal the top two cards of your deck, put one card among them to hand, and put the rest into your soul.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 35
 }
@@ -724,8 +730,8 @@ AUTO [VC]: When this unit attacks, if this unit was placed this turn, COST [Coun
 • 8 or more - Draw a card.
 • 10 or more - This unit gets drive +1 until end of turn.
 • 15 or more - Choose up to two <Hero> from your soul, call them to your RC, those units get power +5000 until end of turn.
-
 ACT [VC] 1/Turn: COST [Put a unit each with "Juran" and "Gaon" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+CONT : This card is also regarded as "Juran" in its card name.
 
 (SHIFT + left click to create Protect gift.)'
 global.UnitGrade[CardStat] = 4
@@ -743,6 +749,8 @@ global.CardText[CardStat] = 'Live Action/Hero
 AUTO [VC]: When this unit attacks, if this unit was placed this turn, COST [Counter Blast 1], search your deck for up to one <Hero>, call it to RC, that unit gets power +10000 until end of turn, shuffle your deck, and you may Soul Charge 3.
 
 ACT [VC] 1/Turn: COST [Put a unit each with "Vroon" and "Magine" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+
+CONT : This card is also regarded as "Juran" in its card name.
 
 (SHIFT + left click to create Protect gift.)'
 global.UnitGrade[CardStat] = 4
@@ -932,7 +940,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 11509
 {
 global.CardName[CardStat] = 'Magine'
-global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger'
+global.CardText[CardStat] = 'Live Action/Hero/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 35
 }
