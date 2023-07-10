@@ -647,7 +647,6 @@ AUTO [RC]: When it attacks, if this unit is on an additional RC, COST [Counter B
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
 }
-global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.DefensePowerStat[CardStat] = 0
 
@@ -1043,7 +1042,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 11379
 {
 global.CardName[CardStat] = 'Smokie'
-global.CardText[CardStat] = 'Game/High Beast/Heal Trigger'
+global.CardText[CardStat] = 'Game/High Beast/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 }
 global.UnitGrade[CardStat] = 0
 global.TriggerUnit[CardStat] = 4
@@ -1162,6 +1163,8 @@ CardStat = 11387
 global.CardName[CardStat] = 'Female Taekwondo'
 global.CardText[CardStat] = 'Game/Human
 
+(V PREMIUM TH: Restricted to 2.)
+
 CONT [Back Row Center RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
 
 AUTO [Additional RC] 1/Turn: At the end of the battle this unit attacked, if that attack did not hit, COST [Soul Blast 1], and stand this unit.'
@@ -1171,6 +1174,7 @@ global.CardInClan[CardStat] = 32
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
 global.CanAttackFromBackRow[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 CardStat = 11388
 {

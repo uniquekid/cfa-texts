@@ -621,7 +621,7 @@ global.CardText[CardStat] = 'Etranger/EC19
 
 (PREMIUM & V PREMIUM TH: This card is from all clans and nations.)
 
-AUTO [RC]: When this unit is called from hand, COST [Soul Blast 1], reveal seven cards from the top of your deck, and if all non-<EC19> normal units revealed have different card names, reveal up to one card with <EC19> other than "[EC19 Project UN.213] Kimhan" from among them, put it into your hand, and shuffle your deck.'
+AUTO [RC]: When placed from hand, COST [Soul Blast 1], reveal seven cards from the top of your deck, and if all non-<EC19> normal units revealed have different card names, reveal up to one card with <EC19> other than "[EC19 Project UN.213] Kimhan" from among them, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 22
 }
@@ -651,7 +651,7 @@ global.CardText[CardStat] = 'Etranger/EC19
 
 (PREMIUM & V PREMIUM TH: This card is from all clans and nations.)
 
-AUTO [RC]: When this unit is called from hand, reveal seven cards from the top of your deck, and if all non-<EC19> normal units revealed have different card names, this unit gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard attacks a vanguard, COST [Counter Blast 1], stand this unit." until end of turn, and shuffle your deck. (This ability may only be used by a card with the same card name once a turn)'
+AUTO [RC]: When placed from hand, reveal seven cards from the top of your deck, and if all non-<EC19> normal units revealed have different card names, this unit gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard attacks a vanguard, COST [Counter Blast 1], stand this unit." until end of turn, and shuffle your deck. (This ability may only be used by a card with the same card name once a turn)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 22
 }
@@ -669,10 +669,28 @@ ACT [VC] 1/Turn: If you have four or more units with different card names, COST 
 
 AUTO [VC]: When it attacks a vanguard, if you have four or more units with different card names, this unit gets power +10000 until end of battle.
 
-(SHIFT + left click to create Force, Accel and Protect gifts.)'
+(SHIFT + left click to create Force, Accel or Protect gifts.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 22
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.GiftAdd[CardStat] = 1
+global.GiftAddSelect[CardStat] = 1
+
+CardStat = 11569
+{
+global.CardName[CardStat] = 'Happy Father’s Day'
+global.CardText[CardStat] = 'Etranger/Human
+
+(PREMIUM TH: This card is from all clans and nations.)
+
+ACT [VC]: Legion 20000 "Happy Mother’s Day" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
+
+AUTO [VC]: When this unit Legion, COST [Counter Blast 1], this unit gets drive +1 until end of turn.
+
+ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): During your turn, if you have a unit with "Happy Mother’s Day" and "Happy Children’s Day" in its card name, this unit gets critical +1.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 22
+}
+global.PowerStat[CardStat] = 11000
+global.OldCardStat[CardStat] = 1

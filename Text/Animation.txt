@@ -497,7 +497,7 @@ CardStat = 11435
 global.CardName[CardStat] = 'Hero Form Grandpa'
 global.CardText[CardStat] = 'Animation/Guardian Spirit
 
-AUTO [VC/RC]: When placed, COST[Counter Blast 1 & Soul Blast 1], search your deck for up to one grade 1 <Spirit> or <Guardian Spirit>, reveal it and put it into hand, and shuffle the deck.
+AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one grade 1 <Spirit> or <Guardian Spirit>, reveal it and put it into hand, and shuffle the deck.
 
 AUTO [Soul]: At the end of the battle your vanguard’s attack did not hit, COST [discard two cards from hand], and ride this card as stand. This ability may only be used by a card with the same card name once a turn.'
 }
@@ -532,3 +532,66 @@ global.CardInClan[CardStat] = 33
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 10000
 global.QuickShieldAdd[CardStat] = 1
+
+CardStat = 11565
+{
+global.CardName[CardStat] = 'Vessavana'
+global.CardText[CardStat] = 'Animation/Guardian Spirit
+
+AUTO [VC]: When placed, COST [Soul Blast 1 with grade 3 or greater], you get an Imaginary Gift:Force, and this unit gets drive +1 until end of turn.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], reveal the top card of your deck. If the revealed card is <Spirit> or <Guardian Spirit>, put that card into your soul or call it to RC.
+
+AUTO [Hand]: At the beginning of your ride phase, if your opponent’s vanguard grade is greater than your vanguard’s, COST [discard this card], draw two cards. This ability may only be used by a card with the same card name once a turn.
+
+(SHIFT + left click to create Force gift.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 33
+}
+global.BlueTokenAdd[CardStat] = 1
+global.ForceAdd[CardStat] = 1
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11566
+{
+global.CardName[CardStat] = 'Anger Chao Mae Takhian Thong'
+global.CardText[CardStat] = 'Animation/Guardian Spirit
+
+AUTO: When this unit is rode upon, COST [discard a card from your hand], your vanguard gets drive +1 until end of turn.
+
+AUTO [VC/RC]: When its attack hits a vanguard, look at five cards from the top of your deck, reveal up to one grade 3 or greater, put it into your hand, shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 33
+}
+global.BlueTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11567
+{
+global.CardName[CardStat] = 'Master Kom'
+global.CardText[CardStat] = 'Animation/Guardian Spirit
+
+AUTO [RC]: At the end of your turn, you may put <Spirit> or <Guardian Spirit> from drop zone into your soul.
+
+ACT [RC]: COST [Soul Blast 3], and one of your other units get power +10000 until end of turn, if that unit is <Spirit> or <Guardian Spirit>, it gets power +15000 instead of +10000.'
+}
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 33
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+CardStat = 11568
+{
+global.CardName[CardStat] = 'Inthaka'
+global.CardText[CardStat] = 'Animation/Guardian Spirit
+
+CONT [VC/RC]: During your turn, if your soul has two or more cards with different card names, this unit gets power +5000.
+
+AUTO [VC/RC]: When this unit is put on from hand, look at five cards from the top of your deck, reveal up to one grade 3 or greater from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+}
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 33
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
