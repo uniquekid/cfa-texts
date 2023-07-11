@@ -3895,7 +3895,7 @@ CardStat = 11046
 global.CardName[CardStat] = 'Jovial Juggler'
 global.CardText[CardStat] = 'Dark States/Succubus
 
-CONT [Soul]: When you would choose cards from your soul for your vanguard’s ability would choose cards from your soul, you may choose this card as a grade 0.
+CONT [Soul]: When you would choose cards from your soul for your vanguard’s ability, you may choose this card as a grade 0.
 
 AUTO: When this unit is placed on RC by the ACT ability of your vanguard with only «Pale Moon» for its clan, COST [put another rear-guard into soul], choose a unit card from your soul, and call it to RC. At the end of that turn, put the unit called by this effect into soul.'
 global.UnitGrade[CardStat] = 1
@@ -4327,4 +4327,61 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11577
+{
+global.CardName[CardStat] = 'Almajest Celesphere'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+Play this if you have a vanguard with "Astroea" in its card name!
+
+Counter Charge 1, choose three trigger units from your drop, and put them into soul. If you removed a card with "Astroea" in its card name this turn, choose one of your vanguards, and it gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11578
+{
+global.CardName[CardStat] = 'Gruesome Scythe Dragon'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed on RC, COST [discard a trigger unit from hand], choose a column, and retire all of your opponent’s rear-guards in that column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11579
+{
+global.CardName[CardStat] = 'Diabolos Tailbacker, Derek'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: When you "Final Rush", this unit gets "CONT [RC]: During the battle this unit boosted, when your opponent would call cards from their hand to GC, they must call two or more at the same time." and power +5000 until end of turn. At the end of that turn, retire this unit. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11580
+{
+global.CardName[CardStat] = 'Diabolos Rapid-carrier, Geno'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [Front Row RC]: When your vanguard attacks, if you are in "Final Burst", COST [Soul Blast 2], for every two cards in your damage zone, choose one of your rear-guards in the same column as this unit, and stand it. If you stand two units, they get power +5000 until end of turn.
+
+AUTO [Front Row RC]: At the end of your turn, if you are in "Final Rush", COST [put this unit into soul], choose one normal unit from your soul, and you may put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
