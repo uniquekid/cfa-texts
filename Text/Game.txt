@@ -319,7 +319,7 @@ CardStat = 11324
 global.CardName[CardStat] = 'Male Archer'
 global.CardText[CardStat] = 'Game/Human
 
-AUTO: When it is put into your soul by your card’s ability, COST [Counter Blast 1], call this card RC, and this unit gets power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
+AUTO: When it is put into your soul due to the ability of your card during your turn, COST [Counter Blast 1], call this card from soul to RC, and this unit gets power +5000 until end of turn. This ability may only be used by a card with the same card name once a turn.'
 }
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 32
@@ -647,7 +647,6 @@ AUTO [RC]: When it attacks, if this unit is on an additional RC, COST [Counter B
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 32
 }
-global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.DefensePowerStat[CardStat] = 0
 
@@ -1043,7 +1042,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 11379
 {
 global.CardName[CardStat] = 'Smokie'
-global.CardText[CardStat] = 'Game/High Beast/Heal Trigger'
+global.CardText[CardStat] = 'Game/High Beast/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 }
 global.UnitGrade[CardStat] = 0
 global.TriggerUnit[CardStat] = 4
@@ -1082,11 +1083,11 @@ CardStat = 11382
 global.CardName[CardStat] = 'Male Shura'
 global.CardText[CardStat] = 'Game/Human
 
-CONT [VC]: During your turn, gain all of the following according to the number of cards with "Monk" or "Shura" in their card names in your soul.
+CONT [VC]: During your turn, gain all of the following according to the number of cards with "Monk" or "Shura" in its card names in your soul.
 • 2 or more - This unit gets power +15000 / critical +1.
 • 3 or more - This unit gets drive +1.
 • 4 or more - This unit gets "AUTO [VC] 1/Turn: At the end of the battle it attacked, COST [discard two cards from your hand], stand this unit, and it gets drive -1 until end of turn".
-• 5 or more - This unit gets "AUTO [VC]: When it attacks, COST [Soul Blast 2], and until end of that battle, when your opponent would call cards from their hand to GC, they must call three or more at the same time.
+• 5 or more - This unit gets "AUTO [VC]: When it attacks, COST [Soul Blast 2], and until end of that battle, when your opponent would call cards from hand to GC, they must call three or more at the same time.
 
 ACT [Hand]: If you have a vanguard with "Monk" or "Shura" in its card name, COST [put this card into your soul], and draw a card.'
 global.UnitGrade[CardStat] = 4
@@ -1146,7 +1147,7 @@ global.CardText[CardStat] = 'Game/Human
 
 AUTO [RC]: When placed, COST [put another rear-guard into your soul], and perform all of the following according to the cards names of the cards in your soul.
 • "Swordsman" in its card name - This unit gets power +10000 until end of turn.
-• "Thief" in its card name - Choose one of your opponent’s rear-guards, and return it to hand. If you returned a card, your opponent chooses a card from their hand, and discards it.
+• "Thief" in its card name - Choose one of your opponent’s rear-guards, and return it to hand. If it was returned, your opponent chooses a card from their hand, and discards it.
 • "Magician" in its card name - Counter Charge 1 / Soul Charge 1.
 • "Acolyte" in its card name - Choose two of your rear-guards, and they gets power +5000 until end of turn.
 • "Merchant" in its card name - Draw a card.
@@ -1162,6 +1163,8 @@ CardStat = 11387
 global.CardName[CardStat] = 'Female Taekwondo'
 global.CardText[CardStat] = 'Game/Human
 
+(V PREMIUM TH: Restricted to 2.)
+
 CONT [Back Row Center RC]: If your vanguard is a grade 3 or greater, this unit may attack your opponent’s vanguard from the back row, and gets power +5000.
 
 AUTO [Additional RC] 1/Turn: At the end of the battle this unit attacked, if that attack did not hit, COST [Soul Blast 1], and stand this unit.'
@@ -1171,6 +1174,7 @@ global.CardInClan[CardStat] = 32
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
 global.CanAttackFromBackRow[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 CardStat = 11388
 {
@@ -1316,4 +1320,19 @@ global.CardInClan[CardStat] = 32
 }
 global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11586
+{
+global.CardName[CardStat] = 'Anthology of Ragnarok'
+global.CardText[CardStat] = 'Game/Human/Draw Trigger
+
+CONT: Sentinel.
+
+AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.'
+}
+global.UnitGrade[CardStat] = 0
+global.TriggerUnit[CardStat] = 1
+global.CardInClan[CardStat] = 32
+global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
