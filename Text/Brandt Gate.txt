@@ -4181,7 +4181,7 @@ CardStat = 11597
 global.CardName[CardStat] = 'Pinpoint of Breakthrough, Spark Chamber'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-AUTO [RC]: When your grade 2 or greater set order is put into the order zone, COST [retire this unit], and Counter Charge 1. '
+AUTO [RC]: When your grade 2 or greater set order is put into the order zone, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -4220,3 +4220,40 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11627
+{
+global.CardName[CardStat] = 'Dragontree Wretch, Psyber Kaitul'
+global.CardText[CardStat] = 'Brandt Gate/Hydragrum
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into your hand, and shuffle your deck.
+
+(SHIFT + left click to get a Dragontree Marker)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 11628
+{
+global.CardName[CardStat] = 'Cardinal Principle, Opart'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Orfist" in its card name, COST [Counter Blast 1], search your deck for up to one World card, discard it, and shuffle the deck.
+
+AUTO: When this unit is retired from RC, if your vanguard is "Cardinal Mors, Orfist Masques", you may call a Shadow Army token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 8425
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
