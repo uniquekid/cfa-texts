@@ -2338,35 +2338,23 @@ global.CardInClan[4919] = 11
 global.PowerStat[4919] = 3000
 
 CardStat = 5444
-
 {
-
-global.CardName[5444] = 'Zeroth Dragon of End of the World, Dust'
-
-global.CardText[5444] = 'Dark Zone/Zeroth Dragon
+global.CardName[CardStat] = 'Zeroth Dragon of End of the World, Dust'
+global.CardText[CardStat] = 'Dark Zone/Zeroth Dragon
 
 Ultimate Stride.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, all of your opponent’s vanguards and rear-guards lose their abilities, their grades and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
-'
-
-global.UnitGrade[5444] = 4
-
-global.CardInClan[5444] = 11
-
-global.CardInClan2[5444] = 18
-
-global.CardInClan3[5444] = 14
-
-global.CardInClan4[5444] = 26
-
-global.ExtraDeck[5444] = 1
-
-global.DeleteAllExtraInEndPhase[5444] = 1
-
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, all of your opponent’s vanguards and rear-guards lose their abilities, their grades and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 11 //Dark Irregulars
+global.CardInClan2[CardStat] = 18 //Pale Moon
+global.CardInClan3[CardStat] = 14 //Spike Brothers
+global.CardInClan4[CardStat] = 26 //Gear Chronicle
+global.CardInClan5[CardStat] = 34 //Iconic
+global.ExtraDeck[CardStat] = 1
+global.DeleteAllExtraInEndPhase[CardStat] = 1
 }
-
-global.PowerStat[5444] = 25000
+global.PowerStat[CardStat] = 25000
 
 
 CardStat = 5467
@@ -3530,10 +3518,10 @@ CONT [G Zone]: This card cannot be turned face up by abilities. If this card is 
 
 AUTO [VC]: When placed, COST [Counter Blast 1], your opponent chooses the same number of his or her rear-guards as the number of your open RC, and retires them. If three or more were retired, you Soul Charge 5, and draw a card.'
 global.UnitGrade[CardStat] = 4
-global.CardInClan[CardStat] = 11
-global.CardInClan2[CardStat] = 18
-global.CardInClan3[CardStat] = 14
-global.CardInClan4[CardStat] = 26
+global.CardInClan[CardStat] = 11 //Dark Irregulars
+global.CardInClan2[CardStat] = 18 //Pale Moon
+global.CardInClan3[CardStat] = 14 //Spike Brothers
+global.CardInClan4[CardStat] = 26 //Gear Chronicle
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
@@ -4405,7 +4393,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Succubus
 
 Stride.
 
-ACT [G Zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

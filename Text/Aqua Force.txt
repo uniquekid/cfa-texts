@@ -2927,32 +2927,21 @@ global.PowerStat[5231] = 8000
 global.CanAttackFromBackRow[CardStat] = 1
 
 CardStat = 5235
-
 {
-
-global.CardName[5235] = 'Zeroth Dragon of Distant Sea, Megiddo'
-
-global.CardText[5235] = 'Magallanica/Zeroth Dragon
+global.CardName[CardStat] = 'Zeroth Dragon of Distant Sea, Megiddo'
+global.CardText[CardStat] = 'Magallanica/Zeroth Dragon
 
 Ultimate Stride (Released when the number of face up cards in your G zone is three or more! When it would return to your G zone, exclude your G zone!)[Choose a card with the same card name as your vanguard, and discard it] Stride this card on your VC from face down.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose up to five cards in total from your hand and drop zone, call them to separate RC, until end of turn, they get power +5000, and "AUTO [RC]: At the end of the battle that this unit attacked, choose one of your other rear-guards, and you may exchange positions with this unit".
-'
-
-global.UnitGrade[5235] = 4
-
-global.CardInClan[5235] = 3
-
-global.CardInClan2[5235] = 13
-
-global.CardInClan3[5235] = 8
-
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose up to five cards in total from your hand and drop zone, call them to separate RC, until end of turn, they get power +5000, and "AUTO [RC]: At the end of the battle that this unit attacked, choose one of your other rear-guards, and you may exchange positions with this unit".'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 3 //Aqua Force
+global.CardInClan2[CardStat] = 13 //Bermuda Triangle
+global.CardInClan3[CardStat] = 8 //Granblue
+global.CardInClan4[CardStat] = 34 //Iconic
 global.ExtraDeck[5235] = 1
-
 global.DeleteAllExtraInEndPhase[5235] = 1
-
 }
-
 global.PowerStat[5235] = 25000
 
 
@@ -3856,9 +3845,9 @@ CONT [G Zone]: This card cannot be turned face up by abilities. If this card is 
 
 AUTO [VC]: When your opponent’s guardian is placed, COST [discard a grade 1 or less card from your hand], and retire that guardian.'
 global.UnitGrade[CardStat] = 4
-global.CardInClan[CardStat] = 3
-global.CardInClan2[CardStat] = 13
-global.CardInClan3[CardStat] = 8
+global.CardInClan[CardStat] = 3 //Aqua Force
+global.CardInClan2[CardStat] = 13 //Bermuda Triangle
+global.CardInClan3[CardStat] = 8 //Granblue
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
@@ -5042,7 +5031,7 @@ global.CardName[CardStat] = 'Marine General of the Heavenly Scales, Tidal Bore D
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "One Who Surpasses the Storm, Thavas", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
+ACT [G Zone]: If your vanguard is a grade 3 "One Who Surpasses the Storm, Thavas", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 
