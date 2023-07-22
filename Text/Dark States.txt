@@ -4212,7 +4212,7 @@ CardStat = 11542
 global.CardName[CardStat] = 'Night After the School Festival, Nino Nakano'
 global.CardText[CardStat] = 'Dark States/Quintuplets
 
-AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get "Memories of the Quintuplets" crest.
+AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get a "Memories of the Quintuplets" crest.
 
 CONT [GC]: If your memory has three or more <Quintuplets> with different card names, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
@@ -4413,3 +4413,20 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11679
+{
+global.CardName[CardStat] = 'Evil Eye Dragon Emperor, Ominagruzio Masques'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+CONT: This card can only be ridden from a grade 3 with "Ominagruzio" in its card name.
+
+ACT [VC] 1/Turn: COST [Remove a card with "Ominagruzio" in its different card name from this unit from hand, soul, or drop], choose up to one trigger unit from your drop, bind it, and this unit gets "CONT [VC]: All of your opponent’s cards with the same trigger icon as any of the cards in your bind zone get [Shield]-5000, and your opponent cannot [Power] increase from those trigger effects." until end of turn.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & put two back row rear-guards into soul], stand this unit, and it gets drive-1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

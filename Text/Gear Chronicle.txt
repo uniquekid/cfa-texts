@@ -7,7 +7,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Dark Zone/G-Unit
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face-down card on your VC.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face-down card named "Interdimensional Dragon, Ragnaclock Dragon" from your G-Zone, and turn it face-up] When this unit attacks a Vanguard, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 0 card from hand to GC, and if the number of face-up cards in your G-Zone is two or more, this unit gets critical +1 until end of that battle.'
+AUTO [VC]: [Counter Blast 1 & Choose a face-down card named "Interdimensional Dragon, Ragnaclock Dragon" from your G-Zone, and turn it face up] When this unit attacks a Vanguard, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 0 card from hand to GC, and if the number of face up cards in your G-Zone is two or more, this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 26
 global.ExtraDeck[CardStat] = 1
@@ -143,7 +143,7 @@ CardStat = x+12
 global.CardName[CardStat] = 'Wakey Wakey Worker'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Dark Zone/Stand Trigger
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more G Units face up on your VC and/or G-Zone): When this unit boosts, at the end of the battle, choose a face-up card in your G-Zone, turn it face-down. If you do, return this unit to your deck, and shuffle your deck.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more G Units face up on your VC and/or G-Zone): When this unit boosts, at the end of the battle, choose a face up card in your G-Zone, turn it face-down. If you do, return this unit to your deck, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -369,7 +369,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Dark Zone
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Steam Maiden, Arlim" in your drop zone, choose a card from your damage zone, and turn it face up.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Steam Maiden, Arlim" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -439,7 +439,7 @@ CardStat = x
 global.CardName[CardStat] = 'Steam Fighter, Mesh-he'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Dark Zone
 
-AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Soul Blast 1] When your opponent’s rear-guard is put into his or her deck due to an effect from one of your cards, you may pay the cost. If you do, choose a card from your damage zone, and turn it face-up. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn.)'
+AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Soul Blast 1] When your opponent’s rear-guard is put into his or her deck due to an effect from one of your cards, you may pay the cost. If you do, choose a card from your damage zone, and turn it face up. (Counter Charge 1) (Even if you do not pay the cost, this ability cannot be used for the rest of that turn.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -548,7 +548,7 @@ CardStat = x
 global.CardName[CardStat] = 'Distance-running Gear Horse'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Dark Zone
 
-AUTO [VC/RC]: When this unit’s attack hits a Vanguard, choose a card from your damage zone, and turn it face up.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -1383,7 +1383,7 @@ global.CardText[3801] = 'Gear Chronicle/Gear Dragon
 
 AUTO: Forerunner.
 
-ACT [RC]: [Put this unit into your soul & discard one normal unit from your hand] Look at top card of deck, place on top or bottom, draw 1 card, then if there are one or more face-up cards in G-zone, choose one of your units, and during that turn, it gains power +5000.'
+ACT [RC]: [Put this unit into your soul & discard one normal unit from your hand] Look at top card of deck, place on top or bottom, draw 1 card, then if there are one or more face up cards in G-zone, choose one of your units, and during that turn, it gains power +5000.'
 
 global.UnitGrade[3801] = 0
 
@@ -4004,7 +4004,7 @@ global.CardName[4886] = 'Pulsar Tamer, Mara'
 
 global.CardText[4886] = 'Gear Chronicle/Gearoid/Zodiac Time Beast/Stand Trigger
 
-AUTO [Generation Break 1]: [Counter Blast 1] When this unit is placed on RC or GC, if you have a <Gear Colossus> or <Zodiac Time Beast> vanguard, you may pay the cost. If you do, draw a card, choose a card from your hand, bind it face-up, and Soul Charge 1.
+AUTO [Generation Break 1]: [Counter Blast 1] When this unit is placed on RC or GC, if you have a <Gear Colossus> or <Zodiac Time Beast> vanguard, you may pay the cost. If you do, draw a card, choose a card from your hand, bind it face up, and Soul Charge 1.
 '
 
 global.UnitGrade[4886] = 0
@@ -4087,7 +4087,7 @@ global.CardName[4890] = 'Pulsar, Replenish Coatl'
 
 global.CardText[4890] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO [Generation Break 1]: When this unit is placed on RC from your deck, if you have a <Zodiac Time Beast> vanguard, this unit gets power +3000 until end of turn. Then, if you have no face-up card in your damage zone, Counter Charge 1.
+AUTO [Generation Break 1]: When this unit is placed on RC from your deck, if you have a <Zodiac Time Beast> vanguard, this unit gets power +3000 until end of turn. Then, if you have no face up card in your damage zone, Counter Charge 1.
 '
 
 global.UnitGrade[4890] = 3
@@ -4452,7 +4452,7 @@ global.CardName[5468] = 'Pulsar Tamer, Zambiia'
 
 global.CardText[5468] = 'Gear Chronicle/Gearoid/Zodiac Time Beast
 
-CONT [RC]: During your turn, this unit gets power +1000 for each face-up <Zodiac Time Beast> in your bind zone.
+CONT [RC]: During your turn, this unit gets power +1000 for each face up <Zodiac Time Beast> in your bind zone.
 '
 
 global.UnitGrade[5468] = 1
@@ -6305,7 +6305,7 @@ global.CardName[CardStat] = 'Interdimensional Dragon, Lost Age Dragon '
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Chronojet Dragon", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
+ACT [G Zone]: If your vanguard is a grade 3 "Chronojet Dragon", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater,, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

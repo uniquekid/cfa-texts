@@ -419,7 +419,7 @@ CONT [VC]: If you have eight or more «Dark Irregulars» in your soul, this unit g
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, and this unit gets power +2000 until end of turn. 
 
-AUTO [VC]: [Choose five face-up «Dark Irregulars» from your damage zone and put them into your soul] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 & critical +1 until end of turn. At the beginning of the end phase of that turn, put five cards from the top of your deck into your damage zone.'
+AUTO [VC]: [Choose five face up «Dark Irregulars» from your damage zone and put them into your soul] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 & critical +1 until end of turn. At the beginning of the end phase of that turn, put five cards from the top of your deck into your damage zone.'
 }
 
 CardStat = x+51
@@ -617,7 +617,7 @@ CardStat = x
 global.CardName[CardStat] = 'Demon Marquis, Amon "ßeverse"'
 global.CardText[CardStat] = 'Dark Irregulars/Demon/Dark Zone
 
-ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose one of your «Dark Irregulars» rear-guards and lock it] This unit gets power +1000 for each «Dark Irregulars» in your soul until end of turn. If the number of «Dark Irregulars» in your soul is six or more, this unit gets critical +1 until end of turn. This ability cannot be used for the rest of that turn. (Locked cards are turned face-down, and cannot do anything. Turn them face-up at the end of its owners turn.)
+ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose one of your «Dark Irregulars» rear-guards and lock it] This unit gets power +1000 for each «Dark Irregulars» in your soul until end of turn. If the number of «Dark Irregulars» in your soul is six or more, this unit gets critical +1 until end of turn. This ability cannot be used for the rest of that turn. (Locked cards are turned face-down, and cannot do anything. Turn them face up at the end of its owners turn.)
 
 CONT [VC]: If you have a card named "Demon World Marquis, Amon" in your soul, this unit gets power +2000.
 
@@ -840,7 +840,7 @@ CardStat = x
 global.CardName[CardStat] = 'Flying Librarian'
 global.CardText[CardStat] = 'Dark Irregulars/Human/Dark Zone
 
-AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, Soul Charge 2. Then, if the number of cards in your soul is six or more, draw a card. Then, if the number of cards in your soul is ten or more, choose a card from your damage zone, and turn it face up.'
+AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, Soul Charge 2. Then, if the number of cards in your soul is six or more, draw a card. Then, if the number of cards in your soul is ten or more, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 11
 }
@@ -1008,7 +1008,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human/Dark Zone
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Flag Breaker" in your drop zone, choose a card from your damage zone, and turn it face up.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Flag Breaker" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 11
 }
@@ -1078,7 +1078,7 @@ global.CardText[CardStat] = 'Dark Irregulars/High Beast/Dark Zone/Stand Trigger
 
 (PREMIUM TH: Restricted to 1.)
 
-ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Put this unit on top of your deck] Shuffle your deck, Soul Charge 1, if the number of cards in your soul is six or more, choose a card from your damage zone, and turn it face up. Then, if the number of cards in your soul is ten or more, draw a card.'
+ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Put this unit on top of your deck] Shuffle your deck, Soul Charge 1, if the number of cards in your soul is six or more, choose a card from your damage zone, and turn it face up (Counter Charge 1). Then, if the number of cards in your soul is ten or more, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 11
 }
@@ -2338,35 +2338,23 @@ global.CardInClan[4919] = 11
 global.PowerStat[4919] = 3000
 
 CardStat = 5444
-
 {
-
-global.CardName[5444] = 'Zeroth Dragon of End of the World, Dust'
-
-global.CardText[5444] = 'Dark Zone/Zeroth Dragon
+global.CardName[CardStat] = 'Zeroth Dragon of End of the World, Dust'
+global.CardText[CardStat] = 'Dark Zone/Zeroth Dragon
 
 Ultimate Stride.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, all of your opponent’s vanguards and rear-guards lose their abilities, their grades and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
-'
-
-global.UnitGrade[5444] = 4
-
-global.CardInClan[5444] = 11
-
-global.CardInClan2[5444] = 18
-
-global.CardInClan3[5444] = 14
-
-global.CardInClan4[5444] = 26
-
-global.ExtraDeck[5444] = 1
-
-global.DeleteAllExtraInEndPhase[5444] = 1
-
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, all of your opponent’s vanguards and rear-guards lose their abilities, their grades and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 11 //Dark Irregulars
+global.CardInClan2[CardStat] = 18 //Pale Moon
+global.CardInClan3[CardStat] = 14 //Spike Brothers
+global.CardInClan4[CardStat] = 26 //Gear Chronicle
+global.CardInClan5[CardStat] = 34 //Iconic
+global.ExtraDeck[CardStat] = 1
+global.DeleteAllExtraInEndPhase[CardStat] = 1
 }
-
-global.PowerStat[5444] = 25000
+global.PowerStat[CardStat] = 25000
 
 
 CardStat = 5467
@@ -3530,10 +3518,10 @@ CONT [G Zone]: This card cannot be turned face up by abilities. If this card is 
 
 AUTO [VC]: When placed, COST [Counter Blast 1], your opponent chooses the same number of his or her rear-guards as the number of your open RC, and retires them. If three or more were retired, you Soul Charge 5, and draw a card.'
 global.UnitGrade[CardStat] = 4
-global.CardInClan[CardStat] = 11
-global.CardInClan2[CardStat] = 18
-global.CardInClan3[CardStat] = 14
-global.CardInClan4[CardStat] = 26
+global.CardInClan[CardStat] = 11 //Dark Irregulars
+global.CardInClan2[CardStat] = 18 //Pale Moon
+global.CardInClan3[CardStat] = 14 //Spike Brothers
+global.CardInClan4[CardStat] = 26 //Gear Chronicle
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
@@ -4405,7 +4393,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Succubus
 
 Stride.
 
-ACT [G Zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Scharhrot Vampir", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

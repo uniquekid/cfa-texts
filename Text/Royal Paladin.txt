@@ -1052,7 +1052,7 @@ CardStat = x
 global.CardName[CardStat] = 'Broken Heart Jewel Knight, Ashlei "ßeverse"'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose one of your rear-guards with "Jewel Knight" in its card name, and lock it] Choose up to one of your opponent’s rear-guards in the front row, and retire it, and search your deck for up to one card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck. This ability cannot be used for the rest of that turn. (Locked cards are turned face-down, and cannot do anything. Turn them face-up at the end of its owners turn.)
+ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose one of your rear-guards with "Jewel Knight" in its card name, and lock it] Choose up to one of your opponent’s rear-guards in the front row, and retire it, and search your deck for up to one card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck. This ability cannot be used for the rest of that turn. (Locked cards are turned face-down, and cannot do anything. Turn them face up at the end of its owners turn.)
 
 CONT [VC]: If you have a card named "Pure Heart Jewel Knight, Ashlei" in your soul, this unit gets power +2000.
 
@@ -1412,7 +1412,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Gryngal Seeker'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO [RC]: [Choose one card in your hand, place it at the bottom of your Deck] When an attack hits a Vanguard during the battle that this unit boosted, if you have a unit named "Blaster Blade Seeker" in the same column as this unit, you may pay the cost. If you do, draw a card, choose a card from your damage zone, and turn it face-up'
+AUTO [RC]: [Choose one card in your hand, place it at the bottom of your Deck] When an attack hits a Vanguard during the battle that this unit boosted, if you have a unit named "Blaster Blade Seeker" in the same column as this unit, you may pay the cost. If you do, draw a card, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -1608,7 +1608,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Seeker of Bravery, Ars'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC/RC]: When this unit’s attack hits a Vanguard, choose a card from your damage zone, and turn it face-up.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -1768,7 +1768,7 @@ global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
 ACT [VC]: Legion 20000 "Brave Stridå Seeker, Cherin" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] If this unit is in Legion, search your deck for up to one card with "Seeker" in its card name, call it to RC, and shuffle your deck. Then, if the number of units you have is more than your opponent’s, choose a card from your damage zone, and turn it face up. This ability cannot be used for the rest of that turn.
+ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] If this unit is in Legion, search your deck for up to one card with "Seeker" in its card name, call it to RC, and shuffle your deck. Then, if the number of units you have is more than your opponent’s, choose a card from your damage zone, and turn it face up (Counter Charge 1). This ability cannot be used for the rest of that turn.
 
 AUTO [VC]: When this unit attacks a Vanguard, if you have another unit in the center column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -2050,7 +2050,7 @@ global.CardText[CardStat] = 'Royal Paladin/Cosmo DragonG-Unit
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC.
 
-ACT [VC]: [Choose a face down card named "Divine Sacred Dragon, Saint Blow Dragon" from your G-Zone, and turn it face-up] This unit gets power +3000 for each of your rear-guards until end of turn, if the number of face-up cards in your G-Zone is two or more, and the number of rear-guards you have is two or more, this unit gets critical +1 until end of turn. This ability cannot be used for the rest of that turn.'
+ACT [VC]: [Choose a face down card named "Divine Sacred Dragon, Saint Blow Dragon" from your G-Zone, and turn it face up] This unit gets power +3000 for each of your rear-guards until end of turn, if the number of face up cards in your G-Zone is two or more, and the number of rear-guards you have is two or more, this unit gets critical +1 until end of turn. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -2071,7 +2071,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Seeker, Proudroar Lion'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO [VC/RC]: When this unit’s attack hits a Vanguard, if you have a Vanguard with "Seeker" in its card, name, choose one card in your damage zone, turn it face-up, and choose one of your other rear-guard, it gets power +2000 until end of turn.'
+AUTO [VC/RC]: When this unit’s attack hits a Vanguard, if you have a Vanguard with "Seeker" in its card, name, choose one card in your damage zone, turn it face up (Counter Charge 1), and choose one of your other rear-guard, it gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -2119,7 +2119,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Blue Sky Knight, Altmile'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more G-Units face-up on your VC and/or G-Zone): During your turn, all of your units in your front row get power +5000.
+CONT [VC] Generation Break 2 (This ability is active if you have two or more G-Units face up on your VC and/or G-Zone): During your turn, all of your units in your front row get power +5000.
 
 AUTO [VC]: [Counter Blast 1] During your turn, when your G-Unit Stride, you may pay the cost. If you do, choose up to two cards from your hand, call them to separate RC, choose up to two of your units, and those units get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -2146,7 +2146,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC] Generation Break 1 (This ability is active if you have one or more G-Units face-up on your VC and/or G-Zone): [Counter Blast 1 & Put this unit into your soul] Search your deck for up to one grade 2 card, call it to RC, and shuffle your deck.'
+ACT [RC] Generation Break 1 (This ability is active if you have one or more G-Units face up on your VC and/or G-Zone): [Counter Blast 1 & Put this unit into your soul] Search your deck for up to one grade 2 card, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -2304,7 +2304,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Knight of Fragment'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G Units on your VC and/or G Zone): During your turn, if the number of grade 2 rear-guards you have is two or more, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a vanguard, Soul Charge 1, choose one card from your damage zone, and turn it face up."'
+CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G Units on your VC and/or G Zone): During your turn, if the number of grade 2 rear-guards you have is two or more, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a vanguard, Soul Charge 1, choose one card from your damage zone, and turn it face up. (Counter Charge 1)"'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -2316,7 +2316,7 @@ global.CardText[CardStat] = 'Royal Paladin/Elf
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from your hand, you may pay the cost. If you do, choose one of your vanguard that is being attacked, and that unit cannot be hit until end of that battle, and if you have a card named "Holy Knight Guardian" in your drop zone, choose up to one card in your damage zone, and turn it face up.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from your hand, you may pay the cost. If you do, choose one of your vanguard that is being attacked, and that unit cannot be hit until end of that battle, and if you have a card named "Holy Knight Guardian" in your drop zone, choose up to one card in your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -5316,42 +5316,29 @@ global.CardInClan[5114] = 15
 global.PowerStat[5114] = 13000
 
 CardStat = 5486
-
 {
-
-global.CardName[5486] = 'Zeroth Dragon of Zenith Peak, Ultima'
-
-global.CardText[5486] = 'United Sanctuary/Zeroth Dragon
+global.CardName[CardStat] = 'Zeroth Dragon of Zenith Peak, Ultima'
+global.CardText[CardStat] = 'United Sanctuary/Zeroth Dragon
 
 (PREMIUM JP & EN: You can only run this card if you do not have any over triggers in your deck.)
 
 Ultimate Stride.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, search your deck for four cards, shuffle your deck, call two cards from among the cards searched to separate RC, and put the rest on the top of your deck in any order. All of your units will be chosen for your trigger effects until end of turn.
-'
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, search your deck for four cards, shuffle your deck, call two cards from among the cards searched to separate RC, and put the rest on the top of your deck in any order. All of your units will be chosen for your trigger effects until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 16 //Angel Feather
+global.CardInClan2[CardStat] = 21 //Genesis
+global.CardInClan3[CardStat] = 5 //Gold Paladin
+global.CardInClan4[CardStat] = 10 //Oracle Think Tank
+global.CardInClan5[CardStat] = 15 //Royal Paladin
+global.CardInClan6[CardStat] = 1 //Shadow Paladin
 
-global.UnitGrade[5486] = 4
+//To be added to Clan: Iconic
 
-global.CardInClan[5486] = 16
-
-global.CardInClan2[5486] = 21
-
-global.CardInClan3[5486] = 5
-
-global.CardInClan4[5486] = 10
-
-global.CardInClan5[5486] = 15
-
-global.CardInClan6[5486] = 1
-
-global.ExtraDeck[5486] = 1
-
-global.DeleteAllExtraInEndPhase[5486] = 1
-
+global.ExtraDeck[CardStat] = 1
+global.DeleteAllExtraInEndPhase[CardStat] = 1
 global.CardLimidet[CardStat] = 1
-
 }
-
 global.PowerStat[5486] = 25000
 
 
@@ -8085,7 +8072,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-ACT [G Zone]: If your vanguard is a grade 3 "Blue Sky Knight, Altmile", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
+ACT [G Zone]: If your vanguard is a grade 3 "Blue Sky Knight, Altmile", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater,, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

@@ -1408,7 +1408,7 @@ global.CardName[3836] = 'Frontal Celestial, Mel’ejal'
 
 global.CardText[3836] = 'Angel Feather/Angel
 
-AUTO [RC]: When a card is put into your damage zone, if you have a vanguard with "Celestial" in its card name, this unit gets power +2000 until end of turn, if you have a face-up card in your damage zone with the same card name as a card on your VC, choose one of your vanguards, and it gets power +2000 until end of turn.
+AUTO [RC]: When a card is put into your damage zone, if you have a vanguard with "Celestial" in its card name, this unit gets power +2000 until end of turn, if you have a face up card in your damage zone with the same card name as a card on your VC, choose one of your vanguards, and it gets power +2000 until end of turn.
 '
 
 global.UnitGrade[3836] = 2
@@ -2401,8 +2401,7 @@ global.CardName[5298] = 'Nutrient Angel'
 
 global.CardText[5298] = 'Angel Feather/Angel/Critical Trigger
 
-ACT [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] Choose up to two cards in total on your circle or in your damage zone, and turn them face up.
-'
+ACT [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] Choose up to two cards in total on your circle or in your damage zone, and turn them face up. (Counter Charge , unlock or release from delete)'
 
 global.UnitGrade[5298] = 0
 
@@ -2478,22 +2477,14 @@ global.PowerStat[6083] = 8000
 
 
 CardStat = 6097
-
 {
-
 global.CardName[6097] = 'Incise Angel'
-
 global.CardText[6097] = 'Angel Feather/Angel
 
-AUTO [RC]: When placed, COST [put a card from your damage zone on the bottom of your deck], put the top card of your deck into your damage zone, and turn a face up card in your damage zone face down.
-'
-
+AUTO [RC]: When placed, COST [put a card from your damage zone on the bottom of your deck], put the top card of your deck into your damage zone, and turn a face up card in your damage zone face down. (Counter Charge 1)'
 global.UnitGrade[6097] = 1
-
 global.CardInClan[6097] = 16
-
 }
-
 global.PowerStat[6097] = 8000
 
 
@@ -2980,12 +2971,12 @@ CONT [G Zone]: This card cannot be turned face up by abilities. If this card is 
 
 AUTO [VC]: When placed, COST [Counter Blast 1 & Soul Blast 1], call as many cards from your hand to all RC as possible, and draw three cards.'
 global.UnitGrade[CardStat] = 4
-global.CardInClan[CardStat] = 16
-global.CardInClan2[CardStat] = 21
-global.CardInClan3[CardStat] = 5
-global.CardInClan4[CardStat] = 10
-global.CardInClan5[CardStat] = 15
-global.CardInClan6[CardStat] = 1
+global.CardInClan[CardStat] = 16 //Angel Feather
+global.CardInClan2[CardStat] = 21 //Genesis
+global.CardInClan3[CardStat] = 5 //Gold Paladin
+global.CardInClan4[CardStat] = 10 //Oracle Think Tank
+global.CardInClan5[CardStat] = 15 //Royal Paladin
+global.CardInClan6[CardStat] = 1 //Shadow Paladin
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
@@ -4050,7 +4041,7 @@ global.CardName[CardStat] = 'Holy Seraph, Uriel '
 global.CardText[CardStat] = 'Angel Feather/Angel
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Black Shiver, Gavrail", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Black Shiver, Gavrail", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 AUTO [VC]: When this unit’s attack hits a vanguard, look at the top three cards your deck, choose up to one card from among them, put it into your damage zone, and shuffle your deck. If you put a card into your damage zone, choose a face up grade 2 or less card from your damage zone, call it to RC, and it gets power +2000 until end of turn.
 (SHIFT + left click to create Protect gifts.)'

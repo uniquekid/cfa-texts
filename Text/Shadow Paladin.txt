@@ -142,7 +142,7 @@ CardStat = 21
 global.CardName[CardStat] = 'Cursed Lancer'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [VC/RC]: When this unit’s attack hits a Vanguard, if you have a «Shadow Paladin» Vanguard, choose a card from your damage zone, and turn it face-up.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have a «Shadow Paladin» vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 }
 
 CardStat = 22
@@ -490,7 +490,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Barrier Troop Revenger, Dorint'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When a card named "Blaster Dark Revenger" is placed on your VC or RC of the same column as this unit, if you have a vanguard with "Revenger" in its card name, choose a card from your damage zone, and turn it face-up.'
+AUTO [RC]: When a card named "Blaster Dark Revenger" is placed on your VC or RC of the same column as this unit, if you have a vanguard with "Revenger" in its card name, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -1190,7 +1190,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Witch of Goats, Medb'
 global.CardText[CardStat] = 'Shadow Paladin/Elf/Stand Trigger
 
-AUTO: When this unit is placed on RC, if you have a Vanguard with "Witch" in its card name, and the number of grade 0 rear-guards your opponent has is two or more, Soul Charge 1, choose a card from your damage zone, and turn it face-up.'
+AUTO: When this unit is placed on RC, if you have a Vanguard with "Witch" in its card name, and the number of grade 0 rear-guards your opponent has is two or more, Soul Charge 1, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 1
 }
@@ -1238,7 +1238,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Fiercebau'
 global.CardText[CardStat] = 'Shadow Paladin/High Beast
 
-CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if the number of your back row rear-guards you have is one or less, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a Vanguard, Soul Charge 1, choose one card from your damage zone, and turn it face up".'
+CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if the number of your back row rear-guards you have is one or less, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a Vanguard, Soul Charge 1, choose one card from your damage zone, and turn it face up. (Counter Charge 1)".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -1301,12 +1301,12 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
 
-CardStat = x+1
+CardStat = 2826
 {
 global.CardName[CardStat] = 'Bloodstained Battle Knight, Dorint'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if you have a grade 3 or greater vanguard with "Blaster" in its card name, this unit gets power +2000 and "AUTO [RC]: When this unit attacks a vanguard, if it is boosted by a unit with “Claudas” in its card name, choose a card from your damage zone, and unflip it".'
+CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if you have a grade 3 or greater vanguard with "Blaster" in its card name, this unit gets power +2000 and "AUTO [RC]: When this unit attacks a vanguard, if it is boosted by a unit with “Claudas” in its card name, choose a card from your damage zone, and turn it face up. (Counter Charge 1)". '
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -1561,7 +1561,7 @@ CardStat = x
 global.CardName[CardStat] = 'Phantom Blaster Dragon '
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO: Limit Break 4 (This ability is active if you have four or more damage): [Soul Blast 3] When a «Shadow Paladin» rides this unit, you may pay the cost. If you do, choose your vanguard, and until end of turn, that unit gets power +10000, and "AUTO [VC]: [Choose three of your rear-guards, and retire them] When this unit attacks a vanguard, you may pay the cost. If you do, draw two cards, choose three cards from your damage zone, turn them face up, and until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC".
+AUTO: Limit Break 4 (This ability is active if you have four or more damage): [Soul Blast 3] When a «Shadow Paladin» rides this unit, you may pay the cost. If you do, choose your vanguard, and until end of turn, that unit gets power +10000, and "AUTO [VC]: [Choose three of your rear-guards, and retire them] When this unit attacks a vanguard, you may pay the cost. If you do, draw two cards, choose three cards from your damage zone, turn them face up (Counter Charge 3), and until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC".
 
 AUTO: [Choose one of your rear-guards, and retire it] When this unit is placed on VC, you may pay the cost. If you do, search your deck for up to one card with "Blaster" in its card name, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
@@ -1605,7 +1605,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Demon
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on Giardian circle from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Karma Collector" in your drop zone, choose a card from your damage zone, and turn it face up.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on Giardian circle from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Karma Collector" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -6196,7 +6196,7 @@ global.CardName[CardStat] = 'Dark Knight, Grim Recruiter '
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Supremacy Dragon, Claret Sword Dragon", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
+ACT [G Zone]: If your vanguard is a grade 3 "Supremacy Dragon, Claret Sword Dragon", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater,, and discard them], and stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Force.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

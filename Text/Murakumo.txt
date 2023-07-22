@@ -27,7 +27,7 @@ CardStat = x+3
 global.CardName[CardStat] = 'Stealth Fiend, Dart Spider'
 global.CardText[CardStat] = 'Murakumo/Insect/Dragon Empire/Stand Trigger
 
-ACT [RC]: [Put this unit into your soul] If you have a «Murakumo» Vanguard, choose a card from your damage zone, and turn it face-up.'
+ACT [RC]: [Put this unit into your soul] If you have a «Murakumo» vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 }
 
 CardStat = x+4
@@ -120,7 +120,7 @@ CardStat = x+15
 global.CardName[CardStat] = 'Stealth Beast, White Mane'
 global.CardText[CardStat] = 'Murakumo/Warbeast/Dragon Empire
 
-AUTO [VC/RC]: When this unit’s attack hits a Vanguard, if you have a «Murakumo» Vanguard, choose a card from your damage zone, and turn it face-up.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have a «Murakumo» vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 }
 
 CardStat = x+16
@@ -172,9 +172,9 @@ CardStat = x+21
 global.CardName[CardStat] = 'Stealth Fiend, Kurama Lord'
 global.CardText[CardStat] = 'Murakumo/Noble/Dragon Empire
 
-AUTO [VC]: At the start of your main phase, Soul Charge 1, choose one card from your damage zone and unflip it. 
+AUTO [VC]: At the beginning of your main phase, Soul Charge 1, and choose a card from your damage zone, and turn it face up. (Counter Charge 1) 
 
-AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits, you may pay the cost. If paid, stand all your units.'
+AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits, you may pay the cost. If you do, stand all your units.'
 }
 
 CardStat = x+22
@@ -703,7 +703,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Stealth Rogue of the Flowered Hat, Fujino'
 global.CardText[CardStat] = 'Murakumo/Demon/Dragon Empire
 
-AUTO [RC]: When another of your unit named "Stealth Rogue of the Flowered Hat, Fujino" is placed on RC, until end of turn, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, turn it face up".'
+AUTO [RC]: When another of your unit named "Stealth Rogue of the Flowered Hat, Fujino" is placed on RC, until end of turn, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, turn it face up. (Counter Charge 1)".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -805,7 +805,7 @@ global.CardText[CardStat] = 'Murakumo/Warbeast/Dragon Empire
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Stealth Fiend, White Heron" in your drop zone, choose a card from your damage zone, and turn it face up.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Stealth Fiend, White Heron" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -3833,7 +3833,7 @@ global.CardName[CardStat] = 'Ambush Demon Stealth Fiend, Ushimitsu Train '
 global.CardText[CardStat] = 'Murakumo/Ghost
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Stealth Rogue of Revelation, Yasuie", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
+ACT [G Zone]: If your vanguard is a grade 3 "Stealth Rogue of Revelation, Yasuie", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to separate RC, shuffle your deck, and at the end of that turn, put the units called with this effect on the bottom of your deck in any order.
 
