@@ -4421,12 +4421,97 @@ global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 CONT: This card can only be ridden from a grade 3 with "Ominagruzio" in its card name.
 
-ACT [VC] 1/Turn: COST [Remove a card with "Ominagruzio" in its different card name from this unit from hand, soul, or drop], choose up to one trigger unit from your drop, bind it, and this unit gets "CONT [VC]: All of your opponent’s cards with the same trigger icon as any of the cards in your bind zone get [Shield]-5000, and your opponent cannot [Power] increase from those trigger effects." until end of turn.
+ACT [VC] 1/Turn: COST [Remove a card with "Ominagruzio" in its different card name from this unit from hand, soul, or drop], choose up to one trigger unit from your drop, bind it, and this unit gets "CONT [VC]: All of your opponent’s cards with the same trigger icon as any of the cards in your bind zone get shield -5000, and your opponent cannot increase power with those trigger effects." until end of turn.
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & put two back row rear-guards into soul], stand this unit, and it gets drive-1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & put two back row rear-guards into soul], stand this unit, and it gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11821
+{
+global.CardName[CardStat] = 'Evil Eye Beast, Ominakitty'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon, if your went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11822
+{
+global.CardName[CardStat] = 'Evil Eye Beast, Ominacrowg'
+global.CardText[CardStat] = 'Dark States/Demon
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], look at the top five cards of your deck, choose up to one grade 3 or greater card with "Ominagruzio" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Soul Charge 2.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11823
+{
+global.CardName[CardStat] = 'Evil Eye Beast, Ominaowls'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed by riding from "Evil Eye Beast, Ominacrowg", search your deck for up to one trigger unit, and put it into soul, and shuffle the deck. If you put a card into soul, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11824
+{
+global.CardName[CardStat] = 'Evil Eye Dragon, Ominagruzio'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed on VC, look at the top five cards of your deck, choose up to one card with "Ominagruzio" in its card name or up to one "Masque of Hydragrum" from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose up to one trigger unit from your drop, bind it, and until end of turn, your opponent cannot increase power with trigger effects of cards with the same trigger icon as any card in your bind zone.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11827
+{
+global.CardName[CardStat] = 'Misery Wing Dragon'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+CONT [RC]: During your turn, this unit gets power +5000 for each type of trigger icon in your bind zone.
+
+AUTO: When this unit is placed on RC, if there are two or more types of trigger icons in your bind zone, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11828
+{
+global.CardName[CardStat] = 'Ruin Collector'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC , you may Soul Charge 1.
+
+CONT [RC]: When this unit would be put into soul  for the cost of the ability of your vanguard with "Ominagruzio" in its card name, it may be regarded as putting two units.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
