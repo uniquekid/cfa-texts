@@ -1399,11 +1399,12 @@ global.CardName[CardStat] = 'Roaming Prison Dragon'
 global.CardText[CardStat] = 'Stoicheia/Skeleton
 
 AUTO [Drop]: When you play a normal order, you may call this card to RC. If you called this card, perform one of the following. If it was Alchemagic, perform all of the following instead.
-- This unit gets power +10000 until end of turn.
-- This unit gets critical +1 until end of turn.'
+• This unit gets power +10000 until end of turn.
+• This unit gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Roaming Prison Dragon'
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
@@ -4523,10 +4524,11 @@ CONT: This card can only be ridden from a grade 3 card with "Magnolia" in its ca
 
 CONT [VC]: During your turn, all of your rear-guards on RC with a Dragontree marker can attack from the back row, and get power +10000.
 
-AUTO [VC] 1/Turn: COST [Remove a card with "Magnolia" in its different card name from this unit from hand, soul, or drop] and this unit gets "AUTO [VC]: When your rear-guard attacks a vanguard from the back row, choose one of your opponent’s rear-guards, and retire it." until end of turn.'
+ACT [VC] 1/Turn: COST [Remove a card with "Magnolia" in its different card name from this unit from hand, soul, or drop] and this unit gets "AUTO [VC]: When your rear-guard attacks a vanguard from the back row, choose one of your opponent’s rear-guards, and retire it." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4545,3 +4547,64 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11835
+{
+global.CardName[CardStat] = 'Elegance Flower Maiden, Lucelia'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+CONT: This card is also regarded as "Roaming Prison Dragon".
+
+AUTO [Drop]: When you play a normal order, you may call this card to RC. If you called this card, perform one of the following. If it was Alchemagic, perform all of the following instead.
+• This unit gets power +10000 until end of turn.
+• This unit gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Roaming Prison Dragon'
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11843
+{
+global.CardName[CardStat] = 'Sylvan Horned Beast, Lepcor'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO [Drop]: When your "Sylvan Horned Beast King of Calamity, Magnolia Masques" is placed on VC, you may call this card to RC. If you called it, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11844
+{
+global.CardName[CardStat] = 'Rambling Loyalty'
+global.CardText[CardStat] = 'Stoicheia/Skeleton
+
+AUTO: At the end of your turn, if this unit is on a RC with a Dragontree marker, COST [retire this unit], choose a grade 3 or greater unit card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11845
+{
+global.CardName[CardStat] = 'Thriving Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO [RC]: When this unit’s attack hits, call up to one Plant token to RC as rest. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'

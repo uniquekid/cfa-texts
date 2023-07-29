@@ -8,8 +8,9 @@ CONT [VC]: During your turn, all of your grade 3 units get power +2000.
 AUTO [VC] 1/Turn: At the end of the battle that your drive check revealed a grade 3, COST [discard a card from your hand], choose one of your rear-guards, stand it, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Bastion'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3853,7 +3854,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10979
 {
-global.CardName[CardStat] = 'Yerugaon'
+global.CardName[CardStat] = 'Yell Gaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO [RC]: When this unit boosts a grade 3 or greater unit, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
@@ -4438,6 +4439,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 AUTO [RC] 1/Turn: When your other unit is placed on RC from deck, COST [Counter Blast 1], choose one of your rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4454,3 +4456,97 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11834
+{
+global.CardName[CardStat] = 'Magic of Scriptures, Cuculeep'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: This card is also regarded as "Wayward Therapy Angel".
+
+CONT: This card cannot be ridden, and cannot be normal called to RC from hand.
+
+AUTO: When this unit is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11836
+{
+global.CardName[CardStat] = 'Cinctus Sanctus'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+All of your rear-guards get "Boost" until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11837
+{
+global.CardName[CardStat] = 'Generous Flute Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is placed on RC, if your have a vanguard with "Sorceress" in its card name, COST [discard a card from hand], look at the top two cards of your deck, choose one card from among them, put it into hand, and put the rest on the top of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11838
+{
+global.CardName[CardStat] = 'Knight of Nobility, Azuluis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [Hand]: When you reveal grade 3 cards from hand for the cost of your card’s ability, this card may be regarded as revealing a grade 3.
+
+AUTO: When this unit is placed on RC, if you have a grade 3 vanguard with "Bastion" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards in the same column as this unit, and put it on the bottom of their deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11839
+{
+global.CardName[CardStat] = 'Grandeur Edge Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+CONT [Hand]: When you reveal grade 3 cards from hand for the cost of your card’s ability, this card may be regarded as revealing two cards.
+
+CONT [RC/GC]: If you have a vanguard with "Bastion" in its card name, this unit gets power +10000 / shield +10000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11840
+{
+global.CardName[CardStat] = 'Sword of the Nation, Bastion Accord'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [VC]: This unit is also regarded as "Apex Ruler, Bastion".
+
+CONT [VC]: All of your grade 3 or greater front row rear-guards cannot be chosen by your opponent’s card effects, and get power +5000. (Active on opponent’s turn too)
+
+AUTO [VC]: At the end of the battle this unit attacked, choose one of your grade 3 or less rear-guards, stand it, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [RC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & discard a card with "Bastion" in its card name from hand], and this unit performs drive checks until end of that battle." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Bastion'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

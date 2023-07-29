@@ -1299,6 +1299,7 @@ AUTO [VC]: At the end of the battle this unit attacked, COST [Soul Blast 2 & put
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Avaricious Demonic Dragon, Greedon'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4092,16 +4093,17 @@ AUTO [VC]: At the end of the battle this unit attacked, COST [Soul Blast 2 & put
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Avaricious Demonic Dragon, Greedon'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11203
 {
-global.CardName[CardStat] = 'Swan Lake Odile'
+global.CardName[CardStat] = 'Swanlake Odile'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO [RC]: When this unit boosts a grade 3 or greater unit, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit boosts a grade 3 or greater card, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -4510,6 +4512,47 @@ global.CardText[CardStat] = 'Dark States/Demon
 AUTO: When this unit is placed on RC , you may Soul Charge 1.
 
 CONT [RC]: When this unit would be put into soul  for the cost of the ability of your vanguard with "Ominagruzio" in its card name, it may be regarded as putting two units.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11832
+{
+global.CardName[CardStat] = 'Inferno Lover, Cadullis'
+global.CardText[CardStat] = 'Dark States/Succubus
+
+CONT: This card is also regarded as "Clean-sweep Dragon".
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put them into soul. This unit gets power +5000 until end of turn for each card put into soul. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11841
+{
+global.CardName[CardStat] = 'Gunsmoke Bullet-rain Colossus'
+global.CardText[CardStat] = 'Dark States/Gear Colossus
+
+AUTO: When this unit is put on GC, COST [Soul Blast 2], and this unit gets shield +5000 until end of that battle for each type of trigger icon in your bind zone.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11842
+{
+global.CardName[CardStat] = 'Demonic Lancer of Flashing Thrust, Haagenti'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Evil Eye" in its card name, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
