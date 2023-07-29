@@ -3760,7 +3760,7 @@ CardStat = 11025
 global.CardName[CardStat] = 'Defending Roar'
 global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
-Choose one of your guardians without Sentinel, until end of that battle, it gets "AUTO: When this unit is retired from GC, put this card into your hand.", and shield +10000.'
+Choose one of your guardians without sentinel, until end of that battle, it gets "AUTO: When this unit is retired from GC, put this card into your hand.", and shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -4181,7 +4181,7 @@ CardStat = 11526
 global.CardName[CardStat] = 'Actress in Incognito, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplets
 
-(This card is also treated as having "Stealth" in its card name.)
+(This card is also regarded as having "Stealth" in its card name.)
 
 AUTO: When this unit is placed on RC during your main phase, if your vanguard is a <Quintuplets>, look at the top three cards of your deck, choose up to one <Quintuplets> from among them, put it into the memory, and shuffle the deck.
 
@@ -4343,6 +4343,42 @@ global.CardName[CardStat] = 'Stealth Dragon, Futaiten'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
 AUTO [RC]: At the end of your turn, if this unit is on a RC with a Dragontree marker, COST [retire this unit], choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11831
+{
+global.CardName[CardStat] = 'Dragritter, Ghazvin'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT: This card is also regarded as "Meteor Flare Dragon".
+
+AUTO: When this unit is placed on RC, until end of turn, all of your opponent’s rear-guards lose all of their CONT abilities, and cannot gain them. Then, COST [Counter Blast 1], choose one of your opponent’s rear-guards in the same column as this unit, and retire it.
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater and they have no rear-guards, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11846
+{
+global.CardName[CardStat] = 'Vailord'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+overDress - "Trickmoon" (You may place it by stacking it on the specified unit instead of normal calling it to RC).
+
+CONT [RC]: This unit cannot be chosen by your opponent’s card effects.
+
+AUTO: When this unit is placed on RC by overDress, COST [Counter Blast 1], choose up to a total of two Arms cards from your hand or drop, arm one card from among them to your vanguard, and put the rest into soul.
+
+DressBoost - AUTO [RC]: When this unit in the overDress state boosts, all of your front row units get power +5000 until end of turn for each card your vanguard is armed with.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }

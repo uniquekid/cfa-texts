@@ -2049,7 +2049,7 @@ CardStat = 10120
 global.CardName[CardStat] = 'Galactic Base "A.E.G.I.S."'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Base
 
-AUTO: When this card is put into the Order Zone, look at the top seven cards your deck, choose up to three cards with "Hero" in their card names, reveal them, put up to one card from among them into your hand, and scout up to two cards into your Base, and shuffle your deck.
+AUTO: When this card is put into the Order Zone, look at the top seven cards your deck, choose up to three cards with "B-Hero" in their card names, reveal them, put up to one card from among them into your hand, and scout up to two cards into your Base, and shuffle your deck.
 
 ACT [Order Zone]: COST [rest this card & discard a card from your hand], choose one of your scouted cards with a grade less than or equal to your vanguard’s grade, and call it to RC.
 
@@ -4291,6 +4291,21 @@ global.CardName[CardStat] = 'Robust Fist Dragon, Ellenbars Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon
 
 CONT [RC]: If your set order was put from order zone into drop this turn, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11833
+{
+global.CardName[CardStat] = 'Moonlit Ainsel'
+global.CardText[CardStat] = 'Brandt Gate/Elf
+
+CONT: This card is also regarded as "Detonation Monster, Bobalmine".
+
+AUTO [RC]: At the end of the battle this unit boosted, if your Order Zone has a Set Order, COST [put this unit into your soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
