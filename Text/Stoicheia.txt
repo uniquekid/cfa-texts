@@ -1670,7 +1670,7 @@ CardStat = 9579
 global.CardName[CardStat] = 'Awakening from Slumber, Rorowa'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed by riding on "Bioroid Youth, Rorowa", call up to one Plant Token to your back row center RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)
+AUTO: When this unit is placed by riding on "Bioroid Youth, Rorowa", call up to one Plant token to your back row center RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 Glitter (This card is a Glitter which seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 1
@@ -1686,7 +1686,7 @@ CardStat = 9580
 global.CardName[CardStat] = 'The World 3000 Years Later, Rorowa'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When placed on VC, COST [Retire a rear-guard], and call up to two Plant Tokens to RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)
+AUTO: When this unit is placed on VC, COST [retire one of your rear-guards], and call up to two Plant tokens to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 Glitter (This card is a Glitter which seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 2
@@ -1702,7 +1702,7 @@ CardStat = 9581
 global.CardName[CardStat] = 'For One’s Precious Thing, Rorowa'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], and call up to three Plant Tokens to RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)
+ACT [VC] 1/Turn: COST [Soul Blast 1], and call up to three Plant tokens to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 AUTO [VC]: When this unit is attacked, COST [retire one or more of your token units], and this unit gets power +5000 until end of that battle for each unit retired for this cost.
 
@@ -1722,7 +1722,7 @@ CardStat = 9588
 global.CardName[CardStat] = 'Stepping Calyx, Salvia'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed on RC, if your vanguard is a grade 3 or greater, call up to one Plant Token to RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)'
+AUTO: When this unit is placed on RC, if your vanguard is a grade 3 or greater, call up to one Plant token to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1748,7 +1748,7 @@ CardStat = 9591
 global.CardName[CardStat] = 'Prodpollen Rafilous'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], call up to two Plant Token to RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], call up to two Plant tokens to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -2714,7 +2714,7 @@ CardStat = 10530
 global.CardName[CardStat] = 'Full Blown Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO [RC]: At the end of your turn, if your vanguard is a Glitter, COST [put this unit into your soul], and call up to two Plant tokens to RC. (Plant Tokens are grade 0 / power 5000 / critical 1 and have boost)
+AUTO [RC]: At the end of your turn, if your vanguard is a Glitter, COST [put this unit into your soul], and call up to two Plant tokens to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost)
 
 (SHIFT + left click to generate a Plant Token)'
 global.UnitGrade[CardStat] = 3
@@ -4608,3 +4608,29 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.TokenSummoner[CardStat] = 9583
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 11849
+{
+global.CardName[CardStat] = 'Prevailing Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+AUTO [RC]: At the end of the battle this unit attacked, if this unit was placed on RC by a card’s ability this turn, COST [retire this unit], choose a normal order or set order from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11850
+{
+global.CardName[CardStat] = 'Callous Neurotoxin'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO [RC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & bind an order card from drop], and this unit gets power +5000 until end of that battle for each grade of that card bound for this cost.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
