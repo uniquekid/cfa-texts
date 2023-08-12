@@ -1055,7 +1055,7 @@ CardStat = 9064
 global.CardName[CardStat] = 'Steam Mage, Ashur-da'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-(PREMIUM: You can only run this card if you do not have V King of Masks, Dantarian in your deck.)
+(PREMIUM JP & EN: You can only run this card if you do not have V King of Masks, Dantarian in your deck.)
 
 CONT [GC]: If your soul has seven or more cards, this unit gets shield +5000.
 
@@ -1472,7 +1472,7 @@ CardStat = 9324
 global.CardName[CardStat] = 'Brainwash Swirler'
 global.CardText[CardStat] = 'Dark States/Human
 
-(STANDARD JP: You can only run this card if you do not have Steam Scara, Gigi in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Steam Scara, Gigi in your deck.)
 
 AUTO: When this unit is placed on RC, Soul Charge 1.
 
@@ -2777,7 +2777,7 @@ CardStat = 10488
 global.CardName[CardStat] = 'Steam Scara, Gigi  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
 
-(STANDARD JP: You can only run this card if you do not have Brainwash Swirler in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Brainwash Swirler in your deck.)
 
 AUTO: When this unit is placed on RC, if you have a "Chronojet Dragon" crest, COST [Soul Blast 2], draw a card, and if this unit was placed by your card’s ability, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -3378,7 +3378,7 @@ CardStat = 10731
 global.CardName[CardStat] = 'Clean-sweep Dragon'
 global.CardText[CardStat] = 'Dark States/Chimera
 
-ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put them into soul. This unit gets power +5000 until end of turn for each card put into soul. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put the chosen rear-guards into your own souls. This unit gets power +5000 until end of turn for each card chosen by this effect. ("If you persona rode" is active even if persona ride is activated outside of normal ride)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -4584,3 +4584,18 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11889
+{
+global.CardName[CardStat] = 'Servant Falcracia'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO: When this unit attacks a grade 3 or greater unit, choose up to one «Dark States» card from your drop, and this unit gets power +5000 until end of that battle for each of its grade. Put that chosen card into soul.
+
+AUTO [RC]: At the end of your turn, if your vanguard is grade 4 or greater, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
