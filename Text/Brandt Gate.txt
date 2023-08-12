@@ -1833,7 +1833,7 @@ CardStat = 9728
 global.CardName[CardStat] = 'Fountain of Knowledge, Eva'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-(STANDARD JP: You can only run this card if you do not have Combine Rusher in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Combine Rusher in your deck.)
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], look at cards from the top of your deck equal to the number of Research cards in your Order Zone, choose up to one card from among them, put it into your hand put the rest on the bottom of your deck in any order, and this unit gets power +5000 until end of turn.
 
@@ -2167,7 +2167,7 @@ CardStat = 10131
 global.CardName[CardStat] = 'Combine Rusher'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-(STANDARD JP: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
 
@@ -2841,8 +2841,7 @@ global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
 AUTO: When this card is put into the order zone, if you have a vanguard with "Blitz" in its card name, draw a card, and Soul Charge 1.
 
-Operate - [AUTO][Order Zone]: When this card is operated, if it is your main phase, look at the top five cards of your deck, choose up to one unit card from among them with grade less than or equal to your vanguard, call it to RC, and shuffle your deck. If it is your battle phase, draw a card. 
-'
+Operate - AUTO [Order Zone]: When this card is operated, if it is your main phase, look at the top five cards of your deck, choose up to one unit card from among them with grade less than or equal to your vanguard, call it to RC, and shuffle your deck. If it is your battle phase, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -3734,9 +3733,9 @@ CardStat = 11033
 global.CardName[CardStat] = 'Gigant Arms, Silhouette'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power continuously, and they are moved to RC as rest at the end of turn)
+AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power and abilities continuously, and they are moved to RC as rest at the end of turn)
 
-AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (It is no longer attached after being moved)'
+AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (The moved unit is no longer attached)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -3930,7 +3929,7 @@ CardStat = 11185
 global.CardName[CardStat] = 'Cosmic Battler, Norphein'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-(STANDARD JP: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
 
 CONT: This card is also regarded as "Combine Rusher"
 
@@ -4450,6 +4449,36 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 AUTO: When this unit is placed on RC, if you have a vanguard with "Welstra" in its card name, COST [Counter Blast 1], choose a Product from your order zone, and operate it.
 
 AUTO [RC] 1/Turn: When a Product in your order zone is operated by another card’s ability, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11890
+{
+global.CardName[CardStat] = 'Beast Machine Conversion, Liprabuffalo'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 1], search your deck for up to one "Beast Machine Conversion, Liprabuffalo", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+
+CardStat = 11891
+{
+global.CardName[CardStat] = 'Serving Mechanized Monster, Savoward'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Monster" in its card name, COST [Soul Blast 2], call this card to RC, and this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC, if your order zone has two or more Research cards, choose up to one of your unit cards without the sentinel ability from your order zone, and you may put it into hand. If you put a card, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
