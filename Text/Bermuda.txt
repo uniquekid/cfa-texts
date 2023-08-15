@@ -1380,11 +1380,11 @@ CardStat = x+8
 global.CardName[CardStat] = 'Miracle Voice, Lauris'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [VC/RC]: Harmony (When another of your units is placed on the same column as this unit, both units are in Harmony state until end of turn.)
+AUTO [VC/RC]: Harmony
 
-AUTO [VC] 1/Turn Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): When this unit becomes Harmony state, choose two of your units, they get power +5000 until end of turn, and this unit gets critical +1 until end of turn.
+AUTO [VC] 1/Turn Generation Break 2: When this unit becomes in harmony, choose two of your units, they get power +5000 until end of turn, and this unit gets critical +1 until end of turn.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose one of your rear-guards, and return it to your hand. If you return a unit this way, draw a card.'
+AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, and return it to your hand. If you returned a card, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
 }
@@ -1465,9 +1465,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Image Master, Kukuri'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Image Master, Kukuri" in your drop zone, Counter Charge 1.'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Image Master, Kukuri", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1641,7 +1641,7 @@ CardStat = x+16
 global.CardName[CardStat] = 'Talent of Perserverance, Shandee'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Lauris" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Lauris" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1

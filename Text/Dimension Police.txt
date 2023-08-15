@@ -1162,9 +1162,9 @@ CardStat = x+3
 global.CardName[CardStat] = 'Great Cosmic Hero, Grandgallop'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): When this unit attacks a Vanguard, if this unit’s power is 22000 or greater, this unit gets drive +1 until end of that battle.
+AUTO [VC] Generation Break 2: When this unit attacks a vanguard, if this unit’s power is 22000 or greater, this unit gets drive +1 until end of that battle.
 
-AUTO [VC]: During your turn, when your G unit Stride, choose one of your Vanguards, until end of turn, it gets power +4000 and "AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a Vanguard, you may pay the cost. If you do, draw a card".'
+AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, until end of turn, it gets power +4000, and "AUTO [VC]: When this unit’s attack hits a vanguard, [Counter Blast 1], and draw a card".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -1252,9 +1252,9 @@ CardStat = x+11
 global.CardName[CardStat] = 'Cosmic Hero, Grandguard'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your Vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Cosmic Hero, Grandguard" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Cosmic Hero, Grandguard", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -1264,9 +1264,9 @@ CardStat = x+12
 global.CardName[CardStat] = 'Cosmic Hero, Grandrope'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Gallop" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Gallop" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }

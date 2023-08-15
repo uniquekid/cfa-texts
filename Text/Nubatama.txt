@@ -441,7 +441,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Stealth Beast, Katarigitsune'
 global.CardText[CardStat] = 'Nubatama/Warbeast/Dragon Empire
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Shiranui" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Shiranui" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -612,11 +612,9 @@ global.CardName[3514] = 'Stealth Rogue of Veils, Kurenai'
 
 global.CardText[3514] = 'Nubatama/Demon
 
-CONT: Sentinel.
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Stealth Rogue of Veils, Kurenai" in your drop zone, Counter Charge 1.
-'
-
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Stealth Rogue of Veils, Kurenai", Counter Charge 1.'
 global.UnitGrade[3514] = 1
 
 global.CardInClan[3514] = 23
@@ -1060,9 +1058,9 @@ global.CardName[4827] = 'Demon Stealth Dragon, Shiranui "Oboro"'
 
 global.CardText[4827] = 'Nubatama/Abyss Dragon
 
-AUTO [VC]: At the beginning of your ride phase, you may choose a card from your opponent’s drop zone. If you do, your opponent calls that card to RC, and at the end of that turn, retires that unit.
+AUTO [VC]: At the beginning of your ride phase, choose up to one card from your opponent’s drop, your opponent calls that card to RC, and at the end of that turn, retires that unit.
 
-Domination - AUTO [VC]: When your G unit Stride, choose up to one of your opponent’s rear-guards, dominate it as stand, it gets power +4000  until end of turn, and it attacks another of your opponent’s units. (You pay the cost to use its abilities as well.)
+Dominate - AUTO [VC]: When your G unit Stride, choose up to one of your opponent’s rear-guards, stand and dominate it, until end of turn, that unit gets power +4000, and attacks your opponent’s other unit.
 '
 
 global.UnitGrade[4827] = 3

@@ -731,9 +731,9 @@ CardStat = x
 global.CardName[CardStat] = 'Stealth Rogue of Revelation, Yasuie'
 global.CardText[CardStat] = 'Murakumo/Demon/Dragon Empire
 
-AUTO [VC] 1/Turn Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): When your rear-guard is put into your deck due to an effect from one of your cards, search your deck for up to one card with the same card name as that card, call it to RC, and shuffle your deck.
+AUTO [VC] 1/Turn Generation Break 2: When your rear-guard is put into your deck by your card’s effect, search your deck for up to one card with the same card name as that card, call it to RC, and shuffle your deck.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to separate RC, shuffle your deck, and at the end of that turn, put the units called with this effect on the bottom of your deck in any order.'
+AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to RC, and shuffle your deck. At the end of that turn, put those called units on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 20
 }
@@ -800,12 +800,12 @@ global.CardInClan[CardStat] = 20
 
 CardStat = x+5
 {
-global.CardName[CardStat] = 'Stealth Fiend, White Heron'
+global.CardName[CardStat] = 'Stealth Beast, White Heron'
 global.CardText[CardStat] = 'Murakumo/Warbeast/Dragon Empire
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Stealth Fiend, White Heron" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Stealth Beast, White Heron", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -815,7 +815,7 @@ CardStat = x+6
 global.CardName[CardStat] = 'Gateway Stealth Rogue, Ataka'
 global.CardText[CardStat] = 'Murakumo/Demon/Dragon Empire
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Yasuie" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Yasuie" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
