@@ -1020,9 +1020,9 @@ CardStat = x+5
 global.CardName[CardStat] = 'Black Shiver, Gavrail'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-AUTO [VC]: [Counter Blast 1] When your G unit Stride during your turn, you may pay the cost. If you do, look at three cards from the top of your deck, search for one card from among them, put it into your damage zone face up, put the rest on the bottom of your deck in any order, choose a face up card from your damage zone, call it to RC, and that unit gets power +2000 until end of turn.
+AUTO [VC] Generation Break 2: When your card is put into your damage zone, this unit gets "CONT [VC]: All of your front row units get power +2000" until end of turn.
 
-AUTO [VC] Generation Break 2: When your card is put into your damage zone, until end of turn, this unit gets "CONT [VC]: All of your units in your front row get power +2000".'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1] look at the top three cards of your deck, choose a card from among them, put it into your damage zone, put the rest on the bottom of your deck in any order, choose a face up card from your damage zone, call it to RC, and that unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 16
 }
@@ -4058,7 +4058,7 @@ CardStat = 11105
 global.CardName[CardStat] = 'Black Spark, Munkar  '
 global.CardText[CardStat] = 'Angel Feather/Angel/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Gavrail" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Gavrail" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -4075,7 +4075,7 @@ CardStat = 11153
 global.CardName[CardStat] = 'Eradicate Celestial, Raviel  '
 global.CardText[CardStat] = 'Angel Feather/Angel/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 16
 }

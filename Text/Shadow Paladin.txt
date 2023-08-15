@@ -1545,9 +1545,9 @@ CardStat = x+3
 global.CardName[CardStat] = 'Supremacy Dragon, Claret Sword Dragon'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-ACT [VC] 1/Turn Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): [Choose two of your rear-guards, and retire them] This unit gets power +10000 / critical +1 until end of turn.
+ACT [VC] 1/Turn Generation Break 2: COST [Retire two rear-guards], and this unit gets power +10000 / critical +1 until end of turn.
  
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, search your deck for up to one grade 1 or less card, call it to RC, shuffle your deck, and that unit gets power +2000 until end of turn.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], search your deck for up to one grade 1 or less card, call it to RC, and it gets power +2000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -6216,7 +6216,7 @@ CardStat = 11107
 global.CardName[CardStat] = 'Taboo Mage, Cafar  '
 global.CardText[CardStat] = 'Shadow Paladin/Elf/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Claret Sword Dragon" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Claret Sword Dragon" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -6233,7 +6233,7 @@ CardStat = 11154
 global.CardName[CardStat] = 'Emancipating Revenger, Allyl  '
 global.CardText[CardStat] = 'Shadow Paladin/Elf/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 1
 }
