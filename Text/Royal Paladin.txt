@@ -2119,9 +2119,9 @@ CardStat = x+7
 global.CardName[CardStat] = 'Blue Sky Knight, Altmile'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more G-Units face up on your VC and/or G-Zone): During your turn, all of your units in your front row get power +5000.
+CONT [VC] Generation Break 2: During your turn, all of your front row units get power +5000.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G-Unit Stride, you may pay the cost. If you do, choose up to two cards from your hand, call them to separate RC, choose up to two of your units, and those units get power +5000 until end of turn.'
+AUTO [VC]: When your G-Unit Stride during your turn, COST [Counter Blast 1], choose up to two cards from your hand, and call them to RC. Choose up to two of your units, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -8105,7 +8105,7 @@ CardStat = 11147
 global.CardName[CardStat] = 'Bringer of Dreams, Belenus  '
 global.CardText[CardStat] = 'Royal Paladin/Sylph/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Altmile" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Altmile" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -8122,7 +8122,7 @@ CardStat = 11151
 global.CardName[CardStat] = 'Remedy Angel  '
 global.CardText[CardStat] = 'Royal Paladin/Angel/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }

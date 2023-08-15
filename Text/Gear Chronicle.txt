@@ -2093,22 +2093,14 @@ global.PowerStat[4126] = 4000
 
 
 CardStat = 4127
-
 {
-
-global.CardName[4127] = 'Alithinos Idea-drone Idea-drone'
-
+global.CardName[4127] = 'Alithinos Idea-drone'
 global.CardText[4127] = 'Gear Chronicle/Gear Colossus
 
-AUTO [RC]: [Choose a card from your bind zone, and put it into your drop zone & Retire this unit] At the end of the battle that this unit boosted a <Gear Colossus> unit, you may pay the cost. If you do,bindthe top card of your deck face up, and Counter Charge 1.
-'
-
+AUTO [RC]: [Choose a card from your bind zone, and put it into your drop zone & Retire this unit] At the end of the battle that this unit boosted a <Gear Colossus> unit, you may pay the cost. If you do, bind the top card of your deck face up, and Counter Charge 1.'
 global.UnitGrade[4127] = 1
-
 global.CardInClan[4127] = 26
-
 }
-
 global.PowerStat[4127] = 7000
 
 
@@ -3755,26 +3747,18 @@ global.PowerStat[4813] = 11000
 
 
 CardStat = 4814
-
 {
-
 global.CardName[4814] = 'Pulsar, Sentry Dracokid'
-
 global.CardText[4814] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
 AUTO: Forerunner.
 
-AUTO [RC]: [Choose a grade 3 <Gear Colossus> from your hand, and reveal it] At the beginning of your ride phase, you may pay the cost. If you do,bindthe top card of your deck face up.
+AUTO [RC]: [Choose a grade 3 <Gear Colossus> from your hand, and reveal it] At the beginning of your ride phase, you may pay the cost. If you do, bind the top card of your deck face up.
 
-ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] If you have a <Gear Colossus> vanguard, bind the top card of your deck face up, and if that card is <Zodiac Time Beast>, draw a card.
-'
-
+ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] If you have a <Gear Colossus> vanguard, bind the top card of your deck face up, and if that card is <Zodiac Time Beast>, draw a card.'
 global.UnitGrade[4814] = 0
-
 global.CardInClan[4814] = 26
-
 }
-
 global.PowerStat[4814] = 5000
 
 
@@ -3801,22 +3785,14 @@ global.PowerStat[4824] = 7000
 
 
 CardStat = 4825
-
 {
-
 global.CardName[4825] = 'Pulsar, Bling Hawk'
-
 global.CardText[4825] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO: When this unit is placed on GC, you maybindthe top card of your deck face up. If that card is <Zodiac Time Beast>, choose up to one of your <Gear Colossus>, and it gets power +5000 until end of that battle.
-'
-
+AUTO: When this unit is placed on GC, you may bind the top card of your deck face up. If that card is <Zodiac Time Beast>, choose up to one of your <Gear Colossus>, and it gets power +5000 until end of that battle.'
 global.UnitGrade[4825] = 1
-
 global.CardInClan[4825] = 26
-
 }
-
 global.PowerStat[4825] = 6000
 
 
@@ -6288,7 +6264,7 @@ CardStat = 10781
 global.CardName[CardStat] = 'Heart Thump Worker  '
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Chronojet" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Chronojet" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -6326,7 +6302,7 @@ CardStat = 11167
 global.CardName[CardStat] = 'Chronomedical Hamster  '
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -6351,3 +6327,18 @@ global.DefensePowerStat[CardStat] = 0
 global.OldCardStat[CardStat] = 1
 global.NewTriggerStat[CardStat] = 1
 global.CardBanned[CardStat] = 1
+
+
+CardStat = 11903
+{
+global.CardName[CardStat] = 'Steam Shooter, Ala-Rungal'
+global.CardText[CardStat] = 'Gear Chronicle/Gearoid
+
+AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], choose one of your other rear-guards, and put it on the bottom of the deck. If you put a card, search your deck for up to one card with a different card name from this unit and grade +1 from the card put on the deck, call it to RC, and shuffle the deck.
+
+AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or less, COST [discard this card], look at the top five cards of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

@@ -2207,9 +2207,9 @@ CardStat = x
 global.CardName[CardStat] = 'Sunrise Ray Knight, Gurguit'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [VC]: Generation Break 2 (If you have 1 or more face up G Units in your VC or G Zone): [Counter Blast 1 & Soul Blast 1] During the start of of the Guard Step of a Battle in which this card is being attacked, you can pay the cost. If you pay it, look at the top 4 cards of your Deck, choose up to 1 card among them, Call it to the GC at rest, then shuffle that Deck.
+AUTO [VC]: Generation Break 2: At the beginning of the guard step of the battle this unit was attacked, COST [Counter Blast 1 & Soul Blast 1], look at the top four cards of your deck, choose up to one card from among them, call it to GC, and shuffle your deck.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G Unit strides, you can pay the cost. If you pay it, look at the top 4 cards of your Deck, search for up to one card from among them, Call it to a RC, suffle that Deck, and during that turn, that Unit gains power +2000.'
+AUTO [VC]: When your G Unit Stride during your turn, COST [Counter Blast 1], look at the top four cards of your deck, choose up to one card from among them, call it to RC, and it gets power +2000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 5
 }
@@ -5819,7 +5819,7 @@ CardStat = 11109
 global.CardName[CardStat] = 'Scarface Lion  '
 global.CardText[CardStat] = 'Gold Paladin/High Beast/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Gurguit" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Gurguit" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -5836,7 +5836,7 @@ CardStat = 11155
 global.CardName[CardStat] = 'Liberator, Shaggy Rabbit  '
 global.CardText[CardStat] = 'Gold Paladin/High Beast/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 5
 }
@@ -5845,3 +5845,18 @@ global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
 global.OldCardStat[CardStat] = 1
 global.NewTriggerStat[CardStat] = 1
+
+
+CardStat = 11902
+{
+global.CardName[CardStat] = 'Knight of Swift Spear, Theodore'
+global.CardText[CardStat] = 'Gold Paladin/Elf
+
+AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], look at the top four cards of your deck, choose up to one card from among them with a different card name from this unit, call it to RC, and put the rest on the bottom of the deck in any order. If your opponent’s vanguard is grade 3 or greater, choose up to two cards instead of one.
+
+AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or less, COST [discard this card], look at the top five cards of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000

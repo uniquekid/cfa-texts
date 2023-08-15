@@ -1229,9 +1229,9 @@ CardStat = x+2
 global.CardName[CardStat] = 'Mythic Beast, Fenrir'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): [Soul Blast 3] When this unit attacks a vanguard, you may pay the cost. If you do, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 1 or greater units from hand to GC.
+AUTO [VC] Generation Break 2: When this unit attacks a vanguard, COST [Soul Blast 3], until end of that battle, this unit gets critical +1, and your opponent cannot call grade 1 or greater cards from hand to GC.
 
-AUTO [VC]: During your turn, when your G unit Stride, Soul Charge 3, choose one of your vanguards, and until end of turn, it gets "AUTO [VC] 1/Turn: [Counter Blast 1] When a card is put into the drop zone from your soul, you may pay the cost. If you do, call that card to RC".'
+AUTO [VC]: When your G unit Stride during your turn, Soul Charge 3, choose one of your vanguards, and it gets "AUTO [VC] 1/Turn: When your card is put into drop from your soul, COST [Counter Blast 1], and call that card that was put into your drop to RC." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 21
 }
@@ -4555,7 +4555,7 @@ CardStat = 11111
 global.CardName[CardStat] = 'Stake Fetter, Thviti  '
 global.CardText[CardStat] = 'Genesis/Noble/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Fenrir" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Fenrir" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -4572,7 +4572,7 @@ CardStat = 11156
 global.CardName[CardStat] = 'Regalia of Service, Eir  '
 global.CardText[CardStat] = 'Genesis/Noble/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }

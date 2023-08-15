@@ -946,9 +946,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Supreme Heavenly Battle Deity, Susanoo'
 global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more G Units face up on your VC and/or G-Zone): During your turn, if the number of cards in your hand is four or greater, this unit gets power +5000 / critical +1.
+CONT [VC] Generation Break 2: During your turn, if your hand has four or more cards, this unit gets power +5000 / critical +1.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G-Unit Stride, you may pay the cost. If you do, look at two cards from the top of your deck, search for one card, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [VC]: When your G-Unit Stride during your turn, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into your hand, and put the rest on the bottom of your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 10
 }
@@ -4538,7 +4538,7 @@ CardStat = 11103
 global.CardName[CardStat] = 'Divine Sword, Kusanagi  '
 global.CardText[CardStat] = 'Oracle Think Tank/Noble/Critical Trigger
 
-AUTO [RC]: When your grade 3 or higher vanguard with "Susanoo" in its card name attacks, COST [put this unit into your soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with "Susanoo" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
 AUTO: When this card is revealed during your damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -4555,7 +4555,7 @@ CardStat = 11152
 global.CardName[CardStat] = 'Battle Sister, Polvoron  '
 global.CardText[CardStat] = 'Oracle Think Tank/Elf/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [Bind this card face up & Choose another card with "Heal" from your drop zone, and bind it face up], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 10
 }
