@@ -1255,9 +1255,9 @@ CardStat = x+5
 global.CardName[CardStat] = 'Ocean Keeper, Plato'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your Vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Ocean Keeper, Plato" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Ocean Keeper, Plato", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -1267,9 +1267,9 @@ CardStat = x+6
 global.CardName[CardStat] = 'Kelpie Rider, Nikki'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Thavas" in its card name, reveal it to your opponent, put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Thavas" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -1373,9 +1373,9 @@ CardStat = x+16
 global.CardName[CardStat] = 'One Who Surpasses the Storm, Thavas'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): When this unit attacks a Vanguard, if it is the fourth battle of that turn or more, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 0 cards from hand to GC.
+AUTO [VC] Generation Break 2: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 0 cards from hand to GC.
 
-AUTO [VC]: During your turn, when your G unit Stride, choose one of your Vanguards, and until end of turn, it gets "AUTO [VC]: When your unit attacks a Vanguard, if it is the fourth battle of that turn, choose three of your opponent’s rear-guards, your opponent chooses one from among them, and retires it".'
+AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, and it gets "AUTO [VC]: When your unit attacks a vanguard, if it is the fourth battle of this turn, choose three of your opponent’s rear-guards, your opponent chooses one card from among them, and retires it" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }

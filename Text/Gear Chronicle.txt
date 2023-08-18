@@ -99,9 +99,9 @@ CardStat = x+8
 global.CardName[CardStat] = 'Steam Breath Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Dark Zone
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Chrono Jet" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Chronojet" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -198,9 +198,9 @@ CardStat = x+17
 global.CardName[CardStat] = 'Chronojet Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Dark Zone
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more G Units face up on your VC and/or G-Zone): When this unit attacks a Vanguard, until end of that battle, this unit gets power +5000, and your opponent cannot call grade 1 or greater units from hand to Guardian zone.
+AUTO [VC] Generation Break 2: When this unit attacks a Vanguard, until end of that battle, this unit gets power +5000, and your opponent cannot call grade 1 or greater cards from hand to GC.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G-Unit Stride, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and put that unit on the bottom of your opponent’s deck.'
+AUTO [VC]: When your G Unit Stride during your turn, [Counter Blast 1], choose one of your opponent’s rear-guards, and put it on the bottom of your their deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 global.DCards[CardStat] = 2
@@ -367,9 +367,9 @@ CardStat = x+2
 global.CardName[CardStat] = 'Steam Maiden, Arlim'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Dark Zone
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Steam Maiden, Arlim" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Steam Maiden, Arlim", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }

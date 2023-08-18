@@ -755,9 +755,9 @@ CardStat = x
 global.CardName[CardStat] = 'Valkyrie of Reclamation, Padmini'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Ranunculus" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Ranunculus" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -823,9 +823,9 @@ CardStat = x+5
 global.CardName[CardStat] = 'Maiden of Passionflower'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Maiden of Passionflower" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from your hand, [discard a card from your hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Maiden of Passionflower", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -938,9 +938,9 @@ CardStat = x+16
 global.CardName[CardStat] = 'Ranunculus Flower Maiden, Ahsha'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): All of your units get "CONT [VC/RC]: During your turn, if you have another unit with the same name as this unit on your VC or RC, this unit gets power +5000".
+CONT [VC] Generation Break 2: All of your units get "CONT [VC/RC]: During your turn, if you have another unit with the same card name as this unit on your VC or RC, this unit gets power +5000".
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G Unit Stride, you may pay the cost. If you do, choose one of your rear-guards, search your deck for up to one card with the same name as that unit, call it to RC, shuffle your deck, and the unit called with this effect gets power +2000 until end of turn.'
+AUTO [VC]: When your G Unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and that called unit gets power +2000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
