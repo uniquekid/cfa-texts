@@ -1506,9 +1506,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Exxtreme Battler, Victor'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid/Star Gate
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more G Units face up on your VC and/or G Zone): When this unit attacks a Vanguard, this unit gets power +5000 until end of battle, choose one of your rear-guards, stand it, and that unit gets power +5000 until end of turn.
+AUTO [VC] Generation Break 2: When this unit attacks a Vanguard, this unit gets power +5000 until end of that battle. Choose one of your rear-guards, stand it, and it gets power +5000 until end of turn.
 
-AUTO [VC]: During your turn, when your G-Unit Stride, choose your Vanguard, and until end of turn, that unit gets "AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your rear-guards, stand it, and that unit gets power +5000 until end of turn. This ability cannot be used for the rest of that turn".'
+AUTO [VC]: When your G-Unit Stride during your turn, choose one of your vanguards, and it gets "AUTO [VC]: 1/Turn :When this unit attacks a vanguard, [Counter Blast 1], choose one of your rear-guards, stand it, and it gets power +5000 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
 }
@@ -1538,9 +1538,9 @@ CardStat = x+4
 global.CardName[CardStat] = 'Extreme Battler, Arashid'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid/Star Gate
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it to your opponent] When this unit is placed on from your hand on RC, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Victor" in its card name, reveal it to your opponent, put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Victor" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }
@@ -1639,9 +1639,9 @@ CardStat = x+5
 global.CardName[CardStat] = 'Lady Cyclone'
 global.CardText[CardStat] = 'Nova Grappler/Alien/Star Gate
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from your hand, you may pay the cost. If you do, choose one of your vanguard that is being attacked, and that unit cannot be hit until end of that battle, and if you have a card named "Lady Cyclone" in your drop zone, choose up to one card in your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Lady Cyclone", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }

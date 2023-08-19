@@ -651,9 +651,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Intimidating Mutant, Darkface'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): [Soul Blast 2] When your opponent’s unit is placed on RC, you may pay the cost. If you do, rest that unit.
+AUTO [VC] Generation Break 2: When your opponent’s unit is placed on RC, [Soul Blast 2], and rest that unit.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose two of your opponent’s rear-guards, rest them, and until end of your opponent’s next turn, they get "AUTO [RC]: At the end of your turn, if this unit is rest, your opponent may draw a card", and those units cannot stand during your opponent’s next stand phase.'
+AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose two of your opponent’s rear-guards, rest them, until end of your opponent’s next turn, they get "AUTO [RC]: At the end of your turn, if this unit is rest, your opponent may draw a card.", and those units cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -697,7 +697,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'New Face Mutant, Little Dorcas'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Darkface" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Darkface" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -709,9 +709,9 @@ CardStat = x+6
 global.CardName[CardStat] = 'Rebel Mutant, Starshield'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Rebel Mutant, Starshield" in your drop zone, Counter Charge 1.'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Rebel Mutant, Starshield", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }

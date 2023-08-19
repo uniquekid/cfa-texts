@@ -2005,9 +2005,9 @@ CardStat = x+2
 global.CardName[CardStat] = 'Dragonic Vanquisher'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
-AUTO [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, this unit gets power +3000 / critical +1 until end of turn.
+AUTO [VC] Generation Break 2: When your opponent’s rear-guard is retired by your card’s effect, this unit gets power +3000/ critical +1 until end of turn.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose one rear-guard in your opponent’s front row, retire it, and bind that card face up.'
+AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose one of your opponent’s front row rear-guards, retire it, and bind it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -2049,9 +2049,9 @@ CardStat = x+6
 global.CardName[CardStat] = 'Mighty Bolt Dragoon'
 global.CardText[CardStat] = 'Narukami/Human/Dragon Empire
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Vanquisher" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Vanquisher" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -2083,9 +2083,9 @@ CardStat = x+9
 global.CardName[CardStat] = 'Dragon Dancer, Anastasia'
 global.CardText[CardStat] = 'Narukami/Human/Dragon Empire
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Dragon Dancer, Anastasia" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Dragon Dancer, Anastasia", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }

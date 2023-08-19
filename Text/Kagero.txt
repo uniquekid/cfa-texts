@@ -1966,9 +1966,9 @@ CardStat = x+2
 global.CardName[CardStat] = 'Dragonic Blademaster'
 global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more G-Units face up on your VC and/or G-Zone): During your turn, if the number of your rear-guards is more than your opponent’s, this unit gets power +5000 / critical +1.
+CONT [VC] Generation Break 2: During your turn, if you have more rear-guards than your opponent, this unit gets power +5000/ critical +1.
  
-AUTO [VC]: [Counter Blast 1] During your turn, when your G-Unit Stride, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC]: When your G Unit Stride during your turn, [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -2006,9 +2006,9 @@ CardStat = x+6
 global.CardName[CardStat] = 'Lava Flow Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Dragonic Blademaster" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Dragonic Blademaster" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -2095,9 +2095,9 @@ CardStat = x+6
 global.CardName[CardStat] = 'Protect Orb Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on Guardin circle from your hand, you may pay the cost. If you do, choose one of your vanguard that is being attacked, and that unit cannot be hit until end of that battle, and if you have a card named "Protect Orb Dragon" in your drop zone, choose up to one card in your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Protect Orb Dragon", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }

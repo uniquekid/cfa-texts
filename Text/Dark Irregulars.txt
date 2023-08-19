@@ -922,9 +922,9 @@ CardStat = x+4
 global.CardName[CardStat] = 'Scharhrot Vampir'
 global.CardText[CardStat] = 'Dark Irregulars/Vampire/Dark Zone
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): During your turn, if the number of cards in your soul is six or more, this unit gets power +10000. Then, if the number of cards in your soul is ten or more, this unit gets critical +1.
+CONT [VC] Generation Break 2: During your turn, if your soul has six or more cards, this unit gets power +10000, and if your soul has ten or more cards, it gets critical +1.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, Soul Charge 2, choose one of your vanguards, and until end of turn, it gets "AUTO [VC]: When this unit attacks a vanguard, if the number of cards in your soul is six or more, your opponent chooses one of his or her rear-guards, and retires it".'
+AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], Soul Charge 2, choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks a vanguard, if your soul has six or more cards, your opponent chooses one of their rear-guards, and retires it". until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 11
 }
@@ -934,7 +934,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Succubus of Pure Love'
 global.CardText[CardStat] = 'Dark Irregulars/Succubus/Dark Zone
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Scharhrot" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Scharhrot" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1006,9 +1006,9 @@ CardStat = x+4
 global.CardName[CardStat] = 'Flag Breaker'
 global.CardText[CardStat] = 'Dark Irregulars/Human/Dark Zone
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Flag Breaker" in your drop zone, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Flag Breaker", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 11
 }

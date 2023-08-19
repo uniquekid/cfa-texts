@@ -727,7 +727,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Acrobat Verdi'
 global.CardText[CardStat] = 'Spike Brothers/Ogre/Dark Zone
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Rising" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Rising" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -802,10 +802,9 @@ global.CardName[3491] = 'Kiss-mark, Alma'
 
 global.CardText[3491] = 'Spike Brothers/Vampire
 
-CONT: Sentinel.
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle. Then, if you have a card named "Kiss-mark, Alma" in your drop zone, Counter Charge 1.
-'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Kiss-mark Alma", Counter Charge 1.'
 
 global.UnitGrade[3491] = 1
 
@@ -850,9 +849,9 @@ global.CardName[3493] = 'Exceptional Expertise, Rising Nova'
 
 global.CardText[3493] = 'Spike Brothers/Ogre
 
-AUTO [VC] Generation Break 2: [Choose a card from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for up to one card,call it to an open RC, and shuffle your deck.
+AUTO [VC] Generation Break 2: When this unit attacks a vanguard, [put a card from hand into soul], search your deck for up to one card, call it to an open RC, and shuffle your deck.
 
-AUTO [VC]: During your turn, when your G unit Stride, choose up to one of your vanguards, and until end of turn, it gets "AUTO [VC]: [Counter Blast 1 & Choose a card from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for up to one card, call it to an open RC, shuffle your deck, and that unit gets power +5000 until end of turn".
+AUTO [VC]: When your G unit Stride during your turn, choose up to one of your vanguards, and it gets "AUTO [VC]: When this unit attacks a vanguard, [Counter Blast 1 & put a card from hand into soul], search your deck for up to one card, call it to an open RC, and it gets power +5000 until end of turn. Shuffle your deck." until end of turn.
 '
 
 global.UnitGrade[3493] = 3

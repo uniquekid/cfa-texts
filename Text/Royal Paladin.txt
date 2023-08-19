@@ -2089,9 +2089,9 @@ CardStat = x+4
 global.CardName[CardStat] = 'Laurel Knight, Sicilus'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Altmile" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Altmile" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-CONT [Hand]: When you would pay the cost of Stride, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -2314,9 +2314,9 @@ CardStat = x+3
 global.CardName[CardStat] = 'Holy Knight Guardian'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from your hand, you may pay the cost. If you do, choose one of your vanguard that is being attacked, and that unit cannot be hit until end of that battle, and if you have a card named "Holy Knight Guardian" in your drop zone, choose up to one card in your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Holy Knight Guardian", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
