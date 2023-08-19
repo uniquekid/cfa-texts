@@ -3148,7 +3148,7 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
 }
-global.PowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
 CardStat = 10756
@@ -4479,6 +4479,19 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Monster" in its card name, COST [Soul Blast 2], call this card to RC, and this unit gets power +5000 until end of turn.
 
 AUTO: When this unit is placed on RC, if your order zone has two or more Research cards, choose up to one of your unit cards without the sentinel ability from your order zone, and you may put it into hand. If you put a card, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11905
+{
+global.CardName[CardStat] = 'Violent Fist Dragon, Emelius Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon
+
+AUTO [RC]: When this unit attacks, COST [Soul Blast 2], choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for each of that unit’s grade.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }

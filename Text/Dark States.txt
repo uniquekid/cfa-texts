@@ -2862,9 +2862,9 @@ CardStat = 10513
 global.CardName[CardStat] = 'Gear Serow of Magnetic Resonance'
 global.CardText[CardStat] = 'Dark States/Gear Beast
 
-CONT [RC]: During your turn, if any player’s RG was put to the bottom of their deck on this turn, this unit gets power +5000.
+CONT [RC]: During your turn, if any player’s rear-guard was put ON the bottom of their deck this turn, this unit gets power +5000.
 
-CONT [RC] Generation Break 1 (Active if you have two or more face up G units in total on your VC or G zone): This unit gets "Intercept" and can intercept from the back row.'
+CONT [RC] Generation Break 1 (Active if you have two or more face up G units in total on your VC or G zone): This unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -4199,7 +4199,7 @@ global.CardName[CardStat] = 'Purple Jeweled Beast, Almethys'
 global.CardText[CardStat] = 'Dark States/High Beast
 
 AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
-• RC - Counter Charge 1
+• RC - Counter Charge 1.
 • GC - This unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
@@ -4607,6 +4607,22 @@ global.CardName[CardStat] = 'Corruptly Peer'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [RC]: At the end of the battle this unit attacked a vanguard, you may move this unit to an open back row RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11911
+{
+global.CardName[CardStat] = 'Time Stamping Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your rear-guards with a different card name from cards in your bind zone, and bind it. If your opponent’s vanguard is grade 3 or greater, you may choose two rear-guards with different card names instead of one.
+
+AUTO [VC]: When your rear-guard is bound by this unit’s effect, if that card’s original grade is 3 or greater, until end of turn, this unit gets "Triple Drive", gets power +10000, and if it is not, search your deck for up to one card with grade +1 from that card, call it to RC, it gets power +10000 until end of turn, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1

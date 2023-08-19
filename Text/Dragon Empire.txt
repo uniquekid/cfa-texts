@@ -4216,6 +4216,7 @@ CONT [Deck]: While this card is revealed by the ability of your vanguard with "G
 AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Gandeeva" in its card name, COST [bind a card from hand face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4282,9 +4283,10 @@ global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 CONT [RC]: If your VC has two or more Arms, or if you have a rear-guard with two or more originalDress, this unit gets power +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
-global.DefensePowerStat[CardStat] = 0000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 11820
@@ -4472,3 +4474,19 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11910
+{
+global.CardName[CardStat] = 'Rough Cull Hammer Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO [RC]: When this unit attacks, if you played a normal order this turn, this unit gets power +5000 until end of that battle. At the end of that battle, COST [Counter Blast 1], draw a card, and bind this unit.
+
+AUTO [Bind Zone]: When you play a normal order, if you have a vanguard with only «Narukami» for its clan and has "Vermillion" in its card name, and you do not have a rear-guard with the same card name as this unit, you may call this card to RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
