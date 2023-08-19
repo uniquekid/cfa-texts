@@ -805,7 +805,7 @@ global.CardText[CardStat] = 'Great Nature/Warbeast/Zoo
 
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, choose one of your rear-guards, and it gets power +4000 until end of turn. At the end of that turn, draw a card, and retire that unit.
 
-AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose up to two of your rear-guards, until end of turn, "AUTO [RC]: When an attack by your unit in the same column as this unit hits a vanguard, if the attacking units power is 20000 or greater, draw a card", and power +4000.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose up to two of your rear-guards, until end of turn, they get "AUTO [RC]: When an attack by your unit in the same column as this unit hits a vanguard, if the attacking unit’s power is 20000 or greater, draw a card.", and power +4000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 7
 }
@@ -827,7 +827,7 @@ CardStat = x+3
 global.CardName[CardStat] = 'Diligent Assistant, Minibelly'
 global.CardText[CardStat] = 'Great Nature/High Beast/Zoo
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Bigbelly" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Bigbelly" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
