@@ -441,7 +441,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Stealth Beast, Katarigitsune'
 global.CardText[CardStat] = 'Nubatama/Warbeast/Dragon Empire
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Shiranui" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Shiranui" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -2213,27 +2213,19 @@ global.PowerStat[5599] = 4000
 
 
 CardStat = 6165
-
 {
-
-global.CardName[6165] = 'Demon Stealth Beast of Tyranny, Mousu'
-
-global.CardText[6165] = 'Nubatama/Warbeast
+global.CardName[CardStat] = 'Demon Stealth Beast of Reckless Hunger, Mousu'
+global.CardText[CardStat] = 'Nubatama/Warbeast
 
 G guardian.
 
-AUTO [GC]: When placed, if the number of cards in your hand is two or less, this unit gets shield +15000 until end of that battle.
-'
-
-global.UnitGrade[6165] = 4
-
-global.CardInClan[6165] = 23
-
+AUTO [GC]: When this unit is placed on GC, if your hand has two or less cards, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 23
 }
+global.ExtraDeck[CardStat] = 1
+global.PowerStat[CardStat] = 0
 
-global.ExtraDeck[6165] = 1
-
-global.PowerStat[6165] = 0
 
 CardStat = 6305
 {

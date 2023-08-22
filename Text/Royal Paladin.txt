@@ -2089,7 +2089,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Laurel Knight, Sicilus'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Altmile" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Altmile" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -2863,25 +2863,17 @@ global.CardInClan[CardStat] = 15
 
 
 CardStat = 3548
-
 {
+global.CardName[CardStat] = 'Counteroffensive Knight, Suleiman'
+global.CardText[CardStat] = 'Royal Paladin/Human
 
-global.CardName[3548] = 'Counteroffensive Knight, Suleiman'
+CONT [RC] Generation Break 1: Brave: If you have a vanguard with "Altmile" in its card name, this unit gets power +3000.
 
-global.CardText[3548] = 'Royal Paladin/Human
-
-CONT [RC] Generation Break 1: Brave (This ability is active when you have three or less cards in your hand): If you have a vanguard with "Altmile" in its card name, this card gets power +3000.
-
-AUTO [RC] Generation Break 1: [Counter Blast 1 & Choose a card from your hand, and discard it] When this unit attacks a vanguard, if you have a vanguard with "Altmile" in its card name, you may pay the cost. If you do, search your deck for up to one grade 2 card not named "Counterattack Knight, Slayman",callit to RC, shuffle your deck, and that unit gets power +2000 until end of turn.
-'
-
-global.UnitGrade[3548] = 2
-
-global.CardInClan[3548] = 15
-
+AUTO [RC] Generation Break 1: When this unit attacks a vanguard, if you have a vanguard with "Altmile" in its card name, COST [Counter Blast 1 & discard a card from hand], search your deck for up to one grade 2 card other than "Counterattack Knight, Slayman", call it to RC, and shuffle your deck. That called unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 15
 }
-
-global.PowerStat[3548] = 9000
+global.PowerStat[CardStat] = 9000
 
 
 CardStat = 3549
@@ -3834,23 +3826,15 @@ global.PowerStat[4399] = 11000
 
 
 CardStat = 4400
-
 {
+global.CardName[CardStat] = 'Knight of Encouragement, Albion'
+global.CardText[CardStat] = 'Royal Paladin/Human
 
-global.CardName[4400] = 'Knight of Encouragement, Albion'
-
-global.CardText[4400] = 'Royal Paladin/Human
-
-AUTO [RC] Generation Break 1: [Counter Blast 1 & Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for up to one card with the brave ability, call it to RC, shuffle your deck, and until end of turn, that unit gets "AUTO [RC] Brave: When this unit’s attack hits a vanguard, you may return this unit to your hand".
-'
-
-global.UnitGrade[4400] = 2
-
-global.CardInClan[4400] = 15
-
+AUTO [RC] Generation Break 1: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one card with the brave ability, call it to RC, shuffle your deck, and that unit gets "AUTO [RC] Brave: When this unit’s attack hits a vanguard, you may return this unit to your hand" until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 15
 }
-
-global.PowerStat[4400] = 9000
+global.PowerStat[CardStat] = 9000
 
 
 CardStat = 4401
@@ -3918,27 +3902,19 @@ global.PowerStat[4403] = 9000
 
 
 CardStat = 4404
-
 {
-
-global.CardName[4404] = 'Security Knight, Regius'
-
-global.CardText[4404] = 'Royal Paladin/Human
+global.CardName[CardStat] = 'Security Knight, Regius'
+global.CardText[CardStat] = 'Royal Paladin/Human
 
 CONT: Sentinel.
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your units that is being attacked, and it cannot be hit until end of that battle.
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your units being attacked, and it cannot be hit until end of that battle.
 
-AUTO [Generation Break 2] Brave: When this unit is placed on GC, if you have a vanguard with "Altmile" in its card name, Soul Charge 1.Then, if the number of cards in your hand is one or less, choose one of your units that is being attacked, and it cannot be hit until end of that battle.
-'
-
-global.UnitGrade[4404] = 1
-
-global.CardInClan[4404] = 15
-
+AUTO [Generation Break 2] Brave: When this unit is placed on GC, if you have a vanguard with "Altmile" in its card name, Soul Charge 1. Then, if your hand has one or less cards, choose one of your units being attacked, and it cannot be hit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 15
 }
-
-global.PowerStat[4404] = 6000
+global.PowerStat[CardStat] = 6000
 
 
 CardStat = 4405
@@ -4921,26 +4897,18 @@ global.PowerStat[4754] = 4000
 
 
 CardStat = 4755
-
 {
-
-global.CardName[4755] = 'Holy Beast, Divine Maskkgal'
-
-global.CardText[4755] = 'Royal Paladin/Royal Beast
+global.CardName[CardStat] = 'Holy Beast, Divine Maskkgal'
+global.CardText[CardStat] = 'Royal Paladin/Royal Beast
 
 G guardian.
 
-AUTO [Generation Break 1]: [Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, if you have a rear-guard in your front row, you may pay the cost. If you do, this unit gets shield +10000 until end of that battle.
-'
-
-global.UnitGrade[4755] = 4
-
-global.CardInClan[4755] = 15
-
-global.ExtraDeck[4755] = 1
+AUTO [Generation Break 1]: When this unit is placed on GC, if your front row has a rear-guard, COST [turn a G guardian from G zone face up], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4755] = 4000
+global.PowerStat[CardStat] = 4000
 
 
 CardStat = 4757

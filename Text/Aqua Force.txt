@@ -1267,7 +1267,7 @@ CardStat = x+6
 global.CardName[CardStat] = 'Kelpie Rider, Nikki'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Thavas" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Thavas" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -3042,7 +3042,7 @@ global.CardName[5263] = 'Supreme Ruler of the Storm, Thavas'
 
 global.CardText[5263] = 'Aqua Force/Aquaroid
 
-AUTO [VC]: When your G unit Stride, choose up to one card from your hand, call it to RC, choose one of your rear-guards, until end of turn, it gets "CONT [RC]: Resist" ,then, if that rear-guard has the wave ability, it gets "CONT [RC]: This unit can attack from the back row".
+AUTO [VC]: When your G unit Stride, choose up to one card from your hand, call it to RC, choose one of your rear-guards, until end of turn, it gets "CONT [RC]: Resist", then, if that rear-guard has the wave ability, it gets "CONT [RC]: This unit can attack from the back row".
 
 AUTO [RC] 1/Turn Generation Break 2 [Wave-1st or 4th time only]: [Counter Blast 1] At the end of the battle that this unit attacked, you may pay the cost. If you do, stand this unit.
 '
@@ -3150,19 +3150,19 @@ global.PowerStat[5289] = 4000
 
 CardStat = 5290
 {
-global.CardName[5290] = 'Blue Wave Armor General, Galfilia'
-global.CardText[5290] = 'Aqua Force/Aquaroid
+global.CardName[CardStat] = 'Blue Wave Armor General, Galfilia'
+global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 G guardian.
 
-CONT [GC] Wave-2nd or 3rd time only: This unit gets shield +5000.
+CONT [GC] Wave-2nd or 3rd time: This unit gets shield +5000.
 
-ACT [G zone]: [Soul Blast 1 & Turn this card face down] Choose a card in your damage zone or circle, and turn it face up. (Counter Charge , unlock or release from delete)'
-global.UnitGrade[5290] = 4
-global.CardInClan[5290] = 3
-global.ExtraDeck[5290] = 1
+ACT [G zone]: COST [Soul Blast 1 & turn this card face down], choose a card from your damage zone or circles, and turn it face up. (Counter Charge , unlock or release from delete)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 3
+global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[5290] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5291

@@ -974,7 +974,7 @@ global.CardText[CardStat] = 'Pale Moon/Elf/Dark Zone
 
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, choose up to one card from your soul, call it to RC, and until end of turn, that unit and this unit get power +3000.
 
-Magia - AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], Soul Charge 1, choose up to one card from your soul, call it to RC, and it gets power +5000 until end of turn. At the end of that turn, put that called unit into your soul.'
+Magia - AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], Soul Charge 1, choose up to one card from your soul, call it to RC, and it gets power +5000 until end of turn. At the end of that turn, put that called unit into your soul.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 18
 }
@@ -1166,7 +1166,7 @@ CardStat = x+14
 global.CardName[CardStat] = 'Masquerade Bunny'
 global.CardText[CardStat] = 'Pale Moon/Warbeast/Dark Zone
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Harri" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Harri" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1667,27 +1667,18 @@ global.PowerStat[3733] = 15000
 
 
 CardStat = 3734
-
 {
+global.CardName[CardStat] = 'Chainsaw Megatrick, Furnival'
+global.CardText[CardStat] = 'Pale Moon/Human
 
-global.CardName[3734] = 'Chainsaw Megatrick, Furnival'
+G guardian.
 
-global.CardText[3734] = 'Pale Moon/Human
-
-G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
-
-AUTO: When this unit is placed on GC, look at three cards from the top of your deck, search for one card from among them, put it into your soul, and put the rest on the bottom of your deck in any order. If the card put into your soul with this effect is grade 1 or greater, this unit gets shield +5000 until end of that battle.
-'
-
-global.UnitGrade[3734] = 4
-
-global.CardInClan[3734] = 18
-
-global.ExtraDeck[3734] = 1
-
+AUTO: When this unit is placed on GC, look at the top three cards of your deck, choose a card from among them, put it into your soul, and put the rest on the bottom of your deck in any order. If a grade 1 or greater card was put into your soul by this effect, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 18
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[3734] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 3773
@@ -2043,7 +2034,9 @@ global.CardName[4652] = 'Silver Thorn Dragon Master, Venus Luquier'
 global.CardText[4652] = 'Pale Moon/Elf
 
 Stride.
+
 AUTO [VC] Generation Break 3: [Choose two of your rear-guards with "Silver Thorn" in its card name, and put them into your soul] When this unit attacks, you may pay the cost. If you do, this unit gets critical +1 until end of that battle.
+
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up] If you have a heart card with "Silver Thorn" in its card name, choose one card with "Silver Thorn" in its card name from your soul, and call it to RC.
 '
 
@@ -3359,6 +3352,7 @@ global.CardName[CardStat] = 'Tricky Assistant'
 global.CardText[CardStat] = 'Pale Moon/Warbeast
 
 AUTO [VC/RC]: When placed, COST [Counter Blast 1], choose one of your and your opponent’s rear-guards, and put it into the soul. If two cards were put, this unit gets power +10000 until end of turn.
+
 AUTO: When rode upon, you may call this card from your soul.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 18

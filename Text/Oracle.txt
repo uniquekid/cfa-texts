@@ -1032,7 +1032,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Divine Sword, Ame-no-Murakumo'
 global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Susanoo" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Susanoo" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1206,19 +1206,19 @@ global.ExtraDeck[CardStat] = 1
 
 // OTT Add
 
-x = 3240
 
-CardStat = x
+CardStat = 3240
 {
-global.CardName[CardStat] = 'Handedly Housekeeper'
+global.CardName[CardStat] = 'Virtuoso Housekeeper'
 global.CardText[CardStat] = 'Oracle Think Tank/Angel
 
-AUTO: [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with "Tsukuyomi" in its card name from among them, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Tsukuyomi" in its card name from among them, reveal it and put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }
 
-CardStat = x+1
+
+CardStat = 3241
 {
 global.CardName[CardStat] = 'Rigid Crane'
 global.CardText[CardStat] = 'Oracle Think Tank/High Beast
@@ -1531,29 +1531,20 @@ global.PowerStat[3745] = 0
 
 
 CardStat = 4368
-
 {
-
-global.CardName[4368] = 'Sun of Eternity, Amaterasu'
-
-global.CardText[4368] = 'Oracle Think Tank/Noble
+global.CardName[CardStat] = 'Sun of Eternity, Amaterasu'
+global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
 G guardian.
 
-AUTO: When this unit is placed on GC, if the number of cards in your hand is four or more, this unit gets shield +10000 until end of that battle.
+AUTO: When placed on GC, if the number of cards in your hand is four or more, this unit gets shield +10000 until end of that battle.
 
-AUTO: When this unit is placed on GC, Soul Charge 1, look at the top card of your deck, and put it on the top or the bottom of your deck.
-'
-
-global.UnitGrade[4368] = 4
-
-global.CardInClan[4368] = 10
-
-global.ExtraDeck[4368] = 1
-
+AUTO: When placed on GC, Soul Charge 1, look at the top card of your deck, and put that card on the top or the bottom of your deck.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 10
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4368] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4369
@@ -2111,27 +2102,18 @@ global.PowerStat[4697] = 4000
 
 
 CardStat = 4698
-
 {
-
-global.CardName[4698] = 'Singularity Protector, Lozenge Magus Apex'
-
-global.CardText[4698] = 'Oracle Think Tank/Elf
+global.CardName[CardStat] = 'Persevering One, Lozenge Magus Apex'
+global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
 G guardian.
 
-AUTO [Generation Break 1]: [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, look at two cards from the top of your deck, put a card into your hand, and put a card on the bottom of your deck.
-'
-
-global.UnitGrade[4698] = 4
-
-global.CardInClan[4698] = 10
-
-global.ExtraDeck[4698] = 1
-
+AUTO [Generation Break 1]: When this unit is placed on GC, COST [Counter Blast 1 & turn a G guardian from G zone face up], look at the top two cards of your deck, choose a card from among them, put it into your hand, and put one card from among them on the bottom of your deck.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 10
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4698] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4780
@@ -2426,7 +2408,9 @@ global.CardName[5042] = 'Excite Battle Sister, Stollen'
 global.CardText[5042] = 'Oracle Think Tank/Elf
 
 Stride.
+
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] You may Soul Charge 1.Then, look at the same number of cards from the top of your deck as the number of your rear-guards with "Battle Sister" in their card names, and put each of the cards you looked at on the top or bottom of your deck in any order.
+
 CONT [VC] Generation Break 3: All of your rear-guards with "Battle Sister" in their card names get power +3000.
 '
 

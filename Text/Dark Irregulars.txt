@@ -924,7 +924,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Vampire/Dark Zone
 
 CONT [VC] Generation Break 2: During your turn, if your soul has six or more cards, this unit gets power +10000, and if your soul has ten or more cards, it gets critical +1.
 
-AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], Soul Charge 2, choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks a vanguard, if your soul has six or more cards, your opponent chooses one of their rear-guards, and retires it". until end of turn.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], Soul Charge 2, choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks a vanguard, if your soul has six or more cards, your opponent chooses one of their rear-guards, and retires it". until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 11
 }
@@ -934,7 +934,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Succubus of Pure Love'
 global.CardText[CardStat] = 'Dark Irregulars/Succubus/Dark Zone
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Scharhrot" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Scharhrot" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1151,27 +1151,18 @@ global.PowerStat[3760] = 15000
 
 
 CardStat = 3761
-
 {
+global.CardName[CardStat] = 'False Dark Wings, Agrat bat Mahlat'
+global.CardText[CardStat] = 'Dark Irregulars/Succubus
 
-global.CardName[3761] = 'False Dark Wings, Agrat bat Mahlat'
+G guardian.
 
-global.CardText[3761] = 'Dark Irregulars/Succubus
-
-G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
-
-AUTO: When this unit is placed on GC, Soul Charge 2, and if the number of cards in your soul is six or more, this unit gets shield +5000 until end of that battle.
-'
-
-global.UnitGrade[3761] = 4
-
-global.CardInClan[3761] = 11
-
-global.ExtraDeck[3761] = 1
-
+AUTO: When this unit is placed on GC, Soul Charge 2. Then, if your soul has six or more cards, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 11
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[3761] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 3777

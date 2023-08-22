@@ -755,7 +755,7 @@ CardStat = x
 global.CardName[CardStat] = 'Valkyrie of Reclamation, Padmini'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Ranunculus" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Ranunculus" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -940,7 +940,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid/Zoo
 
 CONT [VC] Generation Break 2: All of your units get "CONT [VC/RC]: During your turn, if you have another unit with the same card name as this unit on your VC or RC, this unit gets power +5000".
 
-AUTO [VC]: When your G Unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and that called unit gets power +2000 until end of turn. Shuffle your deck.'
+AUTO [VC]: When your G Unit Stride during your turn, COST [Counter Blast 1], choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and that called unit gets power +2000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -1559,23 +1559,15 @@ global.PowerStat[3619] = 8000
 
 
 CardStat = 3620
-
 {
+global.CardName[CardStat] = 'Pure Maiden, Katrina'
+global.CardText[CardStat] = 'Neo Nectar/Sylph
 
-global.CardName[3620] = 'Pure Maiden, Katrina'
-
-global.CardText[3620] = 'Neo Nectar/Sylph
-
-Bloom - AUTO: [RC] Generation Break 1: When your other unit named "Pure Maiden, Katrina" is placed on RC, if you have a vanguard with "Ranunculus" in its card name, choose up to five of your "Pure Maiden, Katrina" on RC, and those units get power +4000 until end of turn.
-'
-
-global.UnitGrade[3620] = 1
-
-global.CardInClan[3620] = 9
-
+Bloom - AUTO: [RC] Generation Break 1: When your other "Pure Maiden, Katrina" is placed on RC, if you have a vanguard with "Ranunculus" in its card name, choose up to five "Pure Maiden, Katrina" on your RC, and they get power +4000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 9
 }
-
-global.PowerStat[3620] = 7000
+global.PowerStat[CardStat] = 7000
 
 
 CardStat = 3621
@@ -1733,27 +1725,18 @@ global.PowerStat[3753] = 15000
 
 
 CardStat = 3754
-
 {
+global.CardName[CardStat] = 'Sacred Tree Dragon, Rain Breath Dragon'
+global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-global.CardName[3754] = 'Sacred Tree Dragon, Rain Breath Dragon'
+G guardian.
 
-global.CardText[3754] = 'Neo Nectar/Forest Dragon
-
-G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
-
-AUTO: When this unit is placed on GC, choose up to one card from your hand, call it to RC, and that unit gets "CONT [RC/GC]: Resist" until end of turn. If you called a card, this unit gets shield +5000 until end of that battle.
-'
-
-global.UnitGrade[3754] = 4
-
-global.CardInClan[3754] = 9
-
-global.ExtraDeck[3754] = 1
-
+AUTO: When this unit is placed on GC, choose up to one card from your hand, call it to RC, and it gets "CONT [RC/GC]: Resist" until end of turn. If you called a card, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 9
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[3754] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 3936
@@ -3426,7 +3409,9 @@ global.CardName[5065] = 'Resistant Lemone'
 global.CardText[5065] = 'Neo Nectar/Dryad
 
 CONT: Sentinel.
+
 AUTO: [Counter Blast 1] When this unit is placed on GC from hand during the battle that your vanguard was attacked, you may pay the cost. If you do, call five cards from the top of your deck to GC.
+
 AUTO: [Choose a card from your drop zone, and put it on the bottom of your deck] When this unit is placed on GC, you may pay the cost. If you do, choose one of your other guardians, if you have another unit with the same card name as that unit, call two cards from the top of your deck to GC.
 '
 

@@ -1164,7 +1164,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, if this unit’s power is 22000 or greater, this unit gets drive +1 until end of that battle.
 
-AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, until end of turn, it gets power +4000, and "AUTO [VC]: When this unit’s attack hits a vanguard, [Counter Blast 1], and draw a card".'
+AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, until end of turn, it gets power +4000, and "AUTO [VC]: When this unit’s attack hits a vanguard, COST [Counter Blast 1], and draw a card".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -1264,7 +1264,7 @@ CardStat = x+12
 global.CardName[CardStat] = 'Cosmic Hero, Grandrope'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Gallop" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Gallop" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -2109,7 +2109,9 @@ global.CardName[4478] = 'Bravest Rush, Grandgallop'
 global.CardText[4478] = 'Dimension Police/Battleroid
 
 Burst - AUTO [RC] Generation Break 3: When your vanguard attacks, if your vanguards power is 30000 or greater, until end of turn, this unit gets power +4000, and if your vanguards power is 60000 or greater, this unit gets critical +1.
+
 AUTO [VC]: At the beginning of your ride phase, if the number of cards in your hand is two or less, until end of turn, you may Stride without paying the cost the next time you Stride.
+
 AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, choose one of your vanguards, and it gets power +4000 until end of turn. If that unit has the burst ability, you may pay the cost. If you do, that unit gets power +4000 until end of turn.
 '
 
@@ -2785,27 +2787,18 @@ global.PowerStat[5402] = 6000
 
 
 CardStat = 5405
-
 {
-
-global.CardName[5405] = 'Great Galactic Beast, Zeal'
-
-global.CardText[5405] = 'Dimension Police/Alien
+global.CardName[CardStat] = 'Great Galactic Beast, Zeal'
+global.CardText[CardStat] = 'Dimension Police/Alien
 
 G guardian.
 
-AUTO: [Soul Blast 1] When this unit is placed on GC, you may pay the cost. If you do, choose one of your opponent’s unit, and it gets power -5000 until end of that battle. If the number of cards in your damage zone is greater than or equal to the number of cards in your opponent’s damage zone, you may Counter Blast 1. If you do that, choose one of your vanguards, and it gets power +5000 until end of turn.
-'
-
-global.UnitGrade[5405] = 4
-
-global.CardInClan[5405] = 6
-
-global.ExtraDeck[5405] = 1
-
+AUTO: When this unit is placed on GC, COST [Soul Blast 1], choose one of your opponent’s unit, and it gets power -5000 until end of that battle. If the number of cards in your damage zone is equal to or more than your opponent’s, you may Counter Blast 1. If you do, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 6
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[5405] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5412

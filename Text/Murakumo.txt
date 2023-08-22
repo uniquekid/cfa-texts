@@ -733,7 +733,7 @@ global.CardText[CardStat] = 'Murakumo/Demon/Dragon Empire
 
 AUTO [VC] 1/Turn Generation Break 2: When your rear-guard is put into your deck by your card’s effect, search your deck for up to one card with the same card name as that card, call it to RC, and shuffle your deck.
 
-AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to RC, and shuffle your deck. At the end of that turn, put those called units on the bottom of your deck in any order.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose one of your rear-guards, search your deck for up to two cards with the same card name as that unit, call them to RC, and shuffle your deck. At the end of that turn, put those called units on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 20
 }
@@ -815,7 +815,7 @@ CardStat = x+6
 global.CardName[CardStat] = 'Gateway Stealth Rogue, Ataka'
 global.CardText[CardStat] = 'Murakumo/Demon/Dragon Empire
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Yasuie" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Yasuie" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1040,27 +1040,18 @@ global.PowerStat[3963] = 15000
 
 
 CardStat = 3964
-
 {
+global.CardName[CardStat] = 'Ambush Demon Stealth Rogue, Shishiyuzuki'
+global.CardText[CardStat] = 'Murakumo/Demon
 
-global.CardName[3964] = 'Ambush Demon Stealth Rogue, Shishiyuzuki'
+G guardian COST [Choose a card with "Heal" from your hand, and discard it] Call this card to your GC from face down.
 
-global.CardText[3964] = 'Murakumo/Demon
-
-G guardian.
-
-AUTO: When this unit is placed on GC during the battle your vanguard is attacked by your opponent’s vanguard, choose up to one of your rear-guards, move it to GC, and that unit gets shield +5000 until end of that battle. Search your deck for up to one card with the same card name as that unit, call it to GC, and shuffle your deck.
-'
-
-global.UnitGrade[3964] = 4
-
-global.CardInClan[3964] = 20
-
-global.ExtraDeck[3964] = 1
-
+AUTO: When on GC during the battle your vanguard was attacked by your opponent’s vanguard, choose up to one of your rear-guards, move it to GC, and that unit gets shield +5000 until end of that battle. Search your deck for up to one card with the same card name as that unit, call it to GC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 20
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[3964] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 3966
@@ -1603,7 +1594,9 @@ global.CardName[4566] = 'Rogue Deity of the Third Realm, Yasuie Gouma'
 global.CardText[4566] = 'Murakumo/Demon
 
 Stride.
+
 ACT [VC] 1/Turn: [Choose a face down card named "Rogue Deity of the Third Realm, Yasuie Gouma" from your G zone, and turn it face up] Choose up to two face up cards with "Yasuie" in its card name from your G zone, and call them to separate RC. (At the end of turn, put all of the G units on RC into G zone face up. Put them into G zone face up even when they are removed from RC or turn face down.)
+
 Shadowstitch - AUTO [VC]: At the end of the battle that your unit attacked a vanguard, if that attack did not hit, draw a card, choose a card from your hand, and put it on the bottom of your deck.
 '
 
@@ -1896,27 +1889,18 @@ global.PowerStat[4648] = 5000
 
 
 CardStat = 4689
-
 {
-
-global.CardName[4689] = 'Ambush Demon Stealth Rogue, Shirahagino'
-
-global.CardText[4689] = 'Murakumo/Demon
+global.CardName[CardStat] = 'Ambush Demon Stealth Rogue, Shirahagino'
+global.CardText[CardStat] = 'Murakumo/Demon
 
 G guardian.
 
-AUTO [Generation Break 1]: [Counter Blast 1 & Choose a face-down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When your grade 3 or less unit is retired from GC, you may put that card on the bottom of your deck", and this unit gets shield +10000.
-'
-
-global.UnitGrade[4689] = 4
-
-global.CardInClan[4689] = 20
-
-global.ExtraDeck[4689] = 1
-
+AUTO [Generation Break 1]: When this unit is placed on GC, COST [Counter Blast 1 & turn a G guardian from G zone face up], choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When a grade 3 or less unit is retired from GC, you may put that card on the bottom of your deck", and this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 20
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4689] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4690

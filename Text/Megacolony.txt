@@ -651,9 +651,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Intimidating Mutant, Darkface'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO [VC] Generation Break 2: When your opponent’s unit is placed on RC, [Soul Blast 2], and rest that unit.
+AUTO [VC] Generation Break 2: When your opponent’s unit is placed on RC, COST [Soul Blast 2], and rest that unit.
 
-AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose two of your opponent’s rear-guards, rest them, until end of your opponent’s next turn, they get "AUTO [RC]: At the end of your turn, if this unit is rest, your opponent may draw a card.", and those units cannot stand during your opponent’s next stand phase.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose two of your opponent’s rear-guards, rest them, until end of your opponent’s next turn, they get "AUTO [RC]: At the end of your turn, if this unit is rest, your opponent may draw a card.", and those units cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -697,7 +697,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'New Face Mutant, Little Dorcas'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Darkface" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Darkface" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1458,26 +1458,18 @@ global.PowerStat[4007] = 6000
 
 
 CardStat = 4691
-
 {
-
-global.CardName[4691] = 'Seven Stars Mutant Deity, Relish Lady'
-
-global.CardText[4691] = 'Megacolony/Insect
+global.CardName[CardStat] = 'Seven Stars Mutant Deity, Relish Lady'
+global.CardText[CardStat] = 'Megacolony/Insect
 
 G guardian.
 
-AUTO [Generation Break 1]: [Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC during the battle that your opponent’s vanguard attacked, you may pay the cost. If you do, your opponent chooses two of his or her rear-guards, and may rest them. If two units were not rest, you draw a card, and Counter Charge 1 / Soul Charge 1.
-'
-
-global.UnitGrade[4691] = 4
-
-global.CardInClan[4691] = 2
-
-global.ExtraDeck[4691] = 1
+AUTO [Generation Break 1]: When this unit is placed on GC during the battle your opponent’s vanguard attacked, COST [turn a G guardian from G zone face up], your opponent chooses two of their rear-guards, and they may rest them. If they did not, you draw a card, and Counter Charge 1 / Soul Charge 1.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 2
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4691] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4692

@@ -1207,7 +1207,7 @@ CardStat = x
 global.CardName[CardStat] = 'Mythic Beast, Skoll'
 global.CardText[CardStat] = 'Genesis/High Beast
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Fenrir" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Fenrir" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1262,15 +1262,17 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
 
+
 CardStat = x+2
 {
 global.CardName[CardStat] = 'Flying Lapwing'
 global.CardText[CardStat] = 'Genesis/Ghost
 
-AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, Soul Charge 3. Then, if you have a card named "Flying Lapwing" in your soul, draw a card, and Counter Charge 1.'
+AUTO: Generation Break 1: When this unit is placed on RC, COST [Counter Blast 1], and Soul Charge 3. Then, if your soul has a "Flying Lapwing", draw a card, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
+
 
 CardStat = x+3
 {
@@ -1540,25 +1542,17 @@ global.PowerStat[4033] = 11000
 
 
 CardStat = 4034
-
 {
+global.CardName[CardStat] = 'Boulder Fetter, Gjoll'
+global.CardText[CardStat] = 'Genesis/Noble
 
-global.CardName[4034] = 'Boulder Fetter, Gjoll'
+AUTO: Revelation - [RC]
 
-global.CardText[4034] = 'Genesis/Noble
-
-AUTO: Revelation - [RC] (When this unit is placed on the specified circle, look at the top card of your deck, and you may put that card into your soul. If you do, rest one of your rear-guards.)
-
-AUTO: Generation Break 1: [Counter Blast 1] When this unit is placed on RC, if you have a vanguard with "Fenrir" in its card name, you may pay the cost. If you do, until end of turn, this unit gets power +4000, and "AUTO [RC] 1/Turn: [Soul Blast 3] When this unit attacks,  you may pay the cost. If you do, draw a card".
-'
-
-global.UnitGrade[4034] = 2
-
-global.CardInClan[4034] = 21
-
+AUTO: Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Fenrir" in its card name, COST [Counter Blast 1], until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks,  COST [Soul Blast 3], and draw a card" and power +4000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 21
 }
-
-global.PowerStat[4034] = 9000
+global.PowerStat[CardStat] = 9000
 
 
 CardStat = 4035
@@ -2176,7 +2170,9 @@ global.CardName[4880] = 'Goddess of Investigation, Ishtar'
 global.CardText[4880] = 'Genesis/Noble
 
 Stride.
+
 AUTO: Revelation - [VC].
+
 AUTO [VC]: [Soul Blast 3 & Choose a face down card from your G zone, and turn it face up] When your drive check reveals a grade 1 or greater card, you may pay the cost. If you do, choose the same number of your units as the number of face up "Goddess of Investigation, Ishtar" in your G zone, they get power +3000 until end of turn, and if the card revealed by the drive check has the revelation ability, stand those rear-guards.
 '
 
@@ -2464,6 +2460,7 @@ Stride.
 AUTO: Revelation - [VC].
 
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Soul Charge 3, your opponent chooses one of his or her rear-guards for each card with the revelation ability that was Soul Charge, and retires it.
+
 CONT [VC] Generation Break 3: All of your rear-guards get power +2000 for each card with the revelation ability in your soul.
 '
 
@@ -2615,27 +2612,18 @@ global.PowerStat[5557] = 15000
 
 
 CardStat = 5558
-
 {
-
-global.CardName[5558] = 'Ultimate Regalia of Affection, Eir'
-
-global.CardText[5558] = 'Genesis/Noble
+global.CardName[CardStat] = 'Ultimate Regalia of Affection, Eir'
+global.CardText[CardStat] = 'Genesis/Noble
 
 G guardian.
 
-AUTO: When this unit is placed on GC, choose up to four cards with different grades from your drop zone, and put them into your soul. If you put two or more cards this way, until end of that battle, this unit gets shield +5000, then, if you put four or more cards, this unit gets shield +10000.
-'
-
-global.UnitGrade[5558] = 4
-
-global.CardInClan[5558] = 21
-
-global.ExtraDeck[5558] = 1
-
+AUTO: When this unit is placed on GC, choose up to four cards with different grades from drop, and put them into your soul. If you put two or more cards, until end of that battle, this unit gets shield +5000, then, if you put four cards, it gets shield +10000.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 21
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[5558] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5568
@@ -2689,7 +2677,9 @@ global.CardName[5579] = 'Ultimate Regalia of Almighty, Minerva'
 global.CardText[5579] = 'Genesis/Noble
 
 Stride.
+
 ACT [VC] 1/Turn: [Soul Blast 3 "Regalia" & Choose a face down card with the same card name as this unit from your G zone, turn it face up] This unit gets power +10000 / drive +1 until end of turn.
+
 AUTO [VC] 1/Turn Generation Break 3: [Soul Blast 6 "Regalia" & Choose a card from your hand, and discard it] When this unit attacks, you may pay the cost. If you do, at the end of that battle, stand all your units with "Regalia" in its card name, and this unit gets drive -3 until end of turn.
 '
 

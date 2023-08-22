@@ -1384,7 +1384,7 @@ AUTO [VC/RC]: Harmony
 
 AUTO [VC] 1/Turn Generation Break 2: When this unit becomes in harmony, choose two of your units, they get power +5000 until end of turn, and this unit gets critical +1 until end of turn.
 
-AUTO [VC]: When your G unit Stride during your turn, [Counter Blast 1], choose one of your rear-guards, and return it to your hand. If you returned a card, draw a card.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose one of your rear-guards, and return it to your hand. If you returned a card, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
 }
@@ -1641,7 +1641,7 @@ CardStat = x+16
 global.CardName[CardStat] = 'Talent of Perserverance, Shandee'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Lauris" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Lauris" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -2964,26 +2964,18 @@ global.PowerStat[4004] = 9000
 
 
 CardStat = 4695
-
 {
-
-global.CardName[4695] = 'Blessed Sparkle, Sandy'
-
-global.CardText[4695] = 'Bermuda Triangle/Mermaid
+global.CardName[CardStat] = 'Blessed Sparkle, Sandy'
+global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 G guardian.
 
-AUTO [Generation Break 1]: [Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 for every two cards in your hand until end of that battle.Then, you may Counter Blast 1. If you do that, this unit gets shield +5000 until end of that battle.
-'
-
-global.UnitGrade[4695] = 4
-
-global.CardInClan[4695] = 13
-
-global.ExtraDeck[4695] = 1
+AUTO [Generation Break 1]: When this unit is placed on GC,COST [turn a G guardian from G Zone face up], and this unit gets shield +5000 until end of that battle for every two cards in your hand. Then, you may Counter Blast 1. If you do, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 13
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4695] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4696
@@ -5051,7 +5043,9 @@ global.CardName[5634] = 'Magical Center, Nina'
 global.CardText[5634] = 'Bermuda Triangle/Mermaid
 
 AUTO [VC/RC]: Harmony.
+
 AUTO [VC] 1/Turn: [Soul Blast 1] When this unit becomes in harmony, or when your G unit Stride, you may pay the cost. If you do, draw a card, choose a card from your hand, call it to RC, and until end of turn, it gets "AUTO [RC] 1/Turn: When this unit becomes in harmony, Counter Charge 1".
+
 CONT [VC/RC] Generation Break 2: When this unit is in harmony, this unit gets power +5000.
 '
 
@@ -5804,8 +5798,11 @@ global.CardName[5668] = 'School Student Council President, Alk'
 global.CardText[5668] = 'Bermuda Triangle/Mermaid
 
 Stride.
+
 AUTO [VC]: Harmony.
+
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose two of your rear-guards with the harmony ability, and return them to your hand] This unit gets "AUTO [VC]: When this unit attacks, choose up to the number of your rear-guards as face up cards in your G zone +1, return them to your hand, choose up to two cards from your hand, and call them to separate RC".
+
 CONT [VC] Generation Break 3: All of your units in harmony get power +5000.
 '
 

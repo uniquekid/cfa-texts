@@ -867,7 +867,7 @@ AUTO [VC/RC]: Engorge
 
 CONT [VC] Generation Break 2: If this unit is engorged, this unit gets power +5000/ critical +1.
 
-AUTO [VC]: When your G unit Stride During your turn, [Counter Blast 1], choose up to two cards from your hand, and call them to RC. Choose up to two of your rear-guards, and they get "AUTO: When this unit is retired from RC during your turn, call this card to RC". until end of turn'
+AUTO [VC]: When your G unit Stride During your turn, COST [Counter Blast 1], choose up to two cards from your hand, and call them to RC. Choose up to two of your rear-guards, and they get "AUTO: When this unit is retired from RC during your turn, call this card to RC" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 17
 }
@@ -877,7 +877,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Prism Bird'
 global.CardText[CardStat] = 'Tachikaze/High Beast/Dragon Empire
 
-AUTO: When this unit is placed on RC from hand, [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Gaia" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from hand], search your deck for up to one grade 3 card with "Gaia" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
@@ -1396,8 +1396,11 @@ global.CardName[4549] = 'Great Emperor Dragon, Gaia Dynast'
 global.CardText[4549] = 'Tachikaze/Dinodragon
 
 Stride.
+
 AUTO [VC]: Engorge.
+
 AUTO [VC] Generation Break 3: When this unit retires one of your rear-guards, you may pay Counter Blast 1. If you do, call that card to RC, that unit and this unit get power +3000 until end of turn.
+
 AUTO [VC]: [Choose a face down card named "Great Emperor Dragon, Gaia Dynast" from your G zone, and turn it face up] When this unit becomes engorged, you may pay the cost. If you do, choose one of your rear-guards, retire all of the rear-guards in the same column as that unit, and Counter Charge 1.
 '
 
@@ -1863,26 +1866,18 @@ global.PowerStat[4683] = 4000
 
 
 CardStat = 4684
-
 {
-
-global.CardName[4684] = 'Barrage Giant Cannon, Bullish Primer'
-
-global.CardText[4684] = 'Tachikaze/Dinodragon
+global.CardName[CardStat] = 'Barrage Giant Cannon, Bullish Primer'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
 G guardian.
 
-AUTO [Generation Break 1]: [Choose a face-down G guardian from your g zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 for each of your open circle until end of that battle.
-'
-
-global.UnitGrade[4684] = 4
-
-global.CardInClan[4684] = 17
-
-global.ExtraDeck[4684] = 1
+AUTO [Generation Break 1]: When this unit is placed on GC, COST [turn a G guardian from G zone face up], and this unit gets shield +5000 until end of that battle for each of your open circles.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 17
+global.ExtraDeck[CardStat] = 1
 }
-
-global.PowerStat[4684] = 0
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4783

@@ -1780,8 +1780,9 @@ AUTO [VC]: When this unit attacks a vanguard, if your soul has eight or more car
 Glitter (This card is a Glitter that seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Kheios'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3983,16 +3984,15 @@ AUTO: When this unit is placed by riding from "Approaching Fangs, Kheios", you m
 
 ACT [VC] 1/Turn: If your soul has thirteen or more cards with different card names, COST [bind an "Approaching Fangs, Kheios" from soul], and until end of turn, all of your units get power +10000, and this unit gets critical +1. At the end of that turn, ride the card bound for this cost as rest.
 
-Glitter (This card is a Glitter that seeks the Fire Regalis)
-
-(SHIFT + left click to activate persona ride)'
+Glitter (This card is a Glitter that seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Kheios'
+global.ForbidCrossPersonaRideUpon[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11081
 {
@@ -4629,3 +4629,16 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11915
+{
+global.CardName[CardStat] = 'Gear Lion of Synchronizing Signal'
+global.CardText[CardStat] = 'Dark States/Gear Beast
+
+AUTO [RC]: When this unit attacks, if you have a face up card in your ride deck with the same card name as your vanguard, Soul Charge 1,and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
