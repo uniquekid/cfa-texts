@@ -3395,9 +3395,9 @@ CardStat = 6794
 global.CardName[CardStat] = 'Ice Prison Necromancer, Cocytus '
 global.CardText[CardStat] = 'Granblue/Skeleton
 
-CONT [VC]: During your turn, if your drop zone has ten or more cards, this unit gets power +10000. If it has twenty or more cards, it gets power +20000 / critical +1 instead of +10000.
+CONT [VC]: During your turn, if your drop has ten or more cards, this unit gets power +10000. If your drop has twenty or more cards, it gets power +20000 / critical +1 instead of +10000.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & put four cards from the top of your deck into your drop zone], and call up to the number of grade 3 cards in your soul +2 of cards from your drop zone to RC. (If there is one grade 3, call up to three cards.)'
+ACT [VC] 1/Turn: COST [Counter Blast 1 & discard the top four cards of the deck], and call cards up to the number of grade 3 cards in your soul +2 from your drop to RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
