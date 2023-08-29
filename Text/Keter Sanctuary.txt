@@ -4295,7 +4295,7 @@ CardStat = 11583
 global.CardName[CardStat] = 'Delta Append Sorceress'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put  it into hand, and put the rest on the top or bottom of the deck. If your persona rode this turn, choose up to one critical trigger or front trigger from your hand, reveal it, and put it on the top of the deck.'
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the top or bottom of the deck. If your persona rode this turn, choose up to one critical trigger or front trigger from your hand, reveal it, and put it on the top of the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4616,7 +4616,7 @@ AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4
 • RC - Choose two of your rear-guards, and they get "Boost" until end of turn.
 • GC - This unit gets shield +15000 until end of that battle.
 
-AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for stride, draw a card.'
+AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -4665,3 +4665,129 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11942
+{
+global.CardName[CardStat] = 'Firm Determination Within These Hands'
+global.CardText[CardStat] = 'Keter Sanctuary/Blitz Order
+
+Play this if you have three or more rear-guards!
+
+Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets power +30000 instead of +15000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11945
+{
+global.CardName[CardStat] = 'Knight of Heavenly Admired, Admis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11946
+{
+global.CardName[CardStat] = 'Knight of Heavenly Lasting, Tranquilia'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, COST [reveal three cards with different grades from hand], look at the top five cards of your deck, choose up to one grade 1 or less unit card from among them, call it to RC, and shuffle the deck. If you did not call a card, you may call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11947
+{
+global.CardName[CardStat] = 'Knight of Piercing Gaze, Azaltus'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon, COST [reveal three cards with different grades from hand], look at the top five cards of your deck, choose up to one grade 2 or less unit card from among them, call it to RC, and shuffle the deck. If you did not call a card, you may call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11948
+{
+global.CardName[CardStat] = 'Sage of Civilization, Firon'
+global.CardText[CardStat] = 'Keter Sanctuary/Giant
+
+AUTO: When this unit is placed on RC, this unit gets power +2000 until end of turn. If you have a unit with "Alden" in its card name, COST [discard a card from hand], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11949
+{
+global.CardName[CardStat] = 'Sharpness Knight, Ermac'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a unit with "Alden" in its card name, this unit gets power +5000 until end of turn. If it was placed by your card’s ability, it gets power +15000 instead of +5000. 
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 11950
+{
+global.CardName[CardStat] = 'Clearskies Dragon, Lightleads Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+CONT [RC]: If you have a unit with "Alden" in its card name, this unit gets "Boost".
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [put another rear-guard in the same column as this unit into soul], choose one of your units with "Alden" in its card name, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11950
+{
+global.CardName[CardStat] = 'Inhumane Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+CONT: This card cannot be ridden, and cannot be normal called to RC without any Dragontree markers.
+
+CONT [RC]: During your turn, this unit gets power +2000 for each Dragontree marker on your RC.
+
+CONT [RC]: During your turn, this unit gets power +2000 for each of your rear-guards.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 11952
+{
+global.CardName[CardStat] = 'Dragontree Wretch, Geala Dyeshach'
+global.CardText[CardStat] = 'Brandt Gate/Hydragrum
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into your hand, and shuffle your deck.
+
+(SHIFT + left click to get a Dragontree Marker)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1

@@ -106,7 +106,7 @@ CardStat = x+13
 global.CardName[CardStat] = 'Dancing Cutlass'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica
 
-AUTO: [Soul Blast 2] When this unit is called to the RC and you have a «Granblue» Vanguard, you may pay the cost. If paid, draw 1 card.'
+AUTO: [Soul Blast 2] When this unit is called to the RC and you have a «Granblue» Vanguard, you may pay the cost. If paid, draw a card.'
 }
 
 CardStat = x+14
@@ -162,7 +162,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'King Seahorse'
 global.CardText[CardStat] = 'Granblue/Kraken/Magallanica
 
-AUTO [RC]: [Choose 1 card from your hand and discard it] During the battle this unit has boosted, when the attack hits, you may pay the cost. If paid, draw 1 card.'
+AUTO [RC]: [Choose 1 card from your hand and discard it] During the battle this unit has boosted, when the attack hits, you may pay the cost. If paid, draw a card.'
 }
 
 CardStat = x+21
@@ -406,7 +406,7 @@ CardStat = x
 global.CardName[CardStat] = 'Ice Prison Hades Emperor, Cocytus "ßeverse"'
 global.CardText[CardStat] = 'Granblue/Skeleton/Magallanica
 
-ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Put three cards from the top of your deck into your drop zone & Choose one of your «Granblue» rear-guards, and lock it] Choose one «Granblue» from your drop zone, call it to RC, and that unit gets power +3000 until end of turn. (Locked cards are turned face-down, and cannot do anything. Turn them face up at the end of its owners turn.)
+ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Put three cards from the top of your deck into your drop zone & Choose one of your «Granblue» rear-guards, and lock it] Choose one «Granblue» from your drop zone, call it to RC, and that unit gets power +3000 until end of turn. (Locked cards are turned face down, and cannot do anything. Turn them face up at the end of its owners turn.)
 
 CONT [VC]: If you have a card named "Ice Prison Necromancer, Cocytus" in your soul, this unit gets power +2000.
 
@@ -1828,7 +1828,7 @@ AUTO: Hollow.
 
 CONT [RC] Generation Break 1: If the number of cards with the hollow ability in your drop zone is four or more, this unit gets power +2000. Then, if this unit is hollowed, this unit gets power +2000.
 
-AUTO: [Put two cards from the top of your deck into the drop zone]  When this unit is placed on VC or RC, you may pay the cost. If you do, this unit gets power +2000 until end of turn.
+AUTO: [Put two cards from the top of your deck into the drop zone] When this unit is placed on VC or RC, you may pay the cost. If you do, this unit gets power +2000 until end of turn.
 '
 
 global.UnitGrade[4070] = 3
@@ -2062,7 +2062,7 @@ global.CardText[4651] = 'Granblue/Demon
 
 AUTO [VC]: When your rear-guard is retired, choose a normal unit with "Ghostie" in its card name that is a grade less than that card from your drop zone, and you may call it to RC. If you do, this unit loses this ability until end of turn.
 
-AUTO: [Soul Blast 2 <Ghost>] When this unit is placed on VC, you may pay the cost. If you do, reveal cards from the top of your deck until you reveal a grade 1 card, choose a grade 1 card  with  "Ghostie" in its card name from among them, put it into your hand, and put the rest into your drop zone.
+AUTO: [Soul Blast 2 <Ghost>] When this unit is placed on VC, you may pay the cost. If you do, reveal cards from the top of your deck until you reveal a grade 1 card, choose a grade 1 card with "Ghostie" in its card name from among them, put it into your hand, and put the rest into your drop zone.
 '
 
 global.UnitGrade[4651] = 3
@@ -2222,7 +2222,7 @@ global.CardName[4669] = 'Clemmie the Ghostie'
 
 global.CardText[4669] = 'Granblue/Ghost
 
-CONT [RC]: During your turn, if the number of cards in your drop zone is five or more, this unit gets power +2000, andthen, if the number of cards with "Ghostie" in its card name is ten or more, this unit gets power +5000.
+CONT [RC]: During your turn, if the number of cards in your drop zone is five or more, this unit gets power +2000, and then, if the number of cards with "Ghostie" in its card name is ten or more, this unit gets power +5000.
 
 CONT [GC]: If the number of cards with "Ghostie" in its card name in your drop zone is ten or more, this unit gets shield +5000.
 '
@@ -2292,7 +2292,7 @@ global.CardText[4674] = 'Granblue/Demon
 
 Stride.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up & Choose a card from your hand, and discard it] At the end of the battle that this unit attacked, you may pay the cost. If you do, look at four cards from the top of your deck, put up to one card into your drop zone from among them, shuffle your deck, choose a card from your drop zone,callit to RC, and it gets power +5000 for each face up card in your G zone until end of turn.
+AUTO [VC]: [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up & Choose a card from your hand, and discard it] At the end of the battle that this unit attacked, you may pay the cost. If you do, look at four cards from the top of your deck, put up to one card into your drop zone from among them, shuffle your deck, choose a card from your drop zone, call it to RC, and it gets power +5000 for each face up card in your G zone until end of turn.
 '
 
 global.UnitGrade[4674] = 4
@@ -3395,9 +3395,9 @@ CardStat = 6794
 global.CardName[CardStat] = 'Ice Prison Necromancer, Cocytus '
 global.CardText[CardStat] = 'Granblue/Skeleton
 
-CONT [VC]: During your turn, if your drop zone has ten or more cards, this unit gets power +10000. If it has twenty or more cards, it gets power +20000 / critical +1 instead of +10000.
+CONT [VC]: During your turn, if your drop has ten or more cards, this unit gets power +10000. If your drop has twenty or more cards, it gets power +20000 / critical +1 instead of +10000.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & put four cards from the top of your deck into your drop zone], and call up to the number of grade 3 cards in your soul +2 of cards from your drop zone to RC. (If there is one grade 3, call up to three cards.)'
+ACT [VC] 1/Turn: COST [Counter Blast 1 & discard the top four cards of the deck], and call cards up to the number of grade 3 cards in your soul +2 from your drop to RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -4179,7 +4179,7 @@ global.CardName[CardStat] = 'Pirate King of Secret Schemes, Bandit Rum '
 global.CardText[CardStat] = 'Granblue/Vampire
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Vampire Princess of Night Fog, Nightrose", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Vampire Princess of Night Fog, Nightrose", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 

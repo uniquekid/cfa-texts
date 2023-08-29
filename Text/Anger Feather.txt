@@ -171,7 +171,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'Doctroid Megalos'
 global.CardText[CardStat] = 'Angel Feather/Workeroid
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard,you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the end of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the end of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+21
@@ -1890,7 +1890,7 @@ global.CardText[4687] = 'Angel Feather/Angel
 
 G guardian.
 
-AUTO [Generation Break 1]: [Soul Blast 1 & Choose a face-down G guardian from your g zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 until end of that battle for each face up card in your damage zone.
+AUTO [Generation Break 1]: [Soul Blast 1 & Choose a face down G guardian from your g zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 until end of that battle for each face up card in your damage zone.
 '
 
 global.UnitGrade[4687] = 4
@@ -3261,9 +3261,9 @@ CardStat = 7352
 global.CardName[CardStat] = 'Arch-aider, Malkuth-melekh'
 global.CardText[CardStat] = 'Angel Feather/Angeloid
 
-AUTO [VC]: When placed, COST [Counter Blast 2], and if your opponent’s vanguard is grade 2, deal it one damage. If it is grade 3 or greater, heal a card from your damage zone. (Perform a damage check.)
+AUTO: When this unit is placed on VC, COST [Counter Blast 2], and if your opponent’s vanguard is grade 2, deal one damage to your opponent’s vanguard. If it is grade 3 or greater, choose a card from your damage zone, and heal it. 
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], call up to three cards from your drop zone to RC, three of your front row units get power +5000 until end of turn, and deal this unit one damage. (Perform a damage check.)'
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose up to three cards from your drop, call them to RC, until end of turn, three of your front row units get power +5000, and deal onr damage to this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 16
 }
@@ -3550,7 +3550,7 @@ global.CardText[CardStat] = 'Angel Feather/Angel
 
 AUTO [VC/RC]: When placed, COST [Soul Blast 1], search your deck for up to one card with "Nociel" in its card name, put it into your damage zone, and shuffle your deck. If you put a card into your damage zone, at the end of that turn, put a card from your damage zone on the bottom of your deck.
 
-AUTO [VC]: When it attacks, COST [Soul Blast 1], if your damage zone has three or more face up cards with "Nociel" in their card names, stand one of your rear-guards, and if your damage zone has five or more face up cards with "Nociel" in their card names,  stand two rear-guards instead of one.'
+AUTO [VC]: When it attacks, COST [Soul Blast 1], if your damage zone has three or more face up cards with "Nociel" in their card names, stand one of your rear-guards, and if your damage zone has five or more face up cards with "Nociel" in their card names, stand two rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 16
 }
@@ -4008,7 +4008,7 @@ global.CardName[CardStat] = 'Holy Seraph, Uriel '
 global.CardText[CardStat] = 'Angel Feather/Angel
 
 Stride.
-ACT [G Zone]: If your vanguard is a grade 3 "Black Shiver, Gavrail", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
+ACT [G Zone]: If your vanguard is a grade 3 "Black Shiver, Gavrail", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 AUTO [VC]: When this unit’s attack hits a vanguard, look at the top three cards of your deck, choose up to one card from among them, put it into your damage zone, and shuffle your deck. If you put a card into your damage zone, choose a face up grade 2 or less card from your damage zone, call it to RC, and it gets power +2000 until end of turn.
 (SHIFT + left click to create Protect gifts.)'
