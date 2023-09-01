@@ -1,17 +1,18 @@
 n = x
 
-global.AllCard = 11954
+global.AllCard = 11965
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Buttons to open your and your opponent’s souls with an easily visible card counter
-- Power and shield buttons have been split in two - the top part gives +/-1000, and the bottom +/-5000
-- The middle click on power/shield buttons now gives you an option to input custom value in thousands (no need to input following 000s)
-- A button in Deck Edtior to add cards to the ride deck without holding Ctrl key
-- Zeroth dragons show up in Thai-only clans as well
-- Guardian Shield and 20,000 quick shield are now temporarily being shown in hand
-- Cards are now flippable in the ride zone deck via Ctrl+click (same as Lock)
-- Cards in the opponent’s ride deck zone now have the same card back as any other of their cards'
+- Button to open soul that also tracks the card total
+- Power and Shield buttons have now been updated. The top halves of each button increase or decrease by 1000 when left clicking or right clicking respectively. The bottom halves do the same for increments of 5000. Middle clicking the button will now give you a prompt asking how many increments of +1000 you would like to increase by.
+- Cards in ride deck can now be flipped by Ctrl + left click
+- Cards in the opponent’s ride deck now have the same card back as their other cards
+- The Guardian Shield and 20000 Quick Shield tickets now stay revealed to the opponent while in hand
+- In Deck Editor, there is now a button for adding cards to the ride deck. While it’s on, any card clicked will be moved to the ride deck. (Does not include setting the Over Trigger as a starter, please set it from the start of the deck building if you wish to use it as such)
+- "Zeroth Dragon of Destroy Star, Stark" is now in the clans "The Mask Collection", "Etranger" and "Iconic"
+- "Zeroth Dragon of Zenith Peak, Ultima" is now in the "Iconic" clan
+- "Progenitor Dragon of Horizon Limit, Origorem" is now in the clans "The Mask Collection" and "Etranger"'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -694,10 +695,11 @@ global.CardText[CardStat] = 'Token Set Order
 
 AUTO [Order Zone]: At the beginning of your main phase, you may "Search your deck for up to one trigger unit, put it face up into the ride deck, and shuffle the deck. If you put a card, choose a <Hydragrum> from your drop, and you may call it to RC.".
 
-ACT [Order Zone] 1/Turn: COST [Discard a card with "Griphogila" in its card name from hand], draw a card, choose one of your RC, and put a Dragontree marker. Then, COST [put the top card of the deck into damage zone face down], choose a face up Calamity card from your ride deck, and remove it.'
+ACT [Order Zone] 1/Turn: COST [Discard a card with "Griphogila" in its card name from hand], draw a card, choose one of your RC, and put a Dragontree marker. Then, COST [put the top card of the deck into damage zone face down], choose a face up Calamity card from your ride deck, and remove it.
+
+(SHIFT + left click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 11
-global.DCards[CardStat] = 5
-global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 8
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
