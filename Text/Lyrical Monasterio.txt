@@ -5111,7 +5111,7 @@ Play this if you have a vanguard with "Fenelle" in its card name!
 Perform one of the following according to the number of times you played an order with the same card name as this card this turn.
 • 1 time - Your opponent chooses one of their rear-guards, and they may put it on the bottom of the deck. If they did not put a card, you draw a card.
 • 2 times - Draw a card and Counter Charge 1.
-• 3 times - Choose up to one grade 3 or less card from your drop, and call it.'
+• 3 times - Choose up to one grade 3 or less card from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -5132,7 +5132,7 @@ Play this if you have a vanguard with "Fenelle" in its card name!
 Perform one of the following according to the number of times you played an order with the same card name as this card this turn.
 • 1 time - Your opponent chooses one of their rear-guards, and they may put it on the bottom of the deck. If they did not put a card, you draw a card.
 • 2 times - Draw a card and Counter Charge 1.
-• 3 times - Choose up to one grade 3 or less card from your drop, and call it.'
+• 3 times - Choose up to one grade 3 or less card from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -5143,7 +5143,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11962
 {
-global.CardName[CardStat] = 'TripleõTrick, Fenelle'
+global.CardName[CardStat] = 'Tr!pleõTr!ck, Fenelle'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 CONT [VC]: During your turn, you can play three orders, and cannot play orders other than "Trick&Treat!" or Regalis Piece.
@@ -5186,3 +5186,18 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 11966
+{
+global.CardName[CardStat] = 'Haunted Spot, Illystana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC during your main phase, if you played three or more orders this turn, COST [Soul Blast 1], choose up to one unit with a different card name from this unit from your drop, and call it to RC.
+
+AUTO [RC]: When this unit’s attack hits a vanguard, search your deck for up to one "Trick&Treat!", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
