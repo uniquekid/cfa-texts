@@ -359,9 +359,9 @@ CardStat = x+45
 global.CardName[CardStat] = 'Lava Arm Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
-CONT [VC/RC]: In your VC, if you do not have either "Amber Dragon, Eclipse" or "Amber Dragon, Dusk", this unit’s power is -5000. 
+CONT [VC/RC]: If you do not have a unit named "Amber Dragon, Eclipse" or a unit named "Amber Dragon, Dusk" on your RC, this unit gets power -5000. 
 
-AUTO [VC/RC]: When this unit attacks, during the battle, this unit gains power +2000.'
+AUTO [VC/RC]: When this unit attacks, this unit gets power +2000 until end of that battle.'
 }
 
 CardStat = x+46
@@ -1469,7 +1469,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Dragon, Menace Laser Dragon" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Counter Blast 1] When this card performs Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
+AUTO [VC]: [Counter Blast 1] When this card Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
 
 AUTO [VC]: [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +3000 until end of battle.'
 global.UnitGrade[CardStat] = 3
@@ -1503,7 +1503,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Counter Blast 1] When an attack hits a vanguard during the battle this unit boosts, if your vanguard is in Legion, you may pay the cost. If you do, retire all of your opponent’s rear-guards in the same column as this unit, and put this unit into your soul.'
+AUTO [RC]: [Counter Blast 1] When an attack hits a vanguard during the battle this unit boosts, if your vanguard is Legion, you may pay the cost. If you do, retire all of your opponent’s rear-guards in the same column as this unit, and put this unit into your soul.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -1525,7 +1525,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Dragon Knight, Nazel" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Counter Blast 1] When this unit’s drive check reveals a card with the same name as a unit on your VC, if this unit is in Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
+AUTO [VC]: [Counter Blast 1] When this unit’s drive check reveals a card with the same name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of battle.'
 global.UnitGrade[CardStat] = 3
@@ -1541,7 +1541,7 @@ CardStat = x
 global.CardName[CardStat] = 'Perdition Dragon Knight, Ilham'
 global.CardText[CardStat] = 'Kagero/Human/Dragon Empire
 
-AUTO [RC]: When your vanguard performs Legion, choose up to one of your opponent’s rear-guard in the same column as this unit, and retire it.'
+AUTO [RC]: When your vanguard Legion, choose up to one of your opponent’s rear-guard in the same column as this unit, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -1567,7 +1567,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Dragon, Whirlwind Dragon".
 
-ACT [VC]: [Counter Blast 2 & Choose one card with the same name as a unit in your VC from your hand, and discard it] If this unit is in Legion, choose up to two of your opponent’s grade 2 or less rear-guards, and retire them. Then, if the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguard, deal it one damage, and during that damage check, all trigger effects are nullified. This ability cannot be used for the rest of that turn.
+ACT [VC]: [Counter Blast 2 & Choose one card with the same name as a unit on your VC from your hand, and discard it] If this unit is Legion, choose up to two of your opponent’s grade 2 or less rear-guards, and retire them. Then, if the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguard, deal it one damage, and during that damage check, all trigger effects are nullified. This ability cannot be used for the rest of that turn.
 
 AUTO [VC]: During your main phase, when your opponent’s rear-guard is put into the drop zone, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -1601,7 +1601,7 @@ global.CardText[CardStat] = 'Kagero/Dragonman/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Mage, Asticah" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit is in Legion, this unit gets power +5000 until end of that battle.
+AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, this unit gets power +5000 until end of that battle.
 
 AUTO [RC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1643,7 +1643,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Perdition Wyvern, Boom'
 global.CardText[CardStat] = 'Kagero/Winged Dragon/Dragon Empire
 
-AUTO [RC]: When this unit attacks, if your vanguard is in Legion, this unit gets power +4000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your vanguard is Legion, this unit gets power +4000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -1661,7 +1661,7 @@ CardStat = x+6
 global.CardName[CardStat] = 'Perdition Wyvern, Grue'
 global.CardText[CardStat] = 'Kagero/Winged Dragon/Dragon Empire
 
-AUTO [RC]: When this unit boosts a vanguard, if your vanguard is in Legion, the boosted unit gets power +4000 until end of that battle.'
+AUTO [RC]: When this unit boosts a vanguard, if your vanguard is Legion, the boosted unit gets power +4000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -1703,7 +1703,7 @@ global.CardText[CardStat] = 'Kagero/Human/Dragon Empire
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: When your vanguard performs Legion, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your vanguard Legion, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -1755,9 +1755,9 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Dragon, Dragonic Neoflame".
 
-AUTO [VC]: [Counter Blast 1 & Choose two cards from your hand, and discard them] At the end of the battle that this unit attacked a rear-guard, if this unit is in Legion, you may pay the cost. If you do, stand all of your vanguard. This ability cannot be used for the rest of that turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn.)
+AUTO [VC]: [Counter Blast 1 & Choose two cards from your hand, and discard them] At the end of the battle that this unit attacked a rear-guard, if this unit is Legion, you may pay the cost. If you do, stand all of your vanguard. This ability cannot be used for the rest of that turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn.)
 
-AUTO [VC]: [Choose one of your rear-guards with the same name as a unit in your VC, and retire it] When this unit’s attack hits, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC]: [Choose one of your rear-guards with the same name as a unit on your VC, and retire it] When this unit’s attack hits, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -1769,7 +1769,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Perdition Dragon Knight, Tarayev" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-ACT [VC]: [Counter Blast 3] If this unit is in Legion, choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards in the same column as that unit. Then, if the number of rear-guards your opponent has is two or less, choose a card from your damage zone, and turn it face up. (Counter Charge 1 )
+ACT [VC]: [Counter Blast 3] If this unit is Legion, choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards in the same column as that unit. Then, if the number of rear-guards your opponent has is two or less, choose a card from your damage zone, and turn it face up. (Counter Charge 1 )
 
 AUTO [VC]: When this unit attacks a vanguard, if you have another unit in the center column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1781,7 +1781,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Perdition Dragon Knight, Tarayev'
 global.CardText[CardStat] = 'Kagero/Human/Dragon Empire
 
-AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone, if your vanguard is in Legion, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone, if your vanguard is Legion, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -1825,7 +1825,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into the soul] When your vanguard performs Legion, you may pay the cost. If you do, choose one of your vanguard, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits, choose one of your opponent’s rear-guards, and retire it".'
+AUTO [RC]: [Put this unit into the soul] When your vanguard Legion, you may pay the cost. If you do, choose one of your vanguard, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits, choose one of your opponent’s rear-guards, and retire it".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -1859,7 +1859,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Perdition Berserker, Manasa'
 global.CardText[CardStat] = 'Kagero/Dragonman/Dragon Empire
 
-AUTO [RC]: When your vanguard performs Legion, this unit gets power +10000 until end of turn.'
+AUTO [RC]: When your vanguard Legion, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -1925,7 +1925,7 @@ CardStat = x
 global.CardName[CardStat] = 'Perdition Berserker, Preta'
 global.CardText[CardStat] = 'Kagero/Dragonman/Dragon Empire
 
-AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same name as a unit in your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -1954,7 +1954,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
 
 ACT [VC]: Legion 22000 "Dragonic Overlord the End".
 
-AUTO [VC]: When this unit Legion, search your deck for up to one card with the same name as a unit in your VC, reveal it to your opponent, put it into your hand, and shuffle your deck.
+AUTO [VC]: When this unit Legion, search your deck for up to one card with the same name as a unit on your VC, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
 AUTO [VC]: [Counter Blast 1 & Choose a card named "Dragonic Overlord "The X"" from your hand, and discard it] At the end of the battle that this unit attacked, if the attack did not hit during that battle, you may pay the cost. If you do, choose up to two of your opponent’s rear-guards, and retire them.'
 global.UnitGrade[CardStat] = 3
