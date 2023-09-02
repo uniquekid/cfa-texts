@@ -4509,10 +4509,26 @@ CONT: This card cannot be ridden, and cannot be normal called to a RC without a 
 
 CONT [RC]: During your turn, this unit gets power +2000 for each Dragontree marker on your RC.
 
-CONT [RC]: During your turn, this unit gets power +2000 for each order in your order zone.'
+CONT [RC]: During your turn, this unit gets power +2000 for each set order in your order zone.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11965
+{
+global.CardName[CardStat] = 'Eled Antiwaver'
+global.CardText[CardStat] = 'Brandt Gate/Blitz Order
+
+Play this if your order zone has a set order!
+
+Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets power +30000 instead of +15000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
