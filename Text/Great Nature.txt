@@ -869,7 +869,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Crayon Tiger'
 global.CardText[CardStat] = 'Great Nature/High Beast/Zoo
 
-AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a Vanguard, if this unit is boosted, you may pay the cost. If you do, choose one of your other rear-guards, stand it, it gets power +4000 until end of turn, and at the end of that turn, draw a card, and retire that unit.'
+AUTO [RC] 1/Turn Generation Break 1: When this unit attacks a vanguard, if this unit is boosted, COST [Counter Blast 1], choose one of your other rear-guards, stand it, and it gets power +4000 until end of turn. At the end of that turn, draw a card, and retire that unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 7
 }
@@ -1008,7 +1008,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Honorary Assistant, Mikesaburo'
 global.CardText[CardStat] = 'Great Nature/High Beast/Zoo
 
-AUTO: During your main phase, when this unit is placed on RC, choose one of your other rear-guards, and until end of turn, it gets "AUTO: During your end phase, when this unit is put into the drop zone from RC, search your deck for up to one grade 3 card, reveal it to your opponent, put it into your hand, and shuffle your deck".'
+AUTO: When this unit is placed on RC during your main phase, choose one of your other rear-guards, and it gets "AUTO: When this unit is retired from RC during your end phase, search your deck for up to one grade 3 card, reveal it and put it into your hand, and shuffle your deck." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 7
 }
@@ -1853,9 +1853,9 @@ global.CardText[4505] = 'Great Nature/High Beast
 
 AUTO [RC]: Success 20000.
 
-CONT [RC]: If this unit is successful, all of your units with the success ability get power +2000, and "CONT [VC/RC]: Resist".
+CONT [RC]: If this unit is successful, all of your units with the success ability get "CONT [VC/RC]: Resist", and they get power +2000.
 
-ACT [RC] 1/Turn: [Soul Blast 1] This unit becomes successful until end of turn, and at the end of that turn, retire this unit.
+ACT [RC] 1/Turn: COST [Soul Blast 1], this unit becomes successful until end of turn, and at the end of that turn, retire this unit.
 '
 
 global.UnitGrade[4505] = 2

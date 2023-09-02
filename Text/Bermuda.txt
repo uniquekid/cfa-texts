@@ -1368,9 +1368,9 @@ CardStat = x+7
 global.CardName[CardStat] = 'Superb New Student, Shizuku'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [VC/RC]: Harmony (When another of your units is placed on the same column as this unit, both units are in Harmony state until end of turn.)
+AUTO [VC/RC]: Harmony.
 
-AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit Harmony, look at up to five cards from the top of your deck, search for one grade 3 or greater cards among them, show it to your opponent, put it to your hand, and shuffle your deck.'
+AUTO [RC] 1/Turn Generation Break 1: When this unit become in Harmony, look at the top five cards of your deck, choose up to one grade 3 or greater card from among them, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1380,7 +1380,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Miracle Voice, Lauris'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [VC/RC]: Harmony
+AUTO [VC/RC]: Harmony.
 
 AUTO [VC] 1/Turn Generation Break 2: When this unit becomes in harmony, choose two of your units, they get power +5000 until end of turn, and this unit gets critical +1 until end of turn.
 
@@ -1580,7 +1580,7 @@ CardStat = x+10
 global.CardName[CardStat] = 'Admired Sparkle, Spica'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, choose one of your other rear-guards, return it to your hand, choose up to one card from your hand, call it to RC, and that unit gets power +3000 until end of turn.'
+AUTO [RC] Generation Break 1: When this unit attacks a vanguard, if this unit is boosted, COST [Counter Blast 1], choose one of your other rear-guards, return it to your hand, choose up to one card from your hand, call it to RC, and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -5396,9 +5396,9 @@ global.CardName[5650] = 'Transcend Idol, Aqua'
 
 global.CardText[5650] = 'Bermuda Triangle/Mermaid
 
-CONT: Sentinel. But if all the sentinels in your deck are "Transcend Idol, Aqua", you may include up to six.
+CONT: Sentinel. But if all sentinels in your deck are "Transcend Idol, Aqua", you may include up to six.
 
-AUTO: [Choose a card from your hand, and put it into your soul] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your units, and it cannot be hit until end of that battle. If the number of sentinels in your drop zone is two or more, choose all of your rear-guards, and they cannot be hit until end of turn.
+AUTO: When this unit is put on GC from hand, COST [put a card from hand into soul], choose one of your units, and it cannot be hit until end of that battle. If your drop zone has two or more sentinels, choose all of your rear-guards, and they cannot be hit until end of turn.
 '
 
 global.UnitGrade[5650] = 1

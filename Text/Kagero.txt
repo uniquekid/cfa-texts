@@ -83,9 +83,9 @@ CardStat = x+11
 global.CardName[CardStat] = 'Lizard Soldier, Conroe'
 global.CardText[CardStat] = 'Kagero/Dragonman/Dragon Empire
 
-AUTO: When another «Kagero» rides this unit, you may call this card to RC.
+AUTO: Forerunner.
 
-ACT [RC]: [Counter Blast 1 & Retire this unit] Search your deck for up to one grade 1 or less «Kagero», reveal it to your opponent, put it into your hand, and shuffle your deck.'
+ACT [RC]: COST [Counter Blast 1 & retire this unit], search your deck for up to one grade 1 or less «Kagero» card, reveal it and put it into your hand, and shuffle your deck.'
 }
 
 CardStat = x+12
@@ -2217,7 +2217,7 @@ CardStat = x
 global.CardName[CardStat] = 'Lizard Soldier, Bellog'
 global.CardText[CardStat] = 'Kagero/Dragonman/Dragon Empire
 
-AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit is placed on GC, choose one of your vanguards, and until end of that battle, that unit gets "AUTO [VC]: At the end of the battle this unit was attacked, if the attack did not hit during that battle, choose one of your opponent’s rest rear-guards, and retire it".'
+AUTO Generation Break 1: When this unit is placed on GC, choose one of your vanguards, and it gets "AUTO [VC]: At the end of the battle this unit was attacked, if the attack did not hit that battle, choose one of your opponent’s rest rear-guards, and retire it." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -2643,9 +2643,9 @@ global.CardName[3702] = 'Lizard General, Conroe'
 
 global.CardText[3702] = 'Kagero/Dragonman
 
-AUTO: [Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Overlord" in its card name, reveal it to your opponent, put into your hand, shuffle your deck, choose a card from your hand, and discard it.
+AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from your hand], search your deck for up to one grade 3 card with "Overlord" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-ACT: [Retire this unit] Choose one of your vanguard with "Overlord" in its card name, until end of turn, it gets "AUTO [VC]: When this unit attacks, Counter Charge 2".
+ACT [RC]: COST [Retire this unit], choose up to one of your vanguard with "Overlord" in its card name, it gets "AUTO [VC]: When this unit attacks, Counter Charge 2." until end of turn.
 '
 
 global.UnitGrade[3702] = 1
