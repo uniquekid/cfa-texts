@@ -1,17 +1,18 @@
 n = x
 
-global.AllCard = 11954
+global.AllCard = 11965
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Thai banlist update
-- Support for Thai-only clans. "The Mask Collection" and the rest of the Thai Clans are all compiled under one banner, from which the specific clan can be selected
-- The "BanG Dream!" collab cards can be used in the deckbuilding process of "Animation" clan decks
-- The "The Mask Collection" collab cards can be used in the deckbuilding process of "Live Action" clan decks
-- All "Etranger" cards act as "Cray Elemental" cards under Thai deckbuilding rulings. There is now appropriate reminder text on "Etranger" cards notifying players of this
-- Support for Thai-only +20000 Quick Shield. Riding over a V Series Grade 0 will now give you the option of which Quick Shield to add going 2nd
-- Quick Shield can now be added in Test Room as well
-- Force I Marker now gives power to Legion Mate as well'
+- Button to open soul that also tracks the card total
+- Power and Shield buttons have now been updated. The top halves of each button increase or decrease by 1000 when left clicking or right clicking respectively. The bottom halves do the same for increments of 5000. Middle clicking the button will now give you a prompt asking how many increments of +1000 you would like to increase by.
+- Cards in ride deck can now be flipped by Ctrl + left click
+- Cards in the opponent’s ride deck now have the same card back as their other cards
+- The Guardian Shield and 20000 Quick Shield tickets now stay revealed to the opponent while in hand
+- In Deck Editor, there is now a button for adding cards to the ride deck. While it’s on, any card clicked will be moved to the ride deck. (Does not include setting the Over Trigger as a starter, please set it from the start of the deck building if you wish to use it as such)
+- "Zeroth Dragon of Destroy Star, Stark" is now in the clans "The Mask Collection", "Etranger" and "Iconic"
+- "Zeroth Dragon of Zenith Peak, Ultima" is now in the "Iconic" clan
+- "Progenitor Dragon of Horizon Limit, Origorem" is now in the clans "The Mask Collection" and "Etranger"'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -694,10 +695,11 @@ global.CardText[CardStat] = 'Token Set Order
 
 AUTO [Order Zone]: At the beginning of your main phase, you may "Search your deck for up to one trigger unit, put it face up into the ride deck, and shuffle the deck. If you put a card, choose a <Hydragrum> from your drop, and you may call it to RC.".
 
-ACT [Order Zone] 1/Turn: COST [Discard a card with "Griphogila" in its card name from hand], draw a card, choose one of your RC, and put a Dragontree marker. Then, COST [put the top card of the deck into damage zone face down], choose a face up Calamity card from your ride deck, and remove it.'
+ACT [Order Zone] 1/Turn: COST [Discard a card with "Griphogila" in its card name from hand], draw a card, choose one of your RC, and put a Dragontree marker. Then, COST [put the top card of the deck into damage zone face down], choose a face up Calamity card from your ride deck, and remove it.
+
+(SHIFT + left click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 11
-global.DCards[CardStat] = 5
-global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 8
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
