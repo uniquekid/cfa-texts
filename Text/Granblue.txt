@@ -602,7 +602,7 @@ CardStat = x+3
 global.CardName[CardStat] = 'Brutal Shade'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica
 
-CONT [RC]: Your vanguard’s "Limit Break 4" is also active if the number of cards in your damage zone is three or less.'
+CONT [RC]: Your vanguard’s "Limit Break 4" is active even when you have three or less damage.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 }
@@ -683,7 +683,7 @@ global.CardText[CardStat] = 'Granblue/Vampire/Magallanica/G-Unit
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1] Choose up to two cards from your drop zone, call it to separate occupied RC.'
+ACT [VC] 1/Turn: [Counter Blast 1] Choose up to two cards from your drop zone, and call them to separate RC with a unit.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 8
 global.ExtraDeck[CardStat] = 1
@@ -2871,7 +2871,7 @@ global.CardName[5927] = 'Captain Nightmist '
 
 global.CardText[5927] = 'Granblue/Vampire
 
-AUTO [RC]: When placed, COST [Counter Blast 1], and call a grade 1 or less card from your drop zone to RC. If you have 10 or more cards in your drop zone, you may call any grade.
+AUTO [RC]: When placed, COST [Counter Blast 1], and call a grade 1 or less card from your drop zone to RC. If your drop zone has ten or more cards, you may call regardless of the grade.
 '
 
 global.UnitGrade[5927] = 2
@@ -2891,7 +2891,7 @@ global.CardName[5928] = 'Dandy Guy, Romario '
 
 global.CardText[5928] = 'Granblue/Zombie
 
-CONT [RC]: If there are 10 or more cards in your drop zone, this unit gets power +4000.
+CONT [RC]: If your drop zone has ten or more cards, this unit gets power +4000.
 
 AUTO: When rode upon, COST [Counter Blast 1 & put a card from your hand into your soul], put the top three cards of your deck into your drop zone, and put a card from your drop zone into your hand.
 '
@@ -4179,6 +4179,7 @@ global.CardName[CardStat] = 'Pirate King of Secret Schemes, Bandit Rum '
 global.CardText[CardStat] = 'Granblue/Vampire
 
 Stride.
+
 ACT [G Zone]: If your vanguard is a grade 3 "Vampire Princess of Night Fog, Nightrose", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Protect.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.

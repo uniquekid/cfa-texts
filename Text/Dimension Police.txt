@@ -374,7 +374,7 @@ CardStat = x+6
 global.CardName[CardStat] = 'Fighting Saucer'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Dimension Police» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Dimension Police» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+7
@@ -390,7 +390,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Cosmic Mothership'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Star Gate
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Dimension Police» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Dimension Police» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+9
@@ -1767,7 +1767,7 @@ global.CardText[3795] = 'Dimension Police/Alien
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC] [Choose one of your rear-guards and rest it] During the start of your attack step, if this unit has 30000 or more power, you can pay the cost. if you pay it, during that turn, this unit gains power +10000. (It can only be activated once for each attack.)'
+AUTO [VC] [Choose one of your rear-guards and rest it] During the start of your attack step, if this unit has 30000 or more power, you may pay the cost. If you do, during that turn, this unit gains power +10000. (It can only be activated once for each attack.)'
 
 global.UnitGrade[3795] = 4
 
@@ -1852,7 +1852,7 @@ global.CardName[3824] = 'Menacing Monster, Golmenas'
 
 global.CardText[3824] = 'Dimension Police/Alien
 
-AUTO: [Soul Blast 1] When this unit is put on GC, you may pay the cost. if you do, choose one of your opponent’s units, and that unit gets power -5000 until end of turn.
+AUTO: [Soul Blast 1] When this unit is put on GC, you may pay the cost. If you do, choose one of your opponent’s units, and that unit gets power -5000 until end of turn.
 '
 
 global.UnitGrade[3824] = 2
@@ -4565,9 +4565,9 @@ CardStat = 9954
 global.CardName[CardStat] = 'Dark Dimensional Robo, "ßeverse" Daiyusha '
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [Hand]: At the end of the battle your grade 3 or greater vanguard with "Dimensional Robo" in its card name attacked, if all of the units that attacked this turn have "Dimensional Robo" in their card names, COST [Counter Blast 1], ride this card as stand, and until end of turn, this unit gets drive -1, and you cannot ride by card effects.
+AUTO [Hand]: At the end of the battle your grade 3 or greater vanguard with "Dimensional Robo" in its card name attacked, if all of the units that attacked this turn have "Dimensional Robo" in its card names, COST [Counter Blast 1], ride this card as stand, and until end of turn, this unit gets drive -1, and you cannot ride by card effects.
 
-ACT [VC] 1/Turn: COST [Lock two of your rear-guards with "Dimensional Robo" in their card names], choose one of your opponent’s vanguards, and it gets power -10000 until end of turn. '
+ACT [VC] 1/Turn: COST [Lock two of your rear-guards with "Dimensional Robo" in its card names], choose one of your opponent’s vanguards, and it gets power -10000 until end of turn. '
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -4623,6 +4623,7 @@ global.CardName[CardStat] = 'Super Cosmic Hero, X-rogue '
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride.
+
 ACT [G Zone]: If your vanguard is a grade 3 "Great Cosmic Hero, Grandgallop", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Force.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.

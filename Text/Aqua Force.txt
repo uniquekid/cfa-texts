@@ -238,7 +238,7 @@ CardStat = x+3
 global.CardName[CardStat] = 'Reliable Strategic Commander'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+4
@@ -278,7 +278,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Veteran Strategic Commander'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Magallanica
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+9
@@ -642,7 +642,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Mobile Battleship, Archelon'
 global.CardText[CardStat] = 'Aqua Force/Battleroid/Magallanica
 
-AUTO [RC]: When this unit’s attack hits a vanguard, choose one of your «Aqua Force» , and that unit gets power +3000 until end of turn.'
+AUTO [RC]: When this unit’s attack hits a vanguard, choose one of your «Aqua Force», and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -1183,7 +1183,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Mako Shark Soldier of the Blue Storm Fleet'
 global.CardText[CardStat] = 'Aqua Force/High Beast/Magallanica
 
-CONT [RC]: Your vanguard’s "Limit Break 4" is also active if the number of cards in your damage zone is three or less.'
+CONT [RC]: Your vanguard’s "Limit Break 4" is active even when you have three or less damage.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2683,7 +2683,7 @@ global.CardText[4682] = 'Aqua Force/Aquaroid/Magallanica/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)
 
-AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this card is discarded as a cost tocalla "Guard Leader of Sky and Water, Ihoannes" from your G zone, you may pay the cost. If you do, draw a card.
+AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this card is discarded from hand for the cost of calling "Guard Leader of Sky and Water, Ihoannes" from your G zone, you may pay the cost. If you do, draw a card.
 '
 
 global.UnitGrade[4682] = 0
@@ -5031,6 +5031,7 @@ global.CardName[CardStat] = 'Marine General of the Heavenly Scales, Tidal Bore D
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride.
+
 ACT [G Zone]: If your vanguard is a grade 3 "One Who Surpasses the Storm, Thavas", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.

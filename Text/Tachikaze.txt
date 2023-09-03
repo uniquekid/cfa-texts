@@ -125,7 +125,7 @@ CardStat = x+16
 global.CardName[CardStat] = 'Savage Magus'
 global.CardText[CardStat] = 'Tachikaze/Human/Dragon Empire
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone and at the beginning of your end phase choose a card from your damage zone, return it to your deck and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck and shuffle your deck.'
 }
 
 CardStat = x+17
@@ -233,7 +233,7 @@ CardStat = x+28
 global.CardName[CardStat] = 'Savage Warlock'
 global.CardText[CardStat] = 'Tachikaze/Human/Dragon Empire
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck and shuffle your deck.'
 }
 
 CardStat = x+29
@@ -701,7 +701,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Ancient Dragon, Tyrannoblaze'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
-CONT [RC]: Your vanguard’s "Limit Break 4" is also active if the number of cards in your damage zone is three or less.'
+CONT [RC]: Your vanguard’s "Limit Break 4" is active even when you have three or less damage.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -865,7 +865,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
 AUTO [VC/RC]: Engorge
 
-CONT [VC] Generation Break 2: If this unit is engorged, this unit gets power +5000/ critical +1.
+CONT [VC] Generation Break 2: If this unit is engorged, this unit gets power +5000 / critical +1.
 
 AUTO [VC]: When your G unit Stride During your turn, COST [Counter Blast 1], choose up to two cards from your hand, and call them to RC. Choose up to two of your rear-guards, and they get "AUTO: When this unit is retired from RC during your turn, call this card to RC" until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -1851,7 +1851,7 @@ global.CardText[4683] = 'Tachikaze/Dinodragon/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)
 
-AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this card is discarded as a cost tocalla "Barrage Giant Cannon, Bullish Primer" from your G zone, you may pay the cost. If you do, draw a card.
+AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this card is discarded from hand for the cost of calling "Barrage Giant Cannon, Bullish Primer" from your G zone, you may pay the cost. If you do, draw a card.
 '
 
 global.UnitGrade[4683] = 0
@@ -3532,6 +3532,7 @@ global.CardName[CardStat] = 'Destruction Tyrant, Archraider '
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
 Stride.
+
 ACT [G Zone]: If your vanguard is a grade 3 "Emperor Dragon, Gaia Emperor", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card from G zone with the same card name as this unit face up], and get two Imaginary Gift:Accel.
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
 AUTO [VC]: When this unit attacks a vanguard, COST [retire a rear-guard], until end of that battle, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it.", and power +5000.

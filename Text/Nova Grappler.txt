@@ -605,7 +605,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Stoic Hani'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid/Star Gate
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone and at the beginning of your end phase, choose a card from your damage zone, return it to your deck and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck and shuffle your deck.'
 }
 
 CardStat = x+8
@@ -635,7 +635,7 @@ CardStat = x+11
 global.CardName[CardStat] = 'Heroic Hani'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid/Star Gate
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone and at the beginning of your end phase, choose a card from your damage zone, return it to your deck and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck and shuffle your deck.'
 }
 
 CardStat = x+12
@@ -1455,7 +1455,7 @@ CardStat = x
 global.CardName[CardStat] = 'Beast Deity, Frog Master'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid/Star Gate
 
-CONT [RC]: Your vanguard’s "Limit Break 4" is also active if the number of cards in your damage zone is three or less.'
+CONT [RC]: Your vanguard’s "Limit Break 4" is active even when you have three or less damage.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }
@@ -2386,9 +2386,9 @@ global.CardName[4523] = 'Vollmond Blaukluger'
 
 global.CardText[4523] = 'Nova Grappler/Battleroid
 
-AUTO [Limit Break 4]: [Counter Blast 1] When a unit with "Blau" in its card name rides this unit, you may pay the cost. If you do, choose your vanguard, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if the number of rear-guards you have at stand with “Blau” in its card name is three or more, for that battle, your opponent cannotcallcards with the sentinel ability from hand to GC"
+AUTO Limit Break 4: [Counter Blast 1] When your unit with "Blau" in its card name rides this unit, you may pay the cost. If you do, choose one of your vanguard, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if the number of stand rear-guards you have is three or more, until end of that battle, your opponent cannot call sentinel from hand to GC".
 
-AUTO [VC]: [Soul Blast 1-card with "Blau" in its card name] When your rear-guard with "Blau" in its cards names attack hits a vanguard, you may pay the cost. If you do, Counter Charge 1.
+AUTO [VC]: [Soul Blast 1-card with "Blau" in its card name] When the attack of your unit with "Blau" in its cards names hits a vanguard, you may pay the cost. If you do, Counter Charge 1.
 '
 
 global.UnitGrade[4523] = 3
@@ -2690,7 +2690,7 @@ global.CardName[4632] = 'Magical Spinner'
 
 global.CardText[4632] = 'Nova Grappler/Human
 
-Rush - AUTO [RC]: When this unit stand due to an effect from one of your cards, until end of turn, this unit gets "AUTO [RC]: When this unit attack hits a vanguard, choose one of your opponent’s rear-guards with power less than or equal to this unit’s power , and retire it".
+Rush - AUTO [RC]: When this unit stand due to an effect from one of your cards, until end of turn, this unit gets "AUTO [RC]: When this unit attack hits a vanguard, choose one of your opponent’s rear-guards with power less than or equal to this unit’s power, and retire it".
 '
 
 global.UnitGrade[4632] = 2
@@ -4123,7 +4123,7 @@ CardStat = 6535
 global.CardName[CardStat] = 'Refilling Raizer'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC/RC]: When it attacks, one of your other units gets power +3000 until end of turn. If that unit is rest , it gets +5000 instead of +3000.'
+AUTO [VC/RC]: When it attacks, one of your other units gets power +3000 until end of turn. If that unit is rest, it gets +5000 instead of +3000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
@@ -4163,7 +4163,7 @@ global.CardText[CardStat] = 'Nova Grappler/Alien
 
 AUTO [RC]: When placed, if you have a total of four or less cards in your hand and rear-guards, draw a card.
 
-AUTO [RC]: When you Counter Blast, COST [retire this unit], and Counter Charge 1.'
+AUTO [RC]: When you Counter Blast , COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }
