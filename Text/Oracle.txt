@@ -2193,7 +2193,7 @@ Stride.
 
 ACT [VC] 1/Turn: [Counter Blast 1 & Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Draw two cards.
 
-ACT [VC] 1/Turn Generation Break 3 Oracle: [Choose a face down card from your G zone, and turn it face up] Until end of turn, your opponent cannot call grade 0 cards from hand and G guardians to GC.
+ACT [VC] 1/Turn Generation Break 3 Oracle: [Choose a face down card from your G zone, and turn it face up] During that turn, your opponent cannot call grade 0 cards from hand and G guardian to GC.
 '
 
 global.UnitGrade[5004] = 4
@@ -3049,7 +3049,7 @@ global.CardName[5791] = 'Victorious Deer'
 
 global.CardText[5791] = 'Oracle Think Tank/High Beast
 
-ACT [VC/RC] 1/Turn: COST [Soul Blast 2 with grade 3, discard a card from your hand], look at seven cards from the top of your deck, reveal up to two "Critical" triggers from among them, put the revealed cards on the top of your deck in any order, shuffle the rest of cards you looked at and put them on the bottom of your deck, and six of your units get power +10000 until end of turn.
+ACT [VC/RC] 1/Turn: COST [Soul Blast 2 grade 3, discard a card from your hand], look at seven cards from the top of your deck, reveal up to two critical triggers from among them, put the revealed cards on the top of your deck in any order, shuffle the rest of cards you looked at, put them on the bottom of your deck, and six of your units get power +10000 until end of turn.
 
 (SHIFT + left click to activate this skill.)
 '
@@ -3406,9 +3406,9 @@ CardStat = 6302
 global.CardName[CardStat] = 'Pentagonal Magus '
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-CONT [VC]: Trigger effects revealed by your drive check gets +5000 for power increase.
+CONT [VC]: The power increase of trigger effect revealed for your drive check get +5000.
 
-AUTO [VC]: When it attacks, COST [Soul Blast 1 grade 3 & discard five cards from your hand], and this unit gets drive +3 until end of that battle. Discarding cards from your hand for this cost is reduced for each rear-guard with "Magus" in its card name in your front row.'
+AUTO [VC]: When it attacks, COST [Soul Blast 1 grade 3 & discard five cards from your hand], and this unit gets drive +3 until end of that battle. The number of cards discarded from your hand for this cost is reduced by one for each rear-guard with "Magus" in its card name in your front row.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 10
 }
@@ -4123,7 +4123,7 @@ CardStat = 7631
 global.CardName[CardStat] = 'Battle Sister, Praline'
 global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
-CONT: You cannot ride this card.
+CONT: This card cannot be ridden.
 
 AUTO [RC]: When placed, reveal the top card of your deck, and if the revealed card is a normal unit, retire this unit. (This effect is mandatory.)'
 global.UnitGrade[CardStat] = 3
