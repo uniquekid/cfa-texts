@@ -358,7 +358,7 @@ CardStat = 9663
 global.CardName[CardStat] = 'Unwavering Determination, Brunhilde'
 global.CardText[CardStat] = 'Record of Ragnarok/Valkyrie
 
-ACT [VC] 1/Turn: COST [Discard a grade 3 or greater unit card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Man> and <Valkyrie> gain power +5000." until the end of turn.
+ACT [VC] 1/Turn: COST [Discard a grade 3 or greater unit card with "Brunhilde" in its card name], this unit gets "CONT [VC]: All of your <Man> and <Valkyrie> get power +5000." until the end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose a <Man> or <Valkyrie> from your drop zone, call it to RC, and the called unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -690,7 +690,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When placed by riding on "Zeus", look at seven cards from the top your deck, choose up to one unit card with "Zeus" in its card name or Zeus order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
 
-CONT [RC]: During your turn this unit gains power +2000.'
+CONT [RC]: During your turn this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 
@@ -714,7 +714,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When placed by riding on "It’s Me <3, Zeus", look at the top 5 cards of your deck, call a Grade 2 or lower <God> from among them to RC, shuffle the rest on the bottom of your deck.
 
-AUTO [VC/RC]: When it attacks, if your front row has 3 or more Gods, this unit gains power +5000 until the end of battle.'
+AUTO [VC/RC]: When it attacks, if your front row has 3 or more Gods, this unit gets power +5000 until the end of battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 
@@ -736,7 +736,7 @@ CardStat = 9776
 global.CardName[CardStat] = 'Final Form of Zeus, "Adamas"'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
 
-Play if you have a vanguard with "Zeus" in its name!
+Play if you have a vanguard with "Zeus" in its card name!
 
 Choose a "Zeus" from your soul, call it to RC, and until end of turn, your front row units get power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -753,7 +753,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/God
 
 ACT [VC] 1/Turn: COST [rest a rear-guard] Search your deck for a "Zeus" order, add it to your hand hand and shuffle your deck.
 
-AUTO [VC]: When this unit attacks attacks, COST [Counter Blast 1], Choose one of rear-guards with "Zeus" in its name and stand it.'
+AUTO [VC]: When this unit attacks attacks, COST [Counter Blast 1], Choose one of rear-guards with "Zeus" in its card name and stand it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 10
 }
@@ -766,7 +766,7 @@ CardStat = 9778
 global.CardName[CardStat] = 'Legends Passed Down, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Zeus
 
-Play this card with COST [Counter Blast 1] if you have a vanguard with "Zeus" in its name!
+Play this card with COST [Counter Blast 1] if you have a vanguard with "Zeus" in its card name!
 
 Choose one of your vanguards, until end of turn, it gets critical +1, and all of your front row units get power +10000. Choose a card from your hand, and you may discard it. If you did not discard, choose two face up cards in your damage zone, and turn them face down.'
 global.UnitGrade[CardStat] = 3
@@ -781,7 +781,7 @@ CardStat = 9779
 global.CardName[CardStat] = 'All-knowing All-powerful God, Zeus'
 global.CardText[CardStat] = 'Record of Ragnarok/God
 
-AUTO [RC]: When this unit attacks, if you have a Grade 3 vanguard with "Zeus" in its card name, and you have 2 or more face down cards in damage, this unit gains power +5000 until end of turn.
+AUTO [RC]: When this unit attacks, if you have a Grade 3 vanguard with "Zeus" in its card name, and you have 2 or more face down cards in damage, this unit gets power +5000 until end of turn.
 
 AUTO [RC]: When this unit’s attack hits, if all your front row rear-guards are Rest, COST [Soul Blast 1], Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
@@ -949,7 +949,7 @@ global.CardText[CardStat] = 'Record of Ragnarok/God
 
 AUTO: When placed by riding on "Poseidon", look at seven cards from the top your deck, choose up to one unit card with "Poseidon" in its card name or Poseidon Order from among them, reveal it and put it into your hand, shuffle the rest and put them on the bottom of your deck.
 
-CONT [RC]: During your turn this unit gains power +2000.'
+CONT [RC]: During your turn this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 10
 
@@ -1012,17 +1012,17 @@ CardStat = 9866
 global.CardName[CardStat] = 'Chione Tyro Demeter'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Poseidon
 
-Play if you have a vanguard with "Poseidon" in its name!
+Play if you have a vanguard with "Poseidon" in its card name!
 
 Look at seven cards from the top of your deck, choose up to one unit card with "Poseidon" in its card name that has the same grade or less than your vanguard, call it to RC, shuffle the rest and put them on the bottom of your deck. Choose up to one of your vanguards, and it get power +10000 until end of turn.
 
-(Put onto Guardian circle to activate search effect)'
+(SHIFT + left click to activate search effect)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 10
 global.CardInClan[CardStat] = 30
 
 global.SearchEffect[CardStat] = 1
-global.SearchEffectPosition[CardStat] = 'G'
+global.SearchEffectPosition[CardStat] = 'SHIFT'
 global.SearchEffectLookAtQuantity[CardStat] = 7
 global.SearchEffectMode[CardStat] = 'CheckNameAndGradeOrLess'
 global.SearchEffectArgument1[CardStat] = 'Poseidon'
@@ -1039,7 +1039,7 @@ CardStat = 9867
 global.CardName[CardStat] = 'Legends Passed Down, Poseidon'
 global.CardText[CardStat] = 'Record of Ragnarok/Normal Order/Poseidon
 
-Play this with COST [Counter Blast 1] if you have a vanguard with "Poseidon" in its name!
+Play this with COST [Counter Blast 1] if you have a vanguard with "Poseidon" in its card name!
 
 All of your front row rear-guards get power +10000 until end of turn. If your rear-guard was retired this turn, choose up to one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3

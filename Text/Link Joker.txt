@@ -7,7 +7,7 @@ global.CardText[CardStat] = 'Link Joker/Cyber Beast/Star Gate
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] If you have a «Link Joker» vanguard, and your opponent has a locked unit, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and lock it. (Locked cards are turned face down, and cannot do anything. Turn them face up at the end of its owners turn.)'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] If you have a «Link Joker» vanguard, and your opponent has a locked card, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and lock it. (Locked cards are turned face down, and cannot do anything. Turn them face up at the end of its owners turn.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -214,7 +214,7 @@ CardStat = x
 global.CardName[CardStat] = 'Star-vader, Nebula Lord Dragon'
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon/Star Gate
 
-CONT [VC]: Limit Break 4 (This ability is active if you have four or more damage): During your turn, all of your «Link Joker» in your front row get power +3000 for each of your opponent’s locked units.
+CONT [VC]: Limit Break 4 (This ability is active if you have four or more damage): During your turn, all of your «Link Joker» in your front row get power +3000 for each of your opponent’s locked cards.
 
 ACT [VC]: [Counter Blast 2] Choose one of your opponent’s rear-guards in the back row, and lock it. (Locked cards are turned face down, and cannot do anything. Turn them face up at the end of its owners turn.)
 
@@ -290,7 +290,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Strafing Star-vader, Ruthenium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid/Star Gate
 
-AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Star-vader, Nebula Lord Dragon", you may pay the cost. If you do, the boosted unit gains power +5000 during that battle.'
+AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Star-vader, Nebula Lord Dragon", you may pay the cost. If you do, the boosted unit gets power +5000 during that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -702,7 +702,7 @@ CardStat = x+9
 global.CardName[CardStat] = 'Star-vader, Worldline Dragon'
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon/Star Gate
 
-AUTO [VC/Soul]: [Choose a card with "ß" in its name from your hand, and discard it] At the beginning of your ride phase, if you have a «Link Joker» vanguard, and your vanguard is not grade 3 or greater, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one «Link Joker», reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO [VC/Soul]: [Choose a card with "ß" in its card name from your hand, and discard it] At the beginning of your ride phase, if you have a «Link Joker» vanguard, and your vanguard is not grade 3 or greater, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one «Link Joker», reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -883,7 +883,7 @@ CardStat = x
 global.CardName[CardStat] = 'Star-vader, Astro-reaper'
 global.CardText[CardStat] = 'Link Joker/Cyberoid/Star Gate
 
-AUTO [RC]: [Soul Blast 1] When this card’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the same name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: [Soul Blast 1] When this card’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -1110,7 +1110,7 @@ ACT [VC]: Legion 20000 "Star-vader, Astro-reaper" (If your opponent’s vanguard i
 
 AUTO [VC]: [Counter Blast 1] When this unit Legion, you may pay the cost. If you do, all of your opponent’s locked cards cannot be unlocked during your opponent’s next end phase.
 
-ACT [VC]: [Choose one card with the same name as a unit on your VC from your hand, and discard it] Choose a rear-guard from your opponent’s front row and back row, and lock them. This ability cannot be used for the rest of that turn.'
+ACT [VC]: [Choose one card with the same card name as a unit on your VC from your hand, and discard it] Choose a rear-guard from your opponent’s front row and back row, and lock them. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -1504,7 +1504,7 @@ ACT [VC]: Legion 20000 "Companion Star Star-vader, Photon".
 
 ACT [VC]: [Counter Blast 2 & Soul Blast 2 & Choose one of your rear-guards with "Star-vader" in its card name, and lock it] If this unit is Legion, lock all of your opponent’s rear-guards, choose one of your opponent’s Legion Mate, and retire it.
 
-AUTO [VC]: [Choose one card with the same name as a unit on your VC from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets critical +1 until end of that battle.'
+AUTO [VC]: [Choose one card with the same card name as a unit on your VC from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -1790,7 +1790,7 @@ global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
 AUTO: [Counter Blast 2-card with "Deletor" in its card name & Choose two cards from your hand, and discard them] When this unit is placed on VC, you may pay the cost. If you do, delete all of your opponent’s vanguards, choose up to 2 of your opponent’s rear-guards, and lock them.
 
-AUTO [VC]: When this unit attacks a vanguard, this unit gains power +2000 until the end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until the end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -2717,7 +2717,7 @@ global.CardText[4095] = 'Link Joker/Cyberoid
 
 AUTO: [Choose one of your other rear-guards, and lock it] When this unit is placed on VC or RC, you may pay the cost. If you do, your opponent chooses one of their rear-guards, locks it, and you choose one of your rear-guards in the same column as that unit, and lock it.
 
-AUTO [RC] Generation Break 1: When this unit attacks a vanguard, you may choose one of your locked units. If you do, this unit gets power +2000 until end of turn, and that unit cannot be unlocked during your next end phase.
+AUTO [RC] Generation Break 1: When this unit attacks a vanguard, you may choose one of your locked cards. If you do, this unit gets power +2000 until end of turn, and that unit cannot be unlocked during your next end phase.
 '
 
 global.UnitGrade[4095] = 3
@@ -3200,7 +3200,7 @@ global.CardText[5120] = 'Link Joker/Alien
 
 Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose one of your rear-guards with "Deletor" in its card name, and retire it] If you have a heart cardwith "Deletor" in its card name, delete all of your opponent’s vanguards, and all of the units in your front row get power +2000 until end of turn for each face up card in your G zone with the same card name as this unit.
+ACT [VC] 1/Turn: [Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose one of your rear-guards with "Deletor" in its card name, and retire it] If you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards, and all of the units in your front row get power +2000 until end of turn for each face up card in your G zone with the same card name as this unit.
 '
 
 global.UnitGrade[5120] = 4
@@ -3843,7 +3843,7 @@ global.CardText[5199] = 'Link Joker/Cyber Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 3: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up & Choose a card from your hand, and discard it] If you have a heart cardwith "Chaos" in its card name, your opponent chooses two cards from his or her hand, and puts them on separate RC as locked cards. Then, if the number of cards in your opponent’s damage zone is four or less, you choose one of your opponent’s locked cards, and your opponent puts that card into his or her damage zone face down.
+ACT [VC] 1/Turn Generation Break 3: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up & Choose a card from your hand, and discard it] If you have a heart card with "Chaos" in its card name, your opponent chooses two cards from his or her hand, and puts them on separate RC as locked cards. Then, if the number of cards in your opponent’s damage zone is four or less, you choose one of your opponent’s locked cards, and your opponent puts that card into his or her damage zone face down.
 '
 
 global.UnitGrade[5199] = 4
@@ -4214,7 +4214,7 @@ Stride.
 
 CONT: If you have a vanguard with "Deletor" in its card name, and the number of cards in your hand is one or less, this card may Stride without paying the cost for Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card with "Deletor" in its card name from your G zone, and turn it face up & Choose two of your rear-guards with "Deletor" in their card names, and retire them] If you have a heart cardwith "Deletor" in its card name, delete all of your opponent’s vanguards.
+ACT [VC] 1/Turn: [Choose a face down card with "Deletor" in its card name from your G zone, and turn it face up & Choose two of your rear-guards with "Deletor" in their card names, and retire them] If you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards.
 '
 
 global.UnitGrade[5404] = 4
@@ -4365,7 +4365,7 @@ global.CardText[5445] = 'Link Joker/Cyber Golem
 
 Stride.
 
-AUTO: [Soul Blast 1 & Choose a face down card with "Chaos" in its card name from your G zone, and turn it face up] When this unit is placed on VC, if you have a heart cardwith "Chaos" in its card name, you may pay the cost. If you do, your opponent chooses two of his or her rear-guards, and locks them. If he or she could not lock two cards, you draw two cards, choose two of your units, and they get power +2000 until end of turn.
+AUTO: [Soul Blast 1 & Choose a face down card with "Chaos" in its card name from your G zone, and turn it face up] When this unit is placed on VC, if you have a heart card with "Chaos" in its card name, you may pay the cost. If you do, your opponent chooses two of his or her rear-guards, and locks them. If he or she could not lock two cards, you draw two cards, choose two of your units, and they get power +2000 until end of turn.
 '
 
 global.UnitGrade[5445] = 4
@@ -5430,7 +5430,7 @@ CardStat = 6690
 global.CardName[CardStat] = 'Progenitor Dragon of Horizon Limit, Origorem'
 global.CardText[CardStat] = 'Star Gate/Space Dragon
 
-Stride [Discard a card with the same card name as a card on your VC], Stride this card on your VC from face down.
+Stride COST [Discard a card with the same card name as a card on your VC], Stride this card on your VC from face down.
 
 CONT [G Zone]: This card cannot be turned face up by abilities. If this card is face up, you can Stride without paying the Stride cost.
 
