@@ -118,7 +118,7 @@ CardStat = x+13
 global.CardName[CardStat] = 'Dragon Monk, Ginkaku'
 global.CardText[CardStat] = 'Narukami/Human/Dragon Empire
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Narukami» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Narukami» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+14
@@ -262,7 +262,7 @@ CardStat = x+30
 global.CardName[CardStat] = 'Dragon Monk, Kinkaku'
 global.CardText[CardStat] = 'Narukami/Human/Dragon Empire
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Narukami» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Narukami» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of the end phase of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+31
@@ -592,7 +592,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Assassinating Eradicator, Suusei'
 global.CardText[CardStat] = 'Narukami/Human/Dragon Empire
 
-AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits the opponent’s vanguard, if you have a vanguard with "Eradicator" in its card name, you can pay the cost. If you do, choose one of your opponent’s front row rear-guards, and retire it.'
+AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits the opponent’s vanguard, if you have a vanguard with "Eradicator" in its card name, you may pay the cost. If you do, choose one of your opponent’s front row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -696,7 +696,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
 AUTO: Forerunner (When another card with the same clan rides this unit, you may call this unit to a RC.)
 
-ACT [RC]: [Put this unit into soul & Choose a unit named "Sword Dance Eradicator, Hisen" from your RC, and put it into your soul] If you have a unit named "Conquering Eradicator, Zuitan" on your VC corcle, search your deck for a card named "Eradicator, Dragonic Descendant", ride it, and shuffle your deck.'
+ACT [RC]: [Put this unit into soul & Choose a unit named "Sword Dance Eradicator, Hisen" from your RC, and put it into your soul] If you have a unit named "Conquering Eradicator, Zuitan" on your VC, search your deck for a card named "Eradicator, Dragonic Descendant", ride it, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -746,7 +746,7 @@ CardStat = x+21
 global.CardName[CardStat] = 'Demonic Dragon Berserker, Sandila'
 global.CardText[CardStat] = 'Narukami/Dragonman/Dragon Empire
 
-AUTO [RC]: When a grade 3 «Narukami» is placed on your VC corcle, this unit gets power +10000 until the end of turn.'
+AUTO [RC]: When a grade 3 «Narukami» is placed on your VC, this unit gets power +10000 until the end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -770,7 +770,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
 AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): When you use a units effect to send an opponent’s rear-guard to drop zone, during this turn, this unit gets power +3000 / critical +1.
 
-ACT [VC]: [Counter Blast 2 - cards with "Eradicator" in their card name] Your opponent chooses one of his or her rear-guards, and retires it.
+ACT [VC]: [Counter Blast 2-card with "Eradicator" in its card name] Your opponent chooses one of his or her rear-guards, and retires it.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
@@ -784,7 +784,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
 AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose three cards with "Eradicator" in their card name from your hand, and discard them] At the beginning of the close step of the battle that this unit’s attack did not hit, you may pay the cost. If you do, stand this unit, and gets critical +1 until end of turn. This ability can only be used once per turn.
 
-ACT [VC]: [Counter Blast 2 - cards with "Eradicator" in their names] This unit gets power +5000 until end of turn.
+ACT [VC]: [Counter Blast 2-card with "Eradicator" in its card names] This unit gets power +5000 until end of turn.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
@@ -896,7 +896,7 @@ global.CardInClan[CardStat] = 19
 CardStat = x+8
 {
 global.CardName[CardStat] = 'Djinn of the Thunder Break'
-global.CardText[CardStat] = 'Narukami/demon/Dragon Empire
+global.CardText[CardStat] = 'Narukami/Demon/Dragon Empire
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
 
@@ -1500,7 +1500,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Tonfa Brawler, Arc'
 global.CardText[CardStat] = 'Narukami/Sylph/Dragon Empire
 
-AUTO [RC]: During your turn, when an opponent’s rear-guard is placed in the drop zone, if your vanguard is Legion, this unit gains power +3000 during this turn.'
+AUTO [RC]: During your turn, when an opponent’s rear-guard is placed in the drop zone, if your vanguard is Legion, this unit gets power +3000 during this turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -1689,7 +1689,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
 ACT [VC]: Legion 20000 "Brawler, Wildfist Dragon" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Counter Blast 1] When this unit’s drive check reveals a card with the same name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, this unit gets power +10000 / critical +1 until end of that battle.
+AUTO [VC]: [Counter Blast 1] When this unit’s drive check reveals a card with the same card name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, this unit gets power +10000 / critical +1 until end of that battle.
 
 AUTO [VC]: [Choose one of your rear-guards, and retire it] When this unit’s attack hits a vanguard, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and retires it.'
 global.UnitGrade[CardStat] = 3
@@ -1902,7 +1902,7 @@ CardStat = x
 global.CardName[CardStat] = 'Eradicator, Egghelm Dracokid'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
-CONT [RC]: Your vanguard’s "Limit Break 4" is also active if the number of cards in your damage zone is three or less.'
+CONT [RC]: Your vanguard’s "Limit Break 4" is active even when you have three or less damage.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -2005,7 +2005,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Dragonic Vanquisher'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire
 
-AUTO [VC] Generation Break 2: When your opponent’s rear-guard is retired by your card’s effect, this unit gets power +3000/ critical +1 until end of turn.
+AUTO [VC] Generation Break 2: When your opponent’s rear-guard is retired by your card’s effect, this unit gets power +3000 / critical +1 until end of turn.
 
 AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose one of your opponent’s front row rear-guards, retire it, and bind it.'
 global.UnitGrade[CardStat] = 3
@@ -2256,7 +2256,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon/Dragon Empire/G-Unit
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Soul Blast 1 & Choose a face down card from your G zone, and turn it face up] If you have a heart card with "Big Bang Knuckle" in its name, until end of turn, this unit gets "CONT [VC]: When this unit would choose a unit to attack, choose up to three of your opponent’s units for each of your heart cards instead, and this unit battles all of the chosen units in one attack", and this unit gets power +5000 for each face up "True Brawler, Big Bang Knuckle Turbo" in your G zone.'
+ACT [VC] 1/Turn: [Counter Blast 1 & Soul Blast 1 & Choose a face down card from your G zone, and turn it face up] If you have a heart card with "Big Bang Knuckle" in its card name, until end of turn, this unit gets "CONT [VC]: When this unit would choose a unit to attack, choose up to three of your opponent’s units for each of your heart cards instead, and this unit battles all of the chosen units in one attack", and this unit gets power +5000 for each face up "True Brawler, Big Bang Knuckle Turbo" in your G zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 19
 global.ExtraDeck[CardStat] = 1
@@ -3115,7 +3115,7 @@ global.CardText[4806] = 'Narukami/Thunder Dragon
 
 Stride.
 
-AUTO [VC] Generation Break 8: When this unit is placed on VC, retire all rear-guards of all fighters, bind all cards in your opponent’s drop zone face up, and this unit gets "CONT [VC]: All of your units gets power +2000 for each card in all fighters bind zones" until end of turn.
+AUTO [VC] Generation Break 8: When this unit is placed on VC, retire all rear-guards of all fighters, bind all of the cards in your opponent’s drop zone face up, and until end of turn, this unit gets "CONT [VC]: All of your units get power +2000 for each card in all fighters’ bind zones.".
 '
 
 global.UnitGrade[4806] = 4
@@ -3183,7 +3183,7 @@ global.CardText[5001] = 'Narukami/Human
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose one of your rear-guards with "Eradicator" in its card name, and put it into your soul] If you have a heart cardwith "Eradicator" in its card name, your opponent chooses two of his or her rear-guards for each face up card in your G zone, and retires them. Then, if your opponent has no rear-guards, you draw a card.
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose one of your rear-guards with "Eradicator" in its card name, and put it into your soul] If you have a heart card with "Eradicator" in its card name, your opponent chooses two of his or her rear-guards for each face up card in your G zone, and retires them. Then, if your opponent has no rear-guards, you draw a card.
 '
 
 global.UnitGrade[5001] = 4
@@ -5219,6 +5219,7 @@ global.CardName[CardStat] = 'Lightning Dragon Knight, Zorras '
 global.CardText[CardStat] = 'Narukami/Human
 
 Stride.
+
 ACT [G Zone]: If your vanguard is a grade 3 "Dragonic Vanquisher", and you did not get an Imaginary Gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with the same card name as this unit face up], and get two Imaginary Gift:Accel.
 
 CONT [VC]: This unit’s "when attack hits" effects activate even if the attack did not hit.
