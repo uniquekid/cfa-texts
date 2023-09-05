@@ -7,7 +7,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 (G Unit cannot be put in a main deck.)
 
-Stride (Release it when both you and your opponent have a grade 3 or greater Vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
+Stride (Release it when both you and your opponent have a grade 3 or greater vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
 
 CONT: This card is also of all clans and nations.'
 global.UnitGrade[CardStat] = 4
@@ -22,7 +22,7 @@ global.CardText[CardStat] = 'Cray Elemental/Messiah
 
 (G Unit cannot be put in a main deck.)
 
-Stride (Release it when both you and your opponent have a grade 3 or greater Vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
+Stride (Release it when both you and your opponent have a grade 3 or greater vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
 
 CONT: This card is also of all clans and nations.'
 global.UnitGrade[CardStat] = 4
@@ -41,7 +41,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G Zone, and turn it face up] When this unit attacks a Vanguard, you may pay the cost. If you do, this unit gets power +5000 for each face up card in your G Zone until end of that battle.
+AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G Zone, and turn it face up] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +5000 for each face up card in your G Zone until end of that battle.
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 4
@@ -56,7 +56,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC.
 
-AUTO [VC]: [Counter Blast 1] When this unit attacks a Vanguard, you may pay the cost. If you do, this unit gets power +10000 until end of that battle.
+AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +10000 until end of that battle.
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 4
@@ -445,7 +445,7 @@ CardStat = 4545
 global.CardName[4545] = 'Heat Elemental, Bobo'
 global.CardText[4545] = 'Cray Elemental/Elemental
 
-AUTO [Generation Break 1]: When this unit is placed on RC from your hand, if the number of cards in your damage zone is three or less, Counter Charge 1 / Soul Charge 1, choose one of your vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
+AUTO Generation Break 1: When this unit is placed on RC from your hand, if the number of cards in your damage zone is three or less, Counter Charge 1 / Soul Charge 1, choose one of your vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
 
 CONT: This card is also of all clans and nations.'
 global.UnitGrade[4545] = 2
@@ -489,7 +489,7 @@ global.CardText[4747] = 'Cray Elemental/Elemental
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart cardwith power of 10000 or less, draw a card, and this unit gets power +5000 until end of turn.
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with power of 10000 or less, draw a card, and this unit gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit’s attack hits a vanguard, if you have a heart card with power of 10000 or less, choose up to one healtriggerfrom your drop zone, and put it into your hand.
 
@@ -609,11 +609,13 @@ global.CardName[5575] = 'Neon Gyze'
 
 global.CardText[5575] = 'Cray Elemental/Gyze
 
-AUTO: When this unit is ridden, put this card into your G zone. (It does not count for Generation Break.)
-CONT [G Zone]: The power increase from your trigger effects changes to "Choose up to one <Zeroth Dragon> from your G zone, and bind it face up".
+AUTO: When rode upon, put this card into your G zone. (It does not count for Generation Break.)
 
-CONT [G Zone]: Your <Zeroth Dragon> in the bind zone cannot be moved to another location.
-Ultimate Stride - "Dragon Deity of Destruction, Gyze" (Released when your vanguard is grade 3 and the number of different <Zeroth Dragon> in your bind zone is five) [Choose a card with the same card name as your vanguard, and discard it] Remove all cards on your other circles, in your soul and G zone, return this card face down, and Stride it on your VC.
+CONT [G Zone]: For your trigger effects, change the power increase to "Choose up to one <Zeroth Dragon> from your G zone, and bind it face up".
+
+CONT [G Zone]: The <Zeroth Dragon> in your bind zone cannot move to other areas.
+
+Ultimate Stride - "Dragon Deity of Destruction, Gyze" (Released when your vanguard is grade 3 and the number of different <Zeroth Dragon> in your bind zone is five) COST [Choose a card with the same card name as your vanguard from your hand, and discard it] Remove all of your other cards from your circles, soul, and G zone, flip this card over, and Stride it on your VC.
 '
 
 global.UnitGrade[5575] = 0
@@ -1711,7 +1713,7 @@ global.CardInClan2[CardStat] = 30
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
@@ -1883,7 +1885,7 @@ global.CardText[CardStat] = 'Hydragrum
 
 AUTO: When this unit is placed by riding, put a Gripho Eschatologui token into your order zone.
 
-CONT [VC]: During your turn, this unit gets power +10000/critical +1.
+CONT [VC]: During your turn, this unit gets power +10000 / critical +1.
 
 CONT [VC]: If the total number of <Hydragrum> and Dragontree markers on your RC is ten or more, this unit gets power +10000. (Active on opponent’s turn too)
 

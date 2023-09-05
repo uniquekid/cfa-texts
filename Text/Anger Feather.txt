@@ -111,7 +111,7 @@ CardStat = x+13
 global.CardName[CardStat] = 'Doctroid Micros'
 global.CardText[CardStat] = 'Angel Feather/Workeroid
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the end of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+14
@@ -171,7 +171,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'Doctroid Megalos'
 global.CardText[CardStat] = 'Angel Feather/Workeroid
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the end of that turn, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, put the top card of your deck into your damage zone, and at the beginning of your end phase, choose a card from your damage zone, return it to your deck, and shuffle your deck.'
 }
 
 CardStat = x+21
@@ -416,7 +416,7 @@ CardStat = x
 global.CardName[CardStat] = 'Prophecy Celestial, Ramiel'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-AUTO [Limit Break 4]: When an «Angel Feather» rides this unit, choose a card from your damage zone, put it into your hand, and put the top card of your deck into your damage zone, and choose your vanguard, and that unit gets power +10000 until end of turn.
+AUTO Limit Break 4: When an «Angel Feather» rides this unit, choose a card from your damage zone, put it into your hand, and put the top card of your deck into your damage zone, and choose your vanguard, and that unit gets power +10000 until end of turn.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.
 
@@ -674,7 +674,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Emergency Celestial, Danielle'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-AUTO [Damage zone]: [Counter Blast 1 -another card with "Celestial" in its card name] When another card is put into your damage zone, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, call this card to RC, and put the top card of your deck into your damage zone.'
+AUTO [Damage zone]: [Counter Blast 1-another card with "Celestial" in its card name] When another card is put into your damage zone, if you have an «Angel Feather» vanguard, you may pay the cost. If you do, call this card to RC, and put the top card of your deck into your damage zone.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 16
 }
@@ -811,7 +811,7 @@ global.CardText[CardStat] = 'Angel Feather/Angel/G-Unit
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Celestial" in its card name, put the top card of your deck into your damage zone, choose a face up card from your damage zone, and call it to RC. Then, if you have a face up card in your damage zone with the same name as a card in your heart card, the unit called with this effect gets power +5000 until end of turn.'
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Celestial" in its card name, put the top card of your deck into your damage zone, choose a face up card from your damage zone, and call it to RC. Then, if you have a face up card in your damage zone with the same card name as a card in your heart card, the unit called with this effect gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 16
 global.ExtraDeck[CardStat] = 1
@@ -895,7 +895,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Crimson Roar, Metatron'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-ACT [VC] 1/Turn [Limit Break 4]: [Choose one of your rear-guards, and put it into your damage zone face up] Choose a card from your damage zone, and call it to RC, and if you have a card named "Crimson Impact, Metatron" in your soul, until end of turn, that unit gets power +3000, and "AUTO [RC]: [Counter Blast 1 & Put this unit into your damage zone face up] When this unit’s attack hits a vanguard, you may pay the cost. If you do, choose a face up card from your damage zone, and put it into your hand".
+ACT [VC] 1/Turn Limit Break 4: [Choose one of your rear-guards, and put it into your damage zone face up] Choose a card from your damage zone, and call it to RC, and if you have a card named "Crimson Impact, Metatron" in your soul, until end of turn, that unit gets power +3000, and "AUTO [RC]: [Counter Blast 1 & Put this unit into your damage zone face up] When this unit’s attack hits a vanguard, you may pay the cost. If you do, choose a face up card from your damage zone, and put it into your hand".
 
 ACT [VC] 1/Turn: [Choose one of your rear-guards, and put it into your soul] Choose a card from your soul, put it into your damage zone face up, choose a face up card from your damage zone, and call it to RC.'
 global.UnitGrade[CardStat] = 3
@@ -1052,7 +1052,7 @@ global.CardText[CardStat] = 'Angel Feather/Angel
 
 Stride.
 
-ACT [VC] 1/Turn [Generation Break 2]: [Choose a face down card named "Holy Seraph, Raphael" from your G zone, and turn it face up] Choose a card from your damage zone, and heal it.'
+ACT [VC] 1/Turn Generation Break 2: [Choose a face down card named "Holy Seraph, Raphael" from your G zone, and turn it face up] Choose a card from your damage zone, and heal it.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 16
 global.ExtraDeck[CardStat] = 1
@@ -1256,7 +1256,7 @@ CONT: Sentinel.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle.
 
-Rescue 1 - AUTO [Generation Break 1]: [Counter Blast 1] When this unit is placed on GC, if you have a face up card named "Doctroid Remnon" in your damage zone, you may pay the cost. If you do, choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage. 
+Rescue 1 - AUTO Generation Break 1: [Counter Blast 1] When this unit is placed on GC, if you have a face up card named "Doctroid Remnon" in your damage zone, you may pay the cost. If you do, choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage. 
 '
 
 global.UnitGrade[3814] = 1
@@ -1340,7 +1340,7 @@ global.CardText[3833] = 'Angel Feather/Angel
 
 Stride.
 
-ACT [VC] 1/Turn [Generation Break 2]: [Counter Blast 1 & Choose a face down card named "Black Seraph, Gavrail" from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: When your card is put into your damage zone during the battle phase, choose up to two of your units, and they get power +2000 until end of turn" and "Rescue 2 - AUTO [VC]: At the end of the battle that this unit attacked, choose two cards from your damage zone, heal them, choose one of your vanguards, and deal two damage".
+ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose a face down card named "Black Seraph, Gavrail" from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: When your card is put into your damage zone during the battle phase, choose up to two of your units, and they get power +2000 until end of turn" and "Rescue 2 - AUTO [VC]: At the end of the battle that this unit attacked, choose two cards from your damage zone, heal them, choose one of your vanguards, and deal two damage".
 '
 
 global.UnitGrade[3833] = 4
@@ -1388,7 +1388,7 @@ global.CardText[3835] = 'Angel Feather/Angel
 
 Rescue 1 - AUTO [VC] Generation Break 1: [Counter Blast 1 & Soul Blast 1] When your other unit is placed on RC or GC, you may pay the cost. If you do, choose a card in your damage zone, and heal it, and choose one of your vanguards, and deal one damage to it.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. if you do, look at the top five cards of your deck, search for up to one card with the rescue ability, reveal it to your opponent, put it into your hand, and shuffle your deck.
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at the top five cards of your deck, search for up to one card with the rescue ability, reveal it to your opponent, put it into your hand, and shuffle your deck.
 '
 
 global.UnitGrade[3835] = 3
@@ -1428,7 +1428,7 @@ global.CardName[3837] = 'Laser Clutcher, Ke’el'
 
 global.CardText[3837] = 'Angel Feather/Angel
 
-AUTO [Generation Break 1]: When this card is put into the drop zone from your damage zone, you may call this card to RC. If you do, and if it was put into the drop zone due to the effect of a rescue ability this turn, this unit gets power +3000 until end of turn.
+AUTO Generation Break 1: When this card is put into the drop zone from your damage zone, you may call this card to RC. If you do, and if it was put into the drop zone due to the effect of a rescue ability this turn, this unit gets power +3000 until end of turn.
 '
 
 global.UnitGrade[3837] = 2
@@ -1445,7 +1445,7 @@ CardStat = 3838
 global.CardName[CardStat] = 'Black Dream, Zabaniya'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-Rescue 1 - AUTO [Generation Break 1]: When this unit is placed on RC, if you have a vanguard with "Gavrail" in its card name, COST [Counter Blast 1 & Soul Blast 1 & put a card from hand into damage zone face up], choose a face up card from your damage zone, call it to RC, and this unit gets power +2000 until end of turn. Choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage.'
+Rescue 1 - AUTO Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Gavrail" in its card name, COST [Counter Blast 1 & Soul Blast 1 & put a card from hand into damage zone face up], choose a face up card from your damage zone, call it to RC, and this unit gets power +2000 until end of turn. Choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 16
 }
@@ -1472,7 +1472,7 @@ global.CardName[3840] = 'Drill Motor Nurse'
 
 global.CardText[3840] = 'Angel Feather/Angel
 
-AUTO [Generation Break 1]: When this card is put into the drop zone from your damage zone, you may call this card to RC. If you do, and if it was put into the drop zone due to the effect of a rescue ability this turn, this unit gets power +3000 until end of turn.
+AUTO Generation Break 1: When this card is put into the drop zone from your damage zone, you may call this card to RC. If you do, and if it was put into the drop zone due to the effect of a rescue ability this turn, this unit gets power +3000 until end of turn.
 '
 
 global.UnitGrade[3840] = 1
@@ -1642,7 +1642,7 @@ global.CardText[4244] = 'Angel Feather/Angel
 
 Stride.
 
-CONT [VC]: If you have a heart card with "Celestial" in its card name, this unit gets "ACT [VC] 1/Turn: [Choose a rear-guard with “Celestial” in its card name, and put it into your damage zone face up] Choose a card from your damage zone, and call it to RC. Choose up to three of your units, and for each face up card in your damage zone with the same name as the chosen units, all of your units with “Celestial” in its card name get power +3000 until end of turn".
+CONT [VC]: If you have a heart card with "Celestial" in its card name, this unit gets "ACT [VC] 1/Turn: [Choose a rear-guard with “Celestial” in its card name, and put it into your damage zone face up] Choose a card from your damage zone, and call it to RC. Choose up to three of your units, and for each face up card in your damage zone with the same card name as the chosen units, all of your units with “Celestial” in its card name get power +3000 until end of turn".
 '
 
 global.UnitGrade[4244] = 4
@@ -1710,7 +1710,7 @@ global.CardName[4296] = 'Black Mirage, Hageete'
 
 global.CardText[4296] = 'Angel Feather/Angel
 
-Rescue 2 - ACT [RC] 1/Turn [Generation Break 1]: [Counter Blast 1 & rest this unit] If you have five cards in your damage zone, choose two cards from your damage zone, heal them, choose one of your vanguards, and deal two damage. 
+Rescue 2 - ACT [RC] 1/Turn Generation Break 1: [Counter Blast 1 & rest this unit] If you have five cards in your damage zone, choose two cards from your damage zone, heal them, choose one of your vanguards, and deal two damage. 
 '
 
 global.UnitGrade[4296] = 1
@@ -1730,7 +1730,7 @@ global.CardName[4345] = 'Elastic Bipolar, Rahtiel'
 
 global.CardText[4345] = 'Angel Feather/Angel
 
-AUTO [VC/RC] 1/Turn [Generation Break 1]: [Counter Blast 1 & Soul Blast 1] When your card is put into the drop zone from your damage zone due to the effect of your rescue ability, you may pay the cost. If you do, call the card that was put into the drop zone to another RC in the same column as this unit, and that unit gets power +2000 until end of turn.
+AUTO [VC/RC] 1/Turn Generation Break 1: [Counter Blast 1 & Soul Blast 1] When your card is put into the drop zone from your damage zone due to the effect of your rescue ability, you may pay the cost. If you do, call the card that was put into the drop zone to another RC in the same column as this unit, and that unit gets power +2000 until end of turn.
 '
 
 global.UnitGrade[4345] = 3
@@ -1890,7 +1890,7 @@ global.CardText[4687] = 'Angel Feather/Angel
 
 G guardian.
 
-AUTO [Generation Break 1]: [Soul Blast 1 & Choose a face down G guardian from your g zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 until end of that battle for each face up card in your damage zone.
+AUTO Generation Break 1: [Soul Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 until end of that battle for each face up card in your damage zone.
 '
 
 global.UnitGrade[4687] = 4
@@ -2016,7 +2016,7 @@ global.CardName[5224] = 'Thermic Shot Nurse'
 
 global.CardText[5224] = 'Angel Feather/Angel
 
-AUTO [Generation Break 1]: When this card is put into the drop zone from your damage zone, Soul Charge 1, if it is due to the effect of your card with the rescue ability, you may call this card to RC.
+AUTO Generation Break 1: When this card is put into the drop zone from your damage zone, Soul Charge 1, if it is due to the effect of your card with the rescue ability, you may call this card to RC.
 '
 
 global.UnitGrade[5224] = 2
@@ -2036,9 +2036,9 @@ global.CardName[5232] = 'Black Wisdom, Sraosha'
 
 global.CardText[5232] = 'Angel Feather/Angel
 
-Rescue 1 - ACT [RC] 1/Turn [Generation Break 1]: [Counter Blast 1] Choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage. 
+Rescue 1 - ACT [RC] 1/Turn Generation Break 1: [Counter Blast 1] Choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage. 
 
-AUTO [RC] 1/Turn [Generation Break 1]: [Counter Blast 1 & Soul Blast 1] When your card with the rescue ability is put into your damage zone, you may pay the cost. If you do, put the top card of your deck into your damage zone face up, choose a face up card from your damage zone, and put it into your hand.
+AUTO [RC] 1/Turn Generation Break 1: [Counter Blast 1 & Soul Blast 1] When your card with the rescue ability is put into your damage zone, you may pay the cost. If you do, put the top card of your deck into your damage zone face up, choose a face up card from your damage zone, and put it into your hand.
 '
 
 global.UnitGrade[5232] = 3
@@ -2078,7 +2078,7 @@ global.CardName[5234] = 'Thermic Shot Nurse'
 
 global.CardText[5234] = 'Angel Feather/Angel
 
-AUTO [Generation Break 1]: When this card is put into the drop zone from your damage zone, Soul Charge 1, if it is due to the effect of your card with the rescue ability, you may call this card to RC.
+AUTO Generation Break 1: When this card is put into the drop zone from your damage zone, Soul Charge 1, if it is due to the effect of your card with the rescue ability, you may call this card to RC.
 '
 
 global.UnitGrade[5234] = 2
@@ -2170,7 +2170,7 @@ global.CardText[5253] = 'Angel Feather/Angel
 
 CONT [RC]: During the turn that your card was put into the drop zone from your damage zone, this unit gets power +6000.
 
-Rescue 1 - AUTO [Generation Break 2]: [Soul Blast 1] When this unit is placed on RC from your damage zone, you may pay the cost. If you do, choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage.
+Rescue 1 - AUTO Generation Break 2: [Soul Blast 1] When this unit is placed on RC from your damage zone, you may pay the cost. If you do, choose a card from your damage zone, heal it, choose one of your vanguards, and deal one damage.
 '
 
 global.UnitGrade[5253] = 1
@@ -2900,7 +2900,7 @@ global.CardName[6184] = 'First Aid Celestial, Peniel '
 
 global.CardText[6184] = 'Angel Feather/Angel
 
-AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield Ticket into your hand.
+AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield ticket into your hand.
 '
 
 global.UnitGrade[6184] = 0
@@ -2932,7 +2932,7 @@ CardStat = 6662
 global.CardName[CardStat] = 'Progenitor Dragon of Total Purity, Agnos'
 global.CardText[CardStat] = 'United Sanctuary/Cosmo Dragon
 
-Stride [Discard a card with the same card name as a card on your VC], Stride this card on your VC from face down.
+Stride COST [Discard a card with the same card name as a card on your VC], Stride this card on your VC from face down.
 
 CONT [G Zone]: This card cannot be turned face up by abilities. If this card is face up, you can Stride without paying the Stride cost.
 
@@ -3327,7 +3327,7 @@ CardStat = 7363
 global.CardName[CardStat] = 'Aid-roid, Resh'
 global.CardText[CardStat] = 'Angel Feather/Angeloid
 
-AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield Ticket into your hand.'
+AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield ticket into your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 16
 }
@@ -3453,7 +3453,7 @@ CardStat = 7989
 global.CardName[CardStat] = 'Medical Kit Angel'
 global.CardText[CardStat] = 'Angel Feather/Angel
 
-AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield Ticket into your hand.'
+AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield ticket into your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 16
 }
