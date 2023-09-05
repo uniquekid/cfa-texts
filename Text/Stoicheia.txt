@@ -4696,6 +4696,7 @@ global.DCards[CardStat] = 4
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 11944
 {
 global.CardName[CardStat] = 'Tear Knight, Hesperos'
@@ -4707,3 +4708,65 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11971
+{
+global.CardName[CardStat] = 'Command of Death’s Restraint'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Discard the top card of your deck, choose a card with grade less than or equal to your vanguard from your drop, call it to RC if it is a unit card, and put it into hand if it is a normal order not named "Command of Death’s Restraint".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11972
+{
+global.CardName[CardStat] = 'Spoof Shade'
+global.CardText[CardStat] = 'Stoicheia/Ghost
+
+CONT [Hand]: When an order card would be discarded from hand by your card’s ability, this card may be discarded as an order card.
+
+CONT [Back Row RC]: If you did Alchemagic this turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11973
+{
+global.CardName[CardStat] = 'Conceited Noble,, Philander'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck
+
+CONT [RC]: During your turn, if your drop has ten or more cards, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11974
+{
+global.CardName[CardStat] = 'Sea Strike Dragon, Enlargulv'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or if your vanguard’s grade is 4, perform either of the following according to the circle this unit is on.
+• RC - COST [Soul Blast 1], choose a grade 2 or greater card with a different card name from this unit from your drop, and put it into hand.
+• GC - This unit gets shield +15000 until end of that battle.
+
+AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
