@@ -81,7 +81,7 @@ CardStat = x+10
 global.CardName[CardStat] = 'Cyclone Blitz'
 global.CardText[CardStat] = 'Spike Brothers/Ogre/Dark Zone
 
-AUTO [VC/RC]: [Soul Blast 1] When this unit attacks and you have a «Spike Brothers» vanguard, you may pay the cost. If paid, during that battle, this unit gets power +3000.'
+AUTO [VC/RC]: [Soul Blast 1] When this unit attacks and you have a «Spike Brothers» vanguard, you may pay the cost. If you do, during that battle, this unit gets power +3000.'
 }
 
 CardStat = x+11
@@ -89,7 +89,7 @@ CardStat = x+11
 global.CardName[CardStat] = 'Dudley Dan'
 global.CardText[CardStat] = 'Spike Brothers/Ogre/Dark Zone
 
-AUTO [RC]: [Counter Blast 2 & Choose one «Spike Brothers» from your hand and send it to soul] When this unit boosts a vanguard, you may pay the cost. If paid, search for «Spike Brothers» from your deck, call it to a RC thats without a unit and shuffle the deck.'
+AUTO [RC]: [Counter Blast 2 & Choose one «Spike Brothers» from your hand and send it to soul] When this unit boosts a vanguard, you may pay the cost. If you do, search for «Spike Brothers» from your deck, call it to a RC thats without a unit and shuffle the deck.'
 }
 
 CardStat = x+12
@@ -233,7 +233,7 @@ CardStat = x+29
 global.CardName[CardStat] = 'Juggernaut Maximum'
 global.CardText[CardStat] = 'Spike Brothers/Giant/Dark Zone
 
-CONT [VC/RC]: If you do not have another «Spike Brothers” vanguard or rear-guard, this unit gets power -2000. 
+CONT [VC/RC]: If you do not have another «Spike Brothers" vanguard or rear-guard, this unit gets power -2000. 
 
 AUTO [RC]: [Soul Blast 1] When this unit attacks, you may pay the cost. If you do, this unit gets power +5000 until end of that battle and at the beginning of the close step of that battle, return this unit to your deck and shuffle your deck.'
 }
@@ -255,7 +255,7 @@ global.CardText[CardStat] = 'Spike Brothers/Ogre/Dark Zone
 
 AUTO [VC]: During the start of your main phase, Soul Charge 1 and for that turn this unit gets power +2000. 
 
-AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits, you may pay the cost. If paid, look at the top 5 cards of your deck, out of them, choose any number of «Spike Brothers» and call them out separately to RC, shuffle the deck afterwards.'
+AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits, you may pay the cost. If you do, look at the top 5 cards of your deck, out of them, choose any number of «Spike Brothers» and call them out separately to RC, shuffle the deck afterwards.'
 }
 
 // Spike Brothers Add
@@ -359,7 +359,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Go for Broke'
 global.CardText[CardStat] = 'Spike Brothers/Warbeast/Dark Zone
 
-AUTO [VC/RC]: [Counter Blast 1 – «Spike Brothers»] When this unit attacks and you have a «Spike Brothers» vanguard, you may pay the cost. If paid, this unit gets power +4000 until the end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1 – «Spike Brothers»] When this unit attacks and you have a «Spike Brothers» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 14
 }
@@ -959,9 +959,9 @@ global.CardName[3498] = 'Great Villain, Dirty Picaro'
 
 global.CardText[3498] = 'Spike Brothers/Battleroid
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-AUTO [VC] Generation Break 3: [Counter Blast 2 & Choose a face down card from your G zone, and turn it face up & Choose a card from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, search for up to one card from your deck for each face up card in your G zone. Call the cards that were searched to separate open RC, and shuffle your deck.
+AUTO [VC] Generation Break 3: When it attacks a vanguard, [Counter Blast 2 & Choose a face down card from your G zone, turn it face up & Choose a card from your hand, and put it into your soul], and search your deck for up to one card for each face up card in your G zone. Call the searched cards to open RC, and shuffle your deck.
 '
 
 global.UnitGrade[3498] = 4
@@ -1252,7 +1252,7 @@ global.CardText[4142] = 'Spike Brothers/Ogre
 
 AUTO: Charge.
 
-AUTO [RC] Generation Break 1: When this unit becomes charging, until end of turn, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits a vanguard, if you have a vanguard with “Rising” in its card name, search your deck for up to one card not named “Lethal Forward”, call it to an open RC, and shuffle your deck".
+AUTO [RC] Generation Break 1: When this unit becomes charging, until end of turn, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits a vanguard, if you have a vanguard with "Rising" in its card name, search your deck for up to one card not named "Lethal Forward", call it to an open RC, and shuffle your deck".
 '
 
 global.UnitGrade[4142] = 2
@@ -1630,7 +1630,7 @@ global.CardText[4685] = 'Spike Brothers/Ogre
 
 G guardian.
 
-AUTO Generation Break 1: [Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, choose one of your rear-guards, and you may put it into your soul. For every two of your open circles, this unit gets shield +10000 until end of that battle.
+AUTO Generation Break 1: When placed on GC, [Choose a face down G guardian from your G zone, and turn it face up], choose one of your rear-guards, and you may put it into your soul. This unit gets shield +10000 until end of that battle for every two of your open circles.
 '
 
 global.UnitGrade[4685] = 4
@@ -1856,7 +1856,7 @@ global.CardText[5226] = 'Spike Brothers/Ogre
 
 AUTO: Charge.
 
-CONT [RC]: If this unit is charging, this unit gets power +5000, and "AUTO [RC] Generation Break 1: [Soul Blast 2] When this unit boosts, if you have a vanguard with “Rising” in its card name, you may pay the cost. If you do, choose a card from your hand, call it to an open RC, and Counter Charge 1".
+CONT [RC]: If this unit is charging, this unit gets power +5000, and "AUTO [RC] Generation Break 1: [Soul Blast 2] When this unit boosts, if you have a vanguard with "Rising" in its card name, you may pay the cost. If you do, choose a card from your hand, call it to an open RC, and Counter Charge 1".
 '
 
 global.UnitGrade[5226] = 1

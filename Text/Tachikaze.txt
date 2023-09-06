@@ -45,7 +45,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
 AUTO: Forerunner (when another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If paid, return this card back to hand.'
+AUTO: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
 }
 
 CardStat = x+6
@@ -164,7 +164,7 @@ CardStat = x+21
 global.CardName[CardStat] = 'Winged Dragon, Skyptero'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
-AUTO [RC]: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If paid, return this card back to hand.'
+AUTO [RC]: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
 }
 
 CardStat = x+22
@@ -800,7 +800,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Choose one of your rear-guards, and retire it] At the end of your turn, you may pay the cost. If you do, choose up to one grade 3 card from your soul, ride it as stand. If you rode, choose up to one card named "Ancient Dragon, Spinocommando" from your soul, put it into your hand, and draw a card.
 
-AUTO: When this unit is placed on VC, until end of turn, this unit gets "AUTO [VC]: [Counter Blast 1 “Ancient Dragon”] During your turn, when your rear-guard with “Ancient Dragon” in its card name is put into the drop zone, you may pay the cost. If you do, call that card to an open RC".'
+AUTO: When this unit is placed on VC, until end of turn, this unit gets "AUTO [VC]: [Counter Blast 1 "Ancient Dragon"] During your turn, when your rear-guard with "Ancient Dragon" in its card name is put into the drop zone, you may pay the cost. If you do, call that card to an open RC".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 17
 }
@@ -814,7 +814,7 @@ CardStat = x
 global.CardName[CardStat] = 'Assault Dragon, Assaultrex'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
-CONT [RC]: During your turn, if you have a face up card with "Rex" in its card name in your bind zone, this unit gets power +2000, and "AUTO: During your battle phase, when this unit is put into the drop zone from RC, if you have a vanguard with “Rex” in its card name, draw a card".'
+CONT [RC]: During your turn, if you have a face up card with "Rex" in its card name in your bind zone, this unit gets power +2000, and "AUTO: During your battle phase, when this unit is put into the drop zone from RC, if you have a vanguard with "Rex" in its card name, draw a card".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 17
 }
@@ -1984,7 +1984,7 @@ Stride.
 
 AUTO [VC]: Engorge.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] When this unit becomes engorged, you may pay the cost. If you do, draw a card, choose up to any two circles other than VC for each face up card in your G zone, and put all of the cards on those circles into the drop zone. If three or more of your cards were put, this unit gets power +10000 / critical +1 / drive +1.
+AUTO [VC]: When it becomes engorged, COST [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up], draw a card, choose up to any two circles other than VC for each face up card in your G zone, and put all of the cards on those circles into the drop zone. If the number of your cards put into the drop zone is three or more, this unit gets power +10000 / critical +1 / drive +1.
 '
 
 global.UnitGrade[5257] = 4
@@ -3473,7 +3473,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
 AUTO: When this unit is placed on VC, perform "draw a card, choose a card from your hand, and call it to RC. You may put the top card of your deck face down as an equip gauge for that unit." one time. If you have "Ancient Dragon, Spinodriver" in your soul, perform it three times instead.
 
-ACT [VC] 1/Turn: If your damage zone has four or more cards, COST [Counter Blast 1 & lock two rear-guards with equip gauge], and until end of turn, this unit gets "CONT [VC]: If your drive check revealed a front trigger this turn, all of your front row units with “Ancient Dragon” in their card names get critical +1.".
+ACT [VC] 1/Turn: If your damage zone has four or more cards, COST [Counter Blast 1 & lock two rear-guards with equip gauge], and until end of turn, this unit gets "CONT [VC]: If your drive check revealed a front trigger this turn, all of your front row units with "Ancient Dragon" in their card names get critical +1.".
 '
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 17

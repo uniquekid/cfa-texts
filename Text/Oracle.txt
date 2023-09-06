@@ -176,7 +176,7 @@ CardStat = x+21
 global.CardName[CardStat] = 'Luck Bird'
 global.CardText[CardStat] = 'Oracle Think Tank/High Beast
 
-AUTO: [Soul Blast 2] When this unit is called to the RC, and you have an «Oracle Think Tank» vanguard, you may pay the cost. If paid, draw a card.'
+AUTO: [Soul Blast 2] When this unit is called to the RC, and you have an «Oracle Think Tank» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+22
@@ -192,7 +192,7 @@ CardStat = x+23
 global.CardName[CardStat] = 'One Who Gazes at the Truth'
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-AUTO [VC/RC]: [Soul Blast 1] When this unit attacks and you have an «Oracle Think Tank» vanguard, you may pay the cost. If paid, during that battle this unit gets power +3000.'
+AUTO [VC/RC]: [Soul Blast 1] When this unit attacks and you have an «Oracle Think Tank» vanguard, you may pay the cost. If you do, during that battle this unit gets power +3000.'
 }
 
 CardStat = x+24
@@ -270,7 +270,7 @@ CardStat = x+33
 global.CardName[CardStat] = 'Blue Scale Deer'
 global.CardText[CardStat] = 'Oracle Think Tank/High Beast
 
-AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits a vanguard and you have an «Oracle Think Tank» vanguard, you may pay the cost. If paid, draw a card.'
+AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits a vanguard and you have an «Oracle Think Tank» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+34
@@ -426,7 +426,7 @@ CardStat = x+51
 global.CardName[CardStat] = 'Meteorbreak Wizard'
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-AUTO [VC/RC]: [Counter Blast 1] When this unit attacks, you may pay the cost. If paid, during that battle, this unit gets power +3000.'
+AUTO [VC/RC]: [Counter Blast 1] When this unit attacks, you may pay the cost. If you do, during that battle, this unit gets power +3000.'
 }
 
 CardStat = x+52
@@ -434,7 +434,7 @@ CardStat = x+52
 global.CardName[CardStat] = 'Omniscience Madonna'
 global.CardText[CardStat] = 'Oracle Think Tank/Workerloid
 
-AUTO [VC/RC]: [Choose one card from your hand and discard it] When this unit’s attack hits, and you have an «Oracle Think Tank» vanguard, you may pay the cost. If paid, draw a card.'
+AUTO [VC/RC]: [Choose one card from your hand and discard it] When this unit’s attack hits, and you have an «Oracle Think Tank» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+53
@@ -462,7 +462,7 @@ global.CardText[CardStat] = 'Oracle Think Tank/Human
 
 CONT [VC]: During your turn, when you have no cards in your soul, this unit gets power +3000.
 
-AUTO: [Counter Blast 2] When this unit is called to the VC, and you have 1 or less cards in your soul, you may pay the cost. If paid, draw 2 cards.'
+AUTO: [Counter Blast 2] When this unit is called to the VC, and you have 1 or less cards in your soul, you may pay the cost. If you do, draw 2 cards.'
 }
 
 CardStat = x+56
@@ -1650,7 +1650,7 @@ global.CardText[4473] = 'Oracle Think Tank/Elf
 
 AUTO [VC] Generation Break 2: [Counter Blast 1-card with "Battle Sister" in its card] At the end of your opponent’s turn, if the number of your units with "Battle Sister" in its card name is three or more and cards in your hand is three or less, you may pay the cost. If you do, draw a card.
 
-AUTO [VC]: During your turn, when your G unit with "Battle Sister" in its original card nameStride, choose one of your vanguards, and until end of turn, it gets "AUTO [VC]: [Soul Blast 1] At the end of the battle that your rear-guard with “Battle Sister” in its card name attacked a vanguard, if the attack did not hit, you may pay the cost. If you do, Counter Charge 1".
+AUTO [VC]: During your turn, when your G unit with "Battle Sister" in its original card nameStride, choose one of your vanguards, and until end of turn, it gets "AUTO [VC]: [Soul Blast 1] At the end of the battle that your rear-guard with "Battle Sister" in its card name attacked a vanguard, if the attack did not hit, you may pay the cost. If you do, Counter Charge 1".
 '
 
 global.UnitGrade[4473] = 3
@@ -1758,7 +1758,7 @@ global.CardText[4495] = 'Oracle Think Tank/Elf
 
 Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: [Counter Blast 1] When your unit with “Battle Sister” in its card names attack hits, you may pay the cost. If you do, draw a card" and "CONT [VC] Generation Break 3 Oracle: All of the units with “Battle Sister” in its card name in your front row get power +1000 for each card in your hand".
+ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: [Counter Blast 1] When your unit with "Battle Sister" in its card names attack hits, you may pay the cost. If you do, draw a card" and "CONT [VC] Generation Break 3 Oracle: All of the units with "Battle Sister" in its card name in your front row get power +1000 for each card in your hand".
 '
 
 global.UnitGrade[4495] = 4
@@ -2191,9 +2191,9 @@ global.CardText[5004] = 'Oracle Think Tank/Noble
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Draw two cards.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up], and draw two cards.
 
-ACT [VC] 1/Turn Generation Break 3 Oracle: [Choose a face down card from your G zone, and turn it face up] During that turn, your opponent cannot call grade 0 cards from hand and G guardian to GC.
+ACT [VC] 1/Turn Generation Break 3 Oracle: COST [Choose a face down card from your G zone, and turn it face up], and during that turn, your opponent cannot call G guardian and grade 0 cards from hand to GC.
 '
 
 global.UnitGrade[5004] = 4
@@ -2365,7 +2365,7 @@ global.CardText[5038] = 'Oracle Think Tank/Elf
 
 AUTO: When this unit is placed on VC, look at the top card of your deck, and put it on the top or bottom of your deck.
 
-AUTO [VC]: [Counter Blast 1-card with "Battle Sister" in its card] When your G unit Stride, you may pay the cost. If you do, look at two cards from the top of your deck, put a card into your hand, put a card on the top or bottom of your deck, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your rear-guards with “Battle Sister” in their card names get power +3000".
+AUTO [VC]: [Counter Blast 1-card with "Battle Sister" in its card] When your G unit Stride, you may pay the cost. If you do, look at two cards from the top of your deck, put a card into your hand, put a card on the top or bottom of your deck, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your rear-guards with "Battle Sister" in their card names get power +3000".
 '
 
 global.UnitGrade[5038] = 3
@@ -2385,7 +2385,7 @@ global.CardName[5039] = 'Battle Sister, Baumkuchen'
 
 global.CardText[5039] = 'Oracle Think Tank/Elf
 
-AUTO: [Choose a grade 3 card with "Battle Sister" in its card name from your hand, and reveal it] When this unit is placed on RC from hand, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Battle Sister" in its card name, reveal it, put it into your hand, choose a card from your hand, discard it, and shuffle your deck.
+AUTO: When placed on RC from hand, COST [Choose a grade 3 card with "Battle Sister" in its card name from your hand, and reveal it], search your deck for up to one grade 3 card with "Battle Sister" in its card name, reveal it, put it into your hand, choose a card from your hand, discard it, and shuffle your deck.
 
 CONT [Hand]: While you are paying the cost for Stride, this card gets grade +2.
 '
@@ -2455,7 +2455,7 @@ global.CardText[5044] = 'Oracle Think Tank/Elf
 
 AUTO: Forerunner.
 
-ACT [RC] Generation Break 1: [Put this unit into your soul] Choose one of your vanguards with "Battle Sister" in its card name, and until end of turn, it gets "CONT [VC]: All of your rear-guards with “Battle Sister” in their card names get power +3000".
+ACT [RC] Generation Break 1: [Put this unit into your soul] Choose one of your vanguards with "Battle Sister" in its card name, and until end of turn, it gets "CONT [VC]: All of your rear-guards with "Battle Sister" in their card names get power +3000".
 '
 
 global.UnitGrade[5044] = 0

@@ -5,7 +5,7 @@ CardStat = x
 global.CardName[CardStat] = 'Bermuda Triangle Cadet, Caravel'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: [Soul Blast 2] When this unit is called to the RC, and you have a «Bermuda Triangle» vanguard, you may pay the cost. If paid, draw a card.'
+AUTO: [Soul Blast 2] When this unit is called to the RC, and you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+1
@@ -135,7 +135,7 @@ CardStat = x+16
 global.CardName[CardStat] = 'Navy Dolphin, Amur'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [RC]: [Choose one card from your hand and discard it] During the battle this unit boosted, if the attack hits, you may pay the cost. If paid, draw a card.'
+AUTO [RC]: [Choose one card from your hand and discard it] During the battle this unit boosted, if the attack hits, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+17
@@ -258,7 +258,7 @@ CardStat = x+31
 global.CardName[CardStat] = 'Top Idol, Flores'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits, you may pay the cost. If paid, choose one of your «Bermuda Triangle» rear-guards and return it back to hand.'
+AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits, you may pay the cost. If you do, choose one of your «Bermuda Triangle» rear-guards and return it back to hand.'
 }
 
 CardStat = x+32
@@ -3625,7 +3625,7 @@ global.CardText[4941] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 2: [Counter Blast 2 & Choose a face down card from your G zone, and turn it face up] Choose any number of cards on any fighter’s circle other than VC, and return them to the hand. This unit gets power +5000 for each returned card until end of turn. If you returned five or more cards, draw a card. If you returned seven or more cards, this unit gets drive +1 until end of turn.
+ACT [VC] 1/Turn Generation Break 2: COST [Counter Blast 2 & Choose a face down card from your G zone, and turn it face up], choose any number of any players’ cards in any circle other than VC, and return them to hand. This unit gets power +5000 until end of turn for each card returned. If the number of cards returned is five or more, draw a card. If the number of cards returned is seven or more, this unit gets drive +1 until end of turn.
 '
 
 global.UnitGrade[4941] = 4
@@ -3885,7 +3885,7 @@ global.CardName[4953] = 'Orient-PR<3ISM, Karina'
 
 global.CardText[4953] = 'Bermuda Triangle/Mermaid
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "PR<3ISM" in its card name, until end of turn, this unit gets "AUTO [RC]: When your other rear-guard with “PR<3ISM” in its card name is returned to your hand, this unit gets power +2000 until end of turn".
+AUTO: When this unit is placed on RC, if you have a vanguard with "PR<3ISM" in its card name, until end of turn, this unit gets "AUTO [RC]: When your other rear-guard with "PR<3ISM" in its card name is returned to your hand, this unit gets power +2000 until end of turn".
 
 AUTO [RC] Generation Break 1: [Counter Blast 1 & Choose one of your other rear-guards with "PR<3ISM" in its card name, and return it to your hand] When this unit attacks, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
 
@@ -4934,7 +4934,7 @@ global.CardText[5629] = 'Bermuda Triangle/Mermaid
 
 CONT [VC/RC]: If the number of cards with "Coral" in their card names in your soul is 4 or more, this unit gets power +2000.
 
-AUTO [VC]: [Choose a card from your hand, and put it into your soul] When this unit is placed on VC, or when your G unit with "Coral" in its original card name Stride, you may pay the cost. If you do, draw two cards, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of the units in your front row get power +5000 for every two cards with “Coral” in their card names in your soul".
+AUTO [VC]: [Choose a card from your hand, and put it into your soul] When this unit is placed on VC, or when your G unit with "Coral" in its original card name Stride, you may pay the cost. If you do, draw two cards, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of the units in your front row get power +5000 for every two cards with "Coral" in their card names in your soul".
 '
 
 global.UnitGrade[5629] = 3
@@ -5664,7 +5664,7 @@ global.CardText[5662] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] This unit gets "CONT [VC]: All of the units with “Chouchou” in their card names in your front row get power +5000 for each of your open RC".
+ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] This unit gets "CONT [VC]: All of the units with "Chouchou" in their card names in your front row get power +5000 for each of your open RC".
 
 AUTO [VC] 1/Turn Generation Break 3: At the end of the battle that this unit attacked, choose up to three of your rear-guards, and put them on the bottom of your deck in any order. If three cards were put, stand this unit, and it gets drive -2.
 '
@@ -7363,7 +7363,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of them have different card names, call up to five face down <Mermaid> cards with power and different card names from your G zone to RC, and until end of turn, they get power +15000, and can attack from the back row. (At the end of the turn, put all G units on RC into the G zone face up. They are put into the G zone face up if turned face down or leave the RC.)'
+AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of them have different card names, call up to five face down <Mermaid> cards with power and different card names from your G zone to RC, and until end of turn, they get power +15000, and can attack from the back row. Shuffle your deck. (At the end of the turn, put all G units on RC into the G zone face up. They are put into the G zone face up if turned face down or leave the RC.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1

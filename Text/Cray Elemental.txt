@@ -9,7 +9,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 Stride (Release it when both you and your opponent have a grade 3 or greater vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 25
 global.ExtraDeck[CardStat] = 1
@@ -24,7 +24,7 @@ global.CardText[CardStat] = 'Cray Elemental/Messiah
 
 Stride (Release it when both you and your opponent have a grade 3 or greater vanguard!) [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard it] Stride this face down card on your VC. (When you Stride, it gets the power and name from one of your hearts, and return this unit at end of turn face up.)
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 25
 global.ExtraDeck[CardStat] = 1
@@ -73,7 +73,7 @@ CardStat = x
 global.CardName[CardStat] = 'Rain Elemental, Tear'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO: [Soul Blast 2] When this card is placed on RC, you may pay the cost. If you do, choose a card from your damage zone for each face up «Cray Elemental» in your G zone, and turn it face up. (Counter Charge)
+AUTO [RC]: When placed, COST [Soul Blast 2], choose a card from your damage zone for each face up «Cray Elemental» in your G zone, and turn them face up. (Counter Charge )
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
@@ -106,7 +106,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your opponent’s unit attacks a vanguard, choose one of your vanguards, and if that unit’s power is 10000 or less, that unit gets power +1000 until end of that battle.
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
@@ -154,7 +154,7 @@ AUTO: When this card is removed from hand by G Assist, all fighters draw a card.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle.
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
@@ -170,7 +170,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 AUTO [RC]: [Retire this unit] When this unit’s attack hits a vanguard, you may the cost. If you do, search your deck for up to one card with Limit Break, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 25
 }
@@ -186,7 +186,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 ACT [RC] 1/Turn: Choose one of your vanguard’s "Limit Break 5" ability, and while this unit is on the field, that ability becomes "Limit Break 4". (If an ACT has no cost, the cost is paid when declaring that you are playing it.)
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
@@ -254,9 +254,9 @@ global.CardName[3766] = 'Air Element, Sebreeze'
 
 global.CardText[3766] = 'Cray Elemental/Elemental
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-ACT [G zone]: [Counter Blast 2 & Choose a card from your hand, and discard it] If you have a grade 3 vanguard, the number of face up cards in your G zone is 0, your opponent’s vanguard is grade 2, and no unit was placed on your opponent’s VC during the ride phase of your opponent’s preceding turn, Stride this card on your VC from face down.
+ACT [G zone]: COST [Counter Blast 2 & Choose a card from your hand, and discard it], if you have a grade 3 vanguard, the number of face up cards in your G zone is 0, your opponent’s vanguard is grade 2, and no unit was placed on your opponent’s VC during the ride phase of your opponent’s preceding turn, Stride this card on your VC from face down.
 
 CONT: This card is from all clans and nations.
 '
@@ -280,13 +280,13 @@ global.CardName[3767] = 'Dark Element, Dizmel'
 
 global.CardText[3767] = 'Cray Elemental/Elemental
 
-G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
+G guardian.
 
 CONT [GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)
 
-AUTO: When this unit is placed on GC, choose one of your rear-guards, and until end of turn, that unit cannot be hit, and cannot be chosen by the effects of your opponent’s cards.
+AUTO [GC]: When placed, choose one of your rear-guards, and until end of turn, that unit cannot be hit, and cannot be chosen by the effects of your opponent’s cards.
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[3767] = 4
@@ -308,11 +308,11 @@ global.CardName[3768] = 'Metal Element, Scryew'
 
 global.CardText[3768] = 'Cray Elemental/Elemental
 
-G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
+G guardian.
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC, if the number of face up cards in your G zone is one or more, you may pay the cost. If you do, this unit gets shield +10000 until end of that battle.
+AUTO [GC]: When placed, if the number of face up cards in your G zone is one or more, COST [Choose a card from your hand, and discard it], and this unit gets shield +10000 until end of that battle.
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[3768] = 4
@@ -338,7 +338,7 @@ G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to yo
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, draw a card.
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[3779] = 4
@@ -362,7 +362,7 @@ global.CardText[3881] = 'Cray Elemental/Elemental
 
 ACT [RC] Generation Break 1: [Choose two of your "Snow Elemental, Hyakko" on RC, and bind it face up] Choose one of your vanguards abilities with cost of "Counter Blast 4" or greater and "Soul Blast 6" or greater, and until end of turn, that ability’s cost becomes [0] until the next time it is paid. (A 0 cost is paid by declaring that you are paying it.)
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[3881] = 1
@@ -404,7 +404,7 @@ global.CardText[4107] = 'Cray Elemental/Elemental
 
 ACT [RC] Generation Break 1: [Counter Blast 1] Until end of turn, all of the units in the same column as this unit lose "Resist", and cannot get "Resist".
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[4107] = 2
@@ -428,7 +428,7 @@ CONT [RC]: All rear-guards cannot attack the vanguard in the 5th or more battle 
 
 AUTO: When this unit is placed on RC, choose a face up card in your damage zone, and turn it face down.
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[4293] = 1
@@ -445,9 +445,9 @@ CardStat = 4545
 global.CardName[4545] = 'Heat Elemental, Bobo'
 global.CardText[4545] = 'Cray Elemental/Elemental
 
-AUTO Generation Break 1: When this unit is placed on RC from your hand, if the number of cards in your damage zone is three or less, Counter Charge 1 / Soul Charge 1, choose one of your vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
+AUTO [RC] Generation Break 1: When placed from hand, if the number of cards in your damage zone is three or less, Counter Charge 1 / Soul Charge 1, choose one of your vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)
 
-CONT: This card is also of all clans and nations.'
+CONT: This card is from all clans and nations.'
 global.UnitGrade[4545] = 2
 global.CardInClan[4545] = 25
 }
@@ -516,9 +516,9 @@ global.CardText[4756] = 'Cray Elemental/Elemental
 
 G guardian.
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, draw a card.
+AUTO [GC]: When placed, COST [Choose a card from your hand, and discard it], and draw a card.
 
-CONT: This card is also of all clans and nations.
+CONT: This card is from all clans and nations.
 '
 
 global.UnitGrade[4756] = 4
