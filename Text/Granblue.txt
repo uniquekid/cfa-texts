@@ -136,7 +136,7 @@ CardStat = x+17
 global.CardName[CardStat] = 'Evil Shade'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica
 
-AUTO [RC]: [Send the top 2 cards from the top of your deck to the drop zone] When this unit boosts a «Granblue» vanguard, you may pay the cost. If paid, the boosted unit gets power +4000 during that battle.'
+AUTO [RC]: [Send the top 2 cards from the top of your deck to the drop zone] When this unit boosts a «Granblue» vanguard, you may pay the cost. If you do, the boosted unit gets power +4000 during that battle.'
 }
 
 CardStat = x+18
@@ -162,7 +162,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'King Seahorse'
 global.CardText[CardStat] = 'Granblue/Kraken/Magallanica
 
-AUTO [RC]: [Choose one card from your hand and discard it] During the battle this unit has boosted, when the attack hits, you may pay the cost. If paid, draw a card.'
+AUTO [RC]: [Choose one card from your hand and discard it] During the battle this unit has boosted, when the attack hits, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+21
@@ -378,7 +378,7 @@ CardStat = x+44
 global.CardName[CardStat] = 'Witch Doctor of the Abyss, Negromarl'
 global.CardText[CardStat] = 'Granblue/Demon/Magallanica
 
-AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC and you have a «Granblue» vanguard, you may pay the cost. If paid, choose one unit from your drop zone and call it to a RC.'
+AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC and you have a «Granblue» vanguard, you may pay the cost. If you do, choose one unit from your drop zone and call it to a RC.'
 }
 
 // G Add
@@ -392,7 +392,7 @@ global.CardText[CardStat] = 'Granblue/Skeleton/Magallanica
 
 AUTO [VC]: When this unit attacks a vanguard, if your opponent’s power is 12000 or greater, this unit gets power +10000 until end of that battle.
 
-AUTO RC]: When this unit attacks a vanguard, if you have a «Granblue» vanguard, this unit gets power +2000 until end of that battle.'
+AUTO [RC]: When this unit attacks a vanguard, if you have a «Granblue» vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -2292,7 +2292,7 @@ global.CardText[4674] = 'Granblue/Demon
 
 Stride.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up & Choose a card from your hand, and discard it] At the end of the battle that this unit attacked, you may pay the cost. If you do, look at four cards from the top of your deck, put up to one card into your drop zone from among them, shuffle your deck, choose a card from your drop zone, call it to RC, and it gets power +5000 for each face up card in your G zone until end of turn.
+AUTO [VC]: At the end of the battle that it attacked, COST [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, turn it face up & Choose a card from your hand, and discard it], look at four cards from the top of your deck, put up to one card from among them into your drop zone, shuffle your deck, choose a card from your drop zone, call it to RC, and it gets power +5000 for each face up card in your G zone until end of turn.
 '
 
 global.UnitGrade[4674] = 4
@@ -2351,7 +2351,7 @@ global.CardName[4678] = 'Seven Seas Crack Soldier, Nightjasper'
 
 global.CardText[4678] = 'Granblue/Vampire
 
-AUTO [RC]: [Put two cards from the top of your deck into your drop zone] When this unit attacks a vanguard, you may pay the cost. If you do, until end of that battle, this unit gets "AUTO [RC]: When this unit’s attack hits, if you have a vanguard with “Seven Seas” in its card name, Counter Charge 1 / Soul Charge 1".
+AUTO [RC]: [Put two cards from the top of your deck into your drop zone] When this unit attacks a vanguard, you may pay the cost. If you do, until end of that battle, this unit gets "AUTO [RC]: When this unit’s attack hits, if you have a vanguard with "Seven Seas" in its card name, Counter Charge 1 / Soul Charge 1".
 '
 
 global.UnitGrade[4678] = 2
@@ -2574,7 +2574,7 @@ global.CardText[4753] = 'Granblue/Ghost
 
 G guardian.
 
-AUTO Generation Break 1: [Soul Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, choose two cards with different grades from your drop zone, and you may call them to GC.
+AUTO Generation Break 1: When placed on GC, COST [Soul Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], choose two cards of different grades from your drop zone, and you may call them to GC.
 '
 
 global.UnitGrade[4753] = 4
@@ -3637,7 +3637,7 @@ AUTO [VC/RC]: When its attack hits, choose one of your VC or RC without any Trea
 CONT [VC]: You get all of the effects below according to the number of your Treasures markers.
 • 1 or more - All of your rear-guards with "Seven Seas" in their card names can attack and intercept from the back row.
 • 3 or more - During your turn, all of your units with "Seven Seas" in their card names get power +5000.
-• 6 or more - This unit gets "AUTO [VC]: At the end of the battle it attacked, stand all of your rear-guards with “Seven Seas” in their card names".
+• 6 or more - This unit gets "AUTO [VC]: At the end of the battle it attacked, stand all of your rear-guards with "Seven Seas" in their card names".
 
 (SHIFT + left click to get a Treasures marker.)'
 global.UnitGrade[CardStat] = 3
@@ -4068,7 +4068,7 @@ CardStat = 9856
 global.CardName[CardStat] = 'Pirate King of Everlasting Darkness, Bartholomew'
 global.CardText[CardStat] = 'Granblue/Vampire
 
-Stride
+Stride.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to three cards with different card names from your drop, call them to RC, and the called units get power +5000 until end of turn.
 

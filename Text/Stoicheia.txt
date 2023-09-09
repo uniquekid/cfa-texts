@@ -146,6 +146,7 @@ global.CardName[CardStat] = 'Grief, Despair, and Rejection'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Counter Blast 1]!
+
 If your vanguard is "Mysterious Rain Spiritualist, Zorga", choose three of your units, and they get power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -161,6 +162,7 @@ global.CardName[CardStat] = 'Spiritual Body Condensation'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Soul Blast 1]!
+
 Choose a card with grade equal to or less than your vanguard from your drop, call it to RC, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -189,6 +191,7 @@ global.CardName[CardStat] = 'Cursed Souls Squirming in Agony'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Soul Blast 2]!
+
 Look at four cards from the top of your deck, choose up to one unit card from among them, call it to RC, and discard the rest. If it is on Alchemagic, call up to two cards to RC instead of one, and all units called with this order get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -228,6 +231,7 @@ global.CardName[CardStat] = 'Sealed Path'
 global.CardText[CardStat] = 'Stoicheia/Blitz Order
 
 Play this with COST [Counter Blast 2]!
+
 Choose one of your opponent’s vanguards, and that unit gets critical -1 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -624,6 +628,7 @@ global.CardName[CardStat] = 'Regurgitation from the Underworld'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Counter Blast 1 & Soul Blast 1]!
+
 Choose one of any player’s rear-guards, retire it, choose up to one card with the same grade as that card from your drop, and call it to RC. If during Alchemagic, you may choose up to two instead of one to call.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
@@ -2075,9 +2080,9 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 CONT: When this card would be rode upon, it is also regarded as "Grand March of Full Bloom, Lianorn".
 
-AUTO VC: When this unit attacks, COST [Soul Blast 1 & discard a card from hand], and boost this unit with all of your back row stand units with "Boost". If you boosted this unit with three or more units, this unit gets drive +1 until end of that battle, and at the end of that battle, choose two of your back row rear-guards, and stand them.
+AUTO [VC]: When this unit attacks, COST [Soul Blast 1 & discard a card from hand], and boost this unit with all of your back row stand units with "Boost". If you boosted this unit with three or more units, this unit gets drive +1 until end of that battle, and at the end of that battle, choose two of your back row rear-guards, and stand them.
 
-CONT RC: During the battle this unit is boosted, this unit gets power +5000.'
+CONT [RC]: During the battle this unit is boosted, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 }
@@ -3617,9 +3622,9 @@ CardStat = 10970
 global.CardName[CardStat] = 'Flow Strike Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-CONT [RC]: This unit gets power +5000 for each Blue Storm Armada card in your order zone. (Active on opponent’s turn too)
+CONT [RC]: This unit gets power +5000 for each Blue Storm Armada in your order zone. (Active on opponent’s turn too)
 
-AUTO [Back Row RC]: At the end of the battle your other rear-guard in the same column as this unit attacked, if you have a vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], choose one of your rear-guards, and swap the position of that unit with this unit.'
+AUTO [Back Row RC]: At the end of the battle your other rear-guard in the same column as this unit attacked, if you have a vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -3996,7 +4001,7 @@ CardStat = 11023
 global.CardName[CardStat] = 'Affectionate Hunter, Matthias'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Rorowa" in its card name, COST [Soul Blast 1 & retire two other rear-guards], choose a grade 2 or less card from your drop, and call it to :RC:.
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Rorowa" in its card name, COST [Soul Blast 1 & retire two other rear-guards], choose a grade 2 or less card from your drop, and call it to RC.
 
 AUTO [Front Row RC]: At the beginning of your battle phase, if you have a unit with "Rorowa" in its card name and a unit with "Radylina" in its card name, you may call a Plant token to RC.'
 global.UnitGrade[CardStat] = 2
@@ -4770,3 +4775,29 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 11997
+{
+global.CardName[CardStat] = 'Fertile Showers Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO: When this unit is placed on RC, if your drop has eight or more cards, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11998
+{
+global.CardName[CardStat] = 'Bribe Hopper'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO [RC]: When this unit boosts a vanguard with "Zorga" in its card name, COST [Counter Blast 1], choose a normal order from your bind zone, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

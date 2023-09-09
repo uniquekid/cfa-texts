@@ -309,7 +309,7 @@ CardStat = x+38
 global.CardName[CardStat] = 'Knowledge Drunkard'
 global.CardText[CardStat] = 'Dark Irregulars/Demon/Dark Zone
 
-AUTO [VC/RC]: [Send one card from your hand to soul] When this unit’s attack hits a vanguard, and you have a «Dark Irregulars» vanguard, you may pay the cost. If paid, draw one card.'
+AUTO [VC/RC]: [Send one card from your hand to soul] When this unit’s attack hits a vanguard, and you have a «Dark Irregulars» vanguard, you may pay the cost. If you do, draw one card.'
 }
 
 CardStat = x+39
@@ -1891,7 +1891,7 @@ global.CardText[4702] = 'Dark Irregulars/Human
 
 G guardian.
 
-AUTO Generation Break 1: [Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, Soul Charge 1, and this unit gets shield +5000 for every five cards in your soul until end of that battle.
+AUTO Generation Break 1: When placed on GC, COST [Choose a face down G guardian from your G zone, and turn it face up], Soul Charge 1, and this unit gets shield +5000 until end of that battle for every five cards in your soul.
 '
 
 global.UnitGrade[4702] = 4
@@ -2137,13 +2137,13 @@ CardStat = 4861
 
 {
 
-global.CardName[4861] = 'One who Splits Darkness, Bladermaus'
+global.CardName[4861] = 'One who Splits Darkness, Bledermaus'
 
 global.CardText[4861] = 'Dark Irregulars/Vampire
 
 Stride.
 
-AUTO [VC] 1/Turn Generation Break 2 Darkness: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose two cards from your hand, and put them into your soul] When this unit attacks, if the number of cards in your soul is ten or more, you may pay the cost. If you do, return all of the grade 0 cards from your soul and RC to your deck, shuffle your deck, choose two of your units, and they get power +5000 until end of turn. At the end of that battle, stand this unit, and it gets drive -2.
+AUTO [VC] 1/Turn Generation Break 2 Darkness: When it attacks, if the number of cards in your soul is ten or more, COST [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, turn it face up & Choose two cards from your hand, and put them into your soul], return all of the grade 0 cards from your RC and soul to your deck, shuffle your deck, choose two of your units, and they get power +5000 until end of turn. At the end of that battle, stand this unit, and it gets drive -2.
 '
 
 global.UnitGrade[4861] = 4
@@ -2333,9 +2333,9 @@ CardStat = 5444
 global.CardName[CardStat] = 'Zeroth Dragon of End of the World, Dust'
 global.CardText[CardStat] = 'Dark Zone/Zeroth Dragon
 
-Ultimate Stride.
+Ultimate Stride COST [Choose a card with the same card name as your vanguard from your hand, and discard it] Stride this card on your VC from face down.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, all of your opponent’s vanguards and rear-guards lose their abilities, their grades and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)'
+AUTO: When placed on VC, COST [Counter Blast 2], until end of turn, your opponent’s vanguards and rear-guards lose all of their abilities, and their grade and power increase or decrease to 1. If the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check. Triggers will also activate.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 11 //Dark Irregulars
 global.CardInClan2[CardStat] = 18 //Pale Moon

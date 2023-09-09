@@ -1384,7 +1384,7 @@ CardStat = x
 global.CardName[CardStat] = 'Squirm Deletor, Lourelou'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-AUTO [VC]: When this unit’s drive check reveals a grade 3 card, until end of that battle, this unit gets "AUTO [VC]: [Choose one of your grade 3 rear-guards with “Deletor” in its card name, and retire it] At the end of the battle that this unit attacked, you may pay the cost. If you do, delete all of your opponent’s vanguard". 
+AUTO [VC]: When this unit’s drive check reveals a grade 3 card, until end of that battle, this unit gets "AUTO [VC]: [Choose one of your grade 3 rear-guards with "Deletor" in its card name, and retire it] At the end of the battle that this unit attacked, you may pay the cost. If you do, delete all of your opponent’s vanguard". 
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1772,7 +1772,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Dark Metal Chameleon'
 global.CardText[CardStat] = 'Link Joker/Cyber Beast/Star Gate
 
-AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit is unlocked, choose a card from your damage zone, and turn it face up. (Counter Charge 1 )
+AUTO: Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit is unlocked, choose a card from your damage zone, and turn it face up. (Counter Charge 1)
 
 CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)'
 global.UnitGrade[CardStat] = 1
@@ -2128,9 +2128,9 @@ CardStat = x
 global.CardName[CardStat] = 'Original Deletor, Egorg'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate/G-Unit
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-ACT [VC] 1/Turn Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): [Counter Blast 1 & Choose one of your rear-guards with "Deletor" in its card name, and retire it] If you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards, choose up to one rear-guard in your opponent’s back row, lock it, your opponent chooses a card from his or her drop zone, and banish deletes it. Then, if the number of cards in your opponent’s damage zone is four or more, and the number of face down cards in your opponent’s bind zone is thirteen or more, you win the game.'
+ACT [VC] 1/Turn Generation Break 2: COST [Counter Blast 1 & Choose one of your rear-guards with "Deletor" in its card name, and retire it], if you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards, choose up to one rear-guard in your opponent’s back row, lock it, your opponent chooses a card from his or her drop zone, and binds it face down. Then, if the number of cards in your opponent’s damage zone is four or more, and the number of face down cards in your opponent’s bind zone is thirteen or more, you win the game.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -2141,9 +2141,9 @@ CardStat = x+1
 global.CardName[CardStat] = 'Docking Deletor, Greion'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-ACT [VC]: [Counter Blast 2-card with "Deletor" in its card name & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and banish deletes it. 
+ACT [VC]: [Counter Blast 2-card with "Deletor" in its card name & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and bind it face down. 
 
-AUTO: When this unit is placed on VC, your opponent chooses two cards from his or her drop zone, and banish deletes them.'
+AUTO: When this unit is placed on VC, your opponent chooses two cards from his or her drop zone, and bind them face down.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -2153,7 +2153,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Hailing Deletor, Elro'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-AUTO [RC] 1/Turn: When your opponent’s unit is placed on RC due to an effect from cards, Counter Charge 1, your opponent chooses a card from his or her drop zone, and banish deletes it.
+AUTO [RC] 1/Turn: When your opponent’s unit is placed on RC due to an effect from cards, Counter Charge 1, your opponent chooses a card from his or her drop zone, and bind it face down.
 
 AUTO [RC in the left column]: When this unit attacks a vanguard, if you have a unit named "Hailing Deletor, Alba" on your RC in the right column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -2190,7 +2190,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Swift Deletor, Geali'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-AUTO: [Choose one of your other rear-guards with "Deletor" in its card name, and retire it] When this unit is placed on VC or RC, if you have a vanguard with "Deletor" in its card name, you may pay the cost. If you do, choose a rear-guard in your opponent’s front row, retire it, your opponent chooses a card from his or her drop zone, banish deletes it, and this unit gets power +2000 until end of turn.'
+AUTO: [Choose one of your other rear-guards with "Deletor" in its card name, and retire it] When this unit is placed on VC or RC, if you have a vanguard with "Deletor" in its card name, you may pay the cost. If you do, choose a rear-guard in your opponent’s front row, retire it, your opponent chooses a card from his or her drop zone, bind it face down, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -2212,7 +2212,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Ferment Deletor, Gaen'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-AUTO [RC]: [Soul Blast 1] When your opponent’s vanguard is deleted, if you have a vanguard with "Grei" in its card name, you may pay the cost. If you do, your opponent chooses a card from his or her drop zone, banish deletes it, and this unit gets power +3000 until end of turn.'
+AUTO [RC]: [Soul Blast 1] When your opponent’s vanguard is deleted, if you have a vanguard with "Grei" in its card name, you may pay the cost. If you do, your opponent chooses a card from his or her drop zone, bind it face down, and this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -2222,7 +2222,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Ill-fate Deletor, Drown'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-AUTO [RC]: [Put this unit into your soul & Choose a card from your hand, and discard it] At the end of the battle that this unit boosted a vanguard with "Deletor" in its card name, you may pay the cost. If you do, draw two cards, your opponent chooses a card from his or her drop zone, and banish deletes it.'
+AUTO [RC]: [Put this unit into your soul & Choose a card from your hand, and discard it] At the end of the battle that this unit boosted a vanguard with "Deletor" in its card name, you may pay the cost. If you do, draw two cards, your opponent chooses a card from his or her drop zone, and bind it face down.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -2234,7 +2234,7 @@ global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO: When this unit is put into the drop zone from RC for the cost of your vanguard with "Deletor" in its card names ability, choose up to one rear-guard in your opponent’s back row, lock it, your opponent chooses a card from his or her drop zone, and banish deletes it.'
+AUTO: When this unit is put into the drop zone from RC for the cost of your vanguard with "Deletor" in its card names ability, choose up to one rear-guard in your opponent’s back row, lock it, your opponent chooses a card from his or her drop zone, and bind it face down.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -2244,7 +2244,7 @@ CardStat = x+10
 global.CardName[CardStat] = 'Biting Deletor, Geeva'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate/Critical Trigger
 
-AUTO [RC]: [Put this unit on the top of your deck] At the end of the battle that this unit boosted, if your opponent’s vanguard is deleted, you may pay the cost. If you do, shuffle your deck, Counter Charge 1, your opponent chooses a card from his or her drop zone, and banish deletes it.'
+AUTO [RC]: [Put this unit on the top of your deck] At the end of the battle that this unit boosted, if your opponent’s vanguard is deleted, you may pay the cost. If you do, shuffle your deck, Counter Charge 1, your opponent chooses a card from his or her drop zone, and bind it face down.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -2254,9 +2254,9 @@ CardStat = x+11
 global.CardName[CardStat] = 'Waving Deletor, Greidhol'
 global.CardText[CardStat] = 'Link Joker/Alien/Star Gate
 
-ACT [VC] 1/Turn: [Soul Blast 1 "Docking Deletor, Greion" & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and banish deletes it.
+ACT [VC] 1/Turn: [Soul Blast 1 "Docking Deletor, Greion" & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and bind it face down.
 
-AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for one card named "Docking Deletor, Greion" from among them, put it into your soul, shuffle your deck, choose a rear-guard in your opponent’s front row, retire it, your opponent chooses a card from his or her drop zone, and banish deletes it.'
+AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for one card named "Docking Deletor, Greion" from among them, put it into your soul, shuffle your deck, choose a rear-guard in your opponent’s front row, retire it, your opponent chooses a card from his or her drop zone, and bind it face down.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -3353,7 +3353,7 @@ global.CardText[5136] = 'Link Joker/Alien
 
 G guardian.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on GC, if you have a vanguard with "Deletor" in its card name, you may pay the cost. If you do, choose up to three units in your opponent’s front row, and they get power -1000 until end of turn for each face up card with "Deletor" in its card name on your VC, RC, and G zone.
+AUTO: When placed on GC, if you have a vanguard with "Deletor" in its card name, COST [Counter Blast 1 & Soul Blast 1], choose up to three of your opponent’s front row units, and they get power -1000 until end of turn for each face up card with "Deletor" in its card name on your VC, RC, and G zone.
 '
 
 global.UnitGrade[5136] = 4
@@ -4478,9 +4478,9 @@ CardStat = 5465
 global.CardName[CardStat] = 'Zeroth Dragon of Destroy Star, Stark'
 global.CardText[CardStat] = 'Star Gate/Zeroth Dragon
 
-Ultimate Stride.
+Ultimate Stride COST [Choose a card with the same card name as your vanguard from your hand, and discard it] Stride this card on your VC from face down.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, this unit gets drive -2, this unit does not rest for attack, and it can attack up to three times during this turn.'
+AUTO: When placed on VC, COST [Counter Blast 2], until end of turn, this unit gets drive -2, this unit does not rest when it attacks, and this unit can attack up to three times.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 33 //Animation
 global.CardInClan2[CardStat] = 6 //Dimension Police

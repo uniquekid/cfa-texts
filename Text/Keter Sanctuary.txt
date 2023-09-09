@@ -90,6 +90,7 @@ global.CardName[CardStat] = 'The Hour of Holy Judgement Cometh'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Counter Blast 2]!
+
 Draw two cards, choose one of your units, and it gets power +5000 until end of turn!'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -134,6 +135,7 @@ global.CardName[CardStat] = 'Downswing of Sword of Judgement'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Soul Blast 1 grade 3]!
+
 Choose one of your opponent’s rear-guards. Your opponent puts all of their rear-guards in the same column as that rear-guard on the bottom of their deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -577,6 +579,7 @@ global.CardName[CardStat] = 'Form Up, O Chosen Knights'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Counter Blast 1 & Soul Blast 1]!
+
 Perform all of the effects below according to the number of your grade 3 units.
 • 2 or more - Choose one of your units, and it gets power +5000 until end of turn.
 • 3 or more - Draw a card.
@@ -3843,9 +3846,9 @@ CardStat = 10971
 global.CardName[CardStat] = 'Knight of Divine Command, Seisus'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, if your vanguard’s clan is only «Genesis», look at the top three cards of your deck, choose up to one card from among them, put it into soul, and put the rest on the bottom of the deck in any order.
+AUTO: When this unit is placed on RC, if your vanguard a vanguard with only «Genesis» for its clan, look at the top three cards of your deck, choose up to one card from among them, put it into the soul, and put the rest on the bottom of the deck in any order.
 
-AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Minerva" in its card name, COST [Soul Blast 1 & retire this unit], choose a card from hand or drop, and put it into soul. If you put a card from hand, draw a card.'
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Minerva" in its card name, COST [Soul Blast 1 & retire this unit], choose a card from hand or drop, and put it into the soul. If you put from your hand, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4058,7 +4061,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11186
 {
-global.CardName[CardStat] = 'Divine Knight of White Flash, Mersgard'
+global.CardName[CardStat] = 'Divine Knight of White Streaks, Rumesgard'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 CONT: This card is also regarded as "Knight of Rendering Flash, Cairbre".
@@ -4791,7 +4794,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 11952
 {
 global.CardName[CardStat] = 'Dragontree Wretch, Geala Dyeshach'
-global.CardText[CardStat] = 'Brandt Gate/Hydragrum
+global.CardText[CardStat] = 'Keter Sanctuary/Hydragrum
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into your hand, and shuffle your deck.
 
@@ -4804,3 +4807,17 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 11977
+{
+global.CardName[CardStat] = 'Gigantech Assailer'
+global.CardText[CardStat] = 'Keter Sanctuary/Giant
+
+AUTO [RC]: When this unit attacks, if you have a unit with "Alden" in its card name, Soul Charge 1, and if a trigger unit was Soul Charge , this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

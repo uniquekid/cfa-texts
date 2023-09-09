@@ -207,7 +207,7 @@ CardStat = x+26
 global.CardName[CardStat] = 'Lady Bomb'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC, you may pay the cost. If paid, choose one of your opponent’s rear-guards, and that unit cannot stand in the next turn.'
+AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and that unit cannot stand in the next turn.'
 }
 
 CardStat = x+27
@@ -311,7 +311,7 @@ CardStat = x+38
 global.CardName[CardStat] = 'Master Fraude'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO [VC/RC]: [Soul Blast 3] When this unit’s attack hits, and you have a «Megacolony» vanguard, you may pay the cost. If paid, draw a card. 
+AUTO [VC/RC]: [Soul Blast 3] When this unit’s attack hits, and you have a «Megacolony» vanguard, you may pay the cost. If you do, draw a card. 
 
 AUTO [VC]: When this unit is boosted by a «Megacolony» clan, during that battle, this unit gets power +3000.'
 }
@@ -1039,7 +1039,7 @@ global.CardText[3984] = 'Megacolony/Insect
 
 G guardian.
 
-AUTO: [Counter Blast 1] When this unit is placed on GC during the battle your vanguard is attacked by your opponent’s vanguard, you may pay the cost. If you do, rest all of the units in your opponent’s back row, and this unit gets shield +5000 for every two of your opponent’s units at rest until end of that battle.
+AUTO: When placed on GC during the battle that your vanguard was attacked by your opponent’s vanguard, COST [Counter Blast 1], rest all of the units in your opponent’s back row, and this unit gets shield +5000 for every two of your opponent’s units in rest until end of that battle.
 '
 
 global.UnitGrade[3984] = 4
@@ -1682,7 +1682,7 @@ global.CardText[5329] = 'Megacolony/Insect
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up] Draw up to the same number of cards as the number of your opponent’s rear-guards in rest, and if the number of your opponent’s rear-guards in rest is one or less, this unit gets critical +1 / drive +1 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up], draw up to the same number of cards as the number of your opponent’s rest rear-guards, and if the number of your opponent’s rest rear-guards is one or less, this unit gets critical +1 / drive +1 until end of turn.
 
 CONT [VC] Generation Break 3 Dark Device: All of your units get power +2000 for each face down card in your opponent’s damage zone.
 '
@@ -1730,7 +1730,7 @@ global.CardText[5335] = 'Megacolony/Insect
 
 ACT [RC]: [Rest this unit] Choose one of your units with "Machining" in its card name, and it gets power +3000 until end of turn.
 
-ACT [RC] 1/Turn Generation Break 2: [Counter Blast 1] Stand this unit, and until end of turn, it gets "AUTO [RC] 1/Turn: At the end of the battle that this unit attacked a vanguard, if the number of your opponent’s units in stand is zero, choose one of your other rear-guards with “Machining” in its card name, and stand it".
+ACT [RC] 1/Turn Generation Break 2: [Counter Blast 1] Stand this unit, and until end of turn, it gets "AUTO [RC] 1/Turn: At the end of the battle that this unit attacked a vanguard, if the number of your opponent’s units in stand is zero, choose one of your other rear-guards with "Machining" in its card name, and stand it".
 '
 
 global.UnitGrade[5335] = 2
@@ -2077,9 +2077,9 @@ CardStat = 5388
 global.CardName[CardStat] = 'Zeroth Dragon of Death Garden, Zoa'
 global.CardText[CardStat] = 'Zoo/Zeroth Dragon
 
-Ultimate Stride.
+Ultimate Stride COST [Choose a card with the same card name as your vanguard from your hand, and discard it] Stride this card on your VC from face down.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, draw a card, choose a card from your hand, call it to RC, until end of turn, it gets "CONT [RC]: This unit cannot be chosen by card effects, and its power will always be 99999" and "AUTO [RC]: When this unit deals damage to your opponent’s vanguard, your opponent loses the game".'
+AUTO: When placed on VC, COST [Counter Blast 2], draw a card, choose a card from your hand, call it to RC, and until end of turn, it gets "CONT [RC]: This unit cannot be chosen by card effects, and its power becomes 99999 constantly." and "AUTO [RC]: When this unit deals damage to your opponent’s vanguard, your opponent loses.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 2 //Megacolony
 global.CardInClan2[CardStat] = 7 //Great Nature
@@ -3355,7 +3355,7 @@ CardStat = 9985
 global.CardName[CardStat] = 'Megacolony Battler S'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO: When this unit is placed on RC, COST [Soul Blast 1], your opponent chooses a card from their hand, calls it to RC as rest, draws a card, and that called unit cannot stand during the next stand phase. The AUTO abilities of your opponent’s cards do not activate from this call.
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], your opponent chooses a card from their hand, calls it to RC as rest, they draws a card, and that called unit cannot stand during their next stand phase. Your opponent’s cards’ AUTO abilities do not activate from this call.
 
 ACT [Drop] 1/Turn: If your opponent has no stand units, COST [discard a card from your hand], call this card to an open RC, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2

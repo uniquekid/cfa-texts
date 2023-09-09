@@ -843,7 +843,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Boulder Smashing Knight, Segwarides'
 global.CardText[CardStat] = 'Gold Paladin/Giant
 
-AUTO [VC/RC]: [Counter Blast 1 «Gold Paladin»] When this unit attacks and you have a «Gold Paladin» vanguard, you may pay the cost. If paid, this unit gets power +4000 until the end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1 «Gold Paladin»] When this unit attacks and you have a «Gold Paladin» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 5
 }
@@ -3583,7 +3583,7 @@ global.CardText[4585] = 'Gold Paladin/Human
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card named "Holy Sword of Heavenly Law, Gurguit" from your G zone, and turn it face up & Choose a card from your hand, and discard it] Until end of turn, this unit gets "AUTO [VC] Unite: When this unit attacks, look at seven cards from the top of your deck, call a card to RC from among them, and shuffle your deck" and "CONT [VC]: All of your units get power +2000 for each face up card with “Gurguit” in its card name in your G zone".
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up & Choose a card from your hand, and discard it], and until end of turn, this unit gets "AUTO [VC] Unite: When it attacks, look at seven cards from the top of your deck, call a card from among them to RC, and shuffle your deck." and "CONT [VC]: All of your units get power +2000 for each face up card with "Gurguit" in its card name in your G zone.".
 '
 
 global.UnitGrade[4585] = 4
@@ -3771,7 +3771,7 @@ global.CardText[4767] = 'Gold Paladin/Elf
 
 G guardian.
 
-AUTO Generation Break 1: [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, look at two cards from the top of your deck, call a card to GC, until end of that battle, it gets "AUTO [GC]: When an attack did not hit, you may move this unit to RC", and put a card on the bottom of your deck.
+AUTO Generation Break 1: When placed on GC, COST [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], look at two cards from the top of your deck, call a card from among them to GC, until end of that battle, it gets "AUTO [GC]: When an attack does not hit, you may move this unit to RC.", and put a card from among them on the bottom of your deck.
 '
 
 global.UnitGrade[4767] = 4
@@ -3938,7 +3938,7 @@ global.CardText[5266] = 'Gold Paladin/High Beast
 
 ACT [RC/Hand]: [Bind this card face up] Choose one of your units or locked cards, unlock it, and it gets power +2000 until end of turn.
 
-AUTO [RC]: [Put this unit on the bottom of your deck] At the beginning of your ride phase, if you have a vanguard with "Liberator" in its card name, you may pay the cost. If you do, until end of turn, you may pay "Counter Blast 1 “Liberator”" as the cost for the next time you Stride.
+AUTO [RC]: [Put this unit on the bottom of your deck] At the beginning of your ride phase, if you have a vanguard with "Liberator" in its card name, you may pay the cost. If you do, until end of turn, you may pay "Counter Blast 1 "Liberator"" as the cost for the next time you Stride.
 '
 
 global.UnitGrade[5266] = 1

@@ -700,7 +700,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Dark Zone
 
 AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, choose a rear-guard in your opponent’s front row, and your opponent puts that unit on the bottom of his or her deck.
 
-AUTO [VC]: During your turn, when your G unit Stride, choose one of your vanguards, and until end of turn, it gets "ACT [VC] 1/Turn: [Counter Blast 1] Search your deck for up to one card named “Chronojet Dragon”, put it in heart state on your VC, and shuffle your deck. If you put that card, choose a heart card named “Steam Fighter, Balif” from your VC, and put it on the bottom of your deck".'
+AUTO [VC]: During your turn, when your G unit Stride, choose one of your vanguards, and until end of turn, it gets "ACT [VC] 1/Turn: [Counter Blast 1] Search your deck for up to one card named "Chronojet Dragon", put it in heart state on your VC, and shuffle your deck. If you put that card, choose a heart card named "Steam Fighter, Balif" from your VC, and put it on the bottom of your deck".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -3054,9 +3054,9 @@ global.CardText[4186] = 'Gear Chronicle/Gear Colossus/Zodiac Time Beast
 
 Stride.
 
-CONT: The cost for this card’s Stride may be also paid with "Counter Blast 1 & Choose a <Gear Colossus> or <Zodiac Time Beast> from your hand, and bind it face up".
+CONT: The cost for this card’s Stride may be paid with " COST [Counter Blast 1 & Choose a <Gear Colossus> or <Zodiac Time Beast> from your hand, and bind it face up]".
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Look at five cards from the top of your deck, search for up to two cards from among them, bind them face up, shuffle your deck, and this unit gets power +2000 for each card in your bind zone until end of turn. If the number of cards in your bind zone is five or more, Counter Charge 1.
+ACT [VC] 1/Turn: COST [Choose a face down card from your G zone, and turn it face up], look at five cards from the top of your deck, search for up to two cards from among them, bind them face up, shuffle your deck, and for each card in your bind zone, this unit gets power +2000 until end of turn. If the number of cards in your bind zone is five or more, Counter Charge 1.
 '
 
 global.UnitGrade[4186] = 4
@@ -3340,7 +3340,7 @@ global.CardText[4393] = 'Gear Chronicle/Gear Dragon
 
 Stride.
 
-ACT [VC] Generation Break 3: [Counter Blast 2] If you have a heart card with "Chronojet" in its card name, search your deck for up to two cards with "Chronojet" in its card name that have a different card name as each other, call them to separate RC, shuffle your deck, and until end of turn, they get "AUTO [RC]: [Choose this unit and one of your other rear-guards with “Chronojet” in its card name, put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand all of your vanguards".
+ACT [VC] Generation Break 3: [Counter Blast 2] If you have a heart card with "Chronojet" in its card name, search your deck for up to two cards with "Chronojet" in its card name that have a different card name as each other, call them to separate RC, shuffle your deck, and until end of turn, they get "AUTO [RC]: [Choose this unit and one of your other rear-guards with "Chronojet" in its card name, put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand all of your vanguards".
 '
 
 global.UnitGrade[4393] = 4
@@ -3644,7 +3644,7 @@ global.CardText[4741] = 'Gear Chronicle/Gearoid
 
 G guardian.
 
-AUTO Generation Break 1: [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 for each face up card in your G zone until end of that battle.
+AUTO Generation Break 1: When placed on GC, COST [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], and this unit gets shield +5000 for each face up card in your G zone until end of that battle.
 '
 
 global.UnitGrade[4741] = 4
@@ -4634,7 +4634,7 @@ global.CardText[5581] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
 CONT [VC/RC]: If you have no cards in your bind zone, this unit cannot attack.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1 & Bind this unit face up] At the end of the battle that this unit was boosted, you may pay the cost. If you do, call up to one face up grade 3 and 1 <Zodiac Time Beast> from your bind zone to separate RC of the same column.
+AUTO [RC] Generation Break 1: [Counter Blast 1 & Bind this unit face up] At the end of the battle that this unit was boosted, you may pay the cost. If you do, call up to one face up grade 3 and 1 <Zodiac Time Beast> from your bind zone to separate RC in the same column.
 '
 
 global.UnitGrade[5581] = 2
@@ -5820,7 +5820,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
 Stride.
 
-AUTO [VC]: At the end of the battle that it attacked, COST [Counter Blast 1 and bind four rear-guards], put this unit into your G zone face up, search your deck for up to one grade 3 or greater card, ride it as stand, it gets drive -1 until end of turn, and shuffle your deck.'
+AUTO [VC]: At the end of the battle that it attacked, COST [Counter Blast 1 & bind four rear-guards], put this unit into your G zone face up, search your deck for up to one grade 3 or greater card, ride it as stand, it gets drive -1 until end of turn, and shuffle your deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 26
 global.ExtraDeck[CardStat] = 1

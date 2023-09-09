@@ -3630,7 +3630,7 @@ CardStat = 10266
 global.CardName[CardStat] = 'Relation Weaver, Petralka'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1], reveal the top seven cards of your deck, and if all of the revealed cards not named "Relation Weaver, Petralka" have different card names, choose up to one card from among the revealed cards, call it to RC, and it gets power +10000 until end of turn. If you chose "Relation Weaver, Petralka", ride it as stand instead of calling to RC, and it gets drive -1 until end of turn. Shuffle your deck. (Riding also gets power +10000)'
+AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1], reveal the top seven cards of your deck, if all of the revealed cards not named "Relation Weaver, Petralka" have different card names, choose up to one of the revealed cards, call it to RC, and it gets power +10000 until end of turn. If you chose "Relation Weaver, Petralka", ride it as stand instead of calling it to RC, and it gets drive -1 until end of turn. Shuffle your deck. (power +10000 when riding as well)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -4703,10 +4703,10 @@ global.PersonaRideCardName[CardStat] = 'Feltyrosa'
 
 CardStat = 10928
 {
-global.CardName[CardStat] = 'Refresh Time, Porsha'
+global.CardName[CardStat] = 'Refresh Time, Portia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-AUTO: When this unit is placed on RC, COST [Soul Blast 1], put all of the cards from your bind zone into your drop, bind the top card of your deck, and if you bound a trigger unit, draw a card.' 
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], put all of the cards from your bind zone into drop, bind a card from the top card of your deck, and if a trigger unit was bound, draw a card.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -5225,6 +5225,45 @@ global.CardName[CardStat] = 'Only One, Wilma'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
  
 CONT [RC]: During your turn, if all of your units have different card names, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11978
+{
+global.CardName[CardStat] = 'Determined Junior, Liene'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+AUTO [RC]: When this unit boosts a grade 3 or greater unit, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11979
+{
+global.CardName[CardStat] = 'Whimsical<->Skip, Loperart'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+CONT [RC]: This unit gets shield +5000 for every three "Trick&Treat!" in your drop.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 11999
+{
+global.CardName[CardStat] = 'Gazes Full of Expectation, Cursone'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO: When this unit boosts, COST [Counter Blast 1], choose a unit boosted by this unit, and it gets "AUTO [VC/RC]: When this unit’s attack hits a vanguard, COST [discard a card from hand], choose up to one card with grade less than or equal to your vanguard from hand, and call it to an open RC." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }

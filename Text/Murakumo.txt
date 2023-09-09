@@ -1001,7 +1001,7 @@ global.CardText[3962] = 'Murakumo/Abyss Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Soul Blast 2 & Choose a card from your hand, and discard it & Choose a card from your drop zone, and return it to your deck] Choose one of your units, search your deck for up to one card with the same card name as that unit, call it to RC, and shuffle your deck. Until end of turn, the unit called with this effect gets "CONT [RC]: This unit performs a drive check only for the first battle during this turn", and at the end of that turn, put that unit on the bottom of your deck.
+ACT [VC] 1/Turn Generation Break 2: COST [Counter Blast 1 & Soul Blast 2 & Choose a card from your hand, and discard it & Choose a card from your drop zone, and return it to your deck], choose one of your units, search your deck for up to one unit with the same card name as that unit, call it to RC, and shuffle your deck. Until end of turn, the unit called with this effect gets "CONT [RC]: This unit performs a drive check only for the first battle during this turn.", and at the end of that turn, put that unit on the bottom of your deck.
 '
 
 global.UnitGrade[3962] = 4
@@ -1044,7 +1044,7 @@ CardStat = 3964
 global.CardName[CardStat] = 'Ambush Demon Stealth Rogue, Shishiyuzuki'
 global.CardText[CardStat] = 'Murakumo/Demon
 
-G guardian COST [Choose a card with "Heal" from your hand, and discard it] Call this card to your GC from face down.
+G guardian.
 
 AUTO: When placed on GC during the battle that your vanguard was attacked by your opponent’s vanguard, choose up to one of your rear-guards, move it to GC, and that unit gets shield +5000 until end of that battle. Search your deck for up to one card with the same card name as that unit, call it to GC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 4
@@ -1223,7 +1223,7 @@ global.CardName[3974] = 'Stealth Dragon, Onibayashi'
 
 global.CardText[3974] = 'Murakumo/Abyss Dragon
 
-Shadowstitch - AUTO [RC] Generation Break 1: At the end of the battle that your unit attacked a vanguard, if the attack did not hit, until end of turn, this unit gets "AUTO [RC]: [Put this unit into your soul] When your units attack hits a vanguard, if you have a vanguard with the shadowstitch ability or with “Yasuie” in its card name, you may pay the cost. If you do, draw a card, and Counter Charge 1".
+Shadowstitch - AUTO [RC] Generation Break 1: At the end of the battle that your unit attacked a vanguard, if the attack did not hit, until end of turn, this unit gets "AUTO [RC]: [Put this unit into your soul] When your units attack hits a vanguard, if you have a vanguard with the shadowstitch ability or with "Yasuie" in its card name, you may pay the cost. If you do, draw a card, and Counter Charge 1".
 '
 
 global.UnitGrade[3974] = 1
@@ -3498,7 +3498,7 @@ CardStat = 7799
 global.CardName[CardStat] = 'Flute-blowing Stealth Rogue, Kadoggu'
 global.CardText[CardStat] = 'Murakumo/Demon
 
-AUTO [RC]: At the end of the battle that it boosted a grade 2 or greater rear-guard, COST [Counter Blast 1 and discard a card from your hand], search your deck for up to one card with the same card name as the unit that this unit boosted, call it to RC without a unit, and shuffle your deck.'
+AUTO [RC]: At the end of the battle that it boosted a grade 2 or greater rear-guard, COST [Counter Blast 1 & discard a card from your hand], search your deck for up to one card with the same card name as the unit that this unit boosted, call it to RC without a unit, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -3560,7 +3560,7 @@ global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
 global.PowerStat[CardStat] = 9000
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 8163
