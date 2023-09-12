@@ -3688,9 +3688,9 @@ CardStat = 10976
 global.CardName[CardStat] = 'Armed Wing Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-CONT [RC]: If your vanguard was placed by riding from a unit with "Musashid Armor" in its card name this turn, and you persona rode, this unit gets power +10000.
+CONT [RC]: If your vanguard was placed this turn by riding from a unit with "Musashid Armor" in its card name, and you persona rode, this unit gets power +10000.
 
-AUTO: When this unit is placed on RC, if a card with "Musashid Armor" in its card name is on your VC or in your soul, COST [Counter Blast 1], and draw a card.'
+AUTO: When this unit is placed on RC, if your VC or soul has a card with "Musashid Armor" in its card name, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -3699,7 +3699,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10987
 {
-global.CardName[CardStat] = 'Dragritter, Qasim'
+global.CardName[CardStat] = 'Dragritter, Kassim'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 ACT [RC]: COST [Bind this unit], choose up to two face up cards from your opponent’s bind zone, and your opponent puts them on the bottom of their deck in any order. If you chose two cards for this effect, choose one of your vanguards, and it gets power +5000 until end of turn. 
@@ -3712,10 +3712,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11025
 {
-global.CardName[CardStat] = 'Defending Roar'
+global.CardName[CardStat] = 'Defensing Roar'
 global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
-Choose one of your guardians without sentinel, until end of that battle, it gets "AUTO: When this unit is retired from GC, put this card into your hand.", and shield +10000.'
+Choose one of your guardians without sentinel, and until end of that battle, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -3741,7 +3741,7 @@ CardStat = 11038
 global.CardName[CardStat] = 'Red River Dragoon  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/Human
 
-AUTO: When this unit is rode upon by a unit with only «Narukami» for its clan, search your deck for up to one "Eternal Thunderbolt", reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is rode upon by a grade 2 card with only «Narukami» for its clan, search your deck for up to one "Eternal Thunderbolt", reveal it and put it into hand, and shuffle the deck.
 
 AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with only «Narukami» for its clan, COST [Counter Blast 1], choose one of your opponent’s back row rear-guards, and bind it. If you did not bind a card, you may Soul Charge 2.'
 global.UnitGrade[CardStat] = 1
@@ -3756,9 +3756,9 @@ CardStat = 11039
 global.CardName[CardStat] = 'Thunderstorm Dragoon  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/Human
 
-AUTO: When this unit is rode upon by a grade 3 unit with only «Narukami» for its clan, look at the top seven cards of your deck, choose up to one "Eternal Thunderbolt" or a card with only «Narukami» for its clan from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is rode upon by a grade 3 unit with only «Narukami» for its clan, look at the top seven cards of your deck, choose up to one card with only «Narukami» for its clan or upto one "Eternal Thunderbolt" from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO: When this unit is placed on RC, if your vanguard’s clan is only «Narukami», Soul Charge 1, and this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, if you have a vanguard with only «Narukami» for its clan, Soul Charge 1, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 19
@@ -3771,7 +3771,7 @@ CardStat = 11040
 global.CardName[CardStat] = 'Dragonic Kaiser Vermillion  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/Thunder Dragon
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose two of your units with only «Narukami» for their clans, and they get power +5000 until end of turn, Until end of turn, when this unit would attack, choose two of your opponent’s RC, and this unit battles your opponent’s vanguard and all of the units on the chosen RC.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose two of your units with only «Narukami» for their clan, and they get power +5000 until end of turn. Until end of turn, when this unit would attack, choose two of your opponent’s RC, and this unit battles all of the units on those chosen RC and your opponent’s vanguard.
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if you played a normal order this turn, and your opponent’s damage zone has four or less cards, COST [discard a card from hand], choose one of your opponent’s vanguards, and deal one damage. 
 '
@@ -3788,9 +3788,9 @@ CardStat = 11041
 global.CardName[CardStat] = 'Eternal Thunderbolt'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
-This card can be played from drop, and play this if you have a vanguard with only «Narukami» for its clan and "Vermillion" in its card name!
+This card can be played from drop, and play this if you have a vanguard with "Vermillion" in its card name and only «Narukami» for its clan!
 
-Choose one of your vanguards, and it gets "CONT [VC]: When your opponent’s rear-guard is hit by this unit and would be retired from RC, bind it instead of retiring it." and "CONT [VC]: If your opponent has no rear-guards, all of your front row rear-guards get power +5000." until end of turn. If you played this card from drop, bind this card. 
+Choose one of your vanguards, and until end of turn it gets "CONT [VC]: When your opponent’s rear-guard is hit by this unit and would be retired from RC, bind it instead of retiring it." and "CONT [VC]: If your opponent has no rear-guards, all of your front row rear-guards get power +5000.". If you played this card from drop, bind this card. 
 '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
@@ -3804,7 +3804,7 @@ CardStat = 11042
 global.CardName[CardStat] = 'Rising Phoenix  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/High Beast
 
-AUTO [Drop]: When either player’s card is bound by your card effect during your turn, if your vanguard’s clan is only «Narukami», COST [Soul Blast 1], and call this card to RC.
+AUTO [Drop]: When any card is bound during your turn by your card effect, if you have a vanguard with only «Narukami» for its clan, COST [Soul Blast 1], and call this card to RC.
 
 ACT [RC]: COST [Retire this unit], choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -3819,7 +3819,7 @@ CardStat = 11043
 global.CardName[CardStat] = 'Dragonic Deathscythe  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/Thunder Dragon
 
-CONT [RC]: During your turn, if your opponent has no front row rear-guards, this unit gets power +5000.
+CONT [RC]: During your turn, if your opponent’s front row has no rear-guards, this unit gets power +5000.
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with only «Narukami» for its clan, COST [Soul Blast 2], choose one of your opponent’s rear-guards, and bind it. If you did not bind a card, draw a card.'
 global.UnitGrade[CardStat] = 2
@@ -3843,7 +3843,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11066
 {
-global.CardName[CardStat] = 'Stout-hearts Dragon'
+global.CardName[CardStat] = 'Stoutheart Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO [RC]: When this unit attacks, if you played a normal order this turn, COST [put a normal order from drop on the bottom of the deck], and this unit gets power +10000 until end of that battle.
@@ -3969,7 +3969,7 @@ global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one normal unit with "Stealth" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO: When this unit is put from RC into your soul during your turn, choose a face up card from your opponent’s bind zone, put it on the bottom of their deck, choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO: When this unit is put from RC into soul during your turn, choose one of your opponent’s face up cards in the bind zone, put it on the bottom of the deck, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -3981,7 +3981,7 @@ CardStat = 11175
 global.CardName[CardStat] = 'Stealth Rogue of Chain Teachings, Kagechika'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
-AUTO: When this unit is placed on RC, choose up to one card with "Stealth" in its card name from your drop, and you may put it into soul.
+AUTO: When this unit is placed on RC, choose a card with "Stealth" in its card name from your drop, and you may put it into soul.
 
 AUTO [RC]: When your other unit is placed on RC from bind zone, if you have a vanguard with "Shojodoji" in its card name, COST [put this unit into soul], and draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -3992,10 +3992,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11176
 {
-global.CardName[CardStat] = 'Stealth Dragon, Dual Wielder'
+global.CardName[CardStat] = 'Stealth Dragon, Dualwielder'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1 & bind one of your other rear-guards], choose a face up card from your opponent’s bind zone, and put it on the bottom of their deck. If you did not put a card, choose a card with "Stealth" in its card name and grade less than or equal to your vanguard from your bind zone, and you may put it into hand. '
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1 & bind one other rear-guard], choose a face up card from your opponent’s bind zone, and put it on the bottom of the deck. If you did not put a card, choose a unit card from your bind zone with "Stealth" in its card name and grade less than or equal to your vanguard, and you may put it into hand. '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
