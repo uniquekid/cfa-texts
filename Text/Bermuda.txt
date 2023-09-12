@@ -5,7 +5,7 @@ CardStat = x
 global.CardName[CardStat] = 'Bermuda Triangle Cadet, Caravel'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: [Soul Blast 2] When this unit is called to the RC, and you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, draw a card.'
+AUTO: [Soul Blast 2] When this unit is called to the RC, if you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+1
@@ -25,7 +25,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
 
-ACT [RC]: [Counter Blast 1 & move this unit to soul] Look at the top 5 cards of your deck, search up to 1 grade 3 «Bermuda Triangle», show it to your opponent and add it to your hand. Shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at the top 5 cards of your deck, search up to 1 grade 3 «Bermuda Triangle», show it to your opponent and add it to your hand. Shuffle your deck.'
 }
 
 CardStat = x+3
@@ -35,7 +35,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
 
-ACT [RC]: [Move this unit to soul] If you have a «Bermuda Triangle» vanguard, you can select 1 of your «Bermuda Triangle» rear-guards, and return it to your hand.'
+ACT [RC]: [Put this unit into your soul] If you have a «Bermuda Triangle» vanguard, you can select 1 of your «Bermuda Triangle» rear-guards, and return it to your hand.'
 }
 
 CardStat = x+4
@@ -167,7 +167,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'Diva of Clear Waters, Izumi'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: When this unit intercepts and you have a «Bermuda Triangle» vanguard, this unit gets shield +5000 for that turn.'
+AUTO: When this unit intercepts, if you have a «Bermuda Triangle» vanguard, this unit gets shield +5000 for that turn.'
 }
 
 CardStat = x+21
@@ -175,7 +175,7 @@ CardStat = x+21
 global.CardName[CardStat] = 'Girls’ Rock, Rio'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO: [Counter Blast 1] When this unit is returned to your hand from a RC and you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, Soul Charge 1 and draw a card.'
+AUTO: [Counter Blast 1] When this unit is returned to your hand from a RC, if you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, Soul Charge 1 and draw a card.'
 }
 
 CardStat = x+22
@@ -412,7 +412,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Bermuda Triangle» that has Limit Break 4, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Bermuda Triangle» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
 }
@@ -474,7 +474,7 @@ CardStat = x
 global.CardName[CardStat] = 'PR<3ISM-Image, Rosa'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [VC/RC]: When this unit attacks, if you have a «Bermuda Triangle» vanguard or rear-guard that has Limit Break 4, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if you have a «Bermuda Triangle» vanguard or rear-guard with Limit Break 4, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -579,7 +579,7 @@ CardStat = x+7
 global.CardName[CardStat] = 'Mascot Lady, Oria'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Magallanica
 
-AUTO [RC]: [Counter Blast 1] When this unit boosts a «Bermuda Triangle» that has Limit Break 4, you may pay the cost. If you do, the boosted unit gets power +3000 until end of that battle.'
+AUTO [RC]: [Counter Blast 1] When this unit boosts a «Bermuda Triangle» with Limit Break 4, you may pay the cost. If you do, the boosted unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -7337,7 +7337,7 @@ CardStat = 7259
 global.CardName[CardStat] = 'Loftiest Pier, Evge'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: When your vanguard with "Riviere" in its card name is placed, if you have 1 or less face up cards in your damage zone, COST [Retire this unit], draw one card from your deck and Counter Charge 1.'
+AUTO [RC]: When your vanguard with "Riviere" in its card name is placed, if you have 1 or less face up cards in your damage zone, COST [Retire this unit], draw a card from your deck and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -7784,7 +7784,7 @@ CardStat = 8109
 global.CardName[CardStat] = 'School Etoile, Olyvia '
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When it attacks a vanguard, choose up to five of your rear-guards. If all of the chosen rear-guards have different card names, stand all of them. If you stand three or more rear-guards, this unit gets critical +1 until end of that battle. (Stand even if only one was chosen.)'
+AUTO [VC]: When it attacks a vanguard, choose up to five of your rear-guards. If all of the chosen rear-guards have different card names, stand all of them. If you stand three or more rear-guards, this unit gets critical +1 until end of that battle. (stand even if only one was chosen.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 }
@@ -8160,11 +8160,11 @@ CardStat = 9069
 global.CardName[CardStat] = 'Omnia Vincit Amor, Benedetta'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
 }

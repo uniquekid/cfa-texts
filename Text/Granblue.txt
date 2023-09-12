@@ -46,7 +46,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Hades Steersman'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica/Stand Trigger
 
-AUTO [Drop zone]: When your grade 3 «Granblue» is placed on VC ñircle, you may call this card to RC on the same column as that unit.'
+AUTO [Drop zone]: When your grade 3 «Granblue» is placed on VC, you may call this card to RC on the same column as that unit.'
 }
 
 CardStat = x+6
@@ -74,7 +74,7 @@ CardStat = x+9
 global.CardName[CardStat] = 'Rough Seas Banshee'
 global.CardText[CardStat] = 'Granblue/Ghost/Magallanica/Critical Trigger
 
-ACT [RC]: [Move this unit to soul] If you have a «Granblue» vanguard, draw up to 1 card.'
+ACT [RC]: [Put this unit into your soul] If you have a «Granblue» vanguard, draw up to 1 card.'
 }
 
 CardStat = x+10
@@ -259,7 +259,7 @@ CardStat = x+32
 global.CardName[CardStat] = 'Skeleton Swordsman'
 global.CardText[CardStat] = 'Granblue/Skeleton/Magallanica
 
-AUTO: When this unit intercepts, and you have a «Granblue» vanguard, during that battle, this unit’s shield gains +5000.'
+AUTO: When this unit intercepts, if you have a «Granblue» vanguard, this unit gets shield +5000 until end of that battle.'
 }
 
 
@@ -378,7 +378,7 @@ CardStat = x+44
 global.CardName[CardStat] = 'Witch Doctor of the Abyss, Negromarl'
 global.CardText[CardStat] = 'Granblue/Demon/Magallanica
 
-AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC and you have a «Granblue» vanguard, you may pay the cost. If you do, choose one unit from your drop zone and call it to a RC.'
+AUTO: [Counter Blast 2] When this unit is called to the vanguard or RC, if you have a «Granblue» vanguard, you may pay the cost. If you do, choose one unit from your drop zone and call it to a RC.'
 }
 
 // G Add
@@ -2018,7 +2018,7 @@ global.CardName[4649] = 'Seven Seas Shipmate, Nightalert'
 
 global.CardText[4649] = 'Granblue/Vampire
 
-AUTO: [Counter Blast 1-card with "Seven Seas" in its card] When this unit is placed on RC from your drop zone, if you have a grade 3 or greater vanguard with "Seven Seas" in its card name, you may pay the cost. If you do, until end of turn, this unit gets power +2000, and "AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, you may pay the cost. If you do, draw a card".
+AUTO: [Counter Blast 1-card with "Seven Seas" in its card name] When this unit is placed on RC from your drop zone, if you have a grade 3 or greater vanguard with "Seven Seas" in its card name, you may pay the cost. If you do, until end of turn, this unit gets power +2000, and "AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, you may pay the cost. If you do, draw a card".
 '
 
 global.UnitGrade[4649] = 1
@@ -3990,11 +3990,11 @@ CardStat = 9006
 global.CardName[CardStat] = 'Sea Cruising Banshee'
 global.CardText[CardStat] = 'Granblue/Ghost/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -4051,7 +4051,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 9720
 {
 global.CardName[CardStat] = 'Vampire Princess of Night Fog, Nightrose  '
-global.CardText[CardStat] = 'Granblue/Critical Trigger
+global.CardText[CardStat] = 'Granblue/Vampire/Critical Trigger
 
 (This card cannot be used in a deck.)'
 global.UnitGrade[CardStat] = 3

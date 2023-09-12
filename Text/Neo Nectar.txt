@@ -41,7 +41,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Watering Elf'
 global.CardText[CardStat] = 'Neo Nectar/Dryad/Zoo/Stand Trigger
 
-ACT [RC]: [Move this unit to Soul] Choose one of your «Neo Nectar» units, during this turn, it gets power +3000.'
+ACT [RC]: [Put this unit into your soul] Choose one of your «Neo Nectar» units, during this turn, it gets power +3000.'
 }
 
 CardStat = x+6
@@ -374,7 +374,7 @@ CardStat = x+23
 global.CardName[CardStat] = 'World Snake, Ouroboros'
 global.CardText[CardStat] = 'Neo Nectar/High Beast/Zoo
 
-AUTO [VC/RC]: [Choose one card from your hand and discard it] When this unit’s attack hits, and you have a «Neo Nectar» vanguard, you may pay the cost. If you do, draw a card.'
+AUTO [VC/RC]: [Choose one card from your hand and discard it] When this unit’s attack hits, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 // NN Add
@@ -1526,7 +1526,7 @@ global.CardName[3618] = 'Maiden of Damask Rose'
 
 global.CardText[3618] = 'Neo Nectar/Dryad
 
-AUTO [VC/RC]: [Counter Blast 1-card with "Maiden of" in its card] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for up to one grade 3 or greater card with "Maiden of" in its card name, reveal it to your opponent, put it into your hand, and shuffle your deck.
+AUTO [VC/RC]: [Counter Blast 1-card with "Maiden of" in its card name] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for up to one grade 3 or greater card with "Maiden of" in its card name, reveal it to your opponent, put it into your hand, and shuffle your deck.
 '
 
 global.UnitGrade[3618] = 2
@@ -5649,11 +5649,11 @@ CardStat = 8987
 global.CardName[CardStat] = 'Pure-hearted Flower Maiden, Fiorenza'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }

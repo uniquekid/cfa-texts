@@ -51,7 +51,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Clever Jake'
 global.CardText[CardStat] = 'Genesis/Ghost
 
-AUTO [VC/RC]: [Counter Blast 1 – «Genesis»] When this unit attacks and you have a «Genesis» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1 – «Genesis»] When this unit attacks, if you have a «Genesis» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -205,7 +205,7 @@ global.CardText[CardStat] = 'Genesis/High Beast
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
 
-ACT [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Genesis» that has Limit Break 4, you may pay the cost. If you do, draw a card.'
+ACT [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Genesis» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }
@@ -873,7 +873,7 @@ CardStat = x+10
 global.CardName[CardStat] = 'Midday Regalia, Hemera'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO: When this unit is placed on a RC, choose up to three cards with "Regalia" in its card name from your drop zone, and put them into your soul.'
+AUTO: When this unit is placed on RC, choose up to three cards with "Regalia" in its card name from your drop zone, and put them into your soul.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -897,7 +897,7 @@ CardStat = x+12
 global.CardName[CardStat] = 'Purification Regalia, Pure Angel'
 global.CardText[CardStat] = 'Genesis/Angel
 
-AUTO: [Counter Blast 1] When this unit is placed on a RC, you may pay the cost. If you do, choose one of your vanguards with "Regalia" in its card name, until end of turn, that unit gets power +5000 and "AUTO [VC]: [Soul Blast 3] When this unit’s attack hits a vanguard, you may pay the cost. If you do, draw a card".'
+AUTO: [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose one of your vanguards with "Regalia" in its card name, until end of turn, that unit gets power +5000 and "AUTO [VC]: [Soul Blast 3] When this unit’s attack hits a vanguard, you may pay the cost. If you do, draw a card".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -1306,7 +1306,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Deity of Dreams, Neiros'
 global.CardText[CardStat] = 'Genesis/Noble
 
-ACT [VC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Soul Blast 6] Until end of turn, this unit gets power +5000 and critical +1.
+ACT [VC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Soul Blast 6] Until end of turn, this unit gets power +5000 / critical +1.
 
 AUTO: [Counter Blast 1] When this unit is placed on VC, you may pay the cost. If you do, Soul Charge 3.'
 global.UnitGrade[CardStat] = 3
@@ -4352,11 +4352,11 @@ CardStat = 9052
 global.CardName[CardStat] = 'Aias the Fortress'
 global.CardText[CardStat] = 'Genesis/Noble/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 21
 }
@@ -4571,3 +4571,18 @@ global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
 global.OldCardStat[CardStat] = 1
 global.NewTriggerStat[CardStat] = 1
+
+
+CardStat = 12024
+{
+global.CardName[CardStat] = 'Destiny Sorcerer, Ramonis'
+global.CardText[CardStat] = 'Genesis/Human
+
+AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], choose a Critical or Draw from your soul, activate that trigger effect once, and put it on the bottom of the deck.
+
+AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or less, COST [discard this card], look at the top five cards of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 21
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

@@ -81,7 +81,7 @@ CardStat = x+9
 global.CardName[CardStat] = 'Margal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast/Draw Trigger
 
-ACT [RC]: [Move this unit to soul] choose one of your «Royal Paladin», during that turn, it gets power +3000.'
+ACT [RC]: [Put this unit into your soul] choose one of your «Royal Paladin», during that turn, it gets power +3000.'
 }
 
 
@@ -167,7 +167,7 @@ CardStat = x+19
 global.CardName[CardStat] = 'Guardian of the Skies, Night Griffon'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO [VC/RC]: [Soul Blast 1] When this unit attacks, and you have a «Royal Paladin» vanguard, you may pay the cost. If so, during that turn, this unit gets power +3000.'
+AUTO [VC/RC]: [Soul Blast 1] When this unit attacks, if you have a «Royal Paladin» vanguard, you may pay the cost. If so, during that turn, this unit gets power +3000.'
 }
 
 
@@ -504,7 +504,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 CONT [VC]: During your turn, this unit gets power +1000 for each "Snogal" and "Brugal" in your RC. 
 
-AUTO [VC/RC]: [Choose one «Royal Paladin» from your hand and discard it] When this unit is called to a vanguard or RC and you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck for one "Snogal" or "Brugal", and call it to a RC, then shuffle your deck.'
+AUTO [VC/RC]: [Choose one «Royal Paladin» from your hand and discard it] When this unit is called to a vanguard or RC, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck for one "Snogal" or "Brugal", and call it to a RC, then shuffle your deck.'
 }
 
 
@@ -768,7 +768,7 @@ CardStat = x+4
 global.CardName[CardStat] = 'Uncompromising Knight, Ideale'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC/RC]: [Counter Blast 1 – «Royal Paladin»] When this unit attacks and you have a «Royal Paladin» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1 – «Royal Paladin»] When this unit attacks, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, this unit gets power +4000 until the end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -822,7 +822,7 @@ global.CardText[CardStat] = 'Royal Paladin/High Beast
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO [RC]: [Move this unit to soul] During the battle when this unit boosts a «Royal Paladin», if the boosted unit have Limit Break 4, if the attack hits a vanguard, you may pay the cost. If you do, draw one card.'
+AUTO [RC]: [Put this unit into your soul] During the battle when this unit boosts a «Royal Paladin», if the boosted unit have Limit Break 4, if the attack hits a vanguard, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -1990,7 +1990,7 @@ CardStat = x
 global.CardName[CardStat] = 'Jewel Knight, Swordmy'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: [Counter Blast 1-card with "Jewel Knight" in its card] When this unit is placed on RC, you may pay the cost. If you do, search your deck for up to one grade 1 or less card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck.'
+AUTO: [Counter Blast 1-card with "Jewel Knight" in its card name] When this unit is placed on RC, you may pay the cost. If you do, search your deck for up to one grade 1 or less card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -7763,11 +7763,11 @@ CardStat = 8698
 global.CardName[CardStat] = 'Innocent Ray Dragon'
 global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
 - Choose one of your vanguards, and it gets power +10000 until end of turn.
 - Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
