@@ -28,11 +28,13 @@ global.ToukenCrest[5] = 11244
 global.ToukenCrest[6] = 11254
 global.AllToukenCrest = 7
 
+
 CardStat = 1
 {
 global.CardName[CardStat] = 'Flogal'
 global.CardText[CardStat] = 'How much longer are you sleeping? Wake up!'
 }
+
 
 CardStat = 2
 {
@@ -42,180 +44,134 @@ global.CardText[CardStat] = 'AUTO: When this unit is placed on VC or RC, if you 
 
 
 CardStat = 5818
-
 {
-
-global.CardName[5818] = 'Imaginary Gift#Accel I'
-
-global.CardText[5818] = 'When acquired, put this marker as a new front row RC, and the unit on this RC gets power +10000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)
-'
-
-global.CardInClan[5818] = 29
-
+global.CardName[CardStat] = 'Imaginary Gift#Accel I'
+global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and the unit on this RC gets power +10000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
+global.CardInClan[CardStat] = 29
 }
 
+
 CardStat = 5819
-
 {
-
-global.CardName[5819] = 'Imaginary Gift#Protect I'
-
-global.CardText[5819] = 'When acquired, add this marker to your hand! (You can only call it to GC)
+global.CardName[CardStat] = 'Imaginary Gift#Protect I'
+global.CardText[CardStat] = 'When acquired, add this marker to your hand! (You can only call it to GC)
 
 CONT: Sentinel.
 
 AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.'
-
-global.CardInClan[5819] = 29
+global.CardInClan[CardStat] = 29
+}
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 5820
-
 {
-
-global.CardName[5820] = 'Imaginary Gift#Force I'
-
-global.CardText[5820] = 'When acquired, put this marker on your VC or RC, and the unit on this circle gets power +10000 during your turn! (You may put it on the same circle. The power stacks too)'
-
-global.CardInClan[5820] = 29
-
+global.CardName[CardStat] = 'Imaginary Gift#Force I'
+global.CardText[CardStat] = 'When acquired, put this marker on your VC or RC, and the unit on this circle gets power +10000 during your turn! (You may put it on the same circle. The power stacks too)'
+global.CardInClan[CardStat] = 29
 }
+
 
 CardStat = 6130
-
 {
-
-global.CardName[6130] = 'Plant'
-
-global.CardText[6130] = 'Plant
+global.CardName[CardStat] = 'Plant'
+global.CardText[CardStat] = 'Plant
 
 (This represents a plant token, and cannot be put in a deck.)'
-
-global.CardInClan[6130] = 29
-
-global.PowerStat[6130] = 5000
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 6670
-
 {
-
-global.CardName[6670] = 'Imaginary Gift#Force II'
-
-global.CardText[6670] = 'When acquired, put this marker on your VC or RC, and the original critical of the unit there becomes 2! (You may put it on the same circle, but the critical does not stack)'
-
-global.CardInClan[6670] = 29
-
+global.CardName[CardStat] = 'Imaginary Gift#Force II'
+global.CardText[CardStat] = 'When acquired, put this marker on your VC or RC, and the original critical of the unit there becomes 2! (You may put it on the same circle, but the critical does not stack)'
+global.CardInClan[CardStat] = 29
 }
+
 
 CardStat = 6671
-
 {
-
-global.CardName[6671] = 'Imaginary Gift#Accel II'
-
-global.CardText[6671] = 'When acquired, put this marker as a new front row RC, and draw a card. The unit there gets power +5000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
-
-global.CardInClan[6671] = 29
-
+global.CardName[CardStat] = 'Imaginary Gift#Accel II'
+global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and draw a card. The unit there gets power +5000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
+global.CardInClan[CardStat] = 29
 }
+
 
 CardStat = 6672
-
 {
-
-global.CardName[6672] = 'Imaginary Gift#Protect II'
-
-global.CardText[6672] = 'When acquired, put this marker on your RC, the unit there gets power +5000, and gets shield +10000 when it intercepts! (You may put it on the same circle. The effects stack too.)'
-
-global.CardInClan[6672] = 29
-
+global.CardName[CardStat] = 'Imaginary Gift#Protect II'
+global.CardText[CardStat] = 'When acquired, put this marker on your RC, the unit there gets power +5000, and gets shield +10000 when it intercepts! (You may put it on the same circle. The effects stack too.)'
+global.CardInClan[CardStat] = 29
 }
+
 
 CardStat = 6675
-
 {
+global.CardName[CardStat] = 'Vision'
+global.CardText[CardStat] = '(This represents a Vision token, and cannot be put in a deck.)
 
-global.CardName[6675] = 'Vision'
-
-global.CardText[6675] = '(This represents a Vision token, and cannot be put in a deck.)
-
-CONT [RC]: Perform drive check for the battle it attacked.
-'
-
-global.CardInClan[6675] = 29
-
-global.PowerStat[6675] = 13000
+CONT [RC]: Perform drive check for the battle it attacked.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 6915
-
 {
-
-global.CardName[6915] = 'Astral Plane'
-
-global.CardText[6915] = 'This RC is an Astral Plane. Astral Planes have the following rules.
+global.CardName[CardStat] = 'Astral Plane'
+global.CardText[CardStat] = 'This RC is an Astral Plane. Astral Planes have the following rules.
 • Grade is ignored when calling an <Astral Deity>.
 • If the card on the Astral Plane is not an <Astral Deity>, put it into the drop zone.
 • The unit on the Astral Plane can attack from the back row, and performs drive checks. Cards revealed for those drive checks are put into your soul instead of your hand.
 • At the end of your turn, put the unit on the Astral Plane on the bottom of your deck.
 
 (SHIFT + left click to delete Astral Plane.)'
-
-global.CardInClan[6915] = 29
-
+global.CardInClan[CardStat] = 29
 }
 
+
 CardStat = 7069
-
 {
-
-global.CardName[7069] = 'Evil Decoy'
-
-global.CardText[7069] = 'Evil Decoy
+global.CardName[CardStat] = 'Evil Decoy'
+global.CardText[CardStat] = 'Evil Decoy
 
 (This represents an evil decoy token, and cannot be put in a deck. It does not have boost, and has intercept.)
 
-CONT [RC]: It cannot attack, and can intercept from the back row.
-'
-
-global.CardInClan[7069] = 29
-
-global.PowerStat[7069] = 0
+CONT [RC]: It cannot attack, and can intercept from the back row.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 7202
-
 {
-
-global.CardName[7202] = 'Plant (10,000)'
-
-global.CardText[7202] = 'Plant
+global.CardName[CardStat] = 'Plant (10,000)'
+global.CardText[CardStat] = 'Plant
 
 (This represents a plant token that has been strengthened and called by a special ability, and cannot be put in a deck. It has both boost and intercept.)'
-
-global.CardInClan[7202] = 29
-
-global.PowerStat[7202] = 10000
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 10000
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 7342
-
 {
-
-global.CardName[7342] = 'Quick Shield'
-
-global.CardText[7342] = 'Blitz Order
+global.CardName[CardStat] = 'Quick Shield'
+global.CardText[CardStat] = 'Blitz Order
 
 One of your attacked units gets power +5000 until end of that battle!
 
@@ -224,121 +180,93 @@ One of your attacked units gets power +5000 until end of that battle!
 (This card is regarded as being from all clans.)
 
 (This card is a ticket card, and cannot be put in a deck.)'
-
-global.CardInClan[7342] = 29
-
-global.PowerStat[7342] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 7403
-
 {
-
-global.CardName[7403] = 'Ahsha’s Flower Fairy'
-
-global.CardText[7403] = 'Plant
+global.CardName[CardStat] = 'Ahsha’s Flower Fairy'
+global.CardText[CardStat] = 'Plant
 
 (This card represents an Ahsha’s Flower Fairy token, and cannot be put in a deck.)
 
 CONT [RC]: This unit has the same card name as your vanguard with "Ahsha" in its card name.
 
 AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unit’s power and critical to match that unit’s until end of that battle.'
-
-global.CardInClan[7403] = 29
-
-global.PowerStat[7403] = 13000
-global.RemoveFromDrop[CardStat] = 1
-
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
 }
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 
 CardStat = 7628
-
 {
-
-global.CardName[7628] = 'Treasures'
-
-global.CardText[7628] = '(This represents a Treasures marker, and cannot be put in a deck.)'
-
-global.CardInClan[7628] = 29
-
+global.CardName[CardStat] = 'Treasures'
+global.CardText[CardStat] = '(This represents a Treasures marker, and cannot be put in a deck.)'
+global.CardInClan[CardStat] = 29
 }
+global.DefensePowerStat[CardStat] = 0
+
 
 CardStat = 7949
-
 {
-
-global.CardName[7949] = 'Mask of Domination'
-
-global.CardText[7949] = 'Mask of Domination
+global.CardName[CardStat] = 'Mask of Domination'
+global.CardText[CardStat] = 'Mask of Domination
 
 (This card represents a Mask of Domination token, and cannot be put in a deck.)'
-
-global.CardInClan[7949] = 29
-
-global.PowerStat[7949] = 0
-
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
 }
-global.CanAttackFromBackRow[CardStat] = 1
+global.PowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+global.CanAttackFromBackRow[CardStat] = 1
+
 
 CardStat = 8096
-
 {
-
-global.CardName[8096] = 'Meers Present'
-
-global.CardText[8096] = '(This represents Meers Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
-
-global.CardInClan[8096] = 29
-
-global.PowerStat[8096] = 0
+global.CardName[CardStat] = 'Meers Present'
+global.CardText[CardStat] = '(This represents Meers Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
-}
 
 CardStat = 8425
-
 {
+global.CardName[CardStat] = 'Shadow Army'
+global.CardText[CardStat] = 'Brandt Gate/Shadow Army
 
-global.CardName[8425] = 'Shadow Army'
-
-global.CardText[8425] = 'Brandt Gate/Shadow Army
-
-(This represents a Shadow Army token, and cannot be put in a deck.)
-'
-
-global.CardInClan[8425] = 29
-
-global.PowerStat[8425] = 15000
-global.RemoveFromDrop[CardStat] = 1
-
+(This represents a Shadow Army token, and cannot be put in a deck.)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 29
 }
+global.RemoveFromDrop[CardStat] = 1
+global.PowerStat[CardStat] = 15000
+
 
 CardStat = 8811
-
 {
-
-global.CardName[8811] = 'Monster BOX'
-
-global.CardText[8811] = 'This represents a Monster BOX, and cannot be put in a deck.
+global.CardName[CardStat] = 'Monster BOX'
+global.CardText[CardStat] = 'This represents a Monster BOX, and cannot be put in a deck.
 
 If you have a Monster BOX, you can perform the following action.
 
-• Once during each of your main phase, exchange two unit cards with the same grade from your hand and Monster BOX.
-'
-
-global.CardInClan[8811] = 29
-
-global.PowerStat[8811] = 0
-
+• Once during each of your main phase, exchange two unit cards with the same grade from your hand and Monster BOX.'
+global.CardInClan[CardStat] = 29
 }
+global.PowerStat[CardStat] = 0
+
 
 CardStat = 9175
 {
-global.CardName[CardStat] = 'Skeleton Army Token'
+global.CardName[CardStat] = 'Skeleton Army'
 global.CardText[CardStat] = 'Shaman King/Bone
 
 (This represents a Skeleton Army token, and cannot be put in a deck.)'
@@ -348,6 +276,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 9583
 {
@@ -361,6 +290,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 9584
 {
@@ -381,6 +311,7 @@ global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.CanAttackFromBackRow[CardStat] = 1
 
+
 CardStat = 10476
 {
 global.CardName[CardStat] = 'Chonojet Dragon'
@@ -400,6 +331,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
+
 CardStat = 10626
 {
 global.CardName[CardStat] = 'Dragontree'
@@ -414,6 +346,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 10668
 {
@@ -434,6 +367,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
+
 CardStat = 10687
 {
 global.CardName[CardStat] = 'Noblesserose'
@@ -452,6 +386,7 @@ global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.EnableAttackFromBackRow[CardStat] = 1
+
 
 CardStat = 10992
 {
@@ -472,6 +407,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
+
 CardStat = 11018
 {
 global.CardName[CardStat] = 'Guardian Shield'
@@ -484,6 +420,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 20000
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 11213
 {
@@ -505,6 +442,7 @@ global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 
+
 CardStat = 11214
 {
 global.CardName[CardStat] = 'Tantou’s Ability Kiwame'
@@ -524,6 +462,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
+
 
 CardStat = 11215
 {
@@ -545,6 +484,7 @@ global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 
+
 CardStat = 11216
 {
 global.CardName[CardStat] = 'Wakizashi’s Ability Kiwame'
@@ -564,6 +504,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
+
 
 CardStat = 11241
 {
@@ -585,6 +526,7 @@ global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 
+
 CardStat = 11244
 {
 global.CardName[CardStat] = 'Yari’s Ability Kiwame'
@@ -604,6 +546,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
+
 
 CardStat = 11254
 {
@@ -625,6 +568,7 @@ global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 
+
 CardStat = 11512
 {
 global.CardName[CardStat] = 'Quick Shield'
@@ -643,6 +587,7 @@ global.DefensePowerStat[CardStat] = 20000
 global.RemoveFromDrop[CardStat] = 1
 }
 
+
 CardStat = 11348
 {
 global.CardName[CardStat] = 'Vanilmirth'
@@ -656,6 +601,7 @@ global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
+
 CardStat = 11349
 {
 global.CardName[CardStat] = 'Lif'
@@ -668,6 +614,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 11531
 {
@@ -686,6 +633,7 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 11954
 {
@@ -706,3 +654,4 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1

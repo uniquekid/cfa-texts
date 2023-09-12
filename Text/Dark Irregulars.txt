@@ -69,7 +69,7 @@ CardStat = x+8
 global.CardName[CardStat] = 'Hysteric Shirley'
 global.CardText[CardStat] = 'Dark Irregulars/Human/Dark Zone/Draw Trigger
 
-ACT [RC]: [Move this unit to soul] If you have a «Dark Irregulars» vanguard, you may Soul Charge 1.'
+ACT [RC]: [Put this unit into your soul] If you have a «Dark Irregulars» vanguard, you may Soul Charge 1.'
 }
 
 CardStat = x+9
@@ -309,7 +309,7 @@ CardStat = x+38
 global.CardName[CardStat] = 'Knowledge Drunkard'
 global.CardText[CardStat] = 'Dark Irregulars/Demon/Dark Zone
 
-AUTO [VC/RC]: [Send one card from your hand to soul] When this unit’s attack hits a vanguard, and you have a «Dark Irregulars» vanguard, you may pay the cost. If you do, draw one card.'
+AUTO [VC/RC]: [Send one card from your hand to soul] When this unit’s attack hits a vanguard, if you have a «Dark Irregulars» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 CardStat = x+39
@@ -317,7 +317,7 @@ CardStat = x+39
 global.CardName[CardStat] = 'Red Magma'
 global.CardText[CardStat] = 'Dark Irregulars/Human/Dark Zone
 
-AUTO [VC/RC]: When this unit attacks and you have at least six «Dark Irregulars» in your soul, draw one card, then choose one card from your hand and place it to the bottom of your deck.'
+AUTO [VC/RC]: When this unit attacks and you have at least six «Dark Irregulars» in your soul, draw a card, then choose one card from your hand and place it to the bottom of your deck.'
 }
 
 CardStat = x+40
@@ -673,7 +673,7 @@ CardStat = x+5
 global.CardName[CardStat] = 'Werleopard Soldat'
 global.CardText[CardStat] = 'Dark Irregulars/Warbeast/Dark Zone
 
-AUTO [VC/RC]: When this unit attacks, if you have a «Dark Irregulars» vanguard or Rear-Guard that has Limit Break 4, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if you have a «Dark Irregulars» vanguard or rear-guard with Limit Break 4, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 11
 }
@@ -1048,7 +1048,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Warbeast/Dark Zone
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1 & Put this unit into your soul] Soul Charge 2, and if the number of cards in your soul is six or more, draw one card.'
+ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1 & Put this unit into your soul] Soul Charge 2, and if the number of cards in your soul is six or more, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 11
 }
@@ -4155,9 +4155,9 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 ACT [VC]: If your soul has ten or less cards, COST [Soul Blast 1], choose a card from your soul, and bind it face down.
 
 CONT [VC]: Get all of the effects below depending on the number of face down cards in your bind zone.
-— 5 or more - This unit gets power +5000. (Active on opponent’s turn too)
-— 7 or more - During your turn, this unit gets power +10000 / drive +1.
-— 10 or more - During your turn, this unit gets power +10000 / critical +2.
+• 5 or more - This unit gets power +5000. (Active on opponent’s turn too)
+• 7 or more - During your turn, this unit gets power +10000 / drive +1.
+• 10 or more - During your turn, this unit gets power +10000 / critical +2.
 
 AUTO [VC]: When this unit attacks, if your bind zone has fifteen or more face down cards, choose one of your opponent’s vanguards, and deal two damage.'
 global.UnitGrade[CardStat] = 3
@@ -4201,11 +4201,11 @@ CardStat = 8975
 global.CardName[CardStat] = 'Cuticle Defender, Flavia'
 global.CardText[CardStat] = 'Dark Irregulars/Human/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 11
 }

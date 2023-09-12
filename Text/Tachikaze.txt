@@ -23,7 +23,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Cannon Fire Dragon, Sledge Ankylo'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire/Draw Trigger
 
-ACT [RC]: [Move this unit to soul] Choose up to 1 of your «Tachikaze» and during that turn it gets power +3000.'
+ACT [RC]: [Put this unit into your soul] Choose up to 1 of your «Tachikaze» and during that turn it gets power +3000.'
 }
 
 CardStat = x+3
@@ -45,7 +45,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
 AUTO: Forerunner (when another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
+AUTO: [Counter Blast 1] When this unit is moved from the RC to the drop zone, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
 }
 
 CardStat = x+6
@@ -164,7 +164,7 @@ CardStat = x+21
 global.CardName[CardStat] = 'Winged Dragon, Skyptero'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
-AUTO [RC]: [Counter Blast 1] When this unit is moved from the RC to the drop zone and you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
+AUTO [RC]: [Counter Blast 1] When this unit is moved from the RC to the drop zone, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, return this card back to hand.'
 }
 
 CardStat = x+22
@@ -379,7 +379,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon/Dragon Empire
 
 AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose three of your rear-guards with "Ancient Dragon" in its card name, and retire them] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +10000 / critical +1 until end of that battle.
 
-ACT [VC]: [Counter Blast 2-card with "Ancient Dragon" in its card] This unit gets power +5000 until end of turn.
+ACT [VC]: [Counter Blast 2-card with "Ancient Dragon" in its card name] This unit gets power +5000 until end of turn.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
@@ -561,7 +561,7 @@ CardStat = x+1
 global.CardName[CardStat] = 'Savage Archer'
 global.CardText[CardStat] = 'Tachikaze/Human/Dragon Empire
 
-AUTO [VC/RC]: When this unit attacks, if you have a «Tachikaze» vanguard or rear-guard that has Limit Break 4, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if you have a «Tachikaze» vanguard or rear-guard with Limit Break 4, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 17
 }
@@ -571,7 +571,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Savage Illuminator'
 global.CardText[CardStat] = 'Tachikaze/Human/Dragon Empire
 
-AUTO [RC]: [Counter Blast 1] When this unit boosts a «Tachikaze» that has Limit Break 4, you may pay the cost. If you do, the boosted unit gets power +3000 until end of that battle.'
+AUTO [RC]: [Counter Blast 1] When this unit boosts a «Tachikaze» with Limit Break 4, you may pay the cost. If you do, the boosted unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -583,7 +583,7 @@ global.CardText[CardStat] = 'Tachikaze/Human/Dragon Empire
 
 AUTO: Forerunner (When another unit of the same clan rides this unit, you may call it to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Tachikaze» that has Limit Break 4, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Tachikaze» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 17
 }
@@ -3345,11 +3345,11 @@ CardStat = 8983
 global.CardName[CardStat] = 'Indomitable Dragon, Tenacitops'
 global.CardText[CardStat] = 'Dragon Empire/Tachikaze/Dinodragon/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 17
 }

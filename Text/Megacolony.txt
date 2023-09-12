@@ -215,7 +215,7 @@ CardStat = x+27
 global.CardName[CardStat] = 'Machining Mantis'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO: When you call this unit to your vanguard or RC and you have a «Megacolony» card with "Machining" in its card name in your soul, this unit gets power +3000 for the turn.'
+AUTO: When you call this unit to your vanguard or RC, if you have a «Megacolony» card with "Machining" in its card name in your soul, this unit gets power +3000 for the turn.'
 }
 
 CardStat = x+28
@@ -247,7 +247,7 @@ CardStat = x+31
 global.CardName[CardStat] = 'Water Gang'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits and you have a «Megacolony» vanguard, you may pay the cost. If you did, draw a card.'
+AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits, if you have a «Megacolony» vanguard, you may pay the cost. If you did, draw a card.'
 }
 
 CardStat = x+32
@@ -311,7 +311,7 @@ CardStat = x+38
 global.CardName[CardStat] = 'Master Fraude'
 global.CardText[CardStat] = 'Megacolony/Insect/Zoo
 
-AUTO [VC/RC]: [Soul Blast 3] When this unit’s attack hits, and you have a «Megacolony» vanguard, you may pay the cost. If you do, draw a card. 
+AUTO [VC/RC]: [Soul Blast 3] When this unit’s attack hits, if you have a «Megacolony» vanguard, you may pay the cost. If you do, draw a card. 
 
 AUTO [VC]: When this unit is boosted by a «Megacolony» clan, during that battle, this unit gets power +3000.'
 }
@@ -2731,7 +2731,7 @@ CardStat = 7008
 global.CardName[CardStat] = 'Machining Centipede'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, until end of your opponent’s next turn, those units lose "Twin Drive", "Intercept", and "Boost", and they cannot get them. Stand this unit.'
+ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, until end of your opponent’s next turn, those units lose "Twin Drive", "Intercept", and "Boost", and they cannot get them. stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -3264,11 +3264,11 @@ CardStat = 9051
 global.CardName[CardStat] = 'Faint Feather Mutant, Quinagria'
 global.CardText[CardStat] = 'Megacolony/Insect/Heal Trigger
 
-AUTO: When this unit is put on GC from hand, if you have not ridden a grade 3 or greater unit this fight, perform one of the following.
-— Choose one of your vanguards, and it gets power +10000 until end of turn.
-— Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has 0 cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
