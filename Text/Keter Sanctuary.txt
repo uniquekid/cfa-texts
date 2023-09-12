@@ -4619,7 +4619,7 @@ CardStat = 11908
 global.CardName[CardStat] = 'Shimmering Sword Dragon, Sky Raizen'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or if your vanguard’s grade is 4, perform either of the following according to the circle this unit is on.
+AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on
 • RC - Choose two of your rear-guards, and they get "Boost" until end of turn.
 • GC - This unit gets shield +15000 until end of that battle.
 
@@ -4817,7 +4817,37 @@ global.CardText[CardStat] = 'Keter Sanctuary/Giant
 AUTO [RC]: When this unit attacks, if you have a unit with "Alden" in its card name, Soul Charge 1, and if a trigger unit was Soul Charge , this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
-global.PersonaRide[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12013
+{
+global.CardName[CardStat] = 'Bringer of Fervor, Ril'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC by your card’s ability, you may Soul Charge 2.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12029
+{
+global.CardName[CardStat] = 'Magical Chief Librarian, Soltiriel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT: This card is also regarded as "Spiral Cutie Angel".
+
+AUTO: When this card is discarded during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into your hand, and put the rest on the top or bottom of your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

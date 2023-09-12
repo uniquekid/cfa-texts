@@ -4764,7 +4764,7 @@ CardStat = 11974
 global.CardName[CardStat] = 'Sea Strike Dragon, Enlargulv'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or if your vanguard’s grade is 4, perform either of the following according to the circle this unit is on.
+AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on.
 • RC - COST [Soul Blast 1], choose a grade 2 or greater card with a different card name from this unit from your drop, and put it into hand.
 • GC - This unit gets shield +15000 until end of that battle.
 
@@ -4800,4 +4800,21 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12030
+{
+global.CardName[CardStat] = 'Inventor of Plots, Airos'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+CONT: This card is also regarded as "Love-binding Maiden, Margaret".
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and your opponent cannot intercept until end of turn. All of your opponent’s front row rear-guards cannot stand during the next stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
