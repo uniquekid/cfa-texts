@@ -795,9 +795,9 @@ global.CardText[3552] = 'Granblue/Vampire
 
 AUTO: Hollow (When this unit is placed on RC, you may have it become hollowed. If you do, retire it at the end of turn.)
 
-AUTO [RC] Generation Break 1: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if this unit is hollowed, you may pay the cost. If you do, choose up to one card not named "Mighty Rogue, Nightstorm" from your drop zone, and call it to a RC this unit is not on.
+AUTO [RC] Generation Break 1: COST [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if this unit is hollowed, you may pay the cost. If you do, choose up to one card not named "Mighty Rogue, Nightstorm" from your drop zone, and call it to a RC this unit is not on.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the hollow ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
+AUTO: COST [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the hollow ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 '
 
 global.UnitGrade[3552] = 3
@@ -906,7 +906,7 @@ global.CardName[3577] = 'Ghostie Great King, Obadiah'
 
 global.CardText[3577] = 'Granblue/Ghost
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
 AUTO: When this unit is placed on VC, search your deck for up to three cards, put them into your drop zone, shuffle your deck, and if two or more cards with the hollow ability were put into the drop zone with this effect, choose up to one normal unit with "Ghostie" in its card name from the drop zone, and call it to a RC in the same column as this unit.
 '
@@ -930,9 +930,9 @@ global.CardName[3578] = 'Mist Phantasm Pirate King, Nightrose'
 
 global.CardText[3578] = 'Granblue/Vampire
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-AUTO [VC] Generation Break 2: [Counter Blast 2 & Choose a face down card named "Mist Phantasm Pirate King, Nightrose" from your G zone, and turn it face up] When this unit attacks a vanguard, you may pay the cost. If you do, choose up to two cards from your drop zone, and call them to separate RC in different rows.
+AUTO [VC] Generation Break 2: COST [Counter Blast 2 & Choose a face down card named "Mist Phantasm Pirate King, Nightrose" from your G zone, and turn it face up] When this unit attacks a vanguard, you may pay the cost. If you do, choose up to two cards from your drop zone, and call them to separate RC in different rows.
 '
 
 global.UnitGrade[3578] = 4
@@ -1042,7 +1042,7 @@ global.CardText[3583] = 'Granblue/Skeleton
 
 AUTO: Hollow (When this unit is placed on RC, you may have it become hollowed. If you do, retire it at the end of turn.)
 
-AUTO: Generation Break 1: [Counter Blast 1] When this unit is placed on RC from your drop zone, you may pay the cost. If you do, choose up to one of your opponent’s rear-guards, retire it, and if this unit is hollowed, draw a card.
+AUTO: Generation Break 1: COST [Counter Blast 1] When this unit is placed on RC from your drop zone, you may pay the cost. If you do, choose up to one of your opponent’s rear-guards, retire it, and if this unit is hollowed, draw a card.
 '
 
 global.UnitGrade[3583] = 2
@@ -1670,7 +1670,7 @@ global.CardText[4025] = 'Granblue/Demon
 
 G guardian.
 
-AUTO: [Counter Blast 1 & Choose one of your rear-guards, and retire it] When this unit is placed on GC, you may pay the cost. If you do, choose up to one normal unit with "Ghostie" in its card name from your drop zone, call it to an open RC, and this unit gets shield +10000 until end of that battle.
+AUTO: COST [Counter Blast 1 & Choose one of your rear-guards, and retire it] When this unit is placed on GC, you may pay the cost. If you do, choose up to one normal unit with "Ghostie" in its card name from your drop zone, call it to an open RC, and this unit gets shield +10000 until end of that battle.
 '
 
 global.UnitGrade[4025] = 4
@@ -2689,7 +2689,7 @@ global.CardText[5172] = 'Granblue/Vampire
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose up to a number of cards from your drop zone equal to one plus the number of face up cards in your G zone, call them to separate RC as hollowed, and if you called three or more cards, this unit gets critical +1.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose up to the number of cards in your drop zone as the number of face up cards in your G zone +1, call them to separate RC as hollowed, and if you called three or more cards, this unit gets critical +1.
 
 AUTO [VC]: At the beginning of your battle phase, choose one of your units for each card with "Nightrose" in its card name in your drop zone, and they get power +5000 until end of turn.
 '

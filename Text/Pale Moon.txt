@@ -185,7 +185,7 @@ global.CardText[CardStat] = 'Pale Moon/Succubus
 
 (PREMIUM JP & EN & TH: You can only run this card if you do not have Flying Peryton or V Jumping Jill in your deck.)
 
-AUTO: [Choose another of your «Pale Moon» rear-guards, and put it into your soul] When this unit is placed on RC, if you have a «Pale Moon» vanguard, you may pay the cost. If you do, choose a «Pale Moon» other than a card named "Purple Trapezist" from your soul, and call it to RC.'
+AUTO: COST [Choose another of your «Pale Moon» rear-guards, and put it into your soul] When this unit is placed on RC, if you have a «Pale Moon» vanguard, you may pay the cost. If you do, choose a «Pale Moon» other than a card named "Purple Trapezist" from your soul, and call it to RC.'
 }
 global.CardLimidet[CardStat] = 1
 
@@ -256,7 +256,7 @@ CardStat = x+32
 global.CardName[CardStat] = 'Dancing Princess of the Night Sky'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Pale Moon» vanguard, you may pay the cost. If you do, search your deck for up to one grade 2 or less «Pale Moon», put it into your soul, and shuffle your deck.'
+AUTO: COST [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Pale Moon» vanguard, you may pay the cost. If you do, search your deck for up to one grade 2 or less «Pale Moon», put it into your soul, and shuffle your deck.'
 }
  
 CardStat = x+33
@@ -1228,7 +1228,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'Prankster Girl of Mirrorland'
 global.CardText[CardStat] = 'Pale Moon/Human/Stand Trigger
 
-AUTO: Generation Break 1: [Put this unit on top of your deck] When this card is put into soul, you may pay the cost. If you do, search your deck for up to one card not named "Prankster Girl of Mirrorland", put it into your soul, and shuffle your deck.'
+AUTO: Generation Break 1: COST [Put this unit on top of your deck] When this card is put into soul, you may pay the cost. If you do, search your deck for up to one card not named "Prankster Girl of Mirrorland", put it into your soul, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
@@ -1438,7 +1438,7 @@ global.CardName[3546] = 'Crescent Moon Juggler'
 
 global.CardText[3546] = 'Pale Moon/Warbeast
 
-Magia - AUTO: Generation Break 1: [Counter Blast 1 & Soul Blast 1] When this unit is placed on RC, if you have a vanguard with "Harri" in its card name, you may pay the cost. If you do, Soul Charge 1, choose up to one card from your soul, call it to RC, that unit and this unit get power +2000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul.
+Magia - AUTO: Generation Break 1: COST [Counter Blast 1 & Soul Blast 1] When this unit is placed on RC, if you have a vanguard with "Harri" in its card name, you may pay the cost. If you do, Soul Charge 1, choose up to one card from your soul, call it to RC, that unit and this unit get power +2000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul.
 '
 
 global.UnitGrade[3546] = 2
@@ -1458,9 +1458,9 @@ global.CardName[3547] = 'Curtain Call Anouncer, Mephisto'
 
 global.CardText[3547] = 'Pale Moon/Demon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-Magia - ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: During your turn, all of your units get power +1000 for each face up card named "Curtain Call Anouncer, Mephisto" in your G zone.", and choose up to one card from your soul for every two face up cards with the magia ability in your G zone. Call the chosen cards to separate RC, those units get power +5000 until end of turn, and at the end of that turn, put the units called with this effect into your soul.
+Magia - ACT [VC] 1/Turn: COST [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: During your turn, all of your units get power +1000 for each face up card named "Curtain Call Anouncer, Mephisto" in your G zone.", and choose up to one card from your soul for every two face up cards with the magia ability in your G zone. Call the chosen cards to separate RC, those units get power +5000 until end of turn, and at the end of that turn, put the units called with this effect into your soul.
 '
 
 global.UnitGrade[3547] = 4
@@ -1650,9 +1650,9 @@ global.CardName[3733] = 'Dreamiy Axel, Milward'
 
 global.CardText[3733] = 'Pale Moon/Warbeast
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-Magia - ACT [VC] 1/Turn Generation Break 2: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up] Choose up to two cards from your soul, call them to separate RC, they get power +4000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul. Choose the same number of your units as the number of face up cards named "Dreamiy Axel, Milward" in your G zone, and until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose up to one card from your soul, and call it to RC with a unit".
+Magia - ACT [VC] 1/Turn Generation Break 2: COST [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up] Choose up to two cards from your soul, call them to separate RC, they get power +4000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul. Choose the same number of your units as the number of face up cards named "Dreamiy Axel, Milward" in your G zone, and until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose up to one card from your soul, and call it to RC with a unit".
 '
 
 global.UnitGrade[3733] = 4
@@ -1927,7 +1927,7 @@ global.CardText[4061] = 'Pale Moon/Goblin
 
 AUTO: When your unit rides this unit, draw a card, choose a card from your hand, and put it into your soul.
 
-AUTO [Soul]: During your turn, when your G unitStride, you may call this card to RC. If you do, Soul Charge 1.
+AUTO [Soul]: During your turn, when your G unit Stride, you may call this card to RC. If you do, Soul Charge 1.
 '
 
 global.UnitGrade[4061] = 0
@@ -2259,7 +2259,7 @@ AUTO [VC] 1/Turn Generation Break 2: [Counter Blast 1] When your rear-guard is p
 
 AUTO: When this unit is placed on VC, look at two cards from the top of your deck, put a card into your soul, and put a card on the bottom of your deck.
 
-Magia-AUTO [VC]: [Soul Blast 1] During your turn, when your G unitStride, you may pay the cost. If you do, choose a card with the magia ability from your soul, call it to RC, and at the end of that turn, put that unit into your soul.
+Magia - AUTO [VC]: [Soul Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose a card with the magia ability from your soul, call it to RC, and at the end of that turn, put that unit into your soul.
 '
 
 global.UnitGrade[4667] = 3
@@ -2681,7 +2681,7 @@ global.CardText[5171] = 'Pale Moon/Elf
 
 Stride.
 
-Magia - AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose two cards from your other circles, and put them into your soul] When this unit attacks, you may pay the cost. If you do, choose up to three cards from your soul, call them to separate RC, and at the end of that turn, put them into your soul.
+Magia - AUTO [VC]: COST [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up & Choose two cards from your other circles, and put them into your soul] When this unit attacks, you may pay the cost. If you do, choose up to three cards from your soul, call them to separate RC, and at the end of that turn, put them into your soul.
 
 CONT [VC]: All of your rear-guards with the magia ability get power +3000 for each face up card with "Harri" in its card name in your G zone.'
 global.UnitGrade[5171] = 4
