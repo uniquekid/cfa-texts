@@ -3603,7 +3603,7 @@ CONT [RC/GC]: If your opponent’s drive check or damage check revealed a trigger 
 
 AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1], and perform all of the following.
 • Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
-• COST [remove a over trigger from drop], and this unit gets power +15000 until end of that battle.'
+• COST [Remove a over trigger from drop], and this unit gets power +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -4122,9 +4122,9 @@ global.CardText[CardStat] = 'Dragon Empire/Normal Order/Quintuplets
 Play this if your vanguard is "The Quintessential Quintuplets, Ichika Nakano"!
 
 Choose up to two <Quintuplets> with the same card name from your drop, put one on bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
-• 3 or more different card names- Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
-• 5 or more different card names- Counter Charge 1.
-• 7 or more different card names- Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.'
+• 3 or more different card names - Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
+• 5 or more different card names - Counter Charge 1.
+• 7 or more different card names - Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -4564,4 +4564,64 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12033
+{
+global.CardName[CardStat] = 'Stealth Fiend, Hitorima'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast
+
+AUTO: When this unit is placed on RC, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12034
+{
+global.CardName[CardStat] = 'Rumbling Dragon, Brioves'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on
+• RC - Choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.
+• GC - This unit gets shield +15000 until end of that battle.
+
+AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12035
+{
+global.CardName[CardStat] = 'Steel Baron Dragon, Spinomarquis'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Dinodragon> from among them, call them to RC, and shuffle the deck.
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & retire a <Dinodragon> rear-guard], draw a card, and this unit gets power +10000 until end of that battle. Choose up to one <Dinodragon> from your hand, call it to RC, and retire all of your opponent’s rear-guards in the same column as that called unit.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1 
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12036
+{
+global.CardName[CardStat] = 'Stealth Fiend, Shenryi'
+global.CardText[CardStat] = 'Dragon Empire/Ghost
+
+AUTO [RC]: When this unit boosts, if your opponent has one or less rear-guards, or you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

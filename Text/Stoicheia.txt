@@ -4404,9 +4404,9 @@ global.CardText[CardStat] = 'Stoicheia/Normal Order/Quintuplets
 Play this if your vanguard is "The Quintessential Quintuplets, Itsuki Nakano"!
 
 Choose up to two <Quintuplets> with the same card name from your drop, put one on bottom of deck, and put the rest into the memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplets> with different card names in your memory.
-• 3 or more different card names- Draw a card.
-• 5 or more different card names- Counter Charge 1.
-• 7 or more different card names- Choose one of your vanguards, and it gets drive +1 until end of turn.'
+• 3 or more different card names - Draw a card.
+• 5 or more different card names - Counter Charge 1.
+• 7 or more different card names - Choose one of your vanguards, and it gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -4746,7 +4746,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11973
 {
-global.CardName[CardStat] = 'Conceited Noble,, Philander'
+global.CardName[CardStat] = 'Conceited Noble, Philander'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck
@@ -4818,3 +4818,49 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12031
+{
+global.CardName[CardStat] = 'Vivid Flow Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO [RC]: When this unit is stand by your card’s ability, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12032
+{
+global.CardName[CardStat] = 'Twilight Guardian, Leoguardia'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+CONT: This card cannot be ridden, and cannot be normal called to a RC without a Dragontree marker.
+
+CONT [RC]: During your turn, this unit gets power +2000 for each Dragontree marker on your RC.
+
+CONT [RC]: During your turn, this unit gets power +2000 for every five cards in your drop.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 12047
+{
+global.CardName[CardStat] = 'Marche Fleur, Lianorn Vivace'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+[UnisonDress] - AUTO: When this unit is placed by riding from a unit with "Lianorn" in its different card name from this unit or a unit in the [UnsionDress] state, draw a card, and this unit is in the [UnionDress] state during this fight.
+
+AUTO [VC] 1/Turn: When this unit in the [UnisonDress] state attacks while not boosted, stand all of your rear-guards, and boost this unit with them. If you boosted this unit with three or more units, at the end of that battle, COST [Counter Blast 1], choose three of your units, stand them, and they get power +5000/drive-1 until end of turn. (You can boost with rear-guards without "Boost" as well)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
