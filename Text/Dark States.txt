@@ -4724,6 +4724,7 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
 
+
 CardStat = 12051
 {
 global.CardName[CardStat] = 'Red Eye of Governing Ruler, Lindalkia'
@@ -4737,3 +4738,108 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12054
+{
+global.CardName[CardStat] = 'Feral Retainer'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC from hand during your main phase, choose a "Crafty Lord" from your soul, and you may call it to RC. If you called a card, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of your turn, put this unit on the bottom of the deck. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12055
+{
+global.CardName[CardStat] = 'Crafty Lord'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is put from RC into soul, COST [Counter Blast 1], search your deck for up to one "Feral Retainer", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12060
+{
+global.CardName[CardStat] = 'Demonic Jewel True Dragon, Drajeweled Ignis'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+CONT: This card can only be ridden from a unit with "Drajeweled" in its card name.
+
+AUTO [VC]: At the beginning of your battle phase, choose two cards from your drop, and put them into soul. Then, if your soul has four or more cards with different grades, all of your front row units gets power +10000 until end of turn.
+
+AUTO [VC]: When you would pay the cost for this ability, you may Soul Blast a card with "Drajeweled" in its card name from your soul as any grade from 0 to 4. When this unit attacks, COST [Soul Blast 5 cards with different grades], retire all of your opponent’s back row rear-guards, until end of turn, this unit gets critical +1 and increase or decrease the power of all of your opponent’s front row units to 0.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12061
+{
+global.CardName[CardStat] = 'Horde Slash Dracokid'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 4 card with "Drajeweled" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, choose up to one grade 4 card from your hand, reveal it, if you revealed a card or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12062
+{
+global.CardName[CardStat] = 'Demonic Lancer of Soul Extermination, Zagan'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC during your main phase, you may Soul Charge 1. Choose up to one grade 4 card from your hand, reveal it, if your revealed a card, or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, choose a card with a different name from this card and grade less than or equal to your vanguard from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
+
+CONT [RC]: If you have a vanguard with "Drajeweled" in its card name, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12063
+{
+global.CardName[CardStat] = 'Wise Demonic Lordling, Varpra'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability, COST [put this unit into soul], and draw a card. Then, choose up to one grade 4 card from your hand, reveal it, if you revealed a card, or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, choose one of your rear-guards, and if your rear-guards did not stand by a card’s ability this turn, stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12064
+{
+global.CardName[CardStat] = 'Soul Funeral Dragon, Noctarzio'
+global.CardText[CardStat] = 'Brandt Gate/Abyss Dragon
+
+AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on
+• RC - COST [Counter Blast 1], draw a card, choose two cards from your drop, and put them into soul.
+• GC - This unit gets shield +15000 until end of that battle.
+
+AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
