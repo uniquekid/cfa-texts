@@ -4866,18 +4866,19 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 12052
 {
 global.CardName[CardStat] = 'Progressing Promise, Enlaeza'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-CONT [RC/GC]: If your vanguard is in the [UnisonDress] state, this unit cannot be chosen by your opponent’s card effects, and gets power+10000/shield +10000. (Active on opponent’s turn too) 
-'
+CONT [RC/GC]: If your vanguard is in the [UnisonDress] state, this unit cannot be chosen by your opponent’s card effects, and gets power+10000/shield +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
 
 CardStat = 12053
 {
@@ -4887,6 +4888,50 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 CONT [RC]: During your turn, if you have a vanguard with "Lianorn" in its card name, this unit gets power +2000. If your vanguard is in the [UnisonDress] state, it gets power +5000 instead of +2000.
 
 AUTO [RC]: At the end of your turn, if your vanguard was boosted a total of three or more times this turn, COST [retire this unit], draw a card, and if your damage zone has no face up cards, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12065
+{
+global.CardName[CardStat] = 'Devouring Arms of the Crumbling Sea'
+global.CardText[CardStat] = 'Stoicheia/Ghost
+
+CONT [RC]: If you played a normal order this turn, this unit gets power +5000.
+
+CONT [RC]: If your rear-guard was placed from drop this turn, this unit gets power +5000.
+
+AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12066
+{
+global.CardName[CardStat] = 'Lividous Profounder'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Griphogila" in its card name, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12067
+{
+global.CardName[CardStat] = 'Knight of Scattering Petals, Arleth'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [RC]: When this unit boosts, if you have a vanguard with "Griphogila" in its card name, COST [discard a card from hand], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
