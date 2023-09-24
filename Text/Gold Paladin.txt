@@ -240,9 +240,9 @@ CardStat = x+26
 global.CardName[CardStat] = 'Scout of Darkness, Vortimer'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-CONT [VC]: If you have a "Black Dragon Whelp, Vortimer" in your soul, this unit gets power +1000. 
+CONT [VC]: If you have a card named "Black Dragon Whelp, Vortimer" in your soul, this unit gets power +1000. 
 
-AUTO: [Retire one of your «Gold Paladin» rear-guards] When you ride a "Black Dragon Knight, Vortimer" on this unit and you have "Black Dragon Whelp, Vortimer" in your soul, you may pay the cost. If you do, look at up to two cards from the top of your deck, choose up to two «Gold Paladin» from among them, call them onto separate empty RC, and place the rest of the cards on the bottom of your deck in any order.'
+AUTO: [Choose one of your «Gold Paladin» rear-guards, and retire it] When a card named "Black Dragon Knight, Vortimer" rides this unit, if you have a card named "Black Dragon Whelp, Vortimer" in your soul, you may pay the cost. If you do, look at up to two cards from the top of your deck, search for up to two «Gold Paladin» from among them, call them to separate open RC, and put the rest on the bottom of your deck in any order.'
 }
 
 
@@ -269,7 +269,7 @@ CardStat = x+29
 global.CardName[CardStat] = 'War-horse, Raging Storm'
 global.CardText[CardStat] = 'Gold Paladin/High Beast
 
-AUTO: When this unit is placed onto a vanguard or RC, if you have a «Gold Paladin» vanguard, send up to one «Gold Paladin» unit from your hand into your soul.'
+AUTO: When this unit is placed on VC or RC, if you have a «Gold Paladin» vanguard, choose up to one «Gold Paladin» from your hand, and put it into your soul.'
 }
 
 
@@ -402,7 +402,7 @@ CardStat = x+44
 global.CardName[CardStat] = 'Sleygal Sword'
 global.CardText[CardStat] = 'Gold Paladin/High Beast
 
-ACT [VC/RC]: [Counter Blast 1] If you have at least four other «Gold Paladin» rear-guards, this unit gets power +2000 until the end of the turn.'
+ACT [VC/RC]: [Counter Blast 1] If the number of other «Gold Paladin» rear-guards you have is four or more, this unit gets power +2000 until end of turn.'
 }
 
 
@@ -509,7 +509,7 @@ CardStat = x+55
 global.CardName[CardStat] = 'Sleygal Double Edge'
 global.CardText[CardStat] = 'Gold Paladin/High Beast
 
-ACT [VC/RC]: [Counter Blast 1] If you have at least four other «Gold Paladin» rear-guards, this unit gets power +2000 until the end of the turn.'
+ACT [VC/RC]: [Counter Blast 1] If the number of other «Gold Paladin» rear-guards you have is four or more, this unit gets power +2000 until end of turn.'
 }
 
 
@@ -1039,7 +1039,7 @@ global.CardText[CardStat] = 'Gold Paladin/Human
 
 ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 3-card with "Liberator" in its card name] Look at the top card of your deck, search for up to one «Gold Paladin» from among them, call it to an open RC, and put the rest on the bottom of your deck. If it is called, and you have any open RC, you use this effect again without paying the cost.
 
-AUTO: [VC]: [Choose one of your rear-guards with "Liberator" in its card name, and put it on the bottom of your deck] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.
+AUTO [VC]: [Choose one of your rear-guards with "Liberator" in its card name, and put it on the bottom of your deck] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
@@ -1535,7 +1535,7 @@ global.CardText[CardStat] = 'Gold Paladin/Human
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC]: [Put this unit into your soul] If you have a grade 3 or greater «Gold Paladin» vanguard, search your deck for up to one card named "Blaster Blade Liberator", reveal it to opponent, shuffle your deck, and put that card onto the top of your deck.'
+ACT [RC]: [Put this unit into your soul] If you have a grade 3 or greater «Gold Paladin» vanguard, search your deck for up to one card named "Blaster Blade Liberator", reveal it to your opponent, shuffle your deck, and put it on the top of your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 5
 }

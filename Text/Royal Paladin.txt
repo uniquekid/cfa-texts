@@ -23,7 +23,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Brugal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-CONT [RC]: During your turn, this unit gets power +1000 for each other "Brugal" in your vanguard or RC. 
+CONT [RC]: During your turn, this unit gets power +1000 for each other unit named "Brugal" on your VC or RC. 
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)'
 }
@@ -502,9 +502,9 @@ CardStat = x+57
 global.CardName[CardStat] = 'Fang of Light, Garmore'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-CONT [VC]: During your turn, this unit gets power +1000 for each "Snogal" and "Brugal" in your RC. 
+CONT [VC]: During your turn, this unit gets power +1000 for each unit named "Snogal" or "Brugal" on your RC. 
 
-AUTO [VC/RC]: [Choose one «Royal Paladin» from your hand and discard it] When this unit is called to a vanguard or RC, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck for one "Snogal" or "Brugal", and call it to a RC, then shuffle your deck.'
+AUTO: [Choose a «Royal Paladin» from your hand and discard it] When this unit is placed on VC or RC, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Snogal" or "Brugal", call it to a RC, and shuffle your deck.'
 }
 
 
@@ -513,7 +513,7 @@ CardStat = x+58
 global.CardName[CardStat] = 'Gigantech Charger'
 global.CardText[CardStat] = 'Royal Paladin/Giant
 
-AUTO: When this unit is called to the vanguard or RC, reveal the top card of your deck. If that card is a «Royal Paladin», call that card to the RC. If not, shuffle that deck.'
+AUTO: When this unit is placed on VC or RC, reveal the top card of your deck. If the revealed card is a «Royal Paladin», call it to RC, and if it is not, shuffle that deck.'
 }
 
 
@@ -2394,7 +2394,7 @@ CardStat = x+2
 global.CardName[CardStat] = 'Knight of Refinement, Benizel'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: Generation Break 1 [Counter Blast 1 & Soul Blast 1] When this card is placed on RC, if you have a grade 3 or greater vanguard with "Altmile" in its card name, you may pay the cost. If you do, search your deck for up to one grade 2 card other than a card named "Knight of Refinement, Benizel", call it to RC, shuffle your deck, and until end of turn, that unit and this unit get power +2000.'
+AUTO Generation Break 1: [Counter Blast 1 & Soul Blast 1] When this card is placed on RC, if you have a grade 3 or greater vanguard with "Altmile" in its card name, you may pay the cost. If you do, search your deck for up to one grade 2 card other than a card named "Knight of Refinement, Benizel", call it to RC, shuffle your deck, and until end of turn, that unit and this unit get power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -4550,10 +4550,9 @@ global.CardName[4587] = 'Valor of Silence, Gallatin'
 
 global.CardText[4587] = 'Royal Paladin/Human
 
-CONT [VC/RC]: If you have no units with "Alfred" or "Blaster" in its card name on your VC or RC, this unit gets power -2000.
-
 CONT [GC] Generation Break 1: This unit gets shield +5000.
-'
+
+CONT [VC/RC]: If you do not have a unit with "Blaster" in its card name on your VC or RC, this unit gets power -2000.'
 
 global.UnitGrade[4587] = 2
 
@@ -5364,7 +5363,7 @@ global.CardText[5517] = 'Royal Paladin/Human
 
 AUTO: Forerunner.
 
-AUTO [RC] [Put this unit into your soul] When an attack hits during the battle that this unit boosted a unit with the brave ability, you may pay the cost. If you do, look at ten cards from the top of your deck, reveal up to two cards with "Altmile" in their card name, put a card into your hand, put a card into your soul, and shuffle your deck. (If only one card is revealed, put it into your hand.)
+AUTO [RC]: [Put this unit into your soul] When an attack hits during the battle that this unit boosted a unit with the brave ability, you may pay the cost. If you do, look at ten cards from the top of your deck, reveal up to two cards with "Altmile" in their card name, put a card into your hand, put a card into your soul, and shuffle your deck. (If only one card is revealed, put it into your hand.)
 '
 
 global.UnitGrade[5517] = 0

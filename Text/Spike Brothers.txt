@@ -89,7 +89,7 @@ CardStat = x+11
 global.CardName[CardStat] = 'Dudley Dan'
 global.CardText[CardStat] = 'Spike Brothers/Ogre
 
-AUTO [RC]: [Counter Blast 2 & Choose one «Spike Brothers» from your hand and send it to soul] When this unit boosts a vanguard, you may pay the cost. If you do, search for «Spike Brothers» from your deck, call it to a RC thats without a unit and shuffle the deck.'
+AUTO [RC]: [Counter Blast 2 & Choose one «Spike Brothers» from your hand and put it into your soul] When this unit boosts a vanguard, you may pay the cost. If you do, search your deck for up to one «Spike Brothers», call it to an open RC, and shuffle the deck.'
 }
 
 CardStat = x+12
@@ -113,7 +113,7 @@ CardStat = x+14
 global.CardName[CardStat] = 'Medical Manager'
 global.CardText[CardStat] = 'Spike Brothers/Goblin
 
-AUTO: When this unit is called to a vanguard or RC, if you have a «Spike Brothers» vanguard, you may Soul Charge 1.'
+AUTO: When this unit is placed on VC or RC, if you have a «Spike Brothers» vanguard, you may Soul Charge 1.'
 }
 
 CardStat = x+15
@@ -143,7 +143,7 @@ CardStat = x+18
 global.CardName[CardStat] = 'Devil Summoner'
 global.CardText[CardStat] = 'Spike Brothers/Demon
 
-AUTO: When this unit is called to the vanguard or RC, reveal the top card of your deck. If that card is a grade 1 or grade 2 «Spike Brothers», call that card to a RC, if not, shuffle it to the deck.'
+AUTO: When this unit is placed on VC or RC, reveal the top card of your deck. If revealed card is a grade 1 or 2 «Spike Brothers», call it to RC. If it is not, shuffle your deck.'
 }
 
 CardStat = x+19
@@ -151,7 +151,7 @@ CardStat = x+19
 global.CardName[CardStat] = 'Dudley Douglass'
 global.CardText[CardStat] = 'Spike Brothers/Ogre
 
-AUTO: [Counter Blast 1] If this unit is placed onto a RC during battle phase, if you have a «Spike Brothers» vanguard, you may pay the cost. If you do, this unit gets power +5000 during this turn.'
+AUTO: [Counter Blast 1] During your battle phase, when this unit is placed on RC, if you have a «Spike Brothers» vanguard, you may pay the cost. If you do, this unit gets power +5000 until end of turn.'
 }
 
 CardStat = x+20
@@ -159,7 +159,7 @@ CardStat = x+20
 global.CardName[CardStat] = 'Field Driller'
 global.CardText[CardStat] = 'Spike Brothers/Ogre
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have at least 4 other «Spike Brothers» rear-guards, draw a card.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if the number of other «Spike Brothers» rear-guards you have is four or more, draw a card.'
 }
 
 CardStat = x+21
@@ -449,7 +449,7 @@ global.CardText[CardStat] = 'Spike Brothers/Demon
 
 ACT [VC]: Legion 20000 "Silver Blaze" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Counter Blast 3 & Choose one card from your hand that has the same card name as a unit on your VC, and send it to your soul] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, search your deck for up to two cards, call them to different open RC, and shuffle your deck.
+AUTO [VC]: [Counter Blast 3 & Choose a card with the same card name as a unit on your VC from your hand, and put it into your soul] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, search your deck for up to two cards, call them to separate open RC, and shuffle your deck.
  
 ACT [VC]: [Soul Blast 2] This unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -549,7 +549,7 @@ ACT [VC]: Legion 20000 "Frozen Ogle" (If your opponent’s vanguard is grade 3 or 
 
 AUTO [VC]: During the turn this unit performed a Legion, when one of your rear-guards attacks, that unit gets power +5000 until end of that battle, and at the end of that battle, put that unit on the bottom of your deck.
 
-AUTO [VC]: [Counter Blast 2 & Choose one card from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for a card, call it to an open RC, and shuffle your deck.'
+AUTO [VC]: [Counter Blast 2 & Choose a card from your hand, and put it into your soul] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for a card, call it to an open RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 14
 }
@@ -645,7 +645,7 @@ global.CardText[CardStat] = 'Spike Brothers/Elf
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC]: [Choose one card from your hand, and put it into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for a card, call it to RC, and shuffle your deck, and until end of the turn that unit gets power +5000.'
+AUTO [VC]: [Choose a card from your hand, and put it into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for a card, call it to RC, and shuffle your deck, and until end of the turn that unit gets power +5000.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 14
 global.ExtraDeck[CardStat] = 1
