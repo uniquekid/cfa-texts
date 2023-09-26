@@ -1820,10 +1820,13 @@ global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 8880
 {
 global.CardName[CardStat] = 'Tranquil Affection, Elivira'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+(STANDARD JP: You can only run this card if you do not have What Colour is Your Wish, Valsheblan in your deck.)
 
 AUTO [RC]: When you play "Everlasting Sapphire", if your vanguard is "Prismagica, Wilista", draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -1831,6 +1834,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 8886
@@ -4513,10 +4517,13 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 10887
 {
 global.CardName[CardStat] = 'What Color is Your Wish, Valsheblan'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+(STANDARD JP: You can only run this card if you do not have Tranquil Affection, Elivira in your deck.)
 
 AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
 
@@ -4526,6 +4533,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 CardStat = 10888
 {
@@ -5612,3 +5620,29 @@ global.DCards[CardStat] = 6
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12088
+{
+global.CardName[CardStat] = 'Fancy Spell Teacher'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+AUTO [Back Row RC]: When your other rear-guard in the same column as this unit is stand by your card effect, if you have a vanguard with "Loronerol" in its card name, stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12089
+{
+global.CardName[CardStat] = 'Nightlight Unison, Ritael'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+ 
+White Wings (Active when bind only has odd grades) - AUTO [RC]: At the end of your turn, if you placed two or more vanguards with "Alestiel" in their card names this turn, and your damage zone has no face up cards, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
