@@ -1476,7 +1476,7 @@ CardStat = 9324
 global.CardName[CardStat] = 'Brainwash Swirler'
 global.CardText[CardStat] = 'Dark States/Human
 
-(STANDARD JP & EN: You can only run this card if you do not have Steam Scara, Gigi in your deck.)
+(STANDARD EN: You can only run this card if you do not have Steam Scara, Gigi in your deck.)
 
 AUTO: When this unit is placed on RC, Soul Charge 1.
 
@@ -2788,7 +2788,7 @@ CardStat = 10488
 global.CardName[CardStat] = 'Steam Scara, Gigi  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
 
-(STANDARD JP & EN: You can only run this card if you do not have Brainwash Swirler in your deck.)
+(STANDARD EN: You can only run this card if you do not have Brainwash Swirler in your deck.)
 
 AUTO: When this unit is placed on RC, if you have a "Chronojet Dragon" crest, COST [Soul Blast 2], draw a card, and if this unit was placed by your card’s ability, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -4786,9 +4786,9 @@ global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 CONT: This card can only be ridden from a unit with "Drajeweled" in its card name.
 
-AUTO [VC]: At the beginning of your battle phase, choose two cards from your drop, and put them into soul. Then, if your soul has four or more cards with different grades, all of your front row units gets power +10000 until end of turn.
+AUTO [VC]: At the beginning of your battle phase, choose two cards from your drop, and put them into soul. Then, if your soul has four or more cards with different grades, all of your front row units gets power +15000 until end of turn.
 
-AUTO [VC]: When you would pay the cost for this ability, you may Soul Blast a card with "Drajeweled" in its card name from your soul as any grade from 0 to 4. When this unit attacks, COST [Soul Blast 5 cards with different grades], retire all of your opponent’s back row rear-guards, until end of turn, this unit gets critical +1 and increase or decrease the power of all of your opponent’s front row units to 0.'
+AUTO [VC]: When you would pay the cost for this ability, you may Soul Blast a card with "Drajeweled" in its card name from your soul as any grade from 0 to 4. When this unit attacks, COST [Soul Blast 5 cards with different grades], retire all of your opponent’s back row rear-guards, until end of turn, this unit gets critical +1, and increase or decrease the power of all of your opponent’s front row units to 0.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 2
 }
@@ -4880,3 +4880,31 @@ global.DCards[CardStat] = 2
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12092
+{
+global.CardName[CardStat] = 'Vilnies Chimaera'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO [RC] 1/Turn: When this unit is chosen by the ability of your vanguard with "Almajestar" in its card name, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12093
+{
+global.CardName[CardStat] = 'Phonograph Operastar'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Almajestar" in its card name, COST [Counter Blast 1], and draw a card.
+
+CONT [RC]: During your turn, this unit gets power +5000 for every two critical triggers in your bind zone.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

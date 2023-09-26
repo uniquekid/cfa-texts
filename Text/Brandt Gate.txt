@@ -1838,7 +1838,7 @@ CardStat = 9728
 global.CardName[CardStat] = 'Fountain of Knowledge, Eva'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-(STANDARD JP & EN: You can only run this card if you do not have Combine Rusher in your deck.)
+(STANDARD EN: You can only run this card if you do not have Combine Rusher in your deck.)
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], look at cards from the top of your deck equal to the number of Research cards in your Order Zone, choose up to one card from among them, put it into your hand put the rest on the bottom of your deck in any order, and this unit gets power +5000 until end of turn.
 
@@ -2173,7 +2173,7 @@ CardStat = 10131
 global.CardName[CardStat] = 'Combine Rusher'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-(STANDARD JP & EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+(STANDARD EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
 
@@ -3941,7 +3941,7 @@ CardStat = 11185
 global.CardName[CardStat] = 'Cosmic Battler, Norphein'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-(STANDARD JP & EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
+(STANDARD EN: You can only run this card if you do not have Fountain of Knowledge, Eva in your deck.)
 
 CONT: This card is also regarded as "Combine Rusher"
 
@@ -4602,7 +4602,7 @@ CardStat = 12011
 global.CardName[CardStat] = 'Point of Enlightenment, Infrareds'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-UTO: When this unit is placed on RC from hand, if your ride deck has a face up card with the same card name as your vanguard, Counter Charge 1.'
+AUTO: When this unit is placed on RC from hand, if your ride deck has a face up card with the same card name as your vanguard, Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -4714,3 +4714,29 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12086
+{
+global.CardName[CardStat] = 'Raid Monster, Sky Pouncer'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose up to one set order from your drop or face up damage, and put it into hand. If you put a card from damage zone, put the top card of your deck into damage zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12087
+{
+global.CardName[CardStat] = 'Rudish Erador'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO: When this unit boosts, if your order zone has two or more set orders, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for every two of that unit’s grade.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
