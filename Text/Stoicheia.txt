@@ -269,7 +269,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8345
 {
 global.CardName[CardStat] = 'Sylvan Horned Beast, Zlatorog'
-global.CardText[CardStat] = 'Stoicheia/High Beast/Heal Trigger'
+global.CardText[CardStat] = 'Stoicheia/High Beast/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -1637,7 +1639,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 9538
 {
 global.CardName[CardStat] = 'Soul Repose Pixy, Petronella'
-global.CardText[CardStat] = 'Stoicheia/Ghost/Heal Trigger'
+global.CardText[CardStat] = 'Stoicheia/Ghost/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -2219,7 +2223,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10104
 {
 global.CardName[CardStat] = 'Flowery Tone'
-global.CardText[CardStat] = 'Stoicheia/Sylph/Heal Trigger'
+global.CardText[CardStat] = 'Stoicheia/Sylph/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -2432,7 +2438,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10194
 {
 global.CardName[CardStat] = 'Rhythmica Kiwi'
-global.CardText[CardStat] = 'Stoicheia/Dryad/Heal Trigger'
+global.CardText[CardStat] = 'Stoicheia/Dryad/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -3597,7 +3605,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10959
 {
 global.CardName[CardStat] = 'Battle Siren, Dorcea'
-global.CardText[CardStat] = 'Stoicheia/Mermaid/Heal Trigger'
+global.CardText[CardStat] = 'Stoicheia/Mermaid/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -3838,6 +3848,7 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 11004
 {
 global.CardName[CardStat] = 'Dragon Attack'
@@ -3846,13 +3857,14 @@ global.CardText[CardStat] = 'Stoicheia/Set Order/Skill
 Skill - AUTO [Order Zone]: When this skill is used, perform all of the following according to the attacking unit.
 • Technique is 50 or greater - That attacking unit gets power +5000 until end of turn.
 • Finishing Attack is Hitting - That attacking unit gets power +5000 until end of turn.
-• Super Finishing Attack is "Dragon Attack" - COST [Soul Blast 1], and perform "Choose one of your opponent’s rear-guards, choose one of your opponent’s rear-guards, and retire it. Then, COST [discard a "Dragon Attack" from hand], choose one of your opponent’s rear-guards, and retire it. '
+• Super Finishing Attack is "Dragon Attack" - COST [Soul Blast 1], and perform "Choose one of your opponent’s rear-guards, and retire it. Then, COST [discard a "Dragon Attack" from hand], choose one of your opponent’s rear-guards, and retire it. '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
 
 CardStat = 11005
 {
@@ -4872,7 +4884,7 @@ CardStat = 12052
 global.CardName[CardStat] = 'Progressing Promise, Enlaeza'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-CONT [RC/GC]: If your vanguard is in the [UnisonDress] state, this unit cannot be chosen by your opponent’s card effects, and gets power+10000/shield +10000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your vanguard is in the [UnisonDress] state, this unit cannot be chosen by your opponent’s card effects, and gets power +10000 / shield +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -4937,3 +4949,30 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12074
+{
+global.CardName[CardStat] = 'Stoicheia National Medal'
+global.CardText[CardStat] = 'Stoicheia
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12080
+{
+global.CardName[CardStat] = 'Stoicheia Nation King'
+global.CardText[CardStat] = 'Stoicheia/Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000

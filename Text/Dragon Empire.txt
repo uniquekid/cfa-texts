@@ -362,7 +362,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8327
 {
 global.CardName[CardStat] = 'Blaze Maiden, Rona'
-global.CardText[CardStat] = 'Dragon Empire/Human/Heal Trigger'
+global.CardText[CardStat] = 'Dragon Empire/Human/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
@@ -1207,7 +1209,7 @@ CardStat = 9126
 global.CardName[CardStat] = 'Patrol Dragon, Scoutptera'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO [RC]: When this unit is boosted, COST [Counter Blast 1], choose one of your opponent’s grade 2 or lower rear-guards, retire it, and this unit gets power +2000 until end of that battle.'
+AUTO [RC]: When this unit is boosted, COST [Counter Blast 1], choose one of your opponent’s grade 2 or greater rear-guards, retire it, and this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2494,7 +2496,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10213
 {
 global.CardName[CardStat] = 'Blaze Maiden, Reony'
-global.CardText[CardStat] = 'Dragon Empire/Human/Heal Trigger'
+global.CardText[CardStat] = 'Dragon Empire/Human/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
@@ -3441,6 +3445,8 @@ CardStat = 10822
 global.CardName[CardStat] = 'Scarlet Flame Bow General, Stirgna'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
+(STANDARD JP: Restricted to 1.)
+
 AUTO: When this unit is placed on RC, if you have a vanguard with "Gandeeva" in its card name, COST [Soul Blast 1 & bind one of your other rear-guards face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, choose a card from your drop, and bind it face down.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
@@ -3448,6 +3454,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 CardStat = 10823
 {
@@ -3675,7 +3682,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10944
 {
 global.CardName[CardStat] = 'Stealth Dragon, Shikintan'
-global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon/Heal Trigger'
+global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
@@ -4658,4 +4667,134 @@ global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12070
+{
+global.CardName[CardStat] = 'Dragon Empire National Medal'
+global.CardText[CardStat] = 'Dragon Empire
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12076
+{
+global.CardName[CardStat] = 'Dragon Empire Nation King'
+global.CardText[CardStat] = 'Dragon Empire/Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12090
+{
+global.CardName[CardStat] = 'Dragontree Wretch, Ragun Gimrad'
+global.CardText[CardStat] = 'Dragon Empire/Hydragrum
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into your hand, and shuffle your deck.
+
+(SHIFT + left click to get a Dragontree Marker)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 12091
+{
+global.CardName[CardStat] = 'Raze Command Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Griphogila" in its card name, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12096
+{
+global.CardName[CardStat] = 'Blazing Heavenly Break Equip Dragon, Kalmodak'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+CONT: All of this card’s outerDress get "AUTO [RC]: When this unit attacks, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for each grade of that unit". (An outerDress is the unit that this card is the originalDress of)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12097
+{
+global.CardName[CardStat] = 'Blazing Heavenly Spearhead Equip Dragon, Nandeeka'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card becomes an originalDress, COST [Soul Blast 1], choose one of this card’s outerDress units, and it gets "CONT [RC]: During the battle that this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time." until end of turn. (An outerDress is the unit that this card is the originalDress of)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12098
+{
+global.CardName[CardStat] = 'Blazing Heavenly Slash Equip Dragon, Drahas'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Nirvana" in its card name, COST [Counter Blast 1 & retire another rear-guards], search your deck or drop for up to a total of two cards with different card names from this unit and "Blazing Heavenly" in their different card names, call them to RC as rest, and if you searched the deck, shuffle the deck. If you retired a rear-guard in the X-overDress state for this cost, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12099
+{
+global.CardName[CardStat] = 'Blazing Heavenly Render Equip Dragon, Aparajea'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this unit is placed on RC other than from deck, COST [Soul Blast 1 & discard a card from hand], search your deck for up to one <Prayer Dragon>, call it to RC, and shuffle the deck.
+
+AUTO: When this card becomes an originalDress, draw a card, choose one of this card’s outerDress units, and until the end of your opponent’s next turn, it cannot be chosen by your opponent’s card effects. (An outerDress is the unit that this card is the originalDress of)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12100
+{
+global.CardName[CardStat] = 'Blazing Holy Sword Equip, Stravairina'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+X-overDress - One "Trickstar" and two or more <Prayer Dragon> with different card names (You may place it by stacking it on all of the specified units instead of normal calling to RC)
+
+CONT [Front Row RC]: During your turn, if this unit is in the X-overDress state, this unit gets power +10000, and all of your vanguards with "Nirvana" in their card names get "Triple Drive" and power +10000.
+
+AUTO [RC]: When this unit in the X-overDress state stand by your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand all of your <Talisman> or <Prayer Dragon> rear-guards. If this unit has five or more originalDress, remove all markers from your opponent’s RC, and retire all of your opponent’s rear-guards.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0

@@ -13,7 +13,7 @@ ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at up to five ca
 CardStat = x+1
 {
 global.CardName[CardStat] = 'Black Cannon Tiger'
-global.CardText[CardStat] = 'Tachikaze/Higt Beast/Critical trigger
+global.CardText[CardStat] = 'Tachikaze/High Beast/Critical Trigger
 
 AUTO [RC]: When an attack hits during the battle that this unit boosted, you may Soul Charge 1. If you do, return this unit to your deck and shuffle your deck.'
 }
@@ -29,13 +29,13 @@ ACT [RC]: [Put this unit into your soul] Choose up to 1 of your «Tachikaze» and 
 CardStat = x+3
 {
 global.CardName[CardStat] = 'Carry Trilobite'
-global.CardText[CardStat] = 'Tachikaze/Insect/Draw trigger'
+global.CardText[CardStat] = 'Tachikaze/Insect/Draw Trigger'
 }
 
 CardStat = x+4
 {
 global.CardName[CardStat] = 'Dragon Bird, Firepteryx'
-global.CardText[CardStat] = 'Tachikaze/Dinodragon/Critical trigger'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon/Critical Trigger'
 }
 
 CardStat = x+5
@@ -57,19 +57,21 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon'
 CardStat = x+7
 {
 global.CardName[CardStat] = 'Ironclad Dragon, Steelsaurus'
-global.CardText[CardStat] = 'Tachikaze/Dinodragon/Heal trigger'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 }
 
 CardStat = x+8
 {
 global.CardName[CardStat] = 'Herbivorous Dragon, Brutosaurus'
-global.CardText[CardStat] = 'Tachikaze/Dinodragon/Draw trigger'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon/Draw Trigger'
 }
 
 CardStat = x+9
 {
 global.CardName[CardStat] = 'Matriarchs Bombardment Beast'
-global.CardText[CardStat] = 'Tachikaze/Dinodragon/Stand trigger'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon/Stand Trigger'
 }
 
 CardStat = x+10
@@ -85,19 +87,21 @@ AUTO: When a «Tachikaze» other than a card name "Military Dragon, Raptor Sergean
 CardStat = x+11
 {
 global.CardName[CardStat] = 'Pack Dragon, Tinyrex'
-global.CardText[CardStat] = 'Tachikaze/Dinodragon/Stand trigger'
+global.CardText[CardStat] = 'Tachikaze/Dinodragon/Stand Trigger'
 }
 
 CardStat = x+12
 {
 global.CardName[CardStat] = 'Savage Shaman'
-global.CardText[CardStat] = 'Tachikaze/Human/Heal trigger'
+global.CardText[CardStat] = 'Tachikaze/Human/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 }
 
 CardStat = x+13
 {
 global.CardName[CardStat] = 'Archbird'
-global.CardText[CardStat] = 'Tachikaze/Hight Beast
+global.CardText[CardStat] = 'Tachikaze/High Beast
 
 AUTO: [Choose a «Tachikaze» from your hand and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Tachikaze» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
@@ -196,7 +200,7 @@ CardStat = x+25
 global.CardName[CardStat] = 'Cannon Fire Dragon, Cannon Gear'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO: When this unit is called to the vanguard or RC, choose one of your rear-guards and retire it. 
+AUTO: When this unit is placed on VC or RC, choose one of your rear-guards, and retire it. 
 
 AUTO [VC]: When this unit is boosted by a «Tachikaze», this unit gets power +2000 until end of turn.'
 }
@@ -464,7 +468,7 @@ CardStat = x+9
 global.CardName[CardStat] = 'Ancient Dragon, Iguanogorg'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO: [Counter Blast 1] When this unit is placed onto the drop zone from a RC, if you have a vanguard with "Ancient Dragon" in its card name, you may pay the cost. If you do, call this card to a RC.'
+AUTO: [Counter Blast 1] When this unit is put into the drop zone from a RC, if you have a vanguard with "Ancient Dragon" in its card name, you may pay the cost. If you do, call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -498,7 +502,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.) 
 
-AUTO: [Counter Blast 1] When this unit is placed onto the drop zone from a RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Ancient Dragon, Tyrannolegend", call it to a RC, and shuffle your deck.'
+AUTO: [Counter Blast 1] When this unit is put into the drop zone from a RC, if you have a «Tachikaze» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Ancient Dragon, Tyrannolegend", call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 17
 }
@@ -1329,7 +1333,7 @@ global.CardName[4419] = 'Savage Sorcerer'
 
 global.CardText[4419] = 'Tachikaze/Human
 
-AUTO [RC]: [Retire this unit] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, if you Stride a G unit, you may Stride it without paying the cost of the Stride.
+AUTO [RC]: [Retire this unit] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, you may Stride without paying the cost the next time you Stride.
 '
 
 global.UnitGrade[4419] = 3
@@ -3455,7 +3459,7 @@ global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
 AUTO: When this unit is placed on VC or placed by the ability of your "Ancient Dragon" on RC, this unit gets power +10000 / drive +1. Then, COST [Discard a card from hand], choose a front trigger from your drop, and put it on the top of your deck.
 
-AUTO: [VC/RC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & retire one of your rear-guards], and draw a card.
+AUTO [VC/RC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & retire one of your rear-guards], and draw a card.
 
 AUTO [RC] 1/Turn: When your drive check reveals a trigger unit, put the top card of your deck face down as an equip gauge for this unit. 
 '

@@ -133,7 +133,7 @@ CardStat = x+17
 global.CardName[CardStat] = 'Spiritual Tree Sage, Irminsul'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
-AUTO: When this unit appears in the vanguard or RC, reveal the card on top of your deck. If that card is a grade 1 or grade 2 «Neo Nectar», call that card to a RC. If not, shuffle your deck.'
+AUTO: When this unit is placed on VC or RC, reveal the top card of your deck. If revealed card is a grade 1 or 2 «Neo Nectar», call it to RC. If it is not, shuffle your deck.'
 }
 
 CardStat = x+18
@@ -374,7 +374,7 @@ CardStat = x+23
 global.CardName[CardStat] = 'World Snake, Ouroboros'
 global.CardText[CardStat] = 'Neo Nectar/High Beast
 
-AUTO [VC/RC]: [Choose one card from your hand and discard it] When this unit’s attack hits, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, draw a card.'
+AUTO [VC/RC]: [Choose a card from your hand and discard it] When this unit’s attack hits, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, draw a card.'
 }
 
 // NN Add
@@ -1563,7 +1563,7 @@ CardStat = 3620
 global.CardName[CardStat] = 'Pure Maiden, Katrina'
 global.CardText[CardStat] = 'Neo Nectar/Sylph
 
-Bloom - AUTO: [RC] Generation Break 1: When your other "Pure Maiden, Katrina" is placed on RC, if you have a vanguard with "Ranunculus" in its card name, choose up to five "Pure Maiden, Katrina" on your RC, and they get power +4000 until end of turn.'
+Bloom - AUTO [RC] Generation Break 1: When your other "Pure Maiden, Katrina" is placed on RC, if you have a vanguard with "Ranunculus" in its card name, choose up to five "Pure Maiden, Katrina" on your RC, and they get power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }

@@ -115,7 +115,8 @@ CardStat = 8760
 {
 global.CardName[CardStat] = 'Astesice, Kanami'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid/Heal Trigger
-'
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 }
@@ -1819,10 +1820,13 @@ global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 8880
 {
 global.CardName[CardStat] = 'Tranquil Affection, Elivira'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+(STANDARD JP: You can only run this card if you do not have What Colour is Your Wish, Valsheblan in your deck.)
 
 AUTO [RC]: When you play "Everlasting Sapphire", if your vanguard is "Prismagica, Wilista", draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -1830,6 +1834,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 8886
@@ -2893,7 +2898,8 @@ CardStat = 9566
 {
 global.CardName[CardStat] = 'Sigh of Relief, Fabiola'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid/Heal Trigger
-'
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 }
@@ -3076,7 +3082,8 @@ CardStat = 10178
 {
 global.CardName[CardStat] = 'Refreshing Diva, Berangere'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid/Heal Trigger
-'
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 }
@@ -3745,7 +3752,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10281
 {
 global.CardName[CardStat] = 'Solis Lacrima, Ninon'
-global.CardText[CardStat] = 'Lyrical Monasterio/Human
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Mediell" in its card name, look at the top card of your deck, and put it on the top of your deck or into your soul. If you put a card into your soul, look at the top card of your deck. (Return it to its original spot after confirming it)' 
 global.UnitGrade[CardStat] = 2
@@ -4510,10 +4517,13 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 10887
 {
 global.CardName[CardStat] = 'What Color is Your Wish, Valsheblan'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+(STANDARD JP: You can only run this card if you do not have Tranquil Affection, Elivira in your deck.)
 
 AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
 
@@ -4523,6 +4533,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 CardStat = 10888
 {
@@ -4819,7 +4830,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10964
 {
 global.CardName[CardStat] = 'Diva of Ataraxia, Georgina'
-global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid/Heal Trigger'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 }
@@ -4923,7 +4936,9 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 11897
 {
 global.CardName[CardStat] = 'Cat’s Love, Lisanne'
-global.CardText[CardStat] = 'Lyrical Monasterio/Elf/Heal Trigger'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 }
@@ -5578,3 +5593,56 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12075
+{
+global.CardName[CardStat] = 'Lyrical Monasterio National Medal'
+global.CardText[CardStat] = 'Lyrical Monasterio
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12081
+{
+global.CardName[CardStat] = 'Lyrical Monasterio Nation King'
+global.CardText[CardStat] = 'Lyrical Monasterio/Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12088
+{
+global.CardName[CardStat] = 'Fancy Spell Teacher'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+AUTO [Back Row RC]: When your other rear-guard in the same column as this unit is stand by your card effect, if you have a vanguard with "Loronerol" in its card name, stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12089
+{
+global.CardName[CardStat] = 'Nightlight Unison, Ritael'
+global.CardText[CardStat] = 'Lyrical Monasterio/Angel
+ 
+White Wings (Active when bind only has odd grades) - AUTO [RC]: At the end of your turn, if you placed two or more vanguards with "Alestiel" in their card names this turn, and your damage zone has no face up cards, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
