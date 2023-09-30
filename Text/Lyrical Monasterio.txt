@@ -4888,7 +4888,7 @@ CONT [Deck]: This card becomes "Relation Weaver, Petralka".
 
 AUTO [VC]: At the end of your turn, choose a "Relation Weaver, Petralka" from your soul, and ride it as rest.
 
-CONT [RC]: During your turn, if your vanguard is "Relation Weaver, Petralka" this unit gets power +5000.'
+CONT [RC]: During your turn, if you have a vanguard with "Relation Weaver, Petralka" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -5645,4 +5645,156 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12101
+{
+global.CardName[CardStat] = 'Dreaming of Meeting, Hester'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+ACT [RC]: COST [Counter Blast 1 & Retire this unit], reveal the top three cards of your deck, choose up to two cards with "Earnescorrect" in their card names from among them, put them into hand, and shuffle the deck. If you chose two cards with the same card name, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12102
+{
+global.CardName[CardStat] = 'Groupie Memmber, Carlotta'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+CONT [RC]: If you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, this unit gets "Intercept", can intercept from the back row, and gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12103
+{
+global.CardName[CardStat] = 'Diva of Night Moon, Iasante'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12104
+{
+global.CardName[CardStat] = 'Diva of Lantern Spirits, Anais'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon, look at the top seven cards of your deck, choose up to two cards with "Pacifica" in their card names from among them, reveal them and put them into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12105
+{
+global.CardName[CardStat] = 'Diva of Shaking Souls, Monet'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon by a grade 3 with "Pacifica" in its card name, choose one of your vanguards, and until end of turn, the cost of that unit’s ACT ability is reduced by Counter Blast 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12106
+{
+global.CardName[CardStat] = 'Top Idol, Pacifica'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Put a card from hand on the bottom of the deck], and draw two cards.
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1 card with "Pacifica" in its card name], search your deck for up to one normal unit, call it to an open RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12107
+{
+global.CardName[CardStat] = 'Planet Idol, Pacifica'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+CONT [Back Row Center RC]: During your turn, if you have a vanguard with "Pacifica" in its card name, this unit can attack from the back row, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Pacifica" in its card name, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn. If it was put from the back row center column into soul, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12108
+{
+global.CardName[CardStat] = 'Front Row Grabbing and Taking, Bernalda'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO [RC]: When the attack of the unit boosted by this unit hits, look at the top seven cards of your deck, choose up to one card with "Pacifica" in its card name, reveal it and put it into hand, and shuffle the deck. If you revealed a card, put this unit on the bottom of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12109
+{
+global.CardName[CardStat] = 'Uplifting Vocal, Louison'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO [RC]: At the end of the battle this unit boosted, COST [retire this unit], choose up to two cards with "Pacifica" in their card names from your drop, and return them to the deck and shuffle it. If you chose two cards, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12110
+{
+global.CardName[CardStat] = 'Revival Ocea, Soranje'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Pacifica" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1.
+
+AUTO [RC]: When your other unit attacks from the back row center column, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12111
+{
+global.CardName[CardStat] = 'Impulsive Skater, Myugyun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO: When this unit is placed on RC from deck, if you have a vanguard with "Wilista" in its card name, choose a Gem card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
