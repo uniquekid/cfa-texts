@@ -823,9 +823,9 @@ CardStat = 11496
 global.CardName[CardStat] = 'JuranTyranno'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [RC/GC]: If your circles have 3 or more protect markers, this unit gets power +5000 / shield +5000 and "Intercept".
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +5000 / shield +5000 and "Intercept".
 
-ACT [Soul]: If your circles have 3 or more protect markers, COST [Discard a card from your hand], call this card to your RC, this unit gets power +5000 / critical +1 until end of turn, and you may Soul Charge 1.'
+ACT [Soul]: If you have three or more protect markers on your circles, COST [Discard a card from your hand], call this card to your RC, this unit gets power +5000 / critical +1 until end of turn, and you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 35
 }
@@ -854,7 +854,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [RC]: When this unit is placed on a circle with a protect marker, COST [Put a card from your hand into your soul], Soul Charge 1, draw a card.
 
-ACT [Soul]: If your circles have 3 or more protect markers, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
+ACT [Soul]: If you have three or more protect markers on your circles, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 35
 }
@@ -867,7 +867,7 @@ CardStat = 11499
 global.CardName[CardStat] = 'MagineDragon'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [RC/GC]: If your circles have 3 or more protect markers, this unit gets power +3000 / shield +5000 and "Boost", and this unit can intercept from the back row.
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +3000 / shield +5000 and "Boost", and this unit can intercept from the back row.
 
 CONT [RC]: If the circle this unit is on has a protect marker, this unit cannot be chosen by your opponent’s card effect.'
 global.UnitGrade[CardStat] = 2
@@ -882,11 +882,11 @@ CardStat = 11500
 global.CardName[CardStat] = 'Zenkai Juran'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [RC/GC]: If your circles have 3 or more protect markers, this unit gets power +5000 / shield +5000 and "Intercept".
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +5000 / shield +5000 and "Intercept".
 
 CONT [RC]: If the circle this unit is on has a protect marker, this unit cannot be chosen by your opponent’s card effect.
 
-ACT [Soul]: If your circles have 3 or more protect markers, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
+ACT [Soul]: If you have three or more protect markers on your circles, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
@@ -901,7 +901,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [VC]: When rode upon, COST [Counter Blast 1], Soul Charge 2, get one Imaginary Gift:Protect, and put that marker on your RC.
 
-CONT [RC]: During your turn, if your circles have 3 or more protect markers, this unit gets power +10000.
+CONT [RC]: During your turn, If you have three or more protect markers on your circles, this unit gets power +10000.
 
 (SHIFT + left click to create Protect gift.)'
 global.UnitGrade[CardStat] = 1
@@ -930,7 +930,7 @@ CardStat = 11503
 global.CardName[CardStat] = 'Zenkai Magine'
 global.CardText[CardStat] = 'Live Action/Hero
 
-CONT [RC/GC]: If your circles have 3 or more protect markers, this unit gets power +2000 / shield +5000 and "Intercept", and this unit can intercept from the back row.
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +2000 / shield +5000 and "Intercept", and this unit can intercept from the back row.
 
 CONT [RC]: If the circle this unit is on has a protect marker, this unit cannot be chosen by your opponent’s card effect.'
 global.UnitGrade[CardStat] = 1
@@ -962,7 +962,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO: When this unit is placed on RC, if your circles have 2 or more protect markers, COST [Counter Blast 1], choose up to five normal units in your soul, this unit gets power +5000 for each card chosen until end of turn. Return all cards chosen to your deck and shuffle it.
 
-ACT [Soul]: If your circles have 3 or more protect markers, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
+ACT [Soul]: If you have three or more protect markers on your circles, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 35
 }
@@ -1048,3 +1048,156 @@ global.CardInClan[CardStat] = 35
 global.PowerStat[CardStat] = 5000
 global.TriggerUnit[CardStat] = 1
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12129
+{
+global.CardName[CardStat] = 'Twokaiser "Gold Scramble"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+CONT [VC]: If you have three or more protect markers on your circles, all of your rear-guards with "Kaiser" in its card name or <Robot>, they get "Intercept", and can intercept from the back row, If you have five or more protect markers on your circles, all of your rear-guard cannot be chosen by your opponent’s effects.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to one grade 3 with "Twokaiser" in its card name and different card names from this unit, ride it as stand.
+
+AUTO [VC]: When placed from hand, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one card with "Twokaiser" or <Robot>, reveal and put it into your hand, shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 35
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12130
+{
+global.CardName[CardStat] = 'Twokaiser "Ohran Form"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+CONT [VC]: During your turn, all of your front row units get power +3000 for each protect marker on your circles.
+
+AUTO: When this unit placed on VC by ability, you may draw two cards, if you drew, discard a card from your hand.
+
+AUTO [VC]: At the end of your turn, choose a card named "Twokaiser "Gold Scramble"", from soul or drop, ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12131
+{
+global.CardName[CardStat] = 'Twokaiser "Shinken Form"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+CONT [VC]: If you have four or more protect markers on your circles, when this unit would attack, it battles all of the units in your opponent’s front row.
+
+AUTO: When this unit placed on VC by ability, COST [discard a card from your hand], this unit gets power +15000 / drive +1 until end of turn.
+
+AUTO [VC]: At the end of your turn, choose a card named "Twokaiser "Gold Scramble"", from soul or drop, ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12132
+{
+global.CardName[CardStat] = 'Super Twokaiser'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [Hand]: At the end of the first battle of that turn, if your vanguard is "Twokaiser "Gold Scramble"", and all of your RC have protect marker, COST [Counter Blast 2], ride this card as stand, and this unit gets drive -1 until end of turn. Then, COST [retire all of your rear-guards], this unit gets power +5000 until end of turn for each rear-guards retired by this effect, search your deck or drop for up to one "Super Twokaiser", call it to back row center RC, if you searched your deck, shuffle your deck.
+
+AUTO [VC]: At the end of your turn, choose a card named "Twokaiser "Gold Scramble"", from soul or drop, ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 35
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12133
+{
+global.CardName[CardStat] = 'Zenryoku ZenkaiOh'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [VC]: At the end of the battle that this unit attacked, if this unit was placed this turn, and you have six or more protect markers on your circles, COST [Soul Blast 15 & discard two cards from hand], stand all of your front row units, and they get power +5000 until end of turn.
+
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran", "Gaon", "Vroon" and "Magine" in its card name into your soul], this unit gets power +10000 until end of turn, draw two cards, get two Imaginary Gift:Protect, and put that marker on your RC.
+
+(SHIFT + left click to create Protect gift.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 35
+}
+global.ProtectAdd[CardStat] = 1
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12134
+{
+global.CardName[CardStat] = 'ZenkaiOh JuraMagine'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [VC]: When placed, COST [Counter Blast 1], this unit gets power +10000 until end of turn, choose two of your opponent’s rear-guards, and retire them, and you may Soul Charge 3.
+
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran" and "Magine" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+
+CONT: This card is also regarded as "Juran" in its card name.
+
+(SHIFT + left click to create Protect gift.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 35
+}
+global.ProtectAdd[CardStat] = 1
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12135
+{
+global.CardName[CardStat] = 'ZenkaiOh VrooGaon'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [VC]: When placed, COST [Counter Blast 1], look at five cards from the top of your deck, call up to two <hero> from among them to RC, they get power +5000 until end of turn, and you may Soul Charge 3.
+
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Gaon" and "Vroon" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+
+(This card is also regarded as "Vroon" in its card name.)
+
+(SHIFT + left click to create Protect gift.)'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 35
+}
+global.ProtectAdd[CardStat] = 1
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12136
+{
+global.CardName[CardStat] = 'Stacy'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [RC]: When placed, COST [Soul Blast 2], this unit gets power +2000 until end of turn, get one Imaginary Gift:Protect, and put that marker on your RC. This ability may only be used by a card with the same card name once a turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 12137
+{
+global.CardName[CardStat] = 'Set'
+global.CardText[CardStat] = 'Live Action/Hero/Critical Trigger
+
+CONT: Sentinel.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 35
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 30000
