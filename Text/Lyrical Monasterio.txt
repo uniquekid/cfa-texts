@@ -5943,6 +5943,7 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 10000
+global.CanAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 12108
@@ -5998,6 +5999,7 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 12112
 {
 global.CardName[CardStat] = 'Elaborate Costume, Esnida'
@@ -6012,6 +6014,7 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 12113
 {
 global.CardName[CardStat] = 'Pretty <3 Demon Coordination!'
@@ -6025,23 +6028,24 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 12114
 {
 global.CardName[CardStat] = 'Gorgon Eyes, Siana'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
  
-CONT [VC]: If the total number of units on your opponent’s front row RC and GC is two or less, this unit gets critical +1/drive +1.
+CONT [VC]: If the total number of units on your opponent’s front row RC and GC is two or less, this unit gets critical +1 / drive +1.
 
 AUTO [VC]: When this unit is attacked, COST [put a trigger unit from hand into soul], and this unit gets power +15000 until end of that battle.
 
-AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on GC during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked. 
-'
+AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on GC during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
 
 CardStat = 12115
 {
@@ -6055,6 +6059,7 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 12116
 {
 global.CardName[CardStat] = 'Light that Illuminates the Night, Capellato'
@@ -6066,6 +6071,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+
 
 CardStat = 12117
 {
@@ -6079,6 +6085,7 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
 
+
 CardStat = 12118
 {
 global.CardName[CardStat] = 'Affable Gator, Topia'
@@ -6090,6 +6097,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 5000
+
 
 CardStat = 12119
 {
@@ -6106,6 +6114,7 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 12120
 {
 global.CardName[CardStat] = 'Rainbow Jeweled Beast, Olpirais'
@@ -6119,6 +6128,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
 
 CardStat = 12121
 {
@@ -6137,6 +6147,7 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 12122
 {
 global.CardName[CardStat] = 'Soaring Bubble, Penelopp'
@@ -6145,6 +6156,168 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Kairi" in its card name, this unit gets power +5000.
 
 AUTO [RC] 1/Turn: When your other front row rear-guard is returned to hand by the ability of your grade 3 or greater vanguard with "Kairi" in its card name, COST [Soul Blast 1], stand all of your rear-guards in the same column as this unit, and if your vanguard is grade 4 or greater, all of your front row units get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12138
+{
+global.CardName[CardStat] = 'Searching for Limited Time Sweets, Mildred'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+AUTO [RC]: At the end of the battle this unit boosted, if you played a Magazine order this turn, and you have three or more units with different grades, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12139
+{
+global.CardName[CardStat] = 'Creative Urge, Serbul'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC, if you have a vanguard with "Kyouka" in its card name, you may have this unit get grade+1 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you played a Magazine order this turn, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12140
+{
+global.CardName[CardStat] = 'Starry Witchcraft, Rosanne'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, COST [put a card from hand into soul], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 12141
+{
+global.CardName[CardStat] = 'Decorate Shiny, Eluth'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Lilfa" in its card name, choose up to one grade 2 or greater unit card with a different card name from this unit from your hand, call it to RC, and it gets "Boost" until end of turn. If you called a card, perform one of the following.
+- If it is your main phase, draw a card.
+- If it is your battle phase, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 12142
+{
+global.CardName[CardStat] = 'Countermeasure Against the Heat is Perfect, Siana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on GC during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked. 
+
+AUTO: When this unit is rode upon by a grade 3 card with "Siana" in its card name, choose a trigger unit or blitz order from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12143
+{
+global.CardName[CardStat] = 'Rely On the Snakes When Unsure, Siana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on :GC: during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked. 
+
+AUTO: When this unit is rode upon by a grade 2 card with "Siana" in its card name, COST [Soul Blast 1], draw a card, and return all of your opponen’s front row rear-guards to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12144
+{
+global.CardName[CardStat] = 'The Warm-up Excercise is Spot On, Siana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12145
+{
+global.CardName[CardStat] = 'Jack-o’-parade, Tereteus'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO: When this unit is placed on RC, choose one of your opponent’s front row rear-guards, and you may return it to hand.
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Siana" in its card name, COST [Counter Blast 1], and this unit gets [Power]+5000 until end of that battle for each of your opponent’s open front row RC. If it gets power +10000 or more, draw a card.
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12146
+{
+global.CardName[CardStat] = 'Raffish Runner, Juno'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Siana" in its card name, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, and you may return it to hand. If you Soul Blast a trigger unit for this cost, choose one of your vanguards, and that unit and this unit get power +10000 until end of turn.
+'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12147
+{
+global.CardName[CardStat] = 'Wonderful Wand, Lupowa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC, choose one of your opponent’s front row rear-guards, and you may return it to hand.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Siana" in its card name attacks or is attacked, COST [put this unit into soul], choose one of your vanguards, and it gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12148
+{
+global.CardName[CardStat] = 'This Place is Like Utopia, Noruche'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Siana" in its card name, COST [Soul Blast 1], return all of your opponent’s front row rear-guards to hand, and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 12149
+{
+global.CardName[CardStat] = 'Seabed Sorcery, Patrice'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+ACT [RC]: If your opponent’s front row has no rear-guards, COST [Counter Blast 1 & put this unit into soul], choose a blitz order from your drop, and put it into hand. 
+'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
