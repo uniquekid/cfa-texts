@@ -3713,15 +3713,17 @@ CardStat = 8187
 global.CardName[CardStat] = 'Cobalt Witch, PuPu'
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-AUTO [VC]: When rode from a grade 1, COST [discard a card from your hand], and get an Imaginary Gift:Protect.
+AUTO: When this unit is placed on VC by riding on a grade 1, COST [discard a card from your hand], and you get an Imaginary Gift:Protect.
 
-AUTO [RC]: When it attacks, COST [your hand has one or more sentinels, and reveal any number of them], and this unit gets power +5000 until end of that battle for each card revealed for this cost.'
+AUTO [RC]: When this unit attacks, COST [reveal one or more sentinels from your hand], and this unit gets power +5000 until end of that battle for each card revealed.
+
+(SHIFT + left click to create Protect gift.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 10
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
-global.GreenTokenAdd[CardStat] = 1
+global.ProtectAdd[CardStat] = 1
 
 
 CardStat = 8960
@@ -4003,7 +4005,7 @@ CardStat = 11264
 global.CardName[CardStat] = 'Administrate Angel'
 global.CardText[CardStat] = 'Oracle Think Tank/Angel
 
-AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one card from among them, put it into your hand, and put the rest on the top or bottom of your deck in any order.
+AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one card from among them, put it into hand, and put any number of the remaining cards on the top or bottom of deck in any order.
 
 AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or less, COST [discard this card], look at the top five cards of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
