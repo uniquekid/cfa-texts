@@ -786,7 +786,7 @@ AUTO [VC]: When this unit attacks, if this unit was placed this turn, COST [Coun
 • 8 or more - Draw a card.
 • 10 or more - This unit gets drive +1 until end of turn.
 • 15 or more - Choose up to two <Hero> from your soul, call them to your RC, those units get power +5000 until end of turn.
-ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran" and "Gaon" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran" and "Gaon" in its card name into your soul], draw a card, get an Imaginary Gift:Protect, and put that marker on your RC.
 CONT: This card is also regarded as "Juran" in its card name.
 
 (SHIFT + left click to create Protect gift.)'
@@ -805,7 +805,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [VC]: When this unit attacks, if this unit was placed this turn, COST [Counter Blast 1], search your deck for up to one <Hero>, call it to RC, that unit gets power +10000 until end of turn, shuffle your deck, and you may Soul Charge 3.
 
-ACT [VC] 1/Turn: COST [Put a rear-guard each with "Vroon" and "Magine" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Vroon" and "Magine" in its card name into your soul], draw a card, get an Imaginary Gift:Protect, and put that marker on your RC.
 
 CONT: This card is also regarded as "Vroon" in its card name.
 
@@ -899,7 +899,7 @@ CardStat = 11501
 global.CardName[CardStat] = 'Zenkai Gaon'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [VC]: When rode upon, COST [Counter Blast 1], Soul Charge 2, get one Imaginary Gift:Protect, and put that marker on your RC.
+AUTO [VC]: When rode upon, COST [Counter Blast 1], Soul Charge 2, get an Imaginary Gift:Protect, and put that marker on your RC.
 
 CONT [RC]: During your turn, If you have three or more protect markers on your circles, this unit gets power +10000.
 
@@ -1059,7 +1059,7 @@ CONT [VC]: If you have three or more protect markers on your circles, all of you
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to one grade 3 with "Twokaiser" in its card name and different card names from this unit, ride it as stand.
 
-AUTO [VC]: When placed from hand, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one card with "Twokaiser" or <Robot>, reveal and put it into your hand, shuffle your deck.'
+AUTO [VC]: When placed from hand, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one card with "Twokaiser" in its card name or <Robot>, reveal and put it into your hand, shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 35
 }
@@ -1143,7 +1143,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [VC]: When placed, COST [Counter Blast 1], this unit gets power +10000 until end of turn, choose two of your opponent’s rear-guards, and retire them, and you may Soul Charge 3.
 
-ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran" and "Magine" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Juran" and "Magine" in its card name into your soul], draw a card, get an Imaginary Gift:Protect, and put that marker on your RC.
 
 CONT: This card is also regarded as "Juran" in its card name.
 
@@ -1163,7 +1163,7 @@ global.CardText[CardStat] = 'Live Action/Hero
 
 AUTO [VC]: When placed, COST [Counter Blast 1], look at five cards from the top of your deck, call up to two <Hero> from among them to RC, they get power +5000 until end of turn, and you may Soul Charge 3.
 
-ACT [VC] 1/Turn: COST [Put a rear-guard each with "Gaon" and "Vroon" in its card name into your soul], draw a card, get one Imaginary Gift:Protect, and put that marker on your RC.
+ACT [VC] 1/Turn: COST [Put a rear-guard each with "Gaon" and "Vroon" in its card name into your soul], draw a card, get an Imaginary Gift:Protect, and put that marker on your RC.
 
 (This card is also regarded as "Vroon" in its card name.)
 
@@ -1181,10 +1181,13 @@ CardStat = 12136
 global.CardName[CardStat] = 'Stacy'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [RC]: When placed, COST [Soul Blast 2], this unit gets power +2000 until end of turn, get one Imaginary Gift:Protect, and put that marker on your RC. This ability may only be used by a card with the same card name once a turn.'
+AUTO [RC]: When placed, COST [Soul Blast 2], this unit gets power +2000 until end of turn, get an Imaginary Gift:Protect, and put that marker on your RC. This ability may only be used by a card with the same card name once a turn.
+
+(SHIFT + left click to create Protect gift.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
+global.ProtectAdd[CardStat] = 1
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
 
