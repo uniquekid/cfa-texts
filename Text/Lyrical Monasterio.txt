@@ -5922,6 +5922,7 @@ ACT [VC] 1/Turn: COST [Counter Blast 1 & Put a card from hand on the bottom of t
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1 card with "Pacifica" in its card name], search your deck for up to one normal unit, call it to an open RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -5938,6 +5939,8 @@ CONT [Back Row Center RC]: During your turn, if you have a vanguard with "Pacifi
 AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Pacifica" in its card name, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn. If it was put from the back row center column into soul, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -6213,7 +6216,7 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 }
-global.PowerStat[CardStat] = 13000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12142
@@ -6235,7 +6238,7 @@ CardStat = 12143
 global.CardName[CardStat] = 'Rely On the Snakes When Unsure, Siana'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
  
-AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on :GC: during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked. 
+AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if a card was not put on GC during this battle, your opponent chooses a card from their hand, and they may discard it. If they did not discard a card, bind that rear-guard that attacked. 
 
 AUTO: When this unit is rode upon by a grade 2 card with "Siana" in its card name, COST [Soul Blast 1], draw a card, and return all of your opponen’s front row rear-guards to hand.'
 global.UnitGrade[CardStat] = 1
@@ -6318,6 +6321,126 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
  
 ACT [RC]: If your opponent’s front row has no rear-guards, COST [Counter Blast 1 & put this unit into soul], choose a blitz order from your drop, and put it into hand. 
 '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12150
+{
+global.CardName[CardStat] = 'Coaxing Diva, Milene'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12151
+{
+global.CardName[CardStat] = 'Diva of Threnody, Mariette'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon by "Diva of Greeting Gloom, Roselita", look at the top seven cards of your deck, choose up to one card with "PR<3ISM" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, you may call this card to RC. If you called a card, Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12152
+{
+global.CardName[CardStat] = 'Diva of Greeting Gloom, Roselita'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon by a unit with "Labrador" in its card name, choose up to one card with "PR<3ISM" in its card name from your hand, and call it to :RC:. If you called a card, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12153
+{
+global.CardName[CardStat] = 'PR<3ISM-Promise, Labrador '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your rear-guards, return it to hand, and this unit gets power +5000 until end of turn.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two unit cards with "PR<3ISM" in their card names from your hand, and call them to open RC. If you called a card, draw a card, if your opponent’s vanguard is grade 3 or greater, until end of turn, all of your front row units get power +5000, and this unit gets critical +1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+CardStat = 12154
+{
+global.CardName[CardStat] = 'PR<3ISM-Promise, Leyte '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is placed on RC from hand or put on GC from hand, if you have a vanguard with "Labrador" in its card name, this unit gets power +5000/shield +5000 until end of turn.
+
+AUTO: When this unit is returned to hand from RC, if you have a vanguard with "Labrador" in its card name, you may Soul Charge 1. Then, if you did not Counter Charge this turn, Counter Charge 1. '
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12155
+{
+global.CardName[CardStat] = 'PR<3ISM-Promise, Celtic '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is placed on RC from hand or put on GC from hand, if you have a vanguard with "Labrador" in its card name, this unit gets power +5000/shield +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Labrador" in its card name, COST [Soul Blast 1], return this unit to hand, choose up to one of your rear-guards with "PR<3ISM" in its card name, and return it to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12156
+{
+global.CardName[CardStat] = 'Chilling Tonight, Nebirona'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO [RC]: When your unit with "PR<3ISM" in its card name is placed on another RC in the same column as this unit, that placed unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12157
+{
+global.CardName[CardStat] = 'Rattlin’ Good Time, Flami'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is returned to hand from RC during your main phase, COST [Counter Blast 1], draw a card, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 12158
+{
+global.CardName[CardStat] = 'Diva of Waterheart, Petronille'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "PR<3ISM" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, you may Soul Charge 2.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Labrador" in its card name, you may return this unit to hand. '
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
