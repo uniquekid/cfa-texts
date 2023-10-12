@@ -294,7 +294,7 @@ AUTO: COST [Counter Blast 1] When this unit is placed on VC or RC, if you have a
 CardStat = x+33
 {
 global.CardName[CardStat] = 'Drawing Dread'
-global.CardText[CardStat] = 'Pale Moon/Demon
+global.CardText[CardStat] = 'Pale Moon/Giant
 
 AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have four or more other «Pale Moon» rear-guards, draw a card.'
 }
@@ -490,11 +490,8 @@ AUTO [VC]: [Choose one of your grade 3 or greater «Pale Moon» rear-guards, and p
 AUTO [VC]: When this unit is boosted by a «Pale Moon», this unit gets power +3000 until end of that battle.'
 }
 
-//îáíîâëåíèå
 
-x = 1013
-
-CardStat = x+1
+CardStat = 1014
 {
 global.CardName[CardStat] = 'Smiling Presenter'
 global.CardText[CardStat] = 'Pale Moon/Human
@@ -505,7 +502,7 @@ ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at up to ten car
 }
 
 
-CardStat = x+2
+CardStat = 1015
 {
 global.CardName[CardStat] = 'Magical Partner'
 global.CardText[CardStat] = 'Pale Moon/Elf
@@ -514,7 +511,7 @@ AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Nightmare Summoner
 }
 
 
-CardStat = x+3
+CardStat = 1016
 {
 global.CardName[CardStat] = 'Fire Juggler'
 global.CardText[CardStat] = 'Pale Moon/Human
@@ -523,7 +520,7 @@ AUTO [RC]: When you check a grade 3 «Pale Moon» during the drive checks when thi
 }
 
 
-CardStat = x+4
+CardStat = 1017
 {
 global.CardName[CardStat] = 'Barking Wyvern'
 global.CardText[CardStat] = 'Pale Moon/Winged Dragon
@@ -534,7 +531,7 @@ AUTO [RC]: [Choose a «Pale Moon» from your hand, and discard it] When this unit 
 }
 
 
-CardStat = x+5
+CardStat = 1018
 {
 global.CardName[CardStat] = 'Nightmare Summoner, Raqiel'
 global.CardText[CardStat] = 'Pale Moon/Elf
@@ -545,7 +542,7 @@ AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If
 }
 
 
-CardStat = x+6
+CardStat = 1019
 {
 global.CardName[CardStat] = 'Starlight Melody Tamer, Farah'
 global.CardText[CardStat] = 'Pale Moon/Warbeast
@@ -663,7 +660,7 @@ x = 1496
 CardStat = x
 {
 global.CardName[CardStat] = 'Silver Thorn, Rising Dragon'
-global.CardText[CardStat] = 'Pale Moon/Winged Dragon
+global.CardText[CardStat] = 'Pale Moon/Abyss Dragon
 
 AUTO [RC]: When this unit attacks, if you have a vanguard with "Silver Thorn" in its card name, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -707,7 +704,7 @@ global.CardInClan[CardStat] = 18
 CardStat = x+4
 {
 global.CardName[CardStat] = 'Silver Thorn Assistant, Irina'
-global.CardText[CardStat] = 'Pale Moon/Human
+global.CardText[CardStat] = 'Pale Moon/Warbeast
 
 AUTO: When this unit is placed on VC or RC, if you have a vanguard with "Silver Thorn" in its card name, you may look up to two cards from the top of your deck, search up to one card with "Silver Thorn" in its card name, put it into your soul, and put the rest to the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 1
@@ -1212,7 +1209,7 @@ global.CardInClan[CardStat] = 18
 CardStat = x+11
 {
 global.CardName[CardStat] = 'Intensely Sweet Clown'
-global.CardText[CardStat] = 'Pale Moon/Ogre
+global.CardText[CardStat] = 'Pale Moon/Goblin
 
 AUTO: Generation Break 1: When this unit is placed on RC from your soul, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -1386,7 +1383,7 @@ global.CardInClan[CardStat] = 18
 CardStat = x+5
 {
 global.CardName[CardStat] = 'Star Magician, Elen'
-global.CardText[CardStat] = 'Pale Moon/Human'
+global.CardText[CardStat] = 'Pale Moon/Elf'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }
@@ -1762,7 +1759,7 @@ global.PowerStat[CardStat] = 9000
 CardStat = 4015
 {
 global.CardName[CardStat] = 'Novelty Introductor'
-global.CardText[CardStat] = 'Pale Moon/Elf
+global.CardText[CardStat] = 'Pale Moon/Dark Elf
 
 Magia - AUTO [RC]: [Put this unit into your soul] At the beginning of your main phase, you may pay the cost. If you do, choose a grade 2 or greater card in your soul, call it to RC, and at the end of that turn, put that unit into your soul.'
 global.UnitGrade[CardStat] = 1
@@ -2180,7 +2177,7 @@ global.PowerStat[CardStat] = 11000
 CardStat = 4718
 {
 global.CardName[CardStat] = 'Dancing Knifedancer'
-global.CardText[CardStat] = 'Pale Moon/Human
+global.CardText[CardStat] = 'Pale Moon/Demon
 
 AUTO [RC]: When this unit attacks, it gets power +2000 until end of that battle.
 
@@ -3736,7 +3733,8 @@ global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 9000
-global.DefensePowerStat[CardStat] = 500
+global.DefensePowerStat[CardStat] = 5000
+
 
 CardStat = 9488
 {
