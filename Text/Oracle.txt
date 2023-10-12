@@ -657,12 +657,12 @@ AUTO [VC/RC]: [Soul Blast 1 & Choose a card from your hand, and discard it] When
 }
 
 
-CardStat = x+7
+CardStat = x+5
 {
-global.CardName[CardStat] = 'Rock Witch, GaGa'
-global.CardText[CardStat] = 'Oracle Think Tank/Human
+global.CardName[CardStat] = 'Battle Sister, Cream'
+global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
-AUTO [VC/RC]: When this unit attacks, if you do not have any cards in your soul, draw a card, choose a card from your hand, and put it on the bottom of your deck.'
+AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Battle Sister, Cookie", you may pay the cost. If you do, the boosted unit gets power +5000 until end of that battle.'
 }
 
 
@@ -675,6 +675,15 @@ AUTO [RC]: When this unit attacks, if you have a vanguard with "Amaterasu" in it
 }
 
 
+CardStat = x+7
+{
+global.CardName[CardStat] = 'Rock Witch, GaGa'
+global.CardText[CardStat] = 'Oracle Think Tank/Human
+
+AUTO [VC/RC]: When this unit attacks, if you do not have any cards in your soul, draw a card, choose a card from your hand, and put it on the bottom of your deck.'
+}
+
+
 CardStat = x+8
 {
 global.CardName[CardStat] = 'Battle Sister, Cookie'
@@ -683,15 +692,6 @@ global.CardText[CardStat] = 'Oracle Think Tank/Elf
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
 AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, draw two cards, choose a card from your hand, and discard it.'
-}
-
-
-CardStat = x+5
-{
-global.CardName[CardStat] = 'Battle Sister, Cream'
-global.CardText[CardStat] = 'Oracle Think Tank/Elf
-
-AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Battle Sister, Cookie", you may pay the cost. If you do, the boosted unit gets power +5000 until end of that battle.'
 }
 
 
