@@ -1072,7 +1072,7 @@ global.CardText[CardStat] = 'Granblue/Ghost/Stand Trigger
 
 AUTO: Hollow (When this unit is placed on RC, you may have it become hollowed. If you do, retire it at the end of turn.)
 
-AUTO: Generation Break 1: When this unit is placed on RC from your drop zone, if this unit is hollowed, choose one of your other units, that unit gets power +10000 until end of turn, and this unit get "AUTO: When this unit is put into your drop zone, return this unit to your deck, and shuffle your deck".'
+AUTO: Generation Break 1: When this unit is placed on RC from your drop zone, if this unit is hollowed, choose up to one of your other units, and it gets power +10000 until end of turn, and until end of turn, this unit gets "AUTO: When this unit is put into your drop zone from RC, return this card to your deck, and shuffle your deck".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 8
 }
@@ -1824,7 +1824,7 @@ global.CardText[CardStat] = 'Granblue/Skeleton
 
 Stride.
 
-AUTO: When this unit is placed on VC, put up to four cards from the top of your deck into the drop zone. For each normal unit put into the drop zone this way, this unit gets power +5000 until end of turn. If the number of trigger units put into the drop zone this way is two or more, choose a card from your drop zone, and you may call it to RC.'
+AUTO: When this unit is placed on VC, put up to four cards from the top of your deck into the drop zone. This unit gets power +5000 for each normal unit put into the drop zone until end of turn. If two or more trigger units were put into your drop zone, choose a card from your drop zone, and you may call it to RC.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 8
 global.ExtraDeck[CardStat] = 1
@@ -1931,7 +1931,7 @@ global.CardText[CardStat] = 'Granblue/Ghost
 
 G guardian.
 
-AUTO Generation Break 1: When placed on GC, COST [Soul Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], choose two cards of different grades from your drop zone, and you may call them to GC.'
+AUTO Generation Break 1: When placed on GC, COST [Soul Blast 1 & choose a face down G guardian from your G zone, and turn it face up], choose two cards of different grades from your drop zone, and you may call them to GC.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 8
 global.ExtraDeck[CardStat] = 1
@@ -2004,7 +2004,7 @@ global.CardText[CardStat] = 'Granblue/Vampire
 
 Stride.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose up to the number of cards in your drop zone as the number of face up cards in your G zone +1, call them to separate RC as hollowed, and if you called three or more cards, this unit gets critical +1.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, and turn it face up] Choose up to the number of cards in your drop zone as the number of face up cards in your G zone +1, call them to separate RC as hollowed, and if you called three or more cards, this unit gets critical +1.
 
 AUTO [VC]: At the beginning of your battle phase, choose one of your units for each card with "Nightrose" in its card name in your drop zone, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 4
@@ -2161,7 +2161,7 @@ CardStat = 5937
 global.CardName[CardStat] = 'Dancing Cutlass '
 global.CardText[CardStat] = 'Granblue/Ghost
 
-ACT [Drop Zone]: COST [Bind one of your other "Dancing Cutlass" from your drop zone, and put the top card of your deck into your drop zone], call this card to RC, and Counter Charge 1.'
+ACT [Drop Zone]: COST [Bind one other "Dancing Cutlass" from your drop & discard the top card of your deck], call this card to RC, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 }
@@ -2643,7 +2643,7 @@ CardStat = 7551
 global.CardName[CardStat] = 'Chad the Ghostie'
 global.CardText[CardStat] = 'Granblue/Ghost/Critical Trigger
 
-CONT [Hand]: While paying the cost for Stride, this card may be discarded as a grade 3.'
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 8
 }
@@ -2850,7 +2850,7 @@ CardStat = 7766
 global.CardName[CardStat] = 'Pirate Swordsman, Colombard '
 global.CardText[CardStat] = 'Granblue/Vampire
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], search your deck for up to one card, put it into your drop zone, shuffle your deck, and call up to one card from your drop zone to RC. This ability may only be used by a card with the same card name once a turn.'
+AUTO: When this unit is placed on VC or RC, COST [Counter Blast 1], search your deck for up to one card, discard it, and shuffle your deck. Then, call up to one card from your drop to RC. This ability may only be used by a card with the same card name once a turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 8
 }
@@ -2898,7 +2898,7 @@ CardStat = 7786
 global.CardName[CardStat] = 'Witch Doctor of Powdered Bone, Negrobone '
 global.CardText[CardStat] = 'Granblue/Demon
 
-ACT [Drop zone]: COST [Discard a card from your hand & put this card on the bottom of your deck], and call a grade 1 card from your drop zone to RC. If your drop zone has ten or more cards, you may call regardless of the grade.'
+ACT [Drop zone]: COST [Discard a card from your hand & put this card on the bottom of your deck], and call a grade 1 card from your drop zone to RC. If your drop zone has ten or more cards, you may call any grade instead.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 }
@@ -3005,7 +3005,7 @@ AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call a card not named "Ghost
 
 CONT [VC]: All of your units with "Ghostie" in their card names on your RC or GC get "Intercept" and power +5000 / shield +5000.
 
-AUTO [VC]: When your rear-guard is retired by a cards ability during your turn, COST [Counter Blast 1], and call a card with "Ghostie" in its card name and grade less than the grade of the retired unit from your drop zone to RC.'
+AUTO [VC]: When your rear-guard is retired by a card’s ability during your turn, COST [Counter Blast 1], and call a card with "Ghostie" in its card name and grade less than the grade of the retired unit from your drop zone to RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -3082,7 +3082,7 @@ global.CardText[CardStat] = 'Granblue/Ghost
 
 AUTO: When this unit is placed on VC, search your deck for up to one card, discard it, and shuffle your deck.
 
-AUTO [RC]: At the end of the battle this unit attacked or boosted, you may discard two cards from the top of your deck. Then, if one or more trigger units were discarded, COST [retire this unit], and draw a card.'
+AUTO [RC]: At the end of the battle this unit attacked or boosted, you may discard two cards from the top of your deck. If one or more trigger units were discarded, COST [retire this unit], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 }

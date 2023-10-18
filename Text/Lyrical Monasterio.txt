@@ -3986,7 +3986,7 @@ Play this with COST [Counter Blast 1]!
 
 AUTO: When this card is put into your Order Zone, draw a card.
 
-ACT [Order Zone]: If you have a grade 3 or greater card with "Michu" in its card name, COST [put this card into your drop], and change all of your vanguard’s Cannonball abilities to "AUTO [VC]: When this unit attacks, COST [Soul Blast 2], choose three of your units, and they get power +10000 until end of turn." until end of turn.'
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into your drop], and change all of your vanguard’s Cannonball abilities to "AUTO [VC]: When this unit attacks, COST [Soul Blast 2], choose three of your units, and they get power +10000 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -5490,7 +5490,7 @@ CardStat = 12014
 global.CardName[CardStat] = 'Perfectionist, Ryuuka'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
  
-ACT [RC]: When this unit is retired from RC or GC, if you have a vanguard with "Asterice" in its card name, you may put this card into soul.'
+ACT [RC]: When this unit is retired from RC or GC, if you have a vanguard with "Astesice" in its card name, you may put this card into soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -6467,3 +6467,37 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12166
+{
+global.CardName[CardStat] = 'Lyrical ShootingStarS * Special Issue'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Magazine
+
+Play this with COST [Counter Blast 1] if you have a vanguard with "Kyouka" in its card name!
+
+Choose up to two normal units with different grades and grades less than or equal to your vanguard from your drop, and call them to RC. Then, if you have one or more grade 1, grade2 and grade 3 units each, until end of turn, you can play up to a total of two orders, and you cannot play orders other than "Lyrical ShootingStarS".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12167
+{
+global.CardName[CardStat] = 'Beware the Sneeze of Fireworks'
+global.CardText[CardStat] = 'Lyrical Monasterio/Set Order/Cannonball
+
+Play this with COST [Counter Blast 1]!
+
+AUTO: When this card is put into your order zone, draw a card.
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into drop], choose one of your units, and it gets power +10000 until end of turn. Choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and stand during stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
