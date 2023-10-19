@@ -4909,9 +4909,27 @@ CardStat = 12087
 global.CardName[CardStat] = 'Rudish Erador'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO: When this unit boosts, if your order zone has two or more set orders, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for every two of that unit’s grade.'
+AUTO [RC]: When this unit boosts, if your order zone has two or more set orders, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for every two of that unit’s grade.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12173
+{
+global.CardName[CardStat] = 'Dawn of Genesis'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order
+
+Play this with COST [Counter Blast 1] if you have a "Alter Ego Messiah" crest!
+
+Choose a unit card with "Messiah" in its card name from your drop, call it to RC, choose one of your opponent’s rear-guards and lock it,
+
+AUTO: When this card is discarded from hand for the cost of Stride, choose one of your vanguards or heart cards, and until end of turn, the cost of that card’s next ability is reduced by Counter Blast 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

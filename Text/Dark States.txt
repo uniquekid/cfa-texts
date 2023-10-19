@@ -4791,7 +4791,7 @@ CardStat = 11889
 global.CardName[CardStat] = 'Servant Falcracia'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit attacks a grade 3 or greater unit, choose up to one «Dark States» card from your drop, and this unit gets power +5000 until end of that battle for each of its grade. Put that chosen card into soul.
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, choose up to one «Dark States» card from your drop, and this unit gets power +5000 until end of that battle for each of its grade. Put that chosen card into soul.
 
 AUTO [RC]: At the end of your turn, if your vanguard is grade 4 or greater, COST [put this unit into soul], and draw a card.'
 global.UnitGrade[CardStat] = 2
@@ -5107,3 +5107,21 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12172
+{
+global.CardName[CardStat] = 'Time Etching Footprints'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+Play this with COST [Counter Blast 1] if you have a "Chronojet Dragon" crest!
+
+Until end of turn, the Generation Break ability of the unit called by this ability is active regardless of the number of face cards in your G zone. Choose a unit card on your RC or in your soul, put it on the bottom of the deck, search your deck for up to one unit card with grade +1 from that chosen card, call it to RC, and shuffle the deck.
+
+AUTO: When this card is discarded from hand for the cost of Stride, choose one of your vanguards or heart cards, and until end of turn, the cost of that card’s next ability is reduced by Counter Blast 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

@@ -1260,7 +1260,7 @@ global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is placed on RC or put on GC, if your vanguard is "Sylvan Horned Beast King, Magnolia", this unit gets power +5000 / shield +5000 until end of turn.
 
-AUTO [Back row RC]: At end of the battle this unit attacked, you may return this to your hand.'
+AUTO [Back row RC]: At the end of the battle this unit attacked, you may return this to your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -5185,6 +5185,7 @@ global.DCards[CardStat] = 4
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
 
+
 CardStat = 12168
 {
 global.CardName[CardStat] = 'Sylvan Horned Beast, Maleeva'
@@ -5197,4 +5198,19 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12174
+{
+global.CardName[CardStat] = 'Unison of Emotions, Parcea'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO: When this unit is placed on RC other than during the battle phase, choose up to one card with the UnisonDress ability from your hand, and reveal it. If you revealed a card, or your vanguard is in the UnisonDress state, COST [Soul Blast 1], choose a card with a different card name from this unit and grade less than or equal to your vanguard from your drop, and call it to RC.
+
+AUTO [RC]: At the beginning of your main phase, if your vanguard is in the UnisonDress state, you may put this unit into the soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
