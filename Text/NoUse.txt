@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 12175
+global.AllCard = 12182
 
 global.Versia = 408
 global.GameUpdateText = 'BUG FIXES:
@@ -390,16 +390,16 @@ global.EnableAttackFromBackRow[CardStat] = 1
 
 CardStat = 10992
 {
-global.CardName[CardStat] = 'The King of Beetles, Mushiking Cabinet'
+global.CardName[CardStat] = 'Mushiking: King of the Beetles Machine'
 global.CardText[CardStat] = 'Crest
 
-CONT: You cannot ride cards other than <Beetle>, cannot play set orders, and cannot put set orders into your order zone other than by the ability of this crest.
+CONT: You cannot ride cards other than <Mushi>, cannot play set orders, and can only put set orders into the order zone with this crest’s ability.
 
-AUTO: When you get this crest, search your deck or hand for up to one Hitting Skill, Pinching Skill, and Throwing Skill card each with different grades, put them into your order zone, and if you searched your deck, shuffle the deck.
+AUTO: When you get this crest, search your deck or hand for up to one Hitting Attack, Pinching Attack, and Throwing Attack card each with different grades, put them into your order zone, and if you searched your deck, shuffle the deck.
 
-ACT 1/Turn: COST [Soul Blast 1], look at the top five cards of your deck, choose up to one <Beetle> or Skill card from among them, reveal it and put it into hand, and shuffle the deck.
+ACT 1/Turn: COST [Soul Blast 1], look at the top five cards of your deck, choose up to one <Mushi> or Attack card from among them, reveal and put it into hand, and shuffle the deck.
 
-AUTO: When your <Beetle> attacks, COST [rest a Skill card with grade less than or equal to your vanguard from order zone], and use that card’s Skill.'
+AUTO: When your <Mushi> attacks, COST [rest an Attack card with grade less than or equal to your vanguard in the order zone], and use that card’s Attack.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -650,6 +650,26 @@ global.UnitGrade[CardStat] = 11
 global.DCards[CardStat] = 8
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 12182
+{
+global.CardName[CardStat] = 'Demon Stealth Dragon, Shiranui "Oboro"'
+global.CardText[CardStat] = 'Crest
+
+CONT: You can perform Stride, and cannot ride grade 3 or greater cards without "Demon Stealth Dragon, Shiranui" in their card names.
+
+CONT: The original power of your grade 3 cards with "Demon Stealth Dragon, Shiranui" in their card names become 13000. (Including heart cards)
+
+CONT: During your turn, if you have a grade 3 or greater vanguard with "Demon Stealth Dragon, Shiranui" in its card name, all of your front row units get power +5000 for each face up card in your G zone. (The power of dominated units will not increase)
+
+CONT: During your turn, your opponent’s units placed by your card’s ability this turn, and units dominated by you, lose all of their original CONT and AUTO abilities, and get power +5000.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0

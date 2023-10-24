@@ -133,7 +133,7 @@ CardStat = 8244
 global.CardName[CardStat] = 'Sunburst Evolution'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
-Play this with COST [Counter Blast 1]
+Play this with COST [Counter Blast 1]!
 
 Choose one of your units, and it gets power +5000 until end of turn. Choose a "Vairina" from your drop, and return it to your hand.'
 global.UnitGrade[CardStat] = 2
@@ -4982,3 +4982,99 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12176
+{
+global.CardName[CardStat] = 'Stealth Dragon, Utsuroi '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12177
+{
+global.CardName[CardStat] = 'Stealth Dragon, Madoi  '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+CONT: Sentinel (You may only have up to four cards with "CONT: Sentinel" in a deck)
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12178
+{
+global.CardName[CardStat] = 'Stealth Dragon, Seizui '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+AUTO: When this unit is placed by riding from "Stealth Dragon, Madoi", draw a card, and you get a "Demon Stealth Dragon, Shiranui "Oboro"" crest.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 12182
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 12179
+{
+global.CardName[CardStat] = 'Stealth Dragon, Genkai  '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+AUTO: When this unit is rode upon by a grade 3 with "Demon Stealth Dragon, Shiranui" in its card name, you may call this card to RC. If you called a card, Soul Charge 1, choose up to one unit card from your opponent’s drop, and your opponent calls that card to RC.
+
+AUTO [RC]: When a unit dominated by you attacks, COST [Counter Blast 1], and that attacking unit gets power +10000 until end of that battle. This unit gets "Boost" until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12180
+{
+global.CardName[CardStat] = 'Demon Stealth Dragon, Shiranui "Oboro"   '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+AUTO [VC]: At the beginning of your ride phase, choose up to one card from your opponent’s drop, your opponent calls that card to RC, and at the end of that turn, retires that unit.
+
+Dominate - AUTO [VC]: When your G unit Stride, choose up to one of your opponent’s rear-guards, stand and dominate it, until end of turn, that unit gets power +4000, and attacks your opponent’s other unit.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 11000
+
+
+CardStat = 12181
+{
+global.CardName[CardStat] = 'Enma Stealth Dragon, Maguntenbu '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
+
+(This card cannot be in your main deck.)
+
+Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
+
+Dominate - ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card from G zone face up], choose one of your opponent’s rear-guards, stand and dominate it, it attacks your opponent’s other unit, and retire that dominated unit at the end of that battle.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
