@@ -2982,8 +2982,6 @@ CardStat = 10667
 global.CardName[CardStat] = 'Genesis Dragon, Amnesty Messiah '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
-(This card cannot be in your main deck.)
-
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from G zone face up], choose any number of any player’s locked cards, and unlock them. Choose one of your rear-guards, and it gets power +5000 until end of turn for each card unlocked by this ability.'
@@ -3500,9 +3498,7 @@ CardStat = 10828
 global.CardName[CardStat] = 'Genesis Dragon, Excelics Messiah '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
-(This card cannot be in your main deck.)
-
-Stride COST [Discard a grade 3 card with "Messiah" in its card name from hand] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
+Stride.
 
 AUTO [VC] Generation Break 2: When this unit attacks, COST [Counter Blast 1], choose any number of any player’s locked cards, and unlock them. If you unlocked a card, choose the same number of your rear-guards as the number of cards unlocked by this ability, stand them, and until the end of turn, all of your front row units get power +10000, and this unit gets critical +1.'
 global.UnitGrade[CardStat] = 4
@@ -4185,7 +4181,7 @@ CardStat = 11532
 global.CardName[CardStat] = 'Midnight Recycleaners'
 global.CardText[CardStat] = 'Brandt Gate/Normal Order
 
-Look at the same number of cards from the top of your deck as the number of set orders in your order zone, choose one card from among them, bind it face down, and shuffle the deck. At the end of that turn, put the card bound by this effect into your hand.'
+Look at a number of cards from the top of your deck equal to the number of set orders in your order zone, choose a card from among them, bind it face down, and shuffle the deck. At the end of that turn, put the card bound by this effect into your hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -4319,10 +4315,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11560
 {
-global.CardName[CardStat] = 'Space Prison Warden, Jailas'
+global.CardName[CardStat] = 'Cosmic Prison Warden, Jailas'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO: When this unit is placed RC, you may choose one of your opponent’s cards imprisoned in your Prison. If you chose a card, your opponent puts that card into their hand, and this unit gets power +20000 until end of turn.'
+AUTO: When this unit is placed on RC, you may choose one of your opponent’s cards imprisoned in your Prison. If you chose a card, your opponent puts that card into hand, and this unit gets power +20000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -4332,12 +4328,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11561
 {
-global.CardName[CardStat] = 'Aurora Battle Princess, Rifle Roiya'
+global.CardName[CardStat] = 'Aurora Battle Princess, Lifle Royar'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
 CONT [RC]: During your turn, if two or more of your opponent’s cards are imprisoned in your Prison, this unit gets power +5000.
 
-ACT [RC] 1/Turn: If your opponent’s card was imprisoned into your Prison this turn, COST [Counter Blast 1], choose one of your opponent’s rear-guards, imprison it in your Prison, look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.'
+ACT [RC] 1/Turn: If your opponent’s card was imprisoned in your Prison this turn, COST [Counter Blast 1], choose one of your opponent’s rear-guards, imprison it in your Prison, look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -4350,7 +4346,7 @@ CardStat = 11562
 global.CardName[CardStat] = 'White Jeweled Beast, Synthetica'
 global.CardText[CardStat] = 'Brandt Gate/High Beast
 
-AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
+AUTO: When this unit is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform either of the following according to the circle this unit is on.
 • RC - Choose a set order from your drop, and put it into hand.
 • GC - This unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -4362,7 +4358,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11597
 {
-global.CardName[CardStat] = 'Pinpoint of Breakthrough, Spark Chamber'
+global.CardName[CardStat] = 'Splinter of Progression, Spalkchamber'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO [RC]: When your grade 2 or greater set order is put into the order zone, COST [retire this unit], and Counter Charge 1.'
@@ -4375,7 +4371,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11598
 {
-global.CardName[CardStat] = 'Plage Batoidia'
+global.CardName[CardStat] = 'Plage Batoidea'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Beast
 
 AUTO [RC]: At the end of your turn, if this unit is on a RC with a Dragontree marker, COST [retire this unit], choose a set order from your drop, and put it into hand.'
@@ -4395,7 +4391,7 @@ CONT: This card can only be ridden from a grade 3 with "Orfist" in its card name
 
 ACT [VC] 1/Turn: COST [Remove a card with "Orfist" in its different card name from this unit from hand, soul, or drop], choose a World card from your drop, and put it into the order zone.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put any number of World cards from order zone into drop], and call up to the same number of Shadow Army tokens as the number of World cards put into drop for this cost to RC with units. If you called two or more cards, this unit gets drive +1 until end of that battle.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put any number of World cards from the order zone into drop], and call Shadow Army tokens up to the same number of cards put into drop for this cost to your RC with a unit. If you called two or more cards, this unit gets drive +1 until end of that battle.
 
 (SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 3
@@ -4447,10 +4443,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11817
 {
-global.CardName[CardStat] = 'Gould Berthas'
+global.CardName[CardStat] = 'Gould Beltas'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Golem
 
-AUTO: When this unit is placed on RC from hand, if you have three or more Dragontree markers on your RC, COST [Counter Blast 1], search your deck for up to one set order, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed on RC from hand, if your RC has three or more Dragontree markers, COST [Counter Blast 1], search your deck for up to one set order, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -4460,7 +4456,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11818
 {
-global.CardName[CardStat] = 'Patrol Conversion, Policiarot'
+global.CardName[CardStat] = 'Transforming Patrol, Polizeiaroto'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT [RC/GC]: If your vanguard is "Cardinal Mors, Orfist Masques", this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -4473,10 +4469,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11819
 {
-global.CardName[CardStat] = 'Robust Fist Dragon, Ellenbars Dragon'
+global.CardName[CardStat] = 'Stout Fist Dragon, Elanverse Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon
 
-CONT [RC]: If your set order was put from order zone into drop this turn, this unit gets power +5000.'
+CONT [RC]: If your set order was put into drop from the order zone this turn, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -4508,7 +4504,7 @@ CONT: This card can only be ridden from a grade 3 with "Nordlinger" in its card 
 
 ACT [VC] 1/Turn: COST [Remove a card with "Nordlinger" in its different card name from this unit from hand, soul, or drop], choose up to three Meteorite cards from your drop, and put them into hand.
 
-AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any number of Meteorite cards from the order zone into drop], for every two Meteorite cards put into drop for this cost, choose up to one unit card from your hand, and call it to RC. If you put four or more Meteorite cards into drop for this cost, your trigger effects activate twice until end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any number of Meteorite cards from the order zone into drop], for every two Meteorite cards put into drop for this cost, choose up to one unit card from your hand, and call it to RC. If four or more Meteorite cards were put into drop for this cost, your trigger effects activate twice until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -4535,7 +4531,7 @@ CardStat = 11868
 global.CardName[CardStat] = 'Spallation Reactor Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
-AUTO [RC]: When your vanguard with "Dragontree" or "Masques" in its card name attacks, if this unit is on a RC with Dragontree marker, COST [Counter Blast 2], and stand this unit.'
+AUTO [RC]: When your vanguard with "Dragontree" or "Masques" in its card name attacks, if this unit is on a RC with a Dragontree marker, COST [Counter Blast 2], and stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
