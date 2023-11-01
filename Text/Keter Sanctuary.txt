@@ -2866,7 +2866,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 CONT: This card cannot be ridden, and cannot be normal called to RC from hand.
 
-AUTO: When this unit is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC.'
+AUTO: When this card is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4404,12 +4404,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11232
 {
-global.CardName[CardStat] = 'Knight of Soaring Refinement, Dyfn'
+global.CardName[CardStat] = 'Knight of Soaring Refinement, Dfyn'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: When your grade 3 or greater unit in the center column attacks, if you have a vanguard with "Gramgrace" in its card name, that attacking unit gets power +5000 until end of that battle.
 
-AUTO [Front Row RC]: When this unit attacks, if you have a vanguard with "Gramgrace" in its card name, and your units in the center column attacked two or more times, COST [Counter Blast 1], and this unit gets power +15000 until end of that battle.'
+AUTO [Front Row RC]: When this unit attacks, if you have a vanguard with "Gramgrace" in its card name, and your units in the center column attacked two or more times this turn, COST [Counter Blast 1], and this unit gets power +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4461,7 +4461,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11520
 {
-global.CardName[CardStat] = 'Decorate Razor Angel'
+global.CardName[CardStat] = 'Decorazor Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO [RC]: When your other unit in the same column as this unit attacks, that unit gets power +5000 until end of that battle.'
@@ -4474,10 +4474,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11550
 {
-global.CardName[CardStat] = 'Knight of Aspirations, Nodons'
+global.CardName[CardStat] = 'Knight of Appetency, Knodons'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, if you have three or more Dragontree markers on your RC, COST [Counter Blast 1], and draw a card.'
+AUTO: When this unit is placed on RC, if your RC has three or more Dragontree markers, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4490,7 +4490,7 @@ CardStat = 11581
 global.CardName[CardStat] = 'Indomitable Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is put on GC, if your opponent’s vanguard’s grade is greater than your vanguard, this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit is put on GC, if your opponent’s vanguard’s grade is greater than your vanguard’s grade, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4500,10 +4500,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11582
 {
-global.CardName[CardStat] = 'Coolheaded Knight, Brezin'
+global.CardName[CardStat] = 'Knight of Lucidity, Blethyn'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1 & discard a card from hand], and choose one of your opponent’s rear-guards. Your opponent puts all of the cards on their RC and in drop with the same card name as the chosen unit on the bottom of deck in any order.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & discard a card from hand], and choose one of your opponent’s rear-guards. Your opponent puts all of their cards from RC and drop with the same card name as the chosen unit on the bottom of deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4516,7 +4516,7 @@ CardStat = 11583
 global.CardName[CardStat] = 'Delta Append Sorceress'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the top or bottom of the deck. If your persona rode this turn, choose up to one critical trigger or front trigger from your hand, reveal it, and put it on the top of the deck.'
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the top or bottom of the deck. If you persona rode this turn, choose up to one critical trigger or front trigger from your hand, reveal it, and put it on the top of the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4529,8 +4529,8 @@ CardStat = 11600
 global.CardName[CardStat] = 'Yellow Jeweled Beast, Tolpaz'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
-• RC - Look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard, call it to RC, and shuffle the deck. If it is other than during your main phase, rest that called unit.
+AUTO: When this unit is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform either of the following according to the circle this unit is on.
+• RC - Look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If it is not your main phase, rest that called unit.
 • GC - This unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -4541,7 +4541,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11601
 {
-global.CardName[CardStat] = 'Knight of Decapitation, Nehalennia'
+global.CardName[CardStat] = 'Knight of Slash Sins, Nehalenia'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this unit is placed on RC, COST [Soul Blast 1], choose one of your opponent’s rear-guards, put it on the bottom of their deck, and your opponent draws a card.'
@@ -4554,10 +4554,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11602
 {
-global.CardName[CardStat] = 'Spinning Wind Magic, Paryllis'
+global.CardName[CardStat] = 'Magic of Cycling Wind, Parryris'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When your vanguard is attacked, if it is the fifth battle of this turn or more, COST [bind this unit]. choose one of your vanguards, and it cannot be hit until end of that battle.'
+AUTO [RC]: When your vanguard is attacked, if it is the fifth battle of this turn or more, COST [bind this unit], choose one of your units, and it cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4662,7 +4662,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11665
 {
-global.CardName[CardStat] = 'Dims Emitter Dragon'
+global.CardName[CardStat] = 'Dimsemitter Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 
 AUTO [RC] 1/Turn: When your other unit is placed on RC from deck, COST [Counter Blast 1], choose one of your rear-guards, and return it to hand.'
@@ -4676,7 +4676,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11666
 {
-global.CardName[CardStat] = 'Knight of Fierceness, Angus'
+global.CardName[CardStat] = 'Knight of Ferocity, Aenghus'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO [RC]: When this unit attacks a vanguard, if the number of your rear-guards is greater than your opponent’s by two or more, this unit gets power +10000 until end of that battle.'
@@ -4689,14 +4689,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11834
 {
-global.CardName[CardStat] = 'Magic of Scriptures, Cuculeep'
+global.CardName[CardStat] = 'Magic of Scriptures, Kukrip'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT: This card is also regarded as "Wayward Therapy Angel".
 
 CONT: This card cannot be ridden, and cannot be normal called to RC from hand.
 
-AUTO: When this unit is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC.'
+AUTO: When this card is discarded from hand during your turn, if your vanguard is grade 3 or greater, COST [Soul Blast 1], and call this card to a back row RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4706,7 +4706,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11836
 {
-global.CardName[CardStat] = 'Cinctus Sanctus'
+global.CardName[CardStat] = 'Sanctus Sanctus'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 All of your rear-guards get "Boost" until end of turn.'
@@ -4723,7 +4723,7 @@ CardStat = 11837
 global.CardName[CardStat] = 'Generous Flute Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is placed on RC, if your have a vanguard with "Sorceress" in its card name, COST [discard a card from hand], look at the top two cards of your deck, choose one card from among them, put it into hand, and put the rest on the top of the deck.'
+AUTO: When this unit is placed on RC, if you have a vanguard with "Sorceress" in its card name, COST [discard a card from hand], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the top of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4733,10 +4733,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11838
 {
-global.CardName[CardStat] = 'Knight of Nobility, Azuluis'
+global.CardName[CardStat] = 'Knight of Gallantry, Azlouis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [Hand]: When you reveal grade 3 cards from hand for the cost of your card’s ability, this card may be regarded as revealing a grade 3.
+CONT [Hand]: When a grade 3 card would be revealed from your hand for the cost of your card’s ability, this card may be revealed a grade 3.
 
 AUTO: When this unit is placed on RC, if you have a grade 3 vanguard with "Bastion" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards in the same column as this unit, and put it on the bottom of their deck.'
 global.UnitGrade[CardStat] = 2
@@ -4751,7 +4751,7 @@ CardStat = 11839
 global.CardName[CardStat] = 'Grandeur Edge Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-CONT [Hand]: When you reveal grade 3 cards from hand for the cost of your card’s ability, this card may be regarded as revealing two cards.
+CONT [Hand]: When a grade 3 card would be revealed from your hand for the cost of your card’s ability, this card may be revealed as two cards.
 
 CONT [RC/GC]: If you have a vanguard with "Bastion" in its card name, this unit gets power +10000 / shield +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
@@ -4771,7 +4771,7 @@ CONT [VC]: This unit is also regarded as "Apex Ruler, Bastion".
 
 CONT [VC]: All of your grade 3 or greater front row rear-guards cannot be chosen by your opponent’s card effects, and get power +5000. (Active on opponent’s turn too)
 
-AUTO [VC]: At the end of the battle this unit attacked, choose one of your grade 3 or less rear-guards, stand it, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [RC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & discard a card with "Bastion" in its card name from hand], and this unit performs drive checks until end of that battle." until end of turn.'
+AUTO [VC]: At the end of the battle this unit attacked, choose one of your grade 3 or less rear-guards, stand it, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [RC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & discard a card with "Bastion" in its card name from hand], and until end of that battle, this unit performs drive checks." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -4796,10 +4796,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11848
 {
-global.CardName[CardStat] = 'Graceful Knight, Melvin'
+global.CardName[CardStat] = 'Knight of Elegance, Melvywn'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When this unit attacks a vanguard, if the sum of the grades of your units is 12 or greater, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When this unit attacks a vanguard, if the sum of  your units’ grades is 12 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -5270,7 +5270,7 @@ CardStat = 12190
 global.CardName[CardStat] = 'Luminosity Wizard'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [RC/GC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): If this unit was placed on RC this turn, this unit gets power +10000.
+CONT [RC] Generation Break 1 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): If this unit was placed on RC this turn, this unit gets power +10000.
 
 AUTO: When this unit is retired from RC during your turn, if you have a "Dragheart, Luard" crest, you may Soul Charge 1. Then, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -5285,7 +5285,7 @@ CardStat = 12191
 global.CardName[CardStat] = 'Saram Clouts Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-CONT [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, this unit gets power +10000.
+CONT [RC] Genetation Break 2 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, this unit gets power +10000.
 
 AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -5301,9 +5301,7 @@ CardStat = 12192
 global.CardName[CardStat] = 'Dragdriver, Luard  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-(This card cannot be in your main deck)
-
-Stride.
+Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
 AUTO [VC] Ritual 3: When this unit attacks, COST [Counter Blast 1 & turn a card from G zone face up], search your deck for up to one unit card with the Ritual ability, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 4

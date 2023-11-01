@@ -2914,8 +2914,6 @@ CardStat = 10502
 global.CardName[CardStat] = 'Interdimensional Dragon, Faterider Dragon '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(This card cannot be in your main deck.)
-
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up & put a rear-guard on the bottom of your deck], search your deck for up to one card with grade equal to the card put on the bottom of your deck for this cost’s grade +1, call it to RC, and shuffle your deck. Choose one of your units, and it gets power +5000 for each face up card in your G zone.'
@@ -3001,9 +2999,7 @@ CardStat = 10537
 global.CardName[CardStat] = 'Chronodragon Nextage  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(This card cannot be in your main deck.)
-
-Stride COST [Discard a grade 3 card with "Chronojet" in its card name from your hand] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
+Stride.
 
 AUTO [VC] Generation Break 2: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1 & discard two cards from your hand], put this unit into your G zone face up, choose one of your vanguards with "Chronojet" in its card name, and stand it.'
 global.UnitGrade[CardStat] = 4
@@ -3602,10 +3598,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 10753
 {
-global.CardName[CardStat] = 'Demonic Swordsman of Fracture, Eligos'
+global.CardName[CardStat] = 'Demonic Swordsman of Riving, Eligos'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Favrneel" in its card name, COST [put one of your other rear-guards into your soul], choose one of your opponent’s rear-guards, retire it, and if the sum of the grades of «Dark States» cards in your soul is thirteen or more, Counter Charge 1.'
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Favrneel" in its card name, COST [put one other rear-guard into soul], choose one of your opponent’s rear-guards, retire it, and if the sum of the grades of «Dark States» cards in your soul is thirteen or greater, Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -4397,7 +4393,7 @@ CardStat = 11541
 global.CardName[CardStat] = 'Purple Jeweled Beast, Almethys'
 global.CardText[CardStat] = 'Dark States/High Beast
 
-AUTO: When this card is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform one of the following according to the circle this unit is on.
+AUTO: When this unit is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform either of the following according to the circle this unit is on.
 • RC - Counter Charge 1.
 • GC - This unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -4509,7 +4505,7 @@ CardStat = 11563
 global.CardName[CardStat] = 'Blinklock Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-AUTO: When this unit is put from RC into soul, COST [Counter Blast 1], and draw a card.'
+AUTO: When this unit is put into soul from RC, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -4537,7 +4533,7 @@ global.CardText[CardStat] = 'Dark States/Normal Order
 
 Play this if you have a vanguard with "Astroea" in its card name!
 
-Counter Charge 1, choose three trigger units from your drop, and put them into soul. If you removed a card with "Astroea" in its card name this turn, choose one of your vanguards, and it gets critical +1 until end of turn.'
+Counter Charge 1, choose three trigger units from your drop, and put them into soul. If your card with "Astroea" in its card name was removed this turn, choose one of your vanguards, and it gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -4564,7 +4560,7 @@ CardStat = 11579
 global.CardName[CardStat] = 'Diabolos Tailbacker, Derek'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC]: When you "Final Rush", this unit gets "CONT [RC]: During the battle this unit boosted, when your opponent would call cards from their hand to GC, they must call two or more at the same time." and power +5000 until end of turn. At the end of that turn, retire this unit. (This effect is mandatory)'
+AUTO [RC]: When you "Final Rush", this unit gets "CONT [RC]: During the battle this unit boosted, when your opponent would call cards from their hand to GC, they must call two or more at the same time." and power +5000 until end of turn. At the end of that turn, retire this unit. (This ability is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -4589,10 +4585,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11625
 {
-global.CardName[CardStat] = 'Immoral Count, Aiperos'
+global.CardName[CardStat] = 'Fell Count, Ayperos'
 global.CardText[CardStat] = 'Dark States/Demon
 
-CONT [RC]: When your opponent’s normal units would be put from RC into soul by the ability of your vanguard with "Baromagnes" in its card name, your opponent puts them on the bottom of their deck in any order instead of putting them into soul.
+CONT [RC]: When your opponent’s normal units would be put from RC into soul by the ability of your vanguard with "Baromagnes" in its card name, your opponent puts those units on the bottom of their deck in any order instead of into soul.
 
 AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle for every five cards in your soul.'
 global.UnitGrade[CardStat] = 2
@@ -4720,12 +4716,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11832
 {
-global.CardName[CardStat] = 'Inferno Lover, Cadullis'
+global.CardName[CardStat] = 'Inferno<3Lover, Cuddlies'
 global.CardText[CardStat] = 'Dark States/Succubus
 
 CONT: This card is also regarded as "Clean-sweep Dragon".
 
-ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put them into soul. This unit gets power +5000 until end of turn for each card put into soul. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], choose up to a total of three of your or your opponent’s rear-guards, and you and your opponent put the chosen rear-guards into your own souls. This unit gets power +5000 until end of turn for each card chosen by this effect.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -4735,10 +4731,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11841
 {
-global.CardName[CardStat] = 'Gunsmoke Bullet-rain Colossus'
+global.CardName[CardStat] = 'Cannonfire Bullet Rain Colossus'
 global.CardText[CardStat] = 'Dark States/Gear Colossus
 
-AUTO: When this unit is put on GC, COST [Soul Blast 2], and this unit gets shield +5000 until end of that battle for each type of trigger icon in your bind zone.'
+AUTO: When this unit is put on GC, COST [Soul Blast 2], for each type of trigger icon in your bind zone, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -4748,7 +4744,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11842
 {
-global.CardName[CardStat] = 'Demonic Lancer of Flashing Thrust, Haagenti'
+global.CardName[CardStat] = 'Piercing Flash Evil Spearman, Halgenti'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Evil Eye" in its card name, this unit gets power +10000 until end of turn.'
