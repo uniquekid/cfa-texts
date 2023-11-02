@@ -5207,7 +5207,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12186
 {
-global.CardName[CardStat] = 'Dragwizard, Liafail'
+global.CardName[CardStat] = 'Dragwizard, Liafail  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
 AUTO: When this unit is rode upon by a grade 3 with "Luard" in its card name, COST [Soul Blast 1], and draw a card.
@@ -5285,7 +5285,7 @@ CardStat = 12191
 global.CardName[CardStat] = 'Saram Clouts Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-CONT [RC] Genetation Break 2 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, this unit gets power +10000.
+CONT [RC] Generation Break 2 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, this unit gets power +10000.
 
 AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -5304,6 +5304,72 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
 AUTO [VC] Ritual 3: When this unit attacks, COST [Counter Blast 1 & turn a card from G zone face up], search your deck for up to one unit card with the Ritual ability, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12202
+{
+global.CardName[CardStat] = 'Abyssal Owl  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/High Beast
+
+ACT [Hand]: If you have a "Dragheart, Luard" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Luard" in its card name, reveal it and put it into hand, and if you searched the deck, shuffle the deck.
+
+AUTO [Drop] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): At the end of your turn, if you have a vanguard with "Luard" in its card name, COST [bind two cards with the same card name as this card from drop], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12203
+{
+global.CardName[CardStat] = 'Dragwizard, Semias '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
+
+CONT [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, if you have a "Dragheart, Luard" crest, this unit gets power +2000.
+
+AUTO Generation Break 1: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Luard" in its card name, look at the top two cards of your deck, choose up to one card from among them, call it to RC, and put the rest on the bottom of the deck in any order. If you called a card, at the end of that turn, retire the unit called by this effect.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12204
+{
+global.CardName[CardStat] = 'Dragwizard, Morfessa  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
+
+CONT [Drop]: This card gets grade -1.
+
+AUTO [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): When this unit attacks a vanguard, if you have a "Dragheart, Luard" crest, this unit gets power +5000 until end of that battle, if your G zone has two or more face up cards COST [Counter Blast 1], search your deck for up to one unit card with the Ritual ability and a different card name from this unit, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12205
+{
+global.CardName[CardStat] = 'Dragstrider, Luard '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Abyss Dragon
+
+Stride COST [Discard a grade 3 card with "Luard" in its card name], and Stride this card on your VC from face down.
+
+AUTO [VC] Generation Break 2 Ritual 7: When this unit attacks, if you have five or more units with the Ritual ability, until end of battle, this unit gets power +10000 / critical +1, COST [retire two rear-guards & discard a grade 3 card with "Luard" in its card name from hand], it gets drive +1, and your opponent cannot call grade 1 or greater cards from their hand to GC.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
