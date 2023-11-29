@@ -484,9 +484,9 @@ CardStat = 5576
 global.CardName[CardStat] = 'Dragon Deity of Destruction, Gyze'
 global.CardText[CardStat] = 'Cray Elemental/Gyze
 
-AUTO: When this unit is placed on VC, choose five <Zeroth Dragon> from your bind zone, and call them to separate RC.
+AUTO: When placed on VC, choose five <Zeroth Dragon> from your bind zone, and call them to separate RC.
 
-CONT [VC]: You cannot ride, or call rear-guards other than <Zeroth Dragon>. All of your units do not return to your G zone and are unaffected by any influence other than this card and your guardians. Your rear-guards cannot be attacked.
+CONT [VC]: You cannot ride nor call any rear-guards other than <Zeroth Dragon>. All of your units do not return to the G zone and cannot be affected by anything other than this card and your guardians. Your rear-guards cannot be attacked.
 
 AUTO [VC]: At the beginning of your turn, deal one damage to your opponent’s vanguard for each <Zeroth Dragon> on your RC.'
 global.UnitGrade[CardStat] = 4
@@ -596,8 +596,7 @@ CardStat = 7563
 global.CardName[CardStat] = 'Rain Elemental, Zarzan'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-(PREMIUM JP & EN: Banned.)
-(PREMIUM TH: Restricted to 1.)
+(PREMIUM JP & EN & TH: Banned.)
 
 AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to two unit cards with no CONT, ACT, and AUTO abilities from your hand to RC. If you called two, turn up to one face down "Storm Element, Cycloned" from your G zone face up, and draw two cards.'
 global.UnitGrade[CardStat] = 1
@@ -1945,3 +1944,101 @@ global.DCards[CardStat] = 8
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12211
+{
+global.CardName[CardStat] = 'SUMMER TIME Urara Haneyama'
+global.CardText[CardStat] = 'Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12212
+{
+global.CardName[CardStat] = 'SUMMER TIME Raika Koshiba'
+global.CardText[CardStat] = 'Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12213
+{
+global.CardName[CardStat] = 'SUMMER TIME Michiru Hazama'
+global.CardText[CardStat] = 'Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12214
+{
+global.CardName[CardStat] = 'SUMMER TIME Yuyu Kondo'
+global.CardText[CardStat] = 'Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12215
+{
+global.CardName[CardStat] = 'Yumenokessho POPY'
+global.CardText[CardStat] = 'Heal Trigger/Yumenokessho
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12216
+{
+global.CardName[CardStat] = 'Yumenokessho ROSE'
+global.CardText[CardStat] = 'Critical Trigger/Yumenokessho'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12217
+{
+global.CardName[CardStat] = 'Bracing Angel Ladder'
+global.CardText[CardStat] = 'Normal Order
+
+Regalis Piece (You may only have one Regalis Piece in your deck, and use it a total of one time in a fight)
+
+Draw a card, put this card into soul, and until end of your opponent’s next turn, you get "During your turn, all your vanguards get power +5000." and "All of your rear-guards cannot be chosen and cannot be put other than on RC by your opponent’s card effects.".'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RegalisPiece[CardStat] = 1
