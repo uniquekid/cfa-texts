@@ -5479,6 +5479,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 12236
@@ -5505,6 +5506,34 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 CONT [RC]: If this unit is boosting a unit with "Leuhan" or "Marris" in its card name, this unit gets power +5000.
 
 AUTO [RC]: When this unit boosts your vanguard, choose up to one normal unit with "Leuhan" or "Marris" in its card name from your drop, and put it on the bottom of the deck. If you chose a card, COST [Counter Blaster 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12238
+{
+global.CardName[CardStat] = 'Eternal Light Dragon, Regulastar Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1 & reveal a card with "Bastion" in its card name from your hand], choose one of your opponent’s rear-guards, and retire it.
+
+CONT [RC/GC/Hand/Trigger Zone]: If you have a vanguard with "Bastion" in its card name, this card gets grade +1 / shield + 5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12239
+{
+global.CardName[CardStat] = 'Knight of Evil Slash, Meyrig'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+ACT [RC]: If you have a grade 3 vanguard with "Thegrea" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind this unit], search your deck for up to two grade 3 unit cards with "Thegrea" in their different card names, reveal them, choose up to one "Epee Du Justice, Thegrea" from among the revealed cards, ride it as stand, put the rest of the revealed cards into soul, and shuffle the deck. Until end of turn, the ridden unit is also regarded as having the same card name as the card that was rode upon.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
