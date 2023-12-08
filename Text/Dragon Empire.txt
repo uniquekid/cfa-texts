@@ -1890,13 +1890,12 @@ CardStat = 9587
 global.CardName[CardStat] = 'Acute Dragon, Eoraphas'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO [RC]: When this unit attacks or boosts, COST [Soul Blast 1] and this unit gets power +5000 until end of battle for each of your other grade 1 or less rear-guards.'
+AUTO [RC]: When this unit attacks or boosts, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle for each of your other grade 1 or less rear-guards.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 9594
@@ -3111,6 +3110,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 10588
@@ -3148,7 +3148,7 @@ CardStat = 10607
 global.CardName[CardStat] = 'Heat Breath Wyvern'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO [RC]: When this unit boosts a Glitter, during that battle, this unit gets power +5000.'
+AUTO [RC]: When this unit boosts a Glitter, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -3689,6 +3689,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 10876
@@ -3764,6 +3765,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 15000
 
 
 CardStat = 10916
@@ -4023,6 +4025,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11078
@@ -4209,6 +4212,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11513
@@ -4418,6 +4422,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11553
@@ -4590,6 +4595,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11873
@@ -4608,7 +4614,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11880
 {
-global.CardName[CardStat] = 'Dragritter, Wajdi'
+global.CardName[CardStat] = 'Dragritter, Wajudi'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 2], choose one of your opponent’s vanguards, and choose one of your opponent’s rear-guards for every two grades of that unit. Retire all of the chosen rear-guards.'
@@ -4636,7 +4642,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11887
 {
-global.CardName[CardStat] = 'Supporter of Profound Scales, Rovania'
+global.CardName[CardStat] = 'Great Scale Supporter, Rovania'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 CONT [Back Row Center RC]: All of your rear-guards placed by your vanguard’s ability this turn get power +5000.'
@@ -4649,10 +4655,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11888
 {
-global.CardName[CardStat] = 'Stealth Dragon, Raidonkunai'
+global.CardName[CardStat] = 'Stealth Dragon, Raidon Kunai'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-AUTO [RC]: When your other unit is placed on RC from bind zone, COST [bind this unit], and that unit gets power +5000 until end of turn. If you did not Counter Charge this turn, Counter Charge 1.
+AUTO [RC]: When your other rear-guard is placed on RC from bind zone, COST [bind this unit], and that unit gets power +5000 until end of turn. If you did not Counter Charge this turn, Counter Charge 1.
 
 AUTO [Bind Zone]: When your grade 3 or greater vanguard with "Shojodoji" in its card name is attacked, you may call this card to GC. If your called a card, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -4664,7 +4670,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11893
 {
-global.CardName[CardStat] = 'Current Zapper Dragon'
+global.CardName[CardStat] = 'Currenzapper Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
 AUTO [RC]: If you have a vanguard with "Griphogila" in its card name, COST [Counter Blast 1 & put this unit into soul], choose one of your opponent’s rear-guards, and retire it.'
@@ -4677,26 +4683,27 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11910
 {
-global.CardName[CardStat] = 'Rough Cull Hammer Dragon'
+global.CardName[CardStat] = 'Roughkur Hammer Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO [RC]: When this unit attacks, if you played a normal order this turn, this unit gets power +5000 until end of that battle. At the end of that battle, COST [Counter Blast 1], draw a card, and bind this unit.
 
-AUTO [Bind Zone]: When you play a normal order, if you have a vanguard with only «Narukami» for its clan and has "Vermillion" in its card name, and you do not have a rear-guard with the same card name as this unit, you may call this card to RC.'
+AUTO [Bind Zone]: When you play a normal order, if you have a vanguard with "Vermillion" in its card name and only «Narukami» for its clan, and you do not have a rear-guard with the same card name as this card, you may call this card to RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11940
 {
-global.CardName[CardStat] = 'Flash Artillery Dragon, Veroanrush'
+global.CardName[CardStat] = 'Flash Artillery Dragon, Velo Onrush'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1 & put a grade 3 card from soul or drop that was in the ride deck into ride deck face up], and draw a card.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & put a grade 3 card that was in the ride deck from soul or drop into the ride deck face up], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -4706,10 +4713,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11941
 {
-global.CardName[CardStat] = 'Dragritter, Qatada'
+global.CardName[CardStat] = 'Dragritter, Qataada'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-CONT [RC]: If you have a face up card in your ride deck with the same card name as your vanguard, this unit gets power +10000. (Active on opponent’s turn too)'
+CONT [RC]: If your ride deck has a face up card with the same card name as your vanguard, this unit gets power +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -4719,7 +4726,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11955
 {
-global.CardName[CardStat] = 'Bewitching Moon Rabbit, Inaaba'
+global.CardName[CardStat] = 'Fiendish Moon Rabbits, Inaaba'
 global.CardText[CardStat] = 'Dragon Empire/High Beast
 
 AUTO [RC]: When this unit boosts, if your opponent’s rear-guard was retired by your card’s ability this turn, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for every two grades of that unit.'
@@ -4732,10 +4739,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11967
 {
-global.CardName[CardStat] = 'Lavastone Golem'
+global.CardName[CardStat] = 'Lavaston Golem'
 global.CardText[CardStat] = 'Dragon Empire/Golem
 
-AUTO [RC]: When this unit is called and put on GC from hand at the same time as another card, this unit gets shield +10000 until end of that battle.'
+AUTO [RC]: When this unit is called at the same time as other cards and put on GC from hand, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -4745,7 +4752,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12026
 {
-global.CardName[CardStat] = 'Maiden of Dancing in the Dragon’s Roar, Liam'
+global.CardName[CardStat] = 'Maiden Dancing with Dragon Roar, Niam'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 CONT: This card is also regarded as "Great Flame Axe of Ambitious Scales, Colgaflan".
@@ -4775,14 +4782,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12034
 {
-global.CardName[CardStat] = 'Rumbling Dragon, Brioves'
+global.CardName[CardStat] = 'Pealing Dragon, Bliorvis'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
 AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on
 • RC - Choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.
 • GC - This unit gets shield +15000 until end of that battle.
 
-AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+AUTO: When this card is discarded from hand while riding a grade 3 from the ride deck or paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -4805,6 +4812,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromVBuff[CardStat] = 10000
 
 
 CardStat = 12036
@@ -4827,7 +4835,7 @@ global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
 Play this if your damage zone has three or more cards!
 
-Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets power +30000 instead of +15000.'
+Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets +30000 instead of +15000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -4841,11 +4849,11 @@ CardStat = 12058
 global.CardName[CardStat] = 'Wastelander Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
 
-CONT: This card cannot be ridden, and cannot be normal called to a RC without a Dragontree marker.
+CONT: This card cannot be ridden, and cannot be normal called to RC without any Dragontree markers.
 
 CONT [RC]: During your turn, this unit gets power +2000 for each Dragontree marker on your RC.
 
-CONT [RC]: During your turn, this unit gets power +2000 for each of your opponent’s open RC.'
+AUTO [RC]: When this unit attacks, this unit gets power +2000 until end of that battle for each of your opponent’s open RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -4883,10 +4891,10 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 12090
 {
-global.CardName[CardStat] = 'Dragontree Wretch, Ragun Gimrad'
+global.CardName[CardStat] = 'Dragontree Wretch, Ragoon Qimrud'
 global.CardText[CardStat] = 'Dragon Empire/Hydragrum
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into your hand, and shuffle your deck.
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], choose one of your RC without any Dragontree markers, and put a Dragontree marker. Search your deck for up to one "Masque of Hydragrum", reveal it and put it into hand, and shuffle the deck.
 
 (SHIFT + left click to get a Dragontree Marker)'
 global.UnitGrade[CardStat] = 2
@@ -4901,7 +4909,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 12091
 {
-global.CardName[CardStat] = 'Raze Command Dragon'
+global.CardName[CardStat] = 'Raise Command Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Griphogila" in its card name, Soul Charge 1, and this unit gets power +5000 until end of turn.'
@@ -4943,7 +4951,7 @@ CardStat = 12098
 global.CardName[CardStat] = 'Blazing Heavenly Slash Equip Dragon, Drahas'
 global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Nirvana" in its card name, COST [Counter Blast 1 & retire another rear-guards], search your deck or drop for up to a total of two cards with different card names from this unit and "Blazing Heavenly" in their different card names, call them to RC as rest, and if you searched the deck, shuffle the deck. If you retired a rear-guard in the X-overDress state for this cost, draw a card.'
+AUTO: When this unit is placed on RC, if you have a vanguard with "Nirvana" in its card name, COST [Counter Blast 1 & retire another rear-guards], search your deck or drop for up to a total of two cards with "Blazing Heavenly" in their different card names, call them to RC as rest, and if you searched the deck, shuffle the deck. If you retired a rear-guard in the X-overDress state for this cost, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5264,7 +5272,7 @@ CardStat = 12224
 global.CardName[CardStat] = 'Wrought Iron Knight, Hadid'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO [RC]: When this unit chosen by the ability of a Smithy card in your order zone this turn boosts, you may Soul Charge 1.
+AUTO [RC]: When this unit boosts a unit chosen by the ability of a Smithy card in your order zone this turn, you may Soul Charge 1.
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 vanguard with "Zedlance" in its card name, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -5301,3 +5309,4 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000

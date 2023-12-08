@@ -4016,7 +4016,7 @@ CardStat = 10290
 global.CardName[CardStat] = 'Shutter Chance, Ilse'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
-AUTO [RC]: When the attack this unit boosted hits a vanguard, if your Order Zone has a "All Set Up!", look at the top five cards of your deck, choose up to one Glitter or Set Order from among them, reveal it and put it into your hand, and shuffle your deck. If you revealed a card, put this unit on the bottom of your deck.'
+AUTO [RC]: When the attack this unit boosted hits a vanguard, if your Order Zone has "All Set Up!", look at the top five cards of your deck, choose up to one Glitter or set order from among them, reveal it and put it into your hand, and shuffle the deck. If you revealed a card, put this unit on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -4300,7 +4300,7 @@ CardStat = 10315
 global.CardName[CardStat] = 'Helianthus Girl, Fawne'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-CONT [RC]: During your turn, if your front-row has no other rear-guards, this unit gets power +5000.'
+CONT [RC]: During your turn, if your front row has no other rear-guards, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -4314,7 +4314,7 @@ CardStat = 10316
 global.CardName[CardStat] = 'Crepuscule, Agrea'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-Powerful - AUTO [RC]: When this unit attacks, if there are no cards in your soul, this unit gets power +5000 for battle.' 
+Powerful - AUTO [RC]: When this unit attacks, if your soul has no cards, this unit gets power +5000 until end of that battle.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -4328,7 +4328,7 @@ CardStat = 10317
 global.CardName[CardStat] = 'Floating in Paradise, Ludivine'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
 
-ACT [RC] 1/Turn: if you have two or more Cursed Play cards in your soul, COST [Soul Blast 1] get power +10000 for turn' 
+ACT [RC] 1/Turn: if you have two or more Cursed Play cards in your soul, COST [Soul Blast 1], and this unit gets power +10000 until end of turn' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -4393,7 +4393,7 @@ CardStat = 10322
 global.CardName[CardStat] = 'Can’t Stand the Heat, York'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [RC]: When placed from hand, COST [Soul Blast 1] to look at five cards from the top of your deck, choose up to 1 "Lyrical ShootingStarS", reveal it, put it to hand, and shuffle deck.' 
+AUTO [RC]: When placed from hand, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one "Lyrical ShootingStarS", reveal it, put it to hand, and shuffle your deck.' 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -6142,7 +6142,7 @@ AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4
 • RC - COST [Counter Blast 1], draw a card, and this unit gets power +10000 until end of turn.
 • GC - This unit gets shield +15000 until end of that battle.
 
-AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+AUTO: When this card is discarded from hand while riding a grade 3 from the ride deck or paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -6495,6 +6495,22 @@ Play this with COST [Counter Blast 1]!
 AUTO: When this card is put into your order zone, draw a card.
 
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into drop], choose one of your units, and it gets power +10000 until end of turn. Choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and stand during stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12243
+{
+global.CardName[CardStat] = 'Wishing Your Happiness'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Cursed Play
+
+Play this if you have a vanguard with "Luticia" in its card name!
+
+Choose a card from your soul, put it into hand, and put this card into soul. Then, if your soul has two or more Cursed Play cards, choose a card from your drop, put it into soul, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30

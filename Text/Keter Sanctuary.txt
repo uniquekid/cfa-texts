@@ -4810,7 +4810,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11885
 {
-global.CardName[CardStat] = 'Pendular Mage'
+global.CardName[CardStat] = 'Pendulul Mage'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s vanguards, and choose one of your units for every two grades of that unit. All of your chosen units get power +5000 until end of turn.'
@@ -4823,12 +4823,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11907
 {
-global.CardName[CardStat] = 'Knight of Piercing Gaze, Azaltus'
+global.CardName[CardStat] = 'Knight of Insightful Eyes, Azaltus'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Ezel" in its card name, perform either of the following.
-• Choose up to one of your vanguards, it gets "CONT [VC]: All of your front row rear-guards get power +5000." until end of turn. If you chose a card, put this unit on the bottom of the deck at the end of that battle.
-• Choose one of your back row rear-guards with only «Gold Paladin» for its clan, and return it to hand at the end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Ezel" in its card name, perform one of the effects below.
+• Choose up to one of your vanguards, and it gets "CONT [VC]: All of your front row rear-guards get power +5000." until end of turn. If you chose a card, at the end of that battle, put this unit on the bottom of the deck.
+• Choose one of your back row rear-guards with only «Gold Paladin» for its clan, and at the end of that battle, return it to hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -4845,7 +4845,7 @@ AUTO [RC]: When this unit is placed on RC or put on GC, choose up to one grade 4
 • RC - Choose two of your rear-guards, and they get "Boost" until end of turn.
 • GC - This unit gets shield +15000 until end of that battle.
 
-AUTO: When this card is discarded from hand when you would ride into a grade 3 from the ride deck or pay the cost for Stride, draw a card.'
+AUTO: When this card is discarded from hand while riding a grade 3 from the ride deck or paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -4856,10 +4856,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11909
 {
-global.CardName[CardStat] = 'Landing Goshawk, Harvik'
+global.CardName[CardStat] = 'Soaring Break Goshawk, Harviik'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO: When this card is discarded from hand during your turn by a card’s ability, COST [Soul Blast 1], and draw a card.'
+AUTO: When this card is discarded from hand by a card’s ability during your turn, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -4869,7 +4869,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11934
 {
-global.CardName[CardStat] = 'Knight of Judgement, Kilter'
+global.CardName[CardStat] = 'Knight of Judgement, Caoilte'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO [RC]: When this unit boosts, if you have six or more units, choose one of your opponent’s vanguards, and this unit gets power +2000 until end of that battle for every two grades of that unit.'
@@ -4887,7 +4887,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose up to one grade 3 or less card from your hand, and call it to RC. If you called a card, draw two cards.
 
-AUTO [VC]: When this unit attacks, if you have three or more rear-guards each with different original grades, COST [Soul Blast 1], choose one of your rear-guards, and return it to hand. Then, choose up to two unit cards from your hand with the sum of their grades being equal to or less than the original grade of the unit returned to hand, and call them to RC in the same column as each other.'
+AUTO [VC]: When this unit attacks, if you have three or more rear-guards each with different original grades, COST [Soul Blast 1], choose one of your rear-guards, and return it to hand. Then, choose up to two cards with the total sum of their grades being less than or equal to the original grade of the card returned to hand from your hand, and call each of them to RC in the same column.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -4898,12 +4898,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11942
 {
-global.CardName[CardStat] = 'Firm Determination Within These Hands'
+global.CardName[CardStat] = 'Resolute Determination Upon This Hand'
 global.CardText[CardStat] = 'Keter Sanctuary/Blitz Order
 
 Play this if you have three or more rear-guards!
 
-Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets power +30000 instead of +15000.'
+Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s vanguard was placed by a card’s ability this turn, it gets +30000 instead of +15000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
@@ -4969,7 +4969,7 @@ CardStat = 11949
 global.CardName[CardStat] = 'Sharpness Knight, Ermac'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, if you have a unit with "Alden" in its card name, this unit gets power +5000 until end of turn. If it was placed by your card’s ability, it gets power +15000 instead of +5000.'
+AUTO: When this unit is placed on RC, if you have a unit with "Alden" in its card name, this unit gets power +5000 until end of turn. If it was placed by your card’s ability, it gets +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -5045,7 +5045,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12013
 {
-global.CardName[CardStat] = 'Bringer of Fervor, Ril'
+global.CardName[CardStat] = 'Bringer of Fervor, Liir'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this unit is placed on RC by your card’s ability, you may Soul Charge 2.'
@@ -5058,7 +5058,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12029
 {
-global.CardName[CardStat] = 'Magical Chief Librarian, Soltiriel'
+global.CardName[CardStat] = 'Magical Librarian Head, Soltiriel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 CONT: This card is also regarded as "Spiral Cutie Angel".
@@ -5081,7 +5081,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 AUTO: When this unit is placed on VC by the RevolDress ability, COST [Counter Blast 1], and perform all of the following according to the card names in your soul. If you have all of the following, all of your front row units gets power +15000 until end of turn.
 •"Youthberk "RevolForm: Zest" - This unit gets critical +1 until end of turn.
 •"Youthberk "RevolForm: Gust" - This unit gets drive +1 until end of turn.
-•"Youthberk "RevolForm: Tempest" - Choose one of your opponent’s rear-guards, and put it on the bottom of their deck.
+•"Youthberk "RevolForm: Tempest" - Choose one of your opponent’s rear-guards, and put it on the bottom of the deck.
 
 AUTO [VC]: At the end of your turn, choose a card with the RevolDress ability from your soul, and ride it as rest.'
 global.UnitGrade[CardStat] = 3
@@ -5393,3 +5393,149 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12230
+{
+global.CardName[CardStat] = 'Dreaming Bonds, Leuhan'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12231
+{
+global.CardName[CardStat] = 'Hardworking Bonds, Leuhan'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by a grade 2 unit with "Leuhan" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one "Soul Rinsing Spring of Dragon" or a grade 2 or less unit card without sentinel from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12232
+{
+global.CardName[CardStat] = 'Soul Rinsing Spring of Dragons'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Play this with cost [Counter Blast 1], if you have a vanguard with "Leuhan" in its card name!
+
+Choose up to two normal units from your drop, choose a card with grade less than or equal to your vanguard from among them, call it to RC, and put the rest on the bottom of your deck in any order. That called unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12233
+{
+global.CardName[CardStat] = 'Guard Running Through the Earth, Leuhan'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by a grade 3 unit with "Leuhan" in its card name, choose one of your vanguards, and until end of turn, reduce the cost of that unit’s original AUTO ability by COST [Counter Blast 1].'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12234
+{
+global.CardName[CardStat] = 'Soul Awakening Guard, Leuhan'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], search your deck for up to one grade 2 card with "Marris" in its card name, call it to RC, and shuffle the deck.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & put a grade 2 with "Marris" in its card name into soul], search your deck or hand for up to one grade 3 or greater card with "Leuhanmaris" in its card name, ride it as stand, and until end of turn, put the cards revealed for the drive check of the battle that unit attacked on the bottom of the deck instead of the hand. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12235
+{
+global.CardName[CardStat] = 'Guard Running Through the Earth, Marris'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Leuhan" in its card name, this unit gets power +5000 until end of that battle.
+
+AUTO: When this unit is put into soul from RC by the ability of your vanguard with "Leuhan" in its card name, if you persona rode this turn, choose one of your vanguards, and it gets drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12236
+{
+global.CardName[CardStat] = 'Soul Awakening Dragon Horse, Leuhanmaris'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+CONT [VC]: During your turn, if your soul has "Soul Awakening Guard, Leuhan", this unit gets power +10000.
+
+AUTO [VC]: At the end of your turn, choose a "Soul Awakening Guard, Leuhan" from your soul, and ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12237
+{
+global.CardName[CardStat] = 'Benediction Sage'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT [RC]: If this unit is boosting a unit with "Leuhan" or "Marris" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts your vanguard, choose up to one normal unit with "Leuhan" or "Marris" in its card name from your drop, and put it on the bottom of the deck. If you chose a card, COST [Counter Blaster 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12238
+{
+global.CardName[CardStat] = 'Eternal Light Dragon, Regulastar Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1 & reveal a card with "Bastion" in its card name from your hand], choose one of your opponent’s rear-guards, and retire it.
+
+CONT [RC/GC/Hand/Trigger Zone]: If you have a vanguard with "Bastion" in its card name, this card gets grade +1 / shield + 5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12239
+{
+global.CardName[CardStat] = 'Knight of Evil Slash, Meyrig'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+ACT [RC]: If you have a grade 3 vanguard with "Thegrea" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind this unit], search your deck for up to two grade 3 unit cards with "Thegrea" in their different card names, reveal them, choose up to one "Epee Du Justice, Thegrea" from among the revealed cards, ride it as stand, put the rest of the revealed cards into soul, and shuffle the deck. Until end of turn, the ridden unit is also regarded as having the same card name as the card that was rode upon.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
