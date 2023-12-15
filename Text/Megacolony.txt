@@ -877,7 +877,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Giraffa" in its card name, choose up to six of your units with "Giraffa" in its card name, until end of turn, they get "CONT [VC/RC]: During your turn, if all of your opponent’s vanguards and rear-guards are at rest, this unit gets power +5000" and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose up to one of your opponent’s rear-guards, and that unit cannot stand during your opponent’s next stand phase".'
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Giraffa" in its card name, choose up to six of your units with "Giraffa" in its card name, and until end of turn, they get "CONT [VC/RC]: During your turn, if all of your opponent’s vanguards and rear-guards are rest, this unit gets power +5000." and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose up to one of your opponent’s rear-guards, and that unit cannot stand during your opponent’s next stand phase.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 2
 global.ExtraDeck[CardStat] = 1
@@ -917,7 +917,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
 
-AUTO: When this unit is placed on GC, if the number of your opponent’s units at rest is two or more, this unit gets shield +5000 until end of that battle.'
+AUTO: When this unit is placed on GC, if the number of your opponent’s units in rest is two or more, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 2
 global.ExtraDeck[CardStat] = 1
@@ -1070,7 +1070,7 @@ CardStat = 3989
 global.CardName[CardStat] = 'Punish Stag'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO Generation Break 1 Dark Device (Active when your opponent has no stand units in the same column as this unit): When this unit is placed on RC, if you have a vanguard with "Darkface" in its card name, this unit gets power +2000 until end of turn, choose one of your opponent’s rear-guards, until end of your opponent’s next turn, it gets "AUTO [RC]: At the end of your turn, if this unit is at rest, your opponent draws a card", and that unit cannot stand during your opponent’s next stand phase.'
+AUTO Generation Break 1 Dark Device (Active when your opponent has no stand units in the same column as this unit): When this unit is placed on RC, if you have a vanguard with "Darkface" in its card name, this unit gets power +2000 until end of turn, choose one of your opponent’s rear-guards, until end of your opponent’s next turn, it gets "AUTO [RC]: At the end of your turn, if this unit is in rest, your opponent draws a card.", and that unit cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
@@ -1110,7 +1110,7 @@ CardStat = 3992
 global.CardName[CardStat] = 'Megacolony Battler E'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [RC] Generation Break 1: [Retire this unit] When your vanguard attacks, if each of the players have all of his or her units at rest, you may pay the cost. If you do, choose one of your vanguards, and it gets power +10000 until end of that battle.'
+AUTO [RC] Generation Break 1: [Retire this unit] When your vanguard attacks, if all units off all fighter are in rest, you may pay the cost. If you do, choose one of your vanguards, and it gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -2238,7 +2238,7 @@ CardStat = 7063
 global.CardName[CardStat] = 'Powdery Dialady'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [RC]: When placed from hand during your main phase, stand one of your other rear-guards at rest, and that unit gets power +5000 until end of turn.'
+AUTO [RC]: When placed from hand during your main phase, stand one of your other rest rear-guards, and that unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -2645,9 +2645,9 @@ CardStat = 9000
 global.CardName[CardStat] = 'Elite Mutant, Giraffa '
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [VC/RC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and this unit gets power +5000 until end of turn for each of your opponent’s rear-guards at rest. If your opponent has one or less rear-guards at stand, draw a card.
+AUTO [VC/RC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and this unit gets power +5000 until end of turn for each of your opponent’s rest rear-guards. If your opponent has one or less stand rear-guards, draw a card.
 
-CONT [RC]: All of your opponent’s rear-guards in the same column as this unit cannot intercept or move to other RC.'
+CONT [RC]: All of your opponent’s rear-guards in the same column as this unit cannot intercept, nor move to other RC.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
