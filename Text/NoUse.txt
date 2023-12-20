@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 12243
+global.AllCard = 12254
 
 global.Versia = 408
 global.GameUpdateText = 'BUG FIXES:
@@ -688,6 +688,43 @@ CONT: The original power of your grade 3 cards with "Luard" in their card names 
 CONT: During your turn, if you have a grade 3 or greater vanguard with "Luard" in its card name, all of your front row units get power +5000 for each face up card in your G zone. (The power of dominated units will not increase)
 
 AUTO: At the end of your turn, if you performed Stride without paying the cost this turn, choose up to one critical trigger from your drop, and put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 12245
+{
+global.CardName[CardStat] = 'Energy Generator'
+global.CardText[CardStat] = 'Crest/Ride Deck
+
+(You may only have one ride deck crest in a ride deck)
+
+AUTO [Ride Deck]: When you ride, put this card into the crest zone, and if you went second, Energe Charge 3.
+
+CONT: You may have up to ten energy.
+
+AUTO: At the beginning of your ride phase, Energy Charge 3.
+
+ACT 1/Turn: COST [Energy Blast 7], and draw a card.
+
+(SHIFT + left click to get Energy)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+global.TokenSummoner[CardStat] = 12246
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12246
+{
+global.CardName[CardStat] = 'Energy'
+global.CardText[CardStat] = ''
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
