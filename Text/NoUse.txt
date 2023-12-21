@@ -1,19 +1,17 @@
 n = x
 
-global.AllCard = 12262
+global.AllCard = 12269
 
 global.Versia = 408
-global.GameUpdateText = 'BUG FIXES:
-- Face up cards in the opponent’s ride deck can now be viewed when revealed
-- Extended textbox no longer overlaps with the import button in the deck editor
-
-NEW FEATURES:
-- Button to open soul that also tracks the card total
-- Power and Shield buttons have now been updated. The top halves of each button increase or decrease by 1000 when left clicking or right clicking respectively. The bottom halves do the same for increments of 5000. Middle clicking the button will now give you a prompt asking how many increments of +1000 you would like to increase by.
-- Cards in ride deck can now be flipped by Ctrl + left click
-- Cards in the opponent’s ride deck now have the same card back as their other cards
-- The Guardian Shield and 20000 Quick Shield tickets now stay revealed to the opponent while in hand
-- In Deck Editor, there is now a button for adding cards to the ride deck. While it’s on, any card clicked will be moved to the ride deck. (Does not include setting the Over Trigger as a starter, please set it from the start of the deck building if you wish to use it as such)'
+global.GameUpdateText = 'NEW FEATURES:
+- Max deck size is now increased to allow for ride deck + 50 cards. You can still play the old way of 50 cards including the ride deck. Any other deck size is illegal
+- Deck list screenshots now showcase the rideline at the bottom, separate from the main deck
+- Energy Charge/Blast and UnisonDress icons
+- Energy Crest will be automatically generated upon ride. You cannot add Energy Crest into ride deck
+- Support for Counters. Counters are only enabled for certain cards like Energy Crest
+- SHIFT + left click to add counters. SHIFT + right click to remove counters. SHIFT + middle click to add/remove custom number of counters (by default you can add -7 counters, i.e. remove 7 counters)
+- Clicking the Ride Phase button will make the Energy Crest receive 3 counters automatically, up to 10 total (you can add more manually if you want)
+- Cards that are rest by default (Crests, Music Orders) will no longer stand during Ride Phase'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -720,15 +718,3 @@ global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
-
-
-CardStat = 12246
-{
-global.CardName[CardStat] = 'Energy'
-global.CardText[CardStat] = ''
-global.UnitGrade[CardStat] = 0
-global.CardInClan[CardStat] = 29
-}
-global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
-global.RemoveFromDrop[CardStat] = 1
