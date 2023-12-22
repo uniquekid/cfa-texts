@@ -62,6 +62,8 @@ CardStat = 883
 global.CardName[CardStat] = 'Stealth Beast, Leaves Mirage'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
+CONT: Sentinel.
+
 AUTO: [Choose a «Murakumo» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Murakumo», and that unit cannot be hit until end of that battle.'
 }
 
@@ -98,7 +100,7 @@ CardStat = 887
 global.CardName[CardStat] = 'Left Arrester'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-CONT: [Your top row, left side RC]: If you have a «Murakumo» vanguard and you have "Right Arrester" on your top row, right side RC, this unit gets power +3000.'
+CONT: [RC in the left column of the front row]: If you have a «Murakumo» vanguard, and you have a unit named "Right Arrester" on RC in the right column of the front row, this unit gets power +3000.'
 }
 
 
@@ -107,7 +109,7 @@ CardStat = 888
 global.CardName[CardStat] = 'Swift Archer, FUSHIMI'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-AUTO: When you ride this unit on a «Murakumo», this unit gains: "CONT [VC]: This unit can battle with a unit in your opponent’s back row" until end of turn.'
+AUTO: When this unit rides a «Murakumo», this unit gets "CONT [VC]: If this unit would attack, it may instead attack an opponent’s unit in the back row." until end of turn.'
 }
 
 
@@ -116,7 +118,7 @@ CardStat = 889
 global.CardName[CardStat] = 'Right Arrester'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-CONT: [Your top row, right side RC]: If you have a «Murakumo» vanguard and you have "Left Arrester" on your top row, left side RC, this unit gets power +3000.'
+CONT: [RC in the right column of the front row]: If you have a «Murakumo» vanguard, and you have a unit named "Left Arrester" on RC in the left column of the front row, this unit gets power +3000.'
 }
 
 
@@ -170,9 +172,9 @@ CardStat = 895
 global.CardName[CardStat] = 'Dueling Dragon, ZANBAKU'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-CONT [VC/RC]: While you do not have another «Murakumo», this unit gets power -2000. 
+CONT [VC/RC]: If you have a non-«Murakumo» vanguard or rear-guard, this unit gets power -2000. 
 
-AUTO [VC]: During your opponent’s ride phase, if your opponent’s vanguard is grade 3 or above, the opponent may choose one card from their hand and discard it. If they did not discard, they cannot normal ride during that ride phase.'
+AUTO [VC]: At the beginning of your opponent’s ride phase, if your opponent’s has a grade 3 or greater vanguard , your opponent may choose a card from his or her hand, and discard it. If your opponent does not, your opponent cannot normal ride during that ride phase.'
 }
 
 

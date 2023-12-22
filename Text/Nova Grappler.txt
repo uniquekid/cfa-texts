@@ -303,6 +303,8 @@ CardStat = 137
 global.CardName[CardStat] = 'Twin Blader'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
+CONT: Sentinel.
+
 AUTO: [Choose a «Nova Grappler» from your hand and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Nova Grappler», and that unit cannot be hit until end of that battle.'
 }
 
@@ -332,7 +334,7 @@ CardStat = 140
 global.CardName[CardStat] = 'Boomerang Thrower'
 global.CardText[CardStat] = 'Nova Grappler/Human
 
-AUTO: When you ride this unit on a «Nova Grappler», this unit gains "CONT [VC]: This unit can attack your opponent’s back row units" until end of turn.'
+AUTO: When this unit rides a «Nova Grappler», this unit gets "CONT [VC]: If this unit would attack, it may instead attack an opponent’s unit in the back row." until end of turn.'
 }
 
 
@@ -702,7 +704,7 @@ CardStat = 997
 global.CardName[CardStat] = 'Death Army Knight'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO: During your main phase, when this unit is placed on RC, if you have a «Nova Grappler» vanguard, choose up to two of your rear-guards with "Death Army" in their card name and stand them.'
+AUTO: During your main phase, when this unit is placed on RC, if you have a «Nova Grappler» vanguard, choose up to two of your other rear-guards with "Death Army" in its card name, and stand them.'
 }
 
 
@@ -778,7 +780,7 @@ CardStat = 1179
 global.CardName[CardStat] = 'Armored Heavy Gunner'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have 4 or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
+AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a «Nova Grappler» vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -913,7 +915,7 @@ CardStat = 1604
 global.CardName[CardStat] = 'Gatlingraizer'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC/RC]: [Counter Blast 1 «Nova Grappler»] When this unit attacks, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1-«Nova Grappler»] When this unit attacks, if you have a «Nova Grappler» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
@@ -3064,7 +3066,7 @@ CardStat = 5763
 global.CardName[CardStat] = 'Battledore Fighter'
 global.CardText[CardStat] = 'Nova Grappler/Human/Hero
 
-ACT [VC] 1/Turn: COST [Counter Blast 1, Soul Blast 1], choose one of your units, during the battle that the unit attacked this turn, when the opponent calls a guardian from his or her hand, he or she cannot call unless they call two or more cards at the same time.
+ACT [VC] 1/Turn: COST [Counter Blast 1, Soul Blast 1], choose one of your units, for the battle that this unit attacked during this turn, while your opponent calls guardians from his or her hand, he or she must call two or more at the same time.
 
 AUTO [VC/RC]: When it attacks a vanguard, if you have three or more rear-guards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -4502,7 +4504,7 @@ AUTO [VC]: When your rear-guard attacks, if this unit is stand, lock that rear-g
 
 AUTO [VC]: When this unit attacks, this unit gets power +5000 until end of turn. At the end of that battle, COST [discard a card from your hand], choose three of your locked cards, unlock them, and retire those units. If you retired three cards, stand this unit.
 
-AUTO [VC]: When this units attack hits, COST [Soul Blast 1 "Beast Deity, Ethics Buster"], and this unit gets drive +1 until end of turn.'
+AUTO [VC]: When this unit’s attack hits, COST [Soul Blast 1 "Beast Deity, Ethics Buster"], and this unit gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
 }

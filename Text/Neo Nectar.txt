@@ -96,6 +96,8 @@ CardStat = 370
 global.CardName[CardStat] = 'Maiden of Blossom Rain'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
+CONT: Sentinel.
+
 AUTO: [Choose a «Neo Nectar» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Neo Nectar», and that unit cannot be hit until end of that battle.'
 }
 
@@ -114,7 +116,7 @@ CardStat = 372
 global.CardName[CardStat] = 'Hey Yo Pineapple'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
-AUTO [VC/RC]: When this unit attacks, if you have 4 or more «Neo Nectar» vanguard and rear-guards, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if the number «Neo Nectar» vanguard and/or rear-guards your have is four or more, this unit gets power +3000 until end of that battle.'
 }
 
 
@@ -482,7 +484,7 @@ CardStat = 1758
 global.CardName[CardStat] = 'Jack in Pumpkin'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
-AUTO [VC/RC]: [Counter Blast 1 «Neo Nectar»] When this unit attacks, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1-«Neo Nectar»] When this unit attacks, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
@@ -541,7 +543,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Neo Nectar», you may pay the cost. If you do, look at up to five cards from the top of your deck, search for up to one grade 1 «Neo Nectar», call it to RC as rest, and shuffle your deck.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, look at up to five cards from the top of your deck, search for up to one grade 1 «Neo Nectar» from among them, call it to RC at rest, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 9
 }
@@ -3533,7 +3535,7 @@ CardStat = 7142
 global.CardName[CardStat] = 'Grain Sprout Maiden, Enifa'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-CONT [RC/GC]: All of your plant tokens in the same column as this unit or on GC cannot be chosen by the opponent’s effects, and get power +5000 / shield +5000.'
+CONT [RC/GC]: Your plant tokens in the same column as this unit or on GC cannot be chosen by your opponent’s effects, and get power +5000 / shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4002,6 +4004,7 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 
+
 CardStat = 7418
 {
 global.CardName[CardStat] = 'Gerbera Musketeer, Paulette'
@@ -4061,6 +4064,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 7441
 {
@@ -4174,7 +4178,7 @@ global.TokenSummoner2Button2[CardStat] = "10000"
 
 CardStat = 7459
 {
-global.CardName[CardStat] = 'Fully Tangerine'
+global.CardName[CardStat] = 'Full Tank Tangerine'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
 ACT [RC]: COST [Retire this unit], call up to one plant token to RC, and that unit gets power +5000 until end of turn. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost.)
@@ -4210,6 +4214,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 7468
 {
@@ -4402,12 +4407,13 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 
+
 CardStat = 8189
 {
 global.CardName[CardStat] = 'Maiden of Irradiate'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-AUTO [RC]: Your token unit in the same column as this unit cannot be chosen by your opponent’s card abilities.
+CONT [RC]: Your token unit in the same column as this unit cannot be chosen by your opponent’s card’s abilities.
 
 ACT [RC]: COST [Counter Blast 1 & rest this unit], call up to two Plant tokens to RC, and if your opponent’s vanguard is grade 3 or greater, one of your vanguards gets power +10000 until end of turn.
 
@@ -4423,6 +4429,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 8984
 {
@@ -4528,6 +4535,7 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 
+
 CardStat = 9471
 {
 global.CardName[CardStat] = 'Thorn Lily Musketeer, Cecilia "ßeverse"'
@@ -4565,6 +4573,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 9923
 {
@@ -4626,6 +4635,7 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 
+
 CardStat = 10012
 {
 global.CardName[CardStat] = 'Eternal Stability, Grajiorl Dragon'
@@ -4647,6 +4657,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 10013
 {
@@ -4670,6 +4681,7 @@ global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
 
+
 CardStat = 10760
 {
 global.CardName[CardStat] = 'Horticulture Elf'
@@ -4691,6 +4703,7 @@ global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+
 
 CardStat = 11144
 {

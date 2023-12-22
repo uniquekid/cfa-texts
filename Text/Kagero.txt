@@ -198,7 +198,7 @@ CardStat = 514
 global.CardName[CardStat] = 'Follower, Reas'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC]: When this unit boosts "Chain-attack Sutherland", during that battle, the boosted unit gets power +4000.'
+AUTO [RC]: When this unit boosts a unit named "Chain-attack Sutherland", the boosted unit gets power +4000 until end of that battle.'
 }
 
 
@@ -243,7 +243,7 @@ CardStat = 519
 global.CardName[CardStat] = 'Lizard Soldier, Raopia'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO [RC]: When this unit boosts a «Kagero» vanguard, if your opponent has two or less rear-guards, during that battle, the boosted unit gets power +4000.'
+AUTO [RC]: When this unit boosts a «Kagero» vanguard, if the number of rear-guards your opponent has is two or less, the boosted unit gets power +4000 until end of that battle.'
 }
 
 
@@ -402,7 +402,7 @@ CardStat = 536
 global.CardName[CardStat] = 'Lava Arm Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-CONT [VC/RC]: If you do not have a unit named "Amber Dragon, Eclipse" or a unit named "Amber Dragon, Dusk" on your RC, this unit gets power -5000. 
+CONT [VC/RC]: If you do not have a unit named "Amber Dragon, Eclipse" or a unit named "Amber Dragon, Dusk" on your VC, this unit gets power -5000. 
 
 AUTO [VC/RC]: When this unit attacks, this unit gets power +2000 until end of that battle.'
 }
@@ -566,7 +566,7 @@ global.CardText[CardStat] = 'Kagero/Demon
 
 ACT [VC/RC]: [Counter Blast 4] This unit gets power +3000 / critical +1 until end of turn. 
 
-ACT [VC]: [Choose a card named "Dragon Knight, Aleph", a card named "Embodiment of Armor, Bahr", and a card named "Embodiment of Spear, Tahr" from your soul, and put them into your drop zone]. Turn all cards in your damage zone face up.'
+ACT [VC]: [Choose a card named "Dragon Knight, Aleph", a card named "Embodiment of Armor, Bahr", and a card named "Embodiment of Spear, Tahr" from your soul, and put them into your drop zone] Turn all cards in your damage zone face up.'
 }
 
 
@@ -889,17 +889,6 @@ global.CardInClan[CardStat] = 12
 }
 
 
-CardStat = 1381
-{
-global.CardName[CardStat] = 'Dragon Knight, Loft'
-global.CardText[CardStat] = 'Kagero/Human
-
-AUTO [VC/RC]: [Counter Blast 1 «Kagero»] When this unit attacks, if you have a «Kagero» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
-global.UnitGrade[CardStat] = 2
-global.CardInClan[CardStat] = 12
-}
-
-
 CardStat = 1478
 {
 global.CardName[CardStat] = 'Graphite Cannon Dragon'
@@ -916,7 +905,7 @@ CardStat = 1669
 global.CardName[CardStat] = 'Dragon Knight, Lotf'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [VC/RC]: [Counter Blast 1 «Kagero»] When this unit attacks, if you have a «Kagero» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
+AUTO [VC/RC]: [Counter Blast 1-«Kagero»] When this unit attacks, if you have a «Kagero» vanguard, you may pay the cost. If you do, this unit gets power +4000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2710,7 +2699,7 @@ CardStat = 3774
 global.CardName[CardStat] = 'Dragon Knight, Rulen'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit intercepts, choose one of your vanguards, and until end of that battle, that unit gets "AUTO [VC]: At the end of the battle this unit was attacked, if the attack did not hit during that battle, choose one of your opponent’s rear-guards at rest, and retire it".'
+AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit intercepts, choose one of your vanguards, and until end of that battle, it gets "AUTO [VC]: At the end of the battle this unit was attacked, if the attack did not hit, choose one of your opponent’s rest rear-guards, and retire it.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2823,9 +2812,9 @@ global.CardText[CardStat] = 'Kagero/Human
 
 AUTO [VC/RC]: Blaze (At the beginning of each of your attack, if the number of rear-guards you have is greater than your opponent’s, your vanguard becomes blazing until end of turn.)
 
-AUTO [RC]: At the end of the battle that this unit attacks or boosts, if your vanguard is blazing, you may bind this unit face up.
+AUTO [RC]: At the end of the battle that this unit attacked or boostsed, if your vanguard is blazing, you may bind this unit face up.
 
-AUTO [Bind Zone] Generation Break 1: During the start of the guard step of a battle in which your vanguard is attacked, you can call this card to GC. If you do, during that battle, this unit gains shield +5000.'
+AUTO [Bind Zone] Generation Break 1: At the beginning of the guard step of that battle that your vanguard was attacked, you may call this card to GC. If you do, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -3389,7 +3378,7 @@ CardStat = 5238
 global.CardName[CardStat] = 'Lizard Soldier, Barja'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO Generation Break 1: [Counter Blast 1] When this unit is retired from GC, if the attack did not hit during that battle, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards at rest in the back row, and retires it.'
+AUTO Generation Break 1: [Counter Blast 1] When this unit is retired from GC, if the attack did not hit during that battle phase, you may pay the cost. If you do, your opponent chooses one of his or her rest rear-guards in the back row, and retires it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -4354,6 +4343,7 @@ global.BlueTokenAdd[CardStat] = 1
 global.TokenSummoner[CardStat] = 6675
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 
+
 CardStat = 6677
 {
 global.CardName[CardStat] = 'Wyvern Strike, Doha '
@@ -4685,6 +4675,7 @@ global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.TokenSummoner[CardStat] = 6675
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
 
 CardStat = 7506
 {

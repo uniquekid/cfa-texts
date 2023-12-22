@@ -178,7 +178,7 @@ CardStat = 3424
 global.CardName[CardStat] = 'Earth Elemental, Dogetts'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-CONT [RC]: The cost of all units Legion ability becomes [Choose four grade 2 or greater cards from your drop zone, and put them on the top of your deck in any order].
+CONT [RC]: The cost of all units’ Legion abilities becomes [Choose four grade 2 or greater cards from your drop zone, and put them on the top of your deck in any order].
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 2
@@ -778,7 +778,7 @@ CardStat = 10610
 global.CardName[CardStat] = 'Looming Demise'
 global.CardText[CardStat] = 'Normal Order/Calamity
 
-Play this with COST [Counter Blast 1]!
+Play this with COST [Counter Blast 1] !
 
 Search your deck for up to one Calamity card, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
@@ -795,7 +795,7 @@ CardStat = 10611
 global.CardName[CardStat] = 'Minacious Metamorphosis'
 global.CardText[CardStat] = 'Normal Order/Calamity
 
-Play this with COST [Counter Blast 1]!
+Play this with COST [Counter Blast 1] !
 
 Search your deck for up to one Calamity card, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
@@ -812,7 +812,7 @@ CardStat = 10612
 global.CardName[CardStat] = 'The Start of the End'
 global.CardText[CardStat] = 'Normal Order/Calamity
 
-Play this with COST [Counter Blast 1]!
+Play this with COST [Counter Blast 1] !
 
 Search your deck for up to one Calamity card, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
@@ -990,12 +990,11 @@ global.CardName[CardStat] = 'Griphosid'
 global.CardText[CardStat] = 'Hydragrum
 
 (You can have a total of five cards in your ride deck made up of this card, three Calamity cards and a over trigger)
-
 CONT [VC]: This unit gets power +2000 for each Calamity card with a different card name in your soul.
-
 AUTO [VC]: At the beginning of your main phase, choose a Calamity card from your ride deck, and put it into soul. COST [Put three Calamity cards from soul that were in the ride deck into ride deck face up], search your hand or deck for up to one "Dragontree of Ecliptic Decimation, Griphogila", ride it as stand, and if you searched your deck, shuffle your deck. If you rode a card, choose two of your RC, and put a Dragontree marker on each of them.
 
-(Ride corresponding unit to activate this ability automatically.)'
+(Ride corresponding unit to activate this ability automatically.)
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 8
@@ -1541,7 +1540,7 @@ global.CardText[CardStat] = 'Blitz Order
 
 Regalis Piece (You may only have one Regalis Piece in your deck, and use it a total of one time in a fight)
 
-Play this with COST [Soul Blast 1]!
+Play this with COST [Soul Blast 1] !
 
 Choose one of your units, and it gets power +25000 until end of that battle. Choose one of your vanguards, and it gets "CONT [VC]: All of your opponent’s units with power 100 Million or more get critical -1." until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -1650,7 +1649,9 @@ CardStat = 11521
 global.CardName[CardStat] = 'The Quintessential Quintuplets'
 global.CardText[CardStat] = 'Quintuplets
 
-AUTO: When this unit is rode upon by a grade 1 <Quintuplets>, if you went second, draw a card.'
+AUTO: When this unit is rode upon by a grade 1 <Quintuplets>, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 8
@@ -1662,7 +1663,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 11618
 {
 global.CardName[CardStat] = 'Stand up! Vanguard!! Takaaki Kitani'
-global.CardText[CardStat] = ''
+global.CardText[CardStat] = '(You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 8
@@ -2001,7 +2002,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 12215
 {
 global.CardName[CardStat] = 'Yumenokessho POPY'
-global.CardText[CardStat] = 'Heal Trigger/Yumenokessho
+global.CardText[CardStat] = 'Yumenokessho/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
@@ -2016,7 +2017,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 12216
 {
 global.CardName[CardStat] = 'Yumenokessho ROSE'
-global.CardText[CardStat] = 'Critical Trigger/Yumenokessho'
+global.CardText[CardStat] = 'Yumenokessho/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 8
@@ -2056,3 +2057,124 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12244
+{
+global.CardName[CardStat] = 'Light Elemental, Popowa'
+global.CardText[CardStat] = 'Elemental
+
+CONT [VC/RC]: When you would ride from the ride deck, you can ride with "Energy Blast 4" instead of "Choose a card from hand, and discard it.".
+
+AUTO: When this unit is placed on RC or put on GC, COST [Energy Blast 2], and this unit gets power +5000 / shield +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12256
+{
+global.CardName[CardStat] = 'Lunar New Year of the Rabbit, 2023'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12257
+{
+global.CardName[CardStat] = 'Lunar New Year of the Tiger, 2022'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12258
+{
+global.CardName[CardStat] = 'CARDFIGHT!! VANGUARD overDress'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12259
+{
+global.CardName[CardStat] = 'CARDFIGHT!! VANGUARD overDress Season 2'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12260
+{
+global.CardName[CardStat] = 'CARDFIGHT!! VANGUARD will+Dress'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12261
+{
+global.CardName[CardStat] = 'Aichi Birthday Festival 2022'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 12262
+{
+global.CardName[CardStat] = 'Chrono Birthday Festival 2022'
+global.CardText[CardStat] = 'Over Trigger
+
+Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
