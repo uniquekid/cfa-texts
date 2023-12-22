@@ -425,7 +425,7 @@ If a player loads a deck containing this card, it will be replaced with the card
 
 This honours the constraints made on individual card quantity, so if total sum of old and newly replaced cards exceeds the maximum allowed amount, only that maximum amount of cards will be added to the deck and the player will be shown a message about insufficent deck size.
 
-### :large_blue_circle: Counters
+### :green_circle: Counters
 
 ```
 global.UseCounters[CardStat] = 1
