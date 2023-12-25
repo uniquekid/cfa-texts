@@ -341,11 +341,14 @@ CONT [RC]: All rear-guards cannot attack the vanguard in the 5th or more battle 
 
 AUTO: When this unit is placed on RC, choose a face up card in your damage zone, and turn it face down.
 
-CONT: This card is from all clans and nations.'
+CONT: This card is from all clans and nations.
+
+(SHIFT + click to count the number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
 global.PowerStat[CardStat] = 6000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 4545
@@ -1590,13 +1593,16 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 CONT [RC]: All rear-guards cannot attack the vanguard during the fifth battle of that turn or more unless Counter Blast 1 is paid. (You must pay when you attack)
 
-ACT [RC]: COST [Remove this unit], and until the end of your opponent’s next turn, you get "when it is the fifth battle of this turn or more and your opponent’s rear-guard would attack a vanguard, it cannot attack unless Counter Blast 1 is paid.".'
+ACT [RC]: COST [Remove this unit], and until the end of your opponent’s next turn, you get "when it is the fifth battle of this turn or more and your opponent’s rear-guard would attack a vanguard, it cannot attack unless Counter Blast 1 is paid.".
+
+(SHIFT + click to count the number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 10000
 global.OldCardStat[CardStat] = 1
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 11013

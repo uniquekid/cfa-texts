@@ -1067,7 +1067,7 @@ CardStat = 1708
 global.CardName[CardStat] = 'Security Jewel Knight, Alwain'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-ACT [RC]: [Choose one card with "Ashlei" in its card name from your drop zone, and put it on the bottom of your deck] If you have a «Royal Paladin» vanguard, choose one of your units with "Ashlei" in its card name, and that unit gets power +5000 until end of turn.'
+ACT [RC]: [Choose a grade 3 card with "Ashlei" in its card name from your drop zone, and put it on the bottom of your deck] If you have a «Royal Paladin» vanguard, choose one of your grade 3 units with "Ashlei" in its card name, and that unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -6243,13 +6243,16 @@ global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and you have a grade 1 unit, this unit’s original critical becomes 2.
 
-AUTO [VC] 1/Turn: At the end of the battle it attacked while not boosted, COST [Counter Blast 1 & rest three of your back row grade 1 rear-guards & discard a card from your hand], stand this unit, and all of your front row units get power +10000 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle it attacked while not boosted, COST [Counter Blast 1 & rest three of your back row grade 1 rear-guards & discard a card from your hand], stand this unit, and all of your front row units get power +10000 until end of turn.
+
+(click a sword button to rest a rear-guards during battle phase)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 8089
