@@ -2344,7 +2344,7 @@ CardStat = 12279
 global.CardName[CardStat] = 'Normal Mode, Kabutack'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
 
-CONT [RC]: When this unit is placed by the [Super Change Mode] during this turn, this unit gets power +5000.'
+CONT [RC]: If you have a rear-guards is placed by the [Super Change Mode] during this turn, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 34
 global.DCards[CardStat] = 8
@@ -2443,7 +2443,7 @@ CardStat = 12285
 global.CardName[CardStat] = 'Normal Mode, Tobimasky'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
 
-[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Tobimasky", call it to RC. If called, choose a "Normal Mode, Tobimasky" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
+[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Tobimasky", call it to RC. If you called, choose a "Normal Mode, Tobimasky" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 34
 global.DCards[CardStat] = 8
@@ -2777,7 +2777,7 @@ CardStat = 12307
 global.CardName[CardStat] = 'Normal Mode, Ganiran'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
 
-[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Ganiran", call it to RC. If called, choose a "Normal Mode, Ganiran" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
+[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Ganiran", call it to RC. If you called, choose a "Normal Mode, Ganiran" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 34
 global.DCards[CardStat] = 8
@@ -2791,7 +2791,7 @@ CardStat = 12308
 global.CardName[CardStat] = 'Normal Mode, Spydon'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
 
-[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Spydon", call it to RC. If called, choose a "Normal Mode, Spydon" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
+[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Spydon", call it to RC. If you called, choose a "Normal Mode, Spydon" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 34
 global.DCards[CardStat] = 8
@@ -2839,7 +2839,7 @@ CardStat = 12311
 global.CardName[CardStat] = 'Star Pieces'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/Star Pieces/Over Trigger
 
-Additional Effect - Choose up to one card without sentinel from your drop, reveal it and put it into your hand, shuffle you deck. Then, perform one of the effects below.
+Additional Effect - Search your deck for up to one card without sentinel, reveal it and put it into your hand, shuffle you deck. Then, perform one of the effects below.
 
 • Draw a card.
 • Choose one of your units, that unit gets critical +1 until end of turn.
@@ -3041,11 +3041,11 @@ CardStat = 12323
 global.CardName[CardStat] = 'Support Robo, Tondemo-Jaws'
 global.CardText[CardStat] = 'Iron Armor Little Treasure/Set Order
 
-Play this with Cost [Soul Blast 1], if you have a vanguard with "Sharkler" in its card name!
+Play this with COST [Soul Blast 1], if you have a vanguard with "Sharkler" in its card name!
 
 CONT: During that turn this card is put into your order zone, you cannot activate ACT ability of this card.
 
-[Super Change Mode] - ACT [Order Zone]: If you have rear-guards placed by the [Super Change Mode] ability druing this turn, COST [Counter Blast 1], bind this card, and call a "Super Change Mode, Tondemo-Jaws" token on back row center RC.
+[Double Super Change Mode] - ACT [Order Zone]: If you have rear-guards placed by the [Super Change Mode] ability druing this turn, COST [Counter Blast 1], bind this card, and call a "Super Change Mode, Tondemo-Jaws" token on back row center RC.
 
 (SHIFT + left click to call a token.)'
 global.UnitGrade[CardStat] = 3
@@ -3057,3 +3057,112 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.TokenSummoner[CardStat] = 12324
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 12325
+{
+global.CardName[CardStat] = 'Wandering Referee Robo, Captain Tomborg'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/Judgment Robot
+
+CONT [RC/GC]: If your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +10000 / shield +10000.
+
+AUTO [RC]: At the beginning of your battle phase, until end of turn, this unit gets "Boost", and perform all of the following.
+• You get a crest "Duel Space Tomborg Arena".
+• COST [Remove a over trigger from drop], search your deck for up to one card without sentinel, reveal it and put it into your hand, shuffle you deck.
+
+(SHIFT + left click to get a crest.)'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 34
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 12326
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 12327
+{
+global.CardName[CardStat] = 'Support Robo, DodeKabutack'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/Set Order
+
+Play this with COST [Soul Blast 1], if you have a vanguard with "Kabutack" in its card name and you have a "Kabutack Friendship Commander" in your order zone!
+
+[Double Super Change Mode] - ACT [Order Zone]: If you have vanguard placed by the [Super Change Mode] ability druing this turn, COST [Counter Blast 1], bind this card, call a "Super Change Mode, DodeKabutack" token on back row center RC.
+
+(SHIFT + left click to call a token.)'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 34
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 12328
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 12329
+{
+global.CardName[CardStat] = 'Madonna of B-Series Robo, Tentoleena'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], perform one of the effects below.
+• If you did not Counter Charge this turn, Counter Charge 2.
+• Choose up to two cards from your drop, and put it into your soul.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 34
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12330
+{
+global.CardName[CardStat] = 'The Bilit Stick'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/Normal Order
+
+If you have a vanguard with "Cobrander" in its card name!
+
+Look at seven cards from the top of your deck or drop, choose each a grade 1 or greater cards with "Ganiran" and "Spydon" in its card name, put them into your soul, and shuffle your deck. If you have a "Ganiran" and "Spydon" in their card name, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 34
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12331
+{
+global.CardName[CardStat] = 'Normal Mode, Dangoron'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
+
+[Super Change Mode] - ACT [RC]: COST [Counter Blast 1], search your deck or hand or drop zone for up to one "Super Change Mode, Dangoron", call it to RC. If you called, choose a "Normal Mode, Dangoron" from your drop, bind it face up. If you searched your deck, shuffle your deck. If you called from hand, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 34
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12332
+{
+global.CardName[CardStat] = 'Super Change Mode, Dangoron'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/B-Series Robo
+
+ACT [RC] 1/Turn: If this unit placed by the [Super Change Mode] ability during this turn, COST [Soul Blast 2], draw a card, and until end of turn, this unit gets power +10000, and "Boost". At the end of this turn, choose your "Normal Mode, Gerotan", and until end of your opponent’s turn, that unit can intercept from the back row, and gets shield +5000.
+
+[Change Release] - AUTO [RC]: At the end of your turn that this unit was placed by the [Super Change Mode], choose a "Normal Mode, Dangoron" from your bind zone, call it on this unit as rest.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 34
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

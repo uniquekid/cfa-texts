@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 12324
+global.AllCard = 12332
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -115,7 +115,9 @@ global.CardInClan[CardStat] = 29
 CardStat = 6675
 {
 global.CardName[CardStat] = 'Vision'
-global.CardText[CardStat] = '(This represents a Vision token, and cannot be put in a deck.)
+global.CardText[CardStat] = 'Vision
+
+(This represents a Vision token, and cannot be put in a deck.)
 
 CONT [RC]: Perform drive check for the battle it attacked.'
 global.UnitGrade[CardStat] = 3
@@ -727,13 +729,57 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 12324
 {
 global.CardName[CardStat] = 'Super Change Mode, Tondemo-Jaws'
-global.CardText[CardStat] = '(This represents a Super Change Mode, Tondemo-Jaws token, and cannot be put in a deck.)
+global.CardText[CardStat] = 'Iron Armor Little Treasure/Support robot
+
+(This represents a "Super Change Mode, Tondemo-Jaws" token, and cannot be put in a deck.)
 
 CONT [Back Row Center RC]: This unit can attack from the back row.
 
 CONT [Back Row Center RC]: This unit gets power your vanguard had gotten from trigger effect this turn.
 
 [Change Release] - AUTO [RC]: At the end of your turn, choose a "Support Robo, Tondemo-Jaws" from your bind zone, put it into your order zone, and remove this card.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 28000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 12326
+{
+global.CardName[CardStat] = 'Duel Space Tomborg Arena'
+global.CardText[CardStat] = 'Crest
+
+CONT: You cannot get a crest with the same name as this card, and your "Wandering Referee Robo, Captain Tomborg" cannot attack.
+
+CONT: Your <B-Series Robo> grade 1 or greater on your RC cannot be chosen by your opponent’s card effects.
+
+AUTO: When you get this card, all fighters reveal the top card of your deck, and put them on the bottom of your deck. If you revealed card higher grade than opponent’s card, choose one of your opponent’s rear-guards, and retire it.
+
+AUTO: During your opponent’s main phase, if your "Wandering Referee Robo, Captain Tomborg" was retired from RC by opponent’s card effects, choose one of your opponent’s rear-guards, and retire it.
+
+AUTO: At the end of your opponent’s turn, remove this card. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 12328
+{
+global.CardName[CardStat] = 'Super Change Mode, DodeKabutack'
+global.CardText[CardStat] = 'Iron Armor Little Treasure/Support robot
+
+(This represents a "Super Change Mode, DodeKabutack" token, and cannot be put in a deck.)
+
+CONT [Back Row Center RC]: This unit can attack from the back row.
+
+AUTO: When this unit is placed on RC, draw two cards, choose two cards from your hand, and discard them, choose up to two set order card from your drop, put it on the bottom of your deck in any order.
+
+[Change Release] - AUTO [RC]: At the end of your turn, choose a "Support Robo, DodeKabutack" from your bind zone, put it into your order zone, and remove this card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 29
 }
