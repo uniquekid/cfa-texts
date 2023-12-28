@@ -2148,9 +2148,7 @@ CONT: When this card would be rode upon, it is also regarded as "Grand March of 
 
 AUTO [VC]: When this unit attacks, COST [Soul Blast 1 & discard a card from hand], and boost this unit with all of your back row stand units with "Boost". If you boosted this unit with three or more units, this unit gets drive +1 until end of that battle, and at the end of that battle, choose two of your back row rear-guards, and stand them.
 
-CONT [RC]: During the battle this unit is boosted, this unit gets power +5000.
-
-(Click a sword button to rest a rear-guards during battle phase.)'
+CONT [RC]: During the battle this unit is boosted, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 }
@@ -2463,9 +2461,7 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], draw a card, choose a card from your hand, and call it to RC or discard it.
 
-AUTO [VC]: When this unit attacks, COST [Soul Blast 1 & discard a card from hand], and boost this unit with all of your back row stand units with "Boost". If you boosted this unit with three or more units, this unit gets drive +1 until end of that battle, and at the end of that battle, choose two of your back row rear-guards, and stand them.
-
-(Click a sword button to rest a rear-guards during battle phase.)'
+AUTO [VC]: When this unit attacks, COST [Soul Blast 1 & discard a card from hand], and boost this unit with all of your back row stand units with "Boost". If you boosted this unit with three or more units, this unit gets drive +1 until end of that battle, and at the end of that battle, choose two of your back row rear-guards, and stand them.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -3583,9 +3579,7 @@ CONT: This card can only be ridden from a grade 3 with "Lianorn" in its card nam
 
 ACT [VC] 1/Turn: COST [Remove a card with "Lianorn" in its different card name from this unit from your hand, soul, or drop], choose a grade 1 or less card from your drop, call it to RC, choose one of your opponent’s rear-guards, and retire it.
 
-AUTO [VC]: When this unit attacks, choose up to three of your back row stand rear-guards with "Boost", and boost this unit. If you boosted with three or more units, at the end of that battle, COST [Counter Blast 1], choose two of your rear-guards, and stand them.
-
-(Click a sword button to rest a rear-guards during battle phase.)'
+AUTO [VC]: When this unit attacks, choose up to three of your back row stand rear-guards with "Boost", and boost this unit. If you boosted with three or more units, at the end of that battle, COST [Counter Blast 1], choose two of your rear-guards, and stand them.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -5125,9 +5119,7 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 [UnisonDress] - AUTO: When this unit is placed by riding from a unit in the [UnisonDress] state or a unit with "Lianorn" in its different card name from this unit, draw a card, and this unit is in the [UnisonDress] state until end of this fight.
 
-AUTO [VC] 1/Turn: When this unit in the [UnisonDress] state attacks while not boosted, stand all of your rear-guards, and boost this unit with them. If you boosted this unit with three or more units, at the end of that battle, COST [Counter Blast 1], choose three of your units, stand them, and they get power +5000 / drive -1 until end of turn. (Rear-guards without "Boost" can boost too)
-
-(Click a sword button to rest a rear-guards during battle phase.)'
+AUTO [VC] 1/Turn: When this unit in the [UnisonDress] state attacks while not boosted, stand all of your rear-guards, and boost this unit with them. If you boosted this unit with three or more units, at the end of that battle, COST [Counter Blast 1], choose three of your units, stand them, and they get power +5000 / drive -1 until end of turn. (Rear-guards without "Boost" can boost too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -5311,3 +5303,101 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12355
+{
+global.CardName[CardStat] = 'Scissors Scorpio'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO: When this card is discarded from hand during your ride phase, you may call this card to RC as rest.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12356
+{
+global.CardName[CardStat] = 'Sunbathing Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO [RC]: When this unit boosts, if your drop has ten or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12357
+{
+global.CardName[CardStat] = 'Battle Siren, Philantia'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO [RC]: When this unit is placed on RC from drop, if you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12358
+{
+global.CardName[CardStat] = 'Concealed Archer, Shazar'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12359
+{
+global.CardName[CardStat] = 'Knowledge Seeking Fairy, Strobella'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO: When this unit is rode upon by "Variety Feast Dragon", draw two cards, choose two cards from your hand, and discard them.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12360
+{
+global.CardName[CardStat] = 'Variety Feast Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO: When this unit is rode upon by a grade 3 card with "Cristianos" in its card name, choose up to one grade 1 or less card from your drop, and you may call it to RC.
+
+CONT [GC]: If you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12361
+{
+global.CardName[CardStat] = 'Marine General of the Great Sea, Cristianos'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], search your deck for up to one card with the same card name as this unit, reveal it and put it into hand, shuffle the deck, and this unit gets power +10000 until end of turn.
+
+ACT [VC] 1/Turn: COST [Energy Blast 4], discard the top two cards of your deck, choose up to two grade 3 or less unit cards from your drop, and call them to RC. (Use four Energy to pay Energy Blast 4 !)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
