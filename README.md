@@ -607,7 +607,7 @@ Maximum number of cards allowed to be taken.
 
 ### Addional Clans/Nations Syntax
 
-CFA supports adding more Clans and Nations dynamically! It can be used both by CFA database maintainers and for custom card creation (more on that in the next section)! Syntax is as follows:4
+CFA supports adding more Clans and Nations dynamically! It can be used both by CFA database maintainers and for custom card creation (more on that in the next section)! Syntax is as follows:
 
 ```
 global.CustomFactionClanId[N] = <CardInClan number>
