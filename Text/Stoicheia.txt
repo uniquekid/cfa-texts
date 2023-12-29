@@ -209,9 +209,14 @@ CardStat = 8267
 global.CardName[CardStat] = 'Swell Assault'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO [RC]: When the attack this unit boosted hits a vanguard, if it is the third battle of this turn, COST [retire this unit], and Counter Charge 1.'
+AUTO [RC]: When the attack this unit boosted hits a vanguard, if it is the third battle of this turn, COST [retire this unit], and Counter Charge 1.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1108,10 +1113,15 @@ global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], and perform all of the effects below according to the number of times you attacked this turn.
 • 3 or more - Draw a card.
 • 4 or more - Choose two of your opponent’s rear-guards, and retire them.
-• 5 or more - Until end of that battle, this unit gets power +10000, and when your opponent would call cards from their hand to GC, they must call three or more at the same time.'
+• 5 or more - Until end of that battle, this unit gets power +10000, and when your opponent would call cards from their hand to GC, they must call three or more at the same time.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -1222,9 +1232,14 @@ CardStat = 9108
 global.CardName[CardStat] = 'Prized Trident'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO [RC]: When your other unit attacks, if it is the fifth battle of this turn, COST [put this unit into your soul], and Counter Charge 1.'
+AUTO [RC]: When your other unit attacks, if it is the fifth battle of this turn, COST [put this unit into your soul], and Counter Charge 1.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1279,9 +1294,14 @@ CardStat = 9152
 global.CardName[CardStat] = 'Bovine Blast Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-CONT [VC/RC]: This unit can only attack on the fourth battle of each turn.'
+CONT [VC/RC]: This unit can only attack on the fourth battle of each turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -1682,9 +1702,14 @@ CardStat = 9572
 global.CardName[CardStat] = 'Thrustorrent Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO [RC]: When this unit attacks a vanguard, if it is the third battle of that turn or more, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks a vanguard, if it is the third battle of that turn or more, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -1898,9 +1923,14 @@ CardStat = 9711
 global.CardName[CardStat] = 'Wild-fire Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO [RC]: When this unit attacks a grade 3 or greater, if it is the fourth battle of that turn or more, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks a grade 3 or greater, if it is the fourth battle of that turn or more, this unit gets power +10000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -2156,6 +2186,7 @@ global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Grand March of Full Bloom, Lianorn'
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 10092
@@ -2467,6 +2498,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 10190
@@ -2770,9 +2802,14 @@ CardStat = 10391
 global.CardName[CardStat] = 'Rousing Breath Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-CONT [Back Row Center RC]: During the fifth battle of this turn or more, the costs of all original AUTO abilities of your vanguard with "Flagburg" in its card name are reduced by Counter Blast 1.'
+CONT [Back Row Center RC]: During the fifth battle of this turn or more, the costs of all original AUTO abilities of your vanguard with "Flagburg" in its card name are reduced by Counter Blast 1.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+gloabl.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -2924,10 +2961,15 @@ global.CardText[CardStat] = 'Stoicheia/Aqua Force/Aquaroid
 
 AUTO: When this unit is rode upon by a unit with only «Aqua Force» for its clan, look at the top seven cards of your deck, choose up to one <Tear Dragon> or unit card with only «Aqua Force» for its clan from among them, call it to RC, and shuffle your deck.
 
-AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, and you have a vanguard with "Maelstrom" in its card name, until end of that battle, this unit gets power +5000, and gets "AUTO [RC]: When this unit’s attack hits a vanguard, draw a card.".'
+AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, and you have a vanguard with "Maelstrom" in its card name, until end of that battle, this unit gets power +5000, and gets "AUTO [RC]: When this unit’s attack hits a vanguard, draw a card.".
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 3
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -2941,11 +2983,16 @@ global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
 
 ACT [VC] 1/Turn: COST [Discard a card from your hand], choose up to one <Tear Dragon> or unit card with only «Aqua Force» for its clan from your soul, call it to RC, it gets "AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and it is the first battle of this turn, COST [Counter Blast 1], and stand this unit." until end of turn, and put this unit into your soul at the end of that turn.
 
-AUTO [VC]: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC]: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3004,10 +3051,15 @@ CardStat = 10575
 global.CardName[CardStat] = 'Shoreline Raise Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, and your Order Zone has a Blue Storm Armada, this unit gets power +10000 until end of that battle, and put this unit into your soul at the end of that battle. (This effect is mandatory)'
+AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, and your Order Zone has a Blue Storm Armada, this unit gets power +10000 until end of that battle, and put this unit into your soul at the end of that battle. (This effect is mandatory)
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3019,9 +3071,14 @@ CardStat = 10576
 global.CardName[CardStat] = 'Fierce Attack Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-CONT [RC]: During the fourth battle of your turn or more, all of your units in the same column as this unit get power +5000.'
+CONT [RC]: During the fourth battle of your turn or more, all of your units in the same column as this unit get power +5000.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -3084,9 +3141,14 @@ CardStat = 10627
 global.CardName[CardStat] = 'Sylvan Horned Beast, Lesserai'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-CONT [RC]: During the sixth battle of your turn or more, this unit gets power +10000.'
+CONT [RC]: During the sixth battle of your turn or more, this unit gets power +10000.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -3389,10 +3451,15 @@ CardStat = 10746
 global.CardName[CardStat] = 'Screwbullet Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO [RC]: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3584,6 +3651,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 10865
@@ -3729,9 +3797,14 @@ CardStat = 10931
 global.CardName[CardStat] = 'Affluent Maiden, Hilaria'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO [RC]: When your other unit attacks, if it is the fourth battle of this turn or more, COST [retire this unit], and that attacking unit gets power +10000 until end of that battle.'
+AUTO [RC]: When your other unit attacks, if it is the fourth battle of this turn or more, COST [retire this unit], and that attacking unit gets power +10000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -4371,10 +4444,15 @@ CardStat = 11095
 global.CardName[CardStat] = 'Gattling Wave Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO [RC]: When this unit attacks, if it is the fifth battle of this turn or more, and you have a vanguard with "Maelstrom" in its card name, this unit gets power +10000 until end of that battle, and at the end of that battle, retire this unit, and draw a card.'
+AUTO [RC]: When this unit attacks, if it is the fifth battle of this turn or more, and you have a vanguard with "Maelstrom" in its card name, this unit gets power +10000 until end of that battle, and at the end of that battle, retire this unit, and draw a card.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4761,9 +4839,14 @@ global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Flagburg" in its card name or up to one "Ascendance Assault" from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1.
 
-AUTO [RC]: At the end of the battle this unit boosted, if it is the fourth battle of this turn or more, you may put this unit into soul.'
+AUTO [RC]: At the end of the battle this unit boosted, if it is the fourth battle of this turn or more, you may put this unit into soul.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -5123,6 +5206,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 12052
@@ -5162,9 +5246,14 @@ CONT [RC]: If you played a normal order this turn, this unit gets power +5000.
 
 CONT [RC]: If your rear-guard was placed from drop this turn, this unit gets power +5000.
 
-AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if it is the fourth battle of this turn or more, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -5299,3 +5388,101 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12355
+{
+global.CardName[CardStat] = 'Scissors Scorpio'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO: When this card is discarded from hand during your ride phase, you may call this card to RC as rest.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12356
+{
+global.CardName[CardStat] = 'Sunbathing Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO [RC]: When this unit boosts, if your drop has ten or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12357
+{
+global.CardName[CardStat] = 'Battle Siren, Philantia'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO [RC]: When this unit is placed on RC from drop, if you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12358
+{
+global.CardName[CardStat] = 'Concealed Archer, Shazar'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12359
+{
+global.CardName[CardStat] = 'Knowledge Seeking Fairy, Strobella'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO: When this unit is rode upon by "Variety Feast Dragon", draw two cards, choose two cards from your hand, and discard them.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12360
+{
+global.CardName[CardStat] = 'Variety Feast Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO: When this unit is rode upon by a grade 3 card with "Cristianos" in its card name, choose up to one grade 1 or less card from your drop, and you may call it to RC.
+
+CONT [GC]: If you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12361
+{
+global.CardName[CardStat] = 'Marine General of the Great Sea, Cristianos'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], search your deck for up to one card with the same card name as this unit, reveal it and put it into hand, shuffle the deck, and this unit gets power +10000 until end of turn.
+
+ACT [VC] 1/Turn: COST [Energy Blast 4], discard the top two cards of your deck, choose up to two grade 3 or less unit cards from your drop, and call them to RC. (Use four Energy to pay Energy Blast 4 !)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
