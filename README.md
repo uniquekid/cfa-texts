@@ -602,3 +602,57 @@ global.SearchEffectFindQuantity[CardStat] = <number>
 ```
 
 Maximum number of cards allowed to be taken.
+
+## Additional Clans/Nations
+
+### Addional Clans/Nations Syntax
+
+CFA supports adding more Clans and Nations dynamically! It can be used both by CFA database maintainers and for custom card creation (more on that in the next section)! Syntax is as follows:4
+
+```
+global.CustomFactionClanId[N] = <CardInClan number>
+global.CustomFactionNationId[N] = <DCards number>
+global.CustomFactionName[N] = 'Faction Name As String'
+global.CustomFactionFile[N] = 'Faction Text File.txt'
+
+global.MaxCustomFaction = N(max) + 1
+```
+
+N(max) here is just the biggest N value used as index, and you have to add 1 to it. So if the biggest custom faction number is 15, the `global.MaxCustomFaction` should be set to 16.
+
+New factions built into CFA are added into `NoUse.txt` file. You can find more information on existing Clans and Nations in the file as well.
+
+### Custom Clans/Nations
+
+If you wish to add custom clans and nations on top of existing ones into CFA, we suggest to use a new mechanism built into the engine called **"custom overrides"**.
+
+Basically, custom overrides are the commands you write into a new special file called `Custom Overrides.txt`. Create this file inside the `Text` folder of your CFA. It will never get overwritten by the auto update system of CFA.
+
+Inside `Custom Overrides.txt` you can override existing parameters with custom ones. For example, you can increase the `global.AllCard` value.
+
+We sugges adding new custom cards with numbers that start with at least 20,000 to avoid conflict with possible future CFA cards. Maximum allowed number of cards is 32000.
+
+Here is an example of stuff you can add into your custom overrides file:
+
+```
+global.CustomFactionClanId[100] = 100
+global.CustomFactionNationId[100] = -1
+global.CustomFactionName[100] = 'My Custom Clan'
+global.CustomFactionFile[100] = 'Custom Clan.txt'
+
+global.CustomFactionClanId[101] = 0
+global.CustomFactionNationId[101] = 100
+global.CustomFactionName[101] = 'My Custom Nation'
+global.CustomFactionFile[101] = 'Custom Nation.txt'
+
+global.MaxCustomFaction = 102
+global.AllCard = 20123
+```
+
+These commands will add a custom clan and a custom nation. Pay attention to how custom clans without a nation are added as having -1 as their nation; and new custom nations are added with a clan id of 0 — you can also ignore the `global.CustomFactionClanId` parameter altogether, it has the same effect as assigning it to 0.
+
+Your custom text files you delcared with `global.CustomFactionFile` will not be overwritten by CFA unless it just so happens that the new faction text file has the same exact name (which is unlikely).
+
+`global.MaxCustomFaction` is set to 102 because maximum N is now 101 and 101 + 1 = 102. We suggest you start with at least 100 as the first custom faction to avoid future conflict. Max faction number is 32000. Realistically you should not add more than 30 new factions as the list might get too long for the user to see more than 30. Unused numbers between the last built-in faction and the custom ones will be skipped.
+
+`global.AllCard = 20123` — the max card value is also increased. This means that the CFA engine will now look at the first 20,123 entries in the database (including card with ID 20,123). Entries that do not have cards in the database will be skipped, just like with custom factions.
