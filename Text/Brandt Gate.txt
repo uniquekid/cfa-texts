@@ -2372,7 +2372,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10243
 {
 global.CardName[CardStat] = 'Blitz Technology Researcher, Uber'
-global.CardText[CardStat] = 'Brandt Gate/Workeroid
+global.CardText[CardStat] = 'Brandt Gate/Human
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose a Product from your Order Zone, and operate it. (Activate its Operate ability)
 
@@ -5108,3 +5108,109 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12406
+{
+global.CardName[CardStat] = 'Honed Fighting Spirit'
+global.CardText[CardStat] = 'Brandt Gate/Blitz Order
+
+Play this with COST [Energy Blast 2] !
+
+Choose one of your units being attacked, until end of that battle, it gets power +10000, COST [discard up to two set orders from your hand], and for each card discarded for this cost, draw a card, and it gets power +5000. (+10000 if you discarded two)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 12407
+{
+global.CardName[CardStat] = 'Blitz Customer Support, Kurde'
+global.CardText[CardStat] = 'Brandt Gate/Warbeast
+
+CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Welstra" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Welstra" in its card name, Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12408
+{
+global.CardName[CardStat] = 'Blitz Best Programmer, Strazer'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is rode upon by "Blitz Head Researcher, Uber", COST [Soul Blast 1], search your deck for up to one Product card with grade less than or equal to your opponent’s vanguard, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12409
+{
+global.CardName[CardStat] = 'Blitz Head Researcher, Uber'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+ACT [VC]: When this unit attacks a vanguard, COST [Energy Blast 3], choose a Product from your Order Zone, and operate it.
+
+AUTO: When this unit is rode upon by a unit with "Welstra" in its card name with a [Divine Skill], if your order zone has a Product, COST [Soul Blast 1 & discard a card from hand], search your deck for up to two Product cards with different card names from each other and from cards in your order zone, reveal them and put them into hand, and shuffle the deck. (You may search for only one too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12410
+{
+global.CardName[CardStat] = 'Bullet of Creation, Pansmermia'
+global.CardText[CardStat] = 'Brandt Gate/Cyberoid
+
+AUTO: When this unit is put on GC from hand or discarded from hand while riding from the ride deck, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1 or Energy Blast 3], search your deck for up to one grade 3 or greater unit card with a different card name from your vanguard or up to one set order, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12411
+{
+global.CardName[CardStat] = 'Fated One of Guiding Star, Welstra "Blitz Arms"'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Energy Blast 2], choose a Product from your order zone, operate it, and this unit gets power +10000 until end of that battle.
+
+[Divine Skill] - ACT [VC]: COST [Counter Blast 1], choose up to two Product cards with different card names from your hand, and put them into the order zone. If you put two cards, choose a Product from your order zone, and operate it. (You may only use Divine Skills a total of once per fight among all your cards)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12412
+{
+global.CardName[CardStat] = 'Extreme Satellite Weaponry, Euryanthe'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
+
+AUTO: When this card is put into your order zone, if you have a grade 3 or greater vanguard with "Welstra" in its card name, draw a card, and Energy Charge 3.
+
+Operate - AUTO [Order Zone]: When this card is operated during your battle phase by the ability of a vanguard with "Welstra" in its card name with [Divine Skill], if this card was not put into your order zone this turn, choose one of your opponent’s rear-guards, retire it, choose one of your opponent’s vanguards, until end of turn, it gets power -10000, and if your opponent’s damage zone has four or less cards, deal one damage.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
