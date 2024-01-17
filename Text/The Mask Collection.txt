@@ -315,7 +315,7 @@ CardStat = 5505
 global.CardName[CardStat] = 'Heaven Message Recipient, Dragon Mask'
 global.CardText[CardStat] = 'The Mask Collection/Live Action/Human
 
-AUTO [VC] 1/Turn Generation Break 1: [Soul Blast 1] When your opponent draws a card other than during the draw phase, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and discards it.
+AUTO [VC] 1/Turn Generation Break 1: [Soul Blast 1] When your opponent draws a card other than during draw phase, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and discards it.
 
 Vote 5 - AUTO [RC]: [Soul Blast 1 & Choose a card from your hand, and discard it] You may pay the cost. If you do, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -358,13 +358,12 @@ CardStat = 5508
 global.CardName[CardStat] = 'Durian Mask "The Fighter"'
 global.CardText[CardStat] = 'The Mask Collection/Live Action/Human
 
-Vote 7 - AUTO [VC]: This unit gets power +8000 / critical +1 until end of turn.
+Vote 6 - AUTO [VC]: This unit gets power +8000 / critical +1 until end of turn.
 
 CONT [VC] Generation Break 1: All cards in your trigger zone get grade +1.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 28
 global.CardInClan2[CardStat] = 35
-global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 
@@ -422,7 +421,7 @@ Stride.
 
 ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: When this unit attacks, it battles all units in your opponent’s front row in one battle".
 
-CONT [VC] Generation Break 3: All units in your front row get power +2000 for each face up card with "Jaguar Mask" or "Dragon Mask" in your G zone.'
+CONT [VC] Generation Break 3: All units in your front row get power +2000 for each face up card with "Jaguar" or "Dragon" or "Turtle" in your G zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 28
 global.CardInClan2[CardStat] = 35
@@ -519,7 +518,7 @@ global.CardText[CardStat] = 'The Mask Collection/Live Action/Human
 
 AUTO: Forerunner.
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at five cards from the top of your deck, search for up to one grade 3 or greater «The Mask Collection» from among them, reveal it, put it into your hand, and shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at up to five cards from the top of your deck, search for up to one grade 3 or greater «The Mask Collection» from among them, reveal it, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 28
 global.CardInClan2[CardStat] = 35
@@ -564,7 +563,7 @@ CardStat = 5534
 global.CardName[CardStat] = 'Noble Oyster Mask'
 global.CardText[CardStat] = 'The Mask Collection/Live Action/Human/Draw Trigger
 
-ACT [RC]: [Put this unit into your soul] Choose one of your «The Mask Collection», and that unit gets power +3000 until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose up to one of your «The Mask Collection», and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 28
 global.CardInClan2[CardStat] = 35
@@ -1314,7 +1313,7 @@ CardStat = 11570
 global.CardName[CardStat] = 'Leopard Mask SD'
 global.CardText[CardStat] = 'The Mask Collection/Live Action/Human
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel.
 
 AUTO: [Counter Blast 1] When this unit is placed on GC from your hand, you may pay the cost. If you do, call five cards from the top of your deck to GC as rest.'
 global.UnitGrade[CardStat] = 1
@@ -1457,11 +1456,11 @@ CardStat = 11595
 global.CardName[CardStat] = 'White Diamond Mask who uses White Magic'
 global.CardText[CardStat] = 'The Mask Collection/Live Action/Human
 
-CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
+CONT: Sentinel.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle.
 
-Vote 3 - AUTO [RC]: At the end of your turn, return this unit to your hand.'
+Vote 3 - AUTO [RC]: At the end of turn, return this unit to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 28
 global.CardInClan2[CardStat] = 35
