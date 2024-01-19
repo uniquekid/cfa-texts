@@ -225,7 +225,7 @@ CardStat = 517
 global.CardName[CardStat] = 'Heatnail Salamander'
 global.CardText[CardStat] = 'Kagero/Salamander
 
-AUTO [RC]: When this unit boosts a «Kagero», and its attack hits a vanguard, you may choose one of your opponent’s grade 1 rear-guards and retire it. If you did retire one of your opponent’s unit, at the start of that turn’s end phase, this unit is sent to the deck and that deck is shuffled afterwards.'
+AUTO [RC]: When an attack hits a vanguard during the battle that this unit boosted a «Kagero», you may choose one of your opponent’s grade 1 rear-guards, and retire it. If you do, at the beginning of the end phase of that turn, return this unit to your deck, and shuffle your deck.'
 }
 
 
@@ -4969,9 +4969,9 @@ CardStat = 8693
 global.CardName[CardStat] = 'Volantruber Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [Soul]: At the start of your main phase, if your opponent does not have any rear-guards, you may call this card to RC.
+AUTO [Soul]: At the beginning of your main phase, if your opponent has no rear-guards, you may call this card to RC.
 
-ACT [RC]: COST [Counter Blast 1 & retire this unit], choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards with the same grade as that unit.'
+ACT [RC]: COST [Counter Blast 1 & Retire this unit], choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards with the same grade as that unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -5106,7 +5106,7 @@ CardStat = 9423
 global.CardName[CardStat] = 'Dragonic Lawkeeper '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [VC]: At the beginning of each battle phase, COST [Counter Blast 1 & Soul Blast 1], and for every three of yours and your opponent’s rear-guards, your opponent chooses one of their rear-guards, and binds it. At the end of that turn, your opponent calls the cards that were bound by this ability to RC. Your opponent’s cards AUTO abilities do not activate from this call.
+AUTO [VC]: At the start of each battle phase, COST [Counter Blast 1 & Soul Blast 1], and for every three of your and your opponent’s rear-guards, your opponent chooses one of their rear-guards, and binds it. At the end of that turn, your opponent calls the cards that were bound by this ability to RC. Your opponent’s card’s AUTO abilities do not activate from this call.
 
 CONT [VC]: If your opponent has no back row rear-guards, all of your units get power +5000. If your opponent’s vanguard is grade 3 or greater, and they have no rear-guards, all of your units get power +5000. (Active on opponent’s turn as well)'
 global.UnitGrade[CardStat] = 3
