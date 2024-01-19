@@ -5159,7 +5159,7 @@ CardStat = 12409
 global.CardName[CardStat] = 'Blitz Head Researcher, Uber'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-ACT [VC]: When this unit attacks a vanguard, COST [Energy Blast 3], choose a Product from your Order Zone, and operate it.
+AUTO [VC]: When this unit attacks a vanguard, COST [Energy Blast 3], choose a Product from your Order Zone, and operate it.
 
 AUTO: When this unit is rode upon by a unit with "Welstra" in its card name with a [Divine Skill], if your order zone has a Product, COST [Soul Blast 1 & discard a card from hand], search your deck for up to two Product cards with different card names from each other and from cards in your order zone, reveal them and put them into hand, and shuffle the deck. (You may search for only one too)'
 global.UnitGrade[CardStat] = 2
@@ -5213,4 +5213,19 @@ global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12416
+{
+global.CardName[CardStat] = 'Strongarm Transformation, Stragalmahz'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
