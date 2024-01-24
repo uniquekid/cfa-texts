@@ -2598,7 +2598,7 @@ global.PowerStat[CardStat] = 7000
 
 CardStat = 4004
 {
-global.CardName[CardStat] = 'Dreamy Idol, Karen'
+global.CardName[CardStat] = 'Dreaming Idol, Karen'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is returned to your hand from RC, you may pay the cost. If you do, draw a card.'
@@ -4822,7 +4822,7 @@ CardStat = 6522
 global.CardName[CardStat] = 'Welcome Sing, Ouvil'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [RC]: If you called another rear-guard with a card ability during this turn, this unit gets power +5000.'
+CONT [RC]: If another rear-guard was called by your card’s ability during this turn, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -4976,7 +4976,7 @@ CardStat = 6575
 global.CardName[CardStat] = 'Fluffy Wonder, Preenez'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: When your deck is shuffled by your card ability, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your deck is shuffled by your card’s ability, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -5156,7 +5156,7 @@ CardStat = 6612
 global.CardName[CardStat] = 'Shapely Eyes, Ruhe'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [RC]: If you draw a card by your card ability during this turn, this unit gets power +5000. (Includes draw trigger. Does not activate for drive check nor "put" effects.)'
+CONT [RC]: If you drew a card during this turn by your card’s ability, this unit gets power +5000. (Includes draw trigger too. Does not include drive checks and cards that were "put".)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -6576,7 +6576,7 @@ CardStat = 8122
 global.CardName[CardStat] = 'Expect Rhythm, Vierra'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-ACT [VC/RC] 1/Turn: If your vanguard is "Top Idol, Pacifica" or "Expect Rhythm, Vierra", COST [Counter Blast 1 & put another rear-guard on the bottom of your deck], and call up to one normal unit from your drop zone to RC. Choose all of your rear-guards, until end of your opponent’s next turn, they get "Boost", and cannot be chosen by your opponent’s card abilities.'
+ACT [VC/RC] 1/Turn: If your vanguard is "Top Idol, Pacifica" or "Expect Rhythm, Vierra", COST [Counter Blast 1 & put another rear-guard on the bottom of your deck], and call up to one normal unit from your drop zone to RC. Choose all of your rear-guards, and until end of your opponent’s next turn, they get "Boost", and cannot be chosen by your opponent’s card’s abilities.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -6936,7 +6936,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 (PREMIUM JP & EN: Banned.)
 
-AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], and you and your opponent both draw a card. If your vanguard is grade 3 or greater, you and your opponent both choose a card from your hands, and call them to RC. Your opponent’s cards’ AUTO abilities do not activate from this call.'
+AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], and both you and your opponent draw a card. If your vanguard is grade 3 or greater, both you and your opponent choose a card from your hands, and call them to RC. Your opponent’s cards’ AUTO abilities do not activate from this call.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 global.CardBanned[CardStat] = 1
@@ -7014,3 +7014,19 @@ global.CardInClan[CardStat] = 13
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12509
+{
+global.CardName[CardStat] = 'Invite Roaring, Inray'
+global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
+
+AUTO [VC/RC]: Harmony (When your other unit is placed in the same column as this unit, both units become in harmony until end of turn)
+
+ACT [RC]: COST [Counter Blast 1] Choose one of your open RC, and move this unit to that RC. If you moved it, this unit gets power +1000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+global.OldCardStat[CardStat] = 1

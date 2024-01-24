@@ -1184,7 +1184,7 @@ CardStat = 9140
 global.CardName[CardStat] = 'Heavenly Core of Wonder, Fortitudo'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When your unit was stand by a cards ability, COST [Rest this unit], choose one of your other rear-guards, and it gets power +5000 until end of turn.'
+AUTO [RC]: When your unit was stand by a card’s ability, COST [Rest this unit], choose one of your other rear-guards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -2766,7 +2766,7 @@ CardStat = 10268
 global.CardName[CardStat] = 'Knight of Enmity, Aine'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is retired from RC by any player’s card ability, if your hand has three or less cards, draw a card.'
+AUTO: When this unit is retired from RC by any player’s card’s ability, if your hand has three or less cards, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -5919,9 +5919,38 @@ global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 Play this with COST [Energy Blast 2] !
 
 Choose two of your units, and they get "CONT [VC/RC]: During the battle this unit is boosted, this unit gets power +10000." until end of turn. If you have five or more units, draw a card.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12510
+{
+global.CardName[CardStat] = 'Prosperous Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO [RC]: When this unit attacks a vanguard, if you have four or more units, COST [Energy Blast 4], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12521
+{
+global.CardName[CardStat] = 'Heavenly Bright'
+global.CardText[CardStat] = 'Keter Sanctuary/Blitz Order
+
+Play this with COST [Energy Blast 2] !
+
+Look at the top card of your deck, and call it to GC or put it on the top of your deck. If you called a card, that called unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000

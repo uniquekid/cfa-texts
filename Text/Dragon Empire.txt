@@ -3302,7 +3302,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Eugene" in its card name, COST [Counter Blast 1 & discard a card from hand], search your deck for up to one grade 3 normal order without Regalis Piece, reveal it and put it into your hand, and shuffle your deck.
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired by your cards ability during your main phase, COST [Soul Blast 1], stand this unit, and this unit gets "Boost" until end of turn.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired by your card’s ability during your main phase, COST [Soul Blast 1], stand this unit, and this unit gets "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -5696,3 +5696,19 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12522
+{
+global.CardName[CardStat] = 'Bond Between Human and Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Blitz Order
+
+Play this with COST [Energy Blast 2] if your opponent’s vanguard is grade 3 or greater!
+
+Choose one of your vanguards, and it gets power +25000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 25000
