@@ -5716,7 +5716,7 @@ CardStat = 12513
 global.CardName[CardStat] = 'Valeno Caporegime, Erafus'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO [RC] 1/Turn: At the end of the battle your grade 3 or greater vanguard with "Lascaria" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], stand this unit, and if you have three or more units with "Veleno" in their card names, this unit gets power +5000 until end of turn.'
+AUTO [RC] 1/Turn: At the end of the battle your grade 3 or greater vanguard with "Lascaria" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], stand this unit, and if you have three or more units with "Valeno" in their card names, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -5730,7 +5730,7 @@ CardStat = 12514
 global.CardName[CardStat] = 'Valeno Famiglia, Fiore'
 global.CardText[CardStat] = 'Stoicheia/Sylph
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Lascaria" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Veleno" in its card name or up to one blitz order from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Lascaria" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Valeno" in its card name or up to one blitz order from among them, reveal it and put it into hand, and shuffle the deck.
 
 CONT [RC]: During your turn, if you have a vanguard with "Lascaria" in its card name, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -5745,7 +5745,7 @@ CardStat = 12515
 global.CardName[CardStat] = 'Valeno Famiglia, Melial'
 global.CardText[CardStat] = 'Stoicheia/Sylph
 
-AUTO: When this unit is placed on RC other than during the battle phase, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, COST [discard a card from hand], choose a card with a different card name from this unit from your drop, call it to RC if it is a grade 3 or less unit card with "Veleno" in its card name, and put it into hand if it is a blitz order.'
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, COST [discard a card from hand], choose a card with a different card name from this unit from your drop, call it to RC if it is a grade 3 or less unit card with "Valeno" in its card name, and put it into hand if it is a blitz order.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -5783,10 +5783,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12518
 {
-global.CardName[CardStat] = 'Days of Training, Lascaria'
+global.CardName[CardStat] = 'Oath Upon Mother’s Sword, Lascaria'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO: When this unit is rode upon by a grade 3 card with "Lascaria" in its card name, look at the top five cards of your deck, choose up to one normal unit with "Veleno" in its card name or up to one blitz order from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is rode upon by a grade 3 card with "Lascaria" in its card name, look at the top five cards of your deck, choose up to one normal unit with "Valeno" in its card name or up to one blitz order from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -5796,10 +5796,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12519
 {
-global.CardName[CardStat] = 'Sword Princess of Dream Blade, Lascaria Veleno'
+global.CardName[CardStat] = 'Sword Princess of Dream Blade, Lascaria Valeno'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-CONT [VC]: During your turn, if you have three or more units with "Veleno" in their card names, all of your units with "Veleno" in their card names get power +5000, if you have five or more, and your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
+CONT [VC]: During your turn, if you have three or more units with "Valeno" in their card names, all of your units with "Valeno" in their card names get power +5000, if you have five or more, and your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
 
 AUTO [VC]: At the end of the battle your unit was attacked and was not hit, if you played a blitz order that battle, draw a card, and if you did not Counter Charge this turn, Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
@@ -5824,3 +5824,19 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 20000
+
+
+CardStat = 12523
+{
+global.CardName[CardStat] = 'Today is the Sports Festival in the Fields!'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Play this with COST [Energy Blast 2] !
+
+Choose one of your rear-guards, until end of turn, it gets "AUTO [RC]: At the end of your turn, if the total number of attacks this turn was four or more, draw a card.", and it gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
