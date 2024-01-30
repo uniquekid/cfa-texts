@@ -1226,7 +1226,7 @@ CardStat = 9143
 global.CardName[CardStat] = 'Magic of Realization, Kikitsch'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When this unit is placed on RC, choose, reveal, and choose up to one critical trigger or front trigger from your hand, reveal it and put it on the bottom of your deck. If you put it, COST [Soul Blast 1], and draw a card.'
+AUTO [RC]: When this unit is placed on RC, choose up to one critical trigger or front trigger from your hand, reveal it and put it on the bottom of your deck. If you put a  card, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -5971,3 +5971,105 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12534
+{
+global.CardName[CardStat] = 'Gargaon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12535
+{
+global.CardName[CardStat] = 'Patrol of Gusts, Ventesta'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon by "Knight of Great Advance, Ascensior", call this card to RC, and Soul Charge 1.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12536
+{
+global.CardName[CardStat] = 'Knight of Great Advance, Ascensior'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon by a grade 3 with "Rezael" in its card name, choose up to one grade 2 or less card from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12537
+{
+global.CardName[CardStat] = 'Fated One of Miracles, Rezael'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards from your drop with different grades and a total grade less than or equal to the number of cards in your damage zone, and call them to RC.
+
+[Divine Skill] - ACT [VC]: COST [Soul Blast 1], return all critical trigger from your drop to the deck and shuffle it, and this unit gets drive +1 until end of turn. Until end of this fight, you cannot ride units without "Rezael" in their card names, and you get "When your damage check reveals a trigger unit other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, heal it, and you lose this ability.". (You may only use Divine Skills a total of once per fight among all your cards)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12538
+{
+global.CardName[CardStat] = 'Gigantic Masher'
+global.CardText[CardStat] = 'Keter Sanctuary/Giant
+
+CONT [RC]: If your unit was placed on RC by the ability of your vanguard with "Rezael" in its card name this turn, this unit gets power +15000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12539
+{
+global.CardName[CardStat] = 'Aerial Sage'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Rezael" in its card name, COST [discard a card from hand], Counter Charge 1, and this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12540
+{
+global.CardName[CardStat] = 'Knight of Gentle Beauty, Nobia'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one grade 3 or less card from among them, call it to RC, and put the rest on the bottom of the deck in any order. If it is your battle phase, reveal it and put it into hand instead of calling it.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
