@@ -5736,7 +5736,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this unit is put on GC from hand or discarded from hand while riding from the ride deck, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
 
-AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1 or Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, put it on the top of the deck, and put the rest on the bottom of the deck in any order. If it is not the battle phase, you may call it instead of putting it on the top of the deck.'
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1 or Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, put it on the top of the deck, and put the rest on the bottom of the deck in any order. If it is not the battle phase, you may call it to RC instead of putting it on the top of the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -6073,3 +6073,21 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12555
+{
+global.CardName[CardStat] = 'Moon Dragon Damar'
+global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
+
+CONT: This card is also regarded as "Grand Heavenly Sword, Alden".
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 2 & Soul Blast 1], choose a card from your hand, and call it to RC. If you called a grade 3, draw two cards.
+
+AUTO [RC]: When this unit attacks, if you have three or more grade 3 units, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
