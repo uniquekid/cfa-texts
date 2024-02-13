@@ -404,7 +404,11 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 ACT [VC] 1/Turn: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose five normal units with "Musketeer" in its card name from your drop zone, and put them on the bottom of your deck in any order] Search your deck for up to two cards named "White Lily Musketeer, Cecilia", call them to separate RC, and shuffle your deck.
 
 ACT [VC] 1/Turn: [Choose one of your rear-guards with "Musketeer" in its card name, and retire it] Look at up to five cards from the top of your deck, search for up to one card with "Musketeer" in its card name from among them, call it to RC, and shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 9
 }
+global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 971
@@ -4691,18 +4695,19 @@ AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1
 
 AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or less, COST [discard this card], look at the top five cards of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into your hand, and shuffle your deck.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call plant token.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.TokenSummoner[CardStat] = 6130
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummoner[CardStat] = 6130
 global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 11144
@@ -4800,8 +4805,9 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
+
 ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card name. Shuffle the deck.
-(SHIFT + left click to create Force gifts)'
+(SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -4809,8 +4815,13 @@ global.OldCardStat[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummoner[CardStat] = 12577
-global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummoner2[CardStat] = 5820
+global.TokenSummoner3[CardStat] = 6670
+global.TokenSummoner2Text[CardStat] = "Which of the following to get?"
+global.TokenSummoner2Button1[CardStat] = "Crest"
+global.TokenSummoner2Button2[CardStat] = "Force I"
+global.TokenSummoner2Button3[CardStat] = "Force II"
 global.TokenSummonerQuantity[CardStat] = 1
-global.ForceAdd[CardStat] = 1
-//global.ExtendedTextBox[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
