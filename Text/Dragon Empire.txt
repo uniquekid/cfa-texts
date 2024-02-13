@@ -3944,7 +3944,7 @@ CardStat = 11039
 global.CardName[CardStat] = 'Thunderstorm Dragoon  '
 global.CardText[CardStat] = 'Dragon Empire/Narukami/Human
 
-AUTO: When this unit is rode upon by a grade 3 unit with only «Narukami» for its clan, look at the top seven cards of your deck, choose up to one card with only «Narukami» for its clan or upto one "Eternal Thunderbolt" from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is rode upon by a grade 3 unit with only «Narukami» for its clan, look at the top seven cards of your deck, choose up to one card with only «Narukami» for its clan or up to one "Eternal Thunderbolt" from among them, reveal it and put it into hand, and shuffle the deck.
 
 AUTO: When this unit is placed on RC, if you have a vanguard with only «Narukami» for its clan, Soul Charge 1, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -5878,6 +5878,20 @@ global.CardText[CardStat] = 'Dragon Empire/Warbeast
 AUTO: When this unit is placed on RC, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 2 or less card with Glitter from among them, call it to RC, and shuffle your deck.
 
 ACT [RC]: If you have a grade 3 vanguard with "Tamayura" in its card name, COST [put this unit into soul], search your deck for up to one "Will-o-wisp Daybreak, Tamayura", ride it as stand, and shuffle your deck. If your vanguard was placed during the ride phase of this turn, or you persona rode this turn, you cannot persona ride until end of turn. ("If you persona rode" is active even if persona ride is activated outside of normal ride)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12573
+{
+global.CardName[CardStat] = 'Battle Monk of Swift Thunder, Zenshin'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Triumph Dragon" in its card name, COST [retire this unit & put a grade 3 or greater card with "Triumph Dragon" from soul or drop on the bottom of the deck], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card. 
+'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
