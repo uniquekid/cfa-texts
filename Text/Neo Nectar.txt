@@ -432,7 +432,7 @@ CardStat = 1666
 global.CardName[CardStat] = 'Pansy Musketeer, Sylvia'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-AUTO: When this unit is placed on VC or RC, reveal the top card of your deck. If the revealed card is a unit with "Musketeer" in its card name, call it to RC, and if it is not, shuffle your deck.'
+AUTO: When this unit is placed on VC or RC, reveal the top card of your deck. If that card is a «Neo Nectar» with "Musketeer" in its card name, call it to RC, and if it is not, shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
@@ -4800,9 +4800,8 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
-
 ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card name. Shuffle the deck.
-(SHIFT + left click to create Force gifts and crest)'
+(SHIFT + left click to create Force gifts)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -4811,12 +4810,7 @@ global.OldCardStat[CardStat] = 1
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
 global.TokenSummoner[CardStat] = 12577
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
-global.TokenSummoner2[CardStat] = 5820
-global.TokenSummoner3[CardStat] = 6670
-global.TokenSummoner2Text[CardStat] = "Which card do you want to summon?"
-global.TokenSummoner2Button1[CardStat] = "Crest"
-global.TokenSummoner2Button2[CardStat] = "Force I"
-global.TokenSummoner2Button3[CardStat] = "Force II"
-global.ExtendedTextBox[CardStat] = 1
+global.ForceAdd[CardStat] = 1
+//global.ExtendedTextBox[CardStat] = 1
