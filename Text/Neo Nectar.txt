@@ -4785,7 +4785,7 @@ global.CardText[CardStat] = 'Neo Nectar/Elf
 
 CONT [Hand]: You may discard this card as a "HEAL" for the cost of calling a G-guardian.
 
-AUTO: When this unit is put on GC from hand, COST [remove a "HEAL" from hand or drop], choose one of your units, if you have another unit with the same card name as that unit, this unit gets shield +20000 until end of that battle, if you do not have another unit with the same card name as that unit, [\COST [Counter Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO: When this unit is put on GC from hand, COST [remove a "HEAL" from hand or drop], choose one of your units, if you have another unit with the same card name as that unit, this unit gets shield +20000 until end of that battle, if you do not have another unit with the same card name as that unit, COST [Counter Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4799,10 +4799,9 @@ global.CardName[CardStat] = 'Maiden Lily Musketeer Captain, Virginal Cecilia '
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
-ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the [Limit Break 4] ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
+ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
 
 ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card name. Shuffle the deck.
-
 (SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
@@ -4813,3 +4812,5 @@ global.PowerStat[CardStat] = 15000
 global.ForceAdd[CardStat] = 1
 global.TokenSummoner[CardStat] = 12577
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
