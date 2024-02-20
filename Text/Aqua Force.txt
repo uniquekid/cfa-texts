@@ -1848,7 +1848,12 @@ global.CardText[CardStat] = 'Aqua Force/Mermaid
 
 AUTO [RC] Generation Break 1 Wave-3 or more (This ability is active by the specified amount of battles in a turn): [Counter Blast 1] When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Thavas" in its card name, you may pay the cost. If you do, draw a card, and until the end of this battle, this unit gets power +5000.
 
-CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)'
+CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -1920,7 +1925,12 @@ CardStat = 3230
 global.CardName[CardStat] = 'Cobalt Neon Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO [VC/RC] Wave-2 or more (This ability is active by the specified amount of battles in a turn): When your other unit attacks, this unit gets power +2000 until end of turn.'
+AUTO [VC/RC] Wave-2 or more (This ability is active by the specified amount of battles in a turn): When your other unit attacks, this unit gets power +2000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -1931,7 +1941,12 @@ CardStat = 3231
 global.CardName[CardStat] = 'Tear Knight, Timos'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Generation Break 1 Wave-2 or more (This ability is active by the specified amount of battles in a turn): When this unit’s attack hits a vanguard, choose up to one of your opponent’s rear-guards, and retire it.'
+AUTO [RC] Generation Break 1 Wave-2 or more (This ability is active by the specified amount of battles in a turn): When this unit’s attack hits a vanguard, choose up to one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -1942,9 +1957,14 @@ CardStat = 3245
 global.CardName[CardStat] = 'Blue Wave Marshal Dragon, Tetra-boil Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride.
 
-AUTO [VC] Generation Break 2: [Counter Blast 1 & Choose a face down card named "Blue Wave Marshal Dragon, Tetra-boil Dragon" from your G zone, and turn it face up] When this unit attacks a vanguard, if you have a heart card with "Blue Wave" in its card name, you may pay the cost. If you do, until end of turn, this unit gets drive-1, and "AUTO [VC] Wave-4th time (This ability is active during the specified battles of each turn): [Choose a card from your hand, and discard it] At the end of the battle that your rear-guard attacked a vanguard, you may pay the cost. If you do, stand this unit".'
+AUTO [VC] Generation Break 2: [Counter Blast 1 & Choose a face down card named "Blue Wave Marshal Dragon, Tetra-boil Dragon" from your G zone, and turn it face up] When this unit attacks a vanguard, if you have a heart card with "Blue Wave" in its card name, you may pay the cost. If you do, until end of turn, this unit gets drive-1, and "AUTO [VC] Wave-4th time (This ability is active during the specified battles of each turn): [Choose a card from your hand, and discard it] At the end of the battle that your rear-guard attacked a vanguard, you may pay the cost. If you do, stand this unit".
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -1956,9 +1976,14 @@ CardStat = 3246
 global.CardName[CardStat] = 'Storm Dominator, Commander Thavas'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride
 
-ACT [VC] 1/Turn: [Choose a face down card named "Storm Dominator, Commander Thavas" from your G zone, and turn it face up] Choose up to one of your rear-guards, until end of turn, it gets power +5000, "CONT [RC]: This unit can attack from the back row", and until end of turn, this unit gets "AUTO [VC] Generation Break 3 Wave-4th time (This ability is active during the specified battles of each turn): When your unit attacks a vanguard, choose three of your opponent’s rear-guards, your opponent chooses one from them, and retires it".'
+ACT [VC] 1/Turn: [Choose a face down card named "Storm Dominator, Commander Thavas" from your G zone, and turn it face up] Choose up to one of your rear-guards, until end of turn, it gets power +5000, "CONT [RC]: This unit can attack from the back row", and until end of turn, this unit gets "AUTO [VC] Generation Break 3 Wave-4th time (This ability is active during the specified battles of each turn): When your unit attacks a vanguard, choose three of your opponent’s rear-guards, your opponent chooses one from them, and retires it".
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -1986,7 +2011,11 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO [VC] Generation Break 2 Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, this unit gets power +5000 until end of turn, choose up to one of your rear-guards, stand it, and it gets power +10000 until end of turn.
 
-AUTO [VC]: During your turn, when your unit named "Blue Wave Marshal Dragon, Tetra-boil Dragon" Stride, choose one of your vanguards, until end of turn, it gets power +3000, and "AUTO [VC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, choose up to two of your rear-guards, stand them, and they get power +3000 until end of turn".'
+AUTO [VC]: During your turn, when your unit named "Blue Wave Marshal Dragon, Tetra-boil Dragon" Stride, choose one of your vanguards, until end of turn, it gets power +3000, and "AUTO [VC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, choose up to two of your rear-guards, stand them, and they get power +3000 until end of turn".
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2010,7 +2039,12 @@ CardStat = 3250
 global.CardName[CardStat] = 'Titan of the Trench Patrol'
 global.CardText[CardStat] = 'Aqua Force/Golem
 
-AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.'
+AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2021,7 +2055,12 @@ CardStat = 3251
 global.CardName[CardStat] = 'Blue Storm Marine General, Sebastian'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC/RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, if you have a vanguard with "Blue Storm" in its card name, draw a card, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC/RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, if you have a vanguard with "Blue Storm" in its card name, draw a card, choose one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2032,7 +2071,12 @@ CardStat = 3252
 global.CardName[CardStat] = 'Marine General of Sonic Speed, Nektarios'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.'
+AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2043,7 +2087,12 @@ CardStat = 3253
 global.CardName[CardStat] = 'Wavehunt Sailor'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC/RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, Counter Charge 1 / Soul Charge 1.'
+AUTO [VC/RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, Counter Charge 1 / Soul Charge 1.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2067,7 +2116,12 @@ global.CardText[CardStat] = 'Aqua Force/High Beast
 
 AUTO [RC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks, this unit gets power +3000 until end of that battle.
 
-CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)'
+CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2078,7 +2132,12 @@ CardStat = 3256
 global.CardName[CardStat] = 'Battle Siren, Nicoletta'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC] Generation Break 1 Wave-2nd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, draw a card.'
+AUTO [RC] Generation Break 1 Wave-2nd time or more (This ability is active during the specified battles of each turn): When this unit’s attack hits a vanguard, draw a card.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2089,7 +2148,12 @@ CardStat = 3257
 global.CardName[CardStat] = 'Blue Storm Battle Princess, Lynpia'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, if your vanguard is Legion, you may pay the cost. If you do, draw a card, and this unit gets power +3000 until end of that battle.'
+AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, if your vanguard is Legion, you may pay the cost. If you do, draw a card, and this unit gets power +3000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2100,7 +2164,12 @@ CardStat = 3258
 global.CardName[CardStat] = 'Blue Wave Marine General, Foivos'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Wave-3rd time (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Blue Wave" in its card name, you may pay the cost. If you do, this unit gets power +2000 until end of turn, and at the end of that battle, stand this unit.'
+AUTO [RC] Wave-3rd time (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Blue Wave" in its card name, you may pay the cost. If you do, this unit gets power +2000 until end of turn, and at the end of that battle, stand this unit.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2115,7 +2184,12 @@ CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC, if you have a vanguard with "Blue Storm" in its card name, you may pay the cost. If you do, choose up to one of your units that is being attacked, and that unit cannot be hit until end of that battle.
 
-AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Soul Blast 1] At the end of the battle that this unit boosted, if you have a vanguard with "Blue Storm" in its card name, you may pay the cost. If you do, return this unit to your hand.'
+AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Soul Blast 1] At the end of the battle that this unit boosted, if you have a vanguard with "Blue Storm" in its card name, you may pay the cost. If you do, return this unit to your hand.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2128,7 +2202,12 @@ global.CardText[CardStat] = 'Aqua Force/High Beast
 
 AUTO [RC] Generation Break 1 Wave-4th time or more (This ability is active during the specified battles of each turn): At the end of the battle that this unit boosted, return this unit to your hand.
 
-AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose up to one of your other units, and it gets power +3000 until end of turn.'
+AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose up to one of your other units, and it gets power +3000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2139,7 +2218,12 @@ CardStat = 3261
 global.CardName[CardStat] = 'Violent Shooter'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.'
+AUTO [RC] Generation Break 1 Wave-1st or 2nd time (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +2000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, search for up to one card with the Wave ability from among them, call it to RC with this unit, and put the rest on the bottom of your deck in any order. If you called a unit, put this unit on the bottom of your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2152,7 +2236,12 @@ global.CardText[CardStat] = 'Aqua Force/High Beast
 
 AUTO [RC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks, this unit gets power +3000 until end of that battle.
 
-CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)'
+CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2163,7 +2252,12 @@ CardStat = 3263
 global.CardName[CardStat] = 'Penguin Soldier of the Blue Storm Fleet'
 global.CardText[CardStat] = 'Aqua Force/High Beast
 
-AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When an attack hits a vanguard during the battle that this unit boosted, if you have a vanguard with "Blue Storm" in its card name, search your deck for up to one grade 3 card with Legion ability, reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When an attack hits a vanguard during the battle that this unit boosted, if you have a vanguard with "Blue Storm" in its card name, search your deck for up to one grade 3 card with Legion ability, reveal it to your opponent, put it into your hand, and shuffle your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2174,7 +2268,12 @@ CardStat = 3264
 global.CardName[CardStat] = 'Blue Wave Soldier, Bright Shooter'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Wave-4th time or more (This ability is active during the specified battles of each turn): At the end of the battle that this unit boosted, if you have a vanguard with "Blue Wave" in its card name, choose up to one grade 3 card from your drop zone, and put it into your hand.'
+AUTO [RC] Wave-4th time or more (This ability is active during the specified battles of each turn): At the end of the battle that this unit boosted, if you have a vanguard with "Blue Wave" in its card name, choose up to one grade 3 card from your drop zone, and put it into your hand.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2187,7 +2286,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO [RC]: When this unit attacks, if you have a vanguard with "Maelstrom" in its card name, this unit gets power +2000 until end of that battle.
 
-AUTO [RC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks, if you have a vanguard with "Maelstrom" in its card name, this unit gets power +3000 until end of that battle.'
+AUTO [RC] Wave-2nd time (This ability is active during the specified battles of each turn): When this unit attacks, if you have a vanguard with "Maelstrom" in its card name, this unit gets power +3000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2200,7 +2304,12 @@ global.CardText[CardStat] = 'Aqua Force/Mermaid
 
 AUTO [RC] Wave-4th time or more (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit boosts, you may pay the cost. If you do, bind the top card of your deck face up.
 
-AUTO [RC]: At the beginning of the guard step of the battle that your unit is attacked, choose any number of face up cards from your bind zone, call them to GC as rest, and those units get shield +5000 until end of that battle.'
+AUTO [RC]: At the beginning of the guard step of the battle that your unit is attacked, choose any number of face up cards from your bind zone, call them to GC as rest, and those units get shield +5000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2211,7 +2320,12 @@ CardStat = 3267
 global.CardName[CardStat] = 'Mind-eye Sailor'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Generation Break 1 Wave-3rd time or more (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 until end of that battle.'
+AUTO [RC] Generation Break 1 Wave-3rd time or more (This ability is active during the specified battles of each turn): [Soul Blast 1] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2237,7 +2351,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC] Generation Break 1 Wave-3rd time or more (This ability is active during the specified battles of each turn): [Put this unit into your soul] When your vanguard attacks, if you have a grade 3 or greater vanguard with "Thavas" in its card name, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Thavas" in its card name, call it to RC, shuffle your deck, and at the end of that turn, return that unit to your hand.'
+AUTO [RC] Generation Break 1 Wave-3rd time or more (This ability is active during the specified battles of each turn): [Put this unit into your soul] When your vanguard attacks, if you have a grade 3 or greater vanguard with "Thavas" in its card name, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Thavas" in its card name, call it to RC, shuffle your deck, and at the end of that turn, return that unit to your hand.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }
@@ -2312,7 +2431,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -2326,7 +2450,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When your units attack hits a vanguard, if you have a heart card with "Trans-core" in its card name, your opponent may choose a card from his or her hand, and discard it. If he or she does not, you draw two cards.'
+AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When your units attack hits a vanguard, if you have a heart card with "Trans-core" in its card name, your opponent may choose a card from his or her hand, and discard it. If he or she does not, you draw two cards.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -2340,7 +2469,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO [RC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, search your deck for up to one card with "Trans-core" in its card name, bind it face up, and shuffle your deck.
 
-AUTO [RC]: [Counter Blast 1] At the beginning of your ride phase, if you have a grade 2 or greater vanguard, you may pay the cost. If you do, choose up to one card with "Trans-core" in its card name from your bind zone, and ride it as stand.'
+AUTO [RC]: [Counter Blast 1] At the beginning of your ride phase, if you have a grade 2 or greater vanguard, you may pay the cost. If you do, choose up to one card with "Trans-core" in its card name from your bind zone, and ride it as stand.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2381,7 +2515,12 @@ CardStat = 4144
 global.CardName[CardStat] = 'Battle Siren, Janka'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC] Generation Break 1 Wave-3rd time or more: [Soul Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, this unit gets power +4000 for each of your other units with the wave ability until end of that battle.'
+AUTO [RC] Generation Break 1 Wave-3rd time or more: [Soul Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, this unit gets power +4000 for each of your other units with the wave ability until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2393,7 +2532,12 @@ CardStat = 4230
 global.CardName[CardStat] = 'Battle Siren, Pantea'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC] Generation Break 1 Wave-1st or 2nd time only: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +5000 until end of turn.'
+AUTO [RC] Generation Break 1 Wave-1st or 2nd time only: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +5000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2407,7 +2551,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO [RC] Wave-1st or 2nd time only: When this unit attacks a grade 3 or greater vanguard, this unit gets power +2000 until end of that battle.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, choose one of your other rear-guards with the wave ability, and exchange positions with this unit. (The state of the card does not change.)'
+AUTO [RC] Generation Break 1: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, choose one of your other rear-guards with the wave ability, and exchange positions with this unit. (The state of the card does not change.)
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2419,7 +2568,12 @@ CardStat = 4289
 global.CardName[CardStat] = 'Battle Siren, Cressida'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC] Wave-4th time or more: [Soul Blast 1] At the beginning of the guard step of the battle that your vanguard was attacked, you may pay the cost. If you do, move this unit to GC, and this unit gets shield +5000 until end of that battle.'
+AUTO [RC] Wave-4th time or more: [Soul Blast 1] At the beginning of the guard step of the battle that your vanguard was attacked, you may pay the cost. If you do, move this unit to GC, and this unit gets shield +5000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2455,7 +2609,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO [RC] Generation Break 2 Wave-3rd time only: [Counter Blast 1] When your vanguard attacks, you may pay the cost. If you do, stand this unit, and if the attacking unit has the wave ability, this unit gets power +2000 until end of turn.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the wave ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the wave ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2467,7 +2626,12 @@ CardStat = 4299
 global.CardName[CardStat] = 'Dolphin Soldier of Leaping Windy Seas'
 global.CardText[CardStat] = 'Aqua Force/High Beast/Stand Trigger
 
-AUTO [RC] Generation Break 1 Wave-1st or 2nd time: [Soul Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, this unit gets power +7000 until end of that battle, and at the end of that battle, draw a card, and put this unit on the bottom of your deck.'
+AUTO [RC] Generation Break 1 Wave-1st or 2nd time: [Soul Blast 1] When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, this unit gets power +7000 until end of that battle, and at the end of that battle, draw a card, and put this unit on the bottom of your deck.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }
@@ -2594,7 +2758,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO [VC/RC] Generation Break 1: When this unit attacks a vanguard, it gets power +4000 until end of that battle.
 
-AUTO [RC] Wave-4th time only: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand this unit.'
+AUTO [RC] Wave-4th time only: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, stand this unit.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2606,7 +2775,12 @@ CardStat = 4341
 global.CardName[CardStat] = 'Blue Wave Marine General, Lucianos'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-ACT [RC] 1/Turn: [Counter Blast 1-card with "Blue Wave" in its card name] If you have a grade 3 or greater vanguard with "Blue Wave" in its card name, until end of turn, this unit gets power +2000, and "AUTO [RC] Wave-2nd time only: At the end of the battle that this unit attacked a vanguard, stand this unit".'
+ACT [RC] 1/Turn: [Counter Blast 1-card with "Blue Wave" in its card name] If you have a grade 3 or greater vanguard with "Blue Wave" in its card name, until end of turn, this unit gets power +2000, and "AUTO [RC] Wave-2nd time only: At the end of the battle that this unit attacked a vanguard, stand this unit".
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2618,7 +2792,12 @@ CardStat = 4342
 global.CardName[CardStat] = 'Kelpie Rider, Paul'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC] Generation Break 1 Wave-3rd time or more: [Soul Blast 1] When this unit attacks or boosts, you may pay the cost. If you do, choose up to two of your units, and they get power +2000 until end of turn.'
+AUTO [RC] Generation Break 1 Wave-3rd time or more: [Soul Blast 1] When this unit attacks or boosts, you may pay the cost. If you do, choose up to two of your units, and they get power +2000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -2646,7 +2825,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO: Forerunner.
 
-AUTO [RC] Generation Break 1 Wave-4th time only: When this unit attacks a vanguard, this unit gets power +4000 for each of your other units with the wave ability until end of that battle, and at the end of that battle, put this unit into your soul.'
+AUTO [RC] Generation Break 1 Wave-4th time only: When this unit attacks a vanguard, this unit gets power +4000 for each of your other units with the wave ability until end of that battle, and at the end of that battle, put this unit into your soul.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }
@@ -2703,7 +2887,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 8: [Counter Blast 1] Until end of turn, this unit gets "AUTO [VC] Wave-2nd to 4th time: When your rear-guard attacks, until end of that battle, that unit gets power +5000, and at the end of that battle, look at four cards from the top of your deck, call one card to the RC with the attacked unit, if the called unit has the wave ability, that unit and this unit gets power +5000 until end of turn. Shuffle your deck".'
+ACT [VC] 1/Turn Generation Break 8: [Counter Blast 1] Until end of turn, this unit gets "AUTO [VC] Wave-2nd to 4th time: When your rear-guard attacks, until end of that battle, that unit gets power +5000, and at the end of that battle, look at four cards from the top of your deck, call one card to the RC with the attacked unit, if the called unit has the wave ability, that unit and this unit gets power +5000 until end of turn. Shuffle your deck".
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -2761,7 +2950,12 @@ Stride.
 
 CONT [VC] Wave-4th time only: For the battle that this unit attacked, your opponent cannot call cards from hand and G zone with the less grade than the number of cards with "Maelstrom" in their card names in your soul.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] If the number of face up cards with "Maelstrom" in their card names in your G zone is two or more, this unit gets power +5000 / critical +1 until end of turn.'
+ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] If the number of face up cards with "Maelstrom" in their card names in your G zone is two or more, this unit gets power +5000 / critical +1 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -2779,7 +2973,6 @@ Stride.
 AUTO [VC]: [Counter Blast 1 & Choose a face down card with the same card name as this unit from your G zone, turn it face up, choose two cards from your hand, and discard them] At the end of the battle that your rear-guard with "Blue Wave" in its card name attacked, if you have a heart card with "Blue Wave" in its card name, and it is the fourth battle of this turn, you may pay the cost. If you do, stand this unit, and it gets drive -3.
 
 CONT [VC] Generation Break 3: This unit gets drive +1, and all of the rear-guards with "Blue Wave" in their card names in your front row get power +2000.
-
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
@@ -2889,7 +3082,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 Stride.
 
-AUTO [VC] Wave-2nd to 3rd time: At the end of the battle that this unit attacked, COST [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up], choose two of your rear-guards, stand them, and they get power +5000 until end of turn for each face up card in your G zone.'
+AUTO [VC] Wave-2nd to 3rd time: At the end of the battle that this unit attacked, COST [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up], choose two of your rear-guards, stand them, and they get power +5000 until end of turn for each face up card in your G zone.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
@@ -2917,7 +3115,12 @@ global.CardText[CardStat] = 'Aqua Force/Mermaid
 
 CONT [RC]: If you have a vanguard with "Thavas" in its card name, this unit gets "CONT [RC]: Resist", and power +2000.
 
-AUTO [RC] Generation Break 1 Wave-2nd to 4th time: When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, COST [Counter Blast 1], draw a card, and this unit gets power +3000 until end of that battle.'
+AUTO [RC] Generation Break 1 Wave-2nd to 4th time: When this unit attacks a vanguard, if you have a vanguard with "Thavas" in its card name, COST [Counter Blast 1], draw a card, and this unit gets power +3000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
@@ -2931,7 +3134,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO [VC]: When your G unit Stride, choose up to one card from your hand, call it to RC, choose one of your rear-guards, until end of turn, it gets "CONT [RC]: Resist", then, if that rear-guard has the wave ability, it gets "CONT [RC]: This unit can attack from the back row".
 
-AUTO [RC] 1/Turn Generation Break 2 Wave-1st or 4th time: [Counter Blast 1] At the end of the battle that this unit attacked, you may pay the cost. If you do, stand this unit.'
+AUTO [RC] 1/Turn Generation Break 2 Wave-1st or 4th time: [Counter Blast 1] At the end of the battle that this unit attacked, you may pay the cost. If you do, stand this unit.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -2946,7 +3154,12 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 CONT [RC]: If you have a vanguard with "Thavas" in its card name, this unit gets "CONT [RC]: Resist".
 
-AUTO [RC] Generation Break 1 Wave-1st or 4th time: [Soul Blast 1] When this unit boosts, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and retires it.'
+AUTO [RC] Generation Break 1 Wave-1st or 4th time: [Soul Blast 1] When this unit boosts, if you have a vanguard with "Thavas" in its card name, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and retires it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
