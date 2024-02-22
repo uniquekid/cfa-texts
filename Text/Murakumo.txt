@@ -3,6 +3,7 @@ CardStat = 876
 global.CardName[CardStat] = 'Stealth Beast, Cat Rouge'
 global.CardText[CardStat] = 'Murakumo/Warbeast/Draw Trigger'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 877
@@ -12,7 +13,7 @@ global.CardText[CardStat] = 'Murakumo/High Beast
 
 AUTO: Forerunner (When another card with the same clan rides this unit, you may call this unit to a RC.)
 
-ACT [RC]: [Put this unit to the bottom of your deck] Choose up to one «Murakumo» from your hand, call it to RC, and at the beginning of that turn’s end phase, return that unit to hand.'
+ACT [RC]: [Put this unit on the bottom of your deck] Choose up to one «Murakumo» from your hand, call it to RC, and at the beginning of the end phase of that turn, return it to your hand.'
 }
 
 
@@ -21,6 +22,7 @@ CardStat = 878
 global.CardName[CardStat] = 'Stealth Beast, Moon Edge'
 global.CardText[CardStat] = 'Murakumo/High Beast/Critical Trigger'
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 879
@@ -30,6 +32,7 @@ global.CardText[CardStat] = 'Murakumo/Insect/Stand Trigger
 
 ACT [RC]: [Put this unit into your soul] If you have a «Murakumo» vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 880
@@ -39,6 +42,7 @@ global.CardText[CardStat] = 'Murakumo/Ghost/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 881
@@ -152,7 +156,7 @@ CardStat = 893
 global.CardName[CardStat] = 'Stealth Fiend, Midnight Crow'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Stealth Fiend, Midnight Crow", call it to RC, and shuffle your deck. At the beginning of that turn’s end phase, return that unit to the bottom of your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Stealth Fiend, Midnight Crow", call it to RC, and shuffle your deck, and at the beginning of the end phase of that turn, put that unit on the bottom of your deck.'
 }
 
 
@@ -183,7 +187,7 @@ CardStat = 896
 global.CardName[CardStat] = 'Stealth Dragon, Voidgelga'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Stealth Dragon, Voidgelga" call it to a RC, and shuffle your deck, and at the beginning of the end phase of that turn, put that unit on the bottom of your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, search your deck for up to one card named "Stealth Dragon, Voidgelga" call it to RC, and shuffle your deck, and at the beginning of the end phase of that turn, put that unit on the bottom of your deck.'
 }
 
 
@@ -225,6 +229,7 @@ global.CardText[CardStat] = 'Murakumo/Warbeast/Critical Trigger
 
 ACT [RC]: [Put this unit into your soul] Choose up to one of your «Murakumo», and that unit gets power +3000 until end of turn.'
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 901
@@ -263,7 +268,7 @@ global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
 CONT [VC]: If you have a card named "Stealth Dragon, Magatsu Wind" in your soul, this unit gets power +1000.
 
-AUTO: When a card named "Stealth Dragon, Magatsu Gale" rides this unit, if you have a card named "Stealth Dragon, Magatsu Wind" in your soul, search your deck for up to two cards named "Stealth Dragon, Magatsu Gale", call them to RC, and shuffle your deck. At the beginning of that turn’s end phase, return those units to the bottom of your deck.'
+AUTO: When a card named "Stealth Dragon, Magatsu Gale" rides this unit, if you have a card named "Stealth Dragon, Magatsu Wind" in your soul, search your deck for up to two cards named "Stealth Dragon, Magatsu Gale", call them to separate RC, shuffle your deck, and at the end of that turn, put the units called with this effect on the bottom of your deck in any order.'
 }
 
 
@@ -325,6 +330,7 @@ CardStat = 1052
 global.CardName[CardStat] = 'Stealth Fiend, Monster Lantern'
 global.CardText[CardStat] = 'Murakumo/Ghost/Draw Trigger'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 1053
@@ -334,6 +340,7 @@ global.CardText[CardStat] = 'Murakumo/Gillman/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 1054
@@ -341,6 +348,7 @@ CardStat = 1054
 global.CardName[CardStat] = 'Stealth Fiend, Rokuro Lady'
 global.CardText[CardStat] = 'Murakumo/Ghost/Draw Trigger'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 1055
@@ -357,7 +365,7 @@ CardStat = 1056
 global.CardName[CardStat] = 'Stealth Fiend, Oboro Cart'
 global.CardText[CardStat] = 'Murakumo/Ghost
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, choose a «Murakumo» other than "Stealth Fiend, Oboro Cart" from your RC, search up to one card with the same card name as the chosen unit from your deck, call it to a RC, and shuffle your deck. At the end of the turn, place the unit called by this ability to the bottom of your deck.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, if you have a «Murakumo» vanguard, you may pay the cost. If you do, choose one of your «Murakumo» rear-guards not named "Stealth Fiend, Oboro Cart", search your deck for up to one card with the same card name as that unit, call it to RC, shuffle your deck, and at the end of that turn, put the unit called with this effect on the bottom of your deck.'
 }
 
 
@@ -388,7 +396,7 @@ global.CardText[CardStat] = 'Murakumo/High Beast
 
 AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of battle.
 
-ACT [VC]: [Counter Blast 1] Choose one of your grade 2 or greater «Murakumo» rear-guards, search up to one card with the same card name as the chosen unit from your deck, call it to a RC and shuffle your deck. At the end of the turn, place the unit called by this ability to the bottom of your deck.'
+ACT [VC]: [Counter Blast 1] Choose one of your grade 2 or greater «Murakumo» rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and shuffle your deck, and at the end of that turn, put the unit called with this effect on the bottom of your deck.'
 }
 
 
@@ -410,6 +418,7 @@ global.CardText[CardStat] = 'Murakumo/Ghost/Stand Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 1364
@@ -419,6 +428,7 @@ global.CardText[CardStat] = 'Murakumo/Human/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 1732
@@ -541,6 +551,7 @@ global.CardText[CardStat] = 'Murakumo/Demon/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 1818
@@ -561,6 +572,7 @@ global.CardText[CardStat] = 'Murakumo/Demon/Stand Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 1853
@@ -836,6 +848,7 @@ AUTO Generation Break 1 (This ability is active if you have one or more face up 
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 3456
@@ -2776,6 +2789,7 @@ global.CardInClan[CardStat] = 20
 }
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 30000
 
 
 CardStat = 7783

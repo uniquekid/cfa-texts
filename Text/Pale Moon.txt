@@ -5,6 +5,7 @@ global.CardText[CardStat] = 'Pale Moon/Demon/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 775
@@ -12,6 +13,7 @@ CardStat = 775
 global.CardName[CardStat] = 'Cracker Musician'
 global.CardText[CardStat] = 'Pale Moon/Workeroid/Stand Trigger'
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 776
@@ -19,6 +21,7 @@ CardStat = 776
 global.CardName[CardStat] = 'Dynamite Juggler'
 global.CardText[CardStat] = 'Pale Moon/Demon/Critical Trigger'
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 777
@@ -26,6 +29,7 @@ CardStat = 777
 global.CardName[CardStat] = 'Flyer Flyer'
 global.CardText[CardStat] = 'Pale Moon/Goblin/Draw Trigger'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 778
@@ -53,6 +57,7 @@ CardStat = 780
 global.CardName[CardStat] = 'Hoop Magician'
 global.CardText[CardStat] = 'Pale Moon/Human/Stand Trigger'
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 781
@@ -82,6 +87,7 @@ global.CardText[CardStat] = 'Pale Moon/Goblin/Critical Trigger
 
 ACT [RC]: [Put this unit into your soul] Choose up to one of your «Pale Moon», and that unit gets power +3000 until end of turn.'
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 784
@@ -91,6 +97,7 @@ global.CardText[CardStat] = 'Pale Moon/Human/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 785
@@ -100,6 +107,7 @@ global.CardText[CardStat] = 'Pale Moon/Elf/Draw Trigger
 
 AUTO [RC]: When an attack hits during the battle that this unit boosted, you may Soul Charge 1. If you do, return this unit to your deck, and shuffle your deck.'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 786
@@ -109,6 +117,7 @@ global.CardText[CardStat] = 'Pale Moon/Goblin/Stand Trigger
 
 ACT [RC]: [Put this unit into your soul] If you have a «Pale Moon» vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 787
@@ -116,6 +125,7 @@ CardStat = 787
 global.CardName[CardStat] = 'Spiral Master'
 global.CardText[CardStat] = 'Pale Moon/Gillman/Draw Trigger'
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 788
@@ -515,7 +525,7 @@ CardStat = 1016
 global.CardName[CardStat] = 'Fire Juggler'
 global.CardText[CardStat] = 'Pale Moon/Human
 
-AUTO [RC]: When you check a grade 3 «Pale Moon» during the drive checks when this unit boosts a vanguard, this unit gets "AUTO [RC]: [Put this unit into your soul] At the end of the battle when this unit boosted, you may pay the cost. If you do, choose one of your «Pale Moon» from the soul except a card named "Fire Juggler", and call it to a RC".'
+AUTO [RC]: When the drive check of the vanguard that unit boosted reveals a grade 3 «Pale Moon», this unit gets "AUTO [RC]: [Put this unit into your soul] At the end of the battle that this unit boosted, you may pay the cost. If you do, choose a «Pale Moon» not named "Fire Juggler" from your soul, and call it to RC." until end of that battle.'
 }
 
 
@@ -699,7 +709,7 @@ CardStat = 1500
 global.CardName[CardStat] = 'Silver Thorn Assistant, Irina'
 global.CardText[CardStat] = 'Pale Moon/Warbeast
 
-AUTO: When this unit is placed on VC or RC, if you have a vanguard with "Silver Thorn" in its card name, you may look up to two cards from the top of your deck, search up to one card with "Silver Thorn" in its card name, put it into your soul, and put the rest to the bottom of your deck in any order.'
+AUTO: When this unit is placed on VC or RC, if you have a vanguard with "Silver Thorn" in its card name, look at up to two cards from the top of your deck, search for up to one card with "Silver Thorn" in its card name from among them, put it into your soul, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -775,6 +785,7 @@ global.CardText[CardStat] = 'Pale Moon/Elf/Heal Trigger
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 1530
@@ -784,6 +795,7 @@ global.CardText[CardStat] = 'Pale Moon/Dinodragon/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 1531
@@ -793,6 +805,7 @@ global.CardText[CardStat] = 'Pale Moon/Human/Stand Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 1532
@@ -802,6 +815,7 @@ global.CardText[CardStat] = 'Pale Moon/Workeroid/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 1824
@@ -1279,6 +1293,7 @@ AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, if you hav
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 3331
@@ -1288,6 +1303,7 @@ global.CardText[CardStat] = 'Pale Moon/Workeroid/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 2
 
 
 CardStat = 3332
@@ -1299,6 +1315,7 @@ AUTO Generation Break 1: COST [Put this card on the top of your deck] When this 
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 3377
@@ -1409,6 +1426,7 @@ global.CardText[CardStat] = 'Pale Moon/Elf/Heal Trigger
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 4
 
 
 CardStat = 3387
@@ -1420,6 +1438,7 @@ ACT [RC]: [Put this unit into your soul] Choose one of your units, and it gets p
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 3388
@@ -1429,6 +1448,7 @@ global.CardText[CardStat] = 'Pale Moon/Demon/Stand Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 3
 
 
 CardStat = 3389
@@ -1438,6 +1458,7 @@ global.CardText[CardStat] = 'Pale Moon/Warbeast/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
+global.TriggerUnit[CardStat] = 1
 
 
 CardStat = 3390
@@ -1603,7 +1624,7 @@ CardStat = 3614
 global.CardName[CardStat] = 'Cutie Paratrooper'
 global.CardText[CardStat] = 'Pale Moon/Human
 
-Magia - AUTO Generation Break 1: When this unit is placed on RC due to an effect from one of your magia abilities, if you have a vanguard with "Harri" in its card name, Soul Charge 1, choose up to one card not named "Cutie Paratrooper" from your soul, call it to a RC in the same column as this unit, that unit gets power +5000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul.'
+Magia - AUTO Generation Break 1: When this unit is placed on RC due to the effect of your magia ability, if you have a vanguard with "Harri" in its card name, Soul Charge 1, choose up to one card not named "Cutie Paratrooper" from your soul, call it to a RC in the same column as this unit, that unit gets power +5000 until end of turn, and at the end of that turn, put the unit called with this effect into your soul.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -1857,7 +1878,7 @@ CardStat = 4486
 global.CardName[CardStat] = 'Dagger Magician, Ety'
 global.CardText[CardStat] = 'Pale Moon/Human
 
-Magia - AUTO: When this card is placed on RC from your hand, if you have a vanguard with "Harri" in its card name, choose a grade 2 or greater card from your soul, and you may call it to a RC in the same column as this unit. At the end of that turn, put the unit called with this effect into your soul.
+Magia - AUTO: When this card is placed on RC from your hand, if you have a vanguard with "Harri" in its card name, choose a grade 2 or greater card from your soul, and you may call it to RC in the same column as this unit. At the end of that turn, put that called unit into your soul.
 
 AUTO [RC]: [Put this unit into your soul] At the end of your turn, if you have a vanguard with the magia ability, you may pay the cost. If you do, Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -3485,6 +3506,7 @@ global.CardInClan[CardStat] = 18
 }
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 30000
 
 
 CardStat = 7793
