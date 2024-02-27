@@ -3209,7 +3209,7 @@ CardStat = 10597
 global.CardName[CardStat] = 'Knight of Excision, Diorruing'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC, if your vanguard’s clan is only one of the clans, COST [Soul Blast 1 & discard a card from hand], choose a card with the same clan your vanguard only has for its clan from your drop, and put it into your hand.'
+AUTO: When this unit is placed on RC, if your vanguard has only one clan, COST [Soul Blast 1 & discard a card from hand], choose a card with only the same clan as your vanguard’s clan from your drop, and put it into your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -5246,7 +5246,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
 AUTO: When this unit is rode upon by a grade 3 with "Luard" in its card name, COST [Soul Blast 1], and draw a card.
 
-AUTO [Drop] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): When your grade 4 card with "Luard" in its card name is placed on VC, COST [discard a card from hand], and call this card to RC.'
+AUTO [Drop] Ritual 3 (Active if there are three or more grade 1 cards in your drop): When your grade 4 card with "Luard" in its card name is placed on VC, COST [discard a card from hand], and call this card to RC.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -5260,9 +5260,9 @@ CardStat = 12187
 global.CardName[CardStat] = 'Dragheart, Luard   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-AUTO [VC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): At the beginning of your ride phase, COST [choose two normal units from your drop, and put them on the bottom of the deck in any order], and until end of turn, you may Stride without paying the cost of the next time you would Stride.
+AUTO [VC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): At the beginning of your ride phase, COST [choose two normal units from drop, and put them on the bottom of the deck in any order], and until end of turn, you may Stride without paying the cost the next time you Stride.
 
-AUTO [VC]: During your turn, when your G unit Stride, COST [Counter Blast 1 and retire a rear-guard], search your deck for up to two grade 1 or less cards, call them to separate RC, and shuffle the deck.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & choose a rear-guard, and retire it], search your deck for up to two grade 1 or less cards, call them to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -5291,7 +5291,7 @@ CardStat = 12189
 global.CardName[CardStat] = 'Preservation Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-CONT [RC/GC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): This unit gets "Intercept", and gets shield +5000.'
+CONT [RC/GC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): This unit gets "Intercept", and gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -5304,7 +5304,7 @@ CardStat = 12190
 global.CardName[CardStat] = 'Luminosity Wizard'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [RC] Generation Break 1 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): If this unit was placed on RC this turn, this unit gets power +10000.
+CONT [RC] Generation Break 1 Ritual 3 (Active if there are three or more grade 1 cards in your drop): If this unit was placed on RC this turn, this unit gets power +10000.
 
 AUTO: When this unit is retired from RC during your turn, if you have a "Dragheart, Luard" crest, you may Soul Charge 1. Then, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -5316,10 +5316,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12191
 {
-global.CardName[CardStat] = 'Saram Clouts Dragon'
+global.CardName[CardStat] = 'Solemn Clout Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-CONT [RC] Generation Break 2 Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, this unit gets power +10000.
+CONT [RC] Generation Break 2 Ritual 3 (Active if there are three or more grade 1 cards in your drop): During your turn, this unit gets power +10000.
 
 AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -5354,7 +5354,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/High Beast
 
 ACT [Hand]: If you have a "Dragheart, Luard" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Luard" in its card name, reveal it and put it into hand, and if you searched the deck, shuffle the deck.
 
-AUTO [Drop] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): At the end of your turn, if you have a vanguard with "Luard" in its card name, COST [bind two cards with the same card name as this card from drop], and Counter Charge 1.'
+AUTO [Drop] Ritual 3 (Active if there are three or more grade 1 cards in your drop): At the end of your turn, if you have a vanguard with "Luard" in its card name, COST [bind two cards with the same card name as this card from drop], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -5368,7 +5368,7 @@ CardStat = 12203
 global.CardName[CardStat] = 'Dragwizard, Semias '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-CONT [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): During your turn, if you have a "Dragheart, Luard" crest, this unit gets power +2000.
+CONT [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): During your turn, if you have a "Dragheart, Luard" crest, this unit gets power +2000.
 
 AUTO Generation Break 1: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Luard" in its card name, look at the top two cards of your deck, choose up to one card from among them, call it to RC, and put the rest on the bottom of the deck in any order. If you called a card, at the end of that turn, retire the unit called by this effect.'
 global.UnitGrade[CardStat] = 1
@@ -5386,7 +5386,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 CONT [Drop]: This card gets grade -1.
 
-AUTO [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop zone): When this unit attacks a vanguard, if you have a "Dragheart, Luard" crest, this unit gets power +5000 until end of that battle, if your G zone has two or more face up cards COST [Counter Blast 1], search your deck for up to one unit card with the Ritual ability and a different card name from this unit, call it to RC, and shuffle the deck.'
+AUTO [RC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): When this unit attacks a vanguard, if you have a "Dragheart, Luard" crest, until end of that battle, this unit gets power +5000, if your G zone has two or more face up cards COST [Counter Blast 1], search your deck for up to one unit card with the Ritual ability and a different card name from this unit, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -5403,7 +5403,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Abyss Dragon
 
 Stride COST [Discard a grade 3 card with "Luard" in its card name from hand]
 
-AUTO [VC] Generation Break 2 Ritual 7: When this unit attacks, if you have five or more units with the Ritual ability, until end of battle, this unit gets power +10000 / critical +1, COST [retire two rear-guards & discard a grade 3 card with "Luard" in its card name from hand], it gets drive +1, and your opponent cannot call grade 1 or greater cards from their hand to GC.'
+AUTO [VC] Generation Break 2 Ritual 7: When this unit attacks, if you have five or more units with the Ritual ability, until end of that battle, this unit gets power +10000 / critical +1, COST [retire two rear-guards & discard a grade 3 card with "Luard" in its card name from hand], it gets drive +1, and your opponent cannot call grade 1 or greater cards from their hand to GC.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -6131,6 +6131,45 @@ global.CardName[CardStat] = 'Divine Sister, Sorbet'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO [RC]: At the end of the battle this unit boosted, if your unit was placed on RC by your vanguard’s ability this turn, COST [retire this unit], choose a grade 3 or greater card with "Sarevsael" in its card name from your soul or drop, and put it on the bottom of the deck. If you chose a card, choose one of your rear-guards, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12601
+{
+global.CardName[CardStat] = 'Academic of Ingathering, Harvestein'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Solrairon" in its card name, choose up to one grade 2 or less normal unit without Sentinel from your drop, and put it on the top of the deck or into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12602
+{
+global.CardName[CardStat] = 'Academic of Anatomization, Lectures'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: At the end of the battle this unit attacked, if a normal unit was revealed by the ability of your vanguard with "Solrairon" in its card name this turn, COST [put this unit into soul], Counter Charge 1, and if this unit was placed on RC from deck this turn, you may draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12603
+{
+global.CardName[CardStat] = 'Academic of Endeavoring, Effoll'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Solrairon" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to RC, and shuffle the deck. If you called two cards, choose a card from your hand, reveal it, and put it on the top of the deck if that is a normal unit, and discard it if not.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
