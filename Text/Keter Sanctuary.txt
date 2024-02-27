@@ -3209,7 +3209,7 @@ CardStat = 10597
 global.CardName[CardStat] = 'Knight of Excision, Diorruing'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC, if your vanguard’s clan is only one of the clans, COST [Soul Blast 1 & discard a card from hand], choose a card with the same clan your vanguard only has for its clan from your drop, and put it into your hand.'
+AUTO: When this unit is placed on RC, if your vanguard has only one clan, COST [Soul Blast 1 & discard a card from hand], choose a card with only the same clan as your vanguard’s clan from your drop, and put it into your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -6131,6 +6131,45 @@ global.CardName[CardStat] = 'Divine Sister, Sorbet'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO [RC]: At the end of the battle this unit boosted, if your unit was placed on RC by your vanguard’s ability this turn, COST [retire this unit], choose a grade 3 or greater card with "Sarevsael" in its card name from your soul or drop, and put it on the bottom of the deck. If you chose a card, choose one of your rear-guards, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12601
+{
+global.CardName[CardStat] = 'Academic of Ingathering, Harvestein'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Solrairon" in its card name, choose up to one grade 2 or less normal unit without Sentinel from your drop, and put it on the top of the deck or into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12602
+{
+global.CardName[CardStat] = 'Academic of Anatomization, Lectures'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: At the end of the battle this unit attacked, if a normal unit was revealed by the ability of your vanguard with "Solrairon" in its card name this turn, COST [put this unit into soul], Counter Charge 1, and if this unit was placed on RC from deck this turn, you may draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12603
+{
+global.CardName[CardStat] = 'Academic of Endeavoring, Effoll'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Solrairon" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to RC, and shuffle the deck. If you called two cards, choose a card from your hand, reveal it, and put it on the top of the deck if that is a normal unit, and discard it if not.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }

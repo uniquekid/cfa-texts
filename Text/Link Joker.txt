@@ -489,7 +489,7 @@ CardStat = 1591
 global.CardName[CardStat] = 'Prison Gate Star-vader, Palladium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] During the end phase, when one of your opponent’s unit locked is turned face up, if you have a «Link Joker» vanguard, you may pay the cost. If you do, lock that unit. (Locked cards are turned face down, and cannot do anything. Turn them face up at the end of its owners turn.)'
+AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] During your opponent’s end phase, when an opponent’s locked card is unlocked, if you have a «Link Joker» vanguard, you may pay the cost. If you do, lock that unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -2998,6 +2998,7 @@ global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
 global.PowerStat[CardStat] = 9000
+global.AttackFromRBuff[CardStat] = 7000
 
 
 CardStat = 5118
@@ -3885,7 +3886,7 @@ CardStat = 5474
 global.CardName[CardStat] = 'Lady Bomber of the Magnetic Storm'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO: When this unit is placed on RC, if your vanguard is a <Messiah> vanguard, COST [put a grade 1 or greater card from hand on RC as a locked card], and draw a card.'
+AUTO: When this unit is placed on RC, if you have a <Messiah> vanguard, COST [put a grade 1 or greater card from hand on RC as a locked card], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -5049,7 +5050,7 @@ CardStat = 7606
 global.CardName[CardStat] = 'Stringent Deletor, Igelma'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO [RC]: When any fighter searches a deck for cards by his or her card’s effect, that fighter Soul Blast 1. (He or she searches even if the soul has no cards.)'
+AUTO [RC]: When any player searches his or her deck for cards by his or her card’s effect, that player Soul Blast 1. (They can search even without any soul)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -5116,7 +5117,7 @@ CardStat = 7641
 global.CardName[CardStat] = 'Lady Fencer of Matter Transmission '
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: When it attacks, if you have a vanguard with "Messiah" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, lock this unit.'
+AUTO [RC]: When it attacks, if you have a vanguard with "Messiah" in its card name, this unit gets power +5000 until end of that battle. At the end of that battle, lock this unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
