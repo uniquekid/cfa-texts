@@ -5562,9 +5562,22 @@ CardStat = 12598
 global.CardName[CardStat] = 'Cardinal Fang, Raphilog'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-AUTO: When this unit is placed on RC, if your World is Dark Night or Abyssal Dark Night, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 card without Regalis Piece or up to one World card, reveal it and put it into hand, and shuffle the deck..
+AUTO: When this unit is placed on RC, if your World is Dark Night or Abyssal Dark Night, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 card without Regalis Piece or up to one World card, reveal it and put it into hand, and shuffle the deck.
 
 CONT [GC]: If your World is Dark Night or Abyssal Dark Night, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12606
+{
+global.CardName[CardStat] = 'Dowsing Finder'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [RC]: When this unit boosts, COST [Energy Blast 2], choose a unit boosted by this unit, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
