@@ -5941,7 +5941,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12608
 {
-global.CardName[CardStat] = 'Baby Dragon, Andra'
+global.CardName[CardStat] = 'Child Dragon, Andra'
 global.CardText[CardStat] = 'Dragon Empire/Synchro Heart Dragon
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
@@ -5959,7 +5959,7 @@ CardStat = 12609
 global.CardName[CardStat] = 'Dragritter of Flame Blade, Grai'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-CONT [VC]: If your soul has a "Baby Dragon, Andra", when you would ride a "Synchro Heart Dragon, Andra" from ride deck, you can ride without discarding a card from hand.
+CONT [VC]: If your soul has a "Child Dragon, Andra", when you would ride a "Resonance Dragon, Andra" from ride deck, you can ride without discarding a card from hand.
 
 AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Grai" in its card name, COST [rest this unit], choose one of your rear-guards with "Andra" in its card name, that unit can attack from the back row, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -5972,8 +5972,8 @@ global.EnableAttackFromBackRow[CardStat] = 1
 
 CardStat = 12610
 {
-global.CardName[CardStat] = 'Synchro Heart Dragon, Andra'
-global.CardText[CardStat] = 'Dragon Empire/Synchro Heart Dragon
+global.CardName[CardStat] = 'Resonance Dragon, Andra'
+global.CardText[CardStat] = 'Dragon Empire/Resonance Dragon
 
 CONT [VC]: If your soul has a "Dragritter of Flame Blade, Grai", when you would ride a "Dragconnector, Graiandra" from ride deck, you can ride without discarding a card from hand.
 
@@ -5988,9 +5988,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 12611
 {
 global.CardName[CardStat] = 'Dragconnector, Graiandra'
-global.CardText[CardStat] = 'Dragon Empire/Human/Synchro Heart Dragon
+global.CardText[CardStat] = 'Dragon Empire/Human/Resonance Dragon
 
-AUTO [VC]: At the beginning of your main phase, COST [rest this unit], choose up to one grade 2 or less card with "Grai" in its card name and up to one grade 2 or less card with "Andra" in its card name each from soul, call them to RC, and this unit gets "AUTO [VC] 1/Turn: At the end of the battle your rear-guard with "Andra" in its card name attacked, COST [put that unit and a rear-guard with "Grai" in its card name into soul], stand this unit, and all of your front row units get power +10000 until end of turn." until end of turn.'
+AUTO [VC]: At the beginning of your main phase, COST [rest this unit], choose up to one grade 2 or less card with "Grai" in its card name and up to one grade 2 or less card with "Andra" in its card name each from soul, call them to RC, and this unit gets "AUTO [VC] 1/Turn: At the end of the battle your rear-guard with "Andra" in its card name attacked, COST [put that unit that attacked and a rear-guard with "Grai" in its card name into soul], stand this unit, and all of your front row units get power +10000 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -6015,10 +6015,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12613
 {
-global.CardName[CardStat] = 'Rend Serenity Griffin'
+global.CardName[CardStat] = 'Rend Serrate Griffin'
 global.CardText[CardStat] = 'Dragon Empire/Chimera
 
-AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Andra" in its card name, this unit gets power +2000 until end of battle, COST [Counter Blast 1], choose one of your opponent’s grade 1 or lower back row rear-guards, and retire it.'
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Andra" in its card name, this unit gets power +2000 until end of that battle, COST [Counter Blast 1], choose one of your opponent’s grade 1 or less back row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -6044,10 +6044,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12615
 {
-global.CardName[CardStat] = 'Cannonball of Dust Storm, Zaksys'
+global.CardName[CardStat] = 'Cannonball of Dust Storm, Xerxes'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO [Front Row RC]: At the beginning of your battle phase, COST [Counter Blast 1], choose one of your units with "Grai" or "Andra" in its card name, and it gets power +5000 until end of turn. If you chose, draw a card.
+AUTO [Front Row RC]: At the beginning of your battle phase, COST [Counter Blast 1], choose one of your units with "Grai" or "Andra" in its card name, and it gets power +5000 until end of turn. If you chose a card, draw a card.
 
 AUTO [RC]: When your unit with "Grai" or "Andra" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -6056,3 +6056,21 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12625
+{
+global.CardName[CardStat] = 'Flame Dragon Emperor, Ghidoradevalt'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Over Trigger
+
+(You may only have one over trigger in a deck. When revealed as a trigger, remove that card, draw a card, choose one of your units, and it gets power +100 Million until end of turn! If revealed during drive check, activate its additional effect!)
+
+CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
+
+Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
