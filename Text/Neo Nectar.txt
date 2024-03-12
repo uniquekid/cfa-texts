@@ -644,9 +644,9 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 ACT [VC]: Legion 20000 "Lycoris Musketeer, Saul" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-CONT [VC]: During the turn that this unit performed Legion, all of your units with "Musketeer" in its card name get power +3000.
+CONT [VC]: During the turn that this unit Legion, all of your units with "Musketeer" in its card name get power +3000.
 
-ACT [VC]: [Choose one of your rear-guards with "Musketeer" in its card name, and retire it] Look at five cards from the top of your deck, search for up to one card with "Musketeer" in its card name, call it to RC, and shuffle your deck. This ability cannot be used for the rest of that turn.'
+ACT [VC]: [Choose one of your rear-guards with "Musketeer" in its card name, and retire it] Look at five cards from the top of your deck, search for up to one card with "Musketeer" in its card name from among them, call it to RC, and shuffle your deck. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -657,7 +657,7 @@ CardStat = 2075
 global.CardName[CardStat] = 'Lycoris Musketeer, Saul'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-AUTO [RC]: [Choose three normal units with "Musketeer" in its card name from your drop zone, and put them on the bottom of your deck in any order] During the turn that your vanguard performed Legion, when this unit attacks a vanguard, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Choose three normal units with "Musketeer" in its card name from your drop zone, and put them on the bottom of your deck in any order] During the turn that your vanguard Legion, when this unit attacks a vanguard, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
@@ -2418,6 +2418,7 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
 global.PowerStat[CardStat] = 7000
+global.CanAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 4623
