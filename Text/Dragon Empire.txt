@@ -5477,7 +5477,7 @@ global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
 Play this with COST [Energy Blast 2]!
 
-Look at the same number of top cards from the top of your deck as the number of your opponent’s open RC, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If your opponent’s rear-guard was retired by your card’s ability this turn, that called unit gets power +5000 until end of turn.'
+Look at the same number of cards from the top of your deck as the number of your opponent’s open RC, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If your opponent’s rear-guard was retired by your card’s ability this turn, that called unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
@@ -6100,4 +6100,47 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12660
+{
+global.CardName[CardStat] = 'Piercing Equip Dragon, Argneas'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card is placed on RC or discarded from hand during your turn, if you have a grade 3 or greater vanguard with "Nirvana" in its card name, COST [Energy Blast 3], choose a card with the X-overDress ability from your drop, and put it into hand.
+
+AUTO: When this card becomes an originalDress, COST [Soul Blast 1], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12661
+{
+global.CardName[CardStat] = 'Battle Monk of Raging Flames, Rokusei'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this card is placed on RC, if you have a grade 3 or greater vanguard with "Varga" in its card name, your opponent cannot intercept until end of turn.
+
+AUTO [RC]: When any player’s unit is retired from a front row RC in the same column as this unit during your turn, if you have a grade 3 or greater vanguard with "Varga" in its card name, COST [retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12662
+{
+global.CardName[CardStat] = 'Stealth Fiend, Beadroll Crow'
+global.CardText[CardStat] = 'Dragon Empire/Ghost
+
+AUTO: When this unit is retired from RC by the ability of your grade 3 or greater vanguard with "Varga" in its card name, choose one of your opponent’s rear-guards and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
