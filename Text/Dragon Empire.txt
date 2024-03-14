@@ -4761,10 +4761,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11967
 {
-global.CardName[CardStat] = 'Lavaston Golem'
+global.CardName[CardStat] = 'Lava Stone Golem'
 global.CardText[CardStat] = 'Dragon Empire/Golem
 
-AUTO [RC]: When this unit is called at the same time as other cards and put on GC from hand, this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit is called at the same time as other cards and put on GC from hand, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5942,7 +5942,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 12608
 {
 global.CardName[CardStat] = 'Child Dragon, Andra'
-global.CardText[CardStat] = 'Dragon Empire/Synchro Heart Dragon
+global.CardText[CardStat] = 'Dragon Empire/Resonance Dragon
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
 
@@ -6144,3 +6144,80 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12674
+{
+global.CardName[CardStat] = 'Virgirua'
+global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12675
+{
+global.CardName[CardStat] = 'Rising Star, Virgirua'
+global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
+
+CONT [VC]: During your turn, this unit gets power +2000 for each of your rear-guards.
+
+CONT [VC]: When you would ride from your ride deck, you can ride with "Soul Blast 1" instead of "Choose a card from your hand, and discard it".'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12676
+{
+global.CardName[CardStat] = 'Shooting Star, Virgirua'
+global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
+
+ACT [VC] 1/Turn: If you have four or more rear-guards, COST [reveal a card with "Virgirua" in its card name from ride deck], and this unit gets critical +1 until end of turn.
+
+AUTO: When this unit is rode upon, look at the top seven cards of your deck, choose up to one grade 2 card from among them, reveal it and put it into hand, and shuffle the deck. If it was rode upon by a grade 3 or greater card with "Virgirua" in its card name, you may look at all of the cards instead of the top seven.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12677
+{
+global.CardName[CardStat] = 'Rewrite the Star, Virgirua'
+global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose one of your opponent’s rear-guards, bind it, choose up to one grade 2 unit card from your drop, and call it to RC.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your grade 2 rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12678
+{
+global.CardName[CardStat] = 'Stardust Blade'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Impact
+
+Play this with COST [Counter Blast 1] if you have a vanguard with "Virgirua" in its card name!
+
+Look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard, call it to RC, and shuffle the deck. Choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When your rear-guard is retired by your opponent’s card’s ability, search your deck for up to one normal unit, call it to RC, and shuffle the deck.", and "CONT [VC]: This unit gets power +3000 for each normal unit on your RC and in your drop."'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
