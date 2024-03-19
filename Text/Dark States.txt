@@ -5817,7 +5817,7 @@ global.CardText[CardStat] = 'Dark States/Normal Order
 
 Play this with COST [discard a card from hand] !
 
-Choose one of your vanguards, and it gets "AUTO [VC]: When your opponent’s rear-guard is retired by your card’s ability, if it is the first of your opponent’s rear-guards rretired by your card’s ability this turn, draw a card, and Soul Charge 1. If it is the second, draw a card, Soul Charge 1, and this unit gets power +10000 until end of turn." until end of turn.'
+Choose one of your vanguards, and it gets "AUTO [VC]: When your opponent’s rear-guard is retired by your card’s ability, if it is the first of your opponent’s rear-guards retired by your card’s ability this turn, draw a card, and Soul Charge 1. If it is the second, draw a card, Soul Charge 1, and this unit gets power +10000 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -5852,3 +5852,112 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12686
+{
+global.CardName[CardStat] = 'Cavity Maligia '
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12687
+{
+global.CardName[CardStat] = 'Hollow Raptor'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon by "Vacant Fang", reveal the top three cards of your deck, put all of the grade 1 or greater cards from among them into soul, and put the rest on the bottom of the deck in any order. If you put two or more cards into soul, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12688
+{
+global.CardName[CardStat] = 'Vacant Fang'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon by a grade 3 card with "Blangdmire" in its card name, reveal the top three cards of your deck, put all grade 1 or greater cards from among them into soul, and shuffle the deck. If you put two or more cards into soul, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12689
+{
+global.CardName[CardStat] = 'Fated One of Zero, Blangdmire'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [VC]: When this unit attacks a vanguard, COST [bind two or more, up to four cards from soul face down], and you may draw a card. If you bound four or more cards, your opponent chooses two of their rear-guards, binds them face down, and this unit gets power +5000 until end of that battle for every two face down cards in your bind zone.
+
+[Divine Skill] - AUTO [RC]: At the beginning of the guard step of the battle this unit attacked, if your bind zone has eight or more face down cards, you may have this unit get critical +1 until end of turn. If you do, your opponent cannot call or play sentinels from hand until end of turn, choose one of your opponent’s vanguards, and until end of your opponent’s next turn, all of your opponent’s and that unit’s abilities are nullified. (Persona ride will activate)
+
+(Twin Drive is removed, one drive can be performed, Glitter is not removed, Abilities return if reriding)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.ExtendedTextBox[CardStat] = 1
+
+
+CardStat = 12690
+{
+global.CardName[CardStat] = 'Evoke Alchemist'
+global.CardText[CardStat] = 'Dark States/Demon
+
+CONT [GC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +2000 until end of that battle. If your bind zone has four or more face down cards, COST [Counter Blast 1], choose one of your front row rear-guards, stand it, and if your bind zone has eight or more face down cards, that unit gets power +15000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12691
+{
+global.CardName[CardStat] = 'Single Strike Shatter Colossus'
+global.CardText[CardStat] = 'Dark States/Gear Colossus
+
+
+AUTO [RC]: When this unit attacks a vanguard, if your bind zone has four or more face down cards, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+AUTO: When this card is put into soul by your card’s ability, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [bind this card face down], and draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12692
+{
+global.CardName[CardStat] = 'Steam Raider, Zamuug'
+global.CardText[CardStat] = 'Dark States/Gearoid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Counter Blast 1], reveal the top three cards of your deck, put any number of cards from among them into soul, and shuffle the deck. If you put one or more cards into soul, you may draw a card.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and this unit’s critical is 1 or less, COST [Energy Blast 3], and this unit gets power +5000 / critical +1 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
