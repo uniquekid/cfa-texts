@@ -5201,12 +5201,15 @@ CardStat = 12175
 global.CardName[CardStat] = 'Serugaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO [RC]: When this unit boosts, if you have more rear-guards than your opponent, or if you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [retire this unit], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck.'
+AUTO [RC]: When this unit boosts, if you have more rear-guards than your opponent, or if you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [retire this unit], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck.
+
+(STANDARD JP: You can only run this card if you do not have Dragheart, Luard in your deck.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 12184
@@ -5265,12 +5268,16 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
 AUTO [VC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): At the beginning of your ride phase, COST [choose two normal units from drop, and put them on the bottom of the deck in any order], and until end of turn, you may Stride without paying the cost the next time you Stride.
 
-AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & choose a rear-guard, and retire it], search your deck for up to two grade 1 or less cards, call them to RC, and shuffle the deck.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & choose a rear-guard, and retire it], search your deck for up to two grade 1 or less cards, call them to RC, and shuffle the deck.
+
+(STANDARD JP: You can only run this card if you do not have Serugaon in your deck.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 12188
