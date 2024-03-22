@@ -5110,6 +5110,8 @@ CardStat = 12181
 global.CardName[CardStat] = 'Enma Stealth Dragon, Maguntenbu '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
+(STANDARD JP: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
+
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
 Dominate - ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card from G zone face up], choose one of your opponent’s rear-guards, stand and dominate it, it attacks your opponent’s other unit, and retire that dominated unit at the end of that battle.'
@@ -5220,6 +5222,8 @@ CardStat = 12208
 global.CardName[CardStat] = 'Evil-eye Hades Emperor, Shiranui "Mukuro" '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
+(STANDARD JP: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
+
 Stride COST [Discard a grade 3 card with "Demon Stealth Dragon, Shiranui" in its card name from hand]
 
 Dominate - ACT [VC] 1/Turn Generation Break 2: COST [Soul Blast 1], choose one of your opponent’s rear-guards, stand and dominate it, and it attacks your opponent’s vanguard. At the end of that battle, stand and dominate all of your opponent’s vanguards, and they attack your opponent’s rear-guard. (Once one of the battles ends, the next battle begins. Perform drive checks with your own deck)'
@@ -5234,7 +5238,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12219
 {
-global.CardName[CardStat] = 'Apprentice Blacksmith, Zedlance'
+global.CardName[CardStat] = 'Smith Apprentice, Zedhlans'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
@@ -5249,10 +5253,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12220
 {
-global.CardName[CardStat] = 'Promising Blacksmith, Zedlance'
+global.CardName[CardStat] = 'Rising Smith, Zedhlans'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO: When this unit is placed by riding from a grade 0 with "Zedlance" in its card name, look at the top five cards of your deck, choose up to one card with "Wrought Iron" in its card name, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 0 unit with "Zedhlans" in its card name, look at the top five cards of your deck, choose up to one card with "Wrought Iron" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5262,12 +5266,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12221
 {
-global.CardName[CardStat] = 'Blazing Wrought Iron Workshop'
+global.CardName[CardStat] = 'Wrought Iron Workshop of Burning Flames'
 global.CardText[CardStat] = 'Dragon Empire/Set Order/Smithy
 
 (After a set order is played, put it into your Order Zone.)
 
-ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept" and gets shield +5000. (A unit chosen with "Wrought Iron" in its card name only gets the power rise until end of that turn)'
+Play this if you have a vanguard with "Zedhlans" in its card name!
+
+ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept" and gets shield +5000. (Power increace only until end of turn even if you chose a unit with "Wrought Iron" in its card name)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
@@ -5278,10 +5284,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12222
 {
-global.CardName[CardStat] = 'Wrought Iron Dragon, Zedlance'
+global.CardName[CardStat] = 'Wrought Iron Dragon, Zedhlans'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO: When this unit is placed by riding from a grade 1 with "Zedlance" in its card name, search your deck for up to one Smithy card, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Zedhlans" in its card name, search your deck for up to one Smithy card, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -5291,12 +5297,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12223
 {
-global.CardName[CardStat] = 'Wrought Iron Dragon King, Zedlance'
+global.CardName[CardStat] = 'Wrought Iron Dragon King, Zedhlans'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO: When this unit is placed by riding from a unit with "Zedlance" in its card name, COST [Soul Blast 1], search your deck or drop for up to one Smithy card, reveal it and put it into hand, and if you searched the deck, shuffle the deck.
+AUTO: When this unit is placed by riding from a unit with "Zedhlans" in its card name, COST [Soul Blast 1], search your deck or drop for up to one set order , reveal it and put it into hand, and if you searched the deck, shuffle the deck.
 
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and this unit gets drive +1 until end of turn. If your units were chosen by the ability of Smithy cards in your order zone three or more times this turn, at the end of that battle, stand this unit, and it gets power +10000 / drive -3 until end of turn.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and this unit gets drive +1 until end of turn. If your unit was chosen by the ability of the Smithy in your order zone three or more times this turn, at the end of that battle, stand this unit, and it gets power +10000 / drive -3 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -5307,12 +5313,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12224
 {
-global.CardName[CardStat] = 'Wrought Iron Knight, Hadid'
+global.CardName[CardStat] = 'Wrought Iron Knight, Hadiid'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO [RC]: When this unit boosts a unit chosen by the ability of a Smithy card in your order zone this turn, you may Soul Charge 1.
+AUTO [RC]: When this unit boosts a unit chosen by the ability of the Smithy in your order zone this turn, you may Soul Charge 1 .
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 vanguard with "Zedlance" in its card name, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 vanguard with "Zedhlans" in its card name, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5325,9 +5331,9 @@ CardStat = 12225
 global.CardName[CardStat] = 'Wrought Iron Soldier Dragon, Lightning Surge Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
-AUTO [RC]: When this unit is chosen by the ability of a Smithy card in your order zone, if you have a grade 3 or greater vanguard with "Zedlance" in its card name, until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects.
+AUTO [RC]: When this unit is chosen by the ability of the Smithy in your order zone during your turn, if you have a grade 3 or greater vanguard with "Zedhlans" in its card name, until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects.
 
-AUTO [RC]: When this unit attacks, if this unit was chosen by the ability of a Smithy card in your order zone this turn, COST [Counter Blast 1], and draw a card.'
+AUTO [RC]: When this unit attacks, if this unit was chosen by the ability of the Smithy in your order zone this turn, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -5340,7 +5346,7 @@ CardStat = 12226
 global.CardName[CardStat] = 'Wrought Iron General Dragon, Fierce Galer Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
 
-AUTO [RC]: When this unit attacks a vanguard, if this unit was chosen by the ability of a Smithy card in your order zone this turn, this unit gets power +5000 until end of that battle, COST [Soul Blast 2], choose one of your opponent’s rear-guards, and retire it.'
+AUTO [RC]: When this unit attacks a vanguard, if this unit was chosen by the ability of the Smithy in your order zone this turn, until end of that battle, this unit gets power +5000, COST [Soul Blast 2], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -5367,7 +5373,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12247
 {
-global.CardName[CardStat] = 'Blade of Fervor, Aldert'
+global.CardName[CardStat] = 'Heated Blade, Ardart'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
@@ -5382,10 +5388,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12248
 {
-global.CardName[CardStat] = 'Thundering Flame Beast, Karaleor'
+global.CardName[CardStat] = 'Roaring Flame Beast, Karaleor'
 global.CardText[CardStat] = 'Dragon Empire/High Beast
 
-AUTO: When this unit is rode upon by "Thundering Beast, Kitenrize", COST [Energy Blast 2], and draw a card.
+AUTO: When this unit is rode upon by "Roaring Thunder Beast, Kitenralz", COST [Energy Blast 2], and draw a card.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Triumph Dragon" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
@@ -5397,7 +5403,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12249
 {
-global.CardName[CardStat] = 'Thundering Beast, Kitenrize'
+global.CardName[CardStat] = 'Roaring Thunder Beast, Kitenralz'
 global.CardText[CardStat] = 'Dragon Empire/High Beast
 
 AUTO: When this unit is rode upon by a grade 3 card with "Triumph Dragon" in its card name, you may call this card to RC. If you did not call a card, Energy Charge 3.
@@ -5412,7 +5418,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12250
 {
-global.CardName[CardStat] = 'Thundering Dragon, Triumph Dragon'
+global.CardName[CardStat] = 'Roaring Thunder Dragon, Triumph Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], search your deck for up to one card with the same card name as this unit, reveal it and put it into hand, shuffle the deck, and this unit gets power +10000 until end of turn.
@@ -5442,7 +5448,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12252
 {
-global.CardName[CardStat] = 'Stealth Dragon, Kuden Musubi'
+global.CardName[CardStat] = 'Stealth Dragon, Kudenmusubi'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
 AUTO: When this card is discarded from hand during your ride phase, you may call this card to RC as rest.'
@@ -5455,7 +5461,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12253
 {
-global.CardName[CardStat] = 'Strong Strike Dragon, Spinoassaulter'
+global.CardName[CardStat] = 'Crushing Dragon, Spinoassaulter'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
 AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired by your grade 3 or greater vanguard’s ability, this unit gets power +10000 until end of turn.'
@@ -5468,7 +5474,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12254
 {
-global.CardName[CardStat] = 'Stealth Rogue of Throwing Sword, Kageichi'
+global.CardName[CardStat] = 'Stealth Rogue of Sword Throwing, Kageichi'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
 AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 2], and draw a card.'
@@ -5540,7 +5546,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12433
 {
-global.CardName[CardStat] = 'Blade of Fervor, Aldert '
+global.CardName[CardStat] = 'Heated Blade, Ardart '
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
@@ -5553,7 +5559,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12434
 {
-global.CardName[CardStat] = 'Thundering Flame Beast, Karaleor '
+global.CardName[CardStat] = 'Roaring Flame Beast, Karaleor '
 global.CardText[CardStat] = 'Dragon Empire/High Beast'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
@@ -5564,7 +5570,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12435
 {
-global.CardName[CardStat] = 'Thundering Beast, Kitenrize '
+global.CardName[CardStat] = 'Roaring Thunder Beast, Kitenralz '
 global.CardText[CardStat] = 'Dragon Empire/High Beast'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -5598,7 +5604,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12438
 {
-global.CardName[CardStat] = 'Stealth Dragon, Kuden Musubi '
+global.CardName[CardStat] = 'Stealth Dragon, Kudenmusubi '
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
@@ -5609,7 +5615,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12439
 {
-global.CardName[CardStat] = 'Strong Strike Dragon, Spinoassaulter '
+global.CardName[CardStat] = 'Crushing Dragon, Spinoassaulter '
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -5620,7 +5626,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12440
 {
-global.CardName[CardStat] = 'Stealth Rogue of Throwing Sword, Kageichi '
+global.CardName[CardStat] = 'Stealth Rogue of Sword Throwing, Kageichi '
 global.CardText[CardStat] = 'Dragon Empire/Demon'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -5631,7 +5637,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12441
 {
-global.CardName[CardStat] = 'Bewitching Beast, Sunegosuri'
+global.CardName[CardStat] = 'Rogue Beast, Sunegosuri'
 global.CardText[CardStat] = 'Dragon Empire/High Beast/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
@@ -5669,7 +5675,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 12444
 {
-global.CardName[CardStat] = 'Eleki Rake Dracokid'
+global.CardName[CardStat] = 'Electrake Dracokid'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon/Front Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
