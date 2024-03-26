@@ -4323,7 +4323,7 @@ CardStat = 11024
 global.CardName[CardStat] = 'A Viridescent Flash, Rorowa'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed by riding from "For One’s Precious Thing, Rorowa", call up to two Plant tokens to RC, and they get "AUTO:When this unit is retired from RC, draw a card." until end of your opponent’s turn. Activate persona ride.
+AUTO: When this unit is placed by riding from "For One’s Precious Thing, Rorowa", call up to two Plant tokens to RC, and they get "AUTO: When this unit is retired from RC, draw a card." until end of your opponent’s turn. Activate persona ride.
 
 AUTO [VC]: When this unit attacks, COST [bind a "For One’s Precious Thing, Rorowa" from soul], choose one of your Glitter rear-guards, until end of turn, that unit and this unit get power +5000, and this unit gets critical +1. At the end of that turn, ride the card bound for this cost as rest.
 
@@ -5536,7 +5536,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12401
 {
-global.CardName[CardStat] = 'Fragrant Bloom, Dionysia'
+global.CardName[CardStat] = 'Fragrant Bloom, Dionyshia'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 ACT [RC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one grade 3 or less unit card from among them, call it to RC, and discard the rest. This unit gets power +10000 until end of turn.'
@@ -6134,4 +6134,63 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12704
+{
+global.CardName[CardStat] = 'Friendly Broccoli'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+AUTO: When this unit is placed on RC from hand, if you have a token unit on your RC, COST [Counter Blast 1], and draw a card.
+
+CONT [RC/GC]: If you have a token unit on your RC, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12705
+{
+global.CardName[CardStat] = 'Special Attack! Seed Machine Gun!'
+global.CardText[CardStat] = 'Stoicheia/Blitz Order
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your units being attacked, and it gets power +10000 until end of that battle. Choose one of your vanguards, and its gets "AUTO [VC]: When your opponent’s front row unit stand, or when your opponent’s unit is placed on a front row RC, this unit gets power +5000 until end of turn." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 12706
+{
+global.CardName[CardStat] = 'Battle Siren, Eleftheria'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: When this unit is placed on RC from hand, Energy Charge 2 .
+
+AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater <Tear Dragon> vanguard, COST [Soul Blast 1], choose one of your units, and it gets "AUTO [VC/RC]: When this unit attacks, this unit gets power +5000 until end of turn" until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12707
+{
+global.CardName[CardStat] = 'Bold Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, this unit gets "Boost" and "AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn.".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

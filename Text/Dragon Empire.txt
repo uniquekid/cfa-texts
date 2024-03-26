@@ -1970,7 +1970,6 @@ Glitter (This card is a Glitter which seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Tamayura'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4157,12 +4156,13 @@ AUTO: When this unit is placed by riding from "Deepening Night, Tamayura", searc
 
 AUTO [VC]: When this unit attacks a vanguard, COST [bind a "Deepening Night, Tamayura" from soul], choose up to one card each with "Ririmi" or "Rarami" in their card names from your soul, call them to RC, and they get power +5000 until end of turn. At the end of that turn, ride the card bound for this cost as rest.
 
-Glitter (This card is a Glitter which seeks the Fire Regalis)'
+Glitter (This card is a Glitter which seeks the Fire Regalis)
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Tamayura'
-global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -6239,3 +6239,19 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12708
+{
+global.CardName[CardStat] = 'Stealth Dragon, Enmou'
+global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], choose the same number of your opponent’s rear-guards as the number of set orders in your opponent’s order zone, and retire them.
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and your opponent has no rear-guards, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
