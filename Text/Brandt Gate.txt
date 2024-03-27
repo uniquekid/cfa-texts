@@ -1882,7 +1882,6 @@ Glitter (This card is a Glitter which seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Eva'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4032,12 +4031,13 @@ AUTO: When this unit is placed by riding from "Fountain of Knowledge, Eva", sear
 
 AUTO [VC]: When this unit attacks, COST [bind a "Fountain of Knowledge, Eva" from soul], search your deck, hand, or drop for up to one card with "Obscudeid" in its card name, call it to RC, and that unit and this unit get power +5000 until end of turn. If you searched the deck, shuffle the deck. At the end of that turn, ride the card bound for this cost as rest.
 
-Glitter (This card is a Glitter which seeks the Fire Regalis)'
+Glitter (This card is a Glitter which seeks the Fire Regalis)
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Eva'
-global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4968,10 +4968,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12271
 {
-global.CardName[CardStat] = 'Blitz Kiloarm, Baishtant'
+global.CardName[CardStat] = 'Blitz Kiloarm, Beistand'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO: When this unit is rode upon by "Blitz Megajet, Revelio", search your deck for up to one "Armored Supply Vehicle, Pretiosa", reveal it and put it into hand, and shuffle your deck.
+AUTO: When this unit is rode upon by "Blitz Megajet, Rebellio", search your deck for up to one "Armored Supply Vehicle, Pretiosa", reveal it and put it into hand, and shuffle your deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Asturm" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
@@ -5733,7 +5733,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12698
 {
-global.CardName[CardStat] = 'Vassa Rotovisor'
+global.CardName[CardStat] = 'Wasser Rotovisor'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO: When this unit is rode upon by a grade 3 card with "Rotovisor" in its card name, look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Rotovisor" in its card name or up to one Arena card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, you may call this card to RC.

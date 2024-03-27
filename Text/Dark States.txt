@@ -1819,7 +1819,6 @@ Glitter (This card is a Glitter that seeks the Fire Regalis)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Kheios'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4194,12 +4193,13 @@ AUTO: When this unit is placed by riding from "Approaching Fangs, Kheios", you m
 
 ACT [VC] 1/Turn: If your soul has thirteen or more cards with different card names, COST [bind an "Approaching Fangs, Kheios" from soul], and until end of turn, all of your units get power +10000, and this unit gets critical +1. At the end of that turn, ride the card bound for this cost as rest.
 
-Glitter (This card is a Glitter that seeks the Fire Regalis)'
+Glitter (This card is a Glitter that seeks the Fire Regalis)
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Kheios'
-global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -5164,7 +5164,7 @@ CardStat = 12242
 global.CardName[CardStat] = 'Plutonic Prospector'
 global.CardText[CardStat] = 'Dark States/Golem
 
-AUTO [RC]: At the end of the battle this unit attacked or boosted, if you have a vanguard with "Almajestar" or "Evil Eye" in its card name, COST [put this unit into soul], look at the top seven cards of your deck, choose up to one grade 3 card from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO [RC]: At the end of the battle this unit attacked or boosted, if you have a vanguard with "Almajestar" or "Evil Eye" in its card name, COST [put this unit into soul], look at the top seven cards of your deck, choose up to one grade 3 from among them, reveal it and put it into hand, and shuffle the deck.
 
 CONT [GC]: If your bind zone has two or more trigger units, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 1
