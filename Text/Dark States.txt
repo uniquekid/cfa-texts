@@ -5971,7 +5971,7 @@ CardStat = 12702
 global.CardName[CardStat] = 'Direful Doll, Shelby'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [put a unit card with "Direful Doll" in its card name from drop into soul], and this unit gets power +5000 for each grade of the card put into soul for this cost/ At the end of that battle, bind this unit.
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [put a unit card with "Direful Doll" in its card name from drop into soul], and this unit gets power +5000 for each grade of the card put into soul for this cost, at the end of that battle, bind this unit.
 
 AUTO [RC]: When this unit’s attack hits a grade 3 or greater vanguard, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
@@ -5987,6 +5987,33 @@ global.CardName[CardStat] = 'Direful Doll, Zyra'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Direful Doll" in its card name, COST [bind this unit], and Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12712
+{
+global.CardName[CardStat] = 'Barrage of Laughter, Shuanmar'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO [RC]: When this unit attacks a vanguard, COST [Energy Blast 4], your opponent chooses one of their rear-guards, retires it, and this unit gets power +5000 until end of turn. If they did not retire a rear-guard, you Soul Charge 2.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12713
+{
+global.CardName[CardStat] = 'Mind Hacker'
+global.CardText[CardStat] = 'Dark States/Human
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
