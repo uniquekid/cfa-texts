@@ -1162,8 +1162,8 @@ global.CardText[CardStat] = 'Game/Human
 CONT [VC]: During your turn, gain all of the following according to the number of cards with "Monk" or "Shura" in its card names in your soul.
 • 2 or more - This unit gets power +15000 / critical +1.
 • 3 or more - This unit gets drive +1.
-• 4 or more - This unit gets "AUTO [VC] 1/Turn: At the end of the battle it attacked, COST [discard two cards from your hand], stand this unit, and it gets drive -1 until end of turn".
-• 5 or more - This unit gets "AUTO [VC]: When it attacks, COST [Soul Blast 2], and until end of that battle, when your opponent would call cards from hand to GC, they must call three or more at the same time".
+• 4 or more - This unit gets "AUTO [VC] 1/Turn: At the end of the battle it attacked, COST [discard two cards from your hand], stand this unit, and it gets drive -1 until end of turn.".
+• 5 or more - This unit gets "AUTO [VC]: When it attacks, COST [Soul Blast 2], and until end of that battle, when your opponent would call cards from hand to GC, they must call three or more at the same time.".
 
 ACT [Hand]: If you have a vanguard with "Monk" or "Shura" in its card name, COST [put this card into your soul], and draw a card.'
 global.UnitGrade[CardStat] = 4
@@ -1437,3 +1437,49 @@ global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.DefensePowerStat[CardStat] = 0
 global.AccelAdd[CardStat] = 1
+
+
+CardStat = 12724
+{
+global.CardName[CardStat] = 'Female High Priest'
+global.CardText[CardStat] = 'Game/Human/Heal Trigger
+
+AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or greater unit this fight, perform one of the following.
+• Choose one of your vanguards, and it gets power +10000 until end of turn.
+• Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
+
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 32
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12725
+{
+global.CardName[CardStat] = 'Female Assassin Cross'
+global.CardText[CardStat] = 'Game/Human
+
+CONT: Sentinel.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 32
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 30000
+
+
+CardStat = 12726
+{
+global.CardName[CardStat] = 'Rookie Monk'
+global.CardText[CardStat] = 'Game/Human
+
+AUTO: When rode upon, draw a card. Then, if your opponent’s vanguard is grade 1 or greater, put a Quick Shield ticket into your hand.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 32
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 10000
+global.QuickShieldAdd[CardStat] = 1

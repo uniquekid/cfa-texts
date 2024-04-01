@@ -844,7 +844,7 @@ CardStat = 11497
 global.CardName[CardStat] = 'GaonLion'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [RC]: When this unit is placed on a circle with a protect marker, COST [Counter Blast 1], this unit gets power +3000 until end of turn. Look at the top two cards of your deck, put one card among them to your hand, put the rest into your soul.'
+AUTO: When this unit is placed on a circle with a protect marker, COST [Counter Blast 1], this unit gets power +3000 until end of turn. Look at the top two cards of your deck, put one card among them to your hand, put the rest into your soul.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 35
 }
@@ -857,7 +857,7 @@ CardStat = 11498
 global.CardName[CardStat] = 'VroonDump'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [RC]: When this unit is placed on a circle with a protect marker, COST [Put a card from your hand into your soul], Soul Charge 1, draw a card.
+AUTO: When this unit is placed on a circle with a protect marker, COST [Put a card from your hand into your soul], Soul Charge 1, draw a card.
 
 ACT [Soul]: If you have three or more protect markers on your circles, COST [Discard a card from your hand], call this card to RC, and you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
@@ -922,7 +922,7 @@ CardStat = 11502
 global.CardName[CardStat] = 'Zenkai Vroon'
 global.CardText[CardStat] = 'Live Action/Hero
 
-AUTO [RC]: When this unit is placed on a circle with a protect marker, COST [Soul Blast 1], Counter Charge 1, this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on a circle with a protect marker, COST [Soul Blast 1], Counter Charge 1, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 35
 }
@@ -1305,3 +1305,104 @@ global.CardInClan[CardStat] = 35
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 12727
+{
+global.CardName[CardStat] = 'ZenkaiJuran "Juran Sword"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +5000 / shield +10000 and "Intercept".
+
+CONT [RC]: If the circle this unit is on has a protect marker, this unit cannot be chosen by your opponent’s card effect.
+
+AUTO [RC]: At the end of your turn, if your drop has ten or more normal units, COST [Bind this unit], return all cards from your drop zone to your deck, and shuffle your deck. Then, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 35
+}
+global.GreenTokenAdd[CardStat] = 1
+global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12728
+{
+global.CardName[CardStat] = 'ZenkaiVroon "Vroon Picker"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [Soul]: At the begining of your battle phase, if you have three or more protect markers on your circles, COST [Soul Blast 1], you may call this card to RC.
+
+AUTO [RC]: If the circle this unit is on has a protect marker, at the end of the battle that this unit attacked, COST [Put this unit into soul], draw a card, and you may Soul Charge 2.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12729
+{
+global.CardName[CardStat] = 'ZenkaiGaon "Gaon Claw"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [Soul]: At the begining of your battle phase, if you have three or more protect markers on your circles, COST [Soul Blast 1], you may call this card to RC, and this unit get power +10000 until end of turn.
+
+AUTO: When rode upon, COST [Counter Blast 1], Soul Charge 2, get an Imaginary Gift:Protect, and put that marker on your RC.
+
+(SHIFT + left click to create Protect gift.)'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+global.ProtectAdd[CardStat] = 1
+
+
+CardStat = 12730
+{
+global.CardName[CardStat] = 'ZenkaiMagine "Magine Stick"'
+global.CardText[CardStat] = 'Live Action/Hero
+
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one <Hero> from among them, put it into your hand, and shuffle your deck. If you put a card into your hand, choose a card from your hand, and put it into your soul.
+
+CONT [RC/GC]: If you have three or more protect markers on your circles, this unit gets power +2000 / shield +5000 and "Intercept", and this unit can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 12731
+{
+global.CardName[CardStat] = 'Zenkaiser SD'
+global.CardText[CardStat] = 'Live Action/Hero/Robot
+
+AUTO: When this card is discarded from hand by the ability of your vanguard  during your turn, you may call this card to RC.
+
+AUTO [RC]: When placed, COST [Counter Blast 1], look at five cards from the top of your deck, reveal up to one <Hero> from among them, call it to RC, shuffle your deck, and if you have four or less protect markers on your circles, get an Imaginary Gift:Protect, and put that marker on your RC.
+
+CONT [Hand]: When this card would be discarded, it may be discarded as a grade 3.
+
+(SHIFT + left click to create Protect gift.)'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+global.ProtectAdd[CardStat] = 1
+
+
+CardStat = 12732
+{
+global.CardName[CardStat] = 'Super Twokaiser SD'
+global.CardText[CardStat] = 'Live Action/Hero/Robot
+
+AUTO [RC]: When placed, COST [Discard a card from your hand], look at seven cards from the top of your deck, reveal up to two card with "Twokaiser" in its card name or <Robot> not named "Super Twokaiser SD" from among them, and put it into your hand, shuffle your deck.
+
+AUTO: When retired from RC by card’s ability, COST [Soul Blast 1], draw a card, Counter Charge 1, if it is retired during your turn, one of your vanguards gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 35
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
