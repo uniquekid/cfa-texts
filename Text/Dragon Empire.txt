@@ -937,7 +937,7 @@ CardStat = 8944
 global.CardName[CardStat] = 'Blaze Maiden, Elba'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-ACT [RC] 1/Turn: COST [Counter Blast 1 & rest three rear-guards with "Blaze Maiden" in their different card names], draw a card, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your front row units get power +10000".'
+ACT [RC] 1/Turn: COST [Counter Blast 1 & rest three rear-guards with "Blaze Maiden" in their different card names], draw a card, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your front row units get power +10000.".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -1666,7 +1666,7 @@ global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
 Play this with COST [Soul Blast 1] !
 
-Choose one of your units in the overDress state, and until end of turn, it gets "AUTO [RC]: When this unit attacks a vanguard, Counter Charge 1".'
+Choose one of your units in the overDress state, and until end of turn, it gets "AUTO [RC]: When this unit attacks a vanguard, Counter Charge 1.".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -6255,3 +6255,17 @@ global.DCards[CardStat] = 1
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12735
+{
+global.CardName[CardStat] = 'Divinez Nao Inabe'
+global.CardText[CardStat] = 'Dragon Empire/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
