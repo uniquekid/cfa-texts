@@ -6265,7 +6265,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 CONT [Soul]: If your vanguard is a grade 3 "Majesty Lord Blaster", your vanguard’s original power becomes 18000.
 
-AUTO [Hand]: At the end of the battle your vanguard attacked, COST [Counter Blast 1 & bind a grade 3 vanguard with "Blaster" in its card name and with only «Royal Paladin» for its clan], ride this card as stand, and it gets power +5000 until end of turn. At the end of the battle this unit attacked that turn, ride the card bound for this cost as rest.
+AUTO [Hand]: At the end of the battle your grade 3 vanguard attacked, COST [Counter Blast 1 & bind a grade 3 vanguard with "Blaster" in its card name and with only «Royal Paladin» for its clan], ride this card as stand, and it gets power +5000 until end of turn. At the end of the battle this unit attacked that turn, ride the card bound for this cost as rest.
 
 AUTO: When this unit is placed on VC, COST [Energy Blast 3], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
@@ -6365,7 +6365,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, bind it, search your deck for up to one card with the same card name as that card, call it to RC, and shuffle the deck.
 
-AUTO: When this unit is placed on GC, COST [discard a card from hand & put two cards from the bind zone on the bottom of the deck in any order], choose one of your units with "Fated One" in its card name, and it cannot be hit until end of that battle.
+AUTO: When this unit is put on GC, COST [discard a card from hand & put two cards from the bind zone on the bottom of the deck in any order], choose one of your units with "Fated One" in its card name, and it cannot be hit until end of that battle.
 
 [Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, choose a card with the same card name as this unit from drop, and you may ride it as stand. If you rode, that unit gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -6425,7 +6425,7 @@ CardStat = 12748
 global.CardName[CardStat] = 'Gragaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-CONT [RC]: If your unit was placed by the ability of your vanguard with [Divine Skill] this turn, this unit gets "AUTO [RC]: At the end of the battle this unit bosted, COST [retire this unit], and Counter Charge 1." and power +5000.'
+CONT [RC]: If your unit was placed by the ability of your vanguard with [Divine Skill] this turn, this unit gets "AUTO [RC]: At the end of the battle this unit boosted, COST [retire this unit], and Counter Charge 1." and power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -6441,6 +6441,48 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 AUTO: When this unit is placed on RC by your grade 3 or greater vanguard’s ability, this unit gets power +10000 until end of turn.
 
 AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Energy Blast 3 & put this unit into soul], draw a card, look at the top card of your deck, and put it on the top or bottom of the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12753
+{
+global.CardName[CardStat] = 'Alight Egret'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+CONT [RC/GC]: If you have a grade 3 or higher vanguard with "Liael" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too).'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12758
+{
+global.CardName[CardStat] = 'What a Friend We Have in the Lord'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order
+
+AUTO [Order Zone] 1/Turn: When your unit is attacked, choose one of your rear-guards not being attacked, move it to GC, and it gets "[CONT]: When this unit would be retired from GC, bind it instead of retiring it." until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12759
+{
+global.CardName[CardStat] = 'Divine Sister, Financier'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], search your deck for up to one "What a Friend We Have in the Lord", put it into the order zone, and shuffle the deck.
+
+AUTO: When this unit is put on GC from RC by the ability of the "What a Friend We Have in the Lord" in your order zone, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
