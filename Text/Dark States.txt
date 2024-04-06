@@ -1289,7 +1289,7 @@ CardStat = 9134
 global.CardName[CardStat] = 'Metallize Erosio'
 global.CardText[CardStat] = 'Dark States/Human
 
-CONT [RC]: If your soul has seven or more cards, all of your opponent’s rear-guards in same column as this unit lose "Boost" and "Intercept", and cannot gain those skills.'
+CONT [RC]: If your soul has seven or more cards, all of your opponent’s rear-guards in same column as this unit loses "Intercept" and "Boost", and cannot get them.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -3303,7 +3303,7 @@ CardStat = 10641
 global.CardName[CardStat] = 'Azul Wild Flame, Frenadio'
 global.CardText[CardStat] = 'Dark States/Human
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Baromagnes" in its card name, COST [put one of your other rear-guards into your soul], choose one of your opponent’s rear-guards, and put it into their soul. If you did not put an opponent’s rear-guard into soul, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Baromagnes" in its card name, COST [put another rear-guards into soul], choose one of your opponent’s rear-guards, and put it into soul. If your opponent’s rear-guard was not put into soul, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -5223,7 +5223,7 @@ CardStat = 12265
 global.CardName[CardStat] = 'Keen Prodigy, Yuxuan'
 global.CardText[CardStat] = 'Dark States/Human
 
-AUTO [RC]: When this unit boosts, if your soul has five or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card and this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if your soul has five or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card, and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -5906,9 +5906,7 @@ global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [VC]: When this unit attacks a vanguard, COST [bind two or more, up to four cards from soul face down], and you may draw a card. If you bound four or more cards, your opponent chooses two of their rear-guards, binds them face down, and this unit gets power +5000 until end of that battle for every two face down cards in your bind zone.
 
-[Divine Skill] - AUTO [VC]: At the beginning of the guard step of the battle this unit attacked, if your bind zone has eight or more face down cards, you may have this unit get critical +1 until end of turn. If you do, your opponent cannot call or play sentinels from hand until end of turn, choose one of your opponent’s vanguards, and until end of your opponent’s next turn, all of your opponent’s and that unit’s abilities are nullified. (Persona ride will activate)
-
-(Twin Drive is removed, one drive can be performed, Glitter is not removed, Abilities return if reriding)'
+[Divine Skill] - AUTO [VC]: At the beginning of the guard step of the battle this unit attacked, if your bind zone has eight or more face down cards, you may have this unit get critical +1 until end of turn. If you do, your opponent cannot call or play sentinels from hand until end of turn, choose one of your opponent’s vanguards, and until end of your opponent’s next turn, all of your opponent’s and that unit’s abilities are nullified. (Persona ride will activate) (You may only use Divine Skills a total of once per fight among all your cards) (Twin Drive and Triple Drive are removed, one drive can be performed, Glitter is not removed, Abilities return if reriding)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1

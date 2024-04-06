@@ -306,7 +306,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card named "Iwatooshi" from your G zone, and turn it face up] During that turn, this unit gets "CONT [VC]: This unit battles all of your opponent’s units in the front row in one attack.".'
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card named "Iwatooshi" from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: This unit battles all of your opponent’s units in the front row in one attack.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
@@ -448,7 +448,7 @@ CardStat = 3088
 global.CardName[CardStat] = 'Shishiou'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [RC] Shinken Hissatsu (This ability is active if you have three or more damage): [Counter Blast 1 & Soul Blast 1 & Choose a card from your hand and discard it] When this unit attacks a vanguard, you may pay the cost. If you do, draw two cards.
+AUTO [RC] Shinken Hissatsu (This ability is active if you have three or more damage): [Counter Blast 1 & Soul Blast 1 & Choose a card from your hand, and discard it] When this unit attacks a vanguard, you may pay the cost. If you do, draw two cards.
 
 CONT [RC]: This unit cannot be chosen by the effects of your opponent’s cards.'
 global.UnitGrade[CardStat] = 2
@@ -661,7 +661,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4196
@@ -691,7 +691,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4198
@@ -1299,7 +1299,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 11000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5103
@@ -1314,7 +1314,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 11000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5116
@@ -1849,8 +1849,8 @@ AUTO: When this unit is rode upon, if you went second, draw a card.
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1865,8 +1865,8 @@ AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Toku", look at the top ca
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1881,8 +1881,8 @@ AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Kiwame", search your deck
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1895,8 +1895,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 ACT [RC]: COST [Counter Blast 1], and this unit gets power +5000 until end of turn. If your vanguard is "Kashuu Kiyomitsu Kiwame", get power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1911,10 +1911,10 @@ CONT [VC]: During your turn, if you have no face up cards in your damage zone, t
 ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], look at the top card of your deck, put it on the top or bottom of your deck, and draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Kashuu Kiyomitsu Kiwame'
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -1931,9 +1931,9 @@ Additional Effect - All of your units get critical +1 until end of turn!
 Play Effect - Choose one of your vanguards, and until end of turn, it gets critical +1, and if your damage zone has five or more cards, all of your units get power +10000!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-global.TriggerUnit[CardStat] = 6
-}
 global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
@@ -1949,8 +1949,8 @@ AUTO [RC] 1/Turn: When this unit attacks, perform all of the effects below accor
 • 5 or more - COST [Counter Blast 1 & Soul Blast 1], and stand this unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1963,8 +1963,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO [RC]: When this unit’s attack hits, if you persona rode this turn, COST [Counter Blast 1], and heal a damage from your damage zone.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1977,8 +1977,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 ACT [RC] 1/Turn: COST [Counter Blast 1 & rest this unit and another rear-guard], choose one of your opponent’s units, and it gets power -5000 until end of turn. If you persona rode this turn, stand all of your rear-guards.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -1991,8 +1991,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], and this unit gets power +5000 / critical +1 until end of that battle. At the end of the battle, put this unit on the bottom of your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2007,8 +2007,8 @@ AUTO: When this unit is placed on RC from hand, if your opponent’s vanguard is g
 AUTO [RC]: When this unit’s attack hits a vanguard, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2021,8 +2021,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO [RC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], choose one of your other rear-guards in the same column as this unit, and exchange positions with this unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.CanAttackFromBackRow[CardStat] = 1
@@ -2036,8 +2036,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO [RC]: When this unit attacks while not boosted, COST [discard two cards from your hand], choose one of your units with power greater than this unit’s, and until end of that battle, increase or decrease this unit’s power until it is 5000 greater than that unit’s power.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2050,8 +2050,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at seven cards from the top of your deck, choose up to one "Ookanehira" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2064,8 +2064,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this unit is put on GC, COST [discard a card from your hand], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2078,8 +2078,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When this unit attacks while boosted, COST [Counter Blast 1], until end of that battle, this unit gets power +5000, and if it was boosted by "Horikawa Kunihiro", when your opponent would call cards from their hand, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2092,8 +2092,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 CONT [RC/GC]: If "Hizamaru" is on your front row RC or GC, this unit gets power +5000 / shield +5000. (Effective on opponent’s turn as well.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2106,8 +2106,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 CONT [RC/GC]: If "Higekiri" is on your front row RC or GC, this unit gets power +5000 / shield +5000. (Effective on opponent’s turn as well.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2122,8 +2122,8 @@ AUTO: When this unit is rode upon by "Kasen Kanesada Kiwame", Soul Charge 1, cho
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2136,8 +2136,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 CONT [Back Row RC]: When this unit’s power would be increased by your trigger effect, double the value of that increase. (If its +10000, it becomes +20000.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2150,8 +2150,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 AUTO [RC]: When this unit boosts a <Touken Danshi - Uchigatana>, COST [Soul Blast 1 & discard a card from your hand], draw a card, and if it boosted "Izuminokami Kanesada", this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2166,10 +2166,10 @@ ACT [VC] 1/Turn: COST [Soul Blast 1 & rest any number of your rear-guards], and 
 CONT [VC]: During the battle that this unit attacked, if this unit’s power is 30000 or greater, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Kasen Kanesada Kiwame'
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2184,9 +2184,9 @@ CONT [RC]: During your turn, this unit gets power +2000.
 AUTO [RC] 1/Turn: When this unit is rest for a cards cost, stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2199,8 +2199,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO [RC]: At the end of the battle this unit boosted, COST [Counter Blast 1 & put this unit into your soul], draw a card, choose one of your units, and it gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2213,8 +2213,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, look at the top card of your deck, and put it on the top or the bottom of your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2229,8 +2229,8 @@ CONT: Sentinel.
 AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2245,8 +2245,8 @@ AUTO: When this unit is rode upon by "Kasen Kanesada Toku", choose one of your v
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2261,8 +2261,8 @@ AUTO: When this unit is rode upon, if you went second, draw a card.
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2279,9 +2279,9 @@ Additional Effect - All of your units get critical +1 until end of turn!
 Play Effect - Choose one of your vanguards, and until end of turn, it gets critical +1, and if your damage zone has five or more cards, all of your units get power +10000!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-global.TriggerUnit[CardStat] = 6
-}
 global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
@@ -2298,9 +2298,9 @@ Additional Effect - All of your units get critical +1 until end of turn!
 Play Effect - Choose one of your vanguards, and until end of turn, it gets critical +1, and if your damage zone has five or more cards, all of your units get power +10000!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-global.TriggerUnit[CardStat] = 6
-}
 global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
@@ -2317,9 +2317,9 @@ Additional Effect - All of your units get critical +1 until end of turn!
 Play Effect - Choose one of your vanguards, and until end of turn, it gets critical +1, and if your damage zone has five or more cards, all of your units get power +10000!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-global.TriggerUnit[CardStat] = 6
-}
 global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
@@ -2336,9 +2336,9 @@ Additional Effect - All of your units get critical +1 until end of turn!
 Play Effect - Choose one of your vanguards, and until end of turn, it gets critical +1, and if your damage zone has five or more cards, all of your units get power +10000!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-global.TriggerUnit[CardStat] = 6
-}
 global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
@@ -2353,8 +2353,8 @@ CONT [RC]: This unit cannot be chosen by your opponent’s card effects.
 AUTO [RC]: When your vanguards attack hits, COST [Counter Blast 1 & Soul Blast 1], draw a card, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2367,8 +2367,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 CONT [Front Row RC]: When your over trigger would be removed by its trigger effect, you may put it into your hand instead of removing it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2378,12 +2378,12 @@ CardStat = 8490
 global.CardName[CardStat] = 'Taroutachi '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
 
-CONT [RC]: During your turn, if "Jiroutachi" is on your RC, this unit gets power +10000.'
+CONT [RC]: During your turn, if you have a "Jiroutachi" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2393,12 +2393,12 @@ CardStat = 8491
 global.CardName[CardStat] = 'Jiroutachi '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
 
-CONT [RC]: During your turn, if "Taroutachi" is on your RC, this unit gets power +10000.'
+CONT [RC]: During your turn, if your have a "Taroutachi" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2411,9 +2411,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
 CONT [RC]: During your turn, if you have no face up cards in your damage zone, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2424,8 +2424,8 @@ global.CardName[CardStat] = 'Nakigitsune '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2438,8 +2438,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO: When this unit is placed on RC, look at two cards from the top of your deck, and put them on the top of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2454,8 +2454,8 @@ CONT: Sentinel.
 AUTO: When this unit is put on GC, COST [discard a card from your hand], choose one of your units, and it cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2466,8 +2466,8 @@ global.CardName[CardStat] = 'Nikkari Aoe '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2480,8 +2480,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 ACT [RC] 1/Turn: COST [Counter Blast 1], look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2492,8 +2492,8 @@ global.CardName[CardStat] = 'Atsushi Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -2505,8 +2505,8 @@ global.CardName[CardStat] = 'Hakata Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -2518,8 +2518,8 @@ global.CardName[CardStat] = 'Midare Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Front Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 5
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -2533,8 +2533,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Heal Trigger
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -2550,10 +2550,10 @@ CONT [VC]: If your opponent does not have any rear-guards in their back row, thi
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your opponent’s back row rear-guards, and retire it. Then, this unit gets power +5000 until end of that battle for each of your opponent’s open back row RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Mutsunokami Yoshiyuki Kiwame'
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2568,10 +2568,10 @@ CONT [VC]: If you persona rode this turn, this unit gets critical +1.
 AUTO [VC]: This cost may be paid with "Soul Blast 1 "Yamanbagiri Kunihiro Kiwame"". When this unit attacks, COST [Counter Blast 1], draw a card, choose up to one card from your hand, and call it to an open RC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Yamanbagiri Kunihiro Kiwame'
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2584,10 +2584,10 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 CONT [VC]: If you have five rear-guards, all of your front row rear-guards get power +5000, and all of your back row rear-guards get "Boost". (Active on opponent’s turn too.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Hachisuka Kotetsu Kiwame'
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2600,9 +2600,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 CONT [RC]: If you have four or more grade 1 or less units, when this unit would attack a vanguard, it also battles all of your opponent’s grade 2 or greater rear-guards in one attack.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2617,8 +2617,8 @@ CONT [RC]: During your turn, if you have three or more rear-guards with "Toushir
 AUTO [RC]: When this unit attacks, if this unit’s power is 30000 or greater, COST [Counter Blast 2], and this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2633,9 +2633,9 @@ AUTO: When this unit is placed on RC, this unit gets power +5000 until end of tu
 AUTO: When this unit is retired from RC during your opponent’s turn, COST [Counter Blast 1], and put this card from your drop into your hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2648,8 +2648,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, COST [Counter Blast 1], choose up to two cards from your hand, and call them to open RC. If you called two, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2662,8 +2662,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When this unit attacks while not boosted, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and this unit gets power +10000 until end of that battle. If your damage zone has no face up cards, it gets power +15000 instead of +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2676,8 +2676,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When placed on RC, COST [discard a card from your hand], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2692,8 +2692,8 @@ AUTO: When this unit is rode upon by "Mutsunokami Yoshiyuki Kiwame", COST [Soul 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2708,8 +2708,8 @@ AUTO: When this unit is rode upon by "Yamanbagiri Kunihiro Kiwame", COST [discar
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2724,8 +2724,8 @@ AUTO: When this unit is placed on VC by riding from "Hachisuka Kotetsu Sentou", 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2738,8 +2738,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 CONT [RC]: If you have another unit with "Kotetsu" in its card name, this unit gets power +5000. (Also active during your opponent’s turn.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2752,9 +2752,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
 CONT [RC]: During the battle that this unit attacked, if it is the first battle of that turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2767,9 +2767,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
 CONT [RC]: If your opponent’s vanguard is grade 3 or greater, when this unit would attack, it battles all of the units in one of your opponent’s columns.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2782,8 +2782,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When this unit attacks a vanguard, if you have no other units in the same column as this unit, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle. At the end of that battle, move this unit to the back row.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.CanAttackFromBackRow[CardStat] = 1
@@ -2799,8 +2799,8 @@ AUTO: When this unit attacks, COST [Soul Blast 1], perform one of the effects be
 • Draw a card, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2813,8 +2813,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 AUTO [RC]: When the attack this unit boosted hits a vanguard, if your opponent’s back row rear-guard was retired this turn, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2827,8 +2827,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When your vanguard is placed, COST [Counter Blast 1], search your deck for up to one "Minamoto Kiyomaro", call it to an open RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2841,8 +2841,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When your vanguard is placed, COST [Counter Blast 1], search your deck for up to one "Suishinshi Masahide", call it to an open RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2855,8 +2855,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this unit is placed on RC, if you persona rode this turn, Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2869,8 +2869,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 ACT [RC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards, stand it, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2883,8 +2883,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When this unit is rest for a cards cost, choose one of your units, and it get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2897,8 +2897,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 CONT [VC/RC]: If this unit has power 13000 or less, this unit cannot attack.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2911,8 +2911,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO [RC]: When this unit’s attack hits a vanguard, COST [Counter Blast 1 & discard a card from your hand], choose one of your vanguards, search your deck for up to one card with the same card name as that unit, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2925,8 +2925,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose a "Honebami Toushirou" from your drop, and call it to an open RC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2937,8 +2937,8 @@ global.CardName[CardStat] = 'Hirano Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -2950,8 +2950,8 @@ global.CardName[CardStat] = 'Gotou Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -2965,8 +2965,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO [RC]: When the attack this unit boosted hits, COST [Counter Blast 1 & and put this unit into your soul], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -2977,8 +2977,8 @@ global.CardName[CardStat] = 'Maeda Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -2990,8 +2990,8 @@ global.CardName[CardStat] = 'Akita Toushirou '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Front Trigger'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 5
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -3005,8 +3005,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Heal Trigger
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -3020,8 +3020,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 CONT [RC]: During your turn, if you have another unit with "Toushirou" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3031,13 +3031,13 @@ CardStat = 8549
 global.CardName[CardStat] = 'Akashi Kuniyuki '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-CONT [RC]: During your turn, if "Aizen Kunitoshi" is on your RC, this unit gets power +5000.
+CONT [RC]: During your turn, if you have a "Aizen Kunitoshi" on your RC, this unit gets power +5000.
 
-CONT [GC]: If "Hotarumaru" is on your RC, this unit gets shield +5000.'
+CONT [GC]: If you have a "Hotarumaru" on your RC, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3050,8 +3050,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO [RC]: At the end of the battle that this unit boosted a <Touken Danshi - Ootachi>, COST [Counter Blast 1 & and put this unit into your soul], choose one of your <Touken Danshi - Ootachi> or <Touken Danshi - Tachi> on your RC, and return it to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3064,8 +3064,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO: When this unit is placed on RC, COST [Soul Blast 1 & rest two of your other rear-guards], your opponent chooses one of their rear-guards, and retires it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3080,8 +3080,8 @@ CONT [RC]: You may choose to not stand this unit during your stand phase.
 AUTO [RC]: At the beginning of your main phase, if this unit is rest, choose one of your units, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3096,8 +3096,8 @@ AUTO: When this unit is placed for the first call of this turn, this unit gets p
 CONT [RC]: When you would look at the contents of your deck, you can only look at the top card of your deck. (When searching from the deck or looking at two or more cards, look only at the top. Other effects are left as they are.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3110,8 +3110,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO: When this unit is placed on RC from your hand, if you have two or more rest units, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3124,8 +3124,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO [RC]: When this unit attacks, if you have three or more other rest units, COST [Soul Blast 1], and this unit gets power +5000 until end of battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3140,8 +3140,8 @@ AUTO: When this unit is rode upon by "Mutsunokami Yoshiyuki Toku", choose up to 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3156,8 +3156,8 @@ AUTO: When this unit is rode upon, if you went second, draw a card.
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3172,8 +3172,8 @@ AUTO: When this unit is rode upon by "Yamanbagiri Kunihiro Toku", COST [Counter 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3188,8 +3188,8 @@ AUTO: When this unit is rode upon, if you went second, draw a card.
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3204,8 +3204,8 @@ CONT [GC]: If your vanguard is grade 3 or greater, this unit gets shield +5000.
 AUTO: When this unit is retired from RC or GC, COST [Soul Blast 1], and put this unit on the bottom of your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3220,8 +3220,8 @@ ACT [VC] 1/Turn: COST [Soul Blast 1 & reveal two cards from your ride deck with 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3236,8 +3236,8 @@ AUTO: When this unit is rode upon, if you went second, draw a card.
 (You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3250,8 +3250,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 CONT [RC]: If you have another unit in the same column as this unit, this unit gets power +5000. (Also active during your opponent’s turn.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3264,8 +3264,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3278,9 +3278,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 ACT [RC] 1/Turn: COST [Soul Blast 1], choose two of your units, and they get power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3293,8 +3293,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou/Heal Trigger
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
@@ -3308,8 +3308,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 AUTO [RC]: When your vanguard is attacked, COST [Soul Blast 1], and move this unit to GC. (This is not an intercept.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3322,8 +3322,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 ACT [RC] 1/Turn: COST [Counter Blast 1], and until end of turn, this unit gets power +5000, and your opponent cannot intercept.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3336,9 +3336,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 AUTO [RC]: When this unit attacks, if you have no face up cards in your damage zone, COST [discard a card from your hand], and this unit gets power +15000 until end of battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3351,8 +3351,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO: When this unit is placed on RC, COST [Soul Blast 1], and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3365,8 +3365,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose a "Chiganemaru" from your drop, and call it to an open RC.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3379,8 +3379,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 ACT [RC]: COST [Put this unit into your soul], choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3393,9 +3393,9 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
 ACT [RC]: COST [Soul Blast 3], and this unit gets power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
 global.PersonaRide[CardStat] = 1
 }
-global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3408,8 +3408,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO: When this unit is placed on RC, COST [Soul Blast 2], choose one of your other units, and it gets power +5000 until end of turn. If you chose "Chiyoganemaru" or "Chiganemaru", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3422,8 +3422,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: When this unit’s attack hits a vanguard, you may Counter Charge 1 or Soul Charge 2.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3436,8 +3436,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 CONT [RC]: During your turn, if your opponent’s damage zone has three or more cards, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3450,8 +3450,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose a "Chiyoganemaru" from your drop, and call it to an open RC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3464,8 +3464,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3478,8 +3478,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 AUTO [RC]: When your vanguard is placed, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -3492,8 +3492,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 AUTO [RC]: At the end of the battle this unit’s attack hit, COST [Counter Blast 1 & put this unit into your soul], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
-}
 global.DCards[CardStat] = 8
+}
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 

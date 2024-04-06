@@ -489,7 +489,7 @@ CardStat = 1408
 global.CardName[CardStat] = 'Revenger, Raging Form Dragon'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose three of your rear-guards with "Revenger" in its card name, and retire them] At the beginning of the close step of a battle when this unit attacked, you may pay the cost. If you do, choose up to one card named "Revenger, Raging Form Dragon" from your hand and ride it as stand, choose one of your vanguards, and it gets power +10000 until the end of turn.
+AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose three of your rear-guards with "Revenger" in its card name, and retire them] At the beginning of the close step of a battle when this unit attacked, you may pay the cost. If you do, choose up to one card named "Revenger, Raging Form Dragon" from your hand, ride it as stand, choose one of your vanguards, and it gets power +10000 until the end of turn.
 
 AUTO [VC]: [Counter Blast 1] When this unit attacks, you may pay the cost. If you do, this unit gets power +3000 until end of that battle.
 
@@ -1099,9 +1099,9 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 ACT [VC]: Legion 20000 "Blaster Dark Revenger "Abyss"".
 
-AUTO [VC]: [Counter Blast 2 & Choose three of your rear-guards with "Revenger" in their card names and retire them] During the turn this unit Legion, during the close step where this unit attacks a vanguard, you may pay the cost. If you do, stand all of your vanguards. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn.)
+AUTO [VC]: [Counter Blast 2 & Choose three of your rear-guards with "Revenger" in its card names, and retire them] During the turn this unit Legion, at the end of the battle that this unit attacks a vanguard, you may pay the cost. If you do, stand all of your vanguards. This ability cannot be used for the rest of that turn.
 
-AUTO [VC]: When this unit attacks the vanguard, this unit gets power +2000 during this battle.'
+AUTO [VC]: When this unit attacks the vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -2935,7 +2935,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 11000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 5022
@@ -3689,9 +3689,9 @@ CardStat = 6037
 global.CardName[CardStat] = 'Phantom Blaster Dragon  '
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-ACT [VC]: COST [Counter Blast 1 & retire three of your rear-guards], your opponent chooses three of his or her rear-guards, and retires them. This unit gets power +15000 / critical +1 until end of turn.
+ACT [VC]: COST [Counter Blast 1 & retire three of your rear-guards], and your opponent chooses three of his or her rear-guards, and retires them. This unit gets power +15000 / critical +1 until end of turn.
 
-ACT [VC] 1/Turn: If your opponent has no rear-guards and 4 or less cards in his or her damage zone, COST [Soul Blast 1 grade 3], and deal one damage to your opponent’s vanguard.'
+ACT [VC] 1/Turn: If your opponent has four or less cards in his or her damage zone and no rear-guards, COST [Soul Blast 1 grade 3], and deal one damage to your opponent’s vanguard.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
