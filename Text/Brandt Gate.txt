@@ -2620,7 +2620,7 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on VC, reveal the top five cards of your deck, put all Set Orders from among them into your Order Zone, and shuffle your deck.
 
-AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000 / drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.'
+AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards, and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000 / drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 }
@@ -3680,7 +3680,7 @@ CardStat = 10872
 global.CardName[CardStat] = 'Aurora Battle Princess, Grenade Marieda'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO: When this unit is placed on RC, you may choose an opponent’s card imprisoned in your Prison. If you chose a card, your opponent puts that card on the bottom of their deck, chooses a grade 0 card from their drop, imprisons it in your Prison, and this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, you may choose one of your opponent’s card imprisoned in your Prison. If you do, your opponent puts that card on the bottom of their deck, chooses a grade 0 card from their drop, imprisons it in your Prison, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -5496,7 +5496,7 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 ACT [RC]: If you have a grade 3 vanguard with "Eva" in its card name, COST [put this unit into soul], search your deck for up to one "Poison in Paradise, Eva", ride it as stand, and shuffle the deck. If your vanguard was placed during the ride phase of this turn, or you persona rode this turn, you cannot persona ride until end of turn. ("If you persona rode" is active even if persona ride is activated outside of normal ride)
 
-AUTO [Drop]: When your Research card is played from hand and put into the order zone, COST [Energy Blast 3], call this card to RC, and this unit gets power +2000 until end of turn.'
+AUTO [Drop]: When your Research card is played from hand, and put into the order zone, COST [Energy Blast 3], call this card to RC, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -5860,4 +5860,17 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12769
+{
+global.CardName[CardStat] = 'Galactic B-Hero, Vidash Belsten'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: When this unit boosts, if your order has a Base, this unit gets power +2000 until end of that battle, and at the end of that battle, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

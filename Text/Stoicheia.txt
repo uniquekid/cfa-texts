@@ -594,7 +594,7 @@ CardStat = 8429
 global.CardName[CardStat] = 'Sylvan Horned Beast, Bojalcorn'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-ACT [RC]: COST [Counter Blast 1], and until end of turn, this unit gets "CONT [Back Row RC]: When this unit would attack, it battles all your opponent’s front row units in one attack.".'
+ACT [RC]: COST [Counter Blast 1], and until end of turn, this unit gets "CONT [Back Row RC]: When this unit would attack, this unit battles all of your opponent’s front row units.".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -1146,7 +1146,7 @@ CardStat = 9102
 global.CardName[CardStat] = 'High Rate Burst Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO: When this unit is placed on RC, if your vanguard is "Flagship Dragon, Flagburg Dragon", choose one of your other rear-guards, and it gets "AUTO [RC]: When this unit attacks, if it is the first battle of this turn, COST [Counter Blast 1 & Soul Blast 1], and stand this unit" until end of turn.'
+AUTO: When this unit is placed on RC, if your vanguard is "Flagship Dragon, Flagburg Dragon", choose one of your other rear-guards, and it gets "AUTO [RC]: When this unit attacks, if it is the first battle of this turn, COST [Counter Blast 1 & Soul Blast 1], and stand this unit." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -3288,7 +3288,7 @@ CardStat = 10680
 global.CardName[CardStat] = 'Burly Axe Beetle'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-CONT [RC]: During your turn, if "Bulky Saw Stag" is on your RC, this unit gets power +10000.'
+CONT [RC]: During your turn, if you have "Bulky Saw Stag" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -3302,7 +3302,7 @@ CardStat = 10681
 global.CardName[CardStat] = 'Bulky Saw Stag'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-CONT [RC]: During your turn, if "Burly Axe Beetle" is on your RC, this unit gets power +10000.'
+CONT [RC]: During your turn, if you have "Burly Axe Beetle" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -3896,11 +3896,11 @@ CardStat = 10972
 global.CardName[CardStat] = 'Pining Flower Maiden, Claudine'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-ACT [VC] 1/Turn: COST [Retire three rear-guards], until end of turn, this unit gets "CONT [VC]: All of your token units get power +5000.", and drive +1.
+ACT [VC] 1/Turn: COST [Retire three rear-guards], until end of turn, this unit gets "CONT [VC]: All of your Plant tokens get power +5000.", and drive +1.
 
 ACT [VC] 1/Turn: COST [Bind an order card from drop], and call up to two Plant tokens to RC.
 
-AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose one of your Plant tokens, stand it, and that unit gets power +5000 until end of turn for every two different order cards in total in your drop and bind zone.
+AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose one of your Plant tokens, stand it, and that unit gets power +5000 until end of turn for every two order cards with different card names in total in your drop and bind zone.
 
 (SHIFT + left click to generate plant tokens)'
 global.UnitGrade[CardStat] = 3
@@ -5411,7 +5411,7 @@ CardStat = 12356
 global.CardName[CardStat] = 'Sunbathing Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO [RC]: When this unit boosts, if your drop has ten or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card and this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if your drop has ten or more cards, COST [Counter Blast 1 & Energy Blast 2], draw a card, and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -5999,7 +5999,7 @@ CONT [VC]: When you would play a normal order, you can choose a normal order wit
 
 ACT [VC] 1/Turn: COST [Energy Blast 2 & bind a normal order from drop], choose up to two cards from your drop, call them to RC, and they get power +5000 until end of turn for each normal order with a different card name in your bind zone. At the end of that turn, retire those units.
 
-[Divine Skill] - AUTO [VC]: When this unit attacks a grade 3 or greater unit, COST [Soul Blast 1], choose a column, and stand all of your rear-guards in that column. At the end of that turn, retire those units.'
+[Divine Skill] - AUTO [VC]: When this unit attacks a grade 3 or greater unit, COST [Soul Blast 1], choose a column, and stand all of your rear-guards in that column. At the end of that turn, retire those units. (You may only use Divine Skills a total of once per fight among all your cards)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -6175,7 +6175,7 @@ global.CardText[CardStat] = 'Stoicheia/Mermaid
 
 AUTO: When this unit is placed on RC from hand, Energy Charge 2.
 
-AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater <Tear Dragon> vanguard, COST [Soul Blast 1], choose one of your units, and it gets "AUTO [VC/RC]: When this unit attacks, this unit gets power +5000 until end of turn" until end of turn.'
+AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater <Tear Dragon> vanguard, COST [Soul Blast 1], choose one of your units, and it gets "AUTO [VC/RC]: When this unit attacks, this unit gets power +5000 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -6293,6 +6293,25 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 AUTO: When this unit is placed on RC, COST [Soul Blast 1], search your deck for up to one "Flowering Sweet Shop", put it into the order zone, and shuffle the deck.
 
 AUTO: When this unit is put on GC from RC by the ability of the "Flowering Sweet Shop" in your order zone, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12766
+{
+global.CardName[CardStat] = 'Megacolony Battler+ "Type.C"'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+(Currently this card can only be included at 4 copies)
+
+CONT: You may have up to 16 "Megacolony Battler+ "Type.C"" in a deck.
+
+AUTO: When this unit is placed on RC from hand, look at the top card of your deck, and put it on the bottom of the deck or discard it. Then, COST [Soul Blast 1], choose a card with the same card name as this unit from your drop, and call it to RC.
+
+CONT [RC]: During your turn, this unit gets power +5000 for every four card with "Megacolony Battler+ "Type.C"" in their card names in total on your RC or in your drop.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }

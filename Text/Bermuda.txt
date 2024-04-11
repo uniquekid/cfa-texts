@@ -158,7 +158,7 @@ CardStat = 576
 global.CardName[CardStat] = 'Navy Dolphin, Amur'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: [Choose a card from your hand and discard it] During the battle this unit boosted, if the attack hits, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Choose a card from your hand, and discard it] When an attack hits during the battle that this unit boosted, you may pay the cost. If you do, draw a card.'
 }
 
 
@@ -295,7 +295,7 @@ CardStat = 591
 global.CardName[CardStat] = 'Top Idol, Flores'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits, you may pay the cost. If you do, choose one of your «Bermuda Triangle» rear-guards and return it back to hand.'
+AUTO [VC/RC]: [Soul Blast 2] When this unit’s attack hits, you may pay the cost. If you do, choose one of your «Bermuda Triangle» rear-guards, and return it to your hand.'
 }
 
 
@@ -2142,7 +2142,7 @@ CardStat = 3896
 global.CardName[CardStat] = 'Brand-New-PR<3ISM, Garnet'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC] Limit Break 4: When this unit attacks a vanguard, choose up to three cards with "PR<3ISM" in its card name from your hand, and call them to separate RC. If you called three cards, until end of that battle, this unit gets "CONT [VC] Limit Break 5: This unit gets drive +1".
+AUTO [VC] Limit Break 4: When this unit attacks a vanguard, choose up to three cards with "PR<3ISM" in its card name from your hand, and call them to separate RC. If you called three cards, until end of that battle, this unit gets "CONT [VC] Limit Break 5: This unit gets drive +1.".
 
 AUTO [VC]: [Counter Blast 1-card with "PR<3ISM" in its card name] When your unit is returned to your hand from RC, you may pay the cost. If you do, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -3088,7 +3088,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 11000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4944
@@ -3402,7 +3402,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 4000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4968
@@ -3863,7 +3863,7 @@ CardStat = 5629
 global.CardName[CardStat] = 'Aurora Star, Coral '
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [VC/RC]: If the number of cards with "Coral" in their card names in your soul is 4 or more, this unit gets power +2000.
+CONT [VC/RC]: If the number of cards in your soul with "Coral" in their card names is four or more, this unit gets power +2000.
 
 AUTO [VC]: [Choose a card from your hand, and put it into your soul] When this unit is placed on VC, or when your G unit with "Coral" in its original card name Stride, you may pay the cost. If you do, draw two cards, choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of the units in your front row get power +5000 for every two cards with "Coral" in their card names in your soul.".'
 global.UnitGrade[CardStat] = 3
@@ -3933,7 +3933,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO [VC/RC]: Harmony.
 
-AUTO [VC] 1/Turn: [Soul Blast 1] When this unit becomes in harmony, or when your G unit Stride, you may pay the cost. If you do, draw a card, choose a card from your hand, call it to RC, and until end of turn, it gets "AUTO [RC] 1/Turn: When this unit becomes in harmony, Counter Charge 1".
+AUTO [VC] 1/Turn: [Soul Blast 1] When this unit becomes in harmony, or when your G unit Stride, you may pay the cost. If you do, draw a card, choose a card from your hand, call it to RC, and until end of turn, it gets "AUTO [RC] 1/Turn: When this unit becomes in harmony, Counter Charge 1.".
 
 CONT [VC/RC] Generation Break 2: When this unit is in harmony, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
@@ -4363,7 +4363,8 @@ global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
 global.CardBanned[CardStat] = 1
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 5664
@@ -4925,7 +4926,7 @@ CardStat = 6539
 global.CardName[CardStat] = 'Super Hit Medley, Paterie'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-ACT [VC/RC]: COST [Soul Blast 1], and this unit gets power +5000 until end of turn. If this unit is on RC, then COST [Counter Blast 1], and one of your vanguards gets power +5000 until end of turn.'
+ACT [VC/RC]: COST [Soul Blast 1], and this unit gets power +5000 until end of turn. If this unit is on RC, then, COST [Counter Blast 1], and one of your vanguards gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -5073,7 +5074,7 @@ CardStat = 6581
 global.CardName[CardStat] = 'Colorful Pastorale, Caro'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-Melody - CONT [VC/RC]: This unit gets "Boost" and "CONT [RC]: During the battle it boosted, this unit gets power +5000". This is shared by all of your units with Melody.
+Melody - CONT [VC/RC]: This unit gets "Boost" and "CONT [RC]: During the battle it boosted, this unit gets power +5000.". This is shared by all of your units with Melody.
 
 AUTO [VC]: When placed, COST [Soul Blast 2], search your deck for up to one "Colorful Pastorale, Caro", reveal it, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3

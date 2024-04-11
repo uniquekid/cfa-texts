@@ -380,7 +380,7 @@ CardStat = 867
 global.CardName[CardStat] = 'Sealed Demon Dragon, Dungaree'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-ACT [VC]: Limit Break 4: [Counter Blast 1 & Choose a card that were bound with this card’s effect, and put it on the bottom of your deck] Choose one of your opponent’s rear-guards in the front row, and retire it. This ability can only be used once per turn.
+ACT [VC]: Limit Break 4: [Counter Blast 1 & Choose a card that were bound with this card’s effect, and put it on the bottom of your deck] Choose one of your opponent’s rear-guards in the front row, and retire it. This ability cannot be used for the rest of that turn.
 
 CONT [VC/RC]: If you do not have any cards in your bind zone that were bound with this card’s effect, this unit gets power -2000.
 
@@ -437,7 +437,7 @@ global.CardText[CardStat] = 'Narukami/Human
 
 AUTO [VC]: At the beginning of your Main Phase, Soul Charge 1, and this unit gets power +2000 until end of turn.
 
-ACT [VC]: [Soul Blast 8 & Counter Blast 5] This unit gets "AUTO [VC]: When your «Narukami» attacks, put the top card of your deck into your drop zone. If a «Narukami» is put into your drop zone this way, the attacking unit gets power +3000 / critical +1 until end of that battle" until end of turn.'
+ACT [VC]: [Soul Blast 8 & Counter Blast 5] This unit gets "AUTO [VC]: When your «Narukami» attacks, put the top card of your deck into your drop zone. If a «Narukami» is put into your drop zone this way, the attacking unit gets power +3000 / critical +1 until end of that battle." until end of turn.'
 }
 
 
@@ -446,7 +446,7 @@ CardStat = 873
 global.CardName[CardStat] = 'Rumble Gun Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [VC]: When this unit’s drive check reveals a grade 3 «Narukami», choose an opponent’s grade 1 or less rear-guard, and retire it.'
+AUTO [VC]: When this unit’s drive check reveals a grade 3 «Narukami», choose one of opponent’s grade 1 or less rear-guard, and retire it.'
 }
 
 
@@ -498,7 +498,7 @@ CardStat = 1031
 global.CardName[CardStat] = 'Exorcist Mage, Lin Lin'
 global.CardText[CardStat] = 'Narukami/Human/Stand Trigger
 
-AUTO: When this unit is placed to the rear-guard or VC, choose one of your «Narukami» vanguards or rear-guards with a CONT skill, and that unit loses that skill until end of turn.'
+AUTO: When this unit is placed on VC or RC, choose a CONT of one of your «Narukami» vanguards or rear-guards, and that ability is lost until end of turn.'
 }
 global.TriggerUnit[CardStat] = 3
 
@@ -508,7 +508,7 @@ CardStat = 1032
 global.CardName[CardStat] = 'Exorcist Mage, Roh Roh'
 global.CardText[CardStat] = 'Narukami/Human
 
-AUTO: When this unit is placed on the rear-guard or VC, choose one of your «Narukami» vanguards or rear-guards with a CONT skill, and that unit loses that skill until end of turn.'
+AUTO: When this unit is placed on VC or RC, choose a CONT of one of your «Narukami» vanguards or rear-guards, and that ability is lost until end of turn.'
 }
 
 
@@ -861,7 +861,7 @@ CardStat = 1094
 global.CardName[CardStat] = 'Eradicator, Dragonic Descendant'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose three cards with "Eradicator" in their card name from your hand, and discard them] At the beginning of the close step of the battle that this unit’s attack did not hit, you may pay the cost. If you do, stand this unit, and gets critical +1 until end of turn. This ability can only be used once per turn.
+AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose three cards with "Eradicator" in their card name from your hand, and discard them] At the end of the battle that this unit’s attacked, if the attack did not hit during that battle, you may pay the cost. If you do, stand this unit, and gets critical +1 until end of turn. This ability cannot be used for the rest of that turn.
 
 ACT [VC]: [Counter Blast 2-card with "Eradicator" in its card names] This unit gets power +5000 until end of turn.
 
@@ -909,7 +909,7 @@ CardStat = 1169
 global.CardName[CardStat] = 'Double Gun Eradicator, Hakusho'
 global.CardText[CardStat] = 'Narukami/Human
 
-AUTO [RC]: When an opponent’s rear-guard is put into the drop zone with one of your card’s effects, if you have a vanguard with "Eradicator" in its card name, this unit gets power +3000 until end of turn.'
+AUTO [RC]: When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Eradicator" in its card name, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -1035,7 +1035,7 @@ CardStat = 1311
 global.CardName[CardStat] = 'Eradicator, Sweep Command Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [VC]: Limit Break 4: [Counter Blast 2 & Soul Blast 2] When an opponent’s rear-guard is put in the drop zone by any of your card’s effect, you may pay the cost. If you do, draw a card, choose one of your opponent’s rear-guards in the front row, retire it, and this unit gets power +5000 until end of turn.
+AUTO [VC]: Limit Break 4: [Counter Blast 2 & Soul Blast 2] When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, you may pay the cost. If you do, draw a card, choose one of your opponent’s rear-guards in the front row, and retire it, and this unit gets power +5000 until end of turn.
 
 AUTO: [Choose one of your rear-guards with "Eradicator" in its card name, and put it into your soul] When this unit is placed on VC, you may pay the cost. If you do, choose one of your opponent’s rear-guard in the front row, and retire it.
 
@@ -1085,7 +1085,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 AUTO: Forerunner.
 
-AUTO [RC]: [Put this unit into your soul] When an opponent’s rear-guard is put into the drop zone by your effects from cards, if you have a grade 3 or greater vanguard with "Eradicator" in its card name, you may pay the cost. If you do, look at up to ten cards from the top of your deck, search for up to one card named "Eradicator, Sweep Command Dragon" from among them, ride it, and shuffle your deck.'
+AUTO [RC]: [Put this unit into your soul] When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, if you have a grade 3 or greater vanguard with "Eradicator" in its card name, you may pay the cost. If you do, look at up to ten cards from the top of your deck, search for up to one card named "Eradicator, Sweep Command Dragon" from among them, ride it, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -1120,11 +1120,11 @@ CardStat = 1355
 global.CardName[CardStat] = 'Eradicator, Electric Shaper Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO: Limit Break 4 (This ability is active if you have four or more damage): When a «Narukami» rides this unit, choose one of your vanguards, that unit gets power +10000, and gets "AUTO [VC]: When an opponent’s rear-guard is put in the drop zone by any of your card’s effect, choose one of your opponent’s rear-guards in the back row of the same column as the retired unit, and retire it" until end of turn.
+AUTO: Limit Break 4 (This ability is active if you have four or more damage): When a «Narukami» rides this unit, choose one of your vanguards, that unit gets power +10000, and gets "AUTO [VC]: When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, choose one of your opponent’s rear-guards in the back row of the same column as the retired unit, and retire it." until end of turn.
 
 AUTO [VC]: When this unit attacks, if the number of cards in your opponent’s damage zone is three or more, this unit gets power +2000 until end of that battle.
 
-CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
+CONT [VC/RC]: Lord.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -1198,7 +1198,7 @@ global.CardText[CardStat] = 'Narukami/Zombie
 
 AUTO: Forerunner (When another unit of the same clan rides this unit, you may call it to RC.)
 
-CONT [RC]: If you have a «Narukami» vanguard, all your other units with "Dungaree" in its card name get "AUTO: When this unit is placed on VC or RC, bind one card face up from the top of your deck.".'
+CONT [RC]: If you have a «Narukami» vanguard, all of your other units with "Dungaree" in its card name get "AUTO: When this unit is placed on VC or RC, bind one card face up from the top of your deck.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -1235,7 +1235,7 @@ CardStat = 1492
 global.CardName[CardStat] = 'Homing Eradicator, Rochishin'
 global.CardText[CardStat] = 'Narukami/Dragonman
 
-AUTO [RC]: When an opponent’s rear-guard is put into the drop zone with one of your card’s effects, if you have a vanguard with "Eradicator" in its card name, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Eradicator" in its card name, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -1259,7 +1259,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an opponent’s rear-guard is put into the drop zone by any of your card’s effect with "Eradicator" in its card name, you may pay the cost. If you do, choose your vanguard with "Vowing" in its card name, and that unit gets power +3000 / critical +1 until end of turn.'
+AUTO [RC]: [Put this unit into your soul] When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards with "Eradicator" in its card name, you may pay the cost. If you do, choose your vanguard with "Vowing" in its card name, and that unit gets power +3000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -1395,7 +1395,7 @@ global.CardText[CardStat] = 'Narukami/Demon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC]: [Put this unit into your soul] Choose your vanguard with "Eradicator" in its card name, and that unit gets "AUTO [VC]: When an opponent’s rear-guard is put into the drop zone by your effects from cards, this unit gets power +3000 until end of turn" until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose your vanguard with "Eradicator" in its card name, and until end of turn, that unit gets "AUTO [VC]: When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, this unit gets power +3000 until end of turn.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -1552,7 +1552,7 @@ CardStat = 1988
 global.CardName[CardStat] = 'Tonfa Brawler, Arc'
 global.CardText[CardStat] = 'Narukami/Sylph
 
-AUTO [RC]: During your turn, when an opponent’s rear-guard is placed in the drop zone, if your vanguard is Legion, this unit gets power +3000 during this turn.'
+AUTO [RC]: During your turn, when your opponent’s rear-guard is put into the drop zone, and your vanguard is Legion, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -1563,9 +1563,9 @@ CardStat = 1989
 global.CardName[CardStat] = 'Eradicator, Twin Thunder Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose three cards with "Eradicator" in its card name from your hand, and discard them] Retire all of each fighter’s rear-guards, and if you retired three or more units with this effect, this unit gets critical +2 until end of turn.
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose three cards with "Eradicator" in its card name from your hand, and discard them] Retire all rear-guards of all fighters, if the number of cards retired by this effect is three or more, this unit gets critical +2 until end of turn.
 
-AUTO [VC]: During your main phase, when an opponent’s rear-guard is put into the drop zone, this unit gets power +3000 until end of turn.'
+AUTO [VC]: During your main phase, when your opponent’s rear-guard is put into the drop zone, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -2382,7 +2382,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Choose a face down card named "Conquering Supreme Dragon, Dragonic Vanquisher "VOLTAGE"" from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, your opponent chooses one of his or her rear-guards, retires it, you choose up to two cards from your opponent’s drop zone, and bind them face up" and "CONT [VC] Generation Break 3: During your turn, all of the units in your front row get power +3000 for each card in your opponent’s bind zone.".'
+ACT [VC] 1/Turn: [Choose a face down card named "Conquering Supreme Dragon, Dragonic Vanquisher "VOLTAGE"" from your G zone, and turn it face up] Until end of turn, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, your opponent chooses one of his or her rear-guards, retires it, you choose up to two cards from your opponent’s drop zone, and bind them face up." and "CONT [VC] Generation Break 3: During your turn, all of the units in your front row get power +3000 for each card in your opponent’s bind zone.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 19
 global.ExtraDeck[CardStat] = 1
@@ -2419,7 +2419,7 @@ CardStat = 3298
 global.CardName[CardStat] = 'Detonix Stinger Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO: Limit Break 4: When a «Narukami» rides this unit, choose up to one of your vanguards, until end of turn, that unit gets power +10000, "AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, if your opponent has no rear-guards in the front row, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC" and "CONT [VC]: If your opponent has no rear-guards in the back row, this unit gets critical +1".
+AUTO: Limit Break 4: When a «Narukami» rides this unit, choose up to one of your vanguards, until end of turn, that unit gets power +10000, "AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, if your opponent has no rear-guards in the front row, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC." and "CONT [VC]: If your opponent has no rear-guards in the back row, this unit gets critical +1.".
 
 AUTO: [Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, each player chooses one of his or her rear-guards, and retires it.'
 global.UnitGrade[CardStat] = 3
@@ -2600,7 +2600,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose a face down card named "Conquering Supreme Dragon, Dragonic Kaiser Warning" from your G zone, and turn it face up] If you have a heart card with "Kaiser" in its card name, until end of turn, this unit gets "CONT [VC]: This unit battles all of your opponent’s units in the front row in one attack" and "AUTO [VC]: When this unit’s attack hits, choose up to two of your other units, and they get power +5000 until end of turn.".'
+ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose a face down card named "Conquering Supreme Dragon, Dragonic Kaiser Warning" from your G zone, and turn it face up] If you have a heart card with "Kaiser" in its card name, until end of turn, this unit gets "CONT [VC]: This unit battles all of your opponent’s units in the front row in one attack." and "AUTO [VC]: When this unit’s attack hits, choose up to two of your other units, and they get power +5000 until end of turn.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 19
 global.ExtraDeck[CardStat] = 1
@@ -2726,7 +2726,8 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 19
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 9000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 4277
@@ -3169,7 +3170,7 @@ CardStat = 5066
 global.CardName[CardStat] = 'Eradicator, Dragonic Descendant "Sigma"'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [VC]: [Counter Blast 1-card with "Eradicator" in its card name] When your G unit with "Eradicator" in its original card name Stride, you may pay the cost. If you do, choose one of your vanguards, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit stand, it gets drive +1".
+AUTO [VC]: [Counter Blast 1-card with "Eradicator" in its card name] When your G unit with "Eradicator" in its original card name Stride, you may pay the cost. If you do, choose one of your vanguards, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit stand, it gets drive +1.".
 
 AUTO [RC] 1/Turn Generation Break 1: [Counter Blast 1 & Choose a card from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, if the attack did not hit, you may pay the cost. If you do, stand this unit.'
 global.UnitGrade[CardStat] = 3
@@ -3204,7 +3205,8 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 19
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 9000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 5078

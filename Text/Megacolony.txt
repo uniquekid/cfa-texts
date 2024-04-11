@@ -154,7 +154,7 @@ CardStat = 56
 global.CardName[CardStat] = 'Pest Professor, Mad Fly'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [RC]: [Choose a card from your hand and discard it] When an attack hits during the battle that this unit boosted, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Choose a card from your hand, and discard it] When an attack hits during the battle that this unit boosted, you may pay the cost. If you do, draw a card.'
 }
 
 
@@ -190,7 +190,7 @@ CardStat = 60
 global.CardName[CardStat] = 'Toxic Soldier'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [VC/RC]: When this unit attacks, all your opponent’s units cannot intercept during this battle.'
+AUTO [VC/RC]: When this unit attacks, all of your opponent’s units cannot intercept until end of that battle.'
 }
 
 
@@ -264,7 +264,7 @@ CardStat = 68
 global.CardName[CardStat] = 'Toxic Trooper'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [VC/RC]: When this unit attacks, all your opponent’s units cannot intercept during this battle.'
+AUTO [VC/RC]: When this unit attacks, all of your opponent’s units cannot intercept until end of that battle.'
 }
 
 
@@ -1475,7 +1475,8 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 2
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 7000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 5343
@@ -1740,9 +1741,9 @@ CardStat = 5837
 global.CardName[CardStat] = 'Nasty Smog'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-CONT [RC]: All your opponent’s units in the same column as this unit cannot intercept.
+CONT [RC]: All of your opponent’s units in the same column as this unit cannot intercept.
 
-CONT [RC]: All your opponent’s units in the back row in the same column as this unit cannot stand during the stand phase.'
+CONT [RC]: All of your opponent’s units in the back row of the same column as this unit cannot stand during his or her the stand phase.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
@@ -1768,7 +1769,7 @@ CardStat = 5839
 global.CardName[CardStat] = 'Burner Ant'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [RC]: COST [Rest this unit], choose one of your opponent’s rear-guards in the same column as this unit, and move it to an opponent’s open RC.
+ACT [RC]: COST [Rest this unit], choose one of your opponent’s rear-guards in the same column as this unit, and move it to your opponent’s open RC.
 
 ACT [RC]: COST [Discard a card from your hand], stand this unit, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -2150,7 +2151,7 @@ CardStat = 7009
 global.CardName[CardStat] = 'Seven Colors Mutant, Stagger Seven'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [RC]: When it attacks a vanguard, if all of the units are rest, COST [Counter Blast 1], and until end of that battle, this unit gets power +20000, then COST [Soul Blast 2 grade 3], your opponent chooses a card from his or her hand, discards it, and he or she can only call cards with the discarded grade from hand.'
+AUTO [RC]: When it attacks a vanguard, if all fighters’ units are rest, COST [Counter Blast 1], until end of that battle, this unit gets power +20000, then, COST [Soul Blast 2 grade 3], your opponent chooses a card from his or her hand, discards it, and he or she can only call the same grade from his or her hand as the discarded card’s grade.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -2670,7 +2671,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 AUTO: When this unit is placed on VC, COST [discard a normal unit from your hand], search your deck for up to one card with "Giraffa" in its card name and same grade as the card discarded for this cost, reveal it and put it into your hand, and shuffle your deck.
 
-AUTO: This cost is reduced by Soul Blast 1 for each of your opponent’s rear-guards at rest in the same column as this unit. When this unit is placed on RC, COST [Soul Blast 2], and draw a card.'
+AUTO: This cost is reduced by Soul Blast 1 for each of your opponent’s rest rear-guards in the same column as this unit. When this unit is placed on RC, COST [Soul Blast 2], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }

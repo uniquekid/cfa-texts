@@ -957,7 +957,7 @@ global.CardText[CardStat] = 'Genesis/Human
 
 ACT [VC]: Legion 20000 "Black Snake Witch, Chicory" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of turn, this unit gets power +10000, and "CONT [VC]: All of your rear-guards with "Witch" in its card name in the front row get power +5000".
+AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of turn, this unit gets power +10000, and "CONT [VC]: All of your rear-guards with "Witch" in its card name in the front row get power +5000.".
 
 ACT [VC]: [Counter Blast 1] If you have another unit with "Witch" in its card name in the center column, Soul Charge 3. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 3
@@ -1092,7 +1092,7 @@ global.CardText[CardStat] = 'Genesis/Angel
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Soul Blast 3] Choose up to two of your rear-guards and those units get power +5000 until end of turn. Then, if the number of cards in your soul is 2 or less, Soul Charge 3.'
+ACT [VC] 1/Turn: [Soul Blast 3] Choose up to two of your rear-guards, they get power +5000 until end of turn, and if the number of cards in your soul is two or less, Soul Charge 3.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
@@ -1273,7 +1273,7 @@ CardStat = 3147
 global.CardName[CardStat] = 'Unappeasable Biter, Gleipnir'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, Soul Charge 3. Then, if a card was put into the drop zone from your soul during that turn, draw a card.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, Soul Charge 3. Then, if your card was put into the drop zone from your soul during this turn, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -1388,7 +1388,7 @@ global.CardText[CardStat] = 'Genesis/Human
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if you have a heart card with "Witch" in its card name, you may pay the cost. If you do, until end of turn, this unit gets "CONT [VC]: During your turn, all of your units with "Witch" in its card name get power +5000". Then, if you have two or more heart cards, this unit gets critical +1 until end of turn.'
+AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if you have a heart card with "Witch" in its card name, you may pay the cost. If you do, until end of turn, this unit gets "CONT [VC]: During your turn, all of your units with "Witch" in its card name get power +5000.". Then, if you have two or more heart cards, this unit gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
@@ -1498,7 +1498,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO: Revelation - RC.
 
-AUTO Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Fenrir" in its card name, COST [Counter Blast 1], until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks, COST [Soul Blast 3], and draw a card" and power +4000.'
+AUTO Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Fenrir" in its card name, COST [Counter Blast 1], until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks, COST [Soul Blast 3], and draw a card." and power +4000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -1754,7 +1754,7 @@ global.CardText[CardStat] = 'Genesis/Human
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, choose up to two of your units with "Witch" in its card name, until end of turn, they get power +5000, and "AUTO [RC]: When this unit attacks, Soul Charge 1", and if the number of heart cards you have is two, this unit gets power +10000 / critical +1.'
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, choose up to two of your units with "Witch" in its card name, until end of turn, they get power +5000, and "AUTO [RC]: When this unit attacks, Soul Charge 1.", and if the number of heart cards you have is two, this unit gets power +10000 / critical +1.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
@@ -1950,7 +1950,8 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 11000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 4895
@@ -2224,9 +2225,9 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 Stride.
 
-ACT [VC] 1/Turn: [Soul Blast 3 "Regalia" & Choose a face down card with the same card name as this unit from your G zone, turn it face up] This unit gets power +10000 / drive +1 until end of turn.
+ACT [VC] 1/Turn: [Soul Blast 3-cards with "Regalia" in their card name & Choose a face down card with the same card name as this unit from your G zone, turn it face up] This unit gets power +10000 / drive +1 until end of turn.
 
-AUTO [VC] 1/Turn Generation Break 3: [Soul Blast 6 "Regalia" & Choose a card from your hand, and discard it] When this unit attacks, you may pay the cost. If you do, at the end of that battle, stand all your units with "Regalia" in its card name, and this unit gets drive -3 until end of turn.'
+AUTO [VC] 1/Turn Generation Break 3: [Soul Blast 6-cards with "Regalia" in their card name & Choose a card from your hand, and discard it] When this unit attacks, you may pay the cost. If you do, at the end of that battle, stand all of your units with "Regalia" in their card name, and this unit gets drive -3 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1

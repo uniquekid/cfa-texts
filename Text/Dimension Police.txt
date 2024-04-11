@@ -156,7 +156,7 @@ CardStat = 243
 global.CardName[CardStat] = 'Glory Maker'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC]: When this unit boosts a «Dimension Police» vanguard, if you have four or more cards in your damage zone, the boosted unit gets power +4000 during this battle.'
+AUTO [RC]: When this unit boosts a «Dimension Police» vanguard, if the number of cards in your damage zone is four or more, the boosted unit gets power +4000 until end of this battle.'
 }
 
 
@@ -190,7 +190,7 @@ CardStat = 247
 global.CardName[CardStat] = 'Speedster'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO: When this unit is placed on RC, choose another of your «Dimension Police» and that unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC, choose another of your «Dimension Police», and that unit gets power +2000 until end of turn.'
 }
 
 
@@ -208,7 +208,7 @@ CardStat = 249
 global.CardName[CardStat] = 'Cosmic Rider'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO: When this unit is placed on RC, choose another of your «Dimension Police» and that unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC, choose another of your «Dimension Police», and that unit gets power +2000 until end of turn.'
 }
 
 
@@ -226,9 +226,9 @@ CardStat = 251
 global.CardName[CardStat] = 'Enigroid Comrade'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-CONT [VC/RC]: If you do not have "Enigman Storm" or "Enigman Wave" on your VC, this unit gets power -5000.
+CONT [VC/RC]: If you do not have a unit named "Enigman Storm" or a unit named "Enigman Wave" on your VC, this unit gets power -5000.
 
-AUTO [VC/RC]: When this unit attacks, this unit gets power +2000 during that battle.'
+AUTO [VC/RC]: When this unit attacks, this unit gets power +2000 until end of that battle.'
 }
 
 
@@ -239,7 +239,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 CONT [VC]: If you have a card named "Enigman Ripple" in your soul, this unit gets power +1000.
 
-AUTO [VC]: At the beginning of your attack step, if this unit’s power is 14000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card" until end of that battle.'
+AUTO [VC]: At the beginning of your attack step, if this unit’s power is 14000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card." until end of that battle.'
 }
 
 
@@ -291,7 +291,7 @@ CardStat = 258
 global.CardName[CardStat] = 'Enigman Rain'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC]: At the beginning of your attack step, if this unit’s power is 12000 or greater, until end of that battle, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your rear-guards and stand it.".'
+AUTO [VC]: At the beginning of your attack step, if this unit’s power is 12000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your rear-guards, and stand it." until end of that battle.'
 }
 
 
@@ -300,7 +300,7 @@ CardStat = 259
 global.CardName[CardStat] = 'Enigman Shine'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose one of your «Dimension Police» and during that turn, it gets power +3000.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose one of your «Dimension Police», and that unit gets power +3000 until end of turn.'
 }
 
 
@@ -426,7 +426,7 @@ CardStat = 979
 global.CardName[CardStat] = 'Psychic Grey'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC]: When this unit boosts a «Dimension Police» vanguard, if the power of the defending unit is 8000 or less, the boosted unit power +4000 during this battle.'
+AUTO [RC]: When this unit boosts a «Dimension Police» vanguard, if the power of the battle opponent of the boosted is 8000 or less, the boosted unit gets power +4000 until end of that battle.'
 }
 
 
@@ -482,7 +482,7 @@ CardStat = 985
 global.CardName[CardStat] = 'Galactic Beast, Zeal'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Choose one of your opponent’s vanguards, and that unit gets power -1000 for each of your «Dimension Police» rear-guards until end of turn. This ability can only be used once per turn.
+ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Choose one of your opponent’s vanguards, and that unit gets power -1000 for each of your «Dimension Police» rear-guards until end of turn. This ability cannot be used for the rest of that turn.
 
 CONT [VC]: If you have a card named "Devourer of Planets, Zeal" in your soul, this unit gets power +1000.'
 }
@@ -504,7 +504,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, and this unit gets power +2000 until end of turn.
 
-ACT [VC]: [Counter Blast 5 & Soul Blast 8] Choose an opponent’s vanguard, that unit gets power -5000 until end of turn, and retire all opponent’s rear-guards with power 5000 or less.'
+ACT [VC]: [Counter Blast 5 & Soul Blast 8] Choose one of your opponent’s vanguard, and that unit gets power -5000 until end of turn, and retire all of your opponent’s rear-guards with power 5000 or less.'
 }
 
 
@@ -513,7 +513,7 @@ CardStat = 1264
 global.CardName[CardStat] = 'Dimensional Robo, Daibrave'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [Soul]: [Put this card into your drop zone] Choose up to one of your «Dimension Police» vanguards, and that unit gets "AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, draw a card" until end of turn.'
+ACT [Soul]: [Put this card into your drop zone] Choose up to one of your «Dimension Police» vanguards, and that unit gets "AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, draw a card." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -524,7 +524,7 @@ CardStat = 1551
 global.CardName[CardStat] = 'Dimensional Robo, Daiheart'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [VC]: At the beginning of your attack step, if this unit’s power is 13000 or greater, this unit gets "AUTO [VC]: [Choose two grade 3 cards with "Dimensional Robo" in its card name from your hand, and put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do so, search your deck for up to one grade 3 card with "Dimensional Robo" in its card name, ride it as rest, and shuffle your deck" until end of that battle.'
+AUTO [VC]: At the beginning of your attack step, if this unit’s power is 13000 or greater, this unit gets "AUTO [VC]: [Choose two grade 3 cards with "Dimensional Robo" in its card name from your hand, and put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do so, search your deck for up to one grade 3 card with "Dimensional Robo" in its card name, ride it as rest, and shuffle your deck." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -712,7 +712,7 @@ CardStat = 1581
 global.CardName[CardStat] = 'Fusion Monster, Bugreed'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC/RC]: When this unit attacks a vanguard, if you have a «Dimension Police» vanguard, and if the battle opponent’s power is 8000 or less, this unit gets "AUTO [VC/RC]: When this unit’s attack hits, draw a card" until end of that battle.'
+AUTO [VC/RC]: When this unit attacks a vanguard, if you have a «Dimension Police» vanguard, and if the battle opponent’s power is 8000 or less, this unit gets "AUTO [VC/RC]: When this unit’s attack hits, draw a card." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -771,7 +771,7 @@ CardStat = 1660
 global.CardName[CardStat] = 'Dimensional Robo, Daibarrett'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Choose your vanguard with "Dimensional Robo" in its card name, and that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it" until end of turn.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Choose your vanguard with "Dimensional Robo" in its card name, and that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -864,7 +864,7 @@ ACT [VC]: Legion 20000 "Metalborg, Ur Buster" (If your opponent’s vanguard is gr
 
 AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and this unit’s power is 30000 or greater, until end of that battle, your opponent cannot call grade 1 or greater units to GC from his or her hand.
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 20000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits, draw a card" until end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 20000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits, draw a card." until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -875,7 +875,7 @@ CardStat = 2092
 global.CardName[CardStat] = 'Metalborg, Ur Buster'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [RC]: When your vanguard Legion, choose one of your vanguards, and until end of turn, that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose an opponent’s rear-guard, and retire it.".'
+AUTO [RC]: When your vanguard Legion, choose one of your vanguards, and until end of turn, that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guard, and retire it.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -1658,7 +1658,7 @@ CardStat = 3788
 global.CardName[CardStat] = 'Cosmic Hero, Grandvolver'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-Burst - ACT [RC] 1/Turn: [Counter Blast 1] If your vanguards power is 15000 or greater, choose up to one of your other rear-guards, that unit and this unit get power +4000 until end of turn. If your vanguards power is 30000 or greater, until end of turn, this unit gets "AUTO [RC]: When this unit’s attack hits a vanguard, Counter Charge 2".
+Burst - ACT [RC] 1/Turn: [Counter Blast 1] If your vanguards power is 15000 or greater, choose up to one of your other rear-guards, that unit and this unit get power +4000 until end of turn. If your vanguards power is 30000 or greater, until end of turn, this unit gets "AUTO [RC]: When this unit’s attack hits a vanguard, Counter Charge 2.".
 
 CONT [VC/RC/GC]: Resist (This unit cannot be chosen by the effects of your opponent’s cards.)'
 global.UnitGrade[CardStat] = 2
@@ -2024,7 +2024,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 Stride.
 
-Burst - ACT [VC]: [Choose four of your rear-guards, and rest them] If this unit’s power is 20000 or greater, until end of turn, this unit gets "AUTO [VC] 1/Turn: When this unit’s attack hits a vanguard, stand this unit" and then, if this unit’s power is 25000 or greater, this unit gets "AUTO [VC] 1/Turn: At the end of the battle that this unit attacked, if the attack did not hit, choose up to four of your rear-guards, and stand them.".'
+Burst - ACT [VC]: [Choose four of your rear-guards, and rest them] If this unit’s power is 20000 or greater, until end of turn, this unit gets "AUTO [VC] 1/Turn: When this unit’s attack hits a vanguard, stand this unit." and then, if this unit’s power is 25000 or greater, this unit gets "AUTO [VC] 1/Turn: At the end of the battle that this unit attacked, if the attack did not hit, choose up to four of your rear-guards, and stand them.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -2211,7 +2211,8 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 4526

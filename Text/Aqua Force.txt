@@ -72,7 +72,7 @@ CardStat = 87
 global.CardName[CardStat] = 'Battle Siren, Cynthia'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC]: [Choose a card from your hand and discard it] When an attack hits during a battle that this unit has boosted, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Choose a card from your hand, and discard it] When an attack hits during a battle that this unit has boosted, you may pay the cost. If you do, draw a card.'
 }
 
 
@@ -101,7 +101,12 @@ CardStat = 90
 global.CardName[CardStat] = 'Splash Assault'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC/RC]: When this unit attacks, if you have an «Aqua Force» vanguard, if the number of battles during this turn is three or more, this unit gets power +3000 until the end of this battle.'
+AUTO [VC/RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and if it is the third battle of that turn or more, this unit gets power +3000 until the end of this battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -141,7 +146,12 @@ CardStat = 94
 global.CardName[CardStat] = 'Marine General of the Restless Tides, Algos'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard and the number of battles during this turn is four or more, draw a card.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard, and if it is the fourth battle of that turn or more, draw a card.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -176,9 +186,14 @@ CardStat = 98
 global.CardName[CardStat] = 'Blue Storm Dragon, Maelstrom'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, if the number of battles during this turn is four or more, this unit gets power +5000 and "AUTO [VC]: [Counter Blast 1] When this unit’s attack hits, you may pay the cost. If you do, draw a card, choose an opponent’s rear-guard, and retire it", until the end of that battle.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, if it is the fourth battle of that turn or more, until end of that battle, this unit gets power +5000 and "AUTO [VC]: [Counter Blast 1] When this unit’s attack hits, you may pay the cost. If you do, draw a card, choose one of your opponent’s rear-guard, and retire it.".
 
-CONT [VC/RC]: If you have a non-«Aqua Force» vanguard or rear-guard, this unit gets power -2000.'
+CONT [VC/RC]: If you have a non-«Aqua Force» vanguard or rear-guard, this unit gets power -2000.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -187,9 +202,14 @@ CardStat = 99
 global.CardName[CardStat] = 'Marine General of the Full Tides, Xenophon'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC]: When this unit attacks, if the number of battles during this turn is three or more, this unit gets power +3000 until the end of that battle.
+AUTO [VC]: When this unit attacks, if it is the third battle of that turn or more, this unit gets power +3000 until the end of that battle.
 
-AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, if the number of battles during this turn is three or more, this unit gets power +1000 until the end of that battle.'
+AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and if it is the third battle of that turn or more, this unit gets power +1000 until the end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -198,9 +218,14 @@ CardStat = 100
 global.CardName[CardStat] = 'Hydro Hurricane Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Until end of turn, this unit gets power +3000 and gets "AUTO [VC]: When this unit’s attack hits a vanguard, if the number of battles during this turn is four or more, retire all of your opponent’s rear-guards.".
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Until end of turn, this unit gets power +3000 and "AUTO [VC]: When this unit’s attack hits a vanguard, if it is the fourth battle of that turn or more, retire all of your opponent’s rear-guards.".
 
-AUTO [VC]: When this unit attacks a vanguard, it gets power +3000 until the end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, it gets power +3000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -209,9 +234,14 @@ CardStat = 101
 global.CardName[CardStat] = 'Navalgazer Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Until end of turn, this unit gets power +3000 and gets "AUTO [VC]: When this unit’s attack hits a vanguard, if the number of battles during this turn is three or more, choose up to two «Aqua Force» rear-guards, and stand them.".
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Until end of turn, this unit gets power +3000 and "AUTO [VC]: When this unit’s attack hits a vanguard, if it is the third battle of that turn or more, choose up to two «Aqua Force» rear-guards, and stand them.".
 
-AUTO [VC]: When this unit attack, if the number if battles during this turn is three or more, it gets power +3000 until the end of that battle.'
+AUTO [VC]: When this unit attack, if it is the third battle of that turn or more, this unit gets power +3000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -241,7 +271,7 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
 
-ACT [RC]: [Put this unit into your soul] Choose one of your «Aqua Force», and that unit gets power +1000 and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard, if the number of battles during that turn is four or more, draw a card." until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose up to one of your «Aqua Force», and until end of turn, that unit gets power +1000 and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard, if it is the fourth battle of that turn or more, draw a card.".'
 }
 
 
@@ -276,7 +306,7 @@ CardStat = 939
 global.CardName[CardStat] = 'Storm Rider, Eugen'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: When this unit attacks a vanguard, if you have an «Aqua Force» vanguard, and if it is the first battle during that turn, this unit gets power +2000 until end of that battle. At the beginning of the close step of that battle, choose one of your «Aqua Force» rear-guards in the same column as this unit, and exchange its position with this unit. (The orientation of the cards will not change.)'
+AUTO [RC]: When this unit attacks a vanguard, if you have an «Aqua Force» vanguard, and if it is the first battle of that turn, this unit gets power +2000 until end of that battle. At the beginning of the close step of that battle, choose one of your «Aqua Force» rear-guards in the same column as this unit, and exchange its position with this unit. (The orientation of the cards will not change.)'
 }
 global.CanAttackFromBackRow[CardStat] = 1
 
@@ -295,7 +325,12 @@ CardStat = 941
 global.CardName[CardStat] = 'Torpedo Rush Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO [RC]: When this unit boosts an «Aqua Force», if you have an «Aqua Force» vanguard, if the number of battles during that turn is four or more, the boosted unit gets power +3000 until end of that battle.'
+AUTO [RC]: When this unit boosts an «Aqua Force», if you have an «Aqua Force» vanguard, if it is the fourth battle of that turn or more, the boosted unit gets power +3000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -304,7 +339,12 @@ CardStat = 942
 global.CardName[CardStat] = 'Tear Knight, Valeria'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard and the number of battles during this turn is four or more, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have an «Aqua Force» vanguard, and if it is the fourth battle of that turn or more, choose one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -349,7 +389,7 @@ CardStat = 947
 global.CardName[CardStat] = 'Water General of Wave-like Spirals, Benedict'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: At the beginning of the close step of the battle where this unit attacks a vanguard, if you have an «Aqua Force» vanguard, stand this unit, this unit gets power -5000 until end of turn, and this ability cannot be used until end of turn.'
+AUTO [RC]: At the end of the battle that this unit attacks a vanguard, if you have an «Aqua Force» vanguard, stand this unit, and this unit gets power -5000 until end of turn. This ability cannot be used for the rest of that turn.'
 }
 
 
@@ -368,7 +408,7 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted an «Aqua Force», you may pay the cost. If you do, choose one of your «Aqua Force» rear-guards and stand it.'
+AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted an «Aqua Force», you may pay the cost. If you do, choose one of your «Aqua Force» rear-guards, and stand it.'
 }
 
 
@@ -389,7 +429,12 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
 
-AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and the number of battles during that turn is three or more, this unit gets power +3000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and if it is the third battle of that turn or more, this unit gets power +3000 until end of that battle.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -416,7 +461,12 @@ CardStat = 1046
 global.CardName[CardStat] = 'Battle Siren, Theresa'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and if the number of battles during this turn is three or more, you may choose one of your vanguards, it gets power +3000 until end of turn.'
+AUTO [RC]: When this unit attacks, if you have an «Aqua Force» vanguard, and if it is the third battle of that turn or more, choose your vanguards, and that unit gets power +3000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -425,7 +475,7 @@ CardStat = 1047
 global.CardName[CardStat] = 'Storm Rider, Damon'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: [Counter Blast 1] At the end of the battle when this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose one of your other «Aqua Force» rear-guards on the same column as this unit, and exchange its position with this unit. (The orientation of these cards will not change.)'
+AUTO [RC]: [Counter Blast 1] At the end of the battle when this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose one of your other «Aqua Force» rear-guards on the same column as this unit, and exchange its position with this unit. (The state of the cards does not change.)'
 }
 global.CanAttackFromBackRow[CardStat] = 1
 
@@ -448,7 +498,7 @@ CardStat = 1049
 global.CardName[CardStat] = 'Storm Rider, Lysander'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: [Counter Blast 1] At the end of the battle when this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose one of your other «Aqua Force» rear-guards on the same column as this unit, and exchange its position with this unit. (The orientation of these cards will not change.)'
+AUTO [RC]: [Counter Blast 1] At the end of the battle when this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose one of your other «Aqua Force» rear-guards on the same column as this unit, and exchange its position with this unit. (The state of the cards does not change.)'
 }
 global.CanAttackFromBackRow[CardStat] = 1
 
@@ -458,9 +508,14 @@ CardStat = 1050
 global.CardName[CardStat] = 'Tri-stinger Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, if the number of battles during that turn is three or more, choose up to two cards from your damage zone, and turn them face up. (Counter Charge 2)
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, if it is the third battle of that turn or more, choose up to two cards from your damage zone, and turn them face up. (Counter Charge 2)
 
-ACT [VC]: [Counter Blast 2] Choose one of your «Aqua Force» rear-guards, and that unit gets power +3000 until end of turn.'
+ACT [VC]: [Counter Blast 2] Choose one of your «Aqua Force» rear-guards, and that unit gets power +3000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UseCounters[CardStat] = 1
 }
 
 
@@ -469,7 +524,7 @@ CardStat = 1215
 global.CardName[CardStat] = 'Storm Rider, Nicolas'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: [Counter Blast 1] At the beginning of the close step of the battle that this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose one of your «Aqua Force» rear-guards in the same column as this unit, and exchange its position with this unit. (The orientation of these cards will not change.)'
+AUTO [RC]: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if you have an «Aqua Force» vanguard, you may pay the cost. If you do, choose another of your «Aqua Force» rear-guards in the same column as this unit, and exchange its position with this unit. (The state of the cards does not change.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -481,7 +536,7 @@ CardStat = 1246
 global.CardName[CardStat] = 'Blue Flight Dragon, Trans-core Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO: Limit Break 4 (This ability is active if you have four or more damage): When an «Aqua Force» rides this unit, choose one of your vanguard, that unit gets power +10000 and gets "AUTO [VC]: When this unit attacks a vanguard, your opponent may choose one card from his or her hand, and discard it. If they do not, this unit gets critical +1, and your opponent cannot normal call units to GC until end of that battle" until end of turn.
+AUTO: Limit Break 4 (This ability is active if you have four or more damage): When an «Aqua Force» rides this unit, choose one of your vanguard, that unit gets power +10000 and gets "AUTO [VC]: When this unit attacks a vanguard, your opponent may choose one card from his or her hand, and discard it. If they do not, this unit gets critical +1, and your opponent cannot normal call units to GC until end of that battle." until end of turn.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.
 
@@ -544,7 +599,7 @@ CardStat = 1289
 global.CardName[CardStat] = 'Thundering Ripple, Genovious'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose a card named "Thundering Ripple, Genovious" from your hand, and discard it] At the close step of the battle that this unit attacked a vanguard, if the number of «Aqua Force» you have as rest in your front row is three, you may pay the cost. If you do, stand all your «Aqua Force» rear-guards.
+AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose a card named "Thundering Ripple, Genovious" from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, if the number of rest «Aqua Force» in your front row is three, you may pay the cost. If you do, stand all of your «Aqua Force» rear-guards.
 
 CONT [VC]: If you have a card named "Rising Ripple, Pavroth" in your soul, this unit gets power +1000.'
 global.UnitGrade[CardStat] = 3
@@ -715,7 +770,7 @@ CardStat = 1593
 global.CardName[CardStat] = 'Blue Wave Dragon, Tetra-drive Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): At the end of the battle that this unit attacked a vanguard, if it is the second battle of that turn, this unit gets "AUTO [VC]: [Counter Blast 2 & Choose two «Aqua Force» from your hand, and discard them] At the end of the battle that one of your rear-guards attacked a vanguard, if it is the fourth battle of that turn, you may pay the cost. If you do, stand this unit" until end of turn.
+AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): At the end of the battle that this unit attacked a vanguard, if it is the second battle of that turn, this unit gets "AUTO [VC]: [Counter Blast 2 & Choose two «Aqua Force» from your hand, and discard them] At the end of the battle that one of your rear-guards attacked a vanguard, if it is the fourth battle of that turn, you may pay the cost. If you do, stand this unit." until end of turn.
 
 ACT [VC]: [Counter Blast 1] This unit gets power +2000 until end of turn.
 
@@ -807,7 +862,7 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC]: [Put this unit into your soul] If you have an «Aqua Force» vanguard, choose one of your «Aqua Force», and that unit gets "AUTO [VC/RC]: When this unit attacks a vanguard, if it is the fourth battle of that turn or more, draw a card" until end of turn.'
+ACT [RC]: [Put this unit into your soul] If you have an «Aqua Force» vanguard, choose one of your «Aqua Force», and that unit gets "AUTO [VC/RC]: When this unit attacks a vanguard, if it is the fourth battle of that turn or more, draw a card." until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }
@@ -941,7 +996,7 @@ CardStat = 1839
 global.CardName[CardStat] = 'Blue Storm Marine General, Lysandros'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: [Counter Blast 1-card with "Blue Storm" in its card name] At the end of the battle that this unit attacked a vanguard, if you have a grade 3 or greater «Aqua Force» vanguard, and it is the first or second battle during that turn, you may pay the cost. If you do, stand this unit. This ability cannot be used for the rest of the turn.'
+AUTO [RC]: [Counter Blast 1-card with "Blue Storm" in its card name] At the end of the battle that this unit attacked a vanguard, if you have a grade 3 or greater «Aqua Force» vanguard, and it is the first or second battle of that turn, you may pay the cost. If you do, stand this unit. This ability cannot be used for the rest of the turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
 }
@@ -1147,7 +1202,7 @@ CardStat = 2013
 global.CardName[CardStat] = 'Blue Storm Marine General, Demitrius'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When an «Aqua Force» rides this unit, you may pay the cost. If you do, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if its the fourth battle or greater that turn, draw two cards, choose one of your opponent’s rear-guards, and retire it" until end of turn.
+AUTO: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When an «Aqua Force» rides this unit, you may pay the cost. If you do, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if its the fourth battle or greater that turn, draw two cards, choose one of your opponent’s rear-guards, and retire it." until end of turn.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1402,7 +1457,7 @@ CardStat = 2648
 global.CardName[CardStat] = 'Battle Siren, Stacia'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, this unit gets "CONT [RC]: This unit can attack from the back row" and "AUTO [RC]: When this unit attacks, if this unit is in your back row, this unit gets power +3000 until end of that battle.".'
+CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, this unit gets "CONT [RC]: This unit can attack from the back row." and "AUTO [RC]: When this unit attacks, if this unit is in your back row, this unit gets power +3000 until end of that battle.".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
@@ -1524,7 +1579,7 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 0 cards from hand to GC.
 
-AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, and it gets "AUTO [VC]: When your unit attacks a vanguard, if it is the fourth battle of this turn, choose three of your opponent’s rear-guards, your opponent chooses one card from among them, and retires it" until end of turn.
+AUTO [VC]: When your G unit Stride during your turn, choose one of your vanguards, and it gets "AUTO [VC]: When your unit attacks a vanguard, if it is the fourth battle of this turn, choose three of your opponent’s rear-guards, your opponent chooses one card from among them, and retires it." until end of turn.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
@@ -1579,7 +1634,7 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
 
-AUTO [VC]: [Choose a card name "Marine General of Heavenly Silk, Lambros" from your G zone, and turn it face up] When this unit attacks a vanguard, if it is the fourth battle of that turn or more, you may pay the cost. If you do, choose up to two of your rear-guards, and stand them. Then, if the number of face up cards in your G zone is two or more, the units stand with this effect get power +10000 until end of turn.
+AUTO [VC]: [Choose a face down card named "Marine General of Heavenly Silk, Lambros" from your G zone, and turn it face up] When this unit attacks a vanguard, if it is the fourth battle of that turn or more, you may pay the cost. If you do, choose up to two of your rear-guards, and stand them. Then, if the number of face up cards in your G zone is two or more, the units stand with this effect get power +10000 until end of turn.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
@@ -1866,7 +1921,7 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 ACT [VC]: Legion 21000 "Thundering Ripple, Genovious"
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion and if the number of rest units in your front row is three or more, choose one of your rear-guards and stand it, and Counter Charge 1. Then, if the number of rest units in your back row is three or more, draw a card.
+AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and you have three or more units that are rest in your front row, choose one of your rear-guards, and stand it, and Counter Charge 1. Then, if you have three or more units that are rest in your back row, draw a card.
 
 AUTO: [Counter Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at three cards from the top of your deck, search for up to one card with "Ripple" in its card name from among them, reveal it to your opponent, put it into your hand, and put the rest into your drop zone.'
 global.UnitGrade[CardStat] = 3
@@ -2372,7 +2427,7 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] Choose one of your vanguards with "Blue Wave" in its card name, until end of turn, it gets "AUTO [VC] Wave-2nd time or more (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, draw a card" and "AUTO [VC] Wave-5th time or more: When this unit attacks a vanguard, this unit gets critical +1 until end of that battle.".'
+ACT [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] Choose one of your vanguards with "Blue Wave" in its card name, until end of turn, it gets "AUTO [VC] Wave-2nd time or more (This ability is active during the specified battles of each turn): When this unit attacks a vanguard, draw a card." and "AUTO [VC] Wave-5th time or more: When this unit attacks a vanguard, this unit gets critical +1 until end of that battle.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }
@@ -2730,7 +2785,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
 }
-global.PowerStat[CardStat] = 7000
+global.PowerStat[CardStat] = 0
 
 
 CardStat = 4305
@@ -3077,7 +3132,7 @@ global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
 CONT [RC]: Resist.
 
-CONT [RC] Generation Break 1: If you have a vanguard with "Blue Wave" in its card name, this unit gets "CONT [RC]: This unit can attack from the back row" and "AUTO [RC]: When this unit attacks a vanguard from the back row, this unit gets power +3000 until end of that battle.".'
+CONT [RC] Generation Break 1: If you have a vanguard with "Blue Wave" in its card name, this unit gets "CONT [RC]: This unit can attack from the back row." and "AUTO [RC]: When this unit attacks a vanguard from the back row, this unit gets power +3000 until end of that battle.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 3
 }
