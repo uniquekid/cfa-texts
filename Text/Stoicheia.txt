@@ -3896,11 +3896,11 @@ CardStat = 10972
 global.CardName[CardStat] = 'Pining Flower Maiden, Claudine'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-ACT [VC] 1/Turn: COST [Retire three rear-guards], until end of turn, this unit gets "CONT [VC]: All of your token units get power +5000.", and drive +1.
+ACT [VC] 1/Turn: COST [Retire three rear-guards], until end of turn, this unit gets "CONT [VC]: All of your Plant tokens get power +5000.", and drive +1.
 
 ACT [VC] 1/Turn: COST [Bind an order card from drop], and call up to two Plant tokens to RC.
 
-AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose one of your Plant tokens, stand it, and that unit gets power +5000 until end of turn for every two different order cards in total in your drop and bind zone.
+AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose one of your Plant tokens, stand it, and that unit gets power +5000 until end of turn for every two order cards with different card names in total in your drop and bind zone.
 
 (SHIFT + left click to generate plant tokens)'
 global.UnitGrade[CardStat] = 3
@@ -6293,6 +6293,25 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 AUTO: When this unit is placed on RC, COST [Soul Blast 1], search your deck for up to one "Flowering Sweet Shop", put it into the order zone, and shuffle the deck.
 
 AUTO: When this unit is put on GC from RC by the ability of the "Flowering Sweet Shop" in your order zone, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12766
+{
+global.CardName[CardStat] = 'Megacolony Battler+ "Type.C"'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+(Currently this card can only be included at 4 copies)
+
+CONT: You may have up to 16 "Megacolony Battler+ "Type.C"" in a deck.
+
+AUTO: When this unit is placed on RC from hand, look at the top card of your deck, and put it on the bottom of the deck or discard it. Then, COST [Soul Blast 1], choose a card with the same card name as this unit from your drop, and call it to RC.
+
+CONT [RC]: During your turn, this unit gets power +5000 for every four card with "Megacolony Battler+ "Type.C"" in their card names in total on your RC or in your drop.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }

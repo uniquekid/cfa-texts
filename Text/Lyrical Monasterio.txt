@@ -4499,7 +4499,7 @@ CardStat = 10328
 global.CardName[CardStat] = 'Resting Her Back on Wisteria Trellis, Vepur'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-ACT [RC]: COST [Put this unit unto soul, and put a blitz order from hand into soul], choose one of your vanguards, and it gets power +5000 until end of turn.'
+ACT [RC]: COST [Put this unit into soul, and put a blitz order from hand into soul], choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -7398,7 +7398,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
  
 AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Krysrain" in its card name, choose one of your vanguards, and it gets power +10000 until end of turn.
 
-AUTO [RC]: When this unit attacks, if you have three or more units with different card names, this unit gets power +5000 until end of turn, and if you have four or more, at the end of that battle, choose one of your other rear-guards, and return it to hand.'
+AUTO [RC]: When this unit attacks, if you have three or more units with different card names, this unit gets power +5000 until end of turn, and if you have four or more, at the end of that battle, choose up to one of your other rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -7447,3 +7447,23 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12767
+{
+global.CardName[CardStat] = 'Flush Blush, Floseria'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+CONT [VC]: You cannot call unit cards with any CONT, ACT, or AUTO abilities. (You cannot call to GC as well)
+
+CONT [VC]: All units on your GC get shield +5000. If you played an order this turn, all of your front row units get power +5000.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1 & Energy Blast 2], look at the top seven cards of your deck, choose up to two unit cards from among them, call them to RC, then choose up to one order card from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, and stand it. If your drop has five or more order cards with different card names, choose up to two instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
