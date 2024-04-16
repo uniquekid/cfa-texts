@@ -6307,10 +6307,54 @@ global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
 AUTO: When this unit is retired by any card’s ability during your turn, COST [Energy Blast 3], and draw a card.
 
-AUTO [RC]: When this unit attacks, COST [Soul Blast 1], this unit gets power +10000 until end of that battle, and retire this unit at the end of that battle.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], this unit gets power +10000 until end of that battle, and retire this unit at the end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12772
+{
+global.CardName[CardStat] = 'Soaring Freedom, Ford&Rivaltis'
+global.CardText[CardStat] = 'Dragon Empire/Dark States/Dragoroid/Gear Dragon
+
+AUTO: When this unit is placed on RC from hand other than during the battle phase, Soul Charge 1, and this unit gets power +5000 until end of turn. Then, COST [Counter Blast 1], and perform one of the following.
+• Choose one of your opponent’s grade 2 or greater rear-guards, and retire it.
+• Choose a grade 2 or less card from your soul, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.DCards2[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12774
+{
+global.CardName[CardStat] = 'Whirlwind Dragon, Wardorn'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+AUTO: When this unit is placed on RC, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, this unit gets power +5000 until end of turn.
+
+AUTO [RC/Drop]: When your other card is discarded from hand during your turn, COST [Energy Blast 3 & remove this card], choose one of the discarded cards, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12777
+{
+global.CardName[CardStat] = 'Multiple Stroke Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+CONT [RC/GC]: If your opponent’s drop has five or more cards, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
