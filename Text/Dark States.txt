@@ -103,7 +103,7 @@ CardStat = 8289
 global.CardName[CardStat] = 'Direful Doll, Simone'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO [RC]: When this unit boosts, if your soul has five or more cards, COST [Counter Blast 1], and until end of that battle, when your opponent would call cards from their hand, they must call two or more at the same time.'
+AUTO [RC]: When this unit boosts, if your soul has five or more cards, COST [Counter Blast 1], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -5347,7 +5347,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12414
 {
-global.CardName[CardStat] = 'Ridicule Disruptor'
+global.CardName[CardStat] = 'Ridicule Disrupter'
 global.CardText[CardStat] = 'Dark States/Demon
 
 CONT: Sentinel.
@@ -5452,7 +5452,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12453
 {
-global.CardName[CardStat] = 'Joyful Songster'
+global.CardName[CardStat] = 'Joyful Songstar'
 global.CardText[CardStat] = 'Dark States/Warbeast/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
@@ -6116,6 +6116,22 @@ global.CardText[CardStat] = 'Dark States/Gear Colossus
 AUTO: When this unit is placed on RC, if your soul has ten or more cards, COST [Energy Blast 3], choose one of your opponent’s front row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12790
+{
+global.CardName[CardStat] = 'Dark Bond Abyss, Surga&Dargage'
+global.CardText[CardStat] = 'Dark States/Brandt Gate/Demon/Cyber Dragon
+
+AUTO: When this unit is placed on RC from hand other than during the battle phase, look at the same number of cards from the top of your deck as the number of set orders in your order zone +1, choose a card from among them, put it into soul, and if you looked at two or more cards, shuffle the deck. Then, COST [Counter Blast 1], and perform one of the following.
+• Choose a grade 2 or greater unit card from your soul, and put it into hand.
+• Choose a set order from your soul, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

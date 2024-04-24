@@ -1550,7 +1550,7 @@ CardStat = 8903
 global.CardName[CardStat] = 'Head Groupie, Marleen'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
-CONT [RC/GC]: If you have three or more <Ghost> on RC, this unit gets power +2000 / shield +5000.'
+CONT [RC/GC]: If you have three or more <Ghost> on your RC, this unit gets power +2000 / shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -6722,7 +6722,7 @@ global.DefensePowerStat[CardStat] = 25000
 
 CardStat = 12418
 {
-global.CardName[CardStat] = 'Enjoying The Bundled Warmth, Warmia'
+global.CardName[CardStat] = 'Best Served Hot, Warmia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 CONT: Sentinel.
@@ -7467,3 +7467,18 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12791
+{
+global.CardName[CardStat] = 'Seasong Dragon, Elestino'
+global.CardText[CardStat] = 'Lyrical Monasterio/Tear Dragon
+
+AUTO: When this unit is placed on RC, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn, then, if you played an order this turn, Soul Charge 1 or Energy Charge 1 .
+
+AUTO [RC/Drop]: When your other card is discarded from hand during your turn, COST [Energy Blast 3 & remove this card], choose one of the discarded cards, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
