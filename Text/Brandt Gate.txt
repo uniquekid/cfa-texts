@@ -922,6 +922,35 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
+CardStat = 8654
+{
+global.CardName[CardStat] = 'Ravenous Mutant, Marunorm'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+ACT [RC] 1/Turn: COST [Discard a set order card from your hand], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 8655
+{
+global.CardName[CardStat] = 'Explosive! Melting Heart!'
+global.CardText[CardStat] = 'Brandt Gate/Blitz Order
+
+Play this with COST [Soul Blast 1] !
+
+Choose one of your opponent’s attacking units, and it gets power -5000 until end of turn for each of your opponent’s card imprisoned in your Prison.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
 CardStat = 8926
 {
 global.CardName[CardStat] = 'Aurora Battle Princess, Accuse Makarite'
@@ -4971,7 +5000,7 @@ CardStat = 12271
 global.CardName[CardStat] = 'Blitz Kiloarm, Beistand'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO: When this unit is rode upon by "Blitz Megajet, Rebellio", search your deck for up to one "Armored Supply Vehicle, Pretiosa", reveal it and put it into hand, and shuffle your deck.
+AUTO: When this unit is rode upon by "Blitz Megajet, Rebellio", search your deck for up to one "Armor Supply Vehicle, Preciosa", reveal it and put it into hand, and shuffle your deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Asturm" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
@@ -4986,7 +5015,7 @@ CardStat = 12272
 global.CardName[CardStat] = 'Blitz Megajet, Rebellio'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this unit is rode upon by a grade 3 card with "Asturm" in its card name, search your deck for up to one "Armored Supply Vehicle, Pretiosa", reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is rode upon by a grade 3 card with "Asturm" in its card name, search your deck for up to one "Armor Supply Vehicle, Preciosa", reveal it and put it into hand, and shuffle the deck.
 
 CONT [GC]: If you have a grade 3 or greater vanguard with "Asturm" in its card name, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 2
@@ -5014,12 +5043,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12274
 {
-global.CardName[CardStat] = 'Armored Supply Vehicle, Pretiosa'
+global.CardName[CardStat] = 'Armor Supply Vehicle, Preciosa'
 global.CardText[CardStat] = 'Brandt Gate/Set Order
 
 Play this with COST [Counter Blast 1] !
 
-AUTO [Order Zone]: When your rear-guard stand by the ability of your grade 3 or greater vanguard with "Asturm" in its card name, that stand unit and all of your vanguards get power +5000 until end of turn.'
+AUTO [Order Zone]: When your rear-guard stand by the ability of your grade 3 or greater vanguard with "Asturm" in its card name, until end of turn, that stand unit and all of your vanguards get power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -5103,10 +5132,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12399
 {
-global.CardName[CardStat] = 'Dancing Princess of Beautiful Flames, Orfa'
+global.CardName[CardStat] = 'Bearer of Interstellar Extinction'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [RC] 1/Turn: When this unit boosts a rear-guard, if you persona rode this turn, COST [Counter Blast 1], until end of that battle, your opponent cannot play blitz orders from their hand, and when they would call cards from their hand to GC, they must call two or more cards at the same time.'
+AUTO [RC] 1/Turn: When this unit boosts a rear-guard, if you persona rode this turn, COST [Counter Blast 1], until end of that battle, your opponent cannot play blitz orders from their hand, and when they would call cards to GC from hand, they must call two or more cards at the same time.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -5116,12 +5145,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12406
 {
-global.CardName[CardStat] = 'Honed Fighting Spirit'
+global.CardName[CardStat] = 'Sharpened Fighting Spirit'
 global.CardText[CardStat] = 'Brandt Gate/Blitz Order
 
 Play this with COST [Energy Blast 2] !
 
-Choose one of your units being attacked, until end of that battle, it gets power +10000, COST [discard up to two set orders from your hand], and for each card discarded for this cost, draw a card, and it gets power +5000. (+10000 if you discarded two)'
+Choose a unit being attacked, until end of that battle, it gets power +10000, COST [discard any number of set orders from hand up to two], for each card discarded for this cost, draw a card, and it gets power +5000. (+10000 if you discarded two)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -5165,7 +5194,7 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO [VC]: When this unit attacks a vanguard, COST [Energy Blast 3], choose a Product from your Order Zone, and operate it.
 
-AUTO: When this unit is rode upon by a unit with "Welstra" in its card name with a [Divine Skill], if your order zone has a Product, COST [Soul Blast 1 & discard a card from hand], search your deck for up to two Product cards with different card names from each other and from cards in your order zone, reveal them and put them into hand, and shuffle the deck. (You may search for only one too)'
+AUTO: When this unit is rode upon by a unit with "Welstra" in its card name with [Divine Skill], if your order zone has a Product, COST [Soul Blast 1 & discard a card from hand], search your deck for up to two Product cards with different card names from each other and from cards in your order zone, reveal them and put them into hand, and shuffle the deck. (You may search for only one too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -5389,7 +5418,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 12529
 {
-global.CardName[CardStat] = 'Swing-by Dragon'
+global.CardName[CardStat] = 'Swingby Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
 AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Asturm" in its card name, COST [Counter Blast 1], and draw a card.
@@ -5408,7 +5437,7 @@ CardStat = 12530
 global.CardName[CardStat] = 'Gravidia Scheiner'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [Front Row RC] 1/Turn: When your Meteorite card is put from the order zone into drop, COST [Soul Blast 1], look at the top card of your deck, put it on the top or bottom of the deck, and this unit gets power +5000 until end of turn.'
+AUTO [Front Row RC] 1/Turn: When your Meteorite card is put into drop from the order zone, COST [Soul Blast 1], look at the top card of your deck, put it on the top or bottom of the deck, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -5418,10 +5447,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12531
 {
-global.CardName[CardStat] = 'Gravidia Medlar'
+global.CardName[CardStat] = 'Gravidia Madler'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-CONT [RC/GC]: If your drop and order zone have a total of three or more Meteorite cards, this unit gets power +2000 / shield +5000. (Active on opponent’s turn too)
+CONT [RC/GC]: If your order zone and drop has a total of three or more Meteorite cards, this unit gets power +2000 / shield +5000. (Active on opponent’s turn too)
 
 ACT [RC] 1/Turn: COST [Energy Blast 3], choose up to three Meteorite cards with grade equal to or less than your vanguard’s grade from your hand, and put them into the order zone. If you put two or more cards, you may draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -5461,7 +5490,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12564
 {
-global.CardName[CardStat] = 'Blitz Operator, Toures'
+global.CardName[CardStat] = 'Blitz Operator, Trolle'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 CONT [RC]: During your turn, if your order zone has a Product, this unit gets power +5000.
