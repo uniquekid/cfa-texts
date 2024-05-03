@@ -5582,7 +5582,7 @@ global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard and you have 2 or more set orders in your order zone, this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a set order in your order zone, COST [put this unit into soul], look at the top five cards of your deck, choose up to one grade 2 or greater unit card or set order, reveal it and put it into hand, and shuffle the deck.'
+AUTO [RC]: At the end of the battle this unit boosted, if you have a set order in your order zone, COST [put this unit into soul], look at the top five cards of your deck, choose up to one grade 2 or greater unit card, or a set order, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -5961,3 +5961,133 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12809
+{
+global.CardName[CardStat] = 'Dimensional Robo, Goyusha  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12810
+{
+global.CardName[CardStat] = 'Super Dimensional Fortress, Daibase'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Base
+
+ACT [Order Zone]: If you have a vanguard with "Dimensional Robo" in its card name, COST [rest this card], and Energy Charge 1. Choose up to one grade 2 or less card with "Dimensional Robo" in its card name from your drop, and put it into soul. If this card was put into the order zone this turn, you may search your deck instead of choosing from drop, and put it into soul. If you searched the deck, shuffle the deck.
+
+ACT [Order Zone]: If you have a vanguard with "Dimensional Robo" in its card name, COST [Energy Blast 2 & rest this card], choose up to one grade 2 or less card with "Dimensional Robo" in its card name from your soul, and call it to RC.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12811
+{
+global.CardName[CardStat] = 'Dimensional Robo, Dailander  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is placed on VC, search your deck for up to one Base card, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daiyusha" in its card name, all of your vanguards and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12812
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daidragon  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is rode upon by a grade 3 card with "Daiyusha" in its card name, call this card to RC.
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daiyusha" in its card name, until end of your opponent’s next turn, this unit gets "AUTO [RC]: When your vanguard is attacked, COST [retire this unit], choose one of your vanguards, and it gets power +15000 until end of that battle.", and power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12813
+{
+global.CardName[CardStat] = 'Super Dimensional Robo, Daiyusha  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and draw a card. If your opponent’s vanguard is grade 3 or greater, choose any number of your units with "Dimensional Robo" in their different card names, and they get power +5000 until end of turn.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [put a card from hand into soul], stand this unit, and it gets drive -2 until end of turn. If your bind zone does not have a "Dimensional Robo, Goyusha", and you persona rode this turn, COST [bind a "Dimensional Robo, Goyusha" from soul], and this unit gets drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12814
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daibattles  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+ACT [Soul] 1/Turn: If your vanguard is "Dimensional Robo, Daidragon", your opponent’s vanguard is grade 2 or greater, and your soul has "Dimensional Robo, Goyusha", "Dimensional Robo, Dailander", and "Dimensional Robo, Daimariner", COST [put a card from hand into soul], choose up to one "Super Dimensional Robo, Daiyusha" from your ride deck, and ride it as stand.
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daiyusha" in its card name, and your opponent’s vanguard is grade 3 or greater, your vanguard’s original critical becomes 2 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12815
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daimariner  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daiyusha" in its card name, until end of turn, this unit gets power +2000, and your opponent cannot intercept.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12816
+{
+global.CardName[CardStat] = 'Super Dimensional Robo, Dailady '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Dimensional Robo" in its card name, COST [Counter Blast 1], search your deck for up to one Base card, reveal it, put it into hand, and shuffle the deck.
+
+AUTO [RC]:When this unit attacks a grade 3 or greater unit, if your order zone has two or more Bases, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
