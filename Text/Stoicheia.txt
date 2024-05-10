@@ -6412,7 +6412,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12834
 {
-global.CardName[CardStat] = 'Udonge, Banana'
+global.CardName[CardStat] = 'Udumbara, Banana'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
@@ -6427,12 +6427,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12835
 {
-global.CardName[CardStat] = 'Gilt Copper, Ramp'
+global.CardName[CardStat] = 'Keman, Lamp'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO: When this unit is rode upon by "Majestic, Gamuga", look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Stauhirhaja" in its card name or up to one Sutra card from among them, reveal it and put it into hand, and shuffle your deck.
+AUTO: When this unit is rode upon by "Luminary, Gumga", look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Stauhirhaja" in its card name or up to one Sutra card from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: At the end of your turn, if you played a Sutra card this turn, COST [retire this unit], choose a grade 3 or greater card with "Stauhirhaja" in its card name from your drop, and put it into your hand.'
+AUTO [RC]: At the end of your turn, if you played a Sutra order this turn, COST [retire this unit], choose a grade 3 or greater card with "Stauhirhaja" in its card name from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -6442,12 +6442,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12836
 {
-global.CardName[CardStat] = 'Majestic, Gamuga'
+global.CardName[CardStat] = 'Luminary, Gumga'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO: When this unit is rode upon by a grade 3 card with "Stauhirhaja" in its card name, COST [Soul Blast 1], search your deck for up to one Sutra card, reveal it and put it into hand, and shuffle the deck.
 
-AUTO: When this unit is placed on RC, if you played a Sutra card this turn, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, if you played a Sutra order this turn, Soul Charge 1, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -6462,9 +6462,9 @@ global.CardText[CardStat] = 'Stoicheia/Insect
 
 CONT [VC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and you played a Sutra order this turn, all of your front row units get power +5000.
 
-AUTO [VC] 1/Turn: When you play a normal order, if your opponent’s vanguard is grade 3 or greater, until end of turn, you can play an additional order this turn, but you cannot play orders othan than Sutra orders.
+AUTO [VC] 1/Turn: When you play a normal order, if your opponent’s vanguard is grade 3 or greater, until end of turn, you can play an additional order this turn, and you cannot play orders othan than Sutra orders.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards for each Sutra order you played this turn, and stand it.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], for each Sutra order you played this turn, choose one of your rear-guards, and stand it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -6478,9 +6478,9 @@ CardStat = 12838
 global.CardName[CardStat] = 'Principle of Suffering'
 global.CardText[CardStat] = 'Stoicheia/Normal Order/Sutra
 
-Play this if you have a grade 3 or greater vanguard with "Stauhirhaja" in its card name and you have not played an order with the same card name as this card this turn!
+Play this if you have a grade 3 or greater vanguard with "Stauhirhaja" in its card name, and you did not play an order with the same card name as this card this turn!
 
-Your opponent gets "All of your vanguards get power -3000." until end of your opponent’s next turn. If you played another Sutra order this turn, COST [Soul Blast 2], draw a card, and your opponent gets "All of your vanguards get drive -1." until end of your opponent’s next turn. (Even if your opponent rides a new vanguard, this effect will not be lost)'
+Your opponent gets "All of your vanguards get power -3000." until end of your opponent’s next turn. If you played another Sutra order this turn, COST [Soul Blast 2], draw a card, and your opponent gets "All of your vanguards get drive -1." until end of your opponent’s next turn. (This effect is not lost even if your opponent’s vanguard is ridden)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 4
@@ -6491,12 +6491,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12839
 {
-global.CardName[CardStat] = 'Principle of Non-Self'
+global.CardName[CardStat] = 'Principle of Non-self'
 global.CardText[CardStat] = 'Stoicheia/Normal Order/Sutra
 
-Play this if you have a grade 3 or greater vanguard with "Stauhirhaja" in its card name and you have not played an order with the same card name as this card this turn!
+Play this if you have a grade 3 or greater vanguard with "Stauhirhaja" in its card name, and you did not play an order with the same card name as this card this turn!
 
-Choose a grade 3 or less unit card from your drop, call it to RC, it gets power +5000 until end of turn, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [RC] 1/Turn: When this unit stand by your card’s ability, this unit gets critical +1 until end of turn." until end of turn.'
+Choose a grade 3 or less card from your drop, call it to RC, until end of turn, it gets power +5000, and if your opponent’s vanguard is grade 3 or greater, it gets "AUTO [RC] 1/Turn: When this unit stand by your card’s ability, this unit gets critical +1 until end of turn." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 4
@@ -6507,14 +6507,14 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12840
 {
-global.CardName[CardStat] = 'Friendly Maiden, Alvina'
+global.CardName[CardStat] = 'Friendship Maiden, Alvina'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO: When this unit is placed on RC from hand other than during the battle phase, COST [Energy Blast 3], and perform one of the following.
 • Choose an order card without Regalis Piece from your drop, and put it into hand.
 • Choose a grade 1 or less unit card from your drop, and call it to RC.
 
-CONT [RC]: During your turn, if you have 4 or more units, this unit gets power +2000.'
+CONT [RC]: During your turn, if you have four or more units, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -6524,7 +6524,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12841
 {
-global.CardName[CardStat] = 'Vibhatska the Overflier'
+global.CardName[CardStat] = 'Vibatska the Leaper'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one Sutra card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, draw a card.
@@ -6539,12 +6539,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12842
 {
-global.CardName[CardStat] = 'Heartful Pompilidio'
+global.CardName[CardStat] = 'Hurtful Pompilideo'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 CONT [RC]: This unit gets power +5000 for each Sutra order you played this turn.
 
-AUTO [Front Row RC]: When your vanguard is attacked by your opponent’s rear-guard, COST [retire this unit], choose one of your opponent’s rear-guards, and reduce that unit’s power by that unit’s original power until end of turn.'
+AUTO [Front Row RC]: When your vanguard is attacked by your opponent’s rear-guard, COST [retire this unit], choose one of your opponent’s rear-guards, and decrease that unit’s power by that unit’s original power until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -6555,7 +6555,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 12843
 {
-global.CardName[CardStat] = 'Purgist Chloroforas'
+global.CardName[CardStat] = 'Purgist Chlorophorus'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [put this unit into soul], look at the top seven cards of your deck, choose up to one Sutra card from among them, reveal it and put it into hand, and shuffle the deck.'
@@ -6568,10 +6568,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12844
 {
-global.CardName[CardStat] = 'Tamed Knight, Clive'
+global.CardName[CardStat] = 'Knight of Tranquility, Clive'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO [Drop]: At the start of your battle phase, if you played two or more orders this turn, COST [Counter Blast 1], and call this card to RC.'
+AUTO [Drop]: At the beginning of your battle phase, if you played two or more orders this turn, COST [Counter Blast 1], and call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
