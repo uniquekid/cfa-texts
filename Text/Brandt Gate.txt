@@ -2717,8 +2717,9 @@ AUTO [VC]: When this unit attacks, if your Order Zone has a Research card, COST 
 • Look at the top seven cards of your deck, choose up to one unit card with "Monster" in its card name, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Arkhite'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -6145,3 +6146,72 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12866
+{
+global.CardName[CardStat] = 'Lightning Claw Monster, Lerangara'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if your order zone has a Research card, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Arkhite" in its card name, COST [retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12867
+{
+global.CardName[CardStat] = 'Armored Scissor Monster, Forvex'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+CONT [GC]: If your order zone has two or more Research cards, this unit gets shield +5000.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Arkhite" in its card name, COST [Soul Blast 1], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12868
+{
+global.CardName[CardStat] = 'Light Beam Monster, Rayvillis'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO: When this unit is placed on RC by the ability of your vanguard with "Arkhite" in its card name, this unit gets "AUTO [RC]: When this unit attacks, COST [Counter Blast 1], choose one of your opponent’s vanguards, and it gets power -5000 until end of turn." until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 / critical +1 until end of turn.
+
+CONT [RC]: This unit cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12869
+{
+global.CardName[CardStat] = 'Innocent Monster in Paradise, Arkhite'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+CONT [VC]: This unit is also regarded as "Monster Creator, Arkhite".
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose three cards with "Monster" in their card names from your drop, and put them into order zone.
+
+AUTO [VC]: When your rear-guard with "Monster" in its card name is placed, COST [put a card with the same card name as that unit from order zone into drop], and that unit gets power +10000 until end of turn.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two cards with "Monster" in their different card names from your order zone, and call them to RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Arkhite'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
