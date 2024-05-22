@@ -317,7 +317,7 @@ global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 8306
@@ -761,7 +761,7 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 8592
@@ -1172,7 +1172,7 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 9122
@@ -1562,7 +1562,7 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 20000
 
 
 CardStat = 9388
@@ -2060,7 +2060,7 @@ CardStat = 9685
 global.CardName[CardStat] = 'Stealth Fiend, Amaviera'
 global.CardText[CardStat] = 'Dragon Empire/Warbeast/Heal Trigger
 
-AUTO: When this unit is placed on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
@@ -2331,6 +2331,7 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 20000
 
 
 CardStat = 10145
@@ -3910,7 +3911,7 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 11037
@@ -6673,9 +6674,9 @@ CardStat = 12864
 global.CardName[CardStat] = 'Flag-bearer of Bravery, Fanvare'
 global.CardText[CardStat] = 'Dragon Empire/Galaxian
 
-AUTO: When this unit is placed on RC, COST [Soul Blast 1], choose one of your rear-guards with "Ezerva" in its card name, and that unit and this unit get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +15000 instead of +5000.
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], choose one of your units with "Ezerva" in its card name, and that unit and this unit get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +10000 instead of +5000.
 
-AUTO [Front Row RC]: At the end of your turn, if you have a vanguard with "Virgirua" in its card name, and you played an Impact order this turn, COST [put this unit into soul], draw a card, and Counter Charge 1.'
+AUTO [Front Row RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Virgirua" in its card name, and you played an Impact order this turn, COST [put this unit into soul], draw a card, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -6723,3 +6724,33 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12874
+{
+global.CardName[CardStat] = 'Quaking Sword - Thunderclap'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s rear-guards, and retire it. If you have a <Thunder Dragon> vanguard, bind it instead of retiring it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12875
+{
+global.CardName[CardStat] = 'Galvanic Edge Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+AUTO [RC]: When this unit attacks a vanguard, discard the top card of your deck, if a trigger unit was discarded, choose one of your opponent’s rear-guards, and retire it. If you did not retire a rear-guard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

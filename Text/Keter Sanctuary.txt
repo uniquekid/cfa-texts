@@ -532,7 +532,7 @@ global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 8421
@@ -765,7 +765,7 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 20000
 
 
 CardStat = 8615
@@ -1123,7 +1123,7 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 9093
@@ -1542,7 +1542,7 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 9353
@@ -1841,7 +1841,7 @@ CardStat = 9689
 global.CardName[CardStat] = 'Invigorate Sage'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf/Heal Trigger
 
-AUTO: When this unit is placed on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 }
@@ -4216,7 +4216,7 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 11087
@@ -4939,7 +4939,7 @@ global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 11945
@@ -6660,3 +6660,162 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12876
+{
+global.CardName[CardStat] = 'Magic of Threaded Connections, Peraram'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC during your main phase, COST [Counter Blast 1], choose up to one card with grade less than or equal to your vanguard from your hand, and call it to RC. If you called a card, draw a card.
+
+
+CONT [RC]: During your turn, if your vanguard is grade 3 or greater, and you have four or more units, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12877
+{
+global.CardName[CardStat] = 'Hidden Flash Undercover, Serendis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12878
+{
+global.CardName[CardStat] = 'Volley of Blades Undercover, Onux'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed by riding from "Hidden Flash Undercover, Serendis", COST [reveal a grade 3 card with "Mordalion" in its card name from ride deck], search your deck for up to one "Monitored Tryst", reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: During your turn, if your order zone has two or more "Monitored Tryst", this unit gets power +2000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12879
+{
+global.CardName[CardStat] = 'Monitoring Ravener Undercover, Awnfar'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed by riding from "Volley of Blades Undercover, Onux", COST [reveal a grade 3 card with "Mordalion" in its card name from ride deck], search your deck for up to one "Monitored Tryst", reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: During your turn, if your order zone has two or more "Monitored Tryst", this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12880
+{
+global.CardName[CardStat] = 'Poison Knight of Silence Undercover, Mordalion'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT [VC]: During your turn, if your order zone has three or more "Monitored Tryst", all of your units with "Undercover" in their card names get power +5000.
+
+ACT [VC] 1/Turn: COST [Energy Blast 2], look at the top seven cards of your deck, choose up to the same number of cards as the number of "Monitored Tryst" without any undercover gauges in your order zone from among them, put one face down as an undercover gauge on each "Monitored Tryst" without any undercover gauges, and shuffle the deck.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two cards with "Undercover" in their card names from your undercover gauges, and call them each to a RC in the same column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12881
+{
+global.CardName[CardStat] = 'Claw of Secret Schemes Undercover, Tigris'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [Energy Blast 2], and return this unit to hand.
+
+AUTO: When this unit is put on GC, COST [put a card with "Undercover" in its card name from drop on the bottom of the deck], and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12882
+{
+global.CardName[CardStat] = 'Knight of Piercing Acuity Undercover, Zois'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: If your order zone has two or more "Monitored Tryst", this unit gets power +5000, and cannot be retired by your opponent’s card effects. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12883
+{
+global.CardName[CardStat] = 'Monitored Tryst'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order
+
+This card can be played from drop, and play this if you have a vanguard with "Undercover" in its card name!
+
+AUTO: When this card is put into your order zone, look at the top seven cards of your deck, choose up to one card from among them, put it face down as this card’s undercover gauge, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12884
+{
+global.CardName[CardStat] = 'Knight of Blackness of Yore Undercover, Obscudeid'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [Gauge Zone]: If this card is an undercover gauge, COST [Soul Blast 1], and call this card to a back row center RC.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Undercover" in its card name, this unit can attack from the back row center column, and gets power +10000. (Active on opponent’s turn too)
+
+AUTO [RC]: When this unit attacks from the back row center column, if you have a grade 3 or greater vanguard with "Undercover" in its card name, your opponent’s vanguard is grade 3 or greater, and no drive checks were performed for the battle your rear-guard attacked this turn, COST [Soul Blast 1], and until end of that battle, this unit performs drive checks, and gets drive -1. At the end of that battle, put this unit on the bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.CanAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12885
+{
+global.CardName[CardStat] = 'Knight of Abruptness Undercover, Deira'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Undercover" in its card name or only «Shadow Paladin» for its clan, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Undercover" in its card name or only «Shadow Paladin» for its clan from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have a vanguard with "Undercover" in its card name or only «Shadow Paladin» for its clan, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000

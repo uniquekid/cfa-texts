@@ -467,7 +467,7 @@ global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 30000
 
 
 CardStat = 8385
@@ -1819,7 +1819,7 @@ CardStat = 9688
 global.CardName[CardStat] = 'Lady Healer of the Creaking World'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid/Heal Trigger
 
-AUTO: When this unit is placed on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
 }
@@ -4021,7 +4021,7 @@ global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 11062
@@ -6193,7 +6193,6 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 12869
@@ -6203,7 +6202,7 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 
 CONT [VC]: This unit is also regarded as "Monster Creator, Arkhite".
 
-ACT [VC] 1/Turn: COST [Energy Blast 3], choose three cards with "Monster" in their card names from your drop, and put them into order zone.
+ACT [VC] 1/Turn: COST [Energy Blast 2], choose three cards with "Monster" in their card names from your drop, and put them into order zone.
 
 AUTO [VC]: When your rear-guard with "Monster" in its card name is placed, COST [put a card with the same card name as that unit from order zone into drop], and that unit gets power +10000 until end of turn.
 
@@ -6215,3 +6214,19 @@ global.PersonaRideCardName[CardStat] = 'Arkhite'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12886
+{
+global.CardName[CardStat] = 'Pelicca Express'
+global.CardText[CardStat] = 'Brandt Gate/Blitz Order
+
+Play this with COST [put a set order from drop on the bottom of the deck]!
+
+Choose one of your units being attacked, and it gets power +20000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 20000
