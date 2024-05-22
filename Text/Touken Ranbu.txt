@@ -3597,7 +3597,7 @@ CardStat = 11191
 global.CardName[CardStat] = 'Mikazuki Munechika Sentou'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO: When this unit is rode upon by a grade 2 card with "Mikazuki Munechika" in its card name, look at the top two cards of your deck, choose up to one grade 2 or less card from among them, call it to RC, and put the rest on the top or bottom of the deck in any order.'
+AUTO: When this unit is rode upon by a grade 2 card with "Mikazuki Munechika" in its card name, look at the top two cards of your deck, choose up to one grade 2 or less card from among them, call it to RC, and put any number of the remaining cards on the top or bottom of the deck in any order.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -3662,7 +3662,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Set Order
 
 CONT [Order Zone]: The ACT ability of "Forge" may only be used a total of one time a turn.
 
-ACT [Order Zone] 1/Turn: COST [Put a card other than heal trigger and over trigger from drop on the bottom of the deck], reveal cards from the top of your deck until the same number of normal units as the number of "Forge" in your order zone is revealed, choose one of the revealed normal units, and call it to RC as rest. If that called unit’s grade is less than or equal to your vanguard’s grade, stand that unit, and it gets power +5000 until end of turn for every other normal unit revealed by this effect. Shuffle the deck.'
+ACT [Order Zone] 1/Turn: COST [Put a card other than heal trigger and over trigger from drop on the bottom of the deck], reveal cards from the top of your deck until the same number of normal units as the number of "Forge" in your order zone is revealed, choose one of the revealed normal units, and call it to RC as rest. If that called unit’s grade is less than or equal to your vanguard, stand that unit, and it gets power +5000 until end of turn for every other normal unit revealed by this effect. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.CardInClan2[CardStat] = 30
@@ -3676,7 +3676,7 @@ CardStat = 11204
 {
 global.CardName[CardStat] = 'Training Equipment'
 global.CardText[CardStat] = 'Touken Ranbu/Set Order
-(You can have a total five cards in your ride deck made up of this card, a unit card without "Kiwame" in its card name and one unit card each from grade 0 to grade 2, and this card is put face up)
+(You can have a total five cards in your ride deck: one unit card of every grade from grade 0 to grade 2, this card, and a non-Kiwame unit card, and put this card face up)
 AUTO [Ride Deck]: When you Stand Up!!, put this card into your order zone, choose a unit card without "Kiwame" in its card name from the ride deck, put it into your order zone face up, and it conducts Training.
 CONT [Order Zone]: Your vanguard loses all of its AUTO and ACT abilities.
 CONT [Order Zone]: You cannot normal ride from hand, and when you would ride from ride deck, you can ride without discarding a card from hand.
@@ -4001,7 +4001,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 11229
 {
 global.CardName[CardStat] = 'Inabagou'
-global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi/Front Trigger
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana/Front Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -4346,7 +4346,7 @@ CardStat = 11257
 global.CardName[CardStat] = 'Hyuuga Masamune Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 
-AUTO [RC]: When this unit boosts, if your vanguard did not attack this turn, look at the top card of your deck, and put it on the top or bottom of the deck. If you put it on the bottom of the deck, this unit gets power +2000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if your vanguard did not attack this turn, look at the top card of your deck, and put it on the top or bottom of the deck. If you put it on the bottom, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -4451,7 +4451,7 @@ CardStat = 11269
 global.CardName[CardStat] = 'Mouri Toushirou Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 
-AUTO: When this unit is put on GC, if your vanguard’s grade is less than your opponent’s vanguard, Counter Charge 1, and this unit gets shield +5000 until end of that battle.'
+AUTO: When this unit is put on GC, if your vanguard’s grade is less than your opponent’s vanguard’s grade, Counter Charge 1, and this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
