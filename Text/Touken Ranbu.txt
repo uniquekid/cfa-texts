@@ -1997,6 +1997,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 8466
@@ -2084,6 +2085,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 8472
@@ -2785,10 +2787,11 @@ AUTO [RC]: When this unit attacks a vanguard, if you have no other units in the 
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
+global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.CanAttackFromBackRow[CardStat] = 1
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 8532
@@ -2805,6 +2808,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromVRBuff[CardStat] = 5000
 
 
 CardStat = 8533
@@ -3130,6 +3134,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 8556
@@ -3343,6 +3348,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 15000
 
 
 CardStat = 8570
@@ -3533,9 +3539,9 @@ CardStat = 8583
 global.CardName[CardStat] = 'Murakumogou'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
-ACT [Drop]: COST [Counter Blast 1], and perform one of the effects below.
-• If you have "Samidaregou" on your RC, call this card to an open RC.
-• If you have "Samidaregou" in your soul, put this card into your soul, and Soul Charge 1.'
+ACT [Drop]: COST [Counter Blast 1], and perform one of the following.
+• If you have a "Samidaregou" on your RC, call this card to an open RC.
+• If your soul has a "Samidaregou", put this card into soul, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -3560,6 +3566,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 8585
@@ -3776,7 +3783,7 @@ CardStat = 11210
 global.CardName[CardStat] = 'Yamatonokami Yasusada Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Kashuu Kiyomitsu" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, chose a unit card with "Kashuu Kiyomitsu" in its card name from your drop, and put it into hand.
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Kashuu Kiyomitsu" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, choose a unit card with "Kashuu Kiyomitsu" in its card name from your drop, and put it into hand.
 
 CONT [RC]: If your vanguard with "Kashuu Kiyomitsu" in its card name stand by a card’s ability this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
@@ -3908,7 +3915,7 @@ CardStat = 11223
 global.CardName[CardStat] = 'Souza Samonji Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 2], look at the top seven cards of your deck, choose up to two cards with "Samonji" in their card names from among them, reveal them and put them into hand, and shuffle the deck. If you revealed one or less cards, Counter Charge 1.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 2], look at the top seven cards of your deck, choose up to two cards with "Samonji" in their card names from among them, reveal them and put them into hand, and shuffle the deck. If one or less cards were revealed, Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -3965,6 +3972,7 @@ global.PersonaRideCardName[CardStat] = 'Kasen Kanesada Kiwame'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromVBuff[CardStat] = 10000
 
 
 CardStat = 11227
@@ -3981,6 +3989,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11228
@@ -4180,6 +4189,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 2000
 
 
 CardStat = 11246
@@ -4197,6 +4207,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11247
@@ -4247,6 +4258,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11250
@@ -4263,6 +4275,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11251
@@ -4339,6 +4352,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11257
@@ -4402,6 +4416,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11266
@@ -4486,6 +4501,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11272
@@ -4532,6 +4548,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11275
@@ -4617,6 +4634,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 11284
@@ -4751,6 +4769,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 11293
@@ -4810,7 +4829,7 @@ CardStat = 11296
 global.CardName[CardStat] = 'Daihannya Nagamitsu Kiwame'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO: When this unit is put on RC, COST [Counter Blast 1 & Soul Blast 2], and retire all of your opponent’s rear-guards in the same column as this unit.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 2], and retire all of your opponent’s rear-guards in the same column as this unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
