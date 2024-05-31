@@ -6372,14 +6372,16 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
 
-CardStat = 
+CardStat = 12933
 {
-global.CardName[CardStat] = 'One Who Governs Rituals, Sacrifice Glass'
-global.CardText[CardStat] = 'Dark States/Demon
+global.CardName[CardStat] = 'Manifesting Great Horizon, Grandogma'
+global.CardText[CardStat] = 'Dark States/Ghost
 
-AUTO [VC]: At the beginning of your main phase, you get "When your opponent’s unit is retired from RC or GC, you Energy Charge 1." until end of turn.
+AUTO: When this card is bound other than by the ability of a card with the same card name as this card, put this card into drop.
 
-AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Energy Blast 4], search your deck or drop for up to one "Manifesting Great Horizon, Grandogma", ride it as stand, and it gets power +15000 / drive -2 until end of turn. If you searched the deck, shuffle the deck. If you rode a card, your opponent may draw a card.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, choose one of your opponent’s rear-guards, and retire it. If your bind zone has one or more cards with the same card name as this unit, also choose one of your opponent’s rear-guards, retire it, and if your bind zone has two or more cards with the same card name, stand this unit.
+
+AUTO [VC]: At the end of your turn, if your bind zone has one or less cards with the same card name as this unit, choose an "One Who Governs Rituals, Sacrifice Glass" from your soul, and ride it as rest. If you rode a card, bind this card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -6388,14 +6390,16 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
 
-CardStat = 10552
+CardStat = 12934
 {
-global.CardName[CardStat] = 'Hurry and Join, Loyal Servants'
+global.CardName[CardStat] = 'Sweet Bait'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-This card can be played from the soul, and play this with COST [Counter Blast 1] if you have a vanguard with "Luquier" in its card name!
+Play this with COST [Counter Blast 1] !
 
-Choose one of your rear-guards, and it gets "AUTO [RC]: When your vanguard attacks, COST [put this unit into your soul], choose a card with grade less than or equal to your vanguard and only <Pale Moon> for its clan from your soul, and call it to RC." until end of turn.'
+Perform one of the following according to your vanguard’s card name.
+• "One Who Governs Rituals, Sacrifice Glass" - Until end of turn, your opponent gets "All of your rear-guards and cards in your drop lose all of their CONT abilities and AUTO abilities, cannot gain them, and cannot move from RC to GC.", your opponent chooses three unit cards from their drop, and calls them to open RC. Then, you draw a card for every three of your and your opponent’s rear-guards in total.
+• "Manifesting Great Horizon, Grandogma" - If your vanguard was not placed during the ride phase this turn, activate persona ride, choose any number of cards other than heal trigger or over trigger with different grades from your drop, and return them to deck and shuffle it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -6404,14 +6408,14 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
 
-CardStat = 12690
+CardStat = 12935
 {
-global.CardName[CardStat] = 'Evoke Alchemist'
+global.CardName[CardStat] = 'Miasma Valley Beast, Madurua'
 global.CardText[CardStat] = 'Dark States/Demon
 
-CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +5000.
+ACT [RC] 1/Turn: COST [Soul Blast 1 & discard a card from hand], choose a "Sweet Bait" from your drop and it gets "CONT: This card can be played from the drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn.
 
-AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +2000 until end of that battle. If your bind zone has four or more face down cards, COST [Counter Blast 1], choose one of your front row rear-guards, stand it, and if your bind zone has eight or more face down cards, that unit gets power +15000 until end of turn.'
+AUTO [RC]: At the end of your turn, COST [Energy Blast 5], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -6419,17 +6423,16 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 12692
+CardStat = 12936
 {
-global.CardName[CardStat] = 'Steam Raider, Zamuug'
-global.CardText[CardStat] = 'Dark States/Gearoid
+global.CardName[CardStat] = 'Musician of Eternity, Muuji'
+global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Counter Blast 1], reveal the top three cards of your deck, put any number of cards from among them into soul, and shuffle the deck. If you put one or more cards into soul, you may draw a card.
+AUTO [Front Row RC]: When your grade 3 or greater vanguard with "Sacrifice Glass" in its card name attacks, choose one of your opponent’s rear-guards, and retire it.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and this unit’s critical is 1 or less, COST [Energy Blast 3], and this unit gets power +5000 / critical +1 until end of that battle.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name attacks, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.AttackFromRBuff[CardStat] = 5000
