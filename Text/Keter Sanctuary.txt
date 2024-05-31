@@ -6367,7 +6367,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your re
 
 AUTO: When this unit is put on GC, COST [discard a card from hand & put two cards from the bind zone on the bottom of the deck in any order], choose one of your units with "Fated One" in its card name, and it cannot be hit until end of that battle.
 
-[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, choose a card with the same card name as this unit from drop, and you may ride it as stand. If you rode, that unit gets drive -1 until end of turn. (You may only use Divine Skills a total of once per fight among all your cards)'
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, choose a card with the same card name as this unit from drop, and you may ride it as stand. If you rode, that unit gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -6848,3 +6848,18 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12926
+{
+global.CardName[CardStat] = 'Magic of Freezing, Frolos'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: If you have a vanguard with only «Genesis» for its clan, this card is only «Genesis».
+
+AUTO [RC]: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Minerva" in its card name, COST [Soul Blast 2], and choose two normal units with the same card name and without sentinel from your drop. If you chose two cards, put one of them into hand, and put the rest on the bottom of the deck and shuffle it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
