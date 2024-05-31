@@ -3905,6 +3905,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 global.Arms[CardStat] = 1
 global.ArmAsUnit[CardStat] = 1
 
@@ -5780,7 +5781,7 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 12699
 {
-global.CardName[CardStat] = 'Granzel Rotovisor'
+global.CardName[CardStat] = 'Glanzel Rotovisor'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT [VC]: During your turn, if your order zone has three or more Arenas, all of your front row units get power +5000.
@@ -6231,3 +6232,49 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 20000
+
+
+CardStat = 12937
+{
+global.CardName[CardStat] = 'Armed Arms, "Drill"'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC/RC]: When this unit attacks, COST [put a card with "Armed Arms" in its card name from drop into soul], and perform one of the following according to the circle this unit is on.
+• VC - If there are two or more cards attached to this unit, this unit gets critical +1 until end of turn.
+• RC - This unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+global.Arms[CardStat] = 1
+global.ArmAsUnit[CardStat] = 1
+
+
+CardStat = 12938
+{
+global.CardName[CardStat] = 'Repair Robo, Rani'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to two cards with "Armed Arms" in their different card names, reveal them, choose one card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Silhouette" in its card name attacks, COST [Soul Blast 1 & retire this unit], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12939
+{
+global.CardName[CardStat] = 'Support Drone, Mani'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is placed on GC, if you have a vanguard with "Silhouette" in its card name, look at the top five cards of your deck, choose up to any number of cards with "Armed Arms" in their different card names from among them, call them to GC, and shuffle the deck. If you did not call a card, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
