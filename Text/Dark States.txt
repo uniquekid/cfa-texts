@@ -5696,7 +5696,7 @@ global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 ACT [RC]: If you have a grade 3 vanguard with "Kheios" in its card name, COST [bind this unit], search your deck for up to one "Soul Oratorio, Kheios", ride it as stand, and shuffle the deck. If your vanguard was placed during the ride phase of this turn, or you persona rode this turn, you cannot persona ride until end of turn. ("If you persona rode" is active even if persona ride is activated outside of normal ride)
 
-ACT [Bind Zone]: If you have a grade 3 vanguard with "Kheios" in its card name, COST [put this card into drop], and Soul Charge 1.'
+ACT [Bind Zone]: If your vanguard is a grade 3 with "Kheios" in its card name, COST [put this card into drop], and Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -6399,10 +6399,13 @@ Play this with COST [Counter Blast 1] !
 
 Perform one of the following according to your vanguard’s card name.
 • "One Who Governs Rituals, Sacrifice Glass" - Until end of turn, your opponent gets "All of your rear-guards and cards in your drop lose all of their CONT abilities and AUTO abilities, cannot gain them, and cannot move from RC to GC.", your opponent chooses three unit cards from their drop, and calls them to open RC. Then, you draw a card for every three of your and your opponent’s rear-guards in total.
-• "Manifesting Great Horizon, Grandogma" - If your vanguard was not placed during the ride phase this turn, activate persona ride, choose any number of cards other than heal trigger or over trigger with different grades from your drop, and return them to deck and shuffle it.'
+• "Manifesting Great Horizon, Grandogma" - If your vanguard was not placed during the ride phase this turn, activate persona ride, choose any number of cards other than heal trigger or over trigger with different grades from your drop, and return them to deck and shuffle it.
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
