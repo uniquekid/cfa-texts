@@ -3861,6 +3861,7 @@ ACT [VC] 1/Turn: COST [Counter Blast 2], reveal the top card of your deck, and p
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Mediell'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7482,3 +7483,48 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12941
+{
+global.CardName[CardStat] = 'Like a Candy, Kucrovy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Mediell" in its card name, look at the top card of your deck, put it on the top of the deck, or discard it. If you discarded a card, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12942
+{
+global.CardName[CardStat] = 'Mystical Night, Luccruna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Mediell" in its card name, COST [Counter Blast 1 & Energy Blast 3], look at the top seven cards of your deck, choose up to two normal units without sentinel from among them, reveal them, choose up to one card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12943
+{
+global.CardName[CardStat] = 'Constellate Solace, Mediell'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+DressUp - "Fondant Solace, Mediell" (During this fight, this card is also regarded as the specified card)
+
+CONT [VC]: During your turn, if your drop has a grade 3 card with "Mediell" in its card name, all of your front row units get power +5000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose a card from your drop, call it to RC, and reveal the top card of your deck. If it is a normal unit, draw a card, and the called unit by this effect gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Mediell'
