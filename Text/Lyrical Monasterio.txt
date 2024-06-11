@@ -3736,6 +3736,7 @@ AUTO [VC]: At the end of the battle this unit attacked, if your back row has thr
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lilfa'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7523,8 +7524,126 @@ CONT [VC]: During your turn, if your drop has a grade 3 card with "Mediell" in i
 ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose a card from your drop, call it to RC, and reveal the top card of your deck. If it is a normal unit, draw a card, and the called unit by this effect gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Mediell'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12945
+{
+global.CardName[CardStat] = 'Welcome to the Star Festival!'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
+
+Play this with COST [Counter Blast 1] !
+
+Choose three grade 0 cards from your drop, and put them into soul. If you put three critical triggers into soul, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12946
+{
+global.CardName[CardStat] = 'Wishing Star on the Beach, Riplel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+AUTO [RC]: At the end of the battle this unit attacked a vanguard, COST [Soul Blast 1 trigger unit], and return this unit to hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Mediell'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12947
+{
+global.CardName[CardStat] = 'Eager Going? Otimie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: At the end of your turn, if you Energy Blast 3 or more at the same time for the cost of your card’s ability this turn, you may return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12948
+{
+global.CardName[CardStat] = 'Connect Star, Lishura'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is retired from RC by your opponent’s card’s ability, COST [Soul Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12949
+{
+global.CardName[CardStat] = 'Radiance Face, Ulperna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [RC/GC]: If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your damage zone has foru or more cards, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12950
+{
+global.CardName[CardStat] = 'Immersed in Ripples, Avnias'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Lilfa" in its card name, COST [Soul Blast 2 cards with "Lilfa" in their card names], look at the top five cards of your deck, choose up to one grade 2 or greater unit card with a different card name from this unit from among them, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12951
+{
+global.CardName[CardStat] = 'Frolic Hopper, Funatt'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC/GC]: If you have a grade 3 or greater vanguard with "Lilfa" in its card name, this unit gets power +10000 / shield + 10000. (Active on opponent’s turn too)
+
+AUTO [RC]: At the end of the battle this unit attacked while boosted by a grade 2 or greater unit, COST [Energy Blast 3], chooose one of your grade 2 or greater rear-guards, and return it to hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12952
+{
+global.CardName[CardStat] = 'Brightest Dreamer, Lilfa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Giant
+
+DressUp - "Highest Dreamer, Lilfa" (During this fight, this card is also regarded as the specified card)
+
+CONT [VC]: All of your grade 2 or greater rear-guards get "Boost", and all of your other grade 3 units with "Lilfa" in their card names get shield +20000.
+
+AUTO [VC]: When this unit attacks, if all of your units are grade 2 or greater, COST [Counter Blast 1], choose up to three of your rear-guards, and return them to hand. Choose up to two grade 3 cards from your hand, and call each of them to RC in the same column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lilfa'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
