@@ -7676,7 +7676,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Haseritt" in its card name, choose a critical trigger from your drop, and you may put it on the bottom of the deck.
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Haseritt" in its card name, COST [Counter Blast 1], search your deck for up to one, grade 2 or less card with power 9000 or less in its different card name from this unit, or up to one grade 1 or less card with power 7000 or less, call it to RC, shuffle the deck, and this unit gets power +5000 until end of turn.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Haseritt" in its card name, COST [Counter Blast 1], search your deck for up to one grade 2 or less card with power 9000 or less in its different card name from this unit, or up to one grade 1 or less card with power 7000 or less in its different card name from this unit, call it to RC, shuffle the deck, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -7777,9 +7777,38 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 AUTO [Drop]: When your grade 3 or greater vanguard with "Marlean" in its card name is placed during your ride phase, if you do not have another rear-guard with the same card name as this unit, COST [Soul Blast 1], and call this card to RC. If you called a card, Energy Charge 1.
 
-AUTO [RC]: At the end of the battle this unit boosted a unit with "Respino" in its card name, COST [put this unit into soul], choose one of your units with "Respino" in its card name, and until end of turn, reduced the cost of that unit’s original AUTO ability by Counter Blast 1.'
+AUTO [RC]: At the end of the battle this unit boosted a unit with "Respino" in its card name, COST [put this unit into soul], choose one of your units with "Respino" in its card name, and until end of turn, reduce the cost of that unit’s original AUTO ability by Counter Blast 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12967
+{
+global.CardName[CardStat] = 'Sparkling Summer, Tumhelen'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [Soul Blast 1 card with "Asterice" in its card name], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12968
+{
+global.CardName[CardStat] = 'Meeting Stars in Night, Viatia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC or put on GC during the battle phase, COST [Energy Blast 3], choose one of your vanguards with "Kairi" in its card name, and it gets power +10000 until end of that battle.
+
+(Both RC and GC during the battle phase)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
