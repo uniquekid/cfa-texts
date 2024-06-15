@@ -3529,6 +3529,7 @@ ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to five of your normal unit r
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Haseritt'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7619,7 +7620,7 @@ CardStat = 12951
 global.CardName[CardStat] = 'Frolic Hopper, Funatt'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-AUTO [RC/GC]: If you have a grade 3 or greater vanguard with "Lilfa" in its card name, this unit gets power +10000 / shield + 10000. (Active on opponent’s turn too)
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Lilfa" in its card name, this unit gets power +10000 / shield + 10000. (Active on opponent’s turn too)
 
 AUTO [RC]: At the end of the battle this unit attacked while boosted by a grade 2 or greater unit, COST [Energy Blast 3], chooose one of your grade 2 or greater rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 3
@@ -7644,6 +7645,170 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Lilfa'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12953
+{
+global.CardName[CardStat] = 'PhosphorescenceStream, Haseritt'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+DressUp - "IridescencePalette, Haseritt" (During this fight, this card is also regarded as the specified card)
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose up to five of your normal unit rear-guards, until end of turn, they get "AUTO [RC]: At the end of the battle this unit attacked, draw a card, and put this unit on the bottom of the deck.", and get power +2000.
+
+AUTO [VC]: At the beginning of your battle phase, COST [Soul Blast 1], all of your units with "Haseritt" in its card name, grade 3 units with original power 12000 or less, grade 2 units with original power 9000 or less, or grade 1 units with original power 7000 or less can attack from the back row center column, and get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Haseritt'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12954
+{
+global.CardName[CardStat] = 'Path of the Summer Sky, Senon'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Haseritt" in its card name, choose a critical trigger from your drop, and you may put it on the bottom of the deck.
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Haseritt" in its card name, COST [Counter Blast 1], search your deck for up to one grade 2 or less card with power 9000 or less in its different card name from this unit, or up to one grade 1 or less card with power 7000 or less in its different card name from this unit, call it to RC, shuffle the deck, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12955
+{
+global.CardName[CardStat] = 'Rampant Planetaria, Rafesca'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Haseritt" in its card name, this unit gets power +5000 until end of that battle, at the end of that battle, COST [Soul Blast 1], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12956
+{
+global.CardName[CardStat] = 'Full Illumination, Bertine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, and four or more of your units were placed this turn, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 12957
+{
+global.CardName[CardStat] = 'Putting Up Prayers to Starlight'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
+
+Play this with COST [Counter Blast 2] !
+
+Choose one of your vanguards, and it gets "AUTO [VC] 1/Turn: When this unit attacks, choose six of your units. If you chose six units, and all of the chosen units have different card names, this unit gets critical +1 until end of that battle." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12958
+{
+global.CardName[CardStat] = 'Dreaming Fever, Telphiny'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [RC] 1/Turn: COST [Energy Blast 3], and until end of turn, this unit gets "Boost", and gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12959
+{
+global.CardName[CardStat] = 'One, Two, Fly Away! Arachine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO [RC]: When this unit boosts, if you Energy Blast 3 or more at the same time for the cost of your card’s ability this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12960
+{
+global.CardName[CardStat] = 'Before the Start of the Festival!'
+global.CardText[CardStat] = 'Lyrical Monasterio/Blitz Order
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your units being attacked, and it gets power +5000 until end of that battle for each of your open RC.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12961
+{
+global.CardName[CardStat] = 'HappyInfluencer, Racia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Marlean" in its card name is placed during your ride phase, if you do not have another rear-guard with the same card name as this unit, COST [Soul Blast 1], and call this card to RC. If you called a card, Energy Charge 1.
+
+AUTO [RC]: At the end of the battle this unit boosted a unit with "Respino" in its card name, COST [put this unit into soul], choose one of your units with "Respino" in its card name, and until end of turn, reduce the cost of that unit’s original AUTO ability by Counter Blast 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12967
+{
+global.CardName[CardStat] = 'Sparkling Summer, Tumhelen'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [Soul Blast 1 card with "Asterice" in its card name], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12968
+{
+global.CardName[CardStat] = 'Meeting Stars in Night, Viatia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC or put on GC during the battle phase, COST [Energy Blast 3], choose one of your vanguards with "Kairi" in its card name, and it gets power +10000 until end of that battle.
+
+(Both RC and GC during the battle phase)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
