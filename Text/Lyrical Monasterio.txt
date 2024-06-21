@@ -7594,7 +7594,7 @@ CardStat = 12949
 global.CardName[CardStat] = 'Radiance Face, Ulperna'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-CONT [RC/GC]: If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your damage zone has foru or more cards, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your damage zone has four or more cards, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -7935,3 +7935,201 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12979
+{
+global.CardName[CardStat] = 'What is Seen from Peeking Ahead, Lestes'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Loronerol" in its card name, and your Song card was put into the order zone this turn, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard in its different card name from this unit, call it to RC, and shuffle the deck.
+
+CONT [RC]: During your turn, if your order zone has two or more face down cards, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12980
+{
+global.CardName[CardStat] = 'Crashing Waves and Shooting Stars, Romilitta'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC] 1/Turn: When your vanguard sings, COST [Energy Blast 3], choose a Song card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12981
+{
+global.CardName[CardStat] = 'Supporting Many Flowers, Reihart'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [RC]: If your opponent’s vanguard is grade 3 or greater, and you played a Gem order this turn, this unit gets power +5000.
+
+AUTO [RC]: At the end of your turn, if you have a vanguard with "Wilista" in its card name, COST [Energy Blast 3 & retire this unit], choose a grade 3 card with "Wilista" in its card name or a Gem card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12982
+{
+global.CardName[CardStat] = 'United Light Asterism, Jemille'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit attacks, if you played a "Truehearted Ruby" and "Everlasting Sapphire" this turn, COST [Counter Blast 1], and all of your front row rear-guards get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12983
+{
+global.CardName[CardStat] = 'Angelic Star, Coral '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12984
+{
+global.CardName[CardStat] = 'Fresh Star, Coral  '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is rode upon by "Shiny Star, Coral", look at the top seven cards of your deck, choose up to one card with "Coral" in its card name or up to one grade 3 unit card from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this card is put into soul by the ability of your grade 3 or greater vanguard with "Coral" in its card name, choose one of your vanguards, and it gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it also gets "Triple Drive" until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12985
+{
+global.CardName[CardStat] = 'Shiny Star, Coral  '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO [VC]: When this unit attacks, choose one of your rear-guards, and you may return it to hand.
+
+AUTO: When this card is put into soul by the ability of your grade 3 or greater vanguard with "Coral" in its card name, draw a card, Energy Charge 1, choose one of your rear-guards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12986
+{
+global.CardName[CardStat] = 'Aurora Star, Coral    '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+CONT [VC]: All of your other units with "Coral" in their card name get shield +5000.
+
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], and draw a card. If you put a card with "Coral" in its card name for this cost, this unit gets "AUTO [VC]: At the end of the battle this unit attacked, choose one of your rear-guards, and stand it." until end of turn.
+
+AUTO [VC]: At the beginning of your battle phase, COST [Energy Blast 4], and all of your front row units get power +5000 until end of turn for every two cards with "Coral" in their card names in your soul. If your opponent’s vanguard is grade 3 or greater, this unit gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 12987
+{
+global.CardName[CardStat] = 'Beginning Tone Is, Corsmal'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is put on GC, COST [Soul Blast 1], and until end of that battle, this unit gets shield +5000 for every two cards with "Coral" in their card names in your soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12988
+{
+global.CardName[CardStat] = 'Ballads Continued Through Singing, Seitys'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit attacks, if you have a grade 3 or greater vanguard with "Coral" in its card name, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: When this unit stand by the ability of your vanguard with "Coral" in its card name, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 12989
+{
+global.CardName[CardStat] = 'Singular Heart, Lurica'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO [RC]: When this unit boosts, if you have a vanguard with "Coral" in its card name, choose a card with "Coral" in its card name from your drop, and you may put it into soul. At the end of that battle, if your soul has four or more cards with "Coral" in their card names, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12990
+{
+global.CardName[CardStat] = 'Diva of Resonating Stars, Lutanteal'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a card with "Coral" in its card name from your drop, and put it into hand.
+
+CONT [RC/GC]: If your soul has four or more cards with "Coral" in their card names, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 12991
+{
+global.CardName[CardStat] = 'Luminous Melody, Ilneisia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC]: When this unit attacks, if your soul has four or more cards with "Coral" in their card names, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of your turn, if your soul has four or more cards with "Coral" in their card names, COST [Soul Blast 1], and return this unit to hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
