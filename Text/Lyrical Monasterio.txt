@@ -8718,11 +8718,14 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 ACT [VC] 1/Turn: If you did not ride with a card’s ability this turn, COST [Soul Blast 1], choose up to one card from your hand with the same card name as this unit, and ride it as stand. If you rode a card, draw a card, choose one of your vanguards, and it gets power +10000 until end of turn. If your opponent’ vanguard is grade 3 or greater, it gets "CONT [VC]: All of your front row units get power +10000." instead of power +10000.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one of your rear-guards, return it to hand, choose up to one grade 3 or less card from your hand, and call it to RC.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one of your rear-guards, return it to hand, choose up to one grade 3 or less card from your hand, and call it to RC.
+
+(SHIFT + left click to give power +10000 to all of your front row units)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
 global.PersonaRide[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8801,3 +8804,17 @@ global.CardInClan[CardStat] = 13
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13040
+{
+global.CardName[CardStat] = 'Floating Point, Katherile'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+ACT [RC] 1/Turn: COST [Energy Blast 3], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
