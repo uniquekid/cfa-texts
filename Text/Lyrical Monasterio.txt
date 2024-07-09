@@ -7998,7 +7998,9 @@ CardStat = 12983
 global.CardName[CardStat] = 'Angelic Star, Coral  '
 global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
 
-[AUTO]:When this unit is rode upon, if you went second, draw a card.'
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
@@ -8479,10 +8481,15 @@ CONT [VC]: All of your and your opponent’s units get "CONT [VC/GC]: If it is the
 
 ACT [VC] 1/Turn: COST [Energy Blast 4], and this unit gets power +10000 / drive +1 until end of turn.
 
-AUTO [VC] 1/Turn: When your card is discarded from hand by a card’s ability during your turn, COST [Counter Blast 1], and draw a card.'
+AUTO [VC] 1/Turn: When your card is discarded from hand by a card’s ability during your turn, COST [Counter Blast 1], and draw a card.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8720,11 +8727,10 @@ ACT [VC] 1/Turn: If you did not ride with a card’s ability this turn, COST [Soul
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one of your rear-guards, return it to hand, choose up to one grade 3 or less card from your hand, and call it to RC.
 
-(SHIFT + left click to give power +10000 to all of your front row units)'
+(SHIFT + left click to give power +10000 to all of your front row units or persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
-global.PersonaRide[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
