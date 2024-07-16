@@ -5932,7 +5932,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 12626
 {
 global.CardName[CardStat] = 'Ancestral Dragon King of Zenith Colors, Founaherdio'
-global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Over Trigger
+global.CardText[CardStat] = 'Stoicheia/Nature Dragon/Over Trigger
 
 CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
 
@@ -6764,7 +6764,9 @@ CardStat = 13073
 global.CardName[CardStat] = 'Stagnipper Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO: When this unit is rode upon, if you went second, draw a card.'
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
 }
@@ -6790,7 +6792,7 @@ CardStat = 13075
 global.CardName[CardStat] = 'Mantiscythe Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO: When this unit is rode upon by a grade 3 card with "Levidras" in its card name, COST [Energy Blast (3)], look at the top five cards of your deck, choose up to one grade 3 or less card from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is rode upon by a grade 3 card with "Levidras" in its card name, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one grade 3 or less card from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -6871,6 +6873,7 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 13081
@@ -6878,11 +6881,12 @@ CardStat = 13081
 global.CardName[CardStat] = 'Onfall Anotogaster'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO:When this unit is placed on RC, if you have an Infinity Eyes marker in the same column as this unit, COST [Energy Blast 3], look at the top two cards of your deck, choose a card from among them, put it into hand, put the rest on the top or bottom of the deck, and this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed on RC, if you have an Infinity Eyes marker in the same column as this unit, COST [Energy Blast 3], look at the top two cards of your deck, choose a card from among them, put it into hand, put the rest on the top or bottom of the deck, and this unit gets power +5000 until end of turn.
 
-CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Levidras" in its card name, and you have three or more Infinity Eyes markers, this unit gets [Power]+5000, and if you do not have another rear-guard with the same card name as this unit in your back row, this unit can attack from the back row.'
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Levidras" in its card name, and you have three or more Infinity Eyes markers, this unit gets power +5000, and if you do not have another rear-guard with the same card name as this unit in your back row, this unit can attack from the back row.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CanAttackFromBackRow[CardStat] = 1
