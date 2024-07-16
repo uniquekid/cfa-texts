@@ -409,9 +409,9 @@ CardStat = 970
 global.CardName[CardStat] = 'White Lily Musketeer, Cecilia'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-ACT [VC] 1/Turn: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose five normal units with "Musketeer" in its card name from your drop zone, and put them on the bottom of your deck in any order] Search your deck for up to two cards named "White Lily Musketeer, Cecilia", call them to separate RC, and shuffle your deck.
+ACT [VC] 1/Turn: Limit Break 4: COST [Counter Blast 1 & put five normal units with "Musketeer" in their card names from drop on the bottom of your deck in any order], search your deck for up to two "White Lily Musketeer, Cecilia", call them to RC, and shuffle the deck.
 
-ACT [VC] 1/Turn: [Choose one of your rear-guards with "Musketeer" in its card name, and retire it] Look at up to five cards from the top of your deck, search for up to one card with "Musketeer" in its card name from among them, call it to RC, and shuffle your deck.'
+ACT [VC] 1/Turn: COST [Retire a rear-guard with "Musketeer" in its card name], look at up to five cards from the top of your deck, choose up to one card with "Musketeer" in its card name from among them, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -1249,9 +1249,9 @@ CardStat = 2850
 global.CardName[CardStat] = 'White Lily Musketeer Captain, Cecilia'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
+Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose two of your rear-guards with "Musketeer" in its card name, and retire them] If you have a heart card with "Cecilia" in its card name, look at five cards from the top of your deck, search for up to three cards with "Musketeer" in its card name from among them, call them to separate RC, and shuffle your deck.'
+ACT [VC] 1/Turn: COST [Counter Blast 1 & retire two rear-guards with "Musketeer" in their card names], if you have a heart card with "Cecilia" in its card name, look at the top five cards of your deck, choose up to three cards with "Musketeer" in their card names from among them, call them to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -2542,7 +2542,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
 
-AUTO [VC] Generation Break 8: [Choose three normal units from your drop zone, and return them to your deck] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your units, search your deck for up to three cards with the same card name as that unit, call them to separate RC, and until end of turn, for each called unit, the units called with this effect and this unit get power +10000. Shuffle your deck.'
+AUTO [VC] Generation Break 8: When this unit attacks a vanguard, COST [return three normal units from drop to deck], choose one of your units, search your deck for up to three cards with the same card name as that unit, call them to RC, and the units called by this effect and this unit get power +10000 until end of turn for each unit called by this effect. Shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -4829,7 +4829,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
-ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card name. Shuffle the deck.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card names. Shuffle the deck.
 (SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
