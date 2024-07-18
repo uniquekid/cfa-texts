@@ -489,14 +489,16 @@ CardStat = 1408
 global.CardName[CardStat] = 'Revenger, Raging Form Dragon'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Choose three of your rear-guards with "Revenger" in its card name, and retire them] At the beginning of the close step of a battle when this unit attacked, you may pay the cost. If you do, choose up to one card named "Revenger, Raging Form Dragon" from your hand, ride it as stand, choose one of your vanguards, and it gets power +10000 until the end of turn.
+AUTO [VC] Limit Break 4: At the end of the battle this unit attacked, COST [retire three rear-guards with "Revenger" in their card names], choose up to one card named "Revenger, Raging Form Dragon" from your hand, ride it as stand, choose one of your vanguards, and it gets power +10000 until the end of turn.
 
-AUTO [VC]: [Counter Blast 1] When this unit attacks, you may pay the cost. If you do, this unit gets power +3000 until end of that battle.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and this unit gets power +3000 until end of that battle.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
+global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 1409
@@ -770,7 +772,7 @@ CardStat = 1829
 global.CardName[CardStat] = 'Wily Revenger, Mana'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO: When this unit is placed on VC or RC, if you have a «Shadow Paladin» vanguard, search your deck for up to one grade 1 or less card with "Revenger" in its card name, call it to RC in the same column as this unit, shuffle your deck, and at the end of that turn, put that unit on the bottom of your deck.'
+AUTO: When this unit is placed on VC or RC, if you have a «Shadow Paladin» vanguard, search your deck for up to one grade 1 or less card with "Revenger" in its card name, call it to RC in the same column as this unit, shuffle your deck. At the end of that turn, put that unit on the bottom of the deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -1312,7 +1314,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Choose one of your rear-guards with "Revenger" in its card name, and retire it] If you have a card in your heart with "Revenger" in its card name, search your deck for up to one grade 1 or less card with "Revenger" in its card name, call it to RC, shuffle your deck, that unit and this unit get power +3000 until end of turn.'
+ACT [VC] 1/Turn: COST [Retire a rear-guard with "Revenger" in its card name], if you have a heart card with "Revenger" in its card name, search your deck for up to one grade 1 or less card with "Revenger" in its card name, call it to RC, shuffle the deck, and that unit and this unit get power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -1890,11 +1892,12 @@ CardStat = 3541
 global.CardName[CardStat] = 'Revenger, Darkbless Angel'
 global.CardText[CardStat] = 'Shadow Paladin/Angel
 
-AUTO: [Counter Blast 1] When this unit is put into the drop zone from RC for the cost of your units ability, if you have a grade 3 or greater vanguard with "Revenger" in its card name, you may pay the cost. If you do, search your deck for up to one grade 1 card with "Revenger" in its card name, call it to RC, shuffle your deck, and at the end of that turn, retire the unit called with this effect.'
+AUTO: When this unit is retired from RC for the cost of your units ability, if you have a grade 3 or greater vanguard with "Revenger" in its card name, COST [Counter Blast 1], search your deck for up to one grade 1 card with "Revenger" in its card name, call it to RC, and shuffle the deck. At the end of that turn, retire that unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 3593
@@ -2157,7 +2160,7 @@ CardStat = 4139
 global.CardName[CardStat] = 'Revenger, Slay Hex Dragon'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO: [Counter Blast 1 & Choose a card from your hand, and discard it] When this unit is placed on VC by riding a unit with "Revenger" in its card name, you may pay the cost. If you do, search your deck for up to one card named "Revenger, Raging Form Dragon", ride it as stand, and shuffle your deck. If you rode a card, choose a card named "Revenger, Slay Hex Dragon" from your soul, and put it into your hand.'
+AUTO: When this unit is placed by riding from a unit with "Revenger" in its card name, COST [Counter Blast 1 & discard a card from hand], search your deck for up to one "Revenger, Raging Form Dragon", ride it as stand, and shuffle the deck. If you rode a card, choose a "Revenger, Slay Hex Dragon" from your soul, and put it into hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -2402,11 +2405,12 @@ CardStat = 4294
 global.CardName[CardStat] = 'Detecting Revenger, Aife'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-ACT [RC]: [Rest this unit] Reveal five cards from the top of your deck, choose one "Revenger, Raging Form Dragon" from among them, put it into your hand, and shuffle your deck. If you did not put it into your hand, choose one of your other units, and it gets power +2000 until end of turn.'
+ACT [RC]: COST [Rest this unit], reveal the top five cards of your deck, choose a "Revenger, Raging Form Dragon" from among them, put it into hand, and shuffle the deck. If you did not put it into hand, choose one of your other units, and it gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 4308
@@ -2874,7 +2878,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 8: [Counter Blast 1] Choose up to five of your rear-guards, and retire them. Search your deck for up to the same number of grade 1 or less cards as the number of units that were retired, call them to separate RC, and they get power +15000 until end of turn. Choose up to the same number of your opponent’s rear-guards as the number of units that were called, and retire them. Shuffle your deck.'
+ACT [VC] 1/Turn Generation Break 8: COST [Counter Blast 1], choose up to five of your rear-guards, and retire them. Search your deck for up to the same number of grade 1 or less cards as the number of units retired by this effect, call them to RC, and they get power +15000 until end of turn, choose up to the same number of your opponent’s rear-guards as the number of units called by this effect, retire them, and shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -5217,7 +5221,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "Revenger, Raging Form Dragon" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Revenger" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "Revenger, Raging Form Dragon" crest.
 
-AUTO [VC] Limit Break 4: At the end of the battle this unit attacked, if you have a heart card with "Raging" in its card name, COST [Counter Blast 1 & Soul Blast 1 & retire two rear-guards, and discard two grade 3 <Abyss Dragon> from hand], put this unit in G zone face up, choose up to one face down "True Revenger, Raging Rapt Dragon" from your G zone, Stride it on VC as stand, and it gets drive -1 until end of turn.
+AUTO [VC] Limit Break 4: At the end of the battle this unit attacked, if you have a heart card with "Raging" in its card name, COST [Counter Blast 1 & Soul Blast 1 & retire two rear-guards, and discard two grade 3 <Abyss Dragon> from hand], put this unit into G zone face up, choose up to one face down "True Revenger, Raging Rapt Dragon" from your G zone, Stride it on VC as stand, and it gets drive -1 until end of turn.
 
 (SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4

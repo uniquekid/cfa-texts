@@ -741,12 +741,14 @@ CardStat = 1156
 global.CardName[CardStat] = 'Leading Jewel Knight, Salome'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks, if the number of other rear-guards you have with "Jewel Knight" in its card name is four or more, this unit gets power +2000 / critical +1 until end of that battle.
+AUTO [VC] Limit Break 4: When this unit attacks, if you have four or more rear-guards with "Jewel Knight" in their card names, this unit gets power +2000 / critical +1 until end of that battle.
 
-ACT [VC]: [Counter Blast 2-card with "Jewel Knight" in its card name] Search your deck for up to one card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck.'
+ACT [VC]: COST [Counter Blast 2 cards with "Jewel Knight" in their card names], search your deck for up to one card with "Jewel Knight" in its card name, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 1157
@@ -1974,10 +1976,12 @@ CardStat = 2452
 global.CardName[CardStat] = 'Jewel Knight, Swordmy'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: [Counter Blast 1-card with "Jewel Knight" in its card name] When this unit is placed on RC, you may pay the cost. If you do, search your deck for up to one grade 1 or less card with "Jewel Knight" in its card name, call it to RC, and shuffle your deck.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1 card with "Jewel Knight" in its card name], search your deck for up to one grade 1 or less card with "Jewel Knight" in its card name, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 2453
@@ -1987,12 +1991,14 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 ACT [VC]: Legion 20000 "Jewel Knight, Swordmy".
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and the number of units you have with "Jewel Knight" in its card name is six or more, this unit gets power +5000 / critical +1 until end of that battle.
+AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and you have six or more units with "Jewel Knight" in its card names, this unit gets power +5000 / critical +1 until end of that battle.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
+global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 2459
@@ -2582,11 +2588,13 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-AUTO: [Choose a face down card named "Aerial Divine Knight, Altmile" from your G zone, and turn it face up] When this unit is placed on VC, you may pay the cost. If you do, until end of turn, this unit gets "CONT [VC]: All of your units in your front row get power +3000.". Then, if the number of face up cards in your G zone is two or more, search your deck for up to one grade 2 card, call it to RC, shuffle your deck, and that unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on VC, COST [turn a "Aerial Divine Knight, Altmile" from G zone face up], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +3000.". If your G zone has two or more face up cards, search your deck for up to one grade 2 card, call it to RC, shuffle the deck, and that unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
 }
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 3172
@@ -2841,10 +2849,12 @@ CardStat = 3465
 global.CardName[CardStat] = 'Calling Jewel Knight, Christine'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-AUTO: [Counter Blast 1 & Choose a grade 3 card from your hand, and reveal it] When this unit is placed on RC, if you have three or more other rear-guards with "Jewel Knight" in its card name, you may pay the cost. If you do, search your deck for up to one grade 3 card with "Jewel Knight" in its card name, call it to RC, shuffle your deck, at the end of that turn, put the unit called with this effect into your hand, choose a card from your hand, and discard it.'
+AUTO: When this unit is placed on RC, if you have three or more other rear-guards with "Jewel Knight" in their card names, COST [Counter Blast 1 & reveal a grade 3 card from your hand], search your deck for up to one grade 3 card with "Jewel Knight" in its card name, call it to RC, shuffle the deck. At the end of that turn, put that unit into hand, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 3466
@@ -3207,7 +3217,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 G guardian.
 
-CONT [GC]: If the number of your grade 2 rear-guards is two or more, this unit gets shield +10000.'
+CONT [GC]: If you have two or more grade 2 rear-guards, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -4249,7 +4259,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-AUTO [VC] Generation Break 8: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, search your deck for up to five cards, call them to separate RC, and until end of turn, they get power +4000, and this unit gets critical +1. Shuffle your deck.'
+AUTO [VC] Generation Break 8: When this unit attacks a vanguard, COST [Counter Blast 1], search your deck for up to five cards, call them to RC, and until end of turn, they get power +4000, and this unit gets critical +1. Shuffle your deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -5431,9 +5441,9 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-AUTO [VC]: When it attacks a vanguard while boosted, COST [Counter Blast 1 & turn a card from your G zone face up], search your deck for up to two grade 2 cards, call them to RC, and shuffle your deck.
+AUTO [VC]: When it attacks a vanguard while boosted, COST [Counter Blast 1 & turn a card from G zone face up], search your deck for up to two grade 2 cards, call them to RC, and shuffle the deck.
 
-AUTO [VC]: When your rear-guard is placed from deck, that unit gets power +5000 until end of turn for each face up card in your G zone.'
+AUTO [VC]: When your unit is placed on RC from deck, that unit gets power +5000 until end of turn for each face up card in your G zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -6843,7 +6853,7 @@ global.CardText[CardStat] = 'Royal Paladin/Elf
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "Leading Jewel Knight, Salome" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Jewel Knight" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "Leading Jewel Knight, Salome" crest.
 
-ACT [VC] 1/Turn: COST [Choose a face down card from your G zone, and turn it face up], if you have a heart card with "Jewel Knight" in its card name, and if you have three or more rear-guards with "Jewel Knight" in its card name, all of your units with "Jewel Knight" in its card name get power +3000 for each face up card named "Climax Jewel Knight Lord, Evangeline" in your G zone until end of turn.
+ACT [VC] 1/Turn: COST [Turn a card from G zone face up], if you have a heart card with "Jewel Knight" in its card name, and if you have three or more rear-guards with "Jewel Knight" in their card names, all of your units with "Jewel Knight" in their card names get power +3000 for each face up card named "Climax Jewel Knight Lord, Evangeline" in your G zone until end of turn.
 (SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
