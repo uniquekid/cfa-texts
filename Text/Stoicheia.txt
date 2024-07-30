@@ -4719,7 +4719,7 @@ CardStat = 11669
 global.CardName[CardStat] = 'The Quintessential Quintuplets, Itsuki Nakano'
 global.CardText[CardStat] = 'Stoicheia/Quintuplet
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose one card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose a card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
 
 CONT [VC]: During your turn, if your memory has six or more <Quintuplet> with different card names, all of your front row <Quintuplet> rear-guards get power +2000 for each card in your drop.
 
@@ -4739,7 +4739,7 @@ global.CardText[CardStat] = 'Stoicheia/Normal Order/Quintuplet
 
 Play this if your vanguard is "The Quintessential Quintuplets, Itsuki Nakano"!
 
-Choose up to two <Quintuplet> with the same card name from your drop, put one on bottom of deck, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
+Choose up to two <Quintuplet> with the same card name from your drop, put one on the bottom of the deck, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
 • Three or more - Draw a card.
 • Five or more - Counter Charge 1.
 • Seven or more - Choose one of your vanguards, and it gets drive +1 until end of turn.'
@@ -6072,7 +6072,7 @@ CardStat = 12657
 global.CardName[CardStat] = 'Fairy of Flower-nectar, Coutir'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from the drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
+AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -6956,4 +6956,30 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13140
+{
+global.CardName[CardStat] = 'Ruined Armor Guttler'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+CONT [RC/GC]: If you have a vanguard with "Zorga" in its card name and [Divine Skill], this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13141
+{
+global.CardName[CardStat] = 'Sea Scissors of Deep Hades'
+global.CardText[CardStat] = 'Stoicheia/Ghost
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Zorga" in its card name, COST [retire two other rear-guards], choose a normal order from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

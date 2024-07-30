@@ -4633,7 +4633,7 @@ CardStat = 11605
 global.CardName[CardStat] = 'The Quintessential Quintuplets, Yotsuba Nakano'
 global.CardText[CardStat] = 'Keter Sanctuary/Quintuplet
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose one card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose a card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and this unit gets power +5000 until end of turn for every two <Quintuplet> in your memory. If your memory has six or more <Quintuplet> with different card names, draw a card.
 AUTO [VC]: When this unit’s attack hits a vanguard, choose a <Quintuplet> from your drop, and put it into memory.
 AUTO [VC]: At the beginning of your turn, if your memory has seven or more <Quintuplet> with different card names and a total of fourteen or more <Quintuplet>, you win the game.'
@@ -4652,7 +4652,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Normal Order/Quintuplet
 
 Play this if your vanguard is "The Quintessential Quintuplets, Yotsuba Nakano"!
 
-Choose up to two <Quintuplet> with the same card name from your drop, put one on bottom of deck, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
+Choose up to two <Quintuplet> with the same card name from your drop, put one on the bottom of the deck, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
 • Three or more - Choose one of your vanguards, and it gets power +5000 until end of your opponent’s next turn.
 • Five or more - Counter Charge 1.
 • Seven or more - Choose one of your <Quintuplet> rear-guards, and it gets "AUTO [RC]: When this unit attacks, this unit performs drive checks until end of that battle. At the end of that battle, put this unit into memory." until end of turn.'
@@ -6252,7 +6252,7 @@ CardStat = 12656
 global.CardName[CardStat] = 'Obligator Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from the drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
+AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -6991,3 +6991,163 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13129
+{
+global.CardName[CardStat] = 'Henagon Saturate Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Sorceress" in its card nmae, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Hexaorb" in its card name, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13130
+{
+global.CardName[CardStat] = 'Proud Familiar, Clacaminya'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck, and put it on the top of the deck or into soul.
+
+ACT [RC] 1/Turn: If you have a vanguard with "Sorceress" in its card name, COST [discard a card from hand], and reveal the top card of your deck. If the revealed card has "Sorceress" in its card name, put that card into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13131
+{
+global.CardName[CardStat] = 'Knight of Heavenly Expression, Admis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13132
+{
+global.CardName[CardStat] = 'Knight of Heavenly Sough, Tranquilia'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by "Everlasting Sky Knight, Soudios", look at the top five cards of your deck, choose up to one grade 2 or greater card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Energy Charge 2.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13133
+{
+global.CardName[CardStat] = 'Everlasting Sky Knight, Soudios'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon by a grade 3 card with "Alden" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one grade 3 or less card from among them, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13134
+{
+global.CardName[CardStat] = 'Destined One of Protection, Alden'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [VC]: When a card would be called by this unit’s ability to a RC with a unit, return the unit that is on that RC to hand instead of putting it into drop.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose up to one card from your hand, call it to RC, and until end of your opponent’s next turn, it cannot be retired by your opponent’s card effects, and gets power +10000.
+
+[Divine Skill] - ACT [VC]: COST [Soul Blast 1], look at the top seven cards of your deck, choose up to two cards from among them, call them to RC, and until end of your opponent’s next turn, they cannot be retired by your opponent’s card effects. Shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13135
+{
+global.CardName[CardStat] = 'Wafting Owl'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+CONT [RC/GC]: If you have a vanguard with "Alden" in its card name and [Divine Skill], this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13136
+{
+global.CardName[CardStat] = 'Knight of Sky Flows, Gelment'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit intercepts, if you have a grade 3 or greater vanguard with "Alden" in its card name, this unit gets shield +20000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13137
+{
+global.CardName[CardStat] = 'Heavenly Blade of Liaison, Razionel'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 4], and draw a card.
+
+AUTO [RC]: When your other unit is placed on the RC this unit is on by the ability of your grade 3 or greater vanguard with "Alden" in its card name, that placed unit gets power +10000 until end of turn, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13138
+{
+global.CardName[CardStat] = 'Heavenly Defense Dragon, Wedgeffluence Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Alden" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Alden" in its card name, Soul Charge 1, and this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13139
+{
+global.CardName[CardStat] = 'Determine with the Blade of Protection'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Play this if you have a vanguard with "Alden" in its card name and [Divine Skill] !
+
+Choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one card from your hand, and call it to RC." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

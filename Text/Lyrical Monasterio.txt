@@ -5396,7 +5396,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 11962
 {
-global.CardName[CardStat] = 'Tr!ple?Tr!ck, Fenelle'
+global.CardName[CardStat] = 'Tr!plexTr!ck, Fenelle'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 CONT [VC]: During your turn, you can play three orders, but you cannot play orders other than "Trick & Treat!" or Regalis Piece.
@@ -7240,7 +7240,7 @@ CardStat = 12658
 global.CardName[CardStat] = 'Want to Behold That Profile, Orpha'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from the drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
+AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -8489,7 +8489,7 @@ CardStat = 13016
 global.CardName[CardStat] = 'Absolute Zero, Sagitta'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
  
-CONT [VC]: All of your and your opponent’s units get "CONT [VC/GC]: If it is the fourth battle of this turn or more, when this unit would attack, it cannot attack unless you discard a card from hand.".
+CONT [VC]: All of your and your opponent’s units get "CONT [VC/RC]: If it is the fourth battle of this turn or more, when this unit would attack, it cannot attack unless you discard a card from hand.".
 
 ACT [VC] 1/Turn: COST [Energy Blast 4], and this unit gets power +10000 / drive +1 until end of turn.
 
@@ -8932,3 +8932,19 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13142
+{
+global.CardName[CardStat] = 'Feeling Performance of Blossom Scales, Lururatye'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf/Over Trigger
+
+CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
+
+Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
