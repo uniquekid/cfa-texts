@@ -4311,7 +4311,7 @@ global.CardText[CardStat] = 'Dragon Empire/Quintuplet
 
 AUTO: When this unit is placed by riding from a grade 1 <Quintuplet>, look at the top seven cards of your deck, choose up to one <Quintuplet> from among them, put it into your memory, and shuffle the deck.
 
-CONT [RC]: During your turn, if your opponent’s rear-guard was retired this turn, this unit gets power +5000. If your memory has five or more <Quintuplet> with different card names, get power +10000 instead of +5000.'
+CONT [RC]: During your turn, if your opponent’s rear-guard was retired this turn, this unit gets power +5000. If your memory has five or more <Quintuplet> with different card names, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -4324,9 +4324,9 @@ CardStat = 11524
 global.CardName[CardStat] = 'The Quintessential Quintuplets, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplet
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose one card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
-CONT [VC]: If your memory has six or more <Quintuplet> with different card names, when your opponent would call cards from their hand to GC, they must call two or more cards at the same time.
-AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, choose one of your <Quintuplet> rear-guards, and increase that unit’s and this unit’s power by the power of the unit retired by this ability until end of turn. If you did not retire a card, increase power by +10000 instead.'
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to two <Quintuplet> from among them, reveal them, choose a card from among the revealed cards, put it into hand, put the rest of the revealed cards into memory, and shuffle the deck.
+CONT [VC]: If your memory has six or more <Quintuplet> with different card names, when your opponent would call cards from hand to GC, they must call two or more cards at the same time.
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, choose one of your <Quintuplet> rear-guards, and increase the power of that unit and this unit by the power of the unit retired by this ability. If you did not retire a card, increase power by +10000 instead.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -4342,10 +4342,10 @@ global.CardText[CardStat] = 'Dragon Empire/Normal Order/Quintuplet
 
 Play this if your vanguard is "The Quintessential Quintuplets, Ichika Nakano"!
 
-Choose up to two <Quintuplet> with the same card name from your drop, put one on bottom of deck from among them, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
+Choose up to two <Quintuplet> with the same card name from your drop, put one on the bottom of the deck from among them, and put the rest into memory. If you chose one or more cards, perform all of the following according to the number of <Quintuplet> with different card names in your memory.
 • Three or more - Choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
 • Five or more - Counter Charge 1.
-• Seven or more - Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from their hand to GC, and cannot play blitz orders." until end of turn.'
+• Seven or more - Choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, your opponent cannot call sentinels from hand to GC, and cannot play blitz orders from hand." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -4359,7 +4359,7 @@ CardStat = 11526
 global.CardName[CardStat] = 'Stealth-mode Actress, Ichika Nakano'
 global.CardText[CardStat] = 'Dragon Empire/Quintuplet
 
-AUTO: When this unit is placed on RC during your main phase, if you have a <Quintuplet> vanguard, look at the top three cards of your deck, choose up to one <Quintuplet> from among them, put it into the memory, and shuffle the deck.
+AUTO: When this unit is placed on RC during your main phase, if you have a <Quintuplet> vanguard, look at the top three cards of your deck, choose up to one <Quintuplet> from among them, put it into memory, and shuffle the deck.
 
 CONT [RC]: If your memory has three or more <Quintuplet> with different card names, this unit gets power +2000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
@@ -5974,9 +5974,9 @@ CardStat = 12609
 global.CardName[CardStat] = 'Dragritter of Flame Blade, Grhy'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-CONT [VC]: If your soul has a "Child Dragon, Aundra", when you would ride a "Unison Dragon, Aundra" from the ride deck, you can ride without discarding a card from hand.
+CONT [VC]: If your soul has a "Child Dragon, Aundra", when you would ride "Unison Dragon, Aundra" from the ride deck, you can ride without discarding a card from hand.
 
-AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Grhy" in its card name, COST [rest this unit], choose one of your rear-guards with "Aundra" in its card name, that unit can attack from the back row, and gets power +10000 until end of turn.'
+AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Grhy" in its card name, COST [rest this unit], choose one of your rear-guards with "Aundra" in its card name, and until end of turn, that unit can attack from the back row, and gets power +10000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5990,7 +5990,7 @@ CardStat = 12610
 global.CardName[CardStat] = 'Unison Dragon, Aundra'
 global.CardText[CardStat] = 'Dragon Empire/Unison Dragon
 
-CONT [VC]: If your soul has a "Dragritter of Flame Blade, Grhy", when you would ride a "Dragconnector, Grhyaundra" from the ride deck, you can ride without discarding a card from hand.
+CONT [VC]: If your soul has a "Dragritter of Flame Blade, Grhy", when you would ride "Dragconnector, Grhyaundra" from the ride deck, you can ride without discarding a card from hand.
 
 CONT [RC]: During your turn, if you have a unit with "Grhy" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -6111,7 +6111,7 @@ CardStat = 12653
 global.CardName[CardStat] = 'Dancing Princess of Elegant Flames, Justina'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from the drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
+AUTO: When this unit is placed on RC from hand, if you did not play any orders this turn, COST [discard a card from hand], search your deck for up to one order card without Regalis Piece, discard it, and it gets "CONT: This card can be played from drop, and when it would be put into drop after being played, put it on the bottom of the deck instead." until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -6184,7 +6184,7 @@ global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
 
 CONT [VC]: During your turn, this unit gets power +2000 for each of your rear-guards.
 
-CONT [VC]: When you would ride from ride deck, you can ride with "Soul Blast 1" instead of "Choose a card from your hand, and discard it".'
+CONT [VC]: When you would ride from ride deck, you can ride with "Soul Blast 1" instead of "Choose a card from hand, and discard it".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -6199,7 +6199,7 @@ global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
 
 ACT [VC] 1/Turn: If you have four or more rear-guards, COST [reveal a card with "Vyrgilla" in its card name from ride deck], and this unit gets critical +1 until end of turn.
 
-AUTO: When this unit is rode upon, look at the top seven cards of your deck, choose up to one grade 2 card from among them, reveal it and put it into hand, and shuffle the deck. If it was rode upon by a grade 3 or greater card with "Vyrgilla" in its card name, you may look at all of the deck instead of the top seven cards.'
+AUTO: When this unit is rode upon, look at the top seven cards of your deck, choose up to one grade 2 card from among them, reveal it and put it into hand, and shuffle the deck. If it was rode upon by a grade 3 or greater card with "Vyrgilla" in its card name, look at all of the deck instead of the top seven cards.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
