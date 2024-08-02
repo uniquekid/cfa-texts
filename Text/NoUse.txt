@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 13142
+global.AllCard = 13157
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -752,8 +752,6 @@ CardStat = 11954
 global.CardName[CardStat] = 'Gripho Eschatologui'
 global.CardText[CardStat] = 'Token Set Order
 
-(This represents a Gripho Eschatologui token, and cannot be put in a deck)
-
 AUTO [Order Zone]: At the beginning of your main phase, you may "Search your deck for up to one trigger unit, put it face up into the ride deck, and shuffle the deck. If you put a card, choose a <Hydragrum> from your drop, and you may call it to RC.".
 
 ACT [Order Zone] 1/Turn: COST [Discard a card with "Griphogila" in its card name from hand], draw a card, choose one of your RC, and put a Dragontree marker. Then, COST [put the top card of the deck into damage zone face down], choose a face up Calamity card from your ride deck, and remove it.
@@ -944,6 +942,22 @@ CONT: The original power of your grade 3 cards with the Limit Break 4 ability be
 CONT: Your vanguard’s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 13149
+{
+global.CardName[CardStat] = 'SYSTEM CODE:X-ceed'
+global.CardText[CardStat] = 'Token Set Order
+
+CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Impauldio" in their card names, and you may have self-modification gauges.
+
+AUTO [Order Zone]: When a card is put into your damage zone during your opponent’s turn, choose a card from your drop, and put it face up as your self-modification gauge. Then, if you have three or less self-modification gauges, and your card other than trigger unit was revealed for this damage check, choose one of your vanguards, and it gets power +5000 until end of turn. If you have four or more self-modification gauges, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0

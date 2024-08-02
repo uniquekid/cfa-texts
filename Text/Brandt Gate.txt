@@ -3723,7 +3723,7 @@ CardStat = 10906
 global.CardName[CardStat] = 'Dissolving Heat Monster, Radiabilio'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC]: When this unit boosts, COST [Soul Blast 1], and until end of that battle, if the sum of the grades of the set orders in your order zone is three or more, this unit gets power +5000, if it is five or more, it gets power +5000, and if it is seven or more, it gets power +5000.'
+AUTO [RC]: When this unit boosts, COST [Soul Blast 1], and until end of that battle, if the sum of the grades of the set orders in your order zone is 3 or more, this unit gets power +5000, if it is 5 or more, it gets power +5000, and if it is 7 or more, it gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -6470,3 +6470,120 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13147
+{
+global.CardName[CardStat] = 'Falstater'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13148
+{
+global.CardName[CardStat] = 'Ino Progrette'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: When this unit is placed by riding from a grade 0, COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE:X-ceed token into your order zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 13149
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13150
+{
+global.CardName[CardStat] = 'Doras Evolia'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is rode upon by a grade 3 card with "Impauldio" in its card name, put the top card of your deck face up as a self-modification gauge. Then, choose one of your self-modification gauges, and you may put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13151
+{
+global.CardName[CardStat] = 'Destined One of Exceedance, Impauldio'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop, put it face up as your self-modification gauge, look at the top five cards of your deck, choose up to one grade 3 or less card from among them, call it to RC, shuffle the deck, and this unit gets "CONT [VC]: All of your front row units get power +5000 for every two of your self-modification gauges." until end of turn.
+
+[Divine Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, and your have four or more self-modification gauges, COST [Counter Blast 1 & discard a card], and this unit gets critical +1 / drive +2 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13152
+{
+global.CardName[CardStat] = 'Spacewalk Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have two or more self-modification gauges, COST [put this unit into soul], chose one of your opponent’s grade 1 or less rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13153
+{
+global.CardName[CardStat] = 'GaTHeR 2-II'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+CONT [RC]: During your turn, if you have four or more self-modification gauges, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13154
+{
+global.CardName[CardStat] = 'Nebula Invoke Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon
+
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle. If you have five or more self-modification gauges, it gets power +15000 instead of +5000.
+
+CONT [GC]: If you have four or more self-modification gauges, this unit gets shield +15000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13155
+{
+global.CardName[CardStat] = 'Airborne Machinery, Vinster'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: During your turn, if you have two or more self-modification gauges, this unit gets power +5000, and if you have eight or more self-modification gauges, this unit’s drive cannot decrease from card effects.
+
+AUTO [RC]: When this unit attacks, if you have four or more self-modification gauges, and no drive checks were performed for the battle your rear-guard attacked this turn, COST [Counter Blast 1], and until end of that battle, this unit performs drive checks, and gets drive -1. At the end of that battle, bind this unit.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
