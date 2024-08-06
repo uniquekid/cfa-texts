@@ -5235,7 +5235,9 @@ CardStat = 12185
 global.CardName[CardStat] = 'Dragwizard, Knies  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-AUTO: When this unit is placed by riding from "Dragprince, Rute", draw a card, and you get a "Dragheart, Luard" crest.'
+AUTO: When this unit is placed by riding from "Dragprince, Rute", draw a card, and you get a "Dragheart, Luard" crest.
+
+(You will be prompted to get the crest upon ride.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -7150,4 +7152,32 @@ global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13160
+{
+global.CardName[CardStat] = 'Utilizing Wizard'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is put on GC, if you have a grade 3 or greater vanguard with "Bastion" in its card name, COST [Energy Blast 2], and this unit gets shield +10000 until end of that battle for every two of your grade 3 or greater units.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13161
+{
+global.CardName[CardStat] = 'Heavenly Promise Dragon, Convergence Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Bastion" in its card name, COST [Energy Blast 3], choose three of your rear-guards, and they get "Boost" until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0

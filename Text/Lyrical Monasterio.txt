@@ -8736,7 +8736,7 @@ CardStat = 13032
 global.CardName[CardStat] = 'PR<3ISM-Image, Vert  '
 global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
-ACT [VC] 1/Turn: If you did not ride with a card’s ability this turn, COST [Soul Blast 1], choose up to one card from your hand with the same card name as this unit, and ride it as stand. If you rode a card, draw a card, choose one of your vanguards, and it gets power +10000 until end of turn. If your opponent’ vanguard is grade 3 or greater, it gets "CONT [VC]: All of your front row units get power +10000." instead of power +10000.
+ACT [VC] 1/Turn: If you did not ride with a card’s ability this turn, COST [Soul Blast 1], choose up to one card from your hand with the same card name as this unit, and ride it as stand. If you rode a card, draw a card, choose one of your vanguards, and it gets power +10000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it gets "CONT [VC]: All of your front row units get power +10000." instead of power +10000.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one of your rear-guards, return it to hand, choose up to one grade 3 or less card from your hand, and call it to RC.
 
@@ -8970,6 +8970,165 @@ global.CardName[CardStat] = 'Summerlight Proscenium, Prendile'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Marlean" in its card name, COST [Counter Blast 1], choose one of your rear-guards, and return that unit to hand at the end of that turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13162
+{
+global.CardName[CardStat] = 'Ringing Song, Fiora'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, choose four of your units. If you chose four units, and all of the chosen units have different card names, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13163
+{
+global.CardName[CardStat] = 'Moderate Mint, Rochelle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Krysrain" in its card name attacks, COST [Energy Blast 3 & put this unit into soul], draw a card, if your rear-guard did not stand by a card’s ability this turn, choose a rear-guard chosen by the ability of your grade 3 or greater vanguard with "Krysrain" in its card name this turn, and stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13164
+{
+global.CardName[CardStat] = 'Lucent Sweet, Milyz'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13165
+{
+global.CardName[CardStat] = 'Coolest Glance, Viilea'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is rode upon by "Mature Lures, Lutikca", draw a card, choose a card from your RC or hand, put it into soul, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13166
+{
+global.CardName[CardStat] = 'Mature Lures, Lutikca'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is rode upon by a grade 3 unit with "Lisciafael" in its card name, COST [Counter Blast 1 or Energy Blast 3], draw a card, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13167
+{
+global.CardName[CardStat] = 'Destined One of Supremacy, Lisciafael'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO [VC] 1/Turn: When this unit attacks while not boosted, COST [Energy Blast 3 & put two or more rear-guards into soul], and this unit gets drive +1 until end of turn. This unit gets power +5000 until end of turn for each card put into soul for this cost.
+
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked a grade 3 or greater unit, if your soul has six or more cards, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn. Until end of this fight, you get "All of your vanguards with "Lisciafael" in their card names get power +5000 / critical +1. (Active on opponent’s turn too)"'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13168
+{
+global.CardName[CardStat] = 'Soothing Voice, Jounette'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Lisciafael" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13169
+{
+global.CardName[CardStat] = 'Charmy Present, Amphie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Lisciafael" in its card name, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Lisciafael" in its card name, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13170
+{
+global.CardName[CardStat] = 'Sweetest Sweets Supremacy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
+
+Play this with COST [Counter Blast 1] if you have a vanguard with "Lisciafael" in its card name!
+
+Energy Charge 2, choose one of your vanguards, and it gets "CONT [VC]: All of your front row units gets power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13171
+{
+global.CardName[CardStat] = 'Sway with Swings, Balatial'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Lisciafael" in its card name, this unit gets power +5000.
+
+AUTO: When this unit is put into soul from RC by the ability of your vanguard with "Lisciafael" in its card name, draw a card, and if you did not Counter Charge this turn, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13172
+{
+global.CardName[CardStat] = 'Brilliance Restage, Albellina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+CONT [RC]: If you have a grade 3 or greater vanguard with "Lisciafael" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Lisciafael" in its card name attacks, if your front row has no other rear-guards, COST [Counter Blast 1], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
