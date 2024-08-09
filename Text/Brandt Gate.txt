@@ -6494,11 +6494,11 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO: When this unit is placed by riding from a grade 0, COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE:X-ceed token into your order zone.
 
-(SHIFT + left click to get a SYSTEM CODE:X-ceed token.)'
+(You will be prompted to get the token upon ride.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.TokenSummoner[CardStat] = 13149
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
@@ -6589,3 +6589,18 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13180
+{
+global.CardName[CardStat] = 'Gravidia Winona'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO [Drop]: When your Meteorite card is put into your order zone other than from drop, if you have a grade 3 or greater vanguard with "Nordlinger" in its card name, COST [Energy Blast 3], and put this card into hand.
+
+CONT [RC]: This unit gets power +5000 for every two of your Meteorite cards put into drop from the order zone this turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
