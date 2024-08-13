@@ -1039,6 +1039,7 @@ AUTO [VC] Generation Break 2: When this unit attacks a vanguard, choose up to on
 Magia - AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], Soul Charge 1, choose up to one card from your soul, call it to RC, and it gets power +5000 until end of turn. At the end of that turn, put that called unit into your soul.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 18
+global.DCards[CardStat] = 2
 }
 
 
@@ -3932,3 +3933,18 @@ global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13182
+{
+global.CardName[CardStat] = 'Juggle Technician'
+global.CardText[CardStat] = 'Pale Moon/Warbeast
+
+CONT [Hand]: You may discard this card as a "HEAL" for the cost of calling a G guardian.
+
+AUTO: When this unit is put on GC from hand, COST [remove a "HEAL" from hand or drop], Soul Charge 2, choose up to two normal units without sentinel from your soul, call them to GC, and they get shield +10000 until end of that battle. If you called a grade 2 or greater unit, COST [Counter Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 10000
