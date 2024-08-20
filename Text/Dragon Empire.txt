@@ -5112,7 +5112,7 @@ CardStat = 12181
 global.CardName[CardStat] = 'Enma Stealth Dragon, Maguntenbu '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
-(STANDARD JP: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
+(STANDARD JP & EN: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
@@ -5224,7 +5224,7 @@ CardStat = 12208
 global.CardName[CardStat] = 'Evil-eye Hades Emperor, Shiranui "Mukuro" '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
-(STANDARD JP: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
+(STANDARD JP & EN: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
 
 Stride COST [Discard a grade 3 card with "Demon Stealth Dragon, Shiranui" in its card name from hand]
 
@@ -7118,4 +7118,32 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13195
+{
+global.CardName[CardStat] = 'Stealth Dragon, Doujun'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, choose a card with "Stealth" in its card name from your soul, and you may bind it.
+
+AUTO: When this unit is put into soul from RC during your battle phase, COST [Energy Blast 2], choose a face up card from your opponent’s bind zone, and put it into drop.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13198
+{
+global.CardName[CardStat] = 'Dragritter, Muntazar'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+CONT [RC]: This unit gets power +5000 for each of your opponent’s rear-guards retired by your vanguard’s ability this turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

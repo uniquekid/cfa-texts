@@ -2893,7 +2893,7 @@ CardStat = 10502
 global.CardName[CardStat] = 'Interdimensional Dragon, Faterider Dragon '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(STANDARD JP: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
+(STANDARD JP & EN: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
@@ -2980,7 +2980,7 @@ CardStat = 10537
 global.CardName[CardStat] = 'Chronodragon Nextage  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(STANDARD JP: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
+(STANDARD JP & EN: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
 
 Stride COST [Discard a grade 3 card with "Chronojet" in its card name from hand]
 
@@ -6861,3 +6861,102 @@ global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13196
+{
+global.CardName[CardStat] = 'Direful Doll, Tarquinia'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO [RC]: When this unit is placed on RC, if you have a vanguard with "Direful Doll" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one normal unit with "Direful Doll" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Direful Doll" in its card name, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13199
+{
+global.CardName[CardStat] = 'Darkside Mirror Master '
+global.CardText[CardStat] = 'Dark States/Pale Moon/Succubus
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13200
+{
+global.CardName[CardStat] = 'Masquerade Bunny  '
+global.CardText[CardStat] = 'Dark States/Pale Moon/Warbeast
+
+CONT [Hand]: While you are paying the cost for [Stride], this card may be discarded as a grade 3.
+
+ACT [Hand]: If you have a "Masked Magician, Harri" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Harri" in its card name, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13201
+{
+global.CardName[CardStat] = 'Direful Doll Orneta'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO: When this unit is placed on RC from hand, if you have a "Masked Magician, Harri" crest, look at the top five cards of your deck, chose up to one card from among them, put it into soul, and shuffle the deck.
+
+AUTO: When this unit is put on GC, if you have a "Masked Magician, Harri" crest, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13202
+{
+global.CardName[CardStat] = 'Flying Manticore '
+global.CardText[CardStat] = 'Dark States/Pale Moon/Chimera
+
+CONT: If you have a grade 3 or greater vanguard with "Harri" in its card name, this card gets all of the following.
+• Magia - AUTO [RC] Generation Break 1: At the end of the battle this unit attacked, if you did not call a unit from your soul during the batle phase this turn, COST [Counter Blast 1 & put this unit into soul], choose up to one card with a different card name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
+• AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13203
+{
+global.CardName[CardStat] = 'Jester Demonic Dragon, Lunatec Dragon '
+global.CardText[CardStat] = 'Dark States/Pale Moon/Abyss Dragon
+
+(STANDARD JP & EN: You can only use the G Zone if you have the Harri Stridå Deckset Rideline.)
+
+Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
+
+Magia - ACT [VC] 1/Turn: COST [Turn a card from G Zone face up], look at the top five cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Choose up to one card from your soul, and call it to RC. At the end of that turn, put that called unit into the soul.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 18
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0

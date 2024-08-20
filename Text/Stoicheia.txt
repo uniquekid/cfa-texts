@@ -7144,12 +7144,41 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13193
 {
-global.CardName[CardStat] = 'Takahashi Bebebebe, Clinging to Cristanos'
+global.CardName[CardStat] = 'Takahashi Bebebebe, Clinging to Cristianos'
 global.CardText[CardStat] = 'Stoicheia/Human
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top seven cards of your deck, choose a card from among them, discard it, and shuffle the deck. Then, if your drop has one or more blitz orders, until end of turn, this unit gets "Triple Drive", and if your drop has four or more blitz orders, it also gets "CONT [VC]: All of your front row units gets power +5000.".
 
 ACT [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13194
+{
+global.CardName[CardStat] = 'Joyful Noble, Fairroid'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Cristianos" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC. If you called a card, Energy Charge 1 .
+
+AUTO [RC]: At the end of the battle this unit boosted a unit with "Severin" in its card name, choose any number of cards other than "HEAL" and over trigger with different grades from each other from your drop. If you chose three or more cards, return them to deck and shuffle it, and at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13197
+{
+global.CardName[CardStat] = 'Crimson Forage Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO [RC]: When this unit attacks, if this unit’s power is 23000 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
