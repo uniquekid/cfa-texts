@@ -6349,7 +6349,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12777
 {
-global.CardName[CardStat] = 'Multiple Stroke Dragon'
+global.CardName[CardStat] = 'Multiple Strokes Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
 CONT [RC/GC]: If your opponent’s drop has five or more cards, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -6362,7 +6362,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12788
 {
-global.CardName[CardStat] = 'Roaster Dragon, Gallimimuspurt'
+global.CardName[CardStat] = 'Explosive Dash Dragon, Gallimimuspurt'
 global.CardText[CardStat] = 'Dragon Empire/Dinoragon
 
 AUTO: When this unit is placed on RC, if you played an order this turn, you may Soul Charge 2.'
@@ -6388,10 +6388,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12805
 {
-global.CardName[CardStat] = 'Refined Bullet of Dust Storm, Mallory'
+global.CardName[CardStat] = 'Dust Storm of Dignified Bullet, Mallory'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, and your opponent has one or less rear-guards, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, and they have one or less rear-guards, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -6401,7 +6401,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12817
 {
-global.CardName[CardStat] = 'Lorens Glare Dragon'
+global.CardName[CardStat] = 'Laurence Glare Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO: When this card is discarded from hand during your turn, if your vanguard is grade 2 or greater, COST [Soul Blast 1], and call this card to RC. If it is your battle phase, this unit cannot attack until end of turn.
@@ -6512,7 +6512,7 @@ global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Khotiblaze" in its card name, this unit gets power +5000.
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Khotiblaze" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one card from among them and reveal it, if it is a grade 2 or less normal unit, call it to RC, and if not, put it into hand. Shuffle the deck. At the end of that turn, put this unit into soul.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Khotiblaze" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one card from among them and reveal it, call it to RC if that revealed card is a grade 2 or less normal unit, and put it into hand if not. Shuffle the deck. At the end of that turn, put this unit into soul.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -6562,7 +6562,7 @@ CONT [VC]: This unit is also regarded as "Peak Personage Stealth Rogue, Shojodoj
 
 ACT [VC] 1/Turn: COST [Energy Blast 3 & bind three cards with "Stealth" in their card names from soul], choose two of your opponent’s RC, bind all of the cards on the chosen RC, your opponent chooses a card from their hand, and binds it. At the end of that turn, your opponent puts them into hand.
 
-AUTO [VC]: When this unit attacks or is attacked, COST [put two rear-guards into soul], choose up to two cards with "Stealth" in its card names from your bind zone, and call them each to a front row and back row RC. If it is your opponent’s battle phase, call all of the chosen cards to GC instead of RC.'
+AUTO [VC]: When this unit attacks or is attacked, COST [put two rear-guards into soul], choose up to two cards with "Stealth" in their card names from your bind zone, and call them each to a front row and back row RC. If it is your opponent’s battle phase, call all of the chosen cards to GC instead of RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -6716,7 +6716,7 @@ CardStat = 12871
 global.CardName[CardStat] = 'Dancing Princess of the Gale, Ainsley'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO [RC]: When this unit attacks, if your order zone has one or more set orders, this unit gets power +5000 until end of that battle. If your order zone has three or more set orders, it gets power +15000 instead of +5000.'
+AUTO [RC]: When this unit attacks, if your order zone has one or more set orders, this unit gets power +5000 until end of that battle. If it has three or more set orders, it gets power +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -6726,12 +6726,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12874
 {
-global.CardName[CardStat] = 'Quaking Sword - Thunderclap'
+global.CardName[CardStat] = 'Polar Quake Sword Ligetung'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
 Play this with COST [Counter Blast 1] !
 
-Choose one of your opponent’s rear-guards, and retire it. If you have a <Thunder Dragon> vanguard, bind it instead of retiring it.'
+Choose one of your opponent’s rear-guards, and retire it. If you have a <Thunder Dragon> vanguard, bind that rear-guard instead of retiring it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -6759,9 +6759,9 @@ CardStat = 12914
 global.CardName[CardStat] = 'Spark Spike Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
 
-CONT: If you have a vanguard with only «Narukami» for its clan, this card is only «Narukami».
+CONT: If you have a vanguard with only «Narukami» for its clan, this card is only from «Narukami».
 
-CONT [RC]: If you have a vanguard with only «Narukami» for its clan, all of your other rear-guards in the same column as this unit get power +5000. If your vanguard’s attack hits two or more times this turn, they get power +10000 instead of +5000.
+CONT [RC]: If you have a vanguard with only «Narukami» for its clan, all of your other rear-guards in the same column as this unit get power +5000. If your vanguard’s attack hit two or more times this turn, they get power +10000 instead of +5000.
 
 AUTO [RC]: At the end of the battle this unit boosted, if your vanguard’s attack hit two or more times this turn, COST [Energy Blast 3], and draw a card.'
 global.UnitGrade[CardStat] = 1
