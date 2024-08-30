@@ -2626,6 +2626,7 @@ Play this with COST [Counter Blast 1] if you have a vanguard with "Baromagnes" i
 Soul Charge 3. Choose one of your vanguards, and it gets "CONT [VC]: If your soul has ten or more cards, all of your front row units get power +5000." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -2916,6 +2917,7 @@ Play this if you have a vanguard with "Kheios" in its card name!
 Choose one of your vanguards, and it gets power +10000 until end of turn. Choose three normal units from your drop, put them into your soul, and put this card on the bottom of your deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -7044,7 +7046,7 @@ CardStat = 13223
 global.CardName[CardStat] = 'Anachronous Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-AUTO [Gauge Zone]: At the beginning of your battle pahse, if this card is a regress gauge, COST [Counter Blast 1], choose a card from your drop, and put it face up as a regress gauge. If you put a card, call this card to RC.
+AUTO [Gauge Zone]: At the beginning of your battle phase, if this card is a regress gauge, COST [Counter Blast 1], choose a card from your drop, and put it face up as a regress gauge. If you put a card, call this card to RC.
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Liael" in its card name, until end of that battle, this unit gets power +5000, if you have three or more regress gauges, COST [Energy Blast 2], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
@@ -7112,4 +7114,32 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13235
+{
+global.CardName[CardStat] = 'Desire Devil, Akueen'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Greedon" or "Desire Devil" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one unit card with "Desire Devil" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Greedon" in its card name, COST [Soul Blast 1 & bind this card], choose one of your opponent’s rear-guards and put it into soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13236
+{
+global.CardName[CardStat] = 'Desire Devil, Inpukku'
+global.CardText[CardStat] = 'Dark States/Demon
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Greedon" in its card name, COST [bind this card], Energy Charge 1, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
