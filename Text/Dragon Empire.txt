@@ -285,8 +285,9 @@ ACT [VC] 1/Turn: COST [Rest two rear-guards], choose one of your opponent’s rear
 ACT [VC] 1/Turn: If your opponent’s rear-guard was retired this turn, COST [Soul Blast 5], look at the same number of cards from the top of your deck as the number of your opponent’s open RC, choose any number of unit cards from among them, call them to RC, and put the rest into your soul.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Eugene'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -7155,6 +7156,100 @@ global.CardName[CardStat] = 'Stealth Fiend, Shishidia'
 global.CardText[CardStat] = 'Dragon Empire/High Beast
 
 CONT [RC/GC]: If your opponent’s G zone has a card, this unit gets power +5000 / shield +5000. If your opponent’s G zone has a face up card, this unit gets power +10000 / shield +10000 instead of power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13246
+{
+global.CardName[CardStat] = 'Dragritter, Ghanim'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Scarlet Flame" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and bind it face down.
+
+AUTO [Back Row RC] 1/Turn: When your other unit is placed on RC during your battle phase or when your unit in the same column as this unit stand during your battle phase, if you have a vanguard with "Scarlet Flame" in its card name, you may stand this unit. If you do, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13247
+{
+global.CardName[CardStat] = 'Colored Strike of Dust Storm, Colorless'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by "Roaring Bullet of Dust Storm, Roanode", look at the top five cards of your deck, choose up to one card with "Dust Storm" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13248
+{
+global.CardName[CardStat] = 'Roaring Bullet of Dust Storm, Roanode'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by a grade 3 card with "Eugene" in its card name, COST [Energy Blast 3], draw two cards, choose a card from your hand, and put it into soul.
+
+AUTO [VC/RC]: When this unit attacks, if your opponent has two or less rear-guards, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromVRBuff[CardStat] = 5000
+
+
+CardStat = 13249
+{
+global.CardName[CardStat] = 'Inferno of Dust Storm, Eugene'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [VC]: This unit is also regarded as "Heavy Artillery of Dust Storm, Eugene".
+
+ACT [VC] 1/Turn: COST [Rest two rear-guards], choose a column, and retire all of your opponent’s rear-guards in that column.
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], look at the top five cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to RC in the same column, shuffle the deck, and this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and your opponent has three or more open RC, all of those units called by this ability get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Eugene'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromVBuff[CardStat] = 5000
+
+
+CardStat = 13250
+{
+global.CardName[CardStat] = 'Bullet Finale of Dust Storm, Hellenes'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO [RC]: At the beginning of your battle phase, if your opponent has one or less rear-guards, stand this unit.
+
+CONT [GC]: If you have a vanguard with "Dust Storm" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13251
+{
+global.CardName[CardStat] = 'Brilliant Bullet of Dust Storm, Ragnit'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+ACT [RC]: If you have a grade 3 or greater vanguard with "Eugene" in its card name, COST [Soul Blast 1 & rest this unit], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [RC]: At the beginning of your battle phase, if your opponent has one or less rear-guards, stand this unit, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
