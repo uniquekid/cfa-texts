@@ -7152,7 +7152,7 @@ global.CardText[CardStat] = 'Dark States/Pale Moon/Elf
 
 (STANDARD JP & EN: You can only use the G Zone if you have the Harri Stridå Deckset Rideline.)
 
-Stride
+Stride COST [Discard a grade 3 card with "Harri" in its card name from hand]
 
 Magia - AUTO [VC] Generation Break 2: When this unit attacks a vanguard, COST [Counter Blast 1 & put two rear-guards into soul], choose up to two cards with different card name from your soul, call them to RC, choose up to two of your opponent’s rear-guards, and put them into soul. At the end of that turn, put those called units into the soul.'
 global.UnitGrade[CardStat] = 4
@@ -7175,6 +7175,32 @@ AUTO Generation Break 1: When this unit is placed on RC from soul, if you have a
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13253
+{
+global.CardName[CardStat] = 'Squish Compressor'
+global.CardText[CardStat] = 'Dark States/Human
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Oselargest" in its card name, this unit gets "Intercept", can intercept from the back row, and gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13254
+{
+global.CardName[CardStat] = 'Lightning Swift Strikes, Shadien'
+global.CardText[CardStat] = 'Dark States/Human
+
+CONT [RC/GC]: If your opponent’s G zone has a card, this unit gets power +5000 / shield +5000. If your opponent’s G zone has a face up card, this unit gets power +10000 / shield +10000 instead of power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
