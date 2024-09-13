@@ -7288,7 +7288,7 @@ global.CardName[CardStat] = 'Fashionable Witch, Love'
 global.CardText[CardStat] = 'Keter Sanctuary/Fashionable Witch
 
 AUTO: When this unit is rode upon by a grade 1 <Fashionable Witch> with "Love" in its card name, if that unit was placed from the ride deck, you get a "Love and Berry: Fashionable Witches Machine" crest, and Energy Charge 3.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
@@ -7346,7 +7346,6 @@ global.CardText[CardStat] = 'Keter Sanctuary/Fashionable Witch
 H: Petite Buns
 D: Lovely Strawberry
 F: Frilled Socks Low Heels
-
 CONT: If your vanguard is a <Fashionable Witch> with "Love" in its card name, this card gets all of the following according to the number of different Fashion Magic cards with the same card names written on this card in your order zone.
 • One or more different cards - AUTO: When this unit is placed on VC or RC, COST [Counter Blast 1], look at the top three cards of your deck, choose up to one card from among them, call it to RC, and put the rest on the bottom of the deck in any order.
 • Two or more different cards - CONT [VC/RC]: During your turn, this unit gets power +5000.
@@ -7385,7 +7384,7 @@ global.CardName[CardStat] = 'Fashionable Witch, Berry'
 global.CardText[CardStat] = 'Keter Sanctuary/Fashionable Witch
 
 AUTO: When this unit is rode upon by a grade 1 <Fashionable Witch> with "Berry" in its card name, if that unit was placed from the ride deck, you get a "Love and Berry: Fashionable Witches Machine" crest, and Energy Charge 3.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
@@ -7471,6 +7470,386 @@ CONT: This card gets all of the following according to the number of different F
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13282
+{
+global.CardName[CardStat] = 'Divine Sister, Knafeh'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO [RC]: At the end of the battle this unit attacked, if this unit was placed on RC by your vanguard’s ability this turn or stand by your vanguard’s ability this turn, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13283
+{
+global.CardName[CardStat] = 'Trans-pierce Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
+
+CONT [RC/GC]: If your opponent’s G zone has a card, this unit gets power +5000 / shield +5000. If your opponent’s G zone has a face up card, this unit gets power +10000 / shield +10000 instead of power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13284
+{
+global.CardName[CardStat] = 'Magical Time Plus'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+Play this if you have a <Fashionable Witch> vanguard!
+
+ACT [Order Zone]: COST [Counter Blast 1 & bind this card], search your deck or drop for up to one <Fashionable Witch>, reveal it and put it into hand, and shuffle the deck. Then, search your deck or drop for up to one Fashion Magic card written on the revealed card, and put it into the order zone. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13285
+{
+global.CardName[CardStat] = 'Silky Long'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 1 "Cute Change, Love")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13286
+{
+global.CardName[CardStat] = 'Funky Afro'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 2 "Disco, Love")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13287
+{
+global.CardName[CardStat] = 'Petite Buns'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 2 "Lovely Idol, Love")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13288
+{
+global.CardName[CardStat] = 'Pretty Long Rolls'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 3 "Sparkling Ball, Love")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13289
+{
+global.CardName[CardStat] = 'Fitted Tee Girl'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 1 "Cute Change, Love")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13290
+{
+global.CardName[CardStat] = 'Pastel Love Sneakers'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 1 "Cute Change, Love")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13291
+{
+global.CardName[CardStat] = 'Retro Pleats'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 2 "Disco, Love")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13292
+{
+global.CardName[CardStat] = 'Shiny Planet'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 2 "Disco, Love")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13293
+{
+global.CardName[CardStat] = 'Lovely Strawberry'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 2 "Lovely Idol, Love")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13294
+{
+global.CardName[CardStat] = 'Frilled Socks Low Heels'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 2 "Lovely Idol, Love")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13295
+{
+global.CardName[CardStat] = 'Cutie Pink Dress'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 3 "Sparkling Ball, Love")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13296
+{
+global.CardName[CardStat] = 'Pink Ribbon Heels'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 3 "Sparkling Ball, Love")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13297
+{
+global.CardName[CardStat] = 'Pompadour Short'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 1 "Cool Change, Berry")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13298
+{
+global.CardName[CardStat] = 'Baby Black Tee'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 1 "Cool Change, Berry")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13299
+{
+global.CardName[CardStat] = 'Starry Diva Boots'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 1 "Cool Change, Berry")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13300
+{
+global.CardName[CardStat] = 'Japanese Style Bangs'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 2 "Fashion Street, Berry")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13301
+{
+global.CardName[CardStat] = 'Lady Argyle'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 2 "Fashion Street, Berry")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13302
+{
+global.CardName[CardStat] = 'Olive Loafers'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 2 "Fashion Street, Berry")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13303
+{
+global.CardName[CardStat] = 'Marine Hair'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 2 "Seaside Summer, Berry")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13304
+{
+global.CardName[CardStat] = 'Dolphin Queen'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Dress Up Fashion Magic Card for the grade 2 "Seaside Summer, Berry")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13305
+{
+global.CardName[CardStat] = 'Lace-Up Boots'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Footwear Fashion Magic Card for the grade 2 "Seaside Summer, Berry")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13306
+{
+global.CardName[CardStat] = 'Princess Hair'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 3 "Sparkling Ball, Berry")'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13307
+{
+global.CardName[CardStat] = 'Sparkly Pearl Dress'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 3 "Sparkling Ball, Berry")'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13308
+{
+global.CardName[CardStat] = 'Jewelry Heels'
+global.CardText[CardStat] = 'Keter Sanctuary/Set Order/Fashion Magic Card
+
+(This is a Hair & Makeup Fashion Magic Card for the grade 3 "Sparkling Ball, Berry")'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
