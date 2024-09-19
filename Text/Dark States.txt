@@ -2228,7 +2228,7 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.AttackFromRBuff[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 10105
@@ -7221,3 +7221,45 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13326
+{
+global.CardName[CardStat] = 'Sorcery Monarch, Vassago'
+global.CardText[CardStat] = 'Dark States/Demon
+
+CONT: If your G zone does not have a card, this card gets all of the following.
+• ACT [Hand]: If your vanguard is grade 3 or greater, COST [discard this card & put a total of two cards from soul or drop that were in the ride deck into ride deck face up], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a different card name from your vanguard from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, put this card into hand.
+• AUTO: When this unit is put on GC, if your soul has four or more cards, this unit gets shield +5000 until end of that battle. If your opponent’s G zone has a card, COST [bind a grade 3 or greater card from soul], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13327
+{
+global.CardName[CardStat] = 'Saving Everyone From Oselargest! Rewinder Chrono'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1 & put a rear-guard into soul], choose up to one card from your soul with a different grade from the card put into soul for this cost from your soul, call it to RC, and this unit gets "Triple Drive" until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13328
+{
+global.CardName[CardStat] = 'Heart Opener, Philya'
+global.CardText[CardStat] = 'Dark States/Sylph
+
+AUTO [RC]: When this unit boosts, if your opponent has one or less rear-guards, or you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

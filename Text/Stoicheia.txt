@@ -7155,7 +7155,7 @@ global.CardText[CardStat] = 'Stoicheia/Human
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top seven cards of your deck, choose a card from among them, discard it, and shuffle the deck. Then, if your drop has one or more blitz orders, until end of turn, this unit gets "Triple Drive", and if your drop has four or more blitz orders, it also gets "CONT [VC]: All of your front row units gets power +5000.".
 
-ACT [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
+AUTO [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -7435,6 +7435,21 @@ global.CardText[CardStat] = 'Stoicheia/Insect
 AUTO: When this unit is placed on RC, if you have a vanguard with "Lascaria" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Veleno" in its card name or up to one order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
 
 CONT [RC]: During your turn, if you have three or more units with "Veleno" in their card names, this unit gets power +5000. '
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13325
+{
+global.CardName[CardStat] = 'Sea Call Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If your G zone does not have a card, this card gets all of the following.
+• ACT [Hand]: If your vanguard is grade 3 or greater, COST [discard this card & put a total of two cards from soul or drop that were in the ride deck into ride deck face up], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a different card name from your vanguard from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, put this card into hand.
+• AUTO: When this unit is put on GC, if your drop has four or more cards, this unit gets shield +5000 until end of that battle. If your opponent’s G zone has a card, COST [bind a grade 3 or greater card from soul], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }

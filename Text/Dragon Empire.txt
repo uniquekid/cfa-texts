@@ -7276,7 +7276,7 @@ global.CardName[CardStat] = 'Unyielding Blazing Sword'
 global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
 Choose one of your units being attacked, and perform all of the following.
-• If your damage zone has four or more cards, that unit gets power +10000 until end of that battle. 
+• If your damage zone has four or more cards, that unit gets power +10000 until end of that battle.
 • If your hand has four or less cards, that unit gets power +10000 until end of that battle. 
 • If your opponent’s G zone has a face up card, that unit gets power +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -7284,4 +7284,22 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13329
+{
+global.CardName[CardStat] = 'Triumph Dragon User, Grandpa'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [VC]: All of your other grade 3 units get "Intercept", and get shield +5000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & discard a card from hand], choose a grade 3 card from your drop, and call it to RC. If you called "Roaring Thunder Dragon, Triumph Dragon", this unit gets "Triple Drive" until end of turn.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, choose a "Roaring Thunder Dragon, Triumph Dragon" from your RC, COST [say "I told you to stand up!!!"], stand that unit, and it gets power +10000 until end of turn. (When paying this cost, say it to the chosen unit with a voice that does not bother your surroundings)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
