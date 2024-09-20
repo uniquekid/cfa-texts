@@ -241,6 +241,7 @@ global.CardCopies[CardStat] = <number of allowed copies>
 ```
 
 Whatever number is set will be the new maximum of copies allowed for the card in the deck. This can be used to either increase the number of copies above 4, or to restrict them to lower than 4, such as with Regalis pieces.
+
 It is not necessary to set the number to 4 for normal cards, as that is the default and can be omitted.
 
 ### :dagger: Power buff on attack (prompt)
