@@ -124,6 +124,7 @@ global.CardText[CardStat] = 'Dragon Empire/Plasma Dragon/Over Trigger
 Additional Effect - Choose one of your vanguards, and stand it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -2537,6 +2538,7 @@ global.CardText[CardStat] = 'Dragon Empire/Plasma Dragon/Over Trigger
 Additional Effect - Choose one of your vanguards, and stand it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -4914,6 +4916,7 @@ global.CardText[CardStat] = 'Dragon Empire/Over Trigger
 Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -6086,6 +6089,7 @@ CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -6102,6 +6106,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human/Over Trigger
 Additional Effect - Choose one of your vanguards, and stand it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -7216,7 +7221,7 @@ CONT [VC]: This unit is also regarded as "Heavy Artillery of Dust Storm, Eugene"
 
 ACT [VC] 1/Turn: COST [Rest two rear-guards], choose a column, and retire all of your opponent’s rear-guards in that column.
 
-AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], look at the top five cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to RC in the same column, shuffle the deck, and this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and your opponent has three or more open RC, all of those units called by this ability get power +5000 until end of turn.'
+AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], look at the top five cards of your deck, choose up to two grade 3 or less unit cards from among them, call them to RC in the same column, shuffle the deck, and this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and your opponent has three or more open RC, all of those units called by this ability get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -7255,3 +7260,51 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13309
+{
+global.CardName[CardStat] = 'Megaverb Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Triumph Dragon" in its card name, this unit gets "Intercept", can intercept from the back row, and gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13310
+{
+global.CardName[CardStat] = 'Unyielding Blazing Sword'
+global.CardText[CardStat] = 'Dragon Empire/Blitz Order
+
+Choose one of your units being attacked, and perform all of the following.
+• If your damage zone has four or more cards, that unit gets power +10000 until end of that battle.
+• If your hand has four or less cards, that unit gets power +10000 until end of that battle. 
+• If your opponent’s G zone has a face up card, that unit gets power +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13329
+{
+global.CardName[CardStat] = 'Triumph Dragon User, Grandpa'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [VC]: All of your other grade 3 units get "Intercept", and get shield +5000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & discard a card from hand], choose a grade 3 card from your drop, and call it to RC. If you called "Roaring Thunder Dragon, Triumph Dragon", this unit gets "Triple Drive" until end of turn.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, choose a "Roaring Thunder Dragon, Triumph Dragon" from your RC, COST [say "I told you to stand up!!!"], stand that unit, and it gets power +10000 until end of turn. (When paying this cost, say it to the chosen unit with a voice that does not bother your surroundings)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

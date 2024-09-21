@@ -1,16 +1,20 @@
 n = x
 
-global.AllCard = 13254
+global.AllCard = 13331
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- New Nation: "Iron Armor Little Treasure" Standard collab from the Chinese format. It can be found under the "Other" banner
-- Update to the clan/nation drop menu. All collab clan/nation banners have been removed and now reside under the "Other" banner. Order tab has been removed and V Premium Orders are now under the "Cray Elemental" banner
-- Deck editor now supports filtering for Orders and Normal, Trigger and G Units. Select the button at the bottom menu bar to check or uncheck cards from those categories from showing
-- You can now use a Ride Deck for the Italian Premium format. First, please enable the option under Settings (Gear button at the top left of the window)
-- "Zeroth Dragon of Destroy Star, Stark" and units that reference specific battle number (such as "Light Elemental, Honoly" and "Blue Wave Marshal Dragon, Flood Hazard Dragon") now have the ability to hold counters
-- Certain units that rest during the battle phase (such as "Grand March of Full Bloom, Lianorn") now support the Attack From Back Row buttons. Use those to rest your units when necessary without moving back to main phase
-- Fixed a bug where spectators couldn’t open soul via the button'
+- Divine Skill icon support.
+- "Megacolony Battler+ "Type.C"" has been increased to 16 copies.
+- Over Triggers and Regalis Pieces have been set to 1 copy maximum.
+- Added support for Infinity Eyes markers.
+- There are 2 versions of the Infinity Eyes marker; Primary and Alter. The Alter version is to be used in the case of a Levidras mirror match. Removal of the Primary marker is done by right clicking the right side of the circle. Removal of the Alter marker requires holding down the CTRL key and right clicking the right side of the circle.
+- Added support for Undercover Gauges by allowing cards under the order to be flipped, or to directly be sent under the order face down by holding down the SHIFT key.
+- Cards sent under an order card while the SHIFT key is held and ones sent to Bind Zone will travel across the field face down to keep their identity hidden.
+- When viewing the game action log with the Q button, deck shuffling will only appear once when the shuffle button is clicked multiple times.
+BUG FIXES:
+- The "Reveal Top Deck" button will no longer accidentally reveal the bottom card of the deck.
+- Addressed a bug that would not prompt the G Assist Button when nationless orders were in hand.'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -953,9 +957,9 @@ CardStat = 13149
 global.CardName[CardStat] = 'SYSTEM CODE:X-ceed'
 global.CardText[CardStat] = 'Token Set Order
 
-CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Impauldio" in their card names, and you can have self-modification gauges.
+CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Impauldio" in their card names, and you can have AutoMOD gauges.
 
-AUTO [Order Zone]: When a card is put into your damage zone during your opponent’s turn, choose a card from your drop, and put it face up as your self-modification gauge. Then, if you have three or less self-modification gauges, and your card other than trigger unit was revealed for this damage check, choose one of your vanguards, and it gets power +5000 until end of turn. If you have four or more self-modification gauges, choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO [Order Zone]: When a card is put into your damage zone during your opponent’s turn, choose a card from your drop, and put it face up as your AutoMOD gauge. Then, if you have three or less AutoMOD gauges, and your card other than trigger unit was revealed for this damage check, choose one of your vanguards, and it gets power +5000 until end of turn. If you have four or more AutoMOD gauges, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1012,6 +1016,55 @@ global.CardText[CardStat] = 'Token Set Order
 CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Liael" in their card names, and you can have regress gauges.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 13255
+{
+global.CardName[CardStat] = 'Infinity Eyes'
+global.CardText[CardStat] = 'Marker
+
+(This represents an Infinity Eyes marker, and cannot be put in a deck)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 13256
+{
+global.CardName[CardStat] = 'Infinity Eyes '
+global.CardText[CardStat] = 'Marker
+
+(This represents an Infinity Eyes marker, and cannot be put in a deck)
+
+(CTRL + right click the right side of the circle to remove)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 13276
+{
+global.CardName[CardStat] = 'Love and Berry: Fashionable Witches Machine'
+global.CardText[CardStat] = 'Crest
+CONT: You cannot ride cards other than <Fashionable Witch>.
+AUTO: When this crest is put during your ride phase or when your vanguard is placed during your ride phase, choose up to one Fashion Magic card from your drop, and put it into the order zone.
+ACT 1/Turn: COST [Energy Blast 3], and perform one of the following.
+• Look at the top seven cards of your deck,choose up to any number of Fashion Magic cards with different grades from among them, put them into the order zone, and shuffle the deck.
+• Choose a card from your damage zone, put it into drop, and put the top card of your deck into damage zone face down. If the card put into drop by this effect is a Fashion Magic card, you may put that card into the order zone.
+AUTO: At the beginning of your battle phase, COST [Soul Blast 2], choose up to two <Fashionable Witch> with different card names from each other from your drop, and perform "If your order zone has two or more different Fashion Magic cards written on that card, call that card to RC." for each of them.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0

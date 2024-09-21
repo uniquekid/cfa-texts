@@ -365,6 +365,7 @@ global.CardText[CardStat] = 'Stoicheia/Nature Dragon/Over Trigger
 Additional Effect - Draw a card! Choose one of your units, until end of turn, it gets critical +1! And all of your front row units get power +10000! If your damage zone has the same number of cards as your opponent’s or more, choose a card from your damage zone, and heal it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -2673,6 +2674,7 @@ Play this with COST [Counter Blast 1] !
 Draw a card, choose a card from your hand, and call it to RC or discard it. If you called a card, until end of turn, that called unit cannot attack, and gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -2846,7 +2848,7 @@ CardStat = 10507
 global.CardName[CardStat] = 'Signpost Fairy'
 global.CardText[CardStat] = 'Stoicheia/Sylph
 
-CONT: When this unit is retired from RC by your card’s ability, if your vanguard is a Glitter, choose one of your grade 1 or less rear-guards, and it gets power +10000 until end of turn.'
+AUTO: When this unit is retired from RC by your card’s ability, if your vanguard is a Glitter, choose one of your grade 1 or less rear-guards, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -3575,6 +3577,7 @@ global.CardText[CardStat] = 'Stoicheia/Nature Dragon/Over Trigger
 Additional Effect - Draw a card! Choose one of your units, until end of turn, it gets critical +1! And all of your front row units get power +10000! If your damage zone has the same number of cards as your opponent’s or more, choose a card from your damage zone, and heal it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -5312,6 +5315,7 @@ global.CardText[CardStat] = 'Stoicheia/Over Trigger
 Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -5939,6 +5943,7 @@ CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -6061,6 +6066,7 @@ global.CardText[CardStat] = 'Stoicheia/Human/Over Trigger
 Additional Effect - Draw a card! Choose one of your units, until end of turn, it gets critical +1! And all of your front row units get power +10000! If your damage zone has the same number of cards as your opponent’s or more, choose a card from your damage zone, and heal it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -6303,8 +6309,6 @@ CardStat = 12766
 global.CardName[CardStat] = 'Megacolony Battler+ "Type.C"'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-(Currently this card can only be included at 4 copies)
-
 CONT: You may have up to 16 "Megacolony Battler+ "Type.C"" in a deck.
 
 AUTO: When this unit is placed on RC from hand, look at the top card of your deck, and put it on the bottom of the deck or discard it. Then, COST [Soul Blast 1], choose a card with the same card name as this unit from your drop, and call it to RC.
@@ -6312,6 +6316,7 @@ AUTO: When this unit is placed on RC from hand, look at the top card of your dec
 CONT [RC]: During your turn, this unit gets power +5000 for every four card with "Megacolony Battler+" in their card names in total on your RC or in your drop.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 16
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -6724,6 +6729,7 @@ global.CardText[CardStat] = 'Stoicheia/Dragoroid/Over Trigger
 Additional Effect - Draw a card! Choose one of your units, until end of turn, it gets critical +1! And all of your front row units get power +10000! If your damage zone has the same number of cards as your opponent’s or more, choose a card from your damage zone, and heal it!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
@@ -6806,13 +6812,19 @@ global.CardName[CardStat] = 'Destined One of Infinity, Levidras'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your and your opponent’s RC each, and put an Infinity Eyes marker on each of them.
-
 AUTO [VC]: When any player’s unit on a RC with your Infinity Eyes marker attacks or boosts, you may have that unit get power +10000 or -10000 until end of that battle. If your opponent’s unit’s power was -10000, remove one of your Infinity Eyes marker from that RC, and draw a card.
-
-[Divine Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your and your opponent’s RC each, put an Infinity Eyes marker on each of them, and this unit gets power +10000 / critical +1 until end of turn.'
+[Divine Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your and your opponent’s RC each, put an Infinity Eyes marker on each of them, and this unit gets power +10000 / critical +1 until end of turn.
+(SHIFT + left click to get an Infinity Eyes Marker, Opponent has to SHIFT + left click your vg)
+(Alter markers removed with CTRL + right click)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.TokenSummoner[CardStat] = 13255
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummoner2[CardStat] = 13256
+global.TokenSummoner2Text[CardStat] = "(Alter is used for mirror match distinction) Which Inf. Eyes Marker ?"
+global.TokenSummoner2Button1[CardStat] = "Primary"
+global.TokenSummoner2Button2[CardStat] = "Alter"
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7149,7 +7161,7 @@ global.CardText[CardStat] = 'Stoicheia/Human
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top seven cards of your deck, choose a card from among them, discard it, and shuffle the deck. Then, if your drop has one or more blitz orders, until end of turn, this unit gets "Triple Drive", and if your drop has four or more blitz orders, it also gets "CONT [VC]: All of your front row units gets power +5000.".
 
-ACT [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
+AUTO [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -7185,6 +7197,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 13206
@@ -7345,6 +7358,104 @@ global.CardText[CardStat] = 'Stoicheia/Dryad
 CONT [RC]: During the battle this unit boosted a Plant token, this unit gets power +5000 for each of your Plant tokens.
 
 AUTO [Back Row RC]: When your Plant token in the same column as this unit stand, stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13279
+{
+global.CardName[CardStat] = 'Fruitful Year Full Bloom, Apis Raccuroon'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+ACT [RC] 1/Turn: If you have another rear-guard with "Fruitful Year Full Bloom" in its card name, COST [retire a Plant token], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13280
+{
+global.CardName[CardStat] = 'Fruitful Year Full Bloom, Massful Jarnis'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO: When this unit is placed on RC, if you have another rear-guard with "Fruitfil Year Full Bloom" in its card name, call a Plant token to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13281
+{
+global.CardName[CardStat] = 'Fruitful Year Full Bloom, Fruitfulness Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO: When this uni is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to two cards with "Fruitful Year Full Bloom" in their card name from among them, call them to RC, and shuffle the deck. If you chose one or less cards, call up to one Plant token to RC.
+
+AUTO [RC]: When this unit stand by a card’s ability, COST [Soul Blast 1], choose one of your other rear-guards in the same column as this unit with "Fruitful Year Full Bloom" in its card name, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13313
+{
+global.CardName[CardStat] = 'Veleno Soldato, Deroeb'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, and your drop has a card with the same card name as this unit, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13314
+{
+global.CardName[CardStat] = 'Veleno Famiglia, Flautri'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Lascaria" in its card name, COST [Soul Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13315
+{
+global.CardName[CardStat] = 'Veleno Soldato, Lephonohyla'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Lascaria" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Veleno" in its card name or up to one order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: During your turn, if you have three or more units with "Veleno" in their card names, this unit gets power +5000. '
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13325
+{
+global.CardName[CardStat] = 'Sea Call Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If your G zone does not have a card, this card gets all of the following.
+• ACT [Hand]: If your vanguard is grade 3 or greater, COST [discard this card & put a total of two cards from soul or drop that were in the ride deck into ride deck face up], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a different card name from your vanguard from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, put this card into hand.
+• AUTO: When this unit is put on GC, if your drop has four or more cards, this unit gets shield +5000 until end of that battle. If your opponent’s G zone has a card, COST [bind a grade 3 or greater card from soul], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
