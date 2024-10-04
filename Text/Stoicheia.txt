@@ -6819,6 +6819,7 @@ AUTO [VC]: When any player’s unit on a RC with your Infinity Eyes marker attacks
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Levidras'
 global.TokenSummoner[CardStat] = 13255
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummoner2[CardStat] = 13256
@@ -7582,6 +7583,7 @@ AUTO [VC]: When any player’s unit on a RC with your Infinity Eyes marker attacks
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Levidras'
 global.TokenSummoner[CardStat] = 13255
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummoner2[CardStat] = 13256
@@ -7591,3 +7593,30 @@ global.TokenSummoner2Button2[CardStat] = "Alter"
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13359
+{
+global.CardName[CardStat] = 'Fairy of Inquisitiveness, Loarua'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO: When this unit attacks, if you have a grade 3 or greater vanguard with "Granfia" in its card name, COST [retire a Plant token], and this unit gets power +10000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and this unit also gets critical +1 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13360
+{
+global.CardName[CardStat] = 'Furious Popcorn'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+CONT [RC/GC]: If your opponent’s G zone has a card, this unit gets power +5000 / shield +5000. If your opponent’s G zone has a face up card, it gets power +10000 / shield +10000 instead of power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
