@@ -5813,6 +5813,7 @@ AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], ret
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Varga'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7431,6 +7432,54 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 CONT: This card is also regarded as "Blaze Maiden, Shahdia"
 
 AUTO: When this unit is placed on RC from hand, if you have two or more normal units with "Blaze Maiden" in their card names, COST [Soul Blast 1], search your deck for up to one "Trickstar" or "Trickmoon", discard it, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13377
+{
+global.CardName[CardStat] = 'Unparalleled Drekasleif, Varga Dragres "Rakshasa"'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+[Malwyrm] - AUTO: When this unit is placed by riding from a unit with "Varga" in its different card name from this unit or from a unit in the [Malwyrm] state, until end of this fight, this unit is in the [Malwyrm] state, and if persona ride was not activated by this ride, activate persona ride.
+
+AUTO [VC] 1/Turn: When this unit in the [Malwyrm] state attacks a vanguard, retire all front row rear-guards, and this unit gets power +10000 until end of turn. At the end of that battle, COST [Counter Blast 1], retire all back row rear-guards, stand this unit, and it gets drive -2 until end of turn.
+
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked, if this unit stand by this unit’s original AUTO ability this turn, COST [Counter Blast 1], stand this unit, and it gets drive +2 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Varga'
+global.ForbidCrossPersonaRideUpon[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13378
+{
+global.CardName[CardStat] = 'Fiend Beast, Ushionimaru'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast
+
+AUTO: When this unit is retired from RC by the ability of your grade 3 or greater vanguard with "Varga" in its card name, choose one of your units, and it gets power +5000 until end of turn. If your vanguard is in the [Malwyrm] state, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13379
+{
+global.CardName[CardStat] = 'Storm Slasher Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+AUTO: When this unit is retired from RC by the ability of your grade 3 or greater vanguard with "Varga" in its card name, you may call this card to a back row RC as rest. If your vanguard is in the [Malwyrm] state, COST [Soul Blast 1], and stand this unit.
+
+CONT [RC]: If your vanguard is in the [Malwyrm] state, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }

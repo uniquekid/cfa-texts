@@ -6046,6 +6046,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose up 
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Rezael'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8061,4 +8062,63 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13380
+{
+global.CardName[CardStat] = 'Knight of Returning Spear, Ainos'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When your other unit is placed on the RC this is on by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, that unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13381
+{
+global.CardName[CardStat] = 'Reflective Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO [Back Row RC]: When your other unit is placed on a RC in the same column as this unit by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13382
+{
+global.CardName[CardStat] = 'Fated King of Miracles, Rezael Vita'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT [VC]: This unit is also regarded as "Fated One of Miracles, Rezael". During your turn, this unit gets power +5000 for each "Fated One of Miracles, Rezael" in your soul, and all of their [Divine Skill] .
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards from your drop with different grades and a total grade less than or equal to the number of cards in your damage zone, and call them to RC. Then, COST [put a grade 3 or greater card with "Rezael" in its card name from hand into soul], choose a grade 3 or less card from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, all of the units called by this effect get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Rezael'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13383
+{
+global.CardName[CardStat] = 'Blest Dragon, Gabwelius'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck. if you put it on the bottom of the deck, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks, if your damage zone has four or more cards, until end of that battle, this unit gets power +5000, if this unit was placed on RC by the ability of your vanguard with "Fated One" in its card name this turn, and no drive checks were performed for the battle your rear-guards attacked this turn, COST [Counter Blast 1], this unit gets power +10000 / drive -1 instead of power +5000 and performs drive checks.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 5000
