@@ -4178,7 +4178,7 @@ CardStat = 11174
 global.CardName[CardStat] = 'Stealth Fiend, Izasaou'
 global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
-(V PREMIUM JP: Restricted to 1.)
+(STANDARD JP: Restricted to 1.)
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one normal unit with "Stealth" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 
@@ -5215,7 +5215,7 @@ CardStat = 12207
 global.CardName[CardStat] = 'Stealth Dragon, Fuurai  '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
-(V PREMIUM JP: Restricted to 1.)
+(STANDARD JP: Restricted to 1.)
 
 CONT [RC]: This unit gets power +5000 for each time a unit dominated by you attacked this turn.
 
@@ -7398,6 +7398,39 @@ global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 CONT [RC]: During your turn, if you have a unit with "Aundra" in its card name, this unit gets power +5000.
 
 CONT [GC]: If you have a unit with "Grhy" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13375
+{
+global.CardName[CardStat] = 'Christmas Day (December 25)'
+global.CardText[CardStat] = 'Dragon Empire/Set Order
+
+CONT: This card is also regarded as "Chakrabarthi Dance, "Saien""
+
+AUTO: When this card is put into the order zone or discarded from hand for the cost of your vanguard’s ability, if you have a vanguard with "Nirvana" in its card name, draw a card.
+
+CONT [Order Zone]: If you have a vanguard with "Nirvana" in its card name, when your rear-guard with "Vairina" in its card name would be put into the deck or bind zone by your opponent’s card effect, put all of the "Trickstar" in the originalDress of that unit into your hand, and put that unit and the rest of the originalDress into your drop.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13376
+{
+global.CardName[CardStat] = 'New Year’s Day (January 1)'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT: This card is also regarded as "Blaze Maiden, Shahdia"
+
+AUTO: When this unit is placed on RC from hand, if you have two or more normal units with "Blaze Maiden" in their card names, COST [Soul Blast 1], search your deck for up to one "Trickstar" or "Trickmoon", discard it, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
