@@ -6669,7 +6669,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 12863
 {
-global.CardName[CardStat] = 'Ezerva'
+global.CardName[CardStat] = 'Ezerwur'
 global.CardText[CardStat] = 'Dragon Empire/Galaxian
 
 [Mate Unit] - "Vyrgilla" (This card cannot be ridden, and can only be called to RC and GC if you have a vanguard with "Vyrgilla" in its card name)'
@@ -6685,7 +6685,7 @@ CardStat = 12864
 global.CardName[CardStat] = 'Flag-bearer of Bravery, Fanvare'
 global.CardText[CardStat] = 'Dragon Empire/Galaxian
 
-AUTO: When this unit is placed on RC, COST [Soul Blast 1], choose one of your units with "Ezerva" in its card name, and that unit and this unit get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +10000 instead of +5000.
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], choose one of your units with "Ezerwur" in its card name, and that unit and this unit get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +10000 instead of +5000.
 
 AUTO [Front Row RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Vyrgilla" in its card name, and you played an Impact order this turn, COST [put this unit into soul], draw a card, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
@@ -6701,9 +6701,9 @@ CardStat = 12865
 global.CardName[CardStat] = 'Cosmole'
 global.CardText[CardStat] = 'Dragon Empire/Galaxian
 
-AUTO [RC] 1/Turn: When this unit boosts a unit with "Ezerva" in its card name, Energy Charge 1 .
+AUTO [RC] 1/Turn: When this unit boosts a unit with "Ezerwur" in its card name, Energy Charge 1 .
 
-AUTO [Back Row RC]: When your unit with "Ezerva" in its card name stand during your battle phase, stand this unit.'
+AUTO [Back Row RC]: When your unit with "Ezerwur" in its card name stand during your battle phase, stand this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -7496,6 +7496,54 @@ global.CardText[CardStat] = 'Dragon Empire/CoroCoro Comic
 CONT: This card is regarded as "Stealth Fiend, Shenryi".
 
 AUTO [RC]: When this unit boosts, if your opponent has one or less rear-guards, or you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13428
+{
+global.CardName[CardStat] = 'Forbidden Evil-eye, Open'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order
+
+Play this with COST [Energy Blast 3] if you have a "Demon Stealth Dragon, Shiranui "Oboro"" crest!
+
+Choose a unit card with "Stealth" in its card name and without sentinel from your drop, and call it to RC.
+
+AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the Counter Blast cost you pay for that card’s abilities by 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13429
+{
+global.CardName[CardStat] = 'Valiance Ray Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Vyrgilla" in its card name, COST [bind this card], choose an "Ezerwur" on your RC, until end of your opponent’s next turn, that unit cannot be chosen by your opponent’s card effects, and gets power +5000 / shield +5000.
+
+CONT [GC]: If you have a vanguard with "Vyrgilla" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13432
+{
+global.CardName[CardStat] = 'Dancing Princess of the Gale, Eolia'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Aizawa Ema" in its card name, this unit gets power +5000.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Aizawa Ema" in its card name, this unit gets power +2000 until end of that battle. At the end of that battle, COST [put this unit soul], choose one of your vanguards, until end of turn, it gets power +5000, if your opponent’s bind zone has ten or more cards, or you persona rode this turn, that unit’s drive cannot be reduced by your card effects.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
