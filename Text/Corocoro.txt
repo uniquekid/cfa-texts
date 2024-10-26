@@ -394,7 +394,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 13414
 {
-global.CardName[CardStat] = 'Victory Grandpa'
+global.CardName[CardStat] = 'V Grandpa'
 global.CardText[CardStat] = 'CoroCoro/Dragon Empire/Grandpa Danger
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of battle.
@@ -598,12 +598,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13434
 {
 global.CardName[CardStat] = 'Fighting With Real Swords'
-global.CardText[CardStat] = 'CoroCoro/Dragon Empire/Grandpa Danger/Critical Trigger
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Critical Trigger
 
 AUTO [RC]: At the end of the batle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 13
-global.DCards2[CardStat] = 1
 global.TriggerUnit[CardStat] = 2
 }
 global.PowerStat[CardStat] = 5000
@@ -629,12 +628,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13436
 {
 global.CardName[CardStat] = 'Facing Your Dreams'
-global.CardText[CardStat] = 'CoroCoro/Dragon Empire/Grandpa Danger/Draw Trigger
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Draw Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 13
-global.DCards2[CardStat] = 1
 global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
@@ -644,12 +642,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13437
 {
 global.CardName[CardStat] = 'Trusted Friends'
-global.CardText[CardStat] = 'CoroCoro/Dragon Empire/Grandpa Danger/Front Trigger
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Front Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 13
-global.DCards2[CardStat] = 1
 global.TriggerUnit[CardStat] = 5
 }
 global.PowerStat[CardStat] = 5000
@@ -709,7 +706,7 @@ CONT [VC]: If this unit is in the [Big Cedar!] state, this unit gets power +5000
 
 AUTO [VC]: When this unit attacks a vanguard, if you persona rode this turn, this unit gets critical +1 until end of that battle.
 
-ACT [VC]: COST [Energy Blast 2], search your deck or drop for up to one "History’s "Biggest" Protagonist, Dekka-kun [Lower Body]", and call it to a back row RC in the same column as this unit. If you searched the deck, shuffle the deck.'
+ACT [VC] 1/Turn: COST [Energy Blast 2], search your deck or drop for up to one "History’s "Biggest" Protagonist, Dekka-kun [Lower Body]", and call it to a back row RC in the same column as this unit. If you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 13
 global.DCards2[CardStat] = 3
@@ -761,10 +758,358 @@ global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
 
 [Big Cedar!] - CONT [Back Row RC]: If your ""Big" Takeoff! Dekka-kun Robo [Upper Body]" is in the same column as this unit, that unit and this unit are in the [Big Cedar!] state, cannot be chosen by your opponent’s card effects, and if both are on RC, when they would move to GC, they move at the same time. (Active on opponent’s turn too)
 
-ACT [RC]: When this unit in the [Big Cedar!] state boosts, if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit in the [Big Cedar!] state boosts, if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 13
 global.DCards2[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13447
+{
+global.CardName[CardStat] = 'Trusted Friends '
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Front Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13448
+{
+global.CardName[CardStat] = 'Facing Your Dreams '
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Draw Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13449
+{
+global.CardName[CardStat] = 'Fighting With Real Swords '
+global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Critical Trigger
+
+AUTO [RC]: At the end of the batle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13450
+{
+global.CardName[CardStat] = 'Red Sunset Dekka Robo'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13451
+{
+global.CardName[CardStat] = 'Dekka-kun in Tent [Lower Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+[Big Cedar!] - CONT [Back Row RC]: If your "Dekka-kun in Tent [Upper Body]" is in the same column as this unit, that unit and this unit are in the [Big Cedar!] state, cannot be chosen by your opponent’s card effects, and if both are on RC, when they would move to GC, they move at the same time. (Active on opponent’s turn too)
+
+AUTO [RC] 1/Turn: When this unit in the [Big Cedar!] state boosts, Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13452
+{
+global.CardName[CardStat] = 'Dekka-kun in Tent [Upper Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+AUTO: When this unit is placed on a front row RC, if you have a vanguard with "Dekka-kun" in its card name or a «CoroCoro» vanguard, COST [Energy Blast 2], search your deck or drop for up to one "Dekka-kun in Tent [Lower Body]", and call it to a back row RC in the same column as this unit. If you searched the deck, shuffle the deck.
+
+AUTO [RC]: When this unit in the [Big Cedar!] state attacks, COST [Counter Blast 1], draw a card, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13456
+{
+global.CardName[CardStat] = 'His Heart is Also Generously "Big", Dekka-kun [Upper Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+CONT [VC]: If this unit is in the [Big Cedar!] state, this unit gets power +5000, and gets "Triple Drive". (Active on opponent’s turn too)
+
+ACT [VC/Front Row RC] 1/Turn: COST [Energy Blast 2], search your deck or drop for up to one "His Heart is Also Generously "Big", Dekka-kun [Lower Body]", and call it to a back row RC in the same column as this unit. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13457
+{
+global.CardName[CardStat] = 'His Heart is Also Generously "Big", Dekka-kun [Lower Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+[Big Cedar!] - CONT [Back Row RC]: If your "His Heart is Also Generously "Big", Dekka-kun [Upper Body]" is in the same column as this unit, that unit and this unit are in the [Big Cedar!] state, cannot be chosen by your opponent’s card effects, and if both are on RC, when they would move to GC, they move at the same time. (Active on opponent’s turn too)
+
+CONT [RC]: If this unit is in the [Big Cedar!] state, this unit gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13458
+{
+global.CardName[CardStat] = 'Currently Studying at a Extra "Big" Desk!'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13459
+{
+global.CardName[CardStat] = '"Big" Fierce Competition in Basketball!'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13460
+{
+global.CardName[CardStat] = 'Extremely "Big" Elementary School Student, Dekka-kun [Lower Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+[Big Cedar!] - CONT [Back Row RC]: If your "Extremely "Big" Elementary School Student, Dekka-kun [Upper Body]" is in the same column as this unit, that unit and this unit are in the [Big Cedar!] state, cannot be chosen by your opponent’s card effects, and if both are on RC, when they would move to GC, they move at the same time. (Active on opponent’s turn too)
+
+AUTO: When this unit is put on GC, COST [Soul Blast 1], choose an "Extremely "Big" Elementary School Student, Dekka-kun [Upper Body]" on GC, and that unit and this unit’s original shield becomes 10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13461
+{
+global.CardName[CardStat] = 'Extremely "Big" Elementary School Student, Dekka-kun [Upper Body]'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
+
+AUTO: When this unit is placed on a front row RC, if you have a vanguard with "Dekka-kun" in its card name or a «CoroCoro» vanguard, COST [Energy Blast 2], search your deck or drop for up to one "Extremely "Big" Elementary School Student, Dekka-kun [Lower Body]", and call it to a back row RC in the same column as this unit. If you searched the deck, shuffle the deck.
+
+AUTO [RC]: When this unit in the [Big Cedar!] state attacks, if you have a grade 3 or greater vanguard with "Dekka-kun" in its card name, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13462
+{
+global.CardName[CardStat] = 'Building a "Big" Snow Sculpture with Everybody!'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13463
+{
+global.CardName[CardStat] = '"Bigly" Popular in Class!'
+global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun/Heal Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 3
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13464
+{
+global.CardName[CardStat] = 'Black Channel'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13465
+{
+global.CardName[CardStat] = 'Demonic Yo-Tuber, Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO [VC]: When this unit is placed on VC, search your deck or hand for up to one "Camera-chan", and put it into the order zone. If you searched the deck, shuffle the deck. If you put a card from hand, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13466
+{
+global.CardName[CardStat] = 'Treacherous Streamer, Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO [VC]: When this unit is placed on VC, search your deck for up to one card with "Satoshi" in its card name, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13467
+{
+global.CardName[CardStat] = 'Demon Exposing the Dark, Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+[Deal] - ACT [VC] 1/Turn: If you have a card with "Camera-chan" in its card name on your RC or in your order zone, COST [Soul Blast 1], choose up to three of your rear-guards, until end of turn, they are in the [Deal] state, and get power +5000.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards in the [Deal] state, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13468
+{
+global.CardName[CardStat] = 'Ruler of the Demon World, Demon Lord Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+[Deal] - ACT [VC] 1/Turn: If you have a card with "Camera-chan" in its card name on your RC or in your order zone, COST [Soul Blast 1], until end of turn, all of your rear-guards are in the [Deal] state, and get power +5000.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [put a grade 3 or greater card with "Black" in its card name from hand or soul into drop], stand all of your rear-guards in the [Deal] state, and they get power +5000 until end of turn. At the end of that turn, retire all of the units stand by this effect.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13469
+{
+global.CardName[CardStat] = 'Oni Leader, Akane'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater «CoroCoro» vanguard, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit stand by the ability of your vanguard with "Black" in its card name, you may have this unit get power +5000 until end of turn. If you do, at the end of that turn, retire this unit, and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13470
+{
+global.CardName[CardStat] = 'Elementary School Student Yo-Tuber, Satoshi'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+ACT [RC]: If you have a grade 3 vanguard with "Black" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], search your deck, drop, or soul for up to one grade 4 unit card with "Black" in its card name, and ride it as stand. If you searched the deck, shuffle the deck.
+
+CONT [Back Row Center RC]: If you have a vanguard with "Black" in its card name, this unit cannot be retired by card effects, and all of your units with "Black" in their card names get shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13471
+{
+global.CardName[CardStat] = 'Camera-chan'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Set Order
+
+ACT [Order Zone]: COST [Soul Blast 1], call this card as a power 5000 / critical 1 normal unit with "Boost" to an open RC, and put that unit into the order zone at the end of that turn. If you have a vanguard with "Black" in its card name, call it as power 10000 instead of power 5000.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13472
+{
+global.CardName[CardStat] = 'VERSE=XX66666, JK Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Black" in its card name or a «CoroCoro» vanguard, COST [Counter Blast 1], and draw a card. Then, if you have a vanguard with "Black" in its card name, COST [Soul Blast 1 & call a card from hand to RC], and draw a card.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Black" in its card name, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
