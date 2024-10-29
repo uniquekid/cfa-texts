@@ -1039,7 +1039,7 @@ CardStat = 13468
 global.CardName[CardStat] = 'Ruler of the Demon World, Demon Lord Black'
 global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
 
-[Deal] - ACT [VC] 1/Turn: If you have a card with "Camera-chan" in its card name on your RC or in your order zone, COST [Soul Blast 1], until end of turn, all of your rear-guards are in the [Deal] state, and get power +5000.
+[Deal] - ACT [VC] 1/Turn: If you have a card with "Camera-chan" in its card name on your RC or in your order zone, COST [Counter Blast 1], until end of turn, all of your rear-guards are in the [Deal] state, and get power +5000.
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [put a grade 3 or greater card with "Black" in its card name from hand or soul into drop], stand all of your rear-guards in the [Deal] state, and they get power +5000 until end of turn. At the end of that turn, retire all of the units stand by this effect.'
 global.UnitGrade[CardStat] = 4
@@ -1113,3 +1113,91 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13473
+{
+global.CardName[CardStat] = 'Yo-Tuber Specializing in Egregiously Bad Videos, Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+[Deal] - ACT [VC] 1/Turn: If you have a card with "Camera-chan" in its card name on your RC or in your order zone, COST [Soul Blast 1], choose one of your rear-guards, until end of turn, it is in the [Deal] state, and gets power +5000.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards in the [Deal] state, and stand it.
+
+CONT [RC]: During your turn, if you have a unit in the [Deal] state, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13474
+{
+global.CardName[CardStat] = '\#Game Broadcast'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13475
+{
+global.CardName[CardStat] = '\#Great Flame Up'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13477
+{
+global.CardName[CardStat] = 'Strongest Game-playing Alien, PipoPapo Purple'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO [RC]: When this unit attacks, if you have a «CoroCoro» vanguard, this unit gets power +5000 until end of that battle.
+
+CONT [GC]: If you have a «CoroCoro» vanguard, this unit gets shield +5000, and if it is a grade 4 or greater unit with "Black" in its card name, it also gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13478
+{
+global.CardName[CardStat] = '\#Close Coverage'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13479
+{
+global.CardName[CardStat] = '\#Trying to Draw Manga'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
