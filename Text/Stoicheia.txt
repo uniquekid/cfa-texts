@@ -4775,7 +4775,7 @@ CardStat = 11672
 global.CardName[CardStat] = 'Fleeting Love Affair, Itsuki Nakano'
 global.CardText[CardStat] = 'Stoicheia/Quintuplet
 
-AUTO: When the "The Quintessential Quintuplets, Itsuki Nakano" on your VC stand by your card’s ability, COST [Counter Blast 1 & put a <Quintuplet> from drop on bottom of deck], choose one of your <Quintuplet>, and it gets power +10000 until end of turn. If your memory has five or more <Quintuplet> with different card names, you may draw a card.'
+AUTO [RC]: When the "The Quintessential Quintuplets, Itsuki Nakano" on your VC stand by your card’s ability, COST [Counter Blast 1 & put a <Quintuplet> from drop on bottom of deck], choose one of your <Quintuplet>, and it gets power +10000 until end of turn. If your memory has five or more <Quintuplet> with different card names, you may draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -7647,4 +7647,21 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13485
+{
+global.CardName[CardStat] = '"Only I Am Matomo-kun", Matomo-kun'
+global.CardText[CardStat] = 'Stoicheia/CoroCoro Comic
+
+CONT: This card is regarded as "Love-binding Maiden, Margaret".
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and your opponent cannot intercept until end of turn. All of your opponent’s front row rear-guards cannot stand during the next stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
