@@ -674,7 +674,7 @@ CardStat = 13439
 global.CardName[CardStat] = '"Big" Struggle in High-rise Building Downtown, Dekka-kun'
 global.CardText[CardStat] = 'CoroCoro/Keter Sanctuary/Big Cedar Dekka-kun
 
-CONT [VC]: When you would ride a card with "Dekka-kun" in its card name or a «CoroCoro» from ride deck, you can ride with "Soul Blast 1" instead of "choose a card from hand, and discard it.".'
+CONT [VC]: When you would ride a card with "Dekka-kun" in its card name or a «CoroCoro» from ride deck, you can ride with "Soul Blast 1 «CoroCoro»" instead of "choose a card from hand, and discard it.".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 13
 global.DCards2[CardStat] = 3
@@ -770,7 +770,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13447
 {
 global.CardName[CardStat] = 'Trusted Friends '
-global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Front Trigger
+global.CardText[CardStat] = 'CoroCoro/Big Cedar Dekka-kun/Front Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -784,7 +784,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 13448
 {
 global.CardName[CardStat] = 'Facing Your Dreams '
-global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Draw Trigger
+global.CardText[CardStat] = 'CoroCoro/Big Cedar Dekka-kun/Draw Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -798,7 +798,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13449
 {
 global.CardName[CardStat] = 'Fighting With Real Swords '
-global.CardText[CardStat] = 'CoroCoro/Grandpa Danger/Critical Trigger
+global.CardText[CardStat] = 'CoroCoro/Big Cedar Dekka-kun/Critical Trigger
 
 AUTO [RC]: At the end of the batle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 0
@@ -1197,6 +1197,363 @@ global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 13
 global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13491
+{
+global.CardName[CardStat] = 'VERSE=XX00000, Nil Black'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Black" in its card name, and you do not have another rear-guard wiith the same card name as this unit, this unit cannot be retired by card effects, and gets power +5000. (Active on opponent’s turn too)
+
+CONT [RC]: If you have a «CoroCoro» vanguard, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13492
+{
+global.CardName[CardStat] = '\#Spurring On Mankind’s Hidden Side'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel/Heal Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13493
+{
+global.CardName[CardStat] = 'Fighting With Real Swords  '
+global.CardText[CardStat] = 'CoroCoro/Black Channel/Critical Trigger
+
+AUTO [RC]: At the end of the batle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13494
+{
+global.CardName[CardStat] = 'Facing Your Dreams  '
+global.CardText[CardStat] = 'CoroCoro/Black Channel/Draw Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13495
+{
+global.CardName[CardStat] = 'Trusted Friends  '
+global.CardText[CardStat] = 'CoroCoro/Black Channel/Front Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13496
+{
+global.CardName[CardStat] = 'Ultimate Lifeform, Nda'
+global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
+
+AUTO [Drop]: If you have a grade 3 or greater «CoroCoro» vanguard, and you do not have a rear-guard with the same card name as this card, COST [Energy Blast 3], and call this card to RC.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have a vanguard with "Black" in its card name, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13499
+{
+global.CardName[CardStat] = 'Bebebebe-Baby'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13500
+{
+global.CardName[CardStat] = 'New Family, Bebebebe'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+AUTO: When this unit is placed by riding from a «CoroCoro», look at the top seven cards of your deck, choose up to one blitz order or up to one card with "Bebebebe" or "Big Bro Takahashi" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13501
+{
+global.CardName[CardStat] = 'Unconventional Baby, Bebebebe'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+AUTO: When this unit is placed by riding from a «CoroCoro», search your deck for up to one grade 0 normal unit with "Bebebebe" in its card name, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13502
+{
+global.CardName[CardStat] = 'Nonstandard Newborn, Bebebebe (Age 0)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+CONT [VC]: During your turn, if you have a unit in the [Explosive Growth] state, all of your front row «CoroCoro» get power +10000.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], chose one of your rear-guards, stand it, if you stand a grade 0 normal unit with "Bebebebe" in its card name, choose up to one card with the [Explosive Growth] ability from your hand, and [Explosive Growth] on that unit as stand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13503
+{
+global.CardName[CardStat] = 'Lively Baby, Bebebebe'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+[Explosive Growth] - Grade 0 normal unit with "Bebebebe" in its card name (You may place it by stacking it on the specified unit instead of normal calling it to RC)
+
+AUTO: When this unit is placed on RC by [Explosive Growth], COST [Energy Blast 3], draw a card, and this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Bebebebe" in its card name or a grade 3 or greater «CoroCoro» vanguard, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit attacked, if this unit is in the [Explosive Growth] state, leave this unit’s originalgrowth on this RC as rest and return this unit to hand. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13504
+{
+global.CardName[CardStat] = 'Cute Little Brother, Bebebebe'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+CONT [RC]: If you have a vanguard with "Bebebebe" in its card name or a «CoroCoro» vangurd, this unit gets "Intercept".
+
+CONT [RC]: If your drop has a blitz order, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13505
+{
+global.CardName[CardStat] = 'Big Bro Takahashi'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+ACT [RC]: COST [rest this unit], choose a grade 0 normal unit with "Bebebebe" in its card name from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13506
+{
+global.CardName[CardStat] = 'Let’s Advance into Space!'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Blitz Order
+
+Play this with COST [Soul Blast 1] if you have a vanguard with "Bebebebe" in its card name or a «CoroCoro» vanguard!
+
+Choose one of your units being attacked, and it gets power +5000 until end of that battle. Choose up to two normal units with "Bebebebe" in their different card names and without sentinel from your drop, and call them to GC. If you have a vanguard with "Bebebebe" in its card name, when you would choose cards from drop, you can also choose trigger units instead of just normal units. (If you choose triggers, you cannot choose cards other than "Bebebebe" and you cannot chooose cards with the same card name)'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13507
+{
+global.CardName[CardStat] = 'Bebebebe Takahashi (Cancer)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13508
+{
+global.CardName[CardStat] = 'Bebebebe Takahashi (Scorpio)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13509
+{
+global.CardName[CardStat] = 'Bebebebe Takahashi (Virgo)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby/Heal Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13510
+{
+global.CardName[CardStat] = 'Bebebebe Takahashi (Aries)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13511
+{
+global.CardName[CardStat] = 'Bebebebe Takahashi (Capricorn)'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13512
+{
+global.CardName[CardStat] = '0 Moral Tarou'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Bebebebe" in its card name or a «CoroCoro» vanguard, COST [Counter Blast 1], your opponent chooses a card from their hand, and discards it.
+
+AUTO [RC]: At the end of the battle this unit boosted a unit in the [Explosive Growth] state, if you have a grade 3 or greater vanguard with "Bebebebe" in its card name, COST [put this unit into soul], and Counter Charge 1 or Energy Charge 3.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13516
+{
+global.CardName[CardStat] = 'Releasing Seriousness, Bebebebe'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+CONT [VC/RC]: During your turn, if you have a unit in the [Explosive Growth] state, this unit gets power +5000. If this unit is on VC, all of your front row «CoroCoro» get power +5000 instead of this unit.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], chose one of your rear-guards, stand it, if you stand a grade 0 normal unit with "Bebebebe" in its card name, choose up to one card with the [Explosive Growth] ability from your hand, and [Explosive Growth] on that unit as stand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13517
+{
+global.CardName[CardStat] = 'Takahashi Family'
+global.CardText[CardStat] = 'CoroCoro/Stoicheia/Ba-Ba-Ba-Ba-Baby
+
+AUTO: When this unit is placed on RC from hand, COST [Soul Blast 2], choose a card with the [Explosive Growth] ability from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13518
+{
+global.CardName[CardStat] = 'Fighting With Real Swords   '
+global.CardText[CardStat] = 'CoroCoro/Ba-Ba-Ba-Ba-Baby/Critical Trigger
+
+AUTO [RC]: At the end of the batle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13519
+{
+global.CardName[CardStat] = 'Facing Your Dreams   '
+global.CardText[CardStat] = 'CoroCoro/Ba-Ba-Ba-Ba-Baby/Draw Trigger
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 13
 global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
