@@ -5246,7 +5246,7 @@ CardStat = 12412
 global.CardName[CardStat] = 'Extreme Satellite Weaponry, Euryanthe'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
-AUTO: When this card is put into your order zone, if you have a grade 3 or greater vanguard with "Welstra" in its card name, draw a card, and Energy Charge 3.
+AUTO: When this card is put into your order zone, if you have a grade 3 or greater vanguard with "Welstra" in its card name, draw a card, and Energy Charge 3 .
 
 Operate - AUTO [Order Zone]: When this card is operated during your battle phase by the ability of a vanguard with "Welstra" in its card name with [Divine Skill], if this card was not put into your order zone this turn, choose one of your opponent’s rear-guards, retire it, choose one of your opponent’s vanguards, until end of turn, it gets power -10000, and if your opponent’s damage zone has four or less cards, deal one damage.'
 global.UnitGrade[CardStat] = 3
@@ -6988,3 +6988,74 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 13556
+{
+global.CardName[CardStat] = 'Galactic B-Hero, Prompt Turfis'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC/GC]: If your order zone has three or more Bases, this unit gets power +2000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13557
+{
+global.CardName[CardStat] = 'Meltin Meriri'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO [RC]: When this unit boosts, if you Energy Blast 3 or more at the same time for the cost of your card’s ability this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13559
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daitrucker'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: All of your units with "Dimensional Robo" in their card names in the same column as this unit get "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13560
+{
+global.CardName[CardStat] = 'Super Dimensional Robo, Daiwing'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with " Dimensional Robo" in its card name, COST [Energy Blast 3], choose a card with "Dimensional Robo" in its different carn name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
+
+CONT [RC/GC]: If your order zone has a Base, this unit gets power +2000 / shield +5000. If your order zone has three or more Bases, it also gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13561
+{
+global.CardName[CardStat] = 'Glory Maker  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+CONT: If you have a vanguard with only one clan, and your G zone has no cards, this card gets all of the following.
+• AUTO [Drop]: When your grade 3 or greater vanguard is placed, if you do not have a  rear-guard with the same card name as this card, you may call this card to a back row RC.
+• AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, you may get "Your opponent cannot play blitz orders." or get "When your opponent would call cards from their hand to GC, they must call two or more cards at the same time." until end of that battle. If you do, at the end of that battle, retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
