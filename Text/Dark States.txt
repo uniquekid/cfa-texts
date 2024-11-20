@@ -1471,11 +1471,16 @@ CardStat = 9324
 global.CardName[CardStat] = 'Brainwash Swirler'
 global.CardText[CardStat] = 'Dark States/Human
 
-AUTO: When this unit is placed on RC, Soul Charge 1.
+AUTO: When this unit is placed on RC, Soul Charge 1 .
 
-AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn. (+10000 if Soul Charge 2.)'
+AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn. (+10000 if Soul Charge 2 )
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7448,10 +7453,15 @@ global.CardText[CardStat] = 'Dark States/Dark Irregulars/Elf
 
 CONT: If you have a vanguard with only one clan, and your G zone has no cards, this card gets all of the following.
 • AUTO: When this unit is placed on RC, Soul Charge 1, choose up to one card from your drop, and put it into soul.
-• AUTO [RC]: When your card is put into soul by your card’s ability, if your vanguard is grade 3 or greater, this unit gets power +3000 until end of turn. (+6000 if Soul Charge 2)'
+• AUTO [RC]: When your card is put into soul by your card’s ability, if your vanguard is grade 3 or greater, this unit gets power +3000 until end of turn. (+6000 if Soul Charge 2 )
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 11
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7569,3 +7579,17 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13598
+{
+global.CardName[CardStat] = 'Strange Noise of Ruin, Aduro'
+global.CardText[CardStat] = 'Dark States/Demon/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000

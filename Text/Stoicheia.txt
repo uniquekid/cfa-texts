@@ -1298,6 +1298,8 @@ global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 CONT [VC/RC]: This unit can only attack on the fourth battle of each turn.
 
+(The original critical of this unit is 2.)
+
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
@@ -6719,7 +6721,7 @@ CardStat = 13039
 global.CardName[CardStat] = 'International Dog Day (August 26)'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-CONT: This card is also regarded as "Shadowcloak"
+CONT: This card is also regarded as "Shadowcloak".
 
 AUTO: When this unit is placed on RC from hand, search your deck for up to one order card and reveal it, and if your drop does not have a card with the same card name as that card, discard the revealed card. Shuffle your deck.
 
@@ -7798,4 +7800,71 @@ global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13601
+{
+global.CardName[CardStat] = 'Tear Knight, Rothion'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13602
+{
+global.CardName[CardStat] = 'Dancing Cutlass  '
+global.CardText[CardStat] = 'Stoicheia/Granblue/Ghost
+
+CONT: If you have a vanguard with only one clan, and your G zone has no cards, this card gets all of the following.
+• AUTO: When this card is discarded from hand during your ride phase or main phase, COST [Energy Blast 3], and draw a card.
+• ACT [Drop]: COST [Remove two cards with the same card name as this card from drop], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13603
+{
+global.CardName[CardStat] = 'Tear Knight, Eilikrinis'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is only «Aqua Force».
+
+AUTO: When this unit is placed on RC, if you have a vanguard with only «Aqua Force» for its clan, look at the top seven cards of your deck, choose up to one card with "Maelstrom" in its card name or up to one Blue Storm Armada card from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13604
+{
+global.CardName[CardStat] = 'Blue Storm Supreme Dragon, Glory Maelstrom  '
+global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
+
+CONT [VC]: During your turn, if your RC or soul has a "Blue Storm Dragon, Maelstrom", this unit gets all of their ACT abilities, and all of your front row units get power +5000 for each Blue Storm Armada in your order zone.
+(Inherited ACT skills stack)
+
+AUTO [VC]: When your "Blue Storm Dragon, Maelstrom" attacks a vanguard, until end of turn, that unit gets power +5000, if it is the fourth battle of this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [VC]: When your unit with "Maelstrom" in its card name attacks, COST [rest two Blue Storm Armadas in your order zone], and your opponent cannot call sentinels from hand to GC until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
