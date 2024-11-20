@@ -380,7 +380,7 @@ CardStat = 967
 global.CardName[CardStat] = 'Arboros Dragon, Sephirot'
 global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-CONT [VC]: Limit Break 4 (This ability is active if you have four or more damage): All of your «Neo Nectar» get "CONT [VC/RC]: During your turn, if you have a unit with the same name as this unit on your VC or RC, this unit gets power +3000.".
+CONT [VC] Limit Break 4 (This ability is active if you have four or more damage): All of your «Neo Nectar» get "CONT [VC/RC]: During your turn, if you have a unit with the same name as this unit on your VC or RC, this unit gets power +3000.".
 
 CONT [VC]: If you have a card named "Arboros Dragon, Timber" in your soul, this unit gets power +1000.'
 }
@@ -455,7 +455,7 @@ CardStat = 1731
 global.CardName[CardStat] = 'Maiden of Venus Trap "ßeverse"'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-ACT [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose one of your «Neo Nectar» rear-guards, and lock it] Look at up to five cards from the top of your deck, search for up to one «Neo Nectar», call it to RC, and shuffle your deck, and the called unit gets power +5000 until end of turn.
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose one of your «Neo Nectar» rear-guards, and lock it] Look at up to five cards from the top of your deck, search for up to one «Neo Nectar», call it to RC, and shuffle your deck, and the called unit gets power +5000 until end of turn.
 
 ACT [VC]: [Counter Blast 1] This unit gets power +2000 until end of turn.
 
@@ -470,7 +470,7 @@ CardStat = 1756
 global.CardName[CardStat] = 'Deep Green Lord, Master Wisteria'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-AUTO: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When a «Neo Nectar» rides this unit, you may pay the cost. If you do, choose up to two of your «Neo Nectar» rear-guards, seach your deck for up to one card with the same card name as each of those units, call them to separate RC, shuffle your deck, choose your vanguard, and that unit gets power +10000 until end of turn.
+AUTO Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When a «Neo Nectar» rides this unit, you may pay the cost. If you do, choose up to two of your «Neo Nectar» rear-guards, seach your deck for up to one card with the same card name as each of those units, call them to separate RC, shuffle your deck, choose your vanguard, and that unit gets power +10000 until end of turn.
 
 AUTO [VC]: When this unit is boosted by a «Neo Nectar», this unit gets power +2000 until end of that battle.
 
@@ -588,7 +588,7 @@ CardStat = 1821
 global.CardName[CardStat] = 'Maiden of Venus Trap, Muse'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-AUTO [VC]: Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, look at up to five cards from the top of your deck, search for up to one card with the same card name as a «Neo Nectar» on your VC or RC, call it to RC, and shuffle your deck.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, look at up to five cards from the top of your deck, search for up to one card with the same card name as a «Neo Nectar» on your VC or RC, call it to RC, and shuffle your deck.
 
 ACT [VC]: [Counter Blast 1] This unit gets power +2000 until end of turn.
 
@@ -3914,11 +3914,14 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 AUTO [VC/RC]: When placed, COST [Counter Blast 1], call up to two Plant tokens to RC, and this unit gets power +10000 until end of turn. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost.)
 
-ACT [VC] 1/Turn: COST [Retire three rear-guards], and call an Ahshas Flower Fairy token to RC. (Ahshas Flower Fairies are grade 0 and have an ability to become Ahsha.)
+ACT [VC] 1/Turn: COST [Retire three rear-guards], and call an Ahsha’s Flower Fairy token to RC. (Ahsha’s Flower Fairies are grade 0 and have an ability to become Ahsha.)
 
-(SHIFT + left click to call a token.)'
+(SHIFT + left click to call a token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7403
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -3929,7 +3932,7 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
 global.TokenSummoner2Button2[CardStat] = "10000"
-global.TokenSummoner2Button3[CardStat] = "Ahshas token"
+global.TokenSummoner2Button3[CardStat] = "Ahsha’s token"
 
 
 CardStat = 7400
@@ -4172,11 +4175,14 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 CONT [VC]: During your turn, if you have two or more units with "Ahsha" in their card names, this unit gets power +10000. If you have three or more, it gets critical +1.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1 & Retire two rear-guards], and call an Ahshas Flower Fairy token to RC.
+ACT [VC] 1/Turn: COST [Soul Blast 1 & Retire two rear-guards], and call an Ahsha’s Flower Fairy token to RC.
 
-(SHIFT + left click to call plant tokens.)'
+(SHIFT + left click to call plant tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7403
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000

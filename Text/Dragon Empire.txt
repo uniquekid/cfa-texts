@@ -1897,6 +1897,7 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 9584
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 9587
@@ -2920,16 +2921,20 @@ AUTO [RC]: At the beginning of your main phase, if you do not have a Momokke tok
 Glitter - Rorowa (Active if your vanguard is a Glitter with "Rorowa" in its card name)
 AUTO [Hand]: At the end of the battle your rear-guard with "Radylina" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [retire one each of your rear-guards with "Radylina" in its card name and Momokke tokens], call this card to RC, and increase this unit’s power by the power of the Momokke token retired for the cost of this ability until end of turn.
 
-(SHIFT + left click to generate a Momokke Token)'
+(SHIFT + left click to generate a Momokke Token)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.DCards2[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 9584
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.TokenSummoner[CardStat] = 9584
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 10529
@@ -4299,9 +4304,12 @@ global.CardText[CardStat] = 'Dragon Empire/Quintuplet
 
 AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get a "The Quintuplets’ Memories" crest.
 
-CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.'
+CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
+global.AnotherSide[CardStat] = 11531
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7637,7 +7645,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13581
 {
 global.CardName[CardStat] = 'Memories of Light Snow'
-global.CardText[CardStat] = 'Dragon Empire/Normal Order
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Fox Art
 
 Play this if you have a vanguard with "Tamayura" in its card name!
 
@@ -7666,6 +7674,21 @@ CONT [RC]: If you have a unit with "Radylina" in its card name in the same colum
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.DCards2[CardStat] = 4
+global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13597
+{
+global.CardName[CardStat] = 'Stealth Fiend, Futakuchiyo'
+global.CardText[CardStat] = 'Dragon Empire/Ghost/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
