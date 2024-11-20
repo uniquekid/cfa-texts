@@ -2983,7 +2983,7 @@ CardStat = 10570
 global.CardName[CardStat] = 'Blue Storm Dragon, Maelstrom   '
 global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
 
-ACT [VC] 1/Turn: COST [Discard a card from your hand], choose up to one <Tear Dragon> or unit card with only «Aqua Force» for its clan from your soul, call it to RC, it gets "AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and it is the first battle of this turn, COST [Counter Blast 1], and stand this unit." until end of turn, and put this unit into your soul at the end of that turn.
+ACT [VC] 1/Turn: COST [Discard a card from hand], choose a unit card with only «Aqua Force» for its clan or a <Tear Dragon> from your soul, call it to RC, it gets "AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and it is the first battle of that turn, COST [Counter Blast 1], and stand this unit." until end of turn, and at the end of that turn, put this unit into your soul.
 
 AUTO [VC]: When this unit attacks a vanguard, if it is the fourth battle of this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it.
 
@@ -3368,10 +3368,13 @@ ACT [VC] 1/Turn: COST [Soul Blast 1], turn all of the Plant tokens on your RC in
 
 AUTO [VC]: At the end of the battle this unit attacked, COST [if you have one or more Noblesserose tokens or plant gauges, put up to a total of five to drop], choose one of your rear-guards, and it gets power +5000 until end of turn for each card put into drop for this cost. If you put three or more cards, stand that unit.
 
-(SHIFT + left click to generate a Noblesserose Token)'
+(SHIFT + left click to generate a Noblesserose Token)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 10687
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3940,9 +3943,12 @@ global.CardText[CardStat] = 'Stoicheia
 
 AUTO: When this unit is rode upon by a grade 1 <Mushi>, you get a "Mushiking: King of the Beetles Machine" crest.
 
-(SHIFT + left click to generate crest)'
+(SHIFT + left click to generate crest)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 10992
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
@@ -4692,9 +4698,12 @@ global.CardText[CardStat] = 'Stoicheia/Quintuplet
 
 AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get a "The Quintuplets’ Memories" crest.
 
-CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.'
+CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 11531
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7073,10 +7082,13 @@ global.CardText[CardStat] = 'Stoicheia/Granblue/Ghost
 
 AUTO: When this unit is placed by riding from "Undying Departed, Grenache", draw a card, and you get a "Vampire Princess of Night Fog, Nightrose" crest.
 
-(You will be prompted to get the crest upon ride.)'
+(You will be prompted to get the crest upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 13177
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7672,7 +7684,7 @@ CardStat = 13520
 global.CardName[CardStat] = 'Nurturing Sprinkling, Itacherina'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
-AUTO: When this unit is placed on RC from hand, if your vanguard is a Glitter, look at the top five cards of your deck, choose up to one Glitter from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, put htis unit into soul.'
+AUTO: When this unit is placed on RC from hand, if your vanguard is a Glitter, look at the top five cards of your deck, choose up to one Glitter from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, put this unit into soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }

@@ -2836,10 +2836,13 @@ global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
 AUTO: When this unit is placed by riding from "Chrono Dran", draw a card, and you get a "Chronojet Dragon" crest.
 
-(You will be prompted to get the crest upon ride.)'
+(You will be prompted to get the crest upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
+global.AnotherSide[CardStat] = 10476
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -4411,9 +4414,12 @@ global.CardText[CardStat] = 'Dark States/Quintuplet
 
 AUTO: When this unit is placed by riding from "The Quintessential Quintuplets", you get a "The Quintuplets’ Memories" crest.
 
-CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.'
+CONT [GC]: If your memory has three or more <Quintuplet> with different card names, this unit gets shield +5000.
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
+global.AnotherSide[CardStat] = 11531
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -6801,10 +6807,13 @@ global.CardText[CardStat] = 'Dark States/Pale Moon/Warbeast
 
 AUTO: When this unit is placed by riding from "Happiness Collector", draw a card, and you get a "Masked Magician, Harri" crest.
 
-(You will be prompted to get the crest upon ride.)'
+(You will be prompted to get the crest upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 18
+global.AnotherSide[CardStat] = 13186
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7007,12 +7016,15 @@ global.CardText[CardStat] = 'Dark States/Gearoid
 
 AUTO: When this unit is placed by riding from a grade 0 unit, COST [reveal a grade 3 card with "Liael" in its card name from the ride deck], and put a Destined Timepiece token into your order zone.
 
-(You will be prompted to get the token upon ride.)'
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.TokenSummoner[CardStat] = 13220
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 13220
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7517,3 +7529,43 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13594
+{
+global.CardName[CardStat] = 'Mage of Winnowing Broom, Napplipp'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is put on GC, if your soul has eight or more cards, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO: When this unit retires from GC, you may put this card into soul." and shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13595
+{
+global.CardName[CardStat] = 'Have A Great Year!'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+Look at the top five cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13596
+{
+global.CardName[CardStat] = 'Gear Hedgehog of Cotton-lining Needles'
+global.CardText[CardStat] = 'Dark States/Gear Beast
+
+AUTO [RC]: When this unit boosts, if you Energy Blast 3 or more at the same time for the cost of your card’s ability this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
