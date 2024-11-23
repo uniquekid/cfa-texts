@@ -3770,11 +3770,17 @@ CardStat = 6103
 global.CardName[CardStat] = 'Battle Siren, Parthenia'
 global.CardText[CardStat] = 'Aqua Force/Mermaid
 
-AUTO [RC] 1/Turn: When your units attack hits a vanguard, if it is the first or second battle of that turn, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.'
+AUTO [RC] 1/Turn: When your unit’s attack hits a vanguard, if it is the first or second battle of that turn, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 6594
@@ -4188,11 +4194,12 @@ CardStat = 7266
 global.CardName[CardStat] = 'Frontal Sailor'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: When stand in the front row, this unit gets power +10000 until end of turn.'
+AUTO [RC]: When it stand in your front row, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
 global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 7267
@@ -4518,11 +4525,12 @@ CardStat = 7915
 global.CardName[CardStat] = 'Radiate Assault'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO [RC]: When placed, COST [Soul Blast 1], and until end of turn, your "when attack hits" effects for the battle this unit attacked or boosted activate even if the attack did not hit. COST [put a card with "Maelstrom" in its card name from your drop zone on the bottom of your deck], and draw a card.'
+AUTO [RC]: When placed, COST [Soul Blast 1], and until end of turn, for the battle that this unit attacked or boosted, your "when attack hits" effects activate even if the attack did not hit. Then, COST [put a card with "Maelstrom" in its card name from your drop zone on the bottom of your deck], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 7916
