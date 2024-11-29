@@ -6549,7 +6549,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Kotihblaze" in its card name, this unit gets power +5000 until end of turn.
 
-AUTO [RC]: At the end of the battle this unit attacked, choose a grade 3 card with "Khotiblaze" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Khotiblaze" in its card name, COST [put this unit into soul], and draw a card.'
+AUTO [RC]: At the end of the battle this unit attacked, choose a grade 3 card with "Kotihblaze" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Kotihblaze" in its card name, COST [put this unit into soul], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -7791,7 +7791,7 @@ AUTO [VC]: When your opponent’s rear-guard is retired during your turn, choose a
 
 CONT [VC]: During your turn, all of your front row unit gets power +2000 for each face down card in your bind zone.
 
-ACT [VC] 1/Turn: COST [Remove a card with "Gandeeva" in its different card name from this unit from hand, soul, or drop], choose one of the original ACT abilities of the card removed for this cost, activate it without paying its cost, and this unit gets critical +1 until end of turn.abs
+ACT [VC] 1/Turn: COST [Remove a card with "Gandeeva" in its different card name from this unit from hand, soul, or drop], choose one of the original ACT abilities of the card removed for this cost, activate it without paying its cost, and this unit gets critical +1 until end of turn.
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -7800,3 +7800,97 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13630
+{
+global.CardName[CardStat] = 'Dragritter, Nahid'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this card is discarded from hand during your turn, put this card into soul.
+
+AUTO [RC]: When your unit in the same column as this unit is stand by the ability of your grade 3 or greater vanguard with "Kotihblaze" in its card name, COST [Soul Blast 1], choose one of your rear-guards in the same column as this unit, and stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13631
+{
+global.CardName[CardStat] = 'Burn Tolerance Salamander'
+global.CardText[CardStat] = 'Dragon Empire/Salamander
+
+AUTO: When this unit is placed on GC, if you have a grade 3 or greater vanguard with "Kotihblaze" in its card name, until end of that battle, this unit gets "AUTO: When this unit is retired from GC, you may put this card into soul." and shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13632
+{
+global.CardName[CardStat] = 'Scorching Burner Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Kotihblaze" in its card name, COST [put a grade 2 or less card from hand into soul], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13633
+{
+global.CardName[CardStat] = 'Dragonic Kaiser Vermillion "THE BLOOD"  '
+global.CardText[CardStat] = 'Dragon Empire/Narukami/Thunder Dragon
+
+CONT [VC]: During your turn, if your soul has a "Dragonic Kaiser Vermillion", this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, this unit gets critical +1, and all of your front row rear-guards get power +5000.
+
+ACT [VC]: COST [Soul Blast 1], until end of turn, when this unit would attack, choose two of your opponent’s RC, and this unit battles all of the units on those chosen RC and your opponent’s vanguard.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if you played a normal order this turn, and your opponent’s damage zone has four or less cards, COST [discard a card from hand], choose one of your opponent’s vanguards, and deal one damage.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 19
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13634
+{
+global.CardName[CardStat] = 'Demonic Dragon Nymph, Kashin'
+global.CardText[CardStat] = 'Dragon Empire/Dragonman
+
+CONT: If you have a vanguard with only «Narukami» for its clan, this card is only from «Narukami».
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with only «Narukami» for its clan, look at the top seven cards of your deck, choose up to one card with "Vermillion" in its card name and only «Narukami» for its clan or up to one "Eternal Thunderbolt" from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Vermillion" in its card name and only «Narukami» for its clan, COST [Counter Blast 1], this unit gets power +10000 until end of that battle, and at the end of that battle, bind this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13635
+{
+global.CardName[CardStat] = 'Bellicosity Dragon  '
+global.CardText[CardStat] = 'Kagero/Flame Dragon/Dragon Empire
+
+CONT: If you have a vanguard with only one clan, and your G zone has no cards, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Energy Blast 3 & put a card from hand into soul], and draw two cards.
+• AUTO [RC]: When your vanguard attacks, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
