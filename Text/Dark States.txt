@@ -3409,9 +3409,9 @@ global.CardText[CardStat] = 'Dark States/Human
 AUTO [VC]: When a trigger unit is Soul Blast for the cost of this unit’s ability, choose one of your units, and it gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 3], bind all of the critical triggers Soul Blast for this cost, and perform all of the following according to the number of critical triggers in your bind zone.
-• 1 or more - Choose one of your opponent’s rear-guards, and retire it.
-• 2 or more - This unit gets critical +1 until end of that battle.
-• 3 or more - This unit gets drive +1 until end of that battle.'
+• One or more - Choose one of your opponent’s rear-guards, and retire it.
+• Two or more - This unit gets critical +1 until end of that battle.
+• Three or more - This unit gets drive +1 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -7748,3 +7748,66 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13696
+{
+global.CardName[CardStat] = 'Steam Fighter, Nabonide'
+global.CardText[CardStat] = 'Dark States/Gearoid
+
+AUTO: When this unit is placed on RC from hand, Soul Charge 1, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13697
+{
+global.CardName[CardStat] = 'Mage of Twilight, Ilyria'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, choose a trigger unit from your drop, and you may put it into soul.
+
+AUTO [Back Row RC] 1/Turn: When your unit in the same column as this unit stand by a card’s ability, if you have a vanguard with "Almajestar" in its card name, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13698
+{
+global.CardName[CardStat] = 'Archetry Chimaera'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Astroea" in its card name, COST [put a card from hand into soul], draw a card, and this unit gets power +5000 until end of turn.
+
+CONT [RC/GC]: If the total number of critical triggers and cards with "Astroea" in their card names in your bind zone is one or more, this unit gets shield +10000. If the total number is three or more, this unit gets "Intercept".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13699
+{
+global.CardName[CardStat] = 'Dualmajestar, Astroea=Bico Stellar'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO [VC]: At the beginning of your main phase, if you did not ride this turn, COST [discard a card from hand], choose a card with the same card name as this unit from your bind zone, and ride it as stand, and if you rode a card, activate persona ride.
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 3], bind all critical triggers and card with "Astroea" in their card names Soul Blast for this cost, and perform all of the following according to the total number of critical triggers and cards with "Astroea" in their card names in your bind zone.
+• One or more - Choose one of your opponent’s rear-guards, retire it, and all of your front row units get power +5000 until end of turn.
+• Three or more - This unit gets critical +1 / drive +1 until end of turn.
+• Five or more - Choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
