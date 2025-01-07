@@ -7045,7 +7045,7 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO: When this unit is placed on RC from hand, if you have a vanguard with " Dimensional Robo" in its card name, COST [Energy Blast 3], choose a card with "Dimensional Robo" in its different carn name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
 
-CONT [RC/GC]: If your order zone has a Base, this unit gets power +2000 / shield +5000. If your order zone has three or more Bases, it also gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your order zone has a Base, this unit gets power +5000 / shield +5000. If your order zone has three or more Bases, it also gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -7343,3 +7343,24 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 13710
+{
+global.CardName[CardStat] = 'Wandel Regenbork'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this card is placed on RC from hand other than by a unit card’s ability or discarded from hand while riding from the ride deck, choose a card with persona ride from your ride deck, and you may reveal it. If you revealed a card or have a vanguard with persona ride, COST [Soul Blast 1], and put a Persona Shield ticket into hand.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to get a Persona Shield ticket)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000

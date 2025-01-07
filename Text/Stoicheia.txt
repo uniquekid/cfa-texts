@@ -1345,7 +1345,7 @@ global.CardText[CardStat] = 'Stoicheia/Blitz Order
 
 Play this with COST [Soul Blast 1] !
 
-Draw a card, choose one of your units, and it gets power +5000 until end of that battle for each different order card in total in your drop and bind zone. (Increase by the number of different card names.)'
+Draw a card, choose one of your units, and it gets power +5000 until end of that battle for each order card with a different card name in your drop and bind zone in total. (Cards with the same card name in both drop and bind zone count as one)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -8215,3 +8215,65 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13712
+{
+global.CardName[CardStat] = 'Sage of Heavenly Rainbow, Luviron'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+AUTO: When this card is placed on RC from hand other than by a unit card’s ability or discarded from hand while riding from the ride deck, choose a card with persona ride from your ride deck, and you may reveal it. If you revealed a card or have a vanguard with persona ride, COST [Soul Blast 1], and put a Persona Shield ticket into hand.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to get a Persona Shield ticket)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13718
+{
+global.CardName[CardStat] = 'Untouchable Dybachilla'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+CONT [RC]: If your Infinity Eyes marker is in the same column as this unit, this unit cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13719
+{
+global.CardName[CardStat] = 'Fiendish Beauty Noble, Melaoel'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+CONT [RC]: If this unit is on RC with your Infinity Eyes marker, this unit gets "AUTO: When this unit intercepts, this unit gets shield +10000 until end of that battle." and power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13720
+{
+global.CardName[CardStat] = 'Acquired Pantheraad'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO: When this unit is placed on RC with your Infinity Eyes marker, this unit gets power +5000 until end of turn. If your Infinity Eyes marker is on your other RC in the same column as this unit, choose one of your other rear-guards, and it gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [retire this unit], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Levidras" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
