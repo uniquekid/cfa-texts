@@ -9592,7 +9592,36 @@ CardStat = 13717
 global.CardName[CardStat] = 'White Cat Dance<3 Lacika'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO: When this unit is put from RC into soul by the ability of your grade 3 or greater vanguard with "Liscafael" in its card name, COST [Counter Blast 1], draw a card, choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time." until end of turn.'
+AUTO: When this unit is put from RC into soul by the ability of your grade 3 or greater vanguard with "Lisciafael" in its card name, COST [Counter Blast 1], draw a card, choose one of your vanguards, and it gets "CONT [VC]: During the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13725
+{
+global.CardName[CardStat] = 'Evening Sunset and Cut Flowers, Krys'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets power +5000 until end of that battle. If you have five or more units, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13726
+{
+global.CardName[CardStat] = 'Energetic Yellow, Plennel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets power +5000 until end of turn. Then, COST [Soul Blast 1], lok at the top card of your deck, and call it to RC or discard it.
+
+CONT [GC]: If you have a grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
