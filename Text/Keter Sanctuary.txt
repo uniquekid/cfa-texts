@@ -8572,3 +8572,147 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13737
+{
+global.CardName[CardStat] = 'Houndraiser, Kiika'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13738
+{
+global.CardName[CardStat] = 'Houndraiser, Isumi'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by "Houndraiser, Hakuren", look at the top seven cards of your deck, choose up to one <High Beast> from among them, call it to RC, and shuffle the deck.
+
+AUTO [RC]: When this unit is boosted by a <High Beast>, this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 2000
+
+
+CardStat = 13739
+{
+global.CardName[CardStat] = 'Houndraiser, Hakuren'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by "Houndraiser, Aoi", look at the top seven cards of your deck, choose up to one card with "Houndraiser" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, call this card to RC, and Soul Charge 1 .
+
+AUTO [RC]: When this unit is boosted by a <High Beast>, choose a <High Beast> normal unit from your drop, and you may put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13740
+{
+global.CardName[CardStat] = 'Houndraiser, Aoi'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [VC]: All of your back row <High Beast> get power +5000. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Soul Blast 2], search your deck for up to one <High Beast>, call it to RC, and shuffle the deck.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your back row center grade 1 or less <High Beast>, until end of turn, it can attack from the back row, gets "AUTO [RC]: At the end of the battle this unit attacked, stand this unit, and this unit cannot attack until end of turn.", and if your opponent’s vanguard is grade 3 or greater, that chosen unit performs drive checks during the battle it attacked.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13741
+{
+global.CardName[CardStat] = 'Regaon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+CONT: If you have a grade 3 or greater vanguard with "Houndraiser" in its card name, this card gets all of the following.
+• CONT [Back Row Center RC]: During the battle this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time.
+• CONT [GC]: This unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13742
+{
+global.CardName[CardStat] = 'Merrgaon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Houndraiser" in its card name, Soul Charge 1 or Energy Charge 1 .
+
+CONT [Back Row RC]: If you have a vanguard with "Houndraiser" in its card name, this unit gets power +5000. If this unit is in the back row center column, and your vanguard is grade 3 or greater, this unit gets power +10000 instead of +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13743
+{
+global.CardName[CardStat] = 'Houndraiser, Mishiro'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Houndraiser" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <High Beast> from among them, call it to RC, and shuffle the deck. If you did not call a card, Counter Charge 1 .
+
+AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, you may Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, and your back row has two or more <High Beast>, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 13744
+{
+global.CardName[CardStat] = 'Houndraiser, Seishin'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [Front Row RC]: All of your <High Beast> on your RC get "Intercept", and can intercept from the back row.
+
+AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, if you have a vanguard with "Houndraiser" in its card name, until end of that battle, this unit gets power +5000, and if your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 3], and this unit gets critical +1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13748
+{
+global.CardName[CardStat] = 'Gabwelius'
+global.CardText[CardStat] = 'Keter Sanctuary/Over Trigger
+
+CONT: This card is also regarded as "Light Dragon Deity of Honors, Amartinoa".
+
+Additional Effect - Until end of turn, you also perform drive checks for the battles your rear-guards attack!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
