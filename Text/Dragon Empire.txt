@@ -4183,7 +4183,7 @@ CardStat = 11174
 global.CardName[CardStat] = 'Stealth Fiend, Izasaou'
 global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
-(STANDARD JP: Restricted to 1.)
+(STANDARD JP & EN: Restricted to 1.)
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one normal unit with "Stealth" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 
@@ -5223,7 +5223,7 @@ CardStat = 12207
 global.CardName[CardStat] = 'Stealth Dragon, Fuurai  '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
-(STANDARD JP: Restricted to 1.)
+(STANDARD JP & EN: Restricted to 1.)
 
 CONT [RC]: This unit gets power +5000 for each time a unit dominated by you attacked this turn.
 
@@ -8081,3 +8081,30 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+global.CardLimidet[CardStat] = 1
+
+
+CardStat = 13763
+{
+global.CardName[CardStat] = 'Blue Scale Water Archer, Bogard'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this unit is placed on RC during your main phase, if you have a grade 3 or greater vanguard with "Eugene" in its card name, choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13764
+{
+global.CardName[CardStat] = 'Taoist of Wind’s Voice, Jen Fa'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this card is placed on RC from hand during your turn or discarded from hand during your turn, choose one of your grade 3 or greater vanguards, and it gets power 5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
