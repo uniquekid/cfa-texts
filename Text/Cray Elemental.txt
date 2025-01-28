@@ -993,8 +993,8 @@ AUTO [VC] 1/Turn: When this unit attacks a vanguard, choose a face up Calamity c
 global.UnitGrade[CardStat] = 10
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 8
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3225,3 +3225,100 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 13778
+{
+global.CardName[CardStat] = 'Sephirosid'
+global.CardText[CardStat] = 'Hydragrum
+
+CONT [VC]: This unit gets grade +1 /  power +2000 for each different Blessing card in your soul and drop in total that was in the ride deck. (Active on opponent’s turn too)
+
+AUTO [VC]: At the beginning of your main phase, choose up to one Blessing card from your ride deck, and put it into soul. Perform one of the following according to your vanguard’s grade.
+• Grade 1 - Choose up to one "Energy Generator" from your ride deck, and put it into the crest zone. If you do, and you went second, Energy Charge 3 .
+• Grade 3 - Search your deck or hand for up to one "Dragontree of Advent, Sephirogilla", ride it as stand, and if you searched the deck, shuffle the deck. If you rode, choose one of your RC without any Dragontree markers, and put a Dragontree marker.
+
+(SHIFT + left click to get Energy Generator.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 12245
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 13779
+{
+global.CardName[CardStat] = 'A New Beginning'
+global.CardText[CardStat] = 'Normal Order/Blessing
+
+Play this with COST [Counter Blast 1] !
+
+Search your deck for up to one Blessing card, reveal it and put it into your hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13780
+{
+global.CardName[CardStat] = 'Auspicious Transmogrification'
+global.CardText[CardStat] = 'Normal Order/Blessing
+
+Play this with COST [Counter Blast 1] !
+
+Search your deck for up to one Blessing card, reveal it and put it into your hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13781
+{
+global.CardName[CardStat] = 'Coming of Origin'
+global.CardText[CardStat] = 'Normal Order/Blessing
+
+Play this with COST [Counter Blast 1] !
+
+Search your deck for up to one Blessing card, reveal it and put it into your hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13782
+{
+global.CardName[CardStat] = 'Dragontree of Advent, Sephirogila'
+global.CardText[CardStat] = 'Hydragrum
+
+CONT [VC/Deck]: This card is also regarded as "Griphogilla", and if it is on VC, you can only ride cards with "Sephirogila" in their card names.
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose one of your RC, put a Dragontree marker, look at the top five cards of your deck, choose up to one unit card from among them, call it to RC, and shuffle the deck.
+
+ACT [VC] 1/Turn: COST [Bind a card with "Dragontree" in its card name or a "Masque of Hydragrum" from hand or drop], for each RC with your Dragontree markers, Energy Charge 1, and this unit gets power +5000 until end of turn. If there are five or more RC with your Dragontree markers, this unit gets drive +1 until end of turn.
+
+(SHIFT + left click to get a Dragontree Marker.)'
+global.UnitGrade[CardStat] = 10
+global.CardInClan[CardStat] = 25
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
