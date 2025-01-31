@@ -1392,7 +1392,7 @@ global.Arms[CardStat] = 1
 global.LeftArms[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 9220
@@ -8107,4 +8107,175 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13784
+{
+global.CardName[CardStat] = 'Overhead Artillery Dragon, Vasgorminus'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit is placed on RC or put on GC, if you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets power +5000 / shield +5000.
+
+Overcharge - AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, choose one of your opponent’s rear-guards, until end of turn, that unit cannot intercept, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13785
+{
+global.CardName[CardStat] = 'Kagura-bell of Sacred Ground'
+global.CardText[CardStat] = 'Dragon Empire/Set Order
+
+ACT [Order Zone]: COST [Soul Blast 1 & rest this card], choose one of your rear-guards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13786
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Arhinsa Svr'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13787
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Namorkahr Anui'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is placed by riding from "Sealed Blaze Dragon, Arhinsa Svr", COST [Soul Blast 1 & reveal a "Sealed Blaze of Arbitration, Bavsargra Aksayya" from the ride deck], perform one of the following, and shuffle the deck. If you went second, perform all of the following instead of one.
+• Search your deck for up to one "Sealed Blaze Sword, Dyaava", reveal it and put it into hand.
+• Search your deck for up to one "Sealed Blaze Shield, Bowdhanath", reveal it and put it into hand.
+
+CONT [RC]: If your VC has two or more Arms, this unit gets power +2000 (Active on opponent’s turn too).'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13788
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Halibadra Baraat'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is rode upon by "Sealed Blaze of Arbitration, Bavsargra Aksayya", COST [Counter Blast 1], search your deck for up to two Arms cards with different card names from each other, discard them, and shuffle the deck. Choose up to one Arms card from your drop, and arm it to your vanguard.
+
+AUTO [RC]: When this unit attacks, if your vanguard is armed, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13789
+{
+global.CardName[CardStat] = 'Sealed Blaze Sword, Dyaava'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Arms
+
+Right Deity Arms - "Sealed Blaze of Arbitration, Bavsargra Aksayya". (After being played, the specified vanguard arms it. If a new Right Deity Arms is armed, put this card into the drop.)
+
+Play this with COST [Counter Blast 1] !
+
+AUTO [VC]: When this card is armed, choose one of your vanguards, and it gets "CONT [VC]: All of your front row units get power +5000." until end of turn.
+
+AUTO [VC]: When the unit armed with this card attacks a grade 3 or greater unit, you may have that unit get drive +1 until end of that battle. If you do, at the end of that turn,put this card into your drop.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.Arms[CardStat] = 1
+global.RightArms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13790
+{
+global.CardName[CardStat] = 'Sealed Blaze Shield, Bowdhanath'
+global.CardText[CardStat] = 'Dragon Empire/Normal Order/Arms
+
+Left Deity Arms - "Sealed Blaze of Arbitration, Bavsargra Aksayya". (After being played, the specified vanguard arms it. If a new Left Deity Arms is armed, put this card into the drop.)
+
+Play this with COST [Counter Blast 1] !
+
+AUTO [VC]: When this card is armed, draw a card.
+
+AUTO [VC] 1/Turn: When the unit armed with this card is attacked, until end of that battle, that armed unit gets power +10000, COST [Soul Blast 1], and it gets power +20000 instead of +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.Arms[CardStat] = 1
+global.LeftArms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 13791
+{
+global.CardName[CardStat] = 'Sealed Blaze of Arbitration, Bavsargra Aksayya'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [VC]: This unit is also regarded as "Sealed Blaze Maiden, Bavsargra".
+
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose an Arms card from your drop, and arm it to this unit.
+
+ACT [VC] 1/Turn: If this unit is armed with two or more cards, COST [Soul Blast 2], retire all of your opponent’s front row rear-guards, and this unit gets critical +1 until end of turn. If no cards were retired, draw a card.
+
+AUTO [VC] 1/Turn: When this unit is armed, Energy Charge 1, choose up to one grade 1 or less card from your drop, and call it to RC. If you chose a card with "Vairlord" in its card name, you may overDress it on your "Trickmoon" on your RC instead of calling it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13792
+{
+global.CardName[CardStat] = 'Dancing Princess of Beautiful Flames, Farren'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this card is put into soul by your card’s ability during your turn, if you have a grade 3 or greater vanguard with "Bavsargra" in its card name, choose one of your units, and it gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit boosted, if your vanguard is armed with two or more cards, COST [Energy Blast 2], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13793
+{
+global.CardName[CardStat] = 'Sealed Blaze Dragon, Yyugmashad'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Sealed Blaze" in its card name, COST [Energy Blast 3 & discard an Arm card], draw two cards, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+AUTO [RC] 1/Turn: At the end of the battle your grade 3 or greater vanguard with "Bavsargra" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

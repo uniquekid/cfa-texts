@@ -6063,7 +6063,7 @@ CardStat = 12814
 global.CardName[CardStat] = 'Dimensional Robo, Daibattles  '
 global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
-ACT [Soul] 1/Turn: If your vanguard is "Dimensional Robo, Daidragon", your opponent’s vanguard is grade 2 or greater, and your soul has "Dimensional Robo, Goyusha", "Dimensional Robo, Dailander", and "Dimensional Robo, Daimariner", COST [put a card from hand into soul], choose up to one "Super Dimensional Robo, Daiyusha" from your ride deck, and ride it as stand.
+ACT [Soul] 1/Turn: If your vanguard is "Dimensional Robo, Daidragon", your opponent’s vanguard is grade 2 or greater, and your soul has "Dimensional Robo, Goyusha", and "Dimensional Robo, Dailander", and "Dimensional Robo, Daimariner", COST [put a card from hand into soul], choose up to one "Super Dimensional Robo, Daiyusha" from your ride deck, and ride it as stand.
 
 AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daiyusha" in its card name, and your opponent’s vanguard is grade 3 or greater, your vanguard’s original critical becomes 2 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -6215,9 +6215,9 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 
 CONT [VC]: This unit is also regarded as "Monster Creator, Arkhite".
 
-ACT [VC] 1/Turn: COST [Energy Blast 2], choose three cards with "Monster" in their card names from your drop, and put them into the order zone.
+ACT [VC] 1/Turn: COST [Energy Blast 2], choose up to three cards with "Monster" in their card names from your drop, and put them into the order zone.
 
-AUTO [VC]: When your rear-guard with "Monster" in its card name is placed, COST [put a card with the same card name as that unit from order zone into drop], and that unit gets power +10000 until end of turn.
+AUTO [VC]: When your rear-guard with "Monster" in its card name is placed, COST [put a card with the same card name as that unit from the order zone into drop], and that unit gets power +10000 until end of turn.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two cards with "Monster" in their different card names from your order zone, and call them to RC.'
 global.UnitGrade[CardStat] = 3
@@ -6251,7 +6251,7 @@ global.CardName[CardStat] = 'Armed Arms, "Drill"'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [VC/RC]: When this unit attacks, COST [put a card with "Armed Arms" in its card name from drop into soul], and perform one of the following according to the circle this unit is on.
-• VC - If there are two or more cards attached to this unit, this unit gets critical +1 until end of turn.
+• VC - If there are two or more attached cards, this unit gets critical +1 until end of turn.
 • RC - This unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
@@ -6283,7 +6283,7 @@ CardStat = 12939
 global.CardName[CardStat] = 'Support Drone, Manny'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO: When this unit is placed on GC, if you have a vanguard with "Silhouette" in its card name, look at the top five cards of your deck, choose up to any number of cards with "Armed Arms" in their different card names from among them, call them to GC, and shuffle the deck. If you did not call a card, this unit gets shield +5000 until end of that battle.'
+AUTO: When this unit is placed on GC, if you have a vanguard with "Silhouette" in its card name, look at the top five cards of your deck, choose any number of cards with "Armed Arms" in their different card names from among them, call them to GC, and shuffle the deck. If you did not call a card, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -7574,3 +7574,19 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13783
+{
+global.CardName[CardStat] = 'Annihilation Strategy: Mass Burial'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+AUTO: When this card is put into soul from the order zone, you get one of the following until end of turn.
+• "At the end of the battle your vanguard attacked, if it is the first battle of this turn, and that attack did not hit, search your deck for up to one grade 3 or greater vanguard with "Avantgarda" in its card name, reveal it and put it into hand, and shuffle the deck."
+• When your vanguard would be rode upon, that ridden unit is placed with all of the trigger effects and abilties got from the abilities of Strategy cards your vanguard got this turn."'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
