@@ -9738,10 +9738,14 @@ CONT [VC]: During your turn, if your order zone has two or more Sound Systems, t
 
 ACT [VC] 1/Turn: COST [Energy Blast 2], choose a Sound System card from your hand or drop, and put it into the order zone. If you put a card from hand, draw a card.
 
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and call up to one Shadow Army token to RC for each Sound System in your order zone. All of your front row units get power +5000 until end of turn for every two Sound Systems in your order zone.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and call up to one Shadow Army token to RC for each Sound System in your order zone. All of your front row units get power +5000 until end of turn for every two Sound Systems in your order zone.
+
+(SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.TokenSummoner[CardStat] = 13806
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9769,10 +9773,14 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Set Order/Sound System
 
 CONT: This card cannot be played, and it cannot be put into your order zone other than by the ability of a unit with "Artisaria" in its card name.
 
-AUTO: When this card is put into your order zone, draw a card, and call up to one Shadow Army token to RC.'
+AUTO: When this card is put into your order zone, draw a card, and call up to one Shadow Army token to RC.
+
+(SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
+global.TokenSummoner[CardStat] = 13806
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
