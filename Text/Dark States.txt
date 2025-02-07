@@ -947,8 +947,8 @@ global.CardName[CardStat] = 'Balance Wiggler'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of the effects below depending on the number of your opponent’s rear-guards.
-• 2 or less - This unit gets power +5000 until end of turn.
-• 3 or more - Choose one of your opponent’s front row rear-guards, and retire it.'
+• Two or less - This unit gets power +5000 until end of turn.
+• Three or more - Choose one of your opponent’s front row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -7988,4 +7988,37 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13807
+{
+global.CardName[CardStat] = 'Seeker of Knowledge, Selseera'
+global.CardText[CardStat] = 'Dark States/Elf
+
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from soul, and it gets "CONT: This card can be played from the soul, and when it woould be put into drop after being played, bind it instead." until end of turn.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and this unit gets all of the following until end of turn according to the total number of different normal orders in your soul and bind zone.
+• Three or more different cards - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
+• Five or more different cards - CONT [VC]: All of your units get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13808
+{
+global.CardName[CardStat] = 'Adventure Academic, Arius'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Selseera" in its card name, look at the top seven cards of your deck, choose up to one normal order from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, andput it into soul or discard it.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Selseera" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, and your unit did not stand by a card’s ability this turn, COST [Energy Blast 3], stand this unit, choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
