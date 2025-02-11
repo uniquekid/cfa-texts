@@ -7954,7 +7954,7 @@ CardStat = 13755
 global.CardName[CardStat] = 'Steam Fighter, Ilarum'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-ACT [Soul]: COST [Counter Blast 1 & put this card into drop], choose one of your rear-guards, and it gets power +5000 until end of turn.'
+ACT [Soul]: COST [Counter Blast 1 & put this card into drop], Soul Charge 1, choose one of your rear-guards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -7996,7 +7996,7 @@ CardStat = 13807
 global.CardName[CardStat] = 'Seeker of Knowledge, Selseera'
 global.CardText[CardStat] = 'Dark States/Elf
 
-ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from soul, and it gets "CONT: This card can be played from the soul, and when it woould be put into drop after being played, bind it instead." until end of turn.
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from soul, and it gets "CONT: This card can be played from the soul, and when it would be put into drop after being played, bind it instead." until end of turn.
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], and this unit gets all of the following until end of turn according to the total number of different normal orders in your soul and bind zone.
 • Three or more different cards - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
@@ -8022,3 +8022,21 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13810
+{
+global.CardName[CardStat] = 'For Now, Forget the Passage of Time'
+global.CardText[CardStat] = 'Dark States/Set Order
+
+Play this if you have a vanguard with "Direful Doll" in its card name!
+
+AUTO: When this card is put into the order zone, look at the top seven cards of your deck, choose up to one normal unit with "Direful Doll" in its card name and grade less than or equal to your vanguard from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [Order Zone]: If you have a vanguard with "Direful Doll" in its card name, COST [put this card into drop], choose up to two cards with "Direful Doll" in their different card names from your drop, and put them into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
