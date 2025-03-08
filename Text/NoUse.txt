@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 13861
+global.AllCard = 13873
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1105,5 +1105,27 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 13865
+{
+global.CardName[CardStat] = 'Blast'
+global.CardText[CardStat] = 'Blast
+
+CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Estacion" in its card name, it gets all of the following.
+• CONT [RC]: This unit cannot be affected by your opponent’s cards.
+• ACT [RC] 1/Turn: COST [Put two or more, up to three other rear-guards face up as this unit’s plant gauges], and draw a card.
+• CONT [RC]: During your turn, if your vanguard is grade 3 or greater, all of your front row units get power +5000 for every three of this unit’s gauge.
+
+(SHIFT + left click to count up gauges.)
+(SHIFT + right click to count down gauges.)
+(Middle click or hover and press SPACE to set number of gauges.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
