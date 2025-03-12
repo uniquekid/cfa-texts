@@ -8888,7 +8888,7 @@ CardStat = 13862
 global.CardName[CardStat] = 'Spectacular Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-CONT [RC]: If you have a grade 3 or greater vanguard with "Bastion" in its card name, this unit cannot be chosen by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)
+CONT [RC]: If you have a grade 3 or greater vanguard with "Bastion" in its card name, this unit cannot be retired by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)
 
 AUTO: When this unit is put on GC, choose a grade 3 card with "Bastion" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Bastion" in its card name, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -8897,3 +8897,16 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13875
+{
+global.CardName[CardStat] = 'Knight of War Conviction, Fesphul'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on GC from hand, COST [Counter Blast 1], choose a trigger unit from your drop other than over trigger, and call it to GC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
