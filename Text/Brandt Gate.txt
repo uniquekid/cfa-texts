@@ -7399,7 +7399,7 @@ CardStat = 13724
 global.CardName[CardStat] = 'Aurora Battle Princess, Welt Kipple'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO: When this unit is placed on RC, COST [Energy Blast 3], your opponent chooses a card from their hand, and they may imprison it in your Prison. If they did not imprison a card, your opponent chooses two cards from their drop, and imprisons them in your Prison.
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], your opponent chooses a card from their hand, and they may imprison it in your Prison. If they did not imprison a card, your opponent chooses two unit cards from their drop, and imprisons them in your Prison.
 
 CONT [RC]: During your turn, if two or more of your opponent’s cards are imprisoned in your Prison, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -7733,7 +7733,33 @@ CardStat = 13861
 global.CardName[CardStat] = 'Deep Greed Ticket Seller, Belorin'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO: When this unit is placed on RC from hand, if your order zone has two or more different set orders, Soul Charge 1 or Energy Charge 1 .'
+AUTO: When this unit is placed on RC from hand, if your order zone has two or more different set orders, Soul Charge 1 or Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13891
+{
+global.CardName[CardStat] = 'Compile Excavator'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13892
+{
+global.CardName[CardStat] = 'Scrub Foamy'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO [RC]: When your set order is put into soul or drop from your order zone, COST [retire this unit], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
