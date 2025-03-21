@@ -9006,7 +9006,7 @@ CardStat = 13866
 global.CardName[CardStat] = 'Legend of Uprising, Estacion'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
-CONT [VC]: When this unit is placed by riding from "Legend of Chaotic Dance, Estacion", search your deck for up to one "Vital Blaze - Blast", reveal it and put it into hand, and shuffle the deck.'
+AUTO [VC]: When this unit is placed by riding from "Legend of Chaotic Dance, Estacion", search your deck for up to one "Vital Blaze - Blast", reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
@@ -9259,4 +9259,34 @@ global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13908
+{
+global.CardName[CardStat] = 'Prudence Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, COST [Energy Blast 3], choose a <Tear Dragon> card from your drop, and call it to RC.
+
+CONT [RC]" If you have a grade 3 or greater vanguard with "Flagburg" in its card name, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13909
+{
+global.CardName[CardStat] = 'Agulhas Assault'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Flagburg" in its card name, all of your grade 3 or greater <Tear Dragon> unit get "Intercept", and they get shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
