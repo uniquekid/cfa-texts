@@ -7499,7 +7499,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13758
 {
 global.CardName[CardStat] = 'Eilift Gullmani'
-global.CardText[CardStat] = 'Brandt Gate/Normal Order
+global.CardText[CardStat] = 'Brandt Gate/Normal Order/Lunarite
 
 Play this with COST [Counter Blast 1] !
 
@@ -7809,3 +7809,65 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13910
+{
+global.CardName[CardStat] = 'Kettensage Leyfia'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC/GC]: If your order zone has two or more Arenas, this unit gets power +5000 / shield+5000. (Active on opponent’s turn too)
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Rotovisor" in its card name, and you do not have a rear-guard with the same card name as this card, COST [Energy Blast 2 & rest an Arena from the order zone], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13911
+{
+global.CardName[CardStat] = 'Kvar Scharfschutz'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Rotovisor" in its card name, choose one of your other units, and it gets power +5000 until end of turn.
+
+AUTO: When this unit is put on GC, if you have a grade 3 or greater vanguard with "Rotovisor" in its card name, and your order zone has two or more Arenas, COST [Energy Blast 2], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13914
+{
+global.CardName[CardStat] = 'Ormur Sem Verdario'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order/Lunarite
+
+Play this if you have a grade 3 or greater vanguard with "Veissrugr" in its card name!
+
+Choose one of your opponent’s rear-guards, retire it, and all of your vanguards get "AUTO [VC] 1/Turn: When your rear-guard with "Mythisch" in its card name is placed on RC by this unit’s ability, until end of turn, the cost of that unit’s original AUTO abilities is reduced by Counter Blast 1." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13915
+{
+global.CardName[CardStat] = 'The Second Mythisch, "Midgardsormr" Garzorums'
+global.CardText[CardStat] = 'Brandt Gate/Mythisch
+
+AUTO: When this unit is placed on RC during your battle phase, if you have a grade 3 or greater vanguard with "Veissrugr" in its card name, COST [Counter Blast 1], and until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects, and can attack from the back row.
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. If you played a normal order this turn, this unit gets power +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CanAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
