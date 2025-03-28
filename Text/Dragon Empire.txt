@@ -8592,7 +8592,7 @@ CardStat = 13936
 global.CardName[CardStat] = 'Stealth Rogue of Court Dance, Maika'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
-AUTO [RC]: At the end of the battle your grade 3 or greater vanguard with "Ghry" in its card name attacked, COST [Counter Blast 1], and draw a card. If your opponent’s vanguard is grade 3 or greater, and your unit was not placed on RC from soul this battle phase, COST [retire two rear-guards in the same column as this unit], choose up to one "Unison Dragon, Aundra" and "Dragritter of Flame Blade, Ghry" each from your soul, call each of them to RC in the same column, and they get power +5000 until end of turn. At the end of that turn, put them into soul.'
+AUTO [RC]: At the end of the battle your grade 3 or greater vanguard with "Grhy" in its card name attacked, COST [Counter Blast 1], and draw a card. If your opponent’s vanguard is grade 3 or greater, and your unit was not placed on RC from soul this battle phase, COST [retire two rear-guards in the same column as this unit], choose up to one "Unison Dragon, Aundra" and "Dragritter of Flame Blade, Grhy" each from your soul, call each of them to RC in the same column, and they get power +5000 until end of turn. At the end of that turn, put them into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -8605,10 +8605,44 @@ CardStat = 13937
 global.CardName[CardStat] = 'Dragritter, Jumas'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Ghry" in its card name, COST [Counter Blast 1 & retire this unit], choose up to two grade 2 or less units with "Ghry" or "Aundra" in their different card names from your drop, and call them to RC.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Grhy" in its card name, COST [Counter Blast 1 & retire this unit], choose up to two grade 2 or less units with "Grhy" or "Aundra" in their different card names from your drop, and call them to RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13940
+{
+global.CardName[CardStat] = 'Lady Thungsa Devi'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+CONT: This card is also regarded as "Vairina Esperaridea".
+
+overDress - "Trickstar".
+
+AUTO: When this unit is placed on RC, if it is overDress, put all "Trickstar" and cards with the overDress ability from your drop as this units originalDress.
+
+AUTO [RC] 1/Turn: When your vanguard attacks, COST [Soul Blast 1], stand this unit, and this unit gets power +5000 until end of turn for each of this units originalDress.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13941
+{
+global.CardName[CardStat] = 'The Moonlight Blade of Judgment, Akayumi'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
