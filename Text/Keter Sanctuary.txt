@@ -5209,7 +5209,8 @@ CardStat = 12175
 global.CardName[CardStat] = 'Cerrgaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-(STANDARD JP & EN: You can only run this card if you do not have D Dragheart, Luard in your deck.)
+(STANDARD JP: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
+(STANDARD EN: You can only run this card if you do not have D Dragheart, Luard in your deck.)
 
 AUTO [RC]: When this unit boosts, if you have more rear-guards than your opponent, or if you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [retire this unit], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
@@ -6043,6 +6044,8 @@ CardStat = 12537
 global.CardName[CardStat] = 'Fated One of Miracles, Rezael'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
+(STANDARD JP: You can only run this card if you do not have Cerrgaon in your deck.)
+
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards from your drop with different grades and a total grade less than or equal to the number of cards in your damage zone, and call them to RC.
 
 [Divine Skill] - ACT [VC]: COST [Soul Blast 1], return all critical triggers from your drop to the deck and shuffle it, and this unit gets drive +1 until end of turn. Until end of this fight, you cannot ride units without "Rezael" in its card name, and you get "When your damage check reveals a trigger unit other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, heal it, and you lose this ability.". (You may only use Divine Skills a total of once per fight among all your cards)'
@@ -6053,6 +6056,7 @@ global.PersonaRideCardName[CardStat] = 'Rezael'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 12538
@@ -8368,7 +8372,8 @@ CardStat = 13590
 global.CardName[CardStat] = '“Gamer Tries Defeating a Yokai!”, Miko Todo'
 global.CardText[CardStat] = 'Keter Sanctuary/CoroCoro Comic
 
-(STANDARD JP & EN: You can only run this card if you do not have D Dragheart, Luard in your deck.)
+(STANDARD JP: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
+(STANDARD EN: You can only run this card if you do not have D Dragheart, Luard in your deck.)
 
 CONT: This card is regarded as "Cerrgaon".
 
@@ -9049,4 +9054,32 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13920
+{
+global.CardName[CardStat] = 'Pentaculation Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Hexaorb Sorceress" in its card name, this unit gets power +5000.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Hexaorb Sorceress" in its card name is placed during your ride phase, COST [Energy Blast 3], call this card to RC, look at the top card of your deck, and put it on the top of the deck or into soul. If you put a card into soul, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13921
+{
+global.CardName[CardStat] = 'Knight of the Coming Light, Helmecent'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
