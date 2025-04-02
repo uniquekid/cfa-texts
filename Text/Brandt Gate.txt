@@ -3364,6 +3364,8 @@ CardStat = 10764
 global.CardName[CardStat] = 'Asleep Messiah '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
+(PREMIUM EN: You can only run this card if you do not have G Alter Ego Messiah and D Alter Ego Messiah in your deck.)
+
 AUTO: When this unit is placed by riding from "Neon Messiah", draw a card, and you get a "Alter Ego Messiah" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -3376,6 +3378,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 10668
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10765
@@ -3565,6 +3568,8 @@ CardStat = 10832
 global.CardName[CardStat] = 'Alter Ego Messiah   '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
+(PREMIUM EN: You can only run this card if you do not have D Asleep Messiah in your deck.)
+
 AUTO [VC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): When any locked card is unlocked, COST [Soul Blast 1], and draw a card.
 
 AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & lock a rear-guard], choose one of your opponent’s rear-guards, lock it, choose one of your vanguards, and it gets power +5000 until end of turn. (Locked cards cannot do anything. They are unlocked and turned face up as stand at the end of their owner’s turn)'
@@ -3574,6 +3579,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 11000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10833
@@ -7871,3 +7877,19 @@ global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13944
+{
+global.CardName[CardStat] = 'Make or Break Big Match!'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order
+
+Play this with COST [Counter Blast 1] !
+
+Shuffle your deck. Choose a grade from 1 to 3, declare it, reveal the top three cards of your deck, put all of the cards with the declared grade from among the revealed cards into hand, and discard the rest.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
