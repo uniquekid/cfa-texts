@@ -8114,7 +8114,7 @@ CardStat = 13844
 global.CardName[CardStat] = 'Adapt Wildmaster, Filairune'
 global.CardText[CardStat] = 'Dark States/Elf
 
-AUTO [RC]: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8310,3 +8310,35 @@ global.PersonaRideCardName[CardStat] = 'Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13987
+{
+global.CardName[CardStat] = 'will+Dress, Michiru Hazama'
+global.CardText[CardStat] = 'Dark States/Front Trigger
+
+CONT: This card is also regarded as "Diabolos Girls, Natalia".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13988
+{
+global.CardName[CardStat] = 'Divinez Deluxe Edition, Michiru Hazama'
+global.CardText[CardStat] = 'Dark States/Critical Trigger
+
+CONT: This card is also regarded as "Stem Deviate Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
