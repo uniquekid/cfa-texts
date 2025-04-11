@@ -9265,7 +9265,7 @@ AUTO: If your vanguard is a grade 3 or greater <Insect>, this cost may be paid w
 
 CONT [RC]: During your turn, if your vanguard is a grade 3 or greater <Insect>, this unit gets power +5000.
 
-ACT [RC] 1/Turn: When your grade 3 or greater vanguard with "Lascaria" in its card name attacks, COST [Counter Blast 1], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Lascaria" in its card name attacks, COST [Counter Blast 1], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
@@ -9393,4 +9393,24 @@ global.DCards2[CardStat] = 4
 }
 global.TriggerUnit[CardStat] = 1
 global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13990
+{
+global.CardName[CardStat] = 'Shower Shower Turnipele'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+ACT [RC/Drop]: If you have a Noblesse Rose token on your RC, COST [Soul Blast 1], choose one of your Noblesse Rose token, and perform one of the following.
+• Put this card face down as a plant gauge for that unit.
+• If your card with the same card name as this unit was not put on the bottom of the deck this turn, put the top three cards of your deck face down as plant gauges for that unit, and put this card on the bottom of the deck.
+
+CONT [Plant Gauge]: The Noblesse Rose with this card as a plant gauge cannot be affected by your opponent’s cards.
+
+AUTO: When this card is discarded as a plant gauge, bind this card. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
