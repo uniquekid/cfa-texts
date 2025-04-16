@@ -7684,7 +7684,7 @@ CardStat = 13647
 global.CardName[CardStat] = 'Bogle Puppy'
 global.CardText[CardStat] = 'Dark States/Ghost
 
-AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Oselargest" in its card name, COST [Soul Blast 1], choose up to two cards without the same grade as cards from your soul, and put them into soul.'
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Oselargest" in its card name, COST [Soul Blast 1], choose up to two cards that do not have the same grade as the cards in your soul from your drop, and put them into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8389,3 +8389,19 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13999
+{
+global.CardName[CardStat] = 'Fixed Time Dragon, Proieslogia'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], choose one of any player’s rear-guards, put it into soul, until end of that battle, this unit gets power +5000, and if your damage zone has four or more cards, or you persona rode this turn, it also gets "AUTO [RC]: When your opponent’s unit is put on GC, if that unit’s grade is the same as the grade of the card put into soul by this unit’s original AUTO ability this battle, that unit gets shield -5000 until end of that battle.".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
