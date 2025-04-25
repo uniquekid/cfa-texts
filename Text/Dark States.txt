@@ -8369,7 +8369,7 @@ global.CardText[CardStat] = 'Dark States/Human
 
 Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your soul, and call it to RC. (You may only use Unique Skills a total of once per fight among all of your cards)
 
-AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, if your soul has five or more cards, or you Soul Blast a total of three or more cards this turn, it also gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, if your soul has five or more cards, or you Soul Blast a total of three or more cards this turn, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 global.CardCopies[CardStat] = 1
@@ -8405,3 +8405,18 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14008
+{
+global.CardName[CardStat] = 'Gear Parrot of Eternal Glory'
+global.CardText[CardStat] = 'Dark States/Gear Beast
+
+CONT: If you have a <Gear Dragon> vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, choose up to one normal unit without sentinel from your drop or bind zone, and put it on the bottom of the deck. If you chose a card, this unit gets power +5000 until end of turn.
+• AUTO: When this unit is put from RC on the bottom of the deck by your card’s ability during your turn or bound from RC by your card’s ability during your turn, if you vanguard is grade 3 or greater, COST [Counter Blast 1 or Energy Blast 3], draw a card, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

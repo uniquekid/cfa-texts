@@ -7962,10 +7962,25 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top three cards of your deck, choose a card from among them, put it into hand, and shuffle the deck. If your order zone has two or more of any player’s cards, look at the top five cards instead of three. (You may only use Unique Skills a total of once per fight among all of your cards)
 
-AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, COST [rest a set order from the order zone], it also gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, COST [rest a set order from the order zone], it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14009
+{
+global.CardName[CardStat] = 'Intent Disseminator'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+CONT: If you have a grade 3 or greater vanguard with "Impauldio" or "Nordlinger" in its card name, this unit gets all of the following.
+• AUTO: When this unit is placed on RC from hand, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one Meteorite card or up to one grade 3 or greater card with a different card name from your vanguard and without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+• AUTO [RC]: When this unit boosts, this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

@@ -9442,11 +9442,27 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, discard it, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your drop, and call it to RC. (You may only use Unique Skills a total of once per fight among all of your cards)
 
-AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, and if your drop has ten or more cards, it also gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if your drop has ten or more cards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14014
+{
+global.CardName[CardStat] = 'Spewing Pomegranater'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+CONT: If your order card was bound from drop by your vanguard’s ability this turn, this unit gets all of the following.
+• ACT [Drop]: If you do not have a rear-guard with the same card name as this unit, COST [Energy Blast 3], and call this card to RC.
+• AUTO [RC]: At the beginning of your battle phase, you may have this unit get "CONT [RC]: During your turn, if you do not have another rear-guard with the same card name as this unit, all of your front row rear-guards with original power 5000 or less get power +5000." until end of turn. If you do, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
