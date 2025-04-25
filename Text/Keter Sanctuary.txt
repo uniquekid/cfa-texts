@@ -3381,6 +3381,8 @@ CardStat = 10637
 global.CardName[CardStat] = 'Reverence Rush Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 
+(PREMUM EN: Banned.)
+
 AUTO: When this unit is placed on RC from hand, COST [Soul Blast 1], choose a grade 2 or greater card from your drop, and put it on the top of your deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
@@ -3388,6 +3390,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 10639
@@ -5242,6 +5245,8 @@ CardStat = 12185
 global.CardName[CardStat] = 'Dragwizard, Knies  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
+(PREMIUM EN: You can only run this card if you do not have V Dragheart, Luard in your deck.)
+
 AUTO: When this unit is placed by riding from "Dragprince, Rute", draw a card, and you get a "Dragheart, Luard" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -5254,6 +5259,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 12186
@@ -8665,7 +8671,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser" in its card name, Soul Charge 1 or Energy Charge 1 .
 
-CONT [Back Row RC]: If you have a vanguard with "Houndraiser" in its card name, this unit gets power +5000. If this unit is in the back row center column, and your vanguard is grade 3 or greater, this unit gets power +10000 instead of +5000. (Active on opponent’s turn too)'
+CONT [Back Row RC]: If you have a vanguard with "Hound Raiser" in its card name, this unit gets power +5000. If this unit is in the back row center column, and your vanguard is grade 3 or greater, this unit gets power +10000 instead of +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9097,4 +9103,120 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13952
+{
+global.CardName[CardStat] = 'Hound Raiser, Hinami'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When your <High Beast> attacks from the back row center column, if you have a grade 3 or greter vanguard with "Hound Raiser" in its card name, this unit gets power +5000 until end of turn, and if your opponent’s vanguard is grade 3 or greater, choose one of your other rear-guards, and it gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked while boosted by a <High Beast>, if you have a vanguard with "Hound Raiser" in its card name, COST [retire this unit], choose one of your other rear-guards with "Hound Raiser" in its card name, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen or retired by your opponent’s card effects.".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13953
+{
+global.CardName[CardStat] = 'Rebabgaon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [Back Row Center RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Hound Raiser" in its card name, COST [Counter Blast 1], choose one of your opponent’s grade 1 or less rear-guards, retire it, this unit gets power +5000 until end of turn, and at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13981
+{
+global.CardName[CardStat] = 'Mythisch of Miracles, Rifistor'
+global.CardText[CardStat] = 'Keter Sanctuary/Mythisch
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Rezael" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000 until end of that battle. Then, if this unit was placed on RC by the ability of your grade 3 or greater vanguard with "Rezeal" in its card name this turn, and your damage zone has four or more cards, this unit gets power +10000 instead of +5000. If it gets power +10000, and it is the fifth battle of this turn, your opponent cannot call sentinels from hand to GC until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13989
+{
+global.CardName[CardStat] = 'Knight of Righteous Aim, Iltide'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Bastion" or "Alden" in its card name, this unit gets "Boost".
+
+AUTO [Back Row RC] 1/Turn: When your other unit is placed on RC during your battle phase, or when your unit in the same column as this unit stand during your battle phase, if you have a grade 3 or greater vanguard with "Bastion" or "Alden" in its card name, you may stand this unit. If you stand it, at the end of that turn, put this unit into soul.
+
+AUTO: When this unit is put on GC, choose a grade 3 card with "Bastion" or "Alden" in its card name from your ride deck, and you may reveal it. If you revealed a card, or have a grade 3 or greater vanguard with "Bastion" or "Alden" in its card name, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14002
+{
+global.CardName[CardStat] = 'King of Knights, Alfred  '
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
+
+CONT [VC]: During your turn, this unit cannot be boosted, and if your soul has a "Blaster Blade", this unit gets power +2000 for each of your rear-guards. If it gets power +8000 or more, and your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
+
+AUTO [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one grade 3 or less card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck. Choose one of that unit’s AUTO abilities, and until end of turn, the cost of that ability is reduced by Counter Charge 1 the next time you pay it.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards with only «Royal Paladin» for its clan, and stand it. If your opponent’s vanguard is grade 3 or greater, choose two of them instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14003
+{
+global.CardName[CardStat] = 'Shining Wing Star Dragon, Vyrgilla'
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Cosmo Dragon
+
+CONT: This card is regarded as "Soul Saver Dragon".
+
+CONT [RC]: During your turn, if your have a grade 3 or greater vanguard with "Alfred" in its card name, this unit gets power +5000, and if your opponent’s vanguard is grade 3 or greater, this unit gets all of the following.
+• AUTO [Front Row RC]: At the beginning of your battle phase, COST [Counter Blast 1], choose three of your units, and they get power +5000. If you persona rode this turn, choose all of them instead of three.
+• AUTO [RC]: When this unit attacks, if this unit was stand by your vanguard’s ability this turn, and no drive checks were performed for the battle your rear-guard attacked this turn, COST [Soul Blast 1-"King of Knights, Alfred"], until end of that battle, increase or decrease this unit’s drive to 1, and perform drive checks.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14004
+{
+global.CardName[CardStat] = 'Starry Sky Knight, Zero'
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
+
+CONT: This card is regarded as "Knight of Silence, Gallatin".
+AUTO: If you have a vanguard with only «Royal Paladin» for its clan, this cost may be paid with "Energy Blast 3". When this unit is placed on RC, if you do not have a rear-guard with the same card name as this unit, COST [Counter Blast 1], and draw a card.
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle. If you have 4 or more units, +10000 instead of +5000.
+AUTO [RC] 1/Turn: When this unit attacks, if you have a vanguard with only «Royal Paladin» for its clan and you persona rode this turn and this unit stand by your vanguard’s ability this turn, COST [Counter Blast 1], and your opponent cannot activate AUTO abilities until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

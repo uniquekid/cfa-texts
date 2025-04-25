@@ -4750,11 +4750,11 @@ CardStat = 7875
 global.CardName[CardStat] = 'Dragheart, Luard '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
+(PREMIUM EN: You can only run this card if you do not have D Dragwizard, Knies in your deck.)
 (V PREMIUM JP & EN: You can only run this card if you do not have V Skull Witch, Nemain in your deck.)
 (V PREMIUM TH: You can only run this card if you do not have V Skull Witch, Nemain and V Black Sage, Charon in your deck.)
 
 ACT [VC] 1/Turn: COST [Retire two grade 1 rear-guards], draw a card, choose one of your opponent’s rear-guards, and retire it.
-
 ACT [VC] 1/Turn: This cost is reduced by Counter Blast 1 for each grade 1 card in your drop. COST [Counter Blast 3], choose two normal units from your drop, return them to your deck, search your deck for up to one "Dragdriver, Luard", ride it as stand, and shuffle your deck. At the end of that turn, choose a "Dragheart, Luard" from your soul, and ride it as rest.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
@@ -5285,3 +5285,18 @@ global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 13950
+{
+global.CardName[CardStat] = 'Blaster Dark   '
+global.CardText[CardStat] = 'Shadow Paladin/Human
+
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], your opponent chooses one of his or her rear-guards, and retires it.
+
+ACT [VC] 1/Turn: If your opponent has no rear-guards, COST [discard a card from your hand], and this unit gets drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

@@ -5078,6 +5078,8 @@ CardStat = 12178
 global.CardName[CardStat] = 'Stealth Dragon, Seizui '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
+(PREMIUM EN: You can only run this card if you do not have G Demon Stealth Dragon, Shiranui "Oboro" and D Demon Stealth Dragon, Shiranui "Oboro" in your deck.)
+
 AUTO: When this unit is placed by riding from "Stealth Dragon, Madoi", draw a card, and you get a "Demon Stealth Dragon, Shiranui "Oboro"" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -5090,6 +5092,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 12182
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 12179
@@ -5113,6 +5116,7 @@ CardStat = 12180
 global.CardName[CardStat] = 'Demon Stealth Dragon, Shiranui "Oboro"   '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
+(PREMIUM EN: You can only run this card if you do not have D Stealth Dragon, Seizui in your deck.)
 (STANDARD JP & EN: You can only run this card if you do not have a Dragon Deity King of Resurgence, Dragveda in your deck.)
 
 AUTO [VC]: At the beginning of your ride phase, choose up to one card from your opponent’s drop, your opponent calls that card to RC, and at the end of that turn, retires that unit.
@@ -8578,7 +8582,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], draw a card, choose one of your opponent’s RC, until end of turn, all of the cards on the chosen RC lose all of their abilities, and cannot gain them. Put all of the cards on the chosen RC into drop. (You may only use Unique Skills a total of once per fight among all of your cards)
 
-AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, if your opponent has no rear-guards or their rear-guard left RC by your card’s ability this turn, it gets power +5000.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, if your opponent has no rear-guards or their rear-guard left RC by your card’s ability this turn, it also gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardCopies[CardStat] = 1
@@ -8645,4 +8649,64 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13954
+{
+global.CardName[CardStat] = 'Lethal Salt Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+AUTO [RC]: When this unit’s attack hits a vanguard, if you have a vanguard with "Scarlet Flame" in its card name, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and retire it. If you did not reitre a card, draw a card.
+
+CONT [GC]: If your bind zone has five or more face down cards, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13955
+{
+global.CardName[CardStat] = 'Dragritter, Shahid'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO [RC]: When your other unit is placed on a RC in the same column as this unit during your battle phase, or when your other unit in the same column as this unit stand during your battle phase, if you have vanguard with "Scarlet Flame" in its card name, that unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13995
+{
+global.CardName[CardStat] = 'Alarmed Blaze Dragon, Alumdias'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], choose one of your opponent’s rear-guards, retire it, this unit gets power +5000 until end of turn, and if your damage zone has four or more cards, or you persona rode this turn, it also gets power +5000 for each grade of the unit retired by this effect.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13998
+{
+global.CardName[CardStat] = 'Vyrgilla, "Rewrite Form: Alfknights"'
+global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
+
+[Rewrite] - ACT [Hand]: If your opponent’s vanguard is grade 3 or greater, COST [bind a "Rewrite the Star, Vyrgilla" on VC], ride this card as stand, and perform all of the following. At the end of that turn, ride the card bound for this cost as rest.
+• Search your deck or drop for up to one <Galaxian>, call it to RC, search your deck or drop for up to one Ultimate Skill card, reveal it and put it into hand, and if your searched the deck, shuffle the deck.
+• Until end of turn, this unit gets "AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], stand all of your front row rear-guards, and this unit gets drive +1 until end of that battle.", and all of your front row units get power +5000 for each card with the same card name as this unit in your soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0

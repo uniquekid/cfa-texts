@@ -1364,11 +1364,14 @@ CardStat = 3161
 global.CardName[CardStat] = 'Dreaming Dragon'
 global.CardText[CardStat] = 'Genesis/Cosmo Dragon/Stand Trigger
 
+(PREMIUM EN: Banned.)
+
 AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Put this unit on the top of your deck] At the end of your turn, you may pay the cost. If you do, return all cards from your drop zone to your deck, and shuffle your deck. Then, if the number of cards returned is ten or more, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }
 global.TriggerUnit[CardStat] = 3
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 3162
@@ -1540,6 +1543,8 @@ CardStat = 4037
 global.CardName[CardStat] = 'Shackle Fetter, Gelgja'
 global.CardText[CardStat] = 'Genesis/Noble
 
+(PREMIUM EN: Restricted to 1.)
+
 AUTO: Revelation - RC (When this unit is placed on the specified circle, look at the top card of your deck, and you may put that card into your soul. If you do, rest one of your rear-guards.)
 
 ACT [Soul]: [Put this card on the bottom of your deck] Choose one of your rear-guards, stand it, and it gets power +3000 until end of turn. If you have a vanguard with "Fenrir" in its card name, Soul Charge 2, choose one of your units, it gets power +3000 until end of turn.'
@@ -1547,6 +1552,7 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
 global.PowerStat[CardStat] = 7000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 4038
@@ -2577,11 +2583,14 @@ CardStat = 6226
 global.CardName[CardStat] = 'Witch of Frogs, Melissa '
 global.CardText[CardStat] = 'Genesis/Human
 
+(PREMIUM EN: Banned.)
+
 AUTO [RC]: When placed from hand, COST [Soul Blast 3], your opponent looks at the same number of cards from the top of his or her deck as the number of his or her rear-guards, calls them to RC with a unit, and shuffles the deck. Your opponent’s abilities cannot activate due to this call.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
 global.PowerStat[CardStat] = 7000
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 6230
@@ -3756,7 +3765,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO [RC]: When placed, you may put a card from your soul face down as a divine gauge for this unit.
 
-AUTO [RC]: At the end of the battle it attacked or boosted, COST [this unit has one or more divine gauges, move all of them to another rear-guard], put this unit into your soul, and draw a card.'
+AUTO [RC]: At the end of the battle it attacked or boosted, COST [this unit has one or more divine gauges, move all of this unit’s divine gauge to another rear-guard], put this unit into your soul, and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }

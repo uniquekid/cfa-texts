@@ -3364,6 +3364,8 @@ CardStat = 10764
 global.CardName[CardStat] = 'Asleep Messiah '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
+(PREMIUM EN: You can only run this card if you do not have G Alter Ego Messiah and D Alter Ego Messiah in your deck.)
+
 AUTO: When this unit is placed by riding from "Neon Messiah", draw a card, and you get a "Alter Ego Messiah" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -3376,6 +3378,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 10668
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10765
@@ -3565,6 +3568,8 @@ CardStat = 10832
 global.CardName[CardStat] = 'Alter Ego Messiah   '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
+(PREMIUM EN: You can only run this card if you do not have D Asleep Messiah in your deck.)
+
 AUTO [VC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): When any locked card is unlocked, COST [Soul Blast 1], and draw a card.
 
 AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & lock a rear-guard], choose one of your opponent’s rear-guards, lock it, choose one of your vanguards, and it gets power +5000 until end of turn. (Locked cards cannot do anything. They are unlocked and turned face up as stand at the end of their owner’s turn)'
@@ -3574,6 +3579,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 11000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10833
@@ -7868,6 +7874,98 @@ CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CanAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13944
+{
+global.CardName[CardStat] = 'Make or Break Big Match!'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order
+
+Play this with COST [Counter Blast 1] !
+
+Shuffle your deck. Choose a grade from 1 to 3, declare it, reveal the top three cards of your deck, put all of the cards with the declared grade from among the revealed cards into hand, and discard the rest.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13993
+{
+global.CardName[CardStat] = 'Galactic Base "A.I.A.S."'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Base
+
+ACT [Order Zone] 1/Turn: COST [rest this card], choose a card with "B-Hero" in its different card name as cards in your order zone from your drop, and scout it to your Base.
+
+ACT [Order Zone]: If your order zone has four or more Bases, COST [put this stand card into soul], choose a grade 2 or less normal unit wiht "B-Hero" in its card name from your drop, put it into hand, choose one of your vanguards with "B-Hero" in its card name, and until end of turn, reduce the next Counter Blast cost you pay for that unit’s abilities by 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13994
+{
+global.CardName[CardStat] = 'Twilight Frontier'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/World
+
+AUTO: When this card is put in the order zone, choose a grade 3 card with "Orfist" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Orfist" in its card name, draw a card.
+
+CONT [Order Zone]: If your order zone only has World cards, the following effects are active according to the number of cards in your order zone.
+• 1 card - Your World becomes Dark Night.
+• 2 or more cards - Your World becomes Abyssal Dark Night.
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Orfist" in its card name, and this card was not put into the order zone this turn, COST [Soul Blast 1 & rest this card], call a Shadow Army token to RC, and change this card’s name to "Casting a Shadow in the Murky Night" until end of turn.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 8425
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 14000
+{
+global.CardName[CardStat] = 'Crumbling Destruction Dragon, Quorisdam'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
+
+CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], your opponent chooses one of their rear-guards, binds it, until end of that battle, this unit gets power +5000, and if your damage zone has four or more cards, or you persona rode this turn, it also gets power +5000, and your opponent cannot play blitz orders from hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14001
+{
+global.CardName[CardStat] = 'Veirmeil Exordia'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+[Ace Unit] (You may only have one Ace Unit in your deck)
+
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top three cards of your deck, choose a card from among them, put it into hand, and shuffle the deck. If your order zone has two or more of any player’s cards, look at the top five cards instead of three. (You may only use Unique Skills a total of once per fight among all of your cards)
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, COST [rest a set order from the order zone], it also gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

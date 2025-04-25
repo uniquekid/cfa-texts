@@ -1844,6 +1844,8 @@ CardStat = 2881
 global.CardName[CardStat] = 'Alter Ego Messiah'
 global.CardText[CardStat] = 'Link Joker/Messiah
 
+(PREMIUM EN: You can only run this card if you do not have D Asleep Messiah in your deck.)
+
 AUTO [VC] Generation Break 2: When any locked card is unlocked, COST [Soul Blast 1], and draw a card.
 
 AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1 & lock a rear-guard], choose one of your opponent’s rear-guards, lock it, choose one of your vanguards, and it gets power +5000 until end of turn.'
@@ -1851,6 +1853,7 @@ global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 global.DCards[CardStat] = 5
 }
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 2882
@@ -4453,7 +4456,7 @@ CardStat = 6534
 global.CardName[CardStat] = 'Fatal Shockwave, Jetshaft'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: When it boosts, COST [Soul Blast 1], and your opponent intercepts as much as possible until end of that battle.'
+AUTO [RC]: When it boosts, COST [Soul Blast 1], and until end of that battle, your opponent must intercept if possible.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -4729,7 +4732,7 @@ CardStat = 6686
 global.CardName[CardStat] = 'Harmonics Messiah '
 global.CardText[CardStat] = 'Link Joker/Messiah
 
-AUTO [VC]: When it attacks, search your deck for up to one card, put it on RC as a locked card, and shuffle your deck. (The locked card cannot do anything. It is unlocked and turns face up as stand at the end of the owners turn.)
+AUTO [VC]: When it attacks, search your deck for up to one card, put it on RC as a locked card, and shuffle your deck.
 
 AUTO [VC] 1/Turn: At the end of the battle it attacked, if your soul has a grade 3 or greater card, COST [Counter Blast 1 & discard a card from your hand], choose any number of any fighter’s locked cards, unlock them, draw the same number of cards, and two rear-guards in your front row get power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -4976,7 +4979,7 @@ CardStat = 7492
 global.CardName[CardStat] = 'Boundless Torus, Duannulus'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-CONT [RC]: If there is a total of two or more face down cards in any fighter’s bind zone or circles, this unit gets power +10000.'
+CONT [RC]: If there are a total of two or more face down cards in any player’s bind zone or circles, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -5040,9 +5043,9 @@ CardStat = 7579
 global.CardName[CardStat] = 'Alter Ego Messiah '
 global.CardText[CardStat] = 'Link Joker/Messiah
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], and put up to two cards with different card names from your drop zone on RC as locked cards.
+ACT [VC] 1/Turn: COST [Soul Blast 1], and put up to a total of two cards with different card names from your drop zone on RC as locked cards.
 
-AUTO [VC]: When it attacks, choose any number of any fighter’s locked cards, unlock them, and those unlocked units get power +10000 until end of turn.'
+AUTO [VC]: When it attacks, choose any number of any player’s locked cards, unlock them, and all of those unlocked units get power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 global.BlueTokenAdd[CardStat] = 1
@@ -5226,7 +5229,7 @@ CardStat = 7676
 global.CardName[CardStat] = 'Lady Battler of the White Dwarf '
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-CONT [VC/RC]: During your turn, if a face down card is in any fighter’s bind zone or circle, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if there is a face down card is in any player’s bind zone or circle, this unit gets power +5000.
 
 AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1

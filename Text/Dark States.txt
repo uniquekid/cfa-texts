@@ -2531,6 +2531,8 @@ CardStat = 10249
 global.CardName[CardStat] = 'Chronojet Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
+(PREMIUM EN: You can only run this card if you do not have D Masergear Dragon in your deck.)
+
 AUTO [VC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, until end of that battle, this unit gets power +5000, and your opponent cannot call grade 1 or greater units from hand to GC.
 
 AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and put it on the bottom of their deck.'
@@ -2540,6 +2542,7 @@ global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 11000
 global.AttackFromVBuff[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10267
@@ -2839,6 +2842,8 @@ CardStat = 10475
 global.CardName[CardStat] = 'Masergear Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
+(PREMIUM EN: You can only run this card if you do not have G Chronojet Dragon, D Chronojet Dragon and Steam Maiden Melem in your deck.)
+
 AUTO: When this unit is placed by riding from "Chrono Dran", draw a card, and you get a "Chronojet Dragon" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -2851,6 +2856,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 10476
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10477
@@ -4483,7 +4489,7 @@ CardStat = 11546
 global.CardName[CardStat] = 'Love Means Full Speed Ahead, Nino Nakano'
 global.CardText[CardStat] = 'Dark States/Quintuplet
 
-AUTO 1/Turn: When this unit’s attack does not hit, if your vanguard is "The Quintessential Quintuplets, Nino Nakano", COST [Counter Blast 1 & put a <Quintuplet> from drop on bottom of deck], and stand this unit. If your memory has five or more <Quintuplet> with different card names, you may draw a card.'
+AUTO [RC] 1/Turn: When this unit’s attack does not hit, if your vanguard is "The Quintessential Quintuplets, Nino Nakano", COST [Counter Blast 1 & put a <Quintuplet> from drop on bottom of deck], and stand this unit. If your memory has five or more <Quintuplet> with different card names, you may draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -5893,6 +5899,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [bind two or more, up to four
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -6807,6 +6814,8 @@ CardStat = 13188
 global.CardName[CardStat] = 'Moonlight Melody Tamer, Betty  '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Warbeast
 
+(PREMIUM EN: You can only run this card if you do not have G Masked Magician Harri and D Masked Magician Harri in your deck.)
+
 AUTO: When this unit is placed by riding from "Happiness Collector", draw a card, and you get a "Masked Magician, Harri" crest.
 
 (You will be prompted to get the crest upon ride.)'
@@ -6819,6 +6828,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 13186
 global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13189
@@ -6842,6 +6852,8 @@ CardStat = 13190
 global.CardName[CardStat] = 'Masked Magician, Harri   '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Elf
 
+(PREMIUM EN: You can only run this card if you do not have D Moonlight Melody Tamer, Betty in your deck.)
+
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, choose up to one card from your soul, call it to RC, and until end of turn, that unit and this unit get power +3000.
 
 Magia - AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], Soul Charge 1, choose up to one card from your soul, call it to RC, and it gets power +5000 until end of turn. At the end of that turn, put that called unit into your soul.'
@@ -6851,6 +6863,7 @@ global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 11000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13191
@@ -7671,7 +7684,7 @@ CardStat = 13647
 global.CardName[CardStat] = 'Bogle Puppy'
 global.CardText[CardStat] = 'Dark States/Ghost
 
-AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Oselargest" in its card name, COST [Soul Blast 1], choose up to two cards that do not have the same grade as cards from your soul, and put them into soul.'
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Oselargest" in its card name, COST [Soul Blast 1], choose up to two cards that do not have the same grade as the cards in your soul from your drop, and put them into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -7865,7 +7878,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13732
 {
 global.CardName[CardStat] = 'Steam Maiden, Zimry'
-global.CardText[CardStat] = 'Lyrical Monasterio/Gearoid
+global.CardText[CardStat] = 'Dark States/Gearoid
 
 CONT [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +5000.
 
@@ -7880,7 +7893,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 13733
 {
 global.CardName[CardStat] = 'Direful Doll, Patience'
-global.CardText[CardStat] = 'Lyrical Monasterio/Workeroid
+global.CardText[CardStat] = 'Dark States/Workeroid
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Energy Blast 2], choose up to one grade 3 normal order without Regalis Piece from your drop or face up damage zone cards, put it into hand, and if you put from the damage zone, put the top card of your deck into the damage zone.
 
@@ -8101,7 +8114,7 @@ CardStat = 13844
 global.CardName[CardStat] = 'Adapt Wildmaster, Filairune'
 global.CardText[CardStat] = 'Dark States/Elf
 
-AUTO [RC]: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8216,6 +8229,176 @@ global.CardText[CardStat] = 'Dark States/Human
 AUTO: When this unit is placed on RC from hand, Soul Charge 1, and perform one of the following according to the grade of the card Soul Charge by this effect.
 • One or less - Until end of turn, this unit gets "Boost", and it gets power +5000.
 • Two or greater - Until end of your opponent’s next turn, this unit gets "Intercept", and it gets shield +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13945
+{
+global.CardName[CardStat] = 'Bareness Ripper'
+global.CardText[CardStat] = 'Dark States/Demon
+
+CONT [GC]: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and your bind zone has four or more face down cards, this unit gets shield +5000. If your bind zone has eight or more face down cards, it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13946
+{
+global.CardName[CardStat] = 'Carve Out Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, look at the top card of your deck, and put it on the top of the deck or into soul. If you put a card into soul, this unit gets power +5000 until end of turn. If your bind zone has four or more face down cards, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13947
+{
+global.CardName[CardStat] = 'Crying Crows, Vartak'
+global.CardText[CardStat] = 'Dark States/Demon
+
+CONT: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and your bind zone has four or more face down cards, this card gets all of the following.
+• CONT [RC]: This unit cannot be chosen by your opponent’s card effects.
+• CONT [RC]: This unit gets "Boost".
+• CONT [RC/GC]: This unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13948
+{
+global.CardName[CardStat] = 'Elaborate Wizard'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is placed on RC from hand, look at the top two cards of your deck, choose a card from among them, put it into soul, and put the rest on the bottom of the deck.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Counter Blast 1], choose a normal unit from your soul, put it into hand, and bind this unit face down.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13949
+{
+global.CardName[CardStat] = 'One Who Walks From Zero, Blangdmire Nexus'
+global.CardText[CardStat] = 'Dark States/Demon
+
+CONT [VC]: This unit is also regarded as "Fated One of Zero, Blangdmire". During your turn, if your soul has a card with the same card name as this unit, this unit gets all of their [Divine Skill], and all of your front row rear-guards get power +5000.
+
+ACT [VC] 1/Turn: This cost can be paid with "bind a grade 3 or greater card with "Blangdmire" in its card name from soul face down". COST [Bind four cards from soul face down], your opponent chooses two of their rear-guards, binds them face down, and this unit gets power +5000 for every two face down cards in your bind zone until end of turn. Choose up to one face down card from your bind zone, reveal it, and if the revealed card is grade 3 or less, call it to RC. If you did not reveal a card, you may draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Blangdmire'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 13987
+{
+global.CardName[CardStat] = 'will+Dress, Michiru Hazama'
+global.CardText[CardStat] = 'Dark States/Front Trigger
+
+CONT: This card is also regarded as "Diabolos Girls, Natalia".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13988
+{
+global.CardName[CardStat] = 'Divinez Deluxe Edition, Michiru Hazama'
+global.CardText[CardStat] = 'Dark States/Critical Trigger
+
+CONT: This card is also regarded as "Stem Deviate Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 13992
+{
+global.CardName[CardStat] = 'Tranquil Music Demonic Lady, Flauros'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, choose up to one card from your drop, and put it into soul, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 13996
+{
+global.CardName[CardStat] = 'Depraved Funeral Judge, Varacc'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Ace Unit] (You may only have one Ace Unit in your deck)
+
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your soul, and call it to RC. (You may only use Unique Skills a total of once per fight among all of your cards)
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, if your soul has five or more cards, or you Soul Blast a total of three or more cards this turn, it also gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13997
+{
+global.CardName[CardStat] = 'Cutlery Stabber'
+global.CardText[CardStat] = 'Dark States/Warbeast
+
+AUTO: When this unit is placed on GC from hand, COST [Counter Blast 1], choose a trigger unit from your drop other than over trigger, and call it to GC.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 13999
+{
+global.CardName[CardStat] = 'Fixed Time Dragon, Proieslogia'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], choose one of any player’s rear-guards, put it into soul, until end of that battle, this unit gets power +5000, and if your damage zone has four or more cards, or you persona rode this turn, it also gets "AUTO [RC]: When your opponent’s unit is put on GC, if that unit’s grade is the same as the grade of the card put into soul by this unit’s original AUTO ability this battle, that unit gets shield -5000 until end of that battle.".'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
