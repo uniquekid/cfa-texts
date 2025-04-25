@@ -381,7 +381,7 @@ CardStat = 9180
 global.CardName[CardStat] = 'Korpokkur, Kororo'
 global.CardText[CardStat] = 'Shaman King/Spirit
 
-ACT [Drop]: If you have a vanguard with "Horohoro" in its card name, if that unit is OverSoul this turn, COST [bind this card], choose a trigger unit with "Kororo" in its card name from your drop, and call it to RC.'
+ACT [Drop]: If you have a vanguard with "Horohoro" in its card name, and that unit did not OverSoul this turn, COST [bind this card], choose a trigger unit with "Kororo" in its card name from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 9
 }
@@ -1748,7 +1748,7 @@ global.CardText[CardStat] = 'Shaman King/Shaman
 
 AUTO [RC]: When this unit attacks a grade 3 or greater vanguard, if you have a vanguard with "Tao Ren" or "Joco" in its card name, this unit gets power +5000 until the end of that battle.
 
-AUTO [GC]: During the battle your vanguard with "Tao Ren" or "Joco" in its card name was attacked, this unit gets shield +10000.'
+CONT [GC]: During the battle your vanguard with "Tao Ren" or "Joco" in its card name was attacked, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 9
 }
@@ -1856,7 +1856,7 @@ CardStat = 9743
 global.CardName[CardStat] = 'Explosion Panda, Hang Zang-Ching'
 global.CardText[CardStat] = 'Shaman King/Shaman
 
-AUTO: When this unit is bound from RC by the ability of your vanguard with "Hao" in its card name, you may draw a card. If you drawn a card, choose a card from your hand, and discard it.'
+AUTO: When this unit is bound from RC by the ability of your vanguard with "Hao" in its card name, you may draw a card. If you drew a card, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 9
 }

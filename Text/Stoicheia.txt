@@ -6360,7 +6360,7 @@ CardStat = 12626
 global.CardName[CardStat] = 'Ancestral Dragon King of Zenith Colors, Founaherdio'
 global.CardText[CardStat] = 'Stoicheia/Nature Dragon/Over Trigger
 
-CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
+CONT: This card is regarded as "Spiritual King of Ignition, Valnout".
 
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
 global.UnitGrade[CardStat] = 0
@@ -8572,10 +8572,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13661
 {
-global.CardName[CardStat] = 'Hagakuren Bogstein'
+global.CardName[CardStat] = 'Hidden Leaf Defengosteen'
 global.CardText[CardStat] = 'Stoicheia/Dryad
 
-AUTO [RC] 1/Turn: When this unit’s attack while boosted by a Plant token hits, COST [Energy Blast 3], and draw a card.'
+AUTO [RC] 1/Turn: When this unit’s attack  hits while boosted by a Plant token, COST [Energy Blast 3], and draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
@@ -8601,7 +8601,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13682
 {
-global.CardName[CardStat] = 'A Lady’s Prerogative'
+global.CardName[CardStat] = 'Patrician Chatelaine'
 global.CardText[CardStat] = 'Stoicheia/Set Order
 
 CONT [Order Zone]: All of your token units get "Intercept", and shield +5000.'
@@ -8851,7 +8851,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13727
 {
-global.CardName[CardStat] = 'Pledge Triforium, Reypence'
+global.CardName[CardStat] = 'Pledge Trifolium, Reipens'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO: When this unit is placed on RC from drop by the ability of your grade 3 or greater vanguard with "Cristianos" in its card name, choose a card from your hand or drop, and put it into soul. If you put a card from hand, draw a card.
@@ -8881,7 +8881,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13750
 {
-global.CardName[CardStat] = 'Volubile Leaf, Ratil'
+global.CardName[CardStat] = 'Volubile Leave, Lathyl'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 ACT [RC]: COST [Put this unit into soul], choose one of your Plant tokens, and it gets power +10000 until end of turn.'
@@ -9442,11 +9442,27 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, discard it, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your drop, and call it to RC. (You may only use Unique Skills a total of once per fight among all of your cards)
 
-AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle, and if your drop has ten or more cards, it also gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if your drop has ten or more cards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14014
+{
+global.CardName[CardStat] = 'Spewing Pomegranater'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+CONT: If your order card was bound from drop by your vanguard’s ability this turn, this unit gets all of the following.
+• ACT [Drop]: If you do not have a rear-guard with the same card name as this unit, COST [Energy Blast 3], and call this card to RC.
+• AUTO [RC]: At the beginning of your battle phase, you may have this unit get "CONT [RC]: During your turn, if you do not have another rear-guard with the same card name as this unit, all of your front row rear-guards with original power 5000 or less get power +5000." until end of turn. If you do, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

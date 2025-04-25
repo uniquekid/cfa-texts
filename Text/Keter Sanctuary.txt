@@ -8479,7 +8479,7 @@ CardStat = 13639
 global.CardName[CardStat] = 'Wise Dragon Emperor of Valliant Valor, Colledegras'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon/Over Trigger
 
-CONT: This card is also regarded as "Spiritual King of Ignition, Valnout".
+CONT: This card is regarded as "Spiritual King of Ignition, Valnout".
 
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
 global.UnitGrade[CardStat] = 0
@@ -8508,7 +8508,7 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 13657
 {
-global.CardName[CardStat] = 'Knight of Occulation, Areiv'
+global.CardName[CardStat] = 'Knight of Enshrouding, Eidlech'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [RC/GC]: If you played a blitz order this turn, this unit gets intercept and shield +10000.'
@@ -8522,7 +8522,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 13658
 {
-global.CardName[CardStat] = 'Knight of Soaring Decapitation, Esmelle'
+global.CardName[CardStat] = 'Knight of Soaring Decapitation, Esmeree'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Gramgrace" in its card name, COST [Energy Blast 3], and call this card to RC.
@@ -8573,10 +8573,10 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 13721
 {
-global.CardName[CardStat] = 'Determing Jetfang'
+global.CardName[CardStat] = 'Determining Jetfang'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO [RC] 1/Turn: At the end of the battle your grade 3 or greater vanguard attacked, if no trigger units were revealed during your drive checks this turn, this unit gets power +10000 until end of turn.'
+AUTO [RC] 1/Turn: At the end of the battle your grade 3 or greater vanguard attacked, if your drive checks did not reveal any trigger units this turn, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -8639,7 +8639,7 @@ CONT [VC]: All of your back row <High Beast> get power +5000. (Active on opponen
 
 ACT [VC] 1/Turn: COST [Soul Blast 2], search your deck for up to one <High Beast>, call it to RC, and shuffle the deck.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your back row center grade 1 or less <High Beast>, until end of turn, it can attack from the back row, gets "AUTO [RC]: At the end of the battle this unit attacked, stand this unit, and this unit cannot attack until end of turn.", and if your opponent’s vanguard is grade 3 or greater, that chosen unit performs drive checks during the battle it attacked.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your grade 1 or less back row center column <High Beast>, until end of turn, it can attack from the back row, it gets "AUTO [RC]: At the end of the battle this unit attacked, stand this unit, and this unit cannot attack until end of turn.", and if your opponent’s vanguard is grade 3 or greater, you performs drive checks during the battle that chosen unit attacks.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -8666,7 +8666,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13742
 {
-global.CardName[CardStat] = 'Merrgaon'
+global.CardName[CardStat] = 'Melgaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser" in its card name, Soul Charge 1 or Energy Charge 1 .
@@ -8684,9 +8684,9 @@ CardStat = 13743
 global.CardName[CardStat] = 'Hound Raiser, Mishiro'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <High Beast> from among them, call it to RC, and shuffle the deck. If you did not call a card, Counter Charge 1 .
+AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 1 or less <High Beast> from among them, call it to RC, and shuffle the deck. If you did not call a card, Counter Charge 1 .
 
-AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, you may Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, and your back row has two or more <High Beast>, this unit gets power +10000 until end of that battle.'
+AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, you may Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, and you have two or more back row <High Beast>, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -8700,9 +8700,9 @@ CardStat = 13744
 global.CardName[CardStat] = 'Hound Raiser, Seishin'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [Front Row RC]: All of your <High Beast> on your RC get "Intercept", and can intercept from the back row.
+CONT [Front Row RC]: All <High Beast> on your RC get "Intercept", and can intercept from the back row.
 
-AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, if you have a vanguard with "Hound Raiser" in its card name, until end of that battle, this unit gets power +5000, and if your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 3], and this unit gets critical +1.'
+AUTO [RC] 1/Turn: When this unit attacks while boosted by a <High Beast>, if you have a vanguard with "Hound Raiser" in its card name, until end of that battle, this unit gets power +5000, and if your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 3], and this unit also gets critical +1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -8734,7 +8734,7 @@ CardStat = 13765
 global.CardName[CardStat] = 'Divine Sister, Kouignamann'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When  this unit is bound from RC by the ability of your grade 3 or greater vnaguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two instead of one.'
+AUTO: When  this unit is bound from RC by the ability of your grade 3 or greater vnaguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two units instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -8744,7 +8744,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13766
 {
-global.CardName[CardStat] = 'Knight of Clear Blade, Relisial'
+global.CardName[CardStat] = 'Knight of Bright Blade, Religial'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this unit is placed on RC, if your have a grade 3 or greater vanguard with "Liael" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Liael" in its card name or up to one "Blest Dragon, Gabwelius" from among them, reveal it and put it into hand, and shuffle the deck.
@@ -8759,7 +8759,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13767
 {
-global.CardName[CardStat] = 'Knight of Sharpness, Marsord'
+global.CardName[CardStat] = 'Knight of Intrepidity, Marzord'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When your other unit is placed on the RC this unit is on by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, COST [Counter Blast 1], draw a card, choose one of your units, and it gets power +5000 until end of turn.'
@@ -8772,7 +8772,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13768
 {
-global.CardName[CardStat] = 'Knight of Stern Lance, Sevres'
+global.CardName[CardStat] = 'Knight of Strict Spear, Seivrus'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO: When this unit is placed on RC by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, COST [Soul Blast 1], and all of your front row units gets power +5000 until end of turn.
@@ -8826,7 +8826,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13777
 {
-global.CardName[CardStat] = 'Knight of the Commonality, Fergus'
+global.CardName[CardStat] = 'Knight of Fairness, Fergus'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard, and you have five or more units, this unit gets power +5000 until end of that battle.'
@@ -9174,7 +9174,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 CONT [VC]: During your turn, this unit cannot be boosted, and if your soul has a "Blaster Blade", this unit gets power +2000 for each of your rear-guards. If it gets power +8000 or more, and your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
 
-AUTO [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one grade 3 or less card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck. Choose one of that unit’s AUTO abilities, and until end of turn, the cost of that ability is reduced by Counter Charge 1 the next time you pay it.
+AUTO [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one grade 3 or less card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck. Choose one of that unit’s AUTO abilities, and until end of turn, the cost of that ability is reduced by Counter Blast 1 the next time you pay it.
 
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards with only «Royal Paladin» for its clan, and stand it. If your opponent’s vanguard is grade 3 or greater, choose two of them instead of one.'
 global.UnitGrade[CardStat] = 3
@@ -9217,6 +9217,40 @@ AUTO [RC] 1/Turn: When this unit attacks, if you have a vanguard with only «Roya
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14010
+{
+global.CardName[CardStat] = 'Knight Armor Dragon, Chivalzerd'
+global.CardText[CardStat] = 'Dark States/Cosmo Dragon
+
+CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+
+AUTO [RC]: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3] and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or lress normal units from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the bottom of the deck in any order.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14011
+{
+global.CardName[CardStat] = 'Knight of Divine White, Yscudyyd'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+[Ace Unit] (You may only have one Ace Unit in your deck)
+
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s abilities." Shuffle the deck. (You may only use Unique Skills a total of once per fight among all of your cards)
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if you have four or more rear-guards, it also gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
