@@ -10176,7 +10176,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Forest Dragon
 
 CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
 
-AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], this unit gets power +5000 until end of that battle, and at the end of that turn, choose one of your rear-guards, and return it to hand. If your damage zone has four or more cards, or you persona rode this turn, choose up to two cards instead of one.'
+AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], this unit gets power +5000 until end of that battle, and at the end of that battle, choose one of your rear-guards, and return it to hand. If your damage zone has four or more cards, or you persona rode this turn, choose up to two cards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -10195,6 +10195,21 @@ AUTO [RC]: At the end of the battle this unit attacked or boosted, if your rear-
 • COST [Counter Blast 1], choose a grade 3 normal unit from your soul, and return it to hand.
 
 ACT [Soul]: If your vanguard is grade 3 or greater, COST [bind this card], choose a normal unit without sentinel from your drop, put it on the bottom of the deck, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14023
+{
+global.CardName[CardStat] = 'With My Whole Heart, Paniella'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT: If you have a grade 3 or greater vanguard with "Marlean" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one grade 2 or greater normal unit from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.
+• AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your back row rear-guards, stand it, choose up to one grade 3 or greater normal unit from your drop, and put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
