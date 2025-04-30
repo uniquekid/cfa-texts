@@ -9423,7 +9423,7 @@ global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 
 CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
 
-AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], your opponent chooses one of their rear-guards, binds it, until end of that battle, this unit gets power +5000, and your opponent cannot intercept for the battles this unit attacked. If your damage zone has four or more cards, or you persona rode this turn, it also gets power +5000, choose up to one order card from your drop, and put it into hand.'
+AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, COST [Energy Blast 3], until end of turn, this unit gets power +5000, and your opponent cannot intercept for the battles this unit attacked. If your damage zone has four or more cards, or you persona rode this turn, it also gets power +5000, choose up to one order card from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
@@ -9460,6 +9460,22 @@ global.CardText[CardStat] = 'Stoicheia/Dryad
 CONT: If your order card was bound from drop by your vanguard’s ability this turn, this unit gets all of the following.
 • ACT [Drop]: If you do not have a rear-guard with the same card name as this unit, COST [Energy Blast 3], and call this card to RC.
 • AUTO [RC]: At the beginning of your battle phase, you may have this unit get "CONT [RC]: During your turn, if you do not have another rear-guard with the same card name as this unit, all of your front row rear-guards with original power 5000 or less get power +5000." until end of turn. If you do, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14022
+{
+global.CardName[CardStat] = 'Ascent Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If you have a grade 3 or greater vanguard with "Bebebebe" or "Cristianos" in its card name, this card gets all of the following.
+• AUTO [Drop]: When your unit is placed on RC from drop by your card’s ability, COST [Counter Blast 1 or Energy Blast 3], and call this card to a back row RC.
+• AUTO: When this unit is placed on RC, choose up to one card from your drop, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
