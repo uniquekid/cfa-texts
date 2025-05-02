@@ -8075,7 +8075,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on RC by the ability of your vanguard with "Alden" in its card name, choose one of your other units, and it gets power +5000 until end of turn. If this unit was placed on a RC with a unit, it gets power +10000 instead of +5000.
 
-CONT [RC]: If you have a grade 3 or greater vanguard with "Alden" in its card name, this unit gets shield +5000.'
+CONT [GC]: If you have a grade 3 or greater vanguard with "Alden" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -8734,7 +8734,7 @@ CardStat = 13765
 global.CardName[CardStat] = 'Divine Sister, Kouignamann'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When  this unit is bound from RC by the ability of your grade 3 or greater vnaguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two units instead of one.'
+AUTO: When  this unit is bound from RC by the ability of your grade 3 or greater vanguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two units instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9225,11 +9225,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14010
 {
 global.CardName[CardStat] = 'Knight Armor Dragon, Chivalzerd'
-global.CardText[CardStat] = 'Dark States/Cosmo Dragon
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
 CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
 
-AUTO [RC]: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3] and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or lress normal units from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the bottom of the deck in any order.'
+AUTO [RC]: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3] and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or less normal unit from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -9268,4 +9268,185 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14025
+{
+global.CardName[CardStat] = 'Knight of Remembrance, Spinavili'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: When this unit attacks a vanguard, if you persona rode this turn, until end of that battle, this unit gets power +10000, and if you looked at your deck by a card’s effect this turn, COST [put a card with the same card name as this unit from hand into soul], and its critical also becomes 2. (Active with "look", "reveal", and "search" effects)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14026
+{
+global.CardName[CardStat] = 'Knight of Credence, Gaheris'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [Back Row RC]: During your turn, if you have five or more units, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +2000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14027
+{
+global.CardName[CardStat] = 'Nebula Knight of Inheritance, Serius'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14028
+{
+global.CardName[CardStat] = 'Nebula Knight of Guidance, Serius'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed by riding from "Nebula Knight of Inheritance, Serius", COST [reveal a grade 3 card with "Nebula Knight" in its card name from ride deck], search your deck for up to one "Nebula Knight of Yearning, Coreanis", call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14029
+{
+global.CardName[CardStat] = 'Nebula Knight of Glory, Serius'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is rode upon by a grade 3 card with "Serius" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one card with "Nebula Knight" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this unit intercepts, if your unit with "Nebula Knight" in its card name is being attacked, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14030
+{
+global.CardName[CardStat] = 'Glistening Nebula Knightlord, Serius'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+ACT [VC] 1/Turn: COST [Return two cards with "Nebula Knight" in their card names from drop to deck], choose up to one of your rear-guards, search your deck for up to one card with "Nebula Knight" in its card name and with grade +1 of the chosen unit, call it to the RC the chosen unit is on, and shuffle the deck.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose a column, stand all of your rear-guards with "Nebula Knight" in their card names in that column, and if you persona rode this turn, COST [discard a trigger unit from hand], look at the same number of cards from the top of your deck as the number of your rear-guards with "Nebula Knight" in their card names, and put them on the top of the deck in any order.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14031
+{
+global.CardName[CardStat] = 'Nebula Knight of Accompanying Illusion, Fomalute'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Nebula Knight" in its card name, you may call this card to RC. If you called, this unit cannot attack until end of turn.
+
+ACT [RC]: If you have a vanguard with "Nebula Knight" in its card name, COST [put this unit into soul], look at the top card of your deck, and put it on the top or bottom of your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14032
+{
+global.CardName[CardStat] = 'The Nebula Knight’s Path from the Starry Sea'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+This card can be played from drop!
+
+Bind this card, and perform one of the Following.
+• Look at the top seven cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.
+• If you have a vanguard with "Nebula Knight" in its card name, COST [Counter Blast 1], look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it on the top of the deck, and discard the rest. If your opponent’s vanguard is grade 3 or greater, choose two of your rear-guards, and they get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14033
+{
+global.CardName[CardStat] = 'Nebula Knight of Yearning, Coreanis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When this unit boosts a grade 3 or greater unit with "Nebula Knight" in its card name, this unit gets power +2000 until end of that battle, COST [discard a card from hand], reveal the top card of your deck, if it is a trigger unit, choose one of your opponent’s front row rear-guards in the same column as this unit, and retire it. Put the revealed card on the top or bottom of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14034
+{
+global.CardName[CardStat] = 'Nebula Knight of Piercing End, Coreanis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC with a grade 1 unit with "Coreanis" in its card name, if your opponent’s vanguard is grade 2 or greater, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Coreanis" in its card name, call it to the RC this unit is on, and shuffle the deck.
+
+CONT [RC]: If you have a vanguard with "Nebula Knight" in its card name, this unit cannot be retired by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14035
+{
+global.CardName[CardStat] = 'Nebula Knight of Heroism, Coreanis'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC with a grade 2 unit with "Coreanis" in its card name, choose up to one grade 1 card with "Coreanis" in its card name from your drop, call it to a back row RC, and if your vanguard is grade 3 or greater, COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into hand, and put the rest on the top or bottom of the deck.
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Nebula Knight" in its card name, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of your turn, choose a grade 2 or less card with "Nebula Knight" in its card name from your drop, and call it to the RC this unit is on as rest. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14036
+{
+global.CardName[CardStat] = 'Nebula Knight of Equestrian Archery, Hajena'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if your rear-guard was retire or put into soul during this turn’s main phase, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
+
+AUTO [RC] 1/Turn: When this unit attacks a vanguard while booosted by a unit with "Nebula Knight" in its card name, COST [Soul Blast 1 & discard a card from hand], reveal the top card of your deck, if it is a trigger unit, choose one of your opponent’s front row rear-guards, bind it, if it is not, choose one of your opponent’s back row rear-guards, and bind it. Put the revealed card on the top or bottom of your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
