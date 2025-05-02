@@ -8172,7 +8172,7 @@ AUTO: When this unit is placed by riding from "Sealed Blaze Dragon, Arhinsa Svr"
 • Search your deck for up to one "Sealed Blaze Sword, Dyaava", reveal it and put it into hand.
 • Search your deck for up to one "Sealed Blaze Shield, Bowdhanath", reveal it and put it into hand.
 
-CONT [RC]: If you have tow or more Arms on your VC, this unit gets power +2000 (Active on opponent’s turn too).'
+CONT [RC]: If you have two or more Arms on your VC, this unit gets power +2000 (Active on opponent’s turn too).'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -8719,9 +8719,51 @@ global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 CONT: If you have a grade 3 or greater vanguard with "Kotihblaze" or "Zedhlans" in its card name, this card gets "Boost" and all of the following.
 • AUTO: When this unit is placed on RC, choose a Smithy from your order zone, and you may stand it. If you did not stand a card, look at the top five cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck.
-• AUTO [RC] 1/Turn: At the end of the battle your vanguard attacked, if your opponent’s vanguard is grade 3 or greater, COST [discard a card from hand], and perform "choose one of your vanguards, and its drive becomes 1 until end of turn" or "all of your front row units get power +5000 until end of turn.".'
+• AUTO [RC] 1/Turn: At the end of the battle your vanguard attacked, if your opponent’s vanguard is grade 3 or greater, COST [discard a card from hand], and perform "choose one of your vanguards, and its drive becomes 1 until end of turn" or perform "all of your front row units get power +5000 until end of turn.".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14016
+{
+global.CardName[CardStat] = 'Serration Dragon, Sawchomimus'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+CONT [Back Row RC]: During your turn, if your opponent has no rear-guards in the same column as this unit, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14017
+{
+global.CardName[CardStat] = 'Dragritter, Tamim'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shiled +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14018
+{
+global.CardName[CardStat] = 'Wearbolt Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+CONT: If you have a grade 3 or greater vanguard with "Grandpa" or "Triumph Dragon" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 3 or greater normal unit from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+• AUTO [RC]: At the end of the battle this unit boosted a rear-guard, if your opponent’s vanguard is grade 3 or greater, and this is the first battle of this turn, COST [Soul Blast 1 & retire this unit], choose one of your front row rear-guards, stand it, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
