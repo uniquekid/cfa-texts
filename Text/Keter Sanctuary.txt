@@ -1802,7 +1802,7 @@ CardStat = 9667
 global.CardName[CardStat] = 'Knight of Spright, Freeda'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC during your main phase, if you have a vanguard with "Blaster" in its card name, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one grade 2 or less unit card with "Blaster" in its card name, call it to RC and shuffle your deck. If your called, choose a card from your hand, and discard it.'
+AUTO: When this unit is placed on RC during your main phase, if you have a vanguard with "Blaster" in its card name, COST [Soul Blast 1], look at five cards from the top of your deck, choose up to one grade 2 or less unit card with "Blaster" in its card name, call it to RC, and shuffle your deck. If your called, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -8734,7 +8734,7 @@ CardStat = 13765
 global.CardName[CardStat] = 'Divine Sister, Kouignamann'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When  this unit is bound from RC by the ability of your grade 3 or greater vanguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two units instead of one.'
+AUTO: When this unit is bound from RC by the ability of your grade 3 or greater vanguard with "Liael" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you used a [Divine Skill] this fight, choose up to two units instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9445,8 +9445,30 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 CONT [RC]: During your turn, if your rear-guard was retire or put into soul during this turn’s main phase, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
 
 AUTO [RC] 1/Turn: When this unit attacks a vanguard while booosted by a unit with "Nebula Knight" in its card name, COST [Soul Blast 1 & discard a card from hand], reveal the top card of your deck, if it is a trigger unit, choose one of your opponent’s front row rear-guards, bind it, if it is not, choose one of your opponent’s back row rear-guards, and bind it. Put the revealed card on the top or bottom of your deck.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14048
+{
+global.CardName[CardStat] = 'Witch of the Eternal Time Abyss • Eiji'
+global.CardText[CardStat] = 'Keter Sanctuary/Brandt Gate/Succubus
+
+CONT: This card is also regarded as "Knight of Blackness, Obscudeid".
+
+AUTO [RC]: When this unit attacks, if your Order Zone has a Set Order, this unit gets power +5000 until end of that battle, and if it has three or more Set Orders, this unit gets power +10000 instead of +5000.
+
+Glitter - Eva (Active if your vanguard is a Glitter with "Eva" in its card name)
+AUTO: When this unit is placed on RC by a card’s ability, if your Order Zone has three or more Research cards, this unit gets critical +1 until end of turn.
+
+CONT [RC/GC]: This unit gets "Intercept", and shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.DCards2[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
