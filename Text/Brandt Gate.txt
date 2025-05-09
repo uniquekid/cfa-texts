@@ -6054,7 +6054,7 @@ global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and draw a card. If your opponent’s vanguard is grade 3 or greater, choose any number of your units with "Dimensional Robo" in their different card names, and they get power +5000 until end of turn.
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [put a card from hand into soul], stand this unit, and it gets drive -2 until end of turn. If your bind zone does not have a "Dimensional Robo, Goyusha", and you persona rode this turn, COST [bind a "Dimensional Robo, Goyusha" from soul], and this unit gets drive +1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [put a card from hand into soul], stand this unit, and all of your vanguards get drive -2 until end of turn. If your bind zone does not have a "Dimensional Robo, Goyusha", and you persona rode this turn, COST [bind a "Dimensional Robo, Goyusha" from soul], and this unit gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 6
@@ -8037,3 +8037,142 @@ global.DCards[CardStat] = 5
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14058
+{
+global.CardName[CardStat] = 'Dimensional Robo, Corekaiser'
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14059
+{
+global.CardName[CardStat] = 'Dimensional Robo, Kaisergrader'
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+AUTO: When this unit is placed on VC, search your deck for up to one Base card, reveal it and put it into hand, and shuffle your deck.
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a grade 3 or greater vanguard with "Daikaiser" in its card name, this unit and all of your vanguards get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14060
+{
+global.CardName[CardStat] = 'Dimensional Robo, Kaizard  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+ACT [VC] 1/Turn: If your opponent’s vanguard is grade 2 or greater, COST [discard a card from hand], choose up to one "Super Dimensional Robo, Daikaiser" from your ride deck, and ride it as stand. If you rode a card, you cannot ride cards without "Dimensional Robo" in their card names until end of this fight.
+
+AUTO: When this unit is rode upon by a grade 3 card with "Daikaiser" in its card name, call this card to RC.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14061
+{
+global.CardName[CardStat] = 'Super Dimensional Robo, Daikaiser  '
+global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
+
+ACT [VC]: D-Legion "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
+AUTO [VC] 1/Turn: When this unit attacks, if you did not boost during this battle, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO [VC]: At the beginning of the drive step, choose one of your opponent’s guardians other than over trigger, and retire it.". Then, If your bind zone does not have a "Dimensional Robo, Corekaiser", COST [bind a "Dimensional Robo, Corekaiser" from soul], and this unit gets "AUTO [VC]: When your opponent’s unit is retired from GC by this unit’s ability, nullify all of that unit’s ability with "cannot be hit".".
+(Corekaiser bind happens before guarding. You retire a guardian after all cards have been called to GC. No more guardians can be called after.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14062
+{
+global.CardName[CardStat] = 'Dimensional Robo Spreader, Nonoka'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Dimensional Robo" in its card name, COST [Soul Blast 1 & rest this unit], choose a normal unit with "Dimensional Robo" in its different card name from this unit from your drop, and put it on the bottom of your deck. If you chose a card, choose one of your units with "Dimensional Robo" in its card name, and it gets power +5000 unti end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14063
+{
+global.CardName[CardStat] = 'Dimensional Robo Operator, Sayaka'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is put on GC, if you have a vanguard with "Dimensional Robo" in its card name, choose a card with "Dimensional Robo" in its different card name from this unit from your soul, and you may call it to GC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14064
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daispray'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC from soul by your card’s ability, if you have a vanguard with "Dimensional Robo" in its card name, Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14065
+{
+global.CardName[CardStat] = 'Dimensional Robo, Daiwrecking'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Dimensional Robo" in its card name, look at the top five cards of your deck, choose up to one grade 3 or greater card with "Dimensional Robo" in its card name or a set order, reveal it and put it into hand, and shuffle your deck. If you revealed, choose a card from your hand, and either put it into soul or discard it.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Dimensional Robo" in its card name, and your order zone has a Base, this unit gets power +5000 / shield +5000. (Active during opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14066
+{
+global.CardName[CardStat] = 'Super Dimensional Robo, Shadowkaiser '
+global.CardText[CardStat] = 'Brandt Gate//Dimension Police/Battleroid
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, and you did not ride this turn, COST [Soul Blast 1 & bind this card], search your deck for up to one card with "Daikaiser" in its card name, ride it as stand, and shuffle your deck.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, this unit gets power +5000, and if your order zone has three or more Bases, it gets power +10000 instead of +5000.
+
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Dimensional Robo" in its card name is attacked, COST [put this card into drop], choose one of your units being attacked, and it gets power +10000 until end of that battle. (Can only be used before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
