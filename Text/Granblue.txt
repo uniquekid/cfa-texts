@@ -3,7 +3,7 @@ CardStat = 313
 global.CardName[CardStat] = 'Captain Nightkid'
 global.CardText[CardStat] = 'Granblue/Vampire
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at up to ten cards from the top of your deck, search for up to one «Granblue» from among them, put it into your drop zone, and shuffle your deck.'
 }
@@ -41,7 +41,7 @@ CardStat = 317
 global.CardName[CardStat] = 'Guiding Zombie'
 global.CardText[CardStat] = 'Granblue/Zombie
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call this card to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 ACT [RC]: [Put this unit into your soul] Put three cards from the top of your deck into your drop zone.'
 }
@@ -379,7 +379,7 @@ global.CardText[CardStat] = 'Granblue/Skeleton
 
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
-AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose a «Granblue» from your drop zone and call it to RC.'
+AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose a «Granblue» from your drop zone, and call it to RC.'
 }
 
 
@@ -390,7 +390,7 @@ global.CardText[CardStat] = 'Granblue/Gillman
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, and this unit gets power +2000 until end of turn.
 
-ACT [VC/RC]: [Soul Blast 8 & Counter Blast 5] Choose up to five «Granblue» from your drop zone and call them to separate RC.'
+ACT [VC/RC]: [Soul Blast 8 & Counter Blast 5] Choose up to five «Granblue» from your drop zone, and call them to separate RC.'
 }
 
 
@@ -426,7 +426,7 @@ CardStat = 358
 global.CardName[CardStat] = 'Witch Doctor of the Abyss, Negromarl'
 global.CardText[CardStat] = 'Granblue/Demon
 
-AUTO: [Counter Blast 2] When this unit is placed on VC or RC, if you have a «Granblue» vanguard, you may pay the cost. If you do, choose a card from your drop zone and call it to RC.'
+AUTO: [Counter Blast 2] When this unit is placed on VC or RC, if you have a «Granblue» vanguard, you may pay the cost. If you do, choose a card from your drop zone, and call it to RC.'
 }
 
 
@@ -500,7 +500,7 @@ CardStat = 1645
 global.CardName[CardStat] = 'Rotten Sea Necromancer, Barbaros'
 global.CardText[CardStat] = 'Granblue/Gillman
 
-AUTO [VC]: [Choose one of your grade 3 or greater «Granblue» rear-guards, and retire it] When this unit’s drive check reveals a grade 3 «Granblue», you may pay the cost. If you do, choose one «Granblue» from your drop zone, and call it to an open RC.
+AUTO [VC]: [Choose one of your grade 3 or greater «Granblue» rear-guards, and retire it] When this unit’s drive check reveals a grade 3 «Granblue», you may pay the cost. If you do, choose a «Granblue» from your drop zone, and call it to an open RC.
 
 CONT [VC]: During your turn, if the number of «Granblue» rear-guards you have is four or more, this unit gets power +3000.'
 global.UnitGrade[CardStat] = 3
@@ -603,7 +603,7 @@ ACT [VC]: Legion 20000 "Dragon Undead, Ghoul Dragon" (If your opponent’s vanguar
 
 AUTO [VC]: [Counter Blast 1 & Choose one of your rear-guards, and retire it] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, choose one card from your drop zone, and call it to RC.
 
-AUTO [VC]: When this unit attacks a vanguard, if you have another unit in the center column, this unit gets power +3000 until end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, if you have another unit in your center column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 8
 }
@@ -987,7 +987,7 @@ global.CardText[CardStat] = 'Granblue/Demon
 
 AUTO: Hollow (When this unit is placed on RC, you may have it become hollowed. If you do, retire it at the end of turn.)
 
-AUTO Generation Break 1: [Counter Blast 1 & Soul Blast 1] When this unit is placed on RC, if you have a vanguard with "Nightrose" in its card name, you may pay the cost. If you do, choose up to one grade 2 or less card from your drop zone not named "Witch Doctor of Languor, Negrolazy", call it to RC, and until end of turn, this unit gets power +2000 and "AUTO: When this unit is put into the drop zone from RC due to an effect of the hollow ability, Counter Charge 1 / Soul Charge 1.".'
+AUTO Generation Break 1: [Counter Blast 1 & Soul Blast 1] When this unit is placed on RC, if you have a vanguard with "Nightrose" in its card name, you may pay the cost. If you do, choose up to one grade 2 or less card from your drop zone not named "Witch Doctor of Languor, Negrolazy", call it to RC, and until end of turn, this unit gets power +2000, and "AUTO: When this unit is put into the drop zone from RC due to an effect of the hollow ability, Counter Charge 1 / Soul Charge 1.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 8
 }
@@ -1391,7 +1391,7 @@ global.CardText[CardStat] = 'Granblue/Zombie
 
 AUTO: Hollow.
 
-AUTO Generation Break 1: When this unit is placed on RC from your drop zone, until end of turn, this unit gets power +3000 and "AUTO [RC]: When this unit’s attack hits a vanguard, Counter Charge 1 / Soul Charge 1.". Then, if this unit is hollowed, until end of turn, this unit gets power +3000.'
+AUTO Generation Break 1: When this unit is placed on RC from your drop zone, until end of turn, this unit gets power +3000, and "AUTO [RC]: When this unit’s attack hits a vanguard, Counter Charge 1 / Soul Charge 1.". Then, if this unit is hollowed, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 8
 }
