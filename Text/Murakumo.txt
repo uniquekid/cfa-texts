@@ -1930,7 +1930,7 @@ global.PowerStat[CardStat] = 5000
 
 CardStat = 6044
 {
-global.CardName[CardStat] = 'Stealth Fiend, Hamper Kappa'
+global.CardName[CardStat] = 'Stealth Fiend, Hamper Gapper'
 global.CardText[CardStat] = 'Murakumo/High Beast
 
 CONT: Sentinel.
@@ -2302,10 +2302,10 @@ global.PowerStat[CardStat] = 4000
 
 CardStat = 6824
 {
-global.CardName[CardStat] = 'Stealth Dragon, Riguru Biter'
+global.CardName[CardStat] = 'Stealth Dragon, Wrigglebiter'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-CONT [RC]: If a unit with the same card name as your vanguard is on your RC, this unit gets power +4000.'
+CONT [RC]: If you have a unit with the same card name as your vanguard on your RC, this unit gets power +4000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -2381,7 +2381,7 @@ global.PowerStat[CardStat] = 12000
 
 CardStat = 6930
 {
-global.CardName[CardStat] = 'Stealth Fiend, One-Eyed Nyudo'
+global.CardName[CardStat] = 'Stealth Fiend, One-eyed Nyudo'
 global.CardText[CardStat] = 'Murakumo/Ghost
 
 CONT [RC]: If you have another unit with the same card name as this unit on VC or RC, this unit gets "Boost" and "AUTO [RC]: At the end of each turn, if you have five or more units, COST [put this unit into your soul], and draw a card.".'
@@ -2951,12 +2951,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8994
 {
-global.CardName[CardStat] = 'Stealth Dragon, Juon Chanter'
+global.CardName[CardStat] = 'Stealth Dragon, Juonchanter'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-AUTO [VC]: At the beginning of your ride phase, COST [Counter Blast 1], choose one of your units, search your deck for up to one card with the same card name, call it to RC, and shuffle your deck.
+AUTO [VC]: At the beginning of your ride phase, COST [Counter Blast 1], choose one of your units, search your deck for up to one card with the same card name as this unit, call it to RC, and shuffle your deck.
 
-ACT [RC] 1/Turn: COST [Put a normal unit from your drop on the bottom of your deck], choose one of your other units, and until end of turn, this unit’s name becomes the same as that unit, and this unit gets "Boost".'
+ACT [RC] 1/Turn: COST [Put a normal unit from your drop on the bottom of your deck], choose one of your other units, until end of turn, change this unit’s card name to that unit’s card name, and this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -3141,7 +3141,7 @@ global.CardText[CardStat] = 'Murakumo/Ghost
 
 AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], search your deck for up to one card with a different card name from this unit and the same card name as any of your units, call it to RC, and shuffle your deck.
 
-AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or lower unit, COST [Discard this card], look at five cards from the top of your deck, choose a grade 2 or less card from among them, reveal it, put it to hand, and shuffle your deck.'
+AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or less, COST [Discard this card], look at five cards from the top of your deck, choose a grade 2 or less card from among them, reveal it, put it to hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
