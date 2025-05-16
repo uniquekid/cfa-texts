@@ -1521,9 +1521,9 @@ CardStat = 4086
 global.CardName[CardStat] = 'Dum of Nightmareland'
 global.CardText[CardStat] = 'Dark Irregulars/Human
 
-CONT [RC] Generation Break 1: If you have a card named "Dee of Nightmareland" in your soul, this unit gets power +2000.
+CONT [RC] Generation Break 1: If "Dee of Nightmareland" is in your soul, this unit gets power +2000.
 
-AUTO [RC]: When this unit attacks a vanguard, until end of that battle, this unit gets power +2000 for each card named "Dum of Nightmareland" in your soul.'
+AUTO [RC]: When this unit attacks a vanguard, this unit gets power +2000 for each card named "Dum of Nightmareland" in your soul until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 11
 }
@@ -1535,7 +1535,7 @@ CardStat = 4087
 global.CardName[CardStat] = 'Blood Sacrifice, Ruthven'
 global.CardText[CardStat] = 'Dark Irregulars/Vampire
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on RC, if you have four or more cards in your soul, you may pay the cost. If you do, draw a card, and Soul Charge 1.'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on RC, if the number of cards in your soul is four or more, you may pay the cost. If you do, draw a card, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 11
 }
@@ -1547,9 +1547,9 @@ CardStat = 4088
 global.CardName[CardStat] = 'Edge in the Darkness'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
-CONT [RC] Generation Break 1 Darkness: During your turn, if you have six or more cards in your soul, this unit gets power +3000.
+CONT [RC] Generation Break 1 Darkness: During your turn, if the number of cards in your soul is six or more, this unit gets power +3000.
 
-CONT [RC]: If you have ten or more cards in your soul, this unit gets "Intercept" and "CONT [RC]: This unit can intercept from the back row.".'
+CONT [RC]: If the number of cards in your soul is ten or more, this unit gets "Intercept" and "CONT [RC]: This unit can intercept from the back row.".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 11
 }
@@ -1618,7 +1618,7 @@ AUTO: [Counter Blast 1] When this card is put into your soul for the cost or eff
 
 ACT [Soul] Darkness: [Counter Blast 1 & Choose a card from your hand, and discard it] If the number of cards in your soul is six or more, Soul Charge 1. Then, if the number of cards in your soul is ten or more, return this card to your hand.
 
-CONT [Hand]: While you are paying the cost for Stride, if you have two or more cards in your soul with the darkness ability, this card gets grade +2.'
+CONT [Hand]: While you are paying the cost for Stride, if the number of cards in your soul with the darkness ability is two or more, this card gets grade +2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 11
 }

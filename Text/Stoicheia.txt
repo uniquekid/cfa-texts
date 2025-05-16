@@ -9555,7 +9555,7 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
 }
-global.PowerStat[CardStat] = 6000
+global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -9629,10 +9629,53 @@ global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is placed on RC other than by a unit card’s ability, COST [retire a rear-guard with a different card name from this unit], search your deck or drop for up to one card with the same card name as this unit, call it to RC, and if you searched the deck, shuffle the deck.
 
-AUTO [RC]: At the beginning of your battle pahse, if you have a grade 3 or greater vanguard with "Skyruler" in its card name, COST [discard the top card of the deck], and until end of your opponent’s next turn, this unit gets power +5000 / shield +5000. If your drop has fifteen or more cards, it also gets power +5000 / shield +5000.'
+AUTO [RC]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Skyruler" in its card name, COST [discard the top card of the deck], and until end of your opponent’s next turn, this unit gets power +5000 / shield +5000. If your drop has fifteen or more cards, it also gets power +5000 / shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 global.DCards2[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14083
+{
+global.CardName[CardStat] = 'Harmonious Inflow, Roseam'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [RC]: At the end of the battle this unit attacked, if this is the fourth battle of this turn or more, COST [Soul Blast 1 & retire this unit], choose one of your rear-guards, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14084
+{
+global.CardName[CardStat] = 'Golden Fruit of Sunlight'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Choose one of your rear-guards, and until end of your opponent’s next turn, it gets "CONT [RC]: Cannot be chosen and cannot be put other than on RC by your opponent’s card effects.".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14085
+{
+global.CardName[CardStat] = 'Flower Garden Pruner, Ludirus'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+COMT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
