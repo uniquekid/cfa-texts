@@ -6848,7 +6848,7 @@ global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "B-Hero" in its card name, COST [rest a Base in the order zone], call this scouted card to RC, and it gets power +5000 until end of turn.
 
-AUTO [Order Zone]: When your grade 3 or greate vanguard with "B-Hero" in its card name is attacked, and COST [rest a Base in the order zone], and call this scouted card to GC.'
+AUTO [Order Zone]: When your grade 3 or greater vanguard with "B-Hero" in its card name is attacked, and COST [rest a Base in the order zone], and call this scouted card to GC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8201,6 +8201,404 @@ global.CardName[CardStat] = 'Releasor of Magnetic Flux'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
 CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14104
+{
+global.CardName[CardStat] = 'Solitary Hero, Isami Ao'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+CONT [Soul]: If you have a vanguard with "Bravern" in its card name, this card cannot leave the soul by card abilities.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14105
+{
+global.CardName[CardStat] = 'Skilled Pilot, Isami Ao'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is rode upon by "Mysterious Humanoid Robot, Bravern", COST [reveal a grade 3 card with "Bravern" in its card name from the ride deck], and put an Assemble! Brave Knighrs! token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 14112
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSUmmonRodeUponNumber[CardStat] = 14106
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 14112
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14106
+{
+global.CardName[CardStat] = 'Mysterious Humanoid Robot, Bravern'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is rode upon by "Hero Who Saves the World, Bravern", search your deck or drop for up to one "Courage Combination, Bang Dragon", call it to back row center RC, and if your searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14107
+{
+global.CardName[CardStat] = 'Hero Who Saves the World, Bravern'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+ACT [VC]: D-Legion "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-Legion, and your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1 & discard a card from hand], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14108
+{
+global.CardName[CardStat] = 'Courage Combination, Bang Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+ACT [RC]: If you have a "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14109
+{
+global.CardName[CardStat] = 'Exploding Courage, Bang Bravern'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is placed on VC by the ability of "Courage Combination, Bang Dragon", this unit gets power +5000 / drive +1 until end of turn.
+
+AUTO [VC]: At the end of your turn, choose a "Hero Who Saves the World, Bravern" from your soul, ride it as rest, choose a "Courage Combination, Bang Dragon" from your soul or drop, and call it to back row center RC as rest.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14110
+{
+global.CardName[CardStat] = 'Two Unparallels Side-by-side, "Deathdrives" Superbia'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO [VC/RC]: When this unit attacks, if your order zone has an "Assemble! Brave Knights!" or "A Soul-inspiring Sword Locked Clash", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, you get "All of your front row units get power +5000." until end of turn.
+
+AUTO [VC]: At the beginning of your ride step, if this unit is D-Legion, COST [Energy Blast 3], search your deck or drop for up to one "Beyond the Explosive Courage! Burn Brave Big Bang", ride it as stand, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14111
+{
+global.CardName[CardStat] = 'Beyond the Explosive Courage! Burn Brave Big Bang'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: This card cannot be ridden other than by the ability of "Two Unparallels Side-by-side, "Deathdrives" Superbia".
+
+AUTO: When this unit is placed on VC, this unit gets all of the following until end of turn. At the end of that turn, choose a "Hero Who Saves the World, Bravern" from you soul, and ride it as rest.
+• CONT [VC]: All of your front row units get power +10000.
+• AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your soul has a card with "Isame Ao" in its card name, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn.
+• AUTO [VC] 1/Turn: When this unit stand by your card’s ability, COST [discard a card from hand], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14113
+{
+global.CardName[CardStat] = 'Big Sister Good at Taking Care of Others, "Brave Knights" Hibiki Riou'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Mid-ranged Support Specialized "TS" Rekka Self-guiding Missile" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14114
+{
+global.CardName[CardStat] = 'Big Brother of the Elite Unit, "Brave Knights" Hiro Aulii'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Close Quarters Type "TS" Struggle Rhino" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14115
+{
+global.CardName[CardStat] = 'Unyielding Maiden, "Brave Knights" Akira Mishima'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Guerilla Specialized "TS" Rekka Akira Custom" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14116
+{
+global.CardName[CardStat] = 'Easy-going Lady, "Brave Knights" Shelly Rolen'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Heavy Assault "TS" Dingo" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14117
+{
+global.CardName[CardStat] = 'Mid-ranged Support Specialized "TS" Rekka Self-guiding Missile'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: When this unit would be moved to GC, you may move rear-guards with "Hibiki Riou" in their card names in the same column as this unit at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Hibiki Riou" in its card name, until end of turn that battle, your opponent cannot intercept, and when your opponent would call cards from hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14118
+{
+global.CardName[CardStat] = 'Close Quarters Type "TS" Struggle Rhino'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: When this unit would be moved to GC, you may move rear-guards with "Hiro Aulii" in their card names in the same column as this unit at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Hiro Aulii" in its card name, Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14119
+{
+global.CardName[CardStat] = 'Guerilla Specialized "TS" Rekka Akira Custom'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: When this unit would be moved to GC, you may move rear-guards with "Akira Mishima" in their card names in the same column as this unit at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Akira Mishima" in its card name, at the end of that battle, stand all of your rear-guards in the same column as this unit, and this unit gets "CONT [RC]: This unit cannot attack an opponent’s vanguard, and this unit can attack your opponent’s back row units." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14120
+{
+global.CardName[CardStat] = 'Heavy Assault "TS" Dingo'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: When this unit would be moved to GC, you may move rear-guards with "Shelly Rolan" in their card names in the same column as this unit at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Shelly Rolan" in its card name, until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects, and it gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14121
+{
+global.CardName[CardStat] = 'Hero of Justice, "Brave Knights" Lewis Smith'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Confidential Model "TS" Rising Orthos" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.
+• AUTO [Back Row RC]: When your grade 3 or greater vanguard attacks, if your soul has a <Brave Bang Bravern!> card with "Isami Ao" or "Lulu" in its card name, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14122
+{
+global.CardName[CardStat] = 'Confidential Model "TS" Rising Orthos'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
+• CONT: When this unit would be moved to GC, you may move rear-guards with "Lewis Smith" in their card names in the same column as this unit at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Lewis Smith" in its card name, and your vanguard is "Beyond the Explosive Courage! Burn Brave Big Bang", at the end of that battle, COST [retire all of your rear-guards in the same column as this unit], search your deck or drop for up to one "Hero Who Saves the World, Bravern", call it to RC, and it gets power +10000 until end of turn. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14123
+{
+global.CardName[CardStat] = 'Allied Task Force'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Normal Order
+
+Play this if you have a <Brave Bang Bravern!> vanguard!
+
+Search your deck or drop for up to a total of two cards with "TS" or "Brave Knights" in their card names, call them to RC, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14124
+{
+global.CardName[CardStat] = 'Organic Lifeform, Lulu'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14125
+{
+global.CardName[CardStat] = 'Invasive Mechanical Lifeform, "Deathdrives" Superbia'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with "Superbia" in its card name from the ride deck], choose an "Organic Lifeform, Lulu" from your soul, put it into hand, and Soul Charge 1 .
+
+CONT [VC]: This unit cannot be boosted.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14126
+{
+global.CardName[CardStat] = 'Wielding Fury, "Deathdrives" Superbia'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this unit is placed by riding from "Invasive Mechanical Lifeform, "Deathdrives" Superbia", COST [put an "Organic Lifeform, Lulu" from RC or hand into soul], search your deck for up to one "Hero of the Future, Lulu", reveal it and put it into hand, and shuffle the deck. If you revealed a card, put a Soul-inspiring Sword Locked Clash token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 14130
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 14130
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14127
+{
+global.CardName[CardStat] = 'Walking My Path, "Deathdrives" Superbia'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and your soul has a "Hero of the Future, Lulu", this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [VC]: When this unit attacks, perform all of the following.
+• COST [Put a <Brave Bang Bravern!> rear-guard with "Lulu" in its card name into soul], and this unit gets power +5000 / drive +1 until end of turn.
+• COST [Counter Blast 1], choose a column, and stand all of your <Brave Bang Bravern!> rear-guards in that column.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14128
+{
+global.CardName[CardStat] = 'The Reality of Life, "Deathdrives" Verum Vita'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: You may only have one "The Reality of Life, "Deathdrives" Verum Vita" in a deck.
+
+AUTO [Drop]: When your damage check reveals a card other than heal trigger or over trigger, if you have a grade 3 or greater vanguard with "Deathdrives" in its card name, and your damage zone has five or more cards, COST [ride this card], and until end of fight, the number of cards in your damage zone for you to lose is seven. (If there are remaining damage, perform additional damage checks)
+
+AUTO [VC]: When this unit attacks, if your damage zone has six or more cards, COST [Counter Blast 1], and retire all of your and your opponent’s rear-guards.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 5
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14129
+{
+global.CardName[CardStat] = 'Hero of the Future, Lulu'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 1], search your deck for up to one "Allied Task Force", reveal it and put it into hand, and shuffle the deck.
+
+ACT [RC] 1/Turn: If you have a vanguard with "Superbia" in its card name, COST [rest this unit], choose one of your rear-guards, and it gets power +5000 until end of turn, and if your chose a rear-guard with "Superbia" in its card name, stand this unit. If your opponent’s vanguard is grade 3 or greater, until end of turn, when the AUTO ability of your "A Soul-inspiring Sword Locked Clash" would choose your opponent’s rear-guards, it chooses a total of two instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }

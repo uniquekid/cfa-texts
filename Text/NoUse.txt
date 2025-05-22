@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 14094
+global.AllCard = 14130
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1019,7 +1019,7 @@ global.RemoveFromDrop[CardStat] = 1
 CardStat = 13220
 {
 global.CardName[CardStat] = 'Destined Timepiece'
-global.CardText[CardStat] = 'Token Set Order
+global.CardText[CardStat] = 'Dark States/Token Set Order
 
 CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Liael" in their card names, and you can have regress gauges.'
 global.UnitGrade[CardStat] = 1
@@ -1127,5 +1127,37 @@ global.CardInClan[CardStat] = 29
 global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 14112
+{
+global.CardName[CardStat] = 'Assemble! Brave Knights!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT [Order Zone]: If you have a vanguard with "Bravern" in its card name, all of your units with "TS" in their card names get shield +5000.
+
+ACT [Order Zone] 1/Turn: If your opponent’s vanguard is grade 2 or greater, COST [Energy Blast 3], choose a card with "TS" in its card name from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 14130
+{
+global.CardName[CardStat] = 'A Soul-inspiring Sword Locked Clash'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+ACT [Order Zone] 1/Turn: COST [Energy Blast 3], choose a "Hero of the Future, Lulu" from your drop, and call it to RC.
+
+ACT [Order Zone]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Superbia" in its card name, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, until end of turn, that unit cannot intercept, and when your vanguard with "Superbia" in its card name would attack, it also battles that chosen unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
