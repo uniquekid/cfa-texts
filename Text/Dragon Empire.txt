@@ -8580,7 +8580,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000. COST [Energy Blast 3], draw a card, choose one of your opponent’s RC, until end of turn, all of the cards on the chosen RC lose all of their abilities, and cannot gain them. Put all of the cards on the chosen RC into drop. (You may only use Unique Skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], draw a card, choose one of your opponent’s RC, until end of turn, all of the cards on the chosen RC lose all of their abilities, and cannot gain them. Put all of the cards on the chosen RC into drop. (You may only use Unique Skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, if your opponent has no rear-guards or their rear-guard left RC by your card’s ability this turn, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -8958,3 +8958,31 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14097
+{
+global.CardName[CardStat] = 'Lizard Soldier, Enjun'
+global.CardText[CardStat] = 'Dragon Empire/Dragonman
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Kotihblaze" in its card name, or you have a vanguard with only one clan, choose up to one grade 2 or less card from your drop with a different card name from this unit, and put it into soul. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [Counter Blast 1], draw a card, and put this unit into soul or bind it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14098
+{
+global.CardName[CardStat] = 'Whirlcloud Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+CONT [RC]: During the battle this unit attacked a grade 3 or greater unit, if a card with the same card name as your vanguard was put into drop from soul this turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
