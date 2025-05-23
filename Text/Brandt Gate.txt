@@ -8265,7 +8265,7 @@ CardStat = 14107
 global.CardName[CardStat] = 'Hero Who Saves the World, Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [VC]: D-Legion "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
+ACT [VC]: D-Legion "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-Legion, and your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1 & discard a card from hand], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -8280,7 +8280,9 @@ CardStat = 14108
 global.CardName[CardStat] = 'Courage Combination, Bang Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [RC]: If you have a "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+ACT [RC]: If you have one "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.
+
+(One vanguard means exactly one)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8603,4 +8605,32 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14134
+{
+global.CardName[CardStat] = 'SuPPLY 9-U'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [RC] 1/Turn: When your other unit in the same column as this unit attacks, if your card was attached by your vanguard’s ability this turn, you may have this unit get power +10000 until end of that battle. If you do, at the end of this turn, retire this unit.
+
+AUTO [Drop]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, COST [Energy Blast 3], call this card to RC, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14135
+{
+global.CardName[CardStat] = 'Disher Rockhopper'
+global.CardText[CardStat] = 'Brandt Gate/High Beast
+
+AUTO [RC] 1/Turn: When the set order you played from your hand is put into the order zone, look at the top three cards of your deck, choose up to one set order with the same card name as cards in your order zone, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
