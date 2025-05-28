@@ -122,7 +122,7 @@ CardStat = 2985
 global.CardName[CardStat] = 'Air Elemental Fwarlun'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-CONT [RC]: During your turn, for each face up «Cray Elemental» on your G Zone, this unit gets power +1000.
+CONT [RC]: During your turn, this unit gets power +1000 for each «Cray Elemental» in your G zone.
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
@@ -137,7 +137,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: When this card is removed from hand by G Assist, all fighters draw a card.
+AUTO: When this card is removed from hand for G Assist, all players draw a card.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle.
 
@@ -439,7 +439,7 @@ CardStat = 4993
 global.CardName[CardStat] = 'Air Elemental, Bluroon'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO [RC]: When your opponent’s deck is shuffled due to the effect of one of your opponent’s cards, until end of turn, this unit gets power +5000, and "CONT [RC/GC]: Resist".
+AUTO [RC]: When your opponent shuffles his or her deck due to the effect of his or her card, until end of turn, this unit gets power +5000, and "CONT [RC/GC]: Resist".
 
 (This card is from all clans and nations.)'
 global.UnitGrade[CardStat] = 2
@@ -507,7 +507,7 @@ CardStat = 5619
 global.CardName[CardStat] = 'Shadow Elemental, Bikkun'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO: When this unit is placed on GC, if your opponent’s vanguard attacked two or more times this turn, choose one of your units, and it cannot be hit until end of that battle.'
+AUTO: When this unit is placed on GC, if your opponent’s vanguard attacked two or more times during this turn, choose one of your units, and it cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 }
@@ -578,7 +578,7 @@ CardStat = 7561
 global.CardName[CardStat] = 'Cloud Elemental, Mowark'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-ACT [VC/RC] 1/Turn: If you have four or more units with no CONT, ACT, and AUTO abilities, COST [Counter Blast 1], search your deck for up to one "Thunder Elemental, Barigiran", ride it as stand, and shuffle your deck. If you rode, you may turn a "Storm Element, Cycloned" from your G zone face up.'
+ACT [VC/RC] 1/Turn: If you have four or more units without any CONT, ACT, and AUTO abilities, COST [Counter Blast 1], search your deck for up to one "Thunder Elemental, Barigiran", ride it as stand, and shuffle your deck. If you rode, you may turn a "Storm Element, Cycloned" from your G zone face up.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 25
 }
@@ -590,9 +590,9 @@ CardStat = 7562
 global.CardName[CardStat] = 'Thunder Elemental, Barigiran'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO [VC]: When placed, COST [Soul Blast 1], look at seven cards from the top of your deck, reveal up to two unit cards without CONT, ACT, and AUTO abilities from among them, put them into your hand, and shuffle your deck.
+AUTO [VC]: When placed, COST [Soul Blast 1], look at seven cards from the top of your deck, reveal up to two unit cards without any CONT, ACT, and AUTO abilities from among them, put them into your hand, and shuffle your deck.
 
-ACT [VC]: If you have four or more rear-guards without CONT, ACT, and AUTO abilities, COST [Counter Blast 1], Stride a "Storm Element, Cycloned" on your VC from face up in your G zone.'
+ACT [VC]: If you have four or more rear-guards without any CONT, ACT, and AUTO abilities, COST [Counter Blast 1], and Stride a face up "Storm Element, Cycloned" from your G zone on your VC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 25
 }
@@ -606,7 +606,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 (PREMIUM JP & EN & TH: Banned.)
 
-AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to two unit cards with no CONT, ACT, and AUTO abilities from your hand to RC. If you called two, turn up to one face down "Storm Element, Cycloned" from your G zone face up, and draw two cards.'
+AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to two unit cards without any CONT, ACT, and AUTO abilities from your hand to RC. If you called two cards, turn up to one face down "Storm Element, Cycloned" from your G zone face up, and draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
@@ -619,7 +619,7 @@ CardStat = 7564
 global.CardName[CardStat] = 'Air Elemental, Bufoo'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-CONT [RC]: During your opponent’s turn, if three or more new cards were put into your damage zone this turn, you may "bind this unit" instead of reveal the top card of your deck into your trigger zone for your damage check.'
+CONT [RC]: During your opponent’s turn, if three or more new cards were put into your damage zone this turn, you may "bind this unit" instead of revealing the top card of your deck in your trigger zone for your damage checks.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }
@@ -643,7 +643,7 @@ CardStat = 7605
 global.CardName[CardStat] = 'Earth Elemental, Rollock'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO [GC]: When placed, if your vanguard is only a grade 2 or less, one of your units cannot be hit until end of that battle.'
+AUTO [GC]: When placed, if you have one vanguard, and it is grade 2 or less, one of your units cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }

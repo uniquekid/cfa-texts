@@ -3028,7 +3028,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Set Order
 
 Play this if you have a vanguard with "Thegrea" in its card name!
 
-CONT [Order Zone]: If you have a vanguard with "Thegrea" in its card name, your persona ride draws two cards instead of one, and that power increase becomes power +15000 instead of +10000.'
+CONT [Order Zone]: If you have a vanguard with "Thegrea" in its card name, when you persona ride, you draw two cards instead of one, and increase power by +15000 instead of +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -9505,7 +9505,7 @@ CardStat = 14095
 global.CardName[CardStat] = 'Treasure Staff Shining in the Rainbow'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
-Look at the top three cards oF your deck, and put them on the top of the deck in any order.'
+Look at the top three cards of your deck, and put them on the top of the deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 3
@@ -9532,7 +9532,7 @@ CardStat = 14131
 global.CardName[CardStat] = 'Enflame Lion'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO [Back Row RC]: When your unit is palced on another RC in the same column as this unit during your battle phase, if you have a vanguard with only one clans, COST [Energy Blast 2], and stand this unit.
+AUTO [Back Row RC]: When your unit is placed on another RC in the same column as this unit during your battle phase, if you have a vanguard with only one clan, COST [Energy Blast 2], and stand this unit.
 
 AUTO [RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Ezel" in its card name, and your unit was placed from deck this turn, you may put this unit into soul.'
 global.UnitGrade[CardStat] = 1
@@ -9572,6 +9572,55 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 global.CardInClan[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14140
+{
+global.CardName[CardStat] = 'Knowledgeable Eagle'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with only one clan, you may put this unit into soul.
+
+AUTO: When this card is Soul Blast for the cost of your card’s ability, if you have a vanguard with only one clan, Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14141
+{
+global.CardName[CardStat] = 'Clear Magic, Viviney'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: If you have a vanguard with only «Genesis» for its clan, this card is only from «Genesis».
+
+AUTO: If you have a grade 3 or greater vanguard with "Minerva" in its card name, this cost can be paid with "Energy Blast 3". When this unit is placed on RC from hand, if you have a vanguard with only «Genesis» for its clan, COST [Counter Blast 1], draw a card, choose a card from your drop, and put it into soul.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Minerva" in its card name attacks, if your vanguard did not stand by a card’s ability this turn, COST [Counter Blaat 1], stand this unit, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14142
+{
+global.CardName[CardStat] = 'Blazing Lion, Platina Ezel  '
+global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Human
+
+CONT: This card cannot be ridden other than by this card’s ability, and if your opponent’s vanguard is grade 3 or greater, it gets all of the following.
+• CONT [VC]: During your turn, all of your front row units get power +10000.
+• ACT [Soul]: COST [Bind an "Omniscience Regalia, Minerva" on VC & put a card from hand into soul], and ride this card as stand. If a card with only «Genesis» for its clan was put into soul for this cost, and you did not ride during the ride phase this turn, this unit gets "CONT [VC]: All of your front row units get power +5000." until end of turn. At the end of that turn, retire this unit, and ride the card bound for this cost as rest.
+• AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & Soul Blast 3], at the end of that battle, stand this unit, and it gets drive -2 until end of turn..'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 21
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
