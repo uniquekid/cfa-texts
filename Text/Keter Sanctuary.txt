@@ -9601,7 +9601,7 @@ CONT: If you have a vanguard with only «Genesis» for its clan, this card is only
 
 AUTO: If you have a grade 3 or greater vanguard with "Minerva" in its card name, this cost can be paid with "Energy Blast 3". When this unit is placed on RC from hand, if you have a vanguard with only «Genesis» for its clan, COST [Counter Blast 1], draw a card, choose a card from your drop, and put it into soul.
 
-AUTO [RC]: When your grade 3 or greater vanguard with "Minerva" in its card name attacks, if your vanguard did not stand by a card’s ability this turn, COST [Counter Blaat 1], stand this unit, and it gets power +5000 until end of turn.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Minerva" in its card name attacks, if your vanguard did not stand by a card’s ability this turn, COST [Counter Blast 1], stand this unit, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -9611,7 +9611,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14142
 {
-global.CardName[CardStat] = 'Blazing Lion, Platina Ezel  '
+global.CardName[CardStat] = 'Ultimate Regalia of Almighty, Minerva '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Human
 
 CONT: This card cannot be ridden other than by this card’s ability, and if your opponent’s vanguard is grade 3 or greater, it gets all of the following.
@@ -9624,3 +9624,31 @@ global.CardInClan[CardStat] = 21
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14152
+{
+global.CardName[CardStat] = 'Knight of Shadow, Mornes'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit attacks a vanguard, COST [Energy Blast 4], choose one of your opponent’s rear-guards, and put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14153
+{
+global.CardName[CardStat] = 'Fast Lightning in the Dark Night Undercover, Viola'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Undercover" in its card name, perform one of the following.
+• COST [Energy Blast 2], search your deck for up to one "Monitored Tryst", discard it, and shuffle the deck.
+• COST [Counter Blast 1], choose one of your undercover gauges, turn it face up, put it into hand if it has "Undecover" in its card name, and turn it face down if you did not.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

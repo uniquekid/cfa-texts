@@ -8280,9 +8280,7 @@ CardStat = 14108
 global.CardName[CardStat] = 'Courage Combination, Bang Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [RC]: If you have one "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.
-
-(One vanguard means exactly one)'
+ACT [RC]: If you have one "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8634,3 +8632,44 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14146
+{
+global.CardName[CardStat] = 'Victory Heart, Liliway'
+global.CardText[CardStat] = 'Dark States/Alien
+
+AUTO [RC]: When this unit attacks a vanguard, if you persona rode this turn, until end of that battle, this unit gets power +10000, and if your order zone has three or more cards, COST [put a card with the same card name as this unit from hand into soul], and its critical also becomes 2.' 
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14147
+{
+global.CardName[CardStat] = 'Rounder Almiruna'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO [RC]: When you play a blitz order, COST [Energy Blast 2], move this unit to GC, and this unit gets shield +5000 until end of that battle.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14148
+{
+global.CardName[CardStat] = 'Crush Arm Fancier'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: During your turn, if your order zone has two or more set orders, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +2000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

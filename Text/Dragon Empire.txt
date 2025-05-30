@@ -1517,9 +1517,7 @@ global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO: When this unit is placed on RC, if one Arms is on your VC, COST [Counter Blast 1], choose an Arms card from your hand or drop, and arm it to one of your vanguards.
 
-CONT [RC]: During your turn, if two Arms are on your VC, this unit gets power +5000.
-
-(One Arms means exactly one)'
+CONT [RC]: During your turn, if two Arms are on your VC, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -9017,3 +9015,20 @@ global.DCards[CardStat] = 1
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14149
+{
+global.CardName[CardStat] = 'Battle Monk of Water Scales, Ryuutou'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC]: When this unit boosts a vanguard, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: When the attack this unit boosted hits, COST [retire this unit], and Counter Charge 1.
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [Counter Blast 1 & retire this unit], search your deck for up to one card with the same card name as your vanguard, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
