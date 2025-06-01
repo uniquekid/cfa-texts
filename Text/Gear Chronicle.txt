@@ -3137,9 +3137,9 @@ CardStat = 5033
 global.CardName[CardStat] = 'Forward-pressing Gear Tiger'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast
 
-AUTO: [Bind the top card of your deck face up] When this card is bound face up other than from your deck, if you have a vanguard with "Chronofang" in its card name, you may pay the cost. If you do, Soul Charge 1.
+AUTO: [Bind the top card of your deck face up] When this card is bound face up not from your deck, if you have a vanguard with "Chronofang" in its card name, you may pay the cost. If you do, Soul Charge 1.
 
-AUTO Generation Break 2: When this unit is placed on RC, if you have a vanguard with "Chronofang" in its card name, this unit gets power +1000 for each card in your bind zone until end of turn.'
+AUTO Generation Break 2: When this unit is placed on RC, if you have a vanguard with "Chronofang" in its card name, this unit gets power +1000 until end of turn for each card in your bind zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -3301,7 +3301,7 @@ CardStat = 5503
 global.CardName[CardStat] = 'Pulsar, Spring Rabbit'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO Generation Break 1: [Soul Blast 1 & Choose another <Zodiac Time Beast> on your RC, and bind it face up] When this unit is placed on RC, you may pay the cost. If you do, draw a card, and Soul Charge 1.'
+AUTO Generation Break 1: [Soul Blast 1 & Choose one of your other <Zodiac Time Beast> on your RC, and bind it face up] When this unit is placed on RC, you may pay the cost. If you do, draw a card, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -3373,7 +3373,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
 CONT [Deck/Drop Zone]: If your vanguard is grade 3 or greater, this card gets grade +2.
 
-AUTO [RC] Generation Break 1: When this unit boosts, you may have this unit get power +2000 for each of your other <Zodiac Time Beast> units until end of that battle. If you do, at the end of that battle, bind this unit face up.'
+AUTO [RC] Generation Break 1: When this unit boosts, you may have this unit get power +2000 until end of that battle for each of your other <Zodiac Time Beast>. If you do, bind this unit face up at the end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -3385,9 +3385,9 @@ CardStat = 5581
 global.CardName[CardStat] = 'Pulsar, Metal Party Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
-CONT [VC/RC]: If you have no cards in your bind zone, this unit cannot attack.
+CONT [VC/RC]: This unit cannot attack if the number of cards in your bind zone is zero.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1 & Bind this unit face up] At the end of the battle that this unit was boosted, you may pay the cost. If you do, call up to one face up grade 3 and 1 <Zodiac Time Beast> from your bind zone to separate RC in the same column.'
+AUTO [RC] Generation Break 1: [Counter Blast 1 & Bind this unit face up] At the end of the battle that this unit was boosted, you may pay the cost. If you do, call up to one face up grade 3 and grade 1 <Zodiac Time Beast> from your bind zone to separate RC in the same column.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -3424,7 +3424,7 @@ CardStat = 5615
 global.CardName[CardStat] = 'Pulsar Tamer, Igigi'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Zodiac Time Beast
 
-AUTO [RC] 1/Turn Generation Break 1: When your other <Zodiac Time Beast> is placed on RC from anywhere except your hand, this unit gets power +10000 until end of turn.'
+AUTO [RC] 1/Turn Generation Break 1: When your other <Zodiac Time Beast> is placed on RC other than from hand, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -3913,7 +3913,7 @@ CardStat = 7338
 global.CardName[CardStat] = 'Steam Sweeper, Sargo'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO [RC]: At the beginning of your battle phase, until end of turn, increase or decrease this unit’s grade to match the grade of one of your vanguards.
+AUTO [RC]: At the beginning of your battle phase, increase or decrease this unit’s grade to match one of your vanguard’s grade until end of turn.
 
 AUTO [RC]: When it attacks, COST [Counter Blast 4], and draw a card. This cost is reduced by Counter Blast 1 for each of your grade 4 units.'
 global.UnitGrade[CardStat] = 2
@@ -4274,7 +4274,7 @@ global.PowerStat[CardStat] = 9000
 
 CardStat = 7416
 {
-global.CardName[CardStat] = 'Steam Breaker, Marmanih'
+global.CardName[CardStat] = 'Steam Breaker, Narmanih'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
 AUTO [RC]: When it attacks, COST [discard one or more cards with the sum of their grades being 3 or greater from your hand], and this unit gets power +15000 until end of turn.'
@@ -4555,7 +4555,7 @@ CardStat = 7550
 global.CardName[CardStat] = 'Steam Engineer, Abazu'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid/Critical Trigger
 
-CONT [Hand]: While paying the cost for Stride, this card may be discarded as a grade 3.'
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -4968,7 +4968,7 @@ CardStat = 10034
 global.CardName[CardStat] = 'Steam Tamer, Nanni '
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO: When this unit is placed on RC, if your vanguard is "Chronotiger Rebellion", COST [Counter Blast 1], bind all cards from your hand, and at the end of that turn, put all of the bound cards into your hand. If you bound three or more cards, until end of turn, this unit gets "CONT[RC]: All of your opponent’s guardians get shield -5000.".'
+AUTO: When this unit is placed on RC, if your vanguard is "Chronotiger Rebellion", COST [Counter Blast 1], bind all cards from your hand, and at the end of that turn, put all of those bound cards into your hand. If you bound three or more cards, this unit gets "CONT[RC]: All of your opponent’s guardians get shield -5000." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
