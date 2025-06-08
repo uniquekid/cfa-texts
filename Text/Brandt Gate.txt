@@ -3775,7 +3775,7 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 CONT [RC/GC]: If your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +10000 / shield +10000.
 
 ACT [RC] 1/Turn: COST [Soul Blast 1], and perform all of the following.
-• Until end of turn, this unit gets "Boost", and power +2000.
+• This unit gets "Boost", and power +2000 until end of turn.
 • COST [Remove a over trigger from drop], and this unit gets "CONT [Back Row RC]: All of your front row units get power +5000." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
@@ -8637,7 +8637,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14146
 {
 global.CardName[CardStat] = 'Victory Heart, Liliway'
-global.CardText[CardStat] = 'Dark States/Alien
+global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When this unit attacks a vanguard, if you persona rode this turn, until end of that battle, this unit gets power +10000, and if your order zone has three or more cards, COST [put a card with the same card name as this unit from hand into soul], and its critical also becomes 2.' 
 global.UnitGrade[CardStat] = 2
@@ -8651,7 +8651,7 @@ global.AttackFromRBuff[CardStat] = 10000
 CardStat = 14147
 {
 global.CardName[CardStat] = 'Rounder Almiruna'
-global.CardText[CardStat] = 'Dark States/Workeroid
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [RC]: When you play a blitz order, COST [Energy Blast 2], move this unit to GC, and this unit gets shield +5000 until end of that battle.' 
 global.UnitGrade[CardStat] = 1
@@ -8672,4 +8672,98 @@ global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14157
+{
+global.CardName[CardStat] = 'Spotless Cleaner, Regelia'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [Drop]: When a set order you played from hand is put into the order zone, COST [Counter Blast 1], and call this card to RC.
+
+CONT [RC]: If your order zone has a set order, this unit gets "Intercept", and can intercept from the back row.
+
+AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, and your order zone has two or more set orders, this unit gets power +5000 until end of that battle.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14160
+{
+global.CardName[CardStat] = 'A Brief Rest'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14161
+{
+global.CardName[CardStat] = 'Braveeeee Shububububububububububububububurn!!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14162
+{
+global.CardName[CardStat] = 'We’ll Save the World!! Braveee Tornado Arc!!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14163
+{
+global.CardName[CardStat] = 'Courage Sword Style Secret Technique! Bravee~~~~~! Zubaaaaassh!!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14164
+{
+global.CardName[CardStat] = 'Courage Sword Style Secret Technique! Braveeeee Zaaaan!!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14165
+{
+global.CardName[CardStat] = 'It’s Absolutely Fine. Because... I’m Bravern!'
+global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0

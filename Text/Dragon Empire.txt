@@ -5302,7 +5302,7 @@ global.CardText[CardStat] = 'Dragon Empire/Set Order/Smithy
 
 Play this if you have a vanguard with "Zedhlans" in its card name!
 
-ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept" and gets shield +5000. (Power increace only until end of turn even if you chose a unit with "Wrought Iron" in its card name)'
+ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept" and gets shield +5000. (Power increase only until end of turn even if you chose a unit with "Wrought Iron" in its card name)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
@@ -9027,6 +9027,19 @@ AUTO [RC]: When this unit boosts a vanguard, if your opponent’s vanguard is grad
 AUTO [RC]: When the attack this unit boosted hits, COST [retire this unit], and Counter Charge 1.
 
 AUTO [RC]: At the end of the battle this unit boosted, COST [Counter Blast 1 & retire this unit], search your deck for up to one card with the same card name as your vanguard, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14156
+{
+global.CardName[CardStat] = 'Feuerfrei Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon
+
+Overcharge - AUTO [RC]: When your vanguard attacks a grade 3 or greater unit, if this unit was chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, and your rear-guard did not stand by a card’s ability this turn, COST [put this unit into soul], choose one of your front row rear-guards with the Overcharge ability, stand it, and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
