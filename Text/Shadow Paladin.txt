@@ -539,7 +539,7 @@ CardStat = 1412
 global.CardName[CardStat] = 'Barrier Troop Revenger, Dorint'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When a card named "Blaster Dark Revenger" is placed on your VC or RC of the same column as this unit, if you have a vanguard with "Revenger" in its card name, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
+AUTO [RC]: When your "Blaster Dark Revenger" is placed on your VC or RC in the same column as this unit, if you have a vanguard with "Revenger" in its card name, choose a card from your damage zone, and turn it face up. (Counter Charge 1)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -552,7 +552,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a «Shadow Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Shadow Paladin», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Shadow Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Shadow Paladin» that is being attacked, and that unit cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -881,7 +881,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have an «Shadow Paladin» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Shadow Paladin» to GC at rest, and put the rest into your drop zone.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Shadow Paladin» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Shadow Paladin» to GC at rest from among them, and put the rest into your drop zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -2225,19 +2225,6 @@ global.CardInClan[CardStat] = 1
 global.PowerStat[CardStat] = 6000
 
 
-CardStat = 4230
-{
-global.CardName[CardStat] = 'Knight of Red Flash, Ferdiad'
-global.CardText[CardStat] = 'Shadow Paladin/Human
-
-
-AUTO Ritual 3 (This ability is active if you have three or more grade 1 cards in your drop zone): When this unit is retired from RC for the cost or effect of your card, choose one of your units, and it gets power +5000 until end of turn. (This card is included for the number of ritual)'
-global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 1
-}
-global.PowerStat[CardStat] = 7000
-
-
 CardStat = 4231
 {
 global.CardName[CardStat] = 'Knight of Red Flash, Ferdiad'
@@ -2509,7 +2496,7 @@ CardStat = 4320
 global.CardName[CardStat] = 'Killermyu'
 global.CardText[CardStat] = 'Shadow Paladin/High Beast
 
-AUTO [RC] Generation Break 1: When this unit boosts, the boosted unit gets power +4000 until end of that battle, and at the end of that battle, retire this unit.'
+AUTO [RC] Generation Break 1: When this unit boosts, you may have the boosted unit get power +4000 until end of that battle. If you do, retire this unit at the end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -2750,7 +2737,7 @@ CardStat = 4573
 global.CardName[CardStat] = 'Dragwizard, Midir'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-ACT [RC] 1/Turn Generation Break 1 Ritual 3: [Counter Blast 1] This unit gets power +1000 for each of your units with the ritual ability until end of turn.
+ACT [RC] 1/Turn Generation Break 1 Ritual 3: [Counter Blast 1] Until end of turn, this unit gets power +1000 for each of your units with the ritual ability.
 
 AUTO [RC]: [Soul Blast 1 & Retire this unit] At the beginning of your main phase, you may pay the cost. If you do, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -3076,7 +3063,7 @@ CardStat = 5076
 global.CardName[CardStat] = 'Dragwizard, Semias'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO Generation Break 1 Ritual 3: [Counter Blast 1] When this unit is placed on RC, if you have a vanguard with "Luard" in its card name, you may pay the cost. If you do, look at two cards from the top of your deck, call them to separate RC, and at the end of that turn, retire this unit and the units called with this effect.'
+AUTO Generation Break 1 Ritual 3: [Counter Blast 1] When this unit is placed on RC, if you have a vanguard with "Luard" in its card name, you may pay the cost. If you do, look at two cards from the top of your deck, call them to separate RC, and at the end of that turn, retire the units called with this effect and this unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }

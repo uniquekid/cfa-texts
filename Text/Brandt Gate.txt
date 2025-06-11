@@ -6319,7 +6319,7 @@ CardStat = 13038
 global.CardName[CardStat] = 'National Scout Day (July 20)'
 global.CardText[CardStat] = 'Brandt Gate/Set Order
 
-CONT: This card is also regarded as "Refablishment Dock"
+CONT: This card is also regarded as "Refablishment Dock".
 
 Play this with COST [Counter Blast 1] !
 
@@ -8767,3 +8767,21 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14170
+{
+global.CardName[CardStat] = 'Sunthorn Phu Day (June 25)'
+global.CardText[CardStat] = 'Brandt Gate/Giant
+
+CONT: This card is also regarded as "Combine Rusher".
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
+
+AUTO [Drop]: When a Set Order you played from hand is put into the Order Zone, COST [Counter Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
