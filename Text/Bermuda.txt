@@ -472,7 +472,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
 
-AUTO [RC]: When your «Bermuda Triangle» rear-guard is returned to your hand from RC, you may return this card to your hand.'
+AUTO [RC]: When another of your «Bermuda Triangle» is returned to your hand from RC, you may return this card to your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
 }
@@ -988,7 +988,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have an «Bermuda Triangle» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Bermuda Triangle» to GC at rest, and put the rest into your drop zone.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Bermuda Triangle» to GC at rest from among them, and put the rest into your drop zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -999,7 +999,7 @@ CardStat = 1965
 global.CardName[CardStat] = 'PR<3ISM-Duo, Yarmouk'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: When another «Bermuda Triangle» you have is returned to hand from RC, this unit gets power +3000 until end of turn.'
+AUTO [RC]: When your other «Bermuda Triangle» units are returned to your hand from RC, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1421,7 +1421,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO [VC/RC]: Harmony (When your other units is placed in the same column as this unit, both units become in harmony until end of turn.)
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks, if this unit is Harmony, this unit gets power +3000 until end of that battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks, if this unit is in Harmony, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -1434,7 +1434,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO [VC/RC]: Harmony (When your other units is placed in the same column as this unit, both units become in harmony until end of turn.)
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks, if this unit is Harmony, this unit gets power +3000 until end of that battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks, if this unit is in Harmony, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -2172,7 +2172,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO [VC/RC]: Harmony.
 
-AUTO [VC/RC] Generation Break 1: During your battle phase, when your other unit is placed on RC, that unit and this unit get power +2000 until end of turn.
+AUTO [VC/RC] Generation Break 1: When your other unit is placed on RC during your battle phase, that unit and this unit get power +2000 until end of turn.
 
 AUTO [VC/RC]: [Counter Blast 1 & Soul Blast 1] When this unit attacks a vanguard, if this unit is in harmony, you may pay the cost. If you do, choose one of your other rear-guards in harmony, return it to your hand, choose up to one card from your hand, and call it to RC.'
 global.UnitGrade[CardStat] = 3
@@ -2202,7 +2202,7 @@ AUTO [VC/RC]: Harmony.
 
 AUTO [RC] Generation Break 1: When this unit attacks a vanguard, if this unit is in harmony, this unit gets power +4000 until end of that battle.
 
-CONT [VC/RC]: If you have a "Tidal Art, Marie" in the same column as this unit, this unit gets power +2000.'
+CONT [VC/RC]: If you have a unit named "Tidal Art, Marie" in the same column as this unit, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -2242,7 +2242,7 @@ CardStat = 3903
 global.CardName[CardStat] = 'Shyness Laguna, Lapia'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: [Soul Blast 1] When your drive check reveals a grade 3 card, if you have a vanguard with "Raindear" in its card name, you may pay the cost. If you do, choose up to one card from your hand, call it to open RC, and until end of turn, that unit and this unit get power +2000.'
+AUTO [RC]: [Soul Blast 1] When your drive check reveals a grade 3 card, if you have a vanguard with "Raindear" in its card name, you may pay the cost. If you do, choose up to one card from your hand, call it to open RC, and that unit and this unit get power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -2370,7 +2370,7 @@ AUTO [VC/RC]: Harmony.
 
 ACT [RC] 1/Turn Generation Break 1: [Soul Blast 1] If this unit is in harmony, choose one of your other units in the same column as this unit, and it gets power +4000 until end of turn.
 
-CONT [RC]: If you have a "One-stroke Art, Carla" in the same column as this unit, this unit gets power +2000.'
+CONT [RC]: If you have a unit named "One-stroke Art, Carla" in the same column as this unit, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -2396,9 +2396,9 @@ CardStat = 3914
 global.CardName[CardStat] = 'Piping Hot, Suifa'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [RC]: All of your "Velvet Voice, Raindear" in the same column as this unit get power +1000.
+CONT [RC]: Your unit named "Velvet Voice, Raindear" in the same column as this unit get power +1000.
 
-AUTO [RC in the back row]: When your drive check reveals a grade 3 card, if you have a vanguard with "Raindear" in its card name, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle, move this unit to an open RC in the same column as this unit, stand this unit, and this unit gets power +4000 until end of turn.".'
+AUTO [RC in the back row]: When your drive check reveals a grade 3 card, if you have a vanguard with "Raindear" in its card name, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle, move this unit to an open RC in the same column as this unit, stand it, and this unit gets power +4000 until end of turn.".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -2926,7 +2926,6 @@ CardStat = 4932
 global.CardName[CardStat] = 'Duo Stream Showtime, Paytonia'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-
 ACT [Hand]: [Counter Blast 1-card with "Duo" in its card name & Discard this card] Choose one of your grade 2 or greater rear-guards with "Duo" in its card name, return it to your hand, search your deck for up to one card with the same card name as that unit, reveal it, put it into your hand, choose a card from your hand, discard it, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
@@ -3083,7 +3082,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 G guardian.
 
-AUTO: When this unit is placed on GC, choose up to one grade 1 or greater card from your hand, and call it to RC. If you called a unit, this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit is placed on GC, choose up to one grade 1 or greater card from your hand, and call it to RC. If you called a card, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
@@ -3151,7 +3150,7 @@ CardStat = 4948
 global.CardName[CardStat] = 'Sweet-PR<3ISM, Rupina'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO Generation Break 1: [Counter Blast 1] When this unit is returned to your hand from RC during your battle phase, you may pay the cost. If you do, choose one of your rear-guards with "PR<3ISM" in its card name, and return it to your hand. If you returned a unit, draw a card.'
+AUTO Generation Break 1: [Counter Blast 1] When this unit is returned to your hand from RC during your battle phase, you may pay the cost. If you do, choose one of your rear-guards with "PR<3ISM" in its card name, and return it to your hand. If you returned it to your hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -3286,7 +3285,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-AUTO [VC] Limit Break 4: [Counter Blast 1 & Choose three cards with the same card name as each other, and discard them] At the end of the battle that this unit attacked, if you have a heart card with "Duo" in its card name, you may pay the cost. put this unit into your G zone face up, choose up to one face down "Duo Everlasting, Reit" from your G zone, Stride it on VC as stand, it gets drive -1, and all of its AUTO abilities are lost.'
+AUTO [VC] Limit Break 4: [Counter Blast 1 & Choose three cards with the same card names, and discard them] At the end of the battle that this unit attacked, if you have a heart card with "Duo" in its card name, you may pay the cost. put this unit into your G zone face up, choose up to one face down "Duo Everlasting, Reit" from your G zone, Stride it on VC as stand, it gets drive -1, and loses all its AUTO.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
@@ -3724,7 +3723,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-ACT [VC] 1/Turn: [Soul Blast 1 & Choose five of your rear-guards with "Chouchou" in its card name, and put them on the bottom of your deck in any order] Draw three cards, and until end of turn, this unit gets power +20000 / critical +1.'
+ACT [VC] 1/Turn: [Soul Blast 1 & Choose five of your rear-guards with "Chouchou" in their card names, and put them on the bottom of your deck in any order] Draw three cards, this unit gets power +20000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
@@ -4119,7 +4118,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: Forerunner.
 
-AUTO [RC]: When your drive check reveals a grade 3 card, choose a card with "Raindear" in its card name from your drop zone, and you may return it to your hand.
+AUTO [RC]: When your drive check reveals a grade 3 card, choose one of your card with "Raindear" in its card name from your drop zone, and you may return it to your hand.
 
 ACT [RC] 1/Turn: [Choose a grade 3 card from your hand, and discard it] Draw a card. If you have a vanguard with "Raindear" in its card name, you may put this unit into your soul. If you do that, Counter Charge 1.'
 global.UnitGrade[CardStat] = 0
@@ -4178,7 +4177,7 @@ CardStat = 5651
 global.CardName[CardStat] = 'Chouchou, Verne'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: [Counter Blast 1 & Choose one of your rear-guards or a card from your hand, and put it on the bottom of your deck] When your G unit Stride, you may pay the cost. If you do, look at two cards from the top of your deck, call up to two cards with "Chouchou" in their card names from among them to separate RC, and shuffle your deck.
+AUTO [VC]: [Counter Blast 1 & Choose a card from your hand or a rear-guards, and put it on the bottom of your deck] When your G unit Stride, you may pay the cost. If you do, look at two cards from the top of your deck, call up to two cards with "Chouchou" in their card names from among them to separate RC, and shuffle your deck.
 
 AUTO Generation Break 2: When this unit is put into your deck from RC, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -4307,9 +4306,9 @@ CardStat = 5660
 global.CardName[CardStat] = 'Chouchou, Darina'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [VC/RC]: If the number of your other rear-guards with "Chouchou" in its card name is one or less, this unit cannot attack.
+CONT [VC/RC]: If the number of your other rear-guards with "Chouchou" in their card names is one or less, this unit cannot attack.
 
-AUTO [RC] 1/Turn: [Counter Blast 1] When your other rear-guard is put into your deck, you may pay the cost. If you do, reveal five cards from the top of your deck, if all of those cards have "Chouchou" in their card names, call up to one card from among them, and shuffle your deck.'
+AUTO [RC] 1/Turn: [Counter Blast 1] When your other rear-guard is put into your deck, you may pay the cost. If you do, reveal five cards from the top of your deck, and if all of those cards have "Chouchou" in their card names, call up to one card from among them to RC. Shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }

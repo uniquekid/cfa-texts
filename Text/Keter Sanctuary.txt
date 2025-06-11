@@ -6908,7 +6908,7 @@ CardStat = 13046
 global.CardName[CardStat] = 'Mid-Autumn Festival Day (September 17)'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-CONT: This card is also regarded as "Drilling Angel"
+CONT: This card is also regarded as "Drilling Angel".
 
 AUTO: When this unit is placed on RC, COST [put a unit card from your drop into your soul], look at three cards from the top of your deck, choose up to one card from among them with the same card name as the card put into your soul for this cost, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
@@ -9669,3 +9669,36 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14167
+{
+global.CardName[CardStat] = 'Vertical Long Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of the following according to the grade of your vanguard with "Sorceress" in its card name.
+• Grade 2 or less - Draw a card.
+• Grade 3 or greater - Look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the top of the deck or into soul.
+
+AUTO [RC] 1/Turn: If you persona rode this turn, this cost is reduced by Soul Blast 1. When your other rear-guard in the same column as this unit stand, if you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14169
+{
+global.CardName[CardStat] = 'Lankini'
+global.CardText[CardStat] = 'Keter Sanctuary/Giant
+
+CONT: This card is also regarded as "Decisive Axe Dragon".
+
+CONT [RC]: During the battle this unit attacked, if your vanguard rode by a card effect this turn, your opponent cannot call normal units from hand to GC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
