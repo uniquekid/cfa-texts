@@ -3604,13 +3604,16 @@ AUTO [VC]: When placed, a plant token you call the next time this turn is called
 
 AUTO [RC]: When placed, you may call a plant token to RC. (Plant tokens are grade 0 / power 5000 / critical 1 and have boost.)
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7202
 }
 global.PowerStat[CardStat] = 10000
 global.TokenSummoner[CardStat] = 6130
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerPosition[CardStat] = 'R'
 global.TokenSummoner2[CardStat] = 7202
 global.TokenSummoner2Text[CardStat] = "Which token do you want to call?"
 global.TokenSummoner2Button1[CardStat] = "5000"
@@ -3733,9 +3736,12 @@ CONT [VC]: The plant tokens you call are called as grade 0 / power 10000 / shiel
 
 ACT [VC/RC] 1/Turn: COST [Retire a rear-guard], call up to two plant tokens to RC, and if you have five or more rear-guards, this unit gets power +10000 until end of turn.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7202
 }
 global.BlueTokenAdd[CardStat] = 1
 global.TokenSummoner[CardStat] = 6130
@@ -4655,15 +4661,18 @@ CardStat = 10011
 global.CardName[CardStat] = 'Return of Eternity, Grajiorl Dragon'
 global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-CONT [VC]: The Plant tokens you call are called as grade 0 / power 10000 / shield 10000 / critical 1, and have "Boost" and "Intercept", and all of your Plant tokens can intercept from the back row.
+CONT [VC]: The Plant tokens you call are called as grade 0 / power 10000 / shield 10000 / critical 1, and have "Boost" and "Intercept", and your Plant tokens can intercept from the back row.
 
-ACT [VC] 1/Turn: COST [Put a normal unit from your drop on the bottom of your deck], and call up to two Plant tokens to RC.
+ACT [VC] 1/Turn: COST [Put a normal unit from your drop, and put it on the bottom of your deck], and call up to two Plant tokens to RC.
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose up to two cards from your hand, and call them to RC with Plant tokens.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7202
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -4681,13 +4690,16 @@ CardStat = 10012
 global.CardName[CardStat] = 'Eternal Stability, Grajiorl Dragon'
 global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Return of Eternity, Grajiorl Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, call up to one grade 0 / power 10000 / shield 10000 / critical 1 Plant token with "Boost" and "Intercept".
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Return of Eternity, Grajiorl Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal, call up to one Plant token that is grade 0 / power 10000 / shield 10000 / critical 1, and have "Boost" and "Intercept".
 
-AUTO: When this unit is placed from hand on a RC with a power 10000 or greater Plant token, this unit gets power +15000 until end of turn.
+AUTO: When this unit is placed on RC with a Plant token that has power 10000 or greater from hand, this unit gets power +15000 until end of turn.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7202
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -4704,13 +4716,16 @@ CardStat = 10013
 global.CardName[CardStat] = 'Budding Permenance, Grajiorl Dragon'
 global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Eternal Stability, Grajiorl Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, call up to one grade 0 / power 10000 / shield 10000 / critical 1 Plant token with "Boost" and "Intercept".
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one "Eternal Stability, Grajiorl Dragon" from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal, call up to one Plant token that is grade 0 / power 10000 / shield 10000 / critical 1, and have "Boost" and "Intercept".
 
-AUTO: When this unit is placed from hand on a RC with a power 10000 or greater Plant token, draw a card, and this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed on a RC with Plant token that has power 10000 or greater from hand, draw a card, and this unit gets power +5000 until end of turn.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
+global.AnotherSide[CardStat] = 7202
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
@@ -4842,11 +4857,13 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
 ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card names. Shuffle the deck.
-(SHIFT + left click to create Force gifts and crest)'
+(SHIFT + left click to create Force gifts and crest)
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
+global.AnotherSide[CardStat] = 12577
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
