@@ -20,7 +20,7 @@ CardStat = 41
 global.CardName[CardStat] = 'Machining Worker Ant'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO: When this unit is placed on RC, choose one of your «Megacolony» rear-guards with "Machining" in its card name, and stand it.'
+AUTO: When this unit is placed on RC, choose one of your rear-guards with "Machining" in its card name, and stand it.'
 }
 
 
@@ -514,7 +514,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have an «Megacolony» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Megacolony» to GC at rest, and put the rest into your drop zone.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Megacolony» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Megacolony» to GC at rest from among them, and put the rest into your drop zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -584,7 +584,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 ACT [VC]: Legion 20000 "Machining Hornet mk II" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Counter Blast 1] When this card’s drive check reveals a card with the same card name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, choose all of your opponent’s vanguard, and that unit cannot stand during your opponent’s next stand phase.
+AUTO [VC]: [Counter Blast 1] When this card’s drive check reveals a card with the same card name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, choose all of your opponent’s vanguard, and those units cannot stand during your opponent’s next stand phase.
 
 ACT [VC]: [Soul Blast 2-card with "Machining" in its card name] Choose one of your opponent’s rear-guards, and that unit cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 3
@@ -765,7 +765,7 @@ CardStat = 3173
 global.CardName[CardStat] = 'Longhorn Hunter'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit is placed on VC or RC, you may pay the cost. If you do, choose one of your opponent’s rear guards, rest it. Until end of turn, that unit cannot intercept, and that unit cannot stand during your opponent’s next stand phase.'
+AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit is placed on VC or RC, you may pay the cost. If you do, choose one of your opponent’s rear guards, rest it, until end of turn, that unit cannot intercept, and that unit cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -1145,7 +1145,7 @@ CardStat = 3994
 global.CardName[CardStat] = 'Scarlet Venom'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO Dark Device (Active when your opponent has no stand units in the same column as this unit): When this unit is placed on RC, this unit gets power +2000 for each of your opponent’s rear-guards in the same column as this unit until end of turn.'
+AUTO Dark Device (Active when your opponent has no stand units in the same column as this unit): When this unit is placed on RC, this unit gets power +2000 until end of turn for each of your opponent’s rear-guards in the same column as this unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -1429,9 +1429,9 @@ CardStat = 5334
 global.CardName[CardStat] = 'Machining Leafy'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-CONT [Hand]: If you have a vanguard with "Machining" in its card name, while you are paying the cost for Stride, this card may be discarded as a grade 3.
+CONT [Hand]: If you have a vanguard with "Machining" in its card name, this card may be discarded as a grade 3 while you are paying the cost for Stride.
 
-AUTO: [Soul Blast 1] When this card is discarded from hand for the cost of a G unit with "Machining" in its original card name for Stride, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and that unit cannot stand during your opponent’s next stand phase.'
+AUTO: [Soul Blast 1] When this card is discarded from hand for the cost of Stride of your G unit with "Machining" in its original card name, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and that unit cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -1759,7 +1759,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 CONT: If this unit would be placed on RC, it is called as rest.
 
-AUTO [RC]: When it attacks, until end of battle, triple this unit’s power, and at the end of that battle, retire this unit. (After tripling its power, add the power from boost.)'
+AUTO [RC]: When it attacks, until end of that battle, triple this unit’s power, and at the end of that battle, retire this unit. (After tripling its power, add the power from boost.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 2
 }
@@ -2907,7 +2907,7 @@ global.CardText[CardStat] = 'Megacolony/Insect/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Darkface" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 2
 }

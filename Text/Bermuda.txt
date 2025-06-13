@@ -308,7 +308,7 @@ CONT [VC]: During your turn, if the number of «Bermuda Triangle» rear-guards you
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, draw a card, choose a card from your hand, and put it on the bottom of your deck.
 
-AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck up to three «Bermuda Triangle», call them to separate RC, and shuffle your deck.'
+AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for up to three «Bermuda Triangle», call them to separate RC, and shuffle your deck.'
 }
 
 
@@ -1500,7 +1500,7 @@ CardStat = 3010
 global.CardName[CardStat] = 'PR<3ISM-Promise, Princess Leyte'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO: When this unit is returned to your hand from RC, if you have a vanguard with "PR<3ISM" in its card name, Counter Charge 1 / Soul Charge 1, choose one of your other units, it gets power +4000 until end of turn, and you cannot normal call "PR<3ISM-Promise, Princess Leyte" for the rest of that turn. (You may call this card by the effects of cards.)'
+AUTO: When this unit is returned to your hand from RC, if you have a vanguard with "PR<3ISM" in its card name, Counter Charge 1 / Soul Charge 1, choose one of your other units, it gets power +4000 until end of turn, and until end of turn, you cannot normal call "PR<3ISM-Promise, Princess Leyte". (It can be called by card effects.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1549,7 +1549,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT: Sentinel
 
-AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Image Master, Kukuri", Counter Charge 1.'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has an "Image Master, Kukuri", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -7013,7 +7013,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Lauris" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
 }
