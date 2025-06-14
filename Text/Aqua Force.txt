@@ -406,7 +406,7 @@ CardStat = 1041
 global.CardName[CardStat] = 'Officer Cadet, Astraea'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted an «Aqua Force», you may pay the cost. If you do, choose one of your «Aqua Force» rear-guards, and stand it.'
 }
@@ -1559,7 +1559,7 @@ CardStat = 2656
 global.CardName[CardStat] = 'Marine General of the Heavenly Scales, Tidal Bore Dragon'
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
 AUTO [VC]: When this unit’s attack hits a vanguard, if it is the third battle of that turn or more, draw a card, choose up to one card from your hand, and call it to RC.
 
@@ -1633,7 +1633,7 @@ CardStat = 2673
 global.CardName[CardStat] = 'Marine General of Heavenly Silk, Lambros'
 global.CardText[CardStat] = 'Aqua Force/Aquaroid
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
 AUTO [VC]: [Choose a face down card named "Marine General of Heavenly Silk, Lambros" from your G zone, and turn it face up] When this unit attacks a vanguard, if it is the fourth battle of that turn or more, you may pay the cost. If you do, choose up to two of your rear-guards, and stand them. Then, if the number of face up cards in your G zone is two or more, the units stand with this effect get power +10000 until end of turn.
 
@@ -3396,6 +3396,7 @@ global.OrangeTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
 global.AttackFromVBuff[CardStat] = 10000
 
+
 CardStat = 5901
 {
 global.CardName[CardStat] = 'Officer Cadet, Erikk '
@@ -5143,7 +5144,7 @@ CardStat = 11170
 global.CardName[CardStat] = 'Blue Wave Engineer, Refit Sailor  '
 global.CardText[CardStat] = 'Aqua Force/Aquaroid/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 3
 }

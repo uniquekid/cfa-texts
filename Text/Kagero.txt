@@ -895,7 +895,7 @@ CardStat = 1380
 global.CardName[CardStat] = 'Demonic Dragon Mage, Deva'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Kagero» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -2013,7 +2013,7 @@ CardStat = 2456
 global.CardName[CardStat] = 'Perdition Berserker, Preta'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC from among them, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2024,7 +2024,7 @@ CardStat = 2497
 global.CardName[CardStat] = 'Divine Dragon Knight, Mahmud'
 global.CardText[CardStat] = 'Kagero/Human
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 4
@@ -2120,7 +2120,7 @@ CardStat = 2572
 global.CardName[CardStat] = 'Flame Emperor Dragon King, Root Flare Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC]: [Choose a face down card named "Flame Emperor Dragon King, Root Flare Dragon" from your G Zone, and turn it face up] If the number of face up cards in your G Zone is two or more, choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards in the same column as that unit. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 4
@@ -2292,7 +2292,7 @@ CardStat = 2846
 global.CardName[CardStat] = 'Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC]: [Counter Blast 2 & Choose a face down card named "Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"" from your G zone, and turn it face up] If the number of face up cards in your G zone is two or more, until end of turn, this unit gets drive -1 and "AUTO [VC] 1/Turn: [Choose a card from your hand, and discard it & Choose a card with "Overlord" in its card name from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets power +5000 until end of turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn)".'
 global.UnitGrade[CardStat] = 4
@@ -2306,7 +2306,7 @@ CardStat = 2847
 global.CardName[CardStat] = 'Divine Dragon Knight, Mustafa'
 global.CardText[CardStat] = 'Kagero/Human
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up] Choose one of your opponent’s rear-guards, retire it, choose one of your units for each face up card named "Divine Dragon Knight, Mustafa" in your G zone, and until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)".'
 global.UnitGrade[CardStat] = 4
@@ -3391,7 +3391,7 @@ global.CardText[CardStat] = 'Kagero/Dragonman
 
 AUTO: Forerunner.
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul & Choose a card with "Overlord" in its card name from your hand, and reveal it] Look at seven from the top of your deck, reveal up to one card with "Overlord" in its card name from among them, put it into your hand, and shuffle your deck. If you could not put a card, Soul Charge 1.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul & Choose a card with "Overlord" in its card name from your hand, and reveal it] Look at seven from the top of your deck, reveal up to one card with "Overlord" in its card name from among them, put it into your hand, and shuffle your deck. If you did not put, Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -5421,7 +5421,7 @@ CardStat = 11157
 global.CardName[CardStat] = 'Dragon Dancer, Tara  '
 global.CardText[CardStat] = 'Kagero/Human/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
