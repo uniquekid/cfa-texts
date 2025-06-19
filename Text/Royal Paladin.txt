@@ -129,7 +129,7 @@ global.CardText[CardStat] = 'Royal Paladin/High Beast
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits during the battle that this unit boosts a card with "Blaster" in its card name, you may pay the cost. If you do, search your deck for up to one card with "Blaster" in its card name, reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits during the battle that this unit boosts a unit with "Blaster" in its card name, you may pay the cost. If you do, search your deck for up to one card with "Blaster" in its card name, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 }
 
 
@@ -713,7 +713,7 @@ CardStat = 1120
 global.CardName[CardStat] = 'Claudia'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 ACT [RC]: [Put this unit into your soul] Choose up to one of your «Royal Paladin», and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
@@ -837,7 +837,7 @@ CardStat = 1164
 global.CardName[CardStat] = 'Primgal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Royal Paladin» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -964,7 +964,7 @@ CardStat = 1387
 global.CardName[CardStat] = 'Battle Flag Knight, Constance'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits the vanguard, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck up to one grade 1 or less «Royal Paladin», call it to RC, and shuffle your deck.'
+AUTO [VC/RC]: [Counter Blast 2] When this unit’s attack hits the vanguard, if you have a «Royal Paladin» vanguard, you may pay the cost. If you do, search your deck for up to one grade 1 or less «Royal Paladin», call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -2030,7 +2030,7 @@ CardStat = 2505
 global.CardName[CardStat] = 'Holy Dragon, Saint Blow Dragon'
 global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
 ACT [VC]: [Choose a face down card named "Holy Dragon, Saint Blow Dragon" from your G zone, and turn it face up] This unit gets power +3000 for each of your rear-guards until end of turn, if the number of face up cards in your G zone is two or more, and the number of rear-guards you have is two or more, this unit gets critical +1 until end of turn. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 4
@@ -2121,7 +2121,7 @@ CardStat = 2513
 global.CardName[CardStat] = 'Shrouded Divine Knight, Gablade'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
 AUTO [VC]: When this unit’s attack hits a vanguard, search your deck for up to one grade 2 or greater card, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 4
@@ -2183,7 +2183,7 @@ CardStat = 2522
 global.CardName[CardStat] = 'Transmigration Knight, Brede'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -2205,7 +2205,7 @@ CardStat = 2524
 global.CardName[CardStat] = 'Archer of Heaven’s Tower'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -2588,7 +2588,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-AUTO: When this unit is placed on VC, COST [turn a "Aerial Divine Knight, Altmile" from G zone face up], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +3000.". If your G zone has two or more face up cards, search your deck for up to one grade 2 card, call it to RC, shuffle the deck, and that unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on VC, COST [turn an "Aerial Divine Knight, Altmile" from G zone face up], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +3000.". If your G zone has two or more face up cards, search your deck for up to one grade 2 card, call it to RC, shuffle the deck, and that unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -3032,7 +3032,7 @@ CardStat = 3575
 global.CardName[CardStat] = 'Floral Paladin, Flogal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast/Critical Trigger
 
-AUTO [RC]: [Counter Blast 1] At the end of the battle that your unit named "Blaster Blade" attacked a vanguard, you may pay the cost. If you do, choose up to one unit named "Blaster Blade" on RC, stand it, return this unit to your deck, and shuffle your deck.'
+AUTO [RC]: [Counter Blast 1] At the end of the battle that your unit named "Blaster Blade" attacked a vanguard, you may pay the cost. If you do, choose up to one of your units named "Blaster Blade" on RC, stand it, return this unit to your deck, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -3282,7 +3282,7 @@ global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
 AUTO [VC]: [Counter Blast 3 & Soul Blast 3] At the beginning of your main phase, you may pay the cost. If you do, search your deck, soul, drop zone, or damage zone for up to one card each, choose three cards from among them, call them to separate RC, and shuffle your deck.
 
-CONT: You may not call this card to RC. (You may not superior call this card.)'
+CONT: This card cannot be called to RC. (It cannot be superior call as well.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 }
@@ -3679,7 +3679,7 @@ global.CardText[CardStat] = 'Royal Paladin/High Beast
 
 AUTO: Forerunner.
 
-CONT [RC] Generation Break 1 Brave: This unit gets power +3000 for each of your other rear-guards with the brave ability.'
+CONT [RC] Generation Break 1 Brave: For each of your other rear-guards with the brave ability, this unit gets power +3000.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -3848,7 +3848,7 @@ CardStat = 4467
 global.CardName[CardStat] = 'Gliding Eagle'
 global.CardText[CardStat] = 'Royal Paladin/High Beast/Draw Trigger
 
-ACT [RC]: [Put this unit into your soul] Choose one of your units, and it gets power +3000 until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose one of your units, and until end of turn, it gets power +3000.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -4004,7 +4004,7 @@ global.CardText[CardStat] = 'Royal Paladin/High Beast
 
 AUTO: Forerunner.
 
-ACT [RC]: [Put this unit into your soul] Choose one of your units, and it gets "Boost" until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose one of your units, and until end of turn, it gets "Boost".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -4485,7 +4485,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: If the number of your opponent’s guardians is one, the attack of the unit with the brave ability will hit regardless of its power.".
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets "CONT [VC]: If your opponent has only one guardian, the attacks of your units with the brave ability will hit regardless of power.".
 
 AUTO [VC] Generation Break 4 Brave: When this unit attacks, if you have a heart card with "Altmile" in its card name, search your deck for up to three cards, call them to separate RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 4
@@ -5290,6 +5290,8 @@ global.CardInClan[CardStat] = 15
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
 CardStat = 6530
 {
 global.CardName[CardStat] = 'Undulatory Sage, Tarna '
@@ -6789,7 +6791,7 @@ global.CardText[CardStat] = 'Royal Paladin/Sylph/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Altmile" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -6805,7 +6807,7 @@ CardStat = 11151
 global.CardName[CardStat] = 'Remedy Angel  '
 global.CardText[CardStat] = 'Royal Paladin/Angel/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -6857,11 +6859,14 @@ Stride.
 ACT [G zone]: If your vanguard is a grade 3 "Leading Jewel Knight, Salome" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Jewel Knight" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "Leading Jewel Knight, Salome" crest.
 
 ACT [VC] 1/Turn: COST [Turn a card from G zone face up], if you have a heart card with "Jewel Knight" in its card name, and if you have three or more rear-guards with "Jewel Knight" in their card names, all of your units with "Jewel Knight" in their card names get power +3000 for each face up card named "Climax Jewel Knight Lord, Evangeline" in your G zone until end of turn.
-(SHIFT + left click to create Force gifts and crest)'
+
+(SHIFT + left click to create Force gifts and crest)
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
+global.AnotherSide[CardStat] = 12580
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0

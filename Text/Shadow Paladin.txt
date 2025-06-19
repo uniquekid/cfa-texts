@@ -338,7 +338,7 @@ CardStat = 1068
 global.CardName[CardStat] = 'Creeping Dark Goat'
 global.CardText[CardStat] = 'Shadow Paladin/High Beast
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Look at up to five cards from the top of your deck, search for up to one grade 3 or greater «Shadow Paladin» from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 }
@@ -413,7 +413,7 @@ CardStat = 1397
 global.CardName[CardStat] = 'Nullity Revenger, Masquerade'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Revenger" in its card name, this unit gets power +3000 until end of battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Revenger" in its card name, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -435,7 +435,7 @@ CardStat = 1399
 global.CardName[CardStat] = 'Transient Revenger, Masquerade'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Revenger" in its card name, this unit gets power +3000 until end of battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Revenger" in its card name, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -1197,7 +1197,7 @@ CardStat = 2198
 global.CardName[CardStat] = 'Battle Instinct Revenger, Lifecher'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [VC/RC]: When this unit attacks, if the number of units you have is less than your opponent’s, this unit gets power +3000 until end of battle.'
+AUTO [VC/RC]: When this unit attacks, if the number of units you have is less than your opponent’s, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -1326,7 +1326,7 @@ CardStat = 2818
 global.CardName[CardStat] = 'Knight of Solemnity, Balberith'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -1856,7 +1856,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, and the number of your opponent’s grade 0 rear-guards is two or more, your opponent reveals ten cards from the top of his or her deck, chooses a grade 0 card from among them, rides it, shuffles his or her deck, until end of turn, that unit gets "AUTO [VC]: [Counter Blast 1] At the beginning of the guard step of the battle that this unit was attacked, you may pay the cost. If you do, choose any number of cards from your hand, call them GC as rest." and "AUTO [VC]: At the end of your opponent’s turn, choose up to one card from your soul, and ride it.".'
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, and your opponent’s has two or more grade 0 rear-guards, your opponent reveals ten cards from the top of his or her deck, chooses a grade 0 card from among them, rides it as stand, shuffles his or her deck, and until end of turn, that unit gets "AUTO [VC]: [Counter Blast 1] At the beginning of the guard step of the battle that your unit was attacked, you may pay the cost. If you do, choose any number of cards from your hand, call them GC as rest." and "AUTO [VC]: At the end of the turn, choose up to one card from your soul, and ride it as stand.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -5159,7 +5159,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Claret Sword Dragon" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 1
 }
@@ -5175,7 +5175,7 @@ CardStat = 11154
 global.CardName[CardStat] = 'Emancipating Revenger, Allyl  '
 global.CardText[CardStat] = 'Shadow Paladin/Elf/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 1
 }
@@ -5239,11 +5239,13 @@ ACT [G zone]: If your vanguard is a grade 3 "Revenger, Raging Form Dragon" with 
 
 AUTO [VC] Limit Break 4: At the end of the battle this unit attacked, if you have a heart card with "Raging" in its card name, COST [Counter Blast 1 & Soul Blast 1 & retire two rear-guards, and discard two grade 3 <Abyss Dragon> from hand], put this unit into G zone face up, choose up to one face down "True Revenger, Raging Rapt Dragon" from your G zone, Stride it on VC as stand, and it gets drive -1 until end of turn.
 
-(SHIFT + left click to create Force gifts and crest)'
+(SHIFT + left click to create Force gifts and crest)
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
+global.AnotherSide[CardStat] = 12591
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0

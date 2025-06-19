@@ -1795,12 +1795,15 @@ CardStat = 9650
 global.CardName[CardStat] = 'Aiding Monster, Tectien'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: You can only run this card if you do not have Aux Machine Monster, Savoied in your deck.)
+
 AUTO: When this card is discarded from your hand during your turn, look at five cards from the top of your deck, choose up to one Set Order from among them, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9651
@@ -1923,7 +1926,7 @@ CardStat = 9734
 global.CardName[CardStat] = 'AiD 9-V'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [RC]: When this unit boosts, if your Order Zone has two or more cards, COST [Counter Blast 1], this unit gets power +10000 until end of battle. (Including your opponent’s cards)'
+AUTO [RC]: When this unit boosts, if your Order Zone has two or more cards, COST [Counter Blast 1], this unit gets power +10000 until end of that battle. (Including your opponent’s cards)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -3366,7 +3369,7 @@ global.CardText[CardStat] = 'Brandt Gate/Link Joker/Messiah
 
 (PREMIUM EN: You can only run this card if you do not have G Alter Ego Messiah and D Alter Ego Messiah in your deck.)
 
-AUTO: When this unit is placed by riding from "Neon Messiah", draw a card, and you get a "Alter Ego Messiah" crest.
+AUTO: When this unit is placed by riding from "Neon Messiah", draw a card, and you get an "Alter Ego Messiah" crest.
 
 (You will be prompted to get the crest upon ride.)
 
@@ -4726,6 +4729,8 @@ CardStat = 11891
 global.CardName[CardStat] = 'Aux Machine Monster, Savoied'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: You can only run this card if you do not have Aiding Monster, Tectien in your deck.)
+
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Monster" in its card name, COST [Soul Blast 2], call this card to RC, and this unit gets power +5000 until end of turn.
 
 AUTO: When this unit is placed on RC, if your order zone has two or more Research cards, choose up to one of your unit cards without the sentinel ability from your order zone, and you may put it into hand. If you put a card, choose a card from your hand, and discard it.'
@@ -4734,6 +4739,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 11905
@@ -4988,7 +4994,7 @@ CardStat = 12173
 global.CardName[CardStat] = 'Prelude of Genesis'
 global.CardText[CardStat] = 'Brandt Gate/Normal Order
 
-Play this with COST [Counter Blast 1] if you have a "Alter Ego Messiah" crest!
+Play this with COST [Counter Blast 1] if you have an "Alter Ego Messiah" crest!
 
 Choose a unit card from your drop with "Messiah" in its card name, call it to RC, choose one of your opponent’s rear-guards, and lock it.
 
@@ -6878,6 +6884,8 @@ CardStat = 13341
 global.CardName[CardStat] = 'Lightning Heat Monster, Moeflash'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: Limited to 1.)
+
 ACT [RC]: If you have a grade 3 or greater vanguard with "Eledglema" in its card name, COST [retire this unit & reveal three or more different set orders from hand], and put all of the set orders revealed for this cost into the order zone. If you put the revealed orders, draw a card.
 
 (You can reveal set orders with the same name, so long as there are at least 3 different names among the cards revealed)'
@@ -6886,6 +6894,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13353
@@ -7364,9 +7373,12 @@ AUTO: When this card is placed on RC from hand other than by a unit card’s abili
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
 
-(SHIFT + left click to get a Persona Shield ticket)'
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
+global.AnotherSide[CardStat] = 13708
 global.TokenSummoner[CardStat] = 13708
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1

@@ -308,7 +308,7 @@ CONT [VC]: During your turn, if the number of «Bermuda Triangle» rear-guards you
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, draw a card, choose a card from your hand, and put it on the bottom of your deck.
 
-AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck up to three «Bermuda Triangle», call them to separate RC, and shuffle your deck.'
+AUTO [VC/RC]: [Soul Blast 8 & Counter Blast 5] When this unit’s attack hits a vanguard, you may pay the cost. If you do, search your deck for up to three «Bermuda Triangle», call them to separate RC, and shuffle your deck.'
 }
 
 
@@ -457,7 +457,7 @@ CardStat = 1240
 global.CardName[CardStat] = 'Costume Change, Alk'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Bermuda Triangle» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -470,7 +470,7 @@ CardStat = 1241
 global.CardName[CardStat] = 'PR<3ISM-Smile, Coro'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: When another of your «Bermuda Triangle» is returned to your hand from RC, you may return this card to your hand.'
 global.UnitGrade[CardStat] = 0
@@ -1500,7 +1500,7 @@ CardStat = 3010
 global.CardName[CardStat] = 'PR<3ISM-Promise, Princess Leyte'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO: When this unit is returned to your hand from RC, if you have a vanguard with "PR<3ISM" in its card name, Counter Charge 1 / Soul Charge 1, choose one of your other units, it gets power +4000 until end of turn, and you cannot normal call "PR<3ISM-Promise, Princess Leyte" for the rest of that turn. (You may call this card by the effects of cards.)'
+AUTO: When this unit is returned to your hand from RC, if you have a vanguard with "PR<3ISM" in its card name, Counter Charge 1 / Soul Charge 1, choose one of your other units, it gets power +4000 until end of turn, and until end of turn, you cannot normal call "PR<3ISM-Promise, Princess Leyte". (It can be called by card effects.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1549,7 +1549,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT: Sentinel
 
-AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has a "Image Master, Kukuri", Counter Charge 1.'
+AUTO: When this unit is placed on GC from hand, COST [discard a card from hand], choose one of your vanguards being attacked, and it cannot be hit until end of that battle. If your drop has an "Image Master, Kukuri", Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -6110,7 +6110,7 @@ CardStat = 8080
 global.CardName[CardStat] = 'Gleeful Mode, Tavia'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When placed, if you have "Bermuda Triangle Cadet, Riviere" in your soul, look at five cards from the top of your deck, put up to one card from among them on the top of your deck, and put the rest on the bottom of your deck in any order. (If there is an ability when rode upon, activate their abilities in any order you wish.)
+AUTO [VC]: When placed, if you have "Bermuda Triangle Cadet, Riviere" in your soul, look at five cards from the top of your deck, put up to one card from among them on the top of your deck, and put the rest on the bottom of your deck in any order. (You can activate in any order with "when rode upon" abilities.)
 
 AUTO [RC]: When your vanguard with "Riviere" in its card name is placed during the battle phase, COST [Soul Blast 1], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -7013,7 +7013,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Lauris" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
 }
@@ -7029,7 +7029,7 @@ CardStat = 11169
 global.CardName[CardStat] = 'Chouchou, Milena  '
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
 }

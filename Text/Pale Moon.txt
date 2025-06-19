@@ -516,7 +516,7 @@ CardStat = 1015
 global.CardName[CardStat] = 'Magical Partner'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Nightmare Summoner, Raqiel", you may pay the cost. If you do, the boosted unit gets power +5000 until end of battle.'
+AUTO [RC]: [Soul Blast 1] When this unit boosts a unit named "Nightmare Summoner, Raqiel", you may pay the cost. If you do, the boosted unit gets power +5000 until end of that battle.'
 }
 
 
@@ -545,7 +545,7 @@ CardStat = 1018
 global.CardName[CardStat] = 'Nightmare Summoner, Raqiel'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of battle.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
 AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose a «Pale Moon» from your soul, and call it to RC.'
 }
@@ -3844,6 +3844,7 @@ AUTO: When this unit is placed on VC, COST [Counter Blast 1], and Soul Charge 3.
 
 CONT [RC]: If you called two or more cards from soul this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
+global.UnitGradeIncrementInDeck[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 9000
@@ -3896,7 +3897,7 @@ global.CardText[CardStat] = 'Pale Moon/Succubus/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Harri" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }
@@ -3912,7 +3913,7 @@ CardStat = 11166
 global.CardName[CardStat] = 'Hopping Balloon  '
 global.CardText[CardStat] = 'Pale Moon/Human/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 18
 }

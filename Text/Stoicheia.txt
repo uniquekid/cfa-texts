@@ -809,20 +809,24 @@ CardStat = 8674
 global.CardName[CardStat] = 'Sleeve Tuggling Belle'
 global.CardText[CardStat] = 'Stoicheia/Ghost
 
+(STANDARD JP: Banned.)
+
 AUTO: When this unit is placed on RC, you may put all cards from your bind zone into the drop. If you do, this unit gets power +5000 until end of turn for each card put.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 5000
+global.CardBanned[CardStat] = 1
 
 
+//Errata'd
 CardStat = 8675
 {
 global.CardName[CardStat] = 'Nectar of Sensationalism'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
-Choose one of your rear-guards, until end of turn, it gets power +5000 for every five cards in your drop, and if your drop has fifteen or more cards, it gets critical +1.'
+Choose a grade 3 card with "Zorga" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Zorga" in its card name, choose one of your rear-guards, until end of turn, it gets power +5000 for every five cards in your drop, and if your drop has fifteen or more cards, it gets critical +1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -890,7 +894,7 @@ CardStat = 8680
 global.CardName[CardStat] = 'Promised Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO [RC]: When this unit attacks, COST [Soul Blast 2], this unit gets power +5000 until end of battle for each of your other rear-guards.'
+AUTO [RC]: When this unit attacks, COST [Soul Blast 2], this unit gets power +5000 until end of that battle for each of your other rear-guards.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -903,7 +907,7 @@ CardStat = 8681
 global.CardName[CardStat] = 'Sylvan Horned Beast, Tealuf'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-CONT: This card cannot be ridden, called or moved to the front row.'
+CONT: This card cannot be rode, called, nor moved to the front row.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1147,7 +1151,7 @@ CardStat = 9102
 global.CardName[CardStat] = 'High Rate Burst Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO: When this unit is placed on RC, if your vanguard is "Flagship Dragon, Flagburg Dragon", choose one of your other rear-guards, and it gets "AUTO [RC]: When this unit attacks, if it is the first battle of this turn, COST [Counter Blast 1 & Soul Blast 1], and stand this unit." until end of turn.'
+AUTO: When this unit is placed on RC, if your vanguard is "Flagship Dragon, Flagburg Dragon", choose one of your other rear-guards, and until end of turn, that unit gets "AUTO [RC]: When this unit attacks, if it is the first battle of this turn, COST [Counter Blast 1 & Soul Blast 1], and stand this unit.".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1433,6 +1437,7 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
 
+//Errata'd
 CardStat = 9365
 {
 global.CardName[CardStat] = 'Gather Upon Me, Ye Wandering Souls'
@@ -1440,7 +1445,7 @@ global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [discard an Order card from your hand] !
 
-Choose one of your vanguards, and it gets drive +1 until end of turn.'
+Choose a grade 3 card with "Zorga" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Zorga" in its card name, choose one of your vanguards, and it gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -2515,7 +2520,7 @@ CardStat = 10190
 global.CardName[CardStat] = 'Congratulatory Performance, Sucuse'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO [RC]: When this unit boosts a vanguard, COST [Soul Blast 1], choose one of your opponent’s grade 2 or greater rear-guards not being attacked, move it to GC, and if it could not be moved, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When this unit boosts a vanguard, COST [Soul Blast 1], choose one of your opponent’s grade 2 or greater rear-guards not being attacked, move it to GC, and if it cannot be moved, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -2608,7 +2613,7 @@ global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with "Magnolia" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
 
-CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride increases the power of your back row units as well.'
+CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -7095,10 +7100,13 @@ global.CardText[CardStat] = 'Stoicheia/Granblue/Ghost
 
 AUTO: When this unit is placed by riding from "Undying Departed, Grenache", draw a card, and you get a "Vampire Princess of Night Fog, Nightrose" crest.
 
-(You will be prompted to get the crest upon ride.)'
+(You will be prompted to get the crest upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 8
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 13177
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7117,7 +7125,7 @@ AUTO: Hollow (When this unit is placed on RC, you may have it become hollowed. I
 
 AUTO: When this unit is rode upon by a grade 3 with "Nightrose" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to two normal units without Sentinel from among them, reveal them, choose one of the revealed cards, put it into your hand, discard the rest of the revealed cards, and shuffle your deck.
 
-AUTO [RC]: When this unit attacks, if this unit is hollowed, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When this unit attacks, if this unit is hollowed, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 8
 global.DCards[CardStat] = 4
@@ -8244,9 +8252,12 @@ AUTO: When this card is placed on RC from hand other than by a unit card’s abili
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
 
-(SHIFT + left click to get a Persona Shield ticket)'
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 13708
 global.TokenSummoner[CardStat] = 13708
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1

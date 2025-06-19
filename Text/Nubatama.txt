@@ -938,7 +938,7 @@ CardStat = 4838
 global.CardName[CardStat] = 'Stealth Beast, Uzuitachi'
 global.CardText[CardStat] = 'Nubatama/Warbeast
 
-AUTO [RC] Generation Break 1: [Retire this unit] When a dominated units attack hits during your turn, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and discards it.'
+AUTO [RC] Generation Break 1: [Retire this unit] When a dominated unit’s attack hits during your turn, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and discards it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 23
 }
@@ -2113,11 +2113,14 @@ global.CardText[CardStat] = 'Nubatama/Warbeast
 
 ACT [RC]: COST [Soul Blast 1 & return this unit to your hand], and call an Evil Decoy Token to RC. (Evil Decoy Tokens are grade 0 / shield 5000 and have intercept.)
 
-AUTO [RC]: When it is attacked, you may change the attack target to one of your Evil Decoy Tokens on RC. If you do, return this unit to your hand.
+AUTO [RC]: When it is attacked, you may change that attack’s target to one of your RC tokens. If you do, return this unit to your hand.
 
-(SHIFT + left click to call Evil Decoy Token.)'
+(SHIFT + left click to call Evil Decoy Token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.GreenTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
@@ -2159,9 +2162,12 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 ACT [RC]: COST [Soul Blast 2 & Return this unit to your hand], and call up to two evil decoy tokens to RC. (Evil decoys are grade 0 / shield 5000 and have intercept.)
 
-(SHIFT + left click to call Evil Decoy Tokens.)'
+(SHIFT + left click to call Evil Decoy Tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.PowerStat[CardStat] = 8000
 global.TokenSummoner[CardStat] = 7069
@@ -2225,9 +2231,12 @@ ACT [VC/RC]: COST [Counter Blast 1], call an evil decoy token to RC, and until e
 
 AUTO [RC]: When it is attacked, you may change the attack target to one of your tokens on RC. If you do, return this unit to your hand.
 
-(SHIFT + left click to call Evil Decoy Token.)'
+(SHIFT + left click to call Evil Decoy Token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.PowerStat[CardStat] = 9000
 global.TokenSummoner[CardStat] = 7069
@@ -2264,7 +2273,7 @@ CardStat = 7115
 global.CardName[CardStat] = 'Shura Stealth Dragon, Fuzencongo'
 global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
-AUTO [VC/RC]: When it attacks, if your damage zone has five cards, COST [Soul Blast 1 grade 3], bind any number of cards from the drop zone, until end of that battle, this unit gets power +5000 for each card in your bind zone, and your opponent cannot call sentinels from his or her hand.'
+AUTO [VC/RC]: When it attacks, if your damage zone has five cards, COST [Soul Blast 1 grade 3], bind any number of cards from your drop zone, until end of that battle, this unit gets power +5000 for each card in your bind zone, and your opponent cannot call sentinels from his or her hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
 }
@@ -2737,13 +2746,16 @@ CardStat = 8205
 global.CardName[CardStat] = 'Evil Stealth Dragon Tasogare, Hanzo'
 global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
-AUTO [Hand]: At the beginning of your opponent’s turn, if your vanguard is "Evil Stealth Dragon Akatsuki, Hanzo", COST [discard two cards from your hand], ride this card as rest, and all of your rear-guards get shield +5000 until end of turn. At the end of that turn, ride a "Evil Stealth Dragon Akatsuki, Hanzo" from your soul as rest.
+AUTO [Hand]: At the beginning of your opponent’s turn, if your vanguard is "Evil Stealth Dragon Akatsuki, Hanzo", COST [discard two cards from your hand], ride this card as rest, and all of your rear-guards get shield +5000 until end of turn. At the end of that turn, ride an "Evil Stealth Dragon Akatsuki, Hanzo" from your soul as rest.
 
 AUTO [Soul]: When your vanguard with "Hanzo" in its card name attacks, COST [retire a grade 0], call this card to RC, and until end of turn, this unit gets power +20000 and can attack from the back row. At the end of that turn, put this unit into your soul. If you put it into your soul, call an Evil Decoy token to RC.
 
-(SHIFT + left click to call Evil Decoy Token.)'
+(SHIFT + left click to call Evil Decoy Token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.GreenTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 12000
@@ -2762,9 +2774,12 @@ CONT [RC]: During your turn, this unit gets power +5000 for each of your grade 0
 
 AUTO [VC/RC]: When it attacks, COST [Counter Blast 1 & return another rear-guard to your hand], and call up to two Evil Decoy tokens to RC.
 
-(SHIFT + left click to call Evil Decoy Tokens.)'
+(SHIFT + left click to call Evil Decoy Tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
@@ -2779,9 +2794,12 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 ACT [RC]: COST [Retire this unit], call up to two Evil Decoy tokens to RC, then if you have a vanguard with "Hanzo" in its card name, COST [put a card from your hand into your soul], search your deck for up to one card with "Hanzo" in its card name, reveal it and put it into your hand, and shuffle your deck. This ability may only be used by a card with the same card name once a turn.
 
-(SHIFT + left click to call Evil Decoy Tokens.)'
+(SHIFT + left click to call Evil Decoy Tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
@@ -2875,9 +2893,12 @@ AUTO [Drop]: When your grade 3 vanguard is placed, COST [Counter Blast 1], put t
 
 AUTO: When this unit is returned to hand from RC by your card’s ability, COST [Soul Blast 1], and call up to two Evil Decoy tokens to open RC.
 
-(SHIFT + left click to call Evil Decoy Token.)'
+(SHIFT + left click to call Evil Decoy Token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 global.TokenSummoner[CardStat] = 7069
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
@@ -3008,9 +3029,12 @@ CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and you have three
 
 AUTO [VC]: When your rear-guard is returned to your hand by your card’s ability, call up to one Evil Decoy token to an open RC, COST [Counter Blast 1], get an Imaginary Gift:Protect, and put it on that circle. (You do not put if you chose Protect 1)
 
-(SHIFT + left click to call Evil Decoy Token or create a Protect gift.)'
+(SHIFT + left click to call Evil Decoy Token or create a Protect gift.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
+global.AnotherSide[CardStat] = 7069
 global.TokenSummoner[CardStat] = 7069
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
@@ -3040,7 +3064,7 @@ CardStat = 11019
 global.CardName[CardStat] = 'Stealth Fiend, Quesera Basara  '
 global.CardText[CardStat] = 'Nubatama/Ghost/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 23
 }
@@ -3081,7 +3105,7 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Shiranui" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 23
 }

@@ -895,7 +895,7 @@ CardStat = 1380
 global.CardName[CardStat] = 'Demonic Dragon Mage, Deva'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO: Forerunner (When another unit from the same clan rides this unit, you may call it to RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a «Kagero» with Limit Break 4, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -971,7 +971,7 @@ CardStat = 1681
 global.CardName[CardStat] = 'Dragon Knight, Ashgar'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC]: When this unit boosts a unit named "Transcendence Dragon, Dragonic Nouvelle Vague", the boosted unit gets power +3000 until end of battle.'
+AUTO [RC]: When this unit boosts a unit named "Transcendence Dragon, Dragonic Nouvelle Vague", the boosted unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -1115,7 +1115,7 @@ CardStat = 1767
 global.CardName[CardStat] = 'Vorpal Cannon Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of battle.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
 AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose one of your opponent’s grade 2 or less rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
@@ -1399,7 +1399,7 @@ global.CardText[CardStat] = 'Kagero/Human
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have an «Kegero» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Kagero» to GC at rest, and put the rest into your drop zone.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Kegero» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Kagero» to GC at rest from among them, and put the rest into your drop zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -1548,7 +1548,7 @@ ACT [VC]: Legion 20000 "Perdition Dragon, Menace Laser Dragon" (If your opponent
 
 AUTO [VC]: [Counter Blast 1] When this card Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
 
-AUTO [VC]: [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +3000 until end of battle.'
+AUTO [VC]: [Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -1609,7 +1609,7 @@ ACT [VC]: Legion 20000 "Perdition Dragon Knight, Nazel" (If your opponent’s vang
 
 AUTO [VC]: [Counter Blast 1] When this unit’s drive check reveals a card with the same card name as a unit on your VC, if this unit is Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guard, and retire all of your opponent’s rear-guards in the same column as that unit.
 
-AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of battle.'
+AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -2013,7 +2013,7 @@ CardStat = 2456
 global.CardName[CardStat] = 'Perdition Berserker, Preta'
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: When your opponent’s rear-guard in the same column as this unit is put into the drop zone due to an effect from one of your cards, if you have a vanguard with "Perdition" in its card name, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC from among them, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2024,7 +2024,7 @@ CardStat = 2497
 global.CardName[CardStat] = 'Divine Dragon Knight, Mahmud'
 global.CardText[CardStat] = 'Kagero/Human
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 4
@@ -2120,7 +2120,7 @@ CardStat = 2572
 global.CardName[CardStat] = 'Flame Emperor Dragon King, Root Flare Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC]: [Choose a face down card named "Flame Emperor Dragon King, Root Flare Dragon" from your G Zone, and turn it face up] If the number of face up cards in your G Zone is two or more, choose one of your opponent’s rear-guards, and retire all of your opponent’s rear-guards in the same column as that unit. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 4
@@ -2180,7 +2180,7 @@ CardStat = 2577
 global.CardName[CardStat] = 'Dragon Knight, Jabad'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2215,7 +2215,7 @@ CardStat = 2580
 global.CardName[CardStat] = 'Dragon Knight, Monireth'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of battle.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -2292,7 +2292,7 @@ CardStat = 2846
 global.CardName[CardStat] = 'Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC]: [Counter Blast 2 & Choose a face down card named "Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"" from your G zone, and turn it face up] If the number of face up cards in your G zone is two or more, until end of turn, this unit gets drive -1 and "AUTO [VC] 1/Turn: [Choose a card from your hand, and discard it & Choose a card with "Overlord" in its card name from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets power +5000 until end of turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn)".'
 global.UnitGrade[CardStat] = 4
@@ -2306,7 +2306,7 @@ CardStat = 2847
 global.CardName[CardStat] = 'Divine Dragon Knight, Mustafa'
 global.CardText[CardStat] = 'Kagero/Human
 
-Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this face down card on your VC.
+Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
 ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone, and turn it face up] Choose one of your opponent’s rear-guards, retire it, choose one of your units for each face up card named "Divine Dragon Knight, Mustafa" in your G zone, and until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, choose a card from your damage zone, and turn it face up. (Counter Charge 1)".'
 global.UnitGrade[CardStat] = 4
@@ -3391,7 +3391,7 @@ global.CardText[CardStat] = 'Kagero/Dragonman
 
 AUTO: Forerunner.
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul & Choose a card with "Overlord" in its card name from your hand, and reveal it] Look at seven from the top of your deck, reveal up to one card with "Overlord" in its card name from among them, put it into your hand, and shuffle your deck. If you could not put a card, Soul Charge 1.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul & Choose a card with "Overlord" in its card name from your hand, and reveal it] Look at seven from the top of your deck, reveal up to one card with "Overlord" in its card name from among them, put it into your hand, and shuffle your deck. If you did not put, Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -4371,9 +4371,12 @@ CONT [VC]: If your opponent has no rear-guards, this unit gets power +5000 / cri
 
 ACT [VC] 1/Turn: If "Wyvern Strike, Doha" and "Wyvern Strike, Garan" are on your RC, COST [Soul Blast 1 grade 3 & discard two cards from your hand], retire all of your opponent’s rear-guards, call a Vision token to RC, and at the end of that turn, retire it. (Vision are grade 3 / power 13000 / critical 1, and can twin drive.)
 
-(SHIFT + left click to call a token.)'
+(SHIFT + left click to call a token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
+global.AnotherSide[CardStat] = 6675
 }
 global.PowerStat[CardStat] = 13000
 global.BlueTokenAdd[CardStat] = 1
@@ -4703,9 +4706,12 @@ CONT [VC]: During your turn, if your opponent has no rear-guards, this unit and 
 
 ACT [VC] 1/Turn: COST [Discard two cards from your hand], call a Vision token to RC, and at the end of that turn, retire that token. If "Wyvern Strike, Doha" and "Wyvern Strike, Garan" on your RC, retire all of your opponent’s rear-guards. (Vision are grade 3 / power 13000 / critical 1, and can twin drive.)
 
-(SHIFT + left click to call a token.)'
+(SHIFT + left click to call a token.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
+global.AnotherSide[CardStat] = 6675
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -5399,7 +5405,7 @@ global.CardText[CardStat] = 'Kagero/Human/Critical Trigger
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Dragonic Blademaster" in its card name attacks, COST [put this unit into soul], draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.
 
-AUTO: When this card is revealed during your damage check, draw a card.'
+AUTO: When this card is revealed for a damage check, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -5415,7 +5421,7 @@ CardStat = 11157
 global.CardName[CardStat] = 'Dragon Dancer, Tara  '
 global.CardText[CardStat] = 'Kagero/Human/Heal Trigger
 
-AUTO: When this card is discarded for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
+AUTO: When this card is discarded from hand for the cost of calling a G guardian, COST [bind this card & bind another heal trigger from drop], and Counter Charge 1 or Soul Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }

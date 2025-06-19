@@ -117,7 +117,7 @@ CardStat = 8238
 global.CardName[CardStat] = 'Dragon Deity King of Resurgence, Dragveda'
 global.CardText[CardStat] = 'Dragon Empire/Plasma Dragon/Over Trigger
 
-(STANDARD JP & EN: You can only run this card if you do not have D Demon Stealth Dragon, Shiranui "Oboro" in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have D Demon Stealth Dragon, Shiranui "Oboro" or Sealed Blaze of Arbitration, Bavsargra Aksayya in your deck.)
 
 (You may only have one over trigger in a deck. When revealed as a trigger, remove that card, draw a card, choose one of your units, and it gets power +100 Million until end of turn! If revealed during drive check, activate its additional effect!)
 
@@ -3915,6 +3915,8 @@ CardStat = 11025
 global.CardName[CardStat] = 'Defensing Roar'
 global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
+(STANDARD JP: Limited to 1.)
+
 Choose one of your guardians without sentinel, and until end of that battle, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -3922,6 +3924,7 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 10000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 11037
@@ -8021,9 +8024,12 @@ AUTO: When this card is placed on RC from hand other than by a unit card’s abili
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
 
-(SHIFT + left click to get a Persona Shield ticket)'
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
+global.AnotherSide[CardStat] = 13708
 global.TokenSummoner[CardStat] = 13708
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
@@ -8249,12 +8255,11 @@ CardStat = 13791
 global.CardName[CardStat] = 'Sealed Blaze of Arbitration, Bavsargra Aksayya'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
+(STANDARD JP: You can only run this card if you do not have a Dragon Deity King of Resurgence, Dragveda in your deck.)
+
 CONT [VC]: This unit is also regarded as "Sealed Blaze Maiden, Bavsargra".
-
 ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose an Arms card from your drop, and arm it to this unit.
-
 ACT [VC] 1/Turn: If this unit is armed with two or more cards, COST [Soul Blast 2], retire all of your opponent’s front row rear-guards, and this unit gets critical +1 until end of turn. If you did not retire any cards, draw a card.
-
 AUTO [VC] 1/Turn: When this unit is armed, Energy Charge 1, choose up to one grade 1 or less card from your drop, and call it to RC. If you chose a card with "Vairlord" in its card name, you may overDress it on a "Trickmoon" on your RC instead of calling it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
@@ -8262,6 +8267,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13792
@@ -9063,4 +9069,108 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14180
+{
+global.CardName[CardStat] = 'Scorching Cannon Dragon, Dinobelm'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Gargrex" in its card name attacks, if you did not stand by a card’s ability this turn, COST [Energy Blast 3], stand this unit, and it gets power +5000 until end of turn, and at the end of that turn, retire this unit.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14181
+{
+global.CardName[CardStat] = 'Baby Dragon, Gargrex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14182
+{
+global.CardName[CardStat] = 'Forge Claw Dragon, Gargrex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is rode upon by "Forge Arm Dragon, Gargrex", look at the top five cards of your deck, choose up to one <Dinodragon> from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this card is either discarded from hand during your turn or retired from RC by a card’s ability during your turn, if your vanguard is a <Dinodragon>, put this card into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14183
+{
+global.CardName[CardStat] = 'Forge Arm Dragon, Gargrex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is rode upon by "Forge Emperor Dragon, Gargrex", COST [Energy Blast 3], look at the top seven cards of your deck, choose up to two <Dinodragon> with different card names from among them, reveal them, choose one of the revealed cards, put it into hand, and discard the rest of the revealed cards, and shuffle the deck.
+
+ACT [Drop]: If your vanguard is a grade 3 <Dinodragon>, COST [Energy Blast 3], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14184
+{
+global.CardName[CardStat] = 'Forge Emperor Dragon, Gargrex'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+CONT [VC]: During your turn, all of your front row <Dinodragon> rear-guards get power +5000.
+
+ACT [VC] 1/Turn: [Discard a card from your hand], choose up to two <Dinodragon> with different card names from your drop, and call them to RC. If you discarded a <Dinodragon> for this cost, choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], if you have <Dinodragon> rear-guards with two or more different card names, this unit gets power +10000 until end of battle, if you have three or more different card names, this unit gets drive +1 until end of battle, and if you have five or more different card names and you persona rode this turn, it also gets critical +1 until end of battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14185
+{
+global.CardName[CardStat] = 'Burst Fire Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater <Dinodragon> vanguard, this unit gets power +5000 until end of battle, and at the end of that battle, retire this unit, and draw a card. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14186
+{
+global.CardName[CardStat] = 'Festival Gun Dragon, Dinofest'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, and your opponent has no rear-guards in the same column as this unit, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have more rear-guards than your opponent or your opponent’s rear-guard was retired this turn, COST [bind this unit], look at the top five cards of your deck, chose up to one grade 2 or greater unit card or up to one <Dinodragon> normal unit without sentinel with a different card name from this card from among them, reveal it and put it into hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
