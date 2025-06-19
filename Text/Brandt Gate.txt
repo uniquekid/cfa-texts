@@ -1795,12 +1795,15 @@ CardStat = 9650
 global.CardName[CardStat] = 'Aiding Monster, Tectien'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: You can only run this card if you do not have Aux Machine Monster, Savoied in your deck.)
+
 AUTO: When this card is discarded from your hand during your turn, look at five cards from the top of your deck, choose up to one Set Order from among them, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9651
@@ -4726,6 +4729,8 @@ CardStat = 11891
 global.CardName[CardStat] = 'Aux Machine Monster, Savoied'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: You can only run this card if you do not have Aiding Monster, Tectien in your deck.)
+
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Monster" in its card name, COST [Soul Blast 2], call this card to RC, and this unit gets power +5000 until end of turn.
 
 AUTO: When this unit is placed on RC, if your order zone has two or more Research cards, choose up to one of your unit cards without the sentinel ability from your order zone, and you may put it into hand. If you put a card, choose a card from your hand, and discard it.'
@@ -4734,6 +4739,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 11905
@@ -6878,6 +6884,8 @@ CardStat = 13341
 global.CardName[CardStat] = 'Lightning Heat Monster, Moeflash'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
+(STANDARD JP: Limited to 1.)
+
 ACT [RC]: If you have a grade 3 or greater vanguard with "Eledglema" in its card name, COST [retire this unit & reveal three or more different set orders from hand], and put all of the set orders revealed for this cost into the order zone. If you put the revealed orders, draw a card.
 
 (You can reveal set orders with the same name, so long as there are at least 3 different names among the cards revealed)'
@@ -6886,6 +6894,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13353
