@@ -165,7 +165,7 @@ CardStat = 3124
 global.CardName[CardStat] = 'Dark Elemental, Doxic'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-ACT [RC] 1/Turn: Choose one of your vanguard’s "Limit Break 5" ability, and while this unit is on the field, that ability becomes "Limit Break 4". (If an ACT has no cost, the cost is paid when declaring that you are playing it.)
+ACT [RC] 1/Turn: Choose one of your vanguard’s "Limit Break 5" abilities, and it becomes "Limit Break 4" as long as this unit is on the field. (If an ACT has no cost, the cost is paid when declaring that you are playing it.)
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
@@ -191,7 +191,7 @@ CardStat = 3425
 global.CardName[CardStat] = 'Heat Elemental, Juge'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO: When this unit is placed on GC, if it is during the battle in which your opponent’s grade 2 vanguard attacks, choose one of your units that is being attacked, and that unit cannot be hit until end of that battle.
+AUTO: When this unit is placed on GC, if it is during the battle in which your opponent’s grade 2 vanguard attacked, choose one of your units that is being attacked, and that unit cannot be hit until end of that battle.
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
@@ -292,7 +292,7 @@ CardStat = 3881
 global.CardName[CardStat] = 'Snow Elemental, Hyakko'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-ACT [RC] Generation Break 1: [Choose two of your "Snow Elemental, Hyakko" on RC, and bind it face up] Choose one of your vanguards abilities with cost of "Counter Blast 4" or greater and "Soul Blast 6" or greater, and until end of turn, that ability’s cost becomes [0] until the next time it is paid. (A 0 cost is paid by declaring that you are paying it.)
+ACT [RC] Generation Break 1: [Choose two of your units named "Snow Elemental, Hyakko" on RC, and bind it face up] Choose one of your vanguard’s abilities with cost of "Counter Blast 4" or more and "Soul Blast 6" or more, and until end of turn, that cost becomes [0] until the next time it is paid. (A 0 cost is paid by declaring that you are paying it.)
 
 CONT: This card is from all clans and nations.'
 global.UnitGrade[CardStat] = 1
@@ -553,9 +553,9 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 Stride.
 
-CONT [VC/G zone]: During your turn, if this card is face up, all of your units with no CONT, ACT, or AUTO abilities get power +5000.
+CONT [VC/G zone]: During your turn, if this card is face up, all of your units without any CONT, ACT, or AUTO abilities get power +5000.
 
-AUTO [VC]: When your drive check reveals a normal unit with no CONT, ACT, or AUTO abilities during the battle this unit attacked, stand one of your rear-guards.'
+AUTO [VC]: When a normal unit without any CONT, ACT, or AUTO abilities is revealed for the drive check in the battle this unit attacked, stand one of your rear-guards.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 25
 global.ExtraDeck[CardStat] = 1
@@ -578,7 +578,7 @@ CardStat = 7561
 global.CardName[CardStat] = 'Cloud Elemental, Mowark'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-ACT [VC/RC] 1/Turn: If you have four or more units without any CONT, ACT, and AUTO abilities, COST [Counter Blast 1], search your deck for up to one "Thunder Elemental, Barigiran", ride it as stand, and shuffle your deck. If you rode, you may turn a "Storm Element, Cycloned" from your G zone face up.'
+ACT [VC/RC] 1/Turn: If you have four or more units without any CONT, ACT, or AUTO abilities, COST [Counter Blast 1], search your deck for up to one "Thunder Elemental, Barigiran", ride it as stand, and shuffle your deck. If you rode, you may turn a "Storm Element, Cycloned" from your G zone face up.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 25
 }
@@ -590,9 +590,9 @@ CardStat = 7562
 global.CardName[CardStat] = 'Thunder Elemental, Barigiran'
 global.CardText[CardStat] = 'Cray Elemental/Elemental
 
-AUTO [VC]: When placed, COST [Soul Blast 1], look at seven cards from the top of your deck, reveal up to two unit cards without any CONT, ACT, and AUTO abilities from among them, put them into your hand, and shuffle your deck.
+AUTO [VC]: When placed, COST [Soul Blast 1], look at seven cards from the top of your deck, reveal up to two unit cards without any CONT, ACT, or AUTO abilities from among them, put them into your hand, and shuffle your deck.
 
-ACT [VC]: If you have four or more rear-guards without any CONT, ACT, and AUTO abilities, COST [Counter Blast 1], and Stride a face up "Storm Element, Cycloned" from your G zone on your VC.'
+ACT [VC]: If you have four or more rear-guards without any CONT, ACT, or AUTO abilities, COST [Counter Blast 1], and Stride a face up "Storm Element, Cycloned" from your G zone on your VC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 25
 }
@@ -606,7 +606,7 @@ global.CardText[CardStat] = 'Cray Elemental/Elemental
 
 (PREMIUM JP & EN & TH: Banned.)
 
-AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to two unit cards without any CONT, ACT, and AUTO abilities from your hand to RC. If you called two cards, turn up to one face down "Storm Element, Cycloned" from your G zone face up, and draw two cards.'
+AUTO [VC/RC]: When placed, COST [Soul Blast 1], and call up to two unit cards without any CONT, ACT, or AUTO abilities from your hand to RC. If you called two cards, turn up to one face down "Storm Element, Cycloned" from your G zone face up, and draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 25
 }

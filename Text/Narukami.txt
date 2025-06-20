@@ -3435,7 +3435,7 @@ CardStat = 6299
 global.CardName[CardStat] = 'Dusty Plasma Dragon '
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard is bound during your turn, you may give two of your rear-guards in the same column as this unit power +5000 until end of turn.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard is bound during your turn, you may have two of your rear-guards in the same column as this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -3985,7 +3985,7 @@ CardStat = 6894
 global.CardName[CardStat] = 'Turning Bash Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO [RC]: When it attacks, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your opponent’s rear-guards in the front row, and bind it.'
+AUTO [RC]: When it attacks, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, and bind it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -4023,7 +4023,7 @@ CardStat = 6897
 global.CardName[CardStat] = 'Djinn of Hundred Thunderclaps'
 global.CardText[CardStat] = 'Narukami/Demon
 
-CONT [RC]: During your turn, if the number of cards in your opponent’s damage zone is four or more, this unit gets power +10000.'
+CONT [RC]: During your turn, if your opponent’s damage zone has four or more cards, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -4059,7 +4059,7 @@ CardStat = 7263
 global.CardName[CardStat] = 'Thunder-lead Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-ACT [RC]: COST [Counter Blast 2], choose a rear-guard in your opponent’s front row, bind it, this unit gets power +5000 until end of turn.'
+ACT [RC]: COST [Counter Blast 2], choose one of your opponent’s front row rear-guards, bind it, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -4095,9 +4095,9 @@ CardStat = 7282
 global.CardName[CardStat] = 'Voltage Horn Dragon '
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-CONT [VC/RC]: During your turn, if any card was bound this turn, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if any player’s card was bound this turn, this unit gets power +5000.
 
-AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], choose a column, choose one of your opponent’s front row rear-guards in that column, bind it, choose up to one of your opponent’s back row rear-guards in that column, and move it to an open RC in the same column.'
+AUTO [RC]: When it attacks a vanguard, COST [Counter Blast 1], choose a column, choose one of your opponent’s rear-guards in that front row, bind it, choose up to one of your opponent’s rear-guard in that back row, and move it to an open RC in the same column.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -4166,7 +4166,7 @@ CardStat = 7287
 global.CardName[CardStat] = 'Spinous Blader Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-CONT [RC]: During your turn, if any card was bound this turn, this unit gets power +10000.'
+CONT [RC]: During your turn, if any player’s card was bound this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -4192,9 +4192,9 @@ CardStat = 7289
 global.CardName[CardStat] = 'Mighty Bolt Dragoon '
 global.CardText[CardStat] = 'Narukami/Human
 
-CONT [RC]: During your turn, if any card was bound this turn, this unit gets power +5000.
+CONT [RC]: During your turn, if any player’s card was bound this turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -4360,9 +4360,9 @@ CardStat = 7993
 global.CardName[CardStat] = 'Lightning Gun Eradicator, Ouban'
 global.CardText[CardStat] = 'Narukami/Human
 
-CONT [RC]: During your turn, if you have "Lightning Cannon Eradicator, Gongsun" in the same column as this unit, this unit gets power +3000.
+CONT [RC]: During your turn, if you have a "Lightning Cannon Eradicator, Gongsun" in the same column as this unit, this unit gets power +3000.
 
-AUTO [RC]: When placed, if you have "Lightning Cannon Eradicator, Gongsun" in the same column as this unit, Counter Charge 1.'
+AUTO [RC]: When placed, if you have a "Lightning Cannon Eradicator, Gongsun" in the same column as this unit, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 19
 }
@@ -4375,9 +4375,9 @@ CardStat = 7994
 global.CardName[CardStat] = 'Lightning Cannon Eradicator, Gongsun'
 global.CardText[CardStat] = 'Narukami/Human
 
-CONT [VC/RC]: During your turn, if you have "Lightning Gun Eradicator, Ouban" in the same column as this unit, this unit gets power +3000.
+CONT [VC/RC]: During your turn, if you have a "Lightning Gun Eradicator, Ouban" in the same column as this unit, this unit gets power +3000.
 
-AUTO [VC/RC]: At the end of the battle it attacked while was boosted by "Lightning Gun Eradicator, Ouban", COST [Counter Blast 1], bind all of the rear-guards in the same column as this unit, and draw two cards. (Includes your units.)'
+AUTO [VC/RC]: At the end of the battle it attacked while was boosted by a "Lightning Gun Eradicator, Ouban", COST [Counter Blast 1], bind all of the rear-guards in the same column as this unit, and draw two cards. (Includes your units.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -4445,7 +4445,7 @@ CardStat = 8019
 global.CardName[CardStat] = 'Eradicator, Dragonic Descendant '
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-CONT: When this card would be ridden, if your vanguard is a unit with "Eradicator" in its card name, this card will be placed with all of that unit’s abilities until end of turn.
+CONT: When you would ride this card, if your vanguard is a unit with "Eradicator" in its card name, this card is placed with all of their abilities until end of turn.
 
 ACT [VC/RC] 1/Turn: COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, bind it, your opponent chooses one of his or her back row rear-guards, and moves it to an open front row RC.
 
