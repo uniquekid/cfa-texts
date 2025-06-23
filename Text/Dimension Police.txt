@@ -464,7 +464,7 @@ CardStat = 983
 global.CardName[CardStat] = 'Assault Monster, Gunrock'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC/RC]: When this unit attacks, if the defending unit has power 8000 or less, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if the battle opponent’s power is 8000 or less, this unit gets power +3000 until end of that battle.'
 }
 
 
@@ -712,7 +712,7 @@ CardStat = 1581
 global.CardName[CardStat] = 'Fusion Monster, Bugreed'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC/RC]: When this unit attacks a vanguard, if you have a «Dimension Police» vanguard, and if the battle opponent’s power is 8000 or less, this unit gets "AUTO [VC/RC]: When this unit’s attack hits, draw a card." until end of that battle.'
+AUTO [VC/RC]: When this unit attacks a vanguard, if you have a «Dimension Police» vanguard, and the battle opponent’s power is 8000 or less, until end of that battle, this unit gets "AUTO [VC/RC]: When this unit’s attack hits, draw a card.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -771,7 +771,7 @@ CardStat = 1660
 global.CardName[CardStat] = 'Dimensional Robo, Daibarrett'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Choose your vanguard with "Dimensional Robo" in its card name, and that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose one of your opponent’s rear-guards, and retire it." until end of turn.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Choose your vanguard with "Dimensional Robo" in its card name, and until end of turn, that unit gets power +4000 and "AUTO [VC]: When this unit’s attack hits a vanguard, choose an opponent’s rear-guards, and retire it.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -1505,7 +1505,7 @@ CardStat = 2794
 global.CardName[CardStat] = 'Operator Girl, Reika'
 global.CardText[CardStat] = 'Dimension Police/Human/Stand Trigger
 
-ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Put this unit on top of your deck] Choose one of your vanguards, until end of turn, it gets power +4000 and "AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 37000 or greater, draw a card", and shuffle your deck.'
+ACT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Put this unit on top of your deck] Choose one of your vanguards, until end of turn, it gets power +4000 and "AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 37000 or greater, draw a card.", and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
@@ -1773,9 +1773,9 @@ CardStat = 3821
 global.CardName[CardStat] = 'Cosmic Hero, Grandgardy'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-Burst - CONT [VC] Generation Break 1: If this unit’s power is 20000 or greater, this unit gets "AUTO [VC]: When this unit’s drive check reveals a grade 3 card, you may Counter Charge 1 / Soul Charge 1." If this unit’s power is 30000 or greater, all of your rear-guards in the front row get power +4000.
+Burst - CONT [VC] Generation Break 1: If this unit’s power is 20000 or greater, this unit gets "AUTO [VC]: When this unit’s drive check reveals a grade 3 card, Counter Charge 1 / Soul Charge 1.". If this unit’s power is 30000 or greater, all of your rear-guards in your front row get power +4000.
 
-ACT [VC]: [Counter Blast 4 & Soul Blast 6] During this turn, this unit gets power +10000 / drive +2.'
+ACT [VC]: [Counter Blast 4 & Soul Blast 6] This unit gets power +10000 / drive +2 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -1813,7 +1813,7 @@ CardStat = 3824
 global.CardName[CardStat] = 'Menacing Monster, Golmenas'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO: [Soul Blast 1] When this unit is put on GC, you may pay the cost. If you do, choose one of your opponent’s units, and that unit gets power -5000 until end of turn.'
+AUTO: [Soul Blast 1] When this unit is put on GC, you may pay the cost. If you do, choose one of your opponent’s units, and it gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -2774,9 +2774,9 @@ CardStat = 5924
 global.CardName[CardStat] = 'Miracle Beauty '
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC/RC] 1/Turn: When it attacks a vanguard, if this unit’s power is 30000 or greater, COST [Counter Blast 1], and stand one of your other "Miracle Beauty" on RC.
+AUTO [VC/RC] 1/Turn: When it attacks a vanguard, if this unit’s power is 30000 or greater, COST [Counter Blast 1], and stand one other "Miracle Beauty" on RC.
 
-AUTO [RC]: When it stand, stand one of your other rear-guards in the back row in the same column as this unit.'
+AUTO [RC]: When it stand, stand your rear-guards in the back row of the same column as this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -2926,7 +2926,7 @@ CardStat = 5948
 global.CardName[CardStat] = 'Miracle Fairy, Larabi'
 global.CardText[CardStat] = 'Dimension Police/High Beast
 
-AUTO [RC]: At the end of a battle that it boosted, COST [Counter Blast 1 & put this unit into your soul], stand a "Miracle Beauty" on your RC, and it gets power -5000 until end of turn.'
+AUTO [RC]: At the end of a battle that it boosted, COST [Counter Blast 1 & put this unit into your soul], stand a "Miracle Beauty" on your RC, and that unit gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3050,7 +3050,7 @@ global.CardText[CardStat] = 'Dimension Police/Human
 
 AUTO [VC/RC]: When placed, COST [discard a card from your hand], and one of your vanguards gets power +10000 until end of turn.
 
-AUTO [RC]: When your vanguard attacks, if that unit has power 30000 or greater, COST [Counter Blast 1], and draw a card. (Counts the power increase from boosting as well.)'
+AUTO [RC]: When your vanguard attacks, if that unit’s power is 30000 or greater, COST [Counter Blast 1], and draw a card. (power gain from boost is included.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3076,7 +3076,7 @@ CardStat = 6773
 global.CardName[CardStat] = 'Operator Girl, Haruka'
 global.CardText[CardStat] = 'Dimension Police/Workeroid
 
-AUTO [RC]: When placed, if your vanguard has power 30000 or greater, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+AUTO [RC]: When placed, if your vanguard’s power 30000 or greater, Soul Charge 1, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3088,7 +3088,7 @@ CardStat = 6775
 global.CardName[CardStat] = 'Quick Hero, Active Mask'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC] 1/Turn: When your vanguard attacks, if that unit has power 30000 or greater, COST [Counter Blast 1], and stand this unit. (Counts the power increase from boosting as well.)'
+AUTO [RC] 1/Turn: When your vanguard attacks, if that unit’s power 30000 or greater, COST [Counter Blast 1], and stand this unit. (power gain from boost is included.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -3142,7 +3142,7 @@ CardStat = 6783
 global.CardName[CardStat] = 'Glory Maker '
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC]: When it boosts, if the boosted unit has power 30000 or greater, COST [Counter Blast 1], and until end of that battle, your opponent can only call grade 0 from his or her hand. (Counts the power increase from boosting as well.)'
+AUTO [RC]: When it boosts, if the boosted unit’s power 30000 or greater, COST [Counter Blast 1], and your opponent can only call grade 0 from his or her hand until end of that battle. (power gain from boost is included.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
