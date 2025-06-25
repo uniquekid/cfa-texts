@@ -80,7 +80,7 @@ CardStat = 389
 global.CardName[CardStat] = 'Psychic Bird'
 global.CardText[CardStat] = 'Oracle Think Tank/High Beast/Critical Trigger
 
-ACT [RC]: [Put this unit into your soul] if you have an «Oracle Think Tank» vanguard, draw a card.'
+ACT [RC]: [Put this unit into your soul] if you have an «Oracle Think Tank» vanguard, draw up to one card.'
 }
 global.TriggerUnit[CardStat] = 2
 
@@ -122,7 +122,7 @@ global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
 CONT: Sentinel (You can only have up to four cards with Sentinel in a deck.)
 
-AUTO: [Choose an «Oracle Think Tank» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Oracle Think Tank», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose an «Oracle Think Tank» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Oracle Think Tank» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -629,7 +629,7 @@ CardStat = 1005
 global.CardName[CardStat] = 'Solar Maiden, Uzume'
 global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
-ACT [RC]: [Counter Blast 1 & Choose two of your «Oracle Think Tank» rear-guards, and retire them] Search your deck for up to one card named "Goddess of the Sun, Amaterasu", reveal it to your opponent, and add it to your hand.'
+ACT [RC]: [Counter Blast 1 & Choose two of your «Oracle Think Tank» rear-guards, and retire them] Search your deck for up to one card named "Goddess of the Sun, Amaterasu", reveal it to your opponent, put it into your hand, and shuffle your deck.'
 }
 
 
@@ -1795,7 +1795,7 @@ Stride.
 
 CONT [VC] Generation Break 2 Oracle: This unit gets power +5000 / critical +1.
 
-AUTO Generation Break 2: [Counter Blast 2] When this unit is placed on VC, if the number of cards in your hand is four or less, you may pay the cost. If you do, draw a number of cards until there are five cards in your hand.'
+AUTO Generation Break 2: [Counter Blast 2] When this unit is placed on VC, if the number of cards in your hand is four or less, you may pay the cost. If you do, draw until your hand has five cards.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 10
 global.ExtraDeck[CardStat] = 1

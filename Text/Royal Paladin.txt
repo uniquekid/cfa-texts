@@ -168,7 +168,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 CONT: Sentinel.
 
-AUTO: [Choose a «Royal Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Royal Paladin», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Royal Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Royal Paladin» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -195,7 +195,7 @@ CardStat = 648
 global.CardName[CardStat] = 'Knight of Quests, Galahad'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [RC]: At the beginning of your ride phase, look at five cards from the top of your deck, search for up to one card name "Knight of Tribulations, Galahad" from among them, ride it, and put the rest on the bottom of your deck in any order. If you rode, you cannot normal ride during that ride phase.'
+AUTO [RC]: At the beginning of your ride phase, look at five cards from the top of your deck, search for up to one card named "Knight of Tribulations, Galahad" from among them, ride it, and put the rest on the bottom of your deck in any order. If you rode, you cannot normal ride during that ride phase.'
 }
 
 
@@ -265,7 +265,7 @@ CardStat = 656
 global.CardName[CardStat] = 'Sage of Guidance, Zenon'
 global.CardText[CardStat] = 'Royal Paladin/Giant
 
-AUTO: When this unit is placed on RC, if you have a «Royal Paladin» vanguard, reveal the top card of your deck. If that card is a «Royal Paladin» with the same grade as your vanguard, ride that card, if not, put it into the drop zone.'
+AUTO: When this unit is placed on RC, if you have a «Royal Paladin» vanguard, reveal the top card of your deck. If that revealed card is a «Royal Paladin» with the same grade as your vanguard, ride it, and if it is not, put that card into your drop zone.'
 }
 
 
@@ -274,7 +274,7 @@ CardStat = 657
 global.CardName[CardStat] = 'Snogal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-CONT [RC]: During your turn, this unit gets power +1000 for each other "Snogal" on your VC or RC.'
+CONT [RC]: During your turn, this unit gets power +1000 for each other unit named "Snogal" on your VC or RC.'
 }
 
 
@@ -1032,7 +1032,7 @@ CardStat = 1663
 global.CardName[CardStat] = 'Fearless Jewel Knight, Julia'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, search your deck for up to a number of cards with "Jewel Knight" as the number of this unit’s critical, call them to separate RC, and shuffle your deck.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, search your deck for the number if cards equal to this unit’s critical with "Jewel Knight" in its card name, call them to separate RC, and shuffle your deck.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1213,7 +1213,7 @@ CardStat = 1778
 global.CardName[CardStat] = 'Knight of Extravagance, Toulouse'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Soul Blast 1] If you have four rear-guards, search your deck for up to one «Royal Paladin», call it to open RC, and shuffle your deck.
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Soul Blast 1] If the number of your rear-guards you have is four, choose up to one «Royal Paladin» from your deck, call it to an open RC, and shuffle your deck.
 
 ACT [VC]: [Counter Blast 1] Choose one of your locked cards, and unlock it.
 
@@ -1702,7 +1702,7 @@ CardStat = 2148
 global.CardName[CardStat] = 'Seeker, Tranquil Unicorn'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose one of your other units, and that gets power +5000 until end of turn.'
+AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose another of your units, and that gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -1891,7 +1891,7 @@ CardStat = 2401
 global.CardName[CardStat] = 'Energy Seeker, Maddan'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-AUTO [RC]: [Counter Blast 1] When this unit attacks a vanguard, if you have a unit named "Blaster Blade Seeker" on your VC, you may pay the cost. If you do, this unit gets power +1000 for each other unit you have with "Seeker" in its card name until end of that battle.'
+AUTO [RC]: [Counter Blast 1] When this unit attacks a vanguard, if you have a card named "Blaster Blade Seeker" in your VC, you may pay the cost. If you do, this unit gets power +1000 for each of your units with "Seeker" in its card name until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -1902,7 +1902,7 @@ CardStat = 2402
 global.CardName[CardStat] = 'Rousing Seeker, Aremil'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: [Soul Blast 2] When this unit is placed on RC, if you have a unit named "Blaster Blade Seeker" on your VC, you may pay the cost. If you do, this unit gets power +1000 for each other unit you have with "Seeker" in its card name until end of turn.'
+AUTO: [Soul Blast 2] When this unit is placed on RC, if you have a card named "Blaster Blade Seeker" in your VC, you may pay the cost. If you do, this unit gets power +1000 for each your other units with "Seeker" in its card name until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -3309,7 +3309,7 @@ CardStat = 4248
 global.CardName[CardStat] = 'Knight of Cast'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO Generation Break 1 Brave: When this unit is placed on RC during your turn, choose one of your other units with the brave ability in the same column as this unit, and increase that unit’s power by the power of this unit until end of turn.'
+AUTO Generation Break 1 Brave: When this unit is placed on RC during your turn, choose one of your other units with the brave ability in the same column as this unit, and increase it’s power by this unit’s power until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -4061,7 +4061,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO [RC] Generation Break 1: When this unit attacks a vanguard, if you have a unit with "Alfred" or "Blaster" in its card name on your VC or RC, this unit gets power +3000 until end of that battle.
 
-AUTO: When this unit is placed on RC, choose a "Knight of Benevolence, Kay" in the same column as this unit, and it gets power +2000 until end of turn. If you chose, Soul Charge 1.'
+AUTO: When this unit is placed on RC, choose one of your "Knight of Benevolence, Kay" in the same column as this unit, and it gets power +2000 until end of turn. If you chose a unit, Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -4089,7 +4089,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO [RC] Generation Break 1: When this unit attacks a vanguard, if you have a unit with "Alfred" or "Blaster" in its card name on your VC or RC, this unit gets power +3000 until end of that battle.
 
-AUTO: When this unit is placed on RC, choose a "Knight of Virtue, Bedivere" in the same column as this unit, and it gets power +2000 until end of turn. If you chose, Counter Charge 1.'
+AUTO: When this unit is placed on RC, choose one of your "Knight of Virtue, Bedivere" in the same column as this unit, and it gets power +2000 until end of turn. If you chose a unit, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -4581,7 +4581,7 @@ CardStat = 5592
 global.CardName[CardStat] = 'Gyoonmy'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-CONT [RC] Brave: The cost of your Stride may also be paid with "Choose one of your "Gyoonmy" on RC, and retire it".'
+CONT [RC] Brave: You may pay "Choose a "Gyoonmy" from your RC, and retire it" as the cost for Stride.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -6739,7 +6739,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], search your deck for up to one grade 2 card with a different card name from this unit, call it to RC, and shuffle your deck.
 
-AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or less, COST [Discard this card], look at five cards from the top of your deck, choose a grade 2 or less card from among them, reveal it, put it to hand, and shuffle your deck.'
+AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or less, COST [Discard this card], look at five cards from the top of your deck, choose a grade 2 or less card from among them, reveal it, put it into hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }

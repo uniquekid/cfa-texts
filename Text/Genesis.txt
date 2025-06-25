@@ -31,7 +31,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 CONT [VC]: If you have a card named "Bowstring of Heaven and Earth, Artemis" in your soul, this unit gets power +1000.
 
-AUTO [VC]: When this unit’s attack hits a vanguard, Soul Charge 2, and if you have "Bowstring of Heaven and Earth, Artemis" in your soul, Soul Charge 2.'
+AUTO [VC]: When this unit’s attack hits a vanguard, Soul Charge 2, and if you have a card named "Bowstring of Heaven and Earth, Artemis" in your soul, Soul Charge 2.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -84,9 +84,9 @@ CardStat = 1143
 global.CardName[CardStat] = 'Bowstring of Heaven and Earth, Artemis'
 global.CardText[CardStat] = 'Genesis/Noble
 
-CONT [VC]: If you have a card named "Star Shooting Bow, Artemis" in your soul, this unit gets power +1000.
+CONT [VC]: If you have a card named "Aiming for the Stars, Artemis" in your soul, this unit gets power +1000.
 
-AUTO: When a «Genesis» other than a card named "Twilight Hunter, Artemis" rides this unit, look at seven cards from the top of your deck, search for up to one card named "Twilight Hunter, Artemis" from among them, ride it, and shuffle your deck.'
+AUTO: When a grade 2 «Genesis» not named "Twilight Hunter, Artemis" rides this unit, if you have a card named "Aiming for the Stars, Artemis" in your soul, look at up to seven cards from the top of your deck, search for up to one card named "Twilight Hunter, Artemis" from among them, ride it, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -141,7 +141,7 @@ CardStat = 1148
 global.CardName[CardStat] = 'Aiming for the Stars, Artemis'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO: When a unit named "Bowstring of Heaven and Earth, Artemis" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Twilight Hunter, Artemis" or "Battle Deity of the Night, Artemis" from among them, reveal it to your opponent, put it to your hand, and shuffle your deck.
+AUTO: When a card named "Bowstring of Heaven and Earth, Artemis" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Twilight Hunter, Artemis" or "Battle Deity of the Night, Artemis" from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
 AUTO: When a «Genesis» other than a card named "Bowstring of Heaven and Earth, Artemis" rides this unit, you may call this card to RC.'
 global.UnitGrade[CardStat] = 0
@@ -1645,7 +1645,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO: Forerunner.
 
-AUTO [RC]: When this unit becomes rest due to the effect of one of your cards, choose one of your units, and that unit gets power +2000 until end of turn.
+AUTO [RC]: When this unit rest due to the effect of your cards, choose one of your units, and it gets power +2000 until end of turn.
 
 AUTO [RC] Generation Break 1: [Put this unit into your soul] When your drive check reveals a normal unit, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -2323,7 +2323,7 @@ global.CardText[CardStat] = 'Genesis/Angel
 
 AUTO: Revelation - RC.
 
-AUTO [RC]: [Counter Blast 1] When this unit becomes rest due to your other units revelation ability, if you have a vanguard with the revelation ability, you may pay the cost. If you do, draw a card.'
+AUTO [RC]: [Counter Blast 1] When this unit rest due to the effect of the revelation ability of your other unit, if you have a vanguard with the revelation ability, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -2351,7 +2351,7 @@ AUTO: Forerunner.
 
 AUTO: Revelation - RC.
 
-AUTO [RC] 1/Turn: When this unit becomes rest due to your revelation ability, if you have a vanguard with the revelation ability, stand this unit.'
+AUTO [RC] 1/Turn: When this unit is rest due to the revelation ability of your other unit, if you have a vanguard with the revelation ability, stand this unit.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }

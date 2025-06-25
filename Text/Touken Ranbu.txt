@@ -346,7 +346,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Oodachi
 
 AUTO [VC] Shinken Hissatsu (This ability is active if you have three or more damage): [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, this unit gets power +15000 until end of that battle.
 
-CONT [VC]: If you have a stand rear-guard in your front row, this unit cannot attack.'
+CONT [VC]: If you have rear-guard in your front row that is stand, this unit cannot attack.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 }
@@ -436,7 +436,7 @@ CardStat = 3087
 global.CardName[CardStat] = 'Shokudaikiri Mitsutada'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi/Critical Trigger
 
-AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, if this unit is stand, you may pay the cost. If you do, draw a card, choose two units in your front row, and until end of turn, they get power +3000.'
+AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, if this unit is stand, you may pay the cost. If you do, draw a card, choose two units in your front row, and they get power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
 }
@@ -575,7 +575,7 @@ CardStat = 4189
 global.CardName[CardStat] = 'Kogitsunemaru Toku'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, look at the top card of your deck, put it on the top or the bottom of your deck, draw a card, and Soul Charge 1.'
+AUTO [VC]: [Counter Blast 1] When your G unit Stride during your turn, you may pay the cost. If you do, look at the top card of your deck, put it on the top or the bottom of your deck, draw a card, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 }
@@ -701,7 +701,7 @@ CardStat = 4198
 global.CardName[CardStat] = 'Iwatooshi Toku'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
 
-ACT [VC/RC] Generation Break 1: [Counter Blast 1] Until end of turn, this unit gets "CONT [VC/RC]: This unit battles the unit you attacked and all of your opponent’s units in that same column in one attack.".'
+ACT [VC/RC] Generation Break 1: [Counter Blast 1] This unit gets "CONT [VC/RC]: This unit battles the unit you attacked and all of your opponent’s units in that same column in one attack." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 }
@@ -765,7 +765,7 @@ CardStat = 4203
 global.CardName[CardStat] = 'Uguisumaru Toku'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [VC] Shinken Hissatsu: During your turn, when your G unit Stride, choose up to three of your units, and they get power +3000 until end of turn.
+AUTO [VC] Shinken Hissatsu: When your G unit Stride during your turn, choose up to three of your units, and they get power +3000 until end of turn.
 
 AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at seven cards from the top of your deck, search for up to one <Touken Danshi - Tachi> from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
@@ -1073,7 +1073,7 @@ CardStat = 4255
 global.CardName[CardStat] = 'Otegine Toku'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Yari
 
-CONT [RC] Generation Break 1: During your turn, all of your opponent’s rear-guards in the same column as this unit cannot intercept. Then, this unit gets power +1000 for each of your opponent’s rear-guard in the same column as this unit.'
+CONT [RC] Generation Break 1: During your turn, all of your opponent’s rear-guards in the same column as this unit cannot intercept. Then, for each of your opponent’s rear-guard in the same column as this unit, this unit gets power +1000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 }
@@ -1878,7 +1878,7 @@ CardStat = 8458
 global.CardName[CardStat] = 'Kashuu Kiyomitsu Toku '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
-AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Kiwame", search your deck for up to one "Yamatonokami Yasusada", reveal it and put it to your hand, and shuffle your deck.
+AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Kiwame", search your deck for up to one "Yamatonokami Yasusada", reveal it and put it into your hand, and shuffle your deck.
 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 2
@@ -2037,7 +2037,7 @@ CardStat = 8468
 global.CardName[CardStat] = 'Ookanehira'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [RC]: When this unit attacks while not boosted, COST [discard two cards from your hand], choose one of your units with power greater than this unit’s, and until end of that battle, increase or decrease this unit’s power until it is 5000 greater than that unit’s power.'
+AUTO [RC]: When this unit attacks while not boosted, COST [discard two cards from your hand], choose one of your units with power greater than this unit, and this unit’s power increase or decrease to 5000 greater than that unit’s power until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
