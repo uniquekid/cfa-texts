@@ -1029,7 +1029,7 @@ global.CardText[CardStat] = 'Brandt Gate/Set Order/Meteorite
 
 CONT: You may have up to sixteen "Neatness Meteor Shower" in your deck.
 
-AUTO: When this card is put into the Order Zone, you may Soul Charge 1. If it was put by your vanguards ability, you may draw a card.
+AUTO: When this card is put into the Order Zone, you may Soul Charge 1. If it was put by your vanguard’s ability, you may draw a card.
 
 AUTO: When this card is put into your drop from the Order Zone, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
@@ -1350,7 +1350,7 @@ CardStat = 9213
 global.CardName[CardStat] = 'Falling Hellhazard'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Meteorite
 
-CONT: When you would count the number of Meteorite cards put from your Order Zone into your drop for the cost of your vanguards ability, this card counts as two cards.
+CONT: When you would count the number of Meteorite cards put from your Order Zone into your drop for the cost of your vanguard’s ability, this card counts as two cards.
 
 AUTO: When this card is put into your drop from the Order Zone, bind this card, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
@@ -3250,7 +3250,7 @@ global.CardText[CardStat] = 'Brandt Gate/Set Order
 
 (After a set order is played, put it into your order zone)
 
-CONT [Order Zone]: During your turn, all of your front row unit get power +2000.'
+CONT [Order Zone]: During your turn, all of your front row units get power +2000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -8800,3 +8800,31 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14187
+{
+global.CardName[CardStat] = 'Blue Deathster, Noshime Occasion'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+ACT [Drop]: If your card was not put into your order zone by your card’s ability this turn, COST [bind this card] choose a Strategy card from your hand or drop, and put it into the order zone. If you put a card from hand, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14188
+{
+global.CardName[CardStat] = 'Blue Deathster, Maisy Distance'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Blue Deathster" in its card name, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one Strategy card or up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [RC] 1/Turn: If you have a vanguard with "Blue Deathster" in its card name, COST [Soul Blast 1], choose up to one <Battleroid> with "Blue Deathster" in its card name and grade less than or equal to your vanguard from your drop, call it to RC in the same column as this unit, and it gets "AUTO [RC]: At the end of this turn, retire this unit." until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

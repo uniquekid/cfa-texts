@@ -244,7 +244,7 @@ CardStat = 518
 global.CardName[CardStat] = 'Iron Tail Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-ACT [VC/RC]: [Counter Blast 1] During this turn, this unit gets power +1000.'
+ACT [VC/RC]: [Counter Blast 1] This unit gets power +1000 until end of turn.'
 }
 
 
@@ -273,7 +273,7 @@ global.CardText[CardStat] = 'Kagero/Dragonman
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a «Kagero» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Kagero», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Kagero» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Kagero» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -523,7 +523,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 CONT [VC/RC]: If you do not have another «Kagero» vanguard or rear-guard, this unit gets power -2000.
 
-ACT [VC/RC]: [Counter Blast 3] Until end of turn, this unit gets power +5000, gets "AUTO [VC/RC]: When this unit’s attack hits an opponent’s rear-guard, stand this unit", and loses "Twin Drive!!".'
+ACT [VC/RC]: [Counter Blast 3] Until end of turn, this unit gets power +5000, gets "AUTO [VC/RC]: When this unit’s attack hits an opponent’s rear-guard, stand this unit.", and loses "Twin Drive!!".'
 }
 
 
@@ -805,7 +805,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 CONT: Sentinel (You can only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a «Kagero» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Kagero», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Kagero» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Kagero» that is being attacked, and that unit cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -1644,7 +1644,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 ACT [VC]: Legion 20000 "Perdition Dragon, Whirlwind Dragon".
 
-ACT [VC]: [Counter Blast 2 & Choose one card with the same card name as a unit on your VC from your hand, and discard it] If this unit is Legion, choose up to two of your opponent’s grade 2 or less rear-guards, and retire them. Then, if the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguard, deal it one damage, and during that damage check, all trigger effects are nullified. This ability cannot be used for the rest of that turn.
+ACT [VC]: [Counter Blast 2 & Choose one card with the same card name as a unit on your VC from your hand, and discard it] If this unit is Legion, choose up to two of your opponent’s grade 2 or less rear-guards, and retire them. Then, if the number of cards in your opponent’s damage zone is four or less, choose one of your opponent’s vanguards, deal it one damage, and during that damage check, all trigger effects are nullified. This ability cannot be used for the rest of that turn.
 
 AUTO [VC]: During your main phase, when your opponent’s rear-guard is put into the drop zone, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -1917,7 +1917,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into the soul] When your vanguard Legion, you may pay the cost. If you do, choose one of your vanguard, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits, choose one of your opponent’s rear-guards, and retire it.".'
+AUTO [RC]: [Put this unit into the soul] When your vanguard Legion, you may pay the cost. If you do, choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits, choose one of your opponent’s rear-guards, and retire it.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -1961,7 +1961,7 @@ CardStat = 2425
 global.CardName[CardStat] = 'Embodiment of Perdition, Majid'
 global.CardText[CardStat] = 'Kagero/Demon
 
-AUTO: [Soul Blast 1] When this unit is placed on VC or RC, if your opponent has no rear-guards in the same column as this unit, you may pay the cost. If you do, choose another of your units, and that unit get power +4000 until end of turn.'
+AUTO: [Soul Blast 1] When this unit is placed on VC or RC, if your opponent does not have any rear-guards in the same column as this unit, you may pay the cost. If you do, choose another of your units, and that unit gets power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -2447,7 +2447,7 @@ CardStat = 2970
 global.CardName[CardStat] = 'Dragon Knight, Jannat'
 global.CardText[CardStat] = 'Kagero/Human/Critical Trigger
 
-AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, if you have a vanguard with "Dragonic Blademaster" in its card name, you may pay the cost. If you do, draw a card, choose one of your vanguard, and it gets power +5000 until end of that battle.'
+AUTO [RC]: [Put this unit into your soul] When your vanguard attacks, if you have a vanguard with "Dragonic Blademaster" in its card name, you may pay the cost. If you do, draw a card, choose one of your vanguards, and it gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
 }
@@ -2644,7 +2644,7 @@ global.CardText[CardStat] = 'Kagero/Dragonman
 
 AUTO: When this unit is placed on RC from hand, COST [reveal a grade 3 card from your hand], search your deck for up to one grade 3 card with "Overlord" in its card name, reveal it and put it into your hand, shuffle your deck, choose a card from your hand, and discard it.
 
-ACT [RC]: COST [Retire this unit], choose up to one of your vanguard with "Overlord" in its card name, it gets "AUTO [VC]: When this unit attacks, Counter Charge 2." until end of turn.'
+ACT [RC]: COST [Retire this unit], choose up to one of your vanguards with "Overlord" in its card name, it gets "AUTO [VC]: When this unit attacks, Counter Charge 2." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -2835,7 +2835,7 @@ AUTO [VC/RC]: Blaze (At the beginning of each of your attack, if the number of r
 
 AUTO [VC] Generation Break 1: When your unit attacks a vanguard, if this unit is blazing, the attacking unit gets power +3000 until end of that battle.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the blaze ability, show it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the blaze ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -3430,7 +3430,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 AUTO: When this unit is placed on RC, choose up to two cards with "Overlord" in their card names from your drop zone, return them to your deck, and if you returned one or more cards, shuffle your deck. If you returned two cards, draw a card.
 
-AUTO [RC]: [Retire this unit] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, if you Stride a G unit with "Overlord" in its card name, you may Stride without paying the cost the next time you Stride.'
+AUTO [RC]: [Retire this unit] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, you may Stride without paying the cost the next time you Stride a G unit with "Overlord" in its card name.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -4013,7 +4013,7 @@ CardStat = 5864
 global.CardName[CardStat] = 'Chain-attack Sutherland '
 global.CardText[CardStat] = 'Kagero/Human
 
-CONT [RC]: If there is a "Follower, Reas" on your RC, this unit gets power +5000, if not, power -3000.'
+CONT [RC]: If you have a "Follower, Reas" on your RC, this unit gets power +5000, if you don’t, it gets power -3000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -4761,9 +4761,9 @@ CardStat = 7568
 global.CardName[CardStat] = 'Lava Flow Dragon '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-CONT [VC/RC]: During your turn, if your rear-guards are more than your opponent’s rear-guards, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if you have more rear-guards than your opponent’s, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -4817,7 +4817,7 @@ CardStat = 7621
 global.CardName[CardStat] = 'Dragon Knight, Barkil'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC]: When it attacks, if your opponent has no rear-guards, until end of that battle, when your opponent would call cards from hand to GC, he or she can only call grade 0 cards.'
+AUTO [RC]: When it attacks, if your opponent has no rear-guards, until end of that battle, when your opponent would call cards from hand to GC, they can only call grade 0 cards.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }

@@ -430,7 +430,7 @@ global.CardText[CardStat] = 'Pale Moon/Human
 
 CONT [VC/RC]: Restraint (This Unit cannot attack.).
 
-ACT [VC/RC]: [Soul Blast 3] During this turn, this unit loses "Restraint".
+ACT [VC/RC]: [Soul Blast 3] This unit loses "Restraint" until end of turn.
 
 CONT [VC]: During your turn, your «Pale Moon» rear-guards in the front row all get power +3000.
 
@@ -1615,7 +1615,7 @@ CardStat = 3613
 global.CardName[CardStat] = 'Signal Snake Tamer'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-ACT [RC]: [Counter Blast 1 & rest this unit] Reveal the top card of your deck, choose up to one card from your soul with the same grade as the revealed cards grade, call it to RC, and shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & rest this unit] Reveal the top card of your deck, choose up to one card with the same grade as the revealed card from your soul, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -1751,7 +1751,7 @@ global.CardText[CardStat] = 'Pale Moon/Chimera
 
 AUTO Generation Break 1: When this unit is placed on RC from your soul, until end of turn, it gets power +2000.
 
-Magia - AUTO Generation Break 1: [Soul Blast 1] When this unit is placed on RC due to the effect of the magia ability, you may pay the cost. If you do, choose a card in your soul, call it to RC in the same column as this unit, and at the end of that turn, put the unit called by this effect into your soul.'
+Magia - AUTO Generation Break 1: [Soul Blast 1] When this unit is placed on RC due to the effect of the magia ability, you may pay the cost. If you do, choose a card in your soul, call it to RC in the same column as this unit, and at the end of that turn, put the unit called with this effect into your soul.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }
@@ -1763,7 +1763,7 @@ CardStat = 4015
 global.CardName[CardStat] = 'Novelty Introductor'
 global.CardText[CardStat] = 'Pale Moon/Dark Elf
 
-Magia - AUTO [RC]: [Put this unit into your soul] At the beginning of your main phase, you may pay the cost. If you do, choose a grade 2 or greater card in your soul, call it to RC, and at the end of that turn, put that unit into your soul.'
+Magia - AUTO [RC]: [Put this unit into your soul] At the beginning of your main phase, you may pay the cost. If you do, choose a grade 2 or greater card from your soul, call it to RC, and at the end of that turn, put the unit called with this effect into your soul.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -3171,7 +3171,7 @@ CardStat = 7035
 global.CardName[CardStat] = 'Double Head Unicorn'
 global.CardText[CardStat] = 'Pale Moon/Chimera
 
-AUTO: When it is put into your soul from RC due to your vanguards ability, COST [Counter Blast 1], call a card from your hand to RC, and the called unit gets power +5000 until end of turn.'
+AUTO: When put from RC into your soul by your vanguard’s ability, COST [Counter Blast 1], call a card from your hand to RC, and that called unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }
@@ -3240,9 +3240,9 @@ CardStat = 7702
 global.CardName[CardStat] = 'Masquerade Bunny '
 global.CardText[CardStat] = 'Pale Moon/Warbeast
 
-CONT [VC/RC]: If you called one or more cards from soul this turn, this unit gets power +5000.
+CONT [VC/RC]: If one or more cards were called from soul this turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -3636,11 +3636,11 @@ CardStat = 8201
 global.CardName[CardStat] = 'Silver Thorn Dragon, Megalorude'
 global.CardText[CardStat] = 'Pale Moon/Winged Dragon
 
-AUTO: When this unit is placed on RC from soul by your vanguards ability, choose one of any player’s other rear-guards, and put it into the soul. If you put, this unit gets power +15000 until end of turn.'
+AUTO: When this unit is placed on RC from soul by the ability of your vanguard, choose one of any player’s other rear-guards, and put it into that player’s soul. If a card was put, this unit gets power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 18
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
 

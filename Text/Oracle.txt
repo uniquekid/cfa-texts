@@ -80,7 +80,7 @@ CardStat = 389
 global.CardName[CardStat] = 'Psychic Bird'
 global.CardText[CardStat] = 'Oracle Think Tank/High Beast/Critical Trigger
 
-ACT [RC]: [Put this unit into your soul] if you have an «Oracle Think Tank» vanguard, draw a card.'
+ACT [RC]: [Put this unit into your soul] if you have an «Oracle Think Tank» vanguard, draw up to one card.'
 }
 global.TriggerUnit[CardStat] = 2
 
@@ -122,7 +122,7 @@ global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
 CONT: Sentinel (You can only have up to four cards with Sentinel in a deck.)
 
-AUTO: [Choose an «Oracle Think Tank» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Oracle Think Tank», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose an «Oracle Think Tank» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Oracle Think Tank» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -629,7 +629,7 @@ CardStat = 1005
 global.CardName[CardStat] = 'Solar Maiden, Uzume'
 global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
-ACT [RC]: [Counter Blast 1 & Choose two of your «Oracle Think Tank» rear-guards, and retire them] Search your deck for up to one card named "Goddess of the Sun, Amaterasu", reveal it to your opponent, and add it to your hand.'
+ACT [RC]: [Counter Blast 1 & Choose two of your «Oracle Think Tank» rear-guards, and retire them] Search your deck for up to one card named "Goddess of the Sun, Amaterasu", reveal it to your opponent, put it into your hand, and shuffle your deck.'
 }
 
 
@@ -1795,7 +1795,7 @@ Stride.
 
 CONT [VC] Generation Break 2 Oracle: This unit gets power +5000 / critical +1.
 
-AUTO Generation Break 2: [Counter Blast 2] When this unit is placed on VC, if the number of cards in your hand is four or less, you may pay the cost. If you do, draw a number of cards until there are five cards in your hand.'
+AUTO Generation Break 2: [Counter Blast 2] When this unit is placed on VC, if the number of cards in your hand is four or less, you may pay the cost. If you do, draw until your hand has five cards.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 10
 global.ExtraDeck[CardStat] = 1
@@ -2478,7 +2478,7 @@ CardStat = 5781
 global.CardName[CardStat] = 'Oracle Guardian, Gemini '
 global.CardText[CardStat] = 'Oracle Think Tank/Battleroid
 
-ACT [RC]: If the number cards in your damage zone is three or more, COST [Put this unit into your soul], Counter Charge 1.'
+ACT [RC]: If you have three or more cards in your damage zone, COST [Put this unit into your soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }
@@ -2490,9 +2490,9 @@ CardStat = 5782
 global.CardName[CardStat] = 'Promise Daughter '
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-CONT [VC/RC]: During the battle that it attacks a vanguard, if the number of cards in your hand is four or more, this unit gets power +6000.
+CONT [VC/RC]: During the battle that it attacked a vanguard, if the number of cards in your hand is four or more, this unit gets power +6000.
 
-CONT [RC/GC]: This unit cannot be retired by your opponent’s card effect.'
+CONT [RC/GC]: This unit cannot be retired due to your opponent’s card effect.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 10
 }
@@ -2504,9 +2504,9 @@ CardStat = 5783
 global.CardName[CardStat] = 'Imperial Daughter '
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-AUTO [VC]: When placed, COST [Counter Blast 1], look at the top two cards of your deck, add one to your hand, put one into the soul or at the top of your deck, if you rode on a grade 3, this unit gets power +15000 / critical +1 until end of turn.
+AUTO [VC]: When placed, COST [Counter Blast 1], look at top two cards from the top of your deck, put one card from among them into your soul or on the top of your deck, and if you rode from a grade 3, this unit gets power +15000 / critical +1 until end of turn.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], one of your units gets power +6000 until end of turn.'
+ACT [VC] 1/Turn: COST [Soul Blast 1], and one of your units get power +6000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 10
 }
@@ -2532,7 +2532,7 @@ CardStat = 5790
 global.CardName[CardStat] = 'Petal Fairy '
 global.CardText[CardStat] = 'Oracle Think Tank/Sylph
 
-ACT [RC]: COST [Put this unit into your soul], look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom, one of your units gets power +5000 until end of turn.'
+ACT [RC]: COST [Put this unit into your soul], look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, one of your units get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }
@@ -2658,7 +2658,7 @@ CardStat = 5862
 global.CardName[CardStat] = 'Battle Sister, Torte'
 global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
-CONT [VC/RC]: During your turn, if you have ten or more cards in your hand, this unit gets power +10000 / critical +1.'
+CONT [VC/RC]: If you have ten or more cards in your hand during your turn, this unit gets power +10000 / critical +1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 10
 }
@@ -2918,9 +2918,9 @@ CardStat = 6324
 global.CardName[CardStat] = 'Topaz Witch, PiPi'
 global.CardText[CardStat] = 'Oracle Think Tank/Human
 
-CONT [VC/RC]: During your turn, if you have four or more cards in your hand, this unit gets power +2000.
+CONT [VC/RC]: During your turn, if your hand has four or more cards, this unit gets power +2000.
 
-AUTO: When rode upon by a card with "Witch" in its card name, COST [Soul Blast 1], and draw a card.'
+AUTO: When rode upon by a unit with "Witch" in its card name, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 10
 }
@@ -3191,7 +3191,7 @@ CardStat = 6864
 global.CardName[CardStat] = 'Diviner Angel'
 global.CardText[CardStat] = 'Oracle Think Tank/Angel
 
-AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 1], and draw a card.'
+AUTO: When this card is discarded from your hand during your turn, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }
@@ -3203,7 +3203,7 @@ CardStat = 6865
 global.CardName[CardStat] = 'Convoy Angel'
 global.CardText[CardStat] = 'Oracle Think Tank/Angel
 
-AUTO: When this card is discarded from hand during your turn, you may put this card into your soul.'
+AUTO: When this card is discarded from your hand during your turn, you may put this card into your soul.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 10
 }
@@ -3215,7 +3215,7 @@ CardStat = 6866
 global.CardName[CardStat] = 'Maiden of Libra '
 global.CardText[CardStat] = 'Oracle Think Tank/Angel
 
-AUTO [VC/RC]: At the end of the battle it attacked a vanguard while was boosted, COST [Counter Blast 1], and draw a card.
+AUTO [VC/RC]: At the end of the battle that it attacked a vanguard while boosted, COST [Counter Blast 1], and draw a card.
 
 ACT [RC] 1/Turn: COST [Discard a card from your hand], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -3589,9 +3589,9 @@ CardStat = 7658
 global.CardName[CardStat] = 'Divine Sword, Ame-no-Murakumo '
 global.CardText[CardStat] = 'Oracle Think Tank/Noble
 
-CONT [VC/RC]: During your turn, if you revealed cards from your deck by a card’s ability this turn, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if cards from your deck were revealed by a card’s ability this turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }

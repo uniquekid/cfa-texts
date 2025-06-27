@@ -102,7 +102,7 @@ global.CardText[CardStat] = 'Neo Nectar/Dryad
 
 CONT: Sentinel.
 
-AUTO: [Choose a «Neo Nectar» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Neo Nectar», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Neo Nectar» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Neo Nectar» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -203,7 +203,7 @@ CardStat = 948
 global.CardName[CardStat] = 'Arboros Dragon, Ratoon'
 global.CardText[CardStat] = 'Neo Nectar/Forest Dragon
 
-AUTO: When a card named "Arboros Dragon, Branch" rides this unit, look at up to seven cards from the top of your deck, search for up to one card name "Arboros Dragon, Sephirot" or "Arboros Dragon, Timber" from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
+AUTO: When a card named "Arboros Dragon, Branch" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Arboros Dragon, Sephirot" or "Arboros Dragon, Timber" from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
 AUTO: When a «Neo Nectar» other than a card named "Arboros Dragon, Branch" rides this unit, you may call this card to RC.'
 }
@@ -279,7 +279,7 @@ CardStat = 956
 global.CardName[CardStat] = 'Fruits Basket Elf'
 global.CardText[CardStat] = 'Neo Nectar/Elf
 
-AUTO [RC]: [Counter Blast 1] When this unit boosts a «Neo Nectar» that attacks the vanguard, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, your opponent cannot normal call units to GC until end of that battle. If the boosted units attack hits, your opponent receives no damage.'
+AUTO [RC]: [Counter Blast 1] When this unit boosts a «Neo Nectar» that is attacking a vanguard, if you have a «Neo Nectar» vanguard, you may pay the cost. If you do, until end of that battle, your opponent cannot normal call units to GC, and the boosted unit does not deal damage even if its attack hits.'
 }
 
 
@@ -1571,7 +1571,7 @@ CardStat = 3621
 global.CardName[CardStat] = 'Tomboy Elf'
 global.CardText[CardStat] = 'Neo Nectar/Elf
 
-ACT [RC] 1/Turn: [Choose a normal unit from your drop zone, and put it on the top of your deck] Choose up to one of your units with the bloom ability, until end of turn, it gets "CONT [VC/RC]: This unit gets power +2000 for each of your other units with the same card name as this unit", and shuffle your deck.'
+ACT [RC] 1/Turn: [Choose a normal unit from your drop zone, and put it on the top of your deck] Choose up to one of your units with the bloom ability, until end of turn, it gets "CONT [VC/RC]: This unit gets power +2000 for each of your other rear-guards with the same card name as this unit.", and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -1810,7 +1810,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose a face down card named "Flower Princess of Balmy Breeze, Ilmatar" from your G zone, and turn it face up] Choose one of your units, if that unit has the bloom ability, draw a card, choose up to six of your units with the same card name as the unit chosen with this effect, until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, draw a card", and if the number of your units with the bloom ability is three or more, this unit gets critical +1.'
+ACT [VC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose a face down card named "Flower Princess of Balmy Breeze, Ilmatar" from your G zone, and turn it face up] Choose one of your units, if that unit has the bloom ability, draw a card, choose up to six of your units with the same card name as the unit chosen with this effect, until end of turn, they get "AUTO [VC/RC]: When this unit’s attack hits a vanguard, draw a card.", and if the number of your units with the bloom ability is three or more, this unit gets critical +1.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -2037,7 +2037,7 @@ CardStat = 4378
 global.CardName[CardStat] = 'Knight of Development, Rallye'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-ACT [RC]: [Counter Blast 1 & Retire this unit] Choose one of your units other than "Knight of Development, Rallye", search your deck for up to one card with the same card name as that unit, call it to RC, and shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & Retire this unit] Choose one of your units not named "Knight of Development, Rallye", search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -2528,7 +2528,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 G guardian.
 
-AUTO Generation Break 1: When placed on GC, COST [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], until end of that battle, this unit gets shield +5000, choose up to one card from your hand, call it to RC, and if you have two or more units with the same card name as the called unit, this unit gets shield +10000.'
+AUTO Generation Break 1: When placed on GC, COST [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up], and until end of that battle, this unit gets shield +5000, choose up to one card from your hand, call it to RC, and if you have two or more units with the same card name as the unit called by this effect, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
@@ -2924,7 +2924,7 @@ CONT: Sentinel.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your units with "Ranunculus" in its card name, and it cannot be hit until end of that battle.
 
-Bloom - AUTO [Drop Zone]: [Bind this card face up] When your unit with the same card name as this card is placed on GC, you may pay the cost. If you do, choose a card with the bloom ability from your drop zone, and put it into your hand.'
+Bloom - AUTO [Drop Zone]: [Bind this card face up] When your unit with the same card name as this unit is placed on GC, you may pay the cost. If you do, choose a card with the bloom ability from your drop zone, and return it to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4321,7 +4321,7 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
 CONT [VC/RC]: During your turn, if you have two or more token units, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 card from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4857,13 +4857,12 @@ global.CardText[CardStat] = 'Neo Nectar/Bioroid
 Stride.
 ACT [G zone]: If your vanguard is a grade 3 "White Lily Musketeer, Cecilia" with the Limit Break 4 ability, and you did not get an imaginary gift this fight, COST [choose one or more cards from hand with the sum of their grades being 3 or greater, and discard them], and Stride this card on your VC from face down. Then, COST [turn a card with "Musketeer" in its card name in the G zone face up], you get two Imaginary Gift:Force, and you get a "White Lily Musketeer, Cecilia" crest.
 ACT [VC] 1/Turn: COST [Counter Blast 1 & turn a card with the same card name as this unit from G zone face up], choose up to five of your rear-guards, and retire them. Look at the top seven cards of your deck, choose up to the same number of cards with "Musketeer" in their card names as the number of units retired by this effect from among them, call them to RC, and they get power +3000 until end of turn for each face up card in your G zone with "Musketeer" in its card names. Shuffle the deck.
-(SHIFT + left click to create Force gifts and crest)
-(Hold TAB to view the related card.)'
+(SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
-global.AnotherSide[CardStat] = 12577
+//global.AnotherSide[CardStat] = 12577
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0

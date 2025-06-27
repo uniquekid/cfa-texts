@@ -68,7 +68,7 @@ global.CardText[CardStat] = 'Murakumo/Warbeast
 
 CONT: Sentinel.
 
-AUTO: [Choose a «Murakumo» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Murakumo», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Murakumo» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Murakumo» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -257,7 +257,7 @@ CardStat = 903
 global.CardName[CardStat] = 'Stealth Beast, Night Panther'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-ACT [VC/RC]: [Counter Blast 1] During this turn, this unit gets power +1000.'
+ACT [VC/RC]: [Counter Blast 1] This unit gets power +1000 until end of turn.'
 }
 
 
@@ -1527,7 +1527,7 @@ global.CardText[CardStat] = 'Murakumo/Demon
 
 G guardian.
 
-AUTO Generation Break 1: When this unit is placed on GC, COST [Counter Blast 1 & turn a G guardian from G zone face up], choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When a grade 3 or less unit is retired from GC, you may put that card on the bottom of your deck", and this unit gets shield +10000.'
+AUTO Generation Break 1: When this unit is placed on GC, COST [Counter Blast 1 & turn a G guardian from G zone face up], choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When a grade 3 or less unit is retired from GC, you may put that card on the bottom of your deck.", and this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1
@@ -2203,7 +2203,7 @@ CardStat = 6453
 global.CardName[CardStat] = 'Stealth Beast, Metamorfox '
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-AUTO [RC]: When placed, you may change the card name of this unit to the card name of one of your other units until end of turn.'
+AUTO: When this unit is placed on RC, change this unit’s card name to one of your other unit’s card name until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -2793,9 +2793,9 @@ CardStat = 7783
 global.CardName[CardStat] = 'Gateway Stealth Rogue, Ataka '
 global.CardText[CardStat] = 'Murakumo/Demon
 
-CONT [VC/RC]: During your turn, if you have two or more units with the same card name as any of your units, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if there are two or more units with the same card name as any of your units, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them, put it into your hand, and shuffle your deck. If you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -3042,7 +3042,7 @@ CardStat = 9889
 global.CardName[CardStat] = 'Stealth Fiend, Keugege'
 global.CardText[CardStat] = 'Murakumo/Ghost
 
-AUTO: When this unit is placed on VC or RC, reveal five cards from the top of your deck, and if all of the revealed normal units are cards with "Stealth Fiend" in their card names, choose up to one grade 2 or greater from among them, and call it to RC or put it into your hand. Shuffle your deck.'
+AUTO: When this unit is placed on VC or RC, reveal five cards from the top of your deck, if all of the revealed normal units are cards with "Stealth Fiend" in their card names, choose a grade 2 or greater card from among them, and call it to RC or put it into your hand. Shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -3141,7 +3141,7 @@ global.CardText[CardStat] = 'Murakumo/Ghost
 
 AUTO [VC/RC] 1/Turn: When this unit attacks while boosted, COST [Counter Blast 1], search your deck for up to one card with a different card name from this unit and the same card name as any of your units, call it to RC, and shuffle your deck.
 
-AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or less, COST [Discard this card], look at five cards from the top of your deck, choose a grade 2 or less card from among them, reveal it, put it to hand, and shuffle your deck.'
+AUTO [Hand]: At the beginning of your ride phase, if you vanguard is a grade 1 or less, COST [Discard this card], look at five cards from the top of your deck, choose up to one grade 2 or less card from among them, reveal it and put it into hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }

@@ -1153,7 +1153,7 @@ CardStat = 9120
 global.CardName[CardStat] = 'Angled Shot of Dust Storm, Alastair'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO: When this unit is put on GC, if no units are boosting your opponent’s attacking unit, this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit is put on GC, if your opponent’s attacking unit is not boosted, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -1587,7 +1587,7 @@ CardStat = 9389
 global.CardName[CardStat] = 'Blaze Pole Monk, Retsuji'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose up to one card with the overDress ability from your drop, and put it into your hand. Then, if you have a grade 4 vanguard, Counter Charge 1.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose up to one card with the overDress ability from your drop, and put it into your hand. If your vanguard is grade 4, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -2166,8 +2166,8 @@ global.CardName[CardStat] = 'Sealed Blaze Dragon, Samsara'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT [RC]: This unit gets all of the following according to the Arms on your VC.
-• Right Deity Arms - During your turn, this unit gets power +5000
-• Left Deity Arms - This unit gets "Intercept"'
+• Right Deity Arms - power +5000 during your turn.
+• Left Deity Arms - "Intercept"'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -5309,7 +5309,7 @@ global.CardText[CardStat] = 'Dragon Empire/Set Order/Smithy
 
 Play this if you have a vanguard with "Zedhlans" in its card name!
 
-ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept" and gets shield +5000. (Power increase only until end of turn even if you chose a unit with "Wrought Iron" in its card name)'
+ACT [Order Zone]: COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. If you chose a unit with "Wrought Iron" in its card name, until end of your opponent’s next turn, that unit gets "Intercept", and shield +5000. (Power increase only until end of turn even if you chose a unit with "Wrought Iron" in its card name)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 1
@@ -7328,7 +7328,7 @@ CardStat = 13329
 global.CardName[CardStat] = 'Triumph Dragon User, Grandpa'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-CONT [VC]: All of your other grade 3 units get "Intercept", and get shield +5000.
+CONT [VC]: All of your other grade 3 units get "Intercept", and shield +5000.
 
 ACT [VC] 1/Turn: COST [Counter Blast 1 & discard a card from hand], choose a grade 3 card from your drop, and call it to RC. If you called "Roaring Thunder Dragon, Triumph Dragon", this unit gets "Triple Drive" until end of turn.
 
@@ -9122,7 +9122,7 @@ global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
 AUTO: When this unit is rode upon by "Forge Emperor Dragon, Gargrex", COST [Energy Blast 3], look at the top seven cards of your deck, choose up to two <Dinodragon> with different card names from among them, reveal them, choose one of the revealed cards, put it into hand, and discard the rest of the revealed cards, and shuffle the deck.
 
-ACT [Drop]: If your vanguard is a grade 3 <Dinodragon>, COST [Energy Blast 3], and call this card to RC.'
+ACT [Drop]: If your vanguard is a grade 3 or greater <Dinodragon>, COST [Energy Blast 3], and call this card to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -9139,7 +9139,7 @@ CONT [VC]: During your turn, all of your front row <Dinodragon> rear-guards get 
 
 ACT [VC] 1/Turn: [Discard a card from your hand], choose up to two <Dinodragon> with different card names from your drop, and call them to RC. If you discarded a <Dinodragon> for this cost, choose one of your opponent’s rear-guards, and retire it.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], if you have <Dinodragon> rear-guards with two or more different card names, this unit gets power +10000 until end of battle, if you have three or more different card names, this unit gets drive +1 until end of battle, and if you have five or more different card names and you persona rode this turn, it also gets critical +1 until end of battle.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], if you have <Dinodragon> rear-guards with two or more different card names, this unit gets power +10000 until end of battle, if you have three or more different card names, this unit gets drive +1 until end of battle, and if you have five or more different card names and you persona rode this turn, it also gets critical +1 until end of battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1

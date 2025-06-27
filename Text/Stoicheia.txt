@@ -697,7 +697,7 @@ global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is placed on RC, if your vanguard is "Sylvan Horned Beast King, Magnolia", COST [Soul Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000.
 
-AUTO [RC] 1/Turn: When this unit is chosen by your vanguards effect, this unit gets power +5000 until end of turn.'
+AUTO [RC] 1/Turn: When this unit is chosen by your vanguard’s effect, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -811,7 +811,7 @@ global.CardText[CardStat] = 'Stoicheia/Ghost
 
 (STANDARD JP: Banned.)
 
-AUTO: When this unit is placed on RC, you may put all cards from your bind zone into the drop. If you do, this unit gets power +5000 until end of turn for each card put.'
+AUTO: When this unit is placed on RC, you may put all of your cards from your bind zone into your drop. If you do, this unit gets power +5000 until end of turn for each card you put.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1402,7 +1402,7 @@ CardStat = 9362
 global.CardName[CardStat] = 'Sylvan Horned Beast, Lemurea'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-AUTO [Front Row RC]: When your other rear-guard attacks, until end of turn, this unit gets power +5000, COST [Counter Blast 1], and gets power +5000.'
+AUTO [Front Row RC]: When your other rear-guard attacks, until end of turn, this unit gets power +5000, COST [Counter Blast 1], and it gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1617,7 +1617,7 @@ CardStat = 9377
 global.CardName[CardStat] = 'Synchro Disorder'
 global.CardText[CardStat] = 'Stoicheia/Ghost
 
-CONT [RC]: If your drop and bind zone have a total of five or more order cards, this unit gets power +5000.'
+CONT [RC]: If you have a total of five or more order cards in your drop and bind zone, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -2303,7 +2303,7 @@ CardStat = 10101
 global.CardName[CardStat] = 'Upbeat Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO: When this unit intercepts, if you have two or more grade 1 or less back row rear-guards, this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit intercepts, if your back row has two or more grade 1 or less rear-guards, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -2925,10 +2925,10 @@ CardStat = 10564
 global.CardName[CardStat] = 'Pink Moth Girl, Maple'
 global.CardText[CardStat] = 'Stoicheia/Keter Sanctuary/Insect
 
-AUTO [Drop]: When your grade 3 or greater vanguard is placed during the ride phase, if you persona rode this turn, and you do not have a "Pink Moth Girl, Maple" on your RC, you may call this card to RC. If you called a card, this unit gets power +5000 until end of turn.
+AUTO [Drop]: When your grade 3 or greater vanguard is placed during the ride phase, if you persona rode this turn, and you do not have "Pink Moth Girl, Maple" on your RC, you may call this card to RC. If you called it, this unit gets power +5000 until end of turn.
 
 Glitter - Thegrea (Active if your vanguard is a Glitter with "Thegrea" in its card name)
-AUTO [Back Row RC]: When your unit in the same column as this unit stand, you may stand this unit. If you do, retire this unit at the end of that turn.'
+AUTO [Back Row RC]: When your unit in the same column as this unit stand, you may stand this unit. If you do, at the end of that turn, retire this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 global.DCards2[CardStat] = 3
@@ -2958,7 +2958,7 @@ CardStat = 10568
 global.CardName[CardStat] = 'Tear Knight, Theo  '
 global.CardText[CardStat] = 'Stoicheia/Aqua Force/Aquaroid
 
-AUTO: When this card is rode upon by a unit with only «Aqua Force» for its clan, search your deck for up to one Blue Storm Armada card, reveal it and put it to your hand, and shuffle your deck.
+AUTO: When this card is rode upon by a unit with only «Aqua Force» for its clan, search your deck for up to one Blue Storm Armada card, reveal it and put it into your hand, and shuffle your deck.
 
 CONT [RC]: During your turn, if you have a vanguard with "Maelstrom" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
@@ -7879,8 +7879,7 @@ CardStat = 13604
 global.CardName[CardStat] = 'Blue Storm Supreme Dragon, Glory Maelstrom  '
 global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
 
-CONT [VC]: During your turn, if your RC or soul has a "Blue Storm Dragon, Maelstrom", this unit gets all of their ACT abilities, and all of your front row units get power +5000 for each Blue Storm Armada in your order zone.
-(Inherited ACT skills stack)
+CONT [VC]: During your turn, if your RC or soul has a "Blue Storm Dragon, Maelstrom", this unit gets all of their ACT abilities, and all of your front row units get power +5000 for each Blue Storm Armada in your order zone. (Inherited ACT skills stack)
 
 AUTO [VC]: When your "Blue Storm Dragon, Maelstrom" attacks a vanguard, until end of turn, that unit gets power +5000, if it is the fourth battle this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it.
 
@@ -8714,7 +8713,7 @@ global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, COST [Energy Blast 3], choose a <Tear Dragon> card from your drop, and call it to RC.
 
-CONT [RC]" If you have a grade 3 or greater vanguard with "Flagburg" in its card name, this unit gets "Boost".'
+CONT [RC]: If you have a grade 3 or greater vanguard with "Flagburg" in its card name, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -9205,6 +9204,253 @@ CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is o
 AUTO [Drop]: When your Blue Storm Armada is played from hand and put into the order zone, COST [Energy Blast 3], and call this card to RC.
 
 AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Maelstrom" in its card name, this unit gets power +2000 until end of that battle. COST [Soul Blast 1], choose two of your other rear-guards, and swap their positions.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14191
+{
+global.CardName[CardStat] = 'Masked Rider Kabuto, Rider Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast King, Magnolia".
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000. If you persona rode this turn, choose three rear-guards instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 14192
+{
+global.CardName[CardStat] = 'Masked Rider KickHopper'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Enpix".
+
+CONT [Back Row RC]: This unit gets power +10000, and if you have three or less rear-guards, all of your rear-guards in the same column as this unit cannot be chosen by your opponent’s card effects. (Active on opponent’s turn too.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14193
+{
+global.CardName[CardStat] = 'Masked Rider Kabuto, Masked Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Lattice".
+
+AUTO: When this unit is rode upon by "Sylvan Horned Beast King, Magnolia", COST [Soul Blast 1], reveal the top card of your deck, if it is a unit card, call it to RC, and if it isn’t, put it into your hand.
+
+AUTO [Back Row RC]: When this unit attacks a vanguard, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14194
+{
+global.CardName[CardStat] = 'Kabuto Zecter'
+global.CardText[CardStat] = 'Stoicheia/Zecter
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Charis".
+
+AUTO: When this unit is rode upon by "Sylvan Horned Beast, Lattice", you may reveal the top card of your deck. If it is a grade 2 or less unit card, call it to RC, and if it isn’t, put it into your soul.
+
+CONT [Back Row RC]: During the battle this unit attacked, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14195
+{
+global.CardName[CardStat] = 'Masked Rider Kabuto'
+global.CardText[CardStat] = 'Stoicheia
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Lotte".
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14196
+{
+global.CardName[CardStat] = 'ZECTrooper'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Elrante".
+
+AUTO [RC]: When this unit attacks, if two or more units are in front of this unit, this unit gets power +5000 until end of that battle, and if they are three or more, Soul Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14197
+{
+global.CardName[CardStat] = 'Masked Rider Gatack, Rider Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Giunosla".
+
+AUTO [Back Row RC]: When this unit attacks, COST [Counter Blast 1], choose one of your other rear-guards, and it gets this unit’s power until end of turn. (Increase its power at that time.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14198
+{
+global.CardName[CardStat] = 'Masked Rider Drake, Rider Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Bojalcorn".
+
+ACT [RC]: COST [Counter Blast 1], and until end of turn, this unit gets "CONT [Back Row RC]: When this unit would attack, this unit battles all of your opponent’s front row units.".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14199
+{
+global.CardName[CardStat] = 'Masked Rider TheBee, Rider Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Damainaru".
+
+AUTO: When this unit is placed on RC, if your vanguard is "Sylvan Horned Beast King, Magnolia", COST [Soul Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000.
+
+AUTO [RC] 1/Turn: When this unit is chosen by your vanguard’s effect, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.EnableAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 14200
+{
+global.CardName[CardStat] = 'Masked Rider Sasword, Rider Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Gabregg".
+
+AUTO [RC]: When your other unit in the same column as this unit attacks, COST [Soul Blast 1], and this unit gets power +10000 until end of turn. Choose all of your opponent’s rear-guards, and for the battle that this unit attacked this turn, your opponent cannot call cards with the same grade as the chosen units from their hand to GC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14201
+{
+global.CardName[CardStat] = 'Kabuto Extender, Masked Mode'
+global.CardText[CardStat] = 'Stoicheia/Machine
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Koocy".
+
+CONT: This card cannot be ridden or called other than to the back row center.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14202
+{
+global.CardName[CardStat] = 'Brightrooper'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Hopeful Maiden, Alejandra".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, COST [discard a card from your hand], choose one of your units, and it cannot be hit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14203
+{
+global.CardName[CardStat] = 'Perfect Zecter'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+CONT: This card is also regarded as "Wild Intelligence".
+
+Play this with COST [Counter Blast 1] !
+
+Discard three cards from the top of your deck, choose up to one card with the same grade as your vanguard or lower from your drop, and call it to RC. If your vanguard is "Sylvan Horned Beast King, Magnolia", you may choose up to two cards instead of one.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14209
+{
+global.CardName[CardStat] = 'Masked Rider Gatack, Masked Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Winnsapooh".
+
+CONT [Deck/Hand]: If you have a grade 2 or greater vanguard with "Sylvan Horned Beast" in its different card name from this card, this card gets grade -1.
+
+CONT [RC]: If your vanguard with "Magnolia" in its card name was placed this turn, this unit gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14210
+{
+global.CardName[CardStat] = 'Kabuto Extender, EX Mode'
+global.CardText[CardStat] = 'Stoicheia/Machine
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Seroll".
+
+AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with "Magnolia" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
+
+CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }

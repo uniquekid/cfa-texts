@@ -139,7 +139,7 @@ global.CardText[CardStat] = 'Nova Grappler/Battleroid/Stand Trigger
 
 AUTO: When another «Nova Grappler» rides this unit, you may call this card to RC.
 
-AUTO [RC]: When this unit boosts, the boosted unit gets power +3000 until end of that battle and at the beginning of the end phase of that turn, return this unit to your deck, and shuffle your deck.'
+AUTO [RC]: When this unit boosts, the boosted unit gets power +3000 until end of that battle, and at the beginning of the end phase of that turn, return this unit to your deck, and shuffle your deck.'
 }
 global.TriggerUnit[CardStat] = 3
 
@@ -242,7 +242,7 @@ CardStat = 130
 global.CardName[CardStat] = 'Oasis Girl'
 global.CardText[CardStat] = 'Nova Grappler/Workeroid
 
-ACT [VC/RC]: [Counter Blast 1] During this turn, this unit gets power +1000.'
+ACT [VC/RC]: [Counter Blast 1] This unit gets power +1000 until end of turn.'
 }
 
 
@@ -305,7 +305,7 @@ global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
 CONT: Sentinel.
 
-AUTO: [Choose a «Nova Grappler» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Nova Grappler», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Nova Grappler» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Nova Grappler» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -601,7 +601,7 @@ CardStat = 167
 global.CardName[CardStat] = 'Top Gun'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC]: When your «Nova Grappler» rear-guards becomes rest, this unit gets power +1000 until end of turn.'
+AUTO [VC]: When your «Nova Grappler» rear-guard becomes rest, this unit gets power +1000 until end of turn.'
 }
 
 
@@ -1065,7 +1065,7 @@ global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a «Nova Grappler» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Nova Grappler», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Nova Grappler» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Nova Grappler» that is being attacked, and that unit cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }
@@ -2271,7 +2271,7 @@ CardStat = 4523
 global.CardName[CardStat] = 'Vollmond Blaukluger'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO Limit Break 4: [Counter Blast 1] When your unit with "Blau" in its card name rides this unit, you may pay the cost. If you do, choose one of your vanguard, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if the number of stand rear-guards you have is three or more, until end of that battle, your opponent cannot call sentinel from hand to GC.".
+AUTO Limit Break 4: [Counter Blast 1] When your unit with "Blau" in its card name rides this unit, you may pay the cost. If you do, choose one of your vanguards, until end of turn, it gets power +10000, and "AUTO [VC]: When this unit attacks a vanguard, if the number of stand rear-guards you have is three or more, until end of that battle, your opponent cannot call sentinel from hand to GC.".
 
 AUTO [VC]: [Soul Blast 1-card with "Blau" in its card name] When the attack of your unit with "Blau" in its cards names hits a vanguard, you may pay the cost. If you do, Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
@@ -2599,7 +2599,7 @@ global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
 Stride.
 
-AUTO [VC] Generation Break 8: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, stand all of your rear-guards, until end of turn, they get "AUTO [RC] 1/Turn: When this unit rest, stand this unit", and for each of your rear-guards, this unit gets power +5000 until end of that battle.'
+AUTO [VC] Generation Break 8: [Counter Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, stand all of your rear-guards, until end of turn, they get "AUTO [RC] 1/Turn: When this unit rest, stand this unit.", and for each of your rear-guards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 4
 global.ExtraDeck[CardStat] = 1
@@ -3074,9 +3074,9 @@ CardStat = 5757
 global.CardName[CardStat] = 'Boomerang Thrower '
 global.CardText[CardStat] = 'Nova Grappler/Human/Hero
 
-AUTO [RC]: When placed, if there is one or less face up cards in your damage zone, Counter Charge 1.
+AUTO [RC]: When placed, if you have one or less face up cards in your damage zone, Counter Charge 1.
 
-AUTO [RC]: When placed, if there is one or less cards in your soul, Soul Charge 1.'
+AUTO [RC]: When placed, if you have one or less cards in your soul, Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
@@ -3103,7 +3103,7 @@ CardStat = 5765
 global.CardName[CardStat] = 'Maximum Raizer '
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC/RC]: When it is not boosted and attacks a vanguard, this unit gets power +10000 until end of that battle.'
+AUTO [VC/RC]: When it attacks a vanguard while not boosted, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
 }
@@ -3127,7 +3127,7 @@ CardStat = 5767
 global.CardName[CardStat] = 'Perfect Raizer '
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC]: When it attacks, COST [Counter Blast 2], choose two of your rear-guards in the front row, and stand them.
+AUTO [VC]: When it attacks, COST [Counter Blast 2], and stand two of your rear-guards in the front row.
 
 AUTO [VC]: When its attack hits, if you have a card with "Raizer" in its card name in your soul, Counter Charge 1, and one of your units gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -3291,7 +3291,7 @@ CardStat = 5810
 global.CardName[CardStat] = 'Cat Butler '
 global.CardText[CardStat] = 'Nova Grappler/Warbeast
 
-AUTO [RC]: At the end of a battle when your vanguard’s attack does not hit, COST [Soul Blast 1 & Retire this unit], choose one of your units, it gets power +3000 until end of turn, and if its a grade 2 or less vanguard, stand it.'
+AUTO [RC]: At the end of the battle your vanguard’s attack did not hit, COST [Soul Blast 1 & retire this unit], choose one of your units, and it gets power +3000 until end of turn. If that unit is a grade 2 or less vanguard, stand it.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 4
 }
@@ -3365,7 +3365,7 @@ CardStat = 6570
 global.CardName[CardStat] = 'Screamin’ and Dancin’ Announcer, Shout '
 global.CardText[CardStat] = 'Nova Grappler/Alien
 
-ACT [RC]: COST [Rest this unit], you and your opponent reveal the top card of his or her decks, if they have different grades each, the fighter who revealed the greatest grade draws a card, and the fighter who revealed the lowest grade Soul Charge 1. If they have the same grade, you and your opponent draw a card. (The revealed card is drawn.)'
+ACT [RC]: COST [Rest this unit], you and your opponent reveal the top card of your decks, if their grades are different, the fighter who revealed the higher grade draws a card, and the fighter who revealed the lower grade Soul Charge 1. If the grades are the same, you and your opponent draw a card. (Draw the revealed cards.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }
@@ -3407,7 +3407,7 @@ CardStat = 6586
 global.CardName[CardStat] = 'Meganton Poweredon'
 global.CardText[CardStat] = 'Nova Grappler/Hero
 
-AUTO: When this rest unit is retired from RC, return a <Hero> from your drop zone to your hand. This ability may only be used by a card with the same card name once a turn.'
+AUTO: When this unit in rest is retired from RC, return a <Hero> from your drop zone to your hand. This ability may only be used by a card with the same card name once a turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
 }
@@ -3543,9 +3543,9 @@ CardStat = 6654
 global.CardName[CardStat] = 'Ultra Beast Deity, Illuminal Dragon '
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-AUTO [VC] 1/Turn: At the end of the battle your rear-guard attacked and does not hit, COST [Counter Blast 1], stand that unit, and it gets power +10000 until end of turn. Attack your opponent’s vanguard with that unit.
+AUTO [VC] 1/Turn: At the end of the battle that your rear-guard’s attack did not hit, COST [Counter Blast 1], stand that unit, and it gets power +10000 until end of turn. That unit attacks your opponent’s vanguard.
 
-AUTO [VC/RC] 1/Turn: When your other units attack hits, this unit gets power +15000 until end of turn.'
+AUTO [VC/RC] 1/Turn: When your other unit’s attack hits, this unit gets power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 4
 }
@@ -4325,9 +4325,9 @@ CardStat = 7945
 global.CardName[CardStat] = 'Extreme Battler, Arashid '
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-CONT [RC]: If your unit was stand by a card’s ability this turn, this unit gets power +5000.
+CONT [RC]: If your unit stand by a card’s ability this turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 4
 }

@@ -420,7 +420,7 @@ CardStat = 1511
 global.CardName[CardStat] = 'Micro-hole Dracokid'
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
-AUTO: When a card named "Gravity Ball Dragon" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Gravity Collapse Dragon" or "Schwarzschild Dragon" from among them, reveal it to your opponent, put it to your hand, and shuffle your deck.
+AUTO: When a card named "Gravity Ball Dragon" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Gravity Collapse Dragon" or "Schwarzschild Dragon" from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
 AUTO: When a «Link Joker» other than a card named "Gravity Ball Dragon" rides this unit, you may call this card to RC.'
 global.UnitGrade[CardStat] = 0
@@ -478,7 +478,7 @@ global.CardText[CardStat] = 'Link Joker/Cyberoid
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: When one of your opponent’s rear-guard becomes locked by your card’s effect, if you have a «Link Joker» vanguard, you may put this card into your hand.'
+AUTO [RC]: When your opponent’s rear-guard is locked due to an effect from one of your cards, if you have a «Link Joker» vanguard, you may return this unit to your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -2832,7 +2832,7 @@ global.CardText[CardStat] = 'Link Joker/Cyberoid
 
 G guardian.
 
-AUTO Generation Break 1: [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, choose up to three of your rear-guards, lock them, your opponent chooses a unit in his or her back row for each card that was locked, and locks it.'
+AUTO Generation Break 1: [Counter Blast 1 & Choose a face down G guardian from your G zone, and turn it face up] When this unit is placed on GC, you may pay the cost. If you do, choose up to three of your rear-guards, lock them, your opponent locks one of his or her units in the back row for each that was locked.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -2939,7 +2939,7 @@ CardStat = 5108
 global.CardName[CardStat] = 'Abolition Star-vader, Neodymium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: [Soul Blast 1 & Retire this unit] When your opponent’s locked card is unlocked during his or her end phase, if you have a vanguard with "Star-vader" in its card name, you may pay the cost. If you do, retire one of those unlocked units. If you retired a unit, draw a card.'
+AUTO [RC]: [Soul Blast 1 & Retire this unit] When your opponent’s locked card is unlocked during your opponent’s end phase, if you have a vanguard with "Star-vader" in its card name, you may pay the cost. If you do, retire that unlocked unit. If it is retired, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -3276,9 +3276,9 @@ global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
 Stride.
 
-ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] If you have a heart card with "Star-vader" in its card name, your opponent chooses one of his or her rear-guards for each face up card in your G zone, and locks it.
+ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] If you have a heart card with "Star-vader" in its card name, your opponent chooses one of his or her rear-guards for each face up card in your G zone, and locks them.
 
-CONT [VC] Generation Break 3: All of the units with "Star-vader" in their card names in your front row get power +3000 for each of your opponent’s locked cards.'
+CONT [VC] Generation Break 3: All of the units in your front row with "Star-vader" in their card names get power +3000 for each of your opponent’s locked cards.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -3538,7 +3538,7 @@ CardStat = 5214
 global.CardName[CardStat] = 'Globule Dober'
 global.CardText[CardStat] = 'Link Joker/Cyber Beast
 
-AUTO: [Soul Blast 1] When this unit is unlocked during your end phase or due to your vanguards effect, you may pay the cost. If you do, draw a card, and Counter Charge 1.'
+AUTO: [Soul Blast 1] When this unit is unlocked due to the effect of your vanguard or during your end phase, you may pay the cost. If you do, draw a card, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -5229,9 +5229,9 @@ CardStat = 7676
 global.CardName[CardStat] = 'Lady Battler of the White Dwarf '
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-CONT [VC/RC]: During your turn, if there is a face down card is in any player’s bind zone or circle, this unit gets power +5000.
+CONT [VC/RC]: During your turn, if there is a face down card in any player’s bind zone or circle, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }

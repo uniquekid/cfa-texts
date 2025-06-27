@@ -1093,7 +1093,7 @@ global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is placed on RC, if you persona rode this turn, Soul Charge 1.
 
-AUTO: When this unit is put from RC into your soul by your vanguards ability, COST [Counter Blast 2], choose one of your vanguards, and it gets power +5000 / drive +1 until end of turn.'
+AUTO: When this unit is put from RC into your soul by your vanguard’s ability, COST [Counter Blast 2], choose one of your vanguards, and it gets power +5000 / drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -1193,7 +1193,7 @@ global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is rode upon by "Desire Devil, Boshokku", COST [reveal an "Avaricious Demonic Dragon, Greedon" from your ride deck], and draw a card.
 
-AUTO: When this unit is put from RC into your soul by your vanguards ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and until end of turn, when your opponent would call cards from hand to GC, they must call two or more at the same time.'
+AUTO: When this unit is put from RC into your soul by your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and until end of turn, when your opponent would call cards from hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -1235,7 +1235,7 @@ CardStat = 9132
 global.CardName[CardStat] = 'Desire Devil, Acratz'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: When this unit is put from RC into your soul by your vanguards ability, COST [Counter Blast 1], choose one of your vanguards, and it gets power +10000 until end of turn.'
+AUTO: When this unit is put from RC into your soul by your vanguard’s ability, COST [Counter Blast 1], choose one of your vanguards, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -1320,7 +1320,7 @@ CardStat = 9283
 global.CardName[CardStat] = 'Desire Devil, Bubetsuu'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC] 1/Turn: When your other rear-guard is put into your soul by your vanguards ability during your turn, COST [Counter Blast 1], choose a card from your hand, call it to an open RC, and if your soul has ten or more cards, draw a card. (May be used even if this unit is put into your soul at the same time as other units.)'
+AUTO [RC] 1/Turn: When your other rear-guard is put into your soul by your vanguard’s ability during your turn, COST [Counter Blast 1], choose a card from your hand, call it to an open RC, and if your soul has ten or more cards, draw a card. (May be used even if this unit is put into your soul at the same time as other units.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -1924,7 +1924,7 @@ CardStat = 9846
 global.CardName[CardStat] = 'Desire Devil, Xitto'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: When this unit is put into your soul from RC by your vanguard’s ability, choose a card from your drop, and put it into your soul.'
+AUTO: When this unit is put from RC into your soul by your vanguard’s ability, choose a card from your drop, and put it into your soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -6526,7 +6526,7 @@ global.CardText[CardStat] = 'Dark States/Normal Order
 
 Play this with COST [Energy Blast 3] !
 
-Choose two cards from your drop, and put them into soul. Then, if your soul has ten or more cards, choose one of your vanguards, and it gets [Power]+10000 until end of turn.'
+Choose two cards from your drop, and put them into soul. Then, if your soul has ten or more cards, choose one of your vanguards, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -8778,6 +8778,23 @@ global.CardText[CardStat] = 'Dark States/Elf
 CONT: If you have a vanguard with only «Pale Moon» for its clan, this card is only from «Pale Moon», and gets all of the following.
 • AUTO: When this unit is put into soul from hand by your card’s ability, if you have a grade 3 or greater vanguard with "Luquier" in its card name, COST [Counter Blast 1], and draw a card.
 • AUTO [Soul]: When your rear-guard is put into soul for the cost of your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 2 cards other than this card], call this card to RC, and it gets power +5000 until end of turn. If you persona rode this turn, if gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14189
+{
+global.CardName[CardStat] = 'Tick-down Dragon'
+global.CardText[CardStat] = 'Dark States/Gear Dragon
+
+AUTO: When this unit is placed on RC from ahnd, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Energy Blast 3], and perform one of the following.
+• Look at the top seven cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+• Choose a "Distorted Bane" from your face up damage zone cards, and put it into hand. If you put a card, put the top card of your deck into the damage zone.
+
+AUTO [RC]: At the end of the battle this unit boosted a grade 3 or greater vanguard with "Liael" in its card name, if you have four or more regress gauges, COST [put this unit into soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }

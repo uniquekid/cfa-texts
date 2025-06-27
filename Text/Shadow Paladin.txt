@@ -108,7 +108,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Choose a «Shadow Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Shadow Paladin», and that unit cannot be hit until end of that battle.'
+AUTO: [Choose a «Shadow Paladin» from your hand, and discard it] When this unit is placed on GC, you may pay the cost. If you do, choose one of your «Shadow Paladin» that is being attacked, and that unit cannot be hit until end of that battle.'
 }
 
 
@@ -757,7 +757,7 @@ CardStat = 1828
 global.CardName[CardStat] = 'Revenger, Dragruler Phantom'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose two of your rear-guards with "Revenger" in its card name, and retire them] This unit gets power +10000 until end of turn, if the number of card in your opponent’s damage is four or less, choose one of your opponent’s vanguard, and deal one damage. (Perform a damage check.)
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Choose two of your rear-guards with "Revenger" in its card name, and retire them] This unit gets power +10000 until end of turn, if the number of card in your opponent’s damage is four or less, choose one of your opponent’s vanguards, and deal one damage. (Perform a damage check.)
 
 CONT [VC]: If you have a card named "Illusionary Revenger, Mordred Phantom" in your soul, this unit gets power +2000.
 
@@ -1027,7 +1027,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 ACT [VC]: Legion 20000 "Inspection Witch, Deirdre".
 
-AUTO [VC]: [Choose one of your rear-guards with "Witch" in its card name, and retire it] When this unit Legion, you may pay the cost. If you do, choose one of your opponent’s vanguard, and that unit gets power -5000 for each of your opponent’s grade 0 rear-guard until end of turn.
+AUTO [VC]: [Choose one of your rear-guards with "Witch" in its card name, and retire it] When this unit Legion, you may pay the cost. If you do, choose one of your opponent’s vanguards, and that unit gets power -5000 for each of your opponent’s grade 0 rear-guard until end of turn.
 
 ACT [VC]: [Counter Blast 2] Choose one of your opponent’s RC with a rear-guard, your opponent reveals five cards from the top of his or her deck, chooses a grade 0 card from them, calls it to that RC, and shuffle his or her deck.'
 global.UnitGrade[CardStat] = 3
@@ -1088,7 +1088,7 @@ CardStat = 2176
 global.CardName[CardStat] = 'Witch of Quests, Securna'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO: [Choose one of your other rear-guards with "Witch" in its card name, and retire it] When this unit is placed on RC, if your vanguard with "Witch" in its card name is Legion, and the number of grade 0 rear-guards your opponent has is two or more, you may pay the cost. If you do, choose one of your opponent’s vanguard, and that unit gets power -5000 until end of turn.'
+AUTO: [Choose one of your other rear-guards with "Witch" in its card name, and retire it] When this unit is placed on RC, if your vanguard with "Witch" in its card name is Legion, and the number of grade 0 rear-guards your opponent has is two or more, you may pay the cost. If you do, choose one of your opponent’s vanguards, and that unit gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -1127,7 +1127,7 @@ CardStat = 2183
 global.CardName[CardStat] = 'Demon World Castle, ToteZiegel'
 global.CardText[CardStat] = 'Shadow Paladin/Golem
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose two of your rear-guards with "Demon World Castle" in its card name, and retire them] Search your deck for up to three grade 2 or less cards, call them to separate RC, and shuffle your deck. This ability cannot be used for the rest of that turn.
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose two of your rear-guards with "Demon World Castle" in its card name, and retire them] Search for up to three grade 2 or less cards from your deck, call them to separate RC, and shuffle your deck. This ability cannot be used for the rest of that turn.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1907,7 +1907,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up & Choose one of your rear-guards, and retire it] Until end of turn, this unit gets "AUTO [VC] 1/Turn Generation Break 3: [Counter Blast 2 & Choose two of your rear-guards, and retire them] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets drive -2 until end of turn", and if you have a heart card with "Diablo" in its card name, search your deck for up to one grade 1 card, call it to RC, and shuffle your deck.'
+ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone, and turn it face up & Choose one of your rear-guards, and retire it] Until end of turn, this unit gets "AUTO [VC] 1/Turn Generation Break 3: [Counter Blast 2 & Choose two of your rear-guards, and retire them] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets drive -2 until end of turn.", and if you have a heart card with "Diablo" in its card name, search your deck for up to one grade 1 card, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -2792,7 +2792,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 Stride.
 
-CONT [VC] Ritual 3: For every grade 1 in your drop zone, this unit gets power +5000.'
+CONT [VC] Ritual 3: This unit gets power +5000 for each grade 1 in your drop zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -3019,9 +3019,9 @@ CardStat = 5071
 global.CardName[CardStat] = 'Supremacy Dragon, Claret Sword Dragon Revolt'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO [VC]: [Counter Blast 1] When your G unit Stride, you may pay the cost. If you do, reveal cards from the top of your deck until two grade 1 cards are revealed, call a card to RC, put a card into your hand, from among those grade 1 cards, and shuffle your deck. (If there is one grade 1 card, you only perform the call.)
+AUTO [VC]: [Counter Blast 1] When your G unit Stride, you may pay the cost. If you do, reveal cards from the top of your deck until two grade 1 cards have been revealed, call a card from among those grade 1 cards to RC, put the other into your hand, and shuffle your deck. (If there is one grade 1 card, call it.)
 
-AUTO [VC] Generation Break 2: When this unit is attacked, choose one of your grade 1 rear-guards, and you may move it to GC. If you do, and you do not have any rear-guards, this unit gets power +2000 until end of turn.'
+AUTO [VC] Generation Break 2: When this unit is attacked, choose one of your grade 1 rear-guards, and you may move it to GC. If you do, and you have no rear-guards, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -3551,7 +3551,7 @@ CardStat = 5990
 global.CardName[CardStat] = 'Blaster Dagger '
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When its attack or an attack that it boosted hits a vanguard, COST [put this unit into your soul], your opponent chooses one of his or her rear-guards, and retires it.'
+AUTO [RC]: When its attack or the attack it boosted hits a vanguard, COST [put this unit into your soul], your opponent chooses one of his or her rear-guards, and retires it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -4002,7 +4002,7 @@ CardStat = 6918
 global.CardName[CardStat] = 'Knight of Authority, Demne'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When its attack doesn’t hit while attacking a vanguard, if your opponent did not call a guardian during that battle, COST [Counter Blast 1], and deal one damage to your opponent’s vanguard.'
+AUTO [RC]: When it attacks a vanguard and did not hit, if no guardians were called for that battle, COST [Counter Blast 1], and deal one damage to your opponent’s vanguard.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -4371,9 +4371,9 @@ CardStat = 7303
 global.CardName[CardStat] = 'Onyx Dust Dragon'
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO [VC/RC]: When placed, if you do not have a RC "Blaster Dark", COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one "Blaster Dark", call it to RC, and shuffle your deck.
+AUTO [VC/RC]: When placed, if "Blaster Dark" is not on your RC, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one "Blaster Dark", call it to RC, and shuffle your deck.
 
-CONT [RC]: If you have a RC "Blaster Dark", this unit gets "Boost".'
+CONT [RC]: If "Blaster Dark" is on your RC, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -4412,7 +4412,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 CONT [VC/RC]: During your turn, if your drop zone has three or more grade 1 cards, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -5120,7 +5120,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 AUTO: When this unit on VC is attacked, or when this unit is put on GC, COST [retire two of your rear-guards with "Witch" in its card names], choose one of your opponent’s stand rear-guards, and retire it.
 
-CONT [RC]: If you have a vanguard with "Witch" in its card name, this unit cannot be chosen by your opponent’s card effects, gets "intercept", and gets power +5000.'
+CONT [RC]: If you have a vanguard with "Witch" in its card name, this unit cannot be chosen by your opponent’s card effects, gets "Intercept", and gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -5239,13 +5239,12 @@ ACT [G zone]: If your vanguard is a grade 3 "Revenger, Raging Form Dragon" with 
 
 AUTO [VC] Limit Break 4: At the end of the battle this unit attacked, if you have a heart card with "Raging" in its card name, COST [Counter Blast 1 & Soul Blast 1 & retire two rear-guards, and discard two grade 3 <Abyss Dragon> from hand], put this unit into G zone face up, choose up to one face down "True Revenger, Raging Rapt Dragon" from your G zone, Stride it on VC as stand, and it gets drive -1 until end of turn.
 
-(SHIFT + left click to create Force gifts and crest)
-(Hold TAB to view the related card.)'
+(SHIFT + left click to create Force gifts and crest)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
-global.AnotherSide[CardStat] = 12591
+//global.AnotherSide[CardStat] = 12591
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
