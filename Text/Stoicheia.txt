@@ -6,8 +6,9 @@ global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000. If you persona rode this turn, choose three rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Magnolia'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -772,6 +773,7 @@ AUTO [RC]: When this unit attacks, if two or more units are in front of this uni
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Elrante'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3229,6 +3231,7 @@ CONT [RC]: If your vanguard with "Magnolia" in its card name was placed this tur
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Winnsapooh'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3387,6 +3390,7 @@ AUTO [VC]: At the end of the battle this unit attacked, COST [if you have one or
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Granfia'
 global.AnotherSide[CardStat] = 10687
 }
 global.PowerStat[CardStat] = 13000
@@ -9221,8 +9225,9 @@ CONT: This card is also regarded as "Sylvan Horned Beast King, Magnolia".
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000. If you persona rode this turn, choose three rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Magnolia'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -9305,6 +9310,7 @@ AUTO [RC]: When this unit attacks, if two or more units are in front of this uni
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Elrante'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9435,6 +9441,7 @@ CONT [Deck/Hand]: If you have a grade 2 or greater vanguard with "Sylvan Horned 
 CONT [RC]: If your vanguard with "Magnolia" in its card name was placed this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
+global.PersonaRideCardName[CardStat] = 'Winnsapooh'
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -9451,6 +9458,109 @@ CONT: This card is also regarded as "Sylvan Horned Beast, Seroll".
 AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with "Magnolia" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
 
 CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14225
+{
+global.CardName[CardStat] = 'Radien Lord, Granfia Julament'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit is placed by riding from "Lavien Lord, Granfia", activate persona ride, and until end of turn, this unit gets all of the original abilities of that unit. All Plant tokens and Noblesserose tokens on your RC become plant gauges, call a Noblesserose "Rosarossa" token to your back row center RC, and put all of your plant gauges face up on that unit.
+
+AUTO [VC]: At the end of your turn, choose a "Lavien Lord, Granfia" from your soul, and ride it as rest. If you rode, choose one of your Noblesserose token, and put this card face up as that unit’s plant gauge.
+
+(SHIFT + left click to generate a Noblesserose "Rosarossa" Token)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Granfia'
+global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.AnotherSide[CardStat] = 14226
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 14226
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 14227
+{
+global.CardName[CardStat] = 'Yancha Pepino'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+AUTO: During your turn, when this card is discarded from hand, if you have a vanguard with "Granfia" in its card name, put this card into soul.
+
+ACT [Drop]: If you have a rear-guard with "Noblesserose" in its card name, COST [remove this card], and call a Plant token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 14228
+{
+global.CardName[CardStat] = 'Decisive Action Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO: When this unit is placed on RC, discard the top card of your deck, and if a trigger unit was discarded, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14229
+{
+global.CardName[CardStat] = 'Maritime Assault'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO: When this unit is put on GC, if it is the third battle of this turn, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14234
+{
+global.CardName[CardStat] = 'Strait Scale Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+CONT: If you have a vanguard with "Argo Siren" in its card name or only «Aqua Force» for its clan, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Energy Blast 3 & discard an order card from hand], draw two cards, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• AUTO [RC]: When this unit attacks or stand by a card’s effect, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14235
+{
+global.CardName[CardStat] = 'Argo Siren, Kuresh'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: During your turn, when this card is discarded from hand by the ability of your card, if you have a vanguard with "Argo Siren" in its card name, COST [put a normal unit with a different card name from this card and without sentinel from drop on the bottom of the deck], put this card into soul, choose one of your vanguard’s original AUTO abilities, and perform one of the following
+• Reduce the cost of the chosen ability by Counter Blast 1 until end of turn.
+• Reduce the cost of the chosen ability by Energy Blast 3 until end of turn.
+
+CONT [Back Row RC]: During your turn, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name, all of your other <Mermaid> and <Tear Dragon> in the same column as this unit get power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
