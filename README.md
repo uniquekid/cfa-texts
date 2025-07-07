@@ -409,13 +409,14 @@ global.DontShowInDeckEditor[CardStat] = 1
 
 This parameter explicitly hides the card in the editor regardless of its clan/nation.
 
-### :performing_arts: Double-faced cards
+### :performing_arts: Double-faced & Token Generating Cards
 
 ```
 global.AnotherSide[CardStat] = <card_id>
 ```
 
-That other side card referenced by `<card_id>` should be hidden in the deck editor (see previous section).
+The card referenced by `<card_id>` will be viewed when holding 'Tab' over the card with this parametre.
+For cards excluding Gyze, only the unit card generating the pseudo-card should have this parametre, as effect-generated cards are not viewable in deck editor.
 
 ### :page_facing_up::arrow_up_down: Extended text box
 
