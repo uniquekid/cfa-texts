@@ -422,7 +422,7 @@ global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
 AUTO: When a card named "Gravity Ball Dragon" rides this unit, look at up to seven cards from the top of your deck, search for up to one card named "Gravity Collapse Dragon" or "Schwarzschild Dragon" from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.
 
-AUTO: When a «Link Joker» other than a card named "Gravity Ball Dragon" rides this unit, you may call this card to RC.'
+AUTO: When a «Link Joker» not named "Gravity Ball Dragon" rides this unit, you may call this card to RC.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 24
 }
@@ -721,7 +721,7 @@ CardStat = 1861
 global.CardName[CardStat] = 'Taboo Star-vader, Rubidium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO: [Retire this unit] When this unit is placed on GC, if you have a vanguard named "Star-vader, "Omega" Glendios", you may pay the cost. If you do, choose one of your rear-guards with "ß" in its card name, and until end of that battle, the attacking unit goes to attack that unit, and all of your guardians goes to guard that unit.
+AUTO: [Retire this unit] When this unit is placed on GC, if you have a vanguard named "Star-vader, "Omega" Glendios", you may pay the cost. If you do, choose one of your rear-guards with "ß" in its card name, the unit that being attacked during that battle changes to that unit, and all of your guardians guard that unit.
 
 (ß = ßeverse or ße-birth)'
 global.UnitGrade[CardStat] = 1
@@ -926,7 +926,7 @@ CardStat = 2222
 global.CardName[CardStat] = 'Star-vader, Astro-reaper'
 global.CardText[CardStat] = 'Link Joker/Cyber Golem
 
-AUTO [RC]: [Soul Blast 1] When this card’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: [Soul Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the same card name as a unit on your VC from among them, reveal it to your opponent, put it into your hand, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -1623,7 +1623,7 @@ CardStat = 2431
 global.CardName[CardStat] = 'Diverging Deletor, Newark'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO [RC]: When this unit’s attack hits a vanguard, choose one of your other units, and that unit gets power +3000 until end of turn.'
+AUTO [RC]: When this unit’s attack hits a vanguard, choose another of your units, and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -2377,7 +2377,7 @@ CardStat = 3224
 global.CardName[CardStat] = 'Waving Deletor, Greidhol'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-ACT [VC] 1/Turn: [Soul Blast 1 "Docking Deletor, Greion" & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and bind it face down.
+ACT [VC] 1/Turn: [Soul Blast 1-card named "Docking Deletor, Greion" & Choose one of your rear-guards with "Deletor" in its card name, and retire it] Delete all of your opponent’s vanguards, your opponent chooses a card from his or her drop zone, and bind it face down.
 
 AUTO [VC]: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at five cards from the top of your deck, search for one card named "Docking Deletor, Greion" from among them, put it into your soul, shuffle your deck, choose a rear-guard in your opponent’s front row, retire it, your opponent chooses a card from his or her drop zone, and bind it face down.'
 global.UnitGrade[CardStat] = 3
@@ -2717,7 +2717,7 @@ CardStat = 4047
 global.CardName[CardStat] = 'Overeat Deletor, Onagil'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Deletor" in its card name, you may play "Each player draws a card, chooses a card from his or her hand, and discards it.".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Deletor" in its card name, you may "All fighters draws a card, chooses a card from their hand, and discards it.".
 
 ACT [RC]: [Put this unit into your soul] If you have a vanguard with "Deletor" in its card name, your opponent chooses a card from his or her drop zone, and binds it face down.'
 global.UnitGrade[CardStat] = 1
@@ -3552,7 +3552,7 @@ global.CardText[CardStat] = 'Link Joker/Messiah
 
 Stride.
 
-AUTO [VC] Generation Break 3: [Choose a face down card from your G zone, and turn it face up] When this unit attacks, if your heart card is <Messiah>, you may pay the cost. If you do, unlock all locked cards, choose all of your units that were unlocked, until end of turn, they get power +5000, and this unit gets power +5000 for each card that was unlocked. If five or more cards were unlocked, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC.'
+AUTO [VC] Generation Break 3: [Choose a face down card from your G zone, and turn it face up] When this unit attacks, if your heart card is a <Messiah>, you may pay the cost. If you do, unlock all locked cards, choose all of your unlocked units, they get power +5000 until end of turn, and this unit gets power +5000 for each unit unlocked. If the number of cards unlocked is five or more, your opponent cannot call grade 1 or greater cards from hand to GC until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -3694,9 +3694,9 @@ global.CardText[CardStat] = 'Link Joker/Alien
 
 Stride.
 
-CONT: If you have a vanguard with "Deletor" in its card name, and the number of cards in your hand is one or less, this card may Stride without paying the cost for Stride.
+CONT: If you have a vanguard with "Deletor" in its card name, and the number of cards in your hand is one or less, this card may Stride without paying the Stride cost.
 
-ACT [VC] 1/Turn: [Choose a face down card with "Deletor" in its card name from your G zone, and turn it face up & Choose two of your rear-guards with "Deletor" in their card names, and retire them] If you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards.'
+ACT [VC] 1/Turn: [Choose a face down card with "Deletor" in its card name from your G zone, and turn it face up, choose two of your rear-guards with "Deletor" in their card names, and retire them] If you have a heart card with "Deletor" in its card name, delete all of your opponent’s vanguards.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1

@@ -371,7 +371,7 @@ CardStat = 866
 global.CardName[CardStat] = 'Demonic Dragon Berserker, Vasuki'
 global.CardText[CardStat] = 'Narukami/Dragonman
 
-AUTO [RC]: When your grade 3 «Narukami» is placed on your VC, this unit gets power +10000 until end of turn.'
+AUTO [RC]: When your grade 3 «Narukami» is placed on VC, this unit gets power +10000 until end of turn.'
 }
 
 
@@ -822,7 +822,7 @@ CardStat = 1091
 global.CardName[CardStat] = 'Demonic Dragon Berserker, Sandila'
 global.CardText[CardStat] = 'Narukami/Dragonman
 
-AUTO [RC]: When your grade 3 «Narukami» is placed on your VC, this unit gets power +10000 until end of turn.'
+AUTO [RC]: When your grade 3 «Narukami» is placed on VC, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -1491,7 +1491,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-ACT [RC]: [Put this unit into your soul] Choose your vanguard, and until end of turn, that unit gets "AUTO [VC]: [Counter Blast 1] During your turn, when your opponent’s rear-guard in the front row is put into the drop zone, if this unit is Legion, you may pay the cost. If you do, choose up to one of your opponent’s rear-guards in the same column as that unit, and retire it.".'
+ACT [RC]: [Put this unit into your soul] Choose one of your vanguard, and it gets "AUTO [VC]: [Counter Blast 1] During your turn, when your opponent’s rear-guard in the front row is put into the drop zone, and your vanguard is Legion, you may pay the cost. If you do, choose one of your opponent’s rear-guards in the same column as the RC that rear-guard was on, and retire it." until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
 }
@@ -2419,9 +2419,9 @@ CardStat = 3298
 global.CardName[CardStat] = 'Detonix Stinger Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO Limit Break 4: When a «Narukami» rides this unit, choose up to one of your vanguards, until end of turn, that unit gets power +10000, "AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, if your opponent has no rear-guards in the front row, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC." and "CONT [VC]: If your opponent has no rear-guards in the back row, this unit gets critical +1.".
+AUTO Limit Break 4: When a «Narukami» rides this unit, choose up to one of your vanguards, until end of turn, it gets power +10000, and "AUTO [VC]: [Counter Blast 1] When this unit attacks a vanguard, if there are no rear-guards in your opponent’s front row, you may pay the cost. If you do, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC." and "CONT [VC]: If there are no rear-guards in your opponent’s back row, this unit gets critical +1.".
 
-AUTO: [Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, each player chooses one of his or her rear-guards, and retires it.'
+AUTO: [Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, all fighters chooses one of their rear-guards, and retires it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 19
 }
@@ -2623,7 +2623,7 @@ CardStat = 3486
 global.CardName[CardStat] = 'Eradicator, Unruly Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-AUTO: [Counter Blast 1-card with "Eradicator" in its card name] When this unit intercepts, if you have a vanguard with "Eradicator" in its card name, you may pay the cost. If you do, choose one of your opponent’s rear-guards other than an attacking or boosting unit, and retire it.'
+AUTO: [Counter Blast 1-card with "Eradicator" in its card name] When this unit intercepts, if you have a vanguard with "Eradicator" in its card name, you may pay the cost. If you do, choose up to one of your opponent’s rear-guards not attacking or boosting, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }
@@ -3088,7 +3088,7 @@ CardStat = 5026
 global.CardName[CardStat] = 'Plasmatron Dragon'
 global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
-ACT [RC] 1/Turn Thunderstrike 4: [Counter Blast 1] This unit gets power +2000 for each card in your opponent’s bind zone until end of turn.
+ACT [RC] 1/Turn Thunderstrike 4: [Counter Blast 1] This unit gets power +2000 until end of turn for each card in your opponent’s bind zone.
 
 AUTO Generation Break 1: When this unit is placed on RC, your opponent chooses a card from his or her drop zone, and binds it face up.'
 global.UnitGrade[CardStat] = 2
