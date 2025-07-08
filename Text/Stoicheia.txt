@@ -6,8 +6,9 @@ global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000. If you persona rode this turn, choose three rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Magnolia'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -772,6 +773,7 @@ AUTO [RC]: When this unit attacks, if two or more units are in front of this uni
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Elrante'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3229,6 +3231,7 @@ CONT [RC]: If your vanguard with "Magnolia" in its card name was placed this tur
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Winnsapooh'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3387,6 +3390,7 @@ AUTO [VC]: At the end of the battle this unit attacked, COST [if you have one or
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Granfia'
 global.AnotherSide[CardStat] = 10687
 }
 global.PowerStat[CardStat] = 13000
@@ -7672,7 +7676,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13454
 {
-global.CardName[CardStat] = '"Zo-Zo-Zo-Zombie-kun" Zombie-kun'
+global.CardName[CardStat] = '"Zo Zo Zombie" Zombie'
 global.CardText[CardStat] = 'Stoicheia/CoroCoro Comic
 
 CONT: This card is regarded as "Conceited Noble, Philander".
@@ -7689,7 +7693,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13485
 {
-global.CardName[CardStat] = '"Only I Am Matomo-kun", Matomo-kun'
+global.CardName[CardStat] = '"I’m the Only Sane One" Matomo-kun'
 global.CardText[CardStat] = 'Stoicheia/CoroCoro Comic
 
 CONT: This card is regarded as "Love-binding Maiden, Margaret".
@@ -8387,7 +8391,7 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 13830
 {
-global.CardName[CardStat] = 'Knight of Mutual Congratulation, Lavist'
+global.CardName[CardStat] = 'Knight of Common Celebration, Lovist'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard, choose up to one normal unit without sentinel from your drop, and put it on the bottom of the deck. If you chose a card, this unit gets power +2000 until end of turn.'
@@ -8589,7 +8593,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 13880
 {
-global.CardName[CardStat] = 'Sylvan Horned Beast, Ragikka'
+global.CardName[CardStat] = 'Sylvan Horned Beast, Radishka'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets "Intercept", and shield +5000.
@@ -8676,7 +8680,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13888
 {
-global.CardName[CardStat] = 'Veleno Famiglia, Direone'
+global.CardName[CardStat] = 'Veleno Famiglia, Dileone'
 global.CardText[CardStat] = 'Stoicheia/Sylph
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, Soul Charge 1 .
@@ -8694,9 +8698,9 @@ CardStat = 13889
 global.CardName[CardStat] = 'Veleno Famiglia, Agrigias'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO: If your vanguard is a grade 3 or greater <Insect>, this cost may be paid with "Soul Blast 1 & Energy Blast 2". When this unit is placed on RC from hand other than during the battle phase, COST [Counter Blast 1], choose a card with a different card name from this unit from your drop, call it to RC if it a unit with grade less than or equal to your vanguard, and put it into hand if it is a blitz order.
+AUTO: If you have a grade 3 or greater <Insect> vanguard, this cost may be paid with "Soul Blast 1 & Energy Blast 2". When this unit is placed on RC from hand other than during the battle phase, COST [Counter Blast 1], choose a card with a different card name from this unit from your drop, call it to RC if it a unit with grade less than or equal to your vanguard, and put it into hand if it is a blitz order.
 
-CONT [RC]: During your turn, if your vanguard is a grade 3 or greater <Insect>, this unit gets power +5000.
+CONT [RC]: During your turn, if you have a grade 3 or greater <Insect> vanguard, this unit gets power +5000.
 
 AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Lascaria" in its card name attacks, COST [Counter Blast 1], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -8708,10 +8712,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13908
 {
-global.CardName[CardStat] = 'Prudence Brave Shooter'
+global.CardName[CardStat] = 'Wise Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, COST [Energy Blast 3], choose a <Tear Dragon> card from your drop, and call it to RC.
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, COST [Energy Blast 3], choose a <Tear Dragon> from your drop, and call it to RC.
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Flagburg" in its card name, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
@@ -8736,12 +8740,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13912
 {
-global.CardName[CardStat] = 'Awakening Green Dragon, Merdiaiser'
+global.CardName[CardStat] = 'Jade Dragon, Meldeaiza'
 global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 
 CONT [RC]: During your turn, if your drop has ten or more cards, this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle this unit attacked, COST [retire this unit], look at the top three cards of your deck, choose up to any number of cards from among them, discard them, and if you discarded two or less cards, shuffle the deck.'
+AUTO [RC]: At the end of the battle this unit attacked, COST [retire this unit], look at the top three cards of your deck, choose any number of cards from among them, discard them, and if you discarded two or less cards, shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -8754,7 +8758,7 @@ CardStat = 13913
 global.CardName[CardStat] = 'Cnoidal Fluid Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO: When this unit is placed on GC from hand, COST [Counter Blast 1], choose a trigger unit from your drop other than over trigger, and call it to GC.' 
+AUTO: When this unit is placed on GC from hand, COST [Counter Blast 1], choose a trigger unit other than over trigger from your drop, and call it to GC.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -8764,7 +8768,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13942
 {
-global.CardName[CardStat] = 'Argo Siren, Cyphis'
+global.CardName[CardStat] = 'Argo Siren, Cephis'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
 AUTO [RC]: When your <Tear Dragon> or <Mermaid> stand, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name, COST [put this unit on the bottom of the deck], draw a card, choose one of your units, and it gets power +5000 until end of turn.'
@@ -8777,7 +8781,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13943
 {
-global.CardName[CardStat] = 'Argo Siren, Viasyl'
+global.CardName[CardStat] = 'Argo Siren, Viashil'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Argo Siren" in its card name, this unit gets "Intercept", can intercept from the back row, and if your bind zone has a Tiding card, this unit gets shield +5000.'
@@ -9221,8 +9225,9 @@ CONT: This card is also regarded as "Sylvan Horned Beast King, Magnolia".
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards, and until end of turn, that unit can attack from the back row, and gets power +5000. If you persona rode this turn, choose three rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Magnolia'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -9305,6 +9310,7 @@ AUTO [RC]: When this unit attacks, if two or more units are in front of this uni
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Elrante'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9435,6 +9441,7 @@ CONT [Deck/Hand]: If you have a grade 2 or greater vanguard with "Sylvan Horned 
 CONT [RC]: If your vanguard with "Magnolia" in its card name was placed this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
+global.PersonaRideCardName[CardStat] = 'Winnsapooh'
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -9451,6 +9458,109 @@ CONT: This card is also regarded as "Sylvan Horned Beast, Seroll".
 AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with "Magnolia" in its card name from among them, reveal it and put it into your hand, and shuffle your deck.
 
 CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14225
+{
+global.CardName[CardStat] = 'Radien Lord, Granfia Julament'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit is placed by riding from "Lavien Lord, Granfia", activate persona ride, and until end of turn, this unit gets all of the original abilities of that unit. All Plant tokens and Noblesserose tokens on your RC become plant gauges, call a Noblesserose "Rosarossa" token to your back row center RC, and put all of your plant gauges face up on that unit.
+
+AUTO [VC]: At the end of your turn, choose a "Lavien Lord, Granfia" from your soul, and ride it as rest. If you rode, choose one of your Noblesserose token, and put this card face up as that unit’s plant gauge.
+
+(SHIFT + left click to generate a Noblesserose "Rosarossa" Token)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Granfia'
+global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.AnotherSide[CardStat] = 14226
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 14226
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 14227
+{
+global.CardName[CardStat] = 'Yancha Pepino'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+AUTO: During your turn, when this card is discarded from hand, if you have a vanguard with "Granfia" in its card name, put this card into soul.
+
+ACT [Drop]: If you have a rear-guard with "Noblesserose" in its card name, COST [remove this card], and call a Plant token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 14228
+{
+global.CardName[CardStat] = 'Decisive Action Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO: When this unit is placed on RC, discard the top card of your deck, and if a trigger unit was discarded, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14229
+{
+global.CardName[CardStat] = 'Maritime Assault'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO: When this unit is put on GC, if it is the third battle of this turn, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14234
+{
+global.CardName[CardStat] = 'Strait Scale Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+CONT: If you have a vanguard with "Argo Siren" in its card name or only «Aqua Force» for its clan, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Energy Blast 3 & discard an order card from hand], draw two cards, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• AUTO [RC]: When this unit attacks or stand by a card’s effect, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14235
+{
+global.CardName[CardStat] = 'Argo Siren, Kuresh'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: During your turn, when this card is discarded from hand by the ability of your card, if you have a vanguard with "Argo Siren" in its card name, COST [put a normal unit with a different card name from this card and without sentinel from drop on the bottom of the deck], put this card into soul, choose one of your vanguard’s original AUTO abilities, and perform one of the following
+• Reduce the cost of the chosen ability by Counter Blast 1 until end of turn.
+• Reduce the cost of the chosen ability by Energy Blast 3 until end of turn.
+
+CONT [Back Row RC]: During your turn, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name, all of your other <Mermaid> and <Tear Dragon> in the same column as this unit get power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }

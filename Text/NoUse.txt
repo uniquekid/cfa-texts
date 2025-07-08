@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 14220
+global.AllCard = 14241
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1169,3 +1169,24 @@ global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 14226
+{
+global.CardName[CardStat] = 'Noblesserose "Rosarossa"'
+global.CardText[CardStat] = 'Plant
+
+CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Granfia" in its card name, this unit is also treated as "Noblesserose", and all of the following are active.
+• When your Plant token would be placed on RC, put it as a plant gauge for this unit instead. (This effect is mandatory)
+• This unit gets power +5000 for each of this unit’s gauges.
+• When you would retire a rear-guard for a cost, if you can pay by retiring Plant token rear-guard for it, you may pay by discarding a plant gauge.
+AUTO [RC] 1/Turn: When your vanguard is being attacked, COST [discard any number of plant gauges from this unit], for each plant gauge discarded for this cost, your vanguard gets power +5000 until end of that battle.
+(SHIFT + left/right click to count up/down gauges, Middle click or hover and press SPACE to set number of gauges.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
