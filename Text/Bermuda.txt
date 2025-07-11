@@ -1753,7 +1753,7 @@ CardStat = 3030
 global.CardName[CardStat] = 'Secret Smile, Puumo'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit is placed on GC, you may choose up to one card from your hand, and call it to an open RC. If you do, this unit gets shield +5000 until end of that battle.'
+AUTO Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit is placed on GC, choose up to one card from your hand, and you may call it to an open RC. If you do, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -1917,9 +1917,9 @@ CardStat = 3769
 global.CardName[CardStat] = 'Cheerfully Etoile, Olyvia'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [VC]: During your turn, this unit gets power +5000 for each face up card named "School Etoile, Olyvia" in your G zone.
+CONT [VC]: During your turn, this unit gets power +5000 for each face up "School Etoile, Olyvia" in your G zone.
 
-AUTO [VC]: During your turn, when your unit named "School Etoile, Olyvia"Stride, reveal the seven cards from the top of your deck, if all of the cards revealed have different card names, choose two cards from among them, call them to separate RC, choose a card from your hand, and put it into your soul. Shuffle your deck.'
+AUTO [VC]: When your "School Etoile, Olyvia" Stride during your turn, reveal seven cards from the top of your deck, and if the cards revealed with this effect have different card names, choose two cards from among them, call them to separate RC, choose a card from your hand, and put it into your soul. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
 }
@@ -2396,7 +2396,7 @@ CardStat = 3914
 global.CardName[CardStat] = 'Piping Hot, Suifa'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-CONT [RC]: Your unit named "Velvet Voice, Raindear" in the same column as this unit get power +1000.
+CONT [RC]: Your unit named "Velvet Voice, Raindear" in the same column as this unit gets power +1000.
 
 AUTO [RC in the back row]: When your drive check reveals a grade 3 card, if you have a vanguard with "Raindear" in its card name, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle, move this unit to an open RC in the same column as this unit, stand it, and this unit gets power +4000 until end of turn.".'
 global.UnitGrade[CardStat] = 1
@@ -2754,7 +2754,7 @@ CardStat = 4918
 global.CardName[CardStat] = 'Limpid Chorus, Maylene'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a "Super Idol, Riviere" on your VC or soul, until end of that battle, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits, Counter Charge 1 / Soul Charge 1.".'
+AUTO [RC]: When this unit attacks a vanguard, if you have a "Super Idol, Riviere" on your VC or in your soul, until end of that battle, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits, Counter Charge 1 / Soul Charge 1.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
 }
@@ -3723,7 +3723,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-ACT [VC] 1/Turn: [Soul Blast 1 & Choose five of your rear-guards with "Chouchou" in their card names, and put them on the bottom of your deck in any order] Draw three cards, this unit gets power +20000 / critical +1 until end of turn.'
+ACT [VC] 1/Turn: [Soul Blast 1 & Choose five of your rear-guards with "Chouchou" in their card names, and put them on the bottom of your deck in any order] Draw three cards, and this unit gets power +20000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
@@ -3736,9 +3736,9 @@ CardStat = 5563
 global.CardName[CardStat] = 'Chouchou, Sonia'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [RC]: [Choose a grade 3 card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, look at seven cards from the top of your deck, search for up to one grade 2 or greater card with "Chouchou" in its card name, put it into your hand, and shuffle your deck.
+AUTO [RC]: [Choose a grade 3 card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, look at seven cards from the top of your deck, reveal up to one grade 2 or greater card with "Chouchou" in its card name from among them, put it into your hand, and shuffle your deck.
 
-CONT [RC/Hand]: If you have a vanguard named "Chouchou Debut Stage, Tirua", you may pay the cost for Stride by putting this card into your drop zone.'
+CONT [RC/Hand]: If your vanguard is "Chouchou Debut Stage, Tirua", you may pay this card into your drop zone as the cost for Stride.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
@@ -4042,7 +4042,7 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 (PREMIUM JP & EN & TH: Banned.)
 
-ACT [Hand]: [Counter Blast 1 & Call this card to RC & Choose a card from your hand, and return it to your deck] If you have a grade 2 or greater vanguard, search your deck for one card named "Top Idol, Riviere", ride it as stand, and if that card rides on a grade 3 unit, choose a face down card from your G zone with "Riviere" in its card name, and Stride it on your VC. Shuffle your deck.
+ACT [Hand]: [Counter Blast 1 & Call this card to RC & Choose a card from your hand, and return it to your deck] If your vanguard is grade 2 or greater, search your deck for up to one "Top Idol, Riviere", ride it on your VC as stand, and if you rode from a grade 3 unit, choose up to one face down card with "Riviere" in its card name from your G zone, and Stride it on your VC. Shuffle your deck.
 
 AUTO [RC]: [Soul Blast 1] When your grade 4 or greater vanguard with "Riviere" in its card name attacks, you may pay the cost. If you do, stand this unit.'
 global.UnitGrade[CardStat] = 3
