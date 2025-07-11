@@ -870,7 +870,7 @@ CardStat = 3457
 global.CardName[CardStat] = 'Stealth Dragon, Oboro Keeper'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-AUTO [RC]: [Choose two units named "Stealth Dragon, Oboro Keeper" from your RC, and put them on the top of your deck in any order] At the end of your turn, you may pay the cost. If you do, search your deck for up to one grade 3 card, reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO [RC]: [Choose two "Stealth Dragon, Oboro Keeper" from your RC, and put them on the top of your deck in any order] At the end of your turn, you may pay the cost. If you do, search your deck for up to one grade 3 card, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -1249,9 +1249,9 @@ CardStat = 4522
 global.CardName[CardStat] = 'Stealth Dragon, Fudoublast'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-CONT [VC/RC]: If there is no unit with the same card name as this unit on the field, this unit cannot attack a vanguard.
+CONT [VC/RC]: If you do not have any other units with the same card name as this unit, this unit cannot attack a vanguard.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a card from your hand, and discard it] Search your deck for a "Stealth Dragon, Fudoublast", call it to RC, shuffle your deck, and at the end of that turn, put that unit on the bottom of your deck.'
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a card from your hand, and discard it] Search your deck for up to one "Stealth Dragon, Fudoublast", call it to RC, shuffle your deck, and at the end of that turn, put that unit on the bottom of your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -1356,7 +1356,7 @@ global.CardText[CardStat] = 'Murakumo/Demon
 
 Shadowstitch - AUTO [VC/RC]: At the end of the battle that this unit attacked a vanguard, if that attack did not hit, draw a card, choose a card from your hand, and put it on the bottom of your deck.
 
-AUTO [VC]: [Counter Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose one of your units, search your deck for up to one card with the same card name as that unit, call it to RC, shuffle your deck, and until end of turn, the called unit gets "Shadowstitch - AUTO [RC]: At the end of the battle that this unit attacked a vanguard, if that attack did not hit, return this unit to your hand.".'
+AUTO [VC]: [Counter Blast 1] When your G unit Stride during your turn, you may pay the cost. If you do, choose one of your units, search your deck for up to one card with the same card name as that unit, call it to RC, shuffle your deck, and until end of turn, the called unit gets "Shadowstitch - AUTO [RC]: At the end of the battle that this unit attacked a vanguard, if that attack did not hit, return this unit to your hand.".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 20
 }
@@ -1396,7 +1396,7 @@ CardStat = 4608
 global.CardName[CardStat] = 'Stealth Fiend, Murder Andon'
 global.CardText[CardStat] = 'Murakumo/Ghost
 
-AUTO Generation Break 1: When this unit is placed on RC due to effect of cards, you may have this unit get power -2000 until end of turn. If you do, this unit get "Boost" until end of turn.'
+AUTO Generation Break 1: When this unit is placed on RC due to effect of a cards, you may have this unit get power -2000 until end of turn. If you do, until end of turn, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -2090,7 +2090,7 @@ CardStat = 6396
 global.CardName[CardStat] = 'Stealth Dragon, Hitsumetsu Blazer'
 global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
-ACT [RC]: COST [Counter Blast 1 & put this unit into your soul], and three of your units with the same card name as your vanguard get power +5000 until end of turn. If three got +5000, draw a card.'
+ACT [RC]: COST [Counter Blast 1 & put this unit into your soul], and three of your units with the same card name as your vanguard get power +5000 until end of turn. If three units got +5000, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
@@ -2542,7 +2542,7 @@ CardStat = 7067
 global.CardName[CardStat] = 'Stealth Fiend, Hariken Tengu'
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-ACT [RC]: COST [Counter Blast 1], until end of turn, this unit gets power +5000, and change this unit’s card name to one of your other units card name.'
+ACT [RC]: COST [Counter Blast 1], and until end of turn, this unit gets power +5000, and change its card name to one of your other units’.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -2819,7 +2819,7 @@ CardStat = 7799
 global.CardName[CardStat] = 'Flute-blowing Stealth Rogue, Kadoggu'
 global.CardText[CardStat] = 'Murakumo/Demon
 
-AUTO [RC]: At the end of the battle that it boosted a grade 2 or greater rear-guard, COST [Counter Blast 1 & discard a card from your hand], search your deck for up to one card with the same card name as the unit that this unit boosted, call it to RC without a unit, and shuffle your deck.'
+AUTO [RC]: At the end of the battle that it boosted a grade 2 or greater rear-guard, COST [Counter Blast 1 & discard a card from your hand], search your deck for up to one card with the same card name as the unit that this unit boosted, call it to an open RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
 }
