@@ -6632,6 +6632,8 @@ AUTO [VC]: When this unit attacks a vanguard, COST [Energy Blast 4], choose one 
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Marlean'
+global.ForbidCrossPersonaRideUpon[CardStat] = 1 //To disable battle phase persona ride in the client update
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10261,4 +10263,36 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14261
+{
+global.CardName[CardStat] = 'Imagine It! A Photo Op with Marlean! Downer Onee-san'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT [VC/Deck/Soul]: This card is also regarded as "Love Call, Marlean".
+
+AUTO [Hand]: At the end of the battle the "Love Call, Marlean" on your VC attacked, COST [Soul Blast 2], ride this card as stand, until end of turn, it gets drive -1, and you cannot ride from hand. At the end of that turn, choose a "Love Call, Marlean" from your soul, and ride it as rest.
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Marlean" in its card name, and you did not bind a card with the same card name as this card this turn, COST [bind this card], and you get "All of your front row units get power +5000." until end of turn. If you persona rode this turn, Counter Charge 1 or Energy Charge 3.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Marlean'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14262
+{
+global.CardName[CardStat] = 'Midnight Delight, Zeremone'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO [RC] 1/Turn: When your other unit is placed in the same column as this unit during your battle phase, COST [reveal a normal unit from hand and put it on the bottom of the deck], draw a card, and if your opponent’s vanguard is grade 3 or greater, that placed unit gets power +5000 until end of turn.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

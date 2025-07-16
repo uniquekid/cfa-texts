@@ -8875,7 +8875,40 @@ CardStat = 14247
 global.CardName[CardStat] = 'ReCoRD 6-G'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO: When this unit is put on GC, if it is the third battle of this turn, this unit gets shield +10000 until en d of that battle.'
+AUTO: When this unit is put on GC, if it is the third battle of this turn, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14263
+{
+global.CardName[CardStat] = 'Alfini Svatobogi'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order/Lunarite
+
+This card can be played from drop, and play this if you have a vanguard with "Veissrugr" in its card name, and your opponent’s vanguard is grade 3 or greater!
+
+Bind this card, choose one of your vanguards, and it gets "CONT [VC]: All of your rear-guards with "Mythisch" in their card names get power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14264
+{
+global.CardName[CardStat] = 'The Third Mythisch, "Heljasstvinr" Helgvarrs'
+global.CardText[CardStat] = 'Brandt Gate/Mythisch
+
+AUTO: When this unit is placed on RC other than during the battle phase, choose a grade 3 card with "Veissrugr" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Veissrugr" in its card name, perform one of the following, and shuffle the deck.
+• Look at the top five cards of your deck, choose up to one card with "Veissrugr" in its card name or up to one Lunarite card from among them, reveal it and put it into hand.
+• If you persona rode this turn, COST [Energy Blast 3], search your deck for up to one Lunarite card, reveal it and put it into hand.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Veissrugr" in its card name, COST [put this unit into soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
