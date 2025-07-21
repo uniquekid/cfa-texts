@@ -35,15 +35,10 @@ global.CardName[CardStat] = 'Second Omni Demon Lord, Asmodai'
 global.CardText[CardStat] = 'Buddyfight/Magic World/72 Pillars/Demon Lord
 
 Call Cost [Pay two gauges]
-
 CONT [RC]: You cannot call units with the same card name as this card, and if you have a grade 3 or greater vanguard with "Tetsuya" in its card name, this unit gets power +10000. (Active on opponent’s turn too)
-
 AUTO: When this unit leaves RC, put the top card of your deck into your damage zone.
-
 CONT [RC]: During your opponent’s turn, when this unit would leave RC, you may discard a card from your hand. If you do, leave this unit on RC.
-
 Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
-
 AUTO [RC]: At the end of the battle this nit is attacked by a rear-guard, retire the unit that attacked this unit.'
 global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 3
@@ -127,7 +122,7 @@ CONT [Order Zone]: If you have a grade 3 or greater vanguard with "Tetsuya" in i
 
 ACT [Order Zone] 1/Turn: COST [Pay a gauge], choose a <72 Pillars> on your RC, and return it to your hand.'
 global.BuddyWorld[CardStat] = 1
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
@@ -207,7 +202,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14292
 {
 global.CardName[CardStat] = 'Diabolical Hardcore!'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Blitz Order/Impact/72 Pillars
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Impact/72 Pillars
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight.
 
@@ -350,7 +345,7 @@ Play this if you have two or more <72 Pillars> rear-guards!
 
 Choose up to three <72 Pillars> from your drop, and put them face down as gauges.'
 global.BuddyWorld[CardStat] = 1
-global.UnitGrade[CardStat] = 2
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
@@ -469,6 +464,490 @@ global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
 }
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14308
+{
+global.CardName[CardStat] = 'I Want to Make the Whole World Go Crazy, Tetsuya Kurodake'
+global.CardText[CardStat] = 'Buddyfight/Magic World/Buddyfighter
+
+CONT [VC]: Each turn, you can play two orders, and you cannot play an order with the same name as an order played this turn.
+
+AUTO: When this unit is placed on VC, choose up to one normal or set order from your drop, and put it into hand.
+
+Great Spell, Saturday Night Devil Fever - AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one grade 1 or less <72 Pillars> without sentinel from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, this cost can be paid with "Counter Blast 1 & put 2 <72 Pillars> without sentinel from your drop on the bottom of your deck", and if you do, choose two instead of one, and call them to RC.'
+global.BuddyWorld[CardStat] = 1
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14309
+{
+global.CardName[CardStat] = 'Aspiring "Ninja-user of Justice", Zanya Kisaragi'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Buddyfighter
+
+CONT [VC]: During your opponent’s turn, you can play two orders.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to one <Ninja Arts> without sentinel and up to one <Ninja> without sentinel from your drop, and put them into hand.
+
+Clear Serenity - ACT [VC] 1/Turn: COST [Soul Blast 1], choose three cards from your drop, and put them into gauge face down.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14310
+{
+global.CardName[CardStat] = 'Nanomachine Ninja, Tsukikage'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+AUTO: When this unit is palced on RC, if you did not call another "Nanomachine Ninja, Tsukikage" this turn, COST [pay a gauge & retire this unit], search your deck or drop for up to a total of two non-sentinel grade 2 or less <Ninja> unit cards with card names different from this card, reveal them and put them into hand. If you searched the deck, shuffle the deck.
+
+CONT [RC]: During your opponent’s turn, when this unit would leave RC, you may discard a card from your hand. If you do, leave this unit on RC.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14311
+{
+global.CardName[CardStat] = 'Demonic Way of Hundred Demons, Akishoki'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Spell/Demon Way/Hundred Demons
+
+This card can be played from drop, and play this with COST [pay a gauge] !
+
+Bind this card, draw a card, search your deck for up to one unit card with the "Thunder Mine" ability, discard it, and shuffle the deck. If your damage zone has three or more cards, draw a card.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14312
+{
+global.CardName[CardStat] = 'Fuuton, Sweeping Whirlwind'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Spell/Ninja Arts
+
+Choose a <Ninja> unit card without sentinel from your drop, and put it into hand.
+
+AUTO: When this card is discarded from hand by a card’s ability, put the top card of your deck into gauge face down, and draw a card.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14313
+{
+global.CardName[CardStat] = 'Ghoul Deity, Gojinmaru'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+Call Cost [Pay a gauge & put a unit with "Tsukikage" in its card name and a unit with "Byakuya" in its card name each from your RC into this card’s Buddy Soul]
+
+AUTO [RC]: When this unit attacks, if this unit’s Buddy Soul has a <Ninja>, this unit gets power +5000 until end of turn.
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on RC by putting a card from this unit’s Buddy Soul into drop.)'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14314
+{
+global.CardName[CardStat] = 'Demonic Descend Ninja, Zeon'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja/Hundred Demons
+
+Call Cost [Pay a gauge]
+
+AUTO: When this unit is placed on RC, choose a grade 1 or less card with the "Thunder Mine" ability from your drop, and call it to RC.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14315
+{
+global.CardName[CardStat] = 'Nanomachine Ninja, Byakuya'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Zanya" in its card name attacked, COST [discard a card from hand], and stand this unit.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your have a rear-guard with "Tsukikage" or "Gojinmaru" in its card name, this unit gets power +5000 until end of turn.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14316
+{
+global.CardName[CardStat] = 'Electron Ninja, Shiden'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+AUTO: When this unit is placed on RC, COST [pay a gauge & discard a <Ninja Arts> from hand], and draw two cards.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14317
+{
+global.CardName[CardStat] = 'Art of Explosive Hades Fall'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order/Spell/Ninja Arts
+
+Play this with COST [pay a gauge] !
+
+AUTO: When this card is put into the order zone, search your deck for up to one card, put it into this card’s Buddy Soul face down, and shuffle the deck.
+
+AUTO [Order Zone]: When your opponent’s rear-guard is placed during the main phase, COST [discard a card from this card’s Buddy Soul], if the grade of the card discarded for this cost is the same as that placed unit’s grade, retire that unit. (The placed unit’s abilities are not nullified)'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14318
+{
+global.CardName[CardStat] = 'Nanomachine Ninja, Tsukikage "SD"'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+AUTO: When this unit is placed on RC, COST [pay a gauge], choose up to one "Nanomachine Ninja, Byakuya "SD"" from your drop, and call it to RC.
+
+ACT [RC]: Choose one of your <Ninja> rear-guards, if that unit’s Buddy Soul does not have a card with the same card name as this unit, put this unit into that card’s Buddy Soul.
+
+CONT: If your opponent’s vanguard is grade 3 or greater, your unit with this card in its Buddy Soul gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14319
+{
+global.CardName[CardStat] = 'Nanomachine Ninja, Byakuya "SD"'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, and you have a rear-guard with "Tsukikage" or "Gojinmaru" in its card name, this unit gets power +5000 until end of that battle.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14320
+{
+global.CardName[CardStat] = 'Accelerate Ninja, Hayate'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14321
+{
+global.CardName[CardStat] = 'Art of Body Replacement'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+
+CONT: Sentinel.
+
+Play this with COST [discard a card from your hand] !
+
+Choose one of your units, and it cannot be hit until end of that battle. Choose a <Ninja> without sentinel from your drop, and put it into hand. Remove this card.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.RemoveFromDrop[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14322
+{
+global.CardName[CardStat] = 'Sword Skill Bare Hand Intercept'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+
+Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s attacking unit is a vanguard, you may draw a card.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14323
+{
+global.CardName[CardStat] = 'Ninja Arts, Snake Gaze'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+
+Choose a unit being attacked, and it gets power +15000 until end of that battle. Then, COST [discard a card from hand], choose an attacking rear-guard, and it gets "CONT [RC]: This unit does not stand." until end of turn.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14324
+{
+global.CardName[CardStat] = 'Five Heavenly Swords, Onimaru'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Item/Japanese Blase/Weapon
+
+Arms - Vanguard (After being played, the vanguard arms it. If a new item is armed, put this card into drop)
+
+Play this with COST [pay a gauge] !
+
+AUTO [VC]: When the unit armed with this card attacks, until end of that battle, that unit gets power +5000, COST [Soul Blast 1], and it also gets critical +1, and at the end of that battle, put this card into drop.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.Arms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+//Text barely fits WITH ABBREVIATIONS, keep that in mind when EN translation comes out
+CardStat = 14325
+{
+global.CardName[CardStat] = 'Secret Sword, Lethal Formation'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order/Impact/Ninja Arts
+CONT: This card cannot be played.
+AUTO [Hand]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and "Secret Sword, Lethal Formation" is not in your order zone, COST [pay three gauges and declare final phase], and put this card into the order zone.
+AUTO: When this card is put into the order zone, search your deck or drop for up to one card, put it face down as this card’s Buddy Soul, and if you searched the deck, shuffle the deck.
+CONT [Order Zone]: When your opponent’s drive check would reveal a trigger card other than heal trigger and over trigger, if this card’s face down Buddy Soul has the same trigger icon as that revealed card, you may turn it face up. If you do, nullify the power increase effect, and perform one of the following.
+• critical trigger - Your opponent’s vanguard gets critical -1 until end of that battle.
+• draw trigger - Your opponent chooses a card from their hand, and discards it.
+• front trigger - All of your opponent’s front row units get power -10000 until end of turn.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14326
+{
+global.CardName[CardStat] = 'Top of the Elementary Ranks, Zanya Kisaragi'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Buddyfighter
+
+AUTO: When this unit is rode upon by a grade 3 card with "Zanya" in its card name, look at the top five cards of your deck, choose up to one <Ninja Arts> or <Ninja> without sentinel from among them, reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14327
+{
+global.CardName[CardStat] = 'Aibo Academy, Zanya Kisaragi'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Buddyfighter
+
+AUTO: When this unit is placed by riding from "Katana World", COST [reveal a grade 3 card with "Zanya" in its card name from the ride deck], and put a Shinobi Scrolls Token into your order zone.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.AnotherSide[CardStat] = 14328
+global.TokenSummoner[CardStat] = 14328
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14329
+{
+global.CardName[CardStat] = 'Katana World'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say Raise the Flag!], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT: You may only have one <Flag> in a deck.
+
+CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Katana World> or <Generic> card, you can ride it, call it, or play its ability.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14330
+{
+global.CardName[CardStat] = 'Secret Arts, Dance of the Guardian Swords'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Ninja Arts
+
+Play this with COST [pay four gauges] if your vanguard is armed with a <Weapon>!
+
+Retire all of your opponent’s front row rear-guards.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14331
+{
+global.CardName[CardStat] = 'Ninja Arts, Steel Ball'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Ninja Arts
+
+Choose one of your <Ninja> units, and it gets power +3000 until end of turn.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14332
+{
+global.CardName[CardStat] = 'Hundred Demons’ Tome of Judgement'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Demon Way/Hundred Demons
+
+If your damage zone has four or more cards, play this with COST[Counter Blast 1 & discard your entire hand] !
+
+Draw two cards.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +5000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14333
+{
+global.CardName[CardStat] = 'Water Technique, Minawagakushi'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Ninja Arts
+
+Choose one of any player’s rear-guards, and return it to hand.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +5000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14334
+{
+global.CardName[CardStat] = 'Demon Way, Geppakugiri'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Demon Way
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s rear-guards, and retire it.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
 global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14335
+{
+global.CardName[CardStat] = 'Demon Way, Blood-sucking Bird'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Demon Way/Executioners
+
+Put this card into gauge face down, and put the top card of your deck into gauge face down.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
