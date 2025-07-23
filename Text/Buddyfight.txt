@@ -392,7 +392,7 @@ CardStat = 14332
 global.CardName[CardStat] = 'Hundred Demons’ Tome of Judgement'
 global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Spell/Demon Way/Hundred Demons
 
-If your damage zone has four or more cards, play this with COST[Counter Blast 1 & discard your entire hand] !
+If your damage zone has four or more cards, play this with COST [Counter Blast 1 & discard your entire hand] !
 
 Draw two cards.
 
@@ -995,3 +995,159 @@ global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14368
+{
+global.CardName[CardStat] = 'Divine Dragon Creation'
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order/Spell/Dragon
+
+Play this with COST [Counter Blast 1] !
+
+Draw 2 cards. Until end of turn, you can play up to a total of two orders and you cannot play orders other than "Dragon Emperor Legened".'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14369
+{
+global.CardName[CardStat] = 'Dragon Emperor Legened'
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order/Spell/Dragon
+
+Put this card into gauge face down, and draw a card. If you have no face up cards in your damage zone, Counter Charge 1. Until end of turn, you can play up to a total of 2 orders and you cannot play orders other than "Divine Dragon Creation".'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14370
+{
+global.CardName[CardStat] = 'Ice Prison Emperor, Cocytus Greed'
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Dragon Lord/Hundred Demons
+
+AUTO: When this unit is placed on RC, you may put the top two cards of your deck into gauge face down.
+
+ACT [RC]: COST [Pay three gauge], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14371
+{
+global.CardName[CardStat] = 'Hundred Demons Sorcery, Ryuzenshakuma'
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Trigger Order/Spell/Enhance/Hundred Demons
+
+Choose one of your <Wild Dragon> or <Hundred Demons> units, and it gets power +3000 until end of turn.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14372
+{
+global.CardName[CardStat] = 'Hundred Demons Sorcery, Rineryusho'
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Trigger Order/Spell/Dragon/Hundred Demons
+
+Choose one of your rear-guards. If you chose a unit, retire that unit, and put the top card of your deck into gauge face down.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14373
+{
+global.CardName[CardStat] = 'Starved Yamigedo'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Set Order/Charge/Hundred Demons
+
+CONT: You can only put one "Starved Yamigedo" in your order zone.
+
+AUTO [Order Zone]: When this card is put into your order zone, perform a damage check or choose one of your units on RC and retire it, choose up to one <Hundred Demons> from your drop, and put it into gauge face down.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14374
+{
+global.CardName[CardStat] = 'Poisonous Water Dragon, Zazamera'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Duel Dragon/Hundred Demons
+
+"Thunder Mine" - AUTO [RC] 1/Turn: When your opponent’s grade 2 rear-guard is placed, if you have a vanguard with "Ikazuchi" in its card name, that placed unit gets power -5000 until end of turn.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14375
+{
+global.CardName[CardStat] = 'Armorknight Evil Eye'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Armorknight/Hundred Demons
+
+"Thunder Mine" - AUTO [RC] 1/Turn: When your opponent intercepts, if you have a vanguard with "Ikazuchi" in its card name, that intercepting unit gets shield -5000 until end of turn.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14376
+{
+global.CardName[CardStat] = 'Hundred Demons Destructive Power Raiga'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order/Spell/Recovery/Hundred Demons
+
+Choose one of your rear-guards. If you chose a unit, retire that unit, and Counter Charge 1.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
