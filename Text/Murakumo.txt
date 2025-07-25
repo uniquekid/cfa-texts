@@ -11,7 +11,7 @@ CardStat = 877
 global.CardName[CardStat] = 'Stealth Beast, Evil Ferret'
 global.CardText[CardStat] = 'Murakumo/High Beast
 
-AUTO: Forerunner (When another card with the same clan rides this unit, you may call this unit to a RC.)
+AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
 ACT [RC]: [Put this unit on the bottom of your deck] Choose up to one «Murakumo» from your hand, call it to RC, and at the beginning of the end phase of that turn, return it to your hand.'
 }
@@ -1585,7 +1585,7 @@ global.CardText[CardStat] = 'Murakumo/Demon
 
 AUTO: Forerunner.
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a unit with the shadowstitch ability, you may pay the cost. If you do, Counter Charge 1, choose up to one card with the shadowstitch ability from your drop zone, and put it on the bottom of your deck. If a card was put, draw a card.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted a unit with the shadowstitch ability, you may pay the cost. If you do, Counter Charge 1, choose up to one card with the shadowstitch ability from your drop zone, and put it on the bottom of your deck. If you put a card, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 20
 }
@@ -1904,9 +1904,9 @@ CardStat = 6040
 global.CardName[CardStat] = 'Swift Archer, FUSHIMI '
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-CONT [VC/RC]: During your turn, if you have four or more rear-guards, this unit gets power +5000.
+CONT [VC/RC]: If you have four or more rear-guards during your turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed, choose one of your units, and that unit can even attack units in the back row until end of turn.'
+AUTO [VC/RC]: When placed, choose one of your units, and until end of turn, that unit can attack the back row.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -2102,7 +2102,7 @@ CardStat = 6412
 global.CardName[CardStat] = 'Stealth Beast, White Mane '
 global.CardText[CardStat] = 'Murakumo/Warbeast
 
-AUTO [RC]: When it attacks, this unit gets power +5000 until end of that battle for each of your other "Stealth Beast, White Mane" on your RC and drop zone.'
+AUTO [RC]: When it attacks, this unit gets power +5000 until end of that battle for each other "Stealth Beast, White Mane" on your RC and in your drop zone.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -2263,7 +2263,7 @@ CardStat = 6567
 global.CardName[CardStat] = 'Stealth Rogue of Indignation, Meomaru'
 global.CardText[CardStat] = 'Murakumo/Demon
 
-AUTO [RC]: When it attacks, COST [Soul Blast 1], all of the rear-guards with the same card name as your vanguard get power +5000 until end of turn.'
+AUTO [RC]: When it attacks, COST [Soul Blast 1], and all of the rear-guards with the same card name as your vanguard get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }

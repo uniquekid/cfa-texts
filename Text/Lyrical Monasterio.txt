@@ -10171,7 +10171,7 @@ global.DCards[CardStat] = 6
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
-global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 14013
@@ -10291,6 +10291,172 @@ global.CardName[CardStat] = 'Midnight Delight, Zeremone'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
 AUTO [RC] 1/Turn: When your other unit is placed in the same column as this unit during your battle phase, COST [reveal a normal unit from hand and put it on the bottom of the deck], draw a card, and if your opponent’s vanguard is grade 3 or greater, that placed unit gets power +5000 until end of turn.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14299
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Manda Rinda'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14300
+{
+global.CardName[CardStat] = 'Juicy-Fruity, App Lunlun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is placed by riding from "Juicy-Fruity, Manda Rinda", COST [reveal a grade 3 card with "Juicy-Fruity" in its card name from ride deck], and call a Plant token to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 14301
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Nana Banaana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is placed by riding from "Juicy-Fruity, App Lunlun"", COST [reveal a grade 3 card with "Juicy-Fruity" in its card name from ride deck], and call a Plant token to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 14302
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Chure Rina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bioroid
+
+CONT [VC]: All of your Plant tokens gets power +5000, and they also get power +5000 for each card with the same card name as this unit in your soul. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], and call up to two Plant tokens to RC. If your opponent’s vanguard is grade 3 or greater, and you have four or more rear-guards, this unit gets "Triple Drive" until end of turn.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], call a Plant token to RC, and it gets "CONT [RC]: This unit gets the trigger effects that your vanguard gets." and gets "AUTO: When this unit is returned to hand from RC, draw a card." until end of turn.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+
+
+CardStat = 14303
+{
+global.CardName[CardStat] = 'Blowball Message, Proine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your grade 3 or greater vanguard with "Juicy-Fruity" in its card name was attacked, COST [put this card into soul], choose one of the units being attacked, and it gets power +10000 until end of that battle.(Can be used before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14304
+{
+global.CardName[CardStat] = 'Abundant Drowsing, Wilinerae'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC]: At the end of the battle this unit boosted a token unit, COST [Soul Blast 1], and return that boosted unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14305
+{
+global.CardName[CardStat] = 'Highlight of the Show, Navity'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO [RC]: At the end of the battle this unit boosted a token unit, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14306
+{
+global.CardName[CardStat] = 'Touching Essence, Dainty'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is placed on a RC with a token unit, COST [Counter Blast 1 or Soul Blast 2], and draw a card. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+AUTO: When a token unit is placed on the RC this unit is on by your vanguard’s ability, return this card to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14307
+{
+global.CardName[CardStat] = 'Spreading Chorus, Ilrys'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on a RC, look at the top seven cards of your deck, choose up to one Sound System from among them, discard it, and shuffle the deck.
+
+AUTO: When this unit is retired from RC, if you have a grade 3 or greater vanguard with "Artisaria" in its card name ,call up to one Shadow Army token to a back row RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14308
+{
+global.CardName[CardStat] = 'Especiale Response, Almeria'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Lisciafael" in its card name, choose up to one card from your drop, put it into soul, and this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Lisciafael" in its card name, choose one of your back row rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14309
+{
+global.CardName[CardStat] = 'Running with Feelings Towards the Distant Sky, Ancitiph'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Lisciafael" in its card name, Soul Charge 1 / Energy Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
