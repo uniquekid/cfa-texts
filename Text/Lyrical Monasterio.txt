@@ -10171,7 +10171,7 @@ global.DCards[CardStat] = 6
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
-global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 14013
@@ -10296,3 +10296,70 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14299
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Manda Rinda'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14300
+{
+global.CardName[CardStat] = 'Juicy-Fruity, App Lunlun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is placed by riding from "Juicy-Fruity, Manda Rinda", COST [reveal a grade 3 card with "Juicy-Fruity" in its card name from ride deck], and call a Plant token to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 14301
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Nana Banaana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dryad
+
+AUTO: When this unit is placed by riding from "Juicy-Fruity, App Lunlun"", COST [reveal a grade 3 card with "Juicy-Fruity" in its card name from ride deck], and call a Plant token to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'V'
+
+
+CardStat = 14302
+{
+global.CardName[CardStat] = 'Juicy-Fruity, Chure Rina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bioroid
+
+CONT [VC]: All of your Plant tokens gets power +5000, and they also get power +5000 for each card with the same card name as this unit in your soul. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], and call up to two Plant tokens to RC. If your opponent’s vanguard is grade 3 or greater, and you have four or more rear-guards, this unit gets "Triple Drive" until end of turn.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], call a Plant token to RC, and it gets "CONT [RC]: This unit gets the trigger effects that your vanguard gets." and gets "AUTO: When this unit is returned to hand from RC, draw a card." until end of turn.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
