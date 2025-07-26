@@ -435,7 +435,7 @@ CardStat = 14337
 global.CardName[CardStat] = 'Nanomachine Ninja, Tsukikage'
 global.CardText[CardStat] = 'Buddyfight/Katana World/Ninja
 
-AUTO: When this unit is palced on RC, if you did not call another "Nanomachine Ninja, Tsukikage" this turn, COST [pay a gauge & retire this unit], search your deck or drop for up to a total of two non-sentinel grade 2 or less <Ninja> unit cards with card names different from this card, reveal them and put them into hand. If you searched the deck, shuffle the deck.
+AUTO: When this unit is placed on RC, if you did not call another "Nanomachine Ninja, Tsukikage" this turn, COST [pay a gauge & retire this unit], search your deck or drop for up to a total of two non-sentinel grade 2 or less <Ninja> unit cards with card names different from this card, reveal them and put them into hand. If you searched the deck, shuffle the deck.
 
 CONT [RC]: During your opponent’s turn, when this unit would leave RC, you may discard a card from your hand. If you do, leave this unit on RC.'
 global.BuddyWorld[CardStat] = 2
@@ -870,7 +870,7 @@ global.CardText[CardStat] = 'Buddyfight/Magic World/Trigger Order/Spell/Defense
 
 CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.
 
-AUTO: When this card is put on GC, COST [pay one gauge], and you get "When your unit is attacked, that unit gets power +5000 until end of that batle, and you lose this ability." until end of turn.
+AUTO: When this card is put on GC, COST [pay a gauge], and you get "When your unit is attacked, that unit gets power +5000 until end of that batle, and you lose this ability." until end of turn.
 
 (Cannot use the gained ability for the battle this card was put to GC.)'
 global.BuddyWorld[CardStat] = 1
@@ -1231,3 +1231,768 @@ global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14385
+{
+global.CardName[CardStat] = 'The Mighty Sun Fighter, Gao Mikado'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [rest a rear-guard], and until end of that battle, the unit rest for this cost and this unit become link attack state. (The link attacking units add up their total power)
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards in the link attack state, stand it, if your opponent’s vanguard is grade 3 or greater, choose one of your rear-guards with "Drum" in its card name, and stand it.
+
+My Buddy! - ACT [VC] 1/Turn: COST [Soul Blast 1], search your deck or drop for up to one "Drum Bunker Dragon", call it to RC, and the cost of that unit’s original ACT abilities is reduced by 1 gauge until end of turn. If you searched the deck, shuffle the deck.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14386
+{
+global.CardName[CardStat] = 'Future Force Possessor, Tasuku Ryuenji'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+CONT [VC]: All of your rear-guards with "Jackknife" in their card names get power +5000. (Active on opponent’s turn too)
+
+AUTO [VC]: When this unit attacks, if it is the first battle this unit performed this turn, COST [Counter Blast 1], choose one of your rear-guards with "Jackknife" in its card name, and stand it.
+
+Jackknife Braveheart - ACT [VC] 1/Turn: COST [Pay a gauge], search your deck or drop for up to one unit card with "Jackknife" in its card name, and call it to RC without paying its Call Cost or put it into hand. If you searched the deck, shuffle the deck.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14387
+{
+global.CardName[CardStat] = 'Fifth Omni Dragon Lord, Drum'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater vanguard, COST [pay a gauge], choose one of your opponent’s front row rear-guards, retire it, and this unit gets power +10000 until end of turn.
+
+AUTO [Front Row RC] 1/Turn: When your damage check reveals a card, if you have a grade 3 or greater vanguard with "Gao" in its card name, and you do not have another rear-guard with the same card name as this unit, your opponent chooses a card from their hand, and discards it.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14388
+{
+global.CardName[CardStat] = 'Jackknife "Dispersal"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put this card on top of a unit with "Jackknife" in its card name]
+
+CONT [RC]: If this unit’s Buddy Soul has a card with "Jackknife" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Tasuku" in its card name, this unit gets critical +1 until end of turn. If your vanguard is armed with a card with "Gold Ritter" in its card name, it also gets power +5000.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14389
+{
+global.CardName[CardStat] = 'Jackknife Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge]
+
+ACT [RC]: COST [Pay a gauge], search your deck or drop for up to one unit card with "Jackknife" in its card name, call it on top of this unit without paying its Call Cost, and if your searched the deck, shuffle the deck.
+
+(Move this card and cards under it into Buddy Soul)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14390
+{
+global.CardName[CardStat] = 'Jackknife "Burn Energy"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Put this card on top of a unit with "Jackknife" in its card name]
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], draw a card, put a card from the top of your deck into gauge face down, choose a card from drop, and put it into gauge face down. If you have a grade 3 or greater vanguard with "Tasuku" in its card name, this unit gets power +5000 until end of turn.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14391
+{
+global.CardName[CardStat] = 'Drum Bunker Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put the top card of the deck into this card’s Buddy Soul]
+
+ACT [RC]: COST [Pay a gauge], search your deck or drop for up to one card with "Drum" in its different card name from this unit, call it on top of this unit without paying its Call Cost, and if you searched the deck, shuffle the deck.
+
+CONT: If your opponent’s vanguard is grade 3 or greater, your unit with "Drum" in its card name with this card in its Buddy Soul gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14392
+{
+global.CardName[CardStat] = 'Dragon Knight, Pisaro'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight/Hundred Demons
+
+ACT [Front Row RC]: COST [rest this unit], draw a card, and this unit cannot move to other RC until end of turn.
+
+AUTO [Front Row RC]: At the beginning of your battle phase, if your vanguard is armed with a card with "Aqulta Gwaneff" in its card name, or you have a grade 3 or greater rear-guard with "Yamigedo" in its card name, stand this unit.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14393
+{
+global.CardName[CardStat] = 'Ultimate Neo Dragon, Drum the Future'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay two gauge]
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000.
+
+AUTO [RC] 1/Turn: When this unit becomes link attack state, if your damage zone has four or more cards, or you persona rode this turn, until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks, until end of that battle, your opponent cannot activate the AUTO abilities of their cards, COST [Counter Blast 1], this unit performs drive checks, and it gets drive -1.".
+
+(During the Link Attack state, this unit is not attacking)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14394
+{
+global.CardName[CardStat] = 'Jackknife "Thunder Storm"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Put a gauge & put this card on top of a unit with "Jackknife" in its card name]
+
+ACT [RC] 1/Turn: COST [Pay a gauge], choose one of your opponent’s front row rear-guards, and retire it. If your vanguard is armed with a card with "Gold Ritter" in its card name, this unit gets power +10000 until end of turn.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14395
+{
+global.CardName[CardStat] = 'Blue Sky Knights, Drum Bunker Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
+
+AUTO: If your vanguard is "The Mighty Sun Fighter, Gao Mikado", this cost is reduced by [Counter Blast 1]. When this unit is placed on RC, COST [Counter Blast 1], and draw a card.
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, Soul Charge 1 or put the top card of your deck into gauge face down.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14396
+{
+global.CardName[CardStat] = 'Dragon Knight, Cagliostro'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight
+
+AUTO: When this unit is placed on RC, if you have not placed another rear-guard with the same card name as this unit this turn, and your order zone has "Dragon Ein", draw a card.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14397
+{
+global.CardName[CardStat] = 'Jackknife Gift'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Green Dragon
+
+Play this if you have a vanguard with "Tasuku" in its card name!
+
+Perform one of the following.
+• Choose a unit card with "Jackknife" in its card name from your drop, and put it into the Buddy Soul of your rear-guard with "Jackknife" in its card name. If you put a card, search your deck or drop for up to one "Jackknife "Gold Ritter"", reveal it and put it into hand, and if you searched the deck, shuffle the deck.
+• If your vanguard is armed with "Jackknife "Gold Ritter"", draw a card, and put this card into gauge face down.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14398
+{
+global.CardName[CardStat] = 'Dragowisdom, Knowledge of the Fifth Omni'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Dragon
+
+This card can be played from drop, and play this if you have a vanguard with "Gao" in its card name or a rear-guard with "Fifth Omni" in its card name!
+
+Bind this card, put the top card of your deck into gauge face down, and draw a card.
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14399
+{
+global.CardName[CardStat] = 'Hundred Demons Formation, Thunder Mine Stance'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Set Order/Spell/Summon/Hundred Demons
+
+CONT: You can only put one "Hundred Demons Formation, Thunder Mine Stance" in your order zone.
+
+ACT [Order Zone] 1/Turn: COST [Pay a gauge], choose up to one grade 2 or less card with the "Thunder Mine" ability from your drop, call it to RC, and if your vanguard is grade 3 or greater, that unit gets power +5000 until end of turn.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14400
+{
+global.CardName[CardStat] = 'Jackknife "Gold Ritter"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/ Item/Armordragon/Dragon Knight/Weapon
+
+Arms - Grade 3 or greater card with "Tasuku" in its card name (If a new item is armed, put this card into drop)
+CONT: This card cannot be played.
+ACT [Hand]: If you have a grade 3 or greater vanguard with "Tasuku" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [retire a rear-guard with "Jackknife" in its card name and two or more cards in its Buddy Soul], and arm this card to your vanguard.
+CONT [VC]: Your vanguard cannot be chosen by your opponent’s card effects, its original power becomes 20000, and it gets "Triple Drive" (Active on opponent’s turn too)
+AUTO [VC]: At the end of the battle the unit armed with this card attacked, if it is the first battle that unit attacked this turn, stand that unit, and its drive becomes 0 until end of turn.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.Arms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14401
+{
+global.CardName[CardStat] = 'Sun Fist, Sunshine Impact'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Item/Weapon
+
+Arms - Vanguard (After being played, your vanguard arms it. If a new item is armed, put this card into drop)
+
+Play this with COST [Pay a gauge] !
+
+CONT [VC]: During your turn, your vanguard gets power +5000, and if you have a grade 3 or greater vanguard with "Gao" in its card name, all of your front row rear-guards with "Drum" in their card names get power +5000.
+
+AUTO [VC] 1/Turn: When your vanguard attacks a grade 3 or greater unit, if a Buddy Monster rear-guard is in the link attack state, COST [discard a "Sun Fist, Sunshine Impact" from hand], and until end of that battle, your vanguard’s power becomes oo, and it gets critical +1.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.Arms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14402
+{
+global.CardName[CardStat] = 'Crimson Battler, Drum Bunker Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
+
+AUTO [RC] 1/Turn: When this unit attacks or becomes link attack state, if you have a grade 3 or greater vanguard with "Gao" in its card name, this unit gets critical +1 until end of turn.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14403
+{
+global.CardName[CardStat] = 'Jackknife "Berserker"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14404
+{
+global.CardName[CardStat] = 'Thunder Knights, Drum Bunker Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
+
+AUTO: When this unit is moved to GC from RC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater vanguard or becomes link attack state, this unit gets power +5000 until end of turn.
+
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14405
+{
+global.CardName[CardStat] = 'Thunder Knights, Halberd Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14406
+{
+global.CardName[CardStat] = 'Thunder Knights, Halberd Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight/Hundred Demons
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14407
+{
+global.CardName[CardStat] = 'Gedo Shield'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Defense/Hundred Demons
+
+CONT: Sentinel.
+
+Play this with COST [discard a card from hand] if your order zone has a "Parade of Hundred Demons"!
+
+Choose one of your units, and it cannot be hit until end of that battle. Remove this card. COST [Pay a gauge], choose one of your opponent’s rear-guards, and it gets power -5000 until end of turn.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.RemoveFromDrop[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14408
+{
+global.CardName[CardStat] = 'Blue Dragon Shield'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Blue Dragon
+
+CONT: Sentinel.
+
+Play this with COST [discard a card from hand] !
+
+Choose one of your units, and it cannot be hit until end of that battle. If your damage zone has no face up cards, Counter Charge 1. Remove this card.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.RemoveFromDrop[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14409
+{
+global.CardName[CardStat] = 'Gargantua Punisher!!'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Impact/Dragon
+
+CONT: This card cannot be played, and you can use it ability if you did not resolve the ability of an Impact order this fight!
+
+AUTO [Hand]: At the end of your turn, if your opponent’s damage zone has four or more cards, and you persona rode this turn, COST [Counter Blast 1 & discard this card & pay four gauges & declare final phase], choose one of your vanguards, stand it, and it attacks your opponent’s vanguard.
+
+(Previous critical and power increases remain until the end of the attack)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14410
+{
+global.CardName[CardStat] = 'Dragonic Punisher'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Impact/Dragon
+
+CONT: This card cannot be played, and you can use it ability if you did not resolve the ability of an Impact order this fight!
+
+AUTO [Hand]: At the end of your turn, if you have a rear-guard with "Jackknife" in its card name, COST [Counter Blast 1 & discard this card & pay two gauges & declare final phase], choose one of your rear-guards with "Jackknife" in its card name, stand it, and it attacks your opponent’s vanguard.
+
+(Previous critical and power increases remain until the end of the attack)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14411
+{
+global.CardName[CardStat] = 'Genius Buddyfighter, Tasuku Ryuenji'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+AUTO: When this unit is rode upon by a grade 3 card with "Tasuku" in its card name, COST [Soul Blast 1], choose up to one card with "Jackknife" in its card name from your drop, and put it into hand.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14412
+{
+global.CardName[CardStat] = 'Master of Mikado Style Aiki Jiu-Jitsu, Gao Mikado'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one card with "Drum" in its card name or up to one item card from among them, reveal it and put it into your hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14413
+{
+global.CardName[CardStat] = 'Thousand Rapier Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], and this unit gets critical +1 until end of that batle.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14414
+{
+global.CardName[CardStat] = 'Circleknife Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+ACT [RC]: COST [Retire this unit], choose a unit card with "Jackknife" in its card name from your drop, and put it into hand.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14415
+{
+global.CardName[CardStat] = 'Jackknife Dragon, "Baby"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+AUTO [Drop]: When your rear-guard with "Jackknife" in its different card name from this card is placed, COST [Soul Blast 1], and call this card to a RC in the same column as that placed unit.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14416
+{
+global.CardName[CardStat] = 'Aibo Academy, Gao Mikado'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+AUTO: When this unit is placed by riding from "Dragon World", perform one of the following.
+• Look at the top seven cards of your deck, reveal up to one <Armordragon> or up to one item card from among them, put it into hand, and shuffle the deck.
+• Search your deck or drop for up to one "Sun Fist, Sunshine Impact", equip it to this unit without paying its cost, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14417
+{
+global.CardName[CardStat] = 'Buddy Police Boy, Tasuku Ryuenji'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Buddyfighter
+
+AUTO: When this unit is placed by riding from "Dragon World", look at the top seven cards of your deck, choose up to one card with "Jackknife" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14418
+{
+global.CardName[CardStat] = 'Drum Bunker Dragon "SD"'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+AUTO [Drop]: When your rear-guard with "Drum" in its different card name from this card is placed, COST [Soul Blast 1], and perform one of the following.
+• Put this card into that unit’s Buddy Soul.
+• Call this card to a RC in the same column as that placed unit.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14419
+{
+global.CardName[CardStat] = 'Boomerang Dragon'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, if you have a vanguard with "Gao" in its card name, return it to your hand.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14420
+{
+global.CardName[CardStat] = 'Dragon World'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say Raise the Flag!], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT: You may only have one <Flag> in a deck.
+
+CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Dragon World> or <Generic> card, you can ride it, call it, or play its ability.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14421
+{
+global.CardName[CardStat] = 'Dragonic Charge'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Dragon
+
+Put two cards from the top of your deck into gauge face down.
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14422
+{
+global.CardName[CardStat] = 'Dragobond'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Gold Dragon
+
+Perform one of the following.
+• Choose one of your vanguards, and it gets power +20000 until end of that battle.
+• Choose one of your rear-guards, it cannot be hit until end of that battle, and if you have no face up cards in your damage zone, Counter Charge 1.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 20000
+
+
+CardStat = 14423
+{
+global.CardName[CardStat] = 'Dragoenergy'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Trigger Order/Spell/Dragon
+
+Choose one of your <Armordragon> units, and it gets power +3000 until end of turn.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14424
+{
+global.CardName[CardStat] = 'Dragon Trust'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Trigger Order/Spell/Dragon
+
+Play this with COST [pay a gauge] !
+
+Choose one of your grade 2 or less rear-guards, and put this card into that unit’s Buddy Soul.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14425
+{
+global.CardName[CardStat] = 'Dragonic Grimoire'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Trigger Order/Spell/Gold Dragon
+
+If your damage zone has four or more cards, play this with COST [Counter Blast 1 & discard your entire hand] !
+
+Draw two cards.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +5000 guardian.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14426
+{
+global.CardName[CardStat] = 'Dragon Barrier'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Trigger Order/Spell/Dragon
+
+Put this card into gauge face down.
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14427
+{
+global.CardName[CardStat] = 'Green Dragon Shield'
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Trigger Order/Spell/Green Dragon
+
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.
+
+AUTO: When this card is put on GC, if your damage zone has no face up cards, COST [discard a card from hand], and Counter Charge 1.'
+global.BuddyWorld[CardStat] = 8
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
