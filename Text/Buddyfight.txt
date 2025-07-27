@@ -292,6 +292,7 @@ CONT [VC/Order Zone]: This card cannot be affected by other abilities or card ef
 global.BuddyWorld[CardStat] = 2
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
+global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -728,6 +729,7 @@ CONT [VC/Order Zone]: This card cannot be affected by other abilities or card ef
 global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
+global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -1864,6 +1866,7 @@ CONT [VC/Order Zone]: This card cannot be affected by other abilities or card ef
 global.BuddyWorld[CardStat] = 8
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
+global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -2064,3 +2067,75 @@ global.DCards[CardStat] = 14
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14432
+{
+global.CardName[CardStat] = 'Savior of the World, Kyoya Gaen'
+global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Buddyfighter
+
+CONT [VC]: All of your rear-guards with <Dragon> in its race get power +5000. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with <Dragon> in its race from among them, reveal it, call it to RC if it is a unit card, and put it into hand if it is a normal order. Shuffle the deck.
+
+Dragon Throne - CONT [VC]: Your units with "Azi Dahaka" in their card names can be called regardless of their grades, and they can attack from the back row center column.'
+global.BuddyWorld[CardStat] = 10
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14433
+{
+global.CardName[CardStat] = 'Invitation to Disaster, Kyoya Gaen'
+global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Buddyfighter
+
+AUTO: When this unit is rode upon by a grade with "Kyoya" in its card name, put the top card of your deck into gauge face down, and draw a card.
+
+(SHIFT + Left Click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 10
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14434
+{
+global.CardName[CardStat] = 'Gaen Financial Group Overall Head, Kyoya Gaen'
+global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Buddyfighter
+
+AUTO: When this unit is rode upon by "Invitation to Disaster, Kyoya Gaen", look at the top five cards of your deck, choose up to one card with <Dragon> in its race without sentinel from among them and reveal it, put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 10
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14435
+{
+global.CardName[CardStat] = 'Dragon Ein'
+global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say Raise the Flag!], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT: You may only have one <Flag> in a deck.
+
+CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Dragon Ein> or <Generic> card, or that is a card with <Dragon> in its race, you can ride it, call it, or play its ability.
+
+AUTO: When this card is put into the order zone, discard a card from hand from your hand, and until end of this fight, the number of cards in your damage zone for you to lose becomes 7.'
+global.BuddyWorld[CardStat] = 10
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
