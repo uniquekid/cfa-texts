@@ -1117,13 +1117,9 @@ global.CardName[CardStat] = 'Yearner of Extinction, Azi Dahaka'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Dragon/Deity
 
 CONT: This card cannot be ridden.
-
 Call Cost [Pay two gauges & retire a rear-guard]
-
 AUTO [RC]: When this unit is retired during your opponent’s turn, or your damage check revealed a card during your opponent’s turn, if your VC does not have an Item, search your deck or drop for up to one card with "Aqulta Gwaneff" in its card name, and arm it to your vanguard. If you searched the deck, shuffle the deck.
-
 Double Attack - AUTO [Back Row Center RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
-
 AUTO [Back Row Center RC] 1/Turn: When this unit stand by this unit’s effect, this unit gets power +10000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it also gets critical +1.'
 global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 4
@@ -1631,7 +1627,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14406
 {
-global.CardName[CardStat] = 'Thunder Knights, Halberd Dragon'
+global.CardName[CardStat] = 'Dragon Knight, Faust'
 global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight/Hundred Demons
 
 CONT: Sentinel.
@@ -2139,3 +2135,140 @@ global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14436
+{
+global.CardName[CardStat] = 'Great Fiend, Yamigedo'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Hundred Demons
+
+Call Cost [Pay two gauges & put one or more, up to three <Hundred Demon> rear-guards into this card’s Buddy Soul]
+CONT [RC]: This unit gets all of the "Thunder Mine " abilities of this unit’s Buddy Soul.
+AUTO [RC]: At the beginning of your main phase, choose a card with the "Thunder Mine" ability from your drop, and put it into this card’s Buddy Soul.
+"Thunder Mine" - AUTO [RC] 1/Turn: When your unit’s attack does not hit, if you have a vanguard with "Ikazuchi" in its card name, choose one of your opponent’s vanguards, and it gets power -5000 until end of turn.
+Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
+CONT: Soulguard (When this unit would leave RC, you can leave it on an RC by putting a card from this unit’s Buddy Soul into drop)'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14437
+{
+global.CardName[CardStat] = 'Lightning of Beginnings, Thunder of The End, Ikazuchi'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two non-sentinel <Hundred Demons> unit cards without "Yamigedo" in their different card names from your drop, and call them to RC.
+
+Hundred Demons Sorcery, Evil Pulse - ACT [VC] 1/Turn: COST [Pay a gauge], choose one of your opponent’s rear-guards, and retire it.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14438
+{
+global.CardName[CardStat] = 'Hasted Evolution, Yamigedo'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Hundred Demons
+
+"Thunder Mine" - AUTO [RC] 1/Turn: When your opponent’s grade 3 or greater vanguard attacks, if you have a vanguard with "Ikazuchi" in its card name, that unit that attacked gets power -5000 until end of that battle.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14439
+{
+global.CardName[CardStat] = 'Parade of Hundred Demons'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say Raise the Flag!], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT: You may only have one <Flag> in a deck.
+
+CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Dragon Ein> or <Generic> card, or that is a card with <Hundred Demons> in its race, you can ride it, call it, or play its ability.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14440
+{
+global.CardName[CardStat] = 'Shrine of the Corrupted Fuchigami'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Set Order/Spell/Draw/Hundred Demons
+
+CONT: You can only put one "Shrine of the Corrupted Fuchigami" in your order zone.
+
+AUTO [Order Zone] 1/Turn: When your rear-guard with the "Thunder Mine" ability is placed, draw a card.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14441
+{
+global.CardName[CardStat] = 'Thunder Claw, Narukami'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Normal Order/Item/Weapon/Hundred Demons
+
+Arms - Vanguard (After being played, the vanguard arms it. If a new item is armed, put this card into drop)
+
+CONT: This card can be played from drop.
+
+CONT [VC]: During your turn, all of your front row units get power +5000.
+
+ACT [VC] 1/Turn: Choose one of your rear-guards. If you chose a unit, retire that unit, and your vanguard gets critical +1 until end of turn.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14442
+{
+global.CardName[CardStat] = 'Superhuman Might, Ikazuchi'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+
+AUTO: When this unit is placed by riding from "Leader of the Hundred Demons, Ikazuchi", look at the top five cards of your deck, choose up to one card with the "Thunder Mine" ability from among them, reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14443
+{
+global.CardName[CardStat] = 'Leader of the Hundred Demons, Ikazuchi'
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+
+AUTO: When this unit is placed by riding from "Parade of Hundred Demons", look at the top seven cards of your deck, choose up to one card from among them, put it into drop, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 11
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
