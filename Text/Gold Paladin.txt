@@ -3158,9 +3158,9 @@ CardStat = 4584
 global.CardName[CardStat] = 'Golden Holy Sword, Gurguit'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-CONT [VC] Generation Break 2 Unite: All of your rear-guards get "Intercept" and "CONT [RC]: This unit can intercept from the back row during the battle that your vanguard was attacked.".
+CONT [VC] Generation Break 2 Unite: All of your rear-guards get "Intercept" and "CONT [RC]: During the battle that your vanguard was attacked, this unit can intercept from the back row.".
 
-AUTO [VC]: [Counter Blast 1 & Soul Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, look at four cards from the top of your deck, call a card to RC from among them, shuffle your deck, if you called a unit with the unite ability, look at the top card of your deck, and call it to RC as rest.'
+AUTO [VC]: [Counter Blast 1 & Soul Blast 1] When your G unit Stride during your turn, you may pay the cost. If you do, look at four cards from the top of your deck, call a card to RC from among them, shuffle your deck, if you called a unit with the unite ability, look at the top card of your deck, and call it to RC as rest.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 5
 }
@@ -4542,9 +4542,20 @@ global.CardText[CardStat] = 'Gold Paladin/Human
 
 CONT [VC/RC]: During your turn, if two or more of your rear-guards were called this turn, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+
+(SHIFT + left click to activate search ability.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 5
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'SHIFT'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckGrade'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'Shu'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000

@@ -426,6 +426,7 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 }
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Fosado'
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -440,6 +441,7 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 }
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lepisto'
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -1231,7 +1233,7 @@ CardStat = 9143
 global.CardName[CardStat] = 'Magic of Realization, Kikitsch'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, choose up to one critical trigger or front trigger from your hand, reveal it and put it on the bottom of your deck. If you put a  card, COST [Soul Blast 1], and draw a card.'
+AUTO: When this unit is placed on RC, choose up to one critical trigger or front trigger from your hand, reveal it and put it on the bottom of your deck. If you put a card, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -5078,7 +5080,7 @@ CardStat = 11977
 global.CardName[CardStat] = 'Gigantech Assailer'
 global.CardText[CardStat] = 'Keter Sanctuary/Giant
 
-AUTO [RC]: When this unit attacks, if you have a unit with "Alden" in its card name, Soul Charge 1, and if a trigger unit was Soul Charge , this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a unit with "Alden" in its card name, Soul Charge 1, and if a trigger unit was Soul Charge, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -8067,7 +8069,7 @@ CardStat = 13365
 global.CardName[CardStat] = 'Fangaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO [RC]: When your other unit is placed on a RC with a unit in the same column as this unit, COST [Counter Blast 1], choose one of your opponent’s  back row rear-guards, and retire it. (You may also place the other unit on the RC this unit is on)'
+AUTO [RC]: When your other unit is placed on a RC with a unit in the same column as this unit, COST [Counter Blast 1], choose one of your opponent’s back row rear-guards, and retire it. (You may also place the other unit on the RC this unit is on)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9255,7 +9257,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s abilities." Shuffle the deck. (You may only use Unique Skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s abilities." Shuffle the deck. (You may only use unique skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if you have four or more rear-guards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -9560,7 +9562,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
 CONT: If you have a grade 3 or greater vanguard with "Ezel" in its card name, it gets all of the following.
 • AUTO: When this unit is placed on RC, COST [Counter Blast 1], and "draw a card" or "choose an "Incandescent Lion, Blond Ezel" on your VC, and its drive becomes 2 until end of turn.".
-• AUTO [RC]: When this unit attacks a grade 3 or greater unit, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck ,COST [Energy Blast 3], and draw a card.'
+• AUTO [RC]: When this unit attacks a grade 3 or greater unit, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck, COST [Energy Blast 3], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -9870,4 +9872,297 @@ global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14444
+{
+global.CardName[CardStat] = 'Fated One of Sacred Time, Liael=Draconis'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+ACT [VC] 1/Turn: COST [Energy Blast 4 & bind a normal unit from RC or drop], choose a card from your hand, discard it, and this unit gets drive +1.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, bind it, search your deck for up to one card with the same card name as any card in your bind zone, call it to RC, and shuffle the deck.
+
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked, if your opponent’s vanguard is grade 3 or greater, choose a grade 3 or greater card with "Liael" in its card name from your soul or drop, and you may ride it as stand. If you rode, that unit’s drive becomes 1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14445
+{
+global.CardName[CardStat] = 'Knight of the Distant Bow, Almov'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, Energy Charge 1 .
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Liael" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [put this unit into soul], and you get "All of your front row rear-guards get power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14446
+{
+global.CardName[CardStat] = 'Knight of Magnificent Beauty, Amite'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When your unit is placed on another RC in the same column as this unit by the ability of your grade 3 or greater vanguard with "Liael" in its card name, COST [put this unit into soul], and that placed unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14447
+{
+global.CardName[CardStat] = 'Descending Eagle'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO: When this card is bound during your turn, if you have a grade 3 or greater vanguard with "Liael" in its card name, choose a grade 1 or greater normal unit without sentinel from your drop, and you may put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14455
+{
+global.CardName[CardStat] = 'Masked Rider Build, RabbitTank Hazard Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Hexaorb Sorceress".
+
+AUTO [VC]: When your drive check reveals a trigger unit, choose one of your rear-guards, and it gets power +10000 until end of turn.
+
+ACT [VC] 1/Turn: If you persona rode this turn, COST [Counter Blast 1 & Soul Blast 1], reveal up to one critical trigger or front trigger from your hand, and put it on the top of your deck, and this unit gets drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Hexaorb'
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14456
+{
+global.CardName[CardStat] = 'Masked Rider Cross-Z Charge'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Effulgent Wizard".
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck. If your vanguard is stand, you may put that looked card into your soul.
+
+AUTO [RC]: When your drive check reveals a trigger unit, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14457
+{
+global.CardName[CardStat] = 'Night Rogue'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Divine Sister, Lepisto".
+
+AUTO [RC]: When your drive check reveals a trigger unit, COST [Counter Blast 2], stand this unit, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lepisto'
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14458
+{
+global.CardName[CardStat] = 'Blood Stalk'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Knight of War Damage, Fosado".
+
+CONT [RC]: This unit cannot be chosen by your opponent s card effects.
+
+AUTO [RC]: When this unit s attack hits, Counter Charge 1 / Soul Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Fosado'
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14459
+{
+global.CardName[CardStat] = 'Masked Rider Cross-Z'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Exquisite Knight, Olwein".
+
+AUTO: When this unit is placed on RC, if your vanguard is "Hexaorb Sorceress", COST [Soul Blast 1], look at two cards from the top of your deck, choose up to two cards from among them, put them on the top of your deck in any order, and put the rest on the bottom of your deck in any order.
+
+AUTO [RC]: When your drive check reveals a trigger unit, COST [Counter Blast 1], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14460
+{
+global.CardName[CardStat] = 'Masked Rider Cross-Z Charge, Beat Closer & Twin Breaker'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Magic of Objective, Kakarone".
+
+AUTO: When this unit is placed on RC, if your vanguard is "Hexaorb Sorceress" or "Pentagleam Sorceress", COST [Soul Blast 1], look at two cards from the top of your deck, and put them on the top of your deck in any order.
+
+CONT [RC/GC]: If your vanguard is "Hexaorb Sorceress", this unit gets power +2000 / shield +5000. (Active on your opponent s turn too.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14461
+{
+global.CardName[CardStat] = 'Masked Rider Build, HawkGatling Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Magic of Appreciation, Nanaful".
+
+AUTO [RC]: When your drive check reveals a trigger unit, COST [put a card from your hand into your soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14462
+{
+global.CardName[CardStat] = 'Masked Rider Grease'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Divine Sister, Faciata".
+
+AUTO [RC] 1/Turn: When your drive check reveals a trigger unit, COST [Soul Blast 2], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14463
+{
+global.CardName[CardStat] = 'Masked Rider Rogue'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Magic of Revelation, Totris".
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard, COST [Counter Blast 1], search your deck for up to one "Hexaorb Sorceress", reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14464
+{
+global.CardName[CardStat] = 'Masked Rider Build, RabbitTank Sparkling Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Four-side Glow Sorceress".
+
+AUTO [Front Row RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Sorceress" in its card name, COST [Soul Blast 2], and Counter Charge 1. If this units power was increased by a trigger effect this turn, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14465
+{
+global.CardName[CardStat] = 'Masked Rider Build, RabbitTank Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Pentagleam Sorceress".
+
+AUTO: When this unit is rode upon by "Hexaorb Sorceress", look at three cards from the top of your deck, and put them on the top of your deck in any order.
+
+AUTO: When this unit is placed on RC, look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14466
+{
+global.CardName[CardStat] = 'Rabbit & Tank Fullbottle'
+global.CardText[CardStat] = 'Keter Sanctuary/Fullbottle
+
+CONT: This card is also regarded as "Tier Square Sorceress".
+
+AUTO: When this unit is rode upon by "Pentagleam Sorceress", COST [Counter Blast 1], and draw a card.
+
+AUTO [RC] 1/Turn: When your drive check reveals a trigger unit, COST [Counter Blast 1], choose one of your opponent s front row rear-guards, and put it on the bottom of their deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14467
+{
+global.CardName[CardStat] = 'Masked Rider Build'
+global.CardText[CardStat] = 'Keter Sanctuary
+
+CONT: This card is also regarded as "Tri Connect Sorceress".
+
+AUTO: When this unit is rode upon, if you went second, draw a card.
+
+(You will be prompted to get the "Energy Generator" crest upon ride.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14468
+{
+global.CardName[CardStat] = 'Masked Rider Build, GorillaMond Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Lifesaving Angel, Kurabiel".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, COST [discard a card from your hand], choose one of your units, and it cannot be hit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 0

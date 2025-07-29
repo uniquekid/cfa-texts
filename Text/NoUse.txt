@@ -1,28 +1,30 @@
 n = x
 
-global.AllCard = 14311
+global.AllCard = 14477
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- The Deck Editor now sorts from newest to oldest cards added.
-- When adding a card to hand from the deck using the "To Hand" button, the card will NOT be revealed.
-- TAB View information for Tokens and Crests on cards generating them.
-- Holding down Q to view logs now tracks Counter Blast / Counter Charge.
-- At the start of the game, player G Zone information will be shown in chat, if any.
-- When first making a shadow army, a prompt is given to pick an art for the whole fight.
-- Persona Shield Ticket stays revealed in opponent’s hand.
-- Malwyrm, Mate Unit and Mental Pollution text icons added.
-- Update to the Plant Gauge button for Premium usage in non-Megacolony decks. You can now turn other cards into plant gauges.
-- Gramgrace Persona Ride will automatically apply the buff to the back row as well.
-- UI Changes to avoid button overlap.
+- Buddyfight Nation added.
+- The Buddyfight nation deckbuilder page includes corresponding World Flag icons above the cards. Dragon Ein and Parade of Hundred Demons make coloured labels appear on eligible cards.
+- Your Buddy must match your World Flag rules, else it will replace your rideline. Dragon Ein excluded.
+- Riding over a Buddyfight Flag, gauges will automatically be added to your Gauge Zone.
+- Using the OverDress button for Buddyfight cards, except Jackknife, will the selected card into the Buddy Soul instead of on-top of the unit.
+- Ride Deck crests automatically start face-up in the Crest Zone. Griphosid’s Energy Generator will not accumulate Energy until after you ride.
+- Order Zone entires added to logs.
+- Your Guardians will automatically be removed from GC when taking damage.
+- Token generating skills can be used on GC.
+- Front triggers now apply to Legion and Armed Arms.
+- Deck Editor can now sort (New->Old), (Alphabetical), (Old ->New).
+- Dark Mode has added to the Gear Settings menu.
+- G Units on RC can return to G Zone even with a Stride on VC.
+- Ace Unit, Unique Skill, Corocoro text icons.
 BUG FIXES:
-- New Deck Editor format option for those that had graphical issues.
-- The Etranger text file should now properly download for those that kept losing it.
-- V Etranger promos moved to V format.
-- Putting a card to the bottom of the deck now properly appears in logs.
-- Shuffling the deck now properly closes any open zones and the cards in them.
-- Can no longer create empty equip gauges.
-- Clicking the opponent’s vanguard no longer gives a prompt.'
+- SearchEffect position ’SHIFT’ no longer crashes.
+- Crest-making G Units flip correctly in G Zone.
+- Fixed the Guardian Circle occupied bug.
+- Token making prompt on "No".
+- God Hand Dragon’s Front Trigger buff no longer applies on the opponent’s turn.
+- Protect I & Meer’s Present stay revealed in hand.'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -36,6 +38,22 @@ global.ToukenCrest[4] = 11241
 global.ToukenCrest[5] = 11244
 global.ToukenCrest[6] = 11254
 global.AllToukenCrest = 7
+
+/*
+Buddyfight World IDs
+----------------------------------------------------------------------------------------------
+Magic World = 1
+Katana World = 2
+Legend World = 3
+Hero World = 4
+Ancient World = 5
+Danger World = 6
+Darkness Dragon World = 7
+Dragon World = 8
+Generic = 9
+Dragon Ein = 10
+Parade of Hundred Demons = 11
+*/
 
 /*  Clan IDs                          Nation IDs
 ----------------------------------------------------------------------------------------------
@@ -76,7 +94,7 @@ Live Action = 35
 ----------------------------------------------------------------------------------------------
 Bermuda Triangle = 13               Lyrical Monasterio= 6
 ----------------------------------------------------------------------------------------------
-Cray Elemental = 25                 *For Clan-less Standard cards not in above Nations* = 8
+Cray Elemental = 25                 *For Clan-belonging Standard cards not in above Nations* = 8
 Touken Ranbu = 27
 Bang Dream = 31
 
@@ -90,9 +108,10 @@ Iconic = 34                         Record of Ragnarok = 10
                                     Iron Armor Little Treasure = 11
                                     VSPO! = 12
                                     CoroCoro Comic = 13
+                                    Buddyfight = 14
 
 
-***Max Clan ID = 35                 Max Nation ID = 13***
+***Max Clan ID = 35                 Max Nation ID = 14***
 */
 
 
@@ -100,7 +119,6 @@ global.CustomFactionClanId[0] = 0
 global.CustomFactionNationId[0] = 11
 global.CustomFactionName[0] = 'Iron Armor Little Treasure'
 global.CustomFactionFile[0] = 'B-Robo Kabutack.txt'
-
 
 global.CustomFactionClanId[1] = 0
 global.CustomFactionNationId[1] = 12
@@ -112,8 +130,13 @@ global.CustomFactionNationId[2] = 13
 global.CustomFactionName[2] = 'CoroCoro'
 global.CustomFactionFile[2] = 'Corocoro.txt'
 
+global.CustomFactionClanId[3] = 0
+global.CustomFactionNationId[3] = 14
+global.CustomFactionName[3] = 'Buddyfight'
+global.CustomFactionFile[3] = 'Buddyfight.txt'
+
 //Increase left number for every new clan/nation
-global.MaxCustomFaction = 2 + 1
+global.MaxCustomFaction = 3 + 1
 
 
 CardStat = 1
@@ -1075,7 +1098,7 @@ global.CardText[CardStat] = 'Crest
 CONT: You cannot ride cards other than <Fashionable Witch>.
 AUTO: When this crest is put during your ride phase or when your vanguard is placed during your ride phase, choose up to one Fashion Magic card from your drop, and put it into the order zone.
 ACT 1/Turn: COST [Energy Blast 3], and perform one of the following.
-• Look at the top seven cards of your deck,choose up to any number of Fashion Magic cards with different grades from among them, put them into the order zone, and shuffle the deck.
+• Look at the top seven cards of your deck, choose up to any number of Fashion Magic cards with different grades from among them, put them into the order zone, and shuffle the deck.
 • Choose a card from your damage zone, put it into drop, and put the top card of your deck into damage zone face down. If the card put into drop by this effect is a Fashion Magic card, you may put that card into the order zone.
 AUTO: At the beginning of your battle phase, COST [Soul Blast 2], choose up to two <Fashionable Witch> with different card names from each other from your drop, and perform "If your order zone has two or more different Fashion Magic cards written on that card, call that card to RC." for each of them.'
 global.UnitGrade[CardStat] = 0
@@ -1197,16 +1220,32 @@ CardStat = 14242
 global.CardName[CardStat] = 'Gauge Zone'
 global.CardText[CardStat] = 'Ride Deck Crest
 
-(You may only have one ride deck crest in a ride deck)
-
 AUTO [Ride Deck]: When you ride, COST [put a <Flag> from soul into the order zone], put this card into the crest zone, and put the top two cards of your deck into gauge face down.
-
+(You will automatically get 2 gauges when you ride to grade 1)
 CONT: You can have gauge.
-
 AUTO: When this card is put into the crest zone, or at the beginning of your ride phase, COST [put a card from hand into gauge face down], and draw a card.
+Buddy Call - ACT 1/Fight: If your vanguard is grade 3 or greater, choose a buddy monster from your order zone, call it to RC, and Counter Charge 1.
 
-Buddy Call - ACT 1/Fight: If your vanguard is grade 3 or greater, choose a buddy monster from your order zone, call it to RC, and Counter Charge 1.'
+(Hold SHIFT to put gauges face down under this crest or right click cards under this crest to flip face down)'
 global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 14328
+{
+global.CardName[CardStat] = 'Shinobi Scrolls'
+global.CardText[CardStat] = 'Buddyfight/Katana World/Token Set Order/Ninja Arts
+
+ACT [Order Zone] 1/Turn: COST [Pay a gauge & put a card from hand into this card’s Buddy Soul face down], and draw a card.
+ACT [Order Zone] 1/Turn: Choose a <Ninja Arts> order other than blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)
+AUTO [Order Zone]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and "Secret Sword, Lethal Formation" is not in your order zone, COST [Pay three gauges & declare final phase], choose a "Secret Sword, Lethal Formation" from this card’s Buddy Soul, and put it into the order zone.
+AUTO [Order Zone] 1/Turn: When your vanguard is attacked, choose a <Ninja Arts> blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)'
+global.BuddyWorld[CardStat] = 2
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0

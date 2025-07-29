@@ -6029,9 +6029,20 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT [VC/RC]: During your turn, if you have another unit in the same column as this unit, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+
+(SHIFT + left click to activate search ability.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'SHIFT'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckGrade'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'Shu'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
@@ -6579,7 +6590,7 @@ CardStat = 8120
 global.CardName[CardStat] = 'Chouchou Debut Stage, Tirua '
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When placed, choose any number of any player’s normal units on RC, and return them to the hand. If three or more cards were returned, this unit gets power +15000 until end of turn.
+AUTO [VC]: When placed, choose any number of normal units on any player’s RC, and return them to hand. If three or more cards were returned, this unit gets power +15000 until end of turn.
 
 AUTO [VC/RC] 1/Turn: At the end of the battle it attacked, if three or more any player’s rear-guards were returned to the hand this turn, COST [Counter Blast 1 & discard a card from your hand], stand this unit, and it gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3

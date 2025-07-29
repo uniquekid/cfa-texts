@@ -147,7 +147,7 @@ global.CardText[CardStat] = 'Nubatama/Warbeast
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Soul Blast 1] When an attack hits a vanguard during the battle that this unit boosted, if you have a «Nubatama» vanguard, you may pay the cost. If you do, choose up to two cards in your opponent’s bind zone, and put them into the drop zone.'
+AUTO [RC]: [Soul Blast 1] When an attack hits a vanguard during the battle that this unit boosted, if you have a «Nubatama» vanguard, you may pay the cost. If you do, choose up to two cards from your opponent’s bind zone, and put them into his or her drop zone.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 23
 }
@@ -324,7 +324,7 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC]: [Counter Blast 2] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, bind it face up, your opponent chooses one card from his or her hand, and bind it face down. At the end of that turn, if you have a heart with "Shura Stealth Dragon" in its card name, put the cards bound by this effect to his or her drop zone, otherwise, return the cards to your opponent’s hand.'
+AUTO [VC]: [Counter Blast 2] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, bind it face up, your opponent chooses one card from his or her hand, bind it face down, and if you have a heart with "Shura Stealth Dragon" in its card name, at the end of that turn, put the cards that were bound with this effect into the drop zone, and if you do not, at the end of that turn, your opponent puts the cards that were bound with this effect into his or her hand.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 23
 global.ExtraDeck[CardStat] = 1
@@ -718,7 +718,7 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO: When this unit is placed on VC, your opponent chooses two of his or her rear-guards, and binds all of his or her other rear-guards face up. If three or more units were bound, your opponent chooses two cards from his or her bind zone, and puts them into his or her drop zone. At the end of that turn, your opponent put the cards bound with this effect into his or her hand.'
+AUTO: When this unit is placed on VC, your opponent chooses two of his or her rear-guards, and binds all of his or her other rear-guards face up. If three or more units were bound, your opponent chooses two cards from his or her bind zone, and puts them into his or her drop zone. At the end of that turn, your opponent puts the cards bound with this effect into his or her hand.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 23
 global.ExtraDeck[CardStat] = 1
@@ -870,7 +870,7 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 AUTO: Forerunner.
 
-AUTO [RC] Generation Break 1: [Put this unit into your soul] When a dominated unit attacks during your turn, you may pay the cost. If you do, draw a card, choose up to one of any rear-guards, and it gets power +3000 until end of turn.'
+AUTO [RC] Generation Break 1: [Put this unit into your soul] When a dominated unit attacks during your turn, you may pay the cost. If you do, draw a card, choose up to one of any players’ rear-guards, and it gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 23
 }
@@ -1019,7 +1019,7 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 Stride.
 
-Domination - ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose one of your opponent’s rear-guards, and it gets power +3000 for each face up card in your G zone until end of turn. Dominate that unit as stand, it attacks another of your opponent’s unit, and at the end of that battle, retire the dominated unit. (You pay the cost to use its abilities as well.)'
+Domination - ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose one of your opponent’s rear-guards, and it gets power +3000 until end of turn for each face up card in your G zone. stand and dominate that unit, Attack your opponent’s other unit, and at the end of that battle, retire the dominated unit. (You may use its abilities if you pay the cost.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 23
 global.ExtraDeck[CardStat] = 1
@@ -1161,7 +1161,7 @@ CardStat = 4879
 global.CardName[CardStat] = 'Almsgiving Stealth Rogue, Jirokichi'
 global.CardText[CardStat] = 'Nubatama/Demon/Draw Trigger
 
-ACT [RC]: [Put this unit into your soul] Choose one of any player’s rear-guards, and it gets power +3000 until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose one of any players’ rear-guards, and it gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 23
 }
@@ -1517,7 +1517,7 @@ CardStat = 5597
 global.CardName[CardStat] = 'Stealth Rogue of Vista, Ayagiri'
 global.CardText[CardStat] = 'Nubatama/Demon
 
-AUTO [RC] Generation Break 1: When other dominated unit attacks during your turn, this unit gets power +5000 until end of turn.'
+AUTO [RC] Generation Break 1: When other dominated units attack during your turn, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
 }
@@ -1529,7 +1529,7 @@ CardStat = 5598
 global.CardName[CardStat] = 'Stealth Dragon, Ouzai'
 global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
-AUTO [RC]: [Soul Blast 1] When other dominated unit attacks a vanguard during your turn, you may pay the cost. If you do, that unit gets power +3000 until end of that battle. If you have a grade 4 vanguard, this unit gets power +3000 until end of turn.'
+AUTO [RC]: [Soul Blast 1] When other dominated units attack a vanguard during your turn, you may pay the cost. If you do, that unit gets power +3000 until end of that battle. If you have a grade 4 vanguard, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
 }
@@ -2360,7 +2360,7 @@ CardStat = 7144
 global.CardName[CardStat] = 'Stealth Dragon, Jaenjin'
 global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
-AUTO [RC]: When it attacks a vanguard, if you called two or more grade 0 this turn, this unit gets power +5000 until end of that battle. At the end of that battle, [put this unit into your soul], and Counter Charge 1.'
+AUTO [RC]: When it attacks a vanguard, if you called two or more grade 0 this turn, this unit gets power +5000 until end of that battle. At the end of that battle, COST [put this unit into your soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 23
 }
@@ -2456,9 +2456,20 @@ global.CardText[CardStat] = 'Nubatama/Warbeast
 
 CONT [RC]: During your turn, if you have a token unit, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+
+(SHIFT + left click to activate search ability.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'SHIFT'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckGrade'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'Shu'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
@@ -2960,7 +2971,7 @@ global.CardText[CardStat] = 'Nubatama/Demon
 
 Stride.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], you choose three unit cards from your opponent’s drop, your opponent chooses any number of cards from among them, and calls them to RC. Your opponent’s cards’ AUTO abilities do not activate from this call. Your opponent chooses a card from their hand for each called unit, and discards it. For each card that was not called from the cards you chose, you draw a card, and all of your front row units get power +10000 until end of turn.'
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose three unit cards from your opponent’s drop, your opponent chooses any number of cards from among them, and calls them to RC. Your opponent’s cards’ AUTO abilities do not activate from this call. For each unit that was called, your opponent chooses a card from their hand, and discards it. For each card you chose that was not called, you draw a card, and all of your front row units get power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 23
 global.ExtraDeck[CardStat] = 1

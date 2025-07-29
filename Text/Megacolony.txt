@@ -2145,7 +2145,7 @@ CardStat = 7008
 global.CardName[CardStat] = 'Machining Centipede'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, until end of your opponent’s next turn, those units lose "Twin Drive", "Intercept", and "Boost", and they cannot get them. stand this unit.'
+ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, until end of your opponent’s next turn, those units lose "Twin Drive", "Intercept", and "Boost", and they cannot get them. Stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -2411,9 +2411,20 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 CONT [VC/RC]: During your turn, if your opponent has no stand units, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+
+(SHIFT + left click to activate search ability.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'SHIFT'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckGrade'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'Shu'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000

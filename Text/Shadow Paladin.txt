@@ -1453,9 +1453,9 @@ CardStat = 2839
 global.CardName[CardStat] = 'Blaster Dark "Diablo"'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-CONT [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): While you are paying the cost for Stride, if a G unit with "Blaster" in its card name would Stride, cards in your hand get grade +3.
+CONT [VC] Generation Break 2 (This ability is active if you have two or more face up G units in total on your VC or G zone): While you are paying the cost for Stride, if the G unit you Stride has "Blaster" in its card name, the cards in your hand get grade +3.
 
-AUTO [VC]: During your turn, when your unit named "Dark Dragon, Phantom Blaster "Diablo"" Stride, choose one of your opponent’s rear-guards, and retire it.'
+AUTO [VC]: During your turn, when your "Dark Dragon, Phantom Blaster "Diablo"" Stride, choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -2186,7 +2186,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 (STANDARD JP & EN: You can only run this card if you do not have Cerrgaon in your deck.)
 
-AUTO [VC] Ritual 3: [Choose two normal units from your drop zone, and put them on the bottom of your deck in any order] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, you may Stride without paying the cost of the next Stride.
+AUTO [VC] Ritual 3: [Choose two normal units from your drop zone, and put them on the bottom of your deck in any order] At the beginning of your ride phase, you may pay the cost. If you do, until end of turn, you may Stride without paying the cost the next time you Stride.
 
 AUTO [VC]: [Counter Blast 1 & Choose one of your rear-guards, and retire it] During your turn, when your G unit Stride, you may pay the cost. If you do, search your deck for up to two grade 1 or less cards, call them to separate RC, shuffle your deck.'
 global.UnitGrade[CardStat] = 3
@@ -3112,9 +3112,9 @@ CardStat = 5489
 global.CardName[CardStat] = 'Dragfall, Luard'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-CONT [VC] Ritual X: The cost of your Stride or Ultimate Stride may also be paid with "Counter Blast 4 & Choose a normal unit from your drop zone, and put it on the bottom of your deck. This cost is reduced by Counter Blast 1 for each grade 1 card in your drop zone."
+CONT [VC] Ritual X: You may pay "Counter Blast 4 & Choose a normal unit from your drop zone, and put it on the bottom of your deck. This cost is reduced by Counter Blast 1 for each grade 1 card in your drop zone" as the cost for Stride and Ultimate Stride
 
-AUTO [VC]: [Counter Blast 1] When your G unit Stride, you may pay the cost. If you do, search your deck for up to one grade 1 or less card, call it to RC, and shuffle your deck. If that unit has the ritual ability, choose one of your opponent’s rear-guards in the same column as that unit, and retire it.'
+AUTO [VC]: [Counter Blast 1] When your G unit Stride, you may pay the cost. If you do, search your deck for up to one grade 1 or lower card, call it to RC, and shuffle your deck. If that unit has the ritual ability, choose one of your opponent’s rear-guards in the same column as that unit, and retire it.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -4412,9 +4412,20 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 CONT [VC/RC]: During your turn, if your drop zone has three or more grade 1 cards, this unit gets power +5000.
 
-AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.'
+AUTO [VC/RC]: When placed from hand, look at five cards from the top of your deck, reveal up to one grade 3 from among them and put it into your hand, shuffle your deck, and if you put a card into your hand, discard a card from your hand.
+
+(SHIFT + left click to activate search ability.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
+
+global.SearchEffect[CardStat] = 1
+global.SearchEffectPosition[CardStat] = 'SHIFT'
+global.SearchEffectLookAtQuantity[CardStat] = 5
+global.SearchEffectMode[CardStat] = 'CheckGrade'
+global.SearchEffectArgument2[CardStat] = 3
+global.ActivateSearchFoundAction[CardStat] = 'AddToHandUpTo'
+global.ActivateSearchRestAction[CardStat] = 'Shu'
+global.SearchEffectFindQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 

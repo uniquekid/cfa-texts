@@ -5741,7 +5741,7 @@ CardStat = 12600
 global.CardName[CardStat] = 'Steam Performer, Tudya'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-AUTO [RC]: At the end of the battle this unit boosted, if your unit was placed on RC from soul this turn, COST [retire this unit], choose a grade 3 or greater card with "Oselargest" in its card name from your soul or drop, and put it on the bottom of the deck. If you chose a card, choose one of any player’s rear-guards, and put it into soul.'
+AUTO [RC]: At the end of the battle this unit boosted, if your unit was placed on RC from soul this turn, COST [retire this unit], choose a grade 3 or greater card with "Oselargest" in its card name from your soul or drop, and put it on the bottom of the deck. If you chose a card, choose one of any players’ rear-guards, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8375,7 +8375,7 @@ global.CardText[CardStat] = 'Dark States/Demon
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your soul, and call it to RC. (You may only use Unique Skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Choose up to one card with grade less than or equal to your vanguard from your soul, and call it to RC. (You may only use unique skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, if your soul has five or more cards, or you Soul Blast a total of three or more cards this turn, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -9013,3 +9013,33 @@ global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14448
+{
+global.CardName[CardStat] = 'Bombing Juggler'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: If your bind zone has four or more face down cards, this cost is reduced by Energy Blast 2. When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Energy Blast 2], and this unit gets power +10000 until end of that battle.
+
+AUTO: When this card is put into soul by your card’s ability, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [bind this card face down], choose one of your rear-guards, and it gets power +5000 until end of turn. If your bind zone has eight or more face down cards, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+}
+global.PersonaRide[CardStat] = 1
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14449
+{
+global.CardName[CardStat] = 'Noxious Hurler'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this card is put into soul from deck during your turn, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Energy-Blast 3], call this card to an open back row RC, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

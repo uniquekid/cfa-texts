@@ -446,6 +446,22 @@ global.UseCounters[CardStat] = 1
 
 The card that has this parameter will be able to store counters. To add counters, player has to Shift + Left Click the card. To remove counters, player has to Shift + Right Click the card. Counters only work for cards that are in VC, RC or Order/Crest zone.
 
+### :checkered_flag: Buddyfight World Flags
+
+```
+global.BuddyWorld[CardStat] = <world_id>
+```
+
+Used for the Buddyfight collaboration set cards. The parametre assigns the card its world flag, visible in the deck editor. A list of the `<world_id>`s can be found inside the `NoUse.txt`.
+
+### :black_large_square: Gauge
+
+```
+global.GaugeCharge[CardStat] = <number>
+```
+
+This parametre will take `<number>` cards from the top of the deck, and move them face down into the first Prison slot. At the time of editing this document, it is used to automate Gauges in the Buddyfight collaboration set of cards.
+
 ### :information_source: Card-specific effects
 
 ```
@@ -543,15 +559,15 @@ Works exactly the same as for token generator without choice options.
 
 ## Card Search Effect Syntax
 
-This section covers the syntax of a special effect that can be used to search the top cards of the library at will.
+This section covers the syntax of an automated effect that can be used to search the top cards of the deck for a card fitting the specified criteria.
 
-The current convention is to only use this effect **when necessary**, for example when the effect instructs to "shuffle the rest and put them on the bottom of your deck". Effects like that **cannot be executed manually** so we add them per se.
+The current convention is to only use this effect **when necessary**, for example when the effect instructs to "shuffle the rest and put them on the bottom of your deck". Effects like that **cannot be executed manually** so we add them when the occasion demands it.
 
 ```
 global.SearchEffect[CardStat] = 1
 ```
 
-Should be assigned to 1 to make the effect work.
+Should be assigned to 1 to enable the automated search effect.
 
 ```
 global.SearchEffectPosition[CardStat] = '<V/R/VR/SHIFT>'
@@ -569,12 +585,12 @@ global.SearchEffectLookAtQuantity[CardStat] = <number>
 global.SearchEffectMode[CardStat] = <search_mode>
 ```
 
-`<search_mode>` can be one of the following (specifically as a string):
+`<search_mode>` can be one of the following strings:
 
-- `'Card'` - find by specified card ID (arguments 1, 2 and 3).
-- `'Clan'` - find by Clan ID (argument 1) and grade ? argument 2.
-- `'NoClan'` - find any card with grade ? argument 2 (argument 1 should be omitted).
-- `'CheckGrade'` - find a card of specified grade only.
+- `'Card'` - In this mode, `<argument_1>`, `<argument_2>` and `<argument_3>` are the card IDs to look for. At least 1 should be specified.
+- `'Clan'` - In this mode, `<argument_1>` is the Clan ID of the card and `<argument_2>` is the card's grade.
+- `'NoClan'` - This mode is used for Standard cards, which have no Clan. `<argument_2>` is the card's grade (`<argument_1>` should be omitted).
+- `'CheckGrade'` - This mode is used in the same way as `NoClan`. Only specify `<argument_2>` to find a card of specified grade exclusively.
 - `'CheckGradeOrLess'` - find any card with grade ? argument 2 (argument 1 should be omitted).
 - `'CheckNameAndGradeOrLess'` - find a card that has argument 1 as a substring in its name with grade ? argument 2. Set argument 1 to arbitrary huge number (e.g. 1000) to use just as a name search.
 - `'CheckCrit'` - checks if card has a crit, arguments are ignored.

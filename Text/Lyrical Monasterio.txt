@@ -10163,7 +10163,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], draw a card, choose one of your rear-guards, and it gets "AUTO [RC]: At the end of your turn, you may return this unit to hand." until end of turn. (You may only use Unique Skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], draw a card, choose one of your rear-guards, and it gets "AUTO [RC]: At the end of your turn, you may return this unit to hand." until end of turn. (You may only use unique skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if two or more of your rear-guards were placed this turn, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -10370,7 +10370,7 @@ CardStat = 14303
 global.CardName[CardStat] = 'Blowball Message, Proine'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [RC/Hand]: At the beginning of the guard step of the battle your grade 3 or greater vanguard with "Juicy-Fruity" in its card name was attacked, COST [put this card into soul], choose one of the units being attacked, and it gets power +10000 until end of that battle.(Can be used before calling guardians and intercepting)'
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your grade 3 or greater vanguard with "Juicy-Fruity" in its card name was attacked, COST [put this card into soul], choose one of the units being attacked, and it gets power +10000 until end of that battle. (Can be used before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -10428,9 +10428,11 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 AUTO: When this unit is placed on a RC, look at the top seven cards of your deck, choose up to one Sound System from among them, discard it, and shuffle the deck.
 
-AUTO: When this unit is retired from RC, if you have a grade 3 or greater vanguard with "Artisaria" in its card name ,call up to one Shadow Army token to a back row RC.'
+AUTO: When this unit is retired from RC, if you have a grade 3 or greater vanguard with "Artisaria" in its card name, call up to one Shadow Army token to a back row RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
+global.TokenSummoner[CardStat] = 13806
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -10457,6 +10459,32 @@ global.CardName[CardStat] = 'Running with Feelings Towards the Distant Sky, Anci
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
 AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Lisciafael" in its card name, Soul Charge 1 / Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14453
+{
+global.CardName[CardStat] = 'Accumulating Page of Efforts, Ispar'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is retired from RC during your battle phase, if you have a grade 3 or greater vanguard with "Artisaria" in its card name, COST [Soul Blast 2], and put this card into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14454
+{
+global.CardName[CardStat] = 'Sunkissed Sparker, Panieil'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is put on GC, if it is the third battle of this turn, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
