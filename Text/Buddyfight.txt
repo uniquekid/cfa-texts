@@ -5,11 +5,14 @@ global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Spell/Ninja Ar
 
 Choose a <Ninja> unit card without sentinel from your drop, and put it into hand.
 
-AUTO: When this card is discarded from hand by a card’s ability, put the top card of your deck into gauge face down, and draw a card.'
+AUTO: When this card is discarded from hand by a card’s ability, put the top card of your deck into gauge face down, and draw a card.
+
+(SHIFT + Left Click to charge your gauge.)'
 global.BuddyWorld[CardStat] = 2
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -169,7 +172,6 @@ global.BuddyWorld[CardStat] = 2
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
-global.RemoveFromDrop[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -401,11 +403,14 @@ global.CardText[CardStat] = 'Buddyfight/Katana World/Trigger Order/Heal Trigger/
 
 Put this card into gauge face down, and put the top card of your deck into gauge face down.
 
-CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.
+
+(SHIFT + Left Click to charge your gauge.)'
 global.BuddyWorld[CardStat] = 2
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
 }
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 0
@@ -608,7 +613,6 @@ global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
-global.RemoveFromDrop[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -693,10 +697,13 @@ CardStat = 14353
 global.CardName[CardStat] = 'Demon Doctor, Buer'
 global.CardText[CardStat] = 'Buddyfight/Magic World/72 Pillars
 
-AUTO: When this unit is placed on RC, you may put the top card of your deck face down as gauge. If you did, at the end of turn, put this unit into drop.'
+AUTO: When this unit is placed on RC, you may put the top card of your deck face down as gauge. If you did, at the end of turn, put this unit into drop.
+
+(SHIFT + Left Click to charge your gauge.)'
 global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -774,7 +781,7 @@ CardStat = 14358
 global.CardName[CardStat] = 'Trio!'
 global.CardText[CardStat] = 'Buddyfight/Magic World/Trigger Order/Critical Trigger/Spell/Get
 
-Play this with COST [Counter Blastt 1] !
+Play this with COST [Counter Blast 1] !
 
 Choose a unit card without sentinel from your drop, and call it to RC.
 
@@ -836,11 +843,14 @@ global.CardText[CardStat] = 'Buddyfight/Magic World/Trigger Order/Front Trigger/
 
 Put the top two cards of your deck face down as gauges.
 
-CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.'
+CONT: During the guard step of your opponent’s turn, this card can be called to GC as a trigger unit, and becomes a grade 0 / shield +15000 guardian.
+
+(SHIFT + Left Click to charge your gauge.)'
 global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
+global.GaugeCharge[CardStat] = 2
 }
 global.TriggerUnit[CardStat] = 5
 global.PowerStat[CardStat] = 0
@@ -945,7 +955,7 @@ CONT [RC]: You cannot call units with the same card name as this card, and if yo
 AUTO: When this unit leaves RC, put the top card of your deck into your damage zone.
 CONT [RC]: During your opponent’s turn, when this unit would leave RC, you may discard a card from your hand. If you do, leave this unit on RC.
 Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
-AUTO [RC]: At the end of the battle this nit is attacked by a rear-guard, retire the unit that attacked this unit.'
+AUTO [RC]: At the end of the battle this unit is attacked by a rear-guard, retire the unit that attacked this unit.'
 global.BuddyWorld[CardStat] = 1
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
@@ -1655,7 +1665,6 @@ global.BuddyWorld[CardStat] = 8
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
-global.RemoveFromDrop[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -1675,7 +1684,6 @@ global.BuddyWorld[CardStat] = 8
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 14
-global.RemoveFromDrop[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -2098,7 +2106,7 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 global.GaugeCharge[CardStat] = 1
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -2127,7 +2135,7 @@ CONT: You may only have one <Flag> in a deck.
 
 CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Dragon Ein> or <Generic> card, or that is a card with <Dragon> in its race, you can ride it, call it, or play its ability.
 
-AUTO: When this card is put into the order zone, discard a card from hand from your hand, and until end of this fight, the number of cards in your damage zone for you to lose becomes 7.'
+AUTO: When this card is put into the order zone, discard a card from your hand, and until end of this fight, the number of cards in your damage zone for you to lose becomes 7.'
 global.BuddyWorld[CardStat] = 10
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
@@ -2198,7 +2206,7 @@ AUTO [VC]: When you Stand Up!!, COST [say Raise the Flag!], and you become a Bud
 
 CONT: You may only have one <Flag> in a deck.
 
-CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Dragon Ein> or <Generic> card, or that is a card with <Hundred Demons> in its race, you can ride it, call it, or play its ability.'
+CONT [VC/Order Zone]: This card cannot be affected by other abilities or card effects, and when you would ride, call, or play the ability of a card with only «Buddyfight», if that is a <Parade of Hundred Demons> or <Generic> card, or that is a card with <Hundred Demons> in its race, you can ride it, call it, or play its ability.'
 global.BuddyWorld[CardStat] = 11
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
