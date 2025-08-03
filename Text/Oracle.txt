@@ -472,9 +472,9 @@ global.CardText[CardStat] = 'Oracle Think Tank/Human
 
 CONT [VC/RC]: Restraint.
 
-ACT [VC/RC]: [Counter Blast 1 & Choose one of your «Oracle Think Tank» rear-guard and add it to your soul] This unit loses "Restraint" until end of turn.
+ACT [VC/RC]: [Counter Blast 1 & Choose another of your «Oracle Think Tank» rear-guard, and put it into your soul] This unit loses "Restraint" until end of turn.
 
-CONT [VC]: During your turn, if you have no rear-guards, this unit gets power +10000, critical +1 and loses "Restraint".'
+CONT [VC]: During your turn, if you do not have any rear-guards, this unit gets power +10000, critical +1 and loses "Restraint".'
 }
 
 
@@ -3695,9 +3695,9 @@ CardStat = 8150
 global.CardName[CardStat] = 'Battle Sister, Torrijas'
 global.CardText[CardStat] = 'Oracle Think Tank/Elf
 
-AUTO [VC/RC]: When placed, reveal top card of deck, if it is a Battle Sister, you may add it to hand. This ability may only be used by a card with the same card name once a turn. (Return it if not added.)
+AUTO [VC/RC]: When placed, reveal the top card of deck, and if it is a card with "Battle Sister" in its card name, you may put it into your hand. This ability may only be used by a card with the same card name once a turn. (Return it if you didn’t put it into your hand.)
 
-AUTO [RC] 1/Turn: During your turn, if you looked at your deck by a card effect, you may have this unit get power +5000 until end of turn. (Activates from "look", "reveal", "search" effects. +5000 regardless of number of cards looked at with one effect.)'
+AUTO [RC] 1/Turn: When you look at your deck by an effect during your turn, you may have this unit get power +5000 until end of turn. (Activates for "look", "reveal", and "search" effects. +5000 regardless of number of cards looked at with one effect.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 10
 }

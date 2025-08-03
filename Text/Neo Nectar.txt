@@ -1954,7 +1954,7 @@ Bloom - AUTO [VC] Generation Break 2: When your other unit with the same card na
 
 AUTO [VC]: At the end of each turn, choose a card from your hand, and you may call it to RC.
 
-AUTO [VC]: [Counter Blast 1 & Soul Blast 1] During your turn, when your G unit Stride, you may pay the cost. If you do, choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, shuffle your deck, and the unit called with this effect gets "Boost" until end of turn.'
+AUTO [VC]: [Counter Blast 1 & Soul Blast 1] When your G unit Stride during your turn, you may pay the cost. If you do, choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, shuffle your deck, and the unit called with this effect gets "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -2459,9 +2459,9 @@ CardStat = 4625
 global.CardName[CardStat] = 'Alstroemeria Flower Maiden, Elana'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-Bloom - AUTO [VC/RC]: When your other unit with the same card name as this unit is placed on RC, all of your rear-guards with the bloom ability get "Boost" until end of turn.
+Bloom - AUTO [VC/RC]: When your other unit with the same card name as this unit is placed on RC, choose all of your units with the bloom ability, and until end of turn, they get "Boost".
 
-AUTO [VC] 1/Turn: When your unit is placed on RC, if you have another unit with the same card name as the called unit, this unit gets power +3000 until end of turn.'
+AUTO [VC] 1/Turn: When your unit is placed on RC, if you have another unit with the same card name as that unit, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -2594,9 +2594,9 @@ CardStat = 5024
 global.CardName[CardStat] = 'Maiden of Produce'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
-CONT [VC]: If you have "Maiden of Produce" on your RC, this unit gets power +2000.
+CONT [VC]: If you have a "Maiden of Produce" on your RC, this unit gets power +2000.
 
-AUTO [VC]: When your G unit with "Maiden of" in its original card name Stride, choose up to two of your units, until end of turn, they get power +2000, and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, search your deck for up to one "Maiden of Produce", call it to RC, and shuffle your deck.".'
+AUTO [VC]: When your G unit with "Maiden of" in its original card name Stride, choose up to two of your units, and until end of turn, they get power +2000, and "AUTO [VC/RC]: When this unit’s attack hits a vanguard, search your deck for up to one "Maiden of Produce", call it to RC, and shuffle your deck.".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 }
@@ -2783,7 +2783,7 @@ global.CardText[CardStat] = 'Neo Nectar/Elf
 
 AUTO: Forerunner.
 
-ACT [RC]: [Put this unit into your soul] Choose one of your units, and it gets "CONT [VC/RC]: This unit gets power +1000 for each of your units with the bloom ability." until end of turn.'
+ACT [RC]: [Put this unit into your soul] Choose one of your units, and until end of turn, it gets "CONT [VC/RC]: This unit gets power +1000 for each of your units with the bloom ability.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 9
 }
@@ -3770,7 +3770,7 @@ CardStat = 7187
 global.CardName[CardStat] = 'Lamplight of Allegiance, Yohna'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-ACT [RC] 1/Turn: COST [Counter Blast 2], and increase the power of two of your other grade 1 or less units by the original power of those units until end of turn.'
+ACT [RC] 1/Turn: COST [Counter Blast 2], and until end of turn, increase the power of two of your other grade 1 or less units bythose units’ original power.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4079,7 +4079,7 @@ CardStat = 7420
 global.CardName[CardStat] = 'Knight of Cordiality, Morgan'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-CONT [VC/RC]: During your turn, if you have a unit with the same card name as your vanguard on RC, this unit gets power +10000.'
+CONT [VC/RC]: During your turn, if you have a unit on your RC with the same card name as your vanguard, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
@@ -4161,7 +4161,7 @@ CardStat = 7455
 global.CardName[CardStat] = 'Devoted Maiden, Tanja'
 global.CardText[CardStat] = 'Neo Nectar/Bioroid
 
-CONT [RC]: During your turn, if you have a rear-guard with the same card name as your vanguard on RC, your vanguard gets power +5000.'
+CONT [RC]: During your turn, if you have a unit on your RC with the same card name as your vanguard, your vanguard gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 }
@@ -4873,7 +4873,7 @@ global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 9
 global.ExtraDeck[CardStat] = 1
 global.OldCardStat[CardStat] = 1
-//global.AnotherSide[CardStat] = 12577
+global.AnotherSide[CardStat] = 12577
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
