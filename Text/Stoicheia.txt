@@ -2459,6 +2459,7 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
+//Errata'd
 CardStat = 10179
 {
 global.CardName[CardStat] = 'In the Dim Darkness, the Frozen Resentment'
@@ -2466,7 +2467,7 @@ global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Soul Blast 1] !
 
-Look at three cards from the top of your deck, choose up to one card from among them, discard it, and shuffle your deck. Choose a card with grade equal to or less than your vanguard from your drop, and call it to RC.'
+Look at three cards from the top of your deck, choose a card from among them, discard it, and shuffle your deck. Choose a card with grade equal to or less than your vanguard from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -9708,4 +9709,34 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14493
+{
+global.CardName[CardStat] = 'Sylvan Horned Beast, Tepar'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+CONT [RC/GC]: If you have a vanguard with "Sylvan Horned Beast" in its card name, this unit cannot be retired by your opponent’s card effects, and it gets shield +5000. (Active on opponent’s turn too)
+
+AUTO [RC] 1/Turn: When your other unit attacks from the back row, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14494
+{
+global.CardName[CardStat] = 'Sylvan Horned Beast, Cathair Cheile'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO: When this unit is placed on RC from hand or placed on RC by the ability of your card with "Sylvan Horned Beast" in its card name, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one card with "Magnolia" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
