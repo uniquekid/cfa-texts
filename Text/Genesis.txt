@@ -1214,7 +1214,7 @@ CardStat = 3121
 global.CardName[CardStat] = 'Mythic Beast, Hati'
 global.CardText[CardStat] = 'Genesis/High Beast
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When a card is put into the drop zone from your soul, this unit gets power +1000 until end of turn.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your card is put into the drop zone from your soul, this unit gets power +1000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -1311,7 +1311,7 @@ CardStat = 3156
 global.CardName[CardStat] = 'Mythic Snake, Jormungand'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When a card is put into the drop zone from your soul, this unit gets power +1000 until end of turn.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your card is put into the drop zone from your soul, this unit gets power +1000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -1322,7 +1322,7 @@ CardStat = 3157
 global.CardName[CardStat] = 'Claimer Harry'
 global.CardText[CardStat] = 'Genesis/Ghost
 
-AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When a card is put into the drop zone from your soul, put that card on the bottom of your deck, and Counter Charge 1.'
+AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your card is put into the drop zone from your soul, put that card on the bottom of your deck, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -1470,7 +1470,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 Stride.
 
-CONT [VC] Generation Break 2: The revelation ability of your rear-guards change to "AUTO: When this unit is placed on RC, look at two cards from the top of your deck, search for up to one card from among them, put it into your soul, and put the rest on the top of your deck in any order.".
+CONT [VC] Generation Break 2: Your rear-guards’ revelation ability change to "AUTO: When this unit is placed on RC, look at two cards from the top of your deck, search for up to one card from among them, put it into your soul, and put the rest on the top of your deck in any order.".
 
 ACT [VC]: [Counter Blast 1 & Soul Blast 3] You may draw a card. If you do not, put up to one card from the top of your deck into your soul, choose one of your rear-guards, that unit and this unit get power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 4
@@ -1631,7 +1631,7 @@ CardStat = 4079
 global.CardName[CardStat] = 'Battle Maiden, Touka'
 global.CardText[CardStat] = 'Genesis/Human
 
-AUTO [RC]: [Counter Blast 1 & Choose a card in your drop zone, and put it on the bottom of your deck] When an attack hits the vanguard during the battle that this unit boosted a rear-guard with the revolution ability, you may pay the cost. If you do, choose a unit that this unit boosted, and return it to your hand.'
+AUTO [RC]: [Counter Blast 1 & Choose a card in your drop zone, and put it on the bottom of your deck] When an attack hits the vanguard during the battle that this unit boosted a rear-guard with the revelation ability, you may pay the cost. If you do, choose a unit that this unit boosted, and return it to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -1760,7 +1760,7 @@ global.CardText[CardStat] = 'Genesis/Human
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, choose up to two of your units with "Witch" in its card name, until end of turn, they get power +5000, and "AUTO [RC]: When this unit attacks, Soul Charge 1.", and if the number of heart cards you have is two, this unit gets power +10000 / critical +1.'
+ACT [VC] 1/Turn: [Counter Blast 1] If you have a heart card with "Witch" in its card name, choose up to two of your units with "Witch" in its card name, and until end of turn, they get power +5000, "AUTO [RC]: When this unit attacks, Soul Charge 1.", and if you have two or more heart cards, this unit gets power +10000 / critical +1.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
@@ -2037,7 +2037,7 @@ global.CardText[CardStat] = 'Genesis/Angel
 
 AUTO: Revelation - RC.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1] When this unit is rest by your other card effect, you may pay the cost. If you do, stand this unit, and this unit gets "Boost" until end of turn.'
+AUTO [RC] Generation Break 1: [Counter Blast 1] When this unit is rest due to the effect of your other card, you may pay the cost. If you do, stand this unit, and it gets "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -2051,7 +2051,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO: Forerunner.
 
-ACT [RC] Generation Break 1: [Put this unit into your soul] Choose up to one of your rear-guards, and stand it. If you stand, draw a card.'
+ACT [RC] Generation Break 1: [Put this unit into your soul] Choose up to one of your rear-guards, stand it, and if you stand, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }
@@ -2076,7 +2076,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO: Revelation - VC/RC.
 
-CONT [VC/RC]: If a card was not put into your soul due to a card effect during this turn, this unit cannot attack a vanguard.'
+CONT [VC/RC]: If no card was put into your soul during this turn due to card effect, this unit cannot attack a vanguard.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -2092,9 +2092,9 @@ Stride.
 
 AUTO: Revelation - VC.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Soul Charge 3, your opponent chooses one of his or her rear-guards for each card with the revelation ability that was Soul Charge, and retires it.
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Soul Charge 3, your opponent chooses one of his or her rear-guards for each card with the revelation ability Soul Charge, and retires them.
 
-CONT [VC] Generation Break 3: All of your rear-guards get power +2000 for each card with the revelation ability in your soul.'
+CONT [VC] Generation Break 3: All of your rear-guards get power +2000 for each card in your soul with the revelation ability.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 21
 global.ExtraDeck[CardStat] = 1
@@ -2309,7 +2309,7 @@ CardStat = 5603
 global.CardName[CardStat] = 'Regalia of Poem, Bragi'
 global.CardText[CardStat] = 'Genesis/Noble
 
-AUTO Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Regalia" in its card name, choose up to two cards with "Regalia" in its card name from your drop zone, put them into your soul, choose one of your vanguards, and that unit and this unit get power +3000 until end of turn for each card put into your soul due to this effect.'
+AUTO Generation Break 1: When this unit is placed on RC, if you have a vanguard with "Regalia" in its card name, choose up to two cards with "Regalia" in their card name from your drop zone, put them into your soul, choose one of your vanguards, and that unit and this unit get power +3000 until end of turn for each card put with this effect.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -2335,7 +2335,7 @@ CardStat = 5605
 global.CardName[CardStat] = 'Regalia of Brewing, Bennu'
 global.CardText[CardStat] = 'Genesis/High Beast
 
-AUTO: When this unit is placed on VC or RC from hand, look at two cards from the top of your deck, put one card from among them into your soul, and put the rest into your drop zone.'
+AUTO: When this unit is placed on VC or RC from hand, look at two cards from the top of your deck, put one card from among them into your soul, and put one card from among them into your drop zone.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }
@@ -2351,7 +2351,7 @@ AUTO: Forerunner.
 
 AUTO: Revelation - RC.
 
-AUTO [RC] 1/Turn: When this unit is rest due to the revelation ability of your other unit, if you have a vanguard with the revelation ability, stand this unit.'
+AUTO [RC] 1/Turn: When this unit is rest due to the effect of the revelation ability of your other unit, if you have a vanguard with the revelation ability, stand this unit.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 21
 }
@@ -3791,7 +3791,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO [RC]: When it attacks or boosts, you may put a card from your soul face down as a divine gauge for this unit.
 
-ACT [RC] 1/Turn: COST [Discard a divine gauge from this unit], Soul Charge 3, then if you have a vanguard with "Regalia" in its card name, COST [retire this unit], and Counter Charge 1.'
+ACT [RC] 1/Turn: COST [Discard a divine gauge from this unit], Soul Charge 3, if you have a vanguard with "Regalia" in its card name, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 21
 }

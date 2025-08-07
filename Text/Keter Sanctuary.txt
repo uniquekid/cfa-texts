@@ -3900,7 +3900,7 @@ CardStat = 10893
 global.CardName[CardStat] = 'Truncate Breath Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 
-AUTO: When this unit is placed on RC, look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom, look at the top card of your deck.'
+AUTO: When this unit is placed on RC, look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, look at the top card of your deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -9209,7 +9209,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, until end of turn, this unit gets power +5000. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s abilities." Shuffle the deck. (You may only use unique skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000 until end of turn. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s ability or retired by your opponent’s card’s ability." Shuffle the deck. (You may only use unique skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if you have four or more rear-guards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -10154,4 +10154,46 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14490
+{
+global.CardName[CardStat] = 'Benevolence Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO: When this card is discarded from hand or retired from GC, if you have a grade 3 or greater vanguard with "Liael" in its card name, you may put this card into soul.
+CONT [RC/GC]:If your bind zone has a face up card, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14491
+{
+global.CardName[CardStat] = 'Knight of Clarity, Genetile'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is retired from RC during your battle phase, if you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Soul Blast 1], choose two of your units, and they get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14492
+{
+global.CardName[CardStat] = 'Impervious Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+AUTO: When this unit is placed on RC or put on GC, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, perform one of the following according to the circle this unit is on.
+• RC - This unit gets power +5000 until end of turn. If this unit was placed by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, it gets power +10000 instead of +5000.
+• GC - This unit gets shield +5000 until end of that battle. If this unit intercepted, it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
