@@ -934,7 +934,7 @@ ACT [VC] Limit Break 4 (This ability is active if you have four or more damage):
 
 CONT [VC]: During your turn, all of your opponent’s trigger effects are nullified.
 
-CONT [VC]: During a battle that this unit attacks a vanguard, your opponent cannot call grade 0 units from hand to GC.
+CONT [VC]: During the battle that this unit attacks a vanguard, your opponent cannot call grade 0 units from hand to GC.
 
 CONT [RC]: This unit gets power -1000.
 
@@ -4369,7 +4369,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 CONT [VC]: If your opponent has no rear-guards, this unit gets power +5000 / critical +1.
 
-ACT [VC] 1/Turn: If "Wyvern Strike, Doha" and "Wyvern Strike, Garan" are on your RC, COST [Soul Blast 1 grade 3 & discard two cards from your hand], retire all of your opponent’s rear-guards, call a Vision token to RC, and at the end of that turn, retire it. (Vision are grade 3 / power 13000 / critical 1, and can twin drive.)
+ACT [VC] 1/Turn: If "Wyvern Strike, Doha" and "Wyvern Strike, Garan" are on your RC, COST [Soul Blast 1 grade 3 & discard two cards from your hand], retire all of your opponent’s rear-guards, call a Vision token to RC, and at the end of that turn, retire that token. (Vision are grade 3 / power 13000 / critical 1, and can twin drive.)
 
 (SHIFT + left click to call a token.)
 
@@ -4993,9 +4993,9 @@ CardStat = 8167
 global.CardName[CardStat] = 'Break Breath Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [RC]: At the end of the battle it attacked, if your opponent’s rear-guard was retired during this turn, COST [retire this unit], and draw a card.
+AUTO [RC]: At the end of the battle it attacked, if your opponent’s rear-guard was retired this turn, COST [retire this unit], and draw a card.
 
-AUTO: When rode upon, choose one of your opponent’s rear-guards, retire it. If you did not retire, draw a card.'
+AUTO: When rode upon, choose one of your opponent’s rear-guards, and retire it. If you did not retire it, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }

@@ -226,7 +226,7 @@ CardStat = 193
 global.CardName[CardStat] = 'Player of the Holy Axe, Nimue'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [VC/RC]: [Counter Blast 1] When this unit’s attack hits a vanguard, if this unit is boosted by a «Gold Paladin», you may pay the cost, and if you do, look at the top card of your deck, search for up to one «Gold Paladin» from among them, call that card to an open RC, and put the rest on the bottom of your deck.'
+AUTO [VC/RC]: [Counter Blast 1] When this unit’s attack hits a vanguard, if this unit is boosted by a «Gold Paladin», you may pay the cost. If you do, look at the top card of your deck, search for up to one «Gold Paladin» from among them, call that card to an open RC, and put the rest on the bottom of your deck.'
 }
 
 
@@ -372,7 +372,7 @@ CardStat = 209
 global.CardName[CardStat] = 'Player of the Holy Bow, Viviane'
 global.CardText[CardStat] = 'Gold Paladin/Elf
 
-AUTO [VC/RC]: [Counter Blast 1] When this unit’s attack hits a vanguard, if this unit is boosted by a «Gold Paladin», you may pay the cost, and if you do, look at the top card of your deck, search for up to one «Gold Paladin» from among them, call it to an open RC, and put the rest on the bottom of your deck.'
+AUTO [VC/RC]: [Counter Blast 1] When this unit’s attack hits a vanguard, if this unit is boosted by a «Gold Paladin», you may pay the cost. If you do, look at the top card of your deck, search for up to one «Gold Paladin», call it to an open RC, and put the rest on the bottom of your deck.'
 }
 
 
@@ -881,7 +881,7 @@ CardStat = 1124
 global.CardName[CardStat] = 'Liberator of the Flute, Escrad'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [VC/RC]: [Counter Blast 1-card with "Liberator" in its card name] When this unit’s attack hits a vanguard, if you have a «Gold Paladin» vanguard, you may pay the cost, and if you do, look at the top card of your deck, search for up to one «Gold Paladin» from among them, call it to an open RC, and put the rest on the bottom of your deck.'
+AUTO [VC/RC]: [Counter Blast 1-card with "Liberator" in its card name] When this unit’s attack hits a vanguard, if you have a «Gold Paladin» vanguard, you may pay the cost. If you do, look at the top card of your deck, search for up to one «Gold Paladin» from among them, call it to an open RC, and put the rest on the bottom of your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 5
 }
@@ -892,7 +892,7 @@ CardStat = 1125
 global.CardName[CardStat] = 'Knight of Far Arrows, Saphir'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO: When this unit is placed on RC from the deck, if you have a «Gold Paladin» vanguard, choose up to one card on your damage zone, turn it face up (Counter Charge 1), and Soul Charge 1.'
+AUTO: When this unit is placed on RC from the deck, if you have a «Gold Paladin» vanguard, choose a card from your damage zone, turn it face up (Counter Charge 1), and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 5
 }
@@ -2062,7 +2062,7 @@ CardStat = 2395
 global.CardName[CardStat] = 'Citation Liberator, Heli'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at three cards from the top of your deck, search for up to one card, call it to an open RC, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at three cards from the top of your deck, search for up to one card from among them, call it to an open RC, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 5
 }
@@ -2108,7 +2108,7 @@ CardStat = 2420
 global.CardName[CardStat] = 'Invitation Liberator, Rud'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted, you may pay the cost. If you do, look at three cards from the top of your deck, search for up to one card, call it to an open RC, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: [Counter Blast 1 & Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosted, you may pay the cost. If you do, look at three cards from the top of your deck, search for up to one card from among them, call it to an open RC, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 5
 }
@@ -4990,11 +4990,11 @@ CardStat = 10016
 global.CardName[CardStat] = 'Spectral Dupe Dragon "ßeverse"'
 global.CardText[CardStat] = 'Gold Paladin/Abyss Dragon
 
-CONT [VC]: During your turn, if you have "Spectral Duke Dragon" in your soul, this unit gets power +10000, and if your opponent’s vanguard is grade 3 or greater, then it gets critical +1.
+CONT [VC]: During your turn, if you soul has "Spectral Duke Dragon", this unit gets power +10000, and if your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
 
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & lock three of your rear-guards], stand this unit, and it gets drive -1 until end of turn.
 
-AUTO [Hand]: At the end of the battle your vanguard attacked, if your damage zone has five or more cards, COST [Counter Blast 2 & lock three of your rear-guards], ride this card as stand, and this unit’s AUTO abilities do not activate until end of turn.'
+AUTO [Hand]: At the end of the battle your vanguard attacked, if you have five or more cards in your damage zone, COST [Counter Blast 2 & lock three of your rear-guards], ride this card as stand, and until end of turn, this unit’s AUTO abilities do not activate.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 5
 }
