@@ -1869,7 +1869,11 @@ CONT [RC]: During your turn, this unit gets power +2000.
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
-global.AnotherSide[CardStat] = 14544
+global.AnotherSide[CardStat] = 14554
+global.TokenSummoner[CardStat] = 14554
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSummonerRodeUponNumber[CardStat] = 8458
+global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -4858,13 +4862,13 @@ global.DefensePowerStat[CardStat] = 50000
 CardStat = 14555
 {
 global.CardName[CardStat] = 'Special Investigation: Keiou Koufu'
-global.CardText[CardStat] = 'Touken Ranbu/Set Order/Event
+global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
 
-Play this if you have a vanguard with "Kashuu Kiyomitsu" in its card name, and your order zone does not have Events with a different card name from this card!
+Play this if you have a vanguard with "Kashuu Kiyomitsu" in its card name, and your order zone does not have events with a different card name from this card!
 
 CONT: If you have a vanguard with "Kashuu Kiyomitsu" in its card name, this card gets all of the following.
 • AUTO: When this card is put into the order zone, search your deck for up to one unit card with "Ichimonji Norimune" in its card name, reveal it and put it into hand, and shuffle the deck.
-• ACT [Order Zone]: If your vanguard is grade 3 or greater, COST [rest two Events in the order zone], choose one of your units with "Kashuu Kiyomitsu" in its card name, and it gets power +5000 until end of turn.'
+• ACT [Order Zone]: If your vanguard is grade 3 or greater, COST [rest two events in the order zone], choose one of your units with "Kashuu Kiyomitsu" in its card name, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.CardInClan2[CardStat] = 30
@@ -4974,7 +4978,7 @@ CardStat = 14562
 global.CardName[CardStat] = 'Shichiseiken Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tsurugi
 
-AUTO: When this unit is placed on RC from hand or by the ability of a card with "Forge" in its card name, if you did not play an order this turn, COST [discard a card from hand], search your deck for up to one set order, discard it, and it gets "COST: This card can be played from drop." until end of turn, and shuffle the deck.'
+AUTO: When this unit is placed on RC from hand or by the ability of a card with "Forge" in its card name, if you did not play an order this turn, COST [discard a card from hand], search your deck for up to one set order, discard it, and it gets "CONT: This card can be played from drop." until end of turn, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -4985,7 +4989,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14563
 {
-global.CardName[CardStat] = 'Shokudaikiri Mitsutada Kiwame'
+global.CardName[CardStat] = 'Shokudaikiri Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this unit is placed on RC by the ability of your "Forge" or placed on RC from hand other than by a unit card’s ability or discarded from hand while riding from the ride deck, choose a card with persona ride from your ride deck, and you may reveal it. If you revealed a card or have a vanguard with persona ride, COST [Soul Blast 1], and put a Persona Shield ticket into hand.
