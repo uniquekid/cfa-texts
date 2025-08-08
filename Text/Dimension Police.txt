@@ -524,7 +524,7 @@ CardStat = 1551
 global.CardName[CardStat] = 'Dimensional Robo, Daiheart'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [VC]: At the beginning of your attack step, if this unit’s power is 13000 or greater, this unit gets "AUTO [VC]: [Choose two grade 3 cards with "Dimensional Robo" in its card name from your hand, and put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do so, search your deck for up to one grade 3 card with "Dimensional Robo" in its card name, ride it as rest, and shuffle your deck." until end of that battle.'
+AUTO [VC]: At the beginning of your attack step, if this unit’s power is 13000 or greater, until end of that battle, this unit gets "AUTO [VC]: [Choose two grade 3 cards with "Dimensional Robo" in its card name from your hand, and put them into your soul] When this unit’s attack hits a vanguard, you may pay the cost. If you do so, search your deck for up to one grade 3 card with "Dimensional Robo" in its card name, ride it as rest, and shuffle your deck.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -795,7 +795,7 @@ CardStat = 1850
 global.CardName[CardStat] = 'Dimensional Robo, Kaisergrader'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC]: [Counter Blast 1 & Choose a grade 3 «Dimension Police» from your hand, and discard it & Put this unit into your soul] If you have a card named "Dimensional Robo, Kaizard on your VC, and your opponent has a grade 2 or greater vanguard, search your deck for up to one card named "Super Dimensional Robo, Daikaiser", ride it as stand, and shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & Choose a grade 3 «Dimension Police» from your hand, and discard it & Put this unit into your soul] If you have a card named "Dimensional Robo, Kaizard" on your VC, and your opponent has a grade 2 or greater vanguard, search your deck for up to one card named "Super Dimensional Robo, Daikaiser", ride it as stand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -821,7 +821,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks a vanguard, this unit gets power +5000 until end of that battle.
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] If you have a unit named "Super Dimensional Robo, Daikaiser" on your VC, search your deck for up to one card named "Ultimate Dimensional Robo, Great Daikaiser", ride it as stand, and shuffle your deck.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] If you have a unit named "Super Dimensional Robo, Daikaiser" in your VC, search your deck for up to one card named "Ultimate Dimensional Robo, Great Daikaiser", ride it as stand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -862,9 +862,9 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 ACT [VC]: Legion 20000 "Metalborg, Ur Buster" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and this unit’s power is 30000 or greater, until end of that battle, your opponent cannot call grade 1 or greater units to GC from his or her hand.
+AUTO [VC]: When this unit attacks a vanguard, if this unit is Legion, and this unit’s power is 30000 or greater, until end of that battle, your opponent cannot call grade 1 or greater units from hand to GC.
 
-AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 20000 or greater, this unit gets "AUTO [VC]: When this unit’s attack hits, draw a card." until end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, if this unit’s power is 20000 or greater, until end of that battle, this unit gets "AUTO [VC]: When this unit’s attack hits, draw a card.".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -1345,7 +1345,7 @@ CardStat = 2776
 global.CardName[CardStat] = 'Metalborg, Hammerhel'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 for each card you have on your VC until end of that battle.'
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +5000 for each card on your VC until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -1356,7 +1356,7 @@ CardStat = 2777
 global.CardName[CardStat] = 'Cosmic Hero, Grandwagon'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1 & Soul Blast 1] Choose another of your units, and that unit gets power +4000 until end of turn.'
+ACT [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1 & Soul Blast 1] Choose one of your other units, and it gets power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -1404,7 +1404,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit’s power is increased due to an effect from one of your cards, if this unit’s power is 9000 or greater, choose one of your vanguards, and until end of turn, it gets "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card.". (This ability is not active due to the increase from a boost and guard.)'
+AUTO [RC] 1/Turn Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit’s power is increased due to an effect from one of your cards, if this unit’s power is 9000 or greater, choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card.". (This ability is not active due to the increase from a boost and guard.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
@@ -1734,7 +1734,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: Forerunner.
 
-Burst - ACT [RC] Generation Break 1: [Rest this unit] If your vanguard’s power is 25000 or greater, choose one of your units, and that unit gets power +4000. If your vanguard’s power is 35000 or greater, you may put this unit into your soul. If you do, draw a card, Counter Charge 1.'
+Burst - ACT [RC] Generation Break 1: [Rest this unit] If your vanguard’s power is 25000 or greater, choose one of your units, and it gets power +4000. If your vanguard’s power is 35000 or greater, you may put this unit into your soul. If you do, draw a card, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
@@ -1746,7 +1746,7 @@ CardStat = 3794
 global.CardName[CardStat] = 'Cosmic Hero, Grandlady'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC]: [Rest this unit] Choose one of your vanguards, until end of turn, it gets power +4000. If you have a vanguard with the burst ability, choose another rear-guard, and that unit gets power +4000 until end of turn.'
+ACT [RC]: [Rest this unit] Choose one of your vanguards, and it gets power +4000 until end of turn. If you have a vanguard with the burst ability, choose one of your other rear-guard, and it gets power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -1955,7 +1955,7 @@ CardStat = 4470
 global.CardName[CardStat] = 'Operator Girl, Linka'
 global.CardText[CardStat] = 'Dimension Police/Human/Stand Trigger
 
-Burst - ACT [RC] Generation Break 2: [Put this unit into your soul] If your vanguard’s power is 20000 or greater, draw a card. If your vanguard’s power is 35000 or greater, choose one of your vanguards with the burst ability, and until end of turn, it gets "AUTO [VC]: [Soul Blast 1] When your drive check reveals a grade 3 card, you may pay the cost. If you do, choose a unit with the sentinel ability on your opponent’s GC, and that unit’s effects with "ñannot be hit" is nullified.".'
+Burst - ACT [RC] Generation Break 2: [Put this unit into your soul] If your vanguard’s power is 20000 or greater, draw a card. If your vanguard’s power is 35000 or greater, choose one of your vanguards with the burst ability, and until end of turn, it gets "AUTO [VC]: [Soul Blast 1] When your drive check reveals a grade 3 card, you may pay the cost. If you do, choose a sentinel on your opponent’s GC, and that unit’s effects with "ñannot be hit" are nullified.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
@@ -2149,9 +2149,9 @@ CardStat = 4516
 global.CardName[CardStat] = 'Cosmic Hero, Grandsmasher'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [VC/RC] Generation Break 1: When this unit attacks a vanguard, it gets power +4000 until end of that battle.
+AUTO [VC/RC] Generation Break 1: When this unit attacks a vanguard, this unit gets power +4000 until end of that battle.
 
-Burst - CONT [RC]: During your turn, if your vanguard’s power is 15000 or greater, this unit gets power +4000, and if your vanguard’s power is 35000 or greater, your opponent cannot intercept when this unit attacks.'
+Burst - CONT [RC]: During your turn, if your vanguard’s power is 15000 or greater, this unit gets power +4000. If your vanguard’s power is 35000 or greater, your opponent attack cannot be intercepted.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -2222,7 +2222,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: Forerunner.
 
-ACT [RC]: [Choose four of your rear-guards with "Dimensional Robo" in its card name, and put them into your soul] If you have a grade 3 vanguard with "Dimensional Robo" in its card name, choose up to one face down card with "Dimensional Robo" in its card name from your G zone, and Stride it on your VC.'
+ACT [RC]: [Choose four of your rear-guards with "Dimensional Robo" in its card name, and put them into your soul] If you have a grade 3 vanguard with "Dimensional Robo" in its card name, choose up to one face down card with "Dimensional Robo" in its card name from your G zone, and Stride it on VC.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
