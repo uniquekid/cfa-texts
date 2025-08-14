@@ -1863,6 +1863,8 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
 AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Toku", COST [reveal a grade 3 card with "Kashuu Kiyomitsu" in its card name from ride deck], and put a Forge token into your order zone.
 
+AUTO: When this unit is rode upon by "Kashuu Kiyomitsu Toku", look at the top card of your deck, and put it on the top of your deck or into your soul.
+
 CONT [RC]: During your turn, this unit gets power +2000.
 
 (Hold TAB to view the related card.)'
@@ -2131,6 +2133,8 @@ CardStat = 8474
 global.CardName[CardStat] = 'Kasen Kanesada Toku '
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
+AUTO: When this unit is placed by riding from "Kasen Kanesada Sentou", search your deck for up to one "Special Investigation: Keichou Kumamoto", reveal it and put it into hand, and shuffle the deck.
+
 AUTO: When this unit is rode upon by "Kasen Kanesada Kiwame", Soul Charge 1, choose one of your vanguard’s, and it gets power +5000 until end of turn.
 
 CONT [RC]: During your turn, this unit gets power +2000.'
@@ -2254,12 +2258,19 @@ CardStat = 8482
 global.CardName[CardStat] = 'Kasen Kanesada Sentou'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
+AUTO: When this unit is rode upon by "Kasen Kanesada Toku", COST [reveal a grade 3 card with "Kasen Kanesada" in its card name from ride deck], and put a Forge token into your order zone.
+
 AUTO: When this unit is rode upon by "Kasen Kanesada Toku", choose one of your vanguards, and it gets power +10000 until end of turn.
 
 CONT [RC]: During your turn, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
+global.AnotherSide[CardStat] = 14554
+global.TokenSummoner[CardStat] = 14554
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSummonerRodeUponNumber[CardStat] = 8474
+global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -4862,7 +4873,7 @@ global.DefensePowerStat[CardStat] = 50000
 CardStat = 14555
 {
 global.CardName[CardStat] = 'Special Investigation: Keiou Koufu'
-global.CardText[CardStat] = 'Touken Ranbu/Set Order/Event
+global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
 
 Play this if you have a vanguard with "Kashuu Kiyomitsu" in its card name, and your order zone does not have events with a different card name from this card!
 
@@ -4989,7 +5000,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14563
 {
-global.CardName[CardStat] = 'Shokudaikiri Celebration Outfit'
+global.CardName[CardStat] = 'Shokudaikiri Mitsutada Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this unit is placed on RC by the ability of your "Forge" or placed on RC from hand other than by a unit card’s ability or discarded from hand while riding from the ride deck, choose a card with persona ride from your ride deck, and you may reveal it. If you revealed a card or have a vanguard with persona ride, COST [Soul Blast 1], and put a Persona Shield ticket into hand.
@@ -5038,6 +5049,607 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 AUTO: When this card is put on GC from hand or discarded from hand while riding from the ride deck, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
 
 AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1 or Energy Blast 3], put this unit into soul, reveal cards from the top of your deck until you reveal a normal unit, call that normal unit to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14568
+{
+global.CardName[CardStat] = 'Taroutachi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+AUTO: If this unit was placed by the ability of your unit with "Jiroutachi" in its card name, this cost may be paid with "Soul Blast 2". When this unit was placed on RC, COST [Counter Blast 1], draw a card.
+
+AUTO [RC]: When this unit attacks, choose one of your units with "Jiroutachi" in its card name, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14569
+{
+global.CardName[CardStat] = 'Jiroutachi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], search your deck for up to one unit card with "Taroutachi" in its card name, call it to RC, and shuffle the deck.
+
+AUTO [RC]: When your unit with "Taroutachi" in its card name attacks, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14570
+{
+global.CardName[CardStat] = 'Magoroku Kanemoto Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+AUTO [RC] 1/Turn: At the end of the battle this unit attacked a rear-guard, if you have a grade 3 or greater vanguard with "Kashuu Kiyomitsu" in its card name, COST [Soul Blast 1], and stand this unit. If your opponent’s rear-guard was retired this battle, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14571
+{
+global.CardName[CardStat] = 'Doudanuki Masakuni Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+AUTO [RC]: When this unit is boosted by a <Touken Danshi - Wakizashi>, until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit stand, COST [Energy Blast 3], choose one of your other rear-guards in the same column as this unit, and stand it." and it gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14572
+{
+global.CardName[CardStat] = 'Hyuuga Masamune Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO: When this unit is placed on RC, look at the top card of your deck, and put it on the top or bottom of the deck. If you put it on the bottom of the deck, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14573
+{
+global.CardName[CardStat] = 'Hanjin Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
+
+CONT: If you have a "Wakizashi’s Ability Kiwame" crest, this card gets all of the following.
+• CONT: This unit’s original shield becomes 15000.
+• AUTO [RC]: At the end of the battle this unit boosted, if you did not Counter Charge this turn, you may Counter Charge 1. If you do, put this unit on the top of the deck.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14574
+{
+global.CardName[CardStat] = 'Kashigiri Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
+
+AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater, and your order zone has two or more "Forge", this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14575
+{
+global.CardName[CardStat] = 'Kashigiri'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
+
+AUTO [RC]: When this unit attacks, until end of turn, this unit gets power +2000, and if your have a "Wakizashi’s Ability Kiwame" crest, and you have no face up damage zone cards, it also gets power +10000.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14577
+{
+global.CardName[CardStat] = 'Kasen Kanesada Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+ACT [VC] 1/Turn: COST [Rest any number of rear-guards], and this unit gets power +5000 until end of turn for each rear-guard rest for this cost.
+
+AUTO [VC]: When this unit attacks, perform all of the following according to this unit’s power.
+• 30000 or greater - Draw a card, and this unit gets "CONT [VC]: All of your front row rear-guards get power +5000." until end of turn.
+• 40000 or greater - This unit gets critical +1 until end of turn.
+• 50000 or greater - Until end of turn, when your opponent would call cards from hand to GC, they must call three or more at the same time.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14578
+{
+global.CardName[CardStat] = 'Special Investigation: Keichou Kumamoto'
+global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
+
+Play this if you have a vanguard with "Kasen Kanesada" in its card name, and your order zone does not have events with a different card name from this card!
+
+CONT: If you have a vanguard with "Kasen Kanesada" in its card name, this card gets all of the following.
+• AUTO: When this card is put into the order zone, search your deck for up to one unit card with "Kokindenjunotachi" in its card name, reveal it and put it into hand, and shuffle the deck. If your order zone has another card with the same card name as this card, when you would search the deck with this effect, you may search for a card with "Jizou Yukihira" in its card name instead.
+• AUTO [Order Zone]: At the beginning of your battle phase, if your vanguard is grade 3 or greater, COST [rest this card], choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14579
+{
+global.CardName[CardStat] = 'Jizou Yukihira Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+CONT: You may have up to eight "Jizou Yukihira Celebration Outfit" in a deck.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Yamanbagiri Kunihiro" or "Kasen Kanesada" in its card name, this unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.CardCopies[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14580
+{
+global.CardName[CardStat] = 'Kokindenjunotachi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Kasen Kanesada" in its card name attacks, COST [Counter Blast 1 & you have one or more rear-guards with "Kokindenjunotachi" in their card names, and put all of them into soul], call this card to RC, and it gets power +5000 until end of turn for each "Special Investigation: Keichou Kumamoto", COST [Energy Blast 3], draw a card, and this unit and your vanguard get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14581
+{
+global.CardName[CardStat] = 'Iwatooshi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Naginata
+
+AUTO [RC]: At the beginning of your battle phase, if you have a vanguard with "Mikazuki Munechika" in its card name, COST [Soul Blast 1], until end of turn, it gets "CONT [VC]: During the battle this unit would attack, it battles all of your opponent’s front row units." and gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14582
+{
+global.CardName[CardStat] = 'Imanotsurugi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+AUTO [RC] 1/Turn: When this unit boosts, you may Soul Charge 1 .
+
+AUTO [RC]: If you have a unit with "Iwatooshi" in its card name in the same column as this unit, this cost is reduced by Energy Blast 2. When your unit in the same column as this unit stand by the ability of your unit with "Mikazuki Munechika" in its card name, COST [Energy Blast 2], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14583
+{
+global.CardName[CardStat] = 'Kogitsunemaru Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT [RC/GC]: This unit gets power +5000 / shield +5000 for every two grades of your vanguard with "Mikazuki Munechika" in its card name. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14584
+{
+global.CardName[CardStat] = 'Ishikirimaru Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Ootachi
+
+CONT [RC/GC/Hand]: If you have a grade 2 or greater vanguard with "Mikazuki Munechika" in its card name, this unit gets "Intercept", and gets grade -1 / shield +5000.
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], and draw a card. You may Soul Charge 1 .
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Mikazuki Munechika" in its card name, this unit gets power +5000 until end of turn. If you have a grade 4 or greater vanguard with "Mikazuki Munechika" in its card name it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14585
+{
+global.CardName[CardStat] = 'Mikazuki Munechika Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC by the ability of "Forge", if you have a vanguard with "Mikazuki Munechika" in its card name, you may return this unit to hand. If it was returned to hand by this effect, and your vanguard is grade 3 or greater, and your opponent’s vanguard is grade 3 or greater, choose up to one "Mikazuki Munechika Celebration Outfit" from your hand, and ride it as stand.
+CONT [VC]: If your soul has a grade 3 card with "Mikazuki Munechika" in its card name, this unit gets all of their ACT abilities, critical +1 and all of your front row units gets power +5000. (Active on opponent’s turn too)
+AUTO [VC]: This cost may be paid with "Discard a card with "Mikazuki Munechika" in its card name from hand.". When this unit attacks, COST [discard two cards from hand], choose two of your front row rear-guards, stand them, and they get power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14586
+{
+global.CardName[CardStat] = 'Tsurumaru Kuninaga Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s front row rear-guards in the same column as this unit, retire it, and this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit stand by the ability of your unit with "Mikazuki Munechika" in its card name, COST [Soul Blast 1], draw a card, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.CanAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 14587
+{
+global.CardName[CardStat] = 'Fukushima Mitsutada Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT: If you have a "Tachi’s Ability Kiwame" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one unit card with "Shokudaikiri Mitsutada" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
+• AUTO [RC]: When this unit attacks, choose one of your other units, and that unit and this unit gets power +5000 until end of turn. If you chose a card with "Shokudaikiri Mitsutada" in its card name, they get power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14588
+{
+global.CardName[CardStat] = 'Taikogane Sadamune Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
+
+CONT: If you have a "Tantou’s Ability Kiwame" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, this unit gets power +2000 until end of turn.
+• AUTO [RC]: When this unit boosts a unit with "Shokudaikiri Mitsutada" or "Ookurikara" in its card name, you may have this unit get power +5000 until end of that battle. If you do, put this unit into soul at the end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14589
+{
+global.CardName[CardStat] = 'Jikkyuu Mitsutada'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT: If you have a "Tachi’s Ability Kiwame" crest, this card gets all of the following.
+• CONT [RC]: If you have a unit with "Shokudaikiri Mitsutada" or "Fukushima Mitsutada" in its card name, this unit’s original power becomes 18000.
+• AUTO [RC]: When this unit attacks, if this unit’s original power is 18000, COST [Counter Blast 1], and this unit’s critical becomes 2 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14590
+{
+global.CardName[CardStat] = 'Higekiri Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], search your deck for up to one unit card with "Hizamaru" in its card name, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14591
+{
+global.CardName[CardStat] = 'Hizamaru Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+ACT [RC] 1/Turn: COST [Rest this unit], choose up to one of your units with "Hizamaru" in its card name in the same column as this unit, and it gets power +5000 until end of turn. If you have a grade 4 or greater vanguard with "Mikazuki Munechika" in its card name, it gets power +10000 instead of +5000.
+
+AUTO [RC]: When your unit with "Hizamaru" in its card name in the same column as this unit moves to GC from RC, COST [Soul Blast 1], and move this unit to GC.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14592
+{
+global.CardName[CardStat] = 'Nukemaru Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: Shinken Hissatsu (This ability is active if you have three or more damage): When this unit’s attack hits, COST [Soul Blast 1], choose one of your opponent’s grade 1 or less rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14593
+{
+global.CardName[CardStat] = 'Military Musician'
+global.CardText[CardStat] = 'Touken Ranbu/Front Trigger
+
+CONT: You may have up to eight "Military Musician" in your deck.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.CardCopies[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14594
+{
+global.CardName[CardStat] = 'Konpeitou'
+global.CardText[CardStat] = 'Touken Ranbu/Critical Trigger
+
+CONT: You may have up to eight "Konpeitou" in your deck.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.CardCopies[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14595
+{
+global.CardName[CardStat] = 'Walker Candy'
+global.CardText[CardStat] = 'Touken Ranbu/Critical Trigger
+
+CONT: You may only have up to four cards between "Walker Candy" and "Sasanuki" in a deck.
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14596
+{
+global.CardName[CardStat] = 'Koban Box'
+global.CardText[CardStat] = 'Touken Ranbu/Draw Trigger
+
+CONT: You may have up to eight "Koban Box" in your deck.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.CardCopies[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14597
+{
+global.CardName[CardStat] = 'Help Token'
+global.CardText[CardStat] = 'Touken Ranbu/Draw Trigger
+
+CONT: You may only have up to four cards between "Help Token" and "Nukemaru" in a deck.
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14598
+{
+global.CardName[CardStat] = 'Shieldman'
+global.CardText[CardStat] = 'Touken Ranbu/Front Trigger
+
+CONT: You may only have up to four cards between "Shieldman" and "Inaba Gou" in a deck.
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14599
+{
+global.CardName[CardStat] = 'Water Artillery'
+global.CardText[CardStat] = 'Touken Ranbu/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14600
+{
+global.CardName[CardStat] = 'Oiwaijuu Bento'
+global.CardText[CardStat] = 'Touken Ranbu/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14601
+{
+global.CardName[CardStat] = 'Tenth Anniversary Cake'
+global.CardText[CardStat] = 'Touken Ranbu
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14602
+{
+global.CardName[CardStat] = 'Sanchoumou Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT: If you have a "Tachi’s Ability Kiwame" crest, this card gets all of the following.
+• AUTO: When this card is discarded from deck during your turn, call this card to RC.
+• AUTO [RC]: When your vanguard’s attack hits, this unit gets power +5000 until end of turn, if you did not Counter Charge this turn, COST [Energy Blast 3], Counter Charge 1, and at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14603
+{
+global.CardName[CardStat] = 'Koryuu Kagemitsu Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Hachisuka Kotetsu" in its card name, or you have a "Tachi’s Ability Kiwame" crest, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, with a different card name from this unit, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14604
+{
+global.CardName[CardStat] = 'Azuki Nagamitsu Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT: If you have a "Tachi’s Ability Kiwame" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, your opponent cannot intercept until end of turn.
+• AUTO [RC]: When your vanguard stand by a card’s ability, COST [Counter Blast 1], until end of that turn, this unit gets power +5000, and during the battle this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14605
+{
+global.CardName[CardStat] = 'Oodenta Mitsuyo Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit’s attack hits, if you have a "Tachi’s Ability Kiwame" crest, COST [retire this unit], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14606
+{
+global.CardName[CardStat] = 'Sohayanotsurugi Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO [RC]: When your drive check reveals a draw trigger, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
