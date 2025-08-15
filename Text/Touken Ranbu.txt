@@ -5187,7 +5187,7 @@ ACT [VC] 1/Turn: COST [Rest any number of rear-guards], and this unit gets power
 AUTO [VC]: When this unit attacks, perform all of the following according to this unit’s power.
 • 30000 or greater - Draw a card, and this unit gets "CONT [VC]: All of your front row rear-guards get power +5000." until end of turn.
 • 40000 or greater - This unit gets critical +1 until end of turn.
-• 50000 or greater - Until end of turn, when your opponent would call cards from hand to GC, they must call three or more at the same time.'
+• 50000 or greater - Until end of that battle, when your opponent would call cards from hand to GC, they must call three or more at the same time.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -5238,7 +5238,9 @@ CardStat = 14580
 global.CardName[CardStat] = 'Kokindenjunotachi Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
-AUTO [Drop]: When your grade 3 or greater vanguard with "Kasen Kanesada" in its card name attacks, COST [Counter Blast 1 & you have one or more rear-guards with "Kokindenjunotachi" in their card names, and put all of them into soul], call this card to RC, and it gets power +5000 until end of turn for each "Special Investigation: Keichou Kumamoto", COST [Energy Blast 3], draw a card, and this unit and your vanguard get power +5000 until end of turn.'
+AUTO [Drop]: When your grade 3 or greater vanguard with "Kasen Kanesada" in its card name attacks, COST [Counter Blast 1 & you have one or more rear-guards with "Kokindenjunotachi" in their card names, and put all of them into soul], call this card to RC, and it gets power +5000 until end of turn for each "Special Investigation: Keichou Kumamoto", in your order zone.
+
+AUTO [RC]: When this unit stand by the ability of "Special Investigation: Keichou Kumamoto", COST [Energy Blast 3], draw a card, and this unit and your vanguard get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -5288,7 +5290,7 @@ global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
 }
-global.PowerStat[CardStat] = 13000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -5318,7 +5320,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
 
 AUTO: When this unit is placed on RC by the ability of "Forge", if you have a vanguard with "Mikazuki Munechika" in its card name, you may return this unit to hand. If it was returned to hand by this effect, and your vanguard is grade 3 or greater, and your opponent’s vanguard is grade 3 or greater, choose up to one "Mikazuki Munechika Celebration Outfit" from your hand, and ride it as stand.
 CONT [VC]: If your soul has a grade 3 card with "Mikazuki Munechika" in its card name, this unit gets all of their ACT abilities, critical +1 and all of your front row units gets power +5000. (Active on opponent’s turn too)
-AUTO [VC]: This cost may be paid with "Discard a card with "Mikazuki Munechika" in its card name from hand.". When this unit attacks, COST [discard two cards from hand], choose two of your front row rear-guards, stand them, and they get power +10000 until end of turn.'
+AUTO [VC]: This cost may be paid with "Discard a card with "Mikazuki Munechika" in its card name from hand". When this unit attacks, COST [discard two cards from hand], choose two of your front row rear-guards, stand them, and they get power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -5655,4 +5657,156 @@ global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14607
+{
+global.CardName[CardStat] = 'Regiment Battle - Seaside Camp'
+global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
+
+Play this if your order zone does not have events with a different card name from this card!
+AUTO: When this card is put into the order zone, if your order zone has a card conducting Training, or you have a crest with "Kiwame" in its card name, draw a card.
+CONT [Order Zone]: If you used the ACT abilities of set orders other than "Training Equipment" this turn, you cannot activate the ACT abilities of set orders other than "Training Equipment".
+ACT [Order Zone]: COST [Soul Blast 1], look at the same number of cards as the number of cards in your order zone with the same card name as this card +1 from the top of your deck, choose up to one card from among them with grade less than or equal to your vanguard or card conducting Training, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.CardInClan2[CardStat] = 30
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14608
+{
+global.CardName[CardStat] = 'Shishiou Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+CONT: If your order zone has a card conducting Training, or you have a crest with "Kiwame" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [put a card from hand into soul], search your deck for up to one set order, reveal it and put it into hand, and shuffle the deck.
+• CONT [RC]: This unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14609
+{
+global.CardName[CardStat] = 'Sasanuki Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO [Drop]: When your grade 3 or greater vanguard is placed other than during the battle phase, if you do not have a unit with the same card name as this card, and your order zone has a "Regiment Battle - Seaside Camp", you may call this card to RC.
+
+CONT [RC]: When this unit attacks a grade 3 or greater vanguard, choose two set orders with the same card name from your order zone. If you chose two cards, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14610
+{
+global.CardName[CardStat] = 'Jikkyuu Mitsutada Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tachi
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], search your deck for up to one "Regiment Battle - Seaside Camp", reveal it and put it into hand, and shuffle the deck. If you have a crest with "Kiwame" in its card name, you may search for a card with the same card name as your vanguard instead.
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have a crest with "Kiwame" in its card name, you may have this unit get power +5000 until end of turn. If you do, put this unit into soul at the end of that turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14611
+{
+global.CardName[CardStat] = 'Heishishourinken'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tsurugi/Over Trigger
+
+Additional Effect - Perform one of the following.
+• Choose up to one card from your damage zone, heal it, and your vanguard gets drive +1 until end of that battle.
+• Choose up to one card from your damage zone, heal it, and choose one of your rear-guards, and it gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 14612
+{
+global.CardName[CardStat] = 'Heishishourinken Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tsurugi
+
+AUTO: When this unit is placed on RC, COST [put a card from hand into soul], choose a set order from your drop or face up damage zone cards, and put it into hand. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14613
+{
+global.CardName[CardStat] = 'Omamori'
+global.CardText[CardStat] = 'Touken Ranbu
+
+CONT: This card cannot be played.
+
+ACT [Hand]: COST [Reveal this card], choose one of your rear-guards without any omamori gauges, and if you chose a card, put this card face up as an omamori gauge on that unit.
+
+CONT [Gauge Zone]: During your opponent’s turn, when the unit with this card as an omamori gauge would leave RC other than by cost, you may discard this card. If you do, that unit is left on RC.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14614
+{
+global.CardName[CardStat] = 'Sengo Muramasa Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard, COST [Counter Blast 1], choose one of your opponent’s front row rear-guards, retire it, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14615
+{
+global.CardName[CardStat] = 'Nikkari Aoe Celebration Outfit'
+global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
+
+AUTO [RC]: When the attack this unit boosted hits, COST [retire this unit], and put a Persona Shield ticker into hand.
+
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 27
+global.DCards[CardStat] = 8
+global.AnotherSide[CardStat] = 13708
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
