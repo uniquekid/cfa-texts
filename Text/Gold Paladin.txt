@@ -1221,7 +1221,7 @@ CardStat = 1701
 global.CardName[CardStat] = 'Dolgal Liberator'
 global.CardText[CardStat] = 'Gold Paladin/High Beast
 
-AUTO [VC/RC]: [Counter Blast 1] When an attack by another of your unit with "Liberator" in its card name hits a vanguard, if you have a «Gold Paladin» vanguard, you may pay the cost. If you do, this unit gets power +5000 until end of turn.'
+AUTO [VC/RC]: [Counter Blast 1] When another of your units with "Liberator" in its card name attacks, and hits a vanguard, if you have a «Gold Paladin» vanguard, you may pay the cost. If you do, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 5
 }
@@ -1339,7 +1339,7 @@ global.CardText[CardStat] = 'Gold Paladin/Human
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosts a vanguard with "Ezel" in its card name, you may pay the cost. If you do, look at up to two cards from the top of your deck, search for up to two «Gold Paladin» from among them, call them to open RC as rest, and put the rest on the bottom of your deck in any order.'
+AUTO [RC]: [Put this unit into your soul] When an attack hits a vanguard during the battle that this unit boosts a vanguard with "Ezel" in its card name, you may pay the cost. If you do, look at up to two cards from the top of your deck, search for up to two «Gold Paladin» from among them, call them to open RC at rest, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 5
 }
@@ -2010,7 +2010,7 @@ global.CardText[CardStat] = 'Gold Paladin/High Beast
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: When another of your unit is placed on RC from your deck, if your vanguard is Legion, this unit gets power +3000 until end of turn.'
+AUTO [RC]: When another of your units is placed on RC from your deck, if your vanguard is Legion, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 5
 }
@@ -3095,9 +3095,9 @@ global.CardText[CardStat] = 'Gold Paladin/Human
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 2: [Chose a card from your drop zone, and put it on the bottom of your deck] Reveal six cards from the top of your deck, choose the same number of your units as the number of revealed <High Beast>, until end of turn, they get power +4000, and if you chose four or more units, this unit gets critical +1. Shuffle your deck.
+ACT [VC] 1/Turn Generation Break 2: [Chose a card from your drop zone, and put it on the bottom of your deck] Reveal six cards from the top of your deck, choose the same number of your units as the number of <High Beast> revealed, until end of turn, they get power +4000, and if four or more cards were chosen, this unit gets critical +1. Shuffle your deck.
 
-ACT [VC]: [Counter Blast 1 & Soul Blast 1] If you have a heart card with "Garmore" in its card name, look at three cards from the top of your deck, call a card to RC from among them, and shuffle your deck.
+ACT [VC]: [Counter Blast 1 & Soul Blast 1] If you have a heart card with "Garmore" in its card name, look at three cards from the top of your deck, call a card from among them to RC, and shuffle your deck.
 
 CONT: This card is also a «Royal Paladin».'
 global.UnitGrade[CardStat] = 4
@@ -4942,7 +4942,7 @@ global.CardText[CardStat] = 'Gold Paladin/Cosmo Dragon
 
 G guardian.
 
-AUTO: When this unit is put on GC, COST [Soul Blast 1], look at two cards from the top of your deck, choose up to two unit cards from among the, call them to GC, and discard the rest. If you called one or more grade 1 or greater cards, draw a card.'
+AUTO: When this unit is put on GC, COST [Soul Blast 1], look at two cards from the top of your deck, choose up to two unit cards from among them, call them to GC, and discard the rest. If you called one or more grade 1 or greater cards, draw a card.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 5
 global.ExtraDeck[CardStat] = 1
