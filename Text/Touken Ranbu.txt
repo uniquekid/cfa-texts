@@ -3275,7 +3275,7 @@ global.DCards[CardStat] = 8
 global.AnotherSide[CardStat] = 14554
 global.TokenSummoner[CardStat] = 14554
 global.TokenSummonerPosition[CardStat] = 'RodeUpon'
-global.TokenSummonerRodeUponNumber[CardStat] = 8526
+global.TokenSummonerRodeUponNumber[CardStat] = 8527
 global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
@@ -5474,10 +5474,10 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 14593
 {
-global.CardName[CardStat] = 'Military Musician'
+global.CardName[CardStat] = 'Instrumentalist'
 global.CardText[CardStat] = 'Touken Ranbu/Front Trigger
 
-CONT: You may have up to eight "Military Musician" in your deck.'
+CONT: You may have up to eight "Instrumentalist" in your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -6463,7 +6463,6 @@ global.CardName[CardStat] = 'Edo Castle Infiltration Investigation'
 global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
 
 Play this if you have a vanguard with "Kyougoku Masamune" in its card name, and your order zone does not have events with a different card name from this card!
-
 CONT: If you have a vanguard with "Kyougoku Masamune" in its card name, this card gets all of the following.
 • AUTO: When this card is put into the order zone, perform "Search your deck for up to one unit card with "Monoyoshi Sadamune" in its card name, reveal it and put it into hand" or perform "Look at the top seven cards of your deck, choose up to one card with "Nansen Ichimonji", "Kogarasumaru", "Oochidori Juumonji Yari", or "Kyougoku Masamune" in its card name, reveal it and put it into hand", and shuffle the deck.
 • ACT [Order Zone]: COST [Put this card into drop], choose one of your grade 3 or greater vanguards with "Kyougoku Masamune" in its card name, and it gets power +5000 until end of turn. If you have a rear-guard with "Monoyoshi Sadamune" in its card name, it also gets "Triple Drive" until end of turn.'
@@ -7055,7 +7054,7 @@ global.DCards[CardStat] = 8
 global.AnotherSide[CardStat] = 14554
 global.TokenSummoner[CardStat] = 14554
 global.TokenSummonerPosition[CardStat] = 'RodeUpon'
-global.TokenSummonerRodeUponNumber[CardStat] = 14638
+global.TokenSummonerRodeUponNumber[CardStat] = 14700
 global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
@@ -7098,16 +7097,17 @@ CardStat = 14702
 global.CardName[CardStat] = 'Village of Treasures - Flower Gathering Stage'
 global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
 
-Play this if you have a vanguard with "Buzengou" in its card name, and your order zone does not have Events with a different card name from this card!
-
+Play this if you have a vanguard with "Buzengou" in its card name, and your order zone does not have events with a different card name from this card!
 CONT: If you have a vanguard with "Buzengou" in its card name, this card gets all of the following.
 • AUTO: When this card is put into the order zone, search your deck for up to one unit card with "Kotegirigou", "Kuwanagou", "Matsuigou", "Samidaregou", "Murakumogou", "Inabagou", or "Tomitagou" in its card name, reveal it and put it into hand, and shuffle the deck.
-• CONT [Order Zone]: The power increase of "Instrumentalist" trigger effects revealed for your drive check get +5000.
-• ACT [Order Zone]: COST [Rest two "Village of Treasures - Flower Gathering Stage" in the order zone], choose an "Instrumentalist" from your drop, and put it on the bottom of the deck.'
+• CONT [Order Zone]: The power increase of "Instrumentalist" trigger effects revealed for your drive check get +5000. 
+• ACT [Order Zone]: COST [Rest two "Village of Treasures - Flower Gathering Stage" in the order zone], choose an "Instrumentalist" from your drop, and put it on the bottom of the deck.
+(Defensive check currently does not increase trigger power)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.CardInClan2[CardStat] = 30
 global.DCards[CardStat] = 8
+global.TriggerPowerUpEffect[CardStat, 0] = 5000
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -7241,7 +7241,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], choose up to the same number of your rear-guards with "Boost" as the grade of your opponent’s vanguard, and increase this unit’s power by the sum of the original power of the chosen units until end of turn. If you chose three or more units, this unit gets drive +1 until end of turn.
 
-AUTO [VC] 1/Turn: When this unit attacks, COST  [Counter Blast 1], choose one of your rear-guards, and stand it. If your opponent’s vanguard is grade 3 or greater, stand all of your rear-guards in the same column as that chosen unit.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, and stand it. If your opponent’s vanguard is grade 3 or greater, stand all of your rear-guards in the same column as that chosen unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -7256,7 +7256,7 @@ CardStat = 14712
 global.CardName[CardStat] = 'Special Investigation: Tenpou Edo'
 global.CardText[CardStat] = 'Touken Ranbu/Set Order/event
 
-Play this if you have a vanguard with "Hachisuka Kotetsu" in its card name, and your order zone does not have Events with a different card name from this card!
+Play this if you have a vanguard with "Hachisuka Kotetsu" in its card name, and your order zone does not have events with a different card name from this card!
 
 CONT: If you have a vanguard with "Hachisuka Kotetsu" in its card name, this card gets all of the following.
 • AUTO: When this card is put into the order zone, search your deck for up to one unit card with "Suishinshi Masahide" or "Minamoto Kiyomaro" in its card name, reveal it and put it into hand, and shuffle the deck.
@@ -7277,7 +7277,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Uchigatana
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Hachisuka Kotetsu" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into soul.
 
-AUTO [Front Row RC]1/Turn: When your opponent’s damage check reveals a trigger unit, if you have a grade 3 or greater vanguard with "Hachisuka Kotetsu" in its card name, COST [Soul Blast 1], choose one of your opponent’s vanguards, and it gets power -5000 until end of turn.'
+AUTO [Front Row RC] 1/Turn: When your opponent’s damage check reveals a trigger unit, if you have a grade 3 or greater vanguard with "Hachisuka Kotetsu" in its card name, COST [Soul Blast 1], choose one of your opponent’s vanguards, and it gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -7353,7 +7353,7 @@ CardStat = 14718
 global.CardName[CardStat] = 'Honebami Toushirou Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Wakizashi
 
-AUTO [RC]: At the end of the battle this unit attacked while boosted by a unit with "Namazuo Toushirou" in its card name, if you have a grade 3 or greater <Touken Danshi - Wakizashi> vanguard or a grade 3 or greater vanguard with "Ichigo Hitofuri" in its card name, and your other unit did not [Stand] by a card’s ability this turn, COST [Counter Blast 1], and stand all of your units in the same column as this unit.'
+AUTO [RC]: At the end of the battle this unit attacked while boosted by a unit with "Namazuo Toushirou" in its card name, if you have a grade 3 or greater <Touken Danshi - Wakizashi> vanguard or a grade 3 or greater vanguard with "Ichigo Hitofuri" in its card name, and your other unit did not stand by a card’s ability this turn, COST [Counter Blast 1], and stand all of your units in the same column as this unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
@@ -7381,7 +7381,7 @@ CardStat = 14720
 global.CardName[CardStat] = 'Gokotai Celebration Outfit'
 global.CardText[CardStat] = 'Touken Ranbu/Touken Danshi - Tantou
 
-AUTO [RC]: When this unit attacks or boosts, if you have another rear-guard with "Toushirou" in its card name, this unit gets [Power]+2000 until end of that battle. Then, if this unit boosted a vanguard with "Ichigo Hitofuri" in its card name, COST [Soul Blast (1)], and reduce the cost of that boosted unit’s AUTO abilities by Counter Blast 1 until end of that battle.'
+AUTO [RC]: When this unit attacks or boosts, if you have another rear-guard with "Toushirou" in its card name, this unit gets power +2000 until end of that battle. Then, if this unit boosted a vanguard with "Ichigo Hitofuri" in its card name, COST [Soul Blast 1], and reduce the cost of that boosted unit’s AUTO abilities by Counter Blast 1 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 27
 global.DCards[CardStat] = 8
