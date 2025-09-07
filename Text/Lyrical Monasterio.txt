@@ -6509,7 +6509,7 @@ Play this with COST [Counter Blast 1] !
 
 AUTO: When this card is put into your order zone, draw a card.
 
-ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into drop], choose one of your units, and it gets power +10000 until end of turn. Choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and stand during stand phase.'
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into drop], choose one of your units, and it gets power +10000 until end of turn. Choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during stand phase.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -9804,7 +9804,7 @@ This card can be played from drop, and play this with COST [Counter Blast 1] !
 
 If you have a vanguard with [Divine Skill], this ability can be played without paying the cost.
 
-Bind this card, draw a card, and choose a card from your hand and reveal it. If you revealed a card with grade less than or equal to your vanguard, call it to RC, and discard it if not. If you called a card to RC, and your vanguard is grade 3 or greater, until end of turn, that called unit gets power +5000 and gets "AUTO: When this unit leaves RC, choose one of your units, and it gets power +5000 until end of turn.".'
+Bind this card, draw a card, and reveal a card from your hand. Call the reveal card to RC if it is a unit card with grade less than or equal to your vanguard, and discard it if not. If you called it to RC, and you have a grade 3 or greater vanguard, until end of turn, that called unit gets "AUTO: When this unit leaves the RC, choose one of your units, and it gets power +5000 until end of turn." and power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -10559,3 +10559,86 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14748
+{
+global.CardName[CardStat] = 'Elegant-repose, Nassaty'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [RC]: If you have no other rear-guards, this unit cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14749
+{
+global.CardName[CardStat] = 'I Won’t Lose to Anyone! Alphaza'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 1], and this unit gets power +5000 until end of that battle for each grade of your opponent’s vanguard.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14750
+{
+global.CardName[CardStat] = 'Lesson Mode, Acochare'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO: When this unit is placed on RC from hand during your main phase, COST [discard a card from hand], draw a card, and if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14751
+{
+global.CardName[CardStat] = 'Starling Voice, Raming'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: At the end of the battle this unit boosted a token unit, COST [put this unit into soul], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14752
+{
+global.CardName[CardStat] = 'Ephemeral Verse, Latour'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on RC, if your RC has a token unit, Soul Charge 1. Then, if you have a vanguard with "Juicy-Fruity" in its card name, choose one of your token units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14753
+{
+global.CardName[CardStat] = 'Petit Cute, Sroine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your have a grade 3 or greater vanguard with "Juicy-Fruity" in its card name, this unit gets power +5000 until end of that battle.
+
+AUTO: When this unit is retired from RC by a token unit, if you have a grade 3 or greater vanguard with "Juicy-Fruity" in its card name, put this card into soul, and draw a card, COST [Energy Blast 3], and that token unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
