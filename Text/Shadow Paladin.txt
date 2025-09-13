@@ -1843,7 +1843,7 @@ CardStat = 3153
 global.CardName[CardStat] = 'Witch’s Familiar, Kuroma'
 global.CardText[CardStat] = 'Shadow Paladin/Workeroid
 
-AUTO: [Choose a card with "Witch" in its card name from your hand, and discard it] When this unit is placed on RC, if you have a vanguard with "Witch" in its card name, and your opponent has two or more grade 0 rear-guards, you may pay the cost. If you do, draw two cards.'
+AUTO: [Choose a card with "Witch" in its card name from your hand, and discard it] When this unit is placed on RC, if you have a vanguard with "Witch" in its card name, and the number of your opponent’s grade 0 rear-guards is two or more, you may pay the cost. If you do, draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -3212,7 +3212,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 CONT [RC] Ritual 3: During the battle that this unit boosted, this unit gets power +3000.
 
-AUTO [RC] 1/Turn Generation Break 1: When your other rear-guard with the ritual ability is retired from RC for the effect or cost of your card, you may put that card into your soul.'
+AUTO [RC] 1/Turn Generation Break 1: When your other rear-guard with the ritual ability is retired for the effect or cost of your card, you may put that card into your soul.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -4869,7 +4869,7 @@ CardStat = 8152
 global.CardName[CardStat] = 'Witch of Reality, Femme '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], your opponent chooses two grade 0 unit cards from his or her drop zone, and calls them to his or her RC with grade 1 or greater units. If no cards were called, this unit gets drive +1 until end of turn.'
+ACT [VC] 1/Turn: COST [Soul Blast 1], your opponent chooses two grade 0 unit cards from his or her drop zone, and calls them to RC with grade 1 or greater units on them. If no cards were called, this unit gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -5046,9 +5046,9 @@ CardStat = 9681
 global.CardName[CardStat] = 'Witch of Precious Stones, Dana '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO: When this unit is placed on VC or RC, choose a normal unit with "Witch" in its card name from your drop, and you may put it on the bottom of your deck. If no cards were put it into your deck, and your opponent’s drop has three or less cards, your opponent discards three cards from the top of their deck.
+AUTO: When this unit is placed on VC or RC, choose a normal unit with "Witch" in its card name from your drop, and you may put it on the bottom of your deck. If you did not put it on the bottom of your deck, and your opponent’s drop has three or less cards, your opponent discards the top three cards of their deck.
 
-ACT [RC]: If you have a vanguard with "Witch" in its card name, COST [rest this unit], your opponent chooses two grade 0 unit from their drop, and calls them to RC with grade 1 or greater.'
+ACT [RC]: If you have a vanguard with "Witch" in its card name, COST [rest this unit], your opponent chooses two grade 0 unit from their drop, and calls them to their RC with a grade 1 or greater unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
