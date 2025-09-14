@@ -866,7 +866,7 @@ CardStat = 3477
 global.CardName[CardStat] = 'Assault Dragon, Assaultrex'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-CONT [RC]: During your turn, if you have a face up card with "Rex" in its card name in your bind zone, this unit gets power +2000, and "AUTO: During your battle phase, when this unit is put into the drop zone from RC, if you have a vanguard with "Rex" in its card name, draw a card.".'
+CONT [RC]: During your turn, if you have a face up card in your bind zone with "Rex" in its card name, this unit gets power +2000, and "AUTO: When this unit is put into the drop zone from RC during your battle phase, if you have a vanguard with "Rex" in its card name, draw a card.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 17
 }
@@ -2126,9 +2126,9 @@ CardStat = 6980
 global.CardName[CardStat] = 'Destruction Dragon, Dark Rex '
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-ACT [Drop Zone]: If your vanguard is grade 2 or greater, and you did not ride during this turn, COST [discard two equipped gauge], and ride this card as stand or call it to RC.
+ACT [Drop Zone]: If your vanguard is grade 2 or greater, and you did not ride this turn, COST [discard two equip gauges], and ride this card as stand or call it to RC.
 
-CONT [VC/RC]: During the battle it attacked, this unit gets power +2000 for each of your equipped gauge.'
+CONT [VC/RC]: During the battle it attacked, this unit gets power +2000 for each of your equip gauges.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 17
 }
@@ -2141,7 +2141,7 @@ CardStat = 6981
 global.CardName[CardStat] = 'Light Blade Dragon, Zandilopho'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-ACT [RC]: COST [Rest this unit], choose one of your rear-guards, and put the top card of your deck face down as an equip gauge for that unit or move all equipped gauge from one of your rear-guards to it. Then, COST [Counter Blast 1], and the chosen unit gets power +5000 until end of turn.'
+ACT [RC]: COST [Rest this unit], choose one of your rear-guards, and put the top card of your deck face down as an equip gauge for that unit or move all of one of your rear-guard’s equip gauge to that unit. Then, COST [Counter Blast 1], and the chosen unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -2153,7 +2153,7 @@ CardStat = 6982
 global.CardName[CardStat] = 'Angry Roar Dragon, Roarbaryo'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO [RC]: When placed, COST [Soul Blast 1], put the top card of your deck face down as an equip gauge for one of your other rear-guards, and that unit gets power +5000 until end of turn for each equipped gauge to that unit.'
+AUTO [RC]: When placed, COST [Soul Blast 1], put the top card of your deck face down as an equip gauge for one of your other rear-guards, and that unit gets power +5000 until end of turn for each of its equip gauges.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -2165,7 +2165,7 @@ CardStat = 6983
 global.CardName[CardStat] = 'Whiptail Dragon, Bashercarno'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO [RC]: When the attack it boosted hits a vanguard, COST [discard a card from your hand or two equipped gauges], and draw a card.'
+AUTO [RC]: When the attack it boosted hits a vanguard, COST [discard a card from your hand or two equip gauges], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -2190,10 +2190,10 @@ CardStat = 6985
 global.CardName[CardStat] = 'Sharp Thorn Dragon, Polacanspine'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO: When it is retired from RC, activate all of the effects below according to the sum of the number of your equipped gauges.
+AUTO: When it is retired from RC, activate all of the effects below according to the total number of your equip gauges.
 • 1 or more - Soul Charge 1.
 • 2 or more - Counter Charge 1.
-• 3 or more - Move all of this card’s equipped gauges to one of your other rear-guards.'
+• 3 or more - Move all of this card’s equip gauges to one of your other rear-guards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 17
 }
@@ -2714,7 +2714,7 @@ CardStat = 8176
 global.CardName[CardStat] = 'Extortion Dragon, Spinoextort'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO [VC/RC]: When it attacks a vanguard, COST [Counter Blast 1 & retire another rear-guard], draw a card, and call up to one of the equip gauges from the unit retired for this cost to RC. Put the top card of your deck face down as an equip gauge for the called unit.'
+AUTO [VC/RC]: When it attacks a vanguard, COST [Counter Blast 1 & retire another rear-guard], draw a card, and call up to one of the equip gauges from the unit retired for this cost to RC. Put the top card of your deck face down as an equip gauge for that called unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 17
 }
@@ -2742,7 +2742,7 @@ CardStat = 8764
 global.CardName[CardStat] = 'Rapid-firing Dragon, Guidrapid'
 global.CardText[CardStat] = 'Tachikaze/Dinodragon
 
-AUTO [RC]: When this unit attacks a vanguard, put the top card of your deck face down as an equip gauge for this unit. Then, at the end of that battle, COST [Counter Blast 1 & discard one of this unit’s equip gauge], draw a card, choose one of your opponent’s grade 2 or greater rear-guards, and retire it.'
+AUTO [RC]: When this unit attacks a vanguard, put the top card of your deck face down as an equip gauge for this unit. At the end of that battle, COST [Counter Blast 1 & discard one of this unit’s equip gauge], draw a card, choose one of your opponent’s grade 2 or greater rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 17
 }
