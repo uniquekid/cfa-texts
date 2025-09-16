@@ -107,8 +107,8 @@ CONT [VC]: When you would play a normal order, you can bind a normal order with 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop zone, and call it to RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -183,8 +183,8 @@ global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 AUTO [RC]: When this unit attacks a vanguard, if an order card is in your bind zone, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -465,8 +465,8 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 AUTO [RC]: When this unit attacks, COST [Counter Blast 1], and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -1969,8 +1969,8 @@ CONT [VC]: If you "Alchemagic" and order this turn, all of your front row units 
 ACT [VC] 1/Turn: COST [Soul Blast 1 & Discard a card from your hand], choose a Normal Order from your drop, put it into your hand, and when you would play a normal order, you can bind a normal order with a different card name from your drop, and Alchemagic. (Combine the costs, and add the effect to the back!)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2070,8 +2070,8 @@ AUTO [Back Row Center RC]: At the beginning of your battle phase, if your vangua
 CONT [Back Row Center RC]: If you would move or swap this unit during your main phase, you can also move it within the same row.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.CanAttackFromBackRow[CardStat] = 1
@@ -2188,9 +2188,9 @@ AUTO [VC]: When this unit attacks, COST [Soul Blast 1 & discard a card from hand
 CONT [RC]: During the battle this unit is boosted, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Grand March of Full Bloom, Lianorn'
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -2204,8 +2204,8 @@ global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 AUTO [RC]: When this unit attacks a vanguard, if you have three or more back row rear-guards, COST [Counter Blast 1], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 10000
@@ -2285,8 +2285,8 @@ global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 AUTO: When this unit is placed on a front row RC from hand, if you have three or more units in the back row, COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -9826,7 +9826,7 @@ CardStat = 14727
 global.CardName[CardStat] = 'Artful Display of United Hearts, Mollmoire'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-AUTO: When this unit is placed on RC, choose up to one card with the [UnisonDress] ability from your hand, and reveal it. If you revealed a card, or your vanguard is in the UnisonDress state, COST [Counter Blast 1], draw a card, COST [Soul Blast 1], and call a Plant token to RC.
+AUTO: When this unit is placed on RC, choose up to one card with the [UnisonDress] ability from your hand, and reveal it. If you revealed a card, or your vanguard is in the [UnisonDress] state, COST [Counter Blast 1], draw a card, COST [Soul Blast 1], and call a Plant token to RC.
 
 AUTO [RC]: When this unit attacks, if your vanguard is in the [UnisonDress] state, and your opponent’s vanguard is grade 3 or greater, choose one of your back row rear-guards, and increase this unit’s power by that unit’s power until end of that battle.
 
@@ -9881,6 +9881,34 @@ AUTO [RC]: When your other unit attacks, if it is the fifth battle of this turn,
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14781
+{
+global.CardName[CardStat] = 'Echoing Ring of Fortune, Chaleance'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [RC]: When this unit attacks or boosts, if your vanguard is in the [UnisonDress] state, choose one of your units in the same column as this unit, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14782
+{
+global.CardName[CardStat] = 'Sincere Sound Image, Yumiri'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [Drop]: When your "Bandmaster of Blooming Dreams, Lianorn Traumend" is placed on VC, if you do not have a rear-guard with the same card name as this card, you may call this card to RC.
+
+AUTO [RC]: At the end of your turn, if your vanguard is "Bandmaster of Blooming Dreams, Lianorn Traumend", you may put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
