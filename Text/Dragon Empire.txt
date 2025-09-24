@@ -1507,9 +1507,9 @@ CardStat = 9384
 global.CardName[CardStat] = 'Sealed Blaze Dragon, Adarla'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO: When this unit is placed on RC, if one Arms is on your VC, COST [Counter Blast 1], choose an Arms card from your hand or drop, and arm it to one of your vanguards.
+AUTO: When this unit is placed on RC, if your VC has one Arms, COST [Counter Blast 1], choose an Arms card from your hand or drop, and arm it to one of your vanguards.
 
-CONT [RC]: During your turn, if two Arms are on your VC, this unit gets power +5000.'
+CONT [RC]: During your turn, if your VC has two Arms, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -1716,6 +1716,8 @@ CardStat = 9398
 global.CardName[CardStat] = 'Trickmoon'
 global.CardText[CardStat] = 'Dragon Empire/Talisman
 
+(STANDARD JP: Restricted to 1.)
+
 AUTO: When this unit is placed on your back row center RC from drop, Counter Charge 1.
 
 DressBoost - AUTO [RC]: When this unit boosts, the boosted unit gets power +10000 until end of that battle for each card your "Sealed Blaze Maiden, Bavsargra" is Armed with.'
@@ -1724,6 +1726,7 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9399
@@ -3600,7 +3603,7 @@ CardStat = 10822
 global.CardName[CardStat] = 'Scarlet Flame Bow General, Stirgna'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-(STANDARD JP & EN: Restricted to 2.)
+(STANDARD EN: Restricted to 2.)
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Gandeeva" in its card name, COST [Soul Blast 1 & bind one of your other rear-guards face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, choose a card from your drop, and bind it face down.'
 global.UnitGrade[CardStat] = 3
@@ -6911,7 +6914,7 @@ CardStat = 13092
 global.CardName[CardStat] = 'Demonic Dragon Mage, Kyoukou'
 global.CardText[CardStat] = 'Dragon Empire/Dragonman
 
-AUTO [RC] 1/Turn:When your opponent’s rear-guard is bound during your turn, choose one of your other units, and that unit and this unit get power +5000 until end of turn.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard is bound during your turn, choose one of your other units, and that unit and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -7498,7 +7501,7 @@ Play this with COST [Energy Blast 3] if you have a "Demon Stealth Dragon, Shiran
 
 Choose a unit card with "Stealth" in its card name and without sentinel from your drop, and call it to RC.
 
-AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the Counter Blast cost you pay for that card’s abilities by 1.'
+AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the next Counter Blast cost you pay for that card’s abilities by 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -7828,7 +7831,7 @@ global.CardText[CardStat] = 'Dragon Empire/Narukami/Thunder Dragon
 
 CONT [VC]: During your turn, if your soul has a "Dragonic Kaiser Vermillion", this unit gets power +5000, and if your opponent’s vanguard is grade 3 or greater, this unit gets critical +1, and all of your front row rear-guards get power +5000.
 
-ACT [VC]: COST [Soul Blast 1], until end of turn, when this unit would attack, choose two of your opponent’s RC, and this unit battles all of the units on those chosen RC and your opponent’s vanguard.
+ACT [VC] 1/Turn: COST [Soul Blast 1], until end of turn, when this unit would attack, choose two of your opponent’s RC, and this unit battles all of the units on those chosen RC and your opponent’s vanguard.
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if you played a normal order this turn, and your opponent’s damage zone has four or less cards, COST [discard a card from hand], choose one of your opponent’s vanguards, and deal one damage.'
 global.UnitGrade[CardStat] = 3
@@ -9711,3 +9714,19 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14833
+{
+global.CardName[CardStat] = 'Krai Thong'
+global.CardText[CardStat] = 'Dragon Empire/Human/Critical Trigger
+
+CONT: This card is also regarded as "Burning Flail Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000

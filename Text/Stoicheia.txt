@@ -89,7 +89,7 @@ CardStat = 8259
 global.CardName[CardStat] = 'Looting Petal Stomalia'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-ACT [RC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], and this unit gets "Boost" and power +5000 until end of turn.'
+ACT [RC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], and until end of turn, this unit gets "Boost" and power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -7579,7 +7579,7 @@ CardStat = 13357
 global.CardName[CardStat] = 'Knight of Formosity, Charmnet'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-(STANDARD JP & EN: Restricted to 2.)
+(STANDARD EN: Restricted to 2.)
 
 ACT [Drop]: If there are three or more of your Infinity Eyes markers, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
 
@@ -10065,6 +10065,57 @@ global.CardName[CardStat] = 'Glowing Dracokid'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
 AUTO [RC]: When your grade 3 or greater vanguard with "Levidras" in its card name is attacked, if your Infinity Eyes marker is in the same column as this unit, COST [retire this unit], choose one of your vanguards being attacked, and it gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14825
+{
+global.CardName[CardStat] = 'One Who Arrived at Paradise, Bellnoir'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+CONT [RC]: If your World is Stray Garden, this unit gets power +5000.
+
+AUTO [RC]: When this unit attacks, perform all of the following.
+• If this unit stand by the ability of your grade 3 or greater vanguard with "Nannaclir" in its card name this turn, and this unit’s critical was not increased by abilities other than by trigger effects this turn, this unit gets critical +1 until end of that battle, and at the end of that battle, put this unit into soul.
+• If your World is Stray Garden, COST [Soul Blast 1 card with the same card name as your vanguard], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14826
+{
+global.CardName[CardStat] = 'One Who Arrived at Paradise, Florus'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO [Drop]: If you do not have a rear-guard with the same card name as this card, reduce this cost by Soul Blast 1. When your grade 3 or greater vanguard with "Nannaclir" in its card name is placed during your ride phase, COST [Soul Blast 1], and call this card to RC.
+
+AUTO [RC]: When this unit boosts, if your World is Stray Garden, choose one of your units, and you may have it get power +5000 until end of turn. If you do, retire this unit at the end of that turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14834
+{
+global.CardName[CardStat] = 'Sang Thong'
+global.CardText[CardStat] = 'Stoicheia/Human
+
+CONT: This card is also regarded as "Performing Petal, Diantha".
+
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1], choose a grade 3 or less card from your drop, and call it to RC.
+
+CONT [RC]: During your turn, if your back row has two or more grade 1 or less rear-guards in your back row, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }

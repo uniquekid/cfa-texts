@@ -4034,7 +4034,7 @@ CardStat = 10965
 global.CardName[CardStat] = 'Particle Lights Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-AUTO [RC]:When this unit attacks a vanguard, if you played a normal order this turn, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks a vanguard, if you played a normal order this turn, COST [Counter Blast 1], draw a card, and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -8117,7 +8117,7 @@ Ritual 5 (Active if there are five or more grade 1 cards in your drop): Play thi
 
 You get "All of your units placed from deck this turn get power +5000." until end of turn.
 
-AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the Counter Blast cost you pay for that card’s abilities by 1.'
+AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the next Counter Blast cost you pay for that card’s abilities by 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -10163,7 +10163,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO: When this card is discarded from hand or retired from GC, if you have a grade 3 or greater vanguard with "Liael" in its card name, you may put this card into soul.
 
-CONT [RC/GC]:If your bind zone has a face up card, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your bind zone has a face up card, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -10403,3 +10403,73 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
+
+CardStat = 14827
+{
+global.CardName[CardStat] = 'Knight of the Vast, Oswin'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +2000 until end of battle for each card in your bind zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14828
+{
+global.CardName[CardStat] = 'Knight of Severance, Selivant'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this card is bound by the ability of your vanguard with "Liael" in its card name during your turn, COST [Soul Blast 1], call this card to a back row RC, and at the end of that turn, bind this unit.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14829
+{
+global.CardName[CardStat] = 'Ellipse Wand Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: When this unit boosts "Trapezoidal Base Sorceress", if your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle. Then, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck, and put it on the top of the deck or into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14830
+{
+global.CardName[CardStat] = 'Trapezoidal Base Sorceress'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose an "Ellipse Wand Sorceress" for your drop, and call it to an RC in the same column as this unit.
+
+AUTO [RC] 1/Turn: When this unit attacks while boosted by "Ellipse Wand Sorceress", if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14831
+{
+global.CardName[CardStat] = 'Knight of Light Hammer, Logistilla'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and three or more of your rear-guards were placed this turn, this unit gets power +5000.
+
+AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
