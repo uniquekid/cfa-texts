@@ -600,7 +600,7 @@ CardStat = 1437
 global.CardName[CardStat] = 'Witch of Cursed Talisman, Etain'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose two of your «Shadow Paladin» rear-guards, and retire them] At the beginning of the battle step of the battle that this unit is attacked, you may pay the cost. If you do, choose one of your opponent’s rear-guards that is not boosting or attacking, and retire it.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2 & Choose two of your «Shadow Paladin» rear-guards, and retire them] At the beginning of the guard step of the battle that this unit was attacked, you may pay the cost. If you do, choose an opponent’s rear-guard not boosting or attacking, and retire it.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1585,7 +1585,7 @@ CardStat = 2913
 global.CardName[CardStat] = 'Witch of Black Doves, Goewin'
 global.CardText[CardStat] = 'Shadow Paladin/Elf/Critical Trigger
 
-CONT [RC]: During your turn, if your vanguard with "Witch" in its card name is Legion, this unit gets "ACT [RC]: [Put this unit on the top of your deck] If the number of grade 0 rear-guards your opponent has is two or more, choose one of your opponent’s vanguards, it gets power -5000 until end of turn, and shuffle your deck.".'
+CONT [RC]: During your turn, if your vanguard with "Witch" in its card name is Legion, this unit gets "ACT [RC]: [Put this unit on the top of your deck] If the number of your opponent’s grade 0 rear-guards is two or more, choose one of your opponent’s vanguards, and it gets power -5000 until end of turn. Shuffle your deck.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 1
 }
@@ -1843,7 +1843,7 @@ CardStat = 3153
 global.CardName[CardStat] = 'Witch’s Familiar, Kuroma'
 global.CardText[CardStat] = 'Shadow Paladin/Workeroid
 
-AUTO: [Choose a card with "Witch" in its card name from your hand, and discard it] When this unit is placed on RC, if you have a vanguard with "Witch" in its card name, and your opponent has two or more grade 0 rear-guards, you may pay the cost. If you do, draw two cards.'
+AUTO: [Choose a card with "Witch" in its card name from your hand, and discard it] When this unit is placed on RC, if you have a vanguard with "Witch" in its card name, and the number of your opponent’s grade 0 rear-guards is two or more, you may pay the cost. If you do, draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -3212,7 +3212,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 CONT [RC] Ritual 3: During the battle that this unit boosted, this unit gets power +3000.
 
-AUTO [RC] 1/Turn Generation Break 1: When your other rear-guard with the ritual ability is retired from RC for the effect or cost of your card, you may put that card into your soul.'
+AUTO [RC] 1/Turn Generation Break 1: When your other rear-guard with the ritual ability is retired for the effect or cost of your card, you may put that card into your soul.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -4869,7 +4869,7 @@ CardStat = 8152
 global.CardName[CardStat] = 'Witch of Reality, Femme '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], your opponent chooses two grade 0 unit cards from his or her drop zone, and calls them to his or her RC with grade 1 or greater units. If no cards were called, this unit gets drive +1 until end of turn.'
+ACT [VC] 1/Turn: COST [Soul Blast 1], your opponent chooses two grade 0 unit cards from his or her drop zone, and calls them to RC with grade 1 or greater units on them. If no cards were called, this unit gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
@@ -5046,9 +5046,9 @@ CardStat = 9681
 global.CardName[CardStat] = 'Witch of Precious Stones, Dana '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO: When this unit is placed on VC or RC, choose a normal unit with "Witch" in its card name from your drop, and you may put it on the bottom of your deck. If no cards were put it into your deck, and your opponent’s drop has three or less cards, your opponent discards three cards from the top of their deck.
+AUTO: When this unit is placed on VC or RC, choose a normal unit with "Witch" in its card name from your drop, and you may put it on the bottom of your deck. If you did not put it on the bottom of your deck, and your opponent’s drop has three or less cards, your opponent discards the top three cards of their deck.
 
-ACT [RC]: If you have a vanguard with "Witch" in its card name, COST [rest this unit], your opponent chooses two grade 0 unit from their drop, and calls them to RC with grade 1 or greater.'
+ACT [RC]: If you have a vanguard with "Witch" in its card name, COST [rest this unit], your opponent chooses two grade 0 unit from their drop, and calls them to their RC with a grade 1 or greater unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -5063,7 +5063,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Human
 
 Stride.
 
-ACT [VC] 1/Turn: COST [Retire two rear-guards], your opponent chooses three of their rear-guards, and retires them. If three cards were not retired, until end of turn, this unit gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & retire two rear-guards], and stand this unit.", and power +10000.'
+ACT [VC] 1/Turn: COST [Retire two rear-guards], your opponent chooses three of their rear-guards, and retires them. If they did not reitre three cards, until end of turn, this unit gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & retire two rear-guards], and stand this unit.", and power +10000.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 1
 global.ExtraDeck[CardStat] = 1
@@ -5299,3 +5299,17 @@ global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14783
+{
+global.CardName[CardStat] = 'Knight of Blue Flash, Adolf'
+global.CardText[CardStat] = 'Shadow Paladin/Human
+
+AUTO [RC] Generation Break 1: When this unit’s attack hits a vanguard, Counter Charge 2.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
+global.OldCardStat[CardStat] = 1

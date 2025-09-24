@@ -378,7 +378,7 @@ CardStat = 532
 global.CardName[CardStat] = 'Dragon Knight, Aleph'
 global.CardText[CardStat] = 'Kagero/Human
 
-ACT [VC]: [Counter Blast 1 & Choose a unit named "Embodiment of Armor, Bahr" and a unit named "Embodiment of Spear, Tahr" from your RC and put them into your soul] Search your deck for up to one card named "Embodiment of Victory, Aleph", ride it, and shuffle your deck.'
+ACT [VC]: [Counter Blast 1 & Choose a unit named "Embodiment of Armor, Bahr" and a unit named "Embodiment of Spear, Tahr" from your RC, and put them into your soul] Search your deck for up to one card named "Embodiment of Victory, Aleph", ride it, and shuffle your deck.'
 }
 
 
@@ -492,7 +492,7 @@ CardStat = 544
 global.CardName[CardStat] = 'Dragon Monk, Goku'
 global.CardText[CardStat] = 'Kagero/Warbeast
 
-AUTO [VC]: When this unit’s drive check reveals a grade 3 «Kagero», choose an opponent’s grade 1 or less rear-guard and retire it.'
+AUTO [VC]: When this unit’s drive check reveals a grade 3 «Kagero», choose an opponent’s grade 1 or less rear-guard, and retire it.'
 }
 
 
@@ -1001,7 +1001,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 1 & Soul Blast 1] When this unit attacks a vanguard, you may pay the cost. If you do, choose one of your opponent’s grade 2 or less rear-guards, and retire it.
 
-ACT [Hand]: [Reveal this card & Choose your grade 2 or greater «Kagero» vanguard, and rest it] If one of your opponent’s rear-guards is put into the drop zone during the main phase of that turn, you may ride this unit as stand, and choose your vanguard, and that unit gets power -3000 until end of turn.
+ACT [Hand]: [Reveal this card, choose your grade 2 or greater «Kagero» vanguard, and rest it] During the main phase of that turn, if your opponent’s rear-guards is put into the drop zone, ride this card as stand, choose your vanguard, and that unit gets power -3000 until end of turn.
 
 CONT [VC/RC]: Lord (If you have a unit without a same clan as this unit, this unit cannot attack)'
 global.UnitGrade[CardStat] = 3
@@ -1212,7 +1212,7 @@ CardStat = 1792
 global.CardName[CardStat] = 'Flame Star Seal Dragon Knight'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-ACT [VC/RC]: [Counter Blast 1] If you have a vanguard with "Seal Dragon" in its card name, all of your opponent’s units cannot intercept until end of turn.'
+ACT [VC/RC]: [Counter Blast 1] If you have a vanguard with "Seal Dragon" in its card name, all of your opponent’s rear-guards cannot intercept until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -2294,7 +2294,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
  
-ACT [VC]: [Counter Blast 2 & Choose a face down card named "Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"" from your G zone, and turn it face up] If the number of face up cards in your G zone is two or more, until end of turn, this unit gets drive -1 and "AUTO [VC] 1/Turn: [Choose a card from your hand, and discard it & Choose a card with "Overlord" in its card name from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets power +5000 until end of turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn)".'
+ACT [VC]: [Counter Blast 2 & Choose a face down card named "Supreme Heavenly Emperor Dragon, Dragonic Overlord "The Ace"" from your G zone, and turn it face up] If the number of face up cards in your G zone is two or more, until end of turn, this unit gets drive -1, and "AUTO [VC] 1/Turn: [Choose a card from your hand, and discard it & Choose a card with "Overlord" in its card name from your hand, and discard it] At the end of the battle that this unit attacked a vanguard, you may pay the cost. If you do, stand this unit, and this unit gets power +5000 until end of turn. (Even if you do not pay the cost, this ability cannot be used for the rest of that turn)".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 12
 global.ExtraDeck[CardStat] = 1
@@ -2473,7 +2473,7 @@ CardStat = 3438
 global.CardName[CardStat] = 'Hellfire Seal Dragon Knight'
 global.CardText[CardStat] = 'Kagero/Demon
 
-ACT [RC] 1/Turn: [Counter Blast 1 & Soul Blast 1] If you have a vanguard with "Seal Dragon" in its card name, all of your opponent’s rear-guards cannot intercept until end of turn. Then, this unit gets power +2000 for each of your opponent’s grade 2 units until end of turn.'
+ACT [RC] 1/Turn: [Counter Blast 1 & Soul Blast 1] If you have a vanguard with "Seal Dragon" in its card name, until end of turn, all of your opponent’s rear-guards cannot intercept. Then, this unit gets power +2000 for each of your opponent’s grade 2 units until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -4049,7 +4049,7 @@ CardStat = 6074
 global.CardName[CardStat] = 'Wyvern Strike, Agaruda'
 global.CardText[CardStat] = 'Kagero/Winged Dragon
 
-ACT [VC/RC]: COST [Counter Blast 2], choose one of your opponent’s rear-guards, and retire it. If you do, this unit gets power +5000 until end of turn.'
+ACT [VC/RC]: COST [Counter Blast 2], choose one of your opponent’s rear-guards, and retire it. If you retired a rear-guard, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -4625,7 +4625,7 @@ CardStat = 7434
 global.CardName[CardStat] = 'Burnrise Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [RC]: When your vanguard stand by a card’s ability, COST [Counter Blast 1 & discard a card from your hand], and this unit gets power +15000 / critical +1 until end of turn.'
+AUTO [RC]: When your vanguard stand by a card’s ability, COST [Counter Blast 1 & discard a card from your hand], this unit gets power +15000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -5068,9 +5068,9 @@ CardStat = 8965
 global.CardName[CardStat] = 'Seal Dragon, Blockade '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and retire all of your opponent’s grade 2 rear-guards. All of your front units get power +10000 until end of turn for each unit retired. If no cards were retired, you get an Imaginary Gift:Force.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and retire all of your opponent’s grade 2 rear-guards. All of your front units get power +10000 until end of turn for each unit retired. If no units were retired, you get an Imaginary Gift:Force.
 
-CONT [VC]: If your opponent has no grade 2 units on VC or RC, the original critical of this unit becomes 2.
+CONT [VC]: If your opponent has no grade 2 units on their VC or RC, this unit’s original critical becomes two.
 
 (SHIFT + left click to create Force gift.)'
 global.UnitGrade[CardStat] = 3
@@ -5087,7 +5087,7 @@ CardStat = 8966
 global.CardName[CardStat] = 'Seal Dragon, Corduroy '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-ACT [VC/RC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it. Your opponent looks at five cards from the top of their deck, chooses up to one grade 2 unit card, calls it to an open RC, and shuffles their deck. The AUTO abilities of your opponent’s cards do not activate from this call. If no cards were called, you Counter Charge 1.'
+ACT [VC/RC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it. Your opponent looks at five cards from the top of their deck, chooses up to one grade 2 unit card from among them, calls it to an open RC, and shuffles their deck. Your opponent’s cards’ AUTO abilities do not activate from this call. If they did not call, you Counter Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -5100,7 +5100,7 @@ CardStat = 8967
 global.CardName[CardStat] = 'Seal Dragon, Kersey '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1 & discard a card from your hand], choose one of your opponent’s rear-guards, and retire it. Your opponent chooses up to one grade 2 unit card from their hand, and calls it to an open RC. The AUTO abilities of your opponent’s cards do not activate from this call. If no cards were called, you draw two cards.'
+AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1 & discard a card from your hand], choose one of your opponent’s rear-guards, and retire it. Your opponent chooses up to one grade 2 unit card from their hand, and calls it to an open RC. Your opponent’s cards’ AUTO abilities do not activate from this call. If they did not call, you draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -5209,11 +5209,11 @@ CardStat = 9937
 global.CardName[CardStat] = 'Embodiment of Victory, Aleph '
 global.CardText[CardStat] = 'Kagero/Demon
 
-ACT [Hand]: If your vanguard is "Embodiment of Victory, Aleph" or "Embodiment of Shield, Lahm", COST [put an "Embodiment of Armor, Bahr" and an "Embodiment of Spear, Tahr" on your RC into your soul], and ride this card as stand.
+ACT [Hand]: If your vanguard is "Embodiment of Victory, Aleph" or "Embodiment of Shield, Lahm", COST [put an "Embodiment of Armor, Bahr" and an "Embodiment of Spear, Tahr" from RC into your soul], and ride this card as stand.
 
-AUTO [VC]: When your rear-guard with "Embodiment" in its card name attacks, increase or decrease the power of that unit to match this unit’s until end of that battle.
+AUTO [VC]: When your rear-guard with "Embodiment" in their card names attacks, increase or decrease this unit’s power to match this unit’s power until end of that battle.
 
-ACT [VC] 1/Turn: COST [Counter Blast 3], and this unit gets power +15000 / critical +1 / drive +1 until end of turn. Then, COST [Soul Blast one "Embodiment of Armor, Bahr" and one "Embodiment of Spear, Tahr"], and Counter Charge 3.'
+ACT [VC] 1/Turn: COST [Counter Blast 3], and this unit gets power +15000 / critical +1 / drive +1 until end of turn. Then, COST [Soul Blast an "Embodiment of Armor, Bahr" and an "Embodiment of Spear, Tahr"], and Counter Charge 3.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -5338,9 +5338,9 @@ CardStat = 10006
 global.CardName[CardStat] = 'Dragon Monk, Goku '
 global.CardText[CardStat] = 'Kagero/Warbeast
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Discard a grade 3 card from your hand], and this unit gets drive +1 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & discard a grade 3 card from your hand], and this unit gets drive +1 until end of turn.
 
-AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], and perform all of the following according to the grades of the normal units revealed in that battles drive check.
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], and perform all of the following according to the grades of all normal units revealed in that battle’s drive check.
 • Grade 3 - Choose two of your opponent’s rear-guards, and retire them.
 • Grade 2 - Choose one of your rear-guards, and stand it.
 • Grade 1 - Choose one of your rear-guards, and it gets power +10000 until end of turn.'

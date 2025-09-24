@@ -1382,7 +1382,7 @@ CardStat = 8891
 global.CardName[CardStat] = 'Fleeting Maiden, Hannelore'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
-AUTO [RC]: When your other rear-guard is placed on the same column as this unit, this unit gets power +2000 until end of turn.'
+AUTO [RC]: When your other rear-guard is placed in the same column as this unit, this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -1479,7 +1479,7 @@ CardStat = 8898
 global.CardName[CardStat] = 'Unrelenting Talent, Henrietta'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-AUTO [RC]: When this unit is boosted, COST [Soul Blast 1], and increase the power of this unit by the original shield of the unit that is boosting this unit until end of that battle.'
+AUTO [RC]: When this unit is boosted, COST [Soul Blast 1], and until end of that battle, increase this unit’s power by the original shield of the boosting this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -7873,7 +7873,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Battleroid
 
 AUTO: When this unit is placed by riding from "First to Head Towards a Dream! Michu", search your deck or drop for up to one card with "Noqno" in its card name or up to one Cannonball card, reveal it and put it into hand, and if you searched the deck, shuffle the deck. Activate persona ride.
 ACT [VC] 1/Turn: COST [Bind a "First to Head Towards a Dream! Michu" from soul], choose one of your opponent’s rear-guards, retire it, and until end of turn, reduce the cost of this unit’s Cannonball ability by Soul Blast 2. At the end of that turn, if this unit is your vanguard, ride the card bound for this cost as rest.
-Cannonball-AUTO [VC]:When this unit attacks a vanguard, COST [Soul Blast 2], choose one of your opponent’s rear-guards, retire it, and this unit gets power +10000 until end of that battle.
+Cannonball-AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 2], choose one of your opponent’s rear-guards, retire it, and this unit gets power +10000 until end of that battle.
 Glitter (This card is a Glitter that seeks the Fire Regalis)
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
@@ -8293,7 +8293,7 @@ AUTO: When this unit is placed on VC, search your deck or drop for up to one Cur
 
 ACT [VC] 1/Turn:COST [Counter Blast 1], and this unit gets all of the following until end of turn according to the number of Cursed Play cards in your soul.
 • Two or more - CONT [VC]: All of your front row units get power +10000.
-• Four or more - AUTO [VC] 1/Turn:At the end of the battle this unit attacked, COST [discard a card from hand], stand this unit, and it gets drive -1 until end of turn.
+• Four or more - AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [discard a card from hand], stand this unit, and it gets drive -1 until end of turn.
 • Six or more - CONT [VC]: This unit’s drive cannot be reduced by this unit’s effect.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
@@ -10642,3 +10642,131 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14770
+{
+global.CardName[CardStat] = 'A Song to Blow Away Your Weakness, Tamee'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is put on GC, COST [Energy Blast 3], and this unit gets shield +5000 until end of turn for each grade of the attacking unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14771
+{
+global.CardName[CardStat] = 'Sunny Noon, Mirade'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is put on GC, if you have three or more rear-guards, this unit gets shield +5000 until end of battle. If you have five or more, shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14772
+{
+global.CardName[CardStat] = 'Sharing Energy, Curette'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your damage zone has three or more face down cards, this unit gets power +5000 until end of that battle. If your damage zone has five or more, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 1000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14796
+{
+global.CardName[CardStat] = 'Mini Character, Suzune Rokuoin'
+global.CardText[CardStat] = 'Lyrical Monasterio/Heal Trigger
+
+CONT: This card is regarded as "Two Of Us, Flow".
+
+AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 14797
+{
+global.CardName[CardStat] = 'Mini Character, Suzune Rokuoin (Angry Mode)'
+global.CardText[CardStat] = 'Lyrical Monasterio/Heal Trigger
+
+CONT: This card is regarded as "Two Of Us, Rhyme".
+
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 14818
+{
+global.CardName[CardStat] = 'Dreamy Lavande, Marilies'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO [Soul]: When your grade 3 or greater vanguard with "Krysrain" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, COST [Energy Blast 3], and call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14819
+{
+global.CardName[CardStat] = 'Playing With All My Heart, Tive'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14820
+{
+global.CardName[CardStat] = 'Considerate Helper, Leanrick'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC]: When your other unit in the same column as this unit is returned to hand from RC, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, COST [Soul Blast 1], and return this unit to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14821
+{
+global.CardName[CardStat] = 'StylishLooper, Cleciel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Artisaria" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Artisaria" in its card name, COST [Counter Blast 1], and draw a card.
+
+AUTO [RC]: When this unit boosts, if your order zone has a Sound System, this unit gets power +5000 until end of that battle. Then, if this unit boosted a grade 3 or greater vanguard with "Artisaria" in its card name, this unit gets power +2000 until end of that battle, COST [Soul Blast 1], choose one of your rear-guards, and it gets "AUTO: When this unit is retired from RC, put this card into hand." until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

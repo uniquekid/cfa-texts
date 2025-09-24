@@ -8,8 +8,8 @@ CONT [VC]: During your turn, if one or more of your opponent’s cards are impriso
 ACT [VC/RC] 1/Turn: COST [Counter Blast 1], choose two of your opponent’s rear-guards, and imprison them in your Prison. (Put them into your Order Zone that has a Prison.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -22,8 +22,8 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 AUTO [RC]: When this unit’s attack hits a vanguard, choose up to two of your opponent’s rear-guards, and imprison them in your Prison. (Put them into your Order Zone that has a Prison.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -128,8 +128,8 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 ACT [RC] 1/Turn: COST [Soul Blast 1], and this unit gets power +2000 until end of turn. Choose one of your opponent’s front row rear-guards, and imprison it in your Prison. (Put them into your Order Zone that has a Prison.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -243,8 +243,8 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.TokenSummoner[CardStat] = 8425
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -475,8 +475,8 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 CONT [RC]: If your World is Abyssal Dark Night, when this unit would attack, it battles all of your opponent’s units in a column.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -966,7 +966,7 @@ CardStat = 8927
 global.CardName[CardStat] = 'Aurora Battle Princess, Execute Lemonun'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [RC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 3], choose up to three of your opponent’s rear-guards, and imprison them in your Prison. If three or more of your opponent’s cards are imprisoned in your Prison, until end of that battle, this unit gets power +10000, and if there are five or more, this unit gets critical +1.'
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 3], choose up to three of your opponent’s rear-guards, and imprison them in your Prison. Then, if three or more of your opponent’s cards are imprisoned in your Prison, until end of that battle, this unit gets power +10000, and if there are five or more, it gets critical +1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -1716,7 +1716,7 @@ CardStat = 9522
 global.CardName[CardStat] = 'Masked Force Redoll'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC]: When this unit attacks, if your damage zone has more cards than your opponent’s, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if the number of cards in your damage zone is more than your opponent’s, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -1993,8 +1993,8 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.TokenSummoner[CardStat] = 8425
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2031,13 +2031,13 @@ CardStat = 9933
 global.CardName[CardStat] = 'Aurora Battle Princess, Launcher Charleen'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-CONT [RC]: During the battle this unit attacked, your opponent cannot call normal units from their hand to GC, or play Blitz Orders from their hand.
+CONT [RC]: During the battle this unit attacked, your opponent cannot call normal units from hand to GC, and cannot play Blitz Orders from hand.
 
-CONT [RC]: If five or less of your opponent’s cards are imprisoned in your Prison, this unit cannot attack.'
+CONT [RC]: If the number of your opponent’s cards imprisoned in your Prison is five or less, this unit cannot attack.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 5000
@@ -2048,7 +2048,7 @@ CardStat = 9934
 global.CardName[CardStat] = 'Aurora Battle Princess, Barrage Ltra'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [RC]: When your opponent’s unit is retired from RC or GC during the battle this unit attacked, imprison that card in your Prison.'
+AUTO [RC]: When your opponent’s unit is retired from RC or GC during the battle this unit attacked, imprison that retired card in your Prison.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -2416,8 +2416,8 @@ AUTO [VC]: When this unit attacks a vanguard, choose a Product from your Order Z
 AUTO [VC]: When one of your Products is operated, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2521,8 +2521,8 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 AUTO [RC]: When this unit’s attack hits a vanguard, if your Order Zone has two or more cards, you may draw a card. If you drew a card, choose a card from your hand, and put it into your soul.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2616,8 +2616,8 @@ global.CardText[CardStat] = 'Brandt Gate/Workeroid
 ACT [RC]: If you have a vanguard with "Welstra" in its card name, COST [retire this unit], search your deck or drop for up to one "Heavy Strike Cannon Fortress, Freischutz" or "Mobile Fortress of Obliteration, Freischutz Maximum", reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2645,8 +2645,8 @@ AUTO: When this unit is placed on VC, reveal the top five cards of your deck, pu
 AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards, and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000 / drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -2784,8 +2784,8 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your
 AUTO [RC]: When this unit attacks, if your Order Zone has three or more Research cards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 5000
@@ -2844,8 +2844,8 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], search your deck f
 AUTO [RC]: When this unit attacks, choose two set orders with the same card name from your Order Zone. If you chose two cards, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 10000
@@ -2913,8 +2913,8 @@ global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 AUTO [RC]: When your Research is put into the order zone, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3048,8 +3048,8 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], sea
 AUTO [RC] 1/Turn: When your set order is put into your order zone, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -3101,8 +3101,8 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 ACT [VC] 1/Turn: If your soul has a "Blue Deathster, Sora Period", COST [put a Strategy card from your order zone into your soul], draw a card, and until end of turn, this unit gets power +5000, and gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if that attack hit a vanguard, or if you persona rode this turn, COST [Counter Blast 1 & discard a card from hand], stand this unit, and it gets drive -1 until end of turn.".'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -6082,7 +6082,7 @@ global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Dimensional Robo" in its card name, COST [Counter Blast 1], search your deck for up to one Base card, reveal it, put it into hand, and shuffle the deck.
 
-AUTO [RC]:When this unit attacks a grade 3 or greater unit, if your order zone has two or more Bases, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your order zone has two or more Bases, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 6
@@ -7606,8 +7606,8 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.TokenSummoner[CardStat] = 8425
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
@@ -7626,8 +7626,8 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.TokenSummoner[CardStat] = 8425
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
-}
 global.PersonaRide[CardStat] = 1
+}
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
@@ -8090,7 +8090,7 @@ CardStat = 14062
 global.CardName[CardStat] = 'Dimensional Robo Spreader, Nonoka'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Dimensional Robo" in its card name, COST [Soul Blast 1 & rest this unit], choose a normal unit with "Dimensional Robo" in its different card name from this unit from your drop, and put it on the bottom of your deck. If you chose a card, choose one of your units with "Dimensional Robo" in its card name, and it gets power +5000 unti end of turn.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Dimensional Robo" in its card name, COST [Soul Blast 1 & rest this unit], choose a normal unit with "Dimensional Robo" in its different card name from this unit from your drop, and put it on the bottom of your deck. If you chose a card, choose one of your units with "Dimensional Robo" in its card name, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9245,6 +9245,110 @@ global.CardName[CardStat] = 'Galactic B-Hero, Comet Elkiss'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 ACT [VC] 1/Turn: COST [Discard a card from hand & reveal a grade 3 card with "B-Hero" in its card name from ride deck], search your deck for up to one card with "B-Hero" in its card name and up to one Base card, reveal them, choose a Base card from among them revealed cards, put it into hand, and scout the rest of the revealed cards into your Base. Shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14788
+{
+global.CardName[CardStat] = 'Mini Character, Senka Kanae'
+global.CardText[CardStat] = 'Brandt Gate/Heal Trigger
+
+CONT: This card is regarded as "Whistling Arrow of Recursion, Obifold".
+
+AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 14789
+{
+global.CardName[CardStat] = 'Mini Character, Kagetsu Yakumo'
+global.CardText[CardStat] = 'Brandt Gate/Heal Trigger
+
+CONT: This card is regarded as "Lady Healer of the Creaking World".
+
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 14798
+{
+global.CardName[CardStat] = 'Inflaton Deflector'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Golem
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and any player’s card was put into your order zone this turn, this unit gets power +5000.
+
+AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14799
+{
+global.CardName[CardStat] = 'Wielder of Foreign Atoms'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
+
+AUTO: At the end of the battle this unit boosted, if your vanguard is grade 3 or greater, reveal the top card of your deck, put it into hand if it is a set order, and discard it if not. If you put a card into hand, retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14800
+{
+global.CardName[CardStat] = 'Pretty Assistand, Flemie'
+global.CardText[CardStat] = 'Brandt Gate/Warbeast
+
+AUTO: When this unit is placed on RC from hand during your main phase, COST [discard a card from hand], draw a card, and if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14801
+{
+global.CardName[CardStat] = 'Capable Mechanic, Fafil'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed on RC, look at the top three cards of your deck, choose up to one Product card from among them, reveal it and put it into hand, and put the rest on the bottom of the deck in any order.
+
+AUTO [RC]: When this unit attacks, if your grade 3 or greater Product was operated this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global. AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14802
+{
+global.CardName[CardStat] = 'Blitz Neo Mobile, Heldentatt'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one Product card and up to one unit card with "Blitz" in its different card name from this unit from among them, reveal them and put them into hand, and shuffle the deck.
+
+ACT [RC] 1/Turn: If you have a vanguard with "Welstra" in its card name with [Divine Skill], and you did not play an order this turn, COST [discard a card from hand], choose a Product card from your drop, and put it into the order zone. You cannot play an order until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }

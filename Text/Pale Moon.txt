@@ -720,7 +720,7 @@ CardStat = 1501
 global.CardName[CardStat] = 'Silver Thorn Beast Tamer, Ana'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-AUTO [RC]: [Counter Blast 1] When an attack hits a vanguard during the battle that this unit boosted a «Pale Moon», you may pay the cost. If you do, choose a card with "Silver Thorn" in its card name from your soul, call it to RC and at the end of that turn, put that unit into your soul.'
+AUTO [RC]: [Counter Blast 1] When an attack hits a vanguard during the battle that this unit boosted a «Pale Moon», you may pay the cost. If you do, choose a card with "Silver Thorn" in its card name from your soul, call it to RC, and at the end of that turn, put that unit into your soul.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -919,9 +919,9 @@ CardStat = 1999
 global.CardName[CardStat] = 'Bunny Queen Beast Tamer'
 global.CardText[CardStat] = 'Pale Moon/Elf
 
-ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] Choose up to one card from your soul for each unit you have with "Beast Tamer" in its card name, and call them to separate RC. This ability cannot be used for the rest of that turn.
+ACT [VC] Limit Break 4 (This ability is active if you have four or more damage): [Counter Blast 2] For each of your units with "Beast Tamer" in its card name, choose up to one card from your soul, and call them to separate RC. This ability cannot be used for the rest of that turn.
 
-AUTO: When this unit is placed on VC, search your deck for one card, put it into your soul, and shuffle your deck.'
+AUTO: When this unit is placed on VC, search your deck for a card, put it into your soul, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 18
 }
@@ -2443,7 +2443,7 @@ global.CardText[CardStat] = 'Pale Moon/Warbeast
 
 AUTO [RC]: When it boosts, Soul Charge 1.
 
-AUTO [RC]: When an attack that it boosted hits, COST [Counter Blast 1 & put this unit into your soul], and call a non-grade 1 card from your soul to RC.'
+AUTO [RC]: When the attack this unit boosted hits, COST [Counter Blast 1 & put this unit into your soul], and call a non-grade 1 card from your soul to RC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -2481,7 +2481,7 @@ CardStat = 6039
 global.CardName[CardStat] = 'Purple Trapezist '
 global.CardText[CardStat] = 'Pale Moon/Succubus
 
-AUTO: When it is put into your soul from RC, COST [Soul Blast 1 "Purple Trapezist"], and call a card from your soul to RC. (You may use this card itself for the cost too.)'
+AUTO: When put from RC into soul, COST [Soul Blast 1 "Purple Trapezist"], and call a card from your soul to RC. (This card may be used for the cost.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -2734,7 +2734,7 @@ CardStat = 6423
 global.CardName[CardStat] = 'Barbarous Chimera'
 global.CardText[CardStat] = 'Pale Moon/Chimera
 
-ACT [Soul]: If you have "Trihex Chimera" or "Humorous Chimera" on VC or RC, COST [Counter Blast 1], and call this card to RC. Then, if you have both of those, those units and this unit get power +5000 until end of turn.'
+ACT [Soul]: If "Trihex Chimera" or "Humorous Chimera" is on your VC or RC, COST [Counter Blast 1], and call this card to RC. Then, if you have both, those units and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
@@ -2746,7 +2746,7 @@ CardStat = 6424
 global.CardName[CardStat] = 'Trihex Chimera'
 global.CardText[CardStat] = 'Pale Moon/Chimera
 
-ACT [Soul]: COST [Soul Blast 2 other cards] Call this card to RC, and if "Barbarous Chimera" and "Humorous Chimera" are on your RC, this unit gets power +5000 until end of turn.'
+ACT [Soul]: COST [Soul Blast 2 other cards], call this card to RC, and if "Barbarous Chimera" and "Humorous Chimera" are on your RC, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }
@@ -2883,7 +2883,7 @@ CardStat = 6636
 global.CardName[CardStat] = 'Silver Thorn Acrobat, Leonor'
 global.CardText[CardStat] = 'Pale Moon/Warbeast
 
-AUTO [RC]: When placed, COST [If your soul has one or more, Soul Blast all of the cards], and this unit gets power +15000 until end of turn.'
+AUTO [RC]: When placed, COST [your soul has one or more cards, and Soul Blast all of your soul], and this unit gets power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 18
 }

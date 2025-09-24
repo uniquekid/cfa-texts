@@ -695,7 +695,7 @@ CardStat = 1859
 global.CardName[CardStat] = 'Star-vader, Ruin Magician'
 global.CardText[CardStat] = 'Link Joker/Cyber Fairy
 
-AUTO: [Counter Blast 1] When this unit is placed on RC, if you have a «Link Joker» vanguard, you may pay the cost. If you do, choose one card from your drop zone with "ß" in its card name for each different rear-guard you have with "ß" in its card name, and put it into your hand.
+AUTO: [Counter Blast 1] When this unit is placed on RC, if you have a «Link Joker» vanguard, you may pay the cost. If you do, choose a card from your drop zone with "ß" in its card name for each different rear-guard you have with "ß" in its card name, and put it into your hand.
 
 (ß = ßeverse or ße-birth)'
 global.UnitGrade[CardStat] = 1
@@ -708,7 +708,7 @@ CardStat = 1860
 global.CardName[CardStat] = 'Engraving Star-vader, Praseodymium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO: When this unit is placed on RC, if you have a «Link Joker» vanguard, choose a card from your damage zone for each different rear-guard you have with "ß" in its card name, and turn it face up. (Counter Charge )
+AUTO: When this unit is placed on RC, if you have a «Link Joker» vanguard, for each different rear-guard you have with "ß" in its card name, choose a card from your damage zone, and turn it face up. (Counter Charge )
 
 (ß = ßeverse or ße-birth)'
 global.UnitGrade[CardStat] = 1
@@ -1183,7 +1183,7 @@ CardStat = 2354
 global.CardName[CardStat] = 'Emission Line Star-vader, Antimony'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: When this unit attacks, if the number of locked cards your opponent has is two or more, this unit gets power +3000.'
+AUTO [RC]: When this unit attacks, if the number of locked cards your opponent has is two or more, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -1480,7 +1480,7 @@ CardStat = 2409
 global.CardName[CardStat] = 'Rotting Deletor, Izret'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO: When this unit is placed on RC, choose one of your other units, and that unit gets power +2000 until end of turn.'
+AUTO: When this unit is placed on RC, choose another of your units, and that unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -2677,9 +2677,9 @@ CardStat = 4044
 global.CardName[CardStat] = 'Star-vader, Gemingar Dragon'
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
-CONT [RC]: If you have a vanguard with "Infinite" in its card name, for each of your opponent’s locked cards in the same column as this unit, this unit gets power +2000.
+CONT [RC]: If you have a vanguard with "Infinite" in its card name, this unit gets power +2000 for each of your opponent’s locked cards in the same column as this unit.
 
-AUTO [RC]: [Counter Blast 1] When your grade 3 unit with "Infinite" in its card name is placed on VC, you may pay the cost. If you do, choose one of your opponent’s rear-guards in the back row, and lock it.'
+AUTO [RC]: [Counter Blast 1] When your grade 3 unit with "Infinite" in its card name is placed on VC, you may pay the cost. If you do, choose a unit in your opponent’s back row, and lock it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -3525,7 +3525,7 @@ global.CardText[CardStat] = 'Link Joker/Messiah
 
 Stride.
 
-AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] When this unit attacks, if your heart card is <Messiah>, you may pay the cost. If you do, choose a rear-guard and a locked card each from any player’s for each face up card in your G zone, and you may lock them or unlock them. If one or more cards were unlocked, draw a card.'
+AUTO [VC]: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] When this unit attacks, if your heart card is <Messiah>, you may pay the cost. If you do, choose a locked card and a rear-guard in any player’s field for each face up card in your G zone, and you may lock or unlock each of them. If you unlocked one or more cards, draw a card.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -3934,7 +3934,7 @@ CardStat = 5475
 global.CardName[CardStat] = 'Star-vader, Vela Junior Dragon'
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
-AUTO [RC]: When this unit attacks, if the number of your opponent’s locked cards is two or more, until end of that battle, your opponent cannot call grade 0 cards from hand to GC.
+AUTO [RC]: When this unit attacks, if the number of your opponent’s locked cards is two or more, your opponent cannot call grade 0 cards from hand to GC until end of that battle.
 
 CONT [RC] Generation Break 1: Your opponent’s units in the same column as his or her locked cards cannot intercept.'
 global.UnitGrade[CardStat] = 2
@@ -5216,7 +5216,7 @@ global.CardText[CardStat] = 'Link Joker/Cyberoid
 
 AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], and put a card from your drop zone on RC as a locked card.
 
-CONT [RC]: During the battle it attacked, your opponent cannot normal call cards other than grade 0.'
+CONT [RC]: During the battle it attacked, your opponent can normal call only grade 0 cards.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }

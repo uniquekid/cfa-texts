@@ -1097,7 +1097,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO: Forerunner (When a unit of the same clan rides this unit, you may call this unit to RC.)
 
-AUTO [RC]: When this unit boosts, if the number of other rear-guards you have with "Jewel Knight" in its card name is three or more, this unit gets power +3000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if the number of your other "Jewel Knight" in its card name rear-guards is three or more, the boosted unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -1569,7 +1569,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 ACT [VC]: Legion 20000 "Full Bloom Seeker, Cerdic" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] If this unit is Legion, and the number of other units you have with "Seeker" in its card name is four or more, this unit gets power +5000 / critical +1 until end of turn.
+ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] If this unit is Legion, and the number of your other units with "Seeker" in its card name is four or more, this unit gets power +5000 / critical +1 until end of turn.
 
 AUTO [VC]: When this unit attacks a vanguard, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -1713,7 +1713,7 @@ CardStat = 2149
 global.CardName[CardStat] = 'Heaven Arrow Seeker, Lunate'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC/RC]: When this unit attacks, if the number of other units you have with "Seeker" in its card name is four or more, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks a vanguard, if the number of your other units with "Seeker" in its card name is four or more, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -1856,7 +1856,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 ACT [VC]: Legion 20000 "Blaster Blade" or "Blaster Blade Seeker" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-CONT [VC]: During your turn, if this unit is Legion, this unit gets power +1000 for each other unit you have with "Seeker" in its card name. Then, if the number of rear-guards you have is five or more, this unit gets critical +1.
+CONT [VC]: During your turn, if this unit is Legion, this unit gets power +1000 for each of your other unit with "Seeker" in its card name. Then, if the number of rear-guards you have is five or greater, this unit gets critical +1.
 
 ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] Search your deck for up to one card with "Seeker" in its card name, call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
@@ -1965,7 +1965,7 @@ CardStat = 2444
 global.CardName[CardStat] = 'Sacred Wielding Seeker, Octavius'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: [Soul Blast 2] When this unit is placed on RC, if the number of other vanguard and/or rear-guards you have with "Seeker" in its card name in the front row is three or more, you may pay the cost. If you do, draw a card.'
+AUTO: [Soul Blast 2] When this unit is placed on RC, if the number of your other front row vanguard and/or rear-guards with "Seeker" in its card name is three or more, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
@@ -2526,7 +2526,7 @@ CardStat = 3110
 global.CardName[CardStat] = 'Straight Jewel Knight, Bartram'
 global.CardText[CardStat] = 'Royal Paladin/Elf/Critical Trigger
 
-AUTO [RC]: At the end of your turn, if you have a vanguard with "Jewel Knight" in its card name, and if the number of other rear-guards you have with "Jewel Knight" in its card name is three or more, draw a card, put this unit on the top of your deck, and shuffle your deck.'
+AUTO [RC]: At the end of your turn, if you have a vanguard with "Jewel Knight" in its card name, and you have three or more other rear-guards with "Jewel Knight" in its card name, draw a card, put this unit on the top of your deck, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 15
 }
@@ -3394,7 +3394,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 AUTO: Forerunner.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] At the beginning of each battle phase, you may pay the cost. If you do, draw a card, and the brave ability of your cards will be always active until end of turn.
+AUTO [RC] Generation Break 1: [Counter Blast 1 & Put this unit into your soul] At the beginning of each battle phase, you may pay the cost. If you do, draw a card, and the brave abilities of your cards are active until end of turn.
 
 ACT [RC] Brave: [Rest this unit] Choose one of your units, and it gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 0
@@ -4443,7 +4443,7 @@ global.CardText[CardStat] = 'Royal Paladin/Human
 
 CONT [RC]: If you do not have a vanguard with the brave ability, this unit cannot attack.
 
-AUTO [RC] Brave: [Counter Blast 1] When this unit attacks, if you have a vanguard with "Altmile" in its card name, you may pay the cost. If you do, search your deck for up to one grade 2 card with the brave ability other than "Peerless Knight, Livarot", call it to RC, and shuffle your deck.'
+AUTO [RC] Brave: [Counter Blast 1] When this unit attacks, if you have a vanguard with "Altmile" in its card name, you may pay the cost. If you do, search your deck for up to one grade 2 card with the brave ability not named "Peerless Knight, Livarot", call it to RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -4514,7 +4514,7 @@ CardStat = 5587
 global.CardName[CardStat] = 'Septgal'
 global.CardText[CardStat] = 'Royal Paladin/High Beast
 
-AUTO: [Soul Blast 1 & Choose a card with "Altmile" in its card name from your hand, and reveal it] When this unit is placed on VC, or when it is placed on RC from your hand, you may pay the cost. If you do, search your deck for up to one card with the brave ability and power 7000, call it to RC, and shuffle your deck.
+AUTO: [Soul Blast 1 & Choose a card with "Altmile" in its card name from your hand, and reveal it] When this unit is placed on VC, or placed on RC from hand, you may pay the cost. If you do, search your deck for up to one power 7000 card with the brave ability, call it to RC, and shuffle your deck.
 
 AUTO [RC] Generation Break 1 Brave: When this unit attacks, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -4528,7 +4528,7 @@ CardStat = 5588
 global.CardName[CardStat] = 'Knight of Favorable Odds, Ascanius'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO: [Counter Blast 1 & Choose a card with "Altmile" in its card name from your hand, and reveal it] When this unit is placed on RC from your hand, you may pay the cost. If you do, search your deck for up to one card with the brave ability and power 7000, call it to RC, and shuffle your deck.
+AUTO: [Counter Blast 1 & Choose a card with "Altmile" in its card name from your hand, and reveal it] When this unit is placed on RC from your hand, you may pay the cost. If you do, search your deck for up to one power 7000 card with the brave ability, call it to RC, and shuffle your deck.
 
 CONT [RC] Generation Break 1 Brave: This unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -5374,7 +5374,7 @@ CardStat = 6571
 global.CardName[CardStat] = 'Taintless Feather Dragon'
 global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1], choose a column, call up to two cards from your hand to RC in that column, and until end of turn, this unit gets power +5000. If you called two, draw a card.'
+AUTO [VC/RC]: When placed, COST [Counter Blast 1], choose a column, call up to two cards from your hand to that column’s RC, and this unit gets power +5000 until end of turn. If you called two cards, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -5625,7 +5625,7 @@ global.CardText[CardStat] = 'Royal Paladin/Giant
 
 AUTO [VC/RC]: When your other rear-guard is placed, this unit gets power +3000 until end of turn.
 
-ACT [RC] 1/Turn: If your damage zone has more cards than your opponent, COST [Soul Blast 1 & discard a card from your hand], and draw two cards.'
+ACT [RC] 1/Turn: If your damage zone has more cards than your opponent’s, COST [Soul Blast 1 & discard a card from your hand], and draw two cards.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -5638,7 +5638,7 @@ CardStat = 6862
 global.CardName[CardStat] = 'Decorous Knight, Hengist'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-AUTO [VC]: When it attacks, COST [Soul Blast 2 grade 3], call any number of cards from your hand to RC, and those units get power +10000 until end of turn. If you have three or more rear-guards, when your opponent would call cards from his or her hand to GC during this turn, he or she must call two or more at the same time.'
+AUTO [VC]: When it attacks, COST [Soul Blast 2 grade 3], call any number of cards from your hand to RC, and those units get power +10000 until end of turn. If you have three or more rear-guards, when your opponent would call units from hand to GC this turn, he or she must call two or more at the same time.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -5801,7 +5801,7 @@ CardStat = 7383
 global.CardName[CardStat] = 'Melodious Angel'
 global.CardText[CardStat] = 'Royal Paladin/Angel
 
-ACT [RC] 1/Turn: COST [Counter Blast 2], draw a card, and if your damage zone has no face up cards, Counter Charge 1.'
+ACT [RC] 1/Turn: COST [Counter Blast 2], draw a card, and if you have no face up cards in your damage zone, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
