@@ -8924,7 +8924,7 @@ CardStat = 14310
 global.CardName[CardStat] = 'Motivating Arranger'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [Back Row RC]: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
+AUTO [Back Row RC] 1/turn: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9353,4 +9353,35 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14885
+{
+global.CardName[CardStat] = 'Splash Outstander'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: When this attacks, if you have four or more AutoMOD gauges, this unit gets power +5000 until end of that battle.
+
+AUTO: When this card is put as an AutoMOD gauge by the ACT ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose a normal unit without sentinel from your drop, and you may put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global. AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 14886
+{
+global.CardName[CardStat] = 'Ad Volfront'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [RC]: If you have four or more AutoMOD gauges, this cost is reduced by Energy Blast 2. At the end of the battle this unit boosted, if your order has a "SYSTEM CODE: X-ceed", COST [Energy Blast 2 & retire this unit], and draw a card.
+
+AUTO: When this unit is put as an AutoMOD gauge by the ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you have two or more other AutoMOD gauges with the same card name as this card, choose two of your units instead of one.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

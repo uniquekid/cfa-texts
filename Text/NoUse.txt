@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 14834
+global.AllCard = 14896
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1251,6 +1251,24 @@ global.CardText[CardStat] = 'Touken Ranbu/Token Set Order
 CONT [Order Zone]: The ACT ability of "Forge" may only be used a total of one time a turn.
 
 ACT [Order Zone] 1/Turn: COST [Put a card other than heal trigger and over trigger from drop on the bottom of the deck], reveal cards from the top of your deck until the same number of normal units as the number of "Forge" in your order zone is revealed, choose one of the revealed normal units, and call it to RC as rest. If that called unit’s grade is less than or equal to your vanguard, stand that unit, and it gets power +5000 until end of turn for every other normal unit revealed by this effect. Shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 14860
+{
+global.CardName[CardStat] = 'A Ridiculous and Fun Journey'
+global.CardText[CardStat] = 'Frieren:Beyond Journey’s End/Token Set Order
+
+CONT [Order Zone]: You cannot put set orders other than this card and Grimoire cards into your order zone.
+
+AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it into order zone, and if your searched the deck, shuffle the deck.
+
+AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journey’s End> normal unit is placed on RC during your turn, if it is not the battle phase, search your deck or drop for up to one Grimoire card, put it into the order zone, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }

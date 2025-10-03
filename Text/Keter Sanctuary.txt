@@ -715,7 +715,7 @@ CardStat = 8608
 global.CardName[CardStat] = 'Knight of Heavenly Destruction, Kapald'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1 & rest another rear-guard], reveal the top card of your deck, put it into your hand if it is an order card or a grade 3, and call it to RC if it isn’t.'
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1 & rest one of your other rear-guard], reveal the top card of your deck, put it into your hand if it is an order card or a grade 3 card, and call it to RC if it isn’t.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -3192,7 +3192,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Counter Blast 1] !
 
-Draw two cards, choose two cards from your hand, call each of them with grade less than or equal to your vanguard to RC, and discard them if not.'
+Draw two cards, choose two cards from your hand, call them to RC if the grade of each of them is less than or equal to your vanguard, and discard them if not.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -9137,7 +9137,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 CONT [VC]: During your turn, this unit cannot be boosted, and if your soul has a "Blaster Blade", this unit gets power +2000 for each of your rear-guards. If it gets power +8000 or more, and your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
 
-AUTO [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one grade 3 or less card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck. Choose one of that unit’s AUTO abilities, and until end of turn, the cost of that ability is reduced by Counter Blast 1 the next time you pay it.
+ACT [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one grade 3 or less card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck. Choose one of that unit’s AUTO abilities, and until end of turn, the cost of that ability is reduced by Counter Blast 1 the next time you pay it.
 
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards with only «Royal Paladin» for its clan, and stand it. If your opponent’s vanguard is grade 3 or greater, choose two of your rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
@@ -10468,6 +10468,590 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and three or more of your rear-guards were placed this turn, this unit gets power +5000.
 
 AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14837
+{
+global.CardName[CardStat] = 'Knight of Twin Beauty, Rience'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO [RC]: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alden" in its card name, COST [discard a card from hand], choose up to one grade 3 card with a different card name from your vanguard and without Regalis Piece from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14838
+{
+global.CardName[CardStat] = 'Knight of Magnificence, Aval'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Alden" in its card name, this unit gets "Boost" and power +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, choose a grade 3 card with "Alden" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Alden" in its card name, COST [put this unit into soul], look at the top five cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14839
+{
+global.CardName[CardStat] = 'Wings of Lifebrook, Soel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Rezael" in its card name, you may Counter Charge 1. If you do, put this unit into soul at the end of that turn.
+
+AUTO [RC/Soul]: When your grade 3 or greater unit with "Rezael" in its card name is attacked, COST [bind this card], choose a unit being attacked, and it gets power +5000 until end of that battle. If your bind zone has two or more other cards with the same card name as this card, it also gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14840
+{
+global.CardName[CardStat] = 'Driveout Dragon'
+global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
+
+CONT: If you have a grade 3 or greater vanguard with "Rezael" in its card name, this card gets all of the following.
+• CONT [RC]: During your turn, this unit gets power +5000. If this unit was placed on RC from drop by your vanguard’s ability this turn, it also gets power +5000.
+• AUTO [RC]: At the end of the battle this unit attacked, COST [Energy Blast 3 & put this unit into soul], choose a "Fated One of Miracles, Rezael" from your soul or drop, and put it into hand. If you put a card from soul, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14841
+{
+global.CardName[CardStat] = 'Knight of Ascendancy, Sigeric'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is placed on RC by the ability of your grade 3 or greater vanguard with "Rezael" in its card name, choose a card from your drop, and you may put it into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14842
+{
+global.CardName[CardStat] = 'Knight of Inviolableness, Eliseg'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Soul Blast 1 & retire this unit], look at the top five cards of your deck, choose up to one card with "Rezael" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14854
+{
+global.CardName[CardStat] = 'Headstrong Ice Mage, Lawine'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO [RC]: When this unit attacks a vanguard while boosted by a <Frieren:Beyond Journey’s End> with "Kanne" in its card name, if you have a <Frieren:Beyond Journey’s End> vanguard, COST [Energy Blast 2], choose one of your opponent’s rear-guards, retire it, and until end of that battle, your opponent cannot play blitz orders.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14855
+{
+global.CardName[CardStat] = 'Cowardly Water Mage, Kanne'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT [RC]: If you have a <Frieren:Beyond Journey’s End> with "Lawine" in its card name in the same column as this unit, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO: When this unit is put on GC, if your drop has ten or more cards, COST [Energy Blast 2], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14856
+{
+global.CardName[CardStat] = 'Talkative Killer, Ubel'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater <Frieren:Beyond Journey’s End> vanguard, COST [Energy Blast 2], and perform one of the following. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• Choose one of your opponent’s rear-guards in the same column as this unit, and retire it.
+• Choose one of your opponent’s front row rear-guards in the same column as this unit, until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during the stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14857
+{
+global.CardName[CardStat] = 'Illusion Magic User, Land'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+
+AUTO: When this unit is retired from RC during your opponent’s turn, COST [Energy Blast 2], and put this card into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14858
+{
+global.CardName[CardStat] = '"Hero" Aiming for Peace, Himmel'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is rode upon, if you went second, drwa a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14859
+{
+global.CardName[CardStat] = 'Reason to Go on a Journey, Himmel'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is placed by riding from ""Hero" Aiming for Peace, Himmel", COST [reveal a grade 3 <Frieren:Beyond Journey’s End> with "Frieren" in its card name from ride deck], and put an A Ridiculous and Fun Journey token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.TokenSummoner[CardStat] = 14860
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 14860
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14861
+{
+global.CardName[CardStat] = 'Magic to Create a Field of Flowers'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic to Create a Field of Flowers" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, you may call a Plant token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14862
+{
+global.CardName[CardStat] = 'Magic That Turns Sweet Grapes Into Sour Ones'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic That Turns Sweet Grapes Into Sour Ones" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, choose a card from your hand, and you may discard it. If you discarded a card, choose up to one grade 2 or less normal unit without sentinel or up to one order card without Regalis Piece from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14863
+{
+global.CardName[CardStat] = 'Magic That Manipulates Stone Like Puppets'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic That Manipulates Stone Like Puppets" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, choose a card from your damage zone, heal it, and if your healed, put the top card of your deck into the damage zone face down. If this effect healed a face up card, put it face up instead of face down.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14864
+{
+global.CardName[CardStat] = 'Magic For Finding Lost Accessories'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic For Finding Lost Accessories" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, you may choose a trigger unit other than heal trigger or over trigger from your drop. If you chose a card, return that card to deck and shuffle it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14865
+{
+global.CardName[CardStat] = 'Magic That Produces Shaved Ice'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic That Produces Shaved Ice" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14866
+{
+global.CardName[CardStat] = 'Magic That Removes Rust From Bronze Statues'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic That Removes Rust From Bronze Statues" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, choose a card on your circle, turn it face up, and stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14867
+{
+global.CardName[CardStat] = 'Magic to Analyze Treasure Chests'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic to Analyze Treasure Chests" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, look at the top card of your deck, and put it on the top or bottom of your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14868
+{
+global.CardName[CardStat] = 'Magic to Make Things Float'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Set Order/Grimoire
+
+CONT: You may only have one "Magic to Make Things Float" in a deck.
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
+
+AUTO: When this card is put into the order zone, choose a card from your drop, and you may put it into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+
+CardStat = 14869
+{
+global.CardName[CardStat] = 'Judradjim'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Normal Order
+
+Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name and your opponent’s vanguard is grade 3 or greater!
+
+Choose a column, retire all of your opponent’s rear-guards in that column, choose one of your vanguards, until end of turn, it gets "CONT [VC]: All of your front row units get power +5000." and gets critical +1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14870
+{
+global.CardName[CardStat] = 'Dragon Slaying Swing'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Normal Order
+
+CONT: You may have up to eight "Dragon Slaying Swing" in a deck.
+
+This card can be played from drop, and play this if you have a <Frieren:Beyond Journey’s End> vanguard with "Stark" in its card name!
+
+Bind this card, choose one of your vanguards, until end of turn, it gets "AUTO [VC]: When this unit’s attack hits, you may draw a card.", and gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14871
+{
+global.CardName[CardStat] = 'Beautiful Homeland Flower, Himmel & Frieren'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is rode upon by "Journey to Aureole, Frieren", look at the top seven cards of your deck, choose up to one <Frieren: Beyond Journey’s End> normal unit without sentinel from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14872
+{
+global.CardName[CardStat] = 'Journey to Aureole, Frieren'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and perform all of the following according to the number of grimoires in your order zone.
+• Three or more - Draw a card..
+• Five or more - This unit gets "CONT [VC]: All of your front row units get power +5000." until end of turn.
+• Seven or more - This unit gets drive +1 until end of turn.
+
+ACT [VC] 1/Turn: COST [Energy Blast any number], and choose a card from your order zone for each Energy Blast 1 paid for this cost. If all of the chosen cards have different card names, activate all of the original AUTO abilities for each of them.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14873
+{
+global.CardName[CardStat] = 'Naturally Gifted Priest, Sein'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, you may Soul Charge 1.
+• ACT [RC]: COST [Put this unit into soul], and Energy Charge 3.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14874
+{
+global.CardName[CardStat] = 'Einsam Subjugation, Fern'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
+• AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle. If you played a normal order this turn, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14875
+{
+global.CardName[CardStat] = 'Lord of the Mountains Subjugation, Stark'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
+• CONT [RC/GC]: If your vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+• AUTO [Drop]: When you play a normal order, if you do not have a rear-guard with the same card name as this card, call this card to RC.
+• AUTO [RC]: At the end of the battle this unit attacked, if it is the first batle of this turn, and your vanguard is grade 3 or greater, COST [Soul Blast 2], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14876
+{
+global.CardName[CardStat] = 'Barrier Analysis, Frieren'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one <Frieren:Beyond Journey’s End> normal order from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, perform "You may Counter Blast 1. If you do not Counter Blast 1, choose a card from hand, and put it into soul.".
+• AUTO [RC]: When your other rear-guard in the same column as this unit attacks while not boosted, that unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14877
+{
+global.CardName[CardStat] = 'Defensive Magic'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14878
+{
+global.CardName[CardStat] = 'Magic User in a Peaceful Era, Frieren'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: This card is regarded as "Forefront Knight, Teithfallt".
+
+AUTO: When this unit is placed on RC other than by a unit card’s ability, if you played a normal order this turn, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them and reveal it, call it to RC if it is a unit card, and put it into hand if it is a normal order. Shuffle the deck.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have four or more units, this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14879
+{
+global.CardName[CardStat] = 'Village Hero, Stark'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your front-row rear-guards get power +5000. (Active on opponent’s turn too)
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, and stand it.
+
+AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a card from hand], and this unit gets power +15000 until end of that battle.
+
+AUTO [VC]: When your damage check reveals a <Frieren:Beyond Journey’s End> card with "Stark" in its card name or "Dragon Slaying Swing", if your damage zone has five or more cards, choose a card from your damage zone, heal it, and you cannot heal by your vanguard’s abilities until end of this fight.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14880
+{
+global.CardName[CardStat] = 'New Daily Life, Stark & Frieren & Fern'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is placed by riding from "Master and Apprentice, Frieren & Fern", look at the top seven cards of your deck, choose up to two <Frieren:Beyond Journey’s End> normal orders from among them, reveal them and put them into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14881
+{
+global.CardName[CardStat] = 'Master and Apprentice, Frieren & Fern'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is placed from "Journey to Understand a Human’s Heart, Frieren", look at the tip seven cards of your deck, choose up to two <Frieren:Beyond Journey’s End> normal orders from among them, reveal them and put them into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14882
+{
+global.CardName[CardStat] = 'Journey to Understand a Human’s Heart, Frieren'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14883
+{
+global.CardName[CardStat] = 'Quiet "Warrior", Eisen'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this unit cannot be retired by your opponent’s card effects.
+
+ACT [Back Row Centre RC]: If you have a grade 3 or greater <Frieren:Beyond Journey’s End> vanguard with "Stark" in its card name, COST [rest this card], choose one of your vanguards, until end of turn, it gets "CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.", and gets power +5000. You may Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14884
+{
+global.CardName[CardStat] = 'Captain of the Northern Magic Corps, Wirbel'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater <Frieren:Beyond Journey’s End> vanguard, this unit gets power +5000 until end of turn. Then, if your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 2], this unit gets power +5000 until end of turn, choose one of your opponent’s rear-guards, until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during the stand phase.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }

@@ -1216,7 +1216,7 @@ CardStat = 9125
 global.CardName[CardStat] = 'Flare Scourge Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO [RC]: When your rear-guard is placed, if it overDress, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your rear-guard is placed, if it was an overDress, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -2513,7 +2513,7 @@ X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by 
 
 AUTO: When this unit is placed on RC by X-overDress, choose a card with the X-overDress ability from your drop other than "Sturdy Wall Equip, Vils Vairina", and put it into your hand.
 
-CONT [RC/GC]: If this unit is in the X-overDress state, this unit cannot be chosen by your opponent’s card effects, and gets power +5000 / shield +10000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If this unit is in the X-overDress state, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000 / shield +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -9708,7 +9708,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Wirbel" in its card name from your ride deck, and you may reval it. If you revealed a card, or you have a grade 3 or greater vanguard with "Wirbel" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.
 
-AUTO [RC]: At the end of your turn, if you Energy Blast 6 or more for the cost of the ACT ability of your grade 3 or greater vanguard with "Wirbel" in its card name this turn, you may retire this unit. If you do, Energy Blast 3 or choose a card from your drop, and put it into soul.'
+AUTO [RC]: At the end of your turn, if you Energy Blast 6 or more for the cost of the ACT ability of your grade 3 or greater vanguard with "Wirbel" in its card name this turn, you may retire this unit. If you do, Energy Charge 3 or choose a card from your drop, and put it into soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -9730,3 +9730,43 @@ global.DCards[CardStat] = 1
 global.TriggerUnit[CardStat] = 2
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14848
+{
+global.CardName[CardStat] = 'Demonic Dragon Berserker, Kyuuei'
+global.CardText[CardStat] = 'Dragon Empire/Dragonman
+
+AUTO: When this unit is placed on RC from hand during your main phase, COST [discard a card from hand], draw a card, and if your vanguard’s grade is less than to equal to your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14849
+{
+global.CardName[CardStat] = 'Heavy Projectile Dragon, Patagohefty'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is retired from a front row RC by the ability of your grade 3 <Dinoragon> vanguard or grade 3 vanguard with "Venatior" in its card name, choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 14850
+{
+global.CardName[CardStat] = 'Venatior, Rukaira'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO [Back Row RC]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Venatior" in its card name, choose one of your other units in the same column as this unit, and it gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC by the ability of your vanguard this turn, this cost is reduced by Energy Blast 3. When this unit is retired from RC by the ability of your grade 3 or greater vanguard with "Venatior" in its card name, COST [Energy Blast 3], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
