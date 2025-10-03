@@ -5381,6 +5381,7 @@ AUTO [VC]: When this unit attacks, if you played three or more orders this turn,
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Fenelle'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10770,3 +10771,170 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14835
+{
+global.CardName[CardStat] = 'Arise Harmony, Fortana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Marlean" in its card name, you may have this unit get power +5000 until end of turn. If you do, put this unit into soul at the end of that turn.
+
+AUTO [Soul]: When your unit is attacked, if you have a grade 3 or greater vanguard with "Marlean" in its card name, you may call this card to GC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14836
+{
+global.CardName[CardStat] = 'Cheerful Butterfly, Flinda'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Marlean" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+
+AUTO [RC]: When your unit is placed in the same column as this unit by the ability of your grade 3 or greater vanguard with "Marlean" in its card name, if you persona rode this turn, stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14851
+{
+global.CardName[CardStat] = 'Esperance in Hell, Menadiel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and your unit was placed by your card’s ability this turn, this unit gets power +5000.
+
+AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14852
+{
+global.CardName[CardStat] = 'Solitary World, Esolina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle for every two cards in your damage zone. If it got power +5000 or more, at the end of that turn, retire this unit.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14853
+{
+global.CardName[CardStat] = 'Passionate Lyricist, Fateeka'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO: When this unit is placed on RC from hand, COST [Soul Blast 1 & reveal a card from hand], choose one of your rear-guards with the same card name as the card revealed for this cost, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14890
+{
+global.CardName[CardStat] = 'Snow & Sorrow'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
+
+CONT: During this fight, this card is also regarded as "Trick & Treat!".
+
+This card can be played from drop, and play this if you have a vanguard with "Fenelle" in its card name, and if you did not play "Snow & Sorrow" this turn!
+
+Choose a normal unit without sentinel from your drop, and call it to RC, and put this card on the bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14891
+{
+global.CardName[CardStat] = 'Welcoming Your Favorite, Tupra'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC by the ability of your "Trick & Treat!", until end of turn, when your opponent would call cards from hand to GC for the battle this unit attacked, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14892
+{
+global.CardName[CardStat] = 'Colourful Cracker, Sonora'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [Drop]: When you play "Trick & Treat!", if it is the third time or more you played an order this turn, and you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit boosts, if the boosted unit’s critical is 2 or greater, choose up to one of your other units, and it gets power +5000 until end of turn. If you chose a unit, at the end of that battle, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14893
+{
+global.CardName[CardStat] = 'Joyance Delivery, Eldeal'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT: If your vanguard does not have a clan icon, this card gets all of the following.
+• AUTO [RC]: When this unit boosts, if you played an order this turn, this unit gets power +5000 until end of that battle.
+• AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with the DressUp ability, or you played an order this turn, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14894
+{
+global.CardName[CardStat] = 'Go To the Light! Ripre'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one "Trick & Treat!" from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Fenelle" in its card name, and you played an order this turn, this unit gets power +5000 until end of turn, and if you played three or more orders this turn, it also gets power +5000, and at the end of that turn, COST [retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14895
+{
+global.CardName[CardStat] = 'Sa!nt?N!ght?Tr!ck, Fenelle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+DressUp - "Tr!plexTr!ck, Fenelle" (During this fight, this card is also regarded as the specified card)
+
+CONT [VC]: During your turn, you can play three orders, but you cannot play orders other than "Trick & Treat!" or Regalis Piece.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and until end of turn, all of your front row units get power +2000 for each "Trick & Treat!" in your drop. If you played three or more orders this turn, choose one of your rear-guards, and that unit and this unit get critical +1 until end of turn. Then, if you persona rode this turn, choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Fenelle'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
