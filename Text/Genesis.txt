@@ -846,7 +846,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 ACT [VC]: Legion 20000 "Regalia of Fate, Norn" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 1 or greater units to GC from his or her hand.
+AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of that battle, this unit gets critical +1, and your opponent cannot call grade 1 or greater units from hand to GC.
 
 AUTO [VC]: When this unit attacks a vanguard, if you have another unit in your center column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
@@ -957,9 +957,9 @@ global.CardText[CardStat] = 'Genesis/Human
 
 ACT [VC]: Legion 20000 "Black Snake Witch, Chicory" (If your opponent’s vanguard is grade 3 or greater, this unit may return four cards from your drop zone into your deck once, search your deck for the specified card, and Legion)
 
-AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of turn, this unit gets power +10000, and "CONT [VC]: All of your rear-guards with "Witch" in its card name in the front row get power +5000.".
+AUTO [VC]: [Soul Blast 6] When this unit attacks a vanguard, if this unit is Legion, you may pay the cost. If you do, until end of turn, this unit gets power +10000 and "CONT [VC]: All of your rear-guards with "Witch" in its card name in your front row get power +5000.".
 
-ACT [VC]: [Counter Blast 1] If you have another unit with "Witch" in its card name in the center column, Soul Charge 3. This ability cannot be used for the rest of that turn.'
+ACT [VC]: [Counter Blast 1] If you have another unit with "Witch" in its card name in your middle column, Soul Charge 3. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 21
 }
@@ -1803,7 +1803,7 @@ CardStat = 4793
 global.CardName[CardStat] = 'Witch of Aster, Star'
 global.CardText[CardStat] = 'Genesis/Human
 
-AUTO: [Counter Blast 1] When this unit is placed on VC or RC, you may pay the cost. If you do, Soul Charge 2, if you have a grade 3 or greater vanguard with "Witch" in its card name, choose up to two of your other units, those units and this unit get power +2000 until end of turn.'
+AUTO: [Counter Blast 1] When this unit is placed on VC or RC, you may pay the cost. If you do, Soul Charge 2, if you have a grade 3 or greater vanguard with "Witch" in its card name, choose up to two of your other units, and those units and this unit get power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
@@ -1851,7 +1851,7 @@ global.CardText[CardStat] = 'Genesis/Noble
 
 AUTO: Revelation - VC/RC.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1] When your other rear-guard rest due to the effect of your card, if you have a vanguard with the revelation ability, you may pay the cost. If you do, increase this unit’s power by the rest rear-guards original power until end of turn.'
+AUTO [RC] Generation Break 1: [Counter Blast 1] When your other rear-guard rest due to the effect of your card, if you have a vanguard with the revelation ability, you may pay the cost. If you do, increase this unit’s power by original power of the rest rear-guards until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 21
 }
