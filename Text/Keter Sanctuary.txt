@@ -10637,9 +10637,17 @@ CardStat = 14859
 global.CardName[CardStat] = 'Reason to Go on a Journey, Himmel'
 global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
 
-AUTO: When this unit is placed by riding from ""Hero" Aiming for Peace, Himmel", COST [reveal a grade 3 <Frieren:Beyond Journey’s End> with "Frieren" in its card name from ride deck], and put an A Ridiculous and Fun Journey token into your order zone.'
+AUTO: When this unit is placed by riding from ""Hero" Aiming for Peace, Himmel", COST [reveal a grade 3 <Frieren:Beyond Journey’s End> with "Frieren" in its card name from ride deck], and put an A Ridiculous and Fun Journey token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
+global.TokenSummoner[CardStat] = 14860
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 14860
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -10654,13 +10662,15 @@ CONT: You may only have one "Magic to Create a Field of Flowers" in a deck.
 
 Play this with COST [Energy Blast 2] if you have a <Frieren:Beyond Journey’s End> vanguard with "Frieren" in its card name!
 
-AUTO: When this card is put into the order zone, you may call a Plant token to RC.'
+AUTO: When this card is put into the order zone, you may call a Plant token to RC.
+
+(SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.CardCopies[CardStat] = 1
 global.TokenSummoner[CardStat] = 9583
-global.TokenSummonerPosition[CardStat] = 'R'
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
@@ -10974,6 +10984,7 @@ AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of 
 AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a card from hand], and this unit gets power +15000 until end of that battle.
 
 AUTO [VC]: When your damage check reveals a <Frieren:Beyond Journey’s End> card with "Stark" in its card name or "Dragon Slaying Swing", if your damage zone has five or more cards, choose a card from your damage zone, heal it, and you cannot heal by your vanguard’s abilities until end of this fight.'
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 }
