@@ -9013,7 +9013,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
  
 AUTO [VC] 1/Turn: When this unit attacks while not boosted, COST [Energy Blast 3 & put two or more rear-guards into soul], and this unit gets drive +1 until end of turn. This unit gets power +5000 until end of turn for each card put into soul for this cost.
 
-[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked a grade 3 or greater unit, if your soul has six or more cards, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn. Until end of this fight, you get "All of your vanguards with "Lisciafael" in their card names get power +5000 / critical +1. (Active on opponent’s turn too)"'
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked a grade 3 or greater unit, if your soul has six or more cards, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn. Until end of this fight, you get "All of your vanguards with "Lisciafael" in their card names get power +5000 / critical +1. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -10938,3 +10938,155 @@ global.PersonaRideCardName[CardStat] = 'Fenelle'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14961
+{
+global.CardName[CardStat] = 'SweetLinker, Hamstella'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14962
+{
+global.CardName[CardStat] = 'SweetLinker, Banarmia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this unit is rode upon by "SweetLinker, Squira", look at the top seven cards of your deck, choose up to two cards with "SweetLinker" in their card names from among them, reveal them, choose up to one card from among the revealed cards, put it into hand, choose up to one card from among the revealed cards, put it into soul, and shuffle the deck.
+
+CONT [RC]: If this unit is in the SweetLink state, this unit gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14963
+{
+global.CardName[CardStat] = 'SweetLinker, Squira'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this unit is rode upon by a grade 3 card with "SweetLinker" in its card name, choose a card from your hand, and you may call it to RC. If you called a card, search your deck for up to one card with the same card name as that unit, put it into soul, shuffle the deck, and draw a card.
+
+CONT [RC]: If this unit is in the SweetLink state, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14964
+{
+global.CardName[CardStat] = 'SweetLinker, Vraty'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO [VC]: At the beginning of your battle phase, Soul Charge 1, and perform the following according to the Soul Charge card. If this unit is in the SweetLink state, all of your rear-guards get power +5000 until end of turn.
+• Trigger unit - Until end of turn, this unit gets critical +1, and all of your front row units get power +5000.
+• Non-"trigger unit" - Until end of turn, this unit gets "Triple Drive", and power +10000.
+
+AUTO [VC]: At the end of your turn, COST [Counter Blast 1 & return six cards with "SweetLinker" in their different card names from soul to the deck], choose a card from your damage zone, heal it, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14965
+{
+global.CardName[CardStat] = 'SweetLinker, Pechelne'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this card is discarded from your hand during your turn, you may put this card into soul.
+
+ACT [Soul]:  If you have a grade 3 or greater vanguard with "SweetLinker" in its card name, and this card is in the SweetLink state, COST [put this card into drop], choose a card with "SweetLinker" in its different card name from this card from your drop, and put it into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14966
+{
+global.CardName[CardStat] = 'SweetLinker, Autina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this unit is placed on RC or put from hand on GC, choose a card with "SweetLinker" in its card name from your drop, and you may put it into soul.
+
+CONT [RC/GC]: If this unit is in the SweetLink state, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14967
+{
+global.CardName[CardStat] = 'SweetLinker, Sucre'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "SweetLinker" in its card name, this unt gets power +5000. If this unit is in the SweetLink state, it also gets power +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked a vanguard, if you have a vanguard with "SweetLinker" in its card name, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14968
+{
+global.CardName[CardStat] = 'SweetLinker, Parlget'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+CONT [RC]: During your turn, if this unit is in the SweetLink state, all of your other units in the same column as this unit get power +5000.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "SweetLinker" in its card name, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14969
+{
+global.CardName[CardStat] = 'SweetLinker, Lycorie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "SweetLinker" in its card name, choose up to one card from your drop, put it into soul, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If your opponent’s vanguard is grade 3 or greater, and this unit is in the SweetLink state, the called unit and this unit get power +5000 until end of turn.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "SweetLinker" in its card name attacks, COST [Counter Blast 1], stand this unit, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
