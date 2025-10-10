@@ -1146,6 +1146,7 @@ AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 2 & rest any n
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lagrele'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10869,7 +10870,7 @@ ACT [VC] 1/Turn: COST [Counter Blast 1], and perform all of the following accord
 • Five or more - This unit gets "CONT [VC]: All of your front row units get power +5000." until end of turn.
 • Seven or more - This unit gets drive +1 until end of turn.
 
-ACT [VC] 1/Turn: COST [Energy Blast any number], and choose a card from your order zone for each Energy Blast 1 paid for this cost. If all of the chosen cards have different card names, activate all of the original AUTO abilities for each of them.'
+ACT [VC] 1/Turn: COST [Energy Blast any number], and choose a Grimoire from your order zone for each Energy Blast 1 paid for this cost. If all of the chosen cards have different card names, activate all of the original AUTO abilities for each of them.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -10916,7 +10917,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
 CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
 • CONT [RC/GC]: If your vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
 • AUTO [Drop]: When you play a normal order, if you do not have a rear-guard with the same card name as this card, call this card to RC.
-• AUTO [RC]: At the end of the battle this unit attacked, if it is the first batle of this turn, and your vanguard is grade 3 or greater, COST [Soul Blast 2], and stand this unit.'
+• AUTO [RC]: At the end of the battle this unit attacked, if it is the first batle of this battle phase, and your vanguard is grade 3 or greater, COST [Soul Blast 2], and stand this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -11010,7 +11011,7 @@ CardStat = 14881
 global.CardName[CardStat] = 'Master and Apprentice, Frieren & Fern'
 global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
 
-AUTO: When this unit is placed from "Journey to Understand a Human’s Heart, Frieren", look at the tip seven cards of your deck, choose up to two <Frieren:Beyond Journey’s End> normal orders from among them, reveal them and put them into hand, and shuffle the deck.'
+AUTO: When this unit is placed from "Journey to Understànd a Human’s Heart, Frieren", look at the top seven cards of your deck, choose up to two <Frieren:Beyond Journey’s End> normal orders from among them, reveal them and put them into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -11020,7 +11021,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14882
 {
-global.CardName[CardStat] = 'Journey to Understand a Human’s Heart, Frieren'
+global.CardName[CardStat] = 'Journey to Understànd a Human’s Heart, Frieren'
 global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
@@ -11057,3 +11058,279 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14900
+{
+global.CardName[CardStat] = 'Masked Rider Build, RabbitRabbit Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Hexaorb Sorceress "Aquamarine"".
+
+CONT [VC]: This unit is also regarded as "Hexaorb Sorceress".
+
+CONT [VC]: If you persona rode this turn, this unit gets drive +1, and the power increase of your trigger effects increase by gets +10000.
+
+AUTO [VC]: When the drive check during the battle this unit attacked reveals a trigger unit, COST [Soul Blast 1], choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Hexaorb'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14901
+{
+global.CardName[CardStat] = 'Masked Rider Build, TankTank Tank'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Heavenly Shock of Distinction, Lagrele".
+
+AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 2 & rest any number of your other rear-guards], until end of that battle, this unit performs drive check, and gets power +5000. At the end of that battle, if you rest three or less for this cost, choose three cards from your hand, discard them, and if you rest one or less for this cost, choose two cards from your hand, and discard them. (Drive checks occur after guardians may be called.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Lagrele'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 14902
+{
+global.CardName[CardStat] = 'Masked Rider Evol, Black Hole Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Blood
+
+CONT: This card is also regarded as "Recurring Magic, Lalarita".
+
+AUTO [RC]: At the end of the battle your drive check revealed a trigger unit, if your vanguard is "Hexaorb Sorceress", COST [Counter Blast 1 & Soul Blast 1], choose one of your other rear-guards, stand it, and retire this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14905
+{
+global.CardName[CardStat] = 'Masked Rider Build, KeyDragon Hazard Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero/Over Trigger
+
+CONT: This card is also regarded as "Light Dragon Deity of Honors, Amartinoa".
+
+Additional Effect - Until end of turn, you also perform drive checks for the battles your rear-guards attack!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 14906
+{
+global.CardName[CardStat] = 'Masked Rider Build, PhoenixRobot Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Gloria Storm Dragon".
+
+ACT [RC] 1/Turn: If you person rode this turn, COST [Counter Blast 1], your opponent puts all of their rear-guards in the same column as this unit on the bottom of their deck in any order, and this unit gets power +5000 until end of turn. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14907
+{
+global.CardName[CardStat] = 'Masked Rider Cross-Z Magma'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Painkiller Angel".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [Soul Blast 1 & retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14916
+{
+global.CardName[CardStat] = 'Masked Rider Build, SmaphoWolf Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero
+
+CONT: This card is also regarded as "Palladium Zeal Dragon".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14917
+{
+global.CardName[CardStat] = 'Masked Rider Build, LionCleaner Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero/Front Trigger
+
+CONT: This card is also regarded as "Bard of Heavenly Song, Alpacc".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14918
+{
+global.CardName[CardStat] = 'Masked Rider Build, RocketPanda Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero/Critical Trigger
+
+CONT: This card is also regarded as "Blade Feather Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14919
+{
+global.CardName[CardStat] = 'Masked Rider Build, FireHedgehog Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Hero/Draw Trigger
+
+CONT: This card is also regarded as "Protection Magic, Prorobi".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14920
+{
+global.CardName[CardStat] = 'Masked Rider Evol, Cobra Form'
+global.CardText[CardStat] = 'Keter Sanctuary/Blood
+
+CONT: This card is also regarded as "Knight of Piercing, Cadwalla".
+
+AUTO [RC]: At the end of the battle that this unit attacked a vanguard, if you have four or more units, COST [Soul Blast 1 & retire this unit], look at the top three cards of your deck, choose up to one grade 2 or greater unit card from among them, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14921
+{
+global.CardName[CardStat] = 'Strong Smash'
+global.CardText[CardStat] = 'Keter Sanctuary/Smash
+
+CONT: This card is also regarded as "Quadra Cast Sorceress".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Sorceress" in its card name, look at the top two cards of your deck, put them on the top of your deck in any order, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14922
+{
+global.CardName[CardStat] = 'Mirage Smash'
+global.CardText[CardStat] = 'Keter Sanctuary/Smash
+
+CONT: This card is also regarded as "Dianadigon Sorceress".
+
+CONT [GC]: If you have a vanguard with "Sorceress" in its card name, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14923
+{
+global.CardName[CardStat] = 'Flying Clone Smash'
+global.CardText[CardStat] = 'Keter Sanctuary/Smash
+
+CONT: This card is also regarded as "Changing Magic, Memeruru".
+
+ACT [RC]: If you have a grade 3 or greater vanguard with "Sorceress" in its card name, COST [retire this unit], choose a critical trigger or front trigger from your drop, and put it into your hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14953
+{
+global.CardName[CardStat] = 'Zoltraak'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End/Normal Order
+
+CONT: You may have up to eight "Zoltraak" in a deck.
+
+This card can be played from drop, and play this with COST [Energy Blast 1] if you have a <Frieren:Beyond Journey’s End> vanguard with "Fern" in its card name!
+
+Bind this card, choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, or your opponent’s vanguard is grade 3 or greater, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14954
+{
+global.CardName[CardStat] = '"Monk" Who Guides People, Heiter'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+AUTO: When this unit is placed on RC, if you have a <Frieren:Beyond Journey’s End> vanguard with "Fern" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Frieren:Beyond Journey’s End> unit card with "Frieren" in its card name, reveal it and put it into hand, and shuffle the deck. If you did non reveal a card, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14955
+{
+global.CardName[CardStat] = 'First Class Wizard, Fern'
+global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
+
+CONT [VC]: During your turn, all of your front row units get power +5000 for every two "Zoltraak" in your bind zone.
+
+AUTO [VC] 1/Turn: When you play "Zoltraak", COST [Counter Blast 1], stand this unit, it attacks your opponent’s vanguard, and this unit’s drive becomes 0 until end of that battle. At the end of that battle, stand this unit. If your opponent’s vanguard is grade 3 or greater, its drive becomes 1 instead of 0. (This attack cannot be boosted)
+
+ACT [VC] 1Turn: [Discard a card from hand], look at the top seven cards of your deck, choose up to one grade 2 or less <Frieren:Beyond Journey’s End> card with "Frieren", "Stark", "Sein", "Ubel", "Land", or "Heiter" in its card name from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

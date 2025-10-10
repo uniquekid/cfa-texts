@@ -2280,6 +2280,7 @@ AUTO: When this unit is placed on a front row RC from hand, if you have three or
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Clapping Dragon'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10112,3 +10113,223 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14897
+{
+global.CardName[CardStat] = 'Masked Rider Kabuto, Hyper Form'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast Emperor, Magnolia Elder".
+
+AUTO: When this unit is placed on VC, choose a card from your soul, and you may call it to RC.
+
+CONT [VC]: If you have one or more cards in your soul or on your RC with "Magnolia" in their card names, all of your rear-guards can attack and intercept from the back row, and get power +5000.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 14898
+{
+global.CardName[CardStat] = 'The Hellish Brothers, Masked Rider PunchHopper'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Goildoat".
+
+AUTO [Drop]: When your vanguard with "Magnolia" in its card name is placed during your ride phase, if your soul does not have a "Sylvan Horned Beast, Goildoat", COST [put this card into your soul], choose one of your vanguards, and it gets power +5000 until end of turn.
+
+AUTO [Back Row RC]: When this unit attacks, this unit gets power +10000 until end of that battle. At the end of that battle, if this unit is in the center column, COST [retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 14899
+{
+global.CardName[CardStat] = 'The Hellish Brothers, Masked Rider KickHopper'
+global.CardText[CardStat] = 'Stoicheia/Human
+
+CONT: This card is also regarded as "Performing Petal, Diantha".
+
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [Counter Blast 1], choose a grade 3 or less card from your drop, and call it to RC.
+
+CONT [RC]: During your turn, if your back row has two or more grade 1 or less rear-guards in your back row, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14903
+{
+global.CardName[CardStat] = 'Masked Rider Dark Kabuto, Rider Kick!'
+global.CardText[CardStat] = 'Stoicheia/Native/Over Trigger
+
+CONT: This card is also regarded as "Source Dragon Deity of Blessings, Blessfavor".
+
+Additional Effect - Draw a card! Choose one of your units, until end of turn, it gets critical +1! And all of your front row units get power +10000! If your damage zone has the same number of cards as your opponent’s or more, choose a card from your damage zone, and heal it!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 14904
+{
+global.CardName[CardStat] = 'Masked Rider PunchHopper'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Tide Line Dragon".
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Soul Blast 1], choose one of your other units, and that unit and this unit get power +10000 until end of turn. ("If you persona rode" is active even if persona ride activated outside normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14908
+{
+global.CardName[CardStat] = 'Unfettered Gust, Masked Rider Drake'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Custodial Dragon".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14909
+{
+global.CardName[CardStat] = 'Masked Rider Sasword, Masked Form'
+global.CardText[CardStat] = 'Stoicheia/Hero/Front Trigger
+
+CONT: This card is also regarded as "Frenzied Heiress".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14910
+{
+global.CardName[CardStat] = 'Masked Rider TheBee, Masked Form'
+global.CardText[CardStat] = 'Stoicheia/Hero/Critical Trigger
+
+CONT: This card is also regarded as "Aspiring Maiden, Alana".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 14911
+{
+global.CardName[CardStat] = 'Masked Rider Drake, Masked Form'
+global.CardText[CardStat] = 'Stoicheia/Hero/Draw Trigger
+
+CONT: This card is also regarded as "Serene Maiden, Lena".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14912
+{
+global.CardName[CardStat] = 'Worm'
+global.CardText[CardStat] = 'Stoicheia/Worm
+
+CONT: This card is also regarded as "Clapping Dragon".
+
+AUTO: When this unit is placed on a front row RC from hand, if you have three or more units in the back row, COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Clapping Dragon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14913
+{
+global.CardName[CardStat] = 'Scorpio Worm'
+global.CardText[CardStat] = 'Stoicheia/Worm
+
+CONT: This card is also regarded as "Friendship Fairy".
+
+ACT [RC]: If you have a vanguard with "Magnolia" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & put this unit into soul], choose up to one grade 4 unit card with "Magnolia" in its card name from your hand, and ride it as stand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14914
+{
+global.CardName[CardStat] = 'Gryllus Worm'
+global.CardText[CardStat] = 'Stoicheia/Worm
+
+CONT: This card is also regarded as "Prized Trident".
+
+AUTO [RC]: When your other unit attacks, if it is the fifth battle of this turn, COST [put this unit into your soul], and Counter Charge 1.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14915
+{
+global.CardName[CardStat] = '1.. 2.. 3.. Rider Kick!'
+global.CardText[CardStat] = 'Stoicheia/Blitz Order
+
+CONT: This card is also regarded as "Fine Drink of Abolishment for Sins".
+
+Play this with COST [Soul Blast 1] !
+
+Draw a card, choose one of your units, and it gets power +5000 until end of that battle for each order card with a different card name in your drop and bind zone in total. (Cards with the same card name in both drop and bind zone count as one)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
