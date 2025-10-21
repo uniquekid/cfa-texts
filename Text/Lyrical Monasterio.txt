@@ -11140,7 +11140,9 @@ CardStat = 14973
 global.CardName[CardStat] = 'Earnescorrect Follower, Chiaaro'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
-AUTO: When this card is discarded during your turn, if you have a vanguard with "Clarissa" in its card name, COST [Energy Blast 3], and drwa a card.'
+AUTO: When this card is discarded during your turn, if you have a vanguard with "Clarissa" in its card name, COST [Energy Blast 3], and draw a card.
+
+AUTO [Drop]: At the end of your turn, if you have a grade 3 or greater vanguard with "Clarissa" in its card name, and your vanguard’s attack hit this turn, COST [bind this card], choose one of your rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -11213,6 +11215,150 @@ global.CardName[CardStat] = 'Flustering Unbalance, Woople'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
 
 ACT [RC]: If your vanguard is grade 3 or greater, COST [rest this unit], and Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14979
+{
+global.CardName[CardStat] = 'Main Dish, Polania'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, Soul Charge 1, if a normal unit was Soul Charge, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14980
+{
+global.CardName[CardStat] = 'The Puppet Show is About to Begin, Rocovela'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+CONT [GC]: If a trigger unit is on your GC, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14981
+{
+global.CardName[CardStat] = 'Towards Sunlight! Tiese'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is rode upon by a grade 3 with "Marlean" in its car name, call this card to RC.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Marlean" in its card name, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. (Active on opponent’s turn too)
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Marlean" in its card name, COST [put this unit into your soul, and put a card with "Marlean" in its card name from your drop or bind on the bottom of your deck], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14987
+{
+global.CardName[CardStat] = 'Humming Shiny, Pelfmeina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of the following.
+• Search your deck or drop for up to one Song card, reveal it and pt it into hand, and if you searched the deck, shuffle the deck.
+• If you have a grade 3 or greater vanguard with "Loronerol" in its card name, draw a card.
+
+AUTO [RC]: When this unit attacks, if your order zone has one or more face down cards, this unit gets power +5000 until end of that battle. If your order zone has two or more face down cards, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14988
+{
+global.CardName[CardStat] = 'Slip Happening! Sigl'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one Song card from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [RC/Drop]: If you have a grade 3 or greater vanguard with "Loronerol" in its card name, and you did not bind a card with the same card name as this card this turn, COST [bind this card], choose a Song card from your drop or face down damage zone cards, and put it into the order zone. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14989
+{
+global.CardName[CardStat] = 'Humming Shiny, Pelfmeina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Loronerol" in its card name, choose a face down card from your order zone, and turn it face up.
+
+CONT [RC]: During your turn, if your order zone has a face down card, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14990
+{
+global.CardName[CardStat] = 'Keep the Fire Burning, Faroli'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+CONT [Back Row RC]: During your turn, if four or more of your units were placed this turn, this unit gets "Boost". Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +2000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 14991
+{
+global.CardName[CardStat] = 'Exclusive Deals! Madry'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, Soul Charge 1, and if a trigger unit was Soul Charge, your opponent cannot intercept until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14992
+{
+global.CardName[CardStat] = 'Arms Full of Flowers, Labrys'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [RC]: COST [Put this unit into soul], choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 14993
+{
+global.CardName[CardStat] = 'CozyLazy, Lapis'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [RC]: During your turn, if you Soul Charge this turn, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
