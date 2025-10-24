@@ -7168,7 +7168,7 @@ global.CardText[CardStat] = 'Stoicheia/Human
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top seven cards of your deck, choose a card from among them, discard it, and shuffle the deck. Then, if your drop has one or more blitz orders, until end of turn, this unit gets "Triple Drive", and if your drop has four or more blitz orders, it also gets "CONT [VC]: All of your front row units gets power +5000.".
 
-AUTO [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two instead of one.'
+AUTO [VC]: At the beginning of your battle phase, COST [Counter Blast 1], choose a card from your drop, and call it to RC. If your drop has four or more blitz orders, choose up to two cards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -8408,10 +8408,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13864
 {
-global.CardName[CardStat] = 'Legend of Chaotic Dance, Estacion'
+global.CardName[CardStat] = 'Legend of the Chaotic Dance, Estacion'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
-AUTO: When this unit is rode upon by "Legened of Uprising, Estacion", COST [Soul Blast 1 "Estacion" & reveal a grade 3 card with "Estacion" in its card name from ride deck], and call a Blast token to your back row center RC.'
+AUTO: When this unit is rode upon by "Legened of the Raging Skies, Estacion", COST [Soul Blast 1 "Estacion" & reveal a grade 3 card with "Estacion" in its card name from ride deck], and call a Blast token to your back row center RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 global.AnotherSide[CardStat] = 13865
@@ -8426,10 +8426,10 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13866
 {
-global.CardName[CardStat] = 'Legend of Uprising, Estacion'
+global.CardName[CardStat] = 'Legend of the Raging Skies, Estacion'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
-AUTO [VC]: When this unit is placed by riding from "Legend of Chaotic Dance, Estacion", search your deck for up to one "Vital Blaze - Blast", reveal it and put it into hand, and shuffle the deck.'
+AUTO [VC]: When this unit is placed by riding from "Legend of the Chaotic Dance, Estacion", search your deck for up to one "Vital Blaze Blast", reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -8439,10 +8439,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13867
 {
-global.CardName[CardStat] = 'Legend of Fast Chase, Estacion'
+global.CardName[CardStat] = 'Legend of the Celestial Fury, Estacion'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
-ACT [VC] 1/Turn: If you have a Blast token, when a Plant token would be placed on RC by this effect, put it face up as a plant gauge for your Blast token. COST [Counter Blast 1], call up to one Plant token to RC, look at the top three cards of your deck, choose a card from among them, put it into hand, and shuffle the deck. If you have six or more plant gauges, look at the top five instead of the top three. (You can look at five if the gauge becomes six by this effect)
+ACT [VC] 1/Turn: If you have a Blast token, when a Plant token would be placed on RC by this effect, put it face up as your Blast token’s plant gauge instead. COST [Counter Blast 1], call up to one Plant token to RC, look at the top three cards of your deck, choose a card from among them, put it into hand, and shuffle the deck. If you have six or more plant gauges, look at the top five cards instead of three cards. (You can look at five if the gauge becomes six cards by this effect)
 
 AUTO [VC]: When this unit attacks, COST [discard two plant gauges], search your deck or drop for up to one <Blast>, call it to RC, and if your searched the deck, shuffle the deck.
 
@@ -8460,14 +8460,14 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13868
 {
-global.CardName[CardStat] = 'Vital Blaze - Blast'
+global.CardName[CardStat] = 'Vital Blaze Blast'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Soul Blast 1] if you have a vanguard with "Estacion" in its card name!
 
-Put this card face up as a plant gauge for your Blast token, look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If you did not call a card, call up to one Plant token to RC.
+Put this card face up as your Blast token’s plant gauge, look at the top five cards of your deck, choose up to one unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If you did not call a card, call up to one Plant token to RC.
 
-AUTO: When this card as a plant gauge is discarded during your turn, choose one of your <Blast> units, and it gets power +5000 until end of turn.
+AUTO: When this card is a plant gauge and is discarded during your turn, choose one of your <Blast> units, and it gets power +5000 until end of turn.
 
 (SHIFT + left click to generate a Plant Token)'
 global.UnitGrade[CardStat] = 2
@@ -8483,7 +8483,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13869
 {
-global.CardName[CardStat] = 'Rusdiana of Spring Sun'
+global.CardName[CardStat] = 'Lusdiana of Sunny Spring'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 ACT [RC] 1/Turn: If you have a vanguard with "Estacion" in its card name, COST [Energy Blast 3], and call a Plant token to RC.
@@ -8503,7 +8503,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13870
 {
-global.CardName[CardStat] = 'Ignasio of Summer Heat'
+global.CardName[CardStat] = 'Ignacio of Blazing Summer'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO: When this unit is placed on RC by a card’s ability, if you have three or more plant gauges, choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during the stand phase.
@@ -8518,7 +8518,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13871
 {
-global.CardName[CardStat] = 'Granolind of Autumn Dawn'
+global.CardName[CardStat] = 'Granorindo of Daybreak Autumn'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO [Drop]: When your plant gauge is put during your main phase, if you have a vanguard with "Estacion" in its card name, COST [Counter Blast 1], and call this card to RC.
@@ -8538,12 +8538,12 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 13872
 {
-global.CardName[CardStat] = 'Solitariofrio of Winter Extreme'
+global.CardName[CardStat] = 'Solitario Frio of Absolute Winter'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO: When this unit is placed on RC by a card’s ability, if you have five or more plant gauges, until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects, and gets critical +1.
 
-AUTO [RC/Hand]: At the beginning of the guard step of the battle your unit with "Estacion" in its card name was attacked, COST [put this card into drop], choose one of your units being attacked, and it gets power +10000 until end of that battle. (Used before calling guardians and intercepting)'
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your unit with "Estacion" in its card name was attacked, COST [put this card into drop], choose a unit being attacked, and it gets power +10000 until end of that battle. (Performed before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -8913,7 +8913,7 @@ CardStat = 14068
 global.CardName[CardStat] = 'Jaagra the Fighter'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-AUTO: When this unit is rode upon by "Eikour the Smasher", COST [discard a card from hand & reveal a grade 3 card with "Skyruler" in its card name from the ride deck], search your deck for up to one power 6000 or less grade 1 card without sentinel, call it to RC, and shuffle the deck.'
+AUTO: When this unit is rode upon by "Elkour the Smasher", COST [discard a card from hand & reveal a grade 3 card with "Skyruler" in its card name from the ride deck], search your deck for up to one power 6000 or less grade 1 card without sentinel, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -8938,7 +8938,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14070
 {
-global.CardName[CardStat] = 'Eikour the Smasher'
+global.CardName[CardStat] = 'Elkour the Smasher'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is rode upon by a grade 3 card with "Skyruler" in its card name, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck. Choose a grade 2 or greater unit card from your drop, and put it into hand.'
@@ -9012,7 +9012,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14083
 {
-global.CardName[CardStat] = 'Harmonious Inflow, Roseam'
+global.CardName[CardStat] = 'Harmonious Inflore, Roseum'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO [RC]: At the end of the battle this unit attacked, if this is the fourth battle of this turn or more, COST [Soul Blast 1 & retire this unit], choose one of your rear-guards, and it gets power +10000 until end of turn.'
@@ -9025,7 +9025,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14084
 {
-global.CardName[CardStat] = 'Golden Fruit of Sunlight'
+global.CardName[CardStat] = 'Fruit of Golden Sunshine'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Choose one of your rear-guards, and until end of your opponent’s next turn, it gets "CONT [RC]: Cannot be chosen and cannot be put other than on RC by your opponent’s card effects.".'
@@ -9039,7 +9039,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14085
 {
-global.CardName[CardStat] = 'Flower Garden Pruner, Ludirus'
+global.CardName[CardStat] = 'Flower Garden Pruner, Ludilus'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
 CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -9052,7 +9052,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14101
 {
-global.CardName[CardStat] = 'Rapturous Ladybug'
+global.CardName[CardStat] = 'Rupturan Ladybug'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO [RC]: When you play a Codex order, COST [Energy Blast 2], until end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects, and gets power +5000 / shield +5000.
@@ -9080,7 +9080,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14103
 {
-global.CardName[CardStat] = 'Rappfluffy, Shippy'
+global.CardName[CardStat] = 'Wrap Fluffy, Syppi'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, retire this unit. If you played an order this turn, you may put this unit into soul instead of retiring it. (This effect is mandatory)'
@@ -9094,7 +9094,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14143
 {
-global.CardName[CardStat] = 'Mythiarq, Myachi'
+global.CardName[CardStat] = 'Mythiarq, Myaachi'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
 CONT [Back Row RC]: If you have three or more rear-guards with "Mythiarq" in their card names, this unit cannot be chosen by your opponent’s card effects. (Active on opponent’s turn too)
@@ -9122,7 +9122,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14145
 {
-global.CardName[CardStat] = 'Marine General of Bay Current, Toctis'
+global.CardName[CardStat] = 'Marine General of Bay Currents, Toxotes'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 CONT [RC]: During your turn, if your drop has six or more cards, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +2000.'
@@ -9426,7 +9426,7 @@ CardStat = 14225
 global.CardName[CardStat] = 'Radien Lord, Granfia Julament'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
-AUTO: When this unit is placed by riding from "Lavien Lord, Granfia", activate persona ride, and until end of turn, this unit gets all of the original abilities of that unit. All Plant tokens and Noblesserose tokens on your RC become plant gauges, call a Noblesserose "Rosarossa" token to your back row center RC, and put all of your plant gauges face up on that unit.
+AUTO: When this unit is placed by riding from "Lavien Lord, Granfia", activate persona ride, and until end of turn, this unit gets all of the original abilities of that unit. All Plant tokens and Noblesserose tokens on your RC become plant gauges, call a Noblesserose "Rosarossa" token to your back row center RC, and put all of your plant gauges on that unit face up.
 
 AUTO [VC]: At the end of your turn, choose a "Lavien Lord, Granfia" from your soul, and ride it as rest. If you rode, choose one of your Noblesserose token, and put this card face up as that unit’s plant gauge.
 
@@ -9468,10 +9468,10 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 
 CardStat = 14228
 {
-global.CardName[CardStat] = 'Decisive Action Brave Shooter'
+global.CardName[CardStat] = 'No Hesitation Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO: When this unit is placed on RC, discard the top card of your deck, and if a trigger unit was discarded, choose one of your units, and it gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, discard the top card of your deck, if a trigger unit was discarded, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -9499,7 +9499,7 @@ global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 CONT: If you have a vanguard with "Argo Siren" in its card name or only «Aqua Force» for its clan, this card gets all of the following.
 • AUTO: When this unit is placed on RC, COST [Energy Blast 3 & discard an order card from hand], draw two cards, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
-• AUTO [RC]: When this unit attacks or stand by a card’s effect, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+• AUTO [RC]: When this unit attacks or stand by a card effect, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -9512,7 +9512,7 @@ CardStat = 14235
 global.CardName[CardStat] = 'Argo Siren, Kuresh'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
-AUTO: During your turn, when this card is discarded from hand by the ability of your card, if you have a vanguard with "Argo Siren" in its card name, COST [put a normal unit with a different card name from this card and without sentinel from drop on the bottom of the deck], put this card into soul, choose one of your vanguard’s original AUTO abilities, and perform one of the following.
+AUTO: When this card is discarded from hand by your card’s ability during your turn, if you have a vanguard with "Argo Siren" in its card name, COST [put a normal unit with a different card name from this card and without sentinel from drop on the bottom of the deck], put this card into soul, choose one of your vanguard’s original AUTO abilities, and perform one of the following.
 • Reduce the cost of the chosen ability by Counter Blast 1 until end of turn.
 • Reduce the cost of the chosen ability by Energy Blast 3 until end of turn.
 
@@ -9526,7 +9526,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14259
 {
-global.CardName[CardStat] = 'Comfort Lamina, Petunia'
+global.CardName[CardStat] = 'Comfort Lamina, Pechune'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 CONT [RC/GC]: If your damage zone has four or more cards, this unit gets power +10000 / shield +10000. (Active on opponent’s turn too)'
@@ -9540,7 +9540,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14260
 {
-global.CardName[CardStat] = 'Propanes Pear'
+global.CardName[CardStat] = 'Properness Pear'
 global.CardText[CardStat] = 'Stoicheia/Dryad
 
 AUTO: When this unit is placed on RC, if there is a token unit on your RC, Soul Charge 1.'
@@ -9637,7 +9637,7 @@ CardStat = 14270
 global.CardName[CardStat] = 'One Who Arrived at Paradise, FuriFuri Lettuce'
 global.CardText[CardStat] = 'Stoicheia/Dryad
 
-ACT [RC]: COST [Retire this unit], choosen an "Abloom in Paradise, Cead Mile Failte" from your drop, and it gets "CONT: This card can be played from drop, and when it would be played and put into drop, put it on the bottom of the deck instead." until end of turn.
+ACT [RC]: COST [Retire this unit], choosen an "Abloom in Paradise, Cead Mile Failte" from your drop, and it gets "CONT: This card can be played from drop, and when it is played and put into drop, put it on the bottom of the deck instead." until end of turn.
 
 AUTO [Back Row RC] 1/Turn: When your unit in the same column as this unit stand by a card’s ability, if your World is Stray Garden, stand this unit.'
 global.UnitGrade[CardStat] = 1
@@ -9680,7 +9680,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14293
 {
-global.CardName[CardStat] = 'Tear Knight, Stirno'
+global.CardName[CardStat] = 'Tear Knight, Steno'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Flagburg" in its card name, all of your other units in the same column as this unit get power +5000.'
@@ -9693,7 +9693,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14294
 {
-global.CardName[CardStat] = 'Bluedi Dracokid'
+global.CardName[CardStat] = 'Blue Eddy Dracokid'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 AUTO [Back Row RC]: When your unit attacks, if your vanguard is grade 3 or greater, this unit gets power +3000 until end of turn.'

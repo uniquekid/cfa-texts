@@ -7984,7 +7984,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14037
 {
-global.CardName[CardStat] = 'Barge Marauder'
+global.CardName[CardStat] = 'Bulge Marauder'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Beast
 
 AUTO [RC]: At the end of the battle this unit attacked a grade 3 or greater unit, COST [bind this unit], and Soul Charge 1.'
@@ -7997,7 +7997,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14038
 {
-global.CardName[CardStat] = 'Space-splitting Arm Blade, Aplanart Slitter'
+global.CardName[CardStat] = 'Space-rending Armblade, Aplanat Slitter'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO [RC]: When your other unit attacks, COST [Soul Blast 1], and this unit gets power +5000 until end of turn.'
@@ -8073,9 +8073,8 @@ CardStat = 14061
 global.CardName[CardStat] = 'Super Dimensional Robo, Daikaiser  '
 global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
-ACT [VC]: D-Legion "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
-AUTO [VC] 1/Turn: When this unit attacks, if you did not boost during this battle, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO [VC]: At the beginning of the drive step, choose one of your opponent’s guardians other than over trigger, and retire it.". Then, If your bind zone does not have a "Dimensional Robo, Corekaiser", COST [bind a "Dimensional Robo, Corekaiser" from soul], and this unit gets "AUTO [VC]: When your opponent’s unit is retired from GC by this unit’s ability, nullify all of that unit’s ability with "cannot be hit".".
-(Corekaiser bind happens before guarding. You retire a guardian after all cards have been called to GC. No more guardians can be called after.)'
+ACT [VC]: D-Legion "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may choose up to two trigger units other than "HEAL" and ver trigger, and cards other than trigger units for a total of four cards from drop once, return them to the deck, search the deck for the specified card, D-legion, and those cards lose their persona ride icons while they are D-Legion)
+AUTO VC 1/Turn: When this unit attacks, if you did not boost this battle, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO VC: At the beginning of your drive step, choose one of your opponent’s guardians other than over trigger, and retire it.", if your bind zone does not have a "Dimensional Robo, Corekaiser", COST [bind a "Dimensional Robo, Corekaiser" from soul], and it gets "AUTO VC: When your opponent’s unit is retired from GC by this unit’s ability, all of that unit’s effects with "cannot be hit" are nullified.". (Corekaiser bind happens before guarding. You retire a guardian after all cards have been called to GC. No more guardians can be called after.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 6
@@ -8146,9 +8145,9 @@ global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, and you did not ride this turn, COST [Soul Blast 1 & bind this card], search your deck for up to one card with "Daikaiser" in its card name, ride it as stand, and shuffle your deck.
 
-CONT [RC]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, this unit gets power +5000, and if your order zone has three or more Bases, it gets power +10000 instead of +5000.
+CONT [RC]: If you have a grade 3 or greater vanguard with "Daikaiser" in its card name, this unit gets power +5000, and if your order zone has three or more Bases, it gets power +10000 instead of +5000. (Active on opponent’s turn too)
 
-AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Dimensional Robo" in its card name is attacked, COST [put this card into drop], choose one of your units being attacked, and it gets power +10000 until end of that battle. (Can only be used before calling guardians and intercepting)'
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Dimensional Robo" in its card name is attacked, COST [put this card into drop], choose one of your units being attacked, and it gets power +10000 until end of that battle. (Perfromed before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 6
@@ -8160,7 +8159,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14075
 {
-global.CardName[CardStat] = 'Micro-tech Laboratory'
+global.CardName[CardStat] = 'Microtech Laboratory'
 global.CardText[CardStat] = 'Brandt Gate/Normal Order
 
 Play this with COST [Soul Blast 1] !
@@ -8176,7 +8175,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14076
 {
-global.CardName[CardStat] = 'Releasor of Magnetic Flux'
+global.CardName[CardStat] = 'Magnetic Flux Emitter'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
 CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -8586,7 +8585,7 @@ CardStat = 14134
 global.CardName[CardStat] = 'SuPPLY 9-U'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [RC] 1/Turn: When your other unit in the same column as this unit attacks, if your card was attached by your vanguard’s ability this turn, you may have this unit get power +10000 until end of that battle. If you do, at the end of this turn, retire this unit.
+AUTO [RC] 1/Turn: When your other unit in the same column as this unit attacks, if your card attached by your vanguard’s ability this turn, you may have this unit get power +10000 until end of that battle. If you do, at the end of this turn, retire this unit.
 
 AUTO [Drop]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, COST [Energy Blast 3], call this card to RC, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -8601,7 +8600,7 @@ CardStat = 14135
 global.CardName[CardStat] = 'Disher Rockhopper'
 global.CardText[CardStat] = 'Brandt Gate/High Beast
 
-AUTO [RC] 1/Turn: When the set order you played from your hand is put into the order zone, look at the top three cards of your deck, choose up to one set order with the same card name as cards in your order zone, reveal it and put it into hand, and shuffle the deck.'
+AUTO [RC] 1/Turn: When the set order you played from your hand is put into the order zone, look at the top three cards of your deck, choose up to one set order with the same card name as a card in your order zone, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8625,7 +8624,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14147
 {
-global.CardName[CardStat] = 'Rounder Almiruna'
+global.CardName[CardStat] = 'Rounde Alumiluna'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [RC]: When you play a blitz order, COST [Energy Blast 2], move this unit to GC, and this unit gets shield +5000 until end of that battle.' 
@@ -8652,7 +8651,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14157
 {
-global.CardName[CardStat] = 'Spotless Cleaner, Regelia'
+global.CardName[CardStat] = 'Spatless Cleaner, Regelia'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [Drop]: When a set order you played from hand is put into the order zone, COST [Counter Blast 1], and call this card to RC.
@@ -8764,7 +8763,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14187
 {
-global.CardName[CardStat] = 'Blue Deathster, Noshime Occasion'
+global.CardName[CardStat] = 'Blue Deathster, Nochim Occasion'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 ACT [Drop]: If your card was not put into your order zone by your card’s ability this turn, COST [bind this card] choose a Strategy card from your hand or drop, and put it into the order zone. If you put a card from hand, draw a card.'
@@ -8777,7 +8776,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14188
 {
-global.CardName[CardStat] = 'Blue Deathster, Maisy Distance'
+global.CardName[CardStat] = 'Blue Deathster, Macy Distance'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Blue Deathster" in its card name, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one Strategy card or up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
@@ -8805,7 +8804,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14224
 {
-global.CardName[CardStat] = 'Pouncing Alnarbia'
+global.CardName[CardStat] = 'Pouncing Arnabya'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
 CONT [RC/GC]: If your damage zone has four or more cards, this unit gets power +10000 / shield +10000. (Active on opponent’s turn too)'
@@ -8819,10 +8818,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14246
 {
-global.CardName[CardStat] = 'Bearer of Equalizing Pressure'
+global.CardName[CardStat] = 'Pressure Balance Holder'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
-CONT [RC]: During your turn, if five or more of your opponent’s cards are imprisoned in your Prison, all of your other rear-guards in the same column as this unit get power +5000.'
+CONT [RC]: During your turn, if five or more of your opponent’s cards are imprisoned in your prison, all of your other rear-guards in the same column as this unit get power +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8861,7 +8860,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14264
 {
-global.CardName[CardStat] = 'The Third Mythisch, "Heljasstvinr" Helgvarrs'
+global.CardName[CardStat] = 'The Third Mythisch, "Heljasstvinr" Helgvarr'
 global.CardText[CardStat] = 'Brandt Gate/Mythisch
 
 AUTO: When this unit is placed on RC other than during the battle phase, choose a grade 3 card with "Veissrugr" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Veissrugr" in its card name, perform one of the following, and shuffle the deck.
@@ -8878,12 +8877,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14279
 {
-global.CardName[CardStat] = 'Gravidia Burwell'
+global.CardName[CardStat] = 'Gravidia Barwell'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on RC during your main phase, choose a grade 3 card with "Nordlinger" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Nordlinger" in its card name, search your deck for up to one grade 2 or greater order card without Regalis Piece, discard it, and shuffle the deck.
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Nordlinger" in its card name, COST [Soul Blast 1], choose one of the boosted rear-guards, and return it to your hand.'
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Nordlinger" in its card name, COST [Soul Blast 1], choose one of the boosted rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8893,7 +8892,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14280
 {
-global.CardName[CardStat] = 'Technomech Faral'
+global.CardName[CardStat] = 'Technomech Ferral'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO: When this unit is retired from RC during your battle phase, if two or more of your set orders were put into drop from order zone this turn, COST [Energy Blast 3], choose one of your back row-rear-guards, stand it, and that unit cannot attack until end of turn.'
@@ -8906,10 +8905,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14295
 {
-global.CardName[CardStat] = 'Schonheit Rotovisor'
+global.CardName[CardStat] = 'Schenheit Rotovisor'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-CONT: If you have a grade 3 or greater vanguard with "Rotovisor" in its card name, this card gets all of the following, and gets grade +1.
+CONT: If you have a grade 3 or greater vanguard with "Rotovisor" in its card name, this card gets all of the following, and grade +1.
 • AUTO: When this unit is placed on RC, choose one of your opponent’s RC, until end of turn, when this unit would attack a vanguard, it battles your opponent’s vanguard and all of the units of the chosen RC. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 • CONT [RC]: All of your units with "Rotovisor" in their card names in the same column as this unit get "Boost".'
 global.UnitGrade[CardStat] = 2
@@ -8921,7 +8920,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14310
 {
-global.CardName[CardStat] = 'Motivating Arranger'
+global.CardName[CardStat] = 'Modifying Arranger'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [Back Row RC] 1/turn: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
@@ -8947,7 +8946,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14480
 {
-global.CardName[CardStat] = 'Cardinal Noid, Exesim'
+global.CardName[CardStat] = 'Cardinal Noid, Excessivm'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO [Drop]: When your unit is retired from RC during your battle phase, if you have a grade 3 or greater vanguard with "Orfist" in its card name, COST [Energy Blast 2 & bind this card], choose one of the retired cards, and put it into your hand.'
@@ -8960,7 +8959,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14481
 {
-global.CardName[CardStat] = 'Palm Bright of the White Shadow, Anomafliper'
+global.CardName[CardStat] = 'Palm Light of the White Shadow, Anomaflybar'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO: When this unit is placed on RC or put on GC, COST [retire a Shadow Army token], and this unit gets power +10000 / shield +10000 until end of turn.'
@@ -8987,7 +8986,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14483
 {
-global.CardName[CardStat] = 'Viador Heyday'
+global.CardName[CardStat] = 'Veardol Heady'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT: If your order zone has a "SYSTEM CODE: X-ceed", this card gets all of the following.
@@ -9002,7 +9001,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14484
 {
-global.CardName[CardStat] = 'Magnetic Force Monster, Magnides'
+global.CardName[CardStat] = 'Magnetism Monster, Magnides'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on RC other than by a unit card’s ability, if you played a set order this turn, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, reveal it, call it to RC if it is a unit card, and put it into hand if it is a set order. Shuffle the deck.
@@ -9017,7 +9016,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14497
 {
-global.CardName[CardStat] = 'Decay Monster, Bad Molder'
+global.CardName[CardStat] = 'Depravity Monster, Badmolder'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When this unit attacks a vanguard, if your order zone has three or more set orders, COST [Energy Blast 3], choose one of your opponent’s front row rear-guards in the same column as this unit, until end of your opponent’s next turn, that unit cannot intercept, and it cannot stand during the stand phase.'
@@ -9031,7 +9030,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14498
 {
-global.CardName[CardStat] = 'Mucous Monster, Nebajuwar'
+global.CardName[CardStat] = 'Biofluid Monster, Nebajuwal'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Monster" in its card name, Soul Charge 1.'
