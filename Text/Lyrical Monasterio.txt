@@ -6052,7 +6052,7 @@ CardStat = 12114
 {
 global.CardName[CardStat] = 'Gorgon Eyes, Siana'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
- 
+
 CONT [VC]: If your opponent’s GC and front row RC have a total of two or less units, this unit gets critical +1 / drive +1.
 
 AUTO [VC]: When this unit is attacked, COST [put a trigger unit from hand into soul], and this unit gets power +15000 until end of that battle.
@@ -6061,6 +6061,7 @@ AUTO [VC]: At the end of the battle this unit was attacked by a rear-guard, if n
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Siana'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11534,4 +11535,174 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15006
+{
+global.CardName[CardStat] = 'Overnight Confetti, Doris'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1 card with "Feltyrosa" in its card name], look at the top five cards of your deck, choose up to one card with "Feltyrosa" in its card name, reveal it and put it into your hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul. At the end of that battle, put this unit on the bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15007
+{
+global.CardName[CardStat] = 'Sweet and Delightful Arabesque, Agate'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, this unit gets power +5000 until end of turn.
+
+AUTO [Back Row RC] 1/Turn: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, COST [put another rear-guard in the same column as this unit on the bottom of your deck], stand this unit, and if your soul has a grade 3 card with "Feltyrosa" in its card name, then COST [Energy Blast 3], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15008
+{
+global.CardName[CardStat] = 'Gospel of the Frozen Night, Haidemary'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+CONT: If you have a vanguard with "Feltyrosa" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC during your main phase, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets "AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, put this unit on the bottom of your deck." until end of turn.
+• CONT [Drop]: If your vanguard is grade 3 or greater, trigger units revealed for your drive check get "If you do not have a "Gospel of the Frozen Night, Haidemary" on RC, choose a "Gospel of the Frzone Night, Haidemary" from your drop, and call it to an open RC." as an additional trigger effect. (You may resolve trigger effects in any order)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15009
+{
+global.CardName[CardStat] = 'Gorgon Gift, Siana'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+DressUp - "Gorgon Eyes, Siana" (During this fight, this card is also regarded as the specified card)
+
+AUTO: When this unit is placed by riding from "Gorgon Eyes, Siana", look at the top five cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a normal unit without Sentinel, or put it into hand if it is a blitz order. Shuffle the deck.
+
+CONT [VC]: If your opponent’s GC and front row RC have a total of two or less units, this unit gets critical +1 / drive +1.
+
+AUTO [VC]: At the end of your turn, choose a card from your soul with "Gorgon Eyes, Siana" as its original card name, and ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Siana'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15010
+{
+global.CardName[CardStat] = 'Build a SnowMan, Firo'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+ACT [Drop]: If you do not have a rear-guard with the same card name as this card and your opponent has no front row rear-guards, COST [Energy Blast 3], call this card to RC, and it gets power +2000 until end of turn.
+
+ACT [RC]: If your vanguard’s original card name is "Gorgon Eyes, Siana", COST [put this unit into soul], search your deck for up to one "Gorgon Gift, Siana", ride it as stand, and shuffle the deck. If you rode by this effect, and you did not persona ride this turn, activate persona ride.
+
+(SHIFT + left click to activate persona ride)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.PersonaRideAct[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15011
+{
+global.CardName[CardStat] = 'Maybe It’s Embarassed? Arahail'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+ 
+AUTO [RC]: When this unit is put on RC or GC from deck or hand, choose up to one unit card with "Siana" in its card name from your drop, and put it on the bottom of the deck or into soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15012
+{
+global.CardName[CardStat] = 'Breath Melting Into White, Raylin'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+ 
+AUTO: When this unit is placed on RC, choose up to one of your opponent’s front row rear-guards, and return it to hand. If you did not choose a card, you may Soul Charge 1.
+
+AUTO [RC]: When your vanguard with "Siana" in its card name attacks, if your opponent’s front row has not rear-guards, COST [put this unit into soul], draw a card, and if you persona rode this turn and your unit did not stand during the battle phase, choose one of your rear-guards, and stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15013
+{
+global.CardName[CardStat] = 'Stille Nacht'
+global.CardText[CardStat] = 'Lyrical Monasterio/Blitz Order
+ 
+Perform one of the following.
+• Choose  aunit being attacked, and it gets power +10000 until end of that battle. If your opponent’s attacking unit is a rear-guard, it gets power +20000 instead of power +10000.
+• If an attack hit your vanguard this turn, choose a unit being attacked, and it gets power +30000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15014
+{
+global.CardName[CardStat] = 'Light in the Sea, Laterna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+CONT [RC/GC]: If your vanguard is a <Mermaid>, this unit gets shield +5000. Then, if your vanguard is grade 3 or greater, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [RC]: When this unit attacks or boosts, choose a grade 3 card with "Kairi" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Kairi" in its card name, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15015
+{
+global.CardName[CardStat] = 'Refined Sense, Leafa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Kairi" in its card name, this unit gets power +5000 until end of turn. If this unit was placed by the ability of your vanguard with "Kairi" in its card name, it also gets "AUTO [RC]: At the end of your turn, you may return this unit to hand." until end of of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15016
+{
+global.CardName[CardStat] = 'Feeling the Mid-Winter Depths, Fururu'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Kairi" in its card name, Energy Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
