@@ -11292,7 +11292,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
 AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one Song card from among them, reveal it and put it into hand, and shuffle the deck.
 
-ACT [RC/Drop]: If you have a grade 3 or greater vanguard with "Loronerol" in its card name, and you did not bind a card with the same card name as this card this turn, COST [bind this card], choose a Song card from your drop or face down damage zone cards, and put it into the order zone. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+ACT [RC/Drop]: If you have a grade 3 or greater vanguard with "Loronerol" in its card name, and you did not bind a card with the same card name as this card this turn, COST [bind this card], choose a Song card from your drop or face up damage zone cards, and put it into the order zone. If you put a card from damage zone, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -11894,14 +11894,166 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Succubus
 
 Dressup - "LeVre<3SoeurS, Charmout" (During this fight, this card is also regarded as having the same card name as the specified card)
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose grade 2 or less cards with "LeVre<3SoeurS" in their card names from soul or drop up to your vanguard’s grade, call them to RC, and this unit gets power +5000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose grade 2 or less cards with "LeVre<3SoeurS" in their card names from soul or drop up to your opponent’s vanguard’s grade, call them to RC, and this unit gets power +5000 until end of turn.
 
 AUTO [VC]: When this unit attacks while not boosted, choose three of your grade 2 or less rear-guards with "LeVre<3SoeurS" in their different card names, and until end of turn, increase or decrease their power to match the power of this unit. If this unit’s power is 33000 or greater, and your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 2], until end of turn, the rear-guard in the back row center column that is chosen by this ability can attack from the back row, performs drive checks, and if you persona rode this turn, COST [discard a card from hand], and it gets drive +1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Charmout'
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.EnableAttackFromBackRow[CardStat] = 1
+
+
+CardStat = 15031
+{
+global.CardName[CardStat] = 'Plushie Create! Clarety'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this unit is put on GC from hand, COST [discard an order card from hand], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15032
+{
+global.CardName[CardStat] = 'Cool Sculpture, Ulvrika'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose one of your opponent’s front row rear-guards, and move it to an open RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15033
+{
+global.CardName[CardStat] = 'Weaving Is Fun, Calarina'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+CONT [GC]: If your GC has two or more units and no other grade 2 units, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15034
+{
+global.CardName[CardStat] = 'Costume Idol, Alk '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+
+CONT [VC]: During your turn,if your opponent’s vanguard is grade 3 or greater and you have a card with the same name as this card in your soul, all of your front row units get power +5000. If your damage zone has four or more cards, all of your front row units get power +5000.
+AUTO [VC]: At the end of the battle this unit attacked, if this unit was not placed this battle phase, COST [Counter Blast 1], choose up to one card with the same card name as this unit from your hand, ride it as stand, and it gets drive -1 until end of turn.
+AUTO [VC] 1/Turn: When this unit attacks, if this unit was placed this battle, choose one of your rear-guards, return it to your hand, choose up to one card from your hand, call it to RC, and at the end of that turn, choose up to one card with the same card name as this unit from your soul, and put it to hand.
+(SHIFT + left click to activate persona ride or give the front row +10000 power continuously)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRideAct[CardStat] = 1
+//global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15035
+{
+global.CardName[CardStat] = 'Exploring New Frontiers, Sereia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+CONT [RC]: If your vanguard was placed by your card’s ability this turn, this unit gets power +5000.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you persona rode this turn, COST [Counter Blast 1 and retire this unit], choose a card with "Alk" in its card name from your soul or drop, and put it to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15036
+{
+global.CardName[CardStat] = 'Craft Wreath, Kurorone'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+CONT [RC/GC]: If your vanguard is a <Mermaid>, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Alk" in its card name and you did not bind a card with the same card name as this card this turn, COST [bind this card], look at the top seven cards of your deck, choose up to one grade 3 or greater card with "Alk" in its card name, reveal it and put it to hand, and shuffle the deck. If you did not reveal a card, Soul Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15037
+{
+global.CardName[CardStat] = 'Ring my Bell, Croshe'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is placed on RC by the ability of your grade 3 or greater vanguard with "Alk" in its card name, this unit gets power +10000 until end of turn. COST [Energy Blast 3], choose one of your other rear-guards in the same column as this unit, return it to your hand, choose a card from your hand, and call it to an open RC in the same column as this unit.
+
+AUTO [RC]: When this unit attacks, choose a grade 3 card with "Alk" in its card name from your ride deck, and you may reveal it. If you revealed a card or you have a grade 3 or greater vanguard with "Alk" in its card name, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15038
+{
+global.CardName[CardStat] = 'Prism on the Water, Myrtoa  '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+
+CONT: If your G zone has no cards, this card gets all of the following.
+• AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with a clan icon from your ride deck, and you may reveal it. If you revealed a card or you have a grade 3 or greater vanguard with a clan icon, COST [Soul Blast 1 or Energy Blast 3], and draw a card.
+• ACT [Drop]: If you have a grade 3 or greater unit with a clan icon, COST [remove two cards with the same card name as this card from your drop], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 13
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15039
+{
+global.CardName[CardStat] = 'Pile-Up Memories, Rokita'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is placed on RC during your main phase, choose a grade 3 card with "PR<3ISM" in its card name from your ride deck, and you may reveal it. If you revealed a card or you have a grade 3 or greater vangiard with "PR<3ISM" in its card name, this unit gets "Boost". If your opponent’s vanguard is grade 3 or greater, it also gets power +5000.
+
+AUTO [RC]: When your unit with "PR<3ISM" in its card name is placed in the same column as this unit, you may stand this unit. If you do, at the end of that turn, put this unit into soul, choose one of your rear-guards with "PR<3ISM" in its card name, and return it to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15040
+{
+global.CardName[CardStat] = 'Quick Whip, Remues'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "PR<3ISM" in its card name, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
