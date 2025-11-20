@@ -9283,7 +9283,7 @@ CardStat = 14028
 global.CardName[CardStat] = 'Nebula Knight of Guidance, Serius'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed by riding from "Nebula Knight of Inheritance, Serius", COST [reveal a grade 3 card with "Nebula Knight" in its card name from ride deck], search your deck for up to one "Nebula Knight of Yearning, Coreanis", call it to RC, and shuffle the deck.'
+AUTO: When this unit is placed by riding from "Nebula Knight of Inheritance, Serius", COST [reveal a grade 3 card with "Nebula Knight" in its card name from ride deck], search your deck for up to one "Nebula Knight of Yearning, Corleanis", call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9357,7 +9357,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14033
 {
-global.CardName[CardStat] = 'Nebula Knight of Yearning, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Yearning, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: When this unit boosts a grade 3 or greater unit with "Nebula Knight" in its card name, this unit gets power +2000 until end of that battle, COST [discard a card from hand], reveal the top card of your deck, if it is a trigger unit, choose one of your opponent’s front row rear-guards in the same column as this unit, and retire it. Put the revealed card on the top or bottom of the deck.'
@@ -9370,10 +9370,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14034
 {
-global.CardName[CardStat] = 'Nebula Knight of Piercing End, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Piercing End, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC with a grade 1 unit with "Coreanis" in its card name, if your opponent’s vanguard is grade 2 or greater, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Coreanis" in its card name, call it to the RC this unit is on, and shuffle the deck.
+AUTO: When this unit is placed on RC with a grade 1 unit with "Corleanis" in its card name, if your opponent’s vanguard is grade 2 or greater, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Corleanis" in its card name, call it to the RC this unit is on, and shuffle the deck.
 
 CONT [RC]: If you have a vanguard with "Nebula Knight" in its card name, this unit cannot be retired by your opponent’s card effects.'
 global.UnitGrade[CardStat] = 2
@@ -9385,10 +9385,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14035
 {
-global.CardName[CardStat] = 'Nebula Knight of Heroism, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Heroism, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC with a grade 2 unit with "Coreanis" in its card name, choose up to one grade 1 card with "Coreanis" in its card name from your drop, call it to a back row RC, and if your vanguard is grade 3 or greater, COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into hand, and put the rest on the top or bottom of the deck.
+AUTO: When this unit is placed on RC with a grade 2 unit with "Corleanis" in its card name, choose up to one grade 1 card with "Corleanis" in its card name from your drop, call it to a back row RC, and if your vanguard is grade 3 or greater, COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into hand, and put the rest on the top or bottom of the deck.
 
 AUTO [RC]: When this unit attacks, if you have a vanguard with "Nebula Knight" in its card name, this unit gets power +5000 until end of turn.
 
@@ -11393,6 +11393,48 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If you have a grade 3 or greater vanguard, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1.
 
 AUTO [Front Row RC]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, if you do not have another rear-guard with the same card name as this unit, this unit gets "CONT [RC]: This unin gets the trigger effects that your vanguard gets." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15058
+{
+global.CardName[CardStat] = 'Devotion Cadet, Madimiel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT [GC]: This unit gets shield +5000 for every two cards in your damage zone.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15067
+{
+global.CardName[CardStat] = 'Water Slash Nebula Knight, Kanacus'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC/Drop]: When your grade 3 or greater rear-guard with "Corleanis" in its card name is retired during your end phase, COST [bind two cards with the same card name as this card from RC or drop], and Counter Charge 1.
+
+CONT [GC]: If you have a vanguard with "Nebula Knight" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15068
+{
+global.CardName[CardStat] = 'Willow-Piercing Nebula Knight, Picky'
+global.CardText[CardStat] = 'Keter Sanctuary/Huuman
+
+AUTO: When this unit is placed on RC during your main phase, choose a grade 3 card with "Nebula Knight" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Nebula Knight" in its card name, COST [Energy Blast 3], and draw a card. If your opponent’s vanguard is grade 2 or greater, until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks, look at the top card of your deck, and put it on the top or bottom of the deck.", and power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
