@@ -988,10 +988,15 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT: Sentinel (You may only have up to four cards with "Sentinel" in a deck.)
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Bermuda Triangle» to GC at rest from among them, and put the rest into your drop zone.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a «Bermuda Triangle» vanguard, you may pay the cost. If you do, reveal five cards from the top of your deck. Call all «Bermuda Triangle» to GC at rest from among them, and put the rest into your drop zone.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 5
 }
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 1965
@@ -1919,9 +1924,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT [VC]: During your turn, this unit gets power +5000 for each face up "School Etoile, Olyvia" in your G zone.
 
-AUTO [VC]: When your "School Etoile, Olyvia" Stride during your turn, reveal seven cards from the top of your deck, and if the cards revealed with this effect have different card names, choose two cards from among them, call them to separate RC, choose a card from your hand, and put it into your soul. Shuffle your deck.'
+AUTO [VC]: When your "School Etoile, Olyvia" Stride during your turn, reveal seven cards from the top of your deck, and if the cards revealed with this effect have different card names, choose two cards from among them, call them to separate RC, choose a card from your hand, and put it into your soul. Shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 11000
 
@@ -2389,6 +2397,7 @@ global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 3914
@@ -2412,9 +2421,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: When this unit is placed on VC or RC, reveal five cards from the top of your deck, search for up to one grade 2 or less card with "Coral" in its card name, put it into your hand, and shuffle your deck. If you do, choose a card from your hand, and put it into your soul.
 
-ACT [Soul]: [Choose a grade 2 or greater card from your hand, and put it into your soul] If you have a grade 3 or greater vanguard with "Coral" in its card name, put this card into your hand, call this card to RC, choose one of your other units, and it gets power +2000 until end of turn.'
+ACT [Soul]: [Choose a grade 2 or greater card from your hand, and put it into your soul] If you have a grade 3 or greater vanguard with "Coral" in its card name, put this card into your hand, call this card to RC, choose one of your other units, and it gets power +2000 until end of turn.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 7000
 
@@ -3206,9 +3218,12 @@ CardStat = 4952
 global.CardName[CardStat] = 'Applause Flower, Palche'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC/RC]: [Choose one of your rear-guards with "Riviere" in its card name, and return it to your hand] When this unit’s attack hits a vanguard, you may pay the cost. If you do, reveal four cards from the top of your deck, put up to one card with "Riviere" in its card name into your hand from among them, put the rest into your drop zone, if you put a card into your hand, choose a card from your hand, and put it into your soul.'
+AUTO [VC/RC]: [Choose one of your rear-guards with "Riviere" in its card name, and return it to your hand] When this unit’s attack hits a vanguard, you may pay the cost. If you do, reveal four cards from the top of your deck, put up to one card with "Riviere" in its card name into your hand from among them, put the rest into your drop zone, if you put a card into your hand, choose a card from your hand, and put it into your soul.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 4
 }
 global.PowerStat[CardStat] = 9000
 
@@ -3324,9 +3339,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: Forerunner.
 
-AUTO: [Counter Blast 1] When this unit is returned to your hand from RC, you may pay the cost. If you do, reveal seven cards from the top of your deck, put up to three cards with "Pacifica" in their different card names from among them into your hand, and shuffle your deck. (You may put it into your hand even if there is only one card.)'
+AUTO: [Counter Blast 1] When this unit is returned to your hand from RC, you may pay the cost. If you do, reveal seven cards from the top of your deck, put up to three cards with "Pacifica" in their different card names from among them into your hand, and shuffle your deck. (You may put it into your hand even if there is only one card.)
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 5000
 
@@ -3963,9 +3981,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 AUTO: Forerunner.
 
-AUTO [RC]: When an attack hits a vanguard during the battle that this unit boosted, choose one of your rear-guards with "Duo" in its card name, and you may return it to your hand. If you do, reveal seven cards from the top of your deck, choose any number of cards with the same card name as the returned card from among them, put them into your hand, and shuffle your deck.'
+AUTO [RC]: When an attack hits a vanguard during the battle that this unit boosted, choose one of your rear-guards with "Duo" in its card name, and you may return it to your hand. If you do, reveal seven cards from the top of your deck, choose any number of cards with the same card name as the returned card from among them, put them into your hand, and shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 5000
 
@@ -4134,11 +4155,13 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Reveal five cards from the top of your deck, put up to two grade 3 cards or cards with "Shizuku" in their card names from among them into your hand, and shuffle your deck. Reveal up to five cards with "Shizuku" in their card names from your hand, this unit gets power +5000 for each of those cards, and your opponent cannot call cards from hand to GC with the same grades as the cards revealed with this effect during the battle that this unit attacked.'
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Reveal five cards from the top of your deck, put up to two grade 3 cards or cards with "Shizuku" in their card names from among them into your hand, and shuffle your deck. Reveal up to five cards with "Shizuku" in their card names from your hand, this unit gets power +5000 for each of those cards, and your opponent cannot call cards from hand to GC with the same grades as the cards revealed with this effect during the battle that this unit attacked.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
- 
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 15000
 
@@ -4308,9 +4331,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT [VC/RC]: If the number of your other rear-guards with "Chouchou" in their card names is one or less, this unit cannot attack.
 
-AUTO [RC] 1/Turn: [Counter Blast 1] When your other rear-guard is put into your deck, you may pay the cost. If you do, reveal five cards from the top of your deck, and if all of those cards have "Chouchou" in their card names, call up to one card from among them to RC. Shuffle your deck.'
+AUTO [RC] 1/Turn: [Counter Blast 1] When your other rear-guard is put into your deck, you may pay the cost. If you do, reveal five cards from the top of your deck, and if all of those cards have "Chouchou" in their card names, call up to one card from among them to RC. Shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 
@@ -4976,9 +5002,12 @@ CardStat = 6573
 global.CardName[CardStat] = 'Diva of Atlantea, Iryna'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, at the end of the first battle of this turn, stand this unit. Shuffle your deck.'
+AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, at the end of the first battle of this turn, stand this unit. Shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 10
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 14000
@@ -5013,9 +5042,12 @@ CardStat = 6576
 global.CardName[CardStat] = 'Unparalleled Ingenuity, Loura'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, call any number of the revealed cards to RC, and they get power +10000 until end of turn. Shuffle your deck.'
+AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, call any number of the revealed cards to RC, and they get power +10000 until end of turn. Shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 10
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 14000
@@ -6002,10 +6034,13 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 Stride.
 
-AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of them have different card names, call up to five face down <Mermaid> cards with power and different card names from your G zone to RC, and until end of turn, they get power +15000, and can attack from the back row. Shuffle your deck. (At the end of the turn, put all G units on RC into the G zone face up. They are put into the G zone face up if turned face down or leave the RC.)'
+AUTO [VC]: When placed, reveal ten cards from the top of your deck, and if all of them have different card names, call up to five face down <Mermaid> cards with power and different card names from your G zone to RC, and until end of turn, they get power +15000, and can attack from the back row. Shuffle your deck. (At the end of the turn, put all G units on RC into the G zone face up. They are put into the G zone face up if turned face down or leave the RC.)
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 13
 global.ExtraDeck[CardStat] = 1
+global.RevealTopX[CardStat] = 10
 }
 global.PowerStat[CardStat] = 15000
 global.EnableAttackFromBackRow[CardStat] = 1
@@ -6470,9 +6505,12 @@ global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
 CONT [Deck]: When would be revealed by a card’s effect, it is regarded as a trigger unit instead of a normal unit.
 
-AUTO [VC]: At the end of the battle it attacked, COST [discard two cards from your hand], reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, ride up to one of those revealed cards not named "Velvet Voice, Raindear" as stand, shuffle your deck, and that unit gets drive -1 until end of turn. At the end of this turn, put that unit on the bottom of your deck, and ride a grade 3 card from your soul as rest.'
+AUTO [VC]: At the end of the battle it attacked, COST [discard two cards from your hand], reveal ten cards from the top of your deck, and if all of the normal units revealed have different card names, ride up to one of those revealed cards not named "Velvet Voice, Raindear" as stand, shuffle your deck, and that unit gets drive -1 until end of turn. At the end of this turn, put that unit on the bottom of your deck, and ride a grade 3 card from your soul as rest.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 10
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -6484,9 +6522,12 @@ CardStat = 8111
 global.CardName[CardStat] = 'Captivating Originality, Gerlinde'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC]: When placed, reveal seven cards from the top of your deck, and if all of the normal units revealed have different card names, call up to two of the revealed cards to RC, and shuffle your deck.'
+AUTO [VC]: When placed, reveal seven cards from the top of your deck, and if all of the normal units revealed have different card names, call up to two of the revealed cards to RC, and shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 7
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -6716,9 +6757,12 @@ CardStat = 8130
 global.CardName[CardStat] = 'Popple Empathy, Bettie'
 global.CardText[CardStat] = 'Bermuda Triangle/Mermaid
 
-AUTO [VC/RC]: When placed, reveal seven cards from the top of your deck, and if all of the normal units revealed have different card names, put up to one card from your hand on the bottom of your deck. If you put a card, put up to one of the revealed cards into your hand. Shuffle your deck.'
+AUTO [VC/RC]: When placed, reveal seven cards from the top of your deck, and if all of the normal units revealed have different card names, put up to one card from your hand on the bottom of your deck. If you put a card, put up to one of the revealed cards into your hand. Shuffle your deck.
+
+(SHIFT + Left Click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 13
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
