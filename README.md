@@ -481,6 +481,29 @@ At the moment, this condition is used to automate skills that:
 - increase Persona Ride's power increase
 - apply the Persona Ride buff to the back row
 
+### :running: Move all cards in a zone
+
+```
+global.MoveAll[CardStat] = 'Bind/Hand/Drop/OriginalDress'
+````
+
+SHIFT + left clicking cards with this parametre will move all cards in a zone to a different zone, as follows:
+- `Bind` will move all cards from Bind to Drop
+- `Hand` will ask to move all cards in hand to Bind or Drop
+- `Drop` will ask to move all cards in drop to Soul or shuffle them into Deck
+
+Placing a card as OverDress with this parametre will move all cards, as follows:
+- `OriginalDress` will move all cards in drop to the OriginalDress of the card currently being placed as overDress / X-Overdress
+
+### :sparkle: :x: Reveal cards from top deck
+
+```
+global.RevealTopX[CardStat] = <number>
+```
+
+Cards with this parametre will reveal cards from the top of the deck equal to `<number` when SHIFT + left clicking.
+In addition, selecting the Top Deck or Bottom Deck buttons for any of the revealed cards will move all cards in the guardian circle back to the deck.
+
 ### :information_source: Card-specific effects
 
 ```
