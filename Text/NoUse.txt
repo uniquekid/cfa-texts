@@ -1,17 +1,31 @@
 n = x
 
-global.AllCard = 15045
+global.AllCard = 15075
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Adjusted the deck preview for enlarged image sizes.
-- Vairina Ars skill automated.
-- Rewrite text icon.
-
+- Clarified the starting message for swapping Deck Editor Card Image Size.
+- Deck Editor overhaul: Swapped to a page system. You can swap between pages using the arrows on screen or the <- and -> keys on your keyboard.
+- Drag&Drop feature implemented for Deck Files. You can swap decks by dragging the file into CFA while in any room except the Fight Arena.
+- Automated Persona Ride back row buffs + Thegrea Order Power increase.
+- Automated effects that reveal from top deck to then also move all leftover cards back to deck.
+- Automated effects that move all cards in a zone, such as Dreaming Dragon, Sleeve-Tugging Belle or V Nanni.
+- The OriginalDress removal pop-up will now only appear once when moving the stack to an illegal zone.
+- Automated effect of "Multi-Replay" Rewinder, Shirai.
+- Disabled trigger power buffs when Gyze is in G Zone or VC.
+- Made it so Banned and Limited tags in deck editor can appear simultaneously on a card.
+- Strides that copy heart with AttackFromBackRow buttons will also have them enabled.
+- Underlined the Buddy Call Cost.
+- Lowered pop-up buttons for ride deck cards.
+- Centered button messages in Deck Editor and main menu.
 BUG FIXES:
-- Fixed the arrow key movement when typing in chat.
-- Touken Ranbu Events made distrinct from Monster Strike Events.
-- Extended opponent soul view to 25 cards per row.'
+- Fixed Deck Editor decklist and clan drop-menu overlapping with cards and selecting them from the background.
+- Removed MonsterStrike "Event" from Feltyrosa Cards.
+- Updated the TAB view message.
+- Allow for single digit power increases with spacebar.
+- Remove counters from VC when Stride leaves.
+- Fixed undoing delete for custom cards. For customs with AnotherSide, flipping is done through the G Zone menu.
+- Cleaned up the G Zone menu when activating a Search Effect.'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -1214,7 +1228,7 @@ global.CardName[CardStat] = 'Gauge Zone'
 global.CardText[CardStat] = 'Ride Deck Crest
 
 AUTO [Ride Deck]: When you ride, COST [put a <Flag> from soul into the order zone], put this card into the crest zone, and put the top two cards of your deck into gauge face down.
-(SHIFT + Left Click the card to charge your gauge.)
+(SHIFT + left click the card to charge your gauge.)
 
 CONT: You can have gauge.
 
