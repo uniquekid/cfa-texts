@@ -1445,7 +1445,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 ACT [RC]: [Rest this unit] Choose one of your units with "Machining" in its card name, and it gets power +3000 until end of turn.
 
-ACT [RC] 1/Turn Generation Break 2: [Counter Blast 1] Stand this unit, and until end of turn, it gets "AUTO [RC] 1/Turn: At the end of the battle that this unit attacked a vanguard, if the number of your opponent’s units in stand is zero, choose one of your other rear-guards with "Machining" in its card name, and stand it.".'
+ACT [RC] 1/Turn Generation Break 2: [Counter Blast 1] Stand this unit, and until end of turn, it gets "AUTO [RC] 1/Turn: At the end of the battle that this unit attacked a vanguard, if the number of your opponent’s stand units is zero, choose one of your other rear-guards with "Machining" in its card name, and stand it.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
@@ -1557,7 +1557,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 AUTO: Forerunner.
 
-CONT [RC]: If you have a vanguard with "Machining" in its card name, this unit gets "ACT [RC] 1/Turn: [Rest this unit] If the number of your opponent’s units in stand is zero, Soul Charge 1, and if not, choose one of your opponent’s rear-guards, and rest it.".
+CONT [RC]: If you have a vanguard with "Machining" in its card name, this unit gets "ACT [RC] 1/Turn: [Rest this unit] If the number of your opponent’s stand units is zero, Soul Charge 1, and if it is not, choose one of your opponent’s rear-guards, and rest it.".
 
 ACT [RC]: [Put this unit into your soul] Choose one of your rear-guards with "Machining" in its card name, and stand it.'
 global.UnitGrade[CardStat] = 0
@@ -1757,9 +1757,9 @@ CardStat = 5838
 global.CardName[CardStat] = 'Jocular Cicada'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-CONT: If this unit would be placed on RC, it is called as rest.
+CONT: When this unit would be called to RC, it is called as rest.
 
-AUTO [RC]: When it attacks, until end of that battle, triple this unit’s power, and at the end of that battle, retire this unit. (After tripling its power, add the power from boost.)'
+AUTO [RC]: When it attacks, triple this unit’s power until end of that battle, and at the end of that battle, retire this unit. (After tripling its power, add the power from boost.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 2
 }
@@ -2039,7 +2039,7 @@ global.CardText[CardStat] = 'Megacolony/Insect
 
 AUTO [RC]: When placed, COST [Soul Blast 1], and this unit gets power +6000 until end of turn. Put the top of your opponent’s deck into the drop zone, and if it is grade 1 or greater, you Soul Charge 1.
 
-AUTO [RC]: When it boosts a unit that attacks a grade 3 or greater vanguard, COST [discard a card from your hand], your opponent chooses a card from his or her hand, and discards it.'
+AUTO [RC]: When it boosts a unit that attacked a grade 3 or greater vanguard, COST [discard a card from your hand], your opponent chooses a card from his or her hand, and discards it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -2051,9 +2051,9 @@ CardStat = 7001
 global.CardName[CardStat] = 'Machining Ornamental'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-AUTO [VC/RC]: When placed, rest all of the other rear-guards, and perform one of the effects below. COST [Soul Blast 1 grade 3 with "Machining" in its card name], and perform both instead of one.
-• Choose all of the rest rear-guards, and they get power +5000 until end of turn.
-• Your opponent can only stand up to two of his or her units during your opponent’s next stand phase.'
+AUTO [VC/RC]: When placed, rest all other rear-guards, and resolve one of the effects below. COST [Soul Blast 1 grade 3 with "Machining" in its card name], and resolve both effects instead of one.
+• Choose all rest rear-guards, and they get power +5000 until end of turn.
+• Your opponent can only stand up to two units during his or her next stand phase.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -2145,7 +2145,7 @@ CardStat = 7008
 global.CardName[CardStat] = 'Machining Centipede'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, until end of your opponent’s next turn, those units lose "Twin Drive", "Intercept", and "Boost", and they cannot get them. Stand this unit.'
+ACT [VC/RC]: COST [Counter Blast 1], choose the same number of your opponent’s units as the number of your rest rear-guards, and until end of your opponent’s next turn, they lose "Twin Drive", "Intercept", "Boost", and cannot gain those skills. Stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 2
 }
@@ -2586,7 +2586,7 @@ CardStat = 7905
 global.CardName[CardStat] = 'Crag Arm Crusher'
 global.CardText[CardStat] = 'Megacolony/Insect
 
-CONT [RC]: This unit can attack a back row unit with a Cradle marker on it.'
+CONT [RC]: This unit can attack units with Cradle marker in the back row.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 2
 }
@@ -2956,7 +2956,7 @@ AUTO [Hand]: At the beginning of your ride phase, if your vanguard is grade 1 or
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 2
 }
-global.PowerStat[CardStat] = 10000
+global.PowerStat[CardStat] = 9000
 global.DefensePowerStat[CardStat] = 5000
 
 

@@ -11390,7 +11390,7 @@ CardStat = 15057
 global.CardName[CardStat] = 'Knight of Sustenance, Aiden'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If you have a grade 3 or greater vanguard, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If you have a grade 3 or greater vanguard, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1 until end of turn.
 
 AUTO [Front Row RC]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, if you do not have another rear-guard with the same card name as this unit, this unit gets "CONT [RC]: This unin gets the trigger effects that your vanguard gets." until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -11499,4 +11499,21 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15082
+{
+global.CardName[CardStat] = 'Cavalry Day (January 4)'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT: This card is also regarded as "Eternal Light Dragon, Regulastar Dragon".
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1 & reveal a card with "Bastion" in its card name from your hand], choose one of your opponent’s rear-guards, and retire it.
+
+CONT [RC/GC/Hand/Trigger Zone]: If you have a vanguard with "Bastion" in its card name, this card gets grade +1 / shield + 5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

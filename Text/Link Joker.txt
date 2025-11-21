@@ -2445,7 +2445,7 @@ global.CardText[CardStat] = 'Link Joker/Cyber Golem
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card named "Death Star-vader, Chaos Universe" from your G zone, and turn it face up] If you have a heart card with "Chaos" in its card name, choose up to one of your opponent’s RC without a card, your opponent chooses a card from his or her hand, and puts it into that RC face down as a locked card. If the number of face up cards in your G zone is two or more, choose one of your opponent’s rear-guards, and lock it.'
+ACT [VC] 1/Turn: [Counter Blast 1 & Choose a face down card named "Death Star-vader, Chaos Universe" from your G zone, and turn it face up] If you have a heart card with "Chaos" in its card name, choose up to one of your opponent’s open RC, your opponent chooses a card from his or her hand, and puts it on that RC face down as a locked card. If your G zone has two or more face up cards, choose up to one of your opponent’s rear-guards, and lock it.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 24
 global.ExtraDeck[CardStat] = 1
@@ -3138,7 +3138,7 @@ global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
 AUTO [VC]: [Counter Blast 1-card with "Star-vader" in its card name] When this unit is placed on VC, or when your G unit with "Star-vader" in its original card name Stride, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and locks it.
 
-AUTO [VC]: When your opponent’s locked card is unlocked, if no unit was retired with this unit’s effect this turn, you may retire one of those unlocked units. If you do, draw a card.'
+AUTO [VC]: When your opponent’s locked card is unlocked, if a unit was not retired due to the effect of this card during this turn, you may retire that unlocked unit. If you do, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -3842,7 +3842,7 @@ global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
 AUTO [VC]: [Choose a card with "Star-vader" in its card name from your hand, and discard it] When this unit is placed on VC, or when your G unit with "Star-vader" in its original card name Stride, you may pay the cost. If you do, Soul Charge 1, choose one of your opponent’s rear-guards, and lock it.
 
-AUTO: [Soul Blast 1] When this card is discarded from hand, if you have a heart card with "Chaos" in its card name, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and puts it on RC as a locked card.'
+AUTO: [Soul Blast 1] When this card is discarded from hand, if you have a heart card with "Chaos" in its card name, you may pay the cost. If you do, your opponent chooses a card from his or her hand, and puts it on his or her RC as a locked card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -4298,7 +4298,7 @@ CardStat = 6459
 global.CardName[CardStat] = 'Embroil Deletor, Jaega'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO [RC]: When placed, COST [Counter Blast 1 & retire another rear-guard], bind all of your opponent’s rear-guards in the same column as this unit face down.'
+AUTO [RC]: When placed, COST [Counter Blast 1 & retire one other rear-guard], and bind all of your opponent’s rear-guards in the same column as this unit face down.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -5319,9 +5319,9 @@ CardStat = 8159
 global.CardName[CardStat] = 'Bisection Star-vader, Zirconium'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [VC/RC]: When placed, if you have a vanguard with "Star-vader" in its card name, COST [Counter Blast 1], your opponent looks at the top card of his or her deck, and puts it on an open RC as a locked card. If that locked card was put in the back row, you draw a card, and this unit gets power +10000 until end of turn.
+AUTO [VC/RC]: When placed, if you have a vanguard with "Star-vader" in its card name, COST [Counter Blast 1], your opponent looks at the top card of his or her deck, and puts it on an open RC as a locked card. If that locked card was placed in the back row, you draw a card, and this unit gets power +10000 until end of turn.
 
-CONT [RC]: If your opponent’s vanguard is grade 3 or greater, and your opponent has a locked card, the original critical of all of your vanguards becomes 2.'
+CONT [RC]: If your opponent’s vanguard is grade 3 or greater, and he or she has a locked card, all of your vanguards’ original critical becomes two.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }

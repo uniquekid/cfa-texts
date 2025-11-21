@@ -1594,7 +1594,7 @@ CardStat = 2232
 global.CardName[CardStat] = 'Perdition Dragon Knight, Nazel'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO: When this unit is placed on RC, if your opponent doesn’t have any rear-guards in the same column as this unit, this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, if your opponent has no rear-guards in the same column as this unit, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -3079,7 +3079,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 Stride.
 
-AUTO [VC] Generation Break 8: When this unit attacks a vanguard, retire all of your opponent’s rear-guards, and all of your rear-guards get power +10000 until end of turn. If the number of units that were retired is three or more, this unit gets power +10000 / critical +1 until end of turn.'
+AUTO [VC] Generation Break 8: When this unit attacks a vanguard, retire all of your opponent’s rear-guards, and all of your rear-guards get power +10000 until end of turn. If three or more units were retired, this unit gets power +10000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 12
 global.ExtraDeck[CardStat] = 1
@@ -3664,7 +3664,7 @@ CardStat = 5689
 global.CardName[CardStat] = 'Spillover Dragon'
 global.CardText[CardStat] = 'Kagero/Tear Dragon
 
-AUTO [RC]: At the end of the battle that it was boosted and attacked a vanguard, COST [Counter Blast 1 & Put this unit into your soul], choose one of your opponent’s grade 2 or less rear-guards, and retire it.'
+AUTO [RC]: At the end of the battle that it attacked a vanguard while boosted, COST [Counter Blast 1 & put this unit into your soul], choose one of your opponent’s grade 2 or less rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -4111,7 +4111,7 @@ CardStat = 6528
 global.CardName[CardStat] = 'Demonic Dragon Mage, Kimnara '
 global.CardText[CardStat] = 'Kagero/Dragonman
 
-ACT [RC]: COST [Counter Blast 1 & retire this unit], choose three of your opponent’s rear-guards, and retire all of your opponent’s rear-guards other than those units.'
+ACT [RC]: COST [Counter Blast 1 & Retire this unit], choose three of your opponent’s rear-guards, and retire all of your opponent’s other rear-guards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -4212,7 +4212,7 @@ CardStat = 6623
 global.CardName[CardStat] = 'Fire Rage Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], put the top card of your deck into your drop zone, choose the same number of your opponent’s rear-guards as the grade of that card, retire them, and if you did not retire even one unit, this unit gets critical +1 until end of turn.'
+AUTO [VC/RC]: When placed, COST [Counter Blast 1 & Soul Blast 1], put the top card of your deck into your drop zone, choose the same number of your opponent’s rear-guards as the grade of that card, retire them, and if you did not retire any units, this unit gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -4227,7 +4227,7 @@ global.CardText[CardStat] = 'Kagero/Flame Dragon
 
 AUTO [VC]: When placed, call up to one "Dragonic Neoflame" from your drop zone to RC.
 
-AUTO [VC] 1/Turn: At the end of the battle it attacked, if a grade 3 is in your soul, COST [Counter Blast 1 & discard two cards from your hand], stand this unit and one of your "Dragonic Neoflame", and they get drive -1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle it attacked, if your soul has a grade 3, COST [Counter Blast 1 & discard two cards from your hand], stand this unit and one of your "Dragonic Neoflame", and they get drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -4278,7 +4278,7 @@ CardStat = 6648
 global.CardName[CardStat] = 'Calamity Tower Wyvern '
 global.CardText[CardStat] = 'Kagero/Winged Dragon
 
-ACT [RC]: COST [Soul Blast 1 & retire this unit], and one of your vanguards gets power +15000 until end of turn.'
+ACT [RC]: COST [Soul Blast 1 & Retire this unit], and one of your vanguards gets power +15000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 12
 }
@@ -4527,7 +4527,7 @@ CardStat = 6746
 global.CardName[CardStat] = 'Dragon Knight, Zarina'
 global.CardText[CardStat] = 'Kagero/Human
 
-AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired by your vanguard’s ability, COST [Soul Blast 2], and call a grade 1 or less card from your drop zone to RC in the same column as this unit.'
+AUTO [RC] 1/Turn: When your opponent’s rear-guard is retired by your vanguard’s ability, COST [Soul Blast 2], and call a grade 1 or less card from your drop zone to a RC in the same column as this unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }
@@ -4868,7 +4868,7 @@ CardStat = 7637
 global.CardName[CardStat] = 'Torridcannon Dragon'
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-ACT [VC/RC] 1/Turn: COST [Counter Blast 1 & Put a normal unit from your drop zone on the bottom of your deck], choose one of your opponent’s grade 2 or less rear-guards, retire it, and if your hand has four or less cards, draw a card.'
+ACT [VC/RC] 1/Turn: COST [Counter Blast 1 & Put a normal unit from your drop zone on the bottom of your deck], choose one of your opponent’s grade 2 or less rear-guards and retire it. If your hand has four or less cards, you draw a card.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 12
 }

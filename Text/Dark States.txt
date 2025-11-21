@@ -2722,7 +2722,7 @@ CardStat = 10387
 global.CardName[CardStat] = 'Heat Haze Acrobat, Miroslava'
 global.CardText[CardStat] = 'Dark States/Warbeast
 
-AUTO: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with grade equal to or less than your vanguard from your soul, put it into your hand if you chose a card with the same card name as your vanguard, and call it to RC if it doesn’t. If you put a card into your hand, this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with grade equal to or less than your vanguard from your soul, put it into your hand if you chose a card with the same card name as your vanguard, and call it to RC if it did not. If you put a card into your hand, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -9325,6 +9325,7 @@ CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Lia
 
 CONT [GC]: If you have a regress gauge, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
+global.UnitGradeIncrementInDeck[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
