@@ -495,7 +495,7 @@ SHIFT + left clicking cards with this parametre will move all cards in a zone to
 Placing a card as OverDress with this parametre will move all cards, as follows:
 - `OriginalDress` will move all cards in drop to the OriginalDress of the card currently being placed as overDress / X-Overdress
 
-### :sparkle: :x: Reveal cards from top deck
+### :sparkler: :x: Reveal cards from top deck
 
 ```
 global.RevealTopX[CardStat] = <number>
