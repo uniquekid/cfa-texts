@@ -1717,7 +1717,7 @@ CardStat = 9398
 global.CardName[CardStat] = 'Trickmoon'
 global.CardText[CardStat] = 'Dragon Empire/Talisman
 
-(STANDARD JP: Restricted to 1.)
+(STANDARD JP & EN: Restricted to 1.)
 
 AUTO: When this unit is placed on your back row center RC from drop, Counter Charge 1.
 
@@ -3604,8 +3604,6 @@ CardStat = 10822
 global.CardName[CardStat] = 'Scarlet Flame Bow General, Stirgna'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-(STANDARD EN: Restricted to 2.)
-
 AUTO: When this unit is placed on RC, if you have a vanguard with "Gandeeva" in its card name, COST [Soul Blast 1 & bind one of your other rear-guards face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, choose a card from your drop, and bind it face down.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
@@ -3613,7 +3611,6 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10823
@@ -9209,7 +9206,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO: When this unit is rode upon by a grade 3 card with "Venatior" in its card name, choose a "Venatior, Bunyip" from your soul, call that card and this card to RC.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguad with "Venatior" in its card name, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Venatior" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -9542,6 +9539,8 @@ AUTO [RC]: When this unit in the X-overDress state attacks, until end of that ba
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+global.MoveAll[CardStat] = 'OriginalDress'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10036,4 +10035,69 @@ global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15052
+{
+global.CardName[CardStat] = 'Land Subvert Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
+
+AUTO: When this unti is put on GC, if your unit was retired from RC this turn, this unit gets shield +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, and you have no rear-guards, COST [Soul Blast 1], and it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15065
+{
+global.CardName[CardStat] = 'Stormclad Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+AUTO: When this unit is placed on RC, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15072
+{
+global.CardName[CardStat] = 'Stealth Beast, Tamahagane "Metsu" '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Warbeast
+
+AUTO: When this unit is placed on RC, if you have a "Demon Stealth Dragon, Shiranui "Oboro"" crest, look at the top card of your deck, and put it into soul or bind it face down. Then, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a "Demon Stealth Dragon, Shiranui "Oboro"" crest, COST [Counter Blast 1], and perform one of the following.
+• Draw a card.
+• If a dominated unit attacked this turn, choose a face down card from your bind zone, and put it into hand, and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15073
+{
+global.CardName[CardStat] = 'Enma Stealth Rogue, Mujinlord '
+global.CardText[CardStat] = 'Dragon Empire/Nubatama/Demon
+
+(STANDARD JP & EN: You can only use the G Zone if you have the Shiranui Stridå Deckset Rideline.)
+
+Stride
+
+Dominate - ACT [VC] 1/Turn Generation Break 3: COST [Counter Blast 1, Soul Blast 1, and discard a card from your hand], choose any player’s rear-guards up to the number of face up cards in your G Zone with the same card name as this unit, and they get power +5000 until end of turn. Choose one of your opponent’s rear-guards, stand and dominate it, it attacks your opponent’s other unit, and until end of that battle, that unit’s drive becomes 1, you perform drive checks, and at the end of that battle, retire that unit.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 23
+global.DCards[CardStat] = 1
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0

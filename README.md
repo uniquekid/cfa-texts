@@ -215,13 +215,13 @@ Don't forget to add the tip after the card text
 ### :busts_in_silhouette::twisted_rightwards_arrows: Cross Persona Ride
 
 ```
-global.PersonaRideCardName[CardStat] = "Some Card Name"
+global.PersonaRideCardName[CardStat] = Some Card Name'
 ```
 
 The card will be considered having "Some Card Name" in addition to its original name when riding upon
 
 ```
-global.PersonaRideCardName[CardStat] = "CommonName"
+global.PersonaRideCardName[CardStat] = 'CommonName'
 ```
 
 If two cards have the same `PersonaRideCardName`, Persona Ride will trigger (e.g. DressUp cards from Lyrical Monasterio).
@@ -418,6 +418,14 @@ global.AnotherSide[CardStat] = <card_id>
 The card referenced by `<card_id>` will be viewed when holding 'Tab' over the card with this parametre.
 For cards excluding Gyze, only the unit card generating the pseudo-card should have this parametre, as effect-generated cards are not viewable in deck editor.
 
+### :open_hands: Generated Token Cards in Hand
+
+```
+global.TokenInHand[CardStat] = 1
+```
+
+Cards with this parametre stay revealed to the opponent while in the player's hand.
+
 ### :page_facing_up::arrow_up_down: Extended text box
 
 ```
@@ -461,6 +469,40 @@ global.GaugeCharge[CardStat] = <number>
 ```
 
 This parametre will take `<number>` cards from the top of the deck, and move them face down into the first Prison slot. At the time of editing this document, it is used to automate Gauges in the Buddyfight collaboration set of cards.
+
+### :bust_in_silhouette: Skills locked behind specific vanguards
+
+```
+global.RequiredVan[CardStat] = 'Some Card Name'
+```
+
+While the client is manual, certain skills can be automated. This parametre will check if your vanguard contains the specified `'Some Card Name'`.
+At the moment, this condition is used to automate skills that:
+- increase Persona Ride's power increase
+- apply the Persona Ride buff to the back row
+
+### :running: Move all cards in a zone
+
+```
+global.MoveAll[CardStat] = 'Bind/Hand/Drop/OriginalDress'
+````
+
+SHIFT + left clicking cards with this parametre will move all cards in a zone to a different zone, as follows:
+- `Bind` will move all cards from Bind to Drop
+- `Hand` will ask to move all cards in hand to Bind or Drop
+- `Drop` will ask to move all cards in drop to Soul or shuffle them into Deck
+
+Placing a card as OverDress with this parametre will move all cards, as follows:
+- `OriginalDress` will move all cards in drop to the OriginalDress of the card currently being placed as overDress / X-Overdress
+
+### :sparkler: :x: Reveal cards from top deck
+
+```
+global.RevealTopX[CardStat] = <number>
+```
+
+Cards with this parametre will reveal cards from the top of the deck equal to `<number` when SHIFT + left clicking.
+In addition, selecting the Top Deck or Bottom Deck buttons for any of the revealed cards will move all cards in the guardian circle back to the deck.
 
 ### :information_source: Card-specific effects
 

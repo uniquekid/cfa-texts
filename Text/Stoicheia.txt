@@ -809,9 +809,12 @@ global.CardText[CardStat] = 'Stoicheia/Ghost
 
 (STANDARD JP & EN: Banned.)
 
-AUTO: When this unit is placed on RC, you may put all of your cards from your bind zone into your drop. If you do, this unit gets power +5000 until end of turn for each card you put.'
+AUTO: When this unit is placed on RC, you may put all of your cards from your bind zone into your drop. If you do, this unit gets power +5000 until end of turn for each card you put.
+
+(SHIFT + left click to move all of bind.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.MoveAll[CardStat] = 'Bind'
 }
 global.PowerStat[CardStat] = 7000
 global.DefensePowerStat[CardStat] = 5000
@@ -2605,6 +2608,7 @@ AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard w
 CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.RequiredVan[CardStat] = 'Magnolia'
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -7574,8 +7578,6 @@ CardStat = 13357
 global.CardName[CardStat] = 'Knight of Formosity, Charmnet'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
-(STANDARD EN: Restricted to 2.)
-
 ACT [Drop]: If there are three or more of your Infinity Eyes markers, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
 
 AUTO [RC]: When this unit attacks, if your Infinity Eyes marker is in the same column as this unit, COST [retire another rear-guard], this unit gets power +10000 until end of that battle, at the end of that battle, COST [retire this unit], and draw a card.'
@@ -7585,7 +7587,6 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
 global.AttackFromRBuff[CardStat] = 10000
 
 
@@ -8587,7 +8588,7 @@ global.AttackFromRBuff[CardStat] = 5000
 CardStat = 13882
 {
 global.CardName[CardStat] = 'Sylvan Horned Beast Emperor, Magnolia Patriarch'
-global.CardText[CardStat] = 'Stoicheia/High Beast
+global.CardText[CardStat] = 'Stoicheia/Wild Dragon
 
 AUTO: When this unit is placed on VC, choose up to one card with "Sylvan Horned Beast" in its card name from your drop, and call it to RC.
 
@@ -9416,6 +9417,7 @@ AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard w
 CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
+global.RequiredVan[CardStat] = 'Magnolia'
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -9729,6 +9731,7 @@ AUTO: When this unit is placed on RC from hand or placed on RC by the ability of
 CONT [RC]: If you have a grade 3 vanguard with "Magnolia" in its card name, your persona ride also increases the power of your back row units.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
+global.RequiredVan[CardStat] = 'Magnolia'
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -10355,3 +10358,81 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15048
+{
+global.CardName[CardStat] = 'Conservation Elf'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this unit is put on GC, if you have a Blast token, this unit gets shield +5000 until end of that battle. If you have a Blast token with eight or more gauges, COST [Soul Blast 1], and it gets shield +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15049
+{
+global.CardName[CardStat] = 'Valgros of Summer’s Expanse'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Estacion" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, retire this unit, and draw a card. (This effect is mandatory)
+
+AUTO: When this unit is put on GC, if you have a Blast token, choose one of your opponent’s rear-guards, and that unit’s original power becomes 5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15050
+{
+global.CardName[CardStat] = 'Fredula of Spring’s Joy'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Estacion" in its card name, call up to one plant token to RC.
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Estacion" in its card name, and a card with the same card name as this card was not bound this turn, COST [bind this card], and call up to two plant tokens to RC.
+
+AUTO [Drop]: When your vanguard with "Estacion" in its card name is attacked, if a card with the same card name as this card was not bound this turn, COST [bind this card], and your vanguard gets power +10000 until end of that battle.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15059
+{
+global.CardName[CardStat] = 'Hibernation Preparations, Houndrea'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO: When this unit attacks while boosted by a token unit, if you played an order this turn, you may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15071
+{
+global.CardName[CardStat] = 'Modest Abbatial, Lucamelia'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+CONT [RC]: If you have a token unit in the same column as this unit, this unit gets "Intercept". Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

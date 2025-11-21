@@ -2995,6 +2995,7 @@ AUTO [VC]: At the end of the battle your back row center rear-guard attacked, pu
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.RequiredVan[CardStat] = 'Gramgrace'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8106,7 +8107,7 @@ global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
-global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 13427
@@ -8277,6 +8278,7 @@ AUTO [VC]: At the end of the battle your back row rear-guard attacked, put that 
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.RequiredVan[CardStat] = 'Gramgrace'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9281,7 +9283,7 @@ CardStat = 14028
 global.CardName[CardStat] = 'Nebula Knight of Guidance, Serius'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed by riding from "Nebula Knight of Inheritance, Serius", COST [reveal a grade 3 card with "Nebula Knight" in its card name from ride deck], search your deck for up to one "Nebula Knight of Yearning, Coreanis", call it to RC, and shuffle the deck.'
+AUTO: When this unit is placed by riding from "Nebula Knight of Inheritance, Serius", COST [reveal a grade 3 card with "Nebula Knight" in its card name from ride deck], search your deck for up to one "Nebula Knight of Yearning, Corleanis", call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -9355,7 +9357,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14033
 {
-global.CardName[CardStat] = 'Nebula Knight of Yearning, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Yearning, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: When this unit boosts a grade 3 or greater unit with "Nebula Knight" in its card name, this unit gets power +2000 until end of that battle, COST [discard a card from hand], reveal the top card of your deck, if it is a trigger unit, choose one of your opponent’s front row rear-guards in the same column as this unit, and retire it. Put the revealed card on the top or bottom of the deck.'
@@ -9368,10 +9370,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14034
 {
-global.CardName[CardStat] = 'Nebula Knight of Piercing End, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Piercing End, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC with a grade 1 unit with "Coreanis" in its card name, if your opponent’s vanguard is grade 2 or greater, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Coreanis" in its card name, call it to the RC this unit is on, and shuffle the deck.
+AUTO: When this unit is placed on RC with a grade 1 unit with "Corleanis" in its card name, if your opponent’s vanguard is grade 2 or greater, COST [Counter Blast 1], search your deck for up to one grade 3 card with "Corleanis" in its card name, call it to the RC this unit is on, and shuffle the deck.
 
 CONT [RC]: If you have a vanguard with "Nebula Knight" in its card name, this unit cannot be retired by your opponent’s card effects.'
 global.UnitGrade[CardStat] = 2
@@ -9383,10 +9385,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14035
 {
-global.CardName[CardStat] = 'Nebula Knight of Heroism, Coreanis'
+global.CardName[CardStat] = 'Nebula Knight of Heroism, Corleanis'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC with a grade 2 unit with "Coreanis" in its card name, choose up to one grade 1 card with "Coreanis" in its card name from your drop, call it to a back row RC, and if your vanguard is grade 3 or greater, COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into hand, and put the rest on the top or bottom of the deck.
+AUTO: When this unit is placed on RC with a grade 2 unit with "Corleanis" in its card name, choose up to one grade 1 card with "Corleanis" in its card name from your drop, call it to a back row RC, and if your vanguard is grade 3 or greater, COST [Soul Blast 1], look at the top two cards of your deck, choose up to one card from among them, put it into hand, and put the rest on the top or bottom of the deck.
 
 AUTO [RC]: When this unit attacks, if you have a vanguard with "Nebula Knight" in its card name, this unit gets power +5000 until end of turn.
 
@@ -10952,7 +10954,7 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
-global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 14878
@@ -11351,3 +11353,150 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15055
+{
+global.CardName[CardStat] = 'Knight of Contrivance, Nachalant'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this card is revealed during your drive check, if you have a grade 3 or greater vanguard with "Leuhan" in its card name, you may call this unit to an open back row RC.
+
+ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a normal unit without sentinel from your dorp, and put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15056
+{
+global.CardName[CardStat] = 'Knight of Sword Force, Caerdif'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+AUTO [RC/Drop]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, COST [put this card on the bottom of the deck], and that unit gets "AUTO [VC]: When your drive check reveals a normal unit, you may bind that card. If you bound a card, put that card into hand, and you lose this ability." until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15057
+{
+global.CardName[CardStat] = 'Knight of Sustenance, Aiden'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If you have a grade 3 or greater vanguard, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1.
+
+AUTO [Front Row RC]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, if you do not have another rear-guard with the same card name as this unit, this unit gets "CONT [RC]: This unin gets the trigger effects that your vanguard gets." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15058
+{
+global.CardName[CardStat] = 'Devotion Cadet, Madimiel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT [GC]: This unit gets shield +5000 for every two cards in your damage zone.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15067
+{
+global.CardName[CardStat] = 'Water Slash Nebula Knight, Kanacus'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO [RC/Drop]: When your grade 3 or greater rear-guard with "Corleanis" in its card name is retired during your end phase, COST [bind two cards with the same card name as this card from RC or drop], and Counter Charge 1.
+
+CONT [GC]: If you have a vanguard with "Nebula Knight" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15068
+{
+global.CardName[CardStat] = 'Willow-Piercing Nebula Knight, Picky'
+global.CardText[CardStat] = 'Keter Sanctuary/Huuman
+
+AUTO: When this unit is placed on RC during your main phase, choose a grade 3 card with "Nebula Knight" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Nebula Knight" in its card name, COST [Energy Blast 3], and draw a card. If your opponent’s vanguard is grade 2 or greater, until end of turn, this unit gets "AUTO [RC] 1/Turn: When this unit attacks, look at the top card of your deck, and put it on the top or bottom of the deck.", and power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15069
+{
+global.CardName[CardStat] = 'Dragwizard, Fuamnach '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
+
+CONT [RC] Generation Break 2 Ritual 5 (Active if there are five or more grade 1 cards in your drop): This unit cannot be chosen by your opponent’s card effects, and gets power +5000. If you have a grade 4 vanguard with "Ogma" in its card name, when this unit would be retired for the cost of your card’s ability, it may be regarded as two rear-guards. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15070
+{
+global.CardName[CardStat] = 'Dragranger, Ogma '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
+
+(STANDARD JP & EN: You can only use the G Zone if you have the Luard Stridå Deckset Rideline.)
+
+Stride
+
+ACT [VC] 1/Turn Generation Break 3 Ritual 5: [Soul Blast 1 & retire five rear-guards with different card names], your opponent chooses the same number of their rear-guards as the number of your units retired for this cost, and retires them. If three or more units were retired for this cost, you draw a card, and this unit gets "AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards with the Ritual ability, stand it, and for each face up card with the same card name as this unit in your G zone, that unit and this unit get power +5000 until end of turn." until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15074
+{
+global.CardName[CardStat] = 'Steadfast Knight, Kivluff'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: If your vanguard is grade 3 or greater, and you have no other rear-guards, this unit cannot be chosen by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15075
+{
+global.CardName[CardStat] = 'Altruism Eagle'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [RC] When your other <High Beast> is placed on RC, if your vanguard is grade 3 or greater, COST [put this unit on the bottom of the deck], and that placed unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

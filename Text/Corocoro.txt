@@ -2013,7 +2013,7 @@ CardStat = 14958
 global.CardName[CardStat] = 'Apocalypse Reviver, Black'
 global.CardText[CardStat] = 'CoroCoro/Brandt Gate/Black Channel
 
-ACT [VC/RC] 1/Turn: If you have a grade 3 or greater «CoroCoro» vanguard with "Black" ub uts card name and you do not have a unit in the Zombie state, COST [discard a card from your hand], choose up to two grade 3 or less unit cards with different card names from each other from your drop, call them to RC, they are in the Zombie state until end of turn, and at the end of that turn, retire those units. Your card’s AUTO abilities do not activate from that call.
+ACT [VC/RC] 1/Turn: If you have a grade 3 or greater «CoroCoro» vanguard with "Black" in its card name and you do not have a unit in the Zombie state, COST [discard a card from your hand], choose up to two grade 3 or less unit cards with different card names from each other from your drop, call them to RC, they are in the Zombie state until end of turn, and at the end of that turn, retire those units. Your card’s AUTO abilities do not activate from that call.
 
 AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1], choose one of your rear-guards in the Zombie stand, and stand it.'
 global.UnitGrade[CardStat] = 3
@@ -2065,3 +2065,27 @@ global.PersonaRideCardName[CardStat] = 'Bebebebe'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15046
+{
+global.CardName[CardStat] = '"Multi-replay" Rewinder, Shirai'
+global.CardText[CardStat] = 'CoroCoro/Dark States/Fate Rewinder
+
+CONT: If you have a vanguard with "Rewinder" in its card name or «CoroCoro», this card gets all of the following.
+• CONT [VC/RC]: [Retry]
+• AUTO: When this unit is put on GC from hand or discarded from hand while ridiing from the ride deck, COST [Energy Blast 3], and draw a card.
+• AUTO [Drop] VersionUp (Active if you persona rode this turn or have four or more damage): When a ""Strongest" Rewinder, Shirai" on your RC Retries, COST [retire the Retried unit], call this card to RC and put all normal units with "Shirai" in their card names from drop as this unit’s gauges face up. If you put five or more cards, COST [Counter Blast 1], and this unit gets critical +1 until end of turn.
+(Overdress this card to activate automatically)
+• CONT [RC]: If this unit was placed by your card’s ability this turn, this unit gets power +5000 for each of this unit’s gauges.
+(SHIFT + left click to add counters.)
+(SHIFT + right click to remove counters.)
+(Middle click or hover and press SPACE to set counter number.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 13
+global.DCards2[CardStat] = 2
+global.UseCounters[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
