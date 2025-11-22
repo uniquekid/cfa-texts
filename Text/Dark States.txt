@@ -1061,7 +1061,7 @@ CardStat = 9065
 global.CardName[CardStat] = 'Evil Eye of Prohibition, Quen Lu'
 global.CardText[CardStat] = 'Dark States/Human
 
-ACT [RC]: COST [Put this unit into your soul], choose one of your rear-guards, and it gets power +2000 until end of turn. Then, if your soul has seven or more cards, for the battle that rear-guard attacked this turn, your opponent cannot call grade 1 or greater cards from their hand to GC.'
+ACT [RC]: COST [Put this unit into your soul], choose one of your rear-guards, and it gets power +2000 until end of turn. Then, if your soul has seven or more cards, your opponent cannot call grade 1 or greater cards from their hand to GC for the battle that rear-guard attacks this turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -2260,7 +2260,7 @@ CardStat = 10108
 global.CardName[CardStat] = 'Diabolos Madonna, Shena'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: When this unit is placed on RC from hand, COST [put another rear-guard into your soul], look at the top card of your deck, and call it to RC or put it into your soul.'
+AUTO: When this unit is placed on RC from hand, COST [put one of your other rear-guard into soul], look at the top card of your deck, and call it to RC or put it into your soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -9424,10 +9424,10 @@ CONT: If you have a "Chronojet Dragon" crest, this card gets all of the followin
 • CONT [RC]: During your turn, if you have a grade 4 or greater vanguard, this unit gets power +5000.
 • AUTO [RC/Drop]: When your G unit Stride during your turn, COST [bind this card], choose a normal unit without sentinel from your drop, and put it on the bottom of the deck. If you put a grade 3 or greater card, choose one of your vanguards or hearts, and until end of turn, reduce the next Counter Blast cost you pay for that Card abilities by 1.
 • CONT [GC]: This unit gets shield +5000.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -9451,7 +9451,7 @@ CardStat = 15062
 global.CardName[CardStat] = 'Fashion Doll, Ruby Rouge'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Heartluru" in its card name from ride deck, and you may reveal it. If you revealed or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Charge 3], and draw a card.
+AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Heartluru" in its card name from ride deck, and you may reveal it. If you revealed or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
 
 ACT [RC]: If you have a grade 3 or greater vanguard with "Heartluru" in its card name and you have not bound a card with the same card name as this card this turn, COST [bind this unit], choose a Happy Toys from your drop, and call it to RC.
 
