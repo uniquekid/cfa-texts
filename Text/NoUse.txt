@@ -1,17 +1,31 @@
 n = x
 
-global.AllCard = 15045
+global.AllCard = 15075
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Adjusted the deck preview for enlarged image sizes.
-- Vairina Ars skill automated.
-- Rewrite text icon.
-
+- Clarified the starting message for swapping Deck Editor Card Image Size.
+- Deck Editor overhaul: Swapped to a page system. You can swap between pages using the arrows on screen or the <- and -> keys on your keyboard.
+- Drag&Drop feature implemented for Deck Files. You can swap decks by dragging the file into CFA while in any room except the Fight Arena.
+- Automated Persona Ride back row buffs + Thegrea Order Power increase.
+- Automated effects that reveal from top deck to then also move all leftover cards back to deck.
+- Automated effects that move all cards in a zone, such as Dreaming Dragon, Sleeve-Tugging Belle or V Nanni.
+- The OriginalDress removal pop-up will now only appear once when moving the stack to an illegal zone.
+- Automated effect of "Multi-Replay" Rewinder, Shirai.
+- Disabled trigger power buffs when Gyze is in G Zone or VC.
+- Made it so Banned and Limited tags in deck editor can appear simultaneously on a card.
+- Strides that copy heart with AttackFromBackRow buttons will also have them enabled.
+- Underlined the Buddy Call Cost.
+- Lowered pop-up buttons for ride deck cards.
+- Centered button messages in Deck Editor and main menu.
 BUG FIXES:
-- Fixed the arrow key movement when typing in chat.
-- Touken Ranbu Events made distrinct from Monster Strike Events.
-- Extended opponent soul view to 25 cards per row.'
+- Fixed Deck Editor decklist and clan drop-menu overlapping with cards and selecting them from the background.
+- Removed MonsterStrike "Event" from Feltyrosa Cards.
+- Updated the TAB view message.
+- Allow for single digit power increases with spacebar.
+- Remove counters from VC when Stride leaves.
+- Fixed undoing delete for custom cards. For customs with AnotherSide, flipping is done through the G Zone menu.
+- Cleaned up G Zone menu when activating Search Effect.'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -162,6 +176,7 @@ CONT: Sentinel.
 AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -308,6 +323,7 @@ One of your attacked units gets power +5000 until end of that battle!
 (This card is a ticket card, and cannot be put in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 5000
@@ -365,6 +381,7 @@ global.CardName[CardStat] = 'Meer’s Present'
 global.CardText[CardStat] = '(This represents Meer’s Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -558,6 +575,7 @@ global.CardText[CardStat] = 'Blitz Order
 Choose one of your attacked units, and it gets power +20000 until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 20000
@@ -725,6 +743,7 @@ One of your attacked units gets power +20000 until end of that battle!
 (This card is a ticket card, and cannot be put in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 20000
@@ -1107,6 +1126,7 @@ Choose a unit being attacked, it gets power +10000 until end of that battle, and
 CONT [Hand]: During your turn, when you would discard a card while riding from ride deck or choose a card from hand by your card’s ability, this card cannot be chosen or discarded.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 10000
@@ -1208,7 +1228,7 @@ global.CardName[CardStat] = 'Gauge Zone'
 global.CardText[CardStat] = 'Ride Deck Crest
 
 AUTO [Ride Deck]: When you ride, COST [put a <Flag> from soul into the order zone], put this card into the crest zone, and put the top two cards of your deck into gauge face down.
-(SHIFT + Left Click the card to charge your gauge.)
+(SHIFT + left click the card to charge your gauge.)
 
 CONT: You can have gauge.
 
