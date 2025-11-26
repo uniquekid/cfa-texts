@@ -3922,12 +3922,13 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
 
+//(Errata'd)
 CardStat = 11032
 {
 global.CardName[CardStat] = 'Caezar, Silhouette'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO: When this unit is rode upon by "Gigant Arms, Silhouette", choose up to two cards with "Armed Arms" in their different card names from your drop, and call them to open RC.'
+AUTO: When this unit is rode upon by a grade 3 card with "Silhouette" in its card name, choose up to two cards with "Armed Arms" in their different card names from your drop, and call them to open RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9458,3 +9459,118 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15092
+{
+global.CardName[CardStat] = 'Masterful Mechanic, Adiest'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, perform "You may Energy Blast 3. If you did not Energy Blast 3, choose a card from hand, and put it into soul.".
+
+ACT [RC] 1/Turn: COST [Counter Blast 1], choose a card with "Armed Arms" in its card name from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15093
+{
+global.CardName[CardStat] = 'Armed Arms, "StL"'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC/RC]: When this unit attacks, if you have a vanguard with "Silhouette" in its card name, COST [Counter Blast 1], and perform one of the following.
+• Draw a card.
+• If this unit has "Armed Arms, "StL"" and "Armed Arms "StR"" attached, look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it into soul, and put the rest on the bottom of the deck.
+
+AUTO: When this unit intercepts, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.Arms[CardStat] = 1
+global.ArmAsUnit[CardStat] = 1
+
+
+CardStat = 15094
+{
+global.CardName[CardStat] = 'Armed Arms, "StR"'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+COT [VC]: If this unit has "Armed Arms, "StL"" and "Armed Arms, "StR"" attached, thisunit gets critical +1.
+
+AUTO [VC/RC]: When this unit attacks, if you have a vanguard with "Silhouette" in its card name, this unit gets power +5000 until end of that battle. Then, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO: When this unit intercepts, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+global.Arms[CardStat] = 1
+global.ArmAsUnit[CardStat] = 1
+
+
+CardStat = 15095
+{
+global.CardName[CardStat] = 'Grand Arms, Silhouette'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [VC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1 "Machineries Factory"], and this unit gets "CONT [VC]: All of your units with "Armed Arms" in their card names get power +5000." until end of turn.
+
+AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power and abilities continuously, and they are moved to RC as rest at the end of turn)
+
+AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (The moved unit is no longer attached)
+
+(Attached unit power is added automatically when attacking)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15096
+{
+global.CardName[CardStat] = 'Heavy-class Robo, Tank Bounder'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [Back Row RC]: If you have another rear-guard in the same column as this unit, this unit gets "Boost" and cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15097
+{
+global.CardName[CardStat] = 'Amiable Recycler'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is placed on RC from hand, if your order zone has two or more set orders, COST [discard a set order from hand], draw a card, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15098
+{
+global.CardName[CardStat] = 'Crooked Rhino Mask'
+global.CardText[CardStat] = 'Brandt Gate/Warbeast
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit while not boosted, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, retire this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
