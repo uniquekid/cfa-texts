@@ -3567,7 +3567,7 @@ CardStat = 10240
 global.CardName[CardStat] = 'Munch Munch Lunch, Cowlina'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
-AUTO [RC]: When your other rear-guard is put on the bottom of your deck during your battle phase, if you have a vanguard with "Haseritt" in its card name, this unit gets power +5000 until end of turn.'
+AUTO [RC]: When your rear-guard is put on the bottom of your deck during your battle phase, if you have a vanguard with "Haseritt" in its card name, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -11386,7 +11386,7 @@ CardStat = 14995
 global.CardName[CardStat] = 'RaiZ:BlaZ, Courante'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
  
-AUTO: When this unit is rode upon by "RaiZ:BlaZ, Tarantella", look at the top five cards of your deck, choose up to one non-sentinel <Dragoroid> or up to one normal order from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is rode upon by "RaiZ:BlaZ, Tarantella", look at the top five cards of your deck, choose up to one <Dragoroid> without Sentinel or up to one normal order from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -11401,7 +11401,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your <Dragoroid> trigger units get sheild +5000.
 
-AUTO: When this unit is rode upon by a grade 3 card with "RaiZ:BlaZ" in its card name, choose up to one non-sentinel <Dragoroid> or up to one normal order from your drop, and put it into hand.'
+AUTO: When this unit is rode upon by a grade 3 card with "RaiZ:BlaZ" in its card name, choose up to one <Dragoroid> without Sentinel or up to one normal order from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -11627,7 +11627,7 @@ CardStat = 15011
 global.CardName[CardStat] = 'Maybe It’s Embarassed? Arahail'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
  
-AUTO [RC]: When this unit is put on RC or GC from deck or hand, choose up to one unit card with "Siana" in its card name from your drop, and put it on the bottom of the deck or into soul.'
+AUTO: When this unit is put on RC or GC from deck or hand, choose up to one unit card with "Siana" in its card name from your drop, and put it on the bottom of the deck or into soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -11656,7 +11656,7 @@ global.CardName[CardStat] = 'Stille Nacht'
 global.CardText[CardStat] = 'Lyrical Monasterio/Blitz Order
  
 Perform one of the following.
-• Choose  aunit being attacked, and it gets power +10000 until end of that battle. If your opponent’s attacking unit is a rear-guard, it gets power +20000 instead of power +10000.
+• Choose a unit being attacked, and it gets power +10000 until end of that battle. If your opponent’s attacking unit is a rear-guard, it gets power +20000 instead of power +10000.
 • If an attack hit your vanguard this turn, choose a unit being attacked, and it gets power +30000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
@@ -11740,7 +11740,7 @@ CardStat = 15019
 global.CardName[CardStat] = 'Snow Globe Folklore, Illustoire'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
  
-AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [discard a card from hand], and until end of that battle, increase the power of this unit by the original shield of the card discarded for this cost.'
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, COST [discard a card from hand], and until end of that battle, increase the power of this unit by the original shield of the card discarded for this cost.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12126,4 +12126,63 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15083
+{
+global.CardName[CardStat] = 'Christmas Day (December 25)'
+global.CardText[CardStat] = 'Lyrical Monasterio/Set Order/Cannonball
+
+CONT: This card is also regarded as "Beware The Sneeze of Fireworks".
+
+Play this with COST [Counter Blast 1] !
+
+AUTO: When this card is put into your order zone, draw a card.
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Michu" in its card name, COST [put this card into drop], choose one of your units, and it gets power +10000 until end of turn. Choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15099
+{
+global.CardName[CardStat] = 'Instant Waitress, Pamelucier'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is retired from RC by your opponent’s card effects, COST [Soul Blast 1], and put this card into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15100
+{
+global.CardName[CardStat] = 'Stack Carrier, Hollish'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+ 
+AUTO [RC] 1/Turn: When this unit boosts, if your vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your rear-guards with the same grade as the card Soul Blast for this cost, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15101
+{
+global.CardName[CardStat] = 'Weaving Memories with Thread and Needle, Luxual'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+ 
+AUTO: When this card is discarded from hand during your turn, choose up to one normal unit without Sentinel with a different card name from this card from your drop, and put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

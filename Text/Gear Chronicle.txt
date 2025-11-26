@@ -1706,7 +1706,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Colossus
 
 CONT: Sentinel.
 
-AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a <Gear Colossus> vanguard, you may pay the cost. If you do, call five cards from the top of your deck to GC. Then, choose two of the guardians called with this effect, and you may bind them face up. If you bind the cards, Counter Charge 1, and this unit gets shield +5000 until end of that battle.'
+AUTO: [Counter Blast 1] When this unit is placed on GC from hand, if you have a <Gear Colossus> vanguard, you may pay the cost. If you do, call five cards from the top of your deck to GC. Then, choose two of the guardians called with this effect, and you may bind them face up. If you do, Counter Charge 1, and this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -2177,7 +2177,7 @@ CardStat = 4169
 global.CardName[CardStat] = 'Diaperno Idea-drone'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Colossus
 
-AUTO [RC]: [Counter Blast 1 & Bind the top card of your deck face up] When this unit attacks a vanguard, if you have a <Gear Colossus> vanguard, you may pay the cost. If you do, until end of that battle, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits, search your deck for up to two cards, choose a card from among them, bind it face up, put the rest into your drop zone, and shuffle your deck. If the card bound with this effect is <Zodiac Time Beast>, Counter Charge 1.".'
+AUTO [RC]: [Counter Blast 1 & Bind the top card of your deck face up] When this unit attacks a vanguard, if you have a <Gear Colossus> vanguard, you may pay the cost. If you do, until end of that battle, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits, search your deck for up to two cards, choose a card from among them, bind it face up, put the rest into your drop zone, and shuffle your deck. If the card bound with this effect is a <Zodiac Time Beast>, Counter Charge 1.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -2189,9 +2189,9 @@ CardStat = 4170
 global.CardName[CardStat] = 'Prospatheia Idea-drone'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Colossus
 
-AUTO [VC] 1/Turn Generation Break 2: [Soul Blast 1 & Choose one of your grade 2 or less guardians, and bind it face up] When your unit is put into your GC during the battle that your opponent’s vanguard attacks, you may pay the cost. If you do, this unit gets power +15000 until end of that battle.
+AUTO [VC] 1/Turn Generation Break 2: [Soul Blast 1 & Choose one of your grade 2 or less guardians, and bind it face up] When your unit is put on GC during the battle that your opponent’s vanguard attacked, you may pay the cost. If you do, this unit gets power +15000 until end of that battle.
 
-AUTO [VC] Generation Break 1: [Counter Blast 1 & Choose a card from your drop zone, and bind it face up] At the end of your turn, you may pay the cost. If you do, Soul Charge 1, choose one of your rear-guards, and bind it face up. If you bind a card, your opponent chooses one of his or her rear-guards, and puts that unit on the bottom of his or her deck.'
+AUTO [VC] Generation Break 1: [Counter Blast 1 & Choose a card from your drop zone, and bind it face up] At the end of your turn, you may pay the cost. If you do, Soul Charge 1, choose one of your rear-guards, and bind it face up. If a card was bound, your opponent chooses one of his or her rear-guards, and puts it on the bottom of his or her deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -2519,9 +2519,9 @@ CardStat = 4313
 global.CardName[CardStat] = 'Pulsar, Flarescent Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC by riding a <Zodiac Time Beast>, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and puts it on the bottom of his or her deck.
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC and rides a <Zodiac Time Beast> unit, you may pay the cost. If you do, your opponent chooses one of his or her rear-guards, and puts it on the bottom of his or her deck.
 
-AUTO [RC] Generation Break 1: [Counter Blast 1 <Zodiac Time Beast>] When this unit’s attack hits a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and your opponent puts it on the bottom of his or her deck.'
+AUTO [RC] Generation Break 1: [Counter Blast 1 <Zodiac Time Beast>] When this unit’s attack hits a vanguard, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and your opponent puts that unit on the bottom of his or her deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -2832,7 +2832,7 @@ AUTO: Forerunner.
 
 AUTO [RC]: [Choose a grade 3 <Gear Colossus> from your hand, and reveal it] At the beginning of your ride phase, you may pay the cost. If you do, bind the top card of your deck face up.
 
-ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] If you have a <Gear Colossus> vanguard, bind the top card of your deck face up, and if that card is <Zodiac Time Beast>, draw a card.'
+ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] If you have a <Gear Colossus> vanguard, bind the top card of your deck face up, and if that card is a <Zodiac Time Beast>, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -2858,7 +2858,7 @@ CardStat = 4825
 global.CardName[CardStat] = 'Pulsar, Bling Hawk'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO: When this unit is placed on GC, you may bind the top card of your deck face up. If that card is <Zodiac Time Beast>, choose up to one of your <Gear Colossus>, and it gets power +5000 until end of that battle.'
+AUTO: When this unit is placed on GC, you may bind the top card of your deck face up. If that card is a <Zodiac Time Beast>, choose up to one of your <Gear Colossus>, and it gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -2872,7 +2872,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon/Zodiac Time Beast
 
 CONT [VC/RC]: If the number of cards in your bind zone is one or less, this unit cannot attack a vanguard.
 
-ACT [Bind Zone]: [Counter Blast 1 & Soul Blast 1] Call this card to RC. If your vanguard is <Zodiac Time Beast>, you may bind the top card of your deck face up.'
+ACT [Bind Zone]: [Counter Blast 1 & Soul Blast 1] Call this card to RC. If you have a <Zodiac Time Beast> vanguard, you may bind the top card of your deck face up.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -2884,7 +2884,7 @@ CardStat = 4831
 global.CardName[CardStat] = 'Pulsar, Rewind Tiger'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO: [Counter Blast 1 & Choose one of your other <Zodiac Time Beast> rear-guards, and rest it] When this unit is placed on RC, you may the cost. If you do, bind the top card of your deck face up, if that card is <Zodiac Time Beast>, draw a card, and this unit gets power +2000 until end of turn.'
+AUTO: [Counter Blast 1 & Choose one of your other <Zodiac Time Beast> rear-guards, and rest it] When this unit is placed on RC, you may the cost. If you do, bind the top card of your deck face up, and if that card is a <Zodiac Time Beast>, draw a card, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -4228,7 +4228,7 @@ CardStat = 7397
 global.CardName[CardStat] = 'Steam Fighter, Shutl'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO: When this card is discarded from hand during your turn, COST [Soul Blast 1], and until end of turn, your opponent cannot call grade 2 or greater cards from hand to GC.'
+AUTO: When discarded from hand during your turn, COST [Soul Blast 1], and until end of turn, your opponent cannot call grade 2 or greater cards from hand to GC.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
