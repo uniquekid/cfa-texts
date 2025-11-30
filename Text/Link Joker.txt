@@ -622,13 +622,13 @@ CardStat = 1854
 global.CardName[CardStat] = 'Star-vader, "Omega" Glendios'
 global.CardText[CardStat] = 'Link Joker/Cyber Golem
 
-AUTO [VC] Limit Break 5: At the beginning of your main phase, if the number of your opponent’s locked cards is five or more, you win.
+AUTO [VC] Limit Break 5: At the beginning of your main phase, if the number of locked cards your opponent has is five or more, you win the game.
 
-ACT [VC] Limit Break 4: [Counter Blast 1 & Choose one card with "ß" in its card name from your hand, and discard it] All of your opponent’s locked cards cannot be unlocked during your opponent’s next end phase.
+ACT [VC] Limit Break 4: [Counter Blast 1 & Choose a card with "ß" in its card name from your hand, and discard it] All of your opponent’s locked cards cannot be unlocked during his or her next end phase.
 
-AUTO [VC]: When a unit with "ß" in its card name is placed on your RC, choose one of your opponent’s rear-guards, and lock it. This ability cannot be used for the rest of that turn.
+AUTO [VC]: When a unit with "ß" in its card name is placed on your RC, choose one of your opponent’s rear-guards and lock it. This ability cannot be used for the rest of that turn.
 
-CONT [VC]: All of your rear-guards with "ß" in its card name are also «Link Joker», and during your turn, those units get power +4000.
+CONT [VC]: All of your rear-guards with "ß" in its card name is also a «Link Joker», and during your turn get power +4000.
 
 (ß = ßeverse or ße-birth)'
 global.UnitGrade[CardStat] = 3
@@ -1342,7 +1342,7 @@ ACT [VC]: Legion 20000 "Star-vader, Sword Viper" (If your opponent’s vanguard is
 
 AUTO [VC]: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if this unit is Legion, you may pay the cost. If you do, choose up to one of your rear-guard for each of your opponent’s lock cards, and stand it.
 
-ACT [VC]: [Counter Blast 1-card with "Star-vader" in its card name] if you have another unit in your center column, you may pay the cost. If you do, choose one of your opponent’s rear-guards in the back row, and lock it. (The locked card is turned face down, and cannot do anything. It turns face up at the end of the owners turn.)'
+ACT [VC]: [Counter Blast 1-card with "Star-vader" in its card name] if you have another unit in your middle column, you may pay the cost. If you do, choose one of your opponent’s rear-guards in the back row, and lock it. (The locked card is turned face down, and cannot do anything. It turns face up at the end of the owners turn.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -4883,7 +4883,7 @@ CONT: Sentinel.
 
 AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.
 
-AUTO [VC]: When placed, draw a card, and discard a card.'
+AUTO [VC]: When placed, draw a card, and discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }

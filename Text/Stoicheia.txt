@@ -10451,3 +10451,168 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15104
+{
+global.CardName[CardStat] = 'Deeplands, Meldico'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15105
+{
+global.CardName[CardStat] = 'Deeplands, Grazcain'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+AUTO: When this unit is rode upon by "Deeplands, Jilgan", search your deck for up to one "Call of Deeplands", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15106
+{
+global.CardName[CardStat] = 'Deeplands, Jilgan'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+AUTO: When this unit is rode upon by a grade 3 card with "Reguregnus" in its card name, look at the top seven cards of your deck, choose up to two cards from among them, discard them, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15107
+{
+global.CardName[CardStat] = 'Deeplands, Reguregnus'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+ACT [VC] 1/Turn: COST [Energy Blast 2] choose a card from your drop, and call it to RC.
+
+AUTO [VC]: At the end of the battle this unit attacked, COST [Counter Blast 1 & retire two rear-guards], choose up to one grade 3 card with "Reguregnus" in its different card name from this unit from your drop, ride it as stand, and it gets drive -2 until end of turn. When you would ride a card by this effect, the riding unit is placed with all of the power increases and critical increases from trigger effects this unit got this turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15108
+{
+global.CardName[CardStat] = 'Deeplands, Reguregnus Athanasios'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+AUTO: When this unit is placed on VC by the ability of your "Deeplands, Reguregnus", COST [Soul Blast 1], choose a "Deeplands, Reguregnus" from your drop, call it to RC, and at the end of that turn, put that unit on VC as rest.
+
+AUTO [VC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and this unit was placed from drop this turn, this unit gets drive +1 until end of that battle.
+
+CONT [GC]: This unit gets shield +5000 for each grade of your vanguard with "Deeplands" in its card name.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15109
+{
+global.CardName[CardStat] = 'Call of Deeplands'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+This card can be played from drop, and play this with COST [Soul Blast 1 & retire a rear-guard] if you have a vanguard with "Reguregnus" in its card name!
+Choose up to two cards with grade less than or equal to your vanguard from your drop, call them to RC, and your vanguard gets power +5000 until end of turn. Perform one of the following according to the number of cards with the same card name as this card in your order zone.
+• Zero - Put this card into the order zone.
+• One or more - Bind this card, choose a "Call of Deeplands" from your order zone, and the power increase of its CONT ability gets +5000 until end of turn.
+CONT [Order Zone]: If your opponent’s vanguard is grade 3 or greater, all of your units with "Deeplands" in their card names that were placed from drop this turn by the ability of your card with the same card name as this card or "Reguregnus" in its card name get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15110
+{
+global.CardName[CardStat] = 'Deeplands, Orgady'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Deeplands" in its card name, COST [Counter Blast 1 or put a card from hand into soul], draw a card, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+CONT [GC]: If you have a vanguard with "Deeplands" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15111
+{
+global.CardName[CardStat] = 'Deeplands, Jernazak'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+ACT [Drop] 1/Turn: If your order zone has a "Call of Deeplands", COST [Soul Blast 1], and call this card to an open RC.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your unit was retired by a card’s ability this turn, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15112
+{
+global.CardName[CardStat] = 'Deeplands, Gleane'
+global.CardText[CardStat] = 'Stoicheia/Zombie
+
+CONT: If you have a vanguard with "Deeplands" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC from hand, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
+• AUTO: When this unit is retired from RC by any player’s card’s ability, COST [Counter Blast 1], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15113
+{
+global.CardName[CardStat] = 'Bludgeon Buffalo'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Skyruler" in its card name, this unit gets power +5000 until end of that battle. If your drop has fifteen or more cards, and this unit was stand by your vanguard’s ability this turn, it gets power +15000 instead of +5000.
+
+AUTO [RC] 1/Turn: When this unit stand by the ability of your grade 3 or greater vanguard with "Skyruler" in its card name, if you do not have another rear-guard with the same card name as this unit, and you persona rode this turn, this unit gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15114
+{
+global.CardName[CardStat] = 'Brisk Mustelid'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+ACT [Drop]: COST [Soul Blast 1 & bind this card], choose one of your grade 3 or greater vanguards with "Skyruler" in its card name, and reduce the next Counter Blast cost you pay for that unit’s original ACT ability by 1 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000

@@ -1215,7 +1215,7 @@ CardStat = 9131
 global.CardName[CardStat] = 'Desire Devil, Hystera'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC]: When this unit attacks, this unit gets power +2000 for each of your stand rear-guards until end of turn. If your damage zone has five or more cards, it gets power +5000 instead of +2000.'
+AUTO [RC]: When this unit attacks, this unit gets power +2000 until end of turn for each of your stand rear-guards. If your damage zone has five or more cards, it gets power +5000 instead of +2000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -1795,7 +1795,7 @@ CardStat = 9666
 global.CardName[CardStat] = 'Flaming Pony'
 global.CardText[CardStat] = 'Dark States/Chimera
 
-ACT [Soul]: COST [Bind this card], Soul Charge 2.'
+ACT [Soul]: COST [Bind this card], and Soul Charge 2.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -1985,7 +1985,7 @@ CardStat = 10046
 global.CardName[CardStat] = 'Phase Transition Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-AUTO [RC]: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, put it into your drop, and until end of that battle, increase this unit’s power by the original shield of the card put into your drop.'
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, put it into your drop, and during this battle, this unit’s power increases by the original shield of the card put into your drop.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -9487,3 +9487,19 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15122
+{
+global.CardName[CardStat] = 'Eternal Idea Alcasal'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed on VC, search your deck for up to one Queens order card, reveal it, put it into your hand, and shuffle your deck. If you persona rode this turn, search for up to two cards instead of one.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two units with different card names instead of one. When you would call to RC with units, you may put the units that were on those RC into your soul instead of into your drop.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
