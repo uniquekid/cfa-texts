@@ -1746,7 +1746,7 @@ CardStat = 2152
 global.CardName[CardStat] = 'Heaven Bow Seeker, Morvi'
 global.CardText[CardStat] = 'Royal Paladin/Human
 
-AUTO [VC/RC]: When this unit attacks, if the number of other units you have with "Seeker" in its card name is four or more, this unit gets power +3000 until end of that battle.'
+AUTO [VC/RC]: When this unit attacks, if the number of other units with "Seeker" in its card name is four or more, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -1761,7 +1761,7 @@ ACT [VC]: Legion 20000 "Brave Stridå Seeker, Cherin" (If your opponent’s vanguar
 
 ACT [VC]: [Counter Blast 2-card with "Seeker" in its card name] If this unit is Legion, search your deck for up to one card with "Seeker" in its card name, call it to RC, and shuffle your deck. Then, if the number of units you have is more than your opponent’s, choose a card from your damage zone, and turn it face up (Counter Charge 1). This ability cannot be used for the rest of that turn.
 
-AUTO [VC]: When this unit attacks a vanguard, if you have another unit in your center column, this unit gets power +3000 until end of that battle.'
+AUTO [VC]: When this unit attacks a vanguard, if you have another unit in your middle column, this unit gets power +3000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -2306,7 +2306,7 @@ CardStat = 2589
 global.CardName[CardStat] = 'Knight of Fragment'
 global.CardText[CardStat] = 'Royal Paladin/Elf
 
-CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if the number of grade 2 rear-guards you have is two or more, this unit gets power +2000, and "AUTO [RC]: When this unit’s attack hits a vanguard, Soul Charge 1, choose one card from your damage zone, and turn it face up. (Counter Charge 1)".'
+CONT [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): During your turn, if you have two or more grade 2 rear-guards, this unit gets power +2000 and "AUTO [RC]: When this unit’s attack hits a vanguard, Soul Charge 1, choose a card from your damage zone, and turn it face up. (Counter Charge 1)".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 15
 }
@@ -3072,7 +3072,7 @@ global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
 CONT [VC] Generation Break 2: During your turn, all of your grade 1 or less units get power +5000.
 
-AUTO [VC]: [Choose a card from your hand, and discard it] During your turn, when your G unit with "Sanctuary Guard" in its original card name Stride, you may pay the cost. If you do, search your deck for up to one grade 1 or less card, call it to RC, shuffle your deck, choose one of your vanguards, that unit and the unit called with this effect get power +3000 until end of turn.'
+AUTO [VC]: [Choose a card from your hand, and discard it] During your turn, when your unit with "Sanctuary Guard" in its original card name Stride, you may pay the cost. If you do, search your deck for up to one grade 1 or less card, call it to RC, shuffle your deck, that unit gets power +3000 until end of turn, choose one of your vanguards, and it gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -3349,7 +3349,7 @@ CardStat = 4364
 global.CardName[CardStat] = 'Emit Hammer Dragon'
 global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
-ACT [RC] 1/Turn: [Soul Blast 1] If you called a unit due to an effect from your vanguard with "Alfred" in its card name during this turn, search your deck for up to one grade 1 or greater card, call it to another RC in the same column as this unit, and shuffle your deck.'
+ACT [RC] 1/Turn: [Soul Blast 1] If a unit was called this turn due to an effect from your vanguard with "Alfred" in its card name, search your deck for up to one grade 1 or greater card, call it to another RC in the same column as this unit, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -3727,7 +3727,7 @@ CardStat = 4457
 global.CardName[CardStat] = 'Devout Falx Dragon'
 global.CardText[CardStat] = 'Royal Paladin/Cosmo Dragon
 
-AUTO [VC/RC] Generation Break 1: When your grade 2 or greater unit is placed on RC, this unit gets power +3000 until end of turn.'
+AUTO [VC/RC] Generation Break 1: When your other grade 2 or greater unit is placed on RC, this unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 15
 }
@@ -5667,7 +5667,7 @@ CONT: Sentinel.
 
 AUTO [GC]: When placed, COST [discard a card from your hand], and one of your units cannot be hit until end of that battle.
 
-AUTO [VC]: When placed, draw a card, and discard a card.'
+AUTO [VC]: When placed, draw a card, and discard a card from your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 15
 }
