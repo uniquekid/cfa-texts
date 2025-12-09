@@ -9489,17 +9489,31 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 15122
+CardStat = 15123
 {
-global.CardName[CardStat] = 'Eternal Idea Alcasal'
-global.CardText[CardStat] = 'Dark States/Abyss Dragon
+global.CardName[CardStat] = 'Screw Curl Damseille'
+global.CardText[CardStat] = 'Dark States/Human
 
-AUTO: When this unit is placed on VC, search your deck for up to one Queens order card, reveal it, put it into your hand, and shuffle your deck. If you persona rode this turn, search for up to two cards instead of one.
-
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two units with different card names instead of one. When you would call to RC with units, you may put the units that were on those RC into your soul instead of into your drop.'
-global.UnitGrade[CardStat] = 3
+AUTO: When this unit is placed on RC from hand, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], choose up to one of your opponent’s front row rear-guards, put it into soul, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
-global.PersonaRide[CardStat] = 1
 }
-global.PowerStat[CardStat] = 13000
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Give it gauge charge after editing the client
+CardStat = 15124
+{
+global.CardName[CardStat] = 'Breeding Mandragora'
+global.CardText[CardStat] = 'Dark States/Set Order
+
+AUTO: When this card is put into the order zone, put the top two cards of your deck face down as this card’s gauge.
+
+AUTO [Order Zone]: At the beginning of your ride phase, choose a card from this card’s gauge, put it into hand, choose a card from this card’s gauge, and put it into soul. Put this card into drop. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
