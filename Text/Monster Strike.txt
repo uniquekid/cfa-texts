@@ -2586,11 +2586,8 @@ global.CardName[CardStat] = 'Progress-encouraging "Goddess of Competition", Eris
 global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [VC]: When a card would be called by this unit’s ability to a RC with a normal unit without sentinel, return the unit that is on that RC to hand instead of putting it into drop.
-
 CONT [VC]: All of your rear-guards get "AUTO [RC]: When a unit with a different card name from this unit is placed on the RC this unit is on by your vanguard’s ability, increase that placed unit’s power by this unit’s original power.".
-
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your drop or Monster BOX, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two instead of one.
-
 Strike Shot - ACT [VC] 1/Turn: COST [Coul Blast 1 card with the same card name as this unit], and your opponent puts all of their front row rear-guards on the bottom of their deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 7
@@ -2718,7 +2715,7 @@ CardStat = 15139
 global.CardName[CardStat] = 'Vanitas: Demon Hunter'
 global.CardText[CardStat] = 'Monster Strike/Demihume
 
-AUTO: When this card is discarded from hand during your ride phase, if you have an 'Extreme Beast Deity Festival Pull Targets" vanguard, COST [Soul Blast 1], and draw a card.
+AUTO: When this card is discarded from hand during your ride phase, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, COST [Soul Blast 1], and draw a card.
 
 ACT [Drop]: COST [Bind two cards with the same card name as this card from drop], choose a card each from your hand and Monster BOX, and if you chose a total of two cards, exchange them.'
 global.UnitGrade[CardStat] = 2
@@ -2765,14 +2762,12 @@ global.CardName[CardStat] = 'Laughing God of Fortune Fishing Up Smiles, Ebisu'
 global.CardText[CardStat] = 'Monster Strike/Deity
 
 ACT [Monster BOX]: If you have a grade 3 or greater vanguard with "Ebisu" in its card name, your opponent’s vanguard is grade 3 or greater, and you did not ride from a grade 3 or greater unit this turn, ride this card as stand. If you rode from a grade 3 unit, choose a card from your hand, and put it into the Monster BOX face up.
-
 AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards with different card names from your Monster BOX, and call them to RC.
-
 AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a card from your hand], choose any number of unit cards with different card names from your Monster BOX, and call them to GC.
-
-Strike Shot = ACT [VC] 1/Turn: COST [Soul Blast 1 grade 3 or greater vard with "Ebisu" in its card name], and this unit gets "CONT [VC]: All of your front row units get power +5000. If a grade 4 card was Soul Blast by a Strike Shot ability this turn, they get power +15000 instead of +5000.".'
+Strike Shot = ACT [VC] 1/Turn: COST [Soul Blast 1 grade 3 or greater card with "Ebisu" in its card name], and this unit gets "CONT [VC]: All of your front row units get power +5000. If a grade 4 card was Soul Blast by a Strike Shot ability this turn, they get power +15000 instead of +5000.".'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 7
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2811,14 +2806,12 @@ CardStat = 15149
 {
 global.CardName[CardStat] = 'Neo: Resonance Mode'
 global.CardText[CardStat] = 'Monster Strike/Demihume
-
-ACT [Monster BOX]: If you have a grade 3 or greater vanguard with "Neo" in its card name, your opponent’s vanguard is grade 3 or greater, and you did not ride from a grade 3 or greater unit this turn, ride this card as stand. If you rode from a grade 3 unit, choose a card from your hand, and put it into the Monster BOX face up.
-
-AUTO [VC]: At the beginning of your main phase or when this unit attacks, COST [Counter Blast 1], choose up to two "Super Beast Deity Festival Pull Targets" with different card names from your drop, call them to RC, and they get power +5000 until end of turn. If you used a Strike Shot ability this turn, they get power +10000 instead of +5000.
-
-Strike Shot - ACT [VC] 1/Turn: COST [Soul Blast 1 grade or greater vard with "Neo" in its card name], until end of turn, this unit gets power +5000 / critical +1, then, if a grade 4 card was Soul Blast by a Strike Shot ability this turn, it also gets "AUTO [VC] 1/Turn: When your opponent’s unit is put on GC, if it is the first guardian put from hand during this battle, and it is during the battle this unit attacked, choose one of your opponent’s guardians, retire it, and all of that unit’s effects with "cannot be hit" are nullified.".'
+ACT [Monster BOX]: If you have a grade 3 or greater vanguard with "Neo" in its card name, your opponent’s vanguard is grade 3 or greater, and you did not ride from a grade 3 or greater unit this turn, ride this card as stand. If you rode from a grade 3 unit, choose a card from your hand, put it into the Monster BOX face up.
+AUTO [VC]: At the beginning of your main phase or when this unit attacks, COST [Counter Blast 1], choose up to two "Super Beast Deity Festival Pull Targets" with different card names from drop, call them to RC, and they get power +5000 until end of turn. If you used a Strike Shot ability this turn, power +10000 instead of +5000.
+Strike Shot - ACT [VC] 1/Turn: COST [Soul Blast 1 grade 3 or greater card with "Neo" in its card name], until end of turn, this unit gets power +5000 / critical +1, then, if a grade 4 card was Soul Blast by a Strike Shot ability this turn, it also gets "AUTO [VC] 1/Turn: When your opponent’s unit is put on GC, if it is the first guardian put from hand during this unit’s battle, choose one of your opponent’s guardians, retire it, and all of that unit’s effects with "cannot be hit" are nullified.".'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 7
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
