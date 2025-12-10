@@ -1061,6 +1061,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put one or more Meteo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Gravidia'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -1088,6 +1089,7 @@ AUTO [RC]: When this unit’s attack hits, search your deck for up to one Meteorit
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Pribram'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2910,7 +2912,7 @@ CardStat = 10595
 global.CardName[CardStat] = 'Hadron Axe Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
-AUTO [RC]: When your Research is put into the order zone, COST [retire this unit], and Counter Charge 1.'
+AUTO [RC]: When your Research card is put into your order zone, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -9574,3 +9576,319 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15125
+{
+global.CardName[CardStat] = 'Confront Jetgunner'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC from hand, and you do not have another rear-guard with the same card name as this unit, COST [Energy Blast 3], and this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15126
+{
+global.CardName[CardStat] = 'Inspection Robo, White Inspector'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT [RC]: If your damage zone has no face up cards, this unit gets "Intercept", and can intercept form the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15127
+{
+global.CardName[CardStat] = 'Percept Megavisor'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order
+
+Choose one of your rear-guards, and it gets "AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, your opponent chooses three cards from their hand, and reveals them." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15164
+{
+global.CardName[CardStat] = 'Venom Monster, Meidro'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Monster" in its card name, choose a unit card with "Monster" in its card name from your drop, and you may put it into soul.
+
+CONT [RC]: During your turn, if your vanguard is grade 3 or greater, and your order zone has two or more Research cards, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15165
+{
+global.CardName[CardStat] = 'Pincushion Monter, Mofugazaru'
+global.CardText[CardStat] = 'Brandt Gate/Alien
+
+AUTO [RC]: When your vanguard with "Monster" in its card name attacks or is attacked, COST [retire this unit], choose one of your vanguards, and it gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15179
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Rocket & Drill Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gravidia Nordlinger".
+
+AUTO: When this unit is placed on VC, search your deck for up to two Meteorite cards, put them into your Order Zone, and shuffle your deck.
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put one or more Meteorites from your Order Zone into your drop], until end of that battle, this unit gets power +15000, if you put three or more Meteorite cards into your drop for this cost, it gets critical +1, and if you put five or more, your trigger effects activate twice.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Gravidia'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15180
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gravidia Barringer".
+
+AUTO: When this unit is placed on VC or RC, if you have a Meteorite in your Order Zone, COST [Soul Blast 3], draw a card, and this unit gets power +5000 until end of turn.
+
+CONT [RC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15181
+{
+global.CardName[CardStat] = 'Rocket Switch & Drill Switch'
+global.CardText[CardStat] = 'Brandt Gate/Astroswitch
+
+CONT: This card is also regarded as "Gravidia Wells".
+
+AUTO: When this unit is placed on VC, look at seven cards from the top of your deck, choose any number of Meteorite cards, reveal them and put them into your hand, and shuffle your deck.
+
+ACT [RC] 1/Turn: If your vanguard is "Gravidia Nordlinger", COST [Soul Blast 1], choose up to two Meteorite cards from your hand, put them into your Order Zone, and this unit gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15182
+{
+global.CardName[CardStat] = 'Masked Rider Fourze'
+global.CardText[CardStat] = 'Brandt Gate
+
+CONT: This card is also regarded as "Gravidia Dellen".
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15183
+{
+global.CardName[CardStat] = 'Orion Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "Gravidia Pribram".
+
+AUTO [RC]: When this unit’s attack hits, search your deck for up to one Meteorite card, put it into your Order Zone, and shuffle your deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Pribram'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15184
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Rocket Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gravidia Stanner".
+
+CONT [RC/GC]: If your drop and Order Zone have a total of five or more set orders, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15185
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Drill Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gravidia Rlyk".
+
+AUTO [RC]: When this unit’s attack hits, search your deck or drop for up to one Meteorite card, put it into your Order Zone, and if you searched your deck, shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15186
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Radar Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gravidia Shergo".
+
+ACT [RC] 1/Turn: COST [Soul Blast 2], choose up to five Meteorite cards from your drop, return them to your deck and shuffle it. If you returned one or more cards, until end of turn, this unit gets power +5000, if you returned three or more cards, it gets power +5000, and if you returned five cards, it gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15187
+{
+global.CardName[CardStat] = 'Meteor Limit Break, "Meteor Strike"'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Meteorite
+
+CONT: This card is also regarded as "Neatness Meteor Shower".
+
+CONT: You may have up to sixteen "Neatness Meteor Shower" in your deck.
+
+AUTO: When this card is put into the Order Zone, you may Soul Charge 1. If it was put by your vanguard’s ability, you may draw a card.
+
+AUTO: When this card is put into your drop from the Order Zone, choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 16
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15188
+{
+global.CardName[CardStat] = 'Pisces Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "Gravidia Peters".
+
+AUTO [RC]: When the attack this unit boosted hits, choose up to two Meteorite cards from your drop, and put them on the bottom of your deck in any order. If you put two cards, retire this unit, and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15189
+{
+global.CardName[CardStat] = 'Powerdizer, Vehicle Mode'
+global.CardText[CardStat] = 'Brandt Gate/Machine
+
+CONT: This card is also regarded as "Ravenous Mutant, Marunorm".
+
+ACT [RC] 1/Turn: COST [Discard a set order card from your hand], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15190
+{
+global.CardName[CardStat] = 'Powerdizer'
+global.CardText[CardStat] = 'Brandt Gate/Machine
+
+CONT: This card is also regarded as "Craggy Monster, Girgrand".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, COST [discard a card from your hand], choose one of your units, and it cannot be hit until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15196
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Scissors Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Versatile Assembler".
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one set order from among them, reveal it and put it into your hand, and shuffle your deck.
+
+AUTO [RC] 1/Turn: When your other unit is placed on RC by a card’s ability, this unit gets "Boost" until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15197
+{
+global.CardName[CardStat] = 'Meteor Storm Limit Break, "Meteor Storm Punisher"'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Meteorite
+
+CONT: This card is also regarded as "Falling Hellhazard".
+
+CONT: When you would count the number of Meteorite cards put from your Order Zone into your drop for the cost of your vanguard’s ability, this card counts as two cards.
+
+AUTO: When this card is put into your drop from the Order Zone, bind this card, choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15198
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Elekstates'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is regarded as "Detonation Monster, Bobalmine".
+
+AUTO [RC]: At the end of the battle this unit boosted, if your Order Zone has a Set Order, COST [put this unit into your soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

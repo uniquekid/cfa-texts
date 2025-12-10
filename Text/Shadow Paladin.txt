@@ -3760,7 +3760,7 @@ global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
 AUTO [VC]: When it attacks, COST [Counter Blast 1 & retire two rear-guards], draw a card, your opponent chooses one of his or her rear-guards, retires it, and this unit gets power +10000 until end of turn.
 
-AUTO [VC]: When your rear-guard is retired, if a grade 3 card with "Blaster" in its card name is in your soul, this unit gets criticial +1 until end of turn.'
+AUTO [VC]: When your rear-guard is retired, if your soul has a grade 3 with "Blaster" in its card name, this unit gets criticial +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -4191,7 +4191,7 @@ CardStat = 6971
 global.CardName[CardStat] = 'Fiend Light of Insincerity, Sechnaill'
 global.CardText[CardStat] = 'Shadow Paladin/Demon
 
-AUTO [VC]: When placed, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to two cards with power 5000, call them to open RC, and shuffle your deck.'
+AUTO [VC]: When placed, COST [Counter Blast 1 & Soul Blast 1], search for up to two power 5000 cards from your deck, call them to open RC, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -4605,7 +4605,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 7836
 {
-global.CardName[CardStat] = 'Witch of Zestfulness, Annelyn'
+global.CardName[CardStat] = 'Witch of Zestfulness, Annelynn'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 AUTO [VC/RC]: When it attacks, if you have four or more grade 1 rear-guards, this unit gets power +20000 until end of that battle.'
@@ -4722,7 +4722,7 @@ CardStat = 7873
 global.CardName[CardStat] = 'Decimate Knight, Urheged'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO [RC]: When placed, COST [Counter Blast 3], and retire all of your other and your opponent’s rear-guards.'
+AUTO [RC]: When placed, COST [Counter Blast 3], and retire all of your and your opponent’s other rear-guards.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -4827,7 +4827,7 @@ CardStat = 7880
 global.CardName[CardStat] = 'Abyssal Owl '
 global.CardText[CardStat] = 'Shadow Paladin/High Beast
 
-AUTO [VC/RC]: This ability’s cost may be paid with "Soul Blast 1" if the grade of your and your opponent’s vanguard are the same. When placed, COST [Counter Blast 1], and draw a card.'
+AUTO [VC/RC]: If your and your opponent’s vanguards have the same grade, this ability’s cost may be paid with "Soul Blast 1". When placed, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
@@ -5094,9 +5094,9 @@ CardStat = 9938
 global.CardName[CardStat] = 'Revenger, Dragruler Phantom '
 global.CardText[CardStat] = 'Shadow Paladin/Abyss Dragon
 
-AUTO: When this unit is placed on VC by riding from a unit with "Revenger" in its card name during the ride phase, search your deck for up to one card with "Revenger" in its card name, call it to RC, and shuffle your deck. If your opponent’s damage zone has four or less cards, COST [Soul Blast 1 "Illusionary Revenger, Mordred Phantom"], choose one of your opponent’s vanguards, and deal it one damage.
+AUTO: When this unit is placed on VC by riding on a unit with "Revenger" in its card name during the ride phase, search your deck for up to one card with "Revenger" in its card name, call it to RC and shuffle your deck. If your opponent’s damage zone has four or less cards, COST [Soul Blast 1 "Illusionary Revenger, Mordred Phantom"], choose one of your opponent’s vanguards, and deal one damage.
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], choose all of your front row "Blaster Dark" or units with "Revenger" in their card names, and retire all of your other rear-guards. All of your front row units get power +5000 until end of turn for each unit retired. If you retired two or more, stand all of your front row rear-guards.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 1], choose all of your front row units with "Revenger" in its card names or "Blaster Dark", retire all of your other rear-guards, and for each rear-guard retired, all of your front row units get power +5000 until end of turn. If you retired two or more rear-guards, stand all of your front row rear-guards.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -5112,12 +5112,15 @@ global.CardText[CardStat] = 'Shadow Paladin/Elf
 
 CONT [Deck/Drop]: This card gets grade -2.
 
-ACT [Hand]: If your vanguard is grade 1, COST [discard this card from your hand], reveal the top ten cards of your deck, and if you revealed two or more grade 1 cards, choose one of the revealed grade 2 or greater cards, put it into your hand, and shuffle your deck.
+ACT [Hand]: If your vanguard is grade 1, COST [discard this card from your hand], reveal the top ten cards of your deck, and if you revealed two or more grade 1 cards, choose a grade 2 or greater card from among them, put it into your hand, and shuffle your deck.
 
-AUTO [VC/RC]: When this unit attacks, COST [Counter Blast 1 & retire two of your other rear-guards], and draw two cards. If this unit is on VC, this unit gets power +5000 until end of that battle for each grade 1 card in your drop.'
+AUTO [VC/RC]: When this unit attacks, COST [Counter Blast 1 & retire two other rear-guards], and draw two cards. If this unit is on VC, for every grade 1 card in your drop, this unit gets power +5000 until end of that battle.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.UnitGradeIncrementInDeck[CardStat] = -2
 global.CardInClan[CardStat] = 1
+global.RevealTopX[CardStat] = 10
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
@@ -5129,9 +5132,9 @@ CardStat = 10020
 global.CardName[CardStat] = 'Witch of Cursed Talisman, Etain '
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-AUTO: When this unit on VC is attacked, or when this unit is put on GC, COST [retire two of your rear-guards with "Witch" in its card names], choose one of your opponent’s stand rear-guards, and retire it.
+AUTO: When this unit on your VC is attacked, or when this unit is put on GC, COST [retire two of your rear-guards with "Witch" in their card names], choose one of your opponent’s stand rear-guards, and retire it.
 
-CONT [RC]: If you have a vanguard with "Witch" in its card name, this unit cannot be chosen by your opponent’s card effects, gets "Intercept", and gets power +5000.'
+CONT [RC]: If you have a vanguard with "Witch" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets "Intercept" and power +5000.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 1
 }
@@ -5307,7 +5310,7 @@ global.CardName[CardStat] = 'Knight of Blue Flash, Adolf'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
 AUTO [RC] Generation Break 1: When this unit’s attack hits a vanguard, Counter Charge 2.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 9000

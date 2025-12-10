@@ -5,6 +5,8 @@ global.CardText[CardStat] = 'Monster Strike/Egg
 
 AUTO [VC]: When you stand up, you become a Striker! (When you become Striker, put the Gacha Redora from the ride deck into the Order Zone, and get the Monster BOX!)
 
+AUTO: When this unit is rode upon by a grade 1, if you went second, draw a card.
+
 (SHIFT + left click to create the Monster BOX.)
 
 (Hold TAB to view the related card.)'
@@ -18,14 +20,17 @@ global.TokenSummoner[CardStat] = 8811
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 
 
+//Give it GaugeCharge after editing client
 CardStat = 8503
 {
 global.CardName[CardStat] = 'Gacha Redora'
-global.CardText[CardStat] = 'Monster Strike/Set Order/Gacha
+global.CardText[CardStat] = 'Monster Strike/Set Order
 
-ACT [Order Zone]: COST [rest this card], and put the top card of your deck into your Monster BOX face up.
+ACT [Order Zone]: COST [rest this card], put the top card of your deck into your Monster BOX face up.
 
-ACT [Order Zone] 1/Fight: If your and your opponent’s vanguards are grade 3 or greater, COST [Counter Blast 2 & rest this card], and put the top ten cards of your deck into your Monster BOX face up. Then, choose up to three cards from your Monster BOX, and call them to RC.'
+ACT [Order Zone] 1/Fight: If your vanguard is grade 3 or greater, COST [rest this card] and perform one of the following.
+• COST [Counter Blast 1], and put the top five cards of your deck into the Monster BOX face up. Choose up to one card from your Monster BOX, and call it to RC.
+• If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 2], and put the top ten cards of your deck into your Monster BOX face up. Then, choose up to three cards from your Monster BOX, and call them to RC.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 7
@@ -69,7 +74,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8683
 {
 global.CardName[CardStat] = 'Crush of Despair, Amida'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], and draw a card.
 
@@ -99,7 +104,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8685
 {
 global.CardName[CardStat] = 'Genesis Deity of the Illuminating World, Atum'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [RC]: When this unit is boosted, COST [Counter Blast 1 & Soul Blast 1], and the boosting unit gets power +10000 until end of that battle.
 
@@ -128,7 +133,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8687
 {
 global.CardName[CardStat] = 'Great Sea Deity, Watatsumi'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [GC]: This unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
@@ -141,7 +146,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8688
 {
 global.CardName[CardStat] = 'Awakened Savior, Miroku'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO: When this unit is rode upon, you may call this card to RC.
 
@@ -156,7 +161,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8689
 {
 global.CardName[CardStat] = 'One and Only Emperor, Caesar'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 CONT [RC]: If your opponent has two or less rear-guards, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 3
@@ -198,7 +203,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8692
 {
 global.CardName[CardStat] = 'Majestic Monarch, Tutankhamun'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe/Critical Trigger'
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -210,7 +215,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 8699
 {
 global.CardName[CardStat] = 'Netherworld Creator, Izanami'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [RC]: During your turn, if you have a "Worldmaker, Izanagi" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
@@ -224,7 +229,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8700
 {
 global.CardName[CardStat] = 'Great Connector Magical Girl of Bonds, Red-Hood Nonno'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [RC]: When this unit is boosted, if it is attacking a vanguard, COST [Soul Blast 1 & discard a card from your hand], choose two of your opponent’s front row rear-guards, and retire them.'
 global.UnitGrade[CardStat] = 3
@@ -282,7 +287,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8704
 {
 global.CardName[CardStat] = 'Worldmaker, Izanagi'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [RC]: During your turn, if you have a "Netherworld Creator, Izanami" on your RC, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
@@ -311,7 +316,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8706
 {
 global.CardName[CardStat] = 'Absolutely Invincible Great King of Terror, Nostradamus'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], and this unit gets power +10000 until end of turn.
 
@@ -327,7 +332,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8707
 {
 global.CardName[CardStat] = 'Valkyrie of the Unsealed Holy Shield, Athena'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [VC/RC]: During the battle this unit was boosted, if you have another grade 3 or greater unit, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 3
@@ -367,7 +372,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8710
 {
 global.CardName[CardStat] = 'Unique Detective, Sherlock Holmes'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [VC/RC]: When this unit attacks, COST [Counter Blast 1], you choose a grade from among 0 to 3, declare it, your opponent chooses a card with the declared grade from their hand, and may reveal it. If they revealed, this unit gets power +5000 until end of that battle. If they did not reveal, this unit gets power +15000 / critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -434,7 +439,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8715
 {
 global.CardName[CardStat] = 'Pure Mermaid Diva, Lorelei'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [RC]: When this unit is boosted, COST [Counter Blast 1], and this unit gets power +5000 until end of that battle. All of your opponent’s rear-guards in the same column as this unit cannot stand during your opponent’s next stand phase.'
 global.UnitGrade[CardStat] = 2
@@ -473,7 +478,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8718
 {
 global.CardName[CardStat] = 'Goddess of the Moon Reverie, Tsukuyomi'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 ACT [RC]: COST [Counter Blast 1 & rest this unit], choose a card from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
@@ -486,7 +491,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8719
 {
 global.CardName[CardStat] = 'Agriculture Goddess of the Illuminating Underworld, Persephone'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [RC]: At the end of the battle this unit boosted a rear-guard, Soul Charge 1, and if that attack hit, Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -499,7 +504,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8720
 {
 global.CardName[CardStat] = 'Eight-headed Sacrificial Princess, Kushinada'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [RC]: At the end of the battle this unit boosted a vanguard, if that attack hit, and you persona rode this turn, COST [Counter Blast 3], and stand all of your other rear-guards.'
 global.UnitGrade[CardStat] = 1
@@ -525,7 +530,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8722
 {
 global.CardName[CardStat] = 'Blessed Girl, Abel'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 ACT [VC/RC] 1/Turn: COST [Put a card from your hand on the top of your deck], and this unit gets power +10000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 1
@@ -538,7 +543,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8723
 {
 global.CardName[CardStat] = 'Great Magical Girl of Light and Shadow, Rembrandt'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [VC/RC]: When this unit attacks or boosts, COST [discard a card from your hand], and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -551,7 +556,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8724
 {
 global.CardName[CardStat] = 'Goddess of the Yamatai Land, Mahoroba'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to one "Queen of the Mahoroba Land, Himiko", call it to RC in the same column as this unit, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
@@ -564,7 +569,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8725
 {
 global.CardName[CardStat] = 'Heavenly Great Thief, Ishikawa Goemon'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [RC]: At the end of the battle this unit boosted a grade 3 vanguard, if that attack hit, COST [put this unit into your soul & discard a card from your hand], search your deck for up to one card with the same card name as the unit that was boosted, reveal it and put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
@@ -590,7 +595,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8727
 {
 global.CardName[CardStat] = 'Fiendish Magical Girls, Fujin & Raijin'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO: When this unit is rode upon, COST [Counter Blast 1 & Soul Blast 1], search your deck for up to two "Fiendish Magical Girls, Fujin & Raijin", call them to RC in the same column as each other, and shuffle your deck. If you called, at the end of that turn, put those units into your soul.'
 global.UnitGrade[CardStat] = 1
@@ -616,7 +621,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8729
 {
 global.CardName[CardStat] = 'Power of Reunited Emotions, Two for all'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO: When this unit is rode upon, COST [put a card from your hand into your soul], and you may call this card to RC.
 
@@ -721,7 +726,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8736
 {
 global.CardName[CardStat] = 'Great Fiery Deity of Finest Justice, Prometheus'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [RC]: When this unit is boosted, if it is attacking a vanguard, COST [Counter Blast 2], and retire all of your opponent’s power 8000 or less rear-guards.'
 global.UnitGrade[CardStat] = 3
@@ -735,7 +740,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8737
 {
 global.CardName[CardStat] = 'Maid of Unbridled Hope, Pandora'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO: When this unit is placed on VC, if you persona rode this turn, choose one of your opponent’s units, and it gets power -10000 until end of turn.
 
@@ -807,7 +812,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8742
 {
 global.CardName[CardStat] = 'Innocent "Sky Deity", Onyankopon'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 CONT [RC]: This unit can intercept from the back row.
 
@@ -876,7 +881,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8747
 {
 global.CardName[CardStat] = 'Arsene: Phantom Mode'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [VC/RC]: When this unit attacks, COST [Counter Blast 1], put all of the trigger units on your RC into your soul, and this unit gets power +10000 until end of that battle for each card put.
 
@@ -930,7 +935,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8751
 {
 global.CardName[CardStat] = 'Soul-inviting Guide of the Swamp, Teynemosir'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 ACT [RC]: COST [Soul Blast 2], and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -1006,7 +1011,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 8784
 {
 global.CardName[CardStat] = 'Beast Deity, Godstriker Extreme'
-global.CardText[CardStat] = 'Monster Strike/God/Front Trigger'
+global.CardText[CardStat] = 'Monster Strike/Deity/Front Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -1058,7 +1063,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8788
 {
 global.CardName[CardStat] = 'Goddess of True Flame, Agnamut'
-global.CardText[CardStat] = 'Monster Strike/God/Critical Trigger'
+global.CardText[CardStat] = 'Monster Strike/Deity/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -1082,7 +1087,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8790
 {
 global.CardName[CardStat] = 'Holy Angel of the Dazzling Lamp, Nightingale'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe/Heal Trigger
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
@@ -1096,7 +1101,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 8791
 {
 global.CardName[CardStat] = 'Benevolent Goddess of the Universe, Benzaiten'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [VC]: When this unit attacks, if you persona rode this turn, COST [discard a card from your hand], and your opponent cannot activate the AUTO abilities of their cards until end of that battle.
 
@@ -1193,7 +1198,7 @@ global.CardReassignedId[CardStat] = 8741
 CardStat = 8798
 {
 global.CardName[CardStat] = 'Pure Long-Haired Battle Princess, Rapunzel'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [VC/RC]: When this unit is boosted, COST [Counter Blast 1], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -1206,7 +1211,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8799
 {
 global.CardName[CardStat] = 'Beloved Wife of the Supreme God, Hera'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [VC]: When this unit’s attack hits, if you have three or more units, all of your front row rear-guards get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -1234,7 +1239,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 8801
 {
 global.CardName[CardStat] = 'Illusionary Ninja, Sarutobi Sasuke'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe
 
 AUTO [RC]: When this unit boosts, COST [Soul Blast 1], this unit gets power +5000 until end of that battle, and at the end of that battle, return this unit to your hand.'
 global.UnitGrade[CardStat] = 1
@@ -1260,7 +1265,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 8803
 {
 global.CardName[CardStat] = 'Sweet Dream Chocola'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO [RC]: When this unit boosts, COST [Counter Blast 1], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -1285,7 +1290,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 8805
 {
 global.CardName[CardStat] = 'Ruthless Monster-Slaying Hero, Perseus'
-global.CardText[CardStat] = 'Monster Strike/God/Draw Trigger'
+global.CardText[CardStat] = 'Monster Strike/Deity/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -1309,7 +1314,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 8807
 {
 global.CardName[CardStat] = 'Soul-saving White Holy Damsel, Guinevere'
-global.CardText[CardStat] = 'Monster Strike/Demihuman Tribe/Heal Trigger
+global.CardText[CardStat] = 'Monster Strike/Demihume Tribe/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
@@ -1400,7 +1405,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10407
 {
 global.CardName[CardStat] = 'Neo: Reverse Mode'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two "Super Beast Deity Festival Pull Targets" unit cards from your drop, call them to RC, and they get power +5000 until end of turn.
 
@@ -1416,7 +1421,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10408
 {
 global.CardName[CardStat] = 'Arsene: Anarchy Mode'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO: When this unit is placed on VC or RC, COST [Soul Blast 1], choose a grade 0 card from your drop, and call it to RC.
 
@@ -1544,7 +1549,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10419
 {
 global.CardName[CardStat] = 'Evil-exterminating Wise Leader, Prince Shotoku'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO [RC]: When this unit boosts, choose up to one unit card from your hand, and reveal it. If you revealed a card, choose a card with the same grade as that card from your Monster BOX, and swap them.'
 global.UnitGrade[CardStat] = 1
@@ -1866,7 +1871,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10441
 {
 global.CardName[CardStat] = 'Prodigious Prophetical Pop Band, Apocalyptic Fates'
-global.CardText[CardStat] = 'Monster Strike/Demihuman/Draw Trigger
+global.CardText[CardStat] = 'Monster Strike/Demihume/Draw Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -1880,7 +1885,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10442
 {
 global.CardName[CardStat] = 'Judge of Absolute Justice, Bao Qingtian'
-global.CardText[CardStat] = 'Monster Strike/Demihuman/Front Trigger
+global.CardText[CardStat] = 'Monster Strike/Demihume/Front Trigger
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -1894,7 +1899,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10443
 {
 global.CardName[CardStat] = 'Divine Reaper, Shennong'
-global.CardText[CardStat] = 'Monster Strike/God/Heal Trigger
+global.CardText[CardStat] = 'Monster Strike/Deity/Heal Trigger
 
 AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by a non-trigger effect ability or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 0
@@ -1908,7 +1913,7 @@ global.DefensePowerStat[CardStat] = 10000
 CardStat = 10444
 {
 global.CardName[CardStat] = 'Determined Princess Yearning for Heroes, Andromeda'
-global.CardText[CardStat] = 'Monster Strike/God/Heal Trigger
+global.CardText[CardStat] = 'Monster Strike/Deity/Heal Trigger
 
 AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
@@ -1922,7 +1927,7 @@ global.DefensePowerStat[CardStat] = 10000
 CardStat = 10445
 {
 global.CardName[CardStat] = 'Elixir of Immortality, Amrita'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 CONT: Sentinel (You may only have up to four cards with "CONT: Sentinel" in a deck.)
 
@@ -2241,7 +2246,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10467
 {
 global.CardName[CardStat] = 'Visitor from the Maddening Moon, Luna'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [RC]: When the attack this unit boosted hits a vanguard, if you have three or more units, Soul Charge 1. If you have six or more units, Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -2254,7 +2259,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10468
 {
 global.CardName[CardStat] = 'Sengoku Princess in Loving Support of Nagamasa, Oichi'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 CONT [RC/GC]: If your soul has a card with the same card name as your vanguard, this unit gets "Intercept", and gets shield +10000.'
 global.UnitGrade[CardStat] = 3
@@ -2268,7 +2273,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10469
 {
 global.CardName[CardStat] = 'King of France Harboring the Ideals of the Three Musketeers, D’Artagnyan'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 CONT [Hand]: When you would exchange this card with a card from your Monster BOX, this card may also be exchanged with a non-grade 1 card.
 
@@ -2325,7 +2330,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10479
 {
 global.CardName[CardStat] = '"Pruner" of the Dear Heart, Jack the Ripper'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO [RC]: At the end of the battle this unit boosted, you may put this unit into your Monster BOX face up.
 
@@ -2340,7 +2345,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10480
 {
 global.CardName[CardStat] = 'Happiness-composing "Holy Princess", Anastasia'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO [RC]: When this unit boosts, if your vanguard is a grade 3 or greater "Extreme Beast Deity Festival Pull Targets", you may have this unit get power +5000. If you do, at the end of that battle, put this unit into your Monster BOX face up, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -2353,7 +2358,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10481
 {
 global.CardName[CardStat] = '"Assassin" of the Mino Province, Kicho'
-global.CardText[CardStat] = 'Monster Strike/Demihuman
+global.CardText[CardStat] = 'Monster Strike/Demihume
 
 AUTO: When this unit is placed on RC, if your vanguard is an "Extreme Beast Deity Festival Pull Targets", COST [Soul Blast 1], choose up to one of your opponent’s units, and increase or decrease that unit’s power to 8000 until end of turn.
 
@@ -2369,7 +2374,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 10482
 {
 global.CardName[CardStat] = 'Disaster-warding "Fishery God", Ebisu'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose two cards with different card names from your Monster BOX that have different card names from your rear-guards, call them to RC in the same column, choose one of your opponent’s rear-guards with the same grade as any of the called cards, and retire it.
 
@@ -2400,7 +2405,7 @@ global.AttackFromRBuff[CardStat] = 5000
 CardStat = 10484
 {
 global.CardName[CardStat] = 'Magical Girls of Soul-shaking Demon Subjugation, Fujin & Raijin'
-global.CardText[CardStat] = 'Monster Strike/God
+global.CardText[CardStat] = 'Monster Strike/Deity
 
 AUTO: When this unit is placed on VC or RC, if your vanguard is an "Extreme Beast Deity Festival Pull Targets", COST [Soul Blast 1], search your deck for up to one card with "Fujin & Raijin" in its different card name from this card, reveal it and put it into your hand, and shuffle your deck.
 
@@ -2415,7 +2420,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 10490
 {
 global.CardName[CardStat] = 'Blazing Blacksmith God Who Delivers Hope, Hephaestus'
-global.CardText[CardStat] = 'Monster Strike/God/Critical Trigger'
+global.CardText[CardStat] = 'Monster Strike/Deity/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -2427,7 +2432,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10491
 {
 global.CardName[CardStat] = 'Delusional Maiden of Fragrant Happiness, Murasaki Shikibu'
-global.CardText[CardStat] = 'Monster Strike/Demihuman/Draw Trigger'
+global.CardText[CardStat] = 'Monster Strike/Demihume/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -2451,7 +2456,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10493
 {
 global.CardName[CardStat] = 'Ryugu’s Lovely Princess of Blissful Blue Sea, Otohime'
-global.CardText[CardStat] = 'Monster Strike/Demihuman/Heal Trigger
+global.CardText[CardStat] = 'Monster Strike/Demihume/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
@@ -2477,7 +2482,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 10495
 {
 global.CardName[CardStat] = 'Philosopher Who Advocates Ideal Love, Platon'
-global.CardText[CardStat] = 'Monster Strike/Demihuman/Critical Trigger'
+global.CardText[CardStat] = 'Monster Strike/Demihume/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 7
 }
@@ -2526,3 +2531,472 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 15128
+{
+global.CardName[CardStat] = 'Covenant "Alchemist", Faust'
+global.CardText[CardStat] = 'Monster Strike/Paladin
+
+AUTO: When this unit is placed on VC, search your deck or hand for up to one card with the [Pickup Gacha] ability, reveal it and put it into the order zone, and if your searched the deck, shuffle the deck. If you put a card from hand, draw a card.
+
+AUTO [RC]: When this unit boosts, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15129
+{
+global.CardName[CardStat] = 'Extreme Beast Deity Festival 2025'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Pickup Gacha] (If there are two or more [Pickup Gacha] cards in your Order Zone, put them into your drop until you have one card remaining)
+
+CONT [Order Zone]: All of your cards with "Eris" or "Iroha" or "Renaissance" or "Vanitas" or "Sanzu" or "Monte Cristo" or "Gekirin" or "Guilty" or "Satori" or "Muse" or "Memory" or "Faust" or "Chihaya" in their card names become "Extreme Beast Deity Festival Pull Targets". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Extreme Beast Deity Festival Pull Targets" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15130
+{
+global.CardName[CardStat] = 'Joy-delivering "Goddess of Music", Muse'
+global.CardText[CardStat] = 'Monster Strike/Deity
+
+AUTO: When this unit is rode upon by a grade 3 "Extreme Beast Deity Festival Pull Targets", look at the top seven cards of your deck, choose up to one "Extreme Beast Deity Festival Pull Targets" from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15131
+{
+global.CardName[CardStat] = 'Progress-encouraging "Goddess of Competition", Eris'
+global.CardText[CardStat] = 'Monster Strike/Deity
+
+CONT [VC]: When a card would be called by this unit’s ability to a RC with a normal unit without sentinel, return the unit that is on that RC to hand instead of putting it into drop.
+CONT [VC]: All of your rear-guards get "AUTO [RC]: When a unit with a different card name from this unit is placed on the RC this unit is on by your vanguard’s ability, increase that placed unit’s power by this unit’s original power.".
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your drop or Monster BOX, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two instead of one.
+Strike Shot - ACT [VC] 1/Turn: COST [Coul Blast 1 card with the same card name as this unit], and your opponent puts all of their front row rear-guards on the bottom of their deck in any order.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15132
+{
+global.CardName[CardStat] = '"Trailblazer" in a World Without Freedom, Satori'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+CONT: If you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, this unit gets power +5000 until end of turn.
+• AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into the Monster BOX.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15133
+{
+global.CardName[CardStat] = '"Revenger" of the Cavern, Monte Cristo'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, COST [Counter Blast 1 or ENergy Blast 3], choose one of your opponent’s front row rear-guards, and retire it.
+
+CONT [RC/GC]: If you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15134
+{
+global.CardName[CardStat] = '"Retainer" of Dear Memories, Memory'
+global.CardText[CardStat] = 'Monster Strike/Robot
+
+CONT [RC]: This unit cannot be chosen or retired by your opponent’s card effects.
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, and this unit is on a front row RC, your opponent chooses a card from their hand, and binds it face down.
+
+AUTO: When this unit leaves a front row RC, your opponent Puts a card bond by this unit’s ability into hand.
+
+(Moving to back row counts as leaving the front row RC)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15135
+{
+global.CardName[CardStat] = 'sinGuilty: Condemnation'
+global.CardText[CardStat] = 'Monster Strike/Dragon
+
+AUTO: When this card is put into damage zone from trigger zone, choose one of your "Extreme Beast Deity Festival Pull Targets" vanguards, and it gets power +5000 until end of turn.
+
+ACT [Damage Zone]: If your damage zone has five or more cards, and this card is face up, call this card to RC, and this unit gets power +20000 until end of turn. Put the top card of your deck into the damage one face down. (If an ability is costless, the cost is paid when declaring the activation of the ability)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15136
+{
+global.CardName[CardStat] = 'Higan’s "Ferryman", Sanzu'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO [RC]: When this unit boosts, if this unit was placed on RC from drop by your vanguard’s ability this turn, this unit gets power +5000 until end of that battle. If thi unit boosted a unit with "Enma" in its card name, it gets power +10000 instead of +5000.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15137
+{
+global.CardName[CardStat] = '"Determined Shibonu" That Brings About Change, Iroha'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+CONT [RC/GC]: If you have a unit with "Chihaya" in its card name on your RC or GC, this unit gets "Intercept", can intercept from the bac row, and gets shield +5000.
+
+ACT [Drop]: COST [Bind this card], choose one of your units with "Chihaya" in its card name, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15138
+{
+global.CardName[CardStat] = '"Poet" That Brings About Change, Chihaya'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO: If you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, this cost may be paid with Soul Blast 2. When this unit is placed on RC, COST [Counter Blast 1], search your deck or Monster BOX for up to one card with "Iroha" in its card name, call it to RC in the same column as this unit, and if you searched the deck, shuffle the deck.
+
+AUTO [RC]: When this unit is boosted by a unit with "Iroha" in its card name, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15139
+{
+global.CardName[CardStat] = 'Vanitas: Demon Hunter'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO: When this card is discarded from hand during your ride phase, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, COST [Soul Blast 1], and draw a card.
+
+ACT [Drop]: COST [Bind two cards with the same card name as this card from drop], choose a card each from your hand and Monster BOX, and if you chose a total of two cards, exchange them.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15140
+{
+global.CardName[CardStat] = '"Reviver" of the Arts, Renaissance'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+ACT [Drop/Monster BOX]: If you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, and you did not bind a trigger card this turn, COST [Energy Blast 3 & bind a trigger card from drop], and call this card to RC.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your bind zone has one or more trigger cards, this unit gets power +5000 until end of that battle. If two or more triggers are in your bind zone, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15141
+{
+global.CardName[CardStat] = 'The Dragon Girl of "Wrath", Gekirin'
+global.CardText[CardStat] = 'Monster Strike/Sprite
+
+AUTO: If your vanguard is grade 3 or greater, this cost may be paid with "Energy Blast 3". When this unit is placed on RC, if you have an "Extreme Beast Deity Festival Pull Targets" vanguard, COST [Counter Blast 1], and draw a card. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater "Extreme Beast Deity Festival Pull Targets" vanguard, COST [bind a card with the same card name as this unit from drop or Monster BOX], and this unit gets power +5000 until end of turn for each card with "Gekirin" in their card names in your bind zone.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15142
+{
+global.CardName[CardStat] = 'Laughing God of Fortune Fishing Up Smiles, Ebisu'
+global.CardText[CardStat] = 'Monster Strike/Deity
+
+ACT [Monster BOX]: If you have a grade 3 or greater vanguard with "Ebisu" in its card name, your opponent’s vanguard is grade 3 or greater, and you did not ride from a grade 3 or greater unit this turn, ride this card as stand. If you rode from a grade 3 unit, choose a card from your hand, and put it into the Monster BOX face up.
+AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards with different card names from your Monster BOX, and call them to RC.
+AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a card from your hand], choose any number of unit cards with different card names from your Monster BOX, and call them to GC.
+Strike Shot = ACT [VC] 1/Turn: COST [Soul Blast 1 grade 3 or greater card with "Ebisu" in its card name], and this unit gets "CONT [VC]: All of your front row units get power +5000. If a grade 4 card was Soul Blast by a Strike Shot ability this turn, they get power +15000 instead of +5000.".'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 7
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15143
+{
+global.CardName[CardStat] = 'Pure Sea God Guiding Towards Tranquility, Watatsumi'
+global.CardText[CardStat] = 'Monster Strike/Deity/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15144
+{
+global.CardName[CardStat] = 'Rebirthed Lord of the Fallen Angels, Lucifer'
+global.CardText[CardStat] = 'Monster Strike/Sprite/Over Trigger
+
+Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from your hand, and call it to RC.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 7
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 15149
+{
+global.CardName[CardStat] = 'Neo: Resonance Mode'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+ACT [Monster BOX]: If you have a grade 3 or greater vanguard with "Neo" in its card name, your opponent’s vanguard is grade 3 or greater, and you did not ride from a grade 3 or greater unit this turn, ride this card as stand. If you rode from a grade 3 unit, choose a card from your hand, put it into the Monster BOX face up.
+AUTO [VC]: At the beginning of your main phase or when this unit attacks, COST [Counter Blast 1], choose up to two "Super Beast Deity Festival Pull Targets" with different card names from drop, call them to RC, and they get power +5000 until end of turn. If you used a Strike Shot ability this turn, power +10000 instead of +5000.
+Strike Shot - ACT [VC] 1/Turn: COST [Soul Blast 1 grade 3 or greater card with "Neo" in its card name], until end of turn, this unit gets power +5000 / critical +1, then, if a grade 4 card was Soul Blast by a Strike Shot ability this turn, it also gets "AUTO [VC] 1/Turn: When your opponent’s unit is put on GC, if it is the first guardian put from hand during this unit’s battle, choose one of your opponent’s guardians, retire it, and all of that unit’s effects with "cannot be hit" are nullified.".'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 7
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15150
+{
+global.CardName[CardStat] = '"Revolutionary" Soaring Through Troubled Times, Kirinji'
+global.CardText[CardStat] = 'Monster Strike/Paladin
+
+AUTO: When this unit is placed on a front row RC, COST [Soul Blast 1], choose one of your rear-guards in the same column as this unit, and stand it.
+
+CONT [RC/GC]: If you have a "Super Beast Deity Festival Pull Targets" vanguard, this unit gets "Intercept", and it gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15151
+{
+global.CardName[CardStat] = '"Lion King" of Red Lightning, Arslan'
+global.CardText[CardStat] = 'Monster Strike/Paladin
+
+AUTO: When this unit is placed on VC, search your deck or hand for up to one card with the [Pickup Gacha] ability, reveal it and put it into order zone, and if you searched the deck, shuffle the deck. If you put a card from hand, draw a card.
+
+AUTO [RC]: When this unit boosts, if you have a "Super Beast Deity Festival Pull Targets" vanguard, this unit gets power +2000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15152
+{
+global.CardName[CardStat] = 'Super Beast Deity Festival 2025'
+global.CardText[CardStat] = 'Monster Strike/Set Order
+
+[Pickup Gacha] (If there are two or more [Pickup Gacha] cards in your Order Zone, put them into your drop until you have one card remaining)
+
+CONT [Order Zone]: All of your cards with "Nike" or "Mobius" or "L:" or "Kuon" or "Nightmare" or "Masamune" or "Magia" or "Kirinji" or "Yakumo" or "Arslan" or "Abyss" or "Neo" in their card names become "Super Beast Deity Festival Pull Targets". All "Gacha Redora" in your Order Zone get "ACT [Order Zone]: COST [Rest this card], look at the top five cards of your deck, choose up to one "Super Beast Deity Festival Pull Targets" unit card from among them, put it into your Monster BOX face up, and shuffle your deck.".'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15153
+{
+global.CardName[CardStat] = 'Magia: Magical Girl of Purity'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO: When this unit is rode upon by a grade 3 "Super Beast Deity Festival Pull Targets", look at the top seven cards of your deck, choose up to one "Super Beast Deity Festival Pull Targets" from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15154
+{
+global.CardName[CardStat] = 'L: Fallen Angel Mode'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO [VC] 1/Turn: When this unit attacks, choose one of your rear-guards, and increase the power of this unit by that unit’s original power until end of turn. At the end of that battle, COST [Counter Blast 1], stand this unit, its drive becomes 0 until end of turn, then, if your opponent’s vanguard is grade 3 or greater, COST [put a card from hand into soul], choose one of your rear-guards, stand it, and this unit’s drive becomes 1 until end of turn.
+
+Strike Shot - ACT [VC] 1/Turn: COST [Soul Blast 1 card with the same card name as this unit], until end of turn, this unit gets "AUTO [VC] 1/Turn: When a card other than a trigger card is revealed during this unit’s drive check, this unit gets drive +1 until end of turn.", and this unit gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15155
+{
+global.CardName[CardStat] = '"Vanguard" of the Abyss, Abyss'
+global.CardText[CardStat] = 'Monster Strike/Fiend
+
+ACT [Drop]: If you have a grade 3 or greater "Super Beast Deity FestivalPull Targets" vanguard, COST [bind another card with the same card name as this card from drop], and call this card to RC.
+
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater "Super Beast Deity Festival Pull Targets" vanguard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15156
+{
+global.CardName[CardStat] = 'Kuon: Reaper <Xylophonist>'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if your vanguard attacked two or more times this turn, until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.
+
+AUTO [RC]: When your grade 3 or greater "Super Beast Deity Festival Pull Targets" vanguard attacks, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15157
+{
+global.CardName[CardStat] = 'Nike: Victorious Form'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+ACT [Monster BOX]: COST [put a card with a different card name from this card from hand into Monster BOX], and put this card into hand.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a "Super Beast Deity Festival Pull Targets" vanguard, COST [put this unit into soul], choose one of your rear-guards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15158
+{
+global.CardName[CardStat] = 'Nightmare: Dream Style'
+global.CardText[CardStat] = 'Monster Strike/Demon
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a "Super Beast Deity Festival Pul0 lTargets" vanguard, COST [put this unit into soul], and Counter Charge 1 .
+
+AUTO [Soul]: When your grade 3 or greater "Super Beast Deity Festival Pull Targets" vanguard is attacked, you may call this card to GC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15159
+{
+global.CardName[CardStat] = '"Problemsolver" of the Dream World, Mobius'
+global.CardText[CardStat] = 'Monster Strike/Demihume
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a "Super Beast Deity Festival Pull Targets" vanguard, COST [Soul Blast 1], and draw a card.
+
+ACT [Drop]: COST [Bind two cards with the same card name as this card from drop], choose a card each from your hand and Monster BOX, and if you chose a total of two cards, exchange them.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15160
+{
+global.CardName[CardStat] = 'Masamune: Flesh Blade’s Duty'
+global.CardText[CardStat] = 'Monster Strike/Samurai
+
+CONT [RC]: If you have a "Super Beast Deity Festival Pull Targets" vanguard, this unit’s original power becomes 15000.
+
+AUTO: If your vanguard is grade 3 or greater, this cost may be paid with "Energy Blast 3". When this unit is placed on RC, if you have a "Super Beast Deity Festival Pull Targets" vanguard, COST [Counter Blast 1], draw a card, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 7
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15161
+{
+global.CardName[CardStat] = 'Yakumo: Great Rough Deity Equip'
+global.CardText[CardStat] = 'Monster Strike/Paladin
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3 & put a "Super Beast Deity Festival Pull Targets" from hand into Monster BOX], and draw two cards.
+
+CONT [RC]: If this unit was placed on RC from drop this turn, this unit’s original power becomes 18000.
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have a "Super Beast Deity Festival Pull Targets" vanguard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 7
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

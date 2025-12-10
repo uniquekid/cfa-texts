@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 15122
+global.AllCard = 15198
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1289,6 +1289,22 @@ CONT [Order Zone]: You cannot put set orders other than this card and Grimoire c
 AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it into order zone, and if your searched the deck, shuffle the deck.
 
 AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journey’s End> normal unit is placed on RC during your turn, if it is not the battle phase, search your deck or drop for up to one Grimoire card, put it into the order zone, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 15171
+{
+global.CardName[CardStat] = 'Idealize Queen’s Fort'
+global.CardText[CardStat] = 'Dark States/Token Set Order
+
+ACT [Order Zone]: If you have a vanguard with "Alcasal" in its card name, COST [rest this card], and perform one of the following.
+• Choose a normal unit from your drop, and put it into soul.
+• Look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. If this card was put into order zone this turn, choose up to two cards instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }

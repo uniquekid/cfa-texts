@@ -9489,17 +9489,199 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 15122
+CardStat = 15123
 {
 global.CardName[CardStat] = 'Eternal Idea Alcasal'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO: When this unit is placed on VC, search your deck for up to one Queens order card, reveal it, put it into your hand, and shuffle your deck. If you persona rode this turn, search for up to two cards instead of one.
+AUTO: When this unit is placed on VC, search your deck for up to one Queen’s Order card, reveal it and put it into hand, and shuffle the deck. If you persona rode this turn, search for two cards instead of one.
 
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two units with different card names instead of one. When you would call to RC with units, you may put the units that were on those RC into your soul instead of into your drop.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two cards with different card names instead of one. When you would call to a RC with a unit by this ability, you may put the unit on that RC into soul instead of drop.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+//Give it gauge charge after editing the client
+CardStat = 15124
+{
+global.CardName[CardStat] = 'Breeding Mandragora'
+global.CardText[CardStat] = 'Dark States/Set Order
+
+AUTO: When this card is put into the order zone, put the top two cards of your deck face down as this card’s gauge.
+
+AUTO [Order Zone]: At the beginning of your ride phase, choose a card from this card’s gauge, put it into hand, choose a card from this card’s gauge, and put it into soul. Put this card into drop. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15166
+{
+global.CardName[CardStat] = 'Screw Curl Damseille'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is placed on RC from hand, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], choose up to one of your opponent’s front row rear-guards, put it into soul, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15167
+{
+global.CardName[CardStat] = 'Nocti Vagant'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [Soul]: When your unit is placed on RC from soul, if you have a grade 3 or greater vanguard with "Alcasal" in its card name, and you do not have a rear-guard with the same card name as this card, COST [Energy Blast 3], call this card to RC, and at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15168
+{
+global.CardName[CardStat] = 'Furry Cockatree'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [put two Queen’s Order cards from soul on the bottom of the deck in any order], choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15169
+{
+global.CardName[CardStat] = 'Alcasal'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15170
+{
+global.CardName[CardStat] = 'Raising Idea Alcasal'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into order zone.
+
+(SHIFT + left click to generate token.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.TokenSummoner[CardStat] = 15171
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 15171
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15172
+{
+global.CardName[CardStat] = 'Strive Idea Alcasal'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+AUTO: When this unit is placed by riding from "Raising Idea Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], serarch your deck for up to one Queen’s Order card, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15173
+{
+global.CardName[CardStat] = 'Lielua'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Mate Unit] - "Alcasal" (This card cannot be ridden, and can only be called to RC or GC if you have a vanguard with "Alcasal" in its card name.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 20000
+
+
+CardStat = 15174
+{
+global.CardName[CardStat] = 'Signalize Queen’s Order'
+global.CardText[CardStat] = 'Dark States/Normal Order/Queen’s Order
+
+Play this with COST [Counter Blast 1] if you have a vanguard with "Alcasal" in its card name!
+
+Put this card into soul, choose up to two cards with different card names from your soul, call them to RC, and you get "If your soul has ten or more cards, all of your front row units get power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15175
+{
+global.CardName[CardStat] = 'Vitalize Queen’s Shield'
+global.CardText[CardStat] = 'Dark States/Blitz Order/Queen’s Order
+
+Play this if you have a vanguard with "Alcasal" in its card name!
+
+Put this card into soul. You may Soul Charge 1. Choose up to one non-sentinel unit card other than over trigger from your soul, call it to GC, and it gets shield +5000 until end of that battle. If you called a unit with "Lielua" in its card name, it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15176
+{
+global.CardName[CardStat] = 'Demonic Sword of Awakening, Welkaina'
+global.CardText[CardStat] = 'Dark States/Human
+
+CONT: If you have a vanguard with "Alcasal" in its card name, this card gets all of the following.
+• AUTO: When this unit is placed on RC, you may Soul Charge 1. If you did not Soul Charge 1, choose a card from your drop, and you may put it into soul.
+• CONT [RC]: During your turn, if your soul has ten or more cards, this unit gets power +5000.
+• AUTO [RC]: When this unit attacks, if this unit was palced by your vanguard’s ability this turn, this unit gets power +5000 until end of that battle. Then, if your soul has ten or more cards, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle this unit attacked, you may put this unit into soul. If you put it into soul, draw a card., and if your soul has fifteen or more cards, this unit gets critical +1 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15177
+{
+global.CardName[CardStat] = 'Penetration Gargoyle, Venesgalza'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is placed on RC, COST [Energy Blast 3], choose a Queen’s Order card from your soul, put it into hand, and Soul Charge 1.
+
+AUTO [RC] [Arma Arms]: When your unit with "Lielua" in its card name is placed on another RC in the same column as this unit during your battle phase, you may put this unit face up as that unit’s Arma gauge.
+
+AUTO: When this card is put in the gauge zone by the [Arma Arms] ability, until end of your opponent’s next turn, the unit with this card as Arma gauge gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.", and for each card in your soul, it gets power +1000. If your opponent’s vanguard is grade 3 or greater, it gets power +2000 instead of +1000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

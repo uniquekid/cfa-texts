@@ -9775,7 +9775,7 @@ CardStat = 14252
 global.CardName[CardStat] = 'Knight of Ray, Ermingal'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Bastion" in its card name, COST [Energy blast 3], and when this unit would attack, it battles all of your opponent’s units in a column. At the end of that turn, retire this unit.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Bastion" in its card name, COST [Energy Blast 3], and when this unit would attack, it battles all of your opponent’s units in a column. At the end of that turn, retire this unit.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -11544,4 +11544,30 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15145
+{
+global.CardName[CardStat] = 'Knight of Sterness, Halses'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Energy Blast 2 & retire another rear-guard], choose one of your opponent’s front row rear-guards, retire it, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15146
+{
+global.CardName[CardStat] = 'Expert Closure Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is put on GC, if your damage zone has three or more cards, this unit gets shield +5000 until end of that battle. If your damage zone has no face up cards, COST [Soul Blast 1], and this unit gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
