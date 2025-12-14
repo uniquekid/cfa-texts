@@ -851,7 +851,7 @@ CardStat = 8621
 global.CardName[CardStat] = 'Virulence Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Abyss Dragon
 
-AUTO: When this unit is retired for your cards cost, COST [Counter Blast 1 & Soul Blast 1], all of your units with "Blaster" in their card names get power +5000 until end of turn.'
+AUTO: When this unit is retired from RC for the cost of your card, COST [Counter Blast 1 & Soul Blast 1], and all of your units with "Blaster" in their card names get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -865,7 +865,7 @@ CardStat = 8622
 global.CardName[CardStat] = 'Heavenly Blade of Sublime, Bethida'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 2 & Soul Blast 1], you choose a column, and your opponent puts all of their rear-guards in that same column on the bottom of their deck in any order.'
+AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 2 & Soul Blast 1], choose a column, and your opponent puts all of their rear-guards in that same column on the bottom of their deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -1336,7 +1336,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [RC]: During the battle this unit attacked, if you have a vanguard with "Blaster" in its card name, this unit gets power +5000.
 
-AUTO: When this unit is retired from RC for the cost of your vanguard, COST [Counter Blast 1], and put this card into your hand.'
+AUTO: When this unit is retired from RC by the cost of your vanguard, COST [Counter Blast 1], and put this card into your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -2555,7 +2555,7 @@ CardStat = 10136
 global.CardName[CardStat] = 'Four-side Glow Sorceress'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [Front Row RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Sorceress" in its card name, COST [Soul Blast 2], and Counter Charge 1. If this units power was increased by a trigger effect this turn, draw a card.'
+AUTO [Front Row RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Sorceress" in its card name, COST [Soul Blast 2], and Counter Charge 1. If this unit’s power was increased or decreased by a trigger effect this turn, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -2751,7 +2751,7 @@ CardStat = 10221
 global.CardName[CardStat] = 'Divine Sister, Languedechat'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-CONT [RC]: If your soul has a grade 3 or greater, this unit gets "Boost", and power +5000. (Active on opponent’s turn too)'
+CONT [RC]: If you have a grade 3 or greater card in your soul, this unit gets "Boost", and power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -3590,7 +3590,7 @@ CardStat = 10716
 global.CardName[CardStat] = 'Magic of Auspicious Signs, Tataril'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this card is revealed for your drive check, you may call this card to an open RC. If you do, this unit gets "Boost" until end of turn.'
+AUTO: When this card is revealed during your drive check, you may call this card to an open RC. If you do, this unit gets "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -9211,7 +9211,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 [Ace Unit] (You may only have one Ace Unit in your deck)
 
-Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000 until end of turn. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s ability or retired by your opponent’s card’s ability." Shuffle the deck. (You may only use unique skills a total of once per fight among all of your cards)
+Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000 until end of turn. COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one normal unit with grade less than or equal to your vanguard from among them, call it to RC, choose that unit or this unit, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card’s ability or retired by your opponent’s card’s ability.". Shuffle the deck. (You may only use unique skills a total of once per fight among all of your cards)
 
 AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, and if you have four or more rear-guards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -11570,4 +11570,52 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15201
+{
+global.CardName[CardStat] = 'Divine Sister, Crostata'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Divine Sister" in its card name, look at the top three cards of your deck, choose up to one unit card with "Divine Sister" in its different card name from this unit and grade less than or equal to your vanguard, call it to RC, and put the rest on the bottom of the deck in any order.
+
+AUTO [Back Row RC] 1/Turn: When your rear-guard with "Divine Sister" in its card name in the same column as this unit attacks, if your vanguard is grade 3 or greater, that attacking unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15202
+{
+global.CardName[CardStat] = 'Divine Sister, Canele'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT [RC]: During your turn, if you have a vanguard with "Divine Sister" in its card name, this unit gets power +5000.
+
+AUTO [RC] 1/Turn: When this unit stand by the ability of your vanguard with "Divine Sister" in its card name, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15206
+{
+global.CardName[CardStat] = 'Magic of the Silver Key, Kikil'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if your bind zone has a card with the same card name as this unit, this unit gets power +10000.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you do not have another rear-guard with the same card name as this unit, perform one of the following.
+• Retire this unit, COST [reveal a grade 3 with "Draconis" in its card name from ride deck], and draw a card
+• If you have a grade 3 or greater vanguard with "Draconis" in its card name, retire this card or put it into soul. Then, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

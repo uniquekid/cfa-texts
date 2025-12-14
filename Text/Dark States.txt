@@ -2722,7 +2722,7 @@ CardStat = 10387
 global.CardName[CardStat] = 'Heat Haze Acrobat, Miroslava'
 global.CardText[CardStat] = 'Dark States/Warbeast
 
-AUTO: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with grade equal to or less than your vanguard from your soul, put it into your hand if you chose a card with the same card name as your vanguard, and call it to RC if it did not. If you put a card into your hand, this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC from hand during your main phase, COST [Counter Blast 1], choose a card with grade equal to or less than your vanguard from your soul, put it into your hand if you chose a card with the same card name as your vanguard, and call it to RC if you did not. If you put a card into your hand, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -2799,7 +2799,7 @@ CardStat = 10453
 global.CardName[CardStat] = 'Steam Fighter, Balih  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
 
-CONT [RC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): During your turn, if any players’ rear-guards were put on the bottom of the deck this turn, this unit gets power +10000.
+CONT [RC] Generation Break 2 (Active if you have two or more face up G units in total on your VC or G zone): During your turn, if any player’s rear-guards was put on the bottom of their deck this turn, this unit gets power +10000.
 
 AUTO: When this card is discarded from hand for the cost of Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -3175,7 +3175,7 @@ CardStat = 10558
 global.CardName[CardStat] = 'Diverse Wild Master, Honoratio'
 global.CardText[CardStat] = 'Dark States/Demon
 
-CONT [RC]: During your turn, if your soul has eight or more cards with different card names, this unit gets "Boost", and gets power +5000.
+CONT [RC]: During your turn, if your soul has eight or more cards with different card names, this unit gets "Boost", and power +5000.
 
 CONT [RC/GC]: If your soul has eight or more cards with different card names, this unit can intercept from the back row, and gets shield +5000.'
 global.UnitGrade[CardStat] = 2
@@ -4896,7 +4896,7 @@ CardStat = 12043
 global.CardName[CardStat] = 'Steam Fighter, Kasid'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s vanguards, and Soul Charge 1 for every two grades of that unit. (Soul Charge 1 twice if it’s grade 4)'
+AUTO [RC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose one of your opponent’s vanguards, and Soul Charge 1 for every two grades of that unit. (Soul Charge 1 twice if grade 4)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9496,7 +9496,9 @@ global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 AUTO: When this unit is placed on VC, search your deck for up to one Queen’s Order card, reveal it and put it into hand, and shuffle the deck. If you persona rode this turn, search for two cards instead of one.
 
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two cards with different card names instead of one. When you would call to a RC with a unit by this ability, you may put the unit on that RC into soul instead of drop.'
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a card from your soul, and call it to RC. If your opponent’s vanguard is grade 3 or greater, choose up to two cards with different card names instead of one. When you would call to a RC with a unit by this ability, you may put the unit on that RC into soul instead of drop.
+
+(If a card is in the gauge zone on the RC of the overcalled unit, perform all AUTO abilities on Standby before sending the gauge to drop)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -9581,13 +9583,13 @@ global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into order zone.
 
-(SHIFT + left click to generate token.)
+(You will be prompted to get the token upon ride.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.TokenSummoner[CardStat] = 15171
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerPosition[CardStat] = 'V'
 global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 15171
 }
@@ -9661,7 +9663,7 @@ global.CardText[CardStat] = 'Dark States/Human
 CONT: If you have a vanguard with "Alcasal" in its card name, this card gets all of the following.
 • AUTO: When this unit is placed on RC, you may Soul Charge 1. If you did not Soul Charge 1, choose a card from your drop, and you may put it into soul.
 • CONT [RC]: During your turn, if your soul has ten or more cards, this unit gets power +5000.
-• AUTO [RC]: When this unit attacks, if this unit was palced by your vanguard’s ability this turn, this unit gets power +5000 until end of that battle. Then, if your soul has ten or more cards, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle this unit attacked, you may put this unit into soul. If you put it into soul, draw a card., and if your soul has fifteen or more cards, this unit gets critical +1 until end of that battle.'
+• AUTO [RC]: When this unit attacks, if this unit was palced by your vanguard’s ability this turn, this unit gets power +5000 until end of that battle. Then, if your soul has ten or more cards, until end of that battle, this unit gets "AUTO [RC]: At the end of the battle this unit attacked, you may put this unit into soul. If you put it into soul, draw a card.", and if your soul has fifteen or more cards, this unit gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9685,3 +9687,20 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15207
+{
+global.CardName[CardStat] = 'Direful Doll, Eselreda'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Direful Doll" in its card name, and you do not have a rear-guard with the same card name as this card, COST [put a rear-guard into soul], and call this card to RC.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Direful Doll" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, bind this unit, and draw a card. If this unit was placed on RC by your card’s ability this turn, it gets power +10000 instead of +5000. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000

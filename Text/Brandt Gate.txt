@@ -4562,6 +4562,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any nu
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Nordlinger Masques'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8927,7 +8928,7 @@ CardStat = 14310
 global.CardName[CardStat] = 'Motivating Arranger'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [Back Row RC] 1/turn: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
+AUTO [Back Row RC] 1/Turn: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9635,7 +9636,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15165
 {
-global.CardName[CardStat] = 'Pincushion Monter, Mofugazaru'
+global.CardName[CardStat] = 'Pincushion Monster, Mofugazaru'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When your vanguard with "Monster" in its card name attacks or is attacked, COST [retire this unit], choose one of your vanguards, and it gets power +5000 until end of that battle.'
@@ -9892,3 +9893,255 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15205
+{
+global.CardName[CardStat] = 'Putzen Schwestern, Weepl Feygen'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+CONT [Deck]: This card is also regarded as "Putzen Schwestern, Weepl".
+
+CONT [VC]: The cost of the AUTO abilities of your rear-guards with "Putzen Schwestern" in their card names is reduced by Counter Blast 1 .
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], choose units with "Putzen Schwestern" in their different card names up to the number of "Dispatch! Three Sisters of Cleaning!" in your order zone, stand them, and increase or decrease their drive to 0 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15210
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Hayabusamaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [Drop]: When any player’s card is put into your order zone during your turn, if it is not the battle phase, COST [Counter Blast 1], and call this card to RC.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard, this unit gets power +5000. If your vanguard is a <Battleroid> and your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [bind this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15214
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Cosmicstates'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Gore Gravidia, Nordlinger Masques".
+
+CONT: This card can only be ridden from a grade 3 with "Nordlinger" in its card name.
+
+ACT [VC] 1/Turn: COST [Remove a card with "Nordlinger" in its different card name from this unit from hand, soul, or drop], choose up to three Meteorite cards from your drop, and put them into hand.
+
+AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any number of Meteorite cards from the order zone into drop], for every two Meteorite cards put into drop for this cost, choose up to one unit card from your hand, and call it to RC. If four or more Meteorite cards were put into drop for this cost, your trigger effects activate twice until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Nordlinger Masques'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15215
+{
+global.CardName[CardStat] = 'Sagittarius Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "Combine Rusher".
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your Order Zone has two or more Set Orders, this unit gets power +10000 until end of that battle.
+
+AUTO [Drop]: When a Set Order you played from hand is put into the Order Zone, COST [Counter Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15216
+{
+global.CardName[CardStat] = 'Virgo Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "White Jeweled Beast, Synthetica".
+
+AUTO: When this unit is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform either of the following according to the circle this unit is on.
+• RC - Choose a set order from your drop, and put it into hand.
+• GC - This unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15220
+{
+global.CardName[CardStat] = 'Masked Rider Meteor Storm'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Over Trigger
+
+CONT: This card is also regarded as "Star Dragon Deity of Infinitude, Eldobreath".
+
+Additional Effect - Double the power and critical of all of your front row units until end of turn! (Increase to double its power and critical when activated.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 15221
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Launcher Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Enlightened Age Dragon".
+
+ACT [RC] 1/Turn: If you persona rode this turn, COST [Soul Blast 1 & discard a card from hand], and this unit gets power +5000 until end of turn. Choose a set order from your drop, and put it into your hand. Choose a set order with a different card name from the card put into your hand by this effect from your drop, and put it into your hand. ("If you persona rode" is also active if you activated persona ride other than from normal riding)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15231
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Basestates "Shield Module"'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Planet Wall Dragon".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15232
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Magnetstates Limit Break'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Front Trigger
+
+CONT: This card is also regarded as "Cardinal Draco, Enpyro".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15233
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Elekstates Limit Break'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Critical Trigger
+
+CONT: This card is also regarded as "Patrol Robo, Dekarcop".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15234
+{
+global.CardName[CardStat] = 'Masked Rider Fourze, Firestates Limit Break'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Draw Trigger
+
+CONT: This card is also regarded as "Ameliorate Connector".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15235
+{
+global.CardName[CardStat] = 'Leo Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "Pantarhei Dragon".
+
+ACT [RC] 1/Turn: COST [Soul Blast 1], draw a card, choose a card from your hand, discard it, if your order zone has a set order, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15236
+{
+global.CardName[CardStat] = 'Aquarius Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+(STANDARD JP & EN: You can only run this card if you do not have Aux Machine Monster, Savoied in your deck.)
+
+CONT: This card is also regarded as "Aiding Monster, Tectien".
+
+AUTO: When this card is discarded from your hand during your turn, look at five cards from the top of your deck, choose up to one Set Order from among them, reveal it and put it into your hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
+
+
+CardStat = 15237
+{
+global.CardName[CardStat] = 'Libra Zodiarts'
+global.CardText[CardStat] = 'Brandt Gate/Zodiarts
+
+CONT: This card is also regarded as "Bizarre Visitor".
+
+AUTO [RC]: When this unit attacks or boosts, if your vanguard is "Gore Gravidia, Nordlinger Masques", choose up to two Meteorite cards from your hand, and put them into the order zone. If you put one or more cards, this unit gets power +5000 until end of that battle, if you put two cards, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15238
+{
+global.CardName[CardStat] = 'Rider Exploding Shoot'
+global.CardText[CardStat] = 'Brandt Gate/Blitz Order
+
+CONT: This card is also regarded as "Fluctuate Buster Barrage".
+
+Choose up to two grade 2 or greater unit cards with different card names from your drop, call them to GC, choose one of your units, and it gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
