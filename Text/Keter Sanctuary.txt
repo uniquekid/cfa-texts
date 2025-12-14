@@ -11571,3 +11571,51 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15201
+{
+global.CardName[CardStat] = 'Divine Sister, Crostata'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Divine Sister" in its card name, look at the top three cards of your deck, choose up to one unit card with "Divine Sister" in its different card name from this unit and grade less than or equal to your vanguard, call it to RC, and put the rest on the bottom of the deck in any order.
+
+AUTO [Back Row RC] 1/Turn: When your rear-guard with "Divine Sister" in its card name in the same column as this unit attacks, if your vanguard is grade 3 or greater, that attacking unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15202
+{
+global.CardName[CardStat] = 'Divine Sister, Canele'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT [RC]: During your turn, if you have a vanguard with "Divine Sister" in its card name, this unit gets power +5000.
+
+AUTO [RC] 1/Turn: When this unit stand by the ability of your vanguard with "Divine Sister" in its card name, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15206
+{
+global.CardName[CardStat] = 'Magic of the Silver Key, Kikil'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+CONT [RC]: During your turn, if your bind zone has a card with the same card name as this unit, this unit gets power +10000.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you do not have another rear-guard with the same card name as this unit, perform one of the following.
+• Retire this unit, COST [reveal a grade 3 with "Draconis" in its card name from ride deck], and draw a card
+• If you have a grade 3 or greater vanguard with "Draconis" in its card name, retire this card or put it into soul. Then, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000

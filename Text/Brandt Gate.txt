@@ -9635,7 +9635,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15165
 {
-global.CardName[CardStat] = 'Pincushion Monter, Mofugazaru'
+global.CardName[CardStat] = 'Pincushion Monster, Mofugazaru'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When your vanguard with "Monster" in its card name attacks or is attacked, COST [retire this unit], choose one of your vanguards, and it gets power +5000 until end of that battle.'
@@ -9891,4 +9891,39 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15205
+{
+global.CardName[CardStat] = 'Putzen Schwestern, Weepl Feygen'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+CONT [Deck]: This card is also regarded as "Putzen Schwestern, Weepl".
+
+CONT [VC]: The cost of the AUTO abilities of your rear-guards with "Putzen Schwestern" in their card names is reduced by Counter Blast 1 .
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], choose units with "Putzen Schwestern" in their different card names up to the number of "Dispatch! Three Sisters of Cleaning!" in your order zone, stand them, and increase or decrease their drive to 0 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15210
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Hayabusamaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO [Drop]: When any player’s card is put into your order zone during your turn, if it is not the battle phase, COST [Counter Blast 1], and call this card to RC.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard, this unit gets power +5000. If your vanguard is a <Battleroid> and your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [bind this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
