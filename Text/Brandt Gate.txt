@@ -8077,7 +8077,7 @@ CardStat = 14061
 global.CardName[CardStat] = 'Super Dimensional Robo, Daikaiser  '
 global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
-ACT [VC]: D-Legion "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
+ACT [VC]: D-LEGION "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
 AUTO [VC] 1/Turn: When this unit attacks, if you did not boost during this battle, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO [VC]: At the beginning of the drive step, choose one of your opponent’s guardians other than over trigger, and retire it.". Then, If your bind zone does not have a "Dimensional Robo, Corekaiser", COST [bind a "Dimensional Robo, Corekaiser" from soul], and this unit gets "AUTO [VC]: When your opponent’s unit is retired from GC by this unit’s ability, nullify all of that unit’s ability with "cannot be hit".".
 (Corekaiser bind happens before guarding. You retire a guardian after all cards have been called to GC. No more guardians can be called after.)'
 global.UnitGrade[CardStat] = 3
@@ -8246,9 +8246,9 @@ CardStat = 14107
 global.CardName[CardStat] = 'Hero Who Saves the World, Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [VC]: D-Legion "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-Legion and while in D-Legion, both units lose Persona Ride)
+ACT [VC]: D-LEGION "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-Legion, and your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1 & discard a card from hand], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-LEGION, and your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1 & discard a card from hand], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 }
@@ -8292,7 +8292,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO [VC/RC]: When this unit attacks, if your order zone has an "Assemble! Brave Knights!" or "A Soul-inspiring Sword Locked Clash", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, you get "All of your front row units get power +5000." until end of turn.
 
-AUTO [VC]: At the beginning of your ride step, if this unit is D-Legion, COST [Energy Blast 3], search your deck or drop for up to one "Beyond the Explosive Courage! Burn Brave Big Bang", ride it as stand, and if you searched the deck, shuffle the deck.'
+AUTO [VC]: At the beginning of your ride step, if this unit is D-LEGION, COST [Energy Blast 3], search your deck or drop for up to one "Beyond the Explosive Courage! Burn Brave Big Bang", ride it as stand, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9398,7 +9398,7 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO: When this card is discarded from your hand during your turn, if you have a vanguard with "Dimensional Robo" in its card name, Energy Charge 2.
 
-AUTO [Soul]: When your vanguard stand by a card ability, if you have two vanguards with "Dimensional Robo" in their card names, COST [bind this card], and your vanguards’ drive becomes 1 until end of turn. If your vanguard D-Legion this turn, all of your front row rear-guards with "Dimensional Robo" in their card names get power +5000 until end of turn.'
+AUTO [Soul]: When your vanguard stand by a card ability, if you have two vanguards with "Dimensional Robo" in their card names, COST [bind this card], and your vanguards’ drive becomes 1 until end of turn. If your vanguard D-LEGION this turn, all of your front row rear-guards with "Dimensional Robo" in their card names get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10145,3 +10145,31 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 15249
+{
+global.CardName[CardStat] = 'Quadrupole Circular'
+global.CardText[CardStat] = 'Brandt Gate/Cyber Golem
+
+AUTO: When this unit is placed on RC from hand, if any player has a locked card, or your order zone has a set order, COST [Counter Blast 1], choose one of your opponent’s grade 2 or greater rear-guards, and retire it.
+
+CONT [RC/GC]: If your opponent’s bind zone has two or more cards, or your order zone has two or more cards, this unit gets shield +5000, and if your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15250
+{
+global.CardName[CardStat] = 'Twin Blades of Fact and Fiction, Decohillres'
+global.CardText[CardStat] = 'Brandt Gate/Cyberoid
+
+CONT [RC/GC]: If any player has a locked card, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
