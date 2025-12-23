@@ -10919,7 +10919,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Frieren:Beyond Journey’s End
 CONT: If you have a <Frieren:Beyond Journey’s End> vanguard, this card gets all of the following.
 • CONT [RC/GC]: If your vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
 • AUTO [Drop]: When you play a normal order, if you do not have a rear-guard with the same card name as this card, call this card to RC.
-• AUTO [RC]: At the end of the battle this unit attacked, if it is the first batle of this battle phase, and your vanguard is grade 3 or greater, COST [Soul Blast 2], and stand this unit.'
+• AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of this battle phase, and your vanguard is grade 3 or greater, COST [Soul Blast 2], and stand this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -11612,7 +11612,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 CONT [RC]: During your turn, if your bind zone has a card with the same card name as this unit, this unit gets power +10000.
 
 AUTO [RC]: At the end of the battle this unit attacked, if you do not have another rear-guard with the same card name as this unit, perform one of the following.
-• Retire this unit, COST [reveal a grade 3 with "Draconis" in its card name from ride deck], and draw a card
+• Retire this unit, COST [reveal a grade 3 with "Draconis" in its card name from ride deck], and draw a card.
 • If you have a grade 3 or greater vanguard with "Draconis" in its card name, retire this card or put it into soul. Then, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
@@ -11660,4 +11660,37 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15273
+{
+global.CardName[CardStat] = 'Knight of Restoration, Auguisans'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT: If you have a vanguard with only «Royal Paladin» for its clan, this card is only «Royal Paladin».
+
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Alfred" in its card name, this unit gets power +2000 until end of turn. Then, if you did not Counter Charge this turn, COST [Soul Blast 2], and Counter Charge 1.
+
+CONT [RC]: If you have a vanguard with only «Royal Paladin» for its clan, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15274
+{
+global.CardName[CardStat] = 'Solitary Knight, Gancelot  '
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Elf
+
+CONT: If you have a vanguard with only «Royal Paladin» for its clan, and your G zone has no cards, this card gets all of the following.
+• AUTO: When this card is discarded from hand during your turn, COST [put this card on the bottom of the deck], search the deck for up to one card with "Blaster Blade" in its card name, reveal it and put it into hand, and shuffle the deck.
+• AUTO [RC]: When this unit attacks, if your front row does not have another rear-guard with the same card name as this unit, and you have a "Blaster Blade" in your soul, until end of that battle, this unit gets power +5000 for each grade of your opponent’s vanguard. Then, you may have this unit get critical +1 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck, choose up to one "Blaster Blade" from soul or drop, and put it into hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 15
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0

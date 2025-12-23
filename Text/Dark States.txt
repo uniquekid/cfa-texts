@@ -6936,7 +6936,7 @@ global.CardName[CardStat] = 'Flying Manticore '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Chimera
 
 CONT: If you have a grade 3 or greater vanguard with "Harri" in its card name, this card gets all of the following.
-• Magia - AUTO [RC] Generation Break 1: At the end of the battle this unit attacked, if you did not call a unit from your soul during the batle phase this turn, COST [Counter Blast 1 & put this unit into soul], choose up to one card with a different card name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
+• Magia - AUTO [RC] Generation Break 1: At the end of the battle this unit attacked, if you did not call a unit from your soul during the battle phase this turn, COST [Counter Blast 1 & put this unit into soul], choose up to one card with a different card name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.
 • AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
@@ -9507,7 +9507,6 @@ global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 
 
-//Give it gauge charge after editing the client
 CardStat = 15124
 {
 global.CardName[CardStat] = 'Breeding Mandragora'
@@ -9515,10 +9514,13 @@ global.CardText[CardStat] = 'Dark States/Set Order
 
 AUTO: When this card is put into the order zone, put the top two cards of your deck face down as this card’s gauge.
 
-AUTO [Order Zone]: At the beginning of your ride phase, choose a card from this card’s gauge, put it into hand, choose a card from this card’s gauge, and put it into soul. Put this card into drop. (This effect is mandatory)'
+AUTO [Order Zone]: At the beginning of your ride phase, choose a card from this card’s gauge, put it into hand, choose a card from this card’s gauge, and put it into soul. Put this card into drop. (This effect is mandatory)
+
+(SHIFT + left click to gauge from top deck.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
+global.GaugeCharge[CardStat] = 2
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
