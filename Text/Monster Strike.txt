@@ -2871,12 +2871,15 @@ CardStat = 15153
 global.CardName[CardStat] = 'Magia: Magical Girl of Purity'
 global.CardText[CardStat] = 'Monster Strike/Demihume
 
-AUTO: When this unit is rode upon by a grade 3 "Super Beast Deity Festival Pull Targets", look at the top seven cards of your deck, choose up to one "Super Beast Deity Festival Pull Targets" from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is rode upon by a grade 3 "Super Beast Deity Festival Pull Targets", look at the top seven cards of your deck, choose up to one "Super Beast Deity Festival Pull Targets" from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if your vanguard is a grade 3 or greater "Super Beast Deity Festival Pull Target", this unit gets power +5000 until end of battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 7
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 15154
@@ -2946,7 +2949,7 @@ CardStat = 15158
 global.CardName[CardStat] = 'Nightmare: Dream Style'
 global.CardText[CardStat] = 'Monster Strike/Demon
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a "Super Beast Deity Festival Pul0 lTargets" vanguard, COST [put this unit into soul], and Counter Charge 1 .
+AUTO [RC]: At the end of the battle this unit boosted, if you have a "Super Beast Deity Festival Pull Targets" vanguard, COST [put this unit into soul], and Counter Charge 1 .
 
 AUTO [Soul]: When your grade 3 or greater "Super Beast Deity Festival Pull Targets" vanguard is attacked, you may call this card to GC.'
 global.UnitGrade[CardStat] = 1
