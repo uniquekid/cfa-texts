@@ -4067,7 +4067,7 @@ CardStat = 10293
 global.CardName[CardStat] = 'I’monStage! Ronovea'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-CONT [RC/GC]: If your Order Zone has an "All Set Up!", this unit gets power +5000 / shield +5000.' 
+CONT [RC/GC]: If you have "All Set Up!" in your Order Zone, this unit gets power +5000 / shield +5000.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -11399,7 +11399,7 @@ CardStat = 14996
 global.CardName[CardStat] = 'RaiZ:BlaZ, Tarantella'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
-CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your <Dragoroid> trigger units get sheild +5000.
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater, all of your <Dragoroid> trigger units get shield +5000.
 
 AUTO: When this unit is rode upon by a grade 3 card with "RaiZ:BlaZ" in its card name, choose up to one <Dragoroid> without Sentinel or up to one normal order from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
@@ -12291,3 +12291,20 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15285
+{
+global.CardName[CardStat] = 'Chinese New Year Day (February 17)'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT: This card is also regarded as "Aren’t I Great to be Attending? Livora".
+
+CONT [RC]: If you have a vanguard with "Haseritt" or "Mediell" in its card name, and this unit was placed this turn, you get "All of your trigger units on RC and in your deck are regarded as normal units instead.".
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Haseritt" or "Mediell" in its card name, all of your other rear-guards in the same column as this unit get power +5000.' 
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000

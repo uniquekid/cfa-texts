@@ -966,7 +966,7 @@ CardStat = 8927
 global.CardName[CardStat] = 'Aurora Battle Princess, Execute Lemonun'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [RC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 3], choose up to three of your opponent’s rear-guards, and imprison them in your Prison. Then, if three or more of your opponent’s cards are imprisoned in your Prison, until end of that battle, this unit gets power +10000, and if there are five or more, it gets critical +1.'
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1 & Soul Blast 3], choose up to three of your opponent’s rear-guards, and imprison them in your Prison. Then, if three or more of your opponent’s cards are imprisoned in your Prison, until end of that battle, this unit gets power +10000, and if five or more are imprisoned, it gets critical +1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -2415,7 +2415,7 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO [VC]: When this unit attacks a vanguard, choose a Product from your Order Zone, and operate it. (Activate its Operate ability)
 
-AUTO [VC]: When one of your Products is operated, this unit gets power +5000 until end of turn.'
+AUTO [VC]: When you operated a Product, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -2815,7 +2815,7 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on RC, choose a unit card with "Monster" in its card name from your drop, and you may put it into your order zone.
 
-CONT [GC]: If there are two or more Research cards in your order zone, this unit gets shield +5000.'
+CONT [GC]: If your order zone has two or more Research cards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9523,12 +9523,11 @@ CardStat = 15095
 global.CardName[CardStat] = 'Grand Arms, Silhouette'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [VC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1 "Machineries Factory"], and this unit gets "CONT [VC]: All of your units with "Armed Arms" in their card names get power +5000." until end of turn.
+ACT [VC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1 "Machineries Factory"], and this unit gets "CONT [VC]: All of your units with "Armed Arms" in their card names get power +5000." until end of turn.
 
 AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power and abilities continuously, and they are moved to RC as rest at the end of turn)
 
 AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (The moved unit is no longer attached)
-
 (Attached unit power is added automatically when attacking)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
@@ -9885,7 +9884,7 @@ CardStat = 15198
 global.CardName[CardStat] = 'Masked Rider Fourze, Elekstates'
 global.CardText[CardStat] = 'Brandt Gate/Hero
 
-CONT: This card is regarded as "Detonation Monster, Bobalmine".
+CONT: This card is also regarded as "Detonation Monster, Bobalmine".
 
 AUTO [RC]: At the end of the battle this unit boosted, if your Order Zone has a Set Order, COST [put this unit into your soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -10229,7 +10228,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15271
 {
 global.CardName[CardStat] = 'Dragontree Wretch, Kaiz Kaitul'
-global.CardText[CardStat] = 'Keter Sanctuary/Hydragrum
+global.CardText[CardStat] = 'Brandt Gate/Hydragrum
 
 AUTO: When this unit is placed on RC, COST [Energy Blast 3], search your deck for up to one "Masque of Hydragrum", reveal it and put it into hand, and shuffle the deck.
 
