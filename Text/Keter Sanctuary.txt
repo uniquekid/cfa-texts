@@ -11724,3 +11724,149 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15318
+{
+global.CardName[CardStat] = 'Omen of Exultation, Cavity Maligia'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15319
+{
+global.CardName[CardStat] = 'Wings of Jubilation, Hollow Raptor'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast/Fantome
+
+AUTO: When this unit is rode upon by "Fang of Fain, Vacant Fang", search your deck for up to one Crimson Moon card, put it into soul, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15320
+{
+global.CardName[CardStat] = 'Vacant Fang'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast/Fantome
+
+AUTO: When this unit is rode upon by a grade 3 card with "Blangdmire" in its card name, COST [Soul Blast 1], reveal the top three cards of your deck, choose a card from among them, and put it into hand. You may discard the rest of the revealed cards. If you did not discard them, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15321
+{
+global.CardName[CardStat] = 'Zero of Salvation, Blangdmire Fantome'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & bind four cards from drop], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000. If your bind zone has ten or more face up cards, they also get power +5000, and if it has thirteen or more face up cards, they also get power +5000.", and "AUTO [VC]: When this unit attacks, choose a face up card from your bind zone, and call it to RC.".
+
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Energy Blast 3 & bind two or more, up to four Crimson Moon cards from hand, soul, or drop], and perform all of the following according to the number of Crimson Moon cards in your bind zone.
+• Two or more - Choose up to one card from your drop, and call it to RC.
+• Four or more - This unit gets critical +1 until end of turn. If you persona rode this turn, choose a card from damage zone, and heal it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15322
+{
+global.CardName[CardStat] = 'Knight of Reconsideration, Restal'
+global.CardText[CardStat] = 'Keter Sanctuary/Human/Fantome
+
+AUTO [Drop]: When your card is bound during your main phase, if your bind zone has ten or more cards, COST [bind a card from hand], and call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15323
+{
+global.CardName[CardStat] = 'Knight of Concord, Istrena'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf/Fantome
+
+AUTO [RC]: When this unit attacks a vanguard, if your bind zone has a card, until end of that battle, this unit gets power +5000, and at the end of that battle, bind this unit. If this unit was placed on RC by the ability of your grade 3 or greater vanguard with "Blangdmire" in its card name this turn, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15324
+{
+global.CardName[CardStat] = 'Knight of Countenance, Advole'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf/Fantome
+
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Blangdmire" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Blangdmire" in its card name, look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
+
+AUTO [Back Row RC] 1/Turn: When your other unit is placed on RC in the same column as this unit during your battle phase, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Soul Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15325
+{
+global.CardName[CardStat] = 'Knight of Inscription, Zamuug'
+global.CardText[CardStat] = 'Keter Sanctuary/Human/Fantome
+
+AUTO: When this unit is placed on RC, if your opponent’s vanguard is grade 2 or greater, choose a grade 3 card with "Blangdmire" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into soul.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and this unit was placed on RC by your vanguard’s ability this battle phase, it gets power +10000 instead of +5000. If it got power +10000 by this effect, COST [Energy Blast 3], and it also gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15326
+{
+global.CardName[CardStat] = 'Knight of Ambitious Wings, Colgaflan'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this card is discarded from hand while riding from the ride deck, if you have a <Fantome> vanguard, COST [Soul Blast 1 or Energy Blast 3], search your deck for up to one Crimson Moon card, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this unit is put on GC from hand, if you have a <Fantome> vanguard, [Counter Blast 1 or Energy Blast 3], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15327
+{
+global.CardName[CardStat] = 'Knight of Charity, Baadact'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO [Bind Zone]: When your rear-guard is placed from bind zone during your battle phase, if you have a <Fantome> vanguard, and you do not have a rear-guard with the same card name as this card, COST [bind a card with a different card name from this card from drop], and call this card to a back row RC.
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a <Fantome> vanguard, look at the top five cards of your deck, choose up to one card with "Blangdmire" in its card name or up to one Crimson Moon card from among them, reveal it, put it into hand, and shuffle the deck.
+
+AUTO [RC]: At the end of the battle this unit boosted, if your bind zone has a Crimson Moon card, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
