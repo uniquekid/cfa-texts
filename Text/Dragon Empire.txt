@@ -9839,7 +9839,6 @@ CONT: This card is also regarded as "Lizard Runner, Undeux".
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
-global.CardInClan[CardStat] = 12
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
@@ -10704,3 +10703,252 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15328
+{
+global.CardName[CardStat] = 'Dragritter, Rwaida'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15329
+{
+global.CardName[CardStat] = 'Rowdy Dragon, Dilophonagging'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO: When this unit is retired from RC for the cost of the ability of your grade 3 or greater vanguard, COST [Energy Blast 3], and return this card to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15332
+{
+global.CardName[CardStat] = 'Lizard Soldier, Conroe  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Dragonman
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15333
+{
+global.CardName[CardStat] = 'Embodiment of Armor, Bahr    '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Demon
+
+AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with a Kai icon from the ride deck], choose a "Lizard Solder, Conroe" from your soul with a Kai icon, call it to RC, and it gets "ACT [RC]: COST [Retire this unit], search your deck for up to one grade 1 card, reveal it and put it into hand, and shuffle the deck." until end of fight.
+
+AUTO [Back Row Center RC]: When your vanguard with a Kai icon stand by your card ability, you may stand this unit. If you did, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15334
+{
+global.CardName[CardStat] = 'Dragon Knight, Nehalem    '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Human
+
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one unit card with a Kai icon without sentinel, reveal it and put it into hand, and shuffle the deck. If this unit was placed from hand, this unit gets power +5000 until end of turn.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with a Kai icon is placed, perform one of the following.
+• If you have no rear-guards with the same name as this card, you may call this card to RC. If you called, both your vanguard and this unit get power +5000 until end of turn.
+• COST [Bind this card], choose one of your vanguard’s AUTO abilities, and the cost of that ability is reduced by Counter Blast 1 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15335
+{
+global.CardName[CardStat] = 'Dragonic Overlord    '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Flame Dragon
+
+CONT: Then normal ride of this card from a grade 3 unit with a Kai icon in its different card name is also treated as a persona ride.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -1 until end of turn. If you persona rode this turn, COST [put a card from hand into soul], and until end of turn, this unit gets drive +1, and all of your front row units get power +5000.
+
+AUTO [RC] 1/Turn: At the end of the battle this unit attacked a rear-guard, if you have a vanguard with a Kai icon, COST [Energy Blast 3], and stand this unit.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Kai Icon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15336
+{
+global.CardName[CardStat] = 'Vortex Dragon  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Flame Dragon
+
+CONT: Then normal ride of this card from a grade 3 unit with a Kai icon in its different card name is also treated as a persona ride.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 grade 3 card with a Kai icon], retire all of your opponent’s front row rear-guards, and this unit gets "AUTO [VC] 1/Turn: When this unit attacks, choose a column, stand all of your rear-guards in that column, and they get power +5000 until end of turn. If you persona rode this turn, choose two columns instead of one." until end of turn.
+CONT [VC/RC]: During your turn, if you have a vanguard with a Kai icon, your opponent’s vanguard is grade 3 or greater, and your vanguard attacked two or more times this turn, or your opponent’s rear-guard was retired this turn, this unit gets power +10000.
+CONT [RC]: If you have a vanguard with a Kai icon, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Kai Icon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15337
+{
+global.CardName[CardStat] = 'Berserk Dragon   '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Flame Dragon
+
+AUTO: If this unit was ridden from hand, this ability has no cost. When this unit is placed on VC or RC, if you have a vanguard with a Kai icon, COST [Counter Blast 1 or Soul Blast 2], and perform one of the following. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• Draw a card.
+• Choose one of your opponent’s rear-guards, and retire it.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with a Kai icon, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15338
+{
+global.CardName[CardStat] = 'Wyvern Strike, Tejas '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Winged Dragon
+
+CONT [RC/GC]: If you have a vanguard with a Kai icon, this unit gets power +5000 / shield +5000, and when this unit would attack a rear-guard, it attacks all of your opponent’s rear-guards in the same column as that unit. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15339
+{
+global.CardName[CardStat] = 'Wyvern Strike, Jarran '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Winged Dragon
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one unit card with a Kai icon without sentinel from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1.
+
+AUTO [RC]: When this unit boosts "Wyvern Strike, Tejas", this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15340
+{
+global.CardName[CardStat] = 'Wyvern Guard, Barri  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Dragonman
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15341
+{
+global.CardName[CardStat] = 'Dragon Monk, Gojo    '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Gilman
+
+AUTO: When this card is discarded from hand during your ride phase, perform one of the following.
+• Call this card to RC as rest.
+• COST [Soul Blast 1], and call this card to RC.
+
+AUTO: When this unit is placed on RC, you may draw a card. If you do, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15342
+{
+global.CardName[CardStat] = 'Demonic Dragon Mage, Rakshasa  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Dragonman/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15343
+{
+global.CardName[CardStat] = 'Dragon Dancer, Monica  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Human/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15344
+{
+global.CardName[CardStat] = 'Dragon Monk, Genjo  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Human/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15345
+{
+global.CardName[CardStat] = 'Embodiment of Spear, Tahr  '
+global.CardText[CardStat] = 'Dragon Empire/Kagero/Demon/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardInClan[CardStat] = 12
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000

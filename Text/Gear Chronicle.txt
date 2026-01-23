@@ -153,7 +153,7 @@ CardStat = 2475
 global.CardName[CardStat] = 'Wakey Wakey Worker'
 global.CardText[CardStat] = 'Gear Chronicle/Workeroid/Stand Trigger
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit boosts, at the end of the battle, choose a face up card in your G zone, turn it face down. If you do, return this unit to your deck, and shuffle your deck.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When this unit boosts, at the end of the battle, choose a face up G unit card in your G zone, and you may turn it face down. If you do, return this unit to your deck, and shuffle your deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -1288,7 +1288,7 @@ CardStat = 3688
 global.CardName[CardStat] = 'Steam Maiden, Kullasina'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO: When this unit is placed on RC, all players may choose a card from his or her drop zone, and return it to his or her deck. If a player return a card, he or she shuffles his or her deck. If all players returned a card to his or her deck, you Counter Charge 1.'
+AUTO: When this unit is placed on RC, all fighters choose a card from their drop zone, and they may return that card to their deck. If they do, they shuffle their deck. If all fighters returned a card to their deck, you Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -1386,7 +1386,7 @@ CardStat = 3803
 global.CardName[CardStat] = 'Quiet Sleep-calling Gear Tapir'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast
 
-ACT [RC]: [Choose a card from your drop zone, and bind it face up & rest this unit] Choose one of the rear-guards at rest in your opponent’s the front row, and your opponent puts that unit on the bottom of his or her deck. This unit cannot stand during your next stand phase.'
+ACT [RC]: [Choose a card from your drop zone, and bind it face up & rest this unit] Choose one of the rear-guards at rest in your opponent’s front row, and your opponent puts that unit on the bottom of his or her deck. This unit cannot stand during your next stand phase.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -1598,7 +1598,7 @@ ACT [VC]: Legion 20000 "Steam Knight, Puzur-Ili".
 
 AUTO [VC]: [Counter Blast 1 & Choose a card from your hand, and put it into your soul] When this unit Legion, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card from among them, reveal it to your opponent, put it into your hand, shuffle your deck, choose one of your opponent’s rear-guards with the same grade as the card put into your hand with this effect, and your opponent puts that unit on the bottom of his or her deck.
 
-AUTO: When this unit is placed on VC, put two cards from the top of your deck into the drop zone, if those cards have the same grade, choose up to one card from among them, and put it into your hand.'
+AUTO: When this unit is placed on VC, put two cards from the top of your deck into your drop zone, and if those cards have the same grade as each other, choose up to one card from among them, and return it into your hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -1692,7 +1692,7 @@ CONT: Sentinel.
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose up to one of your vanguards that is being attacked, and that unit cannot be hit until end of that battle.
 
-AUTO Generation Break 1: [Choose a card from your hand, and discard it] When this unit is placed on RC from your deck by time leap, you may pay the cost. If you do, return this unit to your hand.'
+AUTO Generation Break 1: [Choose a card from your hand, and discard it] When this unit is placed on RC from your deck due to time leap, you may pay the cost. If you do, return this unit to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -2307,7 +2307,7 @@ CardStat = 4179
 global.CardName[CardStat] = 'Steam Maiden, Mesh-kia'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO Generation Break 1: [Rest this unit] When this unit is placed on RC from your deck by time leap, you may pay the cost. If you do, draw a card, choose one of your other units, and it gets power +4000 until end of turn.'
+AUTO Generation Break 1: [Rest this unit] When this unit is placed on RC from your deck due to time leap, you may pay the cost. If you do, draw a card, choose one of your other units, and it gets power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -2435,7 +2435,7 @@ CardStat = 4266
 global.CardName[CardStat] = 'Pulsar, Hypnosis Sheep'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast/Stand Trigger
 
-AUTO Generation Break 1: When this unit is placed on RC from your hand, until end of turn, this unit gets "AUTO [RC]: [Put this unit into your soul & Choose one of your other rear-guards, and put it on the bottom of your deck] At the end of the battle that your unit attacked a vanguard, you may pay the cost. If you do, choose one of your <Zodiac Time Beast> rear-guards, and stand it.".'
+AUTO Generation Break 1: When this unit is placed on RC from hand, until end of turn, this unit gets "AUTO [RC]: [Put this unit into your soul & Choose one of your other rear-guards, and put it on the bottom of your deck] At the end of the battle that your unit attacked a vanguard, you may pay the cost. If you do, choose one of your <Zodiac Time Beast> rear-guards, and stand it.".'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 26
 }
@@ -2533,7 +2533,7 @@ CardStat = 4363
 global.CardName[CardStat] = 'Pulsar, Farm Peacock'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO: When this unit is placed on RC from your deck due to time leap, until end of turn, you may have this unit get "CONT [RC]: This unit cannot be put into your deck by the effect of cards.".'
+AUTO: When this unit is placed on RC from your deck due to time leap, until end of turn, you may have this unit get "CONT [RC]: This unit cannot be put into your deck by card effects.".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -2616,7 +2616,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
 AUTO [VC]: When this unit’s attack hits a vanguard, search your deck for up to one card with "Chronojet" in its card name, ride it as rest, and shuffle your deck.
 
-AUTO [RC]: When this unit’s attack hits a vanguard, if you have "Grey Exhaust Dragon" on your VC or soul, you may return this unit to your hand.'
+AUTO [RC]: When this unit’s attack hits a vanguard, if you have a "Grey Exhaust Dragon" on your VC or in your soul, you may return this unit to your hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -3028,7 +3028,7 @@ CardStat = 4890
 global.CardName[CardStat] = 'Pulsar, Replenish Coatl'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast/Zodiac Time Beast
 
-AUTO Generation Break 1: When this unit is placed on RC from your deck, if you have a <Zodiac Time Beast> vanguard, this unit gets power +3000 until end of turn. Then, if you have no face up card in your damage zone, Counter Charge 1.'
+AUTO Generation Break 1: When this unit is placed on RC from your deck, if you have a <Zodiac Time Beast> vanguard, this unit gets power +3000 until end of turn. Then, if you do not have any face up cards in your damage zone, Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -3930,7 +3930,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Colossus
 (PREMIUM JP & EN: Banned.)
 (V PREMIUM JP & EN: Banned.)
 
-AUTO [RC]: When placed, COST [bind a card from your hand], until end of turn, when your opponent would call cards from hand to GC, he or she must call two or more at the same time.'
+AUTO [RC]: When placed, COST [bind a card from your hand], and until end of turn, when your opponent would call cards from hand to GC, he or she must call two or more at the same time.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -4466,7 +4466,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
 CONT [Hand]: When this card would be discarded, it may be discarded as a grade 4, 3, 2, or 0.
 
-AUTO [RC]: When it boosts, one of your grade 4 vanguards gets power +5000 until end of turn.'
+AUTO [RC]: When it boosts, if your vanguard is grade 4, one of your grade 4 vanguards gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }

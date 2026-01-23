@@ -1557,7 +1557,7 @@ global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 8: [Choose two cards from your drop zone, and return them to your deck] Search your deck for up to two cards with the same card name as this unit, call them to separate RC, and until end of turn, they get "Shadowstitch - AUTO [RC]: [Choose three cards from your hand, and discard them] At the end of the battle that your vanguard attacked a vanguard, if that attack did not hit, you may pay the cost. If you do, move this stand unit to your VC.". Shuffle your deck.'
+ACT [VC] 1/Turn Generation Break 8: [Choose two cards from your drop zone, and return them to your deck] Search your deck for up to two cards with the same card name as this unit, call them to separate RC, and until end of turn, they get "Shadowstitch - AUTO [RC]: [Choose three cards from your hand, and discard them] At the end of the battle that your vanguard attacked a vanguard, if that attack did not hit, you may pay the cost. If you do, move this stand uni? in stand to your VC.". Shuffle your deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1
@@ -1570,7 +1570,7 @@ CardStat = 5205
 global.CardName[CardStat] = 'Stealth Fiend of Enmity, Sodehagi'
 global.CardText[CardStat] = 'Murakumo/Demon
 
-Shadowstitch - AUTO [RC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose one of your other "Stealth Fiend of Enmity, Sodehagi" from your RC, and put it on the bottom of your deck] At the end of the battle that this unit attacked a vanguard and did not hit, you may pay the cost. If you do, stand this unit, and it gets power +5000 until end of turn.'
+Shadowstitch - AUTO [RC] 1/Turn Generation Break 2: [Counter Blast 1 & Choose one of your other "Stealth Fiend of Enmity, Sodehagi" from your RC, and put it on the bottom of your deck] At the end of the battle that this unit attacked a vanguard, if that attack did not hit, you may pay the cost. If you do, stand this unit, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 20
 }
@@ -1671,9 +1671,9 @@ global.CardText[CardStat] = 'Murakumo/Demon
 
 Stride.
 
-ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose a card from your RC or drop zone, search your deck for up to one card with the same card name as that card, call it to RC, shuffle your deck, and at the end of that turn, return the called unit to your hand.
+ACT [VC] 1/Turn: [Soul Blast 1 & Choose a face down card from your G zone with the same card name as this unit, and turn it face up] Choose a card from your RC or drop zone, search your deck for up to one card with the same card name as that card, call it to RC, shuffle your deck, and at the end of that turn, return that called unit to your hand.
 
-Shadowstitch - AUTO [VC] Generation Break 3: At the end of the battle that this unit attacked a vanguard and did not hit, choose up to five units, and they get power +5000 / critical +1 until end of turn.'
+Shadowstitch - AUTO [VC] Generation Break 3: At the end of the battle that this unit attacked a vanguard and did not hit, choose up to five of your units, and they get power +5000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1
@@ -2077,7 +2077,7 @@ global.CardText[CardStat] = 'Murakumo/Abyss Dragon
 
 CONT [VC]: If "Left Arrester" is in your front row, this unit gets power +5000. If "Right Arrester" is in your front row, this unit gets critical +1.
 
-CONT [VC]: If a card with "Dueling Dragon" in its card name is in your soul, your opponent cannot call cards other than grade 0 from his or her hand to GC.'
+CONT [VC]: If your soul has a card with "Dueling Dragon" in its card name, your opponent can only call grade 0 cards from hand to GC.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 20
 }
@@ -2114,9 +2114,9 @@ CardStat = 6414
 global.CardName[CardStat] = 'Fantasy Petal Storm, Shirayuki '
 global.CardText[CardStat] = 'Murakumo/Ghost
 
-AUTO [VC/RC/GC]: When placed, COST [Soul Blast 2], choose three units in your opponent’s front row, and they get power -5000 until end of turn. If this unit is on VC or GC, they get -10000 instead of -5000.
+AUTO: When this unit is placed on VC or RC or GC, COST [Soul Blast 2], choose three units in your opponent’s front row, and they get power -5000 until end of turn. If this unit is on VC or GC, they get -10000 instead of -5000.
 
-AUTO [VC]: When its attack does not hit, return a "Fantasy Petal Storm, Shirayuki" from your drop zone to your hand.'
+AUTO [VC]: When its attack does not hit, put a "Fantasy Petal Storm, Shirayuki" from your drop zone into your hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 20
 }
@@ -3018,7 +3018,7 @@ global.CardText[CardStat] = 'Murakumo/High Beast
 
 AUTO: When this card is revealed for your drive check, you may call this card to RC.
 
-AUTO: When this unit is placed on RC, choose a unit card from your drop, and change this units card name to that cards card name until end of turn.
+AUTO: When this unit is placed on RC, choose a unit card from your drop, and change this unit’s card name to that card’s card name until end of turn.
 
 AUTO [VC/RC]: When this unit attacks, if you have three or more rear-guards with "Stealth Fiend" in their different card names, COST [Soul Blast 1], and this unit gets power +10000 / drive +1 until end of that battle. At the end of that battle, if this unit is on RC, return this unit to your hand.'
 global.UnitGrade[CardStat] = 3

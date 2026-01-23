@@ -90,7 +90,7 @@ CardStat = 8255
 global.CardName[CardStat] = 'Steam Gunner, Brody'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-AUTO: When this unit is put into your GC, COST [Counter Blast 1], and this unit gets shield +5000 until end of that battle.'
+AUTO: When this unit is put on GC, COST [Counter Blast 1], and this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -1568,7 +1568,7 @@ CardStat = 9331
 global.CardName[CardStat] = 'Steam Knight, Amar Sin'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-CONT [RC]: If you have five or more cards in your soul, this unit gets power +5000. (Active on opponent’s turn too)'
+CONT [RC]: If your soul has five or more cards, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -2540,7 +2540,7 @@ CardStat = 10267
 global.CardName[CardStat] = 'Demonic Stone Dragon, Matelvaara'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a card from your drop, and put it into your soul. If your soul has four or more cards with different grades, this unit gets power +10000 until end of turn.'
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a card from your drop, and put it into your soul. Then, if your soul has four or more cards with different grades, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9853,3 +9853,31 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15330
+{
+global.CardName[CardStat] = 'Strife Tigarude'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15331
+{
+global.CardName[CardStat] = 'Mischief Sticker'
+global.CardText[CardStat] = 'Dark States/Elf
+
+AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, if the attack did not hit, put this unit into soul. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
