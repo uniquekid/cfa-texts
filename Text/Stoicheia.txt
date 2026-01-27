@@ -10802,6 +10802,231 @@ global.CardName[CardStat] = 'Nurturer of Sprouts, Hirsty'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
 AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15353
+{
+global.CardName[CardStat] = 'Thalassic Houser Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Cristianos" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +5000. If you persona rode this turn, it also gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15354
+{
+global.CardName[CardStat] = 'View Pruner, Treiran'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Cristianos" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15355
+{
+global.CardName[CardStat] = 'Unbreakable Scorpera'
+global.CardText[CardStat] = 'Stoicheia/Insect
+
+AUTO [RC]: The cost for this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15356
+{
+global.CardName[CardStat] = 'Future Magick Caster, Berucrea'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15357
+{
+global.CardName[CardStat] = 'Apprentice Magick Caster, Berucrea'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this unit is placed by riding from "Future Magick Caster, Berucrea, COST [Soul Blast 1], search the deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15358
+{
+global.CardName[CardStat] = 'Peerless Magick Caster, Berucrea'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO: When this unit is rode upon by a grade 3 card with "Berucrea" in its card name, look at the top seven cards of your deck, choose up to two cards from among them, discard them, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15359
+{
+global.CardName[CardStat] = 'Great Magick Caster of Eternity, Berucrea'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO [VC]: When you play a Gran Magick order card or you activate the ACT ability of a Magick in your order zone, this unit gets power +5000 until end of turn.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1 and rest a Magick from order zone], choose an ACT ability of the Magick rest for this cost, and activate it without paying the cost.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and increase or decrease its drive to 0 until end of turn.
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15360
+{
+global.CardName[CardStat] = 'Enhance Magick, Starylking'
+global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
+
+CONT: You may only have one "Enhance Magick, Starylking" in your deck.
+
+ACT [Order Zone]: If you have a grade 1 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15361
+{
+global.CardName[CardStat] = 'Growth Magick, Voxtol'
+global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
+
+CONT: You may only have one "Growth Magick, Voxtol" in your deck.
+
+ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], and draw a card. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name. This ability is lost until end of fight.
+
+ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], draw a card, choose a card from hand, and discard it. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15362
+{
+global.CardName[CardStat] = 'Healing Magick, Aexlunus'
+global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
+
+CONT: You may only have one "Healing Magick, Aexlunus" in your deck.
+
+CONT [Order Zone]: When you would call a unit with this card’s ability, the called unit’s AUTO abilities do not activate from that call.
+
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose a normal unit without Sentinel from your drop, and call it to RC. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15363
+{
+global.CardName[CardStat] = 'Eternal Gran Magick, Segre Ljos'
+global.CardText[CardStat] = 'Stoicheia/Normal Order/Gran Magick
+
+This card can be played from drop and play this if you have a vanguard with "Berucrea" in its card name, your opponent’s vanguard is grade 3 or greater and your order zone has three or more Magick cards with different card names!
+
+Bind this card, and your vanguard’s drive cannot be decreased by that unit’s effects until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15364
+{
+global.CardName[CardStat] = 'Treetop Bow Hunter, Treeta'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+AUTO [Drop]: When you play a Gran Magick, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called, this unit gets power +2000 until end of turn.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Berucrea" in its card name, this unit gets "Intercept" and can intercept from the back row.
+
+AUTO: When this unit is put on GC, COST [Energy Blast 3], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15365
+{
+global.CardName[CardStat] = 'Amiable Fairy'
+global.CardText[CardStat] = 'Stoicheia/Sylph
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Berucrea" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Berucrea" in its card name and this unit was placed from drop this turn, this unit gets power +15000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15366
+{
+global.CardName[CardStat] = 'Mythisch of Eternity, Nilsveiggr'
+global.CardText[CardStat] = 'Stoicheia/Mythisch
+
+CONT: If you have a vanguard with "Berucrea" in its card name, this card gets all of the following.
+• CONT: This card cannot be affected by the CONT abilities of "Healing Magick, Aexlunus" in your order zone.
+• AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with "Berucrea" in its card name or up to one Gran Magick card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, draw a card.
+• AUTO [RC]: When your grade 3 or greater vanguard attacks, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
