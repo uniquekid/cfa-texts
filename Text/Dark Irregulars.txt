@@ -161,7 +161,7 @@ CardStat = 456
 global.CardName[CardStat] = 'Devil Child'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
-AUTO [RC]: When this unit boosts a «Dark Irregulars» vanguard, if you have six or more «Dark Irregulars» in your soul, the boosted unit gets power +4000 until end of that battle.'
+AUTO [RC]: When this unit boosts a «Dark Irregulars» vanguard, if the number of «Dark Irregulars» in your soul is six or more, the boosted unit gets power +4000 until end of that battle.'
 }
 
 
@@ -274,7 +274,7 @@ CardStat = 468
 global.CardName[CardStat] = 'Cyber Beast'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
-AUTO [VC/RC]: When this unit’s attack hits a vanguard, if you have four or more other «Dark Irregulars» rear-guards, draw a card.'
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, if the number of other «Dark Irregulars» rear-guards you have is four or more, draw a card.'
 }
 
 
@@ -457,9 +457,9 @@ CardStat = 487
 global.CardName[CardStat] = 'King of Diptera, Beelzebub'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
-CONT [VC]: If you have eight or more «Dark Irregulars» in your soul, this unit gets power +1000.
+CONT [VC]: If the number of «Dark Irregulars» in your soul is eight or more, this unit gets power +1000.
 
-AUTO [VC]: [Counter Blast 2] When this unit attacks, if you have six or more «Dark Irregulars» in your soul, you may pay the cost. If you do, choose up to two of your «Dark Irregulars» rear-guards, and they get power +3000 until end of turn.'
+AUTO [VC]: [Counter Blast 2] When this unit attacks, if the number of «Dark Irregulars» in your soul is six or more, you may pay the cost. If you do, choose up to two of your «Dark Irregulars» rear-guards, and those units get power +3000 until end of turn.'
 }
 
 
@@ -477,11 +477,11 @@ CardStat = 489
 global.CardName[CardStat] = 'No Life King, Death Anchor'
 global.CardText[CardStat] = 'Dark Irregulars/Ghost
 
-CONT [VC]: If you have eight or more «Dark Irregulars» in your soul, this unit gets power +1000.
+CONT [VC]: If the number of «Dark Irregulars» in your soul is eight or more, this unit gets power +1000.
 
 AUTO [VC]: At the beginning of your main phase, Soul Charge 1, and this unit gets power +2000 until end of turn.
 
-AUTO [VC]: [Choose five face up «Dark Irregulars» from your damage zone and put them into your soul] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 & critical +1 until end of turn. At the beginning of the end phase of that turn, put five cards from the top of your deck into your damage zone.'
+AUTO [VC]: [Choose five face up «Dark Irregulars» from your damage zone, and put them into your soul] When this unit attacks, you may pay the cost. If you do, this unit gets power +10000 / critical +1 until end of turn, and at the beginning of the end phase of that turn, put five cards from the top of your deck into your damage zone.'
 }
 
 
@@ -792,7 +792,7 @@ CardStat = 2015
 global.CardName[CardStat] = 'Echo of Nemesis'
 global.CardText[CardStat] = 'Dark Irregulars/Demon
 
-AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks, if the amount of the cards in your soul is ten or greater, until end of that battle, this unit gets power +10000, and your opponent cannot call grade 1 or greater units to GC from his or her hand.
+AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit attacks, if the number of cards in your soul is ten or more, until end of that battle, this unit gets power +10000, and your opponent cannot call grade 1 or greater units to GC from his or her hand.
 
 ACT [VC]: [Soul Blast 1 grade 0 card] Soul Charge 2. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 3
@@ -1184,7 +1184,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-ACT [VC]: [Choose a card from your hand, and put it into your soul] This unit gets power +1000 for each card in your soul until end of turn. If the sum of power increased with this effect during this turn is 10000 or greater, until end of turn, all of the rear-guards in your front row get power +5000. This ability cannot be used for the rest of that turn.'
+ACT [VC]: [Choose a card from your hand, and put it into your soul] This unit gets power +1000 for each card in your soul until end of turn. If the total power increased with this effect during this turn is 10000 or greater, all of the rear-guards in your front row get power +5000 until end of turn. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 11
 global.ExtraDeck[CardStat] = 1
@@ -1254,7 +1254,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 
 AUTO [VC] Generation Break 1 Darkness (This ability is active if a card was put into your soul during this turn): When this unit attacks a vanguard, if the number of cards in your soul is ten or more, this unit gets power +10000 until end of that battle, and if the number of cards in your soul is fifteen or more, until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC.
 
-AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the darkness ability, reveal it to your opponent, put it into your hand, and shuffle your deck.'
+AUTO: [Counter Blast 1 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, look at five cards from the top of your deck, search for up to one card with the darkness ability from among them, reveal it to your opponent, put it into your hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 11
 }
@@ -1308,7 +1308,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Demon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC] Darkness (This ability is active if a card was put into your soul during this turn): When this unit attacks a vanguard, you may Soul Charge 2. If the number of cards in your soul is six or more, until end of turn, this unit gets "AUTO [VC]: When this unit’s attack hits, your opponent chooses one of his or her rear-guards, and retires it.". Then, if the number of cards in your soul is fifteen or more, this unit gets power +1000 for each card in your soul until end of that battle.'
+AUTO [VC] Darkness (This ability is active if a card was put into your soul during this turn): When this unit attacks a vanguard, you may Soul Charge 2. If the number of cards in your soul is six or more, until end of that battle, this unit gets "AUTO [VC]: When this unit’s attack hits, your opponent chooses one of his or her rear-guards, and retires it.", and if the number of cards in your soul is fifteen or more, this unit gets power +1000 for each card in your soul until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 11
 global.ExtraDeck[CardStat] = 1
@@ -1674,7 +1674,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 
 Stride.
 
-CONT [VC] Generation Break 8: All units in your front row get power +13000 / critical +1 for every thirteen cards in your soul.'
+CONT [VC] Generation Break 8: All of the units in your front row get power +13000 / critical +1 for every thirteen cards in your soul.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 11
 global.ExtraDeck[CardStat] = 1
@@ -3611,7 +3611,7 @@ global.CardText[CardStat] = 'Dark Irregulars/Human
 
 G guardian.
 
-AUTO: When this unit is put on GC, COST [Counter Blast 1], choose one of your opponent’s units for every ten cards in your soul, and they get critical -1 until end of turn. (Two units get critical -1 if your soul has twenty cards)'
+AUTO: When this unit is put on GC, COST [Counter Blast 1], for every ten cards in your soul, choose one of your opponent’s units, and it gets critical -1 until end of turn. (Two units get critical -1 if there are twenty cards in your soul.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 11
 global.ExtraDeck[CardStat] = 1

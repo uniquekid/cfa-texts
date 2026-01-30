@@ -2279,10 +2279,13 @@ Stride.
 
 ACT [VC] 1/Turn: COST [Soul Blast 1 & turn a card from your G zone face up], reveal seven cards from the top of your deck, put up to a total of two cards with the same card name as a card on your RC or in your drop zone from among them into your hand, and shuffle your deck.
 
-Shadowstitch - AUTO [G zone]: When your rear-guard attacks a vanguard and does not hit, if this card is face up, COST [Soul Blast 1], call this card to RC.'
+Shadowstitch - AUTO [G zone]: When your rear-guard attacks a vanguard and does not hit, if this card is face up, COST [Soul Blast 1], call this card to RC.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 20
 global.ExtraDeck[CardStat] = 1
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 15000
 
@@ -3053,9 +3056,12 @@ CardStat = 9889
 global.CardName[CardStat] = 'Stealth Fiend, Keugege'
 global.CardText[CardStat] = 'Murakumo/Ghost
 
-AUTO: When this unit is placed on VC or RC, reveal five cards from the top of your deck, if all of the revealed normal units are cards with "Stealth Fiend" in their card names, choose a grade 2 or greater card from among them, and call it to RC or put it into your hand. Shuffle your deck.'
+AUTO: When this unit is placed on VC or RC, reveal five cards from the top of your deck, if all of the revealed normal units are cards with "Stealth Fiend" in their card names, choose a grade 2 or greater card from among them, and call it to RC or put it into your hand. Shuffle your deck.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 20
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 10000
