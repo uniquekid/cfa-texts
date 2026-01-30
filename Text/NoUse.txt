@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 15366
+global.AllCard = 15388
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1300,6 +1300,45 @@ global.CardText[CardStat] = 'Dark States/Token Set Order
 ACT [Order Zone]: If you have a vanguard with "Alcasal" in its card name, COST [rest this card], and perform one of the following.
 • Choose a normal unit from your drop, and put it into soul.
 • Look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. If this card was put into order zone this turn, choose up to two cards instead of one.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 15379
+{
+global.CardName[CardStat] = 'Regrain Biocreation Research Lab'
+global.CardText[CardStat] = 'Token Set Order
+
+CONT [Order Zone]: You cannot ride grade 3 or greater vards without "Zorga" in their card names.
+
+ACT [Order Zone]: COST [rest this card], and call a Demonic Beast Alchemix Body, Ubermensch token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.TokenSummoner[CardStat] = 15380
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 15380
+{
+global.CardName[CardStat] = 'Demonic Beast Alchemix Body, Ubermensch'
+global.CardText[CardStat] = 'Token Unit/Demonic Beast Alchemix Body/Fantome
+
+CONT [RC]: This unit gets power +5000 for each grade of your vanguard.
+
+AUTO [RC] 1/Turn: WHen this unit Alchemixes, stand this unit. If this unit is in the back row, you may move this unit to an open front row RC in the same column as this unit.
+
+AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
