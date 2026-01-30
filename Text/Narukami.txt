@@ -3010,9 +3010,12 @@ global.CardText[CardStat] = 'Narukami/Human
 
 AUTO: Forerunner.
 
-AUTO [RC]: [Retire this unit] When the attack of your unit with "Eradicator" in its card name hits a vanguard during the battle that this unit boosted, you may pay the cost. If you do, reveal three cards from the top of your deck, if all of those cards have "Eradicator" in their card names, put one card from among them into your hand, and shuffle your deck. If you put a grade 3 card into your hand, Soul Charge 1.'
+AUTO [RC]: [Retire this unit] When the attack of your unit with "Eradicator" in its card name hits a vanguard during the battle that this unit boosted, you may pay the cost. If you do, reveal three cards from the top of your deck, if all of those cards have "Eradicator" in their card names, put one card from among them into your hand, and shuffle your deck. If you put a grade 3 card into your hand, Soul Charge 1.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 19
+global.RevealTopX[CardStat] = 3
 }
 global.PowerStat[CardStat] = 5000
 
@@ -3431,7 +3434,7 @@ global.CardText[CardStat] = 'Narukami/Thunder Dragon
 
 AUTO [RC]: When placed, COST [Soul Blast 2], choose a rear-guard in your opponent’s front row, bind it, and this unit gets power +3000 until end of turn.
 
-CONT [RC]: During the battle that it attacked a vanguard, if there are no rear-guards in your opponent’s front row of the same column as this unit, this unit gets power +5000.'
+CONT [RC]: During the battle it attacked a vanguard, if your opponent does not have a rear-guards in the front row of the same column as this unit, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 19
 }

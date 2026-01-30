@@ -601,7 +601,7 @@ CardStat = 8441
 global.CardName[CardStat] = 'Cardinal Noid, Plasteia'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-AUTO [RC]: When this unit’s attack while boosted by a Shadow Army token hits, draw a card.'
+AUTO [RC]: When this unit’s attack boosted by a Shadow Army token hits, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -2644,10 +2644,13 @@ global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on VC, reveal the top five cards of your deck, put all Set Orders from among them into your Order Zone, and shuffle your deck.
 
-AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards, and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000 / drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.'
+AUTO [VC]: At the end of the battle this unit attacked, choose any number of Set Orders from your Order Zone, if you chose three or more cards with different card names, choose one of your rear-guards, and stand it, and if you chose five or more cards with different card names, stand this unit, and this unit gets power +10000 / drive -2 until end of turn. Return all of the cards chosen from the Order Zone by this ability to your deck and shuffle it.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10498,7 +10501,7 @@ CardStat = 15385
 global.CardName[CardStat] = 'Regrain Security, Grudge Breaking'
 global.CardText[CardStat] = 'Brandt Gate/Alien/Fantome
 
-CONT [RC]: If your order zone has a "Regrain Biocreation Research Lab" token, this unit gets shield +5000. If your bind zone has a Crimson Moon card, shield +10000 instead of +5000.'
+CONT [GC]: If your order zone has a "Regrain Biocreation Research Lab" token, this unit gets shield +5000. If your bind zone has a Crimson Moon card, shield +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }

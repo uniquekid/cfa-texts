@@ -1209,7 +1209,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC]: [Counter Blast 2 & Choose a card from your hand, and discard it] When this unit’s attack hits a vanguard, if this unit’s power is 45000 or greater, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and your opponent puts it into his or her damage zone face down.'
+AUTO [VC]: [Counter Blast 2 & Choose a card from your hand, and discard it] When this unit’s attack hits a vanguard, if this unit’s power is 45000 or greater, you may pay the cost. If you do, choose one of your opponent’s rear-guards, and put it face down into your opponent’s damage zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -1618,7 +1618,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC]: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if this unit’s power is 35000 or greater, and the attack did not hit during that battle, you may pay the cost. If you do, draw a card.'
+AUTO [VC]: [Counter Blast 1] At the end of the battle that this unit attacked a vanguard, if this unit’s power is 35000 or greater, and if the attack did not hit during that battle, you may pay the cost. If you do, draw a card.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -1633,7 +1633,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
 
-AUTO: When this unit is placed on GC, if your opponent’s attacking units power is 20000 or greater, this unit gets shield +5000 until end of that battle.'
+AUTO: When this unit is placed on GC, if your opponent’s attacking unit’s power is 20000 or greater, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -2024,7 +2024,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 Stride.
 
-Burst - ACT [VC]: [Choose four of your rear-guards, and rest them] If this unit’s power is 20000 or greater, until end of turn, this unit gets "AUTO [VC] 1/Turn: When this unit’s attack hits a vanguard, stand this unit." and then, if this unit’s power is 25000 or greater, this unit gets "AUTO [VC] 1/Turn: At the end of the battle that this unit attacked, if the attack did not hit, choose up to four of your rear-guards, and stand them.".'
+Burst - ACT [VC]: [Choose four of your rear-guards, and rest them] If this unit’s power is 20000 or greater, until end of turn, it gets "AUTO [VC] 1/Turn: When this unit’s attack hits a vanguard, stand this unit.", then, if its power is 25000 or greater, it gets "AUTO [VC] 1/Turn: At the end of the battle that this unit attacked, if the attack did not hit, choose up to four of your rear-guards, and stand them.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -2206,7 +2206,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 G guardian.
 
-AUTO: [Soul Blast 1 card with power of 5000 or greater] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +10000 until end of that battle. Then, if a card was put into your damage zone during this turn, this unit gets shield +5000 until end of that battle.'
+AUTO: [Soul Blast 1 card with power 5000 or greater] When this unit is placed on GC, you may pay the cost. If you do, this unit gets shield +10000 until end of that battle. Then, if a card was put into your damage zone during this turn, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -3010,10 +3010,13 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride.
 
-AUTO [VC]: When it attacks, COST [turn a card from your G zone face up & put all of your rest rear-guards into your soul], reveal seven cards from the top of your deck, call up to the same number of cards as the number of face up cards in your G zone from among them to RC in order of highest power, and shuffle your deck. If you put four or more cards into your soul for this cost, all of your units get power +10000 / critical +1 until end of turn.'
+AUTO [VC]: When it attacks, COST [turn a card from your G zone face up & put all of your rest rear-guards into your soul], reveal seven cards from the top of your deck, call up to the same number of cards as the number of face up cards in your G zone from among them to RC in order of highest power, and shuffle your deck. If you put four or more cards into your soul for this cost, all of your units get power +10000 / critical +1 until end of turn.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
+global.RevealTopX[CardStat] = 7
 }
 global.PowerStat[CardStat] = 15000
 

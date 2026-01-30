@@ -1431,7 +1431,7 @@ CardStat = 3543
 global.CardName[CardStat] = 'Greenshot Elf'
 global.CardText[CardStat] = 'Neo Nectar/Elf
 
-Bloom - AUTO [RC] Generation Break 1: When your other unit named "Greenshot Elf" is placed on RC, choose up to five units named "Greenshot Elf" on your RC, until end of turn, they get power +2000, and "Boost".'
+Bloom - AUTO [RC] Generation Break 1: When your other "Greenshot Elf" is placed on RC, choose up to five of your "Greenshot Elf" on RC, and until end of turn, they get power +2000 and "Boost".'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 }
@@ -2551,9 +2551,12 @@ CardStat = 5007
 global.CardName[CardStat] = 'Maiden of Breedrain'
 global.CardText[CardStat] = 'Neo Nectar/Dryad
 
-AUTO [RC]: [Choose a normal unit from your drop zone, and put it on the bottom of your deck & Retire this unit] At the end of your turn, if you have a vanguard with "Maiden of" in its card name, and this unit is rest, you may pay the cost. If you do, reveal five cards from the top of your deck, call all "Maiden of Breedrain" from among them to RC, and shuffle your deck. If you did not call, draw a card.'
+AUTO [RC]: [Choose a normal unit from your drop zone, and put it on the bottom of your deck & Retire this unit] At the end of your turn, if you have a vanguard with "Maiden of" in its card name, and this unit is rest, you may pay the cost. If you do, reveal five cards from the top of your deck, call all "Maiden of Breedrain" from among them to RC, and shuffle your deck. If you did not call, draw a card.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
+global.RevealTopX[CardStat] = 5
 }
 global.PowerStat[CardStat] = 7000
 
@@ -2992,7 +2995,7 @@ CardStat = 5358
 global.CardName[CardStat] = 'San San Mango'
 global.CardText[CardStat] = 'Neo Nectar/Dryad/Stand Trigger
 
-ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] Draw a card, choose one of your vanguards and rear-guards, and increase that vanguard’s power by the power of that rear-guard until end of turn.'
+ACT [RC] Generation Break 1: [Soul Blast 1 & Retire this unit] Draw a card, and choose one each from your vanguards and rear-guards. Increase the chosen vanguard’s power by the chosen rear-guard’s power until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 9
 }
