@@ -4,14 +4,14 @@ on:
   pull_request:
     types: [opened, synchronize]
   
-  jobs:
-    notify:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Notify Role
-          env:
-            SERVER_URL: ${{ secrets. SERVER_URL }}
-          run: |
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Role
+        env:
+          SERVER_URL: ${{ secrets. SERVER_URL }}
+        run: |
             curl -X POST -H "Content-Type: application/json" \
             -d '{
               "content": <@1465277086863458457>,
