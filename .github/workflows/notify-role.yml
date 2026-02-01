@@ -6,8 +6,9 @@ on:
   
 jobs:
   notify:
-  runs-on: ubuntu-latest
-  steps:
+    name: Notify Role
+    runs-on: ubuntu-latest
+    steps:
       - name: Notify Role
         env:
           SERVER_URL: ${{ secrets. SERVER_URL }}
