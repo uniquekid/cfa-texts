@@ -2,12 +2,12 @@ name: Notify Role
 
 on:
   pull_request:
-    types: [opened, reopened, ready_for_review, synchronize]
+    types: [opened, reopened]
   
 jobs:
   notify:
     name: Notify Role
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: Notify Role
         env:
@@ -15,7 +15,7 @@ jobs:
         run: |
             curl -X POST -H "Content-Type: application/json" \
             -d '{
-              "content": <@1465277086863458457>,
+              "content": "<@&1465277086863458457>",
               "allowed_mentions": {
                 "roles": ["1465277086863458457"]
               }
