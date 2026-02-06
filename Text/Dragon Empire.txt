@@ -11000,7 +11000,7 @@ global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon/Fantome
 
 ACT [VC] 1/Turn: COST [Soul Blast 2], and this unit gets power +3000 until end of turn for each card in your damage zone. If your damage zone has three or more cards, choose one of your opponent’s rear-guards, retire it, if you did not retire a card, your opponent chooses a card from their hand, and discards it.
 
-[Fantome Skill] - ACT [VC]: When this unit attacks a grade 3 or greater unit, COST [bind one or more Crimson Moon cards from hand, soul or drop], until end of that battle, this unit gets critical +1, and if you bound four cards for this cost, it also gets power +10000 / critical +1 / drive +1. Then, if you persona rode this turn, your opponent cannot call sentinels from hand to GC until end of that battle.
+[Fantome Skill] - AUTO [VC]: When this unit attacks a grade 3 or greater unit, COST [bind one or more Crimson Moon cards from hand, soul or drop], until end of that battle, this unit gets critical +1, and if you bound four cards for this cost, it also gets power +10000 / critical +1 / drive +1. Then, if you persona rode this turn, your opponent cannot call sentinels from hand to GC until end of that battle.
 
 (Guard Restrict is tied to binding four moons)'
 global.UnitGrade[CardStat] = 3
@@ -11057,12 +11057,15 @@ CardStat = 15404
 global.CardName[CardStat] = 'Dragritter, Mardau'
 global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alphard" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alphard" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.
+
+AUTO: When this unit attacks, if you have a grade 3 or greater vanguard with "Alphard" in its card name, and your damage zone has three or more cards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+globa.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 15405
@@ -11098,7 +11101,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15407
 {
-global.CardName[CardStat] = 'Gammma Rays Dragon'
+global.CardName[CardStat] = 'Gamma Rays Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Thunder Dragon/Fantome
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Alphard" in its card name, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
