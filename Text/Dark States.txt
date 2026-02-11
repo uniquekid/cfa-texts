@@ -7039,6 +7039,7 @@ AUTO [VC]: When this unit attacks, COST [Soul Blast 1], choose a card from your 
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Liael'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9948,4 +9949,80 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15418
+{
+global.CardName[CardStat] = 'One Who Bears Resolve and Sin, Liael=Animus'
+global.CardText[CardStat] = 'Dark States/Keter Sanctuary/Angel
+
+CONT [VC]: This card can only be ridden from a grade 3 card with "Odium" or "Amorta" in its card name, and the normal ride from those cards also becomes a persona ride.
+AUTO: When this unit is placed on VC, choose a grade 3 card with "Odium" or "Amorta" in its card name from your soul or drop, and this unit gets the card name and all of the abilities of the chosen card until end of this fight. Look at the top five cards of your deck, choose up to one card from among them, and bind it or put it face up as a regress gauge. If you bound a card, choose a card from your bind zone, and put it into drop. If you put a card as regress gauge, choose a card from your regress gauge, and discard it. Shuffle the deck.
+ACT [VC] 1/Turn: If you used a [Divine Skill] this fight, COST [Energy Blast 3], and this unit gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, choose one of your rear-guards, and stand it." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Liael'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15419
+{
+global.CardName[CardStat] = 'Boundary Piercing Colossus'
+global.CardText[CardStat] = 'Dark States/Gear Colossus
+
+AUTO: When this card is put as your regress gauge during your turn, Soul Charge 1, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15420
+{
+global.CardName[CardStat] = 'Steam Performer, La-era'
+global.CardText[CardStat] = 'Dark States/Gearoid
+
+AUTO: When this card is discarded from hand during your turn, if your order zone has a "Destined Timepiece", COST [Soul Blast 1], and call this card to a back row RC.
+
+CONT [GC]: If your order zone has a "Destined Timepiece", this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15421
+{
+global.CardName[CardStat] = 'Gear Eagle of Recovery'
+global.CardText[CardStat] = 'Dark States/Gear Beast
+
+AUTO [Back Row RC]: When your other rear-guard in the same column as this unit stand by the ability of your grade 3 or greater vanguard with "Liael" in its card name, you may stand this unit. If you do, until end of turn, this unit gets power +5000, and at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15422
+{
+global.CardName[CardStat] = 'Sky-engraving Decree, Urut&Luael'
+global.CardText[CardStat] = 'Dark States/Keter Sanctuary/Gearoid/Angel
+
+AUTO: When this card is put in bind zone or gauge zone by the ability of your grade 3 or greater vanguard with "Liael" in its card name, if you did not look at the deck by the ability of a card with the same card name as this card this turn, look at the top five cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Liael" in its card name from ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Counter Blast 1], and draw a card.
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. If it got power +10000 by this effect, choose up to one normal unit without Sentinel from your drop, and put it on the bottom of the deck or into soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 3
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
