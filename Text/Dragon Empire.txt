@@ -10106,7 +10106,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15090
 {
 global.CardName[CardStat] = 'Dragritter, Adiba'
-global.CardText[CardStat] = 'Dragon Empire/Dragonman
+global.CardText[CardStat] = 'Dragon Empire/Human
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you played an order this turn, COST [Energy Blast 3], until end of turn, during the battle this unit attacked, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 2
@@ -10471,7 +10471,7 @@ global.CardName[CardStat] = 'Treasure Flame Orb of Rebirth'
 global.CardText[CardStat] = 'Dragon Empire/Set Order
 
 AUTO [Order Zone]: When your unit is retired from RC by your opponent’s card’s ability during your opponent’s turn, COST [Energy Blast 3 & put this card into drop], choose one of the retired cards, and put it into hand.'
-global.UnitGrade[CardStat] = 2
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 }
@@ -11111,4 +11111,166 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15460
+{
+global.CardName[CardStat] = 'Desolation of Loneliness, Youth'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15461
+{
+global.CardName[CardStat] = 'Will of the Destruction Dragon, Youth'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+AUTO: When this unit is placed by riding from "Desolation of Loneliness, Youth", look at the top seven cards of your deck, choose up to one card with "Youthberk" in its card name or up to one Crimson Moon card from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15462
+{
+global.CardName[CardStat] = 'Crimson Wrath Dragslayer, Youth'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+AUTO: When this unit is rode upon by a grade 3 card with the DraegDress ability, COST [Energy Blast 3], choose a grade 2 or greater card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15463
+{
+global.CardName[CardStat] = 'Youthberk "Draegforce Arms: Fantome"'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+DraegDress - AUTO [VC]: At the end of the battle this unit attacked, choose up to one card with "Draegform" in its card name from hand, ride it as stand, and it gets drive -2 until end of turn. If you rode a card, at the end of that turn, choose a "Youthberk "Draegforce Arms: Fantome"" from soul, and ride it as rest.
+ACT [VC] 1/Turn: COST [Discard a card from hand], look at the top three cards of your deck, choose up to one card with "Draegform" in its card name or up to one grade 2 or less card from among them, reveal it, put it into hand if it is a card with "Draegform" in its card name, and call it to RC if not. You may discard all of the remaining cards. If you did not discard them, put them on the bottom of the deck in any order.
+AUTO [VC]: At the beginning of your main phase, you get "When your vanguard attacks, that unit gets power +1000 until end of that battle for each card with <Dragon> in its race in your drop." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15464
+{
+global.CardName[CardStat] = 'Youthberk "DraegForm: Dynast"'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+CONT [Deck]: If you have a vanguard with "Youth" in its card name, while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card.
+AUTO: When this unit is placed on VC by the DraegDress ability, perform all of the following.
+• All of your front row rear-guards get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they also get power +5000.
+• COST [Counter Blast 1], and this unit gets drive +1 until end of turn. If your opponent’s vanguard is grade 3 or greater, it also gets critical +1.
+[Fantome Skill] - AUTO [VC]: When this unit attacks a grade 3 or greater unit, COST [bind one or more, up to two, Crimson Moon cards from hand, soul or drop], choose the same number of your opponent’s rear-guards as the number of cards bound for this cost, retire them, and all of your front row units get power +5000 until end of turn. If your bind zone has three or more Crimson Moon cards, they also get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15465
+{
+global.CardName[CardStat] = 'Trusscythe Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Fantome
+
+AUTO: When this card is discarded from hand by the ability of your grade 3 or greater vanguard with "Youthberk" in its card name during your turn, COST [put this card into soul], and your vanguard gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15466
+{
+global.CardName[CardStat] = 'Vandalism Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Fantome
+
+CONT [Drop]: When you would count the number of your cards with <Dragon> in their race for your vanguard’s ability, this card is counted as two cards.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Youthberk" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15467
+{
+global.CardName[CardStat] = 'Vanishing Claw Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Fantome
+
+AUTO: When this card is discarded from deck or hand other than during the battle phase, if you have a grade 3 or greater vanguard with "Youthberk" in its card name, COST [Soul Blast 1], and call this card to RC.
+
+CONT [GC]: If you have a vanguard with "Youth" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15468
+{
+global.CardName[CardStat] = 'Forlorn Hope Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Fantome
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Youthberk" in its card name attacks, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked, if your vanguard was placed by the DraegDress ability this turn, COST [retire this unit], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15469
+{
+global.CardName[CardStat] = 'Obliterate Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon/Fantome
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Youthberk" in its card name, COST [Soul Blast 2 cards with "Youth" in their card names], call this card to RC, and it gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Youthberk" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15475
+{
+global.CardName[CardStat] = 'Stealth Beast, Adagitsune'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, choose a normal unit with "Stealth" in its card name from your drop, and you may put it into soul.
+
+AUTO: When this unit is put into soul from RC during the battle phase, COST [Counter Blast 1 or Energy Blast 2], and until end of turn, you get "All of your units with "Stealth" in their card names that were placed from bind zone this turn on RC or GC get power +5000 / shield +5000." and you cannot pay the cost of an AUTO ability with the same card name as this card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
