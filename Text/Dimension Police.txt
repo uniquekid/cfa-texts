@@ -1120,7 +1120,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO: [Counter Blast 2 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, choose one of your rear-guards, put it into your soul, choose all units in your opponent’s front row, and until end of turn, decrease those units power by the original power of the card put into your soul with this effect.'
+AUTO: [Counter Blast 2 & Soul Blast 1] When this unit is placed on VC, you may pay the cost. If you do, choose one of your rear-guards, put it into your soul, choose all units in your opponent’s front row, and until end of turn, decrease those unit’s power by the original power of the card put into your soul with this effect.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -1689,7 +1689,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 G guardian [Choose a "HEAL" from your hand, and discard it] Call this card to your GC from face down.
 
-AUTO: When this unit is placed on GC, if your opponent’s attacking units power is 30000 or greater, this unit gets shield +10000 until end of that battle. Then, you may choose a card from your hand, and discard it. If you do, choose one of your vanguards, and it gets power +4000 until end of turn.'
+AUTO: When this unit is placed on GC, if your opponent’s attacking unit’s power is 30000 or greater, this unit gets shield +10000 until end of that battle. Then, you may choose a card from your hand, and discard it. If you do, choose one of your vanguards, and it gets power +4000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -2383,7 +2383,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 CONT: Sentinel.
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your units, and it cannot be hit until end of that battle. If your opponent unit’s power 30000 or greater, you draw a card.
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on GC from hand, you may pay the cost. If you do, choose one of your units, and it cannot be hit until end of that battle. If your opponent unit’s power is 30000 or greater, you draw a card.
 
 ACT [Drop Zone] Generation Break 1: [Bind this card face up] Choose six of your units, and until end of turn, they get "CONT [VC/RC]: Resist".'
 global.UnitGrade[CardStat] = 1
@@ -2575,7 +2575,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets power +10000, and "AUTO [VC]: When this unit’s attack hits a vanguard, for every this unit’s power 20000, choose one of your opponent’s rear-guard, and retire it.".'
+ACT [VC] 1/Turn: [Choose a face down card from your G zone, and turn it face up] Until end of turn, this unit gets power +10000, and "AUTO [VC]: When this unit’s attack hits a vanguard, choose and retire one of your opponent’s rear-guard for every power 20000 of this unit.".'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
@@ -2866,7 +2866,7 @@ CardStat = 5943
 global.CardName[CardStat] = 'Commander Laurel '
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-ACT [RC] 1/Turn: COST [Counter Blast 1 & rest four of your rear-guards], choose one of your units, and until end of turn, double its power, and critical +1. (Add the power when it was chosen.)'
+ACT [RC] 1/Turn: COST [Counter Blast 1 & rest four of your rear-guards], choose one of your units, until end of turn, double its power, and it gets critical +1. (Add the power when it was chosen.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -2926,7 +2926,7 @@ CardStat = 5948
 global.CardName[CardStat] = 'Miracle Fairy, Larabi'
 global.CardText[CardStat] = 'Dimension Police/High Beast
 
-AUTO [RC]: At the end of a battle that it boosted, COST [Counter Blast 1 & put this unit into your soul], stand a "Miracle Beauty" on your RC, and that unit gets power -5000 until end of turn.'
+AUTO [RC]: At the end of the battle that it boosted, COST [Counter Blast 1 & put this unit into your soul], stand a "Miracle Beauty" on your RC, and that unit gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3039,7 +3039,7 @@ CardStat = 6765
 global.CardName[CardStat] = 'Excavation Monster, Mogdrilla'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC]: When it boosts, if your damage zone has four or more cards, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When it boosts, if your damage zone has four or more cards, COST [Soul Blast 1], this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3065,7 +3065,7 @@ CardStat = 6768
 global.CardName[CardStat] = 'Battle Unit Commandant, Glegio'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [VC]: When placed, your opponent may Counter Blast 1. If he or she did not, you look at two cards from the top of your deck, and call them to RC.
+AUTO [VC]: When placed, your opponent may Counter Blast 1. If he or she does not, you look at two cards from the top of your deck, and call them to RC.
 
 AUTO [VC/RC]: When your vanguard is attacked, COST [Soul Blast 1], and move up to two of your rear-guards to GC.'
 global.UnitGrade[CardStat] = 3
@@ -3079,7 +3079,7 @@ CardStat = 6773
 global.CardName[CardStat] = 'Operator Girl, Haruka'
 global.CardText[CardStat] = 'Dimension Police/Workeroid
 
-AUTO [RC]: When placed, if your vanguard’s power 30000 or greater, Soul Charge 1, and this unit gets power +5000 until end of turn.'
+AUTO [RC]: When placed, if your vanguard’s power is 30000 or greater, Soul Charge 1, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3091,7 +3091,7 @@ CardStat = 6775
 global.CardName[CardStat] = 'Quick Hero, Active Mask'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC] 1/Turn: When your vanguard attacks, if that unit’s power 30000 or greater, COST [Counter Blast 1], and stand this unit. (power gain from boost is included.)'
+AUTO [RC] 1/Turn: When your vanguard attacks, if that unit’s power is 30000 or greater, COST [Counter Blast 1], and stand this unit. (power gain from boost is included.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -3145,7 +3145,7 @@ CardStat = 6783
 global.CardName[CardStat] = 'Glory Maker '
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO [RC]: When it boosts, if the boosted unit’s power 30000 or greater, COST [Counter Blast 1], and your opponent can only call grade 0 from his or her hand until end of that battle. (power gain from boost is included.)'
+AUTO [RC]: When it boosts, if the boosted unit’s power is 30000 or greater, COST [Counter Blast 1], and your opponent can only call grade 0 cards from his or her hand until end of that battle. (power gain from boost is included.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3249,7 +3249,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 CONT [VC]: During your turn, this unit gets power +5000.
 
-AUTO [RC] 1/Turn: When it attacks, if your vanguard is grade 3 or greater with power 30000 or greater, COST [Soul Blast 1], and this unit gets power +10000 / critical +1 until end of turn.'
+AUTO [RC] 1/Turn: When it attacks, if your grade 3 or greater vanguard’s power is 30000 or greater, COST [Soul Blast 1], and this unit gets power +10000 / critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 6
 }
@@ -3713,7 +3713,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: When this unit is placed on VC, COST [reveal a normal unit from your hand, and put it on the bottom of your deck], draw a card, and if you put a grade 3 for this cost, draw a card.
 
-ACT [RC] 1/Turn: COST [Soul Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn for each force marker on your VC.'
+ACT [RC] 1/Turn: COST [Soul Blast 1], choose one of your vanguards, and it gets power +5000 until end of turn for each Force marker on your VC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3746,7 +3746,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: When this unit is rode upon, COST [discard a card from your hand], choose up to one grade 3 normal unit from your hand, and reveal it. If you revealed a card, search your deck for up to one grade 3 card with a different card name from that revealed card, reveal it, put it into your hand, and shuffle your deck.
 
-AUTO [Back Row RC]: When your opponent’s rear-guard attacks, if that units power is 25000 or less, COST [Soul Blast 1 & retire this unit], choose one of your units, and it does not get hit until end of that battle. (Includes power from boost and your opponent’s card effects)'
+AUTO [Back Row RC]: When your opponent’s rear-guard attacks, if that unit’s power is 25000 or less, COST [Soul Blast 1 & retire this unit], choose one of your units, and it does not get hit until end of that battle. (Includes power from boost and your opponent’s card effects)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -3828,7 +3828,7 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 AUTO: When this unit is rode upon by a grade 3 unit with "Metalborg" in its card name, COST [discard a card from your hand], call this card to RC, get an Imaginary Gift:Force, and put that marker on your VC.
 
-AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle for each Imaginary Gift:Force on your VC.
+AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle for each Force marker on your VC.
 
 (SHIFT + left click to create Force gift.)'
 global.UnitGrade[CardStat] = 2

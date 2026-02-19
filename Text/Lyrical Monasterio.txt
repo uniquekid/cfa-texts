@@ -12444,7 +12444,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mythisch
 
 AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one card with "Krysrain" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 AUTO [Drop]: At the end of the battle your grade 3 or greater vanguard with "Krysrain" in its card name attacked, if you used a [Divine Skill] this battle, COST [Counter Blast 1], and call this card to RC.
-AUTO [RC]: When this unit attacks, if this unit was chosen by your vanguard’s ability this turn, or this unit was placed on RC by the effects of a card with the same card name as this unit this turn, this unit gets power +5000 until end of that battle. If your opponent’s vangard is grade 3 or greater, it gets power +10000 instead of +5000. If it got power +10000 by this effect, and you used a [Divine Skill] this turn, it also gets power +5000.'
+AUTO [RC]: When this unit attacks, if this unit was chosen by your vanguard’s ability this turn, or this unit was placed on RC by the effects of a card with the same card name as this unit this turn, this unit gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. If it got power +10000 by this effect, and you used a [Divine Skill] this turn, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12503,7 +12503,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose up to two of your rear-guards, and those units can attack from the back row until end of turn. If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], all of your back row rear-guards get power +10000 until end of turn, and this unit gets grade +1 / drive +1 until end of your opponent’s next turn.
 
-[Fantome Skill] - AUTO [VC]: At the end of your turn, COST [bind one or more, up to two Crimson Moon cards from hand, soul or drop], choose your rear-guards without Sentinel up to the number of cards bound for this cost, return them to hand. Until end of your opponent’s next turn, this unit gets "CONT [VC]: All of your units with "LettiaMateS" in their card names get sheild +5000." one time. If you bound two cards for this cost, you get this ability two times instead of one.'
+[Fantome Skill] - AUTO [VC]: At the end of your turn, COST [bind one or more, up to two Crimson Moon cards from hand, soul or drop], choose your rear-guards without Sentinel up to the number of cards bound for this cost, return them to hand. Until end of your opponent’s next turn, this unit gets "CONT [VC]: All of your units with "LettiaMateS" in their card names get shield +5000." one time. If you bound two cards for this cost, you get this ability two times instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -12598,6 +12598,21 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top cards of the deck equal to the number of your units with "LettiaMateS" in their card names, choose a card from among them, put it into hand, and shuffle the deck.
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [put this unit into soul], choose one of your rear-guards, and return it to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15470
+{
+global.CardName[CardStat] = 'Graceful Delight, Lushty'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Mediell" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest into soul or discard it.
+
+AUTO [RC]: When your grade 3 or greater vanguard with "Mediell" in its card name attacks, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
