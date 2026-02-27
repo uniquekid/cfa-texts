@@ -10593,7 +10593,149 @@ ACT [Hand]: If your order zone does not have a card with the same card name as t
 
 CONT [GC]: If your order zone has a card with the same card name as this card, this unit gets shield +5000.
 
-ACT [Order Zone] 1/Turn: COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one <Genome gel> from among them, discard it, and shuffle the deck.'
+ACT [Order Zone] 1/Turn: COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one <Genome Gel> from among them, discard it, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15479
+{
+global.CardName[CardStat] = 'Leibrecht, Gewehral Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15480
+{
+global.CardName[CardStat] = 'Leibrecht, Raketenwerfer Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+AUTO: When this unit is placed by riding from "Leibrecht, Gewehral Dragon", COST [reveal a grade 3 card with "Aelquilibra" in its card name from ride deck], look at the top seven cards of your deck, choose up to one Product card or Crimson Moon card from among them, reveal it and put it into hand, and shuffle the deck.
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, COST [put this card into your order zone], choose a Product card from your drop, and put it into your order zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15481
+{
+global.CardName[CardStat] = 'Leibrecht, Gatling Kanone Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+ACT [VC] 1/Turn: COST [Reveal a grade 3 with "Aelquilibra" in its card name from ride deck], choose a Product in your order zone, and operate it.
+
+AUTO: When this unit is rode upon by a grade 3 with "Aelquilibra" in its card name, COST [put this card into your order zone], search your deck for up to one Product card, reveal it and put it into your hand, and shuffle the deck.
+
+CONT [Order Zone]: This card is treated as a set order, and all of your rear-guards with "Leibreiter" in their card names get "Intercept" and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15482
+{
+global.CardName[CardStat] = 'Leibrecht Commander, Aelquilibra "Fantome"'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+ACT [VC] 1/Turn: COST [Reveal one or more, up to three, Product cards from hand], put all the cards revealed for this cost into your order zone, and draw a card. If you put two or more, this unit gets power +5000 until end of turn.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose any number of Products from your order zone with "Leib" in their different card names up to the grade of your opponent’s vanguard, and operate them.
+
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul or drop], choose any number of your rear-guards with the Overcharge ability with different card names up to the grade of your opponent’s vanguard, and they get power +5000 until end of turn. If you chose three or more, this unit gets drive +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15483
+{
+global.CardName[CardStat] = 'Leibreiter, Trisdia'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
+
+CONT: This card cannot be operated other than by the ability of a <Fantome>, and while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it into the order zone instead.
+
+Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 13000 / shield 5000 / critical 1 normal unit to a RC, and if you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets power +10000 until end of turn.
+
+Overcharge - AUTO [RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15484
+{
+global.CardName[CardStat] = 'Leibreiter, Rovroi'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
+
+CONT: This card cannot be operated other than by the ability of a <Fantome>, and while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it into the order zone instead.
+Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 8000 / shield 5000 / critical 1 normal unit with "Boost" to a RC, choose one of your opponent’s grade 3 or greater vanguards, and it gets power -5000 until end of turn.
+Overcharge - AUTO [Back Row Center RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, if your opponent has 4 or less cards in their damage zone and you persona rode this turn, choose one of your opponent’s vanguards, and deal it 1 damage. Until the end of this fight, you cannot activate the Overcharge ability of cards with the same name as this unit. (Overcharge skill is mandatory to resolve when chosen. Even if damage is not dealt, you cannot activate until end of fight)'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+global.ExtendedTextBox[CardStat]=1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15485
+{
+global.CardName[CardStat] = 'Leibreiter, Weibaris'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
+
+CONT: This card cannot be operated other than by the ability of a <Fantome>, and while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it into the order zone instead.
+Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 10000 / shield 10000 / critical 1 normal unit with "Intercept" to a RC. If you called, you may draw a card.
+Overcharge - AUTO [RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets "AUTO [RC] 1/Turn: When your vanguard attacks, COST [Energy Blast 3], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn." and power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 15486
+{
+global.CardName[CardStat] = 'Leibrecht, Diffusion Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets power +5000 until end of battle, and at the end of that battle, COST [Soul Blast 1, and retire this unit], choose a Product card from your drop, and put it into your order zone.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15487
+{
+global.CardName[CardStat] = 'Leibrecht, Firvesius Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], choose up to two Product cards from your drop, and put them into your hand.
+
+Overcharge - AUTO [RC]: At the end of the battle this unit boosted, if this unit was chosen by the ability of your vanguard with "Aelquilibra" in its card name this turn, COST [put this unit into soul], look at the top five cards of your deck, choose up to one set order or Crimson Moon card from among them, reveal it and put it into hand, and shuffle your deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
