@@ -4894,7 +4894,7 @@ CardStat = 7668
 global.CardName[CardStat] = 'Dragonic Overlord "The X" '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-CONT [VC]: When your card effect would count the number of cards in your hand, it is regarded as zero.
+CONT [VC]: When your card effect would count the number of cards in your hand, it is regarded as 0.
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, this unit’s drive cannot become 0 or less.
 
@@ -5056,7 +5056,7 @@ AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or gr
 • Choose one of your vanguards, and it gets power +10000 until end of turn.
 • Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into your damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 12
 }
@@ -5319,11 +5319,11 @@ CardStat = 9965
 global.CardName[CardStat] = 'Dragonic Overlord "The ße-birth"  '
 global.CardText[CardStat] = 'Kagero/Flame Dragon
 
-AUTO [VC]: At the beginning of your battle phase, COST [you have one or more rear-guards, lock all of your rear-guards], and until end of turn, at the end of the next battle this unit attacked, COST [Counter Blast 1 & discard a card from your hand], and stand this unit.
+AUTO [VC]: At the beginning of your battle phase, COST [you have one or more rear-guards, and lock all of your rear-guards], and until end of turn, at the end of the next battle this unit attacked, COST [Counter Blast 1 & discard a card from your hand], and stand this unit.
 
-AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 1], and for every two of your locked cards, choose one of your opponent’s rear-guards, and retire it.
+AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 1], and for every two of your locked cards, choose one of your opponent’s rear-guards, and retire them.
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if you have five or more locked cards, and your damage zone has four or more cards, COST [discard two cards from your hand], stand this unit, and get an Imaginary Gift:Force.
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if you have five or more locked cards, and you have four or more cards in your damage zone, COST [discard two cards from your hand], stand this unit, get an Imaginary Gift:Force.
 
 (SHIFT + left click to create Force gift.)'
 global.UnitGrade[CardStat] = 3

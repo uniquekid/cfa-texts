@@ -3388,9 +3388,9 @@ CardStat = 7559
 global.CardName[CardStat] = 'Black-clad Top-tier Deity, Bradblack'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and three of your front row units get power +10000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and three units in your front row get power +10000 until end of turn.
 
-AUTO [VC]: At the end of the battle it attacked, look at seven cards from the top of your deck, reveal up to one grade 3 card from among them and put it into your hand, and shuffle your deck. If your opponent’s vanguard is grade 3 or greater, COST [discard two cards from your hand], ride a grade 3 card other than "Black-clad Top-tier Deity, Bradblack" from your hand as stand, and that unit gets power +10000 / drive -1 until end of turn.'
+AUTO [VC]: At the end of the battle it attacked, look at seven cards from the top of your deck, reveal up to one grade 3 card from among them and put it into your hand, and shuffle your deck. If your opponent’s vanguard is grade 3 or greater, COST [discard two cards from your hand], ride a grade 3 card not named "Black-clad Top-tier Deity, Bradblack" from your hand as stand, and that unit gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -3442,7 +3442,7 @@ CardStat = 7609
 global.CardName[CardStat] = 'Super Dimensional Robo, Dairoller'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-CONT [RC/GC]: If you have two or more other grade 3 units, this unit gets power +10000 / shield +5000, and "Intercept". (Includes guardians.)'
+CONT [RC/GC]: If you have two or more other grade 3 units, this unit gets power +10000 / shield +5000 and "Intercept". (Includes guardians.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -3730,7 +3730,7 @@ AUTO: When this unit is put on GC from hand, if you did not ride a grade 3 or gr
 • Choose one of your vanguards, and it gets power +10000 until end of turn.
 • Choose one of your opponent’s units, and it gets critical -2 until end of that battle.
 
-AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into the damage zone.'
+AUTO: When this unit is placed on RC from hand, if your damage zone has no cards, put the top card of your deck into your damage zone.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -3777,7 +3777,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 AUTO: When this unit attacks from VC or is rode upon, COST [Counter Blast 1 & Soul Blast 1], draw a card, choose one of your opponent’s units, and increase or decrease its power to 0 until end of turn. (Its power at that time becomes 0)
 
-AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a grade 3 card from your hand], and increase or decrease that attacking units critical to 0 until end of that battle. (Its critical at that time becomes 0)'
+AUTO [VC] 1/Turn: When this unit is attacked, COST [discard a grade 3 card from your hand], and increase or decrease that attacking unit’s critical to 0 until end of that battle. (Its critical at that time becomes 0)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -3877,7 +3877,7 @@ global.CardText[CardStat] = 'Dimension Police/Alien
 
 CONT [VC]: During your turn, this unit gets power +5000 for each card with "Enigman" in its card name in your soul.
 
-AUTO [VC] 1/Turn: At the beginning of your attack step, if this unit’s power is 20000 or greater, until end of turn, this unit gets critical +1, and if it’s 35000 or greater, it gets drive +1, and if it’s 50000 or greater, it gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [discard two cards from your hand], stand this unit, and increase or decrease this unit’s drive to zero until end of turn.".'
+AUTO [VC] 1/Turn: At the beginning of your attack step, if this unit’s power is 20000 or greater, until end of turn, this unit gets critical +1, and if its power is 35000 or greater, it gets drive +1, and if its power is 50000 or greater, it gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [discard two cards from your hand], stand this unit, and increase or decrease this unit’s drive to zero until end of turn.".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
