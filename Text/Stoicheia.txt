@@ -2121,7 +2121,7 @@ CardStat = 10066
 global.CardName[CardStat] = 'Spirits That Roam'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
-Until end of turn, when you would move or swap rear-guards during your main phase, you can also move it within the same row.'
+Until end of turn, when you would move or swap your rear-guard’s position during your main phase, you may move them horizontally.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -2761,6 +2761,7 @@ AUTO [Front Row RC]: When your other unit in the same column as this unit attack
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Tigralta'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11069,3 +11070,39 @@ global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15488
+{
+global.CardName[CardStat] = 'Masked Rider Kabuto, Clock Up'
+global.CardText[CardStat] = 'Stoicheia/Hero
+
+CONT: This card is also regarded as "Sylvan Horned Beast, Tigralta".
+
+AUTO [Front Row RC]: When your other unit in the same column as this unit attacks, that unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Tigralta'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15489
+{
+global.CardName[CardStat] = 'Masked Rider Gatack, Clock Up'
+global.CardText[CardStat] = 'Stoicheia/Hero/Tear Dragon/
+
+CONT: This card is also regarded as "Blue Artillery Dragon, Inlet Pulse Dragon".
+
+AUTO [RC]: At the end of the battle this unit attacked a grade 3 or greater vanguard, if it was the first battle of this turn, and your vanguard is "Flagship Dragon, Flagburg Dragon", COST [Soul Blast 1], and stand this unit.
+
+AUTO [RC]: At the end of your turn, if the total number of attacks this turn is four or more, COST [put this unit into your soul], and draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Inlet Pulse Dragon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
