@@ -10419,7 +10419,7 @@ CardStat = 14827
 global.CardName[CardStat] = 'Knight of the Vast, Oswin'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +2000 until end of battle for each card in your bind zone.'
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +2000 until end of that battle for each card in your bind zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -10447,7 +10447,7 @@ CardStat = 14829
 global.CardName[CardStat] = 'Ellipse Wand Sorceress'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When this unit boosts "Trapezoidal Base Sorceress", if your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle. Then, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck, and put it on the top of the deck or into soul.'
+AUTO [RC]: When this unit boosts "Trapezoidal Base Sorceress", if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle. Then, if you have a vanguard with "Sorceress" in its card name, look at the top card of your deck, and put it on the top of the deck or into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -10477,7 +10477,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, and three or more of your rear-guards were placed this turn, this unit gets power +5000.
 
-AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of battle.'
+AUTO: When this unit is put on GC, if your damage zone has five or more cards, or an attack hit your vanguard this turn, COST [Soul Blast 1], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -11981,7 +11981,7 @@ CardStat = 15392
 global.CardName[CardStat] = 'Knight of Resplendent Beauty, Belicent'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, retire all of your rear-guards in the same column as this unit'
+AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, retire all of your rear-guards in the same column as this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -12098,7 +12098,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with an Aichi icon, this unit gets power +5000 until end of turn.
 
-AUTO [Drop]: When your grade 3 or greater vanguard with an Aichi icon is attacked, COST [bind this card], and that unit gets power +10000 until end of battle. You cannot bind cards with the same card name as this card from drop until end of turn.'
+AUTO [Drop]: When your grade 3 or greater vanguard with an Aichi icon is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same card name as this card from drop until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 15
@@ -12259,3 +12259,16 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15533
+{
+global.CardName[CardStat] = 'Mercy Serum Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 2 or greater, and your damage zone has no face up cards, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
