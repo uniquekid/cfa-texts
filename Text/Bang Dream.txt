@@ -2694,7 +2694,7 @@ global.CardText[CardStat] = 'BanG Dream!/Roselia/Normal Order Music
 
 CONT [RC]: You cannot put unit cards on back row center RC.
 
-AUTO: When this card is put on RC, choose a <Roselia> from your drop, and you may call it to RC. Your grade 3 or greater vanguard with "Yukina Minato" in its card name gets "CONT [RC]: All of your front row <Roselia> get power +5000." until end of turn.'
+AUTO: When this card is put on RC, choose a <Roselia> from your drop, and you may call it to RC. Your grade 3 or greater vanguard with "Yukina Minato" in its card name gets "CONT [VC]: All of your front row <Roselia> get power +5000." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 31
 global.CardInClan2[CardStat] = 30
@@ -2801,7 +2801,7 @@ CardStat = 15527
 global.CardName[CardStat] = 'Kokoro Tsurumaki [Maritime Detective]'
 global.CardText[CardStat] = 'BanG Dream!/Hello, Happy World!
 
-AUTO: When this unit is placed by riding from "Kokoro Tsurumaki [Invincible Hero]", search your deck for up to one <Hello, Happy World!> unit card with "Kokoro Tsurumaki" in its card name, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from "Kokoro Tsurumaki [Invincible Hero]", search your deck for up to one <Hello, Happy World!> unit card without "Kokoro Tsurumaki" in its card name, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -2815,7 +2815,7 @@ CardStat = 15528
 global.CardName[CardStat] = 'Kokoro Tsurumaki [Through the Marble]'
 global.CardText[CardStat] = 'BanG Dream!/Hello, Happy World!
 
-AUTO: When this unit is placed by riding from "Kokoro Tsurumaki [Maritime Detective]", search your deck for up to one <Hello, Happy World!> unit card with "Kokoro Tsurumaki" in its card name, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from "Kokoro Tsurumaki [Maritime Detective]", search your deck for up to one <Hello, Happy World!> unit card without "Kokoro Tsurumaki" in its card name, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -3085,8 +3085,8 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15552
 {
-global.CardName[CardStat] = 'Aya Maruyama [Absolute Idol Pose?]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardName[CardStat] = 'Aya Maruyama [Absolute Idol Pose*]'
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -3100,7 +3100,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15553
 {
 global.CardName[CardStat] = 'Aya Maruyama [Wrapped in Morning Glow]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
 AUTO [Soul]: When your grade 3 or greater vanguard with "Aya Maruyama" in its card name is placed, if your soul does not have another card with the same card name as this card, search your deck or drop for up to one "Chisato Shirasagi [Supporting Each Other]", call it to RC, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
@@ -3114,9 +3114,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15554
 {
 global.CardName[CardStat] = 'Aya Maruyama [Overcome]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
-AUTO: When this unit is placed by riding from "Aya Maruyama [Wrapped in Morning Glow]", search your deck for up to one ?Pastel?Palettes? Music, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from "Aya Maruyama [Wrapped in Morning Glow]", search your deck for up to one <Pastel*Palettes> Music, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -3128,11 +3128,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15555
 {
 global.CardName[CardStat] = 'Aya Maruyama [A True Idol Fanatic]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
-AUTO [VC]: At the beginning of your battle phase, choose up to two ?Pastel?Palettes? from your drop, choose up to one card from among the chosen cards, call it to RC, and put the rest into soul. If your soul has fifteen or more cards, this unit gets critical +1 until end of turn.
+AUTO [VC]: At the beginning of your battle phase, choose up to two <Pastel*Palettes> from your drop, choose up to one card from among the chosen cards, call it to RC, and put the rest into soul. If your soul has fifteen or more cards, this unit gets critical +1 until end of turn.
 
-ACT [VC]: If you did not play an order this turn, COST [Counter Blast 1], search your deck or drop for up to one ?Pastel?Palettes? Music and play it, and if you searched the deck, shuffle the deck.'
+ACT [VC]: If you did not play an order this turn, COST [Counter Blast 1], search your deck or drop for up to one <Pastel*Palettes> Music and play it, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -3145,13 +3145,13 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15556
 {
 global.CardName[CardStat] = 'Suki x Suki x Colourfully'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes/Normal Order Music
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes/Normal Order Music
 
 (After a music is played, it is put in the back row center until end of turn)
 
 CONT [RC]: You cannot put unit cards on the back row center RC.
 
-AUTO: When this card is put on RC, look at the top five cards of your deck, choose up to one ?Pastel?Palettes? from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this card is put on RC, look at the top five cards of your deck, choose up to one <Pastel*Palettes> from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 31
 global.CardInClan2[CardStat] = 30
@@ -3164,13 +3164,13 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15557
 {
 global.CardName[CardStat] = 'Luminous Once More'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes/Normal Order Music
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes/Normal Order Music
 
 (After a music is played, it is put in the back row center until end of turn)
 
 CONT [RC]: You cannot put unit cards on the back row center RC.
 
-AUTO [RC]: When this card is put on RC, search your deck for up to two ?Pastel?Palettes?, reveal them and put them into hand, and shuffle the deck. If you put two cards, choose a card from your hand, and put it into soul or discard it.
+AUTO [RC]: When this card is put on RC, search your deck for up to two <Pastel*Palettes>, reveal them and put them into hand, and shuffle the deck. If you put two cards, choose a card from your hand, and put it into soul or discard it.
 
 CONT [RC]: When this card would be put into drop from RC, during your end phase, put it into soul instead.'
 global.UnitGrade[CardStat] = 2
@@ -3185,13 +3185,15 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15558
 {
 global.CardName[CardStat] = 'TITLE IDOL'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes/Normal Order Music
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes/Normal Order Music
 
 (After a music is played, it is put in the back row center until end of turn)
 
 CONT [RC]: You cannot put unit cards on the back row center RC.
 
-AUTO [RC] 1/Turn: At the beginning of your battle phase, choose one of each of your unit with "Aya Maruyama", "Hina Hikawa", "Chisato Shirasagi", "Maya Yamato", "Eve Wakamiya" in their card names, they get power +1000 until end of turn for every two cards in your soul. If you chose five units, your vanguard gets drive +1 until end of turn.'
+AUTO [RC] 1/Turn: At the beginning of your battle phase, choose one of each of your units with "Aya Maruyama", "Hina Hikawa", "Chisato Shirasagi", "Maya Yamato", "Eve Wakamiya" in their card names, until end of turn, they get power +1000 for every two cards in your soul. If you chose five units, your vanguard gets drive +1 until end of turn.
+
+CONT [RC]: When this card would be put into drop from RC, during your end phase, put it into soul instead.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 31
 global.CardInClan2[CardStat] = 30
@@ -3203,10 +3205,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15559
 {
-global.CardName[CardStat] = 'Eve Wakamiya [How's My Voice?]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardName[CardStat] = 'Eve Wakamiya [How’s My Voice?]'
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
-AUTO: When this unit is placed on RC or GC, if you have a vanguard with "Aya Maruyama" in its card name, you may reveal the top card of your deck. If you revealed a card, put that revealed card into soul, and this unit gets power +5000/shield +5000 until end of turn. If the revealed card has "Aya Maruyama" in its card name, when it would be put into soul, you may put it into hand instead.'
+AUTO: When this unit is placed on RC or GC, if you have a vanguard with "Aya Maruyama" in its card name, you may reveal the top card of your deck. If you revealed a card, put that revealed card into soul, and this unit gets power +5000 / shield +5000 until end of turn. If the revealed card has "Aya Maruyama" in its card name, when it would be put into soul, you may put it into hand instead.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -3218,9 +3220,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15560
 {
 global.CardName[CardStat] = 'Maya Yamato [What Lies Ahead]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Aya Maruyama" in its card name, COST [Energy Blast 3 or put a card from hand into soul], choose a ?Pastel?Palettes? with a different card name from all of your rear-guards from your soul, and call it to RC.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Aya Maruyama" in its card name, COST [Energy Blast 3 or put a card from hand into soul], choose a <Pastel*Palettes> with a different card name from all of your rear-guards from your soul, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 31
 global.DCards[CardStat] = 8
@@ -3232,7 +3234,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15561
 {
 global.CardName[CardStat] = 'Chisato Shirasagi [Supporting Each Other]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
 AUTO [Front Row Right RC] 1/Turn: When this unit attacks, if you have a stand grade 3 or greater vanguard with "Aya Maruyama" in its card name, this unit gets power +5000 until end of turn. Then, at the end of that battle, COST [Energy Blast 3], stand this unit, until end of turn, it gets power +5000, and if your soul has ten or more cards, it also gets critical +1.'
 global.UnitGrade[CardStat] = 2
@@ -3246,7 +3248,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15562
 {
 global.CardName[CardStat] = 'Hina Hikawa [Athletics Master]'
-global.CardText[CardStat] = 'BanG Dream!/Pastel?Palettes
+global.CardText[CardStat] = 'BanG Dream!/Pastel*Palettes
 
 AUTO [Front Row Left RC]: At the end of the battle this unit attacked, if you have a vanguard with "Aya Maruyama" in its card name, COST [put this unit into soul], draw a card, then, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
