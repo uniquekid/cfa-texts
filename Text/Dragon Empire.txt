@@ -11332,3 +11332,638 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15604
+{
+global.CardName[CardStat] = 'Dragon of Dojima, Kazuma Kiryu'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
+
+CONT [VC]: This unit gets grade +1 / power +2000 for each grade 1 or greater <Yakuza> in your soul or drop that were in the ride deck. (Active on opponent’s turn too)
+
+AUTO [VC]: At the beginning of your main phase, choose up to one <Yakuza> from your ride deck, and put it into your soul. Then, perform 1 of the following according to your vanguard’s grade.
+• Grade 1 - Choose up to one "Energy Generator" from your ride deck, and put it into the crest zone. If you do, and you went second, Energy Charge 3.
+• Grade 3 - Search your deck or hand for up to one grade 3 with "Kazuma Kiryu" in its card name, ride it as stand, and if you searched your deck, shuffle your deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15605
+{
+global.CardName[CardStat] = 'Kazuma Kiryu'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
+
+CONT [VC]: During your turn, this unit gets power +1000 for every <Yakuza> in your soul or bind zone.
+
+ACT [VC] 1/Turn: COST [Put a <Yakuza> from your RC or hand into your soul], look at the top seven cards of your deck, choose up to one <Yakuza> without sentinel from among them, reveal it and put it into your hand, and shuffle the deck.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15606
+{
+global.CardName[CardStat] = 'Yumi Sawamura'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+ACT [Soul]: If you have a vanguard with "Kazuma Kiryu" in its card name, you have a rear-guard with "Akira Nishikiyama" in its card name and all cards in your bind zone have different card names from this card, COST [bind this card], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15607
+{
+global.CardName[CardStat] = 'Ten Billion Yen Girl, Haruka Sawamura'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+AUTO: When this card is put from ride deck into soul by the ability of "Dragon of Dojima, Kazuma Kiryu", if you have a card with "Yumi Sawamura" in its card name in your soul, COST [put a card from hand into your soul, and reveal a card with "Reina" in its card name from your ride deck], search your deck for up to one card with "Makoto Date" in its card name, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15608
+{
+global.CardName[CardStat] = 'Makoto Date'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Police
+
+ACT [Drop]: If your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name was placed this turn and you have a rear-guard with "Akira Nishikiyama" in its card name, COST [Energy Blast 3], and call this card to RC.
+
+CONT [RC/GC]: If you have a vanguard with "Kazuma Kiryu" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, it also gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15609
+{
+global.CardName[CardStat] = 'Reina'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+ACT [Soul]: If your opponent’s vanguard is grade 3 or greater and all cards in your bind zone have different card names from this card, COST [bind this card], choose one of your units with "Akira Nishikiyama" in its card name, and that unit’s original power becomes 15000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15610
+{
+global.CardName[CardStat] = 'Akira Nishikiyama'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, COST [Soul Blast 1 card other than this card], call this card to RC, and it gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Nishikiyama Family> from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+
+AUTO [Left Front Row RC] 1/Turn: When your vanguard with "Kazuma Kiryu" in its card name stand during your battle phase, if your soul or bind zone has a card with "Reina" in its card name that was in the ride deck, COST [Energy Blast 3], stand this unit, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15611
+{
+global.CardName[CardStat] = 'Matsushige'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put into soul from RC or hand by your card’s ability during your turn, if you have a rear-guard with "Akira Nishikiyama" in its card name, Counter Charge 1 .
+• ACT [Soul]: COST [Bind this card], and Energy Charge 3.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15612
+{
+global.CardName[CardStat] = 'Shinji Tanaka'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
+
+AUTO [RC] 1/Turn: At the end of the battle this unit boosted, if the boosted unit has "Akira Nishikiyama" or "Kazuma Kiryu" in its card name, stand this unit.
+
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], choose a unit being attacked, and that unit gets power +10000 until end of battle. (Performed before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15613
+{
+global.CardName[CardStat] = 'Tamiyo Sayama'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+AUTO: When this card is put from ride deck into soul by the ability of "Dragon of Dojima, Kazuma Kiryu", COST [put a card from hand into soul], search your deck for up to one card with "Kaoru Sayama" in its card name, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15614
+{
+global.CardName[CardStat] = 'Kaoru Sayama'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Police
+
+ACT [Drop]: If your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name was placed this turn and you have a rear-guard with "Ryuji Goda" in its card name, COST [Energy Blast 3], and call this card to RC.
+
+CONT [RC/GC]: If you have a vanguard with "Kazuma Kiryu" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, it also gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15615
+{
+global.CardName[CardStat] = 'Yayoi Dojima'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name and all cards in your bind zone have different card names from this card, COST [bind this card], and perform one of the following.
+• If you have a rear-guard with "Ryuji Goda" in its card name, draw a card.
+• If you have a "Morning Glory Orphanage: Precious Place" in your soul, COST [put a card from hand into soul], search your deck for up to one card with "Daigo Dojima" in its card name, call it to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15616
+{
+global.CardName[CardStat] = 'Jin Goda'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Omi Alliance
+
+ACT [Soul]: If your opponent’s vanguard is grade 3 or greater and all cards in your bind zone have different card names from this card, COST [Energy Blast 3 & and bind this card], choose a card with "Kaoru Sayama" in its card name from your drop, call it to RC, choose a card with "Ryuji Goda" in its card name from your drop, and put it into soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15617
+{
+global.CardName[CardStat] = 'Junichi Sudo'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Police
+
+ACT [RC] 1/Turn: COST [Counter Blast 1], choose a <Police> from your drop, and call it to an RC in the same column as this unit.
+
+AUTO [RC]: When this unit boosts a <Police>, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15618
+{
+global.CardName[CardStat] = 'Ryuji Goda'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Omi Alliance
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, COST [Soul Blast 1 card other than this card], call this card to a front row left RC, and it gets power +5000 until end of turn.
+
+AUTO [Front Row Left RC] 1/Turn: When this unit attacks, if you have a vanguard with "Kazuma Kiryu" in its card name, perform one of the following. Then, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• COST [Energy Blast 3], and draw a card.
+• If your opponent’s vanguard is grade 3 or greater and your soul or bind zone has a card with "Jin Goda" in its card name that was in the ride deck, COST [discard a card from hand], and this unit performs drive checks until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15619
+{
+global.CardName[CardStat] = 'Yukio Terada'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Omi Alliance
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, COST [Soul Blast 1 card other than this card], call this card to a back row left RC, and it gets power +5000 until end of turn.
+
+CONT [RC]: If you have a unit with "Kazuma Kiryu" or "Ryuji Goda" in its card name in the same column as this unit, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15620
+{
+global.CardName[CardStat] = 'Morning Glory Orphanage: Precious Place'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+AUTO: When this card is put from ride deck into soul by the ability of "Dragon of Dojima, Kazuma Kiryu", COST [reveal a "Morning Glory Orphanage’s Eldest Daughter, Haruka Sawamura" from ride deck], search your deck for up to one card with "Osamu Kashiwagi" in its card name, put it into soul, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15621
+{
+global.CardName[CardStat] = 'Osamu Kashiwagi'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Kazama Family
+
+CONT: If you have a <Yakuza> vanguard and all cards in your bind zone have different card names from this card, this card gets all of the following.
+• CONT [RC/Soul/Bind Zone]: The original power of all of your rear-guards with "Daigo Dojima" in its card name become 15000. (Active on opponent’s turn too)
+• AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15622
+{
+global.CardName[CardStat] = 'Morning Glory Orphanage’s Eldest Daughter, Haruka Sawamura'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name and you have a "Morning Glory Orphanage: Precious Place" in your soul, COST [put this card that was in the ride deck into the ride deck face up, and put a card from hand into soul], search your deck or drop for up to one card with "Kazuma Kiryu" in its card name, reveal it and put it into hand. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15623
+{
+global.CardName[CardStat] = 'Daigo Dojima'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name is placed, COST [Energy Blast 3], and call this card to RC.
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a <Tojo Clan> unit card from your drop, and call it to RC.
+
+AUTO [RC]: When this unit is boosted by a <Tojo Clan>, this unit gets power +5000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Abbreviated card text barely fits, keep in mind for EN TL
+CardStat = 15624
+{
+global.CardName[CardStat] = 'Yoshitaka Mine'
+global.CardText[CardStat] = 'DragonEmpire/Yakuza/Tojo Clan/Hakuho Clan
+AUTO: When placed on a front row left RC, if you have a vanguard with "Kazuma Kiryu" in its card name and your soul has a "Morning Glory Orphanage: Precious Place", COST [Energy Blast 3 or put a card from hand into soul], and draw a card.
+CONT [Front Row Left RC]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, your unit with "Tsuyoshi Kanda" in its card name in the same column as this unit can attack and intercept from the back row, and its original power becomes 15000. (Active on opponent’s turn too)
+AUTO [Front Row Left RC]: When your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name stand by that unit’s original ability, choose one of your rear-guards with "Tsuyoshi Kanda" in its card name, and increase this unit’s power by that unit’s original power until end of turn. If your opponent’s vanguard is grade 3 or greater and your bind zone does not have a card with "Tsuyoshi Kanda" in its card name, COST [bind your unit with "Tsuyoshi Kanda" in its card name in the same column as this unit], and your vanguard gets drive +1 until end of turn'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15625
+{
+global.CardName[CardStat] = 'Tsuyoshi Kanda'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, COST [Soul Blast 1 card other than this card], call this card to a back row left RC, and it gets power +5000 until end of turn.
+
+AUTO [Back Row Left RC]: When this unit attacks, if you have a grade 3 or greater <Yakuza> vanguard, this unit gets power +5000. If you persona rode this turn, it gets power +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15626
+{
+global.CardName[CardStat] = 'Jo Amon'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+[Ace Unit] (You may only have one Ace Unit in your deck)
+
+CONT: If you have a <Yakuza> vanguard, this card gets all of the following.
+• Unique Skill - AUTO: When this unit is placed on RC other than during the battle phase, this unit gets power +5000 until end of turn. COST [Energy Blast 3], draw a card, choose one of your opponent’s RC, until end of turn, all of the cards on the chosen RC lose all of their abilities, and cannot get them. Put all of the cards on the chosen RC into drop. (You may only use unique skills a total of once per fight among all of your cards)
+• AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, until end of that battle, this unit gets power +5000, if your opponent has no rear-guards or their rear-guard left RC by your card’s ability this turn, it also gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15627
+{
+global.CardName[CardStat] = 'Goro Majima'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Majima Family
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Kazuma Kiryu" in its card name, COST [Counter Blast 1], and draw a card.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO [Back Row Center RC]: When your vanguard with "Kazuma Kiryu" in its card name attacks, COST [rest this unit], and increase that unit’s power by this unit’s power until end of turn. Then at the end of that battle, COST [put this unit into soul], choose a <Yakuza> from your drop, and put it into soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15628
+{
+global.CardName[CardStat] = 'Kazuki'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability during your turn, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15629
+{
+global.CardName[CardStat] = 'Komaki Fist Reversal'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15630
+{
+global.CardName[CardStat] = 'Dragon of Dojima Style: Unrivalled Strength'
+global.CardText[CardStat] = 'Dragon Empire/Over Trigger
+
+(STANDARD JP & EN: You can only run this card if you do not have D Demon Stealth Dragon, Shiranui "Oboro" or Sealed Blaze of Arbitration, Bavsargra Aksayya in your deck.)
+
+CONT: This card is also regarded as "Dragon Deity King of Resurgence, Dragveda".
+
+Additional Effect - Choose one of your vanguards, and stand it!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+global.CardLimidet[CardStat] = 1
+
+
+CardStat = 15631
+{
+global.CardName[CardStat] = 'Beast Style: Brute Force Suppression'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15632
+{
+global.CardName[CardStat] = 'Rush Style: Elegant Footwork'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15633
+{
+global.CardName[CardStat] = 'Bob Utsunomiya'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15634
+{
+global.CardName[CardStat] = 'Brawler Style: Gutsy Counterattack'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15635
+{
+global.CardName[CardStat] = 'Kamurocho Foodie'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15636
+{
+global.CardName[CardStat] = 'Kazuto Arase'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
+
+CONT: If you have a <Yakuza> vanguard, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15637
+{
+global.CardName[CardStat] = 'Lau Ka Long'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT [RC]: If you have a unit with "Ryuji Goda" in its card name in the same column as this unit, this unit gets "Boost".
+AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15638
+{
+global.CardName[CardStat] = 'Gary Buster Holmes'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• ACT [Drop]: If you have a grade 3 or greater vanguard, COST [Counter Blast 1], and call this card to RC. After that, if you have ten or more cards in your drop, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15639
+{
+global.CardName[CardStat] = 'Sotaro Komaki'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability during your turn, Energy Charge 3, and your vanguard gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15640
+{
+global.CardName[CardStat] = 'The Florist of Sai'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability during your turn, look at the top two cards of your deck, choose up to one card from among them, put it on the top of your deck, and put the rest each on the bottom of your deck or into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15641
+{
+global.CardName[CardStat] = 'Pocket Circuit Fighter'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability during your turn, you and your opponent reveal the top three cards of your decks, and put them on the bottom of the deck in any order. If the total grades of your cards revealed by this effect is greater than the total grades of your opponent’s cards revealed by this effect you draw a card, if they are the same both you and your opponent draw a card, and if they are lower than your opponent’s, your opponent draws a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15642
+{
+global.CardName[CardStat] = 'Yuya'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, you may call this card to GC. If you did, this unit gets shield +5000 until end of battle. If your soul has a card with "Kazuki" in its card name, it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15643
+{
+global.CardName[CardStat] = 'Susumu Gondawara'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Gondawara Family
+
+CONT: If you have a <Yakuza> vanguard, this card gets all of the following.
+• ACT [Soul]: COST [Counter Blast 1], call this card to RC, and it gets power +5000 until end of turn.
+• AUTO [RC]: When your drive check reveals a heal trigger, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15644
+{
+global.CardName[CardStat] = 'Il Yu-Jin'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+AUTO [Soul]: At the end of your opponent’s turn, if your card with the same name as this card was not put from soul into deck this turn and your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name was attacked five or more times this turn and was not hit this turn, COST [put this card on the bottom of your deck], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15645
+{
+global.CardName[CardStat] = 'Miya'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability during your turn, choose up to three <Yakuza> trigger units with different card names from each other from your drop, and put them into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15646
+{
+global.CardName[CardStat] = 'Shintaro Kazama'
+global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Kazama Family
+
+CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
+• AUTO: When this card is put from RC or hand into soul by your card’s ability other than during the battle phase, search your deck for up to one card with "Akira Nishikiyama" in its card name, call it to RC, and shuffle the deck.
+• AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
