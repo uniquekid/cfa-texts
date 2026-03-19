@@ -10522,7 +10522,7 @@ global.CardText[CardStat] = 'Dark States/Gearoid
 
 AUTO [RC]: At the end of the battle this unit boosted a rear-guard, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [put that boosted rear-guard into soul & retire this unit], and draw a card.'
 global.UnitGrade[CardStat] = 1
-global.DCards[CardStat] = 1
+global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -10534,12 +10534,62 @@ global.CardName[CardStat] = 'Mythisch of Zero, Grivardhy'
 global.CardText[CardStat] = 'Dark States/Mythisch
 
 CONT: This card is also from <Keter Sanctuary>.
+
 CONT: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this card gets all of the following.
 • AUTO [Soul/Drop]: At the beginning of your main phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called a card, at the end of that turn, put this unit on the bottom of the deck.
 • AUTO [RC]: At the beginning of your battle phase, until end of turn, this unit gets power +5000, choose one of your rear-guards, and it gets "Boost" until end of turn.
 • AUTO [RC]: At the end of the battle your vanguard attacked, if you used the [Divine Skill] of a grade 3 or greater card with "Blangdmire" in its card name this fight, and your rear-guard did not stand this battle phase, COST [Energy Blast 3], and stand all of your rear-guards in the same column as this unit.'
 global.UnitGrade[CardStat] = 2
-global.DCards[CardStat] = 1
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15690
+{
+global.CardName[CardStat] = 'Divine Skill! Hikari Myodo'
+global.CardText[CardStat] = 'Dark States/Critical Trigger
+
+CONT: This card is also regarded as "Stem Deviate Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15694
+{
+global.CardName[CardStat] = 'DivineZ, Hikari Myodo (Current)'
+global.CardText[CardStat] = 'Dark States/Front Trigger
+
+CONT: This card is also regarded as "Diabolos Girls, Natalia".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 5
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15695
+{
+global.CardName[CardStat] = 'DivineZ Season2, Hikari Myodo'
+global.CardText[CardStat] = 'Dark States/Draw Trigger
+
+CONT: This card is also regarded as "Rouse Wildmaster, Riley".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 5000
