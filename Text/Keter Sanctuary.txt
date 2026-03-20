@@ -12390,9 +12390,9 @@ CardStat = 15713
 global.CardName[CardStat] = 'Bel-Fiore, Muvie'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent's card effects.
+CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent’s card effects.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], choose 1 of your Engaged grade 2 or less cards, and call it to RC.'
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose 1 of your engaged grade 2 or less cards, and call it to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -12405,11 +12405,11 @@ CardStat = 15714
 global.CardName[CardStat] = 'Bel-Fiore, Maya'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent's card effects, and during your turn, all of your front row units with "Bel-Fiore" in its card name get power +5000.
+CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent’s card effects, and during your turn, all of your front row units with "Bel-Fiore" in their card names get power +5000.
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a number of your engaged cards with different card names up to the grade of your opponent’s vanguard, and call them to RC. If you persona rode this turn, this unit gets critical +1 until end of turn.
 
-ACT [VC] 1/Turn: When this unit is attacked, COST [Soul Blast 1], choose any number of your rear-guards with "Bel-Fiore" in its card name, and move them to GC.'
+ACT [VC] 1/Turn: When this unit is attacked, COST [Soul Blast 1], choose any number of your rear-guards with "Bel-Fiore" in their card names, and move them to GC. (Performed before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -12423,11 +12423,11 @@ CardStat = 15716
 global.CardName[CardStat] = 'Bel-Fiore, Suella'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC or put on GC, if you have a vanguard with "Bel-Fiore" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into your soul, and if you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000 until end of turn.
+AUTO: When this unit is placed on RC or put on GC, if you have a vanguard with "Bel-Fiore" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into soul, and if you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000 until end of turn.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, this unit gets power +5000.
 
-AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Bel-Fiore" in its card name attacks, COST [Energy Blast 3], stand this unit, choose a card with "Bel-Fiore" in its card name from your drop, and Engage it in your Garden.'
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Bel-Fiore" in its card name attacks, COST [Energy Blast 3], stand this unit, choose a card with "Bel-Fiore" in its card name from your drop, and engage it in your Garden.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -12440,7 +12440,7 @@ CardStat = 15717
 global.CardName[CardStat] = 'Bel-Fiore, Miiku'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC by your card ability, if you have a vanguard with "Bel-Fiore" in its card name, choose an opponent’s front row RC, and until the end of your opponent’s next turn, this unit gets power and shield each equal to the original shield of the unit on the chosen RC, and your opponent puts all unit cards on the chosen RC on the bottom of their deck in any order.'
+AUTO: When this unit is placed on RC by your card’s ability, if you have a vanguard with "Bel-Fiore" in its card name, choose an opponent’s front row RC, and until end of your opponent’s next turn, this unit gets power and shield equal to the original shield of the unit on the chosen RC, and your opponent puts all unit cards on the chosen RC on the bottom of their deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -12454,7 +12454,7 @@ CardStat = 15718
 global.CardName[CardStat] = 'Bel-Fiore, Pinesse'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When placed on RC by your card ability, if you have a vanguard with "Bel-Fiore" in its card name, this unit gets "Boost", choose 1 of your opponent’s rear-guards, and it gets shield -5000 until end of turn.
+AUTO: When placed on RC by your card’s ability, if you have a vanguard with "Bel-Fiore" in its card name, this unit gets "Boost", choose one of your opponent’s rear-guards, and it gets shield -5000 until end of turn.
 
 AUTO: When this unit is put on GC, if you have a vanguard with "Bel-Fiore" in its card name, choose 1 of your opponent’s units, and it gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -12471,7 +12471,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [Order Zone]: When your opponent plays an order, COST [bind this card], and draw a card. You cannot pay the cost for cards with the same name as this card until end of turn.
 
-CONT [RC]: If your opponent played an order this turn and this unit was placed by your card ability this turn, this unit gets power +10000.'
+CONT [RC]: If your opponent played an order this turn and this unit was placed by your card’s ability this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -12499,7 +12499,7 @@ CardStat = 15721
 global.CardName[CardStat] = 'Bel-Fiore, Nose'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, choose up to 2 cards with "Bel-Fiore" in their different card names from your drop from this unit, and Engage them in your Garden.
+AUTO: When this unit is placed on RC, choose up to two cards with "Bel-Fiore" in their different card names from this unit from your drop, and engage them in your Garden.
 
 AUTO [RC]: When this unit boosts a grade 3 or greater with "Bel-Fiore" in its card name, this unit gets power +2000 until end of battle.'
 global.UnitGrade[CardStat] = 1

@@ -1352,11 +1352,14 @@ CardStat = 15715
 global.CardName[CardStat] = 'Blodeuwedd Garden'
 global.CardText[CardStat] = 'Token Set Order/Garden
 
-ACT [Order Zone] 1/Turn: COST [rest this card], look at the top 7 cards of your deck, choose up to 2 cards with "Bel-Fiore" in their card names, Engage them in your Garden, and shuffle your deck.
+ACT [Order Zone] 1/Turn: COST [rest this card], look at the top seven cards of your deck, choose up to two cards with "Bel-Fiore" in their card names, engage them in your Garden, and shuffle the deck.
 
-AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from your hand], choose 1 of your Engaged cards with the same name as your vanguard, and ride it as stand. If you rode, activate persona ride, and you cannot ride until end of turn.'
+AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from hand], choose one of your engaged cards with the same name as your vanguard, and ride it as stand. If you rode, activate persona ride, and you cannot ride until end of turn.
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 3
+global.DCards[CardStat] = 8
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
