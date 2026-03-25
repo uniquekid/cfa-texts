@@ -10826,3 +10826,35 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15722
+{
+global.CardName[CardStat] = 'Mobility Flagger'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is put on GC, if the attacking unit was placed other than from hand this turn, and your order zone has two or more cards, COST [Soul Blast 1], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15724
+{
+global.CardName[CardStat] = 'Mythisch Machine Deity, "Mondgestirn" Angrbold"'
+global.CardText[CardStat] = 'Brandt Gate/Mythisch
+
+CONT:This card cannot be ridden or called to RC.
+
+ACT [Hand]: If your order zone has a "Moon Gate", COST [Soul Blast 1 & reveal this card], choose a card with "Mythisch" in its different card name from this card from your order zone, and put it into hand. If you put a card, put this card in the order zone.
+
+AUTO [Order Zone]: When your vanguard with "Veissrugr" in its card name attacks, if your unit with "Mythisch" in its card name was not put into deck this battle, COST [put one or more, up to one from RC and up to two from drop, cards with "Roztnir", "Garzorums", and "Helgvarr" in their different card names each on the bottom of the deck in any order], and this card’s CONT abilities are nullified until end of turn.
+
+AUTO [RC]: At the end of each turn, retire this unit. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 28000
+global.DefensePowerStat[CardStat] = 0
