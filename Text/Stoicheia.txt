@@ -974,7 +974,7 @@ CardStat = 8937
 global.CardName[CardStat] = 'Unappeasable Wild Crow'
 global.CardText[CardStat] = 'Stoicheia/Ghost
 
-ACT [RC] 1/Turn: If you played an order this turn, COST [dicard an order card from your hand], and draw a card.'
+ACT [RC] 1/Turn: If you played an order this turn, COST [discard an order card from your hand], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -1488,6 +1488,8 @@ CardStat = 9368
 global.CardName[CardStat] = 'Rotting Usurp Dragon'
 global.CardText[CardStat] = 'Stoicheia/Skeleton
 
+(STANDARD JP: You can only run this card if you do not have Harvest Elf in your deck.)
+
 AUTO [Drop]: When your grade 3 or greater vanguard is placed, you may call this card to RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
@@ -1495,6 +1497,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9369
@@ -1572,13 +1575,16 @@ CardStat = 9374
 global.CardName[CardStat] = 'Strange Food Preparation'
 global.CardText[CardStat] = 'Stoicheia/Ghost
 
-AUTO: When this unit is placed on RC from drop, choose a blitz order from your drop, and you may put it into your hand.'
+(STANDARD JP: Banned.)
+
+AUTO: When this unit is placed on RC from drop, choose a Blitz Order from your drop, and you may put it into your hand.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 9375
@@ -3079,7 +3085,7 @@ CardStat = 10576
 global.CardName[CardStat] = 'Fierce Attack Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-CONT [RC]: During the fourth battle of your turn or more, all of your units in the same column as this unit get power +5000.
+CONT [RC]: During the fourth battle or more of your turn, all of your units in the same column as this unit get power +5000.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
@@ -3149,7 +3155,7 @@ CardStat = 10627
 global.CardName[CardStat] = 'Sylvan Horned Beast, Lesserai'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-CONT [RC]: During the sixth battle of your turn or more, this unit gets power +10000.
+CONT [RC]: During the sixth battle or more of your turn, this unit gets power +10000.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
@@ -6288,6 +6294,8 @@ CardStat = 12754
 global.CardName[CardStat] = 'Flowering Sweet Shop'
 global.CardText[CardStat] = 'Stoicheia/Set Order
 
+(STANDARD JP: Banned.)
+
 AUTO [Order Zone] 1/Turn: When your unit is attacked, choose one of your rear-guards not being attacked, move it to GC, and it gets "[CONT]: When this unit would be retired from GC, bind it instead of retiring." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -6295,6 +6303,7 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 12755
@@ -9141,6 +9150,8 @@ CardStat = 14159
 global.CardName[CardStat] = 'Harvest Elf'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
+(STANDARD JP: You can only run this card if you do not have Rotting Usurp Dragon in your deck.)
+
 AUTO: When this unit is placed on RC from hand other than during the battle phase, COST [Soul Blast 1], and call a Plant token to RC.
 
 CONT [Back Row RC]: If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. (Active on opponent’s turn too)
@@ -9156,6 +9167,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 9583
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 14168
@@ -11133,3 +11145,16 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15727
+{
+global.CardName[CardStat] = 'Ninnin Jingi'
+global.CardText[CardStat] = 'Stoicheia/Dryad
+
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard, COST [put a normal order from drop on the bottom of the deck], and this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

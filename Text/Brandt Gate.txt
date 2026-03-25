@@ -726,12 +726,15 @@ CardStat = 8629
 global.CardName[CardStat] = 'Aurora Battle Princess, Derii Violet'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
+(STANDARD JP: Banned.)
+
 AUTO: When this unit is put on GC, if one or more of your opponent’s cards are imprisoned in your Prison, COST [Soul Blast 1], choose one of your units, and it cannot be hit by a grade 2 or lower units attack until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 8630
@@ -831,7 +834,7 @@ CardStat = 8637
 global.CardName[CardStat] = 'Harming Bite Monster, Zabocanni'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC]: When this unit’s attack hits a vanguard, if this unit was boosted, COST [Counter Blast 1 & Soul Blast 1], draw a card.'
+AUTO [RC]: When this unit’s attack hits a vanguard, if this unit was boosted, COST [Counter Blast 1 & Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -2164,9 +2167,9 @@ CardStat = 10122
 global.CardName[CardStat] = 'Galactic B-Hero, Wired Klosten'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-ACT [VC] 1/Turn: COST [Scout a card with "B-Hero" in its card name from your hand into your Base], and draw a card. (Put the scouted card into your Order Zone face up)
+ACT [VC] 1/Turn: COST [Scout a card with "B-Hero" in its card name from your hand to your Base], and draw a card. (Scouted cards are put face up into your Order Zone)
 
-AUTO [RC] 1/Turn: When this unit moves to another RC during your battle phase, this unit gets power +5000 until end of turn.'
+AUTO [RC] 1/Turn: When this unit is moved to another RC during your battle phase, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -5876,6 +5879,8 @@ CardStat = 12756
 global.CardName[CardStat] = 'Bustling Bleachers'
 global.CardText[CardStat] = 'Brandt Gate/Set Order
 
+(STANDARD JP: Banned.)
+
 AUTO [Order Zone] 1/Turn: When your unit is attacked, choose one of your rear-guards not being attacked, move it to GC, and it gets "[CONT]: When this unit would be retired from GC, bind it instead of retiring." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -5883,6 +5888,7 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.CardBanned[CardStat] = 1
 
 
 CardStat = 12757
@@ -10826,3 +10832,32 @@ global.DCards[CardStat] = 5
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15722
+{
+global.CardName[CardStat] = 'Mobility Flagger'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO: When this unit is put on GC, if the attacking unit was placed other than from hand this turn, and your order zone has two or more cards, COST [Soul Blast 1], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15724
+{
+global.CardName[CardStat] = 'Mythisch Machine Deity, "Mondgestirn" Angrbold"'
+global.CardText[CardStat] = 'Brandt Gate/Mythisch
+
+CONT:This card cannot be ridden or called to RC.
+ACT [Hand]: If your order zone has a "Moon Gate", COST [Soul Blast 1 & reveal this card], choose a card with "Mythisch" in its different card name from this card from your order zone, and put it into hand. If you put a card, put this card in the order zone.
+AUTO [Order Zone]: When your vanguard with "Veissrugr" in its card name attacks, if your unit with "Mythisch" in its card name was not put into deck this battle, COST [put one or more, up to one from RC and up to two from drop, cards with "Roztnir", "Garzorums", and "Helgvarr" in their different card names each on the bottom of the deck in any order], and this card’s CONT abilities are nullified until end of turn.
+AUTO [RC]: At the end of each turn, retire this unit. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 28000
+global.DefensePowerStat[CardStat] = 0

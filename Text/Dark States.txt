@@ -6661,6 +6661,8 @@ CardStat = 13110
 global.CardName[CardStat] = 'Sword Emperor Dragon of Supremacy, Mordigarrah'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Over Trigger
 
+(STANDARD JP: You can only run this card if you do not have Sugary and Scary Land, Heartluru in your deck.)
+
 CONT: This card is regarded as "Spiritual King of Ignition, Valnout".
 
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
@@ -6671,6 +6673,7 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13115
@@ -8412,6 +8415,8 @@ CardStat = 14019
 global.CardName[CardStat] = 'Summon Crow Mage, Corvoll'
 global.CardText[CardStat] = 'Dark States/Human
 
+(STANDARD JP: Restricted to 2.)
+
 CONT: If you have a grade 3 vanguard with "Rewinder" or "Oselargest" in its card name, this card gets all of the following.
 • AUTO [Drop]: When your vanguard is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called a card, Soul Charge 1 .
 • AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], look at the top five cards of your deck, choose up to one grade 3 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.'
@@ -8420,6 +8425,7 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 14024
@@ -8574,6 +8580,8 @@ CardStat = 14089
 global.CardName[CardStat] = 'Sugary and Scary Land, Heartluru'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
+(STANDARD JP: You can only run this card if you do not have Spiritual King of Ignition, Valnout in your deck.)
+
 CONT [VC]: During your turn, if your order zone has three or more "Toys Are For Kids", all of your front row unit get power +5000.
 ACT [VC] 1/Turn: COST [Energy Blast 3], choose up to the same number of Happy Toys from your soul as the number of "Toys Are For Kids" in your order zone, and call them to RC.
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to the number of "Toys Are For Kids" in your order zone.
@@ -8583,9 +8591,11 @@ AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and perform al
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 14090

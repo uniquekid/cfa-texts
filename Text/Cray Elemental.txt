@@ -1504,7 +1504,7 @@ CardStat = 10939
 global.CardName[CardStat] = 'Spiritual King of Ignition, Valnout'
 global.CardText[CardStat] = 'Elemental/Over Trigger
 
-(You may only have one over trigger in a deck. When revealed as a trigger, remove that card, draw a card, choose one of your units, and it gets power +100 Million until end of turn! If revealed during drive check, activate its additional effect!)
+(STANDARD JP: You can only run this card if you do not have Sugary and Scary Land, Heartluru in your deck.)
 
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
 global.UnitGrade[CardStat] = 0
@@ -1515,6 +1515,7 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10940
@@ -3060,6 +3061,8 @@ CardStat = 13537
 global.CardName[CardStat] = '"Fiery Dodgeball Girl, Dodge Danko" Danko Ichigeki'
 global.CardText[CardStat] = 'CoroCoro Comic/Over Trigger
 
+(STANDARD JP: You can only run this card if you do not have Sugary and Scary Land, Heartluru in your deck.)
+
 CONT: This card is regarded as "Spiritual King of Ignition, Valnout".
 
 Additional Effect - Choose one of your stand rear-guards, and it gets "AUTO [RC] 1/Turn: At the end of the battle this unit attacked, stand this unit." until end of turn. If you did not choose a card, draw a card, choose up to one unit card from hand, and call it to RC.'
@@ -3071,6 +3074,7 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13586
@@ -5577,3 +5581,43 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 15725
+{
+global.CardName[CardStat] = 'The Warring States Seek Radiance'
+global.CardText[CardStat] = 'Normal Order
+
+CONT: You can only put one "The Warring States Seek Radiance" in your deck.
+
+CONT: This card cannot be played, and if you have a Glitter vanguard with "Tamayura", "Rorowa", or "Michu" in its card name, this card gets all of the following.
+• AUTO: When this card is discarded from hand during your turn, look at the top seven cards of your deck, choose up to one Glitter or order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+• ACT [Hand/Drop]: If your vanguard is grade 3 or greater, COST [remove this card], choose a Glitter or order card without Regalis Piece from drop, and put it into hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 8
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15726
+{
+global.CardName[CardStat] = 'Desires Intertwine and Blaze'
+global.CardText[CardStat] = 'Normal Order
+
+CONT: You can only put one "Desires Intertwine and Blaze" in your deck.
+
+CONT: This card cannot be played, and if you have a Glitter vanguard with "Kheios", "Eva", or "Thegrea" in its card name, this card gets all of the following.
+• AUTO: When this card is discarded from hand during your turn, look at the top seven cards of your deck, choose up to one Glitter or order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+• ACT [Hand/Drop]: If your vanguard is grade 3 or greater, COST [remove this card], choose a Glitter or order card without Regalis Piece from drop, and put it into hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 8
+global.CardInClan[CardStat] = 25
+global.CardInClan2[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
