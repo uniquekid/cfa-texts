@@ -10883,7 +10883,7 @@ CardStat = 15357
 global.CardName[CardStat] = 'Apprentice Magick Caster, Berucrea'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-AUTO: When this unit is placed by riding from "Future Magick Caster, Berucrea, COST [Soul Blast 1], search the deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
+AUTO: When this unit is placed by riding from "Future Magick Caster, Berucrea, COST [Soul Blast 1], search your deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11178,7 +11178,7 @@ CardStat = 15749
 global.CardName[CardStat] = 'Apprentice Magick Caster, Zerith'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is placed by riding from "Future Magick Caster, Zerith, COST [Soul Blast 1], search the deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
+AUTO: When this unit is placed by riding from "Future Magick Caster, Zerith, COST [Soul Blast 1], search your deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11191,7 +11191,7 @@ CardStat = 15750
 global.CardName[CardStat] = 'Peerless Magick Caster, Zerith'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is rode upon by a grade 3 card with "Zerith" in its card name, search your deck or face up in your damage zone for up to one Gran Magick or Crimson Moon card, put it into your drop, and if you searched your deck, shuffle your deck. If you put from your damage zone, put the top card of your deck into your damage zone. You get "You can play two orders per turn, and you cannot play orders with the same name as an order you played this turn." until end of turn.'
+AUTO: When this unit is rode upon by a grade 3 card with "Zerith" in its card name, search your deck or face up damage for up to one Gran Magick or Crimson Moon card, put it into drop, and if you searched the deck, shuffle the deck. If you put from your damage zone, put the top card of the deck into your damage zone. You get "You can play two orders per turn, and you cannot play orders with the same name as an order you played this turn." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11206,13 +11206,17 @@ global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
 
-[Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from your soul and drop], choose trigger cards that are not the over trigger from your drop up to the number of Crimson Moon cards bound for this cost, return them to your deck and shuffle. You cannot pay the cost of [Fantome Skill] of units with the same name as this unit until end of this fight.
+[Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from your soul and drop], choose trigger cards other than over trigger from your drop up to the number of Crimson Moon cards bound for this cost, put them on the bottom of the deck and shuffle the deck. You cannot pay the cost of [Fantome Skill] of units with the same card name as this unit until end of this fight.
 
-(SHIFT + left click to call tokens.)'
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
+global.AnotherSide[CardStat] = 15752
 global.TokenSummoner[CardStat] = 15752
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -11224,11 +11228,11 @@ CardStat = 15753
 global.CardName[CardStat] = 'Fantum Gran Magick, Glid Radeaur'
 global.CardText[CardStat] = 'Stoicheia/Normal Order/Gran Magick
 
-This card can be played from drop. If your vanguard is "Great Magick Caster of Transitory, Zerith "Fant?me"", play this card with COST [Soul Blast (1)]!
+This card can be played from drop. If your vanguard is "Great Magick Caster of Transitory, Zerith "Fantome"", play this card with COST [Soul Blast 1] !
 
 Bind this card, and your vanguard gets "CONT [VC]: All of your <Fantome> units get power +5000. if your bind zone has three or more "Fantum Gran Magick, Glid Radeaur", power +10000 instead of +5000" until end of turn.
 
-CONT: This card cannot be bound other than by this card’s ability, and if you have a vanguard with "Zerith" in its card name, and while this card is revealed from your deck by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card.'
+CONT: This card cannot be bound other than by this card’s ability, and if you have a vanguard with "Zerith" in its card name, while this card is revealed from deck by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -11257,7 +11261,7 @@ CardStat = 15755
 global.CardName[CardStat] = 'Student of the Stream, Haruto'
 global.CardText[CardStat] = 'Stoicheia/Warbeast/Fantome
 
-CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name, this unit gets power +5000 / shield +5000. (Active on your opponent’s turn too)'
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11284,7 +11288,7 @@ CardStat = 15757
 global.CardName[CardStat] = 'Student of Illumination, Ciygna'
 global.CardText[CardStat] = 'Stoicheia/Warbeast/Fantome
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle your deck.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
 
 CONT [GC]:If you have a vanguard with "Zerith" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
@@ -11301,12 +11305,13 @@ global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name and this unit was placed on RC from drop this turn, this unit gets power +5000.
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or Gran Magick card, discard it, and shuffle your deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or Gran Magick card, discard it, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 15759
@@ -11314,7 +11319,7 @@ CardStat = 15759
 global.CardName[CardStat] = 'Scholar of Lake Heart, Fontijn'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, COST [Counter Blast 1], look at cards from the top of your deck equal to the number of your <Fantome> units, choose a card from among them, put it into your hand, choose up to one of either a <Fantome> or a normal order from among them, put it into your drop, and shuffle your deck.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, COST [Counter Blast 1], look at cards from the top of your deck equal to the number of your <Fantome> units, choose a card from among them, put it into hand, choose up to one of <Fantome> or up to one normal order from among them, put it into drop, and shuffle the deck.
 
 AUTO [Front Row RC]: When your grade 3 or greater <Fantome> attacks, if you have a grade 3 or greater vanguard with "Zerith" in its card name, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -11326,7 +11331,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15762
 {
-global.CardName[CardStat] = 'Enhance Magick, Starylking'
+global.CardName[CardStat] = 'Enhance Magick, Starylking '
 global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
 
 CONT: You may only have one "Enhance Magick, Starylking" in your deck.
@@ -11343,7 +11348,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15763
 {
-global.CardName[CardStat] = 'Growth Magick, Voxtol'
+global.CardName[CardStat] = 'Growth Magick, Voxtol '
 global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
 
 CONT: You may only have one "Growth Magick, Voxtol" in your deck.
@@ -11362,7 +11367,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15764
 {
-global.CardName[CardStat] = 'Healing Magick, Aexlunus'
+global.CardName[CardStat] = 'Healing Magick, Aexlunus '
 global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
 
 CONT: You may only have one "Healing Magick, Aexlunus" in your deck.
