@@ -8027,7 +8027,7 @@ CardStat = 12986
 global.CardName[CardStat] = 'Aurora Star, Coral  '
 global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
 
-CONT [VC]: All of your other units with "Coral" in their card name get shield +5000.
+CONT [VC]: All of your other units with "Coral" in their card names get shield +5000.
 
 ACT [VC] 1/Turn: COST [Put a card from hand into soul], and draw a card. If a card with "Coral" in its card name was put for this cost, this unit gets "AUTO [VC]: At the end of the battle this unit attacked, choose one of your rear-guards, and stand it." until end of turn.
 
@@ -12710,4 +12710,30 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15778
+{
+global.CardName[CardStat] = 'Shred Player, Timonie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+ACT [RC]: If you have a grade 3 or greater vanguard with "FLÄMMe-Glam" in its card name, COST [Counter Blast 1 & put this card in damage zone], draw a card, and until end of turn,  the number of cards in your damage zone for you to lose becomes seven, and you get "All of your units with "FLÄMMe-Glam" in their card names get power +5000.". At the end of that turn, choose a face up card with the same card name as this card from your damage zone, and bind it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15779
+{
+global.CardName[CardStat] = 'Relaxing Time at Midnight, Perchute'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO [RC]: When your vanguard is attacked, if the attacking unit has power 33000 or greater, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
