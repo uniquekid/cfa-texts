@@ -8704,10 +8704,11 @@ ACT [VC] 1/Turn: If you did not ride with a card’s ability this turn, COST [Soul
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to one of your rear-guards, return it to hand, choose up to one grade 3 or less card from your hand, and call it to RC.
 
-(SHIFT + left click to activate persona ride or give the front row +10000 power continuously)'
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
@@ -11956,12 +11957,13 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
 CONT [VC]: During your turn,if your opponent’s vanguard is grade 3 or greater and you have a card with the same name as this card in your soul, all of your front row units get power +5000. If your damage zone has four or more cards, all of your front row units get power +5000.
 AUTO [VC]: At the end of the battle this unit attacked, if this unit was not placed this battle phase, COST [Counter Blast 1], choose up to one card with the same card name as this unit from your hand, ride it as stand, and it gets drive -1 until end of turn.
 AUTO [VC] 1/Turn: When this unit attacks, if this unit was placed this battle, choose one of your rear-guards, return it to your hand, choose up to one card from your hand, call it to RC, and at the end of that turn, choose up to one card with the same card name as this unit from your soul, and put it to hand.
-(SHIFT + left click to activate persona ride or give the front row +10000 power continuously)'
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
 global.PersonaRideAct[CardStat] = 1
-//global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -12732,6 +12734,59 @@ global.CardName[CardStat] = 'Relaxing Time at Midnight, Perchute'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
 AUTO [RC]: When your vanguard is attacked, if the attacking unit has power 33000 or greater, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15783
+{
+global.CardName[CardStat] = 'Cancelation'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Cursed Play
+
+CONT: This card is also regarded as "Wishing Your Happiness".
+
+Play this if you have a vanguard with "Luticia" in its card name!
+
+Choose a card from your soul, put it into hand, and put this card into soul. Then, if your soul has two or more Cursed Play cards, choose a card from your drop, put it into soul, choose one of your units, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15784
+{
+global.CardName[CardStat] = 'Grandmaster of Arcadia, Freyr'
+global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Magazine
+
+CONT: This card is also regarded as "Lyrical ShootingStarS * Special Issue".
+
+Play this with COST [Counter Blast 1] if you have a vanguard with "Kyouka" in its card name!
+
+Choose up to two normal units from your drop with grades equal to or less than your vanguard’s grade and different grades, and call them to RC. If you have one or more units each with grade 1, grade 2, and grade 3, until end of turn, you can play orders up to a total of two times, and you cannot play orders other than "Lyrical ShootingStarS".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15785
+{
+global.CardName[CardStat] = 'Classical Folk Dancer '
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+CONT: This card is also regarded as "To The Stars of Horizon Rising in The Night Sky, Yasmin".
+
+ACT [RC]: If you have a vanguard with "Kairi" in its card name, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], search your deck, soul, or drop for up to one grade 4 unit card with "Kairi" in its card name, ride it as stand, and return this unit to the deck and shuffle it.
+
+CONT [GC]: If you have a grade 4 vanguard with "Kairi" in its card name, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
