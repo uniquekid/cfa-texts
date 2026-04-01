@@ -6661,7 +6661,7 @@ CardStat = 13110
 global.CardName[CardStat] = 'Sword Emperor Dragon of Supremacy, Mordigarrah'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Over Trigger
 
-(STANDARD JP: You can only run this card if you do not have Sugary and Scary Land, Heartluru in your deck.)
+(STANDARD JP & EN: You can only run this card if you do not have Sugary and Scary Land, Heartluru in your deck.)
 
 CONT: This card is regarded as "Spiritual King of Ignition, Valnout".
 
@@ -7799,14 +7799,15 @@ global.CardName[CardStat] = 'Dualmajestar, Astroea=Bico Stella'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO [VC]: At the beginning of your main phase, if you did not ride this turn, COST [discard a card from hand], choose a card with the same card name as this unit from your bind zone, and ride it as stand, and if you rode a card, activate persona ride.
-
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & Soul Blast 3], bind all critical triggers and cards with "Astroea" in their card names Soul Blast for this cost, and perform all of the following according to the total number of critical triggers and cards with "Astroea" in their card names in your bind zone.
 • One or more - Choose one of your opponent’s rear-guards, retire it, and all of your front row units get power +5000 until end of turn.
 • Three or more - This unit gets critical +1 / drive +1 until end of turn.
-• Five or more - Choose one of your rear-guards, and stand it.'
+• Five or more - Choose one of your rear-guards, and stand it.
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8415,7 +8416,7 @@ CardStat = 14019
 global.CardName[CardStat] = 'Summon Crow Mage, Corvoll'
 global.CardText[CardStat] = 'Dark States/Human
 
-(STANDARD JP: Restricted to 2.)
+(STANDARD JP & EN: Restricted to 2.)
 
 CONT: If you have a grade 3 vanguard with "Rewinder" or "Oselargest" in its card name, this card gets all of the following.
 • AUTO [Drop]: When your vanguard is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called a card, Soul Charge 1 .
@@ -10648,3 +10649,34 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15786
+{
+global.CardName[CardStat] = 'Direful Doll, Concetta'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+CONT [GC]: If you have a vanguard with "Direful Doll" in its card name, this unit gets shield +5000.
+
+ACT [Soul/Drop]: If you have a grade 3 or greater vanguard with "Direful Doll" in its card name, COST [Counter Blast 1, and put this card on the bottom of the deck], choose up to one card with "Direful Doll" in its card name from your drop, put it into soul, and you get "All of your front row units with "Direful Doll" in their card names get power +5000." until end of turn. You cannot pay the cost for the ACT ability of cards with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15787
+{
+global.CardName[CardStat] = 'Direful Doll, Giliola'
+global.CardText[CardStat] = 'Dark States/Workeroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Direful Doll" in its card name, look at the top seven cards of your deck, choose up to one card with "Direful Doll" in its card name or up to one "For Now, Forget the Passage of Time" from among them, reveal it and put it into hand, and shuffle the deck. If you revealed, choose a card from your hand, and put it into soul.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Direful Doll" in its card name, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000

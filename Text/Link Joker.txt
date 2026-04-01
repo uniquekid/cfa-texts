@@ -2390,16 +2390,17 @@ CardStat = 3239
 global.CardName[CardStat] = 'Turmoil Star-vader, Zinc'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-(PREMIUM JP & EN: Banned.)
-(PREMIUM TH: Restricted to 2.)
+(PREMIUM EN & TH: Restricted to 2.)
+(PREMIUM JP: Banned.)
 
 ACT [RC]: [Put this unit into your soul] If you have a vanguard with "Chaos" in its card name, and your opponent has a locked card, Counter Charge 2 / Soul Charge 2.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 global.CardLimidet[CardStat] = 1
-global.CardLimidet[CardStat] = 1
 global.CardBanned[CardStat] = 1
 }
+global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 3285
@@ -4273,7 +4274,7 @@ CardStat = 6435
 global.CardName[CardStat] = 'Penetrate Deletor, Iggy '
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO [RC]: When it attacks a vanguard, COST [retire another rear-guard in the same column as this unit], and this unit gets power +4000 until end of turn for each grade of the unit retired for this cost. If it was +8000 or more, choose one of your opponent’s rear-guards, and bind it face down.'
+AUTO [RC]: When it attacks a vanguard, COST [retire one other rear-guard in the same column as this unit], and this unit gets power +4000 until end of turn for each grade of the unit retired for this cost. If it got +8000 or more, choose one of your opponent’s rear-guards, and bind it face down.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -4286,7 +4287,7 @@ CardStat = 6458
 global.CardName[CardStat] = 'Opener of Dark Gates '
 global.CardText[CardStat] = 'Link Joker/Cyber Fairy
 
-AUTO [RC]: When placed, if your opponent has two or less rear-guards, COST [Soul Blast 1], look at two cards from the top of your deck, call up to one card with grade less than or equal to your opponent’s vanguard from among them to your RC, and put the rest on the bottom of your deck in any order.'
+AUTO: When this unit is placed on RC, if your opponent has two or less rear-guards, COST [Soul Blast 1], look at two cards from the top of your deck, call up to one card with grade equal to or less than your opponent’s vanguard from among them to your RC, and put the rest on the bottom of your deck in any order.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -4447,7 +4448,7 @@ CardStat = 6533
 global.CardName[CardStat] = 'Black Lightwhip, Flick Hitter'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC] 1/Turn: When a trigger unit is placed on your opponent’s GC for the battle your other unit attacked, COST [Soul Blast 1], and this unit gets power +10000 until end of turn.'
+AUTO [RC] 1/Turn: When a trigger unit is placed on your opponent’s GC during the battle your other units attacked, COST [Soul Blast 1], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 24
 }
@@ -4501,7 +4502,7 @@ CardStat = 6585
 global.CardName[CardStat] = 'Treasured Child of Nuclear Magnetic Resonance'
 global.CardText[CardStat] = 'Link Joker/Cyber Fairy
 
-AUTO [RC]: At the end of the battle it boosted, if your opponent did not call trigger units for that battle, COST [put this unit into your soul], and one of your units gets power +10000 until end of turn.'
+AUTO [RC]: At the end of the battle that it boosted, if your opponent did not call trigger units for that battle, COST [put this unit into your soul], and one of your units gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -4513,7 +4514,7 @@ CardStat = 6589
 global.CardName[CardStat] = 'Sharpened Loop of Despondency, Alnilam'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: At the end of the battle it boosted a vanguard, if your opponent’s vanguard is grade 3 or greater, and two or more guardians were retired for that battle, COST [retire this unit], and draw two cards.'
+AUTO [RC]: At the end of the battle that it boosted a vanguard, if your opponent’s vanguard is grade 3 or greater, and two or more guardians were retired for that battle, COST [retire this unit], and draw two cards.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -5077,7 +5078,7 @@ CardStat = 7581
 global.CardName[CardStat] = 'Ditto Deletor, Baon'
 global.CardText[CardStat] = 'Link Joker/Alien
 
-AUTO [VC/RC]: At the beginning of each turns battle phase, choose one of your opponent’s vanguards, and increase or decrease this unit’s power to match that unit until end of turn. (Match the power when it is chosen.)'
+AUTO [VC/RC]: At the beginning of each turn’s battle phase, choose one of your opponent’s vanguards, and increase or decrease this unit’s power to match that unit’s power until end of turn. (Match the power at that time.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 24
 }
@@ -5101,7 +5102,7 @@ CardStat = 7607
 global.CardName[CardStat] = 'Evil Claw of Natural Laws, Delaval Claw'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO: When it intercepts or is placed on GC, if it is the fourth battle of this turn or more, draw a card.
+AUTO: When it intercepts or is placed on GC, if it is the fourth battle or more of this turn, draw a card.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
@@ -5144,7 +5145,7 @@ CardStat = 7620
 global.CardName[CardStat] = 'Bending Solid-hit, Vanmaanen'
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO [RC]: When unlocked, draw a card. This ability may only be used by a card with the same card name once a turn.'
+AUTO [RC]: When it is unlocked, draw a card. This ability may only be used by a card with the same card name once a turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 24
 }
@@ -5390,7 +5391,7 @@ CardStat = 9036
 global.CardName[CardStat] = 'Star-vader, Infinite Zero Dragon '
 global.CardText[CardStat] = 'Link Joker/Cyber Dragon
 
-AUTO: When this unit is placed on VC or is rode upon, COST [Counter Blast 1 & discard a card from your hand], choose one of your opponent’s rear-guards, and lock it. If your damage zone has four or more cards, choose one each from your opponent’s front row and back row instead of one.
+AUTO: When this unit is placed on VC or rode upon, COST [Counter Blast 1 & discard a card from your hand], choose one of your opponent’s rear-guards, and lock it. If your damage zone has four or more cards, choose one rear-guard from your opponent’s front row and back row instead.
 
 CONT [VC/RC]: During your turn, this unit gets power +5000 for each of your opponent’s locked cards.'
 global.UnitGrade[CardStat] = 3
@@ -5406,7 +5407,7 @@ CardStat = 9037
 global.CardName[CardStat] = 'Prison Gate Star-vader, Palladium '
 global.CardText[CardStat] = 'Link Joker/Cyberoid
 
-AUTO: When rode upon, you may call this card to RC.
+AUTO: When this unit is rode upon, you may call this card to RC.
 
 AUTO [RC]: When your opponent’s locked card is unlocked, COST [Counter Blast 1 & retire this unit], your opponent looks at the top card of their deck, and puts it on an open RC as a locked card.'
 global.UnitGrade[CardStat] = 1
