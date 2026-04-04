@@ -12743,7 +12743,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15783
 {
-global.CardName[CardStat] = 'Cancelation'
+global.CardName[CardStat] = 'Cancellation'
 global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Cursed Play
 
 CONT: This card is also regarded as "Wishing Your Happiness".
@@ -12761,7 +12761,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15784
 {
-global.CardName[CardStat] = 'Grandmaster of Arcadia, Freyr'
+global.CardName[CardStat] = 'Grandmaster of Arcadia, Frey'
 global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order/Magazine
 
 CONT: This card is also regarded as "Lyrical ShootingStarS * Special Issue".
@@ -12824,3 +12824,206 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
+CardStat = 15798
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Falstather'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15799
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Inno Progrett'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this unit is placed by riding from "X-CeeDaNCe, Falstather", COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE: X-ceed token into your order zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.TokenSummoner[CardStat] = 13149
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 13149
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Temporarily create Dragontree Marker
+CardStat = 15800
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Dras Evolia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+(A Dragontree marker is temporarily generated until the X-ceed NET marker is added)
+
+AUTO: When this unit is rode upon by a grade 3 card with "Impauldio" in its card name, choose one of your RC without any X-ceed NET markers, and put a X-ceed NET marker. Look at the top seven cards of your deck, perform all of the following, and shuffle the deck. Choose one of your AutoMOD gauges, and you may put it into your hand.
+• Choose up to one card from among them, and put it face up as your AutoMOD gauge.
+• Choose up to one Crimson Moon card from among them, and discard it.
+
+(SHIFT + left click to get a X-ceed NET Marker.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.AnotherSide[CardStat] = 15808
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Temporarily create Dragontree Marker
+CardStat = 15801
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Impauldio "Fantome"'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+(A Dragontree marker is temporarily generated until the X-ceed NET marker is added)
+ 
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop, put it face up as your AutoMOD gauge, choose one of your RC without any X-ceed NET markers, and put a X-ceed NET marker.
+
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a total of one or more Crimson Moon cards from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each effect can only be chosen once)
+• This unit gets drive +1 until end of turn.
+• This unit gets critical +1 until end of turn.
+• Until end of your opponent’s next turn, your rear-guards can attack and intercept from the back row center circle with X-ceed NET marker.
+(SHIFT + left click to get a X-ceed NET Marker.)
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 15808
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 10626
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 15802
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Tran Diebe'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this card is placed on RC, or put as an AutoMOD gauge during your turn, if you have an AutoMOD gauge, Energy Charge 2.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15803
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Merry Kleisia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+CONT [Back Row Center RC]: During the battle this unit attacked, if there is a X-ceed NET marker on the RC this unit is on, your opponent cannot intercept, and this unit gets power +5000.
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 15808
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15804
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Nui Erras'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this card is put as an AutoMOD gauge during your turn, if you have two or more AutoMOD gauges, and your other card with the same card name as this card was not put as an AutoMOD gauge this turn, perform one of the following. If you have four or more AutoMOD gauges, perform all of the following instead of one.
+• Counter Charge 1 .
+• Choose a card with "X-CeeDaNCe" in its card name from your drop, and put it into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15805
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Leda Tispur'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this card is put as an AutoMOD gauge during your turn, choose one of your units, and it gets power +5000 until end of turn.
+
+CONT [GC]: If you have 2 or more AutoMOD gauges, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15806
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Lapi Glossa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+AUTO: When this unit is placed on RC, if you have AutoMOD gauges, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a card with "X-CeeDaNCe" in its card name and grade less than or equal to your vanguard, and put it into hand if it is a Crimson Moon card. Shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is put on GC, if you have two or more AutoMOD gauges, this unit gets shield +5000 until end of battle. If you have four or more, COST [Soul Blast 1], and it also gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15807
+{
+global.CardName[CardStat] = 'X-CeeDaNCe, Precci Forwatt'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+ 
+ACT [RC]: If you have an AutoMOD gauge with "X-CeeDaNCe" in its different name from this unit, COST [put this unit face up as an AutoMOD gauge], choose one of your AutoMOD gauges with "X-CeeDaNCe" in its different card name from this card, and call it to the RC this unit was on.
+
+AUTO: When this card is put as an AutoMOD gauge during your turn, COST [Soul Blast 2], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15809
+{
+global.CardName[CardStat] = 'LettiaMateS, Ancisella'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if all of your rear-guards have different card names from this card, you may call this card to RC.
+
+AUTO [Back Row Center RC]: At the end of the battle this unit boosted a grade 3 or greater vanguard with "Magnolia" in its card name, COST [put this unit into soul], and perform one of the following according to your vanguard’s grade.
+• Grade 3 - Energy Charge 1, choose one of your rear-guards with "LettiaMateS" in its card name, and it gets power +5000 until end of turn.
+• Grade 4 - Energy Charge 2, choose one of your rear-guards with "LettiaMateS" in its card name, and it gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15810
+{
+global.CardName[CardStat] = 'LettiaMateS, Marfelle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
+
+AUTO: When this unit is put on GC, COST [Counter Blast 1], choose one of your guardians with "LettiaMateS" in its different card name from this unit, until end of turn, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and it gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

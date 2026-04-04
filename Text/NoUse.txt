@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 15796
+global.AllCard = 15812
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -691,7 +691,7 @@ CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
 • CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.
-• AUTO [VC] 1/Turn: When this unit attacks, reveal the top card of your deck, this unit gets power +26000 if it is a trigger unit, and discard it if it is not.
+• AUTO [VC] 1/Turn: When this unit attacks, reveal the top card of your deck, this unit gets power +26000 until end of that battle if it is a trigger unit, and discard it if it is not.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -1380,4 +1380,20 @@ global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 10000
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 15808
+{
+global.CardName[CardStat] = 'X-ceed NET'
+global.CardText[CardStat] = 'Marker
+
+If you have a vanguard with "Impauldio" in its card name, the unit on the RC this marker is on get all of the following.
+• CONT [RC]: During your turn, this unit gets power +5000 for every two of your AutoMOD gauges.
+• AUTO [RC]: At the end of your turn, if this unit has "X-CeeDaNCe" in its card name, COST [Energy Blast 2], and return this unit to your hand.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
