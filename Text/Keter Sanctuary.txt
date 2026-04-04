@@ -8500,7 +8500,7 @@ CardStat = 13657
 global.CardName[CardStat] = 'Knight of Enshrouding, Eidlech'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [RC/GC]: If you played a blitz order this turn, this unit gets intercept and shield +10000.'
+CONT [RC/GC]: If you played a blitz order this turn, this unit gets "Intercept", and shield +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -8993,7 +8993,7 @@ CardStat = 13900
 global.CardName[CardStat] = 'Youthberk "RevolForm: Exist"'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [VC]: When this unit is placed on VC by the RevolDress ability, perform all of the following.
+AUTO: When this unit is placed on VC by the RevolDress ability, perform all of the following.
 • COST [Energy Blast 3], choose one of your rear-guards, and stand it.
 • All of your front row units get power +10000 until end of turn. If your bind zone has a card with "RevolForm" in its card name, they get power +20000 instead of +10000.
 • If your bind zone has a card with the same card name as this unit, this unit gets critical +1 until end of turn.
@@ -9215,7 +9215,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
 CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
 
-AUTO [RC]: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3] and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or less normal unit from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the deck in any order.'
+AUTO: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3] and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or less normal unit from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -9246,7 +9246,7 @@ CardStat = 14021
 global.CardName[CardStat] = 'Knight of Exigency, Ynwnyl'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [RC]: If you have a grade 3 or greater vanguard with "Dekka-kun" or "Sarevsael" in its card name, this card gets all of the following.
+CONT: If you have a grade 3 or greater vanguard with "Dekka-kun" or "Sarevsael" in its card name, this card gets all of the following.
 • CONT [RC/GC]: This unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
 • AUTO: If it is the main phase, this cost is reduced by Soul Blast 1. When this unit is retired from RC during your turn, COST [Soul Blast 1], look at the top three cards of your deck, choose up to one grade 2 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -10502,7 +10502,7 @@ CardStat = 14837
 global.CardName[CardStat] = 'Knight of Twin Beauty, Rience'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO [RC]: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alden" in its card name, COST [discard a card from hand], choose up to one grade 3 card with a different card name from your vanguard and without Regalis Piece from your drop, and put it into hand.'
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alden" in its card name, COST [discard a card from hand], choose up to one grade 3 card with a different card name from your vanguard and without Regalis Piece from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -12594,4 +12594,30 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15811
+{
+global.CardName[CardStat] = 'WORLD FINALS 2024, Akina Myodo'
+global.CardText[CardStat] = 'Keter Sanctuary
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15812
+{
+global.CardName[CardStat] = 'WORLD FINALS 2025, Akina Myodo'
+global.CardText[CardStat] = 'Keter Sanctuary
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
