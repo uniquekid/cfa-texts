@@ -3354,7 +3354,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 ACT [RC]: If you have a vanguard with "Bastion" in its card name, COST [put this unit into your soul], choose one of your vanguards, and it gets "CONT [VC]: All of your grade 3 rear-guards get "Boost"." until end of turn.
 
-ACT [Soul]: COST [Put this card into your drop], choose one of your grade 3 rear-guards, and it gets "Boost" until end of turn.'
+ACT [Soul]: COST [Put this card into drop], choose one of your grade 3 rear-guards, and it gets "Boost" until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -9694,7 +9694,7 @@ CardStat = 14233
 global.CardName[CardStat] = 'Knight of Integrity, Loft'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC]: When this unit attacks a grade 3 or greater unit, if all of your units are rest, COST [Soul Blast 1], and this unit gets power +10000.'
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if all of your units are rest, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -12621,3 +12621,94 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15818
+{
+global.CardName[CardStat] = 'Grisun Upashchili'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO: When this card is placed on RC during your turn or discarded from hand during your turn, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, look at the top two cards of your deck, choose up to one card from among them, and put it into soul or discard it. Put the rest on the bottom of the deck in any order. Then, if your opponent’s vanguard is grade 3 or greater, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15819
+{
+global.CardName[CardStat] = 'Knight of Virtue, Andrivate'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+AUTO: When this card is discarded from hand during your turn, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
+
+AUTO [Drop]: At the start of your main phase, if you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Energy Blast 3], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15820
+{
+global.CardName[CardStat] = 'Patafaction Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO [RC]: When the attack this unit boosted hits a vanguard, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, look at the top seven cards of your deck, choose up to one card with "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you put a card, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15821
+{
+global.CardName[CardStat] = 'Knight of Great Favor, Orcades'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, search the deck for up to one normal unit without Sentinel with grade less than or equal to your vanguard, discard it, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, put this unit into soul, and draw a card. If you used a [Divine Skill] this fight, it gets power +10000 instead of +5000. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15822
+{
+global.CardName[CardStat] = 'Formulights, Nox'
+global.CardText[CardStat] = 'Keter Sanctuary/Mathroid
+
+CONT [VC]: C+P=X (During your main phase, when you call a unit or play an order, increase your Formula Count by 1 until end of your opponent’s next turn)
+ACT [VC] 1/Turn: COST [Energy Blast 3], search your deck for up to one order card without Regalis Piece, reveal it and put it into hand, and shuffle the deck.
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose a grade 3 or less unit card from your drop, call it to RC, and that unit and this unit get power +3000 until end of turn for each of your Formula Count. When calling a unit without "Formulights" in its card name with this ability, that unit’s AUTO abilities do not activate from that call, and during the turn that unit is placed, all of that unit’s abilities are nullified.
+
+(SHIFT + left click to increase Formula Count.)
+(SHIFT + right click to decrease Formula Count.)
+(Middle click or hover and press SPACE to set Formula Count.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15826
+{
+global.CardName[CardStat] = 'Draw Your Sword. Fulfill the Knight’s True Calling!'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+Put this card into soul, draw a card, choose a card from hand, call it to RC if it is a unit card with grade less than or equal to your vanguard, and discard it if it is not. If your opponent’s vanguard is grade 3 or greater, the called unit gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects, and during your turn, this unit gets power +5000." until end of your opponent’s next turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

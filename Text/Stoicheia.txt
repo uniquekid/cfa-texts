@@ -11205,7 +11205,7 @@ CardStat = 15751
 global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome"'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to your back row centre RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
 
 [Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from your soul and drop], choose trigger cards other than over trigger from your drop up to the number of Crimson Moon cards bound for this cost, put them on the bottom of the deck and shuffle the deck. You cannot pay the cost of [Fantome Skill] of units with the same card name as this unit until end of this fight.
 
@@ -11428,4 +11428,20 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15827
+{
+global.CardName[CardStat] = 'Argo Siren, Aytia'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Argo Siren" in its card name, COST [Soul Blast 1], choose a Tiding card with grade less than or equal to your vanguard from your drop, and put it into order zone.
+
+AUTO [Back Row RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Argo Siren" in its card name is attacked, COST [put this card into drop], and that unit gets power +10000 until end of that battle. (Performed before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
