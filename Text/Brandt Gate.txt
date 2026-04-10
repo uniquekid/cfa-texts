@@ -6518,7 +6518,7 @@ CardStat = 13150
 global.CardName[CardStat] = 'Dras Evolia'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this unit is rode upon by a grade 3 card with "Impauldio" in its card name, put the top card of your deck face up as a AutoMOD gauge. Then, choose one of your AutoMOD gauges, and you may put it into hand.'
+AUTO: When this unit is rode upon by a grade 3 card with "Impauldio" in its card name, put the top card of your deck face up as an AutoMOD gauge. Then, choose one of your AutoMOD gauges, and you may put it into hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10887,6 +10887,25 @@ global.CardName[CardStat] = 'Blitz Carrier, Turagen'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
 AUTO: When this unit is placed on RC other than during the battle phase, if you have a grade 3 or greater vanguard with "Welstra" in its card name, COST [discard a card from hand], choose a Product card from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15825
+{
+global.CardName[CardStat] = 'Perfect Circle of Rotation, Planetaring'
+global.CardText[CardStat] = 'Brandt Gate/Cyberoid
+
+AUTO: When this unit is placed on RC, if you have an "Alter Ego Messiah" Crest, COST [Counter Blast 1], choose a card from your drop, put it into soul, and perform one of the following.
+• Draw a card.
+• If you have a grade 3 or greater vanguard, choose a card with "Messiah" in its card name from your drop, and call it to RC.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Messiah" in its card name, this unit gets power +5000 until end of that battle.
+
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Messiah" in its card name attacks, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
