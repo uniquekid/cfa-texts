@@ -17,7 +17,7 @@ For new updates, you will have to redownload the repository every time a new upd
 
 ### Text Data
 
-The `Text` folder contains individual fraction text files written in GML. New entries are added consecutively into their respective files, depending on clan/nation. Please be aware that all of the text files in this repository use Windows-1251 encoding for compatibility purposes. The exact syntax of those files will be outlined in a section below.
+The `Text` folder contains individual fraction text files written in GML. New entries are added consecutively into their respective files, depending on clan/nation. Please be aware that all of the text files in this repository are in UTF-8 encoding but only use Windows-1251 compatible characters due to how game engine renders font. The exact syntax of those files will be outlined in a section below.
 
 ### Image Data
 
@@ -59,9 +59,9 @@ Contributors that would like to add like something to that update should branch 
 
 The primary text editor of choice that most of the team uses is [VSCode](https://code.visualstudio.com/). You can download it to work with CFA database locally or launch it right from this repository's page by hitting the dot (period) key on your keyboard.
 
-There are a few reasons for that, but mainly it's that it can support Windows-1251 encoding without issues, allows for quick search among multiple text files, but most importantly, it has support for GML syntax as a plug-in. It also supports git out of the box and has UI that does not require command line knowledge.
+There are a few reasons for that, but mainly it's that it has support for GML syntax as a plug-in. It also supports git out of the box and has UI that does not require command line knowledge.
 
-CFA repository is already configured to support WIndows-1251 encoding for VSCode, it is also configured for this extension to highlight the GML syntax: [GML Support](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support) (if you're working locally you have to install it first).
+CFA repository is already configured for this extension to highlight the GML syntax: [GML Support](https://marketplace.visualstudio.com/items?itemName=liaronce.gml-support) (if you're working locally you have to install it first).
 
 If you use any other editors and will be able to configure it in a similar fashion, don't hesitate to add the configuration to this repository as well.
 
@@ -97,7 +97,7 @@ This line writes the card's name into the global array `CardName`.
 
 Notice how it uses single quotes to delimit string values. Single quotes in GML allow for use of double quotes inside the text, which can be quite useful for CFA. It also allows to use line breaks inside the string (which we will see actively being used in the next line).
 
-But it also means that single quotation marks cannot be used as apostrophes. Instead, CFA database uses a special character from Windows-1251 encoding called **"right single quotation mark"** - `’`. If you use Windows and have a numpad on your keyboard, you can add that character by inputting number 39 on your numpad while holding left Alt key. Alternatively, you can just copy it from somewhere. VSCode usually highlights this character in a yellow box as a warning for it's visual similarity to a normal single quote.
+But it also means that single quotation marks cannot be used as apostrophes. Instead, CFA database uses a special character compatible with Windows-1251 encoding called **"right single quotation mark"** - `’`. If you use Windows and have a numpad on your keyboard, you can add that character by inputting number 39 on your numpad while holding left Alt key. Alternatively, you can just copy it from somewhere. VSCode usually highlights this character in a yellow box as a warning for it's visual similarity to a normal single quote.
 
 By the way, those curly braces before this line don't add anything to the syntax, they are just used for separating main database properties from mechanical properties such as power and shield, a tradition that goes back to the early days of CFA when power and shield values were added into a separate file `UnitPower.txt`.
 
