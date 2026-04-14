@@ -239,6 +239,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.TriggerUnit[CardStat] = -1
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
@@ -11133,6 +11134,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
+global.TriggerUnit[CardStat] = -1
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
@@ -12120,8 +12122,103 @@ global.CardText[CardStat] = 'Dragon Empire/Human
 ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and bind it. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15831
+{
+global.CardName[CardStat] = 'Sunlight Egg'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
-global.PowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15832
+{
+global.CardName[CardStat] = 'Reunion Blaze Maiden, Rino'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is placed by riding from a grade 0 card, COST [reveal a grade 3 card with "Nirvana" in its card name from ride deck], search your deck for up to one "Trickstar", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15833
+{
+global.CardName[CardStat] = 'Weaving Prayers Blaze Maiden, Reiyu'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is rode upon by a grade 3 card with "Nirvana" in its card name, COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one card with "Blaze Maiden" in its card name, or up to one <Talisman> or <Prayer Dragon> from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15834
+{
+global.CardName[CardStat] = 'Chakrabarthi Deity Dragon, Nirvana Bagarvan'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+ACT [VC] 1/Turn: COST [Discard a card from hand], choose up to one "Trickstar" and up to one <Prayer Dragon> unit from your drop, and call them to RC.
+
+ACT [VC] 1/Turn: COST [Soul Blast 2], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and perform one of the following.
+• Choose one of your rear-guards in the X-overDress state, and stand it.
+• If you persona rode this turn, choose any number of your rear-guards each with different card names in the X-overDress state, and stand them.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.TriggerUnit[CardStat] = -1
+}
+global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15835
+{
+global.CardName[CardStat] = 'Blaze Equip Dragon, Vaikal'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+AUTO: When this card is discarded from hand during your turn, choose a grade 3 card with "Nirvana" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Nirvana" in its card name, perform one of the following.
+• Call this card to RC as rest.
+• COST [Soul Blast 1], and call this card to RC.
+
+AUTO [RC/Drop]: When your grade 3 or greater vanguard with "Nirvana" in its card name is attacked, if this card is in drop or is an originalDress, COST [bind this card], and your vanguard gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15836
+{
+global.CardName[CardStat] = 'Deity Strike Equip, Garna Vairina'
+global.CardText[CardStat] = 'Dragon Empire/Prayer Dragon
+
+X-overDress - One "Trickstar" and one <Prayer Dragon> unit (You may place it by stacking it on all of the specified units instead of calling it to RC)
+
+AUTO: When this unit is placed on RC by X-overDress, COST [Counter Blast 1], and draw a card.
+CONT RC: If your opponent’s vanguard is grade 3 or greater, and this unit is in the X-overDress state, this unit gets "Boost".
+
+AUTO RC: When this unit attacks, if you have a grade 3 or greater vanguard with "Nirvana" in its card name, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
