@@ -8761,8 +8761,8 @@ global.CardName[CardStat] = 'Stab Magician, Knilfade'
 global.CardText[CardStat] = 'Dark States/Elf
 
 CONT: If you have a vanguard with only «Pale Moon» for its clan, this card is only from «Pale Moon», and gets all of the following.
-• AUTO: When this unit is put into soul from hand by your card’s ability, if you have a grade 3 or greater vanguard with "Luquier" in its card name, COST [Counter Blast 1], and draw a card.
-• AUTO [Soul]: When your rear-guard is put into soul for the cost of your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 2 cards other than this card], call this card to RC, and it gets power +5000 until end of turn. If you persona rode this turn, if gets power +10000 instead of +5000.'
+• AUTO: When this card is put into soul from hand by your card’s ability, if you have a grade 3 or greater vanguard with "Luquier" in its card name, COST [Counter Blast 1], and draw a card.
+• AUTO [Soul]: When your rear-guard is put into soul for the cost of a vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 2 cards other than this card], call this card to RC, and it gets power +5000 until end of turn. If you persona rode this turn, if gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8772,12 +8772,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14189
 {
-global.CardName[CardStat] = 'Tick-down Dragon'
+global.CardName[CardStat] = 'Tickdown Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
 AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Energy Blast 3], and perform one of the following.
 • Look at the top seven cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
-• Choose a "Distorted Bane" from your face up damage zone cards, and put it into hand. If you put a card, put the top card of your deck into the damage zone.
+• Choose a "Distorted Bane" from your face up damage zone, and put it into hand. If you put a card, put the top card of your deck into the damage zone.
 
 AUTO [RC]: At the end of the battle this unit boosted a grade 3 or greater vanguard with "Liael" in its card name, if you have four or more regress gauges, COST [put this unit into soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -9062,9 +9062,9 @@ CardStat = 14617
 global.CardName[CardStat] = 'Thorns of Gourmet, Nizroch'
 global.CardText[CardStat] = 'Dark States/Human
 
-AUTO: If your vanguard is grade 3 or greater, this cost may be paid with "Energy Blast 3 and discard a grade 3 card from hand". When this unit is placed on RC, if you have a vanguard with "Evil Eye" in its card name, COST [Soul Blast 2 & discard a grade 3 card from hand], and draw two cards.
+AUTO: If your vanguard is grade 3 or greater, this cost may be paid with "Energy Blast 3 and discard a grade 3 or greater card from hand". When this unit is placed on RC, if you have a vanguard with "Evil Eye" in its card name, COST [Soul Blast 2 & discard a grade 3 card from hand], and draw two cards.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Evil Eye" in its card name, and your bind zone has one or more trigger units, this unit gets power +5000 until end of that battle. If there are four or more trigger units, it gets power +10000 instead of +5000.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Evil Eye" in its card name, and your bind zone has one or more trigger units, this unit gets power +5000 until end of that battle. If your bind zone has four or more trigger units, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9404,12 +9404,10 @@ CardStat = 14984
 global.CardName[CardStat] = 'Sparkling Megatrick of the Crescent Moon'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-This card can be played from drop!
-
-Play this if you have a "Masked Magician, Harri" crest!
+This card can be played from drop, and play this if you have a "Masked Magician, Harri" crest!
 
 Bind this card, and perform one of the following.
-• Look at the top seven cards of your deck, choose up to one card from among them, put it into your soul, shuffle your deck, and your vanguard gets power +5000 until end of turn.
+• Look at the top seven cards of your deck, choose up to one card from among them, put it into soul, shuffle the deck, and your vanguard gets power +5000 until end of turn.
 • Choose a card from your soul, call it to RC, and it gets power +5000 until end of turn.
 
 AUTO: When this card is discarded from hand while paying the cost for Stride, choose one of your vanguards or heart cards, and until end of turn, reduce the next Counter Blast cost you pay for that card’s abilities by 1.'
@@ -10453,7 +10451,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15577
 {
-global.CardName[CardStat] = 'Febrile Dragons'
+global.CardName[CardStat] = 'Febrile Dragon'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Fantome
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Gabwelius" in its card name, and all of your rear-guards have different card names from this card, COST [Soul Blast 2], and call this card to RC.

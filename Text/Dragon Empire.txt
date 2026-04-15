@@ -6548,9 +6548,9 @@ global.CardName[CardStat] = 'Blazing War Cry'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
 Look at the top seven cards of your deck, choose up to one card from among them and reveal it, and perform one of the following
-• Put the revealed card into your soul, and shuffle your deck.
-• If your vanguard has the same name as the revealed card, add the revealed card to your hand. Shuffle the deck.
-• If you have a grade 2 or less unit card with the same name as the revealed card on your RC or in your soul, call the revealed card to RC. Shuffle the deck.'
+• Put the revealed card into soul, and shuffle the deck.
+• If the revealed card has the same card name as your vanguard, put it into hand. Shuffle the deck.
+• If your RC or soul has a grade 2 or less have a grade 2 or less unit card with the same name as the revealed card on your RC or in your soul, call the revealed card to RC. Shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -8535,10 +8535,10 @@ CardStat = 13890
 global.CardName[CardStat] = 'Scarlet Flamme'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
-Draw a card, choose a card from your hand, reveal it, call it to RC if it is a grade less than or equal to your vanguard, and discard it if it is not. Choose one of your opponent’s front row rear-guards, retire it, and if you did not retire a card, the unit called by this effects gets power +5000 until end of turn.
+Draw a card, choose a card from your hand, reveal it, call it to RC if its grade is equal to or less than your vanguard’s grade, and discard it if not. Choose one of your opponent’s front row rear-guards, retire it, and if you did not retire a card, the unit called by this effects gets power +5000 until end of turn.
 ACT [Drop]: If you have a vanguard with "Overlord" in its card name, and your card with the same card name as this card was not bound this turn, COST [Energy Blast 3 & bind this card], and perform one of the following.
 • Search your deck for up to one card with "Overlord" in its different card name from your vanguard, ride it as stand, and shuffle the deck.
-• If your vanguard has persona ride, and you did not ride from a grade 2 this turn, COST [discard a card from hand], and activate persona ride. (The power increase from persona ride stacks)
+• If your vanguard has persona ride, and you did not ride from a grade 2 unit this turn, COST [discard a card from hand], and activate persona ride. (The power increase from persona ride stacks)
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
@@ -9131,9 +9131,9 @@ CardStat = 14186
 global.CardName[CardStat] = 'Festival Cannon Dragon, Dinofest'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, and your opponent has no rear-guards in the same column as this unit, this unit gets power +5000 until end of that battle.
+AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, and your opponent does not have a rear-guard in the same column as this unit, this unit gets power +5000 until end of that battle.
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have more rear-guards than your opponent or your opponent’s rear-guard was retired this turn, COST [bind this unit], look at the top five cards of your deck, chose up to one grade 2 or greater unit card or up to one <Dinodragon> normal unit without sentinel with a different card name from this card from among them, reveal it and put it into hand, and shuffle your deck.'
+AUTO [RC]: At the end of the battle this unit boosted, if you have more rear-guards than your opponent or your opponent’s rear-guard was retired this turn, COST [bind this unit], look at the top five cards of your deck, chose up to one grade 2 or greater unit card or up to one <Dinodragon> normal unit without sentinel with a different card name from this card from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -9438,7 +9438,7 @@ CardStat = 14616
 global.CardName[CardStat] = 'Dragritter, Khaleem'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-CONT: If you have a vanguard with only «Narukami» for its clan, this card is only from «Narukami». Then, if you have a grade 3 or greater vanguard with "Vermillion" in its card name, this unit gets all of the following.
+CONT: If you have a vanguard with only «Narukami» for its clan, this card is only from «Narukami». Then, if you have a grade 3 or greater vanguard with "Vermillion" in its card name, this card gets all of the following.
 • AUTO: When this unit is placed on RC, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
 • AUTO [RC]: When this unit boosts a vanguard, COST [Counter Blast 1], choose one of your front row rear-guards, bind it, and draw a card.'
 global.UnitGrade[CardStat] = 1
@@ -10036,11 +10036,11 @@ CardStat = 14986
 global.CardName[CardStat] = 'Purespear Dragon, Zelgaugen'
 global.CardText[CardStat] = 'Dragon Empire/Tear Dragon
 
-AUTO: When this unit is placed on VC, choose up to one grade 2 or less card from your drop, and call it to RC. If you called a unit with either "Nymph" or "Hermit" in its card name, reduce the next Counter Blast cost you pay for that unit’s AUTO ability by 1.
+AUTO: When this unit is placed on VC, choose up to one grade 2 or less card from your drop, and call it to RC. If you called a unit with "Nymph" or "Hermit" in its card name, until end of turn, reduce the next Counter Blast cost you pay for that unit’s AUTO ability by 1.
 
-AUTO [VC]: When you play "Wondrous Melodies", search your deck or drop for up to one unit card with either "Nymph" or "Hermit" in its card name, call it to RC, and if you searched the deck, shuffle the deck.
+AUTO [VC]: When you play a "Wondrous Melodies", search your deck or drop for up to one unit card with "Nymph" or "Hermit" in its card name, call it to RC, and if you searched the deck, shuffle the deck.
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 or put 2 "Wondrous Melodies" from your drop on the bottom of your deck], stand this unit, it gets power +5000 / drive -2 until end of turn, and if your opponent’s vanguard is grade 3 or greater, it also gets drive +1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 or put two "Wondrous Melodies" from drop on the bottom of the deck], stand this unit, until end of turn, it gets power +5000 / drive -2, and if your opponent’s vanguard is grade 3 or greater, it also gets drive +1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
