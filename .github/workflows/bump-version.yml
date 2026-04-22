@@ -1,0 +1,52 @@
+name: Bump Version & Tag
+
+on:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Count new sleeve files in this push
+        id: sleeves
+        run: |
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.event.after }}"
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            COUNT=0
+          else
+            COUNT=$(git diff --name-only --diff-filter=A "$BEFORE" "$AFTER" -- 'Sprite/Sleeves/*' | wc -l)
+          fi
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Bump Version.ini
+        id: bump
+        run: |
+          OLD_TEXT=$(awk -F= '/^Text=/{print $2+0}' Version.ini)
+          OLD_SLEEVE=$(awk -F= '/^Sleeve=/{print $2+0}' Version.ini)
+          NEW_TEXT=$((OLD_TEXT + 1))
+          NEW_SLEEVE=$((OLD_SLEEVE + ${{ steps.sleeves.outputs.count }}))
+          sed -i "s/^Text=.*/Text=$NEW_TEXT/" Version.ini
+          sed -i "s/^Sleeve=.*/Sleeve=$NEW_SLEEVE/" Version.ini
+          echo "text=$NEW_TEXT" >> "$GITHUB_OUTPUT"
+          echo "sleeve=$NEW_SLEEVE" >> "$GITHUB_OUTPUT"
+
+      - name: Commit, tag, push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Version.ini
+          git commit -m "Bump Text=${{ steps.bump.outputs.text }}, Sleeve=${{ steps.bump.outputs.sleeve }}"
+          git tag "v${{ steps.bump.outputs.text }}"
+          git push origin HEAD:master
+          git push origin "v${{ steps.bump.outputs.text }}"
