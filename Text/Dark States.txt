@@ -2535,6 +2535,7 @@ global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
 global.AttackFromVBuff[CardStat] = 5000
 global.CardLimidet[CardStat] = 1
 
@@ -2905,7 +2906,7 @@ CardStat = 10502
 global.CardName[CardStat] = 'Interdimensional Dragon, Faterider Dragon '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(STANDARD JP & EN: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
+(STANDARD: Can be used in G Zone if your ride deck has Chrono Dran, Masergear Dragon, Smokegear Dragon, Chronojet Dragon.)
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
@@ -2993,7 +2994,7 @@ CardStat = 10537
 global.CardName[CardStat] = 'Chronodragon Nextage  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(STANDARD JP & EN: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
+(STANDARD JP & EN: Can be used in G Zone if your ride deck has Chrono Dran, Masergear Dragon, Smokegear Dragon, Chronojet Dragon.)
 
 Stride COST [Discard a grade 3 card with "Chronojet" in its card name from hand]
 
@@ -6962,7 +6963,7 @@ CardStat = 13203
 global.CardName[CardStat] = 'Jester Demonic Dragon, Lunatec Dragon '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Abyss Dragon
 
-(STANDARD JP & EN: You can only use the G Zone if you have the Harri Stridå Deckset Rideline.)
+(STANDARD: Can be used in G Zone if your ride deck has Happiness Collector, Betty, Jacqueline, Harri.)
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
@@ -7164,7 +7165,7 @@ CardStat = 13237
 global.CardName[CardStat] = 'Dragon Masquerade, Harri '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Elf
 
-(STANDARD JP & EN: You can only use the G Zone if you have the Harri Stridå Deckset Rideline.)
+(STANDARD: Can be used in G Zone if your ride deck has Happiness Collector, Betty, Jacqueline, Harri.)
 
 Stride COST [Discard a grade 3 card with "Harri" in its card name from hand]
 
@@ -7610,7 +7611,7 @@ CardStat = 13612
 global.CardName[CardStat] = 'Interdimensional Dragon, Chronoscommand Dragon  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gear Dragon
 
-(STANDARD JP & EN: You can only use the G Zone if you have the Chronojet Stridå Deckset Rideline.)
+(STANDARD: Can be used in G Zone if your ride deck has Chrono Dran, Masergear Dragon, Smokegear Dragon, Chronojet Dragon.)
 
 Stride
 
@@ -10749,3 +10750,266 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15850
+{
+global.CardName[CardStat] = 'Steam Battler, Dadasig '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15851
+{
+global.CardName[CardStat] = 'Stomach Clock Gear Rabbit '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Beast/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15852
+{
+global.CardName[CardStat] = 'Luckypot Dracokid  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15853
+{
+global.CardName[CardStat] = 'Steam Maiden, Uluru  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15854
+{
+global.CardName[CardStat] = 'Steam Maiden, Arlim  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15855
+{
+global.CardName[CardStat] = 'Chrono Dran   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon/Zodiac Time Beast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15856
+{
+global.CardName[CardStat] = 'Masergear Dragon   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+AUTO: When this unit is placed by riding from a grade 0 card with a Chrono icon, COST [reveal a grade 3 card with a Chrono icon from ride deck], draw two cards, choose a card from your hand, and put it on the bottom of the deck.
+
+ACT [Drop]: If your vanguard has a Chrono icon, and your opponent’s vanguard is grade 3 or greater, COST [put this card that was in the ride deck into the ride deck face up], choose one of your rear-guards, put it on the bottom of the deck, search your deck for up to one unit card with grade equal to that chosen card’s grade +1, call it to RC, and it gets power +5000 until end of turn. Shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15857
+{
+global.CardName[CardStat] = 'Smokegear Dragon   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+AUTO: When this unit is rode upon by a grade 3 card with a Chrono icon, COST [Soul Blast 1], search your deck for up to one grade 3 card, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC/GC] Generation Break 1: If your vanguard has a Chrono icon, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Slightly modified first skill text to avoid Extended Textbox
+CardStat = 15858
+{
+global.CardName[CardStat] = 'Chronojet Dragon    '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+CONT: This card can only be ridden if your crest zone only has "Energy Generator".
+CONT [VC]: You can Stride, during your turn, if your G zone has one or more face up cards, all of your front row units get power +5000. If your G zone has three or more face up cards, they get power +10000 instead of +5000.
+AUTO [VC]: When your G unit Stride, choose one of your opponent’s rear-guards, and put it on the bottom of the deck. If you did not choose a card, draw a card.
+AUTO [VC] Generation Break 2: When this unit attacks a vanguard, for each card with "Chronojet" in its card name in your bind zone, this unit gets power +5000 until end of that battle. Your opponent cannot call grade 1 or greater cards from hand to GC until end of that battle.
+(Shift + Left Click to increase front row power by 10000)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.PersonaRideAct[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15859
+{
+global.CardName[CardStat] = 'Steam Scara, Gigi   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid
+
+AUTO: When this unit is placed on RC, if your grade 3 or greater vanguard has a Chrono icon, this unit gets power +5000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, if your vanguard has a Chrono icon, and you Stride this turn, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15860
+{
+global.CardName[CardStat] = 'Steam Breath Dragon   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+CONT [Hand]: When you would discard cards from hand for the cost of your G unit’s ability, you may discard this card as any grade 0 ~ 3. (This also includes the cost for Stride)
+
+AUTO: When this unit is placed on RC, if your vanguard has a Chrono icon, perform all of the following.
+• COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 3 card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+• If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15861
+{
+global.CardName[CardStat] = 'Steam Fighter, Amber '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid
+
+AUTO: When this unit is placed on RC, if your vanguard has a Chrono icon, COST [Counter Blast 1], and draw a card. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+CONT [RC/GC] Generation Break 1: If your vanguard has a Chrono icon, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15862
+{
+global.CardName[CardStat] = 'Steam Fighter, Balih   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gearoid
+
+AUTO: When this card is discarded from hand for the cost of Stride, if all of your rear-guards have different card names from this card, you may call this card to RC. If you called it, this unit gets grade -2 until end of turn.
+
+AUTO [RC] Generation Break 1: When this unit attacks, if your vanguard has a Chrono icon, this unit gets power +10000 until end of that battle.
+
+CONT [GC]: If your vanguard has a Chrono icon, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 15863
+{
+global.CardName[CardStat] = 'Upstream Dragon   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+AUTO [Drop]: When your grade 3 or greater vanguard with a Chrono icon is placed, COST [Counter Blast 1 or Energy Blast 3], and call this card to RC.
+
+AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard has a Chrono icon, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck, search your deck for up to one grade 1 card with a Chrono icon, call it to a back row RC, and shuffle the deck. If it is the first battle of this turn, and your vanguard is grade 3, you may call it to a front row RC instead of a back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15864
+{
+global.CardName[CardStat] = 'Chronodragon Nextage   '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+Stride
+
+CONT: This card can only be Stride if your vanguard has a Chrono icon.
+
+AUTO [VC]: At the end of the battle this unit attacked a vanguard, COST [Counter Blast 1 & discard a card from hand & turn a card with a Chrono icon and the same card name as this card from G zone face up], put this unit into G zone face up, choose one of your vanguards with a Chrono icon, stand it, and it gets drive -2 until end of turn. COST [Bind a card with "Chronojet" in its card name from hand or drop], and that unit gets drive +1 until end of turn. If your G zone has three or more face up cards, it gets drive +2 instead of +1.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15865
+{
+global.CardName[CardStat] = 'Interdimensional Dragon, Mystery-flare Dragon  '
+global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
+
+Stride
+
+CONT: This card can only be Stride if your vanguard has a Chrono icon.
+
+ACT [VC] 1/Turn: COST [Turn a card from G zone face up], and perform all of the following.
+• Until the end of your opponent’s next turn, you get "All of your front row units get power +5000.". Choose one of your rear-guards, and it gets "AUTO [RC]: When your vanguard attacks, stand this unit." until end of turn.
+• If your G zone has five or more face up cards, until end of turn, this unit gets "AUTO [VC]: At the end of the battle this unit attacked, COST [discard four cards with different grades from hand], and you get an additional turn. During that additional turn, you skip the ride phase, and you cannot Stride.".'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 26
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
