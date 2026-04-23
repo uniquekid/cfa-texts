@@ -1230,14 +1230,14 @@ CONT: You can have gauge.
 AUTO: When this card is put into the crest zone, or at the beginning of your ride phase, COST [put a card from hand into gauge face down], and draw a card.
 (Hold SHIFT when gauging to put gauges face down under this crest or right click cards under this crest to flip face down)
 
-Buddy Call - ACT 1/Fight: If your vanguard is grade 3 or greater, choose a buddy monster from your order zone, call it to RC, and Counter Charge 1.'
+Buddy Call - ACT 1/Fight: If your vanguard is grade 3 or greater, choose a Buddy Monster from your order zone, call it to RC, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 8
-global.GaugeCharge[CardStat] = 2
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+global.GaugeCharge[CardStat] = 2
 
 
 CardStat = 14328
@@ -1247,15 +1247,15 @@ global.CardText[CardStat] = 'Buddyfight/Katana World/Token Set Order/Ninja Arts
 
 ACT [Order Zone] 1/Turn: COST [Pay a gauge & put a card from hand into this card’s Buddy Soul face down], and draw a card.
 ACT [Order Zone] 1/Turn: Choose a <Ninja Arts> order other than blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)
-AUTO [Order Zone]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and "Secret Sword, Lethal Formation" is not in your order zone, COST [Pay three gauges & declare final phase], choose a "Secret Sword, Lethal Formation" from this card’s Buddy Soul, and put it into the order zone.
+AUTO [Order Zone]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and your order zone does not have a "Secret Sword, Lethal Formation", COST [Pay three gauges & declare final phase], choose a "Secret Sword, Lethal Formation" from this card’s Buddy Soul, and put it into the order zone.
 AUTO [Order Zone] 1/Turn: When your vanguard is attacked, choose a <Ninja Arts> blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)'
-global.BuddyWorld[CardStat] = 2
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+global.BuddyWorld[CardStat] = 2
 
 
 CardStat = 14554
