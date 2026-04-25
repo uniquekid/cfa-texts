@@ -1,0 +1,141 @@
+name: Prewarm jsdelivr CDN
+
+# Fires after "Bump Version & Tag" completes so we don't race the tag-push.
+# Also exposed as workflow_dispatch so a tag can be re-warmed by hand.
+on:
+  workflow_run:
+    workflows: ["Bump Version & Tag"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to warm (e.g. v862). Leave empty to pick the newest v* tag.'
+        required: false
+        default: ''
+
+concurrency:
+  # One warm pass per tag. If two tags land in quick succession the later run
+  # supersedes the earlier — cancel the previous to avoid a 2x traffic spike.
+  group: prewarm-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prewarm:
+    # Only run for successful bump workflows. workflow_dispatch runs always.
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history so tags are available)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve target tag
+        id: resolve
+        run: |
+          TAG="${{ inputs.tag }}"
+          if [ -z "$TAG" ]; then
+            # Newest v* tag by creation date. The bump-version workflow just
+            # pushed one, so this is the tag we're here to warm.
+            TAG=$(git tag --list 'v*' --sort=-creatordate | head -n 1)
+          fi
+          if [ -z "$TAG" ]; then
+            echo "No v* tag found."
+            exit 1
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Resolved tag: $TAG"
+
+      - name: Checkout files at the tag
+        run: git checkout "${{ steps.resolve.outputs.tag }}" -- .
+
+      - name: Wait for jsdelivr to see the tag
+        env:
+          TAG: ${{ steps.resolve.outputs.tag }}
+          REPO: ${{ github.repository }}
+        run: |
+          # jsdelivr ingests new refs from GitHub within a few minutes but
+          # occasionally takes longer. Poll Version.ini (~tiny) until we get
+          # a 200 — that's proof the tag is indexed.
+          BASE="https://cdn.jsdelivr.net/gh/${REPO}@${TAG}"
+          PROBE="${BASE}/Version.ini"
+          MAX_WAIT=900   # 15 min hard ceiling
+          STEP=30
+          ELAPSED=0
+          while [ $ELAPSED -lt $MAX_WAIT ]; do
+            CODE=$(curl -sS -o /dev/null -w '%{http_code}' --max-time 15 "$PROBE" || echo "000")
+            if [ "$CODE" = "200" ]; then
+              echo "Tag live on jsdelivr after ${ELAPSED}s"
+              exit 0
+            fi
+            echo "[${ELAPSED}s] jsdelivr -> $CODE, retrying in ${STEP}s"
+            sleep "$STEP"
+            ELAPSED=$((ELAPSED + STEP))
+          done
+          echo "jsdelivr still does not serve ${TAG} after ${MAX_WAIT}s — aborting warmup"
+          exit 1
+
+      - name: Build URL list
+        id: urls
+        run: |
+          # Exactly the files Autoupdater fetches from the CDN.
+          # Thumbnails (CardSpriteMini2, SleevesMini*, SleevesMini2) are
+          # generated locally on the client now and aren't served to users
+          # — no point warming them.
+          {
+            find Text         -maxdepth 1 -type f -name '*.txt'
+            [ -f CardSprite.md5sums ] && echo "CardSprite.md5sums"
+            find CardSprite   -maxdepth 1 -type f -name '*.jpg'
+            find Sprite/Sleeves -maxdepth 1 -type f -name '*.png'
+          } | sort -u > urls.txt
+          TOTAL=$(wc -l < urls.txt)
+          echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+          echo "Collected $TOTAL URLs to warm"
+
+      - name: Warm URLs
+        env:
+          TAG: ${{ steps.resolve.outputs.tag }}
+          REPO: ${{ github.repository }}
+          TOTAL: ${{ steps.urls.outputs.total }}
+        run: |
+          BASE="https://cdn.jsdelivr.net/gh/${REPO}@${TAG}"
+
+          warm() {
+            # Only spaces need encoding in this repo's filenames (e.g.
+            # "Shadow Paladin.txt"). Other URL-unsafe chars aren't used.
+            local p="$1"
+            local enc
+            enc=$(printf '%s' "$p" | sed 's/ /%20/g')
+            local code
+            code=$(curl -sS -o /dev/null -w '%{http_code}' \
+                        --max-time 30 --retry 2 --retry-delay 2 \
+                        "${BASE}/${enc}" || echo "000")
+            printf '%s\t%s\n' "$code" "$p"
+          }
+          export -f warm
+          export BASE
+
+          # 16-way concurrency from one runner — well under jsdelivr's
+          # per-IP limits and fills the runner's available bandwidth.
+          xargs -a urls.txt -d '\n' -P 16 -I {} bash -c 'warm "$@"' _ {} \
+            > results.txt
+
+          OK=$(awk -F'\t' '$1 == 200' results.txt | wc -l)
+          BAD=$(awk -F'\t' '$1 != 200' results.txt | wc -l)
+          echo ""
+          echo "Warmed $OK / $TOTAL files (200 OK)"
+          if [ "$BAD" -gt 0 ]; then
+            echo "$BAD non-200 responses (first 20):"
+            awk -F'\t' '$1 != 200' results.txt | head -n 20
+          fi
+
+      - name: Upload results log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prewarm-results-${{ steps.resolve.outputs.tag }}
+          path: |
+            urls.txt
+            results.txt
+          if-no-files-found: ignore
+          retention-days: 14
