@@ -1951,7 +1951,7 @@ AUTO [RC]: When this unit attacks, if your soul has two or more "Avaricious Demo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Dofund'
+global.PersonaRideCardName[CardStat] = 'Desire Devil, Dofund'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -5882,7 +5882,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [bind two or more, up to four
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Blangdmire'
+global.PersonaRideCardName[CardStat] = 'Fated One of Zero, Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8297,7 +8297,7 @@ ACT [VC] 1/Turn: This cost can be paid with "bind a grade 3 or greater card with
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Blangdmire'
+global.PersonaRideCardName[CardStat] = 'Fated One of Zero, Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10129,7 +10129,7 @@ AUTO [RC]: When this unit attacks, if your soul has two or more "Avaricious Demo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Dofund'
+global.PersonaRideCardName[CardStat] = 'Desire Devil, Dofund'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10868,21 +10868,22 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-//Slightly modified first skill text to avoid Extended Textbox
 CardStat = 15858
 {
 global.CardName[CardStat] = 'Chronojet Dragon    '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
 
-CONT: This card can only be ridden if your crest zone only has "Energy Generator".
+CONT: This card can only be ridden if your crest zone has no cards other than "Energy Generator".
 CONT [VC]: You can Stride, during your turn, if your G zone has one or more face up cards, all of your front row units get power +5000. If your G zone has three or more face up cards, they get power +10000 instead of +5000.
 AUTO [VC]: When your G unit Stride, choose one of your opponent’s rear-guards, and put it on the bottom of the deck. If you did not choose a card, draw a card.
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, for each card with "Chronojet" in its card name in your bind zone, this unit gets power +5000 until end of that battle. Your opponent cannot call grade 1 or greater cards from hand to GC until end of that battle.
+
 (Shift + Left Click to increase front row power by 10000)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
 global.PersonaRideAct[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11013,3 +11014,22 @@ global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15884
+{
+global.CardName[CardStat] = 'Dream Sky Mutual Love, Naama&Samaell'
+global.CardText[CardStat] = 'Dark States/Keter Sanctuary/Succubus/Angel
+
+AUTO: When this unit is placed on RC from hand other than during the battle phase, perform one of the following.
+• COST [Counter Blast 1], choose a card from your damage zone, put it into hand, and put the top card of your deck in the damage zone face down.
+• COST [Energy Blast 3], look at the top five cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle. If you have a vanguard with only one clan, it gets power +5000 until end of that battle if your opponent’s vanguard is grade 2 or greater instead of grade 3 or greater.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
