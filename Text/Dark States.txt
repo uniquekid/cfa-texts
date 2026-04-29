@@ -10868,21 +10868,22 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-//Slightly modified first skill text to avoid Extended Textbox
 CardStat = 15858
 {
 global.CardName[CardStat] = 'Chronojet Dragon    '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
 
-CONT: This card can only be ridden if your crest zone only has "Energy Generator".
+CONT: This card can only be ridden if your crest zone has no cards other than "Energy Generator".
 CONT [VC]: You can Stride, during your turn, if your G zone has one or more face up cards, all of your front row units get power +5000. If your G zone has three or more face up cards, they get power +10000 instead of +5000.
 AUTO [VC]: When your G unit Stride, choose one of your opponent’s rear-guards, and put it on the bottom of the deck. If you did not choose a card, draw a card.
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, for each card with "Chronojet" in its card name in your bind zone, this unit gets power +5000 until end of that battle. Your opponent cannot call grade 1 or greater cards from hand to GC until end of that battle.
+
 (Shift + Left Click to increase front row power by 10000)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
 global.PersonaRideAct[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
