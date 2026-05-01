@@ -3,10 +3,10 @@ name: Bump Version & Tag
 on:
   push:
     branches: [master]
+    paths-ignore: ['Version.ini']
 
 jobs:
   bump:
-    if: github.event.sender.login != 'cfa-texts-helper[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Mint App token
