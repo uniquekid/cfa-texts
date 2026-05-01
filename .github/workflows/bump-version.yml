@@ -6,6 +6,7 @@ on:
 
 jobs:
   bump:
+    if: github.event.sender.login != 'cfa-texts-helper[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Mint App token
