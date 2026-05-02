@@ -1951,7 +1951,7 @@ AUTO [RC]: When this unit attacks, if your soul has two or more "Avaricious Demo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Dofund'
+global.PersonaRideCardName[CardStat] = 'Desire Devil, Dofund'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -3055,7 +3055,7 @@ CardStat = 10549
 global.CardName[CardStat] = 'Silver Thorn Assistant, Irina  '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Warbeast
 
-AUTO: When this unit is rode upon by a unit with only <Pale Moon> for its clan, look at the top seven cards of your deck, choose up to one card from among them, put it into your soul, and shuffle your deck.
+AUTO: When this unit is rode upon by a unit with only «Pale Moon» for its clan, look at the top seven cards of your deck, choose up to one card from among them, put it into your soul, and shuffle your deck.
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Luquier" in its card name, you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -3071,7 +3071,7 @@ CardStat = 10550
 global.CardName[CardStat] = 'Silver Thorn Marionette, Lilian  '
 global.CardText[CardStat] = 'Dark States/Pale Moon/Workeroid
 
-AUTO: When this unit is rode upon by a unit with only <Pale Moon> for its clan, Soul Charge 1, choose a card from your soul, and put it into your hand.
+AUTO: When this unit is rode upon by a unit with only «Pale Moon» for its clan, Soul Charge 1, choose a card from your soul, and put it into your hand.
 
 AUTO: When this unit is placed on RC or put on GC, if you have a vanguard with "Luquier" in its card name, this unit gets power +5000 / shield +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -3106,7 +3106,7 @@ global.CardText[CardStat] = 'Dark States/Normal Order
 
 This card can be played from the soul, and play this with COST [Counter Blast 1] if you have a vanguard with "Luquier" in its card name!
 
-Choose one of your rear-guards, and it gets "AUTO [RC]: When your vanguard attacks, COST [put this unit into your soul], choose a card with grade less than or equal to your vanguard and only <Pale Moon> for its clan from your soul, and call it to RC." until end of turn.'
+Choose one of your rear-guards, and it gets "AUTO [RC]: When your vanguard attacks, COST [put this unit into your soul], choose a card with only «Pale Moon» for its clan and grade less than or equal to your vanguard from your soul, and call it to RC." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -5882,7 +5882,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [bind two or more, up to four
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Blangdmire'
+global.PersonaRideCardName[CardStat] = 'Fated One of Zero, Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8297,7 +8297,7 @@ ACT [VC] 1/Turn: This cost can be paid with "bind a grade 3 or greater card with
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Blangdmire'
+global.PersonaRideCardName[CardStat] = 'Fated One of Zero, Blangdmire'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10129,7 +10129,7 @@ AUTO [RC]: When this unit attacks, if your soul has two or more "Avaricious Demo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Dofund'
+global.PersonaRideCardName[CardStat] = 'Desire Devil, Dofund'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10868,21 +10868,22 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-//Slightly modified first skill text to avoid Extended Textbox
 CardStat = 15858
 {
 global.CardName[CardStat] = 'Chronojet Dragon    '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Chrono Icon/Gear Dragon
 
-CONT: This card can only be ridden if your crest zone only has "Energy Generator".
+CONT: This card can only be ridden if your crest zone has no cards other than "Energy Generator".
 CONT [VC]: You can Stride, during your turn, if your G zone has one or more face up cards, all of your front row units get power +5000. If your G zone has three or more face up cards, they get power +10000 instead of +5000.
 AUTO [VC]: When your G unit Stride, choose one of your opponent’s rear-guards, and put it on the bottom of the deck. If you did not choose a card, draw a card.
 AUTO [VC] Generation Break 2: When this unit attacks a vanguard, for each card with "Chronojet" in its card name in your bind zone, this unit gets power +5000 until end of that battle. Your opponent cannot call grade 1 or greater cards from hand to GC until end of that battle.
+
 (Shift + Left Click to increase front row power by 10000)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 26
 global.PersonaRideAct[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11013,3 +11014,22 @@ global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15884
+{
+global.CardName[CardStat] = 'Dream Sky Mutual Love, Naama&Samaell'
+global.CardText[CardStat] = 'Dark States/Keter Sanctuary/Succubus/Angel
+
+AUTO: When this unit is placed on RC from hand other than during the battle phase, perform one of the following.
+• COST [Counter Blast 1], choose a card from your damage zone, put it into hand, and put the top card of your deck in the damage zone face down.
+• COST [Energy Blast 3], look at the top five cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle. If you have a vanguard with only one clan, it gets power +5000 until end of that battle if your opponent’s vanguard is grade 2 or greater instead of grade 3 or greater.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000

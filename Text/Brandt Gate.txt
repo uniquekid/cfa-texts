@@ -1064,7 +1064,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put one or more Meteo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Gravidia'
+global.PersonaRideCardName[CardStat] = 'Gravidia Nordlinger'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -1092,7 +1092,7 @@ AUTO [RC]: When this unit’s attack hits, search your deck for up to one Meteorit
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Pribram'
+global.PersonaRideCardName[CardStat] = 'Gravidia Pribram'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2719,7 +2719,7 @@ AUTO [VC]: When this unit attacks, if your Order Zone has a Research card, COST 
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Arkhite'
+global.PersonaRideCardName[CardStat] = 'Monster Creator, Arkhite'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4568,7 +4568,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any nu
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Nordlinger Masques'
+global.PersonaRideCardName[CardStat] = 'Gore Gravidia, Nordlinger Masques'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -6221,7 +6221,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two card
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Arkhite'
+global.PersonaRideCardName[CardStat] = 'Monster Creator, Arkhite'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9667,7 +9667,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put one or more Meteo
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Gravidia'
+global.PersonaRideCardName[CardStat] = 'Gravidia Nordlinger'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9733,7 +9733,7 @@ AUTO [RC]: When this unit’s attack hits, search your deck for up to one Meteorit
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Pribram'
+global.PersonaRideCardName[CardStat] = 'Gravidia Pribram'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -9952,7 +9952,7 @@ AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1 & put any nu
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Nordlinger Masques'
+global.PersonaRideCardName[CardStat] = 'Gore Gravidia, Nordlinger Masques'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10868,8 +10868,8 @@ CardStat = 15788
 global.CardName[CardStat] = 'Blitz Designer, Lacent'
 global.CardText[CardStat] = 'Brandt Gate/Elf
 
-[Drop]: When your product is operated, if you have a vanguard with "Blitz" in its card name, perform one of the following.
-• If all of your rear-guards have a different name from this card, call this card to a back row RC.
+AUTO [Drop]: When your product is operated, if you have a vanguard with "Blitz" in its card name, perform one of the following.
+• If all of your rear-guards have a different card name from this card, call this card to a back row RC.
 • COST [Bind this card], Energy Charge 2, and you cannot pay the cost for AUTO abilities of cards with the same name as this card until end of turn.
 
 CONT [RC]: If you have a vanguard with "Blitz" in its card name, this unit gets "Intercept" and can intercept from the back row.'
@@ -10970,3 +10970,22 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15885
+{
+global.CardName[CardStat] = 'Heavy Corrosion Disconnection, Gravell&Olgulus'
+global.CardText[CardStat] = 'Brandt Gate/Stoicheia/Cyberoid/High Beast
+
+AUTO: When this unit is placed on RC from hand other than during the battle phase, perform one of the following.
+• COST [Counter Blast 1], reveal the top card of your deck, put it into hand, if you revealed a trigger card, choose one of your opponent’s rear-guards, and retire it.
+• COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one order card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle. If you have a vanguard with only one clan, it gets power +5000 until end of that battle if your opponent’s vanguard is grade 2 or greater instead of grade 3 or greater.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.DCards2[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
