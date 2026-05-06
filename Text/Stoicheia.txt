@@ -7716,10 +7716,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13558
 {
-global.CardName[CardStat] = 'Financier, Tarasubaki'
+global.CardName[CardStat] = 'Wealth Hoarder, Tarasubaki'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
-ACT [RC]: COST [Put this unit into soul], choose up to two order cards with the same card name from your drop, put one card from among them on the bottom of the deck, and put the rest into hand. Choose one of your units and it gets power +5000 until end of turn.
+ACT [RC]: COST [Put this unit into soul], choose up to two order cards with the same card name from your drop, put one card from among them on the bottom of the deck, and put the rest into hand. Then, choose one of your units and it gets power +5000 until end of turn.
 
 AUTO [RC]: When you play an order during your turn, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -10376,18 +10376,18 @@ CardStat = 15048
 global.CardName[CardStat] = 'Conservation Elf'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-AUTO: When this unit is put on GC, if you have a Blast token, this unit gets shield +5000 until end of that battle. If you have a Blast token with eight or more gauges, COST [Soul Blast 1], and it gets shield +15000 instead of +5000.'
+AUTO: When this unit is put on GC, if you have a Blast token, this unit gets shield +5000 until end of that battle. If you have eight or more Plant gauges, COST [Soul Blast 1], and it gets shield +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 15049
 {
-global.CardName[CardStat] = 'Valgros of Summer’s Expanse'
+global.CardName[CardStat] = 'Valgrowth of Expansive Summer'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Estacion" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, retire this unit, and draw a card. (This effect is mandatory)
@@ -10402,29 +10402,29 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15050
 {
-global.CardName[CardStat] = 'Fredula of Spring’s Joy'
+global.CardName[CardStat] = 'Fredure of Spring Joy'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Estacion" in its card name, call up to one plant token to RC.
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Estacion" in its card name, and a card with the same card name as this card was not bound this turn, COST [bind this card], and call up to two plant tokens to RC.
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Estacion" in its card name COST [bind this card], call up to two Plant tokens to RC. You cannot bind cards with the same card name as this card from drop until end of turn.
 
-AUTO [Drop]: When your vanguard with "Estacion" in its card name is attacked, if a card with the same card name as this card was not bound this turn, COST [bind this card], and your vanguard gets power +10000 until end of that battle.
+AUTO [Drop]: When your grade 3 or greater vanguard with "Estacion" in its card name is attacked, COST [bind this card], and your vanguard gets power +10000 until end of that battle. You cannot bind cards with the same card name as this card from drop unitl end of turn.
 
 (SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
-global.TokenSummoner[CardStat] = 9583
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 
 
 CardStat = 15059
 {
-global.CardName[CardStat] = 'Hibernation Preparations, Houndrea'
+global.CardName[CardStat] = 'Winter Preparation, Houndrea'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
 AUTO [RC]: When this unit attacks while boosted by a token unit, if you played an order this turn, you may Soul Charge 1.'
@@ -10437,16 +10437,16 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15071
 {
-global.CardName[CardStat] = 'Modest Abbatial, Lucamelia'
+global.CardName[CardStat] = 'Modest Abaxia, Lutchamellia'
 global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 CONT [RC]: If you have a token unit in the same column as this unit, this unit gets "Intercept". Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 15077
@@ -10466,7 +10466,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15104
 {
-global.CardName[CardStat] = 'Deeplands, Meldico'
+global.CardName[CardStat] = 'Deeplands, Meldeygo'
 global.CardText[CardStat] = 'Stoicheia/Zombie
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
@@ -10479,10 +10479,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15105
 {
-global.CardName[CardStat] = 'Deeplands, Grazcain'
+global.CardName[CardStat] = 'Deeplands, Grazkayne'
 global.CardText[CardStat] = 'Stoicheia/Zombie
 
-AUTO: When this unit is rode upon by "Deeplands, Jilgan", search your deck for up to one "Call of Deeplands", reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is rode upon by "Deeplands, Zilgaan", search your deck for up to one "Call of Deep Lands", reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -10492,7 +10492,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15106
 {
-global.CardName[CardStat] = 'Deeplands, Jilgan'
+global.CardName[CardStat] = 'Deeplands, Zilgaan'
 global.CardText[CardStat] = 'Stoicheia/Zombie
 
 AUTO: When this unit is rode upon by a grade 3 card with "Reguregnus" in its card name, look at the top seven cards of your deck, choose up to two cards from among them, discard them, and shuffle the deck.'
@@ -10528,7 +10528,7 @@ AUTO: When this unit is placed on VC by the ability of your "Deeplands, Reguregn
 
 AUTO [VC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, and this unit was placed from drop this turn, this unit gets drive +1 until end of that battle.
 
-CONT [GC]: This unit gets shield +5000 for each grade of your vanguard with "Deeplands" in its card name.'
+CONT [GC]: For each grade of your vanguard with "Deeplands" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
@@ -10539,14 +10539,14 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15109
 {
-global.CardName[CardStat] = 'Call of Deeplands'
+global.CardName[CardStat] = 'Call of Deep Lands'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 This card can be played from drop, and play this with COST [Soul Blast 1 & retire a rear-guard] if you have a vanguard with "Reguregnus" in its card name!
 Choose up to two cards with grade less than or equal to your vanguard from your drop, call them to RC, and your vanguard gets power +5000 until end of turn. Perform one of the following according to the number of cards with the same card name as this card in your order zone.
 • Zero - Put this card into the order zone.
-• One or more - Bind this card, choose a "Call of Deeplands" from your order zone, and the power increase of its CONT ability gets +5000 until end of turn.
-CONT [Order Zone]: If your opponent’s vanguard is grade 3 or greater, all of your units with "Deeplands" in their card names that were placed from drop this turn by the ability of your card with the same card name as this card or "Reguregnus" in its card name get power +5000.'
+• One or more - Bind this card, choose a "Call of Deep Lands" from your order zone, and the power increase of its CONT ability gets +5000 until end of turn.
+CONT [Order Zone]: If your opponent’s vanguard is grade 3 or greater, all of your units with "Deeplands" in their card names that were placed from drop this turn by the ability of your card with the same card name as this card or with "Reguregnus" in its card name get power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -10572,10 +10572,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15111
 {
-global.CardName[CardStat] = 'Deeplands, Jernazak'
+global.CardName[CardStat] = 'Deeplands, Jalnazaak'
 global.CardText[CardStat] = 'Stoicheia/Zombie
 
-ACT [Drop] 1/Turn: If your order zone has a "Call of Deeplands", COST [Soul Blast 1], and call this card to an open RC.
+ACT [Drop] 1/Turn: If your order zone has a "Call of Deep Lands", COST [Soul Blast 1], and call this card to an open RC.
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your unit was retired by a card’s ability this turn, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -10588,12 +10588,12 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 15112
 {
-global.CardName[CardStat] = 'Deeplands, Gleane'
+global.CardName[CardStat] = 'Deeplands, Gliaane'
 global.CardText[CardStat] = 'Stoicheia/Zombie
 
 CONT: If you have a vanguard with "Deeplands" in its card name, this card gets all of the following.
 • AUTO: When this unit is placed on RC from hand, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
-• AUTO: When this unit is retired from RC by any player’s card’s ability, COST [Counter Blast 1], and draw a card.'
+• AUTO: When this unit is retired from RC by any player’s card ability, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -10606,7 +10606,7 @@ CardStat = 15113
 global.CardName[CardStat] = 'Bludgeon Buffalo'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Skyruler" in its card name, this unit gets power +5000 until end of that battle. If your drop has fifteen or more cards, and this unit was stand by your vanguard’s ability this turn, it gets power +15000 instead of +5000.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Skyruler" in its card name, this unit gets power +5000 until end of that battle. If your drop has fifteen or more cards, and this unit stand by your vanguard’s ability this turn, it gets power +15000 instead of +5000.
 
 AUTO [RC] 1/Turn: When this unit stand by the ability of your grade 3 or greater vanguard with "Skyruler" in its card name, if you do not have another rear-guard with the same card name as this unit, and you persona rode this turn, this unit gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -10621,7 +10621,7 @@ CardStat = 15114
 global.CardName[CardStat] = 'Brisk Mustelid'
 global.CardText[CardStat] = 'Stoicheia/Warbeast
 
-ACT [Drop]: COST [Soul Blast 1 & bind this card], choose one of your grade 3 or greater vanguards with "Skyruler" in its card name, and reduce the next Counter Blast cost you pay for that unit’s original ACT ability by 1 until end of turn.'
+ACT [Drop]: COST [Soul Blast 1 & bind this card], choose one of your grade 3 or greater vanguards with "Skyruler" in its card name, and reduce the next Counter Blast cost of that unit’s original ACT ability by 1 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -10631,10 +10631,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15162
 {
-global.CardName[CardStat] = 'Cold Brave Shooter'
+global.CardName[CardStat] = 'Impassive Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO: When this unit is put on GC, if it is the fourth battle of this turn or more, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO: When this unit is retired from GC, you may put it into soul." and it gets shield +10000.'
+AUTO: When this unit is put on GC, if it is the fourth battle this turn or more, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO: When this unit is retired from GC, you may put this card into soul." and it gets shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -10644,7 +10644,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15163
 {
-global.CardName[CardStat] = 'Foresight Brave Shooter'
+global.CardName[CardStat] = 'Prescience Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 AUTO [RC] 1/Turn: When this unit boosts, if you have a grade 3 or greater vanguard with a clan icon, Soul Charge 1. Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
@@ -10657,12 +10657,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15178
 {
-global.CardName[CardStat] = 'Imperishable Hydro-Anchor'
+global.CardName[CardStat] = 'Imperishable Hydro Anchor'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Play this with COST [Energy Blast 3] !
 
-Choose a grade 3 or less card from your drop, call it to RC, and it gets "AUTO [RC]: When this unit attacks a grade 3 or greater unit, if it is the fifth battle of this turn, this unit gets power +10000 until end of that battle." until end of turn.'
+Choose a grade 3 or less card from your drop, call it to RC, and it gets "AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if it is the fifth battle of this turn, this unit gets power +10000 until end of that battle." until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -10705,12 +10705,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15264
 {
-global.CardName[CardStat] = 'A Resting Place Deep in the Forest'
+global.CardName[CardStat] = 'Deep Forest Respite'
 global.CardText[CardStat] = 'Stoicheia/Blitz Order
 
 Play this with COST [Soul Blast 1] !
 
-Choose a unit being attacked, and it gets power +10000 until end of that battle. You get "All of the normal units on your GC get shield +5000." until end of that battle.'
+Choose a unit being attacked, and it gets power +10000 until end of that battle. You get "All normal units on your GC get shield +5000." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30

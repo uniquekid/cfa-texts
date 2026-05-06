@@ -9194,13 +9194,13 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14004
 {
-global.CardName[CardStat] = 'Starry Sky Knight, Zero'
+global.CardName[CardStat] = 'Knight of Starry Skies, Zero'
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 CONT: This card is regarded as "Knight of Silence, Gallatin".
-AUTO: If you have a vanguard with only «Royal Paladin» for its clan, this cost may be paid with "Energy Blast 3". When this unit is placed on RC, if you do not have a rear-guard with the same card name as this unit, COST [Counter Blast 1], and draw a card.
-AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle. If you have 4 or more units, +10000 instead of +5000.
-AUTO [RC] 1/Turn: When this unit attacks, if you have a vanguard with only «Royal Paladin» for its clan and you persona rode this turn and this unit stand by your vanguard’s ability this turn, COST [Counter Blast 1], and your opponent cannot activate AUTO abilities until end of that battle.'
+AUTO: If you have a vanguard with only «Royal Paladin» for its clan, this cost can be paid with "Energy Blast 3". When this unit is placed on RC, if you do not have another rear-guard with the same card name as this unit, COST [Counter Blast 1], and draw a card.
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of that battle. If you have four or more units, it gets power +10000 instead of +5000.
+AUTO [RC] 1/Turn: When this unit attacks, if you have a vanguard with only «Royal Paladin» for its clan, you persona rode this turn, and this unit stand by your vanguard’s ability this turn, COST [Counter Blast 1], and your opponent cannot activate AUTO abilities until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 15
@@ -11383,7 +11383,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this card is revealed during your drive check, if you have a grade 3 or greater vanguard with "Leuhan" in its card name, you may call this unit to an open back row RC.
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a normal unit without sentinel from your dorp, and put it on the bottom of the deck.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a non-senyinel normal unit from your drop, and put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -11398,7 +11398,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
 
-AUTO [RC/Drop]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, COST [put this card on the bottom of the deck], and that unit gets "AUTO [VC]: When your drive check reveals a normal unit, you may bind that card. If you bound a card, put that card into hand, and you lose this ability." until end of turn.'
+AUTO [RC/Drop]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, COST [put this card on the bottom of the deck], and that unit gets "AUTO [VC]: When your drive check reveals a normal unit, you may bind that card. If you bound a card, put that card into hand, and this unit loses this ability." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -11411,7 +11411,7 @@ CardStat = 15057
 global.CardName[CardStat] = 'Knight of Sustenance, Aiden'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If you have a grade 3 or greater vanguard, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1 until end of turn.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Leuhan" in its card name, COST [Energy Blast 3], search your deck or drop for up to one "Soul Rinsing Spring of Dragons", reveal it and put it into hand, if you searched your deck, shuffle the deck. If your vanguard is grade 3 or greater, reduce the next Counter Blast cost you pay when you would play "Soul Rinsing Spring of Dragons" by 1 until end of turn.
 
 AUTO [Front Row RC]: When your grade 3 or greater vanguard with "Leuhanmaris" in its card name is placed during your battle phase, if you do not have another rear-guard with the same card name as this unit, this unit gets "CONT [RC]: This unit gets the trigger effects that your vanguard gets." until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -11423,10 +11423,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15058
 {
-global.CardName[CardStat] = 'Devotion Cadet, Madimiel'
+global.CardName[CardStat] = 'Devotion Rapport, Mademiel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-CONT [GC]: This unit gets shield +5000 for every two cards in your damage zone.'
+CONT [GC]: For every two cards in your damage zone, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -11470,10 +11470,10 @@ CardStat = 15069
 global.CardName[CardStat] = 'Dragwizard, Fuamnach '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-CONT [RC] Generation Break 2 Ritual 5 (Active if there are five or more grade 1 cards in your drop): This unit cannot be chosen by your opponent’s card effects, and gets power +5000. If you have a grade 4 vanguard with "Ogma" in its card name, when this unit would be retired for the cost of your card’s ability, it may be regarded as two rear-guards. (Active on opponent’s turn too)'
+CONT [RC] Generation Break 2 Ritual 5 (Active if there are five or more grade 1 cards in your drop): This unit cannot be chosen by your opponent’s card effects, and gets power +5000. If you have a grade 4 vanguard with "Ogma" in its card name, when this unit would be retired for the cost of your card’s ability, you may retire it as two rear-guards. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -11500,10 +11500,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15074
 {
-global.CardName[CardStat] = 'Steadfast Knight, Kivluff'
+global.CardName[CardStat] = 'Knight of Steadfastness, Kivlugh'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT [RC]: If your vanguard is grade 3 or greater, and you have no other rear-guards, this unit cannot be chosen by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)'
+CONT [RC]: If your vanguard is grade 3 or greater, and you have no other rear-guards, this unit cannot be retired by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -11544,7 +11544,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15102
 {
-global.CardName[CardStat] = 'Knight of Dim Shadow, Owney'
+global.CardName[CardStat] = 'Knight of Hazy Shadow, Oweni'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC] 1/Turn: When this unit boosts, if you have a grade 3 or greater vanguard with a clan icon, Soul Charge 1. Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
@@ -11557,10 +11557,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15103
 {
-global.CardName[CardStat] = 'Knight of Divine Protection, Kibelt'
+global.CardName[CardStat] = 'Knight of Consecration, Kilbert'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is put on GC, if a card was put into your damage zone this turn, COST [Energy Blast 2], and this unit gets shield +10000 until end of that battle.'
+AUTO: When this unit is put on GC, if a card was put in your damage zone this turn, COST [Energy Blast 2], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -11570,7 +11570,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15145
 {
-global.CardName[CardStat] = 'Knight of Sterness, Halses'
+global.CardName[CardStat] = 'Knight of Rigour, Harshes'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 ACT [RC] 1/Turn: If your vanguard is grade 3 or greater, COST [Energy Blast 2 & retire another rear-guard], choose one of your opponent’s front row rear-guards, retire it, and this unit gets power +5000 until end of turn.'
@@ -11599,7 +11599,7 @@ CardStat = 15201
 global.CardName[CardStat] = 'Divine Sister, Crostata'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
-AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Divine Sister" in its card name, look at the top three cards of your deck, choose up to one unit card with "Divine Sister" in its different card name from this unit and grade less than or equal to your vanguard, call it to RC, and put the rest on the bottom of the deck in any order.
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Divine Sister" in its card name, look at the top three cards of your deck, choose up to one unit card with "Divine Sister" in its different card name from this unit with grade less than or equal to your vanguard, call it to RC, and put the rest on the bottom of the deck in any order.
 
 AUTO [Back Row RC] 1/Turn: When your rear-guard with "Divine Sister" in its card name in the same column as this unit attacks, if your vanguard is grade 3 or greater, that attacking unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -11616,7 +11616,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 CONT [RC]: During your turn, if you have a vanguard with "Divine Sister" in its card name, this unit gets power +5000.
 
-AUTO [RC] 1/Turn: When this unit stand by the ability of your vanguard with "Divine Sister" in its card name, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck.'
+AUTO [RC] 1/Turn: When this unit stand by the ability of your card with "Divine Sister" in its card name, COST [Soul Blast 1], look at the top card of your deck, and put it on the top or bottom of the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -11644,10 +11644,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15261
 {
-global.CardName[CardStat] = 'Leegaon'
+global.CardName[CardStat] = 'Liegaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-CONT [RC]: If you do not have another rear-guard with the same card name as this unit, and your G zone has no cards, all grade 3 or greater units with only «Royal Paladin» for their clan on your GC get shield +5000.'
+CONT [RC]: If you do not have another rear-guard with the same card name as this unit, and your G zone has no cards, all grade 3 or greater units on your GC with only «Royal Paladin» for its clan get shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -11657,7 +11657,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15262
 {
-global.CardName[CardStat] = 'Knight of High Honor, Subreem'
+global.CardName[CardStat] = 'Knight of Elevated, Sublim'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 CONT [Front Row RC]: If your front row has no other rear-guards, this unit cannot be chosen by your opponent’s card effects and cannot be attacked.'
@@ -11670,12 +11670,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15263
 {
-global.CardName[CardStat] = 'Inject Sting Gun'
+global.CardName[CardStat] = 'Inject Stingen'
 global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
 
 Play this with COST [Counter Blast 1] !
 
-Choose a face up card with grade less than or equal to your vanguard from your damage zone, call it to RC, and put the top card of your deck into your damage zone.'
+Choose a face up card with grade less than or equal to your vanguard from your damage zone, call it to RC, and put the top card of your deck in the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
@@ -11689,7 +11689,7 @@ CardStat = 15273
 global.CardName[CardStat] = 'Knight of Restoration, Auguisans'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-CONT: If you have a vanguard with only «Royal Paladin» for its clan, this card is only «Royal Paladin».
+CONT: If you have a vanguard with only «Royal Paladin» for its clan, this card is only from «Royal Paladin».
 
 AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Alfred" in its card name, this unit gets power +2000 until end of turn. Then, if you did not Counter Charge this turn, COST [Soul Blast 2], and Counter Charge 1 .
 
@@ -11708,7 +11708,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Elf
 
 CONT: If you have a vanguard with only «Royal Paladin» for its clan, and your G zone has no cards, this card gets all of the following.
 • AUTO: When this card is discarded from hand during your turn, COST [put this card on the bottom of the deck], search your deck for up to one card with "Blaster Blade" in its card name, reveal it and put it into hand, and shuffle the deck.
-• AUTO [RC]: When this unit attacks, if your front row does not have another rear-guard with the same card name as this unit, and you have a "Blaster Blade" in your soul, until end of that battle, this unit gets power +5000 for each grade of your opponent’s vanguard. Then, you may have this unit get critical +1 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck, choose up to one "Blaster Blade" from soul or drop, and put it into hand.'
+• AUTO [RC]: When this unit attacks, if your front row does not have another rear-guard with the same card name as this unit, and your soul has a "Blaster Blade", for each grade of your opponent’s vanguard, this unit gets power +5000 until end of that battle. Then, you may have this unit get critical +1 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck, choose up to one "Blaster Blade" from soul or drop, and put it into hand.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 15

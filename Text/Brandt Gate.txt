@@ -8085,7 +8085,7 @@ CardStat = 14061
 global.CardName[CardStat] = 'Super Dimensional Robo, Daikaiser  '
 global.CardText[CardStat] = 'Brandt Gate/Dimension Police/Battleroid
 
-ACT [VC]: D-LEGION "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may choose up to two trigger units other than "HEAL" and over trigger, and cards other than trigger units for a total of four cards from your drop once, return them to the deck, search your deck for the specified card, D-LEGION, and those cards lose their persona ride icons while they are D-LEGION)
+ACT [VC]: D-LEGION "Super Dimensional Robo, Daiyusha" (If your opponent’s vanguard is grade 3 or greater, this unit may choose up to two trigger units other than "HEAL" and over trigger, and cards other than trigger units for a total of four cards from drop once, return them to the deck, search your deck for the specified card, D-LEGION, and those cards lose their persona ride icons while they are D-LEGION)
 AUTO [VC] 1/Turn: When this unit attacks, if you did not boost this battle, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO [VC]: At the beginning of the drive step, choose one of your opponent’s guardians other than over trigger, and retire it." , if your bind zone does not have a "Dimensional Robo, Corekaiser", COST [bind a "Dimensional Robo, Corekaiser" from soul], and it gets "AUTO [VC]: When your opponent’s unit is retired from GC by this unit’s ability, all of that unit’s effects with "cannot be hit" are nullified." .
 (Corekaiser bind happens before guarding. You retire a guardian after all cards have been called to GC. No more guardians can be called after.)'
 global.UnitGrade[CardStat] = 3
@@ -9429,12 +9429,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15060
 {
-global.CardName[CardStat] = 'Torque’Darm Dragon'
+global.CardName[CardStat] = 'Torquedum Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
-CONT [Hand]: When you would pay the cost for Stride, this card may be discarded as a grade 3.
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
-AUTO: When this unit is placed on RC, if you have an "Alter Ego Messiah" crest, COST [Counter Blast 1], draw a card, and Soul Charge 1.'
+AUTO: When this unit is placed on RC, if you have a "Alter Ego Messiah" crest, COST [Counter Blast 1], draw a card, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9444,7 +9444,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15066
 {
-global.CardName[CardStat] = 'Engraver of Disintegration'
+global.CardName[CardStat] = 'Disintegration Carver'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
 AUTO [RC] 1/Turn: When this unit boosts, if you have a grade 3 or greater vanguard with a clan icon, Soul Charge 1. Then, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
@@ -9489,12 +9489,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15093
 {
-global.CardName[CardStat] = 'Armed Arms, "StL"'
+global.CardName[CardStat] = 'Armed Arms, "StrongLeft"'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO [VC/RC]: When this unit attacks, if you have a vanguard with "Silhouette" in its card name, COST [Counter Blast 1], and perform one of the following.
 • Draw a card.
-• If this unit has "Armed Arms, "StL"" and "Armed Arms "StR"" attached, look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it into soul, and put the rest on the bottom of the deck.
+• If this unit has "Armed Arms, "StrongLeft"" and "Armed Arms, "StrongRight"" attached, look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it into soul, and put the rest on the bottom of the deck.
 
 AUTO: When this unit intercepts, if you have a grade 3 or greater vanguard with "Silhouette" in its card name, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -9508,10 +9508,10 @@ global.ArmAsUnit[CardStat] = 1
 
 CardStat = 15094
 {
-global.CardName[CardStat] = 'Armed Arms, "StR"'
+global.CardName[CardStat] = 'Armed Arms, "StrongRight"'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-CONT [VC]: If this unit has "Armed Arms, "StL"" and "Armed Arms, "StR"" attached, this unit gets critical +1.
+CONT [VC]: If this unit has "Armed Arms, "StrongLeft"" and "Armed Arms, "StrongRight"" attached, this unit gets critical +1.
 
 AUTO [VC/RC]: When this unit attacks, if you have a vanguard with "Silhouette" in its card name, this unit gets power +5000 until end of that battle. Then, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.
 
@@ -9533,7 +9533,7 @@ global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 ACT [VC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1 "Machineries Factory"], and this unit gets "CONT [VC]: All of your units with "Armed Arms" in their card names get power +5000." until end of turn.
 
-AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in each of their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power and abilities continuously, and they are moved to RC as rest at the end of turn)
+AUTO [VC] 1/Turn: At the beginning of your attack step, COST [Soul Blast 1], choose up to two of your rear-guards with "Armed Arms" in their different card names, and attach them to this unit. (Move the attaching units to VC as stand. They cannot attack, the attached unit gets their power and abilities continuously, and they are moved to RC as rest at the end of turn)
 
 AUTO [VC]: At the end of the battle this unit attacked, choose up to one of the units attached to this unit, and move it to an open RC as stand. (The moved unit is no longer attached)
 (Attached unit power is added automatically when attacking)'
@@ -9547,10 +9547,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15096
 {
-global.CardName[CardStat] = 'Heavy-class Robo, Tank Bounder'
+global.CardName[CardStat] = 'Heavy Cord Robo, Tank Bounder'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-CONT [Back Row RC]: If you have another rear-guard in the same column as this unit, this unit gets "Boost" and cannot be chosen by your opponent’s card effects.'
+CONT [Back Row RC]: If you have another rear-guard in the same column as this unit, this unit gets "Boost" and cannot be reitred by your opponent’s card effects.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -9588,10 +9588,10 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 15125
 {
-global.CardName[CardStat] = 'Confront Jetgunner'
+global.CardName[CardStat] = 'Confront Jet Gunner'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this unit is placed on RC from hand, and you do not have another rear-guard with the same card name as this unit, COST [Energy Blast 3], and this unit gets power +10000 until end of turn.'
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, and you do not have another rear-guard with the same card name as this unit, COST [Energy Blast 3], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9601,7 +9601,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15126
 {
-global.CardName[CardStat] = 'Inspection Robo, White Inspector'
+global.CardName[CardStat] = 'Inspector Robo, White Inspector'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT [RC]: If your damage zone has no face up cards, this unit gets "Intercept", and can intercept form the back row.'
@@ -9628,7 +9628,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15164
 {
-global.CardName[CardStat] = 'Venom Monster, Meidro'
+global.CardName[CardStat] = 'Toxicfluid Monster, Meldoro'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Monster" in its card name, choose a unit card with "Monster" in its card name from your drop, and you may put it into soul.
@@ -9643,7 +9643,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15165
 {
-global.CardName[CardStat] = 'Pincushion Monster, Mofugazaru'
+global.CardName[CardStat] = 'Pincushion Monster, Mofugazuru'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When your vanguard with "Monster" in its card name attacks or is attacked, COST [retire this unit], choose one of your vanguards, and it gets power +5000 until end of that battle.'
@@ -10161,7 +10161,7 @@ global.CardText[CardStat] = 'Brandt Gate/Cyber Golem
 
 AUTO: When this unit is placed on RC from hand, if any player has a locked card, or your order zone has a set order, COST [Counter Blast 1], choose one of your opponent’s grade 2 or greater rear-guards, and retire it.
 
-CONT [RC/GC]: If your opponent’s bind zone has two or more cards, or your order zone has two or more cards, this unit gets shield +5000, and if your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
+CONT [RC/GC]: If your opponent’s bind zone has two or more cards, or your order zone has two or more set orders, this unit gets shield +5000, and if your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10171,7 +10171,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15250
 {
-global.CardName[CardStat] = 'Twin Blades of Fact and Fiction, Decohillres'
+global.CardName[CardStat] = 'Dual Blades of Ambiguity, Decoheraise'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 CONT [RC/GC]: If any player has a locked card, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -10184,16 +10184,16 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15268
 {
-global.CardName[CardStat] = 'Blue Deathster, "Skysplitter" Avantgarda Masques'
+global.CardName[CardStat] = 'Blue Deathster, "Skyrenspecter" Avantgarda Masques'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT: This card can only be ridden from a grade 3 with "Avantgarda" in its card name.
 
-ACT [VC] 1/Turn: If your soul has a "Blue Deathster, Sora Period", COST [put a Strategy card from your order zone into your soul], draw a card, and until end of turn, this unit gets power +5000.
+ACT [VC] 1/Turn: If your soul has a "Blue Deathster, Sora Period", COST [put a Strategy card from your order zone into your soul], draw a card, and this unit gets power +5000 until end of turn.
 
-AUTO [VC]: At the beginning of your battle phase, COST [remove a card with "Avantgarda" in its different card name from this unit from your hand, soul or drop], choose a Strategy card from your order zone with a different card name as a card put from order zone into soul this turn, and put it into soul.
+AUTO [VC]: At the beginning of your battle phase, COST [remove a card with "Avantgarda" in its different card name from this unit from hand, soul or drop], choose a Strategy card from your order zone with a different card namefrom cards put into soul from order zone this turn, and put it into soul.
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1, and discard a card from hand], stand this unit, and it gets drive -1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & discard a card from hand], stand this unit, and it gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -10204,7 +10204,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15269
 {
-global.CardName[CardStat] = 'Eradication Strategy: Wrathful Punishment'
+global.CardName[CardStat] = 'Slaying Strategy: Raging Strike'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
 
 AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Blue Deathster" in its card name, put this card into order zone.
@@ -10220,10 +10220,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15270
 {
-global.CardName[CardStat] = 'Blue Deathster, Grale Ziren'
+global.CardName[CardStat] = 'Blue Deathster, Klar Zielen'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this card is placed on RC, if you have a vanguard with "Blue Deathster" in its card name and your card was not put into order zone by your card’s ability this turn, COST [Energy Blast 3], search your deck or drop for up to one grade 3 Strategy card, put it into order one, and if you searched the deck, shuffle the deck.
+AUTO: When this card is placed on RC, if you have a vanguard with "Blue Deathster" in its card name and your card was not put into your order zone by a card’s ability this turn, COST [Energy Blast 3], search your deck or drop for up to one grade 3 Strategy card, put it into order one, and if you searched the deck, shuffle the deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Avantgarda" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -10235,7 +10235,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15271
 {
-global.CardName[CardStat] = 'Dragontree Wretch, Kaiz Kaitul'
+global.CardName[CardStat] = 'Dragontree Wretch, Kaiz Kaitwool'
 global.CardText[CardStat] = 'Brandt Gate/Hydragrum
 
 AUTO: When this unit is placed on RC, COST [Energy Blast 3], search your deck for up to one "Masque of Hydragrum", reveal it and put it into hand, and shuffle the deck.

@@ -7997,14 +7997,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13807
 {
-global.CardName[CardStat] = 'Seeker of Knowledge, Selseera'
+global.CardName[CardStat] = 'Inquirer of Knowledge, Selseera'
 global.CardText[CardStat] = 'Dark States/Elf
 
-ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from soul, and it gets "CONT: This card can be played from the soul, and when it would be put into drop after being played, bind it instead." until end of turn.
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from your soul, and it gets "CONT: This card can be played from the soul, and when it would be played and put into drop, bind it instead." until end of turn.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and this unit gets all of the following until end of turn according to the total number of different normal orders in your soul and bind zone.
-• Three or more different cards - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
-• Five or more different cards - CONT [VC]: All of your units get power +5000.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], until end or turn, this unit gets all of the following according to the total number of different normal orders in your soul and bind zone.
+• Three or more - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
+• Five or more - CONT [VC]: All of your units get power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -8015,12 +8015,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 13808
 {
-global.CardName[CardStat] = 'Adventure Academic, Arius'
+global.CardName[CardStat] = 'Adventure Studies Academic, Arius'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Selseera" in its card name, look at the top seven cards of your deck, choose up to one normal order from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
 
-AUTO [RC]: When your grade 3 or greater vanguard with "Selseera" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, and your unit did not stand by a card’s ability this turn, COST [Energy Blast 3], stand this unit, choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Selseera" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, and your units did not stand by card abilities during this turn, COST [Energy Blast 3], stand this unit. If you stand, choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9442,8 +9442,8 @@ global.CardName[CardStat] = 'Clockwork Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
 CONT: If you have a "Chronojet Dragon" crest, this card gets all of the following."
-• CONT [RC]: During your turn, if you have a grade 4 or greater vanguard, this unit gets power +5000.
-• AUTO [RC/Drop]: When your G unit Stride during your turn, COST [bind this card], choose a normal unit without sentinel from your drop, and put it on the bottom of the deck. If you put a grade 3 or greater card, choose one of your vanguards or hearts, and until end of turn, reduce the next Counter Blast cost you pay for that Card abilities by 1.
+• CONT [RC]: During your turn, if your vanguard is grade 4 or greater, this unit gets power +5000.
+• AUTO [RC/Drop]: When your G unit Stride during your turn, COST [bind this card], choose a  non-sentinel normal unit from your drop, and put it on the bottom of the deck. If you put a grade 3 or greater card, choose one of your vanguards or hearts, and until end of turn, reduce the next Counter Blast cost you pay for that card’s abilities by 1.
 • CONT [GC]: This unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
@@ -9454,7 +9454,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15061
 {
-global.CardName[CardStat] = 'Recording Oum, Parrot'
+global.CardName[CardStat] = 'Recordinguom, Parrot'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
 AUTO: When this card is put into soul by your card’s ability during your turn, choose one of your grade 3 or greater vanguard with "Heartluru" in its card name, and it gets power +5000 until end of turn.
@@ -9472,7 +9472,7 @@ CardStat = 15062
 global.CardName[CardStat] = 'Fashion Doll, Ruby Rouge'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Heartluru" in its card name from ride deck, and you may reveal it. If you revealed or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
+AUTO: When this card is discarded from hand during your ride phase, you may reveal a grade 3 card with "Heartluru" in its card name from your ride deck. If you revealed a card, or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
 
 ACT [RC]: If you have a grade 3 or greater vanguard with "Heartluru" in its card name, and your card with the same card name as this card was not bound this turn, COST [bind this unit], choose a Happy Toys from your drop, and call it to RC.
 
@@ -9549,7 +9549,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15166
 {
-global.CardName[CardStat] = 'Screw Curl Damseille'
+global.CardName[CardStat] = 'Screwcurl Damsel'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC from hand, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], choose up to one of your opponent’s front row rear-guards, put it into soul, and this unit gets power +5000 until end of turn.'
@@ -9575,7 +9575,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15168
 {
-global.CardName[CardStat] = 'Furry Cockatree'
+global.CardName[CardStat] = 'Furry Cockatrie'
 global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [put two Queen’s Order cards from soul on the bottom of the deck in any order], choose one of your units, and it gets power +5000 until end of turn.'
@@ -9604,20 +9604,20 @@ CardStat = 15170
 global.CardName[CardStat] = 'Raising Idea Alcasal'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into order zone.
+AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
-global.TokenSummoner[CardStat] = 15171
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 15171
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 15171
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15172
@@ -9704,7 +9704,7 @@ AUTO: When this unit is placed on RC, COST [Energy Blast 3], choose a Queen’s Or
 
 AUTO [RC] [Arma Arms]: When your unit with "Lielua" in its card name is placed on another RC in the same column as this unit during your battle phase, you may put this unit face up as that unit’s Arma gauge.
 
-AUTO: When this card is put in the gauge zone by the [Arma Arms] ability, until end of your opponent’s next turn, the unit with this card as Arma gauge gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.", and for each card in your soul, it gets power +1000. If your opponent’s vanguard is grade 3 or greater, it gets power +2000 instead of +1000.'
+AUTO: When this card is put in the gauge zone by the [Arma Arms] ability, until end of your opponent’s next turn, the unit with this card as Arma gauge gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.", and for each card in your soul, gets power +1000. If your opponent’s vanguard is grade 3 or greater, it gets power +2000 instead of +1000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -9731,7 +9731,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 15266
 {
-global.CardName[CardStat] = 'Persecuted Mage, Lazuli'
+global.CardName[CardStat] = 'Relentless Pursuit Mage, Razzly'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO [Soul/Drop]: When your grade 3 or greater vanguard with "Selseera" in its card name is placed during your ride phase, perform one of the following.
@@ -9748,15 +9748,15 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15267
 {
-global.CardName[CardStat] = 'Great Accumulation of Knowledge'
+global.CardName[CardStat] = 'Stacked Grand Erudition'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-Put this card into soul, look at the top three cards of your deck, choose up to one card from among them, put it into soul, and put the rest on the bottom of the deck in any order. Choose a card with grade less than or equal to your vanguard from your soul, and you may call it to RC.
+Put this card into soul, look at the top three cards of your deck, choose up to one card from among them, put it into soul, and put the rest on the bottom of the deck in any order. Choose a card from your soul with grade less than or equal to your vanguard, and you may call it to RC.
 
 AUTO: When this card is discarded from hand during your turn, you may put this card into soul.'
 global.UnitGrade[CardStat] = 3
-global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
