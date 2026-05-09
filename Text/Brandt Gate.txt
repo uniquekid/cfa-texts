@@ -8094,7 +8094,7 @@ global.CardInClan[CardStat] = 6
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.ExtendedTextBox = 1
+global.ExtendedTextBox[CardStat] = 1
 
 
 CardStat = 14062
@@ -8776,10 +8776,10 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14187
 {
-global.CardName[CardStat] = 'Blue Deathster, Noshime Occasion'
+global.CardName[CardStat] = 'Blue Deathster, Nochim Occasion'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-ACT [Drop]: If your card was not put into your order zone by your card’s ability this turn, COST [bind this card] choose a Strategy card from your hand or drop, and put it into the order zone. If you put a card from hand, draw a card.'
+ACT [Drop]: If your card was not put into your order zone by your card’s ability this turn, COST [bind this card], choose up to one Strategy card from your hand or drop, and put it into order zone. If you put a card from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8789,12 +8789,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14188
 {
-global.CardName[CardStat] = 'Blue Deathster, Maisy Distance'
+global.CardName[CardStat] = 'Blue Deathster, Macy Distance'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Blue Deathster" in its card name, COST [Energy Blast 3], look at the top five cards of your deck, choose up to one Strategy card or up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
 
-ACT [RC] 1/Turn: If you have a vanguard with "Blue Deathster" in its card name, COST [Soul Blast 1], choose up to one <Battleroid> with "Blue Deathster" in its card name and grade less than or equal to your vanguard from your drop, call it to RC in the same column as this unit, and it gets "AUTO [RC]: At the end of this turn, retire this unit." until end of turn.'
+ACT [RC] 1/Turn: If you have a vanguard with "Blue Deathster" in its card name, COST [Soul Blast 1], choose a <Battleroid> with "Blue Deathster" in its card name and grade less than or equal to your vanguard from your drop, call it to a RC in the same column as this unit, and it gets "AUTO [RC]: At the end of this turn, retire this unit." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -10223,7 +10223,7 @@ CardStat = 15270
 global.CardName[CardStat] = 'Blue Deathster, Klar Zielen'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO: When this card is placed on RC, if you have a vanguard with "Blue Deathster" in its card name and your card was not put into your order zone by a card’s ability this turn, COST [Energy Blast 3], search your deck or drop for up to one grade 3 Strategy card, put it into order one, and if you searched the deck, shuffle the deck.
+AUTO: When this card is placed on RC, if you have a grade 3 or greater vanguard with "Blue Deathster" in its card name, and your card was not put in your order zone by a card’s ability this turn, COST [Energy Blast 3], search your deck or drop for up to one grade 3 Strategy card, put it in the order one, and if you searched the deck, shuffle the deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Avantgarda" in its card name, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
