@@ -3465,11 +3465,12 @@ CardStat = 6191
 global.CardName[CardStat] = 'Retroaxe Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
-AUTO [RC]: At the end of the battle that it boosted, COST [Counter Blast 1 & bind this unit], return a grade 2 card from your drop zone to your hand.'
+AUTO [RC]: At the end of the battle it boosted, COST [Counter Blast 1 & bind this unit], and return a grade 2 card from your drop zone to your hand.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 6198
@@ -3613,11 +3614,12 @@ CardStat = 6219
 global.CardName[CardStat] = 'Steam Fighter, Ahne'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-ACT [RC] 1/Turn: COST [Counter Blast 1 & bind a card from your hand], choose one of your opponent’s rear-guards in the front row, and put it on the bottom of the deck. Call a "Steam Expert, Zerix" from your drop zone to RC. If you have "Steam Fighter, Memenne" on RC, you may ride it instead of calling it.'
+ACT [RC] 1/Turn: COST [Counter Blast 1 & Bind a card from your hand], choose a rear-guard in your opponent’s front row, and put it on the bottom of the deck. Call a "Steam Expert, Zerix" from your drop zone to RC. If "Steam Fighter, Memenne" is on your RC, you may ride it as stand instead of calling it.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 6220
@@ -3820,11 +3822,12 @@ CardStat = 7314
 global.CardName[CardStat] = 'Steam Engineer, Shulia'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO: When this card is discarded from hand during your turn, you may call this card to RC as rest.'
+AUTO: When this card is discarded from your hand during your turn, you may call this card to RC as rest.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 7315
@@ -3957,13 +3960,14 @@ CardStat = 7341
 global.CardName[CardStat] = 'Steam Sweeper, Dohdo'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO [RC]: At the beginning of your battle phase, until end of turn, increase or decrease this unit’s grade to match the grade of one of your vanguards.
+AUTO [RC]: At the beginning of your battle phase, increase or decrease this unit’s grade to match one of your vanguard’s grade until end of turn.
 
 CONT [RC]: During the battle it boosted a grade 4, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 7343
@@ -4099,13 +4103,14 @@ CardStat = 7362
 global.CardName[CardStat] = 'Steam Sweeper, Kalissha'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO [RC]: At the beginning of your battle phase, until end of turn, increase or decrease this unit’s grade to match the grade of one of your vanguards.
+AUTO [RC]: At the beginning of your battle phase, increase or decrease this unit’s grade to match one of your vanguard’s grade until end of turn.
 
-AUTO [RC]: When your grade 4 units attack hits a vanguard, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and retire it.'
+AUTO [RC]: When your grade 4 unit’s attack hits a vanguard, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 7372
@@ -4315,11 +4320,12 @@ CardStat = 7423
 global.CardName[CardStat] = 'Chronodragon Nextage '
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
-AUTO [VC]: At the end of the battle that this unit attacked a grade 3 or greater vanguard, if your soul has a "Chronojet Dragon", COST [discard two cards from your hand], retire this unit, ride a "Chronojet Dragon" from your soul as stand, and until end of turn, it gets power +15000, and you cannot ride.'
+AUTO [VC]: At the end of the battle this unit attacked a grade 3 or greater vanguard, if your soul has a "Chronojet Dragon", COST [discard two cards from your hand], retire this unit, ride a "Chronojet Dragon" from your soul as stand, until end of turn, it gets power +15000, and you cannot ride.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 7424
@@ -4401,7 +4407,7 @@ global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
 (PREMIUM JP & EN: Banned.)
 
-ACT [VC] 1/Turn: COST [Discard a card from your hand], search your deck for up to one grade 4 card, ride it as stand, shuffle your deck, at the end of this turn, retire that unit, and ride a grade 2 or less card from your soul or drop zone as rest.'
+ACT [VC] 1/Turn: COST [Discard a card from your hand], search your deck for up to one grade 4 card, ride it as stand, shuffle your deck, and at the end of this turn, retire that unit, and ride a grade 2 or less card from your soul or drop zone as rest.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
@@ -4415,7 +4421,7 @@ CardStat = 7447
 global.CardName[CardStat] = 'Steam Maiden, Melem '
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO [RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upclutch Dragon" or "Upstream Dragon" from among them to RC as rest, shuffle your deck, and if you have "Upclutch Dragon" and "Upstream Dragon" on VC or RC, stand the called unit.'
+AUTO [RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upclutch Dragon" or "Upstream Dragon" from among them to RC as rest, shuffle your deck, and if "Upclutch Dragon" and "Upstream Dragon" are on your VC or RC, stand the called unit.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
@@ -4427,7 +4433,7 @@ CardStat = 7448
 global.CardName[CardStat] = 'Upstream Dragon '
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
-AUTO [RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upclutch Dragon" or "Steam Maiden, Melem" from among them to RC as rest, shuffle your deck, and if you have "Upclutch Dragon" and "Steam Maiden, Melem" on VC or RC, stand the called unit.'
+AUTO [RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upclutch Dragon" or "Steam Maiden, Melem" from among them to RC as rest, shuffle your deck, and if "Upclutch Dragon" and "Steam Maiden, Melem" are on your VC or RC, stand the called unit.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 26
 }
@@ -4439,13 +4445,12 @@ CardStat = 7449
 global.CardName[CardStat] = 'Upclutch Dragon'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Dragon
 
-AUTO [VC/RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upstream Dragon" or "Steam Maiden, Melem" from among them to RC as rest, shuffle your deck, and if you have "Upstream Dragon" and "Steam Maiden, Melem" on VC or RC, stand the called unit.'
+AUTO [VC/RC]: When it attacks, COST [Counter Blast 1], look at seven cards from the top of your deck, call up to one "Upstream Dragon" or "Steam Maiden, Melem" from among them to RC as rest, shuffle your deck, and if "Upstream Dragon" and "Steam Maiden, Melem" are on your VC or RC, stand the called unit.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
 global.BlueTokenAdd[CardStat] = 1
 global.PowerStat[CardStat] = 13000
-
 
 CardStat = 7450
 {
@@ -4504,11 +4509,12 @@ CardStat = 7463
 global.CardName[CardStat] = 'Scowling Gear Bear'
 global.CardText[CardStat] = 'Gear Chronicle/Gear Beast
 
-AUTO [VC/RC]: When your opponent’s sentinel is placed on GC from hand, choose one of your opponent’s rear-guards that was not attacked this turn, retire it, and this unit gets power +5000 until end of turn.'
+AUTO [VC/RC]: When your opponent’s sentinel is placed on GC from hand, choose one of your opponent’s rear-guards that is not being attacked, retire it, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 7471

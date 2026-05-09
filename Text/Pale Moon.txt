@@ -452,10 +452,13 @@ CardStat = 822
 global.CardName[CardStat] = 'Mistress Hurricane'
 global.CardText[CardStat] = 'Pale Moon/Chimera
 
-CONT [VC]: If you have eight or more «Pale Moon» in your soul, this unit gets power +1000.
+CONT [VC]: If the number of «Pale Moon» in your soul is eight or more, this unit gets power +1000.
 
 AUTO: [Counter Blast 2] When this unit is placed on VC, you may pay the cost. If you do, choose a «Pale Moon» from your soul, and call it to RC.'
+global.UnitGrade[CardStat] = 0
 }
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 823
@@ -2217,13 +2220,14 @@ CardStat = 4720
 global.CardName[CardStat] = 'Immortal Target'
 global.CardText[CardStat] = 'Pale Moon/Demon
 
-Magia - AUTO: [Counter Blast 1] When this unit is placed on RC from your soul, you may pay the cost. If you do, choose a card from your soul, call it to RC with the same column as this unit, and at the end of that turn, put that unit into your soul.
+Magia - AUTO: [Counter Blast 1] When this unit is placed on RC from your soul, you may pay the cost. If you do, choose a card from your soul, call it to another RC in the same column as this unit, and at the end of that turn, put that unit into your soul.
 
 ACT [RC] 1/Turn Generation Break 1: [Soul Blast 1] Until end of turn, this unit gets power +2000, and "CONT [RC]: This unit cannot be put into your soul by card effects.".'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 18
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 4721
