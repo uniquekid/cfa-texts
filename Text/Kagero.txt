@@ -2278,11 +2278,13 @@ CardStat = 2585
 global.CardName[CardStat] = 'Lizard Soldier, Veira'
 global.CardText[CardStat] = 'Kagero/Dragonman/Stand Trigger
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, choose another of your units, it gets power +10000 until end of turn. If it gets power +10000, return this unit to your deck, and shuffle your deck. This ability cannot be used for the rest of that turn.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): When your opponent’s rear-guard is put into the drop zone due to an effect from one of your cards, choose one of your other units, and you may have that unit gets power +10000 until end of turn. If you do, return this unit to your deck, and shuffle your deck. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 12
-}
 global.TriggerUnit[CardStat] = 3
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 2586
