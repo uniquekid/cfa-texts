@@ -11033,3 +11033,117 @@ global.DCards2[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15899
+{
+global.CardName[CardStat] = 'Vermilion Gatekeeper  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15900
+{
+global.CardName[CardStat] = 'Poet of Darkness, Amon '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon by "Demon of Aspiration, Amon", search your deck for up to one "Inferno Ritual", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15901
+{
+global.CardName[CardStat] = 'Demon of Aspiration, Amon '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon by a grade 3 card with "Amon" in its card name, draw a card, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15902
+{
+global.CardName[CardStat] = 'Demon World Marquis, Amon  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+CONT [VC]: During your turn, this unit gets power +1000 for each card in your soul.
+AUTO [VC]: When your unit with only «Dark Irregulars» for its clan is placed on RC, choose a card from your drop, and put it into soul.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and perform all of the following according to the number of cards in your soul.
+• Ten or more - This unit gets drive +1.
+• Fifteen or more - Your opponent chooses a card from their hand, and discards it.
+• Twenty or more - All of your front row rear-guards get power +1000 until end of turn for each card in your soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15903
+{
+global.CardName[CardStat] = 'Inferno Ritual'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+This card can be played from soul, and play this if you have a vanguard with "Amon" in its card name!
+
+Soul Charge (3). COST [Counter Blast 1], choose a unit card with grade less than or equal to your vanguard from your soul, and call it to RC. If your soul has fifteen or more cards, choose up to two cards instead of one.
+
+ACT [Soul]: COST [Put a card from hand into soul], and put this card into hand. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15904
+{
+global.CardName[CardStat] = 'Imprisoned Fallen Angel, Saraqael  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+CONT: This card cannot be ridden.
+CONT [VC/RC]: Restraint (This unit cannot attack)
+AUTO: When this unit is placed on RC, if you have a vanguard with only «Dark Irregulars» for its clan, and all of your other rear-guards have a different card name from this unit, draw a card.
+ACT [RC]: COST [Energy Blast 3], until end of this fight, this unit loses "Restraint", and gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Amon" in its card name attacks, if your opponent’s vanguard was grade 3 or greater at the beginning of this turn, and your rear-guard did not stand during this battle phase, COST [Counter Blast 1], and stand this unit.".
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Amon" in its card name, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15905
+{
+global.CardName[CardStat] = 'Stil Vampir '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Vampire
+
+AUTO: When this unit is placed on RC, you may Soul Charge 1. If you have a grade 3 or greater vanguard with "Amon" in its card name, COST [Energy Blast 3], choose a card with grade less than or equal to your vanguard from your soul, and call it to RC.
+ACT [RC]: If you have a grade 3 or greater vanguard with "Amon" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind a card with the same card name as this unit from soul or drop], choose one of your opponent’s non-token rear-guards, put it on VC as rest, and you cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn. If you put a card, at the end of that turn, your opponent chooses a card from their soul with the same card name as a card put into soul from their VC this turn, and ride it as rest while ignoring its abilities. (Placed abilities activates)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
