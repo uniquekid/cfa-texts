@@ -1714,10 +1714,12 @@ CardStat = 2547
 global.CardName[CardStat] = 'Cool Hank'
 global.CardText[CardStat] = 'Nova Grappler/Alien
 
-AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, choose one of your other rear-guards, it becomes stand, and that unit gets power +5000 until end of turn. This ability cannot be used for the rest of turn.'
+AUTO [RC] Generation Break 1 (This ability is active if you have one or more face up G units in total on your VC or G zone): [Counter Blast 1] When this unit attacks a vanguard, if this unit is boosted, you may pay the cost. If you do, choose one of your other rear-guards, stand it, and that unit gets power +5000 until end of turn. This ability cannot be used for the rest of that turn.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
+global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 2548
@@ -2821,11 +2823,12 @@ CardStat = 5455
 global.CardName[CardStat] = 'Oda Blauschleife'
 global.CardText[CardStat] = 'Nova Grappler/Battleroid
 
-ACT [RC] 1/Turn: [Counter Blast 1] If you have a vanguard with "Blau" in its card name, until end of turn, this unit gets power +4000, then, this unit gets power +4000 for each face up grade 4 card with "Blau" in its card name on your VC or G Zone.'
+ACT [RC] 1/Turn: [Counter Blast 1] If you have a vanguard with "Blau" in its card name, until end of turn, this unit gets power +4000, then, this unit gets power +4000 for each grade 4 face up card with "Blau" in its card name on your VC and G Zone.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 4
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 5456

@@ -7997,14 +7997,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 13807
 {
-global.CardName[CardStat] = 'Seeker of Knowledge, Selseera'
+global.CardName[CardStat] = 'Inquirer of Knowledge, Selseera'
 global.CardText[CardStat] = 'Dark States/Elf
 
-ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from soul, and it gets "CONT: This card can be played from the soul, and when it would be put into drop after being played, bind it instead." until end of turn.
+ACT [VC] 1/Turn: COST [Put a card from hand into soul], choose a normal order from your drop, put it into soul, choose up to one card from your soul, call it to RC, choose up to one normal order from your soul, and it gets "CONT: This card can be played from the soul, and when it would be played and put into drop, bind it instead." until end of turn.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and this unit gets all of the following until end of turn according to the total number of different normal orders in your soul and bind zone.
-• Three or more different cards - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
-• Five or more different cards - CONT [VC]: All of your units get power +5000.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], until end or turn, this unit gets all of the following according to the total number of different normal orders in your soul and bind zone.
+• Three or more - AUTO [VC]: At the end of the battle this unit attacked, stand it, and this unit gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
+• Five or more - CONT [VC]: All of your units get power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -8015,12 +8015,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 13808
 {
-global.CardName[CardStat] = 'Adventure Academic, Arius'
+global.CardName[CardStat] = 'Adventure Studies Academic, Arius'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Selseera" in its card name, look at the top seven cards of your deck, choose up to one normal order from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
 
-AUTO [RC]: When your grade 3 or greater vanguard with "Selseera" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, and your unit did not stand by a card’s ability this turn, COST [Energy Blast 3], stand this unit, choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Selseera" in its card name attacks, if your opponent’s vanguard is grade 3 or greater, and your units did not stand by card abilities during this turn, COST [Energy Blast 3], stand this unit. If you stand, choose one of your vanguards, and that unit and this unit get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -8432,7 +8432,7 @@ global.CardLimidet[CardStat] = 1
 
 CardStat = 14024
 {
-global.CardName[CardStat] = 'Steam Fighter, Kissh'
+global.CardName[CardStat] = 'Steam Fighter, Kish'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
 AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3 or greater, COST [put a card from hand into soul], and this unit gets power +5000 until end of turn.'
@@ -8461,7 +8461,7 @@ global.DefensePowerStat[CardStat] = 15000
 
 CardStat = 14054
 {
-global.CardName[CardStat] = 'Smile of Wickedness, Yaatsu'
+global.CardName[CardStat] = 'Wicked Smile, Yaatu'
 global.CardText[CardStat] = 'Dark States/Demon
 
 CONT [Back Row RC]: During your turn, if your soul has six or more cards, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +2000.'
@@ -8488,10 +8488,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14057
 {
-global.CardName[CardStat] = 'Different Dimension Hands of Ancient Times'
+global.CardName[CardStat] = 'Ancient Clock of Extradimensional Hands'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-Choose a grade 1 or greater unit card from your hand, and reveal it and put it on the bottom of the deck. Look at the top seven cards of your deck, choose up to one unit card with grade equal to the revealed card’s grade -1, call it to RC, and shuffle the deck.'
+Choose up to one grade 1 or greater unit card from your hand, and reveal it and put it on the bottom of the deck. Look at the top seven cards of your deck, choose up to one unit card with grade equal to the revealed card’s grade -1, call it to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
@@ -8502,7 +8502,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14081
 {
-global.CardName[CardStat] = 'Shrewd Demonic Lordling, Malphas'
+global.CardName[CardStat] = 'Intelligent Demonic Lordling, Malfas'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [Back Row Center RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name is placed during your battle phase or stand during your battle phase, COST [Soul Blast 1 & retire this unit] and all of your front row units get power +5000 until end of turn.
@@ -8517,10 +8517,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14082
 {
-global.CardName[CardStat] = 'High Wire Actor, Cosmiere'
+global.CardName[CardStat] = 'High-wire Actor, Cosmiere'
 global.CardText[CardStat] = 'Dark States/Warbeast
 
-AUTO: When this unit is placed on RC from soul, this unit gets "AUTO [RC]: At the end of your turn, you may put this unit into soul." until end of turn.' 
+AUTO: When this unit is placed on RC from soul, this unit gets "AUTO [RC]: At the end of your turn, you may put this unit into soul." until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8530,7 +8530,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14086
 {
-global.CardName[CardStat] = 'Cute Teddy Bear, TiTi'
+global.CardName[CardStat] = 'Cute Teddy Bear, Titi'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
@@ -8545,12 +8545,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14087
 {
-global.CardName[CardStat] = 'Nutcracker Soldier, NachuNachu'
+global.CardName[CardStat] = 'Nutcracker Soldier, Nucrumbs'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed by riding from "Cute Teddy Bear, TiTi", COST [reveal a grade 3 card with "Heartluru" in its card name from the ride deck], search your deck for up to one "Toys Are For Kids", reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed by riding from "Cute Teddy Bear, Titi", COST [reveal a grade 3 card with "Heartluru" in its card name from the ride deck], search your deck for up to one "Toys Are Made for Children", reveal it and put it into hand, and shuffle the deck.
 
-AUTO [Back Row Center RC]: When this unit is placed by a card’s ability, if your opponent’s vanguard is grade 3 or greater, and your bind zone does not have "Cuter Teddy Bear, TiTi", COST [Counter Blast 1 & bind a "Cute Teddy Bear, TiTi" from soul], search your deck for up to one "Toys Are For Kids", reveal it and put it into hand, and shuffle the deck.
+AUTO [Back Row Center RC]: When this unit is placed by a card’s ability, if your opponent’s vanguard is grade 3 or greater, and your bind zone does not have "Cuter Teddy Bear, Titi", COST [Counter Blast 1 & bind a "Cute Teddy Bear, Titi" from soul], search your deck for up to one "Toys Are Made for Children", reveal it and put it into hand, and shuffle the deck.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 1
@@ -8565,9 +8565,9 @@ CardStat = 14088
 global.CardName[CardStat] = 'Coaster Shark'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed by riding from "Nutcracker Soldier, NachuNachu", COST [reveal a grade 3 card with "Heartluru" in its card name from the ride deck], search your deck for up to one "Toys Are For Kids", reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed by riding from "Nutcracker Soldier, Nutctumbs", COST [reveal a grade 3 card with "Heartluru" in its card name from the ride deck], search your deck for up to one "Toys Are Made for children", reveal it and put it into hand, and shuffle the deck.
 
-AUTO [Right Front Row RC] 1/Turn: At the end of the battle this unit attacked a rear-guard, if your order zone has a "Toys Are For Kids", and this unit was placed on RC from soul this turn, COST [Soul Blast 1], and stand this unit.
+AUTO [Front Row Right RC] 1/Turn: At the end of the battle this unit attacked a rear-guard, if your order zone has a "Toys Are Made for Children", and this unit was placed on RC from soul this turn, COST [Soul Blast 1], and stand this unit.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 2
@@ -8584,29 +8584,29 @@ global.CardText[CardStat] = 'Dark States/Workeroid
 
 (STANDARD JP: You can only run this card if you do not have Spiritual King of Ignition, Valnout in your deck.)
 
-CONT [VC]: During your turn, if your order zone has three or more "Toys Are For Kids", all of your front row unit get power +5000.
-ACT [VC] 1/Turn: COST [Energy Blast 3], choose up to the same number of Happy Toys from your soul as the number of "Toys Are For Kids" in your order zone, and call them to RC.
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to the number of "Toys Are For Kids" in your order zone.
+CONT [VC]: During your turn, if your order zone has three or more "Toys Are Made for Children", all of your front row unit get power +5000.
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose up to the same number of Happy Toys from your soul as the number of "Toys Are Made for Children" in your order zone, and call them to RC.
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], and perform all of the following according to the number of "Toys Are Made for Children" in your order zone.
 • Two or more - Choose one of your front row Happy Toys, stand it, and it gets power +10000 until end of turn.
 • Three or more - Until end of turn, this unit gets power +5000 and if your opponent’s vanguard is grade 3 or greater, it also gets drive +1.
 • Four or more - Choose one of your front row Happy Toys, stand it, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 
 
 CardStat = 14090
 {
-global.CardName[CardStat] = 'Toys Are For Kids'
+global.CardName[CardStat] = 'Toys Are Made for Children'
 global.CardText[CardStat] = 'Dark States/Set Order
 
-CONT: If you have a vanguard with "Heartluru" in its card name, or your vanguard is Happy Toys, this card gets all of the following.
-• AUTO: When this card is put into the order zone, look at the top five cards of your deck, choose up to two Happy Toys from among them, reveal them, choose up to one of the revealed cards, put it into hand, put the rest of the revealed cards into soul, and shuffle the deck.
+CONT: If your vanguard is a Happy Toys, or you have a grade 3 or greater vanguard with"Heartluru" in its card name, this card gets all of the following.
+• AUTO: When this card is put into the order zone, look at the top five cards of your deck, choose up to two Happy Toys from among them, reveal them, choose up to one card from among the revealed cards, put it into hand, put the rest of the revealed cards into soul, and shuffle the deck.
 • ACT [Order Zone]: COST [rest two cards with the same card name as this card in the order zone], choose up to one Happy Toys from your drop, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
@@ -8618,12 +8618,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14091
 {
-global.CardName[CardStat] = 'Sparkling Bunny'
+global.CardName[CardStat] = 'Sparkly Bunny'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed on RC, if your order zone has a "Toys Are For Kids", look at the top three cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck.
+AUTO: When this unit is placed on RC, if your order zone has a "Toys Are Made for Children", look at the top three cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck.
 
-AUTO [Left Back Row RC]: When your Happy Toys in the same column as this unit stand by your card’s ability, you may stand this unit. If you stand this unit, at the end of that turn, retire this unit.
+AUTO [Back Row Left RC]: When your Happy Toys in the same column as this unit stand by your card’s ability, you may stand this unit. If you stand this unit, at the end of that turn, retire this unit.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 1
@@ -8635,12 +8635,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14092
 {
-global.CardName[CardStat] = 'Toy Monster, Bravyloss'
+global.CardName[CardStat] = 'Toys Monster, Blavyloss'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed on RC, if your order zone has a "Toys Are For Kids", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gains power +5000 until end of turn.
+AUTO: When this unit is placed on RC, if your order zone has a "Toys Are Made for Children", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 
-AUTO [Left Front Row RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Heartluru" in its card name, this unit gets critical +1 until end of turn.
+AUTO [Front Row Left RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Heartluru" in its card name, this unit gets critical +1 until end of turn.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 2
@@ -8655,9 +8655,9 @@ CardStat = 14093
 global.CardName[CardStat] = 'Block Horse'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-CONT [Right Back Row RC]: This unit gets "Intercept", and can intercept from the back row.
+CONT [Back Row Right RC]: This unit gets "Intercept", and can intercept from the back row.
 
-CONT [GC]: If your order zone has a "Toys Are For Kids", this unit gets shield +5000.
+CONT [GC]: If your order zone has a "Toys Are Made for Children", this unit gets shield +5000.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 1
@@ -8669,12 +8669,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14094
 {
-global.CardName[CardStat] = 'Giant Fluff'
+global.CardName[CardStat] = 'Giant Fluffy'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed on RC, COST [Soul Blast 2], choose a "Toys Are For Kids" from your drop or face up damage zone cards, and put it into hand. If you put a card from damage zone, put the top card of your deck into the damage zone.
+AUTO: When this unit is placed on RC, COST [Soul Blast 2], choose a "Toys Are Made for Children" from your drop or face up damage zone cards, and put it into hand. If you put a card from damage zone, put the top card of your deck into the damage zone.
 
-AUTO [Right Front Row RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Heartluru" in its card name, until end of turn, this unit gets "CONT [RC]: During the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time.", and power +10000.
+AUTO [Front Row Right RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Heartluru" in its card name, until end of turn, this unit gets "CONT [RC]: During the battle this unit attacked, when your opponent would call cards from hand to GC, they must call two or more at the same time.", and power +10000.
 
 Happy Toys (This card is a happy toys made for children)'
 global.UnitGrade[CardStat] = 2
@@ -8689,7 +8689,7 @@ CardStat = 14099
 global.CardName[CardStat] = 'Close Hand Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-AUTO [RC]: When this unit attacks a vanguard, if you persona rode this turn, until end of that battle, this unit gets power +10000, and if your soul has ten or more cards, COST [put a card with the same card name as this unit from hand into soul], and its critical also becomes 2.' 
+AUTO [RC]: When this unit attacks a vanguard, if you persona rode this turn, until end of that battle, this unit gets power +10000, if your soul has ten or more cards, COST [put a card with the same card name as this unit from hand into soul], and its critical also becomes 2.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -8700,10 +8700,10 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14100
 {
-global.CardName[CardStat] = 'Gear Puppy of Trying Effort'
+global.CardName[CardStat] = 'Gear Puppy of Tireless Efforts'
 global.CardText[CardStat] = 'Dark States/Gear Beast
 
-CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)' 
+CONT [RC/GC]: If your vanguard is grade 3 or greater, and your opponent’s drive check or damage check revealed a trigger unit this turn, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -8713,12 +8713,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14138
 {
-global.CardName[CardStat] = 'Avidity Slayper'
+global.CardName[CardStat] = 'Avidity Slurper'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO: When this unit is placed on RC, choose a "Purgatory Dragon Deity, Favrneel" from your ride deck, and you may reveal it. If you revealed a card, or your vanguard is "Purgatory Dragon Deity, Favrneel", COST [Soul Blast 1], search your deck for up to one grade 3 or greater card with "Favrneel" in its card name, put it into soul, and shuffle the deck.
+AUTO: When this unit is placed on RC, you may reveal a "Purgatory Dragon Deity, Favrneel" from your ride deck. If you revealed a card, or your vanguard is "Purgatory Dragon Deity, Favrneel", COST [Soul Blast 1], search your deck for up to one grade 3 or greater card with "Favrneel" in its card name, put it into soul, and shuffle the deck.
 
-AUTO [RC]: When this unit boosts a grade 3 or greater unit, this unit gets power +2000 until end of that battle, and if the sum of the grades of «Dark States» cards in your soul is thirteen or greater, choose one of your units, and it gets power +5000 until end of turn.' 
+AUTO [RC]: When this unit boosts a grade 3 or greater unit, until end of that battle, this unit gets power +2000, if the sum of the grades of «Dark States» cards in your soul is thirteen or greater, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -9442,8 +9442,8 @@ global.CardName[CardStat] = 'Clockwork Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
 CONT: If you have a "Chronojet Dragon" crest, this card gets all of the following."
-• CONT [RC]: During your turn, if you have a grade 4 or greater vanguard, this unit gets power +5000.
-• AUTO [RC/Drop]: When your G unit Stride during your turn, COST [bind this card], choose a normal unit without sentinel from your drop, and put it on the bottom of the deck. If you put a grade 3 or greater card, choose one of your vanguards or hearts, and until end of turn, reduce the next Counter Blast cost you pay for that Card abilities by 1.
+• CONT [RC]: During your turn, if your vanguard is grade 4 or greater, this unit gets power +5000.
+• AUTO [RC/Drop]: When your G unit Stride during your turn, COST [bind this card], choose a  non-sentinel normal unit from your drop, and put it on the bottom of the deck. If you put a grade 3 or greater card, choose one of your vanguards or hearts, and until end of turn, reduce the next Counter Blast cost you pay for that card’s abilities by 1.
 • CONT [GC]: This unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
@@ -9454,7 +9454,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15061
 {
-global.CardName[CardStat] = 'Recording Oum, Parrot'
+global.CardName[CardStat] = 'Recordinguom, Parrot'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
 AUTO: When this card is put into soul by your card’s ability during your turn, choose one of your grade 3 or greater vanguard with "Heartluru" in its card name, and it gets power +5000 until end of turn.
@@ -9472,7 +9472,7 @@ CardStat = 15062
 global.CardName[CardStat] = 'Fashion Doll, Ruby Rouge'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Heartluru" in its card name from ride deck, and you may reveal it. If you revealed or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
+AUTO: When this card is discarded from hand during your ride phase, you may reveal a grade 3 card with "Heartluru" in its card name from your ride deck. If you revealed a card, or you have a grade 3 or greater vanguard with "Heartluru" in its card name, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
 
 ACT [RC]: If you have a grade 3 or greater vanguard with "Heartluru" in its card name, and your card with the same card name as this card was not bound this turn, COST [bind this unit], choose a Happy Toys from your drop, and call it to RC.
 
@@ -9549,7 +9549,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15166
 {
-global.CardName[CardStat] = 'Screw Curl Damseille'
+global.CardName[CardStat] = 'Screwcurl Damsel'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC from hand, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], choose up to one of your opponent’s front row rear-guards, put it into soul, and this unit gets power +5000 until end of turn.'
@@ -9575,7 +9575,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15168
 {
-global.CardName[CardStat] = 'Furry Cockatree'
+global.CardName[CardStat] = 'Furry Cockatrie'
 global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO [RC]: When the attack this unit boosted hits a vanguard, COST [put two Queen’s Order cards from soul on the bottom of the deck in any order], choose one of your units, and it gets power +5000 until end of turn.'
@@ -9604,20 +9604,20 @@ CardStat = 15170
 global.CardName[CardStat] = 'Raising Idea Alcasal'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into order zone.
+AUTO: When this unit is placed by riding from "Alcasal", COST [reveal a grade 3 card with "Alcasal" in its card name from ride deck], and put an Idealize Queen’s Fort token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
-global.TokenSummoner[CardStat] = 15171
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 15171
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 15171
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15172
@@ -9704,7 +9704,7 @@ AUTO: When this unit is placed on RC, COST [Energy Blast 3], choose a Queen’s Or
 
 AUTO [RC] [Arma Arms]: When your unit with "Lielua" in its card name is placed on another RC in the same column as this unit during your battle phase, you may put this unit face up as that unit’s Arma gauge.
 
-AUTO: When this card is put in the gauge zone by the [Arma Arms] ability, until end of your opponent’s next turn, the unit with this card as Arma gauge gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.", and for each card in your soul, it gets power +1000. If your opponent’s vanguard is grade 3 or greater, it gets power +2000 instead of +1000.'
+AUTO: When this card is put in the gauge zone by the [Arma Arms] ability, until end of your opponent’s next turn, the unit with this card as Arma gauge gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.", and for each card in your soul, gets power +1000. If your opponent’s vanguard is grade 3 or greater, it gets power +2000 instead of +1000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -9731,7 +9731,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 15266
 {
-global.CardName[CardStat] = 'Persecuted Mage, Lazuli'
+global.CardName[CardStat] = 'Relentless Pursuit Mage, Razzly'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO [Soul/Drop]: When your grade 3 or greater vanguard with "Selseera" in its card name is placed during your ride phase, perform one of the following.
@@ -9748,15 +9748,15 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15267
 {
-global.CardName[CardStat] = 'Great Accumulation of Knowledge'
+global.CardName[CardStat] = 'Stacked Grand Erudition'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
-Put this card into soul, look at the top three cards of your deck, choose up to one card from among them, put it into soul, and put the rest on the bottom of the deck in any order. Choose a card with grade less than or equal to your vanguard from your soul, and you may call it to RC.
+Put this card into soul, look at the top three cards of your deck, choose up to one card from among them, put it into soul, and put the rest on the bottom of the deck in any order. Choose a card from your soul with grade less than or equal to your vanguard, and you may call it to RC.
 
 AUTO: When this card is discarded from hand during your turn, you may put this card into soul.'
 global.UnitGrade[CardStat] = 3
-global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -11033,3 +11033,124 @@ global.DCards2[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 15899
+{
+global.CardName[CardStat] = 'Vermillion Gatekeeper  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15900
+{
+global.CardName[CardStat] = 'Poet of Darkness, Amon '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon by "Demon of Aspiration, Amon", search your deck for up to one "Inferno Ritual", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15901
+{
+global.CardName[CardStat] = 'Demon of Aspiration, Amon '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+AUTO: When this unit is rode upon by a grade 3 card with "Amon" in its card name, draw a card, and Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15902
+{
+global.CardName[CardStat] = 'Demon World Marquis, Amon  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+CONT [VC]: During your turn, this unit gets power +1000 for each card in your soul.
+
+AUTO [VC]: When your unit with only «Dark Irregulars» for its clan is placed on RC, choose a card from your drop, and put it into soul.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and perform all of the following according to the number of cards in your soul.
+• Ten or more - This unit gets drive +1.
+• Fifteen or more - Your opponent chooses a card from their hand, and discards it.
+• Twenty or more - All of your front row rear-guards get power +1000 until end of turn for each card in your soul.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15903
+{
+global.CardName[CardStat] = 'Inferno Ritual'
+global.CardText[CardStat] = 'Dark States/Normal Order
+
+This card can be played from soul, and play this if you have a vanguard with "Amon" in its card name!
+
+Soul Charge (3). COST [Counter Blast 1], choose a unit card with grade less than or equal to your vanguard from your soul, and call it to RC. If your soul has fifteen or more cards, choose up to two cards instead of one.
+
+ACT [Soul]: COST [Put a card from hand into soul], and put this card into hand. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15904
+{
+global.CardName[CardStat] = 'Imprisoned Fallen Angel, Saraqael  '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
+
+CONT: This card cannot be ridden.
+
+CONT [VC/RC]: Restraint (This unit cannot attack)
+
+AUTO: When this unit is placed on RC, if you have a vanguard with only «Dark Irregulars» for its clan, and all of your other rear-guards have a different card name from this unit, draw a card.
+
+ACT [RC]: COST [Energy Blast 3], until end of this fight, this unit loses "Restraint", and gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Amon" in its card name attacks, if your opponent’s vanguard was grade 3 or greater at the beginning of this turn, and your rear-guard did not stand during this battle phase, COST [Counter Blast 1], and stand this unit.".
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Amon" in its card name, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15905
+{
+global.CardName[CardStat] = 'Stil Vampir '
+global.CardText[CardStat] = 'Dark States/Dark Irregulars/Vampire
+
+AUTO: When this unit is placed on RC, you may Soul Charge 1. If you have a grade 3 or greater vanguard with "Amon" in its card name, COST [Energy Blast 3], choose a card with grade less than or equal to your vanguard from your soul, and call it to RC.
+
+ACT [RC]: If you have a grade 3 or greater vanguard with "Amon" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind a card with the same card name as this unit from soul or drop], choose one of your opponent’s non-token rear-guards, put it on VC as rest, and you cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn. If you put a card, at the end of that turn, your opponent chooses a card from their soul with the same card name as a card put into soul from their VC this turn, and ride it as rest while ignoring its abilities. (Placed abilities activate)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.CardInClan[CardStat] = 11
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
