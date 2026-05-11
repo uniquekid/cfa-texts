@@ -93,7 +93,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15963
 {
 global.CardName[CardStat] = 'Vengeful Blue Flame, Iori Yagami'
-global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
 
 AUTO [RC]: When this unit stand by the effect of your vanguard with "Kyo Kusanagi" in its card name, choose one of your opponent’s rear-guards, and retire it.
 
@@ -125,7 +125,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15965
 {
 global.CardName[CardStat] = 'Over-Towering Mountain Storm, Goro Daimon'
-global.CardText[CardStat] = 'The King of Fighters/Fighter/Judo with Personal Combat Style
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Judo + Personal Combat Style
 
 AUTO [RC]: When this unit stand by the effect of your vanguard with "Kyo Kusanagi" in its card name, until end of turn, this unit gets power +10000.
 
@@ -167,60 +167,10 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 15968
-{
-global.CardName[CardStat] = 'Ura 108 Shiki Orochinagi'
-global.CardText[CardStat] = 'The King of Fighters/Critical Trigger'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
-global.TriggerUnit[CardStat] = 2
-}
-global.PowerStat[CardStat] = 5000
-global.DefensePowerStat[CardStat] = 15000
-
-
-CardStat = 15969
-{
-global.CardName[CardStat] = 'Raikouken'
-global.CardText[CardStat] = 'The King of Fighters/Draw Trigger'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
-global.TriggerUnit[CardStat] = 1
-}
-global.PowerStat[CardStat] = 5000
-global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15970
-{
-global.CardName[CardStat] = 'Furinkazan'
-global.CardText[CardStat] = 'The King of Fighters/Front Trigger'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
-global.TriggerUnit[CardStat] = 5
-}
-global.PowerStat[CardStat] = 5000
-global.DefensePowerStat[CardStat] = 15000
-
-
-CardStat = 15971
-{
-global.CardName[CardStat] = 'Uramen 31 Katsu Kyuusen no Jouhari'
-global.CardText[CardStat] = 'The King of Fighters/Heal Trigger
-
-(You may only have up to four cards with "HEAL" in a deck.)'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
-global.TriggerUnit[CardStat] = 4
-}
-global.PowerStat[CardStat] = 5000
-global.DefensePowerStat[CardStat] = 15000
-
-
 CardStat = 15972
 {
 global.CardName[CardStat] = 'Power of the Ancient Sacred Treasures'
-global.CardText[CardStat] = 'The King of Fighters/
+global.CardText[CardStat] = 'The King of Fighters
 
 CONT: Sentinel.
 
@@ -230,3 +180,351 @@ global.DCards[CardStat] = 16
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15973
+{
+global.CardName[CardStat] = 'Sneering Firelight, Ash Crimson'
+global.CardText[CardStat] = 'The King of Fighters/Unknown/Personal Style
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and it gets power +5000 until end of turn. If you have two or more cards with "Kyo Kusanagi", "Iori Yagami", or "Chizuru Kagura" in their different card names in soul, choose three rear-guards instead of one.
+
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], choose a card from your drop, and call it to RC. This unit gets power +10000 until end of turn.
+
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], choose a card from your bind zone, put it into drop, choose two normal units without Sentinel from your drop, and put them into hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15974
+{
+global.CardName[CardStat] = 'Swift Shamaness, Chizuru Kagura'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Kagura Style of Ancient Martial Arts
+
+AUTO: When this unit is placed on RC from hand, if your vanguard is grade 3, COST [Counter Blast 1 or Energy Blast 3], search your deck or drop for up to one card with the same card name as your vanguard, reveal it and put it into hand. If you searched the deck, shuffle the deck.
+
+CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. If your opponent’s drive check or damage check revealed a trigger unit this turn, it also gets power +10000 / shield +10000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15975
+{
+global.CardName[CardStat] = 'Unbridled Instinct, Iori Yagami'
+global.CardText[CardStat] = 'The King of Fighters/Yagami Clan/Yagami Style of Ancient Martial Arts + Pure Instinct
+
+AUTO: When this card is placed on RC from hand or discarded from hand while riding from the ride deck, COST [Soul Blast 1], and you get a Persona Shield Ticket.
+
+CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 13708
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15976
+{
+global.CardName[CardStat] = 'Green Flame of Usurpation'
+global.CardText[CardStat] = 'The King of Fighters/Normal Order
+
+This card can be played from drop and play this if you have a vanguard with "Ash Crimson" in its card name!
+
+Bind this card, and perform all of the following.
+• Your opponent chooses a card from their hand, and discards it.
+• Choose up to one card from your RC or drop, and put it into soul. If you put from RC, draw a card.
+
+CONT [Bind Zone]: Your grade 3 cards with "Kyo Kusanagi", "Iori Yagami", or "Chizuru Kagura" in their card names in your soul cannot be chosen by your opponent’s card effects, and cannot leave soul by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.CardInClan[CardStat] = 30
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15977
+{
+global.CardName[CardStat] = 'Fate of the Cursed Blood, Iori Yagami'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15978
+{
+global.CardName[CardStat] = 'Hatred-Filled Purple Flame, Iori Yagami'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
+
+AUTO: When this unit is placed by riding from a grade 0 with "Iori Yagami" in its card name, COST [reveal a grade 3 card with "Iori Yagami" in its card name from ride deck], search your deck for "A Blood Oath Forged in Ancient Times", discard it, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15979
+{
+global.CardName[CardStat] = 'Cold Purple Flame, Iori Yagami'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
+
+AUTO: When placed by riding from a grade 1 with "Iori Yagami" in its card name, search your deck for up to one normal unit with "Mature" or "Vice" in its card name, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15980
+{
+global.CardName[CardStat] = 'Prideful Purple Flame, Iori Yagami'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], stand one of your rear-guards, and this unit and that unit get power +10000 until end of turn. At the end of that turn, retire that rear-guard, and if your opponent’s vanguard is grade 3 or greater, draw a card.
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1 & Soul Blast 1 & discard a card from hand], search your deck or drop for up to two normal units with "Mature" or "Vice" in their card names, reveal them, and put them into hand. If you searched the deck, shuffle the deck.
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search your deck for "A Blood Oath Forged in Ancient Times", reveal it and put it into hand, search your deck for up to one "Insane Iori with Blood of Orochi Under the Night of the Moon", discard it, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15981
+{
+global.CardName[CardStat] = 'Insane Iori with Blood of Orochi Under the Night of the Moon'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Pure Instinct
+
+CONT: This card can only be ridden from a grade 3 with "Iori Yagami" in its card name, and if this unit is on VC, it is also treated as "Iori Yagami".
+AUTO: At the end of the battle this unit attacked, COST [Soul Blast 4], stand this unit, and until end of turn, it gets drive -1 and increase or decrease its critical to 1.
+AUTO: When this unit attacks, retire all of your opponent’s front row rear-guards, and this unit gets power +5000 until end of that battle for each "Insane Iori with Blood of Orochi Under the Night of the Moon" in your soul and drop. If it is the second or more time this unit attacked this turn, retire all of your front row rear-guards.
+AUTO: At the beginning of your main phase, COST [put a "Prideful Purple Flame, Iori Yagami" from hand into soul], and activate persona ride.
+(SHIFT + left click to activate persona ride)'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 16
+global.PersonaRideAct[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15982
+{
+global.CardName[CardStat] = 'A Blood Oath Forged in Ancient Times'
+global.CardText[CardStat] = 'The King of Fighters/Normal Order
+
+This card can be played from drop and play this if you have a vanguard with "Iori Yagami" in its card name!
+
+Bind this card, and perform all of the following.
+• Choose a normal unit with "Mature" or "Vice" in its card name from your drop, and put it into hand. If your vanguard is grade 4 or greater and you did not ride this turn, choose up to two instead of one.
+• If your vanguard is grade 3 and your opponent’s vanguard is grade 3 or greater, choose an "Insane Iori with Blood of Orochi Under the Night of the Moon" from your drop, and ride it as stand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.CardInClan[CardStat] = 30
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15983
+{
+global.CardName[CardStat] = 'Knockout <3 Free Spirit, Angel'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Perfunctory<3
+
+AUTO: When this card is discarded from hand during your ride phase, COST[Soul Blast 1 & put this card on the bottom of the deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and until end of turn, this unit gets "Boost" and power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15984
+{
+global.CardName[CardStat] = 'The Alluring Ninja Girl, Mai Shiranui'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Shiranui-ryuu Ninjutsu
+
+AUTO [RC]: When this unit boosts, if your opponent’s rear-guard was retired this turn or you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15985
+{
+global.CardName[CardStat] = 'The Wild Flying Swallow, Yuri Sakazaki'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Kyokugenryu Karate + Arrangement of Personal Styles
+
+AUTO: When this unit is placed on RC from hand, you may Soul Charge 1. COST [Counter Blast 1], and draw a card.
+
+AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater and your soul has a card with the same card name as your vanguard, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15986
+{
+global.CardName[CardStat] = '524 Shiki Kamukura'
+global.CardText[CardStat] = 'The King of Fighters/Kusanagi Style of Ancient Martial Arts
+
+CONT: This card is regarded as "Ura 1029 Shiki Homura Hotogi".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15987
+{
+global.CardName[CardStat] = 'Ura 1029 Shiki Homura Hotogi'
+global.CardText[CardStat] = 'The King of Fighters/Yagami Style of Ancient Martial Arts
+
+CONT: This card is regarded as "524 Shiki Kamukura".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 15988
+{
+global.CardName[CardStat] = 'Wolf’s Howl, Terry Bogard'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Martial Arts
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15989
+{
+global.CardName[CardStat] = 'Revenge of the Fury Wolf, Terry Bogard'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Martial Arts
+
+CONT [Ride Deck]: If your vanguard is a grade 0 with "Terry Bogard" in its card name, when riding this card from your ride deck, you may reveal a grade 3 card with "Terry Bogard" in its card name from your ride deck. If you revealed, you can ride this card without discarding a card from hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15990
+{
+global.CardName[CardStat] = 'Battle Wolf, Terry Bogard'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Martial Arts
+
+CONT [Ride Deck]: If your vanguard is a grade 1 with "Terry Bogard" in its card name, you can ride this card without discarding a card from hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15991
+{
+global.CardName[CardStat] = 'The Legendary Wolf, Terry Bogard'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Martial Arts
+
+AUTO [VC]: At the end of the battle this unit attacked, if this unit attacked your opponent’s vanguard one or less times this turn, COST [Counter Blast 1, and discard a card from hand], stand this unit, and until end of turn, this unit gets power +5000 / drive -1 and increase or decrease its critical to 1. If it is the second time or more you are resolving this ability this turn, you do not have to pay the cost.
+
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], draw a card, choose one of your opponent’s back row rear-guards, and move it to an open front row RC.
+
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Soul Blast 3], and all of your front row units get power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 15992
+{
+global.CardName[CardStat] = 'Whole Body Weapon, Andy Bogard'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Koppoken + Shiranui-ryuu Ninjutsu
+
+AUTO [Drop]: When a normal unit with "Shiranui Mai" in its card name is placed on your RC other than during the battle phase, if you have a grade 3 or greater vanguard with "Terry Bogard" in its card name and you do not have a rear-guard with the same name as this card, COST [Soul Blast 1], call this to an RC in the same column as that unit, choose up to one of your opponent’s front row rear-guards, and retire it.
+
+AUTO [RC] 1/Turn: When your vanguard with "Terry Bogard" in its card name attacks, if your opponent’s vanguard is grade 3 or greater and a unit with the same card name as this unit has not stand by a card’s ability this turn, COST [Energy Blast 3], stand this unit, and until end of turn, this unit gets power +10000 and increase or decrease its critical to 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15993
+{
+global.CardName[CardStat] = 'The Joint Crusher, Blue Mary'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Commando Sambo
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a vanguard with "Terry Bogard" in its card name or you have three or more grade 1 or greater <Female Fighter> units, COST [Counter Blast 1 or Energy Blast 3], look at the top seven cards of your deck, choose up to one card with grade less than or equal to your vanguard and a different card name from this unit, call it to RC, and shuffle the deck.
+
+CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost" and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 15994
+{
+global.CardName[CardStat] = 'Wicked Heretic, Ryuji Yamazaki'
+global.CardText[CardStat] = 'The King of Fighters/Hakkesshu/Personal Art of Combative Homicide
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Terry Bogard" in its card name or a grade 3 <Hakkesshu> vanguard, and you do not have a rear-guard with the same card name as this card, COST [Counter Blast 1], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
