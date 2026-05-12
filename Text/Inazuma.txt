@@ -833,3 +833,41 @@ global.TriggerUnit[CardStat] = 5
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16023
+{
+global.CardName[CardStat] = 'Seeker of Life’s Answers, Maine Alsop'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: MF
+
+AUTO: When this unit is placed on RC, your opponent chooses two cards from their hand, and reveals them. (Return the revealed cards to their original position after looking)
+
+CONT [RC]: This unit gets "Boost".
+
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Story> vanguard, COST [Energy Blast 2], choose a face down Special Move with grade less than or equal to your vanguard from your Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16024
+{
+global.CardName[CardStat] = 'Solution Boost'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Maine Alsop" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. Your opponent chooses a card from their hand, you choose a grade greater than or equal to 0, and declare it. Your opponent reveals the chosen card from hand, and if that card’s grade is the declared grade, the unit that used this special move gets critical +1 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
