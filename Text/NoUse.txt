@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 15906
+global.AllCard = 16032
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -105,9 +105,10 @@ Iconic = 34                         Record of Ragnarok = 10
                                     VSPO! = 12
                                     CoroCoro Comic = 13
                                     Buddyfight = 14
+                                    Inazuma Eleven = 15
 
 
-***Max Clan ID = 35                 Max Nation ID = 14***
+***Max Clan ID = 35                 Max Nation ID = 16***
 */
 
 
@@ -131,8 +132,18 @@ global.CustomFactionNationId[3] = 14
 global.CustomFactionName[3] = 'Buddyfight'
 global.CustomFactionFile[3] = 'Buddyfight.txt'
 
+global.CustomFactionClanId[4] = 0
+global.CustomFactionNationId[4] = 15
+global.CustomFactionName[4] = 'Inazuma Eleven'
+global.CustomFactionFile[4] = 'Inazuma.txt'
+
+global.CustomFactionClanId[5] = 0
+global.CustomFactionNationId[5] = 16
+global.CustomFactionName[5] = 'The King of Fighters'
+global.CustomFactionFile[5] = 'King of Fighters.txt'
+
 //Increase left number for every new clan/nation
-global.MaxCustomFaction = 3 + 1
+global.MaxCustomFaction = 5 + 1
 
 
 CardStat = 1
@@ -1393,6 +1404,21 @@ If you have a vanguard with "Impauldio" in its card name, the unit on the RC thi
 • AUTO [RC]: At the end of your turn, if this unit has "X-CeeDaNCe" in its card name, COST [Energy Blast 2], and return this unit to your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 15933
+{
+global.CardName[CardStat] = 'God Hand'
+global.CardText[CardStat] = 'Inazuma Eleven/Blitz Order/Special Move/Catch
+
+Choose a unit being attacked, and it gets power +5000 until end of that battle for each card in your damage zone.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 29
+global.TokenInHand[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0

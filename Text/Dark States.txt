@@ -11106,7 +11106,7 @@ global.CardText[CardStat] = 'Dark States/Normal Order
 
 This card can be played from soul, and play this if you have a vanguard with "Amon" in its card name!
 
-Soul Charge (3). COST [Counter Blast 1], choose a unit card with grade less than or equal to your vanguard from your soul, and call it to RC. If your soul has fifteen or more cards, choose up to two cards instead of one.
+Soul Charge 3. COST [Counter Blast 1], choose a unit card with grade less than or equal to your vanguard from your soul, and call it to RC. If your soul has fifteen or more cards, choose up to two cards instead of one.
 
 ACT [Soul]: COST [Put a card from hand into soul], and put this card into hand. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -11123,13 +11123,9 @@ global.CardName[CardStat] = 'Imprisoned Fallen Angel, Saraqael  '
 global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
 
 CONT: This card cannot be ridden.
-
 CONT [VC/RC]: Restraint (This unit cannot attack)
-
 AUTO: When this unit is placed on RC, if you have a vanguard with only «Dark Irregulars» for its clan, and all of your other rear-guards have a different card name from this unit, draw a card.
-
 ACT [RC]: COST [Energy Blast 3], until end of this fight, this unit loses "Restraint", and gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Amon" in its card name attacks, if your opponent’s vanguard was grade 3 or greater at the beginning of this turn, and your rear-guard did not stand during this battle phase, COST [Counter Blast 1], and stand this unit.".
-
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Amon" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
@@ -11153,4 +11149,89 @@ global.PersonaRide[CardStat] = 1
 global.CardInClan[CardStat] = 11
 }
 global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16026
+{
+global.CardName[CardStat] = 'Mystery Creepy Artillery'
+global.CardText[CardStat] = 'Dark States/Blitz Order
+
+CONT: You may only have up to two "Mystery Creepy Artillery" in a deck.
+
+If your vanguard’s grade is less than your opponent’s vanguard’s grade, this ability can be played while ignoring grade.
+
+Remove this card, choose a unit being attacked, until end of that battle, it gets power +15000, and perform all of the following.
+• If you went second, and you did not put a Persona Shield ticket into hand by the ability of a card with the same card name as this card this fight, put a Persona Shield ticket into hand, and until end of turn, you can play an additional order, and cannot play orders other than Persona Shield tickets.
+• If your opponent persona rode this turn, choose a unit being attacked, and it gets power +5000 until end of that battle.
+
+(SHIFT + left click to get a Persona Shield ticket)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 2
+global.AnotherSide[CardStat] = 13708
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16027
+{
+global.CardName[CardStat] = 'Jazzy Juggler'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a "Masked Magician, Harri" crest, you may put this card into soul.
+
+CONT: If you have a "Masked Magician, Harri" crest, this card gets all of the following.
+• AUTO [Soul]: When your vanguard is being attacked, if you did not call a card with the same card name as this card to GC this turn, you may call this card to GC.
+• CONT [GC]: This unit gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16028
+{
+global.CardName[CardStat] = 'Spike Wildmaster, Farnchit'
+global.CardText[CardStat] = 'Dark States/Elf
+
+AUTO: When this unit is placed on RC, if you have a "Masked Magician, Harri" crest, COST [Counter Blast 1 or put a card from hand to soul], and draw a card.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Harri" in its card name, this unit gets "Boost".
+
+Magia - AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Harri" in its card name, and you did not call a unit from your soul this battle phase, COST [Energy Blast 3 & put this unit into soul], choose up to one card with a different card name from this card from your soul, and call it to RC. At the end of that turn, put that called unit into soul.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16029
+{
+global.CardName[CardStat] = 'Parallel Megatrick, Fairfield '
+global.CardText[CardStat] = 'Dark States/Pale Moon/Human
+
+(STANDARD: Can be used in G Zone if your ride deck has Happiness Collector, Betty, Jacqueline, Harri.)
+
+Stride
+
+Magia - ACT [VC] 1/Turn: COST [Soul Blast up to two cards & turn a card with the same card name as this unit from G zone face up], choose up to the same number of unit cards according to the number of cards Soul Blast for this cost with different card names from your soul, call them to RC, they get power +5000, and perform all of the following.
+• If your G zone has three or more face up cards, choose a unit called by this effect, and it gets power +10000 / critical +1 until end of turn.
+• At the end of that turn, put all units that were called by this ability into soul.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+global.CardInClan[CardStat] = 18
+global.ExtraDeck[CardStat] = 1
+}
+global.PowerStat[CardStat] = 15000
 global.DefensePowerStat[CardStat] = 0
