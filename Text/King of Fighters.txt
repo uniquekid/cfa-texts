@@ -322,9 +322,9 @@ global.CardName[CardStat] = 'Insane Iori with Blood of Orochi Under the Night of
 global.CardText[CardStat] = 'The King of Fighters/Fighter/Pure Instinct
 
 CONT: This card can only be ridden from a grade 3 with "Iori Yagami" in its card name, and if this unit is on VC, it is also treated as "Iori Yagami".
-AUTO: At the end of the battle this unit attacked, COST [Soul Blast 4], stand this unit, and until end of turn, it gets drive -1 and increase or decrease its critical to 1.
-AUTO: When this unit attacks, retire all of your opponent’s front row rear-guards, and this unit gets power +5000 until end of that battle for each "Insane Iori with Blood of Orochi Under the Night of the Moon" in your soul and drop. If it is the second or more time this unit attacked this turn, retire all of your front row rear-guards.
-AUTO: At the beginning of your main phase, COST [put a "Prideful Purple Flame, Iori Yagami" from hand into soul], and activate persona ride.
+AUTO [VC]: At the end of the battle this unit attacked, COST [Soul Blast 4], stand this unit, and until end of turn, it gets drive -1 and increase or decrease its critical to 1.
+AUTO [VC]: When this unit attacks, retire all of your opponent’s front row rear-guards, and this unit gets power +5000 until end of that battle for each "Insane Iori with Blood of Orochi Under the Night of the Moon" in your soul and drop. If it is the second or more time this unit attacked this turn, retire all of your front row rear-guards.
+AUTO [VC]: At the beginning of your main phase, COST [put a "Prideful Purple Flame, Iori Yagami" from hand into soul], and activate persona ride.
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 16
@@ -358,7 +358,7 @@ CardStat = 15983
 global.CardName[CardStat] = 'Knockout <3 Free Spirit, Angel'
 global.CardText[CardStat] = 'The King of Fighters/Modified Human/Perfunctory<3
 
-AUTO: When this card is discarded from hand during your ride phase, COST[Soul Blast 1 & put this card on the bottom of the deck], and draw a card.
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of the deck], and draw a card.
 
 AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and until end of turn, this unit gets "Boost" and power +10000.'
 global.UnitGrade[CardStat] = 2
@@ -399,7 +399,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15986
 {
 global.CardName[CardStat] = '524 Shiki Kamukura'
-global.CardText[CardStat] = 'The King of Fighters/Kusanagi Style of Ancient Martial Arts
+global.CardText[CardStat] = 'The King of Fighters/Kusanagi Style of Ancient Martial Arts/Critical Trigger
 
 CONT: This card is also regarded as "Ura 1029 Shiki Homura Hotogi".
 
@@ -415,7 +415,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 15987
 {
 global.CardName[CardStat] = 'Ura 1029 Shiki Homura Hotogi'
-global.CardText[CardStat] = 'The King of Fighters/Yagami Style of Ancient Martial Arts
+global.CardText[CardStat] = 'The King of Fighters/Yagami Style of Ancient Martial Arts/Critical Trigger
 
 CONT: This card is also regarded as "524 Shiki Kamukura".
 
@@ -522,7 +522,7 @@ global.CardText[CardStat] = 'The King of Fighters/Hakkesshu/Personal Art of Comb
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Terry Bogard" in its card name or a grade 3 <Hakkesshu> vanguard, and you do not have a rear-guard with the same card name as this card, COST [Counter Blast 1], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.
 
-CONT [RC/GC]: If you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000.'
+CONT [RC/GC]: If you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 16
 }
@@ -591,7 +591,7 @@ global.CardText[CardStat] = 'The King of Fighters/Hizoku Assassin/Piercing Pugil
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with "Ash" in its card name and you played a normal order this turn, COST [retire this unit], and Counter Charge 1 .
 
-CONT [RC/GC]: If you have a vanguard with "Ash" in its card name, this unit gets power +2000. If your opponent’s vanguard is grade 3 or greater, it also gets shield +5000.'
+CONT [RC/GC]: If you have a vanguard with "Ash" in its card name, this unit gets power +2000. If your opponent’s vanguard is grade 3 or greater, it also gets shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
 }
@@ -606,7 +606,7 @@ global.CardText[CardStat] = 'The King of Fighters/Brawler/Personal Boxing Style
 
 AUTO [Drop]: When you play a normal order, if you have a grade 3 or greater vanguard with "Ash" in its card name and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
 
-CONT [RC/GC]: If you have a vanguard with "Ash" in its card name, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it also gets power +5000 / shield +10000.'
+CONT [RC/GC]: If you have a vanguard with "Ash" in its card name, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it also gets power +5000 / shield +10000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 16
 }
@@ -847,7 +847,7 @@ global.CardText[CardStat] = 'The King of Fighters/Mercenary/Martial Arts + Heide
 
 AUTO [VC]: When this unit attacks, COST [Energy Blast 3], choose one of your rear-guards, stand it, choose one of your opponent’s back row rear-guards, and retire it.
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [discard a card from hand], look at the top seven cards of your deck, choose up to one normal unit with <Heidern Style of Assassination Techniques> in its race without sentinel from among them or from your drop, reveal it and put it into hand, and shuffle the deck.
-ACT [VC] 1/Turn: If you have five or more cards in your damage zone and your opponent’s vanguard is grade 3 or greater, COST [retire two normal units with different card names, and put a card from hand soul], choose an "Unleashed Blood Riot, Insane Leona with Orochi Blood Awakened within Darkness" from soul, and ride it as stand.'
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone and your opponent’s vanguard is grade 3 or greater, COST [retire two normal units with different card names, and put a card from hand into soul], choose an "Unleashed Blood Riot, Insane Leona with Orochi Blood Awakened within Darkness" from soul, and ride it as stand.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1

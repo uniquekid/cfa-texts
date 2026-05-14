@@ -11383,7 +11383,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this card is revealed during your drive check, if you have a grade 3 or greater vanguard with "Leuhan" in its card name, you may call this unit to an open back row RC.
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a non-senyinel normal unit from your drop, and put it on the bottom of the deck.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a non-sentinel normal unit from your drop, and put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -13062,13 +13062,10 @@ global.CardText[CardStat] = 'Keter Sanctuary/Blitz Order
 CONT: You may only have up to two "Forefront Oriflamme" in a deck.
 
 If your vanguard’s grade is less than your opponent’s vanguard’s grade, this ability can be played while ignoring grade.
-
 Remove this card, choose a unit being attacked, until end of that battle, it gets power +15000, and perform all of the following.
 • If you went second, and you did not put a Persona Shield ticket into hand by the ability of a card with the same card name as this card this fight, put a Persona Shield ticket into hand, and until end of turn, you can play an additional order, and cannot play orders other than Persona Shield tickets.
 • If your opponent persona rode this turn, choose a unit being attacked, and it gets power +5000 until end of that battle.
-
 (SHIFT + left click to get a Persona Shield ticket)
-
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
@@ -13081,3 +13078,56 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16033
+{
+global.CardName[CardStat] = 'Formulights, Soruba'
+global.CardText[CardStat] = 'Keter Sanctuary/Math Ghost
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16034
+{
+global.CardName[CardStat] = 'Formulights, Ruula'
+global.CardText[CardStat] = 'Keter Sanctuary/Math Ghost
+
+CONT [VC]: C+P=X (During your main phase, when you call a unit or play an order, increase your Formula Count by 1 until end of your opponent’s next turn)
+
+CONT [VC]: When you would ride a card with "Formulights" in its card name from ride deck, you can ride with "Soul Blast 1" instead of "choose a card from hand, and discard it".
+
+(SHIFT + left click to increase Formula Count.)
+(SHIFT + right click to decrease Formula Count.)
+(Middle click or hover and press SPACE to set Formula Count.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16035
+{
+global.CardName[CardStat] = 'Formulights, Stila'
+global.CardText[CardStat] = 'Keter Sanctuary/Mathroid
+
+CONT [VC]: C+P=X (During your main phase, when you call a unit or play an order, increase your Formula Count by 1 until end of your opponent’s next turn)
+
+AUTO: When this unit is rode upon by a grade 3 card with "Formulights" in its card name, look at the top seven cards of your deck, choose up to one card with "Formulights" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+(SHIFT + left click to increase Formula Count.)
+(SHIFT + right click to decrease Formula Count.)
+(Middle click or hover and press SPACE to set Formula Count.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
