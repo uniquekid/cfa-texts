@@ -701,7 +701,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8607
 {
-global.CardName[CardStat] = 'Blaster Javelin   '
+global.CardName[CardStat] = 'Blaster Javelin  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 AUTO: When this unit is rode upon by "Blaster Dark", reveal the top card of your deck, call it to RC as rest if it is a unit card, and discard it if it isn’t.
@@ -13135,7 +13135,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16036
 {
-global.CardName[CardStat] = 'Fullbau  '
+global.CardName[CardStat] = 'Fullbau   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/High Beast
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
@@ -13148,12 +13148,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16037
 {
-global.CardName[CardStat] = 'Blaster Javelin  '
+global.CardName[CardStat] = 'Blaster Javelin   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
 
-AUTO: When this unit is placed by riding from "Fullbau" with a Ren icon, COST [reveal a grade 3 with a Ren icon from your ride deck], look at the top seven cards of your deck, choose up to one unit card without sentinel with a Ren icon, reveal it and put it into your hand, and shuffle your deck.
+AUTO: When this unit is placed by riding from "Fullbau" with a Ren icon, COST [reveal a grade 3 with a Ren icon from your ride deck], look at the top seven cards of your deck, choose up to one unit card without sentinel with a Ren icon, reveal it and put it into hand, and shuffle the deck.
 
-ACT [Soul/Drop]: COST [Counter Blast 1, and put this card that started the game in your ride deck into your ride deck face up], search your deck or drop for up to one "Blaster Dark" with a Ren icon, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+ACT [Soul/Drop]: COST [Counter Blast 1, and put this card that started the game in your ride deck into your ride deck face up], search your deck or drop for up to one "Blaster Dark" with a Ren icon, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -13167,7 +13167,7 @@ CardStat = 16038
 global.CardName[CardStat] = 'Blaster Dark    '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
 
-AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COST [either Counter Blast 1 or Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and if this unit was placed on VC, draw a card. You cannot ride units that do not have a Ren icon until end of this fight.
+AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COST [Counter Blast 1 or Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and if this unit was placed on VC, draw a card. You cannot ride units that do not have a Ren icon until end of this fight.
 
 AUTO [RC]: When your grade 3 or greater vanguard with a Ren icon attacks, if your rear-guard has not stand this battle phase, COST [Soul Blast 1], and stand this unit. If you stand and two or more of either player’s unit was retired by your vanguard’s ability this turn, perform drive checks for the battle this unit attacked until end of turn.
 
@@ -13182,10 +13182,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16039
 {
-global.CardName[CardStat] = 'Phantom Blaster Dragon   '
+global.CardName[CardStat] = 'Phantom Blaster Dragon    '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Abyss Dragon
 
-CONT: The normal ride of this card from a grade 3 unit with a Ren icon and different card name from this card also becomes a persona ride.
+CONT: The normal ride of this card from a grade 3 unit with a Ren icon and a different card name from this card also becomes a persona ride.
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater and your soul has a "Blaster Dark", this unit gets power +5000. (Active on your opponent’s turn too)
 
@@ -13221,11 +13221,11 @@ CardStat = 16041
 global.CardName[CardStat] = 'Dark Mage, Badhabh Caar  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Elf
 
-CONT: The normal ride of this card from a grade 3 unit with a Ren icon and different card name from this card also becomes a persona ride.
+CONT: The normal ride of this card from a grade 3 unit with a Ren icon and a different card name from this card also becomes a persona ride.
 
 CONT: If your vanguard has a Ren icon, this card gets all of the following.
-• AUTO: When this unit is placed from hand on VC or RC, if you did not look at your deck by the ability of another card with the same name as this unit this turn, look at the top five cards of your deck, choose up to one unit card with a Ren icon, call it to RC, and shuffle your deck. (Hard OPT)
-• AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle.
+• AUTO: When this unit is placed from hand on VC or RC, if you did not look at your deck by the ability of another card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one unit card with a Ren icon, call it to RC, and shuffle your deck.
+• AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
 • CONT [GC]: This unit gets shield +10000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
@@ -13235,6 +13235,7 @@ global.PersonaRideCardName[CardStat] = 'Ren Icon'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 16042
@@ -13244,7 +13245,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
 
 AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard has a Ren icon, this unit gets power +5000 until end of turn.
 
-AUTO [Drop]: When your grade 3 or greater vanguard with a Ren icon is attacked, COST [bind this card], and that unit gets power +10000 until end of battle. You cannot bind cards with the same name as this card from drop until end of turn.'
+AUTO [Drop]: When your grade 3 or greater vanguard with a Ren icon is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same card name as this card from drop until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
@@ -13255,12 +13256,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16043
 {
-global.CardName[CardStat] = 'Black Sage, Charon  '
+global.CardName[CardStat] = 'Black Sage, Charon   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Giant
 
-ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon and all of your rear-guards have a different name from this card, COST [Soul Blast 1], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon and all of your rear-guards have a different card name from this card, COST [Soul Blast 1], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 
-ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon, COST [remove two cards with the same name as this unit from drop], and Counter Charge 1.'
+ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon, COST [remove two cards with the same card name as this unit from drop], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
@@ -13271,14 +13272,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16044
 {
-global.CardName[CardStat] = 'Darkness Maiden, Macha  '
+global.CardName[CardStat] = 'Darkness Maiden, Macha   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
 
 AUTO [RC]: When this unit is placed on RC, if your vanguard has a Ren icon, COST [Counter Blast 1], and perform one of the following.
 • Draw a card.
-• Search your deck or drop for up to one of either a grade 1 or less with a Ren icon or a "Blaster Dark" with a Ren icon, call it to RC, and if you searched your deck, shuffle your deck.
+• Search your deck or drop for up to one grade 1 or less unit card with a Ren icon or a "Blaster Dark" with a Ren icon, call it to RC, and if you searched the deck, shuffle the deck.
 
-CONT [RC/GC]: If your grade 3 or greater vanguard has a Ren icon, this unit gets power +5000 / Shield +5000. (Active on your opponent’s turn too)'
+CONT [RC/GC]: If your grade 3 or greater vanguard has a Ren icon, this unit gets power +5000 / Shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
@@ -13289,15 +13290,15 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16045
 {
-global.CardName[CardStat] = 'Skull Witch, Nemain  '
+global.CardName[CardStat] = 'Skull Witch, Nemain   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Elf
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with a Ren icon, COST [Energy Blast 3, and put a card from your hand into your soul], and draw two cards.
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with a Ren icon, COST [Energy Blast 3 & put a card from hand into soul], and draw two cards.
 
-CONT [RC]: If you have a vanguard with a Ren icon, this unit gets power +5000. Then if your vanguard is grade 3 or greater, this unit gets "Boost". (Active on your opponent’s turn too)
+CONT [RC]: If you have a vanguard with a Ren icon, this unit gets power +5000. Then, if your vanguard is grade 3 or greater, this unit gets "Boost". (Active on opponent’s turn too)
 
 CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with a Ren icon, it may be regarded as retiring two rear-guards.'
-global.UnitGrade[CardStat] = 1
+global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
 }
