@@ -701,7 +701,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 8607
 {
-global.CardName[CardStat] = 'Blaster Javelin   '
+global.CardName[CardStat] = 'Blaster Javelin  '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Human
 
 AUTO: When this unit is rode upon by "Blaster Dark", reveal the top card of your deck, call it to RC as rest if it is a unit card, and discard it if it isn’t.
@@ -11383,7 +11383,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this card is revealed during your drive check, if you have a grade 3 or greater vanguard with "Leuhan" in its card name, you may call this unit to an open back row RC.
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a non-senyinel normal unit from your drop, and put it on the bottom of the deck.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Leuhan" in its card name, COST [put this unit into soul], choose a non-sentinel normal unit from your drop, and put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -13062,13 +13062,10 @@ global.CardText[CardStat] = 'Keter Sanctuary/Blitz Order
 CONT: You may only have up to two "Forefront Oriflamme" in a deck.
 
 If your vanguard’s grade is less than your opponent’s vanguard’s grade, this ability can be played while ignoring grade.
-
 Remove this card, choose a unit being attacked, until end of that battle, it gets power +15000, and perform all of the following.
 • If you went second, and you did not put a Persona Shield ticket into hand by the ability of a card with the same card name as this card this fight, put a Persona Shield ticket into hand, and until end of turn, you can play an additional order, and cannot play orders other than Persona Shield tickets.
 • If your opponent persona rode this turn, choose a unit being attacked, and it gets power +5000 until end of that battle.
-
 (SHIFT + left click to get a Persona Shield ticket)
-
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
@@ -13081,3 +13078,299 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16033
+{
+global.CardName[CardStat] = 'Formulights, Soruba'
+global.CardText[CardStat] = 'Keter Sanctuary/Math Ghost
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16034
+{
+global.CardName[CardStat] = 'Formulights, Ruula'
+global.CardText[CardStat] = 'Keter Sanctuary/Math Ghost
+
+CONT [VC]: C+P=X (During your main phase, when you call a unit or play an order, increase your Formula Count by 1 until end of your opponent’s next turn)
+
+CONT [VC]: When you would ride a card with "Formulights" in its card name from ride deck, you can ride with "Soul Blast 1" instead of "choose a card from hand, and discard it".
+
+(SHIFT + left click to increase Formula Count.)
+(SHIFT + right click to decrease Formula Count.)
+(Middle click or hover and press SPACE to set Formula Count.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16035
+{
+global.CardName[CardStat] = 'Formulights, Stila'
+global.CardText[CardStat] = 'Keter Sanctuary/Mathroid
+
+CONT [VC]: C+P=X (During your main phase, when you call a unit or play an order, increase your Formula Count by 1 until end of your opponent’s next turn)
+
+AUTO: When this unit is rode upon by a grade 3 card with "Formulights" in its card name, look at the top seven cards of your deck, choose up to one card with "Formulights" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+(SHIFT + left click to increase Formula Count.)
+(SHIFT + right click to decrease Formula Count.)
+(Middle click or hover and press SPACE to set Formula Count.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16036
+{
+global.CardName[CardStat] = 'Fullbau   '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/High Beast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+CardStat = 16037
+{
+global.CardName[CardStat] = 'Blaster Javelin   '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
+
+AUTO: When this unit is placed by riding from "Fullbau" with a Ren icon, COST [reveal a grade 3 with a Ren icon from your ride deck], look at the top seven cards of your deck, choose up to one unit card without sentinel with a Ren icon, reveal it and put it into hand, and shuffle the deck.
+
+ACT [Soul/Drop]: COST [Counter Blast 1, and put this card that started the game in your ride deck into your ride deck face up], search your deck or drop for up to one "Blaster Dark" with a Ren icon, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16038
+{
+global.CardName[CardStat] = 'Blaster Dark    '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
+
+AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COST [Counter Blast 1 or Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and if this unit was placed on VC, draw a card. You cannot ride units that do not have a Ren icon until end of this fight.
+
+AUTO [RC]: When your grade 3 or greater vanguard with a Ren icon attacks, if your rear-guard has not stand this battle phase, COST [Soul Blast 1], and stand this unit. If you stand and two or more of either player’s unit was retired by your vanguard’s ability this turn, perform drive checks for the battle this unit attacked until end of turn.
+
+AUTO [RC] [1/Turn]: When this unit attacks a grade 3 or greater unit, if your vanguard has a Ren icon, this unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16039
+{
+global.CardName[CardStat] = 'Phantom Blaster Dragon    '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Abyss Dragon
+
+CONT: The normal ride of this card from a grade 3 unit with a Ren icon and a different card name from this card also becomes a persona ride.
+
+CONT [VC]: If your opponent’s vanguard is grade 3 or greater and your soul has a "Blaster Dark", this unit gets power +5000. (Active on your opponent’s turn too)
+
+ACT [VC] [1/Turn]: COST [Counter Blast 1, and retire two rear-guards with a Ren icon], choose one of your opponent’s rear-guards, retire it, and until end of turn, this unit gets power +10000 / critical +1 and your opponent’s vanguard gets power -5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Ren Icon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16040
+{
+global.CardName[CardStat] = 'Witch of Nostrum, Arianrhod  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Elf
+
+AUTO: When this unit is placed on RC, you may draw a card. If you drew, choose a card from your hand, and discard it.
+
+CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with a Ren icon, it may be regarded as retiring two rear-guards.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16041
+{
+global.CardName[CardStat] = 'Dark Mage, Badhabh Caar  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Elf
+
+CONT: The normal ride of this card from a grade 3 unit with a Ren icon and a different card name from this card also becomes a persona ride.
+
+CONT: If your vanguard has a Ren icon, this card gets all of the following.
+• AUTO: When this unit is placed from hand on VC or RC, if you did not look at your deck by the ability of another card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one unit card with a Ren icon, call it to RC, and shuffle your deck.
+• AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+• CONT [GC]: This unit gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Ren Icon'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16042
+{
+global.CardName[CardStat] = 'Knight of Darkness, Rugos  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
+
+AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard has a Ren icon, this unit gets power +5000 until end of turn.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with a Ren icon is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same card name as this card from drop until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16043
+{
+global.CardName[CardStat] = 'Black Sage, Charon   '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Giant
+
+ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon and all of your rear-guards have a different card name from this card, COST [Soul Blast 1], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+ACT [Drop]: If your grade 3 or greater vanguard has a Ren icon, COST [remove two cards with the same card name as this unit from drop], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16044
+{
+global.CardName[CardStat] = 'Darkness Maiden, Macha   '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
+
+AUTO [RC]: When this unit is placed on RC, if your vanguard has a Ren icon, COST [Counter Blast 1], and perform one of the following.
+• Draw a card.
+• Search your deck or drop for up to one grade 1 or less unit card with a Ren icon or a "Blaster Dark" with a Ren icon, call it to RC, and if you searched the deck, shuffle the deck.
+
+CONT [RC/GC]: If your grade 3 or greater vanguard has a Ren icon, this unit gets power +5000 / Shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16045
+{
+global.CardName[CardStat] = 'Skull Witch, Nemain   '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Elf
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with a Ren icon, COST [Energy Blast 3 & put a card from hand into soul], and draw two cards.
+
+CONT [RC]: If you have a vanguard with a Ren icon, this unit gets power +5000. Then, if your vanguard is grade 3 or greater, this unit gets "Boost". (Active on opponent’s turn too)
+
+CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with a Ren icon, it may be regarded as retiring two rear-guards.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16046
+{
+global.CardName[CardStat] = 'Dark Shield, Mac Lir  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
+
+CONT: Sentinel (You may only have up to four cards with "CONT: Sentinel" in a deck.)
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16047
+{
+global.CardName[CardStat] = 'Grim Reaper '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Demon/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16048
+{
+global.CardName[CardStat] = 'Darkside Trumpeter  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Angel/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 2
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16049
+{
+global.CardName[CardStat] = 'Abyss Healer  '
+global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Angel/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16050
+{
+global.CardName[CardStat] = 'Howl Owl  '
+global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Ren Icon/High Beast/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 1
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
