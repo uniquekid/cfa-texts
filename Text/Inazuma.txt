@@ -871,3 +871,43 @@ global.CardCopies[CardStat] = 2
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16053
+{
+global.CardName[CardStat] = 'Second-Life Class President, Amelia Rainwalker'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: DF
+
+AUTO: When this unit is put on GC, this unit gets shield +5000 for each card with "Amelia Rainwalker" in its card name in your drop.
+
+CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Story> vanguard, COST [Energy Blast 2], choose a special move with grade less than or equal to your vanguard from your face down special move zone, and use it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16054
+{
+global.CardName[CardStat] = 'Hoopsie-Loop'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Amelia Rainwalker" in its card name
+
+AUTO [Special Move Zone]: When this special move is used, perform all of the following according to the number of cards with "Amelia Rainwalker" in their card names in total on your RC and in your drop.
+• 2 or more - Until end of your opponent’s next turn, the unit that used this special move gets power +5000.
+• 4 or more - Until end of your opponent’s next turn, the unit that used this special move gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
