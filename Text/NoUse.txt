@@ -1149,24 +1149,24 @@ global.CardText[CardStat] = 'Blast
 
 CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Estacion" in its card name, it gets all of the following.
 • CONT [RC]: This unit cannot be affected by your opponent’s cards.
-• ACT [RC] 1/Turn: COST [Put two or more, up to three other rear-guards face up as this unit’s plant gauges], and draw a card.
-• CONT [RC]: During your turn, if your vanguard is grade 3 or greater, all of your front row units get power +5000 for every three of this unit’s gauge.
+• ACT [RC] 1/Turn: COST [Put two or more, up to three other rear-guards face up as this unit’s plant gauge], and draw a card.
+• CONT [RC]: During your turn, if your vanguard is grade 3 or greater, all of your front row units get power +5000 for every three gauges that this unit have.
 
 (SHIFT + left click to count up gauges.)
 (SHIFT + right click to count down gauges.)
 (Middle click or hover and press SPACE to set number of gauges.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 14112
 {
-global.CardName[CardStat] = 'Assemble! Brave Knights!'
+global.CardName[CardStat] = 'Brave Knights Assemble!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT [Order Zone]: If you have a vanguard with "Bravern" in its card name, all of your units with "TS" in their card names get shield +5000.
@@ -1182,12 +1182,12 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 14130
 {
-global.CardName[CardStat] = 'A Soul-inspiring Sword Locked Clash'
+global.CardName[CardStat] = 'Soul-Stirring Clash'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 ACT [Order Zone] 1/Turn: COST [Energy Blast 3], choose a "Hero of the Future, Lulu" from your drop, and call it to RC.
 
-AUTO [Order Zone]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Superbia" in its card name, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, until end of turn, that unit cannot intercept, and when your vanguard with "Superbia" in its card name would attack, it also battles that chosen unit.'
+AUTO [Order Zone]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Superbia" in its card name, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, until end of turn, that unit cannot intercept, and when your vanguard with "Superbia" in its card name would attack, it also battles that chosen unit as well.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 }
