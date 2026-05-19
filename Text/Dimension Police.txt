@@ -19,7 +19,7 @@ CardStat = 229
 global.CardName[CardStat] = 'Dimensional Robo, Daibattles'
 global.CardText[CardStat] = 'Dimension Police/Battleroid/Critical Trigger
 
-ACT [Soul]: [Put this unit into your drop zone] Choose one of your «Dimension Police» vanguards, and that unit gets power +3000 until end of turn.'
+ACT [Soul]: [Put this card into your drop zone] Choose one of your «Dimension Police» vanguards, and that unit gets power +3000 until end of turn.'
 }
 global.TriggerUnit[CardStat] = 2
 
@@ -127,7 +127,7 @@ CardStat = 240
 global.CardName[CardStat] = 'Dimensional Robo, Daimariner'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [Soul]: [Put this unit into your drop zone] Choose one of your «Dimension Police» vanguards, and that unit gets power +3000 until end of turn.'
+ACT [Soul]: [Put this card into your drop zone] Choose one of your «Dimension Police» vanguards, and that unit gets power +3000 until end of turn.'
 }
 
 
@@ -136,8 +136,11 @@ CardStat = 241
 global.CardName[CardStat] = 'Dimensional Robo, Dailander'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO: [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose one of your units with "Dimension Robo" in its card name, and that unit gets power +4000 until end of turn.'
+AUTO: [Counter Blast 1] When this unit is placed on RC, you may pay the cost. If you do, choose another of your units with "Dimension Robo" in its card name, and that unit gets power +4000 until end of turn.'
+global.UnitGrade[CardStat] = 0
 }
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 242
@@ -1789,7 +1792,7 @@ CardStat = 3822
 global.CardName[CardStat] = 'Elegance Feather'
 global.CardText[CardStat] = 'Dimension Police/Alien
 
-AUTO: [Choose a card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, this unit gets power +4000 until end of turn. Choose one of your vanguards, until end of turn, it gets power +4000, and "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card.".'
+AUTO: [Choose a card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, this unit gets power +4000 until end of turn. Choose one of your vanguards, and until end of turn, it gets power +4000, and "AUTO [VC]: When this unit’s attack hits a vanguard, draw a card.".'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 6
 }
@@ -2371,7 +2374,7 @@ CardStat = 5401
 global.CardName[CardStat] = 'Dimensional Robo, Daicutter'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-AUTO [RC]: When your unit with "Dimensional Robo" in its card name is placed on VC, this unit gets power +2000 until end of turn. Then, if the unit that was placed is grade 4 or greater, Soul Charge 1, and this unit gets power +2000 until end of turn.'
+AUTO [RC]: When your unit with "Dimensional Robo" in its card name is placed on VC, this unit gets power +2000 until end of turn. Then, if the unit placed is grade 4 or greater, Soul Charge 1, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }
@@ -2683,7 +2686,7 @@ CardStat = 5514
 global.CardName[CardStat] = 'Cosmic Hero, Grandaider'
 global.CardText[CardStat] = 'Dimension Police/Battleroid
 
-ACT [RC] Generation Break 1: [Rest this unit & Choose one of your other rear-guards, and rest it] Choose one of your vanguards, and it gets power +10000 until end of turn.'
+ACT [RC] Generation Break 1: [Rest this unit & Rest one of your other rear-guards] Choose one of your vanguards, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 6
 }

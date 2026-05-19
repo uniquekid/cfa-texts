@@ -3635,19 +3635,20 @@ CardStat = 5939
 global.CardName[CardStat] = 'Blue Storm Dragon, Maelstrom  '
 global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and all of your units in the front row get power +3000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and all of your front row units get power +3000 until end of turn.
 
-AUTO [VC] 1/Turn: When your rear-guard’s attack hits a vanguard, if it is the third or fourth battle of this turn, COST [discard two cards from your hand], stand this unit.
+AUTO [VC] 1/Turn: When your rear-guard’s attack hits a vanguard, if it is the third or fourth battle of that turn, COST [discard two cards from your hand], and stand this unit.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 3
-global.UseCounters[CardStat] = 1
-}
 global.OrangeTokenAdd[CardStat] = 1
+}
 global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 5940
