@@ -12899,7 +12899,6 @@ CONT [VC]: Your back row center circle becomes an Astral Plane, and during your 
 ACT [VC] 1/Turn: COST [Soul Blast 2], choose up to two cards from your drop, choose a card from among them, put it face down as your Astral Plane gauge, choose a card from among them, and call it to RC. 
 
 (SHIFT + left click to create Astral Plane.)
-
 (Hold TAB for Astral Plane info.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
@@ -12947,11 +12946,17 @@ CardStat = 15878
 {
 global.CardName[CardStat] = 'Quaking Heavenly Dragon, Astraios Dragon '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/Cosmo Dragon/Astral Poet
+<<<<<<< Updated upstream
 CONT: The normal ride on this card by a grade 3 card with a Shinemon icon also becomes a persona ride.
+=======
+
+CONT: The normal ride of this card from a grade 3 unit with a Shinemon icon and a different card name from this card also becomes a persona ride.
+>>>>>>> Stashed changes
 AUTO: When this unit is placed on VC or RC, if your other unit with the same card name as this unit was not placed this turn, choose a card from your drop, and put it face down as your Astral Plane gauge. Then, if you have four or more Astral Plane gauges, COST [Counter Blast 1], and draw a card.
 CONT [VC]: Your back row center circle becomes an Astral Plane.
 AUTO [VC/RC]: When a card revealed for the drive check of your "Giant Deity of Distant World, Valkerion" is put into soul, this unit gets power +2000 until end of turn.
 AUTO [RC]: When your card is put into deck from Astral Plane, COST [put this unit into soul], and draw a card.
+
 (SHIFT + left click to create Astral Plane.)
 (Hold TAB for Astral Plane info.)'
 global.UnitGrade[CardStat] = 3
@@ -12960,6 +12965,7 @@ global.CardInClan[CardStat] = 21
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Shinemon Icon'
 global.AnotherSide[CardStat] = 6915
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
