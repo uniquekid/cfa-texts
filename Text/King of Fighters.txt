@@ -990,7 +990,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16115
 {
-global.CardName[CardStat] = 'Chris of the Destiny of Flames'
+global.CardName[CardStat] = 'Chris of the Flames of Destiny'
 global.CardText[CardStat] = 'The King of Fighters/Orochi Hakkesshu/Four Heavenly Kings of Orochi/Orochi Power
 
 AUTO [VC]: When this unit attacks, COST [Energy Blast 3], choose one of your <Orochi Hakkesshu> rear-guards, stand it and it gets power +10000 until end of turn.
@@ -1060,7 +1060,7 @@ CardStat = 16119
 global.CardName[CardStat] = 'Continue'
 global.CardText[CardStat] = 'The King of Fighters/Over Trigger
 
-Additional Effect - Choose one of your units, it gets Critical +1 until the end of this turn, and during this fight, you get "[1/Fight: When your damage check reveals a card other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, and heal it. At the end of this turn, discard all cards in your hand, Counter Charge 5, Energy Charge 7.].'
+Additional Effect - Choose one of your units, it gets Critical +1 until the end of this turn, and during this fight, you get "[1/Fight: When your damage check reveals a card other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, and heal it. At the end of that turn, discard all cards in your hand, Counter Charge 5, Energy Charge 7.].'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 16
@@ -1069,3 +1069,156 @@ global.CardCopies[CardStat] = 1
 global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 16120
+{
+global.CardName[CardStat] = 'The Man Who Possesses "K" DNA, K’'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Pure Violence
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16121
+{
+global.CardName[CardStat] = 'Crimson Flame, K’'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Pure Violence
+
+AUTO: When this unit is placed by riding from a grade 0 with "K’" in its card name, COST [reveal a grade 3 card with "K’" in its card name from ride deck], look at the top seven cards of your deck, choose a grade 2 or lower non-sentinel normal unit, reveal it, put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16122
+{
+global.CardName[CardStat] = 'The Beast of the Rebellious Flame, K’'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Pure Violence
+
+AUTO: When placed by riding from a grade 1 with "K’" in its card name, draw a card, choose up to one card with [Striker Skill] in your hand and put it in the order zone as a Striker. If you put a card, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16123
+{
+global.CardName[CardStat] = 'He Who Surpasses "K", K’'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Pure Violence
+
+AUTO [VC]: When this unit attacks, COST [Energy Blast 3], choose one of your rear-guards, and stand it. Then, choose any number of Strikers in your order zone with different card names from each other. At the end of that turn, choose up to one card with [Striker Skill] in your hand, and put it in the order zone as a Striker. If you put a card, draw a card. (When Strikers in the order zone are chosen, activate their [Striker Skill])
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], and this unit gets power +10000 / drive +1 until end of turn.
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and this unit gets power +10000 / critical +1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16124
+{
+global.CardName[CardStat] = 'Steel Human Weapon, Maxima'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/"Type M" Fighting Style
+
+AUTO [Drop]: When your greater 3 or greater vanguard with "K’" in its card name is placed during the ride phase, if you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], call this card to RC, and it gets power +5000 until end of turn.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "K’" in its card name, this unit cannot be chosen by your opponent’s card effects, and it cannot be retired by your opponent’s card effects. If your opponent’s vanguard is grade 3 or greater, it gets power +5000 / shield +10000.
+
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, all of your front row units get power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16125
+{
+global.CardName[CardStat] = 'Ice Doll, Kula Diamond'
+global.CardText[CardStat] = 'The King of Fighters/Modified Human/Anti K’ Arts
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "K’" in its card name, COST [Counter Blast 1 or Energy Blast 3], search your deck or drop for to one normal unit with "Foxy" or "Diana" in its card name, and call it to a back row RC. If you searched the deck, shuffle the deck. If you have grade 3 or greater vanguard, search for up to two instead of one.
+AUTO [RC]: When this unit attacks, it gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, and you have a normal unit with "Foxy" and a normal unit with "Diana" on RC, it gets power +15000 instead of +5000.
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, choose a card with [Striker Skill] in your drop and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16126
+{
+global.CardName[CardStat] = 'Crimson Agent, Vanessa'
+global.CardText[CardStat] = 'The King of Fighters/Secret Agent/Boxing
+
+AUTO: When this unit is placed on RC, look at the top seven cards of your deck, choose up to one normal unit with "K’", "Maxima" or "Ramon" in its card name, reveal it, put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.
+
+AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater, it gets power +5000 until end of that battle.
+
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16127
+{
+global.CardName[CardStat] = 'The Magnificent Bee, Foxy'
+global.CardText[CardStat] = 'The King of Fighters/NESTS Member/Swordplay Derived from Fencing
+
+CONT [RC]: Your rear-guard with "Kula" in its card name in the same columns as this unit cannot be chosen by your opponent’s card effects, and cannot be retired by your opponent’s card effects.
+
+CONT [Back Row RC]: This unit gains "Intercept" and can intercept from the back row.
+
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, choose one of your rear-guards, and it gains power +10000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it also gets critical +1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16128
+{
+global.CardName[CardStat] = 'The Glamorous Butterfly, Diana'
+global.CardText[CardStat] = 'The King of Fighters/NESTS Member/Swordplay Derived from Fencing
+
+CONT [RC]: Your rear-guard with "Kula" in its card name in the same columns as this unit cannot be attacked.
+
+CONT [Back Row RC]: This unit gains "Intercept" and can intercept from the back row.
+
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, choose one of your rear-guards, and it gains power +10000 until end of turn. If your opponent’s vanguard is grade 3 or greater, stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16129
+{
+global.CardName[CardStat] = 'The Strongest Human, Ramon'
+global.CardText[CardStat] = 'The King of Fighters/Luchador/Lucha Libre
+
+CONT [RC/GC]: If you have a card with "Vanessa" on your RC or in your order zone, this unit gets power +5000 / shield +10000. (Active on opponent’s turn too)
+
+AUTO [Order Zone] [Striker Skill]: When this card is chosen by your vanguard’s ability, return this card to your hand, search your deck or drop for a card with "Vanessa" in its card name, and put it in the order zone as a Striker. If your searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
