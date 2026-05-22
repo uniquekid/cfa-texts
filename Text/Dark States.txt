@@ -9790,14 +9790,15 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
+//Slightly altered wording on last effect to fit
 CardStat = 15278
 {
-global.CardName[CardStat] = 'Collapsing Hole Colossus'
+global.CardName[CardStat] = 'All-crushing Revolution Colossus'
 global.CardText[CardStat] = 'Dark States/Gear Colossus
 
-AUTO: When this unit is placed on RC, choose a grade 3 <Gear Dragon> from your ride deck, and reveal it. If you revealed a card or you have a grade 3 or greater <Gear Dragon> vanguard, COST [Counter Blast 1], draw a card, and if you have a grade 3 or greater vanguard, this unit gets power +5000.
-AUTO: When this unit is placed on GC from hand, if you have a <Gear Dragon> vanguard, choose up to one «Dark States» from your bind zone, and put it on the bottom of the deck. If you chose a card, COST [Energy Blast 3 or Soul Blast 1 card with the same card name as your vanguard], and this unit gets shield +5000 for each grade of the card chosen by this effect until end of that battle.
-AUTO: When this unit is put from RC to deck or bind zone by a card ability, if you have a <Gear Dragon> vanguard, choose one of your rear-guards, and reduce the cost for that unit’s ability by Counter Blast 1 until end of turn.'
+AUTO: When this unit is placed on RC, choose a grade 3 <Gear Dragon> from your ride deck, and reveal it. If you revealed a card, or you have a grade 3 or greater <Gear Dragon> vanguard, COST [Counter Blast 1], draw a card, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed on GC from hand, if you have a <Gear Dragon> vanguard, choose up to one «Dark States» from your bind zone, and put it on the bottom of the deck. If you chose a card, COST [Energy Blast 3 or Soul Blast 1 card with the same card name as your vanguard], and this unit gets shield +5000 until end of that battle for each grade of the card chosen by this effect.
+AUTO: When this unit is put on deck or in bind zone from RC by your card’s ability, if you have a <Gear Dragon> vanguard, choose one of your rear-guards, and the next cost you pay for that unit’s ability is reduced by Counter Blast 1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9835,12 +9836,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15295
 {
-global.CardName[CardStat] = 'Mythisch of Purple Flames, Karvaneil'
+global.CardName[CardStat] = 'Mythisch of Purple Flames, Carvuneil'
 global.CardText[CardStat] = 'Dark States/Mythisch
 
-AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Drajeweled" in its card name from your ride deck, and you may reveal it. If you revealed a card, or if you have a grade 3 or greater vanguard with "Drajeweled" in its card name, Energy Charge 3, and until end of turn, you cannot  Energy Blast except by the card abilities of cards with "Demonic Stone Dragon" or "Demonic Jewel Dragon" in their card names.
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Drajeweled" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Drajeweled" in its card name, Energy Charge 3, and you cannot Energy Blast other than by the abilities of cards with "Demonic Stone Dragon" or "Demonic Jewel Dragon" in their card names until end of turn.
 
-AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of the ability of your grade 3 or greater vanguard with "Drajeweled" in its card name, COST [put this unit into soul], draw a card, and if your rear-guards did not stand by a card’s ability during this battle phase, choose one of your front-row rear-guards, and stand it.'
+AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of the ability of your grade 3 or greater vanguard with "Drajeweled" in its card name, COST [put this unit into soul], draw a card, if your rear-guard did not stand this battle phase, choose one of your front-row rear-guards, and stand it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10037,8 +10038,8 @@ global.CardName[CardStat] = 'Sky-engraving Decree, Urut&Luael'
 global.CardText[CardStat] = 'Dark States/Keter Sanctuary/Gearoid/Angel
 
 AUTO: When this card is put in bind zone or gauge zone by the ability of your grade 3 or greater vanguard with "Liael" in its card name, if you did not look at the deck by the ability of a card with the same card name as this card this turn, look at the top five cards of your deck, choose up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
-AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Liael" in its card name from ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Counter Blast 1], and draw a card.
-AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. If it got power +10000 by this effect, choose up to one normal unit without Sentinel from your drop, and put it on the bottom of the deck or into soul.'
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, COST [Counter Blast 1], and draw a card.
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Liael" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. If it got power +10000 by this effect, choose up to one non-sentinel normal unit from your drop, and put it on the bottom of your deck or into soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 global.DCards2[CardStat] = 3
