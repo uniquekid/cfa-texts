@@ -11787,14 +11787,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15321
 {
-global.CardName[CardStat] = 'Zero of Salvation, Blangdmire Fantome'
+global.CardName[CardStat] = 'Zero of Salvation, Blangdmire "Fantome"'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & bind four cards from drop], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000. If your bind zone has ten or more face up cards, they also get power +5000, and if it has thirteen or more face up cards, they also get power +5000.", and "AUTO [VC]: When this unit attacks, choose a face up card from your bind zone, and call it to RC.".
+ACT [VC] 1/Turn: COST [Counter Blast 1 & bind four cards from drop], and until end of turn, this unit gets "CONT [VC]: All of your front row units get power +5000. If your bind zone has ten or more face up cards, they also get power +5000, and if it has thirteen or more face up cards, they also get power +5000." and "AUTO [VC]: When this unit attacks, choose a face up card from your bind zone, and call it to RC.".
 
 [Fantome Skill] - ACT [VC] 1/Turn: COST [Energy Blast 3 & bind two or more, up to four Crimson Moon cards from hand, soul, or drop], and perform all of the following according to the number of Crimson Moon cards in your bind zone.
 • Two or more - Choose up to one card from your drop, and call it to RC.
-• Four or more - This unit gets critical +1 until end of turn. If you persona rode this turn, choose a card from damage zone, and heal it.'
+• Four or more - This unit gets critical +1 until end of turn. If you persona rode this turn, choose a card your from damage zone, and heal it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
@@ -11880,9 +11880,9 @@ CardStat = 15327
 global.CardName[CardStat] = 'Knight of Charity, Baadact'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
-AUTO [Bind Zone]: When your rear-guard is placed from bind zone during your battle phase, if you have a <Fantome> vanguard, and you do not have a rear-guard with the same card name as this card, COST [bind a card with a different card name from this card from drop], and call this card to a back row RC.
+AUTO [Bind Zone]: When your rear-guard is placed from the bind zone during your battle phase, if you have a <Fantome> vanguard, and you do not have a rear-guard with the same card name as this card, COST [bind a card with a different card name from this card from drop], and call this card to a back row RC.
 
-AUTO: When this unit is placed on RC other than during the battle phase, if you have a <Fantome> vanguard, look at the top five cards of your deck, choose up to one card with "Blangdmire" in its card name or up to one Crimson Moon card from among them, reveal it, put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a <Fantome> vanguard, look at the top five cards of your deck, choose up to one card with "Blangdmire" in its card name or up to one Crimson Moon card from among them, reveal it and put it into hand, and shuffle the deck.
 
 AUTO [RC]: At the end of the battle this unit boosted, if your bind zone has a Crimson Moon card, and you did not Counter Charge this turn, COST [retire this unit], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
@@ -12054,7 +12054,7 @@ CardStat = 15426
 global.CardName[CardStat] = 'King of Knights, Alfred   '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Aichi Icon/Human
 
-CONT: The normal ride of this card from a grade 3 unit with an Aichi icon in its different card name from this card is also treated as a persona ride.
+CONT: The normal ride of this card from a grade 3 unit with an Aichi icon and a different card name from this card also becomes a persona ride.
 
 CONT [VC]: During your turn, this unit cannot be boosted, and it gets power +2000 for each of your rear-guards. If you have three or more rear-guards, this unit gets drive +1, if you have four or more rear-guards, and you persona rode this turn, this unit gets critical +1.
 
@@ -12074,9 +12074,9 @@ CardStat = 15427
 global.CardName[CardStat] = 'Soul Saver Dragon  '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Aichi Icon/Cosmo Dragon
 
-CONT: The normal ride of this card from a grade 3 unit with an Aichi icon in its different card name from this card is also treated as a persona ride.
+CONT: The normal ride of this card from a grade 3 unit with an Aichi icon and a different card name from this card also becomes a persona ride.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 grade 3 card with an Aichi icon], until end of turn, this unit gets "AUTO [VC] 1/Turn: When this unit attacks, choose a column, stand all of your rear-guards in that column, and they get power +5000 until end of turn. If you persona rode this turn, choose two columns instead of one.", and all of your front row units get power +5000.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1 grade 3 card with an Aichi icon], this unit gets "AUTO [VC] 1/Turn: When this unit attacks, choose a column, stand all of your rear-guards in that column, and they get power +5000 until end of turn. If you persona rode this turn, choose two instead of one.", and all of your front row units get power +5000 until end of turn.
 
 CONT [GC]: If you have a vanguard with an Aichi icon, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 3
@@ -12892,7 +12892,7 @@ CardStat = 15874
 global.CardName[CardStat] = 'Gleaming Lord, Uranus '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/Noble/Astral Poet
 
-CONT: The normal ride on this card by a grade 3 card with a Shinemon icon also becomes a persona ride.
+CONT: The normal ride of this card from a grade 3 unit with a Shinemon icon and a different card name from this card also becomes a persona ride.
 
 CONT [VC]: Your back row center circle becomes an Astral Plane, and during your turn, if your opponent’s vanguard is grade 3 or greater, and you have three or more Astral Plane gauges, all of your front row units get power +5000.
 
@@ -12946,12 +12946,7 @@ CardStat = 15878
 {
 global.CardName[CardStat] = 'Quaking Heavenly Dragon, Astraios Dragon '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/Cosmo Dragon/Astral Poet
-<<<<<<< Updated upstream
-CONT: The normal ride on this card by a grade 3 card with a Shinemon icon also becomes a persona ride.
-=======
-
 CONT: The normal ride of this card from a grade 3 unit with a Shinemon icon and a different card name from this card also becomes a persona ride.
->>>>>>> Stashed changes
 AUTO: When this unit is placed on VC or RC, if your other unit with the same card name as this unit was not placed this turn, choose a card from your drop, and put it face down as your Astral Plane gauge. Then, if you have four or more Astral Plane gauges, COST [Counter Blast 1], and draw a card.
 CONT [VC]: Your back row center circle becomes an Astral Plane.
 AUTO [VC/RC]: When a card revealed for the drive check of your "Giant Deity of Distant World, Valkerion" is put into soul, this unit gets power +2000 until end of turn.
