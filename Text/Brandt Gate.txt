@@ -8206,7 +8206,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO: When this unit is rode upon, if you went second, draw a card.
 
-CONT [Soul]: If you have a vanguard with "Bravern" in its card name, this card cannot leave the soul by card abilities.'
+CONT [Soul]: If you have a vanguard with "Bravern" in its card name, this card cannot leave the soul by a card’s ability.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
 }
@@ -8216,32 +8216,32 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14105
 {
-global.CardName[CardStat] = 'Skilled Pilot, Isami Ao'
+global.CardName[CardStat] = 'Exceptional Pilot, Isami Ao'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO: When this unit is rode upon by "Mysterious Humanoid Robot, Bravern", COST [reveal a grade 3 card with "Bravern" in its card name from the ride deck], and put an Assemble! Brave Knighrs! token into your order zone.
+AUTO: When this unit is rode upon by "Unidentified Humanoid Robot, Bravern", COST [reveal a grade 3 card with "Bravern" in its card name from ride deck], and put a Brave Knights Assemble! token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
-global.TokenSummoner[CardStat] = 14112
-global.TokenSummonerPosition[CardStat] = 'RodeUpon'
-global.TokenSUmmonRodeUponNumber[CardStat] = 14106
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 14112
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 14112
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSUmmonRodeUponNumber[CardStat] = 14106
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 14106
 {
-global.CardName[CardStat] = 'Mysterious Humanoid Robot, Bravern'
+global.CardName[CardStat] = 'Unidentified Humanoid Robot, Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO: When this unit is rode upon by "Hero Who Saves the World, Bravern", search your deck or drop for up to one "Courage Combination, Bang Dragon", call it to back row center RC, and if your searched the deck, shuffle the deck.'
+AUTO: When this unit is rode upon by "World Savior, Bravern", search your deck or drop for up to one "Brave Combination, Bang Dragon", call it to back row center RC, and if your searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8251,12 +8251,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14107
 {
-global.CardName[CardStat] = 'Hero Who Saves the World, Bravern'
+global.CardName[CardStat] = 'World Savior, Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [VC]: D-LEGION "Two Unparallels Side-by-side, "Deathdrives" Superbia" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
+ACT [VC]: D-LEGION "Brother-in-Arms, Superbia(Deathdrives)" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
 
-AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-LEGION, and your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1 & discard a card from hand], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-LEGION, and your soul has a card with "Isami Ao" in its card name, COST [discard a card from hand & Counter Blast 1], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 }
@@ -8266,10 +8266,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14108
 {
-global.CardName[CardStat] = 'Courage Combination, Bang Dragon'
+global.CardName[CardStat] = 'Brave Combination, Bang Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [RC]: If you have one "Hero Who Saves the World, Bravern" vanguard, COST [put this unit into soul], search your deck, drop, or face up damage zone cards for up to one "Exploding Courage, Bang Bravern", and ride it as as stand. If you put a card from damage zone, put the top card of your deck into the damage zone.'
+ACT [RC]: If you have one "World Savior, Bravern" vanguard, COST [put this unit into soul], search your deck, hand, drop, or face up damage zone cards for up to one "Bursting Bravery, Bang Bravern", and ride it as as stand. If you searched the deck, shuffle the deck. If you chose from the damage zone, put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8279,12 +8279,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14109
 {
-global.CardName[CardStat] = 'Exploding Courage, Bang Bravern'
+global.CardName[CardStat] = 'Bursting Bravery, Bang Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO: When this unit is placed on VC by the ability of "Courage Combination, Bang Dragon", this unit gets power +5000 / drive +1 until end of turn.
+AUTO: When this unit is placed on VC by the ability of "Brave Combination, Bang Dragon", this unit gets power +5000 / drive +1 until end of turn.
 
-AUTO [VC]: At the end of your turn, choose a "Hero Who Saves the World, Bravern" from your soul, ride it as rest, choose a "Courage Combination, Bang Dragon" from your soul or drop, and call it to back row center RC as rest.'
+AUTO [VC]: At the end of your turn, choose a "World Savior, Bravern" from your soul, ride it as rest, choose a "Brave Combination, Bang Dragon" from your soul or drop, and call it to back row center RC as rest.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -8295,12 +8295,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14110
 {
-global.CardName[CardStat] = 'Two Unparallels Side-by-side, "Deathdrives" Superbia'
+global.CardName[CardStat] = 'Brother-in-Arms, Superbia(Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO [VC/RC]: When this unit attacks, if your order zone has an "Assemble! Brave Knights!" or "A Soul-inspiring Sword Locked Clash", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, you get "All of your front row units get power +5000." until end of turn.
+AUTO [VC/RC]: When this unit attacks, if your order zone has an "Brave Knights Assemble!" or "Soul-Stirring Clash", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, you get "All of your front row units get power +5000." until end of turn.
 
-AUTO [VC]: At the beginning of your ride step, if this unit is D-LEGION, COST [Energy Blast 3], search your deck or drop for up to one "Beyond the Explosive Courage! Burn Brave Big Bang", ride it as stand, and if you searched the deck, shuffle the deck.'
+AUTO [VC]: At the beginning of your ride step, if this unit is D-LEGION, COST [Energy Blast 3], search your deck or drop for up to one "Beyond Bang Brave!! Bang Brave Big Bravern", ride it as stand, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8310,14 +8310,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14111
 {
-global.CardName[CardStat] = 'Beyond the Explosive Courage! Burn Brave Big Bang'
+global.CardName[CardStat] = 'Beyond Bang Brave!! Bang Brave Big Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-CONT: This card cannot be ridden other than by the ability of "Two Unparallels Side-by-side, "Deathdrives" Superbia".
+CONT: This card cannot be ridden other than by the ability of "Brother-in-Arms, Superbia(Deathdrives)".
 
-AUTO: When this unit is placed on VC, this unit gets all of the following until end of turn. At the end of that turn, choose a "Hero Who Saves the World, Bravern" from you soul, and ride it as rest.
+AUTO: When this unit is placed on VC, this unit gets all of the following until end of turn. At the end of that turn, choose a "World Savior, Bravern" from you soul, and ride it as rest.
 • CONT [VC]: All of your front row units get power +10000.
-• AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your soul has a card with "Isame Ao" in its card name, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn.
+• AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your soul has a card with "Isami Ao" in its card name, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn.
 • AUTO [VC] 1/Turn: When this unit stand by your card’s ability, COST [discard a card from hand], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 5
@@ -8328,12 +8328,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14113
 {
-global.CardName[CardStat] = 'Big Sister Good at Taking Care of Others, "Brave Knights" Hibiki Riou'
+global.CardName[CardStat] = 'Caring Older Sister, Hibiki Rio(Brave Knights)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
-• AUTO [Drop]: When "Mid-ranged Support Specialized "TS" Rekka Self-guiding Missile" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+• CONT: If you have a rear-guard with the same card name as this card, you cannot call this card to RC. (It cannot be normal called as well)
+• AUTO [Drop]: When "Support "TS", Rekka(Guided Missiles)" is placed on your RC, COST [Soul Blast 1], and call this card to a RC in the same column as that called unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8343,12 +8343,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14114
 {
-global.CardName[CardStat] = 'Big Brother of the Elite Unit, "Brave Knights" Hiro Aulii'
+global.CardName[CardStat] = 'Everybody’s Big Bro, Hiro Aulii(Brave Knights)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
-• AUTO [Drop]: When "Close Quarters Type "TS" Struggle Rhino" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+• CONT: If you have a rear-guard with the same card name as this card, you cannot call this card to RC. (It cannot be normal called as well)
+• AUTO [Drop]: When a "Brawler "TS", Struggle Rhino" is placed on your RC, COST [Soul Blast 1], and call this card to a RC in the same column as that called unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8358,12 +8358,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14115
 {
-global.CardName[CardStat] = 'Unyielding Maiden, "Brave Knights" Akira Mishima'
+global.CardName[CardStat] = 'Fearless Maiden, Akira Mishima(Brave Knights)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
-• AUTO [Drop]: When "Guerilla Specialized "TS" Rekka Akira Custom" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+• CONT: If you have a rear-guard with the same card name as this card, you cannot call this card to RC. (It cannot be normal called as well)
+• AUTO [Drop]: When "Guerilla "TS", Rekka(Akira-Customized)" is placed on your RC, COST [Soul Blast 1], and call this card to a RC in the same column as that called unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8373,12 +8373,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14116
 {
-global.CardName[CardStat] = 'Easy-going Lady, "Brave Knights" Shelly Rolen'
+global.CardName[CardStat] = 'Free-Spirited Lady, Shelley Rolen(Brave Knights)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
-• AUTO [Drop]: When "Heavy Assault "TS" Dingo" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.'
+• CONT: If you have a rear-guard with the same card name as this card, you cannot call this card to RC. (It cannot be normal called as well)
+• AUTO [Drop]: When an "Assault "TS", Dingo" is placed on your RC, COST [Soul Blast 1], and call this card to a RC in the same column as that called unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8388,12 +8388,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14117
 {
-global.CardName[CardStat] = 'Mid-ranged Support Specialized "TS" Rekka Self-guiding Missile'
+global.CardName[CardStat] = 'Support "TS", Rekka(Guided Missiles)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: When this unit would be moved to GC, you may move rear-guards with "Hibiki Riou" in their card names in the same column as this unit at the same time.
-• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Hibiki Riou" in its card name, until end of turn that battle, your opponent cannot intercept, and when your opponent would call cards from hand to GC, they must call two or more at the same time.'
+• CONT: When this unit would move to GC, you may move your rear-guard with "Hibiki Rio" in its card name in the same column as this unit to GC at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Hibiki Rio" in its card name, until end of that battle, your opponent cannot intercept, and when your opponent would call cards from hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8403,11 +8403,11 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14118
 {
-global.CardName[CardStat] = 'Close Quarters Type "TS" Struggle Rhino'
+global.CardName[CardStat] = 'Brawler "TS", Struggle Rhino'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: When this unit would be moved to GC, you may move rear-guards with "Hiro Aulii" in their card names in the same column as this unit at the same time.
+• CONT: When this unit would move to GC, you may move your rear-guard with "Hiro Aulii" in its card name in the same column as this unit to GC at the same time.
 • AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Hiro Aulii" in its card name, Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
@@ -8418,11 +8418,11 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14119
 {
-global.CardName[CardStat] = 'Guerilla Specialized "TS" Rekka Akira Custom'
+global.CardName[CardStat] = 'Guerilla "TS", Rekka(Akira-Customized)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: When this unit would be moved to GC, you may move rear-guards with "Akira Mishima" in their card names in the same column as this unit at the same time.
+• CONT: When this unit would move to GC, you may move your rear-guard with "Akira Mishima" in its card name in the same column as this unit to GC at the same time.
 • AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Akira Mishima" in its card name, at the end of that battle, stand all of your rear-guards in the same column as this unit, and this unit gets "CONT [RC]: This unit cannot attack an opponent’s vanguard, and this unit can attack your opponent’s back row units." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
@@ -8433,11 +8433,11 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14120
 {
-global.CardName[CardStat] = 'Heavy Assault "TS" Dingo'
+global.CardName[CardStat] = 'Assault "TS", Dingo'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: When this unit would be moved to GC, you may move rear-guards with "Shelly Rolan" in their card names in the same column as this unit at the same time.
+• CONT: When this unit would move to GC, you may move your rear-guard with "Shelly Rolen" in its card name in the same column as this unit to GC at the same time.
 • AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Shelly Rolan" in its card name, until end of your opponent’s next turn, this unit cannot be retired by your opponent’s card effects, and it gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
@@ -8448,12 +8448,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14121
 {
-global.CardName[CardStat] = 'Hero of Justice, "Brave Knights" Lewis Smith'
+global.CardName[CardStat] = 'Hero of Justice, Lewis Smith(Brave Knights)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: If you have a rear-guard with the same card name as this unit, you cannot call this card to RC. (Also can’t normal call)
-• AUTO [Drop]: When "Confidential Model "TS" Rising Orthos" is placed on your RC, COST [Soul Blast 1], and call this card to a back row RC in the same column as that unit.
+• CONT: If you have a rear-guard with the same card name as this card, this card cannot be called to RC. (Also can’t normal call)
+• AUTO [Drop]: When "Next-Gen "TS" Rising Orthos" is placed on your RC, COST [Soul Blast 1], and call this card to a RC in the same column as that called unit.
 • AUTO [Back Row RC]: When your grade 3 or greater vanguard attacks, if your soul has a <Brave Bang Bravern!> card with "Isami Ao" or "Lulu" in its card name, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
@@ -8464,12 +8464,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14122
 {
-global.CardName[CardStat] = 'Confidential Model "TS" Rising Orthos'
+global.CardName[CardStat] = 'Next-Gen "TS", Rising Orthus'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: If you have a <Brave Bang Bravern!> vanguard, this card gets all of the following.
-• CONT: When this unit would be moved to GC, you may move rear-guards with "Lewis Smith" in their card names in the same column as this unit at the same time.
-• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Lewis Smith" in its card name, and your vanguard is "Beyond the Explosive Courage! Burn Brave Big Bang", at the end of that battle, COST [retire all of your rear-guards in the same column as this unit], search your deck or drop for up to one "Hero Who Saves the World, Bravern", call it to RC, and it gets power +10000 until end of turn. If you searched the deck, shuffle the deck.'
+• CONT: When this unit would move to GC, you may move your rear-guard with "Lewis Smith" in its card name in the same column as this unit to GC at the same time.
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit while boosted by a unit with "Brave Knights" in its card name, this unit gets power +5000 until end of turn. If the boosting unit has "Lewis Smith" in its card name, and your vanguard is "Beyond Bang Brave!! Bang Brave Big Bravern", at the end of that battle, COST [retire all rear-guards in the same column as this unit], search your deck or drop for up to one "World Savior, Bravern", call it to RC, and it gets power +10000 until end of turn. If you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8484,7 +8484,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Normal Order
 
 Play this if you have a <Brave Bang Bravern!> vanguard!
 
-Search your deck or drop for up to a total of two cards with "TS" or "Brave Knights" in their card names, call them to RC, and if you searched the deck, shuffle the deck.'
+Search your deck or drop for up to a total of two cards with "TS" or "(Brave Knights)" in their card names, call them to RC, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 30
@@ -8508,7 +8508,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14125
 {
-global.CardName[CardStat] = 'Invasive Mechanical Lifeform, "Deathdrives" Superbia'
+global.CardName[CardStat] = 'Alien Mechanical Lifeform, Superbia(Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with "Superbia" in its card name from the ride deck], choose an "Organic Lifeform, Lulu" from your soul, put it into hand, and Soul Charge 1 .
@@ -8523,28 +8523,28 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14126
 {
-global.CardName[CardStat] = 'Wielding Fury, "Deathdrives" Superbia'
+global.CardName[CardStat] = 'Brandished Passion, Superbia(Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO: When this unit is placed by riding from "Invasive Mechanical Lifeform, "Deathdrives" Superbia", COST [put an "Organic Lifeform, Lulu" from RC or hand into soul], search your deck for up to one "Hero of the Future, Lulu", reveal it and put it into hand, and shuffle the deck. If you revealed a card, put a Soul-inspiring Sword Locked Clash token into your order zone.
+AUTO: When this unit is placed by riding from "Invasive Mechanical Lifeform, Superbia(Deathdrives)", COST [put an "Organic Lifeform, Lulu" from RC or hand into soul], search your deck for up to one "Hero of the Future, Lulu", reveal it and put it into hand, shuffle the deck, and If you revealed a card, put a Soul-Stirring Clash token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
-global.TokenSummoner[CardStat] = 14130
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 14130
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 14130
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 14127
 {
-global.CardName[CardStat] = 'Walking My Path, "Deathdrives" Superbia'
+global.CardName[CardStat] = 'Lone Warrior, Superbia(Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and your soul has a "Hero of the Future, Lulu", this unit gets power +5000. (Active on opponent’s turn too)
@@ -8562,12 +8562,12 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14128
 {
-global.CardName[CardStat] = 'The Reality of Life, "Deathdrives" Verum Vita'
+global.CardName[CardStat] = 'True Life, Verum Vita(Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-CONT: You may only have one "The Reality of Life, "Deathdrives" Verum Vita" in a deck.
+CONT: You may only have one "True Life, Verum Vita(Deathdrives)" in a deck.
 
-AUTO [Drop]: When your damage check reveals a card other than heal trigger or over trigger, if you have a grade 3 or greater vanguard with "Deathdrives" in its card name, and your damage zone has five or more cards, COST [ride this card], and until end of fight, the number of cards in your damage zone for you to lose is seven. (If there are remaining damage, perform additional damage checks)
+AUTO [Drop]: When your damage check reveals a card other than heal trigger or over trigger, if you have a grade 3 or greater vanguard with "Deathdrives" in its card name, and your damage zone has five or more cards, COST [ride this card], and the number of cards in your damage zone for you to lose becomes seven until end of this fight. (If any damage remains, perform additional damage checks)
 
 AUTO [VC]: When this unit attacks, if your damage zone has six or more cards, COST [Counter Blast 1], and retire all of your and your opponent’s rear-guards.'
 global.UnitGrade[CardStat] = 4
@@ -8585,7 +8585,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 1], search your deck for up to one "Allied Task Force", reveal it and put it into hand, and shuffle the deck.
 
-ACT [RC] 1/Turn: If you have a vanguard with "Superbia" in its card name, COST [rest this unit], choose one of your rear-guards, and it gets power +5000 until end of turn, and if your chose a rear-guard with "Superbia" in its card name, stand this unit. If your opponent’s vanguard is grade 3 or greater, until end of turn, when the AUTO ability of your "A Soul-inspiring Sword Locked Clash" would choose your opponent’s rear-guards, it chooses a total of two instead of one.'
+ACT [RC] 1/Turn: If you have a vanguard with "Superbia" in its card name, COST [rest this unit], choose one of your rear-guards, it gets power +5000 until end of turn, and if you chose a rear-guard with "Superbia" in its card name in the same column as this unit, stand this unit. If your opponent’s vanguard is grade 3 or greater, until end of turn, when you would choose your opponent’s rear-guard by the AUTO ability of your "Soul-Stirring Clash", choose two rear-guards instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8681,69 +8681,69 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14160
 {
-global.CardName[CardStat] = 'A Brief Rest'
+global.CardName[CardStat] = 'A Brief Respite'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Heal Trigger
 
 (You may only have up to four cards with "HEAL" in a deck.)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
-}
 global.TriggerUnit[CardStat] = 4
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 14161
 {
-global.CardName[CardStat] = 'Braveeeee Shububububububububububububububurn!!'
+global.CardName[CardStat] = 'Braveee Shu-Ba-Ba-Ba-Ba-Ba(x25)-BAAAANG!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
-}
 global.TriggerUnit[CardStat] = 1
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 14162
 {
-global.CardName[CardStat] = 'We’ll Save the World!! Braveee Tornado Arc!!'
+global.CardName[CardStat] = 'We’ll Save the World! Brave Tornado Arc!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Front Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
-}
 global.TriggerUnit[CardStat] = 5
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 14163
 {
-global.CardName[CardStat] = 'Courage Sword Style Secret Technique! Bravee~~~~~! Zubaaaaassh!!'
+global.CardName[CardStat] = 'Brave Blade Technique! Brave ZUBAAAASH!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
-}
 global.TriggerUnit[CardStat] = 2
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 14164
 {
-global.CardName[CardStat] = 'Courage Sword Style Secret Technique! Braveeeee Zaaaan!!'
+global.CardName[CardStat] = 'Shout It with Me! Brave SLAAAAASH!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!/Critical Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
-}
 global.TriggerUnit[CardStat] = 2
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 14165
 {
-global.CardName[CardStat] = 'It’s Absolutely Fine. Because... I’m Bravern!'
+global.CardName[CardStat] = 'Everything Will Be OK. For I... Am Bravern!'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT: Sentinel.
@@ -8817,7 +8817,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14224
 {
-global.CardName[CardStat] = 'Pouncing Alnarbia'
+global.CardName[CardStat] = 'Pouncing Arnabya'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
 CONT [RC/GC]: If your damage zone has four or more cards, this unit gets power +10000 / shield +10000. (Active on opponent’s turn too)'
@@ -8831,7 +8831,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14246
 {
-global.CardName[CardStat] = 'Bearer of Equalizing Pressure'
+global.CardName[CardStat] = 'Pressure Balance Holder'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
 CONT [RC]: During your turn, if five or more of your opponent’s cards are imprisoned in your Prison, all of your other rear-guards in the same column as this unit get power +5000.'
@@ -8860,7 +8860,7 @@ CardStat = 14263
 global.CardName[CardStat] = 'Alfini Svatobogi'
 global.CardText[CardStat] = 'Brandt Gate/Normal Order/Lunarite
 
-This card can be played from drop, and play this if you have a vanguard with "Veissrugr" in its card name, and your opponent’s vanguard is grade 3 or greater!
+This card can be played from drop, and play this card if you have a vanguard with "Veissrugr" in its card name, and your opponent’s vanguard is grade 3 or greater!
 
 Bind this card, choose one of your vanguards, and it gets "CONT [VC]: All of your rear-guards with "Mythisch" in their card names get power +5000." until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -8873,7 +8873,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14264
 {
-global.CardName[CardStat] = 'The Third Mythisch, "Heljasstvinr" Helgvarrs'
+global.CardName[CardStat] = 'The Third Mythisch, "Heljasstvinr" Helgvarr'
 global.CardText[CardStat] = 'Brandt Gate/Mythisch
 
 AUTO: When this unit is placed on RC other than during the battle phase, choose a grade 3 card with "Veissrugr" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Veissrugr" in its card name, perform one of the following, and shuffle the deck.
@@ -8890,7 +8890,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14279
 {
-global.CardName[CardStat] = 'Gravidia Burwell'
+global.CardName[CardStat] = 'Gravidia Barwell'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is placed on RC during your main phase, choose a grade 3 card with "Nordlinger" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Nordlinger" in its card name, search your deck for up to one grade 2 or greater order card without Regalis Piece, discard it, and shuffle the deck.
@@ -8905,7 +8905,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14280
 {
-global.CardName[CardStat] = 'Technomech Faral'
+global.CardName[CardStat] = 'Technomech Ferral'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 AUTO: When this unit is retired from RC during your battle phase, if two or more of your set orders were put into drop from order zone this turn, COST [Energy Blast 3], choose one of your back row-rear-guards, stand it, and that unit cannot attack until end of turn.'
@@ -8918,7 +8918,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14295
 {
-global.CardName[CardStat] = 'Schonheit Rotovisor'
+global.CardName[CardStat] = 'Schenheit Rotovisor'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT: If you have a grade 3 or greater vanguard with "Rotovisor" in its card name, this card gets all of the following, and gets grade +1.
@@ -8933,10 +8933,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14310
 {
-global.CardName[CardStat] = 'Motivating Arranger'
+global.CardName[CardStat] = 'Modifying Arranger'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
-AUTO [Back Row RC] 1/Turn: When your other rear-guard in the same column as this unit stand by your card’s ability, COST [Energy Blast 3], and stand this unit.'
+AUTO [Back Row RC] 1/Turn: When your other rear-guard in the same column as this unit stand by a card’s ability, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8949,7 +8949,7 @@ CardStat = 14311
 global.CardName[CardStat] = 'Lurid Squeak'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
-AUTO [Drop]: When a "Disher Rockhopper" is placed on your RC, COST [Energy Blast 3], and call this card to RC in the same column as your "Disher Rockhopper".'
+AUTO [Drop]: When "Disher Rockhopper" is placed on your RC, COST [Energy Blast 3], and call this card to RC in the same column as your "Disher Rockhopper".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -8959,7 +8959,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14480
 {
-global.CardName[CardStat] = 'Cardinal Noid, Exesim'
+global.CardName[CardStat] = 'Cardinal Noid, Excessivm'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO [Drop]: When your unit is retired from RC during your battle phase, if you have a grade 3 or greater vanguard with "Orfist" in its card name, COST [Energy Blast 2 & bind this card], choose one of the retired cards, and put it into your hand.'
@@ -8972,7 +8972,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14481
 {
-global.CardName[CardStat] = 'Palm Bright of the White Shadow, Anomafliper'
+global.CardName[CardStat] = 'Palm Light of the White Shadow, Anomaflybar'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO: When this unit is placed on RC or put on GC, COST [retire a Shadow Army token], and this unit gets power +10000 / shield +10000 until end of turn.'
@@ -8989,7 +8989,7 @@ CardStat = 14482
 global.CardName[CardStat] = 'Orbital Viper'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Beast
 
-AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have three or more token units on your RC, COST [Energy Blast 2], and until end of that battle, when your opponent would call cards from hand to GC, they must call two or more at the same time.'
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have three or more token units on your RC, COST [Energy Blast 2], and until end of that battle, when your opponent would call cards to GC from hand, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -8999,7 +8999,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14483
 {
-global.CardName[CardStat] = 'Viador Heyday'
+global.CardName[CardStat] = 'Veardol Heady'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 CONT: If your order zone has a "SYSTEM CODE: X-ceed", this card gets all of the following.
@@ -9014,10 +9014,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14484
 {
-global.CardName[CardStat] = 'Magnetic Force Monster, Magnides'
+global.CardName[CardStat] = 'Magnetism Monster, Magnides'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO: When this unit is placed on RC other than by a unit card’s ability, if you played a set order this turn, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, reveal it, call it to RC if it is a unit card, and put it into hand if it is a set order. Shuffle the deck.
+AUTO: When this unit is placed on RC other than by a unit card’s ability, if you played a set order this turn, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them and reveal it, call it to RC if it is a unit card, and put it into hand if it is a set order. Shuffle the deck.
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if your order zone has a set order, this unit gets power +5000 until end of that battle. If you have a vanguard with "Monster" in its card name, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
@@ -9029,10 +9029,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14497
 {
-global.CardName[CardStat] = 'Decay Monster, Bad Molder'
+global.CardName[CardStat] = 'Depravity Monster, Badmolder'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO [RC]: When this unit attacks a vanguard, if your order zone has three or more set orders, COST [Energy Blast 3], choose one of your opponent’s front row rear-guards in the same column as this unit, until end of your opponent’s next turn, that unit cannot intercept, and it cannot stand during the stand phase.'
+AUTO [RC]: When this unit attacks a vanguard, if your order zone has three or more set orders, COST [Energy Blast 3], choose one of your opponent’s front row rear-guards in the same column as this unit, and until the end of your opponent’s next turn, that unit cannot intercept and cannot stand during the stand phase.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -9043,7 +9043,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14498
 {
-global.CardName[CardStat] = 'Mucous Monster, Nebajuwar'
+global.CardName[CardStat] = 'Biofluid Monster, Nebajuwal'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Monster" in its card name, Soul Charge 1.'
@@ -9088,7 +9088,7 @@ CardStat = 14738
 global.CardName[CardStat] = 'Aurora Battle Princess, Kyanite Cobalt'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with "Seraph" in its card name from ride deck], search your deck or hand for up to one "Galaxy Eternal Prison, Galactolus", put it in the order zone, and if you searched the deck, shuffle the deck. If you put a card from hand, draw a card.
+AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with "Seraph" in its card name from ride deck], search your deck or hand for up to one "Galaxy Eternal Prison, Galactolus", put it into the order zone, and if you searched the deck, shuffle the deck. If you put a card from hand, draw a card.
 
 ACT [RC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guards, imprison it in your Prison, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -9138,7 +9138,7 @@ global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO: When this unit is placed on RC, if your order zone has a Prison, look at the top seven cards of your deck, choose up to one card with "Seraph" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and discard it.
 
-AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, and there are two or more of your opponent’s cards imprisoned in your Prison, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard, and two or more of your opponent’s cards are imprisoned in your Prison, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9155,10 +9155,10 @@ CONT [Order Zone]: When your opponent can normal call a rear-guard, they can per
 • Soul Blast 1. If they do so, they choose one of their imprisoned cards, and call it RC.
 • Counter Blast 1. If they do so, they choose two of their imprisoned cards, and call them to RC.
 
-AUTO [Order Zone]: When your opponent’s imprisoned card is placed on RC from your Prison, if you did not Soul Charge 1 this turn, you may Soul Charge 1.'
+AUTO [Order Zone]: When your opponent’s imprisoned card in your prison is placed on RC, if you did not Soul Charge this turn, you may Soul Charge 1.'
 global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -9169,9 +9169,9 @@ CardStat = 14743
 global.CardName[CardStat] = 'Aurora Battle Princess, Flawless Lila'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO: When this unit is placed on RC, your opponent chooses a card from their drop, and imprisons it in your Prison. If two or more of your opponent’s cards are imprisoned in your Prison, COST [Counter Blast 1], and draw a card.
+AUTO: When this unit is placed on RC, your opponent chooses a card from their drop, and imprisons it in your Prison. If two or more of your opponent’s cards are imprisoned in your Prison, COST [Counter Blast 1], and you draw a card.
 
-CONT [RC/GC]: If your vanguard is grade 3 or greater, and one of your opponent’s cards are imprisoned in your Prison, this unit gets shield +5000. If three or more are imprisoned, it also gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+CONT [RC/GC]: If your vanguard is grade 3 or greater, and one or more of your opponent’s cards are imprisoned in your Prison, this unit gets shield +5000. If three or more are imprisoned, it also gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9209,10 +9209,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14746
 {
-global.CardName[CardStat] = 'Cocoolica Emitter'
+global.CardName[CardStat] = 'Coriolis Emitter'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
-AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, COST [discard a set order from hand], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard, COST [discard a set order from hand], and this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9223,7 +9223,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 14747
 {
-global.CardName[CardStat] = 'Snoop Sensient'
+global.CardName[CardStat] = 'Snoop Sentient'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
 AUTO: When this unit is put on GC, COST [Energy Blast 3], and this unit gets shield +5000 until end of that battle for each grade of the attacking unit.'
@@ -9239,9 +9239,9 @@ CardStat = 14754
 global.CardName[CardStat] = 'Galactic B-Hero, Combinate Nychia'
 global.CardText[CardStat] = 'Brandt Gate/Elf
 
-AUTO: When this unit is placed on RC or GC from the order zone, COST [Soul Blast 2], and draw a card.
+AUTO: When this unit is placed on RC or GC from order zone, COST [Soul Blast 2], and draw a card.
 
-CONT [RC]: During your turn, if your order zone has two or more Bases, this unit gets power +5000. If your order zone has three or more Bases, it also gets power +5000.
+CONT [RC]: During your turn, if your order zone has two or more Bases, this unit gets power +5000. If it has three or more Bases, it also gets power +5000.
 
 CONT [GC]: If your order zone has a Base, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
@@ -9253,10 +9253,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14755
 {
-global.CardName[CardStat] = 'Galactic B-Hero, Comet Elkiss'
+global.CardName[CardStat] = 'Galactic B-Hero, Comet Elkys'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-ACT [VC] 1/Turn: COST [Discard a card from hand & reveal a grade 3 card with "B-Hero" in its card name from ride deck], search your deck for up to one card with "B-Hero" in its card name and up to one Base card, reveal them, choose a Base card from among them revealed cards, put it into hand, and scout the rest of the revealed cards into your Base. Shuffle the deck.'
+ACT [VC] 1/Turn: COST [Discard a card from hand & reveal a grade 3 card with "B-Hero" in its card name from ride deck], search your deck for up to one Base card and up to one card with "B-Hero" in its card name, reveal them, choose a Base card from among the revealed cards, put it into hand, and scout the remaining revealed cards to your Base. Shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -9313,10 +9313,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14799
 {
-global.CardName[CardStat] = 'Wielder of Foreign Atoms'
+global.CardName[CardStat] = 'Embracer of Diverse Atoms'
 global.CardText[CardStat] = 'Brandt Gate/Cyber Fairy
 
-AUTO: At the end of the battle this unit boosted, if your vanguard is grade 3 or greater, reveal the top card of your deck, put it into hand if it is a set order, and discard it if not. If you put a card into hand, retire this unit.'
+AUTO: At the end of the battle this unit boosted, if your have a grade 3 or greater vanguard, reveal the top card of your deck, put it into hand if it is a set order, and discard it if not. If you put a card into hand, retire this unit.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -9326,7 +9326,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14800
 {
-global.CardName[CardStat] = 'Pretty Assistand, Flemie'
+global.CardName[CardStat] = 'Pretty Assistant, Flemy'
 global.CardText[CardStat] = 'Brandt Gate/Warbeast
 
 AUTO: When this unit is placed on RC from hand during your main phase, COST [discard a card from hand], draw a card, and if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn.'
@@ -9350,7 +9350,6 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global. AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 14802
@@ -9370,28 +9369,27 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14885
 {
-global.CardName[CardStat] = 'Splash Outstander'
+global.CardName[CardStat] = 'Splashy Outstander'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO [RC]: When this attacks, if you have four or more AutoMOD gauges, this unit gets power +5000 until end of that battle.
+AUTO [RC]: When this attacks, and you have four or more AutoMOD gauges, this unit gets power +5000 until end of that battle.
 
-AUTO: When this card is put as an AutoMOD gauge by the ACT ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose a normal unit without sentinel from your drop, and you may put it on the bottom of the deck.'
+AUTO: When this card is put as an AutoMOD gauge by the original ACT ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose a normal unit without sentinel from your drop, and you may put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global. AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 14886
 {
-global.CardName[CardStat] = 'Ad Volfront'
+global.CardName[CardStat] = 'Ad Vorefront'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-AUTO [RC]: If you have four or more AutoMOD gauges, this cost is reduced by Energy Blast 2. At the end of the battle this unit boosted, if your order has a "SYSTEM CODE: X-ceed", COST [Energy Blast 2 & retire this unit], and draw a card.
+AUTO [RC]: If you have four or more AutoMOD gauges, reduce this cost by Energy Blast 2. At the end of the battle this unit boosted, if your order has a "SYSTEM CODE: X-ceed", COST [Energy Blast 2 & retire this unit], and draw a card.
 
-AUTO: When this unit is put as an AutoMOD gauge by the ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you have two or more other AutoMOD gauges with the same card name as this card, choose two of your units instead of one.'
+AUTO: When this unit is put as an AutoMOD gauge by the original ACT ability of your grade 3 or greater vanguard with "Impauldio" in its card name, choose one of your units, and it gets power +5000 until end of turn. If you have two or more other AutoMOD gauges with the same card name as this card, choose two instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -10285,7 +10283,7 @@ global.AttackFromRBuff[CardStat] = 10000
 
 CardStat = 15346
 {
-global.CardName[CardStat] = 'Logical Shooter, Airley'
+global.CardName[CardStat] = 'Logical Shooter, Erlei'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO [Drop]: When your grade 3 or gerater vanguard with "Asturm" in its card name is placed during your ride phase, if you do not have a rear-guards with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
@@ -10420,8 +10418,8 @@ CardStat = 15378
 global.CardName[CardStat] = 'Savant of Taboo, Zorga "Fantome"'
 global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and choose any number of your <Genome Gel> rear-guards with different card names. If you chose two or more, choose a Demonic Beast Alchemix Body, Ubermensch token on your RC, and it Alchemixes with all chosen <Genome Gel>. If your bind zone has one or more Crimson Moon cards, that Demonic Beast Alchemix Body, Ubermensch token and this unit get power +5000 until end of turn, and if it has three or more Crimson Moon cards, power +10000 instead of +5000. (Stack the <Genome Gel> under the token)
-[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from your hand, soul or drop], choose up to the same number of <Genome Gel> from your drop as the number of Crimson Moon cards in your bind zone, and call them to RC.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and choose any number of your <Genomegel> rear-guards with different card names. If you chose two or more, choose a Demonic Beast Alchemix Body, Ubermensch token on your RC, and Alchemix all of the <Genomegel> chosen by this effect. If your bind zone has one or more Crimson Moon cards, until end of turn, that Demonic Beast Alchemix Body, Ubermensch token and this unit get power +5000, and if it has three or more Crimson Moon cards, they get power +10000 instead of +5000. (Stack the <Genomegel> under the token)
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul or drop], choose up to the same number of <Genomegel> from your drop as the number of Crimson Moon cards in your bind zone, and call them to RC.
 
 (Use the Overdress button to Alchemix)'
 global.UnitGrade[CardStat] = 3
@@ -10435,7 +10433,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15381
 {
 global.CardName[CardStat] = 'Creation Demonic Beast, Bite Engraver'
-global.CardText[CardStat] = 'Brandt Gate/Genome Gel/Fantome
+global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 ACT [Drop]: If your RC has a Demonic Beast Alchemix Body, Ubermensch token and you do not have a rear-guard with the same card name as this card, COST [Energy Blast 3], call this card to RC, and this unit gets power +5000 until end of turn.
 
@@ -10453,7 +10451,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15382
 {
 global.CardName[CardStat] = 'Creation Demonic Beast, Cranial Wring'
-global.CardText[CardStat] = 'Brandt Gate/Genome Gel/Fantome
+global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 AUTO [Drop]: When your Demonic Beast Alchemix Body, Ubermensch token is placed on RC, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called by this effects, if you have a grade 3 or greater vanguard with "Zorga" in its card name, this unit gets power +5000 until end of turn.
 
@@ -10471,7 +10469,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15383
 {
 global.CardName[CardStat] = 'Creation Demonic Beast, Shadoweater Running Dog'
-global.CardText[CardStat] = 'Brandt Gate/Genome Gel/Fantome
+global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 AUTO: When this unit is placed on RC from hand, if your order zone has a "Regrain Biocreation Research Lab" token, COST [Soul Blast 1], search your deck for up to one normal unit, discard it, and shuffle the deck.
 
@@ -10488,7 +10486,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15384
 {
-global.CardName[CardStat] = 'Piercing Lava, Margaret'
+global.CardName[CardStat] = 'Piercing Lover, Margaret'
 global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
 
 AUTO: When this card is discarded from hand while riding from the ride deck, if you have a <Fantome> vanguard, COST [Soul Blast 1 or Energy Blast 3], search your deck for up to one Crimson Moon card, reveal it and put it into hand, and shuffle the deck.
@@ -10546,12 +10544,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15388
 {
-global.CardName[CardStat] = 'Regrain Researcher, Flesh and Bone Tearing'
+global.CardName[CardStat] = 'Regrain Researcher, Bone Flesh Ripper'
 global.CardText[CardStat] = 'Brandt Gate/Elf/Fantome
 
-ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab" token, and you did not put a card into your order zone this turn, COST [put this card into order zone], and draw a card.
+ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab", and a card was not put in your order zone this turn, COST [put this card in the order zone], and draw a card.
 
-ACT [Order Zone] 1/Turn: If you have a vanguard with "Zorga" in its card name, COST [retire one or two rear-guards], draw a card, and if you retired two cards for this cost, Counter Charge 1 .
+ACT [Order Zone] 1/Turn: If you have a grade 3 or greater vanguard with "Zorga" in its card name, COST [retire one or more, up to two rear-guards], draw a card, and if you retired two rear-guards for this cost, Counter Charge 1 .
 
 AUTO [Drop]: When you Alchemix, if you do not have a rear-guard with the same card name as this card, call this card to an open back row RC. At the end of that turn, retire this unit.'
 global.UnitGrade[CardStat] = 1
@@ -10579,7 +10577,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15477
 {
 global.CardName[CardStat] = 'Creation Demonic Beast, Uproarious Scream'
-global.CardText[CardStat] = 'Brandt Gate/Genome Gel/Fantome
+global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 AUTO: When this unit is Alchemix, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & put this card into drop], call the card put into drop for this cost to RC, and it gets Power +10000 until end of turn. At the end of that turn, bind that called unit.'
 global.UnitGrade[CardStat] = 2
@@ -10598,7 +10596,7 @@ ACT [Hand]: If your order zone does not have a card with the same card name as t
 
 CONT [GC]: If your order zone has a card with the same card name as this card, this unit gets shield +5000.
 
-ACT [Order Zone] 1/Turn: COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one <Genome Gel> from among them, discard it, and shuffle the deck.'
+ACT [Order Zone] 1/Turn: COST [Soul Blast 1], look at the top seven cards of your deck, choose up to one <Genomegel> from among them, discard it, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
