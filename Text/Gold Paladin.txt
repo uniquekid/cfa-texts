@@ -581,13 +581,16 @@ AUTO [RC]: When this unit attacks, if you have a vanguard with "Ezel" in its car
 
 CardStat = 925
 {
-global.CardName[CardStat] = 'Knight of the Afterglow, Gerard'
+global.CardName[CardStat] = 'Knight of Afterglow, Gerard'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
 AUTO [VC] Limit Break 4 (This ability is active if you have four or more damage): When this unit’s attack hits a vanguard, look at up to three cards from the top of your deck, search for up to one grade 3 «Gold Paladin» from among them, call it to an open RC, and put the rest on the bottom of your deck in any order.
 
 CONT [VC]: During your turn, if you have a grade 3 «Gold Paladin» rear-guard, this unit gets power +3000.'
+global.UnitGrade[CardStat] = 0
 }
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 926
@@ -3081,7 +3084,7 @@ CardStat = 4546
 global.CardName[CardStat] = 'Teaching Knight, Hudon'
 global.CardText[CardStat] = 'Gold Paladin/Human
 
-AUTO [VC/RC] Generation Break 1 Unite: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at four cards from the top of your deck, call a card to RC from among them, shuffle your deck, and that unit gets power +3000 until end of turn.'
+AUTO [VC/RC] Generation Break 1 Unite: [Counter Blast 1] When this unit’s attack hits a vanguard, you may pay the cost. If you do, look at four cards from the top of your deck, call a card from among them to RC, shuffle your deck, and that unit gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 5
 }
