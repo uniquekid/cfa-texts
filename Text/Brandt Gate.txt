@@ -9226,7 +9226,7 @@ CardStat = 14747
 global.CardName[CardStat] = 'Snoop Sentient'
 global.CardText[CardStat] = 'Brandt Gate/Alien
 
-AUTO: When this unit is put on GC, COST [Energy Blast 3], and this unit gets shield +5000 until end of that battle for each grade of the attacking unit.'
+AUTO: When this unit is put on GC, COST [Energy Blast 3], and for each grade of the attacking unit, this unit gets shield +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -11026,3 +11026,44 @@ global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16085
+{
+global.CardName[CardStat] = 'Quiet Scientist'
+global.CardText[CardStat] = 'Brandt Gate/Warbeast
+
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16179
+{
+global.CardName[CardStat] = 'Break-up Dragon'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon
+
+CONT [RC]: If your order zone has has two or more cards, when this unit would attack rear-guards, it battles all of your opponent’s front row rear-guards. '
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 28000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16180
+{
+global.CardName[CardStat] = 'Large Tool Mechanic, Arjas'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+AUTO: When this unit is placed on RC from hand, COST [Counter Blast 1], and perform one of the following:
+• If your order zone has two or more cards, draw a card.
+• If your order zone has one or more set orders, this unit gets power +10000 until end of turn. If there are three or more, it gets power +150000 instead of +10000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

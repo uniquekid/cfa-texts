@@ -101,7 +101,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
 
 Requirement - Front row unit with "Briar Bloomhurst" in its card name
 
-AUTO [Special Move Zone]: When this special move is used, the unit that used this special move gets power +5000 until end of that battle. If the unit being attacked is grade 3 or greater, it gets power +10000 instead of +5000.'
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If the unit being attacked is grade 3 or greater, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -362,7 +362,7 @@ Requirement - Front row unit with "Briar Bloomhurst" in its card name
 
 CONT [Special Move Zone]: This Special Move can only be used if your Special Move zone has one or more face "Swirly Shot" and "Force Flash" each.
 
-AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this special move gets power +5000, and its original critical becomes 2.'
+AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this Special Move gets power +5000, and its original critical becomes 2.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -555,9 +555,9 @@ global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chronicle
 
 Position: MF
 
-AUTO [VC]: When a Dribble move from your Special Move zone is turned face up, Energy Charge 1 .
+AUTO [VC]: When a Dribble Move from your Special Move zone is turned face up, Energy Charge 1 .
 
-CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and when you would move or swap this unit during your main phase, you can also move it within the same row.
+CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and when you would Move or swap this unit during your main phase, you can also Move it within the same row.
 
 AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a face down Special Move with grade less than or equal to your vanguard from your Special Move zone, and use it.'
 global.UnitGrade[CardStat] = 2
@@ -653,7 +653,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
 
 Requirement - Unit with "Sonny Wright" in its card name
 
-AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this special move gets power +5000, and if your vanguard is grade 3 or greater, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
+AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this Special Move gets power +5000, and if your vanguard is grade 3 or greater, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -863,7 +863,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
 
 Requirement - Front row unit with "Maine Alsop" in its card name
 
-AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. Your opponent chooses a card from their hand, you choose a grade greater than or equal to 0, and declare it. Your opponent reveals the chosen card from hand, and if that card’s grade is the declared grade, the unit that used this special move gets critical +1 until end of that battle.'
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. Your opponent chooses a card from their hand, you choose a grade greater than or equal to 0, and declare it. Your opponent reveals the chosen card from hand, and if that card’s grade is the declared grade, the unit that used this Special Move gets critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -902,8 +902,8 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
 Requirement - Unit with "Amelia Rainwalker" in its card name
 
 AUTO [Special Move Zone]: When this Special Move is used, perform all of the following according to the number of cards with "Amelia Rainwalker" in their card names in total on your RC and in your drop.
-• 2 or more - Until end of your opponent’s next turn, the unit that used this special move gets power +5000.
-• 4 or more - Until end of your opponent’s next turn, the unit that used this special move gets shield +5000.'
+• 2 or more - Until end of your opponent’s next turn, the unit that used this Special Move gets power +5000.
+• 4 or more - Until end of your opponent’s next turn, the unit that used this Special Move gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -1170,6 +1170,883 @@ AUTO: When this unit is placed on RC, COST [bind a "Runaway Bull" from drop], ch
 AUTO: When this unit is put on GC, if you have a <Story> vanguard, COST [Energy Blast 1 & bind a "Runaway Bull" from drop], and this unit gets shield +15000 until end of that battle.
 
 CONT [RC]: This unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16133
+{
+global.CardName[CardStat] = 'Flame Dance'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Critical Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian with "AUTO: When this unit is put on GC, COST [Soul Blast 1], and Energy Charge 2.".'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16134
+{
+global.CardName[CardStat] = 'The Matrix'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Draw Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 5000 guardian, and gets "CONT: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.".'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16135
+{
+global.CardName[CardStat] = 'The Wall'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Front Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian, and gets "CONT: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.".'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16136
+{
+global.CardName[CardStat] = 'The Tower'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Front Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian, and gets "AUTO: When this unit is retired from GC, you may put this card into soul.".'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16137
+{
+global.CardName[CardStat] = 'Aether Virtuoso'
+global.CardText[CardStat] = 'Inazuma Eleven/Normal Order/Tactics
+
+This card can be played from drop, and play this with COST [Soul Blast 1] if you have a grade 3 or greater vanguard with "Destin Billows" in its card name!
+
+Bind this card, choose up to two <Story> unit cards from your drop with different card names from your rear-guards, and call them to RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16138
+{
+global.CardName[CardStat] = 'Dazzling Carnival'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Cedric Freud" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, reveal the top five cards of your deck, perform all of the following according to the number of trigger cards revealed, and shuffle the deck.
+• Zero - The attacking unit gets power +5000 until end of that battle.
+• One or Two - The attacking unit gets power +10000 until end of that battle.
+• Three or Four - The attacking unit gets power +15000 until end of that battle.
+• Five - Until end of that battle, the attacking unit gets power +15000, and its original critical becomes 2.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16139
+{
+global.CardName[CardStat] = 'Afterimage'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - MF, or unit with "Raika Shinohara" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, until end of your opponent’s next turn, the unit that used this Special Move gets "CONT [VC/RC/GC]: This unit cannot be chosen by your opponent’s card effects.", and gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16140
+{
+global.CardName[CardStat] = 'Dash Storm'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Cade Shelby" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, choose one of your opponent’s front row rear-guards not being attacked, and return it to hand. Until end of that battle, your opponent cannot call cards with the same grade as the chosen unit to GC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16141
+{
+global.CardName[CardStat] = 'Heavenly Thunder'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement -  Front row <Story> FW or front row <Story> MF
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, it also gets power +5000, COST [Energy Blast 1], and it also gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16142
+{
+global.CardName[CardStat] = 'Skilled Striker, Nikas Himmelstein'
+global.CardText[CardStat] = 'Inazuma Eleven/Northbright Middle School/Story
+
+Position: FW
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Destin Billows" in its card name is placed, and all of your rear-guards have different card names from this card, you may call this card to RC.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Story> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16143
+{
+global.CardName[CardStat] = 'Sunshine Splitter'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Nikas Himmelstein" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 1], and it also gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16144
+{
+global.CardName[CardStat] = 'Soccer Monster, Harper Evans'
+global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Story
+
+Position: FW
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1], and draw a card.
+
+CONT [GC]: This unit gets shield +5000.
+
+AUTO [VC/RC]: When this unit attacks, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16145
+{
+global.CardName[CardStat] = 'Unify'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Harper Evans" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, Energy Charge 1, and the unit that used this Special Move gets power +5000 until end of that battle for each face up card with the same card name as this card in your Special Move Zone. (Counting this card)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16146
+{
+global.CardName[CardStat] = 'Meteoric Fire Tornado'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Harper Evans" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, if your damage zone has four or more cards, until end of that battle, the unit that used this Special Move gets "AUTO [VC/RC]: When this unit’s attack hits, draw a card.", and gets power +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16147
+{
+global.CardName[CardStat] = 'Inazuma Victory Caravan, Launch!'
+global.CardText[CardStat] = 'Inazuma Eleven/Normal Order
+
+This card can be played from drop and play this if you have a grade 3 or greater <Chronicle> vanguard!
+
+Bind this card, and perform one of the following.
+• Choose a <Chronicle> unit card from your drop with a different name from all of your rear-guards, and call it to RC.
+• Look at the top seven cards of your deck, choose up to one <Chronicle> unit card from among them, call it to RC, and shuffle the deck. If you did not call a card, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16148
+{
+global.CardName[CardStat] = 'Inazuma-1'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Axel Blaze" in its card name
+
+CONT [Special Move Zone]: This Special Move can only be used if you have a unit with "Mark Evans" in its card name.
+
+AUTO [Special Move Zone]: When this Special Move is used, choose one of your units with "Mark Evans" in its card name, and until end of that battle, increase the power of the unit that used this Special Move by that chosen unit’s power.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16149
+{
+global.CardName[CardStat] = 'Wind God’s Dance'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Nathan Swift" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your vanguard is grade 3 or greater, choose one of your opponent’s front row rear-guards not being attacked, and put it on the bottom of the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16150
+{
+global.CardName[CardStat] = 'Snow Prince, Shawn Froste(Shawn’s Personality)'
+global.CardText[CardStat] = 'Inazuma Eleven/Alpine Junior High/Chronicle
+
+Position: DF
+
+ACT [RC]: COST [Retire this unit], choose a "Snow Outlaw, Shawn Froste(Aiden’s Personality)" from your drop, and call it to the RC this unit was on.
+
+AUTO: When this unit is put on GC, if you have a <Chronicle> vanguard, COST [Energy Blast 1], choose a "Land of Ice" from your drop, call it to GC as a Grade 0 / shield 15000 trigger unit, and it gets "CONT: When this unit would be retired from GC, bind this card instead of retiring it." until end of that battle.
+
+CONT [RC]:This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16151
+{
+global.CardName[CardStat] = 'Snow Outlaw, Shawn Froste(Aiden’s Personality)'
+global.CardText[CardStat] = 'Inazuma Eleven/Alpine Junior High/Chronicle
+
+Position: FW
+
+AUTO [RC]: At the end of the battle this unit attacked, COST [put this unit into soul], choose a "Snow Prince, Shawn Froste(Shawn’s Personality)" from your drop, and call it to the RC this unit was on.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16152
+{
+global.CardName[CardStat] = 'Eternal Blizzard'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Aiden" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this Special Move gets "AUTO [VC/RC]: When this unit’s attack hits, your opponent chooses a card from their hand, and discards it.", and it gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16153
+{
+global.CardName[CardStat] = 'Meteor Prince, Hunter Foster'
+global.CardText[CardStat] = 'Inazuma Eleven/Inazuma Japan/Chronicle
+
+Position: FW
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Mark Evans" in its card name, Energy Charge 2 .
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16154
+{
+global.CardName[CardStat] = 'Celestial Smash'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Hunter Foster" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this Special Move gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000. Then, if you persona rode this turn, COST [Energy Blast 2], choose one of your opponent’s rear-guards not being attacked, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16155
+{
+global.CardName[CardStat] = 'Pegasus Punch'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Arion Sherwind" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If that unit is your vanguard, and you persona rode this turn, until end of that battle, your opponent cannot call sentinels from hand to GC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16156
+{
+global.CardName[CardStat] = 'Atomic Harmonic'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Riccardo Di Rigo" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, look at the top card of your deck, put it on the top or bottom of the deck, and the unit that used this Special Move gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16157
+{
+global.CardName[CardStat] = 'Dark Nova, Victor Blade'
+global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chronicle
+
+Position: FW
+
+ACT [Drop]: If you have a grade 3 or greater <Chronicle> vanguard, and all of your rear-guards have a different card name from this card, COST [Counter Blast 1], call this card to RC, and this unit gets power +5000 until end of turn.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16158
+{
+global.CardName[CardStat] = 'Doomsword Slash'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Victor Blade" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If that unit is your vanguard, and you persona rode this turn, your opponent chooses a card from their hand, and discards it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16159
+{
+global.CardName[CardStat] = 'Chrono Striker, Fei Rune'
+global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chrono Storm/Chronicle
+
+Position: FW/MF/DF
+
+CONT [RC]: This unit can intercept from the back row, and if your opponent’s vanguard is grade 3 or greater, this unit gets "Boost".
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16160
+{
+global.CardName[CardStat] = 'Bouncing Bunny'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Fei Rune" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your damage zone has five or more cards, it gets power +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16161
+{
+global.CardName[CardStat] = 'Goopy Gloopy Girl, Goldie Lemmon'
+global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chrono Storm/Story
+Position: DF
+AUTO: When this unit is put on GC, if you have a <Chronicle> vanguard, COST [Energy Blast 1 & bind a "Goopy Gloopy Goo" from drop], and this unit gets shield +15000 until end of that battle.
+ACT [Drop]: If you have a <Chronicle> vanguard, COST [bind this card], search your deck or drop for up to one card with "Fei Rune" in its card name, call it to , and you cannot pay the cost for [ACT] abilities of cards with the same card name as this card until end of turn. If you searched the deck, shuffle the deck.
+CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a face down Special Move with grade less than or equal to your vanguard from your Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16162
+{
+global.CardName[CardStat] = 'Goopy Gloopy Goo'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Critical Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16163
+{
+global.CardName[CardStat] = 'Dough Ray Me'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Goldie Lemmon" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If you persona rode this turn, it gets power +10000 instead of +5000. Then, if it is the first battle of this turn, COST [Energy Blast 1], stand the unit that used this Special Move, choose two of your rear-guards in the same column as that unit, and swap their positions.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16164
+{
+global.CardName[CardStat] = 'Ultimate Eleven Assault'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Arion Sherwind" or "Fei Rune" in its card name
+
+CONT [Special Move Zone]: This special move can only be used if you have eleven or more face up cards in your Special Move zone.
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets critical +1 until end of that battle. For each of your rear-guards with a different card name, it also gets power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+//Text adjusted for red text
+CardStat = 16165
+{
+global.CardName[CardStat] = 'Golden Gull'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Sonny Wright" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If that unit is your vanguard, and your opponent’s vanguard is grade 3 or greater, you may have it get "the unit that used this Special Move gets critical +1 / drive +1 until end of that battle".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16166
+{
+global.CardName[CardStat] = 'Devil on the Pitch, Elliot Ember'
+global.CardText[CardStat] = 'Inazuma Eleven/Polestar Academy/Chronicle
+
+Position: FW
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater <Chronicle> vanguard, this unit gets power +5000 until end of that battle for each of your opponent’s rear-guards retired during this turn.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16167
+{
+global.CardName[CardStat] = 'Penguin Volley'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Elliot Ember" or "Jude Sharp" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, choose one of your opponent’s rear-guards not being attacked, and retire it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16168
+{
+global.CardName[CardStat] = 'Emperor of Tactics, Heath Moore'
+global.CardText[CardStat] = 'Inazuma Eleven/Lunar Prime Junior High/Chronicle
+
+Position: FW
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Chronicle> vanguard, you may get "Your opponent cannot intercept" until end of turn. If you do, retire this unit at the end of that turn.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16169
+{
+global.CardName[CardStat] = 'Royal Lancer'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Front row unit with "Heath Moore" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 1], and it gets power +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16170
+{
+global.CardName[CardStat] = 'Last Resort Sigma'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Vanguard with "Sonny Wright" in its card name
+
+CONT [Special Move Zone]: This special move can only be used if you have one or more of each rear-guard with "Elliot Ember", "Heath Moore", "Lucas Star" in their card names, and you persona rode this turn.
+
+AUTO [Special Move Zone]: When this Special Move is used, choose one each of your rear-guards with "Elliot Ember", "Heath Moore", "Lucas Star" in their card names for a total of three units, and increase the power of the unit that used this Special Move by the total power of the chosen units until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16171
+{
+global.CardName[CardStat] = 'Starstruck'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Lucas Star" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, choose one each of your opponent’s rear-guards not being attacked, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16172
+{
+global.CardName[CardStat] = 'The Blue First-magnitude Star, Lucas Star'
+global.CardText[CardStat] = 'Inazuma Eleven/Senshin Inazuma Japan/Chronicle
+
+Position: MF
+
+CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and "CONT [Back Row RC]: This unit gets power +5000.".
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16174
+{
+global.CardName[CardStat] = 'Auspicious Country Girl, Antonia Felicier'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: DF
+
+AUTO [RC]: At the end of the battle this unit boosted, if this unit used a Special Move during this battle, COST [retire this unit], and draw a card.
+
+CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Story> vanguard, COST [Energy Blast 2], choose a face down Special Move with grade less than or equal to your vanguard from your Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16175
+{
+global.CardName[CardStat] = 'Look! A Rice Ball'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Antonia Felicier" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, choose a card from your opponent’s hand, and bind it face down. At the end of that battle, your opponent puts that card into their hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16177
+{
+global.CardName[CardStat] = 'Metallic Heart, Kelvin Steelborne'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: DF
+
+AUTO: When this unit is placed on RC, COST [bind a "Metal Hammer" from drop], and this unit gets power +10000 until end of turn.
+
+AUTO: When this unit is put on GC, if you have a <Story> vanguard, COST [Energy Blast 1 & bind a "Metal Hammer" from drop], and this unit gets shield +15000 until end of that battle.
+
+CONT [RC]: This unit gets "Intercept", and it can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16178
+{
+global.CardName[CardStat] = 'Metal Hammer'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Critical Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16181
+{
+global.CardName[CardStat] = 'Butler of Beguilement, Lemmy Stretchen'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: DF
+
+AUTO: When this unit is placed on RC, COST [bind a "Dark Mist" from drop], and draw a card.
+
+AUTO: When this unit is put on GC, if you have a <Story> vanguard, COST [Energy Blast 1 & bind a "Dark Mist" from drop], and this unit gets shield +15000 until end of that battle.
+
+CONT [RC]: This unit gets "Intercept", and it can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16182
+{
+global.CardName[CardStat] = 'Dark Mist'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Front Trigger/Special Move/Block
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16183
+{
+global.CardName[CardStat] = 'Amp Beat'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Starla Thorn" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, choose one of your opponent’s front row rear-guards not being attacked, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16184
+{
+global.CardName[CardStat] = 'The Wild Rockstar, Starla Thorn'
+global.CardText[CardStat] = 'Inazuma Eleven/South Cirrus Junior High/Story
+
+Position: MF
+
+CONT [RC]: If your opponent’s unit was retired from RC or GC this turn, this unit gets power +5000.
+
+CONT [RC]: This unit gets "Boost".
+
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Story> vanguard, COST [Energy Blast 2], choose a face down Special Move with grade less than or equal to your vanguard from your Special Move zone, and use it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 15
 }

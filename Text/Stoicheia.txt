@@ -11047,7 +11047,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15438
 {
 global.CardName[CardStat] = 'Kinnari'
-global.CardText[CardStat] = 'Stoicheia/Keter Sanctuary/High Beast
+global.CardText[CardStat] = 'Stoicheia/Keter Sanctuary/Noble
 
 CONT: This card is also regarded as "Atrocious? Moth Girl, Maple".
 
@@ -11663,14 +11663,131 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 16085
+CardStat = 16173
 {
-global.CardName[CardStat] = 'Quiet Scientist'
-global.CardText[CardStat] = 'Stoicheia/Warbeast
+global.CardName[CardStat] = 'Megacolony Battler+ "Type.A"'
+global.CardText[CardStat] = 'Stoicheia/Insect
 
-AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +15000 instead of +5000.'
+CONT [Back Row RC]: During your turn, if your vanguard is grade 3 or greater, this unit gets power +5000 for each of your other back row rear-guards with "Megacolony Battler+" in their card names.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16185
+{
+global.CardName[CardStat] = 'Argo Siren, Asphaliya'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Argo Siren" in its card name, COST [put a <Tear Dragon> normal unit without sentinel from drop on the bottom of the deck], and Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16186
+{
+global.CardName[CardStat] = 'Argo Siren, Ripory'
+global.CardText[CardStat] = 'Stoicheia/Mermaid
+
+AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Argo Siren" in its card name, look at the top five cards of your deck, choose up to one <Mermaid> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16187
+{
+global.CardName[CardStat] = 'Blue Storm Karma Dragon, Maelstrom "ßeverse"   '
+global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
+AUTO [VC]: During your turn, for each of your locked cards, all of your units get power +5000.
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Tear Dragon> or «Aqua Force» rear-guards, and it gets "AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of that turn, COST [Counter Blast 1 or Soul Blast 1 card with "Maelstrom" in its card name], choose one of your rear-guards, and swap that unit’s position with this unit’s." until end of turn.
+AUTO [VC]: At the end of the battle your rear-guard attacked, you may lock that unit.
+AUTO [VC]: When this unit attacks, if it is the fourth battle of that turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it. If your damage zone has four or more cards or you persona rode this turn, this unit gets critical +1 until end of battle.
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16188
+{
+global.CardName[CardStat] = 'Tear Knight, Strophy'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Maelstrom" in its card name and it is the fourth battle of that turn or more, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, and retire it.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16189
+{
+global.CardName[CardStat] = 'Estuary Assault'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is only from «Aqua Force».
+
+AUTO [Drop]: When your Blue Storm Armada played from hand is put into the order zone, if your vanguard is "Blue Storm Karma Dragon, Maelstrom "ßeverse"" and all of your rear-guards have different card names from this card, COST [Soul Blast 1], call this card to RC, and it gets power +5000 until end of turn.
+
+CONT [RC/GC]: During your opponent’s turn, if this unit was unlocked during your preceding turn, this unit can intercept from the back row and gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16190
+{
+global.CardName[CardStat] = 'Vigorous Brave Shooter'
+global.CardText[CardStat] = 'Stoicheia/Aquaroid
+
+CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is only from «Aqua Force». Then, if your vanguard is "Blue Storm Karma Dragon, Maelstrom "ßeverse"", this card gets all of the following.
+• AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of battle, and at the end of that battle, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit’s.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16191
+{
+global.CardName[CardStat] = 'Armored Gash Dragon'
+global.CardText[CardStat] = 'Stoicheia/Tear Dragon
+
+AUTO: When this unit is placed on RC, choose a "Blue Storm Karma Dragon, Maelstrom "ßeverse"" from your ride deck, and you may reveal it. If you revealed a card or your vanguard is "Blue Storm Karma Dragon, Maelstrom "ßeverse"", COST [Energy Blast 3], and perform one of the following.
+• Choose a <Tear Dragon> or unit card with only «Aqua Force» for its clan with grade less than or equal to your vanguard from your drop, and call it to RC.
+• Choose a Blue Storm Armada card from your drop, and put it into hand.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Maelstrom" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
