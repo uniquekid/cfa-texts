@@ -1231,7 +1231,7 @@ global.CardText[CardStat] = 'The King of Fighters/Orochi Hakkeshu/Four Heavenly 
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1 or Energy Blast 3], search your deck, drop or face up damage zone for up to one "Gaia’s Will, Orochi", reveal it and put it into hand. If you searched the deck, shuffle the deck. If you chose from the damage zone, put the top card of your deck into the damage zone.
 
-AUTO : When this unit is retired during your turn, if your vanguard is "Gaia’s Will, Orochi", choose one of your vanguards and it gets power +5000 until end of the turn.'
+AUTO : When this unit is retired during your turn, if your vanguard is "Gaia’s Will, Orochi", choose one of your vanguards and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
@@ -1247,7 +1247,7 @@ global.CardText[CardStat] = 'The King of Fighters/Orochi Hakkeshu/Four Heavenly 
 
 CONT [RC]: If your vanguard is "Gaia’s Will, Orochi", this unit gains power +10000. (Active on opponent’s turn too)
 
-AUTO: When this unit is placed on GC, choose a "Gaia’s Will, Orochi" from your hand, and you may reveal it. If you do, or your vanguard is "Gaia’s Will, Orochi", COST [Counter Blast 1 or Energy Blast 3], and this unit gets shield +15000 until end of that battle.'
+AUTO: When this unit is placed on GC, choose a "Gaia’s Will, Orochi" from your hand, and you may reveal it. If you revealed a card, or your vanguard is "Gaia’s Will, Orochi", COST [Counter Blast 1 or Energy Blast 3], and this unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 16
 }
@@ -1301,7 +1301,7 @@ CardStat = 16201
 global.CardName[CardStat] = 'Charismatic Evil, Geese Howard'
 global.CardText[CardStat] = 'The King of Fighters/BOSS/Ancient Martial Arts
 
-AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, during the battle, for each of your rear-guards retired by your card’s ability, this unit gets power +5000. If it got power +10000 or more by this effect, at the end of that battle, retire this unit, and draw a card.
+AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, for each of your rear-guards retired by your card’s ability this turn, this unit gets power +5000 until end of that battle. If it got power +10000 or more by this effect, at the end of that battle, retire this unit, and draw a card.
 
 AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, and you do not have another rear-guard with the same card name as this unit, COST [Counter Blast 1 or Energy Blast 3], and this unit get critical +1 until end of that battle.
 
@@ -1322,7 +1322,7 @@ CardStat = 16202
 global.CardName[CardStat] = 'Cold-Blooded "Gentleman", Magaki'
 global.CardText[CardStat] = 'The King of Fighters/BOSS/Space Manipulation
 
-ACT [RC] 1/Turn: If you have a grade 1 or greater unit with "Saiki" in its card name, COST [Counter Blast 1 & bind a grade 2 or greater rear-guard with a different card name from this card], during this turn, this unit get power +10000, and when this unit would attack, choose two of your opponent’s RC, and this unit battles all of your opponent’s vanguards and all units on the chosen RC.'
+ACT [RC] 1/Turn: If you have a grade 1 or greater unit with "Saiki" in its card name, COST [Counter Blast 1 & bind a grade 2 or greater rear-guard with a different card name from this card], until end of turn, this unit get power +10000, and when it would attack, choose two of your opponent’s RC, and it battles all of your opponent’s vanguards and all units on the chosen RC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
@@ -1353,7 +1353,7 @@ CardStat = 16204
 global.CardName[CardStat] = 'The Mastermind Behind the Organization, Igniz'
 global.CardText[CardStat] = 'The King of Fighters/BOSS/NESTS-style Boxing Arts
 
-AUTO [RC]: When this unit attacks, for each of your Kyo Clone token on your RC, this unit get power +5000 until end of that battle. At the end of that battle, retire this unit. (This effect is mandatory)
+AUTO [RC]: When this unit attacks, for each of your Kyo Clone tokens on your RC, this unit gets power +5000 until end of that battle. At the end of that battle, retire this unit. (This effect is mandatory)
 
 AUTO: When this unit is retired from RC by your card’s ability, if you have a <BOSS> vanguard, choose one of your opponent’s rear-guards, and retire it.
 
@@ -1436,7 +1436,7 @@ CardStat = 16209
 global.CardName[CardStat] = 'The One Who Rules Time, Saiki'
 global.CardText[CardStat] = 'The King of Fighters/BOSS/Pure Violence
 
-AUTO: When this card is placed on RC from hand other than during the battle phase, if you have a grade 3 or greater <BOSS> vanguard, cost [Energy Blast 3], choose a <BOSS> normal unit from your drop, and call it to RC.
+AUTO: When this card is placed on RC from hand other than during the battle phase, if you have a grade 3 or greater <BOSS> vanguard, COST [Energy Blast 3], choose a <BOSS> normal unit from your drop, and call it to RC.
 
 CONT [RC]: If your rear-guard was retired by your card’s ability during your turn, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 1
@@ -1477,7 +1477,7 @@ CardStat = 16213
 global.CardName[CardStat] = 'The Devil Who Attained Forbidden Power, Omega Rugal'
 global.CardText[CardStat] = 'The King of Fighters/BOSS/Composite Fighting Style
 
-AUTO: When placed by riding from a grade 1 with "Rugal" in its card name, look at the top five cards of your deck,choose up to one <BOSS> non-sentinel normal unit, reveal and put it into hand, and shuffle the deck. If you did not reveal a card, choose a grade 1 card with "Rugal" in its card name from your soul, and you may call it to RC. If you called a unit, Soul Charge 1.'
+AUTO: When placed by riding from a grade 1 with "Rugal" in its card name, look at the top five cards of your deck, choose up to one <BOSS> non-sentinel normal unit, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, choose a grade 1 card with "Rugal" in its card name from your soul, and you may call it to RC. If you called a unit, Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 16
 }
@@ -1492,7 +1492,7 @@ global.CardText[CardStat] = 'The King of Fighters/BOSS/Composite Fighting Style
 
 ACT [VC] 1/Turn: COST [Retire two <BOSS> normal units with different card names from RC], and draw two cards.
 AUTO [VC] 1/Turn: When this unit attacks, if you have three or more cards in your damage zone, COST [Counter Blast 1], for each of your rear-guards retired by your card’s ability, this unit power +5000 until end of turn. If it got power +15000 or more by this effect, it also gets "Triple Drive".
-AUTO [VC] 1/Turn: When this unit attacks, if you have five or more cards in your damage zone, COST [Energy Blast 3], at the end of that battle, stand this unit, and until end of turn, this unit gets drive -2 and its critical becomes 1.
+AUTO [VC] 1/Turn: When this unit attacks, if you have five or more cards in your damage zone, COST [Energy Blast 3], at the end of that battle, stand this unit, and until end of turn, it gets drive -2 and its critical becomes 1.
 
 (SHIFT + left click to count up retires.)
 (SHIFT + right click to count down retires.)
@@ -1693,7 +1693,7 @@ CardStat = 16227
 global.CardName[CardStat] = 'Master of Hakkyokuseiken, Tung Fu Rue'
 global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyokuseiken
 
-ACT [RC]: If you have a vanguard with "Shun’ei" or "Terry Bogard" in its card name, and you have  four or more grade 1 or greater <Fighter> units, COST [retire this unit], and the next time you would pay cost for your vanguard’s ability this turn, that cost is reduced by Counter Blast 1.'
+ACT [RC]: If you have a vanguard with "Shun’ei" or "Terry Bogard" in its card name, and you have four or more grade 1 or greater <Fighter> units, COST [retire this unit], and the next time you would pay cost for your vanguard’s ability this turn, that cost is reduced by Counter Blast 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
 }
@@ -1749,7 +1749,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose o
 
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose one of your rear-guards, and return it to hand.
 
-AUTO [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose up to three of your rear-guards, and return them to hand. Choose up to three normal units with different card names from your hand, and call them to RC, and they get power +5000 until end of turn.'
+AUTO [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose up to three of your rear-guards, and return them to hand. Choose up to three normal units with different card names from your hand, call them to RC, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
@@ -1779,7 +1779,7 @@ CardStat = 16235
 global.CardName[CardStat] = 'The Young Rising Dragon, Sie Kensou'
 global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers + Chinese Martial Arts
 
-AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Athena Asamiya" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and this unit was placed by a card’s ability, it also gets power+10000.
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Athena Asamiya" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and this unit was placed by a card’s ability, it also gets power +10000.
 
 AUTO [RC]: When your vanguard with "Athena Asamiya" attacks, COST [Counter Blast 1 or Energy Blast 3], and draw a card. If your opponent’s vanguard is grade 3 or greater, return this unit to hand, choose up to one normal unit with "Sie Kensou" in its card name from your hand, and call it to RC.'
 global.UnitGrade[CardStat] = 2
@@ -1811,7 +1811,7 @@ global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers
 
 AUTO [Backrow RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Athena Asamiya" in its card name, and you do not have another rear-guard with the same card name as this unit, choose one of your rear-guards with "Chin Gentsai" or "Sie Kensou" in its card name, and you may return it to hand. If you do, return this unit to hand.
 
-CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this card gets shield 5000.'
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield 5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
 }
