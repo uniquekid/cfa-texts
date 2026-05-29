@@ -109,7 +109,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15964
 {
-global.CardName[CardStat] = 'The Shooting Star, Benimaru Nikaido'
+global.CardName[CardStat] = 'Electric Shooter, Benimaru Nikaido'
 global.CardText[CardStat] = 'The King of Fighters/Fighter/Shoot Boxing
 
 AUTO [RC]: When this unit stand by the effect of your vanguard with "Kyo Kusanagi" in its card name, until end of turn, when your opponent would call cards from hand to GC for the battles this unit attacked, they must call two or more cards at the same time.
@@ -1060,7 +1060,7 @@ CardStat = 16119
 global.CardName[CardStat] = 'Continue'
 global.CardText[CardStat] = 'The King of Fighters/Over Trigger
 
-Additional Effect - Choose one of your units, it gets Critical +1 until the end of this turn, and during this fight, you get "[1/Fight: When your damage check reveals a card other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, and heal it. At the end of that turn, discard all cards in your hand, Counter Charge 5, Energy Charge 7.].'
+Additional Effect - Choose one of your units, it gets critical +1 until the end of this turn, and during this fight, you get "[1/Fight: When your damage check reveals a card other than heal trigger, if your damage zone has five or more cards, choose a card from your damage zone, and heal it. At the end of that turn, discard all cards in your hand, Counter Charge 5, Energy Charge 7.]!'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 25
 global.DCards[CardStat] = 16
@@ -1303,7 +1303,7 @@ global.CardText[CardStat] = 'The King of Fighters/BOSS/Ancient Martial Arts
 
 AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, during the battle, for each of your rear-guards retired by your card’s ability, this unit gets power +5000. If it got power +10000 or more by this effect, at the end of that battle, retire this unit, and draw a card.
 
-AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, and you do not have a rear-guard with the same card name as this unit, COST [Counter Blast 1 or Energy Blast 3], and this unit get critical +1 until end of that battle.
+AUTO [RC]: When this unit attacks, if you have a <BOSS> vanguard, and you do not have another rear-guard with the same card name as this unit, COST [Counter Blast 1 or Energy Blast 3], and this unit get critical +1 until end of that battle.
 
 (SHIFT + left click to count up retires.)
 (SHIFT + right click to count down retires.)
@@ -1504,3 +1504,316 @@ global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16215
+{
+global.CardName[CardStat] = 'The Beautiful Kick’s Illusion, King'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Muay Thai
+
+AUTO: When this unit is placed on RC, if you have three or more grade 1 or greater <Female Fighter> units, COST [Soul Blast 1], choose one of your opponent’s rear-guards in the same column as this unit, and retire it.
+
+CONT [RC]: If your opponent’s vanguard is grade 3 or greater, and your opponent has no rear-guards in the same column as this unit, this unit get power +10000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Wrestling uses cyrillic ¾
+CardStat = 16216
+{
+global.CardName[CardStat] = 'Sumo Sweetie, Hinako Shijo'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Sumo Wre¾tling
+
+AUTO [Backrow RC]: When your other grade 1 or greater unit is placed on an open RC, if your vanguard is grade 3 or greater, and you have three or more grade 1 or greater <Female Fighter> units, until end of turn, this unit gain power +5000, and this unit cannot be moved to other RC. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16217
+{
+global.CardName[CardStat] = 'The Energetic Gourmand Waitress, Li Xiangfei'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Kung Fu
+
+ACT [Drop]: If you have three or more grade 1 or greater <Female Fighter> units, and you do not have a rear-guard with the same card name as this unit, COST [Soul Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16218
+{
+global.CardName[CardStat] = 'The Girl Seeking Her Father, Kasumi Todoh'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Todoh-ryu Ancient Martial Arts
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have three or more grade 1 or greater <Female Fighter> units, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16219
+{
+global.CardName[CardStat] = 'Aspiring for Justice, Lee Jinju'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter /Taekwondo(Personally Arranged)
+
+AUTO: When this unit is placed on RC, if you have three or more grade 1 or greater <Female Fighter> units, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one grade 1 or greater <Female Fighter> card, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1, and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16220
+{
+global.CardName[CardStat] = 'A Youth Who Possesses Mysterious Power, Shun’ei'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyoku Gen’ei Ken
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16221
+{
+global.CardName[CardStat] = 'Unflappable Passionate Youth, Shun’ei'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyoku Gen’ei Ken
+
+AUTO: When this unit is placed by riding from a grade 0 with "Shun’ei" in its card name, COST [reveal a grade 3 card with "Shun’ei" in its card name from ride deck], look at the top seven cards of your deck, choose a <Fighter> non-sentinel normal unit, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16222
+{
+global.CardName[CardStat] = 'Young Fighter Who Controls Illusions, Shun’ei'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyoku Gen’ei Ken
+
+AUTO: When placed by riding from a grade 1 with "Shun’ei" in its card name, choose a <Fighter> normal unit from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16223
+{
+global.CardName[CardStat] = 'Amped-up Illusionist, Shun’ei'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyoku Gen’ei Ken
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1 & discard a card], stand this unit, until end of turn, it gets power +5000 / drive -1 and its critical becomes 1. If your opponent’s vanguard is grade 3 or greater, choose one of your back row center rear-guards and stand it.
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], and call a Phantom Hands token to backrow center RC. At the end of that turn, remove that unit.
+AUTO [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search your deck or drop for a normal unit with "Isla" in its card name, reveal it and put it into hand, and Counter Charge 1. If you searched the deck, shuffle the deck.
+(SHIFT + left click to call a token.)
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 16228
+global.TokenSummoner[CardStat] = 16228
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16224
+{
+global.CardName[CardStat] = 'Dreaming Brilliance, Isla'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Combo Fighting with Amanda
+
+AUTO [Hand]: At the end of the battle your vanguard with "Shun’ei" attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & discard a card with a different card name from this card], ride this card as stand, and it gets power +5000 / drive -1 until end of turn. At the end of that turn, choose a grade 3 card with "Shun’ei" in its card name from your soul, and ride it as rest.
+
+AUTO: When this unit is placed on VC or RC, call a Phantom Hands(Amanda) token to different RC in the same column as this unit.
+
+(SHIFT + left click to call a token.)
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 16229
+global.TokenSummoner[CardStat] = 16229
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16225
+{
+global.CardName[CardStat] = 'Sleep Prodigy, Meitenkun'
+global.CardText[CardStat] = 'The King of Fighters/Fighter /Hakkyokuminminken
+
+AUTO [Drop]: When a token unit with "Phantom" in its card name is placed during your main phase, if you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], call this card to RC, and it gets power +5000 until end of turn.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Shun’ei" in its card name, this unit gets power +5000 / shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16226
+{
+global.CardName[CardStat] = 'The Shooting Star, Benimaru Nikaido'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Shoot Boxing
+
+AUTO [RC]: During the battle this unit boosted, if you have a grade 3 or greater vanguard with "Shun’ei" in its card name, and you have four or more grade 1 or greater <Fighter> units, until end of that battle, when your opponent would call cards from hand to GC, they must call two or more at the same time. Then, at the end of that battle, return this unit to hand.
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16227
+{
+global.CardName[CardStat] = 'Master of Hakkyokuseiken, Tung Fu Rue'
+global.CardText[CardStat] = 'The King of Fighters/Fighter/Hakkyokuseiken
+
+ACT [RC]: If you have a vanguard with "Shun’ei" or "Terry Bogard" in its card name, and you have  four or more grade 1 or greater <Fighter> units, COST [retire this unit], and the next time you would pay cost for your vanguard’s ability this turn, that cost is reduced by Counter Blast 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16230
+{
+global.CardName[CardStat] = 'Psychic High School Girl, Athena Asamiya'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Psychic Powers + Chinese Martial Arts
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16231
+{
+global.CardName[CardStat] = 'Prelude of the Dawn, Athena Asamiya'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Psychic Powers + Chinese Martial Arts
+
+AUTO: When this unit is placed by riding from a grade 0 with "Athena Asamiya" in its card name, COST [reveal a grade 3 card with "Athena Asamiya" in its card name from ride deck], look at the top seven cards of your deck, choose up to one grade 2 or lower non-sentinel normal unit, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16232
+{
+global.CardName[CardStat] = 'Righteous Psychic Idol, Athena Asamiya'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Psychic Powers + Chinese Martial Arts
+
+AUTO: When placed by riding from a grade 1 with "Athena Asamiya" in its card name, draw a card, choose one of your rear-guards and return it to hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16233
+{
+global.CardName[CardStat] = 'Eternal Psychic Idol, Athena Asamiya'
+global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Psychic Powers + Chinese Martial Arts
+
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose one of your rear-guards and return it to hand, choose up to one card from your hand and call it to RC. If your opponent’s vanguard is grade 3 or greater, the called unit gets power +10000 until end of turn.
+
+ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose one of your rear-guards, and return it to hand.
+
+AUTO [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose up to three of your rear-guards, and return them to hand. Choose up to three normal units with different card names from your hand, and call them to RC, and they get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16234
+{
+global.CardName[CardStat] = 'The Drunken Fist Master, Chin Gentsai'
+global.CardText[CardStat] = 'The King of Fighters/Sage/Chinese Kung Fu
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Athena Asamiya" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and this unit was placed by a card’s ability, it also gets power +5000 / critical +1.
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 16
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16235
+{
+global.CardName[CardStat] = 'The Young Rising Dragon, Sie Kensou'
+global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers + Chinese Martial Arts
+
+AUTO: When this unit is placed on RC from hand, if you have a vanguard with "Athena Asamiya" in its card name, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and this unit was placed by a card’s ability, it also gets power+10000.
+
+AUTO [RC]: When your vanguard with "Athena Asamiya" attacks, COST [Counter Blast 1 or Energy Blast 3], and draw a card. If your opponent’s vanguard is grade 3 or greater, return this unit to hand, choose up to one normal unit with "Sie Kensou" in its card name from your hand, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16236
+{
+global.CardName[CardStat] = 'Natural Psychic Girl, Momoko'
+global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers + Capoeira
+
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Athena Asamiya" in its card name, that unit and this unit get power +5000 until end of turn.
+
+AUTO [Backrow RC]: When your other rear-guard in the same column as this unit is returned to hand, you may return this unit to hand. If you do, choose up to one normal unit with "Momoko" in its card name from your hand, and call it to a backrow RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16237
+{
+global.CardName[CardStat] = 'Mysterious Psycho Soldier Boy, Bao'
+global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers
+
+AUTO [Backrow RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Athena Asamiya" in its card name, and you do not have another rear-guard with the same card name as this unit, choose one of your rear-guards with "Chin Gentsai" or "Sie Kensou" in its card name, and you may return it to hand. If you do, return this unit to hand.
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this card gets shield 5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 16
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
