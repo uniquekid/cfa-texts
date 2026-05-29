@@ -11347,8 +11347,9 @@ CardStat = 15604
 global.CardName[CardStat] = 'Dragon of Dojima, Kazuma Kiryu'
 global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
 
-CONT [VC]: This unit gets grade +1 / power +2000 for each grade 1 or greater <Yakuza> in your soul or drop that were in the ride deck. (Active on opponent’s turn too)
+(You can have a total of four cards in your ride deck made up of this card and three <Yakuza> cards)
 
+CONT [VC]: This unit gets grade +1 / power +2000 for each grade 1 or greater <Yakuza> in your soul or drop that were in the ride deck. (Active on opponent’s turn too)
 AUTO [VC]: At the beginning of your main phase, choose up to one <Yakuza> from your ride deck, and put it into your soul. Then, perform 1 of the following according to your vanguard’s grade.
 • Grade 1 - Choose up to one "Energy Generator" from your ride deck, and put it into the crest zone. If you do, and you went second, Energy Charge 3.
 • Grade 3 - Search your deck or hand for up to one grade 3 with "Kazuma Kiryu" in its card name, ride it as stand, and if you searched your deck, shuffle your deck.'
@@ -12476,6 +12477,32 @@ global.CardName[CardStat] = 'Geologic Rammer Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
 
 AUTO [Drop]: When two or more of your rear-guards with "Grhy" or "Aundra" in their card names are put into soul at the same time during your battle phase, if all of your rear-guards have a different card name from this card, you may call this card to an open back row RC. If you do, put this unit into soul at the end of that turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16192
+{
+global.CardName[CardStat] = 'Stealth Rogue of Heavy Sakura, Kazaki'
+global.CardText[CardStat] = 'Dragon Empire/Demon
+
+AUTO [RC]: At the end of the battle this unit attacked, if two or more of your rear-guards were put into soul at the same time by your vanguard’s ability this turn, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16193
+{
+global.CardName[CardStat] = 'Adast Flack Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater <Flame Dragon> vanguard, COST [put this unit into soul], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }

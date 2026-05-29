@@ -1691,7 +1691,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16161
 {
 global.CardName[CardStat] = 'Goopy Gloopy Girl, Goldie Lemmon'
-global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chrono Storm/Story
+global.CardText[CardStat] = 'Inazuma Eleven/Raimon Junior High/Chrono Storm/Chronicle
 Position: DF
 AUTO: When this unit is put on GC, if you have a <Chronicle> vanguard, COST [Energy Blast 1 & bind a "Goopy Gloopy Goo" from drop], and this unit gets shield +15000 until end of that battle.
 ACT [Drop]: If you have a <Chronicle> vanguard, COST [bind this card], search your deck or drop for up to one card with "Fei Rune" in its card name, call it to , and you cannot pay the cost for [ACT] abilities of cards with the same card name as this card until end of turn. If you searched the deck, shuffle the deck.
@@ -1769,7 +1769,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
 
 Requirement - Front row unit with "Sonny Wright" in its card name
 
-AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If that unit is your vanguard, and your opponent’s vanguard is grade 3 or greater, you may have it get "the unit that used this Special Move gets critical +1 / drive +1 until end of that battle".'
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If that unit is your vanguard, and your opponent’s vanguard is grade 3 or greater, you may have it get "the unit that used this Special Move gets critical +1 / drive -1 until end of that battle".'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -1939,7 +1939,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
 Requirement - Unit with "Antonia Felicier" in its card name
 
 AUTO [Special Move Zone]: When this Special Move is used, choose a card from your opponent’s hand, and bind it face down. At the end of that battle, your opponent puts that card into their hand.'
-global.UnitGrade[CardStat] = 2
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
 global.CardCopies[CardStat] = 2
@@ -2052,3 +2052,44 @@ global.DCards[CardStat] = 15
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16194
+{
+global.CardName[CardStat] = 'Tiger Rookie, Austin Hobbes'
+global.CardText[CardStat] = 'Inazuma Eleven/Inazuma Japan/Chronicle
+
+Position: FW
+
+CONT [VC/RC]: This unit cannot use Shoot moves.
+
+AUTO [RC]: At the beginning of your battle phase, if you have a unit with "Axel Blaze" in its card name, until end of turn, this unit loses all of its original CONT abilities, and gets "CONT [VC/Front Row RC]: This unit gets power +5000.".
+
+AUTO [RC]: When this unit attacks or boosts, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16195
+{
+global.CardName[CardStat] = 'Tiger Drive'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Austin Hobbes" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. Choose one of your opponent’s other rear-guards in the same column as the unit being attacked, and the unit that used this Special Move also battles that chosen unit for that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
