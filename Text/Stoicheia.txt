@@ -11303,7 +11303,7 @@ global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name and this unit was placed on RC from drop this turn, this unit gets power +5000.
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or Gran Magick card, discard it, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or Gran Magick card, discard it, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11711,7 +11711,7 @@ global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
 AUTO [VC]: During your turn, for each of your locked cards, all of your units get power +5000.
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Tear Dragon> or «Aqua Force» rear-guards, and it gets "AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of that turn, COST [Counter Blast 1 or Soul Blast 1 card with "Maelstrom" in its card name], choose one of your rear-guards, and swap that unit’s position with this unit’s." until end of turn.
 AUTO [VC]: At the end of the battle your rear-guard attacked, you may lock that unit.
-AUTO [VC]: When this unit attacks, if it is the fourth battle of that turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it. If your damage zone has four or more cards or you persona rode this turn, this unit gets critical +1 until end of battle.
+AUTO [VC]: When this unit attacks, if it is the fourth battle of that turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it. Then, if your damage zone has four or more cards or you persona rode this turn, this unit gets critical +1 until end of that battle.
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
@@ -11719,10 +11719,10 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.PersonaRide[CardStat] = 1
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 16188
@@ -11766,7 +11766,7 @@ global.CardName[CardStat] = 'Vigorous Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is only from «Aqua Force». Then, if your vanguard is "Blue Storm Karma Dragon, Maelstrom "ßeverse"", this card gets all of the following.
-• AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of battle, and at the end of that battle, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit’s.'
+• AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit’s.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }

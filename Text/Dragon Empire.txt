@@ -10211,7 +10211,7 @@ CardStat = 15209
 global.CardName[CardStat] = 'Dragonvortex, Belligeacro'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO: When this card is discarded from hand during your ride phase, you may call this card to RC as rest. If your vanguard is grade 2 or greater or if your have a <Dinodragon> vanguard, when you would call, you may call it as stand instead of rest.
+AUTO: When this card is discarded from hand during your ride phase, you may call this card to RC as rest. If your vanguard is grade 2 or greater, or you have a <Dinodragon> vanguard, when you would call, you may call it as stand instead of rest.
 
 CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost" and can intercept from the back row.
 
@@ -11347,8 +11347,9 @@ CardStat = 15604
 global.CardName[CardStat] = 'Dragon of Dojima, Kazuma Kiryu'
 global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan
 
-CONT [VC]: This unit gets grade +1 / power +2000 for each grade 1 or greater <Yakuza> in your soul or drop that were in the ride deck. (Active on opponent’s turn too)
+(You can have a total of four cards in your ride deck made up of this card and three <Yakuza> cards)
 
+CONT [VC]: This unit gets grade +1 / power +2000 for each grade 1 or greater <Yakuza> in your soul or drop that were in the ride deck. (Active on opponent’s turn too)
 AUTO [VC]: At the beginning of your main phase, choose up to one <Yakuza> from your ride deck, and put it into your soul. Then, perform 1 of the following according to your vanguard’s grade.
 • Grade 1 - Choose up to one "Energy Generator" from your ride deck, and put it into the crest zone. If you do, and you went second, Energy Charge 3.
 • Grade 3 - Search your deck or hand for up to one grade 3 with "Kazuma Kiryu" in its card name, ride it as stand, and if you searched your deck, shuffle your deck.'
@@ -11471,7 +11472,7 @@ global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Nishikiyama Family
 
 AUTO [RC] 1/Turn: At the end of the battle this unit boosted, if the boosted unit has "Akira Nishikiyama" or "Kazuma Kiryu" in its card name, stand this unit.
 
-AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], choose a unit being attacked, and that unit gets power +10000 until end of battle. (Performed before calling guardians and intercepting)'
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], choose a unit being attacked, and that unit gets power +10000 until end of that battle. (Performed before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -11634,15 +11635,12 @@ AUTO [Drop]: When your grade 3 or greater vanguard with "Kazuma Kiryu" in its ca
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a <Tojo Clan> unit card from your drop, and call it to RC.
 
-AUTO [RC]: When this unit is boosted by a <Tojo Clan>, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When this unit is boosted by a <Tojo Clan>, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-//Abbreviated card text barely fits, keep in mind for EN TL
 CardStat = 15624
 {
 global.CardName[CardStat] = 'Yoshitaka Mine'
@@ -11911,7 +11909,7 @@ CardStat = 15642
 global.CardName[CardStat] = 'Yuya'
 global.CardText[CardStat] = 'Dragon Empire/Yakuza
 
-AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, you may call this card to GC. If you did, this unit gets shield +5000 until end of battle. If your soul has a card with "Kazuki" in its card name, it gets shield +10000 instead of +5000.'
+AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, you may call this card to GC. If you did, this unit gets shield +5000 until end of that battle. If your soul has a card with "Kazuki" in its card name, it gets shield +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -11969,7 +11967,7 @@ global.CardText[CardStat] = 'Dragon Empire/Yakuza/Tojo Clan/Kazama Family
 
 CONT: If you have a <Yakuza> vanguard and all other cards in your soul, drop, and bind zone have different card names from this card, this card gets all of the following.
 • AUTO: When this card is put from RC or hand into soul by your card’s ability other than during the battle phase, search your deck for up to one card with "Akira Nishikiyama" in its card name, call it to RC, and shuffle the deck.
-• AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of battle.'
+• AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -12013,7 +12011,7 @@ CardStat = 15688
 global.CardName[CardStat] = 'Enfold Bellow Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
-AUTO [RC]: The cost of this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of battle.'
+AUTO [RC]: The cost of this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -12476,6 +12474,32 @@ global.CardName[CardStat] = 'Geologic Rammer Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
 
 AUTO [Drop]: When two or more of your rear-guards with "Grhy" or "Aundra" in their card names are put into soul at the same time during your battle phase, if all of your rear-guards have a different card name from this card, you may call this card to an open back row RC. If you do, put this unit into soul at the end of that turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16192
+{
+global.CardName[CardStat] = 'Stealth Rogue of Heavy Sakura, Kazaki'
+global.CardText[CardStat] = 'Dragon Empire/Demon
+
+AUTO [RC]: At the end of the battle this unit attacked, if two or more of your rear-guards were put into soul at the same time by your vanguard’s ability this turn, COST [put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16193
+{
+global.CardName[CardStat] = 'Adast Flack Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater <Flame Dragon> vanguard, COST [put this unit into soul], choose one of your opponent’s rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
