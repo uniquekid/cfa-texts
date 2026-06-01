@@ -305,7 +305,7 @@ CardStat = 15980
 global.CardName[CardStat] = 'Prideful Purple Flame, Iori Yagami'
 global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], stand one of your rear-guards, and this unit and that unit get power +10000 until end of turn. At the end of that turn, retire that rear-guard, and if your opponent’s vanguard is grade 3 or greater, draw a card.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], stand one of your rear-guards, that unit and this unit get power +10000 until end of turn. At the end of that turn, retire that rear-guard, and if your opponent’s vanguard is grade 3 or greater, draw a card.
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1 & Soul Blast 1 & discard a card from hand], search your deck or drop for up to two normal units with "Mature" or "Vice" in their card names, reveal them, and put them into hand. If you searched the deck, shuffle the deck.
 ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search your deck for "A Blood Oath Forged in Ancient Times", reveal it and put it into hand, search your deck for up to one "Insane Iori with Blood of Orochi Under the Night of the Moon", discard it, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
@@ -995,7 +995,7 @@ global.CardText[CardStat] = 'The King of Fighters/Orochi Hakkesshu/Four Heavenly
 
 AUTO [VC]: When this unit attacks, COST [Energy Blast 3], choose one of your <Orochi Hakkesshu> rear-guards, stand it and it gets power +10000 until end of turn.
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, choose up to one "Gaia’s Will, Orochi" from hand, and ride it as stand.
-ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search for up to three "Gaia’s Will, Orochi" from your deck, drop or face up famage, reveal them and put them into hand. If you searched the deck, shuffle the deck. If you chose from the damage zone, for each card put in hand by this effect put the top card of your deck into the damage zone.'
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search for up to three "Gaia’s Will, Orochi" from your deck, drop or face up damage, reveal them and put them into hand. If you searched the deck, shuffle the deck. If you chose from the damage zone, for each card put in hand by this effect put the top card of your deck into the damage zone.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
@@ -1526,11 +1526,11 @@ CardStat = 16216
 global.CardName[CardStat] = 'Sumo Sweetie, Hinako Shijo'
 global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Sumo Wre¾tling
 
-AUTO [Backrow RC]: When your other grade 1 or greater unit is placed on an open RC, if your vanguard is grade 3 or greater, and you have three or more grade 1 or greater <Female Fighter> units, until end of turn, this unit gain power +5000, and this unit cannot be moved to other RC. (This effect is mandatory)'
+AUTO [Back Row RC]: When your other grade 1 or greater unit is placed on an open RC, if your vanguard is grade 3 or greater, and you have three or more grade 1 or greater <Female Fighter> units, until end of turn, this unit gain power +5000, and this unit cannot be moved to other RC. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 3000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -1748,7 +1748,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], draw a card, choose o
 
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose one of your rear-guards, and return it to hand.
 
-AUTO [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose up to three of your rear-guards, and return them to hand. Choose up to three normal units with different card names from your hand, call them to RC, and they get power +5000 until end of turn.'
+ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], draw a card, choose up to three of your rear-guards, and return them to hand. Choose up to three normal units with different card names from your hand, call them to RC, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
@@ -1795,7 +1795,7 @@ global.CardText[CardStat] = 'The King of Fighters/Disciple/Psychic Powers + Capo
 
 AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Athena Asamiya" in its card name, that unit and this unit get power +5000 until end of turn.
 
-AUTO [Backrow RC]: When your other rear-guard in the same column as this unit is returned to hand, you may return this unit to hand. If you do, choose up to one normal unit with "Momoko" in its card name from your hand, and call it to a backrow RC.'
+AUTO [Back Row RC]: When your other rear-guard in the same column as this unit is returned to hand, you may return this unit to hand. If you do, choose up to one normal unit with "Momoko" in its card name from your hand, and call it to a backrow RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
 }
