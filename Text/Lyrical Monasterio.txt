@@ -11425,6 +11425,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 14998
@@ -12567,7 +12568,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, COST [Energy Blast 2], and call this card to RC.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, you may have this unit get power +5000 until end of that battle. If you did, at the end of that turn, retire this unit.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that turn, retire this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12890,10 +12891,10 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop, put it face up as your AutoMOD gauge, choose one of your RC without any X-ceed NET markers, and put a X-ceed NET marker.
 
-[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a total of one or more Crimson Moon cards from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each effect can only be chosen once)
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind one or more Crimson Moon cards from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each effect can only be chosen once)
 • This unit gets drive +1 until end of turn.
 • This unit gets critical +1 until end of turn.
-• Until end of your opponent’s next turn, your rear-guards can attack and intercept from the back row center circle with X-ceed NET marker.
+• Until end of your opponent’s next turn, your rear-guard can attack and intercept from the back row center column with an X-ceed NET marker.
 (SHIFT + left click to get a X-ceed NET Marker.)
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3

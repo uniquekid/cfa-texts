@@ -1287,7 +1287,7 @@ global.CardText[CardStat] = 'Stoicheia/High Beast
 
 AUTO: When this unit is placed on RC or put on GC, if your vanguard is "Sylvan Horned Beast King, Magnolia", this unit gets power +5000 / shield +5000 until end of turn.
 
-AUTO [Back row RC]: At the end of the battle this unit attacked, you may return this to your hand.'
+AUTO [Back Row RC]: At the end of the battle this unit attacked, you may return this to your hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -6298,7 +6298,7 @@ global.CardText[CardStat] = 'Stoicheia/Set Order
 
 (STANDARD JP & EN: Banned.)
 
-AUTO [Order Zone] 1/Turn: When your unit is attacked, choose one of your rear-guards not being attacked, move it to GC, and it gets "[CONT]: When this unit would be retired from GC, bind it instead of retiring." until end of that battle.'
+AUTO [Order Zone] 1/Turn: When your unit is attacked, choose one of your rear-guards not being attacked, move it to GC, and it gets "CONT: When this unit would be retired from GC, bind it instead of retiring." until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 4
@@ -9041,7 +9041,7 @@ CardStat = 14084
 global.CardName[CardStat] = 'Fruit of Golden Sunshine'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
-Choose one of your rear-guards, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects and cannot be put other than on RC by your opponent’s card effects." .'
+Choose one of your rear-guards, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects and cannot be put other than on RC by your opponent’s card effects.".'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -11202,7 +11202,7 @@ CardStat = 15751
 global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome"'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to your back row centre RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to your back row center RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
 
 [Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from your soul and drop], choose trigger cards other than over trigger from your drop up to the number of Crimson Moon cards bound for this cost, put them on the bottom of the deck and shuffle the deck. You cannot pay the cost of [Fantome Skill] of units with the same card name as this unit until end of this fight.
 
@@ -11389,7 +11389,7 @@ global.CardText[CardStat] = 'Stoicheia/Elf
 
 AUTO: When this card is discarded from deck during your turn or discarded from hand by a Magick effect in your order zone during your turn, if you have a grade 3 or greater vanguard with "Berucrea" in its card name, and all of your rear-guards have different card names from this card, you may call this card to RC. If you called a card, at the end of that turn, put this unit into soul.
 
-CONT RC: If you have a grade 3 or greater vanguard with "Berucrea" in its card name, this unit gets "Boost".'
+CONT [RC]: If you have a grade 3 or greater vanguard with "Berucrea" in its card name, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11791,3 +11791,57 @@ global.DCards[CardStat] = 4
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16274
+{
+global.CardName[CardStat] = 'Vernal Twig Dragon'
+global.CardText[CardStat] = 'Stoicheia/Forest Dragon
+
+AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Claudine" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Claudine" in its card name, look at the top five cards of your deck, choose up to one normal order without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [GC]: If your RC has a Plant token, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16275
+{
+global.CardName[CardStat] = 'Flowers of Union'
+global.CardText[CardStat] = 'Stoicheia/Normal Order
+
+Choose a grade 3 card with "Claudine" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Claudine" in its card name, perform one of the following.
+• Choose a <Dryad> or <Bioroid> with grade less than or equal to your vanguard from your drop, and call it to RC
+• If you have a grade 3 vanguard with "Claudine" in its card name, and you did not normal ride or persona ride this turn, activate persona ride. 
+
+(SHIFT + left click to activate persona ride)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.PersonaRideAct[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16276
+{
+global.CardName[CardStat] = 'Folliage Hunter, Sfrinze'
+global.CardText[CardStat] = 'Stoicheia/Elf
+
+CONT: If you have a vanguard with "Claudine" in its card name, this card gets all of the following.
+• AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, COST [Counter Blast 1], retire this unit, and call a Plant token to the RC this unit was on.
+• ACT [Drop]: COST [Bind this card], and call a Plant token to RC.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+global.TokenSummoner[CardStat] = 9583
+global.TokenSummonerPosition[CardStat] = 'SHIFT'

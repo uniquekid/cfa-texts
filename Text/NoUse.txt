@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 16273
+global.AllCard = 16312
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -106,9 +106,12 @@ Iconic = 34                         Record of Ragnarok = 10
                                     CoroCoro Comic = 13
                                     Buddyfight = 14
                                     Inazuma Eleven = 15
+                                    The King of Fighters = 16
+                                    Super Sentai = 17
+                                    When They Cry = 18
 
 
-***Max Clan ID = 35                 Max Nation ID = 16***
+***Max Clan ID = 35                 Max Nation ID = 18***
 */
 
 
@@ -147,8 +150,13 @@ global.CustomFactionNationId[6] = 17
 global.CustomFactionName[6] = 'Super Sentai'
 global.CustomFactionFile[6] = 'Super Sentai.txt'
 
-//Increase left number for every new clan/nation
-global.MaxCustomFaction = 6 + 1
+global.CustomFactionClanId[7] = 0
+global.CustomFactionNationId[7] = 18
+global.CustomFactionName[7] = 'When They Cry'
+global.CustomFactionFile[7] = 'When They Cry.txt'
+
+
+global.MaxCustomFaction = 7 + 1
 //Increase left number for every new clan/nation
 
 
@@ -1449,13 +1457,13 @@ global.CardText[CardStat] = 'The King of Fighters/Token Unit/Phantom Hands
 
 CONT [RC]: When your unit with "Shun’ei" in its card name in the same column as this unit leaves VC or RC, remove this unit.
 
-AUTO: When this unit is removed other than during your main phase, choose one of your opponent’s rear-guards and retire it. If you did not retire a card by this ability, draw a card.
+AUTO: When this unit is removed from RC other than during your main phase, choose one of your opponent’s rear-guards and retire it. If you did not retire a card by this ability, draw a card.
 
 CONT [RC]: This unit cannot be moved to another circle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
 
@@ -1466,26 +1474,27 @@ global.CardText[CardStat] = 'The King of Fighters/Token Unit/Phantom Hands
 
 CONT [RC]: When your unit with "Isla" in its card name in the same column as this unit leaves VC or RC, remove this unit.
 
-AUTO: When this unit is removed other than during your main phase, COST [Soul Blast 1], and draw a card.
+AUTO: When this unit is removed from RC other than during your main phase, COST [Soul Blast 1], and draw a card.
 
 CONT [RC]: This unit cannot be moved to another circle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
-global.PowerStat[CardStat] = 15000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
 
+// à in Sentai is Cyrillic
 CardStat = 16242
 {
-global.CardName[CardStat] = 'Samurai Sentai Shinkenger'
+global.CardName[CardStat] = 'Samurai Sentài Shinkenger'
 global.CardText[CardStat] = 'Crest
 
 CONT: You can only ride grade 3 or greater <Shinkenger> or <Origami> cards.
 
-CONT: During your turn, if your vanguard is grade 3 or greater and your opponent has two or less rear-guards, all of your front-row units get power +5000.
+CONT: During your turn, if your vanguard is grade 3 or greater, and your opponent has two or less rear-guards, all of your front-row units get power +5000.
 
-Samurai Gattai - AUTO 1/Fight: At the end of the battle that your vanguard attacked a grade 3 or greater unit, if your opponent has two or less rear-guards or you persona rode this turn, and your vanguard is armed, COST [say "Samurai Gattai"], choose an <Origami> from your ride deck, ride it as stand, and that unit gets drive -2 until end of turn.'
+Samurai Gattai - AUTO 1/Fight: At the end of the battle your vanguard attacked a grade 3 or greater unit, if your opponent has two or less rear-guards or you persona rode this turn, and your vanguard is armed, COST [say Samurai Gattai], choose an <Origami> from your ride deck, ride it as stand, and that unit gets drive -2 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1493,16 +1502,17 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 
 
+// a in Sentai is Cyrillic
 CardStat = 16260
 {
-global.CardName[CardStat] = 'Avataro Sentai Donbrothers'
+global.CardName[CardStat] = 'Avataro Sentài Donbrothers'
 global.CardText[CardStat] = 'Crest
 
-CONT: You can only ride grade 3 or greater <Shinkenger> or <Hitotsuki> cards.
+CONT: You can only ride grade 3 or greater <Donbrothers> or <Hitotsuki> cards.
 
 CONT: During your turn, if you played an Order card this turn, or there are three or more order cards in your bind zone, all of your front row units get power +5000, and you are in the [Festival] state.
 
-Time to Slay the Hitotsuki - ACT [VC] 1/Turn: If you persona rode this turn, or you are in the [Festival] state, COST [Say "Time to slay the Hitotsuki"], choose a <Hitotsuki> from your ride deck, ride it as stand.'
+Time to Slay the Hitotsuki - ACT [VC] 1/Fight: If you persona rode this turn, or you are in the [Festival] state, COST [say Time to Slay the Hitotsuki], choose a <Hitotsuki> from your ride deck, ride it as stand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }

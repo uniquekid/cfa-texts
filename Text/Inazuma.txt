@@ -494,7 +494,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15937
 {
 global.CardName[CardStat] = 'Illusory Ball'
-global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
 
 (This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
 
@@ -647,7 +647,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 15945
 {
 global.CardName[CardStat] = 'Flash Dash'
-global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
 
 (This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
 
@@ -776,7 +776,7 @@ Position: DF
 
 AUTO: When this unit is placed on RC, COST [bind a "Vigorous Stomp" from drop], choose one of your opponent’s front row rear-guards, and retire it.
 
-AUTO: When this unit is put on GC, if your vanguard is a <Story>, COST [bind a "Vigorous Stomp" from drop], and this unit gets shield +15000 until end of that battle.
+AUTO: When this unit is put on GC, if your vanguard is a <Story>, COST [Energy Blast 1 & bind a "Vigorous Stomp" from drop], and this unit gets shield +15000 until end of that battle.
 
 CONT [RC]: This unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
@@ -973,7 +973,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16061
 {
 global.CardName[CardStat] = 'Peaky Breezy'
-global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Dribble
 
 (This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
 
@@ -1182,7 +1182,7 @@ CardStat = 16133
 global.CardName[CardStat] = 'Flame Dance'
 global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Critical Trigger/Special Move/Block
 
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian with "AUTO: When this unit is put on GC, COST [Soul Blast 1], and Energy Charge 2.".'
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian, and gets "AUTO: When this unit is put on GC, COST [Soul Blast 1], and Energy Charge 2.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 15
 global.CardInClan[CardStat] = 30
@@ -1728,7 +1728,7 @@ global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
 
 Requirement - Front row unit with "Goldie Lemmon" in its card name
 
-AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If you persona rode this turn, it gets power +10000 instead of +5000. Then, if it is the first battle of this turn, COST [Energy Blast 1], stand the unit that used this Special Move, choose two of your rear-guards in the same column as that unit, and swap their positions.'
+AUTO [Special Move Zone]: When this Special Move is used, the unit that used this Special Move gets power +5000 until end of that battle. If you persona rode this turn, it gets power +10000 instead of +5000. Then, if it is the first battle of this turn, at the end of that battle, COST [Energy Blast 1], stand the unit that used this Special Move, choose two of your rear-guards in the same column as that unit, and swap their positions.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 15
 global.ExtraDeck[CardStat] = 1
@@ -1902,7 +1902,7 @@ Position: MF
 
 CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and "CONT [Back Row RC]: This unit gets power +5000.".
 
-AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+AUTO [VC/RC]: When this unit attacks or boosts, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 15
 }
@@ -2093,3 +2093,104 @@ global.CardCopies[CardStat] = 2
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16279
+{
+global.CardName[CardStat] = 'Quiet Guardian, Duske Grayling'
+global.CardText[CardStat] = 'Inazuma Eleven/Lunar Prime Junior High/Chronicle
+
+Position: GK
+
+AUTO: When this card is put on GC, COST [bind a "Lunar Eclipse" from drop], and this unit gets shield +10000 until end of that battle.
+
+CONT [GC]: This unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16280
+{
+global.CardName[CardStat] = 'Fast Dark Side, Falco Flashman'
+global.CardText[CardStat] = 'Inazuma Eleven/Earth Eleven/Chronicle
+
+Position: FW
+
+AUTO: When this unit is placed on RC, choose one of your units with "Arion Sherwind" in its card name, and that unit’s original power becomes 18000 until end of turn.
+
+AUTO [VC/RC]: When this unit attacks, if you have a <Chronicle> vanguard, COST [Energy Blast 2], choose a Special Move with grade less than or equal to your vanguard from your face down Special Move zone, and use it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16281
+{
+global.CardName[CardStat] = 'Indomitable Wild Keeper, Terry Archibald'
+global.CardText[CardStat] = 'Inazuma Eleven/Earth Eleven/Chronicle
+
+Position: GK
+
+AUTO: When this card is put on GC, COST [bind a "Wild Dunk" from drop], and this unit gets shield +10000 until end of that battle.
+
+CONT [GC]: This unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 15
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16288
+{
+global.CardName[CardStat] = 'Lunar Eclipse'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Heal Trigger/Special Move/Catch
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16289
+{
+global.CardName[CardStat] = 'Parkour Power'
+global.CardText[CardStat] = 'Inazuma Eleven/Special Move/Shoot
+
+(This card can only be put in your Special Move deck, and you may have up to two cards with the same card name)
+
+Requirement - Unit with "Austin Hobbes" in its card name
+
+AUTO [Special Move Zone]: When this Special Move is used, until end of that battle, the unit that used this Special Move gets power +5000, and your opponent cannot intercept, and cannot use blitz orders.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 15
+global.ExtraDeck[CardStat] = 1
+global.CardCopies[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16290
+{
+global.CardName[CardStat] = 'Wild Dunk'
+global.CardText[CardStat] = 'Inazuma Eleven/Trigger Order/Heal Trigger/Special Move/Catch
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 15
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
