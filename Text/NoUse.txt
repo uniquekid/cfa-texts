@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 16287
+global.AllCard = 16312
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -106,9 +106,12 @@ Iconic = 34                         Record of Ragnarok = 10
                                     CoroCoro Comic = 13
                                     Buddyfight = 14
                                     Inazuma Eleven = 15
+                                    The King of Fighters = 16
+                                    Super Sentai = 17
+                                    When They Cry = 18
 
 
-***Max Clan ID = 35                 Max Nation ID = 16***
+***Max Clan ID = 35                 Max Nation ID = 18***
 */
 
 
@@ -147,8 +150,13 @@ global.CustomFactionNationId[6] = 17
 global.CustomFactionName[6] = 'Super Sentai'
 global.CustomFactionFile[6] = 'Super Sentai.txt'
 
-//Increase left number for every new clan/nation
-global.MaxCustomFaction = 6 + 1
+global.CustomFactionClanId[7] = 0
+global.CustomFactionNationId[7] = 18
+global.CustomFactionName[7] = 'When They Cry'
+global.CustomFactionFile[7] = 'When They Cry.txt'
+
+
+global.MaxCustomFaction = 7 + 1
 //Increase left number for every new clan/nation
 
 
@@ -1486,7 +1494,7 @@ CONT: You can only ride grade 3 or greater <Shinkenger> or <Origami> cards.
 
 CONT: During your turn, if your vanguard is grade 3 or greater, and your opponent has two or less rear-guards, all of your front-row units get power +5000.
 
-Samurai Gattai - AUTO 1/Fight: At the end of the battle your vanguard attacked a grade 3 or greater unit, if your opponent has two or less rear-guards or you persona rode this turn, and your vanguard is armed, COST [say "Samurai Gattai"], choose an <Origami> from your ride deck, ride it as stand, and that unit gets drive -2 until end of turn.'
+Samurai Gattai - AUTO 1/Fight: At the end of the battle your vanguard attacked a grade 3 or greater unit, if your opponent has two or less rear-guards or you persona rode this turn, and your vanguard is armed, COST [say Samurai Gattai], choose an <Origami> from your ride deck, ride it as stand, and that unit gets drive -2 until end of turn.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1504,7 +1512,7 @@ CONT: You can only ride grade 3 or greater <Donbrothers> or <Hitotsuki> cards.
 
 CONT: During your turn, if you played an Order card this turn, or there are three or more order cards in your bind zone, all of your front row units get power +5000, and you are in the [Festival] state.
 
-Time to Slay the Hitotsuki - ACT [VC] 1/Fight: If you persona rode this turn, or you are in the [Festival] state, COST [say "Time to Slay the Hitotsuki"], choose a <Hitotsuki> from your ride deck, ride it as stand.'
+Time to Slay the Hitotsuki - ACT [VC] 1/Fight: If you persona rode this turn, or you are in the [Festival] state, COST [say Time to Slay the Hitotsuki], choose a <Hitotsuki> from your ride deck, ride it as stand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
