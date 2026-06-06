@@ -549,7 +549,7 @@ global.CardText[CardStat] = 'When They Cry/Heal Trigger
 
 AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
 }
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 4000
@@ -563,7 +563,7 @@ global.CardText[CardStat] = 'When They Cry/Heal Trigger
 
 AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
 global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
 }
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 4000
@@ -577,7 +577,7 @@ global.CardText[CardStat] = 'When They Cry/Heal Trigger
 
 AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
 }
 global.TriggerUnit[CardStat] = 4
 global.PowerStat[CardStat] = 4000
@@ -615,9 +615,17 @@ CardStat = 16356
 global.CardName[CardStat] = 'Magician of Words, Keiichi Maebara'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.'
+AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16361
+global.TokenSummoner[CardStat] = 16361
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -651,7 +659,7 @@ global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
 AUTO: When placed by riding from a grade 1 with "Keiichi Maebara" in its card name, choose <Club Activity Member> from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -660,7 +668,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16359
 {
 global.CardName[CardStat] = 'Endless Golden Witch'
-global.CardText[CardStat] = 'When They Cry/Oyashiro-sama/Over Trigger
+global.CardText[CardStat] = 'When They Cry/Witch/Over Trigger
 
 Additional Effect - Perform one of the following.
 • If the number of cards in your damage zone is greater than or equal to your opponent’s, choose a card from your damage zone, and heal it!
@@ -750,13 +758,12 @@ CardStat = 16366
 global.CardName[CardStat] = 'Behind the Smile, Mion Sozonaki'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Three Great Families
 
-AUTO [Hand]: At the end of the battle your "Hidden Intentions, Shion Sozonaki" on RC attacked, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Mion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
-
+AUTO [Hand]: At the end of the battle your "Hidden Intentions, Shion Sozonaki" on RC attacked,if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Mion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck for a <Club Activity Member> non-sentinel normal unit in its different card name from this unit, reveal it and put it into hand, and shuffle the deck.
-
 CONT [RC/GC]: If you have a vanguard with "Keiichi Maebara" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000. If you have a normal unit with "Shion Sozonaki" in its card name on your RC or GC, it also gets shield +10000.'
 global.UnitGrade[CardStat] = 2
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -773,7 +780,8 @@ ACT [Hand]: COST [Soul Blast 1 & reveal this card & put it on the bottom of the 
 
 CONT [RC/GC]: If you have a vanguard with "Keiichi Maebara" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000. If you have a normal unit with "Mion Sozonaki" in its card name on your RC or GC, it also gets shield +10000.'
 global.UnitGrade[CardStat] = 2
-global.DCards[CardStat] = 16
+global.DCards[CardStat] = 18
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
