@@ -20,7 +20,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16292
 {
-global.CardName[CardStat] = 'What is Your Salary'
+global.CardName[CardStat] = 'What is Your Salary?'
 global.CardText[CardStat] = 'When They Cry
 
 CONT: Sentinel.
@@ -79,7 +79,7 @@ CONT: This card is also regarded as "Angelic Rumble".
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
-global.TriggerUnit[CardStat] = 2
+global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 5000
@@ -91,7 +91,7 @@ global.CardName[CardStat] = 'Girl Whose Words Do Not Match Her Actions'
 global.CardText[CardStat] = 'When They Cry/Draw Trigger'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
-global.TriggerUnit[CardStat] = 2
+global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -197,7 +197,7 @@ CONT: This card is also regarded as "Sorry, Pon!".
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
-global.TriggerUnit[CardStat] = 2
+global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 5000
@@ -206,14 +206,16 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16306
 {
 global.CardName[CardStat] = 'Stopping Tragedy, Keiichi Maebara'
-global.CardText[CardStat] = 'When They Cry/Keiichi Club Activity Member/Maebara Family
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
 ACT [VC] 1/Turn: COST [Energy Blast 3], and this unit gets drive +1 until end of turn.
 
-CONT [VC]: This unit gains all of the following according to the number of your Hinamizawa Syndrome Level Markers.
-• Three or more - CONT [VC]: During your turn, this unit gains power +10000.
-• Four or more - AUTO [VC] 1/Turn: When this unit attacks, choose one of your rear-guards, stand it, and until end of turn, it gains power +10000 / critical +1, and at the end of that turn, retire it.
-• Five or more: AUTO [VC]: When this unit attacks, until end of that battle, it gains drive +1. At the end of that battle, if this unit did not stand by a card effect this turn, stand this unit, and it gets drive -3 until end of turn. Then, deal one damage to this unit. (Perform damage check)'
+CONT [VC]: This unit gets all of the following according to the number of your Hinamizawa Syndrome Level markers.
+• Three or more - CONT [VC]: During your turn, this unit gets power +10000.
+• Four or more - AUTO [VC] 1/Turn: When this unit attacks, choose one of your rear-guards, stand it, and until end of turn, it gets power +10000 / critical +1, and at the end of that turn, retire it.
+• Five or more: AUTO [VC]: When this unit attacks, until end of that battle, it gets drive +1. At the end of that battle, if this unit did not stand by a card effect this turn, stand this unit, and it gets drive -3 until end of turn. Deal one damage to this unit. (Perform damage check)
+
+(Damage is also dealt at the end of the second battle)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
 global.PersonaRide[CardStat] = 1
@@ -225,13 +227,13 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16307
 {
 global.CardName[CardStat] = 'Queen Carrier, Rika Furude'
-global.CardText[CardStat] = 'When They Cry/Rika Club Activity Member/Three Great Families
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Three Great Families
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Keiichi Maebara" in its card name, COST [Counter Blast 1], and draw a card.
 
 AUTO [Hand]: At the beginning of your main phase, you may call this card to RC.
 
-CONT [RC]: You cannot gain a fifth Hinamizawa Syndrome Level Marker.
+CONT [RC]: You cannot gain a fifth Hinamizawa Syndrome Level marker.
 
 CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
@@ -250,7 +252,7 @@ AUTO [VC]: When this unit attacks, call a Goat token to an open RC. If your oppo
 CONT [VC]: When your opponent would call cards from hand to GC for this unit’s attack, they must call three or more at the same time.
 CONT [VC]: This unit gets drive +1.
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
-AUTO [VC]: When this unit attacks, your opponent chooses two of this unit’s original CONT abilities, and performs Blue Truth "Those abilities are nullified until end of that battle". Then, COST [Soul Blast 3], choose one of those nullified abilities, and perform Red Truth "That ability is active instead of nullified".
+AUTO [VC]: When this unit attacks, your opponent chooses two of this unit’s original CONT abilities, and performs Blue Truth "Those abilities are nullified until end of that battle". COST [Soul Blast 3], choose one of those nullified abilities, and perform Red Truth "That ability is active instead of nullified".
 (SHIFT + left click to call tokens.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
@@ -301,7 +303,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16311
 {
-global.CardName[CardStat] = 'Witch of Drama, Featherine Augustus Aurora'
+global.CardName[CardStat] = 'Witch of Theatergoing, Featherine Augustus Aurora'
 global.CardText[CardStat] = 'When They Cry/Witch
 
 CONT: This card cannot be normal called.
@@ -335,3 +337,451 @@ global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 16337
+{
+global.CardName[CardStat] = 'Blank Stare'
+global.CardText[CardStat] = 'When They Cry/Critical Trigger
+
+CONT: This card is also regarded as "Is it Magic or Trickery?".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16338
+{
+global.CardName[CardStat] = 'Blank Stare '
+global.CardText[CardStat] = 'When They Cry/Critical Trigger
+
+CONT: This card is also regarded as "Is it Magic or Trickery?".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16339
+{
+global.CardName[CardStat] = 'Is it Magic or Trickery?'
+global.CardText[CardStat] = 'When They Cry/Critical Trigger
+
+CONT: This card is also regarded as "Blank Stare".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16340
+{
+global.CardName[CardStat] = 'Is it Magic or Trickery? '
+global.CardText[CardStat] = 'When They Cry/Critical Trigger
+
+CONT: This card is also regarded as "Blank Stare".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16341
+{
+global.CardName[CardStat] = 'Falling Fist'
+global.CardText[CardStat] = 'When They Cry/Critical Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16342
+{
+global.CardName[CardStat] = 'A World You Don’t Need To Know'
+global.CardText[CardStat] = 'When They Cry/Draw Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16343
+{
+global.CardName[CardStat] = 'Checkmate Through Critical Deduction'
+global.CardText[CardStat] = 'When They Cry/Front Trigger'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16344
+{
+global.CardName[CardStat] = 'Bearing Everything with Open Arms'
+global.CardText[CardStat] = 'When They Cry/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16345
+{
+global.CardName[CardStat] = 'Enjoying Alcohol in the Hot Spring'
+global.CardText[CardStat] = 'When They Cry/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16346
+{
+global.CardName[CardStat] = 'The Want to Reunite'
+global.CardText[CardStat] = 'When They Cry
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16347
+{
+global.CardName[CardStat] = 'Supersonic Fists'
+global.CardText[CardStat] = 'When They Cry/Front Trigger
+
+CONT: This card is also regarded as "Won’t You Just Give Up and Die?".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16348
+{
+global.CardName[CardStat] = 'Won’t You Just Give Up and Die?'
+global.CardText[CardStat] = 'When They Cry/Front Trigger
+
+CONT: This card is also regarded as "Supersonic Fists".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16349
+{
+global.CardName[CardStat] = 'Revel in the Golden Butterflies, Before You Die!'
+global.CardText[CardStat] = 'When They Cry/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16350
+{
+global.CardName[CardStat] = 'Revel in the Golden Butterflies, Before You Die!'
+global.CardText[CardStat] = 'When They Cry/Front Trigger
+
+AUTO: When this unit is retired from GC, you may put this card into soul.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16351
+{
+global.CardName[CardStat] = 'Teachings of a King'
+global.CardText[CardStat] = 'When They Cry/Heal Trigger
+
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 16352
+{
+global.CardName[CardStat] = 'Teachings of a King '
+global.CardText[CardStat] = 'When They Cry/Heal Trigger
+
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 16353
+{
+global.CardName[CardStat] = 'Timely Gifts'
+global.CardText[CardStat] = 'When They Cry/Heal Trigger
+
+AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.TriggerUnit[CardStat] = 4
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 16354
+{
+global.CardName[CardStat] = 'Passionate and Hotheaded, Keiichi Maebara'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16355
+{
+global.CardName[CardStat] = 'Passionate and Hotheaded, Keiichi Maebara '
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16356
+{
+global.CardName[CardStat] = 'Magician of Words, Keiichi Maebara'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
+
+AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16361
+global.TokenSummoner[CardStat] = 16361
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16357
+{
+global.CardName[CardStat] = 'Magician of Words, Keiichi Maebara '
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
+
+AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16361
+global.TokenSummoner[CardStat] = 16361
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16358
+{
+global.CardName[CardStat] = 'Unwavering Resolve, Keiichi Maebara'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
+
+AUTO: When placed by riding from a grade 1 with "Keiichi Maebara" in its card name, choose <Club Activity Member> from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16359
+{
+global.CardName[CardStat] = 'Endless Golden Witch'
+global.CardText[CardStat] = 'When They Cry/Witch/Over Trigger
+
+Additional Effect - Perform one of the following.
+• If the number of cards in your damage zone is greater than or equal to your opponent’s, choose a card from your damage zone, and heal it!
+• Put this removed card on the bottom of the deck.
+• Choose one of your units, and until end of turn, it gets critical + 1.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 16360
+{
+global.CardName[CardStat] = 'Exposing the Lie, Rena Ryugu'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Ryugu Family
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Keiichi Maebara" in its card name, your opponent looks at the top card of their deck, and declares either trigger unit or not. COST [Say You’re Lying!], and your opponent reveals the top card of their deck. If the revealed card is of the card type your opponent declared, draw a card. If you did not draw a card, put the revealed card on the bottom of your opponent’s deck, and this unit gets power +10000 until end of that battle.
+(If you drew a card, the revealed card is returned to the top of the deck)
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Keiichi Maebara" in its card name, and you do not have a rear-guard with the same card name as this unit, COST [Soul Blast 1 & put this unit into soul], and draw a card.
+
+ACT [Soul]: If you have a vanguard with "Keiichi Maebara" in its card name, and you do not have a rear-guard with the same card name as this card, COST [Counter Blast 1], and call this card to RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16363
+{
+global.CardName[CardStat] = 'Caring and Fretful Brother, Satoshi Houjou'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Houjou Family
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you have no rear-guards with the same card name as this card, call this card to RC as rest.
+
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [put this unit into soul], and Counter Charge 1 .
+
+CONT [RC/GC]: If you have a normal unit with "Satoko Hojo" in its card name on RC or GC, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16364
+{
+global.CardName[CardStat] = 'Observer Halting the Future, Hanyuu'
+global.CardText[CardStat] = 'When They Cry
+
+AUTO [Drop]: When your vanguard with "Keiichi Maebara" in its card name attacks, if you persona rode this turn, or you have five Hinamizawa Syndrome Level markers, and you do not have a rear-guard with the same card name as this card, you may call this card to a back row RC. If you called a card, and there are five or more cards in your damage zone, choose up to one "HEAL" or <Oyashiro-same> from your drop, return it to your deck, and shuffle the deck.
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, look at the top card of your deck, and put it on the top or bottom of the deck.
+
+CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16365
+{
+global.CardName[CardStat] = 'Prank-loving Picky Eater, Satoshi Houjou'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Houjou Family
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you have no rear-guards with the same card name as this card, call this card to RC as rest.
+
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [Soul Blast 1], declare trigger unit or not, and your opponent reveals the top card of their deck. If your opponent revealed a card type you declared, put the revealed card on the bottom of their deck, and this unit gets power +5000 until end of turn. If they did not, retire this unit, and call this card to RC.
+
+CONT [RC/GC]: If you have a normal unit with "Satoshi Hojo" in its card name on RC or GC, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16366
+{
+global.CardName[CardStat] = 'Behind the Smile, Mion Sozonaki'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Three Great Families
+
+AUTO [Hand]: At the end of the battle your "Hidden Intentions, Shion Sozonaki" on RC attacked,if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Mion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck for a <Club Activity Member> non-sentinel normal unit in its different card name from this unit, reveal it and put it into hand, and shuffle the deck.
+CONT [RC/GC]: If you have a vanguard with "Keiichi Maebara" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000. If you have a normal unit with "Shion Sozonaki" in its card name on your RC or GC, it also gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16367
+{
+global.CardName[CardStat] = 'Hidden Intentions, Shion Sozonaki'
+global.CardText[CardStat] = 'When They Cry/Club Activity Member/Three Great Families
+
+AUTO [Hand]: At the end of the battle your "Behind the Smile, Mion Sozonaki" on RC attacked, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Mion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
+
+ACT [Hand]: COST [Soul Blast 1 & reveal this card & put it on the bottom of the deck], search your deck for a "Behind the Smile, Mion Sozonaki", reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC/GC]: If you have a vanguard with "Keiichi Maebara" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000. If you have a normal unit with "Mion Sozonaki" in its card name on your RC or GC, it also gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
