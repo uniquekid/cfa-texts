@@ -13465,10 +13465,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16317
 {
-global.CardName[CardStat] = 'Shining Magic, Nenelus'
+global.CardName[CardStat] = 'Shining Truth Magic, Nenelus'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Thegrea" in its card name, COST [Energy Blast 3, and put a card from your hand on the bottom of your deck], draw two cards, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed on RC from deck or hand, if you have a vanguard with "Thegrea" in its card name, COST [Energy Blast 3 & put a card from hand on the bottom of the deck], draw two cards, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 
 CONT [RC]: If you have a vanguard with "Thegrea" in its card name, this unit gets "Boost", and when you persona ride, you draw two cards instead of one, and increase power by +15000 instead of +10000.'
 global.UnitGrade[CardStat] = 2
@@ -13476,3 +13476,34 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16333
+{
+global.CardName[CardStat] = 'Hound Raiser, Tsukasa'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser" in its card name, COST [Energy Blast 3], search your deck or drop for up to one grade 3 <High Beast>, call it to RC in the same column as this unit, and if you searched the deck, shuffle the deck. If your opponent’s vanguard is grade 3 or greater, and your other unit with the same card name as this unit was not placed this turn, that called unit gets "CONT [RC]: This unit can attack from the back row." until end of turn.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Hound Raiser" in its card name, and you have a <High Beast> in the same column as this unit, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16334
+{
+global.CardName[CardStat] = 'Vargaon'
+global.CardText[CardStat] = 'Keter Sanctuary/High Beast
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Hound Raiser" in its card name, this unit gets power +5000 until end of that battle. Then, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your units with "Hound Raiser" in its card name in the same column as this unit, and that unit and this unit get power +5000 until end of turn.
+
+CONT [RC/GC]: If you have a vanguard with "Hound Raiser" in its card name, this unit gets "Intercept", can intercept from the back row, and gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
