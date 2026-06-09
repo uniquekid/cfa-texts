@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 16383
+global.AllCard = 16419
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1529,17 +1529,19 @@ CONT [Order Zone]: You can have up to five Hinamizawa Level markers.
 
 AUTO [Order Zone]: At the beginning of your main phase, you gain a Hinamizawa Level marker. If you have five or more cards in your damage zone, you also gain a Hinamizawa Level marker.
 
-(SHIFT + left click to get a Hinamizawa Level marker.)'
+(SHIFT + left click to increase the Hinamizawa Level.)
+(SHIFT + right click to decrease the Hinamizawa Level.)
+(Middle click or hover and press SPACE to set Hinamizawa Level total.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
-global.TokenSummoner[CardStat] = 16361
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
 
+//Unusued and unneeded, but cant replace due to folks who dont update images
 CardStat = 16362
 {
 global.CardName[CardStat] = 'Hinamizawa Level'
@@ -1548,6 +1550,24 @@ global.CardText[CardStat] = 'Marker
 (This represents a Hinamizawa Level marker, and cannot be put in a deck)'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 16406
+{
+global.CardName[CardStat] = 'Golden Epitaph'
+global.CardText[CardStat] = 'When They Cry/Token Set Order
+
+CONT [Order Zone]: You cannot call cards to RC with units, and you cannot call cards with the same card name as cards in your order zone. When your rear-guard would be bound, retire it instead. (Cannot call cards with the same card name to GC)
+ACT [Order Zone]: If you have a grade 3 vanguard with "Battler" in its card name, COST [put an <Ushiromiya Family> normal unit from drop into the order zone], and perform all of the following according to the number of <Ushiromiya Family> in your order zone with different card names. You cannot choose a card with the same card name as cards in your order zone for this cost.
+• Six - Until end of this fight, you get "During your turn, all of your front row units get power +5000.". Unil end of turn, you cannot put cards from your drop into the order zone. 
+• Thirteen - Retire all of your rear-guards, discard all cards from your hand, search your deck, soul or drop for up to one "Endless Sorcerer, Batora", and ride it as stand. If you seached the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
