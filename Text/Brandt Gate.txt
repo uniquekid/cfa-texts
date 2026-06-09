@@ -11103,9 +11103,9 @@ CardStat = 16385
 global.CardName[CardStat] = 'Mana Shot Star-vader, Neon  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-AUTO: When this unit is placed by riding from a grade 0 with "Star-vader" in its card name, look at the top seven cards of your deck, choose up to one card with "Star-vader" in its card name from among them, reveal it and put it into hand, and shuffle your deck.
+AUTO: When this unit is placed by riding from a grade 0 with "Star-vader" in its card name, look at the top seven cards of your deck, choose up to one card with "Star-vader" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, it gets power +5000 until end of battle.'
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11119,9 +11119,9 @@ CardStat = 16386
 global.CardName[CardStat] = 'Unrivaled Star-vader, Radon  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-CONT [VC]: If your opponent does not have a front-row rear-guard, when you would ride "Star-vader, Chaos Breaker Dragon" from your ride deck, you may ride without discarding.
+CONT [VC]: If your opponent’sfront row has no rear-guards, when you would ride a "Star-vader, Chaos Breaker Dragon" from your ride deck, you can ride without discarding a card from hand.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, it gets power +5000 until end of battle.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11135,11 +11135,11 @@ CardStat = 16387
 global.CardName[CardStat] = 'Star-vader, Chaos Breaker Dragon  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyber Dragon
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guards, and lock it. If you did not lock a front row rear-guard due to this effect, draw a card, and this unit gets power +10000 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guards, and lock it. If you did not lock a front row unit, draw a card, and this unit gets power +10000 until end of turn.
 
 CONT [VC]: During your turn, if your opponent’s rear-guard was locked this turn, this unit gets "CONT [VC]: If your damage zone has four or more cards, or you persona rode this turn, all of your front row rear-guards with "Star-vader" in their card names get power +5000, and this unit gets power +10000/critical +1.".
 
-AUTO [VC] 1/Turn: When your opponent’s locked card is unlocked during any player’s end phase, COST [Soul Blast 1 card with "Star-vader" in its card name], draw a card, and retire all of your opponent’s rear-guards that were unlocked this turn. '
+AUTO [VC] 1/Turn: When your opponent’s rear-guard is unlocked during any player’s end phase, COST [Soul Blast 1 card with "Star-vader" in its card name], draw a card, and retire all of your opponent’s rear-guards that were unlocked this turn. '
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11154,9 +11154,9 @@ CardStat = 16388
 global.CardName[CardStat] = 'Furious Claw Star-vader, Niobium '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Star-vader" in its card name, COST [Energy Blast 3], and call this card to (RC).
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Star-vader" in its card name, COST [Energy Blast 3], and call this card to RC.
 
-CONT [RC]: If your opponent has a locked card, this unit gets power +5000. Then, if there are two or more locked cards, and your opponent’s vanguard is grade 3 or greater, it gets power +5000.'
+CONT [RC]: If your opponent has one or more locked cards, this unit gets power +5000. If they have two or more locked cards, and your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11170,7 +11170,7 @@ CardStat = 16389
 global.CardName[CardStat] = 'Hollow Twin Blades, Binary Star '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with only <Link Joker> for its clan, you may call this card to RC as rest. If your vanguard’s grade is the same as your opponent’s vanguard, call it as stand instead.'
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with only <Link Joker> for its clan, you may call this card to RC as rest. If your vanguard’s grade is the same as your opponent’s vanguard grade, when you would call, you may call it as stand instead of rest.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11182,7 +11182,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16390
 {
 global.CardName[CardStat] = 'Demon Claw Star-vader, Lanthanum '
-global.CardText[CardStat] = 'AUTO [Drop]: When your opponent’s rear-guard is locked, if it is not during the battle phase, and you do not have a rear-guard with the same name as this card, COST [Soul Blast 1], and call this card to RC.
+global.CardText[CardStat] = 'AUTO [Drop]: When your opponent’s rear-guard is locked by the ability of your vanguard with "Star-vader" in its card name, if it is other than during the battle phase, and all of your rear-guards have different card names from this card, COST [Soul Blast 1], and call this card to RC.
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 1
@@ -11198,7 +11198,7 @@ CardStat = 16391
 global.CardName[CardStat] = 'Strike Star-vader, Krypton '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Star-vader" in its card name, you may [Soul Charge 1].
+AUTO: When this unit is placed on RC, if you have a vanguard with "Star-vader" in its card name, you may Soul Charge 1.
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets "Boost".'
 global.UnitGrade[CardStat] = 2
@@ -11214,9 +11214,9 @@ CardStat = 16392
 global.CardName[CardStat] = 'Prison Gate Star-vader, Palladium  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, and your opponent has a locked card, COST [Energy Blast 3], choose one of your opponent’s rear-guards, and lock it. At the end of that turn, unlock the chosen card.
+AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, and your opponent has a locked card, COST [Energy Blast 3], choose one of your opponent’s rear-guards, and lock it. At the end of that turn, unlock the card locked by this ability.
 
-AUTO [RC]: When your grade 3 or greater vanguard with "Star-vader" in its card name attacks, if your rear-guard did not stand by the ability of your card with the same card name as this unit this turn, COST [put this unit into soul], choose one of your rear-guards with "Star-vader" in its card name, stand it, and if your opponent’s vanguard is grade 3 or greater, it gets power +5000 until end of turn.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Star-vader" in its card name attacks, if your rear-guard did not stand by the ability of your card with the same card name as this unit this turn, COST [put this unit into soul], choose one of your rear-guards with "Star-vader" in its card name, and stand it. If your opponent’s vanguard is grade 3 or greater, that chosen unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11231,9 +11231,9 @@ global.CardName[CardStat] = 'Star-vader, Infinite Zero Dragon  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyber Dragon
 
 CONT:  If you have a vanguard with "Star-vader" in its card name, this unit gets "Intercept", all of the following, and shield +10000.
-• AUTO: If your damage zone has four or more cards, or you persona rode this turn, this cost may be paid by Soul Blast 2, and if you do that, when you would choose rear-guards for this ability, choose two instead of one. When it is placed on RC, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and lock it. At the end of the turn, unlock the cards locked by this effect.
-• AUTO [RC]: When this unit attacks, if your opponent has one or more locked cards, this unit gets Power +5000 until end of the battle. Then, if there are two or more locked cards it gets power +10000 instead of power +5000.
-• AUTO [RC] 1/Turn: When your grade 3 or greater vanguard attacks, if you did not stand a rear-guard by the ability of cards with the same name as this unit during this turn, COST [Energy Blast 3], and stand this unit.'
+• AUTO: If your damage zone has four or more cards, or you persona rode this turn, this cost may be paid with "Soul Blast 2", and if you do, when you would choose rear-guards with this ability, choose up to two instead of one. When this unit is placed on RC, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and lock it. At the end of the turn, unlock the cards locked by this ability.
+• AUTO [RC]: When this unit attacks, if your opponent has one or more locked cards, this unit gets Power +5000 until end of that battle. If they have two or more, it gets power +10000 instead of +5000.
+• AUTO [RC] 1/Turn: When your grade 3 or greater vanguard attacks, if your rear-guard did not stand by the ability of your card with the same card name as this unit, COST [Energy Blast 3], and stand this unit.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11252,7 +11252,7 @@ AUTO: When this unit is placed on RC, if you have a vanguard with "Star-vader" i
 • Look at the top seven cards of your deck, choose up to one card with "Star-vader" in its different card name from this unit from among them, reveal it and put it into hand, and shuffle the deck.
 • Choose a grade 1 card with "Star-vader" in its card name from your drop, and call it to RC.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, until end of that battle, this unit gets Power +5000, and if your opponent’s rear-guard was locked this turn, it also gets Power +5000.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000until end of that battle. If your opponent has a locked card, it also gets Power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
