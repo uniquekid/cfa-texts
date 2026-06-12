@@ -11119,7 +11119,7 @@ CardStat = 16386
 global.CardName[CardStat] = 'Unrivaled Star-vader, Radon  '
 global.CardText[CardStat] = 'Brandt Gate/Link Joker/Cyberoid
 
-CONT [VC]: If your opponent’sfront row has no rear-guards, when you would ride a "Star-vader, Chaos Breaker Dragon" from your ride deck, you can ride without discarding a card from hand.
+CONT [VC]: If your opponent’s front row has no rear-guards, when you would ride a "Star-vader, Chaos Breaker Dragon" from your ride deck, you can ride without discarding a card from hand.
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -11140,7 +11140,7 @@ ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your opponent’s rear-guar
 
 CONT [VC]: During your turn, if your opponent’s rear-guard was locked this turn, this unit gets "CONT [VC]: If your damage zone has four or more cards, or you persona rode this turn, all of your front row rear-guards with "Star-vader" in their card names get power +5000, and this unit gets power +10000/critical +1.".
 
-AUTO [VC] 1/Turn: When your opponent’s rear-guard is unlocked during any player’s end phase, COST [Soul Blast 1 card with "Star-vader" in its card name], draw a card, and retire all of your opponent’s rear-guards that were unlocked this turn. '
+AUTO [VC] 1/Turn: When your opponent’s rear-guard is unlocked during any player’s end phase, COST [Soul Blast 1 card with "Star-vader" in its card name], draw a card, and retire all of your opponent’s rear-guards that were unlocked this turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11254,7 +11254,7 @@ AUTO: When this unit is placed on RC, if you have a vanguard with "Star-vader" i
 • Look at the top seven cards of your deck, choose up to one card with "Star-vader" in its different card name from this unit from among them, reveal it and put it into hand, and shuffle the deck.
 • Choose a grade 1 card with "Star-vader" in its card name from your drop, and call it to RC.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000until end of that battle. If your opponent has a locked card, it also gets Power +5000.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Star-vader" in its card name, this unit gets power +5000 until end of that battle. If your opponent has a locked card, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.CardInClan[CardStat] = 24
@@ -11268,15 +11268,13 @@ CardStat = 16420
 global.CardName[CardStat] = 'Break! Three Sisters of Cleaning!'
 global.CardText[CardStat] = 'Brandt Gate/Set Order
 
-(After a set order is played, put it into your order zone)
-
 CONT: During this fight, this card is also regarded as "Dispatch! Three Sisters of Cleaning!".
 
 Play this if you have a vanguard with "Putzen Schwestern" in its card name!
 
-AUTO: When this card is put into your order zone, perform one of the following.
+AUTO: When this card is put into the order zone, perform one of the following.
 • COST [Energy Blast 3], choose a card with "Putzen Schwestern" in its card name from your drop, and call it to RC.
-• If you persona rode this turn, search your deck or drop for up to one card with original card name "Dispatch! Three Sisters of Cleaning", put it into your order zone, and if you searched your deck, shuffle your deck.
+• If you persona rode this turn, search your deck or drop for up to one card with original card name "Dispatch! Three Sisters of Cleaning", put it in the order zone, and if you searched the deck, shuffle the deck.
 
 CONT [Order Zone]: During your turn, all of your front row units get power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -11289,18 +11287,18 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16421
 {
-global.CardName[CardStat] = 'Putzen Schwestern, Bruush Polier'
+global.CardName[CardStat] = 'Putzen Schwestern, Bruush Poliere'
 global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 CONT [Deck]: This card is also regarded as "Putzen Schwestern, Bruush".
 
-AUTO: When this unit is rode upon by a grade 3 with "Putzen Schwestern" in its card name, choose up to one card with "Mopy" in its card name from your soul, and call both that card and this card to RC.
+AUTO: When this unit is rode upon by a grade 3 with "Putzen Schwestern" in its card name, choose up to one card with "Mopy" in its card name from your soul, and call that card and this card to RC.
 
-AUTO: When this unit is put on GC, COST [choose up to two cards with "Putzen Schwestern" in their card names from your drop, and put them on the bottom of your deck in any order], and this unit gets shield +5000 until end of battle for every card chosen for this cost.'
-global.UnitGrade[CardStat] = 1
+AUTO: When this unit is put on GC, COST [choose up to two cards with "Putzen Schwestern" in their card names from your drop, and put them on the bottom of the deck in any order], and this unit gets shield +5000 until end of that battle for every card chosen for this cost.'
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -11311,9 +11309,9 @@ global.CardText[CardStat] = 'Brandt Gate/Workeroid
 
 CONT [Deck]: This card is also regarded as "Putzen Schwestern, Mopy".
 
-AUTO: If this unit was placed on VC, this cost can be paid with "Soul Blast 1". When this unit is placed on VC or RC, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one "Dispatch! Three Sisters of Cleaning!" or up to one unit card with "Putzen Schwestern" in its different original card name from this unit, reveal it and put it into your hand, and shuffle your deck.
+AUTO: If this unit was placed on VC, this cost can be paid with "Soul Blast 1". When this unit is placed on VC or RC, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one "Dispatch! Three Sisters of Cleaning!" or up to one unit card with "Putzen Schwestern" in its different original card name from this unit from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: At the end of the battle this unit boosted, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 2], and increase or decrease the drive of your grade 3 vanguard with "Putzen Schwestern" in its card name to 1 until end of turn.'
+AUTO [RC]: At the end of the battle this unit boosted, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 2], and the drive of your grade 3 vanguard with "Putzen Schwestern" in its card name becomes 1 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
