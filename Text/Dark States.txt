@@ -11334,3 +11334,85 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16423
+{
+global.CardName[CardStat] = 'Purgatory Thorn Retainer, Mercis'
+global.CardText[CardStat] = 'Dark States/Human
+
+CONT [VC]: When you would ride a grade 2 with "Purgatory" in its card name from the ride deck, you can ride with "Soul Blast 1" instead of "choose a card from hand, and discard it".
+
+CONT [Soul]: If you have a grade 3 or greater vanguard with "Favrneel" in its card name, this card gets grade +1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16424
+{
+global.CardName[CardStat] = 'Purgatory War Retainer, Alverich'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is rode upon by a grade 3 with "Favrneel" in its card name, COST [put a card from hand into soul], and draw two cards.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16425
+{
+global.CardName[CardStat] = 'Gunidal Haze Chimera'
+global.CardText[CardStat] = 'Dark States/Chimera
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Purgatory" in its card name, you may put this card into soul.
+
+ACT [Soul]: If you have a grade 3 vanguard with "Favrneel" in its card name, COST [bind this card], and perform one of the following.
+• Search your deck for up to one "Purgatory Great Dragon Emperor, Favrneel Rheingold", ride it as stand, and shuffle the deck.
+• If your vanguard is "Purgatory Great Dragon Emperor, Favrneel Rheingold", and you did not normal ride or persona ride this turn, activate persona ride, and you cannot activate persona ride with other card effects until end of turn.
+
+(SHIFT + left click to activate persona ride)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+global.PersonaRideAct[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16426
+{
+global.CardName[CardStat] = 'Life-stealing Demonic Spearman, Margaras'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Favrneel" in its card name, this unit gets power +5000 until end of that battle.
+
+AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Purgatory" in its card name, COST [put this unit into soul], and draw a card.
+
+AUTO [Soul]: When your grade 3 or greater vanguard with "Favrneel" in its card name is attacked, if the sum of the grades of «Dark States» cards in your soul is thirteen or more, COST [bind this card], choose one of your opponent’s rear-guards, and it gets power -10000 until end of that battle. You cannot bind cards with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16427
+{
+global.CardName[CardStat] = 'Eigisvelm Dragon'
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+CONT: If you have a grade 3 or greater vanguard with "Favrneel" in its card name, this card gets all of the following.
+• ACT [Soul]: COST [Bind this card], choose a card with grade less than or equal to your vanguard from your drop, and call it to RC. You cannot activate the ACT ability of cards with the same card name as this card until end of turn.
+• AUTO [RC]: When this unit attacks, if the sum of the grades of «Dark States» cards in your soul is thirteen or more, the original power of your vanguard and this unit becomes 18000 until end of turn. Then, at the end of that battle, COST [put this unit into soul], choose one of your opponent’s rear-guards, retire it, and Counter Charge 1.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
