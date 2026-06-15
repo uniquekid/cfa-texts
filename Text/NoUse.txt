@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 16427
+global.AllCard = 16474
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1561,13 +1561,39 @@ CardStat = 16406
 global.CardName[CardStat] = 'Golden Epitaph'
 global.CardText[CardStat] = 'When They Cry/Token Set Order
 
-CONT [Order Zone]: You cannot call cards to RC with units, and you cannot call cards with the same card name as cards in your order zone. When your rear-guard would be bound, retire it instead. (Cannot call cards with the same card name to GC)
+CONT [Order Zone]: You cannot call cards to RC with units, and you cannot call cards with the same card name as cards in your order zone. When your rear-guard would be bound, retire it instead. (Cannot call cards with same card name to GC)
 ACT [Order Zone]: If you have a grade 3 vanguard with "Battler" in its card name, COST [put an <Ushiromiya Family> normal unit from drop into the order zone], and perform all of the following according to the number of <Ushiromiya Family> in your order zone with different card names. You cannot choose a card with the same card name as cards in your order zone for this cost.
 • Six - Until end of this fight, you get "During your turn, all of your front row units get power +5000.". Unil end of turn, you cannot put cards from your drop into the order zone. 
-• Thirteen - Retire all of your rear-guards, discard all cards from your hand, search your deck, soul or drop for up to one "Endless Sorcerer, Batora", and ride it as stand. If you seached the deck, shuffle the deck.'
+• Thirteen - Retire all of your rear-guards, discard all cards from your hand, search your deck, soul or drop for up to one "Endless Sorcerer, Battler", and ride it as stand. If you seached the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 16435
+{
+global.CardName[CardStat] = 'Goat'
+global.CardText[CardStat] = 'When They Cry/Token Unit'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 16470
+{
+global.CardName[CardStat] = 'Kinzo’s Hidden Gold'
+global.CardText[CardStat] = 'Marker
+
+During your turn, the unit on this circle gets power +10000, and cannot be retired by card abilities. (Cannot be retired for cost)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
