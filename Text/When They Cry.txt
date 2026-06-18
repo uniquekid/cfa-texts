@@ -247,7 +247,7 @@ CardStat = 16308
 global.CardName[CardStat] = 'Golden Witch, Beatrice'
 global.CardText[CardStat] = 'When They Cry/Witch
 ACT [VC] 1/Turn: COST [Energy Blast 3], draw a card, look at the top seven cards of your deck, choose up to three <Seven Sisters of Purgatory> normal units from among them or your drop, reveal them, and put them into hand. If you put three cards, discard a card from hand.
-AUTO [VC]: When this unit attacks, call a Goat token to an open RC. If your opponent’s vanguard is grade 3 or greater, also call a Goat token, and if there are three or more cards with different card names in your bind zone, also call a Goat token.
+AUTO [VC]: When this unit attacks, call a Goat token to open RC. If your opponent’s vanguard is grade 3 or greater, also call a Goat token, and if there are three or more cards with different card names in your bind zone, also call a Goat token.
 CONT [VC]: When your opponent would call cards from hand to GC for this unit’s attack, they must call three or more at the same time.
 CONT [VC]: This unit gets drive +1.
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, this unit gets critical +1.
@@ -257,6 +257,9 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
 global.PersonaRide[CardStat] = 1
 global.ExtendedTextBox[CardStat] = 1
+global.AnotherSide[CardStat] = 16435
+global.TokenSummoner[CardStat] = 16435
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -755,7 +758,7 @@ CardStat = 16366
 global.CardName[CardStat] = 'Behind the Smile, Mion Sozonaki'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Three Great Families
 
-AUTO [Hand]: At the end of the battle your "Hidden Intentions, Shion Sozonaki" on RC attacked,if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Mion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
+AUTO [Hand]: At the end of the battle your "Hidden Intentions, Shion Sozonaki" on RC attacked,if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, and there are no cards with "Shion Sozonaki" in their card name on your RC or in your bind zone, COST [Counter Blast 1 & bind the unit that attacked], call this card to RC, and it gets power +10000 until end of turn. At the end of that turn, put the card bound for this cost into hand.
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck for a <Club Activity Member> non-sentinel normal unit in its different card name from this unit, reveal it and put it into hand, and shuffle the deck.
 CONT [RC/GC]: If you have a vanguard with "Keiichi Maebara" in its card name, this unit cannot be chosen by your opponent’s card effects, and it gets power +5000. If you have a normal unit with "Shion Sozonaki" in its card name on your RC or GC, it also gets shield +10000.'
 global.UnitGrade[CardStat] = 2
@@ -862,7 +865,7 @@ CardStat = 16400
 global.CardName[CardStat] = 'Smile of Relief, Rika Furude'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-Auto: When this unit is placed by riding from a grade 1 with "Rika Furude" in its card name, draw a card. You may Soul Charge 1.'
+AUTO: When this unit is placed by riding from a grade 1 with "Rika Furude" in its card name, draw a card. You may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -888,7 +891,7 @@ CardStat = 16402
 global.CardName[CardStat] = 'Rebellious Challenger, Battler Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Battler" in its card name, COST [reveal a grade 3 card with "Battler" in its card name from ride deck], put a Golden Epitaph token into the order zone, search your deck for up to one normal unit with "Kinzo" in its card name, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed by riding from a grade 0 with "Battler Ushiromiya" in its card name, COST [reveal a grade 3 card with "Battler Ushiromiya" in its card name from ride deck], put a Golden Epitaph token into the order zone, search your deck for up to one normal unit with "Kinzo" in its card name, reveal it and put it into hand, and shuffle the deck.
 
 (You will be prompted to get the token upon ride.)
 
@@ -909,7 +912,7 @@ CardStat = 16403
 global.CardName[CardStat] = 'Thinker on the Game Board, Battler Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 1 with "Battler" in its card name, look at the top five cards of your deck, choose up to two <Ushiromiya Family> non-sentinel normal units with different card names from among them, reveal them and put them into hand, and shuffle the deck. If you revealed two cards, choose a card from your hand, and discard it. If you did not reveal a card, draw a card.'
+AUTO: When this unit is placed by riding from a grade 1 with "Battler Ushiromiya" in its card name, look at the top five cards of your deck, choose up to two <Ushiromiya Family> non-sentinel normal units with different card names from among them, reveal them and put them into hand, and shuffle the deck. If you revealed two cards, choose a card from your hand, and discard it. If you did not reveal a card, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -926,10 +929,13 @@ ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top five cards of your deck,
 
 AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
 
-ACT [VC] 1/Turn: COST [Choose an <Ushiromiya Family> normal unit from your face up damage zone & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.'
+ACT [VC] 1/Turn: COST [Choose an <Ushiromiya Family> normal unit from your face up damage zone & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+
+(SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
 global.PersonaRide[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -944,7 +950,7 @@ AUTO: When this unit is placed on RC, if you have an <Ushiromiya Family> vanguar
 • Search your deck or drop for up to one normal unit with "Kanon" in its card name, reveal it and put it into hand. If you searched the deck, shuffle the deck.
 • Draw a card.
 
-AUTO [RC]: At the end of the battle your grade 3 or greater vanguard with "Battler" in its card name attacked, COST [Soul Blast 1], and stand this unit. If this unit stand, draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.'
+AUTO [RC]: At the end of the battle your grade 3 or greater vanguard with "Battler Ushiromiya" in its card name attacked, COST [Counter Blast 1], and stand this unit. If this unit stand, draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -972,7 +978,7 @@ CardStat = 16408
 global.CardName[CardStat] = 'Aspiring Witch, Maria Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed on GC, if you have a vanguard with "Battler" in its card name, COST [reveal a <Witch> from hand], and this unit gets shield +10000 until end of that battle.
+AUTO: When this unit is placed on GC, if you have a vanguard with "Battler Ushiromiya" in its card name, COST [reveal a <Witch> from hand], and this unit gets shield +10000 until end of that battle.
 
 CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
@@ -1000,7 +1006,7 @@ CardStat = 16410
 global.CardName[CardStat] = 'Fueled by Jealousy, Kyrie Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Battler" in its card name, and you do not have a rear-guard with the same card name as this unit, COST [retire one of your other <Ushiromiya Family> rear-guards], draw a card, and this unit gets power +5000 until end of turn.'
+ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Battler Ushiromiya" in its card name, and you do not have a rear-guard with the same card name as this unit, COST [retire one of your other <Ushiromiya Family> rear-guards], draw a card, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
 }
@@ -1098,8 +1104,7 @@ global.CardText[CardStat] = 'When They Cry/Club Activity Member/Ryugu Family
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Rika Furude" in its card name, COST [Counter Blast 1 or discard a card from hand], and draw a card.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Rika Furude", until end of turn, that unit and this unit get power +5000.
-auto RC: On attack, if G3+ "Rika Furude", for the turn, your VG and this unit +5k'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Rika Furude", until end of turn, that unit and this unit get power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1152,3 +1157,714 @@ global.DCards[CardStat] = 18
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16428
+{
+global.CardName[CardStat] = 'The Witch of Rokkenjima, Beatrice'
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16429
+{
+global.CardName[CardStat] = 'The Witch of Rokkenjima, Beatrice '
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16430
+{
+global.CardName[CardStat] = 'Sender of the Letters, Beatrice'
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When this unit is placed by riding from a grade 0 with "Beatrice" in its card name, COST [reveal a grade 3 card with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16431
+{
+global.CardName[CardStat] = 'Sender of the Letters, Beatrice'
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When this unit is placed by riding from a grade 0 with "Beatrice" in its card name, COST [reveal a grade 3 with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16432
+{
+global.CardName[CardStat] = 'Ruler of the Game Board, Beatrice'
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When this unit is placed by riding from a grade 1 with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16433
+{
+global.CardName[CardStat] = 'Ruler of the Game Board, Beatrice '
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When this unit is placed by riding from a grade 1 with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16434
+{
+global.CardName[CardStat] = 'Fashion Prince of the Demon World, Gaap'
+global.CardText[CardStat] = 'When They Cry/Demon
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Beatrice" in its card name, COST [Counter Blast 1], and call a Goat token to RC.
+
+AUTO: When this unit attacks, if your vanguard is "Golden Witch, Beatrice", you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.
+
+ACT [Bind] 1/Turn: If your vanguard is "Golden Witch, Beatrice", COST [retire a Goat token], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16435
+global.TokenSummoner[CardStat] = 16435
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16436
+{
+global.CardName[CardStat] = 'Kinzo’s Attending Physician, Terumasa Nanjo'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a normal unit with "Kinzo" in its card name from your drop, and put it into hand.
+
+CONT [GC]: If you have an <Ushiromiya Family> vanguard, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16437
+{
+global.CardName[CardStat] = 'Ushiromiya Family Head, Kinzo Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+ACT [Hand]: If you have an <Ushiromiya Family> vanguard, COST [Counter Blast 1 & Soul Blast 1 & discard this card], search your deck or drop for up to one normal unit with "Genji" in its card name and up to one normal unit with "Nanjo" in its card name, call them to RC, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16438
+{
+global.CardName[CardStat] = 'Noble Gentleman of Flash Kicks, George Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed on RC, if you have an <Ushiromiya Family> vanguard, COST [Counter Blast 1 or Soul Blast 2], and perform one of the following.
+• Search your deck or drop for up to one normal unit with "Shannon" in its card name, reveal it and put it into hand, and if you searched the deck, shuffle the deck.
+• Draw a card.
+
+AUTO: When this unit intercepts, if you have a vanguard with "Battler Ushiromiya" in its card name, and your opponent’s vanguard is grade 3 or greater, this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16439
+{
+global.CardName[CardStat] = 'A Mother’s Unwavering Strength, Rosa Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is put on GC, if you have an <Ushiromiya Family> vanguard, COST [discard an <Ushiromiya Family> normal unit], and draw a card.
+
+CONT [GC]: If you have a normal unit with "Maria Ushiromiya" in its card name on your RC or in the order zone, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16440
+{
+global.CardName[CardStat] = 'Oath to Protect, Shannon'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Servant
+
+CONT [RC]: Your rear-guard with "George" in its card name in the same column as this unit gets power +5000, cannot be chosen by your opponent’s card effects and cannot be retired by your opponent’s card effects.
+
+CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16441
+{
+global.CardName[CardStat] = 'Successor of the Family Head, Krauss Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is put on GC, if you have an <Ushiromiya Family> vanguard, perform all of the following.
+• COST [Counter Blast 1], choose a normal unit with "Kinzo" in its card name from your drop, and put it into hand.
+• COST [Reveal a normal unit with "Kinzo" in its card name from hand], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16442
+{
+global.CardName[CardStat] = 'The Family Head’s Former Best Friend, Genji Ronoue'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+CONT [GC]: If you have an <Ushiromiya Family> vanguard, this unit gets shield +5000. If your vanguard is "Endless Sorcerer, Battler", it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16443
+{
+global.CardName[CardStat] = 'Skilled Chef, Toshiro Gouda'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO [RC]: When this unit attacks a grade 2 or lower unit, if you have an <Ushiromiya Family> vanguard, this unit gets power +5000 until end of that battle.
+
+CONT [GC]: If you have an <Ushiromiya Family> vanguard, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16444
+{
+global.CardName[CardStat] = 'One-Winged Eagle Etched in Her Heart, Natsuhi Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is put on GC, if you have an <Ushiromiya Family> vanguard, perform all of the following.
+• COST [Counter Blast 1], choose a normal unit with "Kinzo" in its card name from your drop, and put it into hand.
+• COST [Reveal a normal unit with "Kinzo" in its card name from hand], and this unit gets shield +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16445
+{
+global.CardName[CardStat] = 'Witch Who Feigns Illness, Chiyo Kumasawa'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+CONT [GC]: If you have an <Ushiromiya Family> vanguard, this unit gets shield +5000. If your vanguard is "Endless Sorcerer, Battler", it gets shield +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16446
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Lucifer of Pride'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.
+
+CONT [GC]: If you have seven <Seven Sisters of Purgatory> normal units with different card names on GC, this unit gets shield +15000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16447
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Leviathan of Envy'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16448
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Mammon of Greed'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Ange" in its card name, look at the top seven cards of your deck, choose up to one <Seven Sisters of Purgatory> normal unit from among them, discard it, and shuffle the deck. If this unit was placed from drop, look at all of the deck instead of the top seven cards.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16449
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Satan of Wrath'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16450
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Belphegor of Sloth'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16451
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Beelzebub of Gluttony'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16452
+{
+global.CardName[CardStat] = 'Seven Sisters of Purgatory, Asmodeus of Lust'
+global.CardText[CardStat] = 'When They Cry/Seven Sisters of Purgatory/Demon
+
+AUTO [RC]: When this unit attacks or boosts, if you have a vanguard with "Beatrice" in its card name, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+CONT [Back Row RC]: If you have a vanguard with "Ange" in its card name, this unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16453
+{
+global.CardName[CardStat] = 'In Her Youth, Eva Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16454
+{
+global.CardName[CardStat] = 'Sharp-tongued Eldest Daughter, Eva Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed by riding from a grade 0 with "Eva Ushiromiya" in its card name, COST [reveal a grade 3 card with "Eva Ushiromiya" in its card name from ride deck], look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16455
+{
+global.CardName[CardStat] = 'Resolve to Solve The Mystery, Eva Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed by riding from a grade 1 with "EVA-Beatrice" in its card name, look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//temporarily create force marker
+CardStat = 16456
+{
+global.CardName[CardStat] = 'Cruel Endless Witch, EVA-Beatrice'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], draw a card, put a Kinzo’s Hidden Gold marker on your VC. If your VC has two or more Kinzo’s Hidden Gold markers, this unit gets drive +1 until end of turn.
+AUTO [VC]: When this unit attacks, COST [retire two of your rear-guards], search your deck or drop for up to one "Control Officer, Chiester 410" and up to one "Targeting Specialist, Chiester 45", call them to RC, and if you searched the deck, shuffle the deck.
+AUTO [VC]: When your <Ushiromiya Family> unit without "Eva Ushiromiya" or "EVA-Beatrice" in its card name is retired from RC, put unit into the order zone.
+CONT [VC]: You cannot call units with the same card name as cards in your order zone. During your turn, if you have six or more <Ushiromiya Family> with different card names in the order zone, all of your front row units get power +5000, and this unit gets critical +1. (Can’t call cards with same card name to GC)
+(SHIFT + left click to create Kinzo’s Hidden Gold marker.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 16470
+global.TokenSummoner[CardStat] = 5820
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16457
+{
+global.CardName[CardStat] = 'Fake Kansai Accent, Hideyoshi Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+CONT [RC/GC]: If you have a unit with "EVA-Beatrice" or "Eva Ushiromiya" in its card name on VC / RC / GC, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16458
+{
+global.CardName[CardStat] = 'Control Officer, Chiester 410'
+global.CardText[CardStat] = 'When They Cry/Chiester Sisters Imperial Guard Corps
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "EVA-Beatrice" in its card name, this unit gets power +5000 until end of turn. If it was placed by your vanguard’s ability, COST [Counter Blast 1], and retire all of your opponent’s rear-guards in the same column as this unit.
+
+CONT [RC]: If you have a normal unit with "Chiester" in its different card name from this unit on RC, this unit gets "Boosts", it can intercept from the back row, and gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16459
+{
+global.CardName[CardStat] = 'Targeting Specialist, Chiester 45'
+global.CardText[CardStat] = 'When They Cry/Chiester Sisters Imperial Guard Corps
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "EVA-Beatrice" in its card name, this unit gets power +5000 until end of turn. If it was placed by your vanguard’s ability, COST [Counter Blast 1], and retire all of your opponent’s rear-guards in the same column as this unit.
+
+CONT [Back Row RC / GC]: If you have a normal unit with "Chiester" in its different card name from this unit on RC or GC, this unit gets "Boost", can intercept from the back row, and gets shield +10000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16460
+{
+global.CardName[CardStat] = 'Awakening to The Truth, Ange Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16461
+{
+global.CardName[CardStat] = 'Journey in Pursuit of Truth, Ange Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed by riding from a grade 0 with "Ange Ushiromiya" in its card name, COST [reveal a grade 3 card with "Ange Ushiromiya" in its card name from ride deck], search your deck for up to one "Memories with My Older Brother", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16462
+{
+global.CardName[CardStat] = 'Return to Rokkenjima, Ange Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO: When this unit is placed by riding from a grade 1 with "Ange Ushiromiya" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the botom of the deck in any order. Choose a grade 1 card from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16463
+{
+global.CardName[CardStat] = 'Witch of Resurrection, ANGE'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
+
+CONT [VC/Ride Deck]: This card is also regarded as "Ange Ushiromiya".
+ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the bottom of the deck in any order. Choose a card from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, that called unit gets power +10000 until end of turn.
+AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
+ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage and put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], choose any number of <Seven Sisters of Purgatory> with different card names from your drop, and call them to GC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16464
+{
+global.CardName[CardStat] = 'Witch of Resurrection, ANGE '
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
+
+CONT [VC/Ride Deck]: This card is also regarded as "Ange Ushiromiya".
+ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the bottom of the deck in any order. Choose a card from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, that called unit gets power +10000 until end of turn.
+AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
+ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage and put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], choose any number of <Seven Sisters of Purgatory> with different card names from your drop, and call them to GC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16465
+{
+global.CardName[CardStat] = 'Witch of Origins, Maria'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Ange Ushiromiya" in its card name, COST [Counter Blast 1 or Soul Blast 2], look at the top three cards of your deck, choose a card from among them, put it into hand, choose up to one card from among them, discard it, and put the rest on the bottom of the deck in any order.
+CONT [RC]: Your "Lady Maria’s Beloved Furniture, Sakutarou" in the same column as this unit gets power +5000.
+AUTO [RC]: At the end of the battle this unit was boosted by "Lady Maria’s Beloved Furniture, Sakutarou", if you have a vanguard with "Ange Ushiromiya" in its card name, and your opponent’s vanguard is grade 3 or greater, if your "Lady Maria’s Beloved Furniture, Sakutarou" did not stand by your card effects this turn, stand the unit that boosted, and until end of turn, it can attack from the back row, and gets power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16466
+{
+global.CardName[CardStat] = 'Lady Maria’s Beloved Furniture, Sakutarou'
+global.CardText[CardStat] = 'When They Cry/Demon
+
+AUTO: When this unit is placed on RC from drop, if you have a vanguard with "Ange Ushiromiya" in its card name, COST [Soul Blast 1], choose a "Witch of Origins, Maria" from your drop, and call it to RC in the same column as this unit.
+
+CONT [RC]: Your "Witch of Origins, Maria" in the same column as this unit cannot be chosen by your opponent’s card effects and cannot be retired by your opponent’s card effects.
+
+CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16467
+{
+global.CardName[CardStat] = 'The Young Lady’s Bodyguard, Amakusa Juuza'
+global.CardText[CardStat] = 'When They Cry
+
+CONT [RC]: If you have a vanguard with "Ange Ushiromiya" in its card name, and two or more of your rear-guards were placed from drop this turn, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
+
+CONT [GC]: If you have a vanguard with "Ange Ushiromiya" in its card name, and your opponent’s vanguard is grade 3 or greater, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16468
+{
+global.CardName[CardStat] = 'Memories with My Older Brother'
+global.CardText[CardStat] = 'When They Cry/Normal Order
+
+This card can be played from drop and play this if you have a vanguard with "Ange Ushiromiya" in its card name!
+
+Perform all of the following.
+• Bind this card, choose a card from your drop, and call it to RC.
+• If your opponent’s vanguard is grade 3 or greater, choose one of your vanguards and it gets critical +1 until end of turn.
+• If you have three or more "Memories With My Older Brother" in your bind zone, all of your rear-guards get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+//temporarily create force marker
+CardStat = 16469
+{
+global.CardName[CardStat] = 'Endless Sorcerer, Battler'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Sorcerer
+
+CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 with "Battler Ushiromiya" in its card name.
+AUTO: When this unit is placed on VC, perform all of the following.
+• Put a Kinzo’s Hidden Gold marker on all your VC and RC.
+• Choose thirteen <Ushinomiya Family> with different card names from your order zone, and put them into hand.
+• Return all non-sentinel normal units from your drop to your deck, and shuffle the deck.
+• Remove your Golden Epitaph token.
+AUTO [VC]: When this unit attacks, stand all of your rear-guards.
+AUTO [VC]: At the beginning of your main phase, COST [put an "Anti-Fantasy, Battler Ushiromiya" from hand into soul], and activate persona ride.
+(SHIFT + left click to create Kinzo’s Hidden Gold marker.)'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16470
+global.TokenSummoner[CardStat] = 5820
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+//temporarily create force marker
+CardStat = 16471
+{
+global.CardName[CardStat] = 'Endless Sorcerer, Battler'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Sorcerer
+
+CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 with "Battler Ushiromiya" in its card name.
+AUTO: When this unit is placed on VC, perform all of the following.
+• Put a Kinzo’s Hidden Gold marker on all your VC and RC.
+• Choose thirteen <Ushinomiya Family> with different card names from your order zone, and put them into hand.
+• Return all non-sentinel normal units from your drop to your deck, and shuffle the deck.
+• Remove your Golden Epitaph token.
+AUTO [VC]: When this unit attacks, stand all of your rear-guards.
+AUTO [VC]: At the beginning of your main phase, COST [put an "Anti-Fantasy, Battler Ushiromiya" from hand into soul], and activate persona ride.
+(SHIFT + left click to create Kinzo’s Hidden Gold marker.)'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16470
+global.TokenSummoner[CardStat] = 5820
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16472
+{
+global.CardName[CardStat] = 'Head of the Witch’s Furniture, Renove'
+global.CardText[CardStat] = 'When They Cry/Demon
+
+AUTO: When this unit is placed on RC, if your vanguard is "Golden Witch, Beatrice", COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit with a different card name from the card from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if your vanguard is "Golden Witch, Beatrice", you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.
+
+AUTO [Bind Zone]: When your "Golden Witch, Beatrice" vanguard attacks, if your opponent’s vanguard is grade 3 or greater, until end of turn, your front row Goat tokens get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 16473
+{
+global.CardName[CardStat] = 'The Witch’s Mentor, Virgilia'
+global.CardText[CardStat] = 'When They Cry/Witch
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Beatrice" in its card name, COST [Counter Blast 1], and call a Goat token to RC.
+
+AUTO [RC]: When this unit attacks, if your vanguard is "Golden Witch, Beatrice", you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.
+
+AUTO [Bind Zone] 1/Turn: When your "Golden Witch, Beatrice" vanguard is attacked, COST [retire a Goat token], and your vanguard gets power +15000 until end of that battle.
+
+(SHIFT + left click to call tokens.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+global.AnotherSide[CardStat] = 16435
+global.TokenSummoner[CardStat] = 16435
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16474
+{
+global.CardName[CardStat] = 'Sorcerer Obsessed with the Witch, Goldsmith'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Sorcerer
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Beatrice" in its card name, COST [Soul Blast 1], search your deck for up to one normal unit with "Renove", "Virgilia" or "Gaap" in its card name, reveal it and put it into hand, and shuffle the deck.
+
+ACT [Hand]: If your vanguard is "Golden Witch, Beatrice", COST [Counter Blast 1 & discard this card], search your deck for up to two normal units with "Renove", "Virgilia" or "Gaap" in their different card names, call them to RC, and shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
