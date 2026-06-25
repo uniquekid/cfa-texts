@@ -1,7 +1,21 @@
+//List of Dragon races for Buddyfight Dragon Ein
+global.BuddyWorldDragons = ds_list_create();
+ds_list_add(global.BuddyWorldDragons,'/Dragon Ein');
+ds_list_add(global.BuddyWorldDragons,'World/Dragon');
+ds_list_add(global.BuddyWorldDragons,'Spell/Dragon');
+ds_list_add(global.BuddyWorldDragons,'Impact/Dragon');
+ds_list_add(global.BuddyWorldDragons,'Item/Dragon');
+ds_list_add(global.BuddyWorldDragons,'/Duel Dragon');
+ds_list_add(global.BuddyWorldDragons,'/Armordragon');
+ds_list_add(global.BuddyWorldDragons,'/Green Dragon');
+ds_list_add(global.BuddyWorldDragons,'/Blue Dragon');
+ds_list_add(global.BuddyWorldDragons,'/Gold Dragon');
+ds_list_add(global.BuddyWorldDragons,'/Black Dragon');
+
 CardStat = 14312
 {
 global.CardName[CardStat] = 'Fuuton, Sweeping Whirlwind'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Spell/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order /Spell/Ninja Arts
 
 Choose a <Ninja> unit card without sentinel from your drop, and put it into hand.
 
@@ -91,7 +105,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14317
 {
 global.CardName[CardStat] = 'Art of Explosive Hades Fall'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order/Spell/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order /Spell/Ninja Arts
 
 Play this with COST [pay a gauge] !
 
@@ -161,7 +175,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14321
 {
 global.CardName[CardStat] = 'Art of Body Replacement'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order /Spell/Ninja Arts
 
 CONT: Sentinel.
 
@@ -180,7 +194,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14322
 {
 global.CardName[CardStat] = 'Sword Skill Bare Hand Intercept'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order /Spell/Ninja Arts
 
 Choose a unit being attacked, and it gets power +15000 until end of that battle. If your opponent’s attacking unit is a vanguard, you may draw a card.'
 global.BuddyWorld[CardStat] = 2
@@ -195,7 +209,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 14323
 {
 global.CardName[CardStat] = 'Ninja Arts, Snake Gaze'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order/Spell/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Blitz Order /Spell/Ninja Arts
 
 Choose a unit being attacked, and it gets power +15000 until end of that battle. COST [Discard a card from hand], choose an attacking rear-guard, and it gets "CONT [RC]: This unit does not stand." until end of turn.'
 global.BuddyWorld[CardStat] = 2
@@ -210,7 +224,7 @@ global.DefensePowerStat[CardStat] = 15000
 CardStat = 14324
 {
 global.CardName[CardStat] = 'Five Heavenly Swords, Onimaru'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order/Item/Japanese Blase/Weapon
+global.CardText[CardStat] = 'Buddyfight/Katana World/Normal Order /Item/Japanese Blade/Weapon
 
 Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
 
@@ -228,7 +242,7 @@ global.BuddyWorld[CardStat] = 2
 CardStat = 14325
 {
 global.CardName[CardStat] = 'Secret Sword, Lethal Formation'
-global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order/Impact/Ninja Arts
+global.CardText[CardStat] = 'Buddyfight/Katana World/Set Order /Impact/Ninja Arts
 CONT: This card cannot be played.
 AUTO [Hand]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and "Secret Sword, Lethal Formation" is not in your order zone, COST [Pay three gauges and declare final phase], and put this card into the order zone.
 AUTO: When this card is put into the order zone, search your deck or drop for up to one card, put it face down as this card’s Buddy Soul, and if you searched the deck, shuffle the deck.
@@ -585,7 +599,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14346
 {
 global.CardName[CardStat] = 'Devil Advantage'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Spell/Magic Power
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order /Spell/Magic Power
 
 Play this with COST [pay a gauge] !
 
@@ -602,7 +616,7 @@ global.BuddyWorld[CardStat] = 1
 CardStat = 14347
 {
 global.CardName[CardStat] = 'Solomon’s Shield'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Blitz Order/Spell/Magic Power
+global.CardText[CardStat] = 'Buddyfight/Magic World/Blitz Order /Spell/Magic Power
 
 CONT: Sentinel.
 
@@ -621,7 +635,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14348
 {
 global.CardName[CardStat] = 'Diabolical Hardcore!'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Impact/72 Pillars
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order /Impact/72 Pillars
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight.
 
@@ -748,7 +762,7 @@ global.BuddyWorld[CardStat] = 1
 CardStat = 14356
 {
 global.CardName[CardStat] = 'Great Spell, Devil’s Rock ’n Roll'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Spell/72 Pillars
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order /Spell/72 Pillars
 
 Play this with COST [pay two gauges] !
 
@@ -765,7 +779,7 @@ global.BuddyWorld[CardStat] = 1
 CardStat = 14357
 {
 global.CardName[CardStat] = 'Mind of Hardcore'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Spell/Charge
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order /Spell/Charge
 
 Play this if you have two or more <72 Pillars> rear-guards!
 
@@ -934,7 +948,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14366
 {
 global.CardName[CardStat] = 'Nice one!'
-global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order/Spell/Magic Power
+global.CardText[CardStat] = 'Buddyfight/Magic World/Normal Order /Spell/Magic Power
 
 Play this with COST [pay a gauge] !
 
@@ -971,7 +985,7 @@ global.BuddyWorld[CardStat] = 1
 CardStat = 14368
 {
 global.CardName[CardStat] = 'Divine Dragon Creation'
-global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order/Spell/Dragon
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order /Spell/Dragon
 
 Play this with COST [Counter Blast 1] !
 
@@ -988,7 +1002,7 @@ global.BuddyWorld[CardStat] = 5
 CardStat = 14369
 {
 global.CardName[CardStat] = 'Dragon Emperor Legend'
-global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order/Spell/Dragon
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Normal Order /Spell/Dragon
 
 Put this card into gauge face down, and draw a card. If your damage zone has no face up cards, Counter Charge 1. Until end of turn, you can play up to a total of two orders, and you cannot play orders other than "Divine Dragon Creation".'
 global.UnitGrade[CardStat] = 1
@@ -1003,7 +1017,7 @@ global.BuddyWorld[CardStat] = 5
 CardStat = 14370
 {
 global.CardName[CardStat] = 'Ice Prison Emperor, Cocytus Greed'
-global.CardText[CardStat] = 'Buddyfight/Ancient World/Dragon Lord/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Ancient World/Dragon Lord /Hundred Demons
 
 AUTO: When this unit is placed on RC, you may put the top two cards of your deck into gauge face down.
 
@@ -1064,7 +1078,7 @@ global.GaugeCharge[CardStat] = 1
 CardStat = 14373
 {
 global.CardName[CardStat] = 'Starved Yamigedo'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Set Order/Charge/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Danger World/Set Order /Charge/Hundred Demons
 
 CONT: You can only put one "Starved Yamigedo" in your order zone.
 
@@ -1081,7 +1095,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14374
 {
 global.CardName[CardStat] = 'Poisonous Water Dragon, Zazamera'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Duel Dragon/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Danger World/Duel Dragon /Hundred Demons
 
 "Thunder Mine" - AUTO [RC] 1/Turn: When your opponent’s grade 2 rear-guard is placed, if you have a vanguard with "Ikazuchi" in its card name, that placed unit gets power -5000 until end of turn.'
 global.BuddyWorld[CardStat] = 6
@@ -1095,7 +1109,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14375
 {
 global.CardName[CardStat] = 'Armorknight Evil Eye'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Armorknight/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Danger World/Armorknight /Hundred Demons
 
 "Thunder Mine" - AUTO [RC] 1/Turn: When your opponent intercepts, if you have a vanguard with "Ikazuchi" in its card name, the unit that intercepted gets shield -5000 until end of turn.'
 global.BuddyWorld[CardStat] = 6
@@ -1207,7 +1221,7 @@ global.BuddyWorld[CardStat] = 7
 CardStat = 14381
 {
 global.CardName[CardStat] = 'Purplish Green Dragon, Peluda'
-global.CardText[CardStat] = 'Buddyfight/Legend World/Wydar Sarkal/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Legend World/Wydar Sarkal /Hundred Demons
 
 "Thunder Mine" - AUTO [RC] 1/Turn: When your opponent’s grade 1 rear-guard is placed, if you have a vanguard with "Ikazuchi" in its card name, that placed unit gets power -5000 until end of turn.'
 global.BuddyWorld[CardStat] = 3
@@ -1221,7 +1235,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14382
 {
 global.CardName[CardStat] = 'Soaring Flame, Lindwurm'
-global.CardText[CardStat] = 'Buddyfight/Legend World/Wydar Sarkal/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Legend World/Wydar Sarkal /Hundred Demons
 
 AUTO: When this unit is placed on RC, COST [discard a <Hundred Demons> from hand], and draw a card.
 
@@ -1390,7 +1404,7 @@ global.BuddyWorld[CardStat] = 8
 CardStat = 14392
 {
 global.CardName[CardStat] = 'Dragon Knight, Pisaro'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight /Hundred Demons
 
 ACT [Front Row RC]: COST [rest this unit], draw a card, and this unit cannot be moved to other RC until end of turn.
 
@@ -1482,7 +1496,7 @@ global.BuddyWorld[CardStat] = 8
 CardStat = 14397
 {
 global.CardName[CardStat] = 'Jackknife Gift'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Green Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Spell/Green Dragon
 
 Play this if you have a vanguard with "Tasuku" in its card name!
 
@@ -1501,7 +1515,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14398
 {
 global.CardName[CardStat] = 'Dragowisdom, Knowledge of the Fifth Omni'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Spell/Dragon
 
 This card can be played from drop, and play this if you have a vanguard with "Gao" in its card name or a rear-guard with "Fifth Omni" in its card name!
 
@@ -1521,7 +1535,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14399
 {
 global.CardName[CardStat] = 'Hundred Demons Formation, Thunder Mine Stance'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Set Order/Spell/Summon/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Set Order/Spell /Summon/Hundred Demons
 
 CONT: You can only put one "Hundred Demons Formation, Thunder Mine Stance" in your order zone.
 
@@ -1558,7 +1572,7 @@ global.BuddyWorld[CardStat] = 8
 CardStat = 14401
 {
 global.CardName[CardStat] = 'Sun Fist, Sunshine Impact'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Item/Weapon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Item/Weapon
 
 Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
 
@@ -1646,7 +1660,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14406
 {
 global.CardName[CardStat] = 'Dragon Knight, Faust'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Dragon Knight /Hundred Demons
 
 CONT: Sentinel.
 
@@ -1662,7 +1676,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14407
 {
 global.CardName[CardStat] = 'Gedo Shield'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Defense/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order /Spell/Defense/Hundred Demons
 
 CONT: Sentinel.
 
@@ -1681,7 +1695,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14408
 {
 global.CardName[CardStat] = 'Blue Dragon Shield'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Blue Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order /Spell/Blue Dragon
 
 CONT: Sentinel.
 
@@ -1700,7 +1714,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14409
 {
 global.CardName[CardStat] = 'Gargantua Punisher!!'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Impact/Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Impact/Dragon
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
 
@@ -1719,7 +1733,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14410
 {
 global.CardName[CardStat] = 'Dragonic Punisher'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Impact/Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Impact/Dragon
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
 
@@ -1890,7 +1904,7 @@ global.BuddyWorld[CardStat] = 8
 CardStat = 14421
 {
 global.CardName[CardStat] = 'Dragonic Charge'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order/Spell/Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Normal Order /Spell/Dragon
 
 Put two cards from the top of your deck into gauge face down.
 
@@ -1908,7 +1922,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14422
 {
 global.CardName[CardStat] = 'Dragobond'
-global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order/Spell/Gold Dragon
+global.CardText[CardStat] = 'Buddyfight/Dragon World/Blitz Order /Spell/Gold Dragon
 
 Perform one of the following.
 • Choose one of your vanguards, and it gets power +20000 until end of that battle.
@@ -2162,7 +2176,7 @@ global.BuddyWorld[CardStat] = 10
 CardStat = 14436
 {
 global.CardName[CardStat] = 'Great Fiend, Yamigedo'
-global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons /Hundred Demons
 
 Call Cost [Pay two gauges & put one or more, up to three <Hundred Demon> rear-guards into this card’s Buddy Soul]
 CONT [RC]: This unit gets all of the "Thunder Mine " abilities of this unit’s Buddy Soul.
@@ -2183,7 +2197,7 @@ global.BuddyWorld[CardStat] = 11
 CardStat = 14437
 {
 global.CardName[CardStat] = 'Lightning of Beginnings, Thunder of The End, Ikazuchi'
-global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons /Buddyfighter
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two non-sentinel <Hundred Demons> unit cards without "Yamigedo" in their different card names from your drop, and call them to RC.
 
@@ -2200,7 +2214,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 14438
 {
 global.CardName[CardStat] = 'Hasted Evolution, Yamigedo'
-global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Hundred Demons
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons /Hundred Demons
 
 "Thunder Mine" - AUTO [RC] 1/Turn: When your opponent’s grade 3 or greater vanguard attacks, if you have a vanguard with "Ikazuchi" in its card name, that unit that attacked gets power -5000 until end of that battle.'
 global.BuddyWorld[CardStat] = 11
@@ -2275,7 +2289,7 @@ global.BuddyWorld[CardStat] = 11
 CardStat = 14442
 {
 global.CardName[CardStat] = 'Superhuman Might, Ikazuchi'
-global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons /Buddyfighter
 
 AUTO: When this unit is placed by riding from "Leader of the Hundred Demons, Ikazuchi", look at the top five cards of your deck, choose up to one card with the "Thunder Mine" ability from among them, reveal it and put it into hand, and shuffle the deck.'
 global.BuddyWorld[CardStat] = 11
@@ -2289,7 +2303,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 14443
 {
 global.CardName[CardStat] = 'Leader of the Hundred Demons, Ikazuchi'
-global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons/Buddyfighter
+global.CardText[CardStat] = 'Buddyfight/Parade of Hundred Demons /Buddyfighter
 
 AUTO: When this unit is placed by riding from "Parade of Hundred Demons", look at the top seven cards of your deck, choose up to one card from among them, put it into drop, and shuffle the deck.'
 global.BuddyWorld[CardStat] = 11
@@ -2341,7 +2355,7 @@ AUTO [VC]: When you Stand Up!!, COST [say "Raise the Flag!"], and you become a B
 
 CONT:You may only have one <Flag> in a deck.
 
-CONT[VC/Order Zone]:This card cannot be affected by other abilities or effects, and when you would ride a card with only <Buddyfight>, call it, or play its ability, if that is a <Danger World> or <Generic> card, you can ride it, call it, or play its ability.'
+CONT[VC/Order Zone]:This card cannot be affected by other abilities or effects, and when you would ride a card with only «Buddyfight», call it, or play its ability, if that is a <Danger World> or <Generic> card, you can ride it, call it, or play its ability.'
 global.BuddyWorld[CardStat] = 6
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
@@ -2353,9 +2367,9 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16481
 {
 global.CardName[CardStat] = 'Criminal Fighter "Wolf", Rouga Aragami'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter /Disaster
 
-AUTO: When this unit is place by riding from "Danger World", look at the top five cards of your deck, choose up to one <Weapon> or up to one <Armorknight> from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is place by riding from "Danger World", look at the top five cards of your deck, choose up to one non-sentinel <Weapon> or up to one non-sentinel <Armorknight> from among them, reveal it and put it into hand, and shuffle the deck.'
 global.BuddyWorld[CardStat] = 6
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
@@ -2367,7 +2381,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16482
 {
 global.CardName[CardStat] = 'Explosive Axe, Ricdeau Demon Slay'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order/Item/Weapon/Demon Slay
+global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order /Item/Demon Slay/Weapon
 
 Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
 
@@ -2389,7 +2403,7 @@ global.Arms[CardStat] = 1
 CardStat = 16483
 {
 global.CardName[CardStat] = 'Top of Sengoku Academy, Rouga Aragami'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter /Disaster
 
 ACT [VC] 1/Turn: COST [Put a card from hand into soul & reveal a grade 3 card with "Rouga" in its card name from ride deck], and draw two cards.
 '
@@ -2404,11 +2418,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16484
 {
 global.CardName[CardStat] = 'Winning is Everything, Rouga Aragami'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Danger World/Buddyfighter /Disaster
 
 CONT [VC]: During your turn, if this unit is armed with a <Weapon>, all of your grade 2 or less <Armorknight> rear-guards get power +5000.
 
-AUTO [VC] 1/Turn: When your <Armorknight> is put into soul by your card’s ability, draw a card. Until end of turn, you get "You can play two orders, and you cannot play orders with the same card names as orders you played this turn.".
+AUTO [VC] 1/Turn: When your <Armorknight> is put into soul by your card’s ability, draw a card, choose a card from your drop, and put it into gauge face down. Until end of turn, you get "You can play two orders, and you cannot play orders with the same card names as orders you played this turn.".
 
 Armor Reuse - ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to two <Armorknight> from your drop, and call them to RC.'
 global.BuddyWorld[CardStat] = 6
@@ -2423,7 +2437,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16485
 {
 global.CardName[CardStat] = 'Survival Chance'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order/Spell/Battle Aura
+global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order /Spell/Battle Aura
 
 This card can be play from drop, and play this with COST [pay a gauge]!
 
@@ -2442,9 +2456,9 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16486
 {
 global.CardName[CardStat] = 'Battle Aura Circle'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Blitz Order/Spell/Battle Aura
+global.CardText[CardStat] = 'Buddyfight/Danger World/Blitz Order /Spell/Battle Aura
 
-CONT: Sentinel (You may only have up to four cards with sentinel in a deck)
+CONT: Sentinel.
 
 Play this with COST [discard a card from hand]!
 
@@ -2541,9 +2555,9 @@ CardStat = 16492
 global.CardName[CardStat] = 'Armorknight Cerberus'
 global.CardText[CardStat] = 'Buddyfight/Danger World/Armorknight
 
-Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
+Call Cost [Pay a gauge & put the top card of the deck into this card’s Buddy Soul]
 
-ACT [RC] 1/Turn: COST [Pay a gauge], choose an <Armorknight> from your rear-guards or soul, and put it into soul or this unit’s Buddy Soul.
+ACT [RC] 1/Turn: COST [Pay a gauge], choose an <Armorknight> from your rear-guards or drop, and put it into soul or this unit’s Buddy Soul.
 
 ACT [RC] 1/Turn: COST [Put one of this unit’s Buddy Soul into drop], choose one of your opponent’s rear-guards, and retire it.
 
@@ -2597,11 +2611,13 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16495
 {
 global.CardName[CardStat] = 'Drill Bunker!!'
-global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order/Impact/Battle Aura
+global.CardText[CardStat] = 'Buddyfight/Danger World/Normal Order /Impact/Battle Aura
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
 
-AUTO [Hand]: At the end of your turn, if your vanguard is armed with a <Weapon> and you persona rode this turn, COST [Counter Blast 1 & discard this card & pay 2 gauges & declare final phase], choose one of your vanguards, stand it, its critical becomes 1 until end of turn, and it attacks your opponent’s vanguard.'
+AUTO [Hand]: At the end of your turn, if your vanguard is armed with a <Weapon> and you persona rode this turn, COST [Counter Blast 1 & discard this card & pay 2 gauges & declare final phase], choose one of your vanguards, stand it, its critical becomes 1 until end of turn, and it attacks your opponent’s vanguard.
+
+(Previous critical and power increases remain)'
 global.BuddyWorld[CardStat] = 6
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
@@ -2626,3 +2642,811 @@ global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16497
+{
+global.CardName[CardStat] = 'Darkness Dragon World'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say "Raise the Flag!"], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT:You may only have one <Flag> in a deck.
+
+CONT[VC/Order Zone]:This card cannot be affected by other abilities or effects, and when you would ride a card with only «Buddyfight», call it, or play its ability, if that is a <Darkness Dragon World> or <Generic> card, you can ride it, call it, or play its ability.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16498
+{
+global.CardName[CardStat] = 'Youth Filled With Malice, Davide Yamazaki'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+AUTO: When this unit is placed by riding from "Darkness Dragon World", COST [reveal a grade 3 card with "Davide" in its card name from ride deck], search your deck for three cards, bind them face down, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16499
+{
+global.CardName[CardStat] = 'Cheating Tactics, Davide Yamazaki'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+AUTO: When this unit is placed by riding from "Youth Filled With Malice, Davide Yamazaki", look at the top seven cards of your deck, choose up to one non-sentinel <Black Dragon> or up to one non-sentinel normal order from among them, reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16500
+{
+global.CardName[CardStat] = 'Despair Upon the Opponent, Davide Yamazaki'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+CONT [VC]: On each turn, you can play two orders, and you cannot play an order with the same card name as an order you played this turn.
+
+AUTO [VC]: At the beginning of your main phase, choose up to one card from your face down bind zone, and put it into hand.
+
+Lunatic - ACT [VC] 1/Turn: If you have two or more <Black Dragon> rear-guards, COST [pay a gauge], your opponent chooses a card from their hand, and discards it.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16501
+{
+global.CardName[CardStat] = 'Black Dragon, Cold Blade'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.
+
+CONT [RC/GC]: If you have a vanguard with "Davide" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, and your drop has five or more <Black Dragon>, it also gets power +5000. (Active on opponent’s turn too).'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16502
+{
+global.CardName[CardStat] = 'Deathgaze Dragon "SD"'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon/Death/Deep
+
+ACT [Drop]: If your Buddy Monster is "Death Dragon, Deathgaze Dragon", and all of your rear-guards have different card names from this card, COST [Soul Blast 1], and call this card to RC. (If you chose a Buddy Monster, it is active even if that chosen card is not on RC or in order zone)
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.
+AUTO [RC]: When your opponent’s rear-guard hit by this unit is retired, your opponent chooses a card from their soul, and puts it into drop. If your opponent’s crest zone has a "Gauge Zone", when your opponent would choose a card to put into drop, they may choose a card from their gauge instead of from their soul.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16503
+{
+global.CardName[CardStat] = 'Bloody Moon Dragon'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon/Deep
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.
+
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16504
+{
+global.CardName[CardStat] = 'Black Dragon, Maveltaker'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon
+
+Call Cost [Pay two gauges]
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.
+
+Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit.
+
+AUTO [RC]: When your vanguard with "Davide" in its card name is attacked, COST [retire this unit], and that unit gets power +15000 until end of that battle.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16505
+{
+global.CardName[CardStat] = 'Death Dragon Knight, Davide'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Dungeon World/Knight/Black Dragon/Disaster
+
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Davide" in its card name, until end of turn, this unit gets power +5000, and your opponent cannot intercept for the battle your unit with the Spectral Strike ability attacked. Then, if your opponent’s vanguard is grade 3 or greater, choose one of your <Black Drago> or <Disaster> units, and it gets power +5000 until end of turn.
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16506
+{
+global.CardName[CardStat] = 'Death Wizard Dragon'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon/Death
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], draw a card, choose a card from your drop, put it into gauge face down, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16507
+{
+global.CardName[CardStat] = 'Death Dragon, Deathgaze Dragon'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Dragon/Death/Deep
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], choose a <Black Dragon> with grade less than or equal to your vanguard with a different card name from this unit from your drop, and call it to RC.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater <Disaster> vanguard, this unit gets power +5000 until end of that battle.
+
+Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.
+Double Attack - AUTO [RC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard with "Davide" in its card name is stand, COST [Counter Blast 1], and stand this unit.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16508
+{
+global.CardName[CardStat] = 'Evil Death Scythe'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Item/Deep/Weapon
+
+Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
+
+Play this with COST [pay a gauge]!
+
+CONT [VC]: During your turn, your vanguard with "Davide" in its card name gets "Spectral Strike - AUTO [VC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.", and gets power +5000.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.Arms[CardStat] = 1
+
+
+CardStat = 16509
+{
+global.CardName[CardStat] = 'Death Grip'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Spell/Death
+
+Play this with COST [pay a gauge]!
+
+Choose one of any player’s rear-guards, and retire it.
+
+AUTO [Drop]: When your vanguard with "Davide" in its card name is attacked, if your card with the same card name as this card was not bound from drop this turn, COST [pay a gauge & bind this card], and that unit gets power +15000 until end of that battle.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+//Adding shield for convenience of the red text ability
+CardStat = 16510
+{
+global.CardName[CardStat] = 'Midnight Shadow'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Blitz Order/Spell/Death
+
+CONT: Sentinel.
+
+Play this with COST [discard a card from hand]!
+
+Choose one of your units, and it cannot be hit until end of that battle. Choose one of your vanguards, and it gets "AUTO [VC]: When this unit is attacked, this unit gets power +10000 until end of that battle, and lose this ability." until end of turn.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 10000
+
+
+CardStat = 16511
+{
+global.CardName[CardStat] = 'Abyss Symphony'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Deep
+
+This card can be played from drop, and play this with COST [pay a gauge]!
+
+Bind this card, draw a card, look at the top five cards of your deck, choose a card from among them, discard it, and shuffle the deck. If your damage zone has three or more cards, draw a card. '
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16512
+{
+global.CardName[CardStat] = 'Slow Pain Fall'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Impact/Black Dragon
+
+CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
+
+AUTO [Hand]: At the end of your turn, if you have a <Black Dragon> rear-guard, COST [Counter Blast 1 & discard this card & pay 2 gauges & declare final phase], choose one of your <Black Dragon> rear-guards, stand it, and it attacks your opponent’s vanguard.
+
+(Previous critical and power increases remain)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16513
+{
+global.CardName[CardStat] = 'Armorknight Succubus'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Armorknight
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16514
+{
+global.CardName[CardStat] = 'Thunder Devastation'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order/Critical Trigger/Spell/Battle Aura
+
+Play this with COST [Counter Blast 1 & pay a gauge]!
+
+Retire all of your opponent’s grade 1 or lower rear-guards.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+global.BuddyWorld[CardStat] = 6
+
+
+CardStat = 16515
+{
+global.CardName[CardStat] = 'Battle Spirit Infusion'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order /Critical Trigger/Spell/Battle Aura
+
+Choose one of your <Danger World> rear-guards, and it gets power +4000 until end of turn.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+global.BuddyWorld[CardStat] = 6
+
+
+CardStat = 16516
+{
+global.CardName[CardStat] = 'Fanged Dragon Declaration'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order/Draw Trigger/Spell/Battle Aura
+
+Play this with COST [Counter Blast 1 & pay a gauge]!
+
+Choose one of your rear-guards, and it gets "AUTO [RC] 1/Turn: When your opponent’s unit is put on GC, if that was the first guardian put during the battle that this unit attacked, choose one of your opponent’s guardians, and retire it." until end of turn.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 5000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 6
+
+
+CardStat = 16517
+{
+global.CardName[CardStat] = 'Dimensional Demon Slay Slash'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order/Front Trigger/Spell/Demon Slay
+
+Put the top card of your deck into gauge face down, choose one of your opponent’s rear-guards, and it gets power -5000 / shield -5000 until end of turn.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.
+
+(SHIFT + left click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16518
+{
+global.CardName[CardStat] = 'Invigorating Breath'
+global.CardText[CardStat] = 'Buddyfight/Danger World/Trigger Order/Heal Trigger/Spell/Battle Aura
+
+Play this if your vanguard is armed with a <Weapon>, and your drop does not have a card with the same card name as this card!
+
+Counter Charge 1 .
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 6
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16519
+{
+global.CardName[CardStat] = 'Black Knight, Goldred'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Knight/Deep
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16520
+{
+global.CardName[CardStat] = 'Guillotine Cutter'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Trigger Order/Critical Trigger/Spell/Deep
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s rear-guards, and retire it.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+global.BuddyWorld[CardStat] = 7
+
+
+CardStat = 16521
+{
+global.CardName[CardStat] = 'Death Astray'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Trigger Order/Draw Trigger/Spell/Death/Deep
+
+Play this with COST [Counter Blast 1] !
+
+Perform one of the following. Until end of this fight, you cannot play "Death Astray" during your main phase.
+• Search your deck for up to one card with the same card name as your vanguard, reveal it and put it into hand, and shuffle the deck.
+• Discard all cards from your hand, and draw two cards.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 5000 guardian.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 7
+
+
+CardStat = 16522
+{
+global.CardName[CardStat] = 'Legend World'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Flag
+
+AUTO [VC]: When you Stand Up!!, COST [say "Raise the Flag!"], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+
+CONT:You may only have one <Flag> in a deck.
+
+CONT[VC/Order Zone]:This card cannot be affected by other abilities or effects, and when you would ride a card with only «Buddyfight», call it, or play its ability, if that is a <Legend World> or <Generic> card, you can ride it, call it, or play its ability.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16523
+{
+global.CardName[CardStat] = 'Aibo Academy, Sofia Sakharov'
+global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+
+AUTO: When this unit is place by riding from "Legend World", draw a card, choose a card from your hand, and discard it. If you went second, you may draw a card. If you drew a card, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16524
+{
+global.CardName[CardStat] = 'Mysterious Vice President, Sofia Sakharov'
+global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+
+AUTO: When this unit is placed by riding from "Aibo Academy, Sofia Sakharov", look at the top seven cards of your deck, choose up to two <Star> from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16525
+{
+global.CardName[CardStat] = 'To Realize Her Ambitions, Sofia Sakharov'
+global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+
+CONT [VC]: During your turn, all of your front row <Star> rear-guards and this unit gets power +1000 for each <Star> in your drop.
+
+ACT [VC] 1/Turn: COST [Discard a card from hand], and draw two cards.
+
+Chosen Being - ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Star> rear-guards, and it gets "Double Attack - AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit." until end of turn.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16526
+{
+global.CardName[CardStat] = 'Stellar Deity, Astraeus'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
+
+Call Cost [Pay two gauges]
+
+CONT [RC]: All of your front row <Star> rear-guards cannot be retired by any player’s card abilities, and if they are hit, they do not retire.
+
+CONT [Front Row RC]: If your opponent’s vanguard is grade 3 or greater, and you have one or more <Star> units each on your front row left RC and front row right RC, this unit’s original power becomes 15000. Then, if you have two front row rear-guards with the same card name as this unit, all of your <Star> units’ original shield become 10000.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Including "perform" to make the text red
+CardStat = 16527
+{
+global.CardName[CardStat] = 'Colossal Deity of Phantom Star, Astraeus'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, COST [pay a gauge], call this card to the back row center RC, and it gets power +5000 until end of turn.
+
+AUTO [Back Row Center RC]: At the beginning of your battle phase, if you have one or more <Star> units each on your front row left RC and front row right RC, you may perform "Draw a card, and this unit gets power +1000 for each <Star> in your drop.". If you do, at the end of that turn, put this unit on the bottom of the deck.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16528
+{
+global.CardName[CardStat] = 'Star Bow, Artemis Arrow'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Item/Star/Weapon
+
+Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
+
+Play this with COST [pay a gauge]!
+
+CONT [VC]: During your turn, if your opponent’s vanguard is grade 3 or greater, your <Star> unit can attack from the back row center column.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.Arms[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16529
+{
+global.CardName[CardStat] = 'Mysterious Fortune Teller, Sofia'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Dungeon World /Adventurer/Star
+
+Call Cost [Pay a gauge]
+
+CONT: This card is also a <Disaster>.
+
+AUTO [RC]: When this unit attacks or boosts, your opponent cannot activate their cards’ AUTO abilities until end of that battle.
+
+AUTO: When this unit is placed on RC, if your other rear-guard with the same card name as this unit was not placed this turn, COST [Counter Blast 1 or discard a card from hand], and perform one of the following, and shuffle the deck.
+• Search your deck for up to one set order, reveal it and put it into hand or put it in the order zone.
+• Search your deck for up to one Item card, reveal it and put it into hand or arm it to one of your vanguards.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16530
+{
+global.CardName[CardStat] = 'Sirius Lailaps'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
+
+AUTO: When this card is discarded from hand during your turn, choose one of your <Star> rear-guards, and it gets power +5000 until end of turn.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16531
+{
+global.CardName[CardStat] = 'Capella Origar'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
+
+AUTO [Drop]: When your vanguard with "Sofia" in its card name is attacked, if your card with the same card name as this card was not put into deck from drop this turn, COST [put this card on the bottom of the deck], and that unit gets power +5000 until end of turn. If you have one or more <Star> units each on your front row left RC and front row right RC, it gets power +10000 instead of +5000.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16532
+{
+global.CardName[CardStat] = 'Valkyrie, All-knowing Alwidol'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard/Hero
+
+AUTO: When this card is discarded from hand during your turn, put this card into soul, draw a card, choose a card from your drop, and put it into gauge face down.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16533
+{
+global.CardName[CardStat] = 'Breathen Gard'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order /Critical Trigger/Spell/Asgard/Rune
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s rear-guards, and retire it.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16534
+{
+global.CardName[CardStat] = 'Berserk Gard'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order /Critical Trigger/Spell/Asgard/Rune
+
+Choose one of your rear-guards, and it gets power +3000 until end of turn. If your drop has a "Symbel Gard", COST [pay two gauges], and put this card into hand.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16535
+{
+global.CardName[CardStat] = 'Symbel Gard'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Spell/Asgard/Rune
+
+If your drop has a "Berserk Gard", this ability can be played without paying the cost, and play this with COST [pay a gauge] if your damage zone has one or more cards!
+
+Draw two cards.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16536
+{
+global.CardName[CardStat] = 'Great Fate, Frozen Stars'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Star
+
+Play this with COST [pay two gauges]!
+CONT: You can only put one "Great Fate, Frozen Stars" in your order zone.
+CONT: This card’s ability cannot be nullified by abilities other than this card’s.
+CONT [Order Zone]: During your turn, if you have a grade 3 or greater vanguard with "Sofia" in its card name, and you have one or more <Star> units each on your front row left RC and front row right RC, your opponent cannot intercept, the abilities of all of your opponent’s non-sentinel cards on their VC, RC, GC, and soul other than order cards are nullified, and they cannot gain abilities.
+CONT [Order Zone]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, and you persona rode this turn, the abilities of all your opponent’s unit cards with sentinel are nullified.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16537
+{
+global.CardName[CardStat] = 'Moon Celestial, Selenel'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
+
+AUTO: When this card is discarded from hand during your turn, you may Soul Charge 1 .
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, COST [Soul Blast 1], and call this card to RC.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16538
+{
+global.CardName[CardStat] = 'Holy Grail'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Blitz Order /Spell/Hero
+
+CONT: Sentinel.
+
+Play this with COST [discard a card from hand]!
+
+Choose one of your units, and it cannot be hit until end of that battle. Search your deck for up to one card with "Great Spell" or "Great Fate" in its card name, reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16539
+{
+global.CardName[CardStat] = 'Devil Stigma'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Trigger Order/Front Trigger/Spell/Deep
+
+Play this with COST [retire a rear-guard]!
+
+Put the top two cards of your deck into gauge face down, and draw a card.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.
+
+(SHIFT + left click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+global.GaugeCharge[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16540
+{
+global.CardName[CardStat] = 'Dark Energy'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Trigger Order/Critical Trigger/Spell/Black Dragon
+
+Play this with COST [pay a gauge]!
+
+Choose one of your rear-guards, and until end of your opponent’s next turn, that unit cannot be retired by your opponent’s card effects.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16541
+{
+global.CardName[CardStat] = 'Black Dragon Shield'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Trigger Order/Heal Trigger/Spell/Black Dragon
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.
+
+AUTO: When this card is put on GC, if your damage zone has no face up cards, COST [discard a card from hand], and Counter Charge 1.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
