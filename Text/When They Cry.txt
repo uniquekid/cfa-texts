@@ -3,7 +3,7 @@ CardStat = 16291
 global.CardName[CardStat] = 'Pillager of Intellect, Erika Furudo'
 global.CardText[CardStat] = 'When They Cry/Detective
 
-ACT [VC] 1/Turn: COST [Energy Blast 3], draw a card, search your deck, drop, or face up damage zone for up to one "Nox Ten Commandments", and put it into the order zone. If you searched your deck, shuffle the deck. If you chose from the damage zone, put the top card of your deck into the damage zone.
+ACT [VC] 1/Turn: COST [Energy Blast 3], draw a card, search your deck, drop, or face up damage zone cards for up to one "Knox’s Ten Commandments", and put it into the order zone. If you searched your deck, shuffle the deck. If you chose from the damage zone, put the top card of your deck into the damage zone.
 
 AUTO [VC]: When you play a set order, COST [Soul Blast 1], and draw a card.
 
@@ -346,22 +346,6 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 16337
 {
-global.CardName[CardStat] = 'Blank Stare'
-global.CardText[CardStat] = 'When They Cry/Critical Trigger
-
-CONT: This card is also regarded as "Is it Magic or Trickery?".
-
-AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 18
-global.TriggerUnit[CardStat] = 2
-}
-global.PowerStat[CardStat] = 5000
-global.DefensePowerStat[CardStat] = 15000
-
-
-CardStat = 16338
-{
 global.CardName[CardStat] = 'Blank Stare '
 global.CardText[CardStat] = 'When They Cry/Critical Trigger
 
@@ -372,7 +356,23 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
 global.TriggerUnit[CardStat] = 2
 }
-global.PowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16338
+{
+global.CardName[CardStat] = 'Blank Stare'
+global.CardText[CardStat] = 'When They Cry/Critical Trigger
+
+CONT: This card is also regarded as "Is it Magic or Trickery?".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 15000
 
 
@@ -529,13 +529,13 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
 global.TriggerUnit[CardStat] = 5
 }
-global.PowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 16350
 {
-global.CardName[CardStat] = 'Revel in the Golden Butterflies, Before You Die!'
+global.CardName[CardStat] = 'Revel in the Golden Butterflies, Before You Die! '
 global.CardText[CardStat] = 'When They Cry/Front Trigger
 
 AUTO: When this unit is retired from GC, you may put this card into soul.'
@@ -543,7 +543,7 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 18
 global.TriggerUnit[CardStat] = 5
 }
-global.PowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
 
 
@@ -620,7 +620,7 @@ CardStat = 16356
 global.CardName[CardStat] = 'Magician of Words, Keiichi Maebara'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
+AUTO: When this unit is placed by riding from a grade 0 unit with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
@@ -641,7 +641,7 @@ CardStat = 16357
 global.CardName[CardStat] = 'Magician of Words, Keiichi Maebara '
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
+AUTO: When this unit is placed by riding from a grade 0 unit with "Keiichi Maebara" in its card name, COST [reveal a grade 3 card with "Keiichi Maebara" in its card name from ride deck], and put a Hinamizawa Syndrome token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
@@ -662,7 +662,7 @@ CardStat = 16358
 global.CardName[CardStat] = 'Unwavering Resolve, Keiichi Maebara'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-AUTO: When placed by riding from a grade 1 with "Keiichi Maebara" in its card name, choose <Club Activity Member> from your drop, and put it into hand.'
+AUTO: When placed by riding from a grade 1 unit with "Keiichi Maebara" in its card name, choose <Club Activity Member> from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -709,7 +709,7 @@ CardStat = 16363
 global.CardName[CardStat] = 'Caring and Fretful Brother, Satoshi Houjou'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Houjou Family
 
-AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you have no rear-guards with the same card name as this card, call this card to RC as rest.
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you do not have a rear-guard with the same card name as this card, call this card to RC as rest.
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [put this unit into soul], and Counter Charge 1 .
 
@@ -743,7 +743,7 @@ CardStat = 16365
 global.CardName[CardStat] = 'Prank-loving Picky Eater, Satoko Houjou'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Houjou Family
 
-AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you have no rear-guards with the same card name as this card, call this card to RC as rest.
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Keiichi Maebara" in its card name, and you do not have a rear-guard with the same card name as this card, call this card to RC as rest.
 ACT [RC] 1/Turn: If you have a grade 3 or greater vanguard with "Keiichi Maebara" in its card name, COST [Soul Blast 1], declare trigger unit or not, and your opponent reveals the top card of their deck. If your opponent revealed a card type you declared, put the revealed card on the bottom of their deck, and this unit gets power +5000 until end of turn. If they did not, retire this unit, and call this card to RC. (If the revealed card was not the declared type, it returns to the top of the deck)
 CONT [RC/GC]: If you have a normal unit with "Satoshi Hojo" in its card name on RC or GC, this unit gets power +5000 / shield +5000.'
 global.UnitGrade[CardStat] = 1
@@ -865,7 +865,7 @@ CardStat = 16400
 global.CardName[CardStat] = 'Smile of Relief, Rika Furude'
 global.CardText[CardStat] = 'When They Cry/Club Activity Member/Maebara Family
 
-AUTO: When this unit is placed by riding from a grade 1 with "Rika Furude" in its card name, draw a card. You may Soul Charge 1.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Rika Furude" in its card name, draw a card. You may Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -891,7 +891,7 @@ CardStat = 16402
 global.CardName[CardStat] = 'Rebellious Challenger, Battler Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Battler Ushiromiya" in its card name, COST [reveal a grade 3 card with "Battler Ushiromiya" in its card name from ride deck], put a Golden Epitaph token into the order zone, search your deck for up to one normal unit with "Kinzo" in its card name, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed by riding from a grade 0 unit with "Battler Ushiromiya" in its card name, COST [reveal a grade 3 card with "Battler Ushiromiya" in its card name from ride deck], put a Golden Epitaph token into the order zone, search your deck for up to one normal unit with "Kinzo" in its card name, reveal it and put it into hand, and shuffle the deck.
 
 (You will be prompted to get the token upon ride.)
 
@@ -912,7 +912,7 @@ CardStat = 16403
 global.CardName[CardStat] = 'Thinker on the Game Board, Battler Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 1 with "Battler Ushiromiya" in its card name, look at the top five cards of your deck, choose up to two <Ushiromiya Family> non-sentinel normal units with different card names from among them, reveal them and put them into hand, and shuffle the deck. If you revealed two cards, choose a card from your hand, and discard it. If you did not reveal a card, draw a card.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Battler Ushiromiya" in its card name, look at the top five cards of your deck, choose up to two <Ushiromiya Family> non-sentinel normal units with different card names from among them, reveal them and put them into hand, and shuffle the deck. If you revealed two cards, choose a card from your hand, and discard it. If you did not reveal a card, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -929,7 +929,7 @@ ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top five cards of your deck,
 
 AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
 
-ACT [VC] 1/Turn: COST [Choose an <Ushiromiya Family> normal unit from your face up damage zone & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+ACT [VC] 1/Turn: COST [Choose an <Ushiromiya Family> normal unit from your face up damage zone cards & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 3
@@ -993,7 +993,7 @@ CardStat = 16409
 global.CardName[CardStat] = 'Playboy, Rudolf Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-CONT [RC/GC]: If you have a normal unit with "Kirie" in its card name on your RC or GC, this unit gets power +5000 / sheild +10000.'
+CONT [RC/GC]: If you have a normal unit with "Kyrie" in its card name on your RC or GC, this unit gets power +5000 / sheild +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1190,7 +1190,7 @@ CardStat = 16430
 global.CardName[CardStat] = 'Sender of the Letters, Beatrice'
 global.CardText[CardStat] = 'When They Cry/Witch
 
-AUTO: When this unit is placed by riding from a grade 0 with "Beatrice" in its card name, COST [reveal a grade 3 card with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 0 unit with "Beatrice" in its card name, COST [reveal a grade 3 card with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
 }
@@ -1203,7 +1203,7 @@ CardStat = 16431
 global.CardName[CardStat] = 'Sender of the Letters, Beatrice'
 global.CardText[CardStat] = 'When They Cry/Witch
 
-AUTO: When this unit is placed by riding from a grade 0 with "Beatrice" in its card name, COST [reveal a grade 3 with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 0 unit with "Beatrice" in its card name, COST [reveal a grade 3 card with "Beatrice" in its card name from ride deck], look at the top seven cards of your deck, choose up to one <Demon> or <Witch> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
 }
@@ -1216,7 +1216,7 @@ CardStat = 16432
 global.CardName[CardStat] = 'Ruler of the Game Board, Beatrice'
 global.CardText[CardStat] = 'When They Cry/Witch
 
-AUTO: When this unit is placed by riding from a grade 1 with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1229,7 +1229,7 @@ CardStat = 16433
 global.CardName[CardStat] = 'Ruler of the Game Board, Beatrice '
 global.CardText[CardStat] = 'When They Cry/Witch
 
-AUTO: When this unit is placed by riding from a grade 1 with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Beatrice" in its card name, search your deck for a grade 3 <Sorcerer>, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1533,7 +1533,7 @@ CardStat = 16454
 global.CardName[CardStat] = 'Sharp-tongued Eldest Daughter, Eva Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Eva Ushiromiya" in its card name, COST [reveal a grade 3 card with "Eva Ushiromiya" in its card name from ride deck], look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 0 unit with "Eva Ushiromiya" in its card name, COST [reveal a grade 3 card with "Eva Ushiromiya" in its card name from ride deck], look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
 }
@@ -1546,7 +1546,7 @@ CardStat = 16455
 global.CardName[CardStat] = 'Resolve to Solve The Mystery, Eva Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 1 with "EVA-Beatrice" in its card name, look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "EVA-Beatrice" in its card name, look at the top seven cards of your deck, choose an <Ushiromiya Family> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1638,7 +1638,7 @@ CardStat = 16461
 global.CardName[CardStat] = 'Journey in Pursuit of Truth, Ange Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 0 with "Ange Ushiromiya" in its card name, COST [reveal a grade 3 card with "Ange Ushiromiya" in its card name from ride deck], search your deck for up to one "Memories with My Older Brother", reveal it and put it into hand, and shuffle the deck.'
+AUTO: When this unit is placed by riding from a grade 0 unit with "Ange Ushiromiya" in its card name, COST [reveal a grade 3 card with "Ange Ushiromiya" in its card name from ride deck], search your deck for up to one "Memories with My Older Brother", reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 18
 }
@@ -1651,7 +1651,7 @@ CardStat = 16462
 global.CardName[CardStat] = 'Return to Rokkenjima, Ange Ushiromiya'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
 
-AUTO: When this unit is placed by riding from a grade 1 with "Ange Ushiromiya" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the botom of the deck in any order. Choose a grade 1 card from your drop, and call it to RC.'
+AUTO: When this unit is placed by riding from a grade 1 unit with "Ange Ushiromiya" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the botom of the deck in any order. Choose a grade 1 card from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 18
 }
@@ -1667,7 +1667,7 @@ global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
 CONT [VC/Ride Deck]: This card is also regarded as "Ange Ushiromiya".
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the bottom of the deck in any order. Choose a card from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, that called unit gets power +10000 until end of turn.
 AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
-ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage and put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage zone cards & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
 AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], choose any number of <Seven Sisters of Purgatory> with different card names from your drop, and call them to GC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
@@ -1685,7 +1685,7 @@ global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Witch
 CONT [VC/Ride Deck]: This card is also regarded as "Ange Ushiromiya".
 ACT [VC] 1/Turn: COST [Energy Blast 3], look at the top three cards of your deck, choose up to one card from among them, discard it, and put the rest on the bottom of the deck in any order. Choose a card from your drop, and call it to RC. If your opponent’s vanguard is grade 3 or greater, that called unit gets power +10000 until end of turn.
 AUTO [VC]: When this unit attacks, choose one of your rear-guards, and stand it.
-ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage and put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
+ACT [VC] 1/Turn: COST [Choose a <Seven Sisters of Purgatory> from your face up damage zone cards & put it into drop], put the top card of your deck into the damage zone, and this unit gets power +5000 until end of turn.
 AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], choose any number of <Seven Sisters of Purgatory> with different card names from your drop, and call them to GC.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 18
@@ -1768,10 +1768,10 @@ CardStat = 16469
 global.CardName[CardStat] = 'Endless Sorcerer, Battler'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Sorcerer
 
-CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 with "Battler Ushiromiya" in its card name.
+CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 unit with "Battler Ushiromiya" in its card name.
 AUTO: When this unit is placed on VC, perform all of the following.
 • Put a Kinzo’s Hidden Gold marker on all your VC and RC.
-• Choose thirteen <Ushinomiya Family> with different card names from your order zone, and put them into hand.
+• Choose thirteen <Ushiromiya Family> with different card names from your order zone, and put them into hand.
 • Return all non-sentinel normal units from your drop to your deck, and shuffle the deck.
 • Remove your Golden Epitaph token.
 AUTO [VC]: When this unit attacks, stand all of your rear-guards.
@@ -1793,10 +1793,10 @@ CardStat = 16471
 global.CardName[CardStat] = 'Endless Sorcerer, Battler'
 global.CardText[CardStat] = 'When They Cry/Ushiromiya Family/Sorcerer
 
-CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 with "Battler Ushiromiya" in its card name.
+CONT: This card cannot be normal ridden, and this card can only be ridden from a grade 3 unit with "Battler Ushiromiya" in its card name.
 AUTO: When this unit is placed on VC, perform all of the following.
 • Put a Kinzo’s Hidden Gold marker on all your VC and RC.
-• Choose thirteen <Ushinomiya Family> with different card names from your order zone, and put them into hand.
+• Choose thirteen <Ushiromiya Family> with different card names from your order zone, and put them into hand.
 • Return all non-sentinel normal units from your drop to your deck, and shuffle the deck.
 • Remove your Golden Epitaph token.
 AUTO [VC]: When this unit attacks, stand all of your rear-guards.
@@ -1868,3 +1868,414 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16553
+{
+global.CardName[CardStat] = 'Cold and Stern Eldest Daughter, Eva Ushiromiya'
+global.CardText[CardStat] = 'When They Cry/Ushiromiya Family
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have an <Ushiromiya Family> vanguard, and you have no other rear-guards with the same card name as this unit, COST [retire one of your other rear-guards], draw a card, and this unit gets power +10000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, and you have six or more <Ushiromiya Family> normal units in the order zone, it also gets power +10000 / critical + 1.
+
+ACT [Drop]: If you have a grade 3 or greater <Ushiromiya Family> vanguard, and you have no cards with the same card name as this card on your RC or in the order zone, COST [retire one of your <Ushiromiya Family> rear-guards], and call this card to RC.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16554
+{
+global.CardName[CardStat] = 'Knox’s Ten Commandments'
+global.CardText[CardStat] = 'When They Cry/Set Order
+
+CONT: You may have up to nine "Knox’s Ten Commandments" in a deck.
+Play this if you have a <Detective> vanguard!
+AUTO: When put in order zone, until end of your opponent’s next turn, perform one of the following according to the number of "Knox’s Ten Commandments" in your order zone.
+• 1 - Players can only ride from ride deck.
+• 2 - The trigger effects of over trigger revealed by any player’s drive check are nullified.
+• 3 - Players cannot perform five or more attacks.
+• 4 - Rear-guards cannot be retired by any player’s card effects. (Can be retired for cost)
+• 5 - The trigger effects of triggers revealed by any player’s drive check are nullified.
+• 6 - The critical of any player’s vanguard cannot increase by card effects.
+• 7 - Players cannot play blitz orders.
+• 8 - Your opponent’s vanguard gets power -10000.
+• 9 - Players cannot ride or Stride.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 9
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16555
+{
+global.CardName[CardStat] = 'Drifting Guest, Erika Furudo'
+global.CardText[CardStat] = 'When They Cry/Detective
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16556
+{
+global.CardName[CardStat] = 'Bernkastel’s Game Piece, Erika Furudo'
+global.CardText[CardStat] = 'When They Cry/Detective
+
+AUTO: When this unit is placed by riding from a grade 0 unit with "Erika Furudo" in its card name, COST [reveal a grade 3 card with "Erika Furudo" in its card name from ride deck], search your deck for up to three "Knox’s Ten Commandments", reveal them, put one of the revealed cards into the order zone, put the rest into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16557
+{
+global.CardName[CardStat] = 'Scythe-wielding Debate, Erika Furudo'
+global.CardText[CardStat] = 'When They Cry/Detective
+
+AUTO: When placed by riding from a grade 1 unit with "Erika Furudo" in its card name, search your deck for up to three "Knox’s Ten Commandments", reveal them, put one of the revealed cards into the order zone, put the rest into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16558
+{
+global.CardName[CardStat] = 'The Great Court of Illusions'
+global.CardText[CardStat] = 'When They Cry/Set Order
+
+Play this if you have a vanguard with "Erika Furudo" in its card name!
+
+AUTO: When this card is put in the order zone, choose up to two cards from your drop, and put them into soul.
+
+CONT [Order Zone]: During your turn, you can play an additional order.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16559
+{
+global.CardName[CardStat] = 'Third-class Priest, Cornelia'
+global.CardText[CardStat] = 'When They Cry/Great Court of Heaven /Assistant
+
+AUTO: When this card is discarded during your ride phase, if you have a <Detective> vanguard, and you do not have a rear-guard with the same card name as this card, you may call this card to RC as rest.
+
+CONT [RC]: This unit gets power +5000 for every two "Knox’s Ten Commandments" in your order zone. (Active on opponent’s turn too)
+
+CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16560
+{
+global.CardName[CardStat] = 'High-level Assistant, Gertrude'
+global.CardText[CardStat] = 'When They Cry/Great Court of Heaven /High-level Assistant
+
+AUTO: When this card is discarded during your ride phase, if you have a <Detective> vanguard, and you do not have a rear-guard with the same card name as this card, you may call this card to RC as rest.
+
+CONT [RC]: This unit gets power +5000 for every two "Knox’s Ten Commandments" in your order zone. (Active on opponent’s turn too)
+
+CONT [Back Row RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16561
+{
+global.CardName[CardStat] = 'Inquisitor of Heresy, Dlanor A. Knox'
+global.CardText[CardStat] = 'When They Cry/Great Court of Heaven /Inquisitor of Heresy
+
+AUTO: When this unit is placed on RC, if you have a <Detective> vanguard, COST [Counter Blast 1], search your deck or drop for up to one "Third-class Priest, Cornelia" or up to one "High-level Assistant, Gertrude", reveal it and put it into hand, and if you search the deck, shuffle the deck. If your opponent’s vanguard is grade 3 or greater, search for up to two cards with different card names instead of one.
+
+AUTO [RC] 1/Turn: When this unit attacks, if you have six or more "Knox’s Ten Commandments" in the order zone, this unit gets critical +1 until end of that battle.
+
+CONT [RC]: This unit gets power +5000 for every two "Knox’s Ten Commandments" in your order zone. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16562
+{
+global.CardName[CardStat] = 'Ring of Subjugation'
+global.CardText[CardStat] = 'When They Cry/Set Order
+
+This card can be played from drop, and play this if you have a vanguard with "Erika Furudo" in its card name!
+
+AUTO: When this card is put in the order zone, choose one of your opponent’s rear-guards, and bind it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16563
+{
+global.CardName[CardStat] = 'Willard H. Wright'
+global.CardText[CardStat] = 'When They Cry/Great Court of Heaven /Inquisitor of Heresy
+
+AUTO [Drop]: When you play a set order, if you have a <Detective> vanguard, and you do not have a rear-guard with the same card name as this card, COST [Counter Blast 1], call this card to RC, and it gets power +5000 until end of turn.
+
+CONT [RC]: If your order zone has four or more set orders, this unit gets power +5000 / shield +5000. If your order zone has seven or more set orders, it also gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16564
+{
+global.CardName[CardStat] = 'Watanagashi Festival'
+global.CardText[CardStat] = 'When They Cry
+
+ACT [Hand]: If it is the 3rd Sunday of June, COST [put this card into soul], choose one of any player’s rear-guard, retire it, choose one of any player’s rear-guard, and bind it. If you chose two cards by this ability, choose a card in your bind zone, and put it into hand. If your rear-guard was bound by this ability, Counter Charge 1. This ability may only be used a total of once per turn among cards with the same card name as this card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16565
+{
+global.CardName[CardStat] = 'And Then There Were None'
+global.CardText[CardStat] = 'When They Cry
+
+ACT [Hand]: If today is October 5th, COST [put this card into soul], retire all of your and your opponent’s non-<Witch> rear-guards. If one or more of your rear-guards was retired by this ability, at the beginning of your opponent’s next turn, search your deck for up to one non-sentinel <Witch> normal unit, reveal it and put it into hand, and shuffle the deck. This ability may only be used a total of once per turn among cards with the same card name as this card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16566
+{
+global.CardName[CardStat] = 'One Who Wanders the Sea of Fragments'
+global.CardText[CardStat] = 'When They Cry/Set Order
+CONT: You may only have one "One Who Wanders the Sea of Fragments" in a deck.
+AUTO: When this card is put into soul by Soul Charge, if you have a vanguard with "Rika Furude" in its card name, you may put this card into hand. If you do, you may choose a card from your hand, and put it into soul.
+
+Play this if you have a vanguard with "Rika Furude" in its card name!
+AUTO [Order Zone]: When your trigger other than over trigger and heal trigger is revealed during your damage check, if you have five or more cards in the damage zone, choose a grade 0 with "Rika Furude" in its card name from your soul, and ride it as rest. If you rode a card, remove the revealed card and this card, and until end of your next turn, you get all of the following.
+• You cannot put cards on GC and you cannot play blitz orders.
+• At the end of the battle your grade 2 vanguard with "Rika Furude" in its card name attacked, if your soul has twenty or more cards, choose up to one grade 3 with "Rika Furude" in its card name from your soul, and ride it as stand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16576
+{
+global.CardName[CardStat] = 'Weaving Tragedy, Takano Miyo'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+ACT [VC] 1/Turn: COST [Energy Blast 3], draw a card, and you can play an additional order this turn. If you did not ride this unit from a grade 2 this turn, you can play two additional orders this turn instead of one.
+
+AUTO [VC]: When any player’s rear-guard is retired by a card’s ability during your turn, this unit gets power +5000 until end of turn. If a rear-guard was retired by the ability of your "H173", COST [Soul Blast 1], and draw a card.
+
+CONT [VC]: If three or more rear-guards were retired this turn by your card’s ability, this unit gets critical +1.
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16577
+{
+global.CardName[CardStat] = 'H173'
+global.CardText[CardStat] = 'When They Cry/Normal Order
+
+This card can be played from drop, and play this if you have a "Takano Miyo" vanguard!
+
+Perform one of the following. If this card was played from drop, bind it.
+• Choose one of your rear-guards, and it attacks your opponent’s vanguard. At the end of that battle, retire that unit.
+• If your opponent’s vanguard is grade 3 or greater, choose one of your opponent’s rear-guards, until end of turn, it loses all of its CONT and AUTO abilities, it gets power +10000, stand it, it becomes hallucinated, and it attacks your opponent’s vanguard. At the end of that battle, retire the unit that was hallucinated by this ability.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16578
+{
+global.CardName[CardStat] = 'Lament over Unfairness, Miyoko Tanashi'
+global.CardText[CardStat] = 'When They Cry
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16579
+{
+global.CardName[CardStat] = 'Lament over Unfairness, Miyoko Tanashi '
+global.CardText[CardStat] = 'When They Cry
+
+AUTO: When rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16580
+{
+global.CardName[CardStat] = 'Narrator of the Truth, Takano Miyo'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+AUTO: When this unit is placed by riding from a grade 0 unit with "Miyoko Tanashi" in its card name, COST [reveal a grade 3 card with "Miyo Takano" in its card name from ride deck], search your deck for up to one "H173", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16580
+{
+global.CardName[CardStat] = 'Narrator of the Truth, Takano Miyo'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+AUTO: When this unit is placed by riding from a grade 0 unit with "Miyoko Tanashi" in its card name, COST [reveal a grade 3 card with "Takano Miyo" in its card name from ride deck], search your deck for up to one "H173", reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16581
+{
+global.CardName[CardStat] = 'Twisted Venting, Takano Miyo'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+AUTO: When this unit is placed by riding from a grade 1 unit with "Takano Miyo" in its card name, choose a <Secret Organization «Tokyo»> normal unit from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16582
+{
+global.CardName[CardStat] = 'Freelance Photographer, Tomitake Jiro'
+global.CardText[CardStat] = 'When They Cry/Secret Organization «Tokyo»
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Takano Miyo" in its card name, this unit gets power +5000 until end of turn, look at the top seven cards of your deck, choose up to one grade 3 normal unit with "Takano Miyo" in its card name from among or from drop, reveal it and put it into hand, and shuffle the deck. If you put a card into hand, choose a card from your hand, and discard it.
+
+AUTO [RC]: When this unit is chosen by the effect of your "H173", this unit gets power +10000 until end of turn. If your opponent’s vanguard is grade 3 or greater, and no drive checks were performed this turn, COST [Counter Blast 1], and until end of turn, this unit performs drive checks for the battles this unit attacked.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16583
+{
+global.CardName[CardStat] = 'Commander of the Mountain Dogs, Okonogi'
+global.CardText[CardStat] = 'When They Cry/Secret Organization «Tokyo»
+
+AUTO [RC] 1/Turn: When you play a normal order, if you have a <Secret Organization «Tokyo»"> vanguard, COST [Counter Blast 1], choose one of your opponent’s rear-guards, and retire it.
+
+CONT [RC/GC]: If you have a grade 3 or greater <Secret Organization «Tokyo»> vanguard, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16584
+{
+global.CardName[CardStat] = 'Irie Institute Auditor, First Lieutenant Tomitake'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+CONT [RC]: If you have a <Secret Organization «Tokyo»> vanguard, for each normal order you played this turn, this unit gets power +5000. During the battle this unit attacked, when your opponent would call a card from hand to GC, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 18
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16585
+{
+global.CardName[CardStat] = 'Deeply Obsessed Agent, Skylark 13'
+global.CardText[CardStat] = 'When They Cry/Secret Organization «Tokyo»
+
+CONT [RC]: If you have a <Secret Organization «Tokyo»> vanguard, and you played two or more normal orders this turn, this unit gets power +5000. If your opponent’s vanguard is grade 3 or greater, it gets power +10000 instead of +5000.
+
+CONT [GC]: If you have a <Secret Organization «Tokyo»> vanguard, and your opponent’s vanguard is grade 3 or greater, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16586
+{
+global.CardName[CardStat] = 'Irie Institute Research Director, Lieutenant Colonel Irie'
+global.CardText[CardStat] = 'When They Cry/Irie Institute/Secret Organization «Tokyo»
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Takano Miyo" in its card name, COST [Counter Blast 1], search your deck for up to one "H173", reveal it and put it into hand, and shuffle the deck.
+
+CONT [Back Row RC]: This unit gets "Intercept", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 18
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

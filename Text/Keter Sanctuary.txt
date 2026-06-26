@@ -12578,8 +12578,8 @@ global.CardName[CardStat] = 'Inexpiable Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon/Fantome
 
 CONT: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this card gets all of the following.
-• AUTO: When this unit is placed on RC other than during the battle phase, COST [Counter Blast 1], choose a grade 3 or less normal unit with a different name from this unit from your bind zone, and call it to RC, choose a card from your drop, bind it, and at the end of that turn, retire that called unit.
-• CONT [RC/GC]: This unit gets power +5000 / shield +5000. If your opponent’s vanguard is grade 3 or greater and your bind zone has a card with the same name as this card, it also gets power +5000. (Active on opponent’s turn too)'
+• AUTO: When this unit is placed on RC other than during the battle phase, COST [Counter Blast 1], choose a grade 3 or less normal unit with a different name from this unit from your bind zone, and call it to RC. If you called a card, choose a card from your drop, bind it, and at the end of that turn, retire that called unit.
+• CONT [RC/GC]: This unit gets power +5000 / shield +5000. If your opponent’s vanguard is grade 3 or greater, and your bind zone has a card with the same card name as this unit, it also gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -12672,9 +12672,9 @@ CardStat = 15821
 global.CardName[CardStat] = 'Knight of Great Favor, Orcades'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, search the deck for up to one normal unit without Sentinel with grade less than or equal to your vanguard, discard it, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, search your deck for up to one non-sentinel normal unit with grade less than or equal to your vanguard, discard it, and shuffle the deck.
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, put this unit into soul, and draw a card. If you used a [Divine Skill] this fight, it gets power +10000 instead of +5000. (This effect is mandatory)'
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Rezael" in its card name, until end of that battle, this unit gets power +5000, at the end of that battle, put this unit into soul, and draw a card. If you used a [Divine Skill] this fight, it gets power +10000 instead of +5000. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -13524,4 +13524,21 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16569
+{
+global.CardName[CardStat] = 'Knight of Heavy Mace, Yuthra'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is placed on RC from deck or hand, if you have a <Fantome> vanguard, and you did not put a card into hand by the ability of a card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one card with "Colgaflan" in its card name or up to one grade 3 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: If you have a <Fantome> vanguard, this unit gets "Intercept", and can intercept from the back row.
+
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
