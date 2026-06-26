@@ -8505,7 +8505,7 @@ CardStat = 14081
 global.CardName[CardStat] = 'Intelligent Demonic Lordling, Malfas'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [Back Row Center RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name is placed during your battle phase or stand during your battle phase, COST [Soul Blast 1 & retire this unit] and all of your front row units get power +5000 until end of turn.
+AUTO [Back Row Center RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name is placed during your battle phase or stand during your battle phase, COST [Soul Blast 1 & retire this unit], and all of your front row units get power +5000 until end of turn.
 
 AUTO: When this unit is put on GC, if you have a grade 3 or greater vanguard with "Sacrifice Glass" in its card name, COST [discard up to three cards from hand], and this unit gets shield +10000 until end of that battle for each card discarded for this cost.'
 global.UnitGrade[CardStat] = 1
@@ -11416,3 +11416,20 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16567
+{
+global.CardName[CardStat] = 'Ice Frost Mage, Leylon'
+global.CardText[CardStat] = 'Dark States/Human/Fantome
+
+AUTO: When this unit is placed on RC from deck or hand, if you have a <Fantome> vanguard, and you did not put a card into hand by the ability of a card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one card with "Spiral Cutie" in its card name or up to one grade 3 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: If you have a <Fantome> vanguard, this unit gets "Intercept", and can intercept from the back row.
+
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

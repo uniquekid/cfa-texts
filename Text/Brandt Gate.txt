@@ -7418,7 +7418,7 @@ global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Asturm" in its card name, look at the top five cards of your deck, choose up to one grade 2 or greater card from among them, discard it, and shuffle the deck.
 
-AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Asturm" in its card name, COST [Soul Blast 2], choose one of your rear-guards, and it gets power +5000 for each grade 2 set order in your order zone until end of turn.'
+AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Asturm" in its card name, COST [Soul Blast 2], choose one of your rear-guards, and it gets power +5000 until end of turn for each grade 2 set order in your order zone.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10820,7 +10820,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15601
 {
-global.CardName[CardStat] = 'Chains of Perturbation, Radial Perigee'
+global.CardName[CardStat] = 'Linked Chains of Disturbance, Radialperigee'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you played an order this turn, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
@@ -11317,3 +11317,37 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16568
+{
+global.CardName[CardStat] = 'Operator Girl, Ludebeckia'
+global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
+
+AUTO: When this unit is placed on RC from deck or hand, if you have a <Fantome> vanguard, and you did not put a card into hand by the ability of a card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one card with "Margaret" in its card name or up to one grade 3 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: If you have a <Fantome> vanguard, this unit gets "Intercept", and can intercept from the back row.
+
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16587
+{
+global.CardName[CardStat] = 'Masked Rider Zeztz Technolom Machinery'
+global.CardText[CardStat] = 'Brandt Gate/Agent/Over Trigger
+
+CONT: This card is also regarded as "Star Dragon Deity of Infinitude, Eldobreath".
+
+Additional Effect - Double the power and critical of all of your front row units until end of turn! (Increase to double its power and critical when activated.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000

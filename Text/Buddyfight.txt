@@ -534,7 +534,7 @@ CardStat = 14342
 global.CardName[CardStat] = 'Demon Lord, Asmodai'
 global.CardText[CardStat] = 'Buddyfight/Magic World/72 Pillars
 
-AUTO: When this unit is placed on RC, COST [Counter Blast 1] and perform one of the following.
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of the following.
 • Choose one of your opponent’s circles, and retire all of the rear-guards on that circle.
 • Search your deck for up to one <72 Pillars> order card, reveal it and put it into hand, and shuffle the deck.
 
@@ -683,7 +683,7 @@ CardStat = 14351
 global.CardName[CardStat] = 'Dance Contest Winner, Tetsuya Kurodake'
 global.CardText[CardStat] = 'Buddyfight/Magic World/Buddyfighter
 
-AUTO: When this unit is rode upon by a grade 3 card with "Tetsuya" in its card name, look at the top seven cards of your deck, choose up to two <72 Pillars> without sentinel from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the reveald cards, and shuffle the deck.'
+AUTO: When this unit is rode upon by a grade 3 card with "Tetsuya" in its card name, look at the top seven cards of your deck, choose up to two <72 Pillars> without sentinel from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -3032,7 +3032,7 @@ global.BuddyWorld[CardStat] = 6
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
-global.TriggerUnit[CardStat] = 5
+global.TriggerUnit[CardStat] = 4
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
@@ -3117,7 +3117,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16523
 {
 global.CardName[CardStat] = 'Aibo Academy, Sofia Sakharov'
-global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 AUTO: When this unit is place by riding from "Legend World", draw a card, choose a card from your hand, and discard it. If you went second, you may draw a card. If you drew a card, choose a card from your hand, and discard it.'
 global.BuddyWorld[CardStat] = 3
@@ -3131,7 +3131,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16524
 {
 global.CardName[CardStat] = 'Mysterious Vice President, Sofia Sakharov'
-global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 AUTO: When this unit is placed by riding from "Aibo Academy, Sofia Sakharov", look at the top seven cards of your deck, choose up to two <Star> from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
 global.BuddyWorld[CardStat] = 3
@@ -3145,11 +3145,11 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16525
 {
 global.CardName[CardStat] = 'To Realize Her Ambitions, Sofia Sakharov'
-global.CardText[CardStat] = 'Buddyfight/Legend World /Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 CONT [VC]: During your turn, all of your front row <Star> rear-guards and this unit gets power +1000 for each <Star> in your drop.
 
-ACT [VC] 1/Turn: COST [Discard a card from hand], and draw two cards.
+ACT [VC] 1/Turn: COST [Discard a card from hand], and draw a card.
 
 Chosen Being - ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Star> rear-guards, and it gets "Double Attack - AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit." until end of turn.'
 global.BuddyWorld[CardStat] = 3
@@ -3194,7 +3194,7 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 16528
@@ -3259,7 +3259,7 @@ CardStat = 16531
 global.CardName[CardStat] = 'Capella Origar'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
 
-AUTO [Drop]: When your vanguard with "Sofia" in its card name is attacked, if your card with the same card name as this card was not put into deck from drop this turn, COST [put this card on the bottom of the deck], and that unit gets power +5000 until end of turn. If you have one or more <Star> units each on your front row left RC and front row right RC, it gets power +10000 instead of +5000.'
+AUTO [Drop]: When your vanguard with "Sofia" in its card name is attacked, if your card with the same card name as this card was not put into deck from drop this turn, COST [put this card on the bottom of the deck], and that unit gets power +5000 until end of that battle. If you have one or more <Star> units each on your front row left RC and front row right RC, it gets power +10000 instead of +5000.'
 global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
@@ -3279,7 +3279,7 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 16533
@@ -3369,7 +3369,7 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
-global.DefensePowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 16538
@@ -3447,6 +3447,84 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16572
+{
+global.CardName[CardStat] = 'Stallion of the Divine King, Sleipnir'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16573
+{
+global.CardName[CardStat] = 'Algis Gard'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order/Draw Trigger/Spell/Asgard/Rune
+
+Play this if your drop has five or more <Rune> trigger orders!
+
+Put the top card of your deck into gauge face down, and draw a card.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 5000 guardian.
+
+(SHIFT + left click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 1
+global.GaugeCharge[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16574
+{
+global.CardName[CardStat] = 'Sulizers Gard'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order/Front Trigger/Rune
+
+Choose one of your rear-guards, until end of turn, it gets "AUTO [RC] 1/Turn: When this unit’s attack hits a rear-guard, choose one of your opponent’s vanguards, and deal one damage.", and it gets power  +2000.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16575
+{
+global.CardName[CardStat] = 'Elixir of Aesculapius'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order/Heal Trigger/Spell/Olympus
+
+Put the top card of your deck into gauge face down, and draw a card.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.
+
+(SHIFT + left click to charge your gauge.)'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 4
+global.GaugeCharge[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
