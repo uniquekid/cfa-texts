@@ -12662,7 +12662,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15547
 {
-global.CardName[CardStat] = 'After Class Practice, Ablita'
+global.CardName[CardStat] = 'After Class Special Training, Abilita'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
 CONT [RC]: If your bind zone has a normal order, this unit cannot be retired by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)'
@@ -12676,7 +12676,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15548
 {
-global.CardName[CardStat] = 'I’ll Make It Look Sharp! Saliture'
+global.CardName[CardStat] = 'Finish in Style! Zairicua'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you played an order this turn, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
@@ -12695,7 +12695,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one card with "Artisaria" in its card name or up to one Sound System card from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
 
-AUTO [RC]: When this unit attacks, this unit gets power +5000 for each Sound System card in your order zone.'
+AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of turn for each Sound System in your order zone.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12705,7 +12705,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15660
 {
-global.CardName[CardStat] = 'Conflicted, Willery'
+global.CardName[CardStat] = 'Paradoxical Heart, Wiereli'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [Counter Blast 1], this unit gets power +5000 until end of that battle, and at the end of that battle, return this unit to hand.'
@@ -12721,7 +12721,7 @@ CardStat = 15778
 global.CardName[CardStat] = 'Shred Player, Timonie'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "FLÄMMe-Glam" in its card name, COST [Counter Blast 1 & put this card in your damage zone], draw a card, and until end of turn,  the number of cards in your damage zone for you to lose becomes seven, and you get "All of your units with "FLÄMMe-Glam" in their card names get power +5000.". At the end of that turn, choose a face up card with the same card name as this card from your damage zone, and bind it.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "FLÄMMe-Glam" in its card name, COST [Counter Blast 1 & put this unit in the damage zone], draw a card, and until end of turn,  the number of cards in your damage zone for you to lose becomes seven, and you get "All of your units with "FLÄMMe-Glam" in their card names get power +5000.". At the end of that turn, choose a card with the same card name as this card from your face up damage zone cards, and bind it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12731,10 +12731,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15779
 {
-global.CardName[CardStat] = 'Relaxing Time at Midnight, Perchute'
+global.CardName[CardStat] = 'After Midnight Tea, Belsti'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
-AUTO [RC]: When your vanguard is attacked, if the attacking unit has power 33000 or greater, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
+AUTO [RC]: When your vanguard is attacked, if the attacking unit’s power is 33000 or more, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12846,16 +12846,13 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
 AUTO: When this unit is placed by riding from "X-CeeDaNCe, Falstather", COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE: X-ceed token into your order zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
-global.TokenSummoner[CardStat] = 13149
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 13149
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-//Temporarily create Dragontree Marker
+global.TokenSummoner[CardStat] = 13149
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 CardStat = 15800
 {
 global.CardName[CardStat] = 'X-CeeDaNCe, Dras Evolia'
@@ -12891,7 +12888,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop, put it face up as your AutoMOD gauge, choose one of your RC without any X-ceed NET markers, and put an X-ceed NET marker.
 
-[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind one or more Crimson Moon cards from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each effect can only be chosen once)
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind one or more Crimson Moon cards in total from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each can only be chosen once)
 • This unit gets drive +1 until end of turn.
 • This unit gets critical +1 until end of turn.
 • Until end of your opponent’s next turn, your rear-guard can attack and intercept from the back row center column with an X-ceed NET marker.
@@ -12901,10 +12898,10 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 global.AnotherSide[CardStat] = 15808
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 global.TokenSummoner[CardStat] = 10626
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
@@ -12912,7 +12909,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 15802
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Tran Diebe'
+global.CardName[CardStat] = 'X-CeeDaNCe, Tran Deeve'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this card is placed on RC, or put as an AutoMOD gauge during your turn, if you have an AutoMOD gauge, Energy Charge 2.'
@@ -12942,7 +12939,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15804
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Nui Erras'
+global.CardName[CardStat] = 'X-CeeDaNCe, Neui Erras'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this card is put as an AutoMOD gauge during your turn, if you have two or more AutoMOD gauges, and your other card with the same card name as this card was not put as an AutoMOD gauge this turn, perform one of the following. If you have four or more AutoMOD gauges, perform all of the following instead of one.
@@ -12957,7 +12954,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15805
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Leda Tispur'
+global.CardName[CardStat] = 'X-CeeDaNCe, Rada Tisple'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this card is put as an AutoMOD gauge during your turn, choose one of your units, and it gets power +5000 until end of turn.
@@ -12972,12 +12969,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15806
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Lapi Glossa'
+global.CardName[CardStat] = 'X-CeeDaNCe, Rapi Grossa'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
-AUTO: When this unit is placed on RC, if you have AutoMOD gauges, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a card with "X-CeeDaNCe" in its card name and grade less than or equal to your vanguard, and put it into hand if it is a Crimson Moon card. Shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+AUTO: When this unit is placed on RC, if you have an AutoMOD gauge, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a card with "X-CeeDaNCe" in its card name and grade less than or equal to your vanguard, and put it into hand if it is a Crimson Moon card. Shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 
-AUTO: When this unit is put on GC, if you have two or more AutoMOD gauges, this unit gets shield +5000 until end of that battle. If you have four or more, COST [Soul Blast 1], and it also gets shield +5000.'
+AUTO: When this unit is put on GC, if you have two or more AutoMOD gauges, this unit gets shield +5000 until end of that battle. If you have four or more AutoMOD gauges, COST [Soul Blast 1], and it also gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12987,10 +12984,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15807
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Precci Forwatt'
+global.CardName[CardStat] = 'X-CeeDaNCe, Precee Forwatt'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
-ACT [RC]: If you have an AutoMOD gauge with "X-CeeDaNCe" in its different name from this unit, COST [put this unit face up as an AutoMOD gauge], choose one of your AutoMOD gauges with "X-CeeDaNCe" in its different card name from this card, and call it to the RC this unit was on.
+ACT [RC]: If you have an AutoMOD gauge with "X-CeeDaNCe" in its different name from this unit, COST [put this unit face up as an AutoMOD gauge], choose a card with "X-CeeDaNCe" in its different card name from this card from your AutoMOD gauge, and call it to the RC this unit was on.
 
 AUTO: When this card is put as an AutoMOD gauge during your turn, COST [Soul Blast 2], and draw a card.'
 global.UnitGrade[CardStat] = 2
@@ -13002,12 +12999,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15809
 {
-global.CardName[CardStat] = 'LettiaMateS, Ancisella'
+global.CardName[CardStat] = 'LettiaMateS, Uncizera'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if all of your rear-guards have different card names from this card, you may call this card to RC.
 
-AUTO [Back Row Center RC]: At the end of the battle this unit boosted a grade 3 or greater vanguard with "Magnolia" in its card name, COST [put this unit into soul], and perform one of the following according to your vanguard’s grade.
+AUTO [Back Row Center RC]: At the end of the battle this unit boosted a unit with "Magnolia" in its card name, COST [put this unit into soul], and perform one of the following according to your vanguard’s grade.
 • Grade 3 - Energy Charge 1, choose one of your rear-guards with "LettiaMateS" in its card name, and it gets power +5000 until end of turn.
 • Grade 4 - Energy Charge 2, choose one of your rear-guards with "LettiaMateS" in its card name, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 1
@@ -13019,10 +13016,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15810
 {
-global.CardName[CardStat] = 'LettiaMateS, Marfelle'
+global.CardName[CardStat] = 'LettiaMateS, Marfel'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO: When this unit is put on GC, COST [Counter Blast 1], choose one of your guardians with "LettiaMateS" in its different card name from this unit, until end of turn, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and it gets shield +5000.'
+AUTO: When this unit is put on GC from hand, COST [Counter Blast 1], choose one of your guardians with "LettiaMateS" in its different card name from this unit, and until end of turn, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }

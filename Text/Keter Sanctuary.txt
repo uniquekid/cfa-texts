@@ -12276,6 +12276,9 @@ global.AttackFromRBuff[CardStat] = 5000
 CardStat = 15533
 {
 global.CardName[CardStat] = 'Mercy Serum Angel'
+CardStat = 15533
+{
+global.CardName[CardStat] = 'Mercy Serum Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 2 or greater, and your damage zone has no face up cards, this unit gets power +5000 until end of that battle.'
@@ -12284,11 +12287,11 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15602
 {
 global.CardName[CardStat] = 'Satisfy Dragon'
+CardStat = 15602
+{
+global.CardName[CardStat] = 'Satisfies Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you played an order this turn, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
@@ -12298,8 +12301,8 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
-
-
+{
+global.CardName[CardStat] = 'Mofugaon'
 CardStat = 15603
 {
 global.CardName[CardStat] = 'Mofugaon'
@@ -12311,9 +12314,6 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15691
 {
 global.CardName[CardStat] = 'Divine Skill! Erika Myojo'
 global.CardText[CardStat] = 'Keter Sanctuary/Critical Trigger
@@ -12364,6 +12364,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15711
 {
 global.CardName[CardStat] = 'Bel-Fiore, Proa'
+CardStat = 15711
+{
+global.CardName[CardStat] = 'Bel-Fiore, Proa'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
@@ -12372,11 +12375,11 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15712
 {
 global.CardName[CardStat] = 'Bel-Fiore, Chika'
+CardStat = 15712
+{
+global.CardName[CardStat] = 'Bel-Fiore, Cica'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed by riding from "Bel-Fiore, Proa", COST [reveal a grade 3 with "Bel-Fiore" in its card name from your ride deck], and put a Blodeuwedd Garden token into your order zone.
@@ -12389,37 +12392,37 @@ CONT [GC]: If you have a vanguard with "Bel-Fiore" in its card name, this unit g
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.AnotherSide[CardStat] = 15715
-global.TokenSummoner[CardStat] = 15715
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15713
+global.TokenSummoner[CardStat] = 15715
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 {
 global.CardName[CardStat] = 'Bel-Fiore, Muvie'
+CardStat = 15713
+{
+global.CardName[CardStat] = 'Bel-Fiore, Muevi'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent’s card effects.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your engaged grade 2 or less cards, and call it to RC.'
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your grade 2 or less engaged cards, and call it to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15714
 {
 global.CardName[CardStat] = 'Bel-Fiore, Maya'
+CardStat = 15714
+{
+global.CardName[CardStat] = 'Bel-Fiore, Maier'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 CONT [VC]: All of your rear-guards with "Bel-Fiore" in their card names cannot be chosen by your opponent’s card effects, and during your turn, all of your front row units with "Bel-Fiore" in their card names get power +5000.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose a number of your engaged cards with different card names up to the grade of your opponent’s vanguard, and call them to RC. If you persona rode this turn, this unit gets critical +1 until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose up to the same number of your engaged cards with different card names as your opponent’s vanguard’s grade, and call them to RC. If you persona rode this turn, this unit gets critical +1 until end of turn.
 
 AUTO [VC] 1/Turn: When this unit is attacked, COST [Soul Blast 1], choose any number of your rear-guards with "Bel-Fiore" in their card names, and move them to GC. (Performed before calling guardians and intercepting)'
 global.UnitGrade[CardStat] = 3
@@ -12428,40 +12431,37 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-
-
-CardStat = 15716
 {
 global.CardName[CardStat] = 'Bel-Fiore, Suella'
+CardStat = 15716
+{
+global.CardName[CardStat] = 'Bel-Fiore, Swera'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC or put on GC, if you have a vanguard with "Bel-Fiore" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into soul, and if you have a grade 3 or greater vanguard, this unit gets power +5000 / shield +5000 until end of turn.
+AUTO: When this unit is placed on RC or put on GC, if you have a vanguard with "Bel-Fiore" in its card name, COST [Counter Blast 1], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck or into soul, and if your vanguard grade 3 or greater, this unit gets power +5000 / shield +5000 until end of turn.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, this unit gets power +5000.
 
-AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Bel-Fiore" in its card name attacks, COST [Energy Blast 3], stand this unit, choose a card with "Bel-Fiore" in its card name from your drop, and engage it in your Garden.'
+AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Bel-Fiore" in its card name attacks, COST [Energy Blast 3], stand this unit, choose a card with "Bel-Fiore" in its card name from your drop, and engage it to your Garden.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15717
 {
 global.CardName[CardStat] = 'Bel-Fiore, Miiku'
+CardStat = 15717
+{
+global.CardName[CardStat] = 'Bel-Fiore, Meak'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC by your card’s ability, if you have a vanguard with "Bel-Fiore" in its card name, choose an opponent’s front row RC, and until end of your opponent’s next turn, this unit gets power and shield equal to the original shield of the unit on the chosen RC, and your opponent puts all unit cards on the chosen RC on the bottom of their deck in any order.'
+AUTO: When this unit is placed on RC by your card’s ability, if you have a vanguard with "Bel-Fiore" in its card name, choose one of opponent’s front row RC, until end of your opponent’s next turn, increase this unit’s power and shield each by the original shield of the unit on the chosen RC, and your opponent puts all unit cards on the chosen RC on the bottom of their deck in any order.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-
-
-CardStat = 15718
 {
 global.CardName[CardStat] = 'Bel-Fiore, Pinesse'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
@@ -12479,9 +12479,12 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15719
 {
 global.CardName[CardStat] = 'Bel-Fiore, Apprena'
+CardStat = 15719
+{
+global.CardName[CardStat] = 'Bel-Fiore, Apprena'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [Order Zone]: When your opponent plays an order, COST [bind this card], and draw a card. You cannot pay the cost for cards with the same name as this card until end of turn.
+AUTO [Order Zone]: When your opponent plays an order, COST [bind this card], and draw a card. You cannot pay the cost of the AUTO abilities of a card with the same name as this card until end of turn.
 
 CONT [RC]: If your opponent played an order this turn and this unit was placed by your card’s ability this turn, this unit gets power +10000.'
 global.UnitGrade[CardStat] = 1
@@ -12489,11 +12492,11 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15720
 {
 global.CardName[CardStat] = 'Bel-Fiore, Shione'
+CardStat = 15720
+{
+global.CardName[CardStat] = 'Bel-Fiore, Sione'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO [RC]: When your unit with "Bel-Fiore" in its card name in the same column as this unit stand, COST [Soul Blast 1], and stand this unit.
@@ -12504,14 +12507,14 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15721
 {
 global.CardName[CardStat] = 'Bel-Fiore, Nose'
+CardStat = 15721
+{
+global.CardName[CardStat] = 'Bel-Fiore, Noce'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC, choose up to two cards with "Bel-Fiore" in their different card names from this unit from your drop, and engage them in your Garden.
+AUTO: When this unit is placed on RC, choose up to two cards with "Bel-Fiore" in their different card names from this unit from your drop, and engage them to your Garden.
 
 AUTO [RC]: When this unit boosts a grade 3 or greater with "Bel-Fiore" in its card name, this unit gets power +2000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -12519,9 +12522,6 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15723
 {
 global.CardName[CardStat] = 'Star-select Sorceress'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
@@ -12572,32 +12572,32 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15795
 {
 global.CardName[CardStat] = 'Inexpiable Dragon'
+CardStat = 15795
+{
+global.CardName[CardStat] = 'Inexpiable Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon/Fantome
 
 CONT: If you have a grade 3 or greater vanguard with "Blangdmire" in its card name, this card gets all of the following.
-• AUTO: When this unit is placed on RC other than during the battle phase, COST [Counter Blast 1], choose a grade 3 or less normal unit with a different name from this unit from your bind zone, and call it to RC, choose a card from your drop, bind it, and at the end of that turn, retire that called unit.
-• CONT [RC/GC]: This unit gets power +5000 / shield +5000. If your opponent’s vanguard is grade 3 or greater and your bind zone has a card with the same name as this card, it also gets power +5000. (Active on opponent’s turn too)'
+• AUTO: When this unit is placed on RC other than during the battle phase, COST [Counter Blast 1], choose a grade 3 or less normal unit with a different name from this unit from your bind zone, and call it to RC. If you called a card, choose a card from your drop, bind it, and at the end of that turn, retire that called unit.
+• CONT [RC/GC]: This unit gets power +5000 / shield +5000. If your opponent’s vanguard is grade 3 or greater and your bind zone has a card with the same name as this unit, it also gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
+{
+global.CardName[CardStat] = 'Ill-omened Dragon'
 CardStat = 15796
 {
 global.CardName[CardStat] = 'Ill-omened Dragon'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon/Fantome
 
-AUTO: When this unit is placed on RC, choose a grade 3 card with "Blangdmire" in its card name from ride deck, and you may reveal it. If you revealed a card or you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and your other rear-guard with the same name as this card was not placed this turn, look at the top three cards of your deck, choose up to one card from among them, bind it, and shuffle the deck.'
+AUTO: When this unit is placed on RC, choose a grade 3 card with "Blangdmire" in its card name from ride deck, and you may reveal it. If you revealed a card or you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and your other rear-guard with the same name as this unit was not placed this turn, look at the top three cards of your deck, choose up to one card from among them, bind it face up, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15811
 {
 global.CardName[CardStat] = 'WORLD FINALS 2024, Akina Myodo'
 global.CardText[CardStat] = 'Keter Sanctuary
@@ -12626,6 +12626,9 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15818
 {
 global.CardName[CardStat] = 'Grisun Upashchili'
+CardStat = 15818
+{
+global.CardName[CardStat] = 'Glisten Upashiciry'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO: When this card is placed on RC during your turn or discarded from hand during your turn, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, look at the top two cards of your deck, choose up to one card from among them, and put it into soul or discard it. Put the rest on the bottom of the deck in any order. Then, if your opponent’s vanguard is grade 3 or greater, choose one of your vanguards, and it gets power +5000 until end of turn.'
@@ -12634,11 +12637,11 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15819
 {
 global.CardName[CardStat] = 'Knight of Virtue, Andrivate'
+CardStat = 15819
+{
+global.CardName[CardStat] = 'Knight of Graceful Virtue, Andrivet'
 global.CardText[CardStat] = 'Keter Sanctuary/Elf
 
 AUTO: When this card is discarded from hand during your turn, choose a grade 3 card with "Liael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Liael" in its card name, look at the top five cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
@@ -12649,11 +12652,11 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15820
 {
 global.CardName[CardStat] = 'Patafaction Angel'
+CardStat = 15820
+{
+global.CardName[CardStat] = 'Patefaction Angel'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
 AUTO [RC]: When the attack this unit boosted hits a vanguard, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, look at the top seven cards of your deck, choose up to one card with "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you put a card, put this unit into soul.'
@@ -12662,24 +12665,21 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
+{
+global.CardName[CardStat] = 'Knight of Great Favor, Orcades'
 CardStat = 15821
 {
 global.CardName[CardStat] = 'Knight of Great Favor, Orcades'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, search the deck for up to one normal unit without Sentinel with grade less than or equal to your vanguard, discard it, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, search the deck for up to one non-sentinel normal unit with grade less than or equal to your vanguard, discard it, and shuffle the deck.
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Rezael" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, put this unit into soul, and draw a card. If you used a [Divine Skill] this fight, it gets power +10000 instead of +5000. (This effect is mandatory)'
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Rezael" in its card name, until end of that battle, this unit gets power +5000, and at the end of that battle, put this unit into soul, and draw a card. If you used a [Divine Skill] this fight, it gets power +10000 instead of +5000. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-CardStat = 15822
 {
 global.CardName[CardStat] = 'Formulights, Nox'
 global.CardText[CardStat] = 'Keter Sanctuary/Mathroid

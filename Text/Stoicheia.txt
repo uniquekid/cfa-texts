@@ -10881,7 +10881,7 @@ CardStat = 15357
 global.CardName[CardStat] = 'Apprentice Magick Caster, Berucrea'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-AUTO: When this unit is placed by riding from "Future Magick Caster, Berucrea, COST [Soul Blast 1], search your deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
+AUTO: When this unit is placed by riding from "Future Magick Caster, Berucrea, COST [Soul Blast 1], search your deck or hand for up to a total of three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11120,10 +11120,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15534
 {
-global.CardName[CardStat] = 'Sylvan Horned Beast, Squrell'
+global.CardName[CardStat] = 'Sylvan Horned Beast, Squrelu'
 global.CardText[CardStat] = 'Stoicheia/High Beast
 
-AUTO: When this unit is put on GC during the battle a unit with critical 2 or greater attacked, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Energy Blast 2], and this unit gets shield +15000 until end of that battle.'
+AUTO: When this unit is put on GC for the battle a unit with critical 2 or greater is attacking, if you have a vanguard with "Sylvan Horned Beast" in its card name, COST [Energy Blast 2], and this unit gets shield +15000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11133,7 +11133,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15654
 {
-global.CardName[CardStat] = 'Wave Crushing Dragon, Ventus Flipper Dragon'
+global.CardName[CardStat] = 'Break Waves Dragon, Benthosflipper Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, and it is the fifth battle of this turn or or more, COST [Energy Blast 3], and until end of turn, when your opponent would call cards from hand to GC for the battle this unit attacked, they must call two or more at the same time.'
@@ -11147,10 +11147,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15727
 {
-global.CardName[CardStat] = 'Ninnin Jingi'
+global.CardName[CardStat] = 'Carrot Code'
 global.CardText[CardStat] = 'Stoicheia/Dryad
 
-AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard, COST [put a normal order from drop on the bottom of the deck], and this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit boosts, if your vanguard is grade 3 or greater, COST [put a normal order from drop on the bottom of the deck], and this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11176,7 +11176,7 @@ CardStat = 15749
 global.CardName[CardStat] = 'Apprentice Magick Caster, Zerith'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is placed by riding from "Future Magick Caster, Zerith, COST [Soul Blast 1], search your deck or hand for up to three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
+AUTO: When this unit is placed by riding from "Future Magick Caster, Zerith, COST [Soul Blast 1], search your deck or hand for up to a total of three Magick cards with different card names, and put them into order zone. if you searched the deck, shuffle the deck. If you put one or more cards from hand, draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -11189,7 +11189,7 @@ CardStat = 15750
 global.CardName[CardStat] = 'Peerless Magick Caster, Zerith'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is rode upon by a grade 3 card with "Zerith" in its card name, search your deck or face up damage for up to one Gran Magick or Crimson Moon card, put it into drop, and if you searched the deck, shuffle the deck. If you put from your damage zone, put the top card of the deck into your damage zone. You get "You can play two orders per turn, and you cannot play orders with the same name as an order you played this turn." until end of turn.'
+AUTO: When this unit is rode upon by a grade 3 card with "Zerith" in its card name, search your deck or face up damage zone cards for up to one Gran Magick card or up to one Crimson Moon card, put it into drop, and if you searched the deck, shuffle the deck. If you put a card from the damage zone, put the top card of the deck in the damage zone. You get "You can play two orders, and you cannot play an order with the same card name as an order you played this turn." until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11202,23 +11202,23 @@ CardStat = 15751
 global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome"'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to your back row center RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], call a Great Magick Caster of Transitory, Zerith "Fantome" token to the back row center RC, and it gets "CONT [RC]: This unit can attack from the back row, and gets drive -1. Perform drive checks for the battle this unit attacked." until end of turn.
 
-[Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from your soul and drop], choose trigger cards other than over trigger from your drop up to the number of Crimson Moon cards bound for this cost, put them on the bottom of the deck and shuffle the deck. You cannot pay the cost of [Fantome Skill] of units with the same card name as this unit until end of this fight.
+[Fantome Skill] - ACT [VC]: If your opponent’s vanguard is grade 3 or greater, COST [bind all Crimson Moon cards from soul and drop], choose up to the same number of trigger cards other than over trigger from your drop as the number cards bound for this cost, and return them to the deck and shuffle it. Until end of this fight, you cannot pay the cost of the [Fantome Skill] abilities of a unit with the same card name as this unit.
 
 (SHIFT + left click to call tokens.)
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
-global.AnotherSide[CardStat] = 15752
-global.TokenSummoner[CardStat] = 15752
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 global.PersonaRide[CardStat] = 1
+global.AnotherSide[CardStat] = 15752
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 15752
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15753
@@ -11226,7 +11226,7 @@ CardStat = 15753
 global.CardName[CardStat] = 'Fantum Gran Magick, Glid Radeaur'
 global.CardText[CardStat] = 'Stoicheia/Normal Order/Gran Magick
 
-This card can be played from drop. If your vanguard is "Great Magick Caster of Transitory, Zerith "Fantome"", play this card with COST [Soul Blast 1] !
+This card can be played from drop, and play this with COST [Soul Blast 1] if your vanguard is "Great Magick Caster of Transitory, Zerith "Fantome"" !
 
 Bind this card, and your vanguard gets "CONT [VC]: All of your <Fantome> units get power +5000. if your bind zone has three or more "Fantum Gran Magick, Glid Radeaur", power +10000 instead of +5000" until end of turn.
 
@@ -11241,7 +11241,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15754
 {
-global.CardName[CardStat] = 'Marine General of Black Sky, Leimina'
+global.CardName[CardStat] = 'Black Sky Marine General, Leimina'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid/Fantome
 
 AUTO: When this card is discarded from hand while riding from the ride deck, if you have a <Fantome> vanguard, COST [Soul Blast 1 or Energy Blast 3], search your deck for up to one Crimson Moon card, reveal it and put it into hand, and shuffle the deck.
@@ -11256,7 +11256,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15755
 {
-global.CardName[CardStat] = 'Student of the Stream, Haruto'
+global.CardName[CardStat] = 'Shoal Sounds Junior, Harto'
 global.CardText[CardStat] = 'Stoicheia/Warbeast/Fantome
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -11269,7 +11269,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15756
 {
-global.CardName[CardStat] = 'Student of Pleasure, Ralphie'
+global.CardName[CardStat] = 'Joyfulness Junior, Lalpie'
 global.CardText[CardStat] = 'Stoicheia/Warbeast/Fantome
 
 CONT [RC]: Your Great Magick Caster of Transitory, Zerith "Fantome" token cannot be chosen or retired by your opponent’s card abilities.'
@@ -11283,7 +11283,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15757
 {
-global.CardName[CardStat] = 'Student of Illumination, Ciygna'
+global.CardName[CardStat] = 'Collating Junior, Ciygna'
 global.CardText[CardStat] = 'Stoicheia/Warbeast/Fantome
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck.
@@ -11298,12 +11298,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15758
 {
-global.CardName[CardStat] = 'Scholar of the Waterlands, Rituera'
+global.CardName[CardStat] = 'Cognoscente of Water District, Rituella'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Zerith" in its card name and this unit was placed on RC from drop this turn, this unit gets power +5000.
 
-AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or Gran Magick card, discard it, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Zerith" in its card name, COST [Energy Blast 2], look at the top five cards of your deck, choose up to one Crimson Moon card or up to one Gran Magick card form among them, discard it, and shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11314,10 +11314,10 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 15759
 {
-global.CardName[CardStat] = 'Scholar of Lake Heart, Fontijn'
+global.CardName[CardStat] = 'Cognoscente of Lake Heart, Fontijn'
 global.CardText[CardStat] = 'Stoicheia/Elf/Fantome
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, COST [Counter Blast 1], look at cards from the top of your deck equal to the number of your <Fantome> units, choose a card from among them, put it into hand, choose up to one of <Fantome> or up to one normal order from among them, put it into drop, and shuffle the deck.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Zerith" in its card name, COST [Counter Blast 1], look at the same number of cards from the top of your deck as the number of your <Fantome> units, choose a card from among them, put it into hand, choose up to one <Fantome> or up to one normal order from among them, put it into drop, and shuffle the deck.
 
 AUTO [Front Row RC]: When your grade 3 or greater <Fantome> attacks, if you have a grade 3 or greater vanguard with "Zerith" in its card name, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -11334,7 +11334,7 @@ global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
 
 CONT: You may only have one "Enhance Magick, Starylking" in your deck.
 
-ACT [Order Zone]: If you have a grade 1 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+ACT [Order Zone]: If you have a grade 1 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose one of your units, and it gets power +5000 until end of turn. You cannot rest any Magicks in your order zone other than by the ability of your unit with "Magick Caster" in its card name until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -11351,9 +11351,9 @@ global.CardText[CardStat] = 'Stoicheia/Set Order/Magick
 
 CONT: You may only have one "Growth Magick, Voxtol" in your deck.
 
-ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], and draw a card. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name. This ability is lost until end of this fight.
+ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], and draw a card. You cannot rest any Magicks in your order zone other than by the ability of your unit with "Magick Caster" in its card name until end of turn. This ability is lost until end of this fight.
 
-ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], draw a card, choose a card from hand, and discard it. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+ACT [Order Zone]: If you have a grade 2 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], draw a card, choose a card from hand, and discard it. You cannot rest any Magicks in your order zone other than by the ability of your unit with "Magick Caster" in its card name until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -11372,7 +11372,7 @@ CONT: You may only have one "Healing Magick, Aexlunus" in your deck.
 
 CONT [Order Zone]: When you would call a unit with this card’s ability, the called unit’s AUTO abilities do not activate from that call.
 
-ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose a normal unit without Sentinel from your drop, and call it to RC. Until end of turn, you cannot rest a Magick in your order zone other than by the ability of your unit with "Magick Caster" in its card name.'
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Magick Caster" in its card name, COST [rest this card], choose a normal unit without Sentinel from your drop, and call it to RC. You cannot rest any Magicks in your order zone other than by the ability of your unit with "Magick Caster" in its card name until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
@@ -11414,12 +11414,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15797
 {
-global.CardName[CardStat] = 'Veleno Soldato, Vespino'
+global.CardName[CardStat] = 'Veleno Soldato, Vespieno'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO: When this unit is placed on RC, this unit gets "AUTO [Front Row RC]: At the end of your turn, if you have five or more units with "Veleno" in their card names, COST [put a rear-guard with "Veleno" in its card name into soul], choose a blitz order from your drop, and put it into hand." until end of turn.
 
-AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, and there is a total of four or more other cards with "Veleno" in their card names on your RC and drop, this unit gets power +5000 until end of that battle. If there are eight or more, it gets power +15000 instead of +5000.'
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Lascaria" in its card name, and your RC and drop have a total of four or more other cards with "Veleno" in their card names, this unit gets power +5000 until end of that battle. If they have a total of eight or mroe other cards with "Veleno" in their card names, this unit gets power +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }

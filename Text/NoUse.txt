@@ -1372,13 +1372,14 @@ global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 15715
+CardStat = 15715
 {
 global.CardName[CardStat] = 'Blodeuwedd Garden'
 global.CardText[CardStat] = 'Token Set Order/Garden
 
-ACT [Order Zone] 1/Turn: COST [rest this card], look at the top seven cards of your deck, choose up to two cards with "Bel-Fiore" in their card names, engage them in your Garden, and shuffle the deck.
+ACT [Order Zone] 1/Turn: COST [rest this card], look at the top seven cards of your deck, choose up to two cards with "Bel-Fiore" in their card names from among them, engage them in your Garden, and shuffle the deck.
 
-AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from hand], choose one of your engaged cards with the same name as your vanguard, and ride it as stand. If you rode, activate persona ride, and you cannot ride until end of turn.
+AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from hand], choose one of your engaged cards with the same name as your vanguard, and ride it as stand. If you rode a card, activate persona ride, and you cannot ride until end of turn.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -1389,10 +1390,10 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
-
+CardStat = 15752
 CardStat = 15752
 {
-global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome"'
+global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome" '
 global.CardText[CardStat] = 'Token Unit/Fantome
 
 AUTO [RC]: When your other unit is attacked, COST [retire this unit], and that unit gets power +10000 until end of that battle.
@@ -1400,19 +1401,19 @@ AUTO [RC]: When your other unit is attacked, COST [retire this unit], and that u
 AUTO [RC]: At the end of your opponent’s turn, retire this unit. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
-global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 10000
+global.CanAttackFromBackRow[CardStat] = 1
 global.RemoveFromDrop[CardStat] = 1
 
-
+CardStat = 15808
 CardStat = 15808
 {
 global.CardName[CardStat] = 'X-ceed NET'
 global.CardText[CardStat] = 'Marker
 
-If you have a vanguard with "Impauldio" in its card name, the unit on the RC this marker is on get all of the following.
+If you have a vanguard with "Impauldio" in its card name, the unit on the RC with this marker gets all of the following.
 • CONT [RC]: During your turn, this unit gets power +5000 for every two of your AutoMOD gauges.
 • AUTO [RC]: At the end of your turn, if this unit has "X-CeeDaNCe" in its card name, COST [Energy Blast 2], and return this unit to your hand.'
 global.UnitGrade[CardStat] = 0
@@ -1421,7 +1422,6 @@ global.CardInClan[CardStat] = 29
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
-
 
 CardStat = 15933
 {
