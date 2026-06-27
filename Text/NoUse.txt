@@ -1301,14 +1301,14 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 14860
 {
-global.CardName[CardStat] = 'A Ridiculous and Fun Journey'
+global.CardName[CardStat] = 'A Silly But Fun Journey'
 global.CardText[CardStat] = 'Frieren:Beyond Journey’s End/Token Set Order
 
-CONT [Order Zone]: You cannot put set orders other than this card and Grimoire cards into your order zone.
+CONT [Order Zone]: You cannot put set orders into your order zone other than this card and Grimoire cards.
 
-AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it into order zone, and if your searched the deck, shuffle the deck.
+AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it in order zone. If your searched the deck, shuffle the deck.
 
-AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journey’s End> normal unit is placed on RC during your turn, if it is not the battle phase, search your deck or drop for up to one Grimoire card, put it into the order zone, and if you searched the deck, shuffle the deck.'
+AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journey’s End> normal unit is placed on RC during your turn, if it was placed other than during the battle phase, search your deck or drop for up to one Grimoire card, put it in the order zone. If you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1361,7 +1361,7 @@ global.CardText[CardStat] = 'Token Unit/Demonic Beast Alchemix Body/Fantome
 
 CONT [RC]: This unit gets power +5000 for each grade of your vanguard.
 
-AUTO [RC] 1/Turn: When this unit Alchemixes, stand this unit. If this unit is in the back row, you may move this unit to an open front row RC in the same column as this unit.
+AUTO [RC] 1/Turn: When this unit Alchemix, stand this unit. If this unit is in the back row, you may move this unit to an open front row RC in the same column as this unit.
 
 AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
@@ -1369,7 +1369,6 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
-//global.RemoveFromDrop[CardStat] = 1 //NOVA: Edit OriginalDress to go to drop when moving to RFG
 
 
 CardStat = 15715

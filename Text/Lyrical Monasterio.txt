@@ -12317,7 +12317,7 @@ CardStat = 15298
 global.CardName[CardStat] = 'Tempt Smirk, Tsadamua'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-AUTO: When this unit is placed on RC from hand, if you have a token unit on your RC, COST [Counter Blast 1], and draw a card.
+AUTO: When this unit is placed on RC from hand, if your RC has a Plant token, COST [Counter Blast 1], and draw a card.
 
 CONT [RC/GC]: If you have a vanguard with "Juicy-Fruity" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
@@ -12357,7 +12357,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15313
 {
-global.CardName[CardStat] = 'Prepared for the Light, Shulmun'
+global.CardName[CardStat] = 'Perfect Shade, Schirmun'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
 CONT: Sentinel.
@@ -12372,7 +12372,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15314
 {
-global.CardName[CardStat] = 'Sparky Gyroball, Joane'
+global.CardName[CardStat] = 'Sparky Gyro Ball, Gione'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
 AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
@@ -12385,7 +12385,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15315
 {
-global.CardName[CardStat] = 'Hearty Spot, Storia'
+global.CardName[CardStat] = 'Homey Spot, Streia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
  
 AUTO [RC]: The cost for this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
@@ -12415,7 +12415,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15368
 {
-global.CardName[CardStat] = 'Teardrop Score, Samoetta'
+global.CardName[CardStat] = 'Teardrop Score, Samoyetta'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Marlean" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -12428,7 +12428,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15369
 {
-global.CardName[CardStat] = 'Teardrop Score, Samoetta'
+global.CardName[CardStat] = 'Lustered Memory, Sekarina'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 AUTO [RC]: At the end of the battle this unit boosted, if your vanguard is grade 3 or greater, and you played a normal order this turn, COST [Soul Blast 1], and return this unit to hand.'
@@ -12472,7 +12472,7 @@ CardStat = 15409
 global.CardName[CardStat] = 'LettiaMateS, Charis'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO: When this unit is rode upon by "LettiaMateS, Lattice", look at the top seven cards of the deck, choose up to one unit card with "LettiaMateS" in its card name and normal order each, discard them, and shuffle the deck.
+AUTO: When this unit is rode upon by "LettiaMateS, Lattice", look at the top seven cards of the deck, choose up to one unit card with "LettiaMateS" in its card name and up to one normal order each from among them, discard them, and shuffle the deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -12487,7 +12487,7 @@ CardStat = 15410
 global.CardName[CardStat] = 'LettiaMateS, Lattice'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO: When this unit is rode upon by a grade 3 card with "Magnolia" in its card name, choose up to one grade 2 or less unit card with "LettiaMateS" in its card name from your drop, and call it to RC. If you did not call, call this card to RC, and Soul Charge 1 .
+AUTO: When this unit is rode upon by a grade 3 card with "Magnolia" in its card name, choose up to one grade 2 or less unit card with "LettiaMateS" in its card name from your drop, and call it to RC. If you did not call a card, call this card to RC, and Soul Charge 1 .
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12505,14 +12505,14 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose up to two of your rear-guards, and until end of turn, those units can attack from the back row. If your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], until end of turn, all of your back row rear-guards get power +10000, and until end of your opponent’s next turn, this unit gets grade +1 / drive +1.
 
-[Fantome Skill] - AUTO [VC]: At the end of your turn, COST [bind a total of one or more, up to two Crimson Moon cards from hand, soul or drop], choose up to the same number of your non-sentinel rear-guards as the number of cards bound for this cost, and return them to hand. Until end of your opponent’s next turn, this unit gets "CONT [VC]: All of your units with "LettiaMateS" in their card names get shield +5000." once. If you bound two cards for this cost, it gets it twice instead of once.'
+[Fantome Skill] - AUTO [VC]: At the end of your turn, COST [bind a total of one or more, up to two Crimson Moon cards from hand, soul, or drop], choose up to the same number of your non-sentinel rear-guards as the number of cards bound for this cost, and return them to hand. Until end of your opponent’s next turn, this unit gets "CONT [VC]: All of your units with "LettiaMateS" in their card names get shield +5000." once. If you bound two cards for this cost, it gets it twice instead of once.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 15412
@@ -12522,7 +12522,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
  
 This card can be played from drop if you have a grade 3 or greater vanguard with "Magnolia" in its card name, and play this with COST [Soul Blast 1] if you have a vanguard with "LettiaMateS" in its card name!
 
-Bind this card, and until end of turn, you can play an additional order, but you cannot play orders other than Crimson Moon orders. Look at the top three cards of the deck, choose any number from among them, discard them, and shuffle the deck. Choose up to one card from your drop, call it to RC if it is a unit card with "LettiaMateS" in its card name with grade less than or equal to your vanguard, or put it into hand if it is a normal order. If you have a grade 3 or greater vanguard with "Magnolia" in its card name, choose two of your rear-guards, and they get power +5000 until end of turn. If you persona rode this turn, choose four instead of two.'
+Bind this card, and until end of turn, you can play an additional order, but you cannot play orders other than Crimson Moon orders. Look at the top three cards of the deck, choose any number from among them, discard them, and shuffle the deck. Choose up to one card from your drop, call it to RC if it is a unit card with "LettiaMateS" in its card name with grade less than or equal to your vanguard, or put it into hand if it is a normal order. If you have a grade 3 or greater vanguard with "Magnolia" in its card name, choose two of your rear-guards, and they get power +5000 until end of turn. If you persona rode this turn, choose four of your rear-guards instead of two.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -12548,10 +12548,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15414
 {
-global.CardName[CardStat] = 'LettiaMateS, Tanuu'
+global.CardName[CardStat] = 'LettiaMateS, Tarnu'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called, this unit gets power +5000 until end of turn.
+AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called a card, this unit gets power +5000 until end of turn.
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
@@ -12563,7 +12563,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15415
 {
-global.CardName[CardStat] = 'LettiaMateS, Simias'
+global.CardName[CardStat] = 'LettiaMateS, Simiess'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, COST [Energy Blast 2], and call this card to RC.
