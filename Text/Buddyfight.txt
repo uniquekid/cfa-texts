@@ -3528,3 +3528,132 @@ global.GaugeCharge[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16589
+{
+global.CardName[CardStat] = 'Aibo Academy, Kiri Hyoryu'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
+
+AUTO: When this unit is place by riding from "Legend World", search your deck for up to one "Great Spell, Fimbulwinter", reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16590
+{
+global.CardName[CardStat] = 'Wanting to Become Stronger, Kiri Hyoryu'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
+
+ACT [VC] 1/Turn: COST [Discard a card from hand], and draw two cards.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16591
+{
+global.CardName[CardStat] = 'Beyond the Pursuit of Power, Kiri Hyoryu'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
+
+CONT [VC]: On each turn, you can play two orders, and you cannot play an order with the same card name as an order you played this turn.
+
+AUTO [VC]: When this unit attacks, if you played an order this turn, COST [Counter Blast 1], choose one of your rear-guards, and stand it. If that order has "Great Spell" in its card name, choose one of your rear-guards in the same column as that chosen rear-guard, and stand it.
+
+Horn of Demise, Gjallarhorn - ACT [VC] 1/Turn: COST [Pay a gauge], search your deck or drop for up to one card with "Great Spell" or "Gleipnir" in its card name, reveal it and put it into hand, and shuffle the deck. Then! If you are! An elementary school student, or you persona rode this turn! Search for up to a total of two cards with different card names instead of one.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16592
+{
+global.CardName[CardStat] = 'Ice Blade, Joker'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
+
+AUTO: When this card is discarded from hand or retired from RC, if you have a vanguard with "Kiri" in its card name, COST [pay a gauge], and call this card to RC.
+
+CONT [RC]: If you have a vanguard with "Kiri" in its card name, this unit gets power +5000.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16593
+{
+global.CardName[CardStat] = 'Gleipnir'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Asgard
+
+Play this if you have a vanguard with "Kiri" in its card name!
+
+AUTO: When this card is put in the order zone, perform one of the following.
+• Choose a normal unit other than <Buddyfighter> from your drop, and put it in this card’s Buddy Soul.
+• Put a Demon Wolf, Fenrir token in this card’s Buddy Soul.
+
+CONT: When this card would be put into drop from order zone, choose up to one card from this card’s Buddy Soul, and call it to RC without paying its Call Cost. If you called a card, that unit gets "CONT [RC]: This unit cannot attack." until end of turn.
+
+(SHIFT + left click to call tokens.)'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.AnotherSide[CardStat] = 16595
+global.TokenSummoner[CardStat] = 16595
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16594
+{
+global.CardName[CardStat] = 'Great Spell, Ragnarok'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Asgard
+
+Play this with COST [pay two gauges & put the top card of the deck in the damage zone] if your order zone has a "Great Spell, Fimbulwinter" with no cards in its Buddy Soul!
+
+During this turn’s main phase, the abilities of all of your opponent’s rear-guards are nullified. Then, retire all of them, and put all cards from your order zone into drop.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16596
+{
+global.CardName[CardStat] = 'Great Spell, Fimbulwinter'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Asgard
+
+Play this if you have a vanguard with "Kiri" in its card name!
+
+AUTO: When this card is put in the order zone, search your deck for up to two <Asgard> cards, put them in this card’s Buddy Soul, and shuffle the deck. If you did not put two cards, put this card into drop.
+AUTO [Order Zone]: At the beginning of your turn, choose a card from this card’s Buddy Soul, and put it into drop.
+AUTO [Order Zone]: When the number of cards in this card’s Buddy Soul becomes 0, draw a card.
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
