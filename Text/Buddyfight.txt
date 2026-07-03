@@ -1628,7 +1628,7 @@ global.CardText[CardStat] = 'Buddyfight/Dragon World/Armordragon
 
 Call Cost [Pay a gauge & put the top card of the deck or a card from drop into this card’s Buddy Soul]
 
-AUTO: When this unit is moved from RC to GC , until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
+AUTO: When this unit is moved from RC to GC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
 
 AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, or it becomes in the Link Attack state, this unit gets power +5000 until end of turn.
 
@@ -3655,6 +3655,302 @@ AUTO [Order Zone]: When the number of cards in this card’s Buddy Soul becomes 0,
 ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
 global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16602
+{
+global.CardName[CardStat] = 'Great Spell, Thunder of Zeus'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Spell/Olympus
+
+Play this with COST [pay two gauges & discard a card from hand & put the top card of the deck in the damage zone]!
+
+Retire all of your opponent’s grade 1 or less rear-guards, and if your opponent’s damage zone has four or less cards, choose one of your opponent’s vanguards, and deal one damage.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16603
+{
+global.CardName[CardStat] = 'Rune Staff'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Item/Asgard/Rune/Staff/Weapon
+
+Arms - Vanguard (After being played, the vanguard arms it. If a new Item is armed, put this card into drop)
+
+Play this with COST [pay a gauge]!
+
+CONT [VC]: When you would play an order with "Great Spell" in its card name, that cost is reduced by one gauge, and the number of cards put in the damage zone for that cost is reduced to zero.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.Arms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16604
+{
+global.CardName[CardStat] = 'Corpse Swallower, Hraesvelgr'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
+
+AUTO: When this unit is placed on RC, COST [discard a card from hand], draw a card, and if your order zone has a card with "Great Spell" in its card name, choose up to one card from your drop, and put it into gauge face down.
+
+CONT [RC]: If you played an order with "Great Spell" in its card name this turn, this unit gets power +5000.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16605
+{
+global.CardName[CardStat] = 'Loki the Ehrgeiz'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
+
+AUTO: When this unit is placed on RC, choose one of any player’s cards, and put all cards from that card’s Buddy Soul into drop'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16606
+{
+global.CardName[CardStat] = 'Masked Swordsman, Kiri'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Dungeon World /Adventurer/Asgard
+
+CONT: This card is also a <Disaster>.
+
+AUTO: When this unit is placed on RC, choose one of any player’s cards, choose a card from that card’s Buddy Soul, and put it into drop. If you put a card, choose a card from your drop, and put it into gauge face down.
+
+ACT [RC]: COST [Soul Blast 1 or pay a gauge, & retire this unit], choose an <Asgard> or <Adventurer> unit card with grade less than or equal to your vanguard with a different card name from this unit from your hand or drop, and call it to RC.'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16607
+{
+global.CardName[CardStat] = 'Deity of Sun and Death, Bloody King'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard/Star/Death
+
+Call Cost [Pay two gauges & put the top card of the deck into this card’s Buddy Soul]
+
+ACT [RC] 1/Turn: COST [Discard a card from hand], choose one of your opponent’s grade 2 or less rear-guards, and retire it.
+
+AUTO: When this unit is moved from RC to GC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
+
+CONT: Soulguard (When this unit would leave a RC, you can put a card from this unit’s Buddy Soul into drop to have it stay on the RC)'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16608
+{
+global.CardName[CardStat] = 'Aibo Academy, Magoroku Shido'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+ACT [VC] 1/Turn: COST [Discard a <Death> from hand], draw a card, and if you went first, until end of turn, this unit can attack even during the first turn, and gets drive-1. If you went second, draw a card.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16609
+{
+global.CardName[CardStat] = 'Student Council President Alter Ego, Magoroku Shido'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+AUTO: When this unit is placed by riding from "Aibo Academy, Magoroku Shido", choose a <Death> from your drop, and put it into hand.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16610
+{
+global.CardName[CardStat] = 'To Achieve Victory, Magoroku Shido'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+Shadow Dive - CONT [VC]: During the battle this unit attacked, your opponent cannot intercept.
+
+CONT [VC]: All of your units with the Shadow Dive ability get "CONT [VC/RC]: During the battle this unit attacked, your opponent cannot play blitz orders.".
+
+Judgement Day - ACT [VC] 1/Turn: COST [Pay a gauge], and you get "All of your front row <Death> rear-guards get power +5000." until end of turn. If your opponent’s vanguard is grade 3 or greater, choose one of your <Death> rear-guards, and it gets "AUTO [RC]: When this unit attacks, if it is the first battle of this turn, this unit gets critical +1 until end of that battle." until end of turn.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16611
+{
+global.CardName[CardStat] = 'Nightmare Revive'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Death
+
+Play this with COST [Counter Blast 1] !
+
+Choose up to two <Death> normal units from your drop, and call them to RC.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16612
+{
+global.CardName[CardStat] = 'Death Ruler, Burial'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+Shadow Dive - CONT [VC]: During the battle this unit attacked, your opponent cannot intercept.
+
+CONT [RC/GC]: If you have a vanguard with "Shido" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, and your drop has five or more <Death>, it also gets power +5000. (Active on opponent’s turn too)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16613
+{
+global.CardName[CardStat] = 'Death Ruler, Gallows "SD"'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO [Drop]: When your rear-guard with "Death Ruler" in its card name is placed, if you have a grade 3 or greater vanguard with "Shido" in its card name, and all of your rear-guards have different card names from this card, COST [Soul Blast 1], and call this card to RC.
+
+AUTO [RC]: When this unit’s attack hits, draw a card.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//Given shield for convenience
+CardStat = 16614
+{
+global.CardName[CardStat] = 'Death Ruler, Curse'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+Call Cost [Pay a gauge]
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO [RC]: When your vanguard with "Shido" in its card name is attacked, COST [retire this unit], and that unit gets power +20000 until end of that battle.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 20000
+
+
+CardStat = 16615
+{
+global.CardName[CardStat] = 'Death Ruler, Vroukalakas'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+Call Cost [Pay a gauge & put a card from drop into this card’s Buddy Soul]
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO: When this unit is moved from RC to GC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
+
+CONT: Soulguard (When this unit would leave a RC, you can put a card from this unit’s Buddy Soul into drop to have it stay on the RC)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16616
+{
+global.CardName[CardStat] = 'Death Ruler, Mastermind '
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+AUTO: When this unit is placed on RC, COST [pay a gauge], choose a grade 1 or less unit card with "Death Ruler" in its card name from your drop, and call it to RC.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Shido" in its card name, this unit gets "Boost".'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16617
+{
+global.CardName[CardStat] = 'Death Ruler, Gallows'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
+
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
+
+AUTO [RC]: When this unit attacks, this unit gets power +1000 until end of turn for each of your <Death> rear-guards. At the end of that battle, if your grade 3 or greater vanguard is stand, and your rear-guard did not stand this battle phase, COST [Counter Blast 1], and stand this unit.
+
+AUTO [RC]: When this unit’s attack hits, choose a card from your drop, and put it into gauge face down. If you did not draw by the ability of a card with the same card name as this unit this turn, draw a card.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16618
+{
+global.CardName[CardStat] = 'Nightmare Despair'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Impact/Death/Deep
+
+CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
+
+AUTO [Hand]: At the end of your turn, if your opponent’s vanguard is grade 3 or greater, and your drop has five or more <Death>, COST [discard this card & pay two gauges & declare final phase], choose one of your opponent’s rear-guards, stand it, it attacks your opponent’s vanguard, and until end of that battle, all of that attacking rear-guard’s abilities are nullified, and it gets power +10000. If you persona rode this turn, it also gets power +10000 / critical +1.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
