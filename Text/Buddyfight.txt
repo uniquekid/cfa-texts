@@ -2111,6 +2111,7 @@ Dragon Throne - CONT [VC]: Your unit card with "Azi Dahaka" in its card name can
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Savior of the World, Kyoya Gaen'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -2784,7 +2785,7 @@ CardStat = 16505
 global.CardName[CardStat] = 'Death Dragon Knight, Davide'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Dungeon World/Knight/Black Dragon/Disaster
 
-AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Davide" in its card name, until end of turn, this unit gets power +5000, and your opponent cannot intercept for the battle your unit with the Spectral Strike ability attacked. Then, if your opponent’s vanguard is grade 3 or greater, choose one of your <Black Drago> or <Disaster> units, and it gets power +5000 until end of turn.
+AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Disaster> vanguard in its card name, until end of turn, this unit gets power +5000, and your opponent cannot intercept for the battle your unit with the Spectral Strike ability attacked. Then, if your opponent’s vanguard is grade 3 or greater, choose one of your <Black Dragon> or <Disaster> units, and it gets power +5000 until end of turn.
 
 Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.'
 global.BuddyWorld[CardStat] = 7
@@ -3584,7 +3585,7 @@ global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
 
 AUTO: When this card is discarded from hand or retired from RC, if you have a vanguard with "Kiri" in its card name, COST [pay a gauge], and call this card to RC.
 
-CONT [RC]: If you have a vanguard with "Kiri" in its card name, this unit gets power +5000.'
+CONT [RC]: If you have a grade 3 or greater vanguard with "Kiri" in its card name, this unit gets power +5000.'
 global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
@@ -3623,7 +3624,7 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16594
 {
 global.CardName[CardStat] = 'Great Spell, Ragnarok'
-global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order /Spell/Asgard
+global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Spell/Asgard
 
 Play this with COST [pay two gauges & put the top card of the deck in the damage zone] if your order zone has a "Great Spell, Fimbulwinter" with no cards in its Buddy Soul!
 
@@ -3838,7 +3839,7 @@ CardStat = 16612
 global.CardName[CardStat] = 'Death Ruler, Burial'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Death/Deep
 
-Shadow Dive - CONT [VC]: During the battle this unit attacked, your opponent cannot intercept.
+Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.
 
 CONT [RC/GC]: If you have a vanguard with "Shido" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, and your drop has five or more <Death>, it also gets power +5000. (Active on opponent’s turn too)'
 global.BuddyWorld[CardStat] = 7
@@ -3956,3 +3957,164 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16623
+{
+global.CardName[CardStat] = 'Genius Deck Builder, Gremlin'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+ACT [Soul/Drop]: COST [Counter Blast 1 & put this card that was in the ride deck in ride deck face up], search your deck for up to one "The Ultimate Deck Build, Gremlin", reveal it and put it into hand, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16624
+{
+global.CardName[CardStat] = 'Personal Belief, Gremlin'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+AUTO: When this unit is placed by riding from "Genius Deck Builder, Gremlin", discard the top three cards of your deck, and if one or more trigger cards were discarded, draw a card.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16625
+{
+global.CardName[CardStat] = 'The Ultimate Deck Builder, Gremlin'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
+
+CONT [VC]: Your unit with "Death Tallica" in its card name can attack from the back row center column.
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your back row center column rear-guards with "Death Tallica" in its card name, and it gets power +1000 until end of turn for each card in that unit’s Buddy Soul. If your opponent’s vanguard is grade 3 or greater, that chosen unit gets "AUTO [Back Row Center RC] 1/Turn: When this unit attacks, until end of that battle, this unit’s drive becomes 1, and it performs drive checks. At the end of that battle, if your vanguard is stand, COST [Counter Blast 1], and stand this unit." until end of turn.
+ACT [VC] 1/Turn: COST [Counter Blast 1], discard the top five cards of your deck, choose one card from among the discarded cards, put it into gauge face down, and this unit gets power +5000 until end of turn. '
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1 
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16626
+{
+global.CardName[CardStat] = 'Black Dragon of Demise, Death Tallica'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Black Dragon/Deep
+Call Cost [Pay three gauges]
+(OverDress to move ALL drop to Buddy Soul)
+AUTO: When this unit is placed on RC, if this card’s Call Cost was paid, put all <Deep> from your drop into this card’s Buddy Soul.
+CONT [RC]: This unit cannot get Soulguard, and this unit’s Buddy Soul cannot be moved to other zones by your opponent’s card effects.
+AUTO [Back Row Center RC] 1/Turn: When your vanguard with "Gremlin" in its card name is attacked, COST [return any number of cards from this unit’s Buddy Soul to deck and shuffle it], and that unit gets power +10000 until end of that battle for every three cards returned to deck.
+CONT [Back Row Center RC]: When this unit would leave RC, if there are no other units on that RC, you may choose three cards from this unit’s Buddy Soul. If you chose three cards, return them to deck and shuffle it, and this unit stays on RC.
+AUTO: When this unit with Buddy Soul would leave a RC, if it is put other than on RC, return all cards from that Buddy Soul to deck and shuffle it.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+global.MoveAll[CardStat] = 'OriginalDress'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16627
+{
+global.CardName[CardStat] = 'Black Dragon Priest, Gremlin'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Dungeon World /Black Dragon/Deep/Disaster
+
+AUTO: When this unit is placed on RC, if you have a <Disaster> vanguard, look at the top five cards of your deck, choose a card from among them, put it into gauge face down, choose a card from among them, discard it, and shuffle the deck.
+
+CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets "CONT [RC]: If your drop has ten or more cards, or you have a <Black Dragon> rear-guard with ten or more cards in its Buddy Soul, this unit gets power +5000.".'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16628
+{
+global.CardName[CardStat] = 'Extreme Prison, Zwinger'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Black Dragon/Deep
+
+AUTO: When this unit is placed on RC, discard the top two cards of your deck, and if you have a vanguard with "Gremlin" in its card name, COST [Counter Blast 1], and draw a card.
+
+CONT [RC]: If you have a grade 3 or greater rear-guard with "Death Tallica" in its card name, this unit gets power +5000. (Active on opponent’s turn too)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16629
+{
+global.CardName[CardStat] = 'Curse Dragon, Tragose'
+global.CardText[CardStat] = 'Buddyfight/Ancient World /Wild Dragon
+
+Call Cost [Pay a gauge]
+
+AUTO: When this unit is placed on RC, choose a grade 4 card from your drop, and put it into hand.'
+global.BuddyWorld[CardStat] = 5
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16630
+{
+global.CardName[CardStat] = 'Wicked Lord Dragon Sword, Aqulta Gwaneff'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Item/Dragon/Weapon
+
+Arms - Grade 3 or greater unit with "Kyoya" in its card name (If a new Item is armed, put this card into drop)
+
+CONT: This card cannot be played, and cannot be armed other than by the ability of a card with "Azi Dahaka" in its card name.
+
+CONT [VC]: During your turn, your vanguard gets power +10000, all of your units with "Azi Dahaka" in their card names get power +5000, and all of your front row rear-guards cannot stand by the ability of Double Attack.
+
+AUTO [VC] 1/Turn: At the end of the battle the unit armed with this card attacked, if your back row center unit with "Azi Dahaka" in its card name attacked this turn, COST [Counter Blast 1], stand the armed unit, and it gets drive -1 until end of turn'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 4
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 14
+global.Arms[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16631
+{
+global.CardName[CardStat] = 'The World-ending Power of Azi Dahaka, Kyoya Gaen'
+global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Buddyfighter
+
+CONT: This card can only be ridden from "Savior of the World, Kyoya Gaen", and that normal ride also becomes a persona ride.
+
+AUTO: When this unit is placed on VC, choose a "Savior of the World, Kyoya Gaen" from your soul or drop, and this unit gets all of the chosen card’s names and abilities until end of this fight.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card with <Dragon> in its race from your drop, call it to RC if it is a unit card, and put it into hand if it is a normal order other than an Impact card.
+
+ACT [VC] 1/Turn: COST [Pay a gauge & put a card armed to this unit into drop], search your deck or drop for up to one card with "Aqulta Gwaneff" in its different card name from the card put into drop for this cost, and arm it to this unit. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Savior of the World, Kyoya Gaen'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+global.BuddyWorld[CardStat] = 10
