@@ -13563,13 +13563,30 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 16647
 {
-global.CardName[CardStat] = 'Sage of Index, Idiron'
-global.CardText[CardStat] = 'Keter Sanctuary/Giant
+global.CardName[CardStat] = 'Sage of Index, Indiron'
+global.CardText[CardStat] = 'Keter Sanctuary/Giant/Draw Trigger
 
-When this unit is placed on GC, COST [Soul Blast 1 or Energy Blast 2], and this unit gets shield +10000 until end of battle. If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your opponent’s vanguard is grade 3 or greater, it gets shield +15000 instead of +10000.'
+When this unit is put on GC, COST [Soul Blast 1 or Energy Blast 2], and this unit gets shield +10000 until end of that battle. If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your opponent’s vanguard is grade 3 or greater, it gets shield +15000 instead of +10000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16665
+{
+global.CardName[CardStat] = 'Formulights, "Zo=III" Diocross'
+global.CardText[CardStat] = 'Keter Sanctuary/Zodiac
+
+AUTO: If you have a grade 3 or greater vanguard with "Formulights" in its card name, this cost may be paid with "Energy Blast 3". When this unit is placed on a RC other than by the ability of "Formulights, "Zo=III" Diocross", if you have a vanguard with "Formulights" in its card name, COST [Counter Blast 1], and perform one of the following.
+• Draw a card.
+• Search your deck or drop for up to one "Formulights, "Zo=III" Diocross", and call it to RC. If you searched the deck, shuffle the deck.
+CONT [Right Column RC]: If you have a grade 3 or greater vanguard with "Formulights" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+CONT [Left Column RC]: If you have a grade 3 or greater vanguard with "Formulights" in its card name, this unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

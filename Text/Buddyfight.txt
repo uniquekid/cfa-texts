@@ -4010,12 +4010,12 @@ CardStat = 16626
 global.CardName[CardStat] = 'Black Dragon of Demise, Death Tallica'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Black Dragon/Deep
 Call Cost [Pay three gauges]
-(OverDress to move ALL drop to Buddy Soul)
 AUTO: When this unit is placed on RC, if this card’s Call Cost was paid, put all <Deep> from your drop into this card’s Buddy Soul.
+(Shift + click to activate ability automatically)
 CONT [RC]: This unit cannot get Soulguard, and this unit’s Buddy Soul cannot be moved to other zones by your opponent’s card effects.
 AUTO [Back Row Center RC] 1/Turn: When your vanguard with "Gremlin" in its card name is attacked, COST [return any number of cards from this unit’s Buddy Soul to deck and shuffle it], and that unit gets power +10000 until end of that battle for every three cards returned to deck.
 CONT [Back Row Center RC]: When this unit would leave RC, if there are no other units on that RC, you may choose three cards from this unit’s Buddy Soul. If you chose three cards, return them to deck and shuffle it, and this unit stays on RC.
-AUTO: When this unit with Buddy Soul would leave a RC, if it is put other than on RC, return all cards from that Buddy Soul to deck and shuffle it.'
+AUTO: When this unit with Buddy Soul is put other than on RC from back row center RC, return all cards from that Buddy Soul to deck and shuffle it.'
 global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
@@ -4126,6 +4126,7 @@ global.CardName[CardStat] = 'Shooter of Magic Bullets, Gaspard'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Black Knight/Deep
 
 ACT [Drop]: COST [Soul Blast 1], and call this card to RC.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4136,9 +4137,10 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16650
 {
 global.CardName[CardStat] = 'Mysterious Fighter, Purgatory Knight'
-global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
 
-AUTO: When this unit is placed by riding from "Darkness Dragon World", COST [reveal a "Justice-Upholding Purgatory Knight, Tasuku Ryuenji" from your ride deck], look at the top 7 cards of your deck, choose up to 2 cards from among them, discard them, and shuffle your deck.'
+AUTO: When this unit is placed by riding from "Darkness Dragon World", COST [reveal a "Justice-Upholding Purgatory Knight, Tasuku Ryuenji" from ride deck], look at the top seven cards of your deck, choose up to two cards from among them, discard them, and shuffle the deck.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4149,9 +4151,10 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16651
 {
 global.CardName[CardStat] = 'The True Identity of the Purgatory Knight, Tasuku Ryuenji'
-global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
 
-ACT [VC] 1/Turn: COST [Pay a gauge], choose a card with "Purgatory Knights" in its card name, and call it to RC without paying its Call Cost.'
+ACT [VC] 1/Turn: COST [Pay a gauge], choose a card with "Purgatory Knights" in its card name from your drop, and call it to RC without paying its Call Cost.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4162,14 +4165,20 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16652
 {
 global.CardName[CardStat] = 'Justice-Upholding Purgatory Knight, Tasuku Ryuenji'
-global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Buddyfighter/Disaster
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Buddyfighter/Disaster
 
-AUTO [VC]: When your unit with "Purgatory Knights" in its card name is retired from RC by your card ability during your turn, this unit gets power+5000 until end of turn.
+AUTO [VC]: When your unit with "Purgatory Knights" in its card name is retired from RC by your card’s ability during your turn, this unit gets power +5000 until end of turn.
 
-Purgatory Knight, Forever-ACT [VC] 1/Turn: COST [Counter Blast 1, and pay a gauge], choose up to 2 cards with "Purgatory Knights" in its card name without sentinel from your drop, and put them into your hand.'
+Purgatory Knight, Forever - ACT [VC] 1/Turn: COST [Counter Blast 1 & pay a gauge], choose up to two non-sentinel cards with "Purgatory Knights" in their card names from your drop, and put them into hand.
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4184,10 +4193,12 @@ Arms - Vanguard (After being played, the vanguard arms it. If a new Item is arme
 
 Play this with COST [pay a gauge]!
 
-AUTO [VC] 1/Turn: When your unit with "Purgatory Knights" in its card name is retired from RC by your card ability during your turn, your grade 3 or greater vanguard with "Tasuku" in its card name gets critical+1 until end of turn. If your opponent’s vanguard is grade 3 or greater, choose 1 of your rear-guards with "Purgatory Knights" in its card name, and it gets power +5000 until end of turn.'
+AUTO [VC] 1/Turn: When your unit with "Purgatory Knights" in its card name is retired from RC by your card’s ability during your turn, your grade 3 or greater vanguard with "Tasuku" in its card name gets critical+1 until end of turn. If your opponent’s vanguard is grade 3 or greater, choose one of your rear-guards with "Purgatory Knights" in its card name, and it gets power +5000 until end of turn.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
+global.Arms[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -4196,9 +4207,10 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16654
 {
 global.CardName[CardStat] = 'Purgatory Knights, Angry Hand Dragon'
-global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World /Armordragon
 
-AUTO: When this unit is retired from RC by a card ability during your turn, COST [pay a gauge], choose 1 of your opponent’s rear-guards, and retire it.'
+AUTO: When this unit is retired from RC by a card’s ability during your turn, COST [pay a gauge], choose 1 of your opponent’s rear-guards, and retire it.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4211,7 +4223,8 @@ CardStat = 16655
 global.CardName[CardStat] = 'Purgatory Knights, Eraser Hand Dragon'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 
-ACT [RC]: If you have a grade 3 or greater "Purgatory Knight" in its card name, COST [retire 1 of your other rear-guards with "Purgatory Knights" in its card name], your opponent chooses a card from their hand, and discards it. Until end of turn, this unit gets power +5000 and you cannot activate the ACT ability of cards with the same name as this card.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name, COST [retire another rear-guard with "Purgatory Knights" in its card name], your opponent chooses a card from their hand, and discards it. Until end of turn, this unit gets power +5000 and you cannot activate the ACT abilities of cards with the same name as this card.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4226,8 +4239,8 @@ global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 
 CONT: Sentinel (You may only have up to four cards with "sentinel" in a deck)
 
-AUTO: When this unit is put on GC, choose 1 of your units, and it cannot be hit until end of that battle. If your hand has 2 or more cards, choose a card from your hand, and discard it.
-'
+AUTO: When this unit is put on GC, choose 1 of your units, and it cannot be hit until end of that battle. If your hand has 2 or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4240,9 +4253,10 @@ CardStat = 16657
 global.CardName[CardStat] = 'Purgatory Knights, Gairahm Lance Dragon'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 
-CONT [RC]: If you have a Buddy Monster with "Purgatory Knights" in its card name, this unit gets "Boost". (Active if you selected that card as your Buddy Monster, even if that card is not on RC or order zone)
+CONT [RC]: If your Buddy Monster has "Purgatory Knights" in its card name, this unit gets "Boost". (If you chose a Buddy Monster, it is active even if that chosen card is not on RC or in the order zone)
 
-ACT [RC] 1/Turn: COST [Retire 1 of your rear-guards with "Purgatory Knights" in its card name], and this unit gets power +10000 until end of turn.'
+ACT [RC] 1/Turn: COST [Retire one of your rear-guards with "Purgatory Knights" in its card name], and this unit gets power +10000 until end of turn.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4255,9 +4269,10 @@ CardStat = 16658
 global.CardName[CardStat] = 'Purgatory Knights, Crossbow Dragon'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name and you have a rear-guard with "Purgatory Knights" in its card name, COST [Soul Blast 1], and call this card to RC.
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name, and you have a rear-guard with "Purgatory Knights" in its card name, COST [Soul Blast 1], and call this card to RC.
 
-AUTO [RC]: When the attack this unit boosted hits, Counter Charge 1/Soul Charge 1. '
+AUTO [RC]: When the attack this unit boosted hits, Counter Charge 1 / Soul Charge 1. '
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
@@ -4273,6 +4288,7 @@ global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 AUTO: When this card is retired from RC by a card ability during your turn, draw a card.
 
 CONT [GC]: If you have a vanguard with "Purgatory Knight" in its card name, this unit gets shield +5000.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4283,13 +4299,14 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 16660
 {
 global.CardName[CardStat] = 'Purgatory Demonic Swordsman'
-global.CardText[CardStat] = 'Buddyfight/Dungeon World/Darkness Dragon World/Adventurer/Black Knight
+global.CardText[CardStat] = 'Buddyfight/Dungeon World/Darkness Dragon World /Adventurer/Black Knight
 
 CONT: This card also has the <Disaster> race, and if you have a vanguard with "Purgatory Knight" in its card name, this card is also regarded as "Purgatory Knights".
 
-ACT [RC] 1/Turn: COST [Choose 1 of your rear-guards], retire the unit chosen for this cost, choose a card from your drop, put it face down as gauge, and this unit gets power +5000 until end of turn.
+ACT [RC] 1/Turn: COST [Choose one of your rear-guards], retire the unit chosen for this cost, choose a card from your drop, put it into gauge face down, and this unit gets power +5000 until end of turn.
 
 CONT [GC]: If you have a <Disaster> vanguard, this unit gets shield +5000.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4304,7 +4321,8 @@ global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Armordragon
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], draw a card, and if you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name, this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle your unit attacked, if you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name, COST [retire 2 of your rear-guards with "Purgatory Knights" in its card name], stand this unit, and until end of turn, it gets power+10000 and its critical becomes 1.'
+AUTO [RC]: At the end of the battle your unit attacked, if you have a grade 3 or greater vanguard with "Purgatory Knight" in its card name, COST [retire two of your rear-guards with "Purgatory Knights" in its card name], stand this unit, and until end of turn, it gets power +10000 and its critical becomes 1.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4317,11 +4335,12 @@ CardStat = 16662
 global.CardName[CardStat] = 'Crush That Body, And Sustain Mine'
 global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order /Spell/Dragon
 
-CONT: Only 1 "Crush that Body, and Sustain Mine" can be put into your order zone.
+CONT: You can only put one "Starved Yamigedo" in your order zone.
 
 AUTO [Order Zone]: When your rear-guard with "Purgatory Knights" in its card name is retired by either player’s card ability, choose a card from your drop, and put it face down as gauge.
 
 AUTO [Order Zone]: When your damage check reveals a "Justice-Upholding Purgatory Knight, Tasuku Ryuenji", if your damage zone has 5 or more cards, choose a card from your damage zone, heal it, and you cannot heal by the abilities of cards with the same name as this card until end of fight.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
@@ -4333,14 +4352,91 @@ global.DefensePowerStat[CardStat] = 0
 CardStat = 16663
 {
 global.CardName[CardStat] = 'Distortion Punisher!!'
-global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order/Impact
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order /Impact/Dragon
 
 CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
 
-AUTO [Hand]: At the end of your turn or when your opponent uses the ability of an Impact order during their end phase, if you have 4 or more cards in your damage zone and your opponent has 4 or less cards in their damage zone, COST [discard this card & pay 4 gauges & declare final phase], choose 1 of your opponent’s vanguards, and deal it 1 damage.'
+AUTO [Hand]: At the end of your turn, or when your opponent uses the ability of an Impact order during their end phase, if your damage zone has four or more cards, and your opponent’s damage zone has four or less cards, COST [discard this card & pay four gauges & declare final phase], choose one of your opponent’s vanguards, and deal it 1 damage.'
+global.BuddyWorld[CardStat] = 7
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+
+CardStat = 16664
+{
+global.CardName[CardStat] = 'Brutal Disaster!'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Normal Order /Impact/Deep
+
+CONT: This card cannot be played, and you can use its ability if you did not resolve the ability of an Impact order this fight!
+
+AUTO [Hand]: At the end of your turn, if you have a rear-guard with "Death Tallica" in its card name in your back row center column, COST [discard this card & pay one gauge & discard two <Deep> cards from hand other than this card & declare final phase], choose one of your back row center column rear-guards with "Death Tallica" in its card name, stand it, and it attacks your opponent’s vanguard.
+
+(Previous critical and power increases remain)'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16666
+{
+global.CardName[CardStat] = 'Demon Lord, Joker Grunwald'
+global.CardText[CardStat] = 'Buddyfight/Dungeon World/Dungeon Enemy/Demon Lord
+
+CONT: Sentinel (You may only have up to four cards with "sentinel" in a deck)
+
+AUTO: When this unit is put on GC, choose 1 of your units, and it cannot be hit until end of that battle. If your hand has 2 or more cards, choose a card from your hand, and discard it.'
+global.BuddyWorld[CardStat] = 12
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16667
+{
+global.CardName[CardStat] = 'Hidden Crossbow'
+global.CardText[CardStat] = 'Buddyfight/Dungeon World/Trigger Order/Critical Trigger/Spell/Trap
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s grade 1 or less rear-guards, and retire it.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 12
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16668
+{
+global.CardName[CardStat] = 'Hidden Crossbow'
+global.CardText[CardStat] = 'Buddyfight/Dungeon World/Trigger Order/Critical Trigger/Spell/Fire Power
+
+Play this with COST [Counter Blast 1] !
+
+Choose one of your opponent’s grade 2 or greater rear-guards, and retire it.
+
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
+global.BuddyWorld[CardStat] = 12
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 14
+global.CardInClan[CardStat] = 30
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000

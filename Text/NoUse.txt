@@ -4,23 +4,32 @@ global.AllCard = 16668
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Biased shuffler implementation.
-- Legion animation.
-- Red Text for D-Legion mates.
-- Text sprite for D-Legion, Happy Toys and ArmaArms.
-- Loading a replay now opens the file explorer to select.
-- You can also drag-n-drop replays to watch, except for inside the Deck Editor or during a fight.
-- Automated gauging for Gatcha Redora and other cards’ skills.
-- The deck editor page arrows now list the page they move you to + the total number of pages.
-- A friendly face has appeared on the map to help you test your deck!
-
+- Public Zone Trigger Tracker (toggle in settings)
+- Unlimited Deck Building Size in Deck Editor (toggle in settings)
+- Load default cardback in place of missing sprites to avoid crashing
+- Player Status button added. Set a status for the type of game you are looking for, hover over players to view their conditions on the top of the screen.
+- Deck Building and Solo Testing overworld player status
+- Special Move & G-Zone Separation
+- Scrollable Q logs
+- Crest auto-increase base power for *most* relevant cards
+- Default bind from hand face down, default bind otherwise face up
+- Added a Dragon Race tag-filter for Youthberk Fantome when Deckbuilding
+- XceedNet + Kinzo Gold Marker added
+- Pop-up button to apply power to RC continuously for turn
+- Bind Zone Zeroth Counter
+- Shift + Click cards in G Zone to reveal or activate abilities
+- Fix rear-guard RC mirroring
+- In Test Room, Player End Phase sets opponent to Battle Phase to auto-perform damage checks
+- Rainbow power visual for OT
+- Automate Death Tallica skill
+- Hover on Cardtext box to make it pop-up over hand cards
+- Right click in deck to mill
++ Other miscellaneous improvements
 BUG FIXES:
-- You can now remove additional ride deck card copies without breaking the ride deck.
-- Disabled set orders from self-imprisoning and disappearing from order zone.
-- When viewing the D card pool from a clan, cards belonging to other clans will not show up (ex. D-Dindrane in Shadow Paladin D pool).
-- Fixed Right Arms pop-up buttons prompting to Ride/Soul the deck.
-- Fixed Force 1 marker count being off-centre for the opponent.
-- Fixed card pop-up buttons appearing when you add crit.'
+- Cards that move drop to originalDress automatically no longer create duplicates
+- Hovering over deck editor cards behind the decklist or dropdown menu no longer displays them
+- Fixed opponent bind zone / prison cards not flip
+- Fixed slowdown for resting units with large originalDress stack'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -34,6 +43,29 @@ global.ToukenCrest[4] = 11241
 global.ToukenCrest[5] = 11244
 global.ToukenCrest[6] = 11254
 global.AllToukenCrest = 7
+
+//List of Dragon races for Youthberk Fantome
+global.DragonRaces = ds_list_create();
+ds_list_add(global.DragonRaces,'/Abyss Dragon');
+ds_list_add(global.DragonRaces,'/Chrono Dragon');
+ds_list_add(global.DragonRaces,'/Cosmo Dragon');
+ds_list_add(global.DragonRaces,'/Cyber Dragon');
+ds_list_add(global.DragonRaces,'/Dinodragon');
+ds_list_add(global.DragonRaces,'/Dragonman');
+ds_list_add(global.DragonRaces,'/Earth Dragon');
+ds_list_add(global.DragonRaces,'/Flame Dragon');
+ds_list_add(global.DragonRaces,'/Forest Dragon');
+ds_list_add(global.DragonRaces,'/Gear Dragon');
+ds_list_add(global.DragonRaces,'/Nature Dragon');
+ds_list_add(global.DragonRaces,'/Plasma Dragon');
+ds_list_add(global.DragonRaces,'/Prayer Dragon');
+ds_list_add(global.DragonRaces,'/Shadow Dragon');
+ds_list_add(global.DragonRaces,'/Space Dragon');
+ds_list_add(global.DragonRaces,'/Tear Dragon');
+ds_list_add(global.DragonRaces,'/Thunder Dragon');
+ds_list_add(global.DragonRaces,'/Wild Dragon');
+ds_list_add(global.DragonRaces,'/Wind Dragon');
+ds_list_add(global.DragonRaces,'/Winged Dragon');
 
 /*
 Buddyfight World IDs
@@ -49,6 +81,7 @@ Dragon World = 8
 Generic = 9
 Dragon Ein = 10
 Parade of Hundred Demons = 11
+Dungeon World = 12
 */
 
 /*  Clan IDs                          Nation IDs
@@ -1369,7 +1402,7 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
-//global.RemoveFromDrop[CardStat] = 1 //NOVA: Edit OriginalDress to go to drop when moving to RFG
+global.RemoveFromDrop[CardStat] = 1
 
 
 CardStat = 15715
