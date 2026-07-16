@@ -11358,10 +11358,27 @@ CardStat = 16646
 global.CardName[CardStat] = 'White Star Bow of Comet Rays, Brumsta'
 global.CardText[CardStat] = 'Brandt Gate/Cyberoid/Draw Trigger
 
-When this unit is put on GC, COST [Soul Blast 1 or Energy Blast 2], and this unit gets shield +10000 until end of that battle. If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your opponent’s vanguard is grade 3 or greater, it gets shield +15000 instead of +10000.'
+AUTO: When this unit is put on GC, COST [Soul Blast 1 or Energy Blast 2], and this unit gets shield +10000 until end of that battle. If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your opponent’s vanguard is grade 3 or greater, it gets shield +15000 instead of +10000.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 5
 global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16685
+{
+global.CardName[CardStat] = 'Great Viral Thundering Behemoth, Elephus'
+global.CardText[CardStat] = 'Brandt Gate/High Beast
+
+CONT: This card is also regarded as "Sickle Blade of Inquest, Habitable Zone".
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], search your deck for up to one set order, reveal it and put it into your hand, and shuffle your deck. Until end of turn, you may play up to a total of two orders, and the next set order you play can be played without paying its cost.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
