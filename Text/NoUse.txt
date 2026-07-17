@@ -1,26 +1,35 @@
 n = x
 
-global.AllCard = 16541
+global.AllCard = 16695
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Biased shuffler implementation.
-- Legion animation.
-- Red Text for D-Legion mates.
-- Text sprite for D-Legion, Happy Toys and ArmaArms.
-- Loading a replay now opens the file explorer to select.
-- You can also drag-n-drop replays to watch, except for inside the Deck Editor or during a fight.
-- Automated gauging for Gatcha Redora and other cards’ skills.
-- The deck editor page arrows now list the page they move you to + the total number of pages.
-- A friendly face has appeared on the map to help you test your deck!
-
+- Public Zone Trigger Tracker (toggle in settings)
+- Unlimited Deck Building Size in Deck Editor (toggle in settings)
+- Load default cardback in place of missing sprites to avoid crashing
+- Player Status button added. Set a status for the type of game you are looking for, hover over players to view their conditions on the top of the screen.
+- Deck Building and Solo Testing overworld player status
+- Special Move & G-Zone Separation
+- Scrollable Q logs
+- Crest auto-increase base power for *most* relevant cards
+- Default bind from hand face down, default bind otherwise face up
+- Added a Dragon Race tag-filter for Youthberk Fantome when Deckbuilding
+- XceedNet + Kinzo Gold Marker added
+- Pop-up button to apply power to RC continuously for turn
+- Bind Zone Zeroth Counter
+- Shift + Click cards in G Zone to reveal or activate abilities
+- Fix rear-guard RC mirroring
+- In Test Room, Player End Phase sets opponent to Battle Phase to auto-perform damage checks
+- Rainbow power visual for OT
+- Automate Death Tallica skill
+- Hover on Cardtext box to make it pop-up over hand cards
+- Right click in deck to mill
++ Other miscellaneous improvements
 BUG FIXES:
-- You can now remove additional ride deck card copies without breaking the ride deck.
-- Disabled set orders from self-imprisoning and disappearing from order zone.
-- When viewing the D card pool from a clan, cards belonging to other clans will not show up (ex. D-Dindrane in Shadow Paladin D pool).
-- Fixed Right Arms pop-up buttons prompting to Ride/Soul the deck.
-- Fixed Force 1 marker count being off-centre for the opponent.
-- Fixed card pop-up buttons appearing when you add crit.'
+- Cards that move drop to originalDress automatically no longer create duplicates
+- Hovering over deck editor cards behind the decklist or dropdown menu no longer displays them
+- Fixed opponent bind zone / prison cards not flip
+- Fixed slowdown for resting units with large originalDress stack'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
@@ -34,6 +43,29 @@ global.ToukenCrest[4] = 11241
 global.ToukenCrest[5] = 11244
 global.ToukenCrest[6] = 11254
 global.AllToukenCrest = 7
+
+//List of Dragon races for Youthberk Fantome
+global.DragonRaces = ds_list_create();
+ds_list_add(global.DragonRaces,'/Abyss Dragon');
+ds_list_add(global.DragonRaces,'/Chrono Dragon');
+ds_list_add(global.DragonRaces,'/Cosmo Dragon');
+ds_list_add(global.DragonRaces,'/Cyber Dragon');
+ds_list_add(global.DragonRaces,'/Dinodragon');
+ds_list_add(global.DragonRaces,'/Dragonman');
+ds_list_add(global.DragonRaces,'/Earth Dragon');
+ds_list_add(global.DragonRaces,'/Flame Dragon');
+ds_list_add(global.DragonRaces,'/Forest Dragon');
+ds_list_add(global.DragonRaces,'/Gear Dragon');
+ds_list_add(global.DragonRaces,'/Nature Dragon');
+ds_list_add(global.DragonRaces,'/Plasma Dragon');
+ds_list_add(global.DragonRaces,'/Prayer Dragon');
+ds_list_add(global.DragonRaces,'/Shadow Dragon');
+ds_list_add(global.DragonRaces,'/Space Dragon');
+ds_list_add(global.DragonRaces,'/Tear Dragon');
+ds_list_add(global.DragonRaces,'/Thunder Dragon');
+ds_list_add(global.DragonRaces,'/Wild Dragon');
+ds_list_add(global.DragonRaces,'/Wind Dragon');
+ds_list_add(global.DragonRaces,'/Winged Dragon');
 
 /*
 Buddyfight World IDs
@@ -49,6 +81,7 @@ Dragon World = 8
 Generic = 9
 Dragon Ein = 10
 Parade of Hundred Demons = 11
+Dungeon World = 12
 */
 
 /*  Clan IDs                          Nation IDs
@@ -177,7 +210,7 @@ global.CardText[CardStat] = 'AUTO: When this unit is placed on VC or RC, if you 
 CardStat = 5818
 {
 global.CardName[CardStat] = 'Imaginary Gift Accel I'
-global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and the unit on this RC gets power +10000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
+global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and the unit on this RC gets power +10000 during your turn! (Add it to the left of your front rowâ€™s left RC first, then to the right of your front rowâ€™s right RC. After that, alternate between left and right)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -244,7 +277,7 @@ global.RemoveFromDrop[CardStat] = 1
 CardStat = 6671
 {
 global.CardName[CardStat] = 'Imaginary Gift Accel II'
-global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and draw a card. The unit there gets power +5000 during your turn! (Add it to the left of your front row’s left RC first, then to the right of your front row’s right RC. After that, alternate between left and right)'
+global.CardText[CardStat] = 'When acquired, put this marker as a new front row RC, and draw a card. The unit there gets power +5000 during your turn! (Add it to the left of your front rowâ€™s left RC first, then to the right of your front rowâ€™s right RC. After that, alternate between left and right)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -285,10 +318,10 @@ CardStat = 6915
 {
 global.CardName[CardStat] = 'Astral Plane'
 global.CardText[CardStat] = 'This RC is an Astral Plane. Astral Planes have the following rules.
-• Grade is ignored when calling an <Astral Deity>.
-• If the card on the Astral Plane is not an <Astral Deity>, put it into the drop zone.
-• The unit on the Astral Plane can attack from the back row, and performs drive checks. Cards revealed for those drive checks are put into your soul instead of your hand.
-• At the end of your turn, put the unit on the Astral Plane on the bottom of your deck.
+â€¢ Grade is ignored when calling an <Astral Deity>.
+â€¢ If the card on the Astral Plane is not an <Astral Deity>, put it into the drop zone.
+â€¢ The unit on the Astral Plane can attack from the back row, and performs drive checks. Cards revealed for those drive checks are put into your soul instead of your hand.
+â€¢ At the end of your turn, put the unit on the Astral Plane on the bottom of your deck.
 
 (SHIFT + left click to delete Astral Plane.)'
 global.UnitGrade[CardStat] = 0
@@ -352,14 +385,14 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 7403
 {
-global.CardName[CardStat] = 'Ahsha’s Flower Fairy'
+global.CardName[CardStat] = 'Ahshaâ€™s Flower Fairy'
 global.CardText[CardStat] = 'Plant
 
-(This card represents an Ahsha’s Flower Fairy token, and cannot be put in a deck.)
+(This card represents an Ahshaâ€™s Flower Fairy token, and cannot be put in a deck.)
 
 CONT [RC]: This unit has the same card name as your vanguard with "Ahsha" in its card name.
 
-AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unit’s power and critical to match that unit’s until end of that battle.'
+AUTO [RC]: When it attacks, choose one of your vanguards with "Ahsha" in its card name, and increase or decrease this unitâ€™s power and critical to match that unitâ€™s until end of that battle.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -397,8 +430,8 @@ global.CanAttackFromBackRow[CardStat] = 1
 
 CardStat = 8096
 {
-global.CardName[CardStat] = 'Meer’s Present'
-global.CardText[CardStat] = '(This represents Meer’s Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
+global.CardName[CardStat] = 'Meerâ€™s Present'
+global.CardText[CardStat] = '(This represents Meerâ€™s Present, and cannot be put in a deck. This card cannot be normal called, and will be erased if superior called.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 global.TokenInHand[CardStat] = 1
@@ -431,7 +464,7 @@ global.CardText[CardStat] = 'This represents a Monster BOX, and cannot be put in
 
 If you have a Monster BOX, you can perform the following action.
 
-• Once during each of your main phase, exchange two unit cards with the same grade from your hand and Monster BOX.'
+â€¢ Once during each of your main phase, exchange two unit cards with the same grade from your hand and Monster BOX.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -535,7 +568,7 @@ CONT: The original power of your grade 3 cards with "Messiah" in their card name
 
 CONT: During your turn, if you have a grade 3 or greater vanguard with "Messiah" in its card name, all of your front row units get power +5000 for each face up card in your G zone.
 
-AUTO: At the end of your turn, unlock all of your opponent’s locked cards, and bind those units.'
+AUTO: At the end of your turn, unlock all of your opponentâ€™s locked cards, and bind those units.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -550,9 +583,9 @@ global.CardName[CardStat] = 'Noblesserose'
 global.CardText[CardStat] = 'Plant
 
 CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Granfia" in its card name, all of the following are active.
-• When you would place a Plant token on RC, put it as this unit’s plant gauge instead. (This effect is mandatory)
-• This unit gets power +5000 for each of this unit’s gauge.
-• When you would retire rear-guard as cost, if it can be paid by retiring Plant token rear-guards, it can also be paid by discarding plant gauges.
+â€¢ When you would place a Plant token on RC, put it as this unitâ€™s plant gauge instead. (This effect is mandatory)
+â€¢ This unit gets power +5000 for each of this unitâ€™s gauge.
+â€¢ When you would retire rear-guard as cost, if it can be paid by retiring Plant token rear-guards, it can also be paid by discarding plant gauges.
 
 (SHIFT + left click to count up gauges.)
 (SHIFT + right click to count down gauges.)
@@ -572,13 +605,13 @@ CardStat = 10992
 global.CardName[CardStat] = 'Mushiking: King of the Beetles Machine'
 global.CardText[CardStat] = 'Crest
 
-CONT: You cannot ride cards other than <Mushi>, cannot play set orders, and can only put set orders into the order zone with this crest’s ability.
+CONT: You cannot ride cards other than <Mushi>, cannot play set orders, and can only put set orders into the order zone with this crestâ€™s ability.
 
 AUTO: When you get this crest, search your deck or hand for up to one Hitting Attack, Pinching Attack, and Throwing Attack card each with different grades, put them into your order zone, and if you searched your deck, shuffle the deck.
 
 ACT 1/Turn: COST [Soul Blast 1], look at the top five cards of your deck, choose up to one <Mushi> or Attack card from among them, reveal and put it into hand, and shuffle the deck.
 
-AUTO: When your <Mushi> attacks, COST [rest an Attack card with grade less than or equal to your vanguard in the order zone], and use that card’s Attack.'
+AUTO: When your <Mushi> attacks, COST [rest an Attack card with grade less than or equal to your vanguard in the order zone], and use that cardâ€™s Attack.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -604,14 +637,14 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 11213
 {
-global.CardName[CardStat] = 'Ootachi’s Ability Kiwame'
+global.CardName[CardStat] = 'Ootachiâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: When this unit attacks, this unit gets power +10000 until end of that battle. Then, COST [Counter Blast 1], choose one of your grade 3 rear-guards, and stand it.
-• AUTO [VC]: When this unit’s attack hits a vanguard, discard the top card of your deck, if a trigger unit was discarded, choose one of your opponent’s vanguards, and deal one damage.
+â€¢ AUTO [VC]: When this unit attacks, this unit gets power +10000 until end of that battle. Then, COST [Counter Blast 1], choose one of your grade 3 rear-guards, and stand it.
+â€¢ AUTO [VC]: When this unitâ€™s attack hits a vanguard, discard the top card of your deck, if a trigger unit was discarded, choose one of your opponentâ€™s vanguards, and deal one damage.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -625,14 +658,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11214
 {
-global.CardName[CardStat] = 'Tantou’s Ability Kiwame'
+global.CardName[CardStat] = 'Tantouâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC.
-• CONT [VC]: During your opponent’s main phase, all of your rear-guards cannot be chosen by your opponent’s card effects.
+â€¢ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and until end of that battle, your opponent cannot call grade 1 or greater cards from hand to GC.
+â€¢ CONT [VC]: During your opponentâ€™s main phase, all of your rear-guards cannot be chosen by your opponentâ€™s card effects.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -646,14 +679,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11215
 {
-global.CardName[CardStat] = 'Uchigatana’s Ability Kiwame'
+global.CardName[CardStat] = 'Uchigatanaâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and this unit gets power +10000 until end of that battle.
-• AUTO [VC] 1/Turn: When your rear-guard is attacked, COST [Soul Blast 1], and until end of that battle, if any of your rear-guards is hit, it does not retire.
+â€¢ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and this unit gets power +10000 until end of that battle.
+â€¢ AUTO [VC] 1/Turn: When your rear-guard is attacked, COST [Soul Blast 1], and until end of that battle, if any of your rear-guards is hit, it does not retire.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -667,14 +700,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11216
 {
-global.CardName[CardStat] = 'Wakizashi’s Ability Kiwame'
+global.CardName[CardStat] = 'Wakizashiâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: At the beginning of your battle phase, all of your rear-guards get power +5000 until end of turn.
-• AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], reveal the top card of your deck, put it into hand, and until end of that battle, increase this unit’s power by the original shield of the revealed card.
+â€¢ AUTO [VC]: At the beginning of your battle phase, all of your rear-guards get power +5000 until end of turn.
+â€¢ AUTO [VC] 1/Turn: When this unit is attacked, COST [Counter Blast 1], reveal the top card of your deck, put it into hand, and until end of that battle, increase this unitâ€™s power by the original shield of the revealed card.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -688,14 +721,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11241
 {
-global.CardName[CardStat] = 'Tachi’s Ability Kiwame'
+global.CardName[CardStat] = 'Tachiâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards and retire it if the revealed card is a trigger unit, and discard the revealed card if it is not.
-• AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 2], stand this unit, and it gets drive -1 until end of turn.
+â€¢ AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponentâ€™s rear-guards and retire it if the revealed card is a trigger unit, and discard the revealed card if it is not.
+â€¢ AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 2], stand this unit, and it gets drive -1 until end of turn.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -709,14 +742,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11244
 {
-global.CardName[CardStat] = 'Yari’s Ability Kiwame'
+global.CardName[CardStat] = 'Yariâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• CONT [VC]: When this unit would attack, it battles all of your opponent’s units in a column.
-• AUTO [VC] 1/Turn: When this unit attacks, reveal the top card of your deck, this unit gets power +26000 until end of that battle if it is a trigger unit, and discard it if it is not.
+â€¢ CONT [VC]: When this unit would attack, it battles all of your opponentâ€™s units in a column.
+â€¢ AUTO [VC] 1/Turn: When this unit attacks, reveal the top card of your deck, this unit gets power +26000 until end of that battle if it is a trigger unit, and discard it if it is not.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -730,14 +763,14 @@ global.PersonaRideAct[CardStat] = 1
 
 CardStat = 11254
 {
-global.CardName[CardStat] = 'Naginata’s Ability Kiwame'
+global.CardName[CardStat] = 'Naginataâ€™s Ability Kiwame'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride a unit with a different card name from your vanguard.
 
 CONT: All of your cards with the same card name as your vanguard become Grade 3 / power 13000 / critical 1 units with "Twin Drive", "Persona Ride", and all of following. (They lose all of their original power, shield, and abilities)
-• AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponent’s rear-guards with grade less than or equal to the revealed card, and until end of your opponent’s next turn, that unit cannot move to GC or other RC, and cannot stand during the stand phase. If the revealed card is a normal unit, discard it.
-• CONT [VC]: When this unit would attack, it battles all of your opponent’s front row units.
+â€¢ AUTO [VC]: At the beginning of your battle phase, reveal the top card of your deck, choose one of your opponentâ€™s rear-guards with grade less than or equal to the revealed card, and until end of your opponentâ€™s next turn, that unit cannot move to GC or other RC, and cannot stand during the stand phase. If the revealed card is a normal unit, discard it.
+â€¢ CONT [VC]: When this unit would attack, it battles all of your opponentâ€™s front row units.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -800,14 +833,14 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 11531
 {
-global.CardName[CardStat] = 'The Quintuplets’ Memories'
+global.CardName[CardStat] = 'The Quintupletsâ€™ Memories'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot ride cards other than <Quintuplet>, and your order zone is also regarded as memory.
 
 CONT: When a card other than <Quintuplet> would be put into your memory, put it into drop instead.
 
-ACT 1/Turn: COST [Soul Blast 1], look at the same number of cards from the top of your deck as your vanguard’s grade, choose up to one <Quintuplet> from among them, put it into memory, and put the rest on the bottom of deck in any order. If you chose a unit card with the same card name as a card in your memory, you may call it to RC instead of putting it into memory.'
+ACT 1/Turn: COST [Soul Blast 1], look at the same number of cards from the top of your deck as your vanguardâ€™s grade, choose up to one <Quintuplet> from among them, put it into memory, and put the rest on the bottom of deck in any order. If you chose a unit card with the same card name as a card in your memory, you may call it to RC instead of putting it into memory.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -847,7 +880,7 @@ CONT: The original power of your grade 3 cards with "Demon Stealth Dragon, Shira
 
 CONT: During your turn, if you have a grade 3 or greater vanguard with "Demon Stealth Dragon, Shiranui" in its card name, all of your front row units get power +5000 for each face up card in your G zone. (The power of dominated units will not increase)
 
-CONT: During your turn, your opponent’s units placed by your card’s ability this turn, and units dominated by you, lose all of their CONT and AUTO abilities, and get power +5000.'
+CONT: During your turn, your opponentâ€™s units placed by your cardâ€™s ability this turn, and units dominated by you, lose all of their CONT and AUTO abilities, and get power +5000.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -930,10 +963,10 @@ global.CardName[CardStat] = 'Duel Space Tomborg Arena'
 global.CardText[CardStat] = 'Crest
 
 CONT: You cannot get a crest with the same name as this card, and your "Wandering Referee Robo, Captain Tomborg" cannot attack.
-CONT: Your <B-Series Robo> grade 1 or greater on your RC cannot be chosen by your opponent’s card effects.
-AUTO: When you get this card, all fighters reveal the top card of your deck, and put them on the bottom of your deck. If you revealed card higher grade than opponent’s card, choose one of your opponent’s rear-guards, and retire it.
-AUTO: During your opponent’s main phase, if your "Wandering Referee Robo, Captain Tomborg" was retired from RC by opponent’s card effects, choose one of your opponent’s rear-guards, and retire it.
-AUTO: At the end of your opponent’s turn, remove this card. (This effect is mandatory)'
+CONT: Your <B-Series Robo> grade 1 or greater on your RC cannot be chosen by your opponentâ€™s card effects.
+AUTO: When you get this card, all fighters reveal the top card of your deck, and put them on the bottom of your deck. If you revealed card higher grade than opponentâ€™s card, choose one of your opponentâ€™s rear-guards, and retire it.
+AUTO: During your opponentâ€™s main phase, if your "Wandering Referee Robo, Captain Tomborg" was retired from RC by opponentâ€™s card effects, choose one of your opponentâ€™s rear-guards, and retire it.
+AUTO: At the end of your opponentâ€™s turn, remove this card. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -972,7 +1005,7 @@ CONT: If your heart is a "White Lily Musketeer, Cecilia" with the Limit Break 4 
 
 CONT: The original power of your grade 3 cards with the Limit Break 4 ability become 13000. (Including heart cards)
 
-CONT: Your vanguard’s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
+CONT: Your vanguardâ€™s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -990,7 +1023,7 @@ CONT: If your heart is a "Leading Jewel Knight, Salome" with the Limit Break 4 a
 
 CONT: The original power of your grade 3 cards with the Limit Break 4 ability become 13000. (Including heart cards)
 
-CONT: Your vanguard’s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
+CONT: Your vanguardâ€™s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1008,7 +1041,7 @@ CONT: If your heart is a "Raging Form Dragon" with the Limit Break 4 ability, wh
 
 CONT: The original power of your grade 3 cards with the Limit Break 4 ability become 13000. (Including heart cards)
 
-CONT: Your vanguard’s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
+CONT: Your vanguardâ€™s Limit Break 4 abilities are active even if your damage zone has three or less cards.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1024,7 +1057,7 @@ global.CardText[CardStat] = 'Token Set Order
 
 CONT [Order Zone]: You cannot ride grade 3 or greater cards without "Impauldio" in their card names, and you can have AutoMOD gauges.
 
-AUTO [Order Zone]: When a card is put into your damage zone during your opponent’s turn, choose a card from your drop, and put it face up as your AutoMOD gauge. Then, if you have three or less AutoMOD gauges, and your card other than trigger unit was revealed for this damage check, choose one of your vanguards, and it gets power +5000 until end of turn. If you have four or more AutoMOD gauges, choose one of your vanguards, and it gets power +5000 until end of turn.'
+AUTO [Order Zone]: When a card is put into your damage zone during your opponentâ€™s turn, choose a card from your drop, and put it face up as your AutoMOD gauge. Then, if you have three or less AutoMOD gauges, and your card other than trigger unit was revealed for this damage check, choose one of your vanguards, and it gets power +5000 until end of turn. If you have four or more AutoMOD gauges, choose one of your vanguards, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1044,7 +1077,7 @@ CONT: The original power of your grade 3 cards with "Nightrose" in their card na
 
 CONT: During your turn, if you have a grade 3 or greater vanguard with "Nightrose" in its card name, all of your front row units get power +5000 for each face up card in your G zone.
 
-AUTO: When three or more of your cards are discarded from your deck at the same time by your vanguard’s ability, choose one of those discarded cards, and you may put it on the bottom of the deck.'
+AUTO: When three or more of your cards are discarded from your deck at the same time by your vanguardâ€™s ability, choose one of those discarded cards, and you may put it on the bottom of the deck.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1124,8 +1157,8 @@ global.CardText[CardStat] = 'Crest
 CONT: You cannot ride cards other than <Fashionable Witch>.
 AUTO: When this crest is put during your ride phase or when your vanguard is placed during your ride phase, choose up to one Fashion Magic card from your drop, and put it into the order zone.
 ACT 1/Turn: COST [Energy Blast 3], and perform one of the following.
-• Look at the top seven cards of your deck, choose up to any number of Fashion Magic cards with different grades from among them, put them into the order zone, and shuffle the deck.
-• Choose a card from your damage zone, put it into drop, and put the top card of your deck into damage zone face down. If the card put into drop by this effect is a Fashion Magic card, you may put that card into the order zone.
+â€¢ Look at the top seven cards of your deck, choose up to any number of Fashion Magic cards with different grades from among them, put them into the order zone, and shuffle the deck.
+â€¢ Choose a card from your damage zone, put it into drop, and put the top card of your deck into damage zone face down. If the card put into drop by this effect is a Fashion Magic card, you may put that card into the order zone.
 AUTO: At the beginning of your battle phase, COST [Soul Blast 2], choose up to two <Fashionable Witch> with different card names from each other from your drop, and perform "If your order zone has two or more different Fashion Magic cards written on that card, call that card to RC." for each of them.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
@@ -1141,9 +1174,9 @@ CardStat = 13708
 global.CardName[CardStat] = 'Persona Shield'
 global.CardText[CardStat] = 'Blitz Order
 
-Choose a unit being attacked, it gets power +10000 until end of that battle, and you can play up to two blitz orders until end of turn. If your opponent’s crest zone has a card other than "Energy Generator", it gets power +5000.
+Choose a unit being attacked, it gets power +10000 until end of that battle, and you can play up to two blitz orders until end of turn. If your opponentâ€™s crest zone has a card other than "Energy Generator", it gets power +5000.
 
-CONT [Hand]: During your turn, when you would discard a card while riding from ride deck or choose a card from hand by your card’s ability, this card cannot be chosen or discarded.'
+CONT [Hand]: During your turn, when you would discard a card while riding from ride deck or choose a card from hand by your cardâ€™s ability, this card cannot be chosen or discarded.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 global.TokenInHand[CardStat] = 1
@@ -1173,9 +1206,9 @@ global.CardName[CardStat] = 'Blast'
 global.CardText[CardStat] = 'Blast
 
 CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Estacion" in its card name, it gets all of the following.
-• CONT [RC]: This unit cannot be affected by your opponent’s cards.
-• ACT [RC] 1/Turn: COST [Put two or more, up to three other rear-guards face up as this unit’s plant gauge], and draw a card.
-• CONT [RC]: During your turn, if your vanguard is grade 3 or greater, all of your front row units get power +5000 for every three gauges that this unit have.
+â€¢ CONT [RC]: This unit cannot be affected by your opponentâ€™s cards.
+â€¢ ACT [RC] 1/Turn: COST [Put two or more, up to three other rear-guards face up as this unitâ€™s plant gauge], and draw a card.
+â€¢ CONT [RC]: During your turn, if your vanguard is grade 3 or greater, all of your front row units get power +5000 for every three gauges that this unit have.
 
 (SHIFT + left click to count up gauges.)
 (SHIFT + right click to count down gauges.)
@@ -1196,7 +1229,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT [Order Zone]: If you have a vanguard with "Bravern" in its card name, all of your units with "TS" in their card names get shield +5000.
 
-ACT [Order Zone] 1/Turn: If your opponent’s vanguard is grade 2 or greater, COST [Energy Blast 3], choose a card with "TS" in its card name from your drop, and call it to RC.'
+ACT [Order Zone] 1/Turn: If your opponentâ€™s vanguard is grade 2 or greater, COST [Energy Blast 3], choose a card with "TS" in its card name from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 }
@@ -1212,7 +1245,7 @@ global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 ACT [Order Zone] 1/Turn: COST [Energy Blast 3], choose a "Hero of the Future, Lulu" from your drop, and call it to RC.
 
-AUTO [Order Zone]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Superbia" in its card name, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, until end of turn, that unit cannot intercept, and when your vanguard with "Superbia" in its card name would attack, it also battles that chosen unit as well.'
+AUTO [Order Zone]: At the beginning of your battle phase, if you have a grade 3 or greater vanguard with "Superbia" in its card name, COST [Soul Blast 1], choose one of your opponentâ€™s front row rear-guards, until end of turn, that unit cannot intercept, and when your vanguard with "Superbia" in its card name would attack, it also battles that chosen unit as well.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 8
 }
@@ -1227,9 +1260,9 @@ global.CardName[CardStat] = 'Noblesserose "Rosarossa"'
 global.CardText[CardStat] = 'Plant
 
 CONT [RC]: This unit cannot be moved to other circles, and if you have a vanguard with "Granfia" in its card name, this unit is also treated as "Noblesserose", and all of the following are active.
-• When your Plant token would be placed on RC, put it as a plant gauge for this unit instead. (This effect is mandatory)
-• This unit gets power +5000 for each of this unit’s gauges.
-• When you would retire a rear-guard for a cost, if you can pay by retiring Plant token rear-guard for it, you may pay by discarding a plant gauge.
+â€¢ When your Plant token would be placed on RC, put it as a plant gauge for this unit instead. (This effect is mandatory)
+â€¢ This unit gets power +5000 for each of this unitâ€™s gauges.
+â€¢ When you would retire a rear-guard for a cost, if you can pay by retiring Plant token rear-guard for it, you may pay by discarding a plant gauge.
 AUTO [RC] 1/Turn: When your vanguard is being attacked, COST [discard any number of plant gauges from this unit], for each plant gauge discarded for this cost, your vanguard gets power +5000 until end of that battle.
 (SHIFT + left/right click to count up/down gauges, Middle click or hover and press SPACE to set number of gauges.)'
 global.UnitGrade[CardStat] = 0
@@ -1270,10 +1303,10 @@ CardStat = 14328
 global.CardName[CardStat] = 'Shinobi Scrolls'
 global.CardText[CardStat] = 'Buddyfight/Katana World/Token Set Order/Ninja Arts
 
-ACT [Order Zone] 1/Turn: COST [Pay a gauge & put a card from hand into this card’s Buddy Soul face down], and draw a card.
-ACT [Order Zone] 1/Turn: Choose a <Ninja Arts> order other than blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)
-AUTO [Order Zone]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and your order zone does not have a "Secret Sword, Lethal Formation", COST [pay three gauges & declare final phase], choose a "Secret Sword, Lethal Formation" from this card’s Buddy Soul, and put it into the order zone.
-AUTO [Order Zone] 1/Turn: When your vanguard is attacked, choose a <Ninja Arts> blitz order from this card’s Buddy Soul, and play it. (Playing that order counts towards the order limit)'
+ACT [Order Zone] 1/Turn: COST [Pay a gauge & put a card from hand into this cardâ€™s Buddy Soul face down], and draw a card.
+ACT [Order Zone] 1/Turn: Choose a <Ninja Arts> order other than blitz order from this cardâ€™s Buddy Soul, and play it. (Playing that order counts towards the order limit)
+AUTO [Order Zone]: At the end of your turn, if you have a grade 3 or greater vanguard with "Zanya" in its card name, and your order zone does not have a "Secret Sword, Lethal Formation", COST [pay three gauges & declare final phase], choose a "Secret Sword, Lethal Formation" from this cardâ€™s Buddy Soul, and put it into the order zone.
+AUTO [Order Zone] 1/Turn: When your vanguard is attacked, choose a <Ninja Arts> blitz order from this cardâ€™s Buddy Soul, and play it. (Playing that order counts towards the order limit)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1290,7 +1323,7 @@ global.CardText[CardStat] = 'Touken Ranbu/Token Set Order
 
 CONT [Order Zone]: The ACT ability of "Forge" may only be used a total of one time a turn.
 
-ACT [Order Zone] 1/Turn: COST [Put a card other than heal trigger and over trigger from drop on the bottom of the deck], reveal cards from the top of your deck until the same number of normal units as the number of "Forge" in your order zone is revealed, choose one of the revealed normal units, and call it to RC as rest. If that called unit’s grade is less than or equal to your vanguard, stand that unit, and it gets power +5000 until end of turn for every other normal unit revealed by this effect. Shuffle the deck.'
+ACT [Order Zone] 1/Turn: COST [Put a card other than heal trigger and over trigger from drop on the bottom of the deck], reveal cards from the top of your deck until the same number of normal units as the number of "Forge" in your order zone is revealed, choose one of the revealed normal units, and call it to RC as rest. If that called unitâ€™s grade is less than or equal to your vanguard, stand that unit, and it gets power +5000 until end of turn for every other normal unit revealed by this effect. Shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1301,14 +1334,14 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 14860
 {
-global.CardName[CardStat] = 'A Silly But Fun Journey'
-global.CardText[CardStat] = 'Frieren:Beyond Journey’s End/Token Set Order
+global.CardName[CardStat] = 'A Ridiculous and Fun Journey'
+global.CardText[CardStat] = 'Frieren:Beyond Journeyâ€™s End/Token Set Order
 
-CONT [Order Zone]: You cannot put set orders into your order zone other than this card and Grimoire cards.
+CONT [Order Zone]: You cannot put set orders other than this card and Grimoire cards into your order zone.
 
-AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it in order zone. If your searched the deck, shuffle the deck.
+AUTO [Order Zone] 1/Turn: When this card is put into the order zone or your vanguard with "Frieren" in its card name is placed, search your deck or drop for up to one Grimoire card, put it into order zone, and if your searched the deck, shuffle the deck.
 
-AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journey’s End> normal unit is placed on RC during your turn, if it was placed other than during the battle phase, search your deck or drop for up to one Grimoire card, put it in the order zone. If you searched the deck, shuffle the deck.'
+AUTO [Order Zone] 1/Turn: When your <Frieren:Beyond Journeyâ€™s End> normal unit is placed on RC during your turn, if it is not the battle phase, search your deck or drop for up to one Grimoire card, put it into the order zone, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1319,12 +1352,12 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 15171
 {
-global.CardName[CardStat] = 'Idealize Queen’s Fort'
+global.CardName[CardStat] = 'Idealize Queenâ€™s Fort'
 global.CardText[CardStat] = 'Dark States/Token Set Order
 
 ACT [Order Zone]: If you have a vanguard with "Alcasal" in its card name, COST [rest this card], and perform one of the following.
-• Choose a normal unit from your drop, and put it into soul.
-• Look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. If this card was put into order zone this turn, choose up to two cards instead of one.'
+â€¢ Choose a normal unit from your drop, and put it into soul.
+â€¢ Look at the top seven cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. If this card was put into order zone this turn, choose up to two cards instead of one.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 }
@@ -1361,7 +1394,7 @@ global.CardText[CardStat] = 'Token Unit/Demonic Beast Alchemix Body/Fantome
 
 CONT [RC]: This unit gets power +5000 for each grade of your vanguard.
 
-AUTO [RC] 1/Turn: When this unit Alchemix, stand this unit. If this unit is in the back row, you may move this unit to an open front row RC in the same column as this unit.
+AUTO [RC] 1/Turn: When this unit Alchemixes, stand this unit. If this unit is in the back row, you may move this unit to an open front row RC in the same column as this unit.
 
 AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
@@ -1369,17 +1402,17 @@ global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
 
 
-CardStat = 15715
 CardStat = 15715
 {
 global.CardName[CardStat] = 'Blodeuwedd Garden'
 global.CardText[CardStat] = 'Token Set Order/Garden
 
-ACT [Order Zone] 1/Turn: COST [rest this card], look at the top seven cards of your deck, choose up to two cards with "Bel-Fiore" in their card names from among them, engage them in your Garden, and shuffle the deck.
+ACT [Order Zone] 1/Turn: COST [rest this card], look at the top seven cards of your deck, choose up to two cards with "Bel-Fiore" in their card names, engage them in your Garden, and shuffle the deck.
 
-AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from hand], choose one of your engaged cards with the same name as your vanguard, and ride it as stand. If you rode a card, activate persona ride, and you cannot ride until end of turn.
+AUTO [Order Zone]: At the start of your ride phase, if you have a grade 3 or greater vanguard with "Bel-Fiore" in its card name, COST [discard a card from hand], choose one of your engaged cards with the same name as your vanguard, and ride it as stand. If you rode, activate persona ride, and you cannot ride until end of turn.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 0
@@ -1390,38 +1423,39 @@ global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
 
-CardStat = 15752
+
 CardStat = 15752
 {
-global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome" '
+global.CardName[CardStat] = 'Great Magick Caster of Transitory, Zerith "Fantome"'
 global.CardText[CardStat] = 'Token Unit/Fantome
 
 AUTO [RC]: When your other unit is attacked, COST [retire this unit], and that unit gets power +10000 until end of that battle.
 
-AUTO [RC]: At the end of your opponent’s turn, retire this unit. (This effect is mandatory)'
+AUTO [RC]: At the end of your opponentâ€™s turn, retire this unit. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
+global.CanAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 10000
-global.CanAttackFromBackRow[CardStat] = 1
 global.RemoveFromDrop[CardStat] = 1
 
-CardStat = 15808
+
 CardStat = 15808
 {
 global.CardName[CardStat] = 'X-ceed NET'
 global.CardText[CardStat] = 'Marker
 
-If you have a vanguard with "Impauldio" in its card name, the unit on the RC with this marker gets all of the following.
-• CONT [RC]: During your turn, this unit gets power +5000 for every two of your AutoMOD gauges.
-• AUTO [RC]: At the end of your turn, if this unit has "X-CeeDaNCe" in its card name, COST [Energy Blast 2], and return this unit to your hand.'
+If you have a vanguard with "Impauldio" in its card name, the unit on the RC this marker is on get all of the following.
+â€¢ CONT [RC]: During your turn, this unit gets power +5000 for every two of your AutoMOD gauges.
+â€¢ AUTO [RC]: At the end of your turn, if this unit has "X-CeeDaNCe" in its card name, COST [Energy Blast 2], and return this unit to your hand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
 
 CardStat = 15933
 {
@@ -1454,9 +1488,9 @@ CardStat = 16228
 global.CardName[CardStat] = 'Phantom Hands'
 global.CardText[CardStat] = 'The King of Fighters/Token Unit/Phantom Hands
 
-CONT [RC]: When your unit with "Shun’ei" in its card name in the same column as this unit leaves VC or RC, remove this unit.
+CONT [RC]: When your unit with "Shunâ€™ei" in its card name in the same column as this unit leaves VC or RC, remove this unit.
 
-AUTO: When this unit is removed from RC other than during your main phase, choose one of your opponent’s rear-guards and retire it. If you did not retire a card by this ability, draw a card.
+AUTO: When this unit is removed from RC other than during your main phase, choose one of your opponentâ€™s rear-guards and retire it. If you did not retire a card by this ability, draw a card.
 
 CONT [RC]: This unit cannot be moved to another circle.'
 global.UnitGrade[CardStat] = 1
@@ -1483,10 +1517,10 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 0
 
 
-// à in Sentai is Cyrillic
+// Ð° in Sentai is Cyrillic
 CardStat = 16242
 {
-global.CardName[CardStat] = 'Samurai Sentài Shinkenger'
+global.CardName[CardStat] = 'Samurai SentÐ°i Shinkenger'
 global.CardText[CardStat] = 'Crest
 
 CONT: You can only ride grade 3 or greater <Shinkenger> or <Origami> cards.
@@ -1504,7 +1538,7 @@ global.DefensePowerStat[CardStat] = 0
 // a in Sentai is Cyrillic
 CardStat = 16260
 {
-global.CardName[CardStat] = 'Avataro Sentài Donbrothers'
+global.CardName[CardStat] = 'Avataro SentÐ°i Donbrothers'
 global.CardText[CardStat] = 'Crest
 
 CONT: You can only ride grade 3 or greater <Donbrothers> or <Hitotsuki> cards.
@@ -1560,10 +1594,10 @@ CardStat = 16406
 global.CardName[CardStat] = 'Golden Epitaph'
 global.CardText[CardStat] = 'When They Cry/Token Set Order
 
-CONT [Order Zone]: You cannot call cards to RC with units, and you cannot call cards with the same card name as cards in your order zone. When your rear-guard would be bound, retire it instead. (Can’t call cards with same card name to GC)
-ACT [Order Zone]: If you have a grade 3 vanguard with "Battler Ushiromiya" in its card name, COST [put an <Ushiromiya Family> normal unit from drop into the order zone], and perform all of the following according to the number of <Ushiromiya Family> in your order zone with different card names. You cannot choose a card with the same card name as cards in your order zone for this cost.
-• Six - Until end of this fight, you get "During your turn, all of your front row units get power +5000.". Unil end of turn, you cannot put cards from your drop into the order zone. 
-• Thirteen - Retire all of your rear-guards, discard all cards from your hand, search your deck, soul or drop for up to one "Endless Sorcerer, Battler", and ride it as stand. If you seached the deck, shuffle the deck.'
+CONT [Order Zone]: You cannot call cards to RC with units or call cards with the same card name as cards in your order zone. When your rear-guard would be bound, retire it instead. (Canâ€™t call cards with same card name to GC)
+ACT [Order Zone]: If you have a grade 3 vanguard with "Battler Ushiromiya" in its card name, COST [put an <Ushiromiya Family> normal unit without "Battler Ushiromiya" in its card name from drop in the order zone], and perform all of the following according to the number of <Ushiromiya Family> in your order zone with different card names. You cannot choose a card with the same card name as cards in your order zone for this cost.
+â€¢ Six - Until end of this fight, you get "During your turn, all of your front row units get power +5000.". Unil end of turn, you cannot put cards from your drop into the order zone. 
+â€¢ Thirteen - Retire all of your rear-guards, discard all cards from your hand, search your deck, soul or drop for up to one "Endless Sorcerer, Battler", and ride it as stand. If you seached the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 8
 global.ExtendedTextBox[CardStat] = 1
@@ -1587,7 +1621,7 @@ global.RemoveFromDrop[CardStat] = 1
 
 CardStat = 16470
 {
-global.CardName[CardStat] = 'Kinzo’s Hidden Gold'
+global.CardName[CardStat] = 'Kinzoâ€™s Hidden Gold'
 global.CardText[CardStat] = 'Marker
 
 During your turn, the unit on this circle gets power +10000, and cannot be retired by card abilities. (Cannot be retired for cost)'
@@ -1597,3 +1631,23 @@ global.DCards[CardStat] = 8
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 16595
+{
+global.CardName[CardStat] = 'Demon Wolf, Fenrir'
+global.CardText[CardStat] = 'Buddyfight/Legend World/Token Unit/Asgard
+
+Call Cost [Pay five gauges]
+
+CONT: This card can be in the Buddy Soul of "Gleipnir".
+
+CONT [RC]: If you have a vanguard with "Kiri" in its card name, this unit cannot be affected by "Gleipnir".
+
+(The original critical of this unit is 2.)'
+global.BuddyWorld[CardStat] = 3
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 23000
+global.DefensePowerStat[CardStat] = 0
