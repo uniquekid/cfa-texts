@@ -4171,7 +4171,7 @@ CardStat = 11174
 global.CardName[CardStat] = 'Stealth Fiend, Izasaou'
 global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
-(STANDARD JP & EN: Restricted to 2.)
+(STANDARD EN: Restricted to 2.)
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one normal unit with "Stealth" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
 
@@ -5217,7 +5217,8 @@ CardStat = 12207
 global.CardName[CardStat] = 'Stealth Dragon, Fuurai  '
 global.CardText[CardStat] = 'Dragon Empire/Nubatama/Abyss Dragon
 
-(STANDARD JP & EN: Restricted to 1.)
+(STANDARD JP: Restricted to 2.)
+(STANDARD EN: Restricted to 1.)
 
 CONT [RC]: This unit gets power +5000 for each time a unit dominated by you attacked this turn.
 
@@ -11647,7 +11648,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 15624
 {
 global.CardName[CardStat] = 'Yoshitaka Mine'
-global.CardText[CardStat] = 'DragonEmpire/Like A Dragon/Tojo Clan/Hakuho Clan
+global.CardText[CardStat] = 'DragonEmpire/Yakuza/Tojo Clan/Hakuho Clan
 AUTO: When placed on a front row left RC, if you have a vanguard with "Kazuma Kiryu" in its card name and your soul has a "Morning Glory Orphanage: Precious Place", COST [Energy Blast 3 or put a card from hand into soul], and draw a card.
 CONT [Front Row Left RC]: If you have a grade 3 or greater vanguard with "Kazuma Kiryu" in its card name, your unit with "Tsuyoshi Kanda" in its card name in the same column as this unit can attack and intercept from the back row, and its original power becomes 15000. (Active on opponent’s turn too)
 AUTO [Front Row Left RC]: When your grade 3 or greater vanguard with "Kazuma Kiryu" in its card name stand by that unit’s original ability, choose one of your rear-guards with "Tsuyoshi Kanda" in its card name, and increase this unit’s power by that unit’s original power until end of turn. If your opponent’s vanguard is grade 3 or greater and your bind zone does not have a card with "Tsuyoshi Kanda" in its card name, COST [bind your unit with "Tsuyoshi Kanda" in its card name in the same column as this unit], and your vanguard gets drive +1 until end of turn'
@@ -11912,12 +11913,15 @@ CardStat = 15642
 global.CardName[CardStat] = 'Yuya'
 global.CardText[CardStat] = 'Dragon Empire/Like A Dragon
 
+(STANDARD JP: Restricted to 2.)
+
 AUTO [Soul]: When your vanguard with "Kazuma Kiryu" in its card name is attacked, you may call this card to GC. If you do, this unit gets shield +5000 until end of that battle. If your soul has a card with "Kazuki" in its card name, it gets shield +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.CardLimidet[CardStat] = 1
 
 
 CardStat = 15643
@@ -12844,4 +12848,30 @@ global.DCards[CardStat] = 1
 global.TriggerUnit[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16723
+{
+global.CardName[CardStat] = 'Dragritter, Salih'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC] 1/Turn: At the beginning of your attack step, COST [Counter Blast 1], and this unit gets "CONT [RC]: When this unit would attack a rear-guard, it battles all of your opponent’s units in the same column as that unit." until end of turn, and at the end of that turn, retire this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16724
+{
+global.CardName[CardStat] = 'Dragritter, Rashiv'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [RC] 1/Turn: When your opponent’s unit is put on GC, if it is the battle this unit attacked a grade 3 or greater unit, COST [Counter Blast 1 & Soul Blast 1], and this unit gets power +5000 until end of that battle for each of your opponent’s guardians.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

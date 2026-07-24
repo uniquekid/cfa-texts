@@ -13173,7 +13173,7 @@ AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COS
 
 AUTO [RC]: When your grade 3 or greater vanguard with a Ren icon attacks, if your rear-guard has not stand this battle phase, COST [Soul Blast 1], and stand this unit. If you stand and two or more of either player’s unit was retired by your vanguard’s ability this turn, perform drive checks for the battle this unit attacked until end of turn.
 
-AUTO [RC] [1/Turn]: When this unit attacks a grade 3 or greater unit, if your vanguard has a Ren icon, this unit gets power +10000 until end of turn.'
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if your vanguard has a Ren icon, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
@@ -13191,7 +13191,7 @@ CONT: The normal ride of this card from a grade 3 unit with a Ren icon and a dif
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater and your soul has a "Blaster Dark", this unit gets power +5000. (Active on your opponent’s turn too)
 
-ACT [VC] [1/Turn]: COST [Counter Blast 1, and retire two rear-guards with a Ren icon], choose one of your opponent’s rear-guards, retire it, and until end of turn, this unit gets power +10000 / critical +1 and your opponent’s vanguard gets power -5000.'
+ACT [VC] 1/Turn: COST [Counter Blast 1, and retire two rear-guards with a Ren icon], choose one of your opponent’s rear-guards, retire it, and until end of turn, this unit gets power +10000 / critical +1 and your opponent’s vanguard gets power -5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
@@ -13585,6 +13585,136 @@ AUTO: If you have a grade 3 or greater vanguard with "Formulights" in its card n
 • Search your deck or drop for up to one "Formulights, "Zo=III" Diocross", and call it to RC. If you searched the deck, shuffle the deck.
 CONT [Right Column RC]: If you have a grade 3 or greater vanguard with "Formulights" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
 CONT [Left Column RC]: If you have a grade 3 or greater vanguard with "Formulights" in its card name, this unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16714
+{
+global.CardName[CardStat] = 'Seraphic Notes, Corphie'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16715
+{
+global.CardName[CardStat] = 'Seraphic Notes, Gracia'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is placed by riding from "Seraphic Notes, Corphie", look at the top seven cards of your deck, choose up to one card with "Seraphic Notes" in its card name or up to one Crimson Moon card from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16716
+{
+global.CardName[CardStat] = 'Seraphic Notes, Rektina'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is rode upon by a grade 3 with "Lianorn" in its card name, choose up to one unit card with "Seraphic Notes" in its card name from your drop, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+//2nd skill heavily abbreviated for space, keep in mind when translating
+CardStat = 16717
+{
+global.CardName[CardStat] = 'Seraphic Notes, Lianorn "Fantome"'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+CONT [VC]: All of your units with "Seraphic Notes" in their card names get "Boost", and can intercept from the back row.
+AUTO [VC]: When this unit attacks, if all your rear-guards are rest, COST [Counter Blast 1], choose one of your units with "Seraphic Notes" in its card name other than the center column, stand it, and increase that unit’s power by the power of your other <Fantome> rear-guard in that column until end of turn. Until end of your opponent’s next turn, the chosen unit gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects, and can attack from the back row.". If your opponent’s vanguard is grade 3 or greater, you may choose up to one unit with "Seraphic Notes" in its card name each in your right and left columns for this ability instead.
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul, or drop], search your deck or drop for up to one unit card with "Seraphic Notes" in its card name for each Crimson Moon card in your bind zone. Call the searched cards to RC, and they get power +5000 until end of turn. If you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16718
+{
+global.CardName[CardStat] = 'Seraphic Notes, Tiribott'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO [Back Row Center RC]: When your unit with "Lianorn" in its card name is attacked, COST [retire this unit], and that unit gets power +15000 until end of battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16719
+{
+global.CardName[CardStat] = 'Seraphic Notes, Bertiena'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO [Back Row Left RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, your vanguard gets drive +1 until end of that battle.
+
+AUTO: When this unit intercepts from the back row left RC, if you have a grade 3 or greater vanguard with "Lianorn" in its card name, and your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +10000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16720
+{
+global.CardName[CardStat] = 'Seraphic Notes, Ferktes'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO [Front Row Left RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, your vanguard gets critical +1 until end of turn.
+
+AUTO: When this unit intercepts from the front row left RC, if you have a grade 3 or greater vanguard with "Lianorn" in its card name, the attacking unit’s critical is 2 or greater, and its critical is increased by a non-trigger effect ability or its original critical is 2 or greater, this unit gets shield +10000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16721
+{
+global.CardName[CardStat] = 'Seraphic Notes, Sucuse'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with "Seraphic Notes" in its card name or up to one Crimson Moon card from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Counter Charge 1 .
+
+AUTO [Front Row Right RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, until end of turn, when your opponent would call cards from hand to GC for the battle this unit attacked, they must call two or more at the same time.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16722
+{
+global.CardName[CardStat] = 'Seraphic Notes, Sinceriete'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
+
+AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 with "Lianorn" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Lianorn" in its card name, COST [Soul Blast 1 or Energy Blast 3], and draw a card.
+
+AUTO [Back Row Right RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, this unit gets critical +1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }

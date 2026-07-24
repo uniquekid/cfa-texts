@@ -2787,6 +2787,7 @@ AUTO: When this unit is placed on RC, if you have a grade 3 or greater <Disaster
 
 Spectral Strike - AUTO [RC]: When this unit’s attack hits a rear-guard, if your vanguard’s grade is less than or equal to your opponent’s vanguard’s grade, choose one of your opponent’s vanguards, and deal one damage.'
 global.BuddyWorld[CardStat] = 7
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -3232,6 +3233,7 @@ AUTO: When this unit is placed on RC, if your other rear-guard with the same car
 • Search your deck for up to one set order, reveal it and put it into hand or put it in the order zone.
 • Search your deck for up to one Item card, reveal it and put it into hand or arm it to one of your vanguards.'
 global.BuddyWorld[CardStat] = 3
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -3741,6 +3743,7 @@ AUTO: When this unit is placed on RC, choose one of any player’s cards, choose
 
 ACT [RC]: COST [Soul Blast 1 or pay a gauge, & retire this unit], choose an <Asgard> or <Adventurer> unit card with grade less than or equal to your vanguard with a different card name from this unit from your hand or drop, and call it to RC.'
 global.BuddyWorld[CardStat] = 3
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4034,6 +4037,7 @@ AUTO: When this unit is placed on RC, if you have a <Disaster> vanguard, look at
 
 CONT [RC]: During your turn, if your opponent’s vanguard is grade 3 or greater, this unit gets "CONT [RC]: If your drop has ten or more cards, or you have a <Black Dragon> rear-guard with ten or more cards in its Buddy Soul, this unit gets power +5000.".'
 global.BuddyWorld[CardStat] = 7
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4305,6 +4309,7 @@ ACT [RC] 1/Turn: COST [Choose one of your rear-guards], retire the unit chosen f
 
 CONT [GC]: If you have a <Disaster> vanguard, this unit gets shield +5000.'
 global.BuddyWorld[CardStat] = 7
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4550,6 +4555,7 @@ AUTO: When this unit is placed by riding from "Dungeon World", look at the top s
 
 AUTO [RC]: At the end of the battle this unit boosted "Security Chief, Shido", COST [retire two rear-guards in the same column as this unit], and draw a card.'
 global.BuddyWorld[CardStat] = 3
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4566,6 +4572,7 @@ AUTO: When this unit is rode upon by "Demon Lord of Demise, Kyoya", choose a "De
 
 Shadow Dive - CONT [RC]: During the battle this unit attacked, your opponent cannot intercept.'
 global.BuddyWorld[CardStat] = 7
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4579,14 +4586,17 @@ global.CardName[CardStat] = 'Demon Lord of Demise, Kyoya'
 global.CardText[CardStat] = 'Buddyfight/Dungeon World/Darkness Dragon World/Demon Lord/Dragon/Deity/Disaster
 
 ACT [VC] 1/Turn: COST [Pay a gauge], look at the top seven cards of your deck, choose up to one <Disaster> from among them, reveal it and put it into hand, and shuffle the deck.
-
 CONT [VC]: Your persona ride increases power by +15000 instead of +10000.
-
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your «Disaster» rear-guards, and stand it. If you have a total of twelve or more different card names among your <Disaster> rear-guards and <Disaster> cards in your drop other than <Buddyfighter>, choose one of your <Disaster> rear-guards with a different card name from the unit chosen by this ability, and stand it.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your «Disaster» rear-guards, and stand it. If you have a total of twelve or more different card names among your <Disaster> rear-guards and <Disaster> cards in your drop other than <Buddyfighter>, choose one of your <Disaster> rear-guards with a different card name from the unit chosen by this ability, and stand it.
+(SHIFT + left click to count up <Disaster>.)
+(SHIFT + right click to count down <Disaster>.)
+(Middle click or hover and press SPACE to set <Disaster> number.)'
 global.BuddyWorld[CardStat] = 7
+global.BuddyWorld2[CardStat] = 12
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -4637,6 +4647,7 @@ AUTO: When this card is discarded from hand during your turn, choose a grade 3 w
 
 CONT [Drop]: When your <Disaster> or <Wydar Sarkal> rear-guard would leave RC other than by a card’s cost, you may bind this card. If you do, that rear-guard stays on that RC.'
 global.BuddyWorld[CardStat] = 12
+global.BuddyWorld2[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
@@ -4654,7 +4665,8 @@ CONT [RC]: During your turn, if you have a grade 3 or greater <Disaster> vanguar
 AUTO [RC]: When this unit attacks, if you have a <Disaster> vanguard armed with a <Weapon>, choose one of the following that was not chosen by this ability this turn, and perform it.
 • COST [Counter Blast 1], and draw a card.
 • If your vanguard is grade 3 or greater, COST [pay a gauge], and this unit gets power +10000 until end of that battle.'
-global.BuddyWorld[CardStat] = 6
+global.BuddyWorld[CardStat] = 12
+global.BuddyWorld2[CardStat] = 6
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
@@ -4663,7 +4675,7 @@ global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 10000
 
 
-CardStat = 14324
+CardStat = 16684
 {
 global.CardName[CardStat] = 'Purgatory Demonic Swordsman’s Armor'
 global.CardText[CardStat] = 'Buddyfight/Dungeon World/Darkness Dragon World/Normal Order /Item/Weapon/Disaster
@@ -4673,7 +4685,8 @@ Arms - Vanguard (After being played, the vanguard arms it. If a new Item is arme
 Play this with COST [pay a gauge]!
 
 AUTO [VC] 1/Turn: When the unit armed with this card attacks, it gets power +1000 until end of that battle for each of your different <Disaster> rear-guards other than <Buddyfighter> and for each <Disaster> in your drop other than <Buddyfighter> in total. If there are a total of ten or more different cards, and your opponent’s vanguard is grade 3 or greater, the armed unit gets critical +1 until end of that battle.'
-global.BuddyWorld[CardStat] = 7
+global.BuddyWorld[CardStat] = 12
+global.BuddyWorld2[CardStat] = 7
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
@@ -4681,3 +4694,19 @@ global.CardInClan[CardStat] = 30
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
 global.Arms[CardStat] = 1
+
+
+CardStat = 16711
+{
+global.CardName[CardStat] = 'Black Knight, Hell Rapier'
+global.CardText[CardStat] = 'Buddyfight/Darkness Dragon World/Black Knight/Deep
+
+CONT: Sentinel.
+
+AUTO [RC]: When this unit attacks, COST [Counter Blast 1], and this unit gets critical +1 until end of battle.'
+global.BuddyWorld[CardStat] = 7
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 14
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
