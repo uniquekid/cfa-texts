@@ -11885,7 +11885,7 @@ global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 AUTO [Drop]: When a Tiding card is put into the order zone, if all of your rear-guards have a different name from this card, COST [Counter Blast 1], call this card to RC, and it gets power +5000 until end of turn.
 
-AUTO [RC] [1/Turn]: When this unit attacks, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name and your order zone has a Tiding card, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, power +10000 instead of +5000.'
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name and your order zone has a Tiding card, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -12023,7 +12023,7 @@ CardStat = 16700
 global.CardName[CardStat] = 'Blitz Fleet, Strazer'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid/Fantome
 
-AUTO: When this unit is rode upon by "Blitz Fleet, Uber", look at the top seven cards of your deck, choose up to two <Tear Dragon>, <Aquaroid>, or Crimson Moon cards in total from among them, reveal them, choose a card from the revealed cards, add it to hand, discard the remaining revealed cards, and shuffle your deck.'
+AUTO: When this unit is rode upon by "Blitz Fleet, Uber", look at the top seven cards of your deck, choose up to two <Tear Dragon>, <Aquaroid>, or Crimson Moon cards in total from among them, reveal them, choose a card from the revealed cards, put it into hand, discard the remaining revealed cards, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -12049,7 +12049,7 @@ CardStat = 16702
 global.CardName[CardStat] = 'Blitz Fleet Admiral, Welstra "Fantome"'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid/Fantome
 
-AUTO [VC]: At the start of your battle phase, COST [Soul Blast up to the same number of cards as your opponent’s vanguard’s grade], choose the same number of your rear-guards with the Unmoor ability as the number of cards Soul Blasted for this cost, and Unmoor them. (Activate their Unmoor ability)
+AUTO [VC]: At the beginning of your battle phase, COST [Soul Blast up to the same number of cards as your opponent’s vanguard’s grade], choose the same number of your rear-guards with the Unmoor ability as the number of cards Soul Blasted for this cost, and Unmoor them. (Activate their Unmoor ability)
 
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose up to two columns with two of your rear-guards, and switch all of your rear-guards in the chosen columns between the front and back rows. If your opponent’s vanguard is grade 3 or greater, all of your front row units get power +5000 until end of turn.
 
@@ -12067,7 +12067,7 @@ CardStat = 16703
 global.CardName[CardStat] = 'Blitz Fleet, Anshteur Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon/Fantome
 
-AUTO: When this card is either discarded from hand or retired from GC, if you have a vanguard with "Blitz Fleet" in its card name, you may put this card into your soul.'
+AUTO: When this card is discarded from hand or retired from GC, if you have a vanguard with "Blitz Fleet" in its card name, you may put this card into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -12080,7 +12080,7 @@ CardStat = 16704
 global.CardName[CardStat] = 'Blitz Fleet, Raffinir Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon/Fantome
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Blitz Fleet" in its card name, look at the top five cards of your deck, choose up to one <Tear Dragon> or <Aquaroid> from among them, discard it, and shuffle your deck.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Blitz Fleet" in its card name, look at the top five cards of your deck, choose up to one <Tear Dragon> or <Aquaroid> from among them, discard it, and shuffle the deck.
 
 Unmoor - AUTO [RC]: When this unit unmoors, this unit gets "AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard, this unit gets power +5000 until end of that battle for each Crimson Moon card in your bind zone." until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -12095,9 +12095,9 @@ CardStat = 16705
 global.CardName[CardStat] = 'Blitz Fleet, Perfe'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid/Fantome
 
-CONT [RC/GC]: If you have a <Fantome> vanguard, this unit gets shield +5000. If you have two or more rear-guards with the Unmoor ability, it also gets power +5000. (Active on your opponent’s turn too)
+CONT [RC/GC]: If you have a <Fantome> vanguard, this unit gets shield +5000. If you have two or more rear-guards with the Unmoor ability, it also gets power +5000. (Active on opponent’s turn too)
 
-AUTO [Back Row Center RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Welstra" in its card name, COST [put one of your other rear-guards into your soul], and draw a card.'
+AUTO [Back Row Center RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "Welstra" in its card name, COST [put another rear-guard into soul], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -12110,14 +12110,19 @@ CardStat = 16706
 global.CardName[CardStat] = 'Blitz Fleet, Omdirei Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon/Fantome
 
-AUTO: When this unit is placed on RC, you may Soul Charge 1.
+AUTO: When this unit is placed on RC, you may Soul Charge 1 .
 
 AUTO [RC] 1/Turn: When your other rear-guard in the same column as this unit attacks, that unit gets power +5000 until end of turn.
 
-Unmoor - AUTO [RC]: When this unit unmoors, this unit gets "AUTO [RC]: When this unit attacks, if it is the fifth battle of this turn or more, this unit gets power +10000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, it gets power +15000 instead of +10000." until end of turn.'
+Unmoor - AUTO [RC]: When this unit unmoors, this unit gets "AUTO [RC]: When this unit attacks, if it is the fifth battle of this turn or more, this unit gets power +10000 until end of that battle. If your opponent’s vanguard is grade 3 or greater, it gets power +15000 instead of +10000." until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -12143,11 +12148,42 @@ CardStat = 16708
 global.CardName[CardStat] = 'Blitz Fleet, Uvestei Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon/Fantome
 
-AUTO [RC]: When this unit is placed on RC, choose a grade 3 with "Welstra" in its card name from your ride deck, and you may reveal it. If either you revealed or you have a grade 3 or greater vanguard with "Welstra" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Tear Dragon> or <Aquaroid> with grade less than or equal to your vanguard and a different card name from this unit from among them, call it to RC, and shuffle your deck. If you did not call a card, Counter Charge 1.
+AUTO [RC]: When this unit is placed on RC, choose a grade 3 with "Welstra" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Welstra" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Tear Dragon> or <Aquaroid> with grade less than or equal to your vanguard and a different card name from this unit from among them, call it to RC, and shuffle the deck. If you did not call a card, Counter Charge 1 .
 
-Unmoor - AUTO [RC]: When this unit unmoors, choose one of your opponent's vanguards, and it gets power -5000 until end of turn.'
+Unmoor - AUTO [RC]: When this unit unmoors, choose one of your opponent’s vanguards, and it gets power -5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16725
+{
+global.CardName[CardStat] = 'Sanguine Sprout, Weldy'
+global.CardText[CardStat] = 'Stoicheia/Bioroid
+
+AUTO [RC]: When your other unit is attacked, if it is the fourth battle of this turn or more, COST [put his unit into soul], and that unit gets power +5000 until end of that battle. If it is the fifth battle of this turn or more, it gets power +10000 instead of +5000.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16726
+{
+global.CardName[CardStat] = 'Jungle Vanguard, Jaruk'
+global.CardText[CardStat] = 'Stoicheia/Warbeast
+
+AUTO [RC]: When your unit is put on GC, if it is the battle that your other unit is attacked, COST [Soul Blast (1)], and move this unit to GC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

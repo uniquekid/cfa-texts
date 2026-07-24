@@ -11389,11 +11389,11 @@ CardStat = 16696
 global.CardName[CardStat] = 'Librate Wingman, Benvenuto'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
-CONT: This card cannot be operated other than by the ability of a <Fantome>, and while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it into the order zone instead.
+CONT: This card cannot be operated other than by a <Fantome> ability, while this card is revealed from deck by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it in the order zone instead.
 
-Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 8000 / shield 5000 / critical 1 normal unit with "Boost" to a RC.
+Operate - AUTO [Order Zone]: When this card is operated, call this card to a RC as a power 8000 / shield 5000 / critical 1 normal unit with "Boost".
 
-ACT [RC]: COST [Retire this unit], search your deck or drop for up to one "Librate Wingman, Roubroy", reveal it and add it to your hand, and if you searched your deck, shuffle your deck.
+ACT [RC]: COST [Retire this unit], search your deck or drop for up to one "Librate Wingman, Roubroy", reveal it and put it into hand, and if you searched the deck, shuffle the deck.
 
 Overcharge - AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, you may Soul Charge 1. Until the end of your opponent’s next turn, this unit cannot be chosen by your opponent’s card effects and gets power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -11410,9 +11410,9 @@ CardStat = 16697
 global.CardName[CardStat] = 'Librate Battalion, Merhavach Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
 
-CONT [RC/GC]: If you have a <Fantome> vanguard, this unit gets "Intercept" and shield +5000. If your vanguard is grade 3 or greater, then it also gets power +5000. (Active on your opponent’s turn too)
+CONT [RC/GC]: If you have a <Fantome> vanguard, this unit gets "Intercept" and shield +5000. If you have a grade 3 or greater vanguard, this unit also gets power +5000. (Active on opponent’s turn too)
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, COST [Soul Blast 1], choose a Product card from your drop, and add it to your hand. You cannot activate the ACT ability of units with the same name as this unit until end of turn.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, COST [Soul Blast 1], choose a Product card from your drop, and put it into hand. You cannot activate the ACT abilities of units with the same card name as this unit until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -11428,9 +11428,9 @@ global.CardText[CardStat] = 'Brandt Gate/Battleroid/Fantome
 
 CONT: This card is also regarded as a Product card.
 
-AUTO: When this unit is placed on RC, look at the top seven cards of your deck, choose up to one card with "Librate" in its different card name from this unit from among them, reveal it and add it to your hand, and shuffle your deck. If you revealed a card, at the end of that turn, put this unit into your soul.
+AUTO: When this unit is placed on RC, look at the top seven cards of your deck, choose up to one card with "Librate" in its different card name from this unit from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, at the end of that turn, put this unit into soul.
 
-CONT [RC/GC]: If you have a vanguard with "Librate Battalion" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, then this unit also gets "Boost".
+CONT [RC/GC]: If you have a vanguard with "Librate Battalion" in its card name, this unit gets shield +5000. If your vanguard is grade 3 or greater, this unit also gets "Boost".
 
 Overcharge - AUTO [RC]: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, until end of your opponent’s next turn, this unit can intercept from the back row, and gets shield +5000.'
 global.UnitGrade[CardStat] = 2
@@ -11445,14 +11445,15 @@ CardStat = 16712
 global.CardName[CardStat] = 'Tempered Mechanic'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-ACT [RC]: If your order zone has a Product, COST [Energy Blast 2, and retire this unit], choose a Product card from your drop, and add it to your hand.
+ACT [RC]: If your order zone has a Product, COST [Energy Blast 2 & retire this unit], choose a Product card from your drop, and put it into hand.
 
-AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater and your RC has a card with the Operate ability, this unit gets power +5000 until end of battle.'
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, and you have a card with the Operate ability on your RC, this unit gets power +5000 until end of battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 16713
@@ -11460,7 +11461,7 @@ CardStat = 16713
 global.CardName[CardStat] = 'Star Cluster Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon
 
-AUTO [RC]: When you Counter Blast, COST [Soul Blast 1], and this unit gets power +5000 until end of turn for each card turned face down for that Counter Blast.'
+AUTO [RC]: When you Counter Blast , COST [Soul Blast 1], and this unit gets power +5000 until end of turn for each damage zone card turned face down for that Counter Blast.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
