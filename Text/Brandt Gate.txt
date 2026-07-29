@@ -10641,7 +10641,7 @@ ACT [VC] 1/Turn: COST [Reveal a grade 3 with "Aelquilibra" in its card name from
 
 AUTO: When this unit is rode upon by a grade 3 with "Aelquilibra" in its card name, COST [put this card into your order zone], search your deck for up to one Product card, reveal it and put it into your hand, and shuffle the deck.
 
-CONT [Order Zone]: This card is treated as a set order, and all of your rear-guards with "Leibreiter" in their card names get "Intercept" and can intercept from the back row.'
+CONT [Order Zone]: This card is treated as a set order, and all of your rear-guards with "Librate Wingman" in their card names get "Intercept" and can intercept from the back row.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10656,7 +10656,7 @@ global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
 
 ACT [VC] 1/Turn: COST [Reveal one or more, up to three, Product cards from hand], put all the cards revealed for this cost into your order zone, and draw a card. If you put two or more, this unit gets power +5000 until end of turn.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose any number of Products from your order zone with "Leib" in their different card names up to the grade of your opponent’s vanguard, and operate them.
+ACT [VC] 1/Turn: COST [Counter Blast 1 & Soul Blast 1], choose any number of Products from your order zone with "Librate" in their different card names up to the grade of your opponent’s vanguard, and operate them.
 
 [Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul or drop], choose any number of your rear-guards with the Overcharge ability with different card names up to the grade of your opponent’s vanguard, and they get power +5000 until end of turn. If you chose three or more, this unit gets drive +1 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -10704,15 +10704,15 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15485
 {
-global.CardName[CardStat] = 'Librate Wingman, Weibaris'
+global.CardName[CardStat] = 'Librate Wingman, Waverlis'
 global.CardText[CardStat] = 'Brandt Gate/Set Order/Product
 
 CONT: This card cannot be operated other than by the ability of a <Fantome>, and while this card is revealed by a Crimson Moon card’s ability, this card is regarded as a Crimson Moon card, and when it would be put into hand, put it into the order zone instead.
 Operate - AUTO [Order Zone]: When this card is operated, call this card as a power 10000 / shield 10000 / critical 1 normal unit with "Intercept" to a RC. If you called, you may draw a card.
-Overcharge - AUTO [RC] 1/Turn: When this unit is chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets "AUTO [RC] 1/Turn: When your vanguard attacks, COST [Energy Blast 3], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn." and power +5000 until end of turn.'
+Overcharge - AUTO [RC] 1/Turn: When this unit attacks, if this unit was chosen by the ability of your grade 3 or greater vanguard with "Aelquilibra" in its card name, this unit gets "AUTO [RC] 1/Turn: When your vanguard attacks, COST [Energy Blast 3], stand this unit, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +10000 until end of turn." and power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
-global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 10000
@@ -11463,4 +11463,30 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16730
+{
+global.CardName[CardStat] = 'PiCKeR 1-Q'
+global.CardText[CardStat] = 'Brandt Gate/Workeroid
+
+AUTO [RC] When your grade 3 or greater vanguard is attacked, COST [bind a card with the same card name as this unit from drop], move this unit to GC, and this unit gets shield +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16731
+{
+global.CardName[CardStat] = 'Reticent Pilot, Paitie'
+global.CardText[CardStat] = 'Brandt Gate/Human
+
+ACT [RC]: COST [Bind this unit], look at the top five cards of your deck, choose up to one grade 2 or less non-sentinel <Battleroid> from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
