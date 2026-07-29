@@ -13789,7 +13789,7 @@ CONT [GC]: If you have a vanguard with "Enlightening" in its card name, this uni
 ACT [Drop]: If you have a vanguard with "Enlightening" in its card name, COST [Energy Blast 2], call this card to RC, at the end of that turn, bind this unit face down.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
-global.CardCopies[CardStat] = 20
+global.CardCopies[CardStat] = 16
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -13828,6 +13828,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 16739
@@ -13843,6 +13844,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 16740
@@ -13867,7 +13869,6 @@ CardStat = 16741
 {
 global.CardName[CardStat] = 'Enlightening of Extirpation, Anlarcciael'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
-
 CONT: This card cannot be called, and can only be ridden from a unit with "Enlightening" in its card name.
 CONT [VC]: During your turn, all of your front row rear-guards with "Hollow Vallet" in their card names get power +1000 for each face down card in your bind zone.
 ACT [VC] 1/Turn: COST [Bind a card from soul face down], look at the top seven cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a unit card with "Hollow Vallet" in its card name, and put it into hand if it is "Cradle of Hollow". Shuffle the deck.
@@ -13878,4 +13879,4 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 18000
 global.DefensePowerStat[CardStat] = 0
-global.ExtendedTextBox = 1
+global.ExtendedTextBox[CardStat] = 1

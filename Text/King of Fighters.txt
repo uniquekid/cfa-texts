@@ -77,6 +77,8 @@ CardStat = 15962
 global.CardName[CardStat] = 'Inheritor of the Three Sacred Treasures: Guardian, Chizuru Kagura'
 global.CardText[CardStat] = 'The King of Fighters/Female Fighter/Kagura Style of Ancient Martial Arts
 
+(STANDARD CN: Restricted to 1.)
+
 AUTO [Drop]: When your grade 3 or greater vanguard with "Kyo Kusanagi" in its card name is placed, if you do not have a rear-guard with the same name as this unit, COST [Soul Blast 1], and call this card to RC.
 
 AUTO [RC]: When this unit stand by the effect of your vanguard with "Kyo Kusanagi" in its card name, this unit gets power +5000 until end of turn.
@@ -84,6 +86,7 @@ AUTO [RC]: When this unit stand by the effect of your vanguard with "Kyo Kusanag
 CONT [RC]: If your vanguard is grade 3 or greater, this unit gets "Boost" and can intercept from the back row.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 16
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -186,7 +189,7 @@ CardStat = 15973
 global.CardName[CardStat] = 'Sneering Firelight, Ash Crimson'
 global.CardText[CardStat] = 'The King of Fighters/Unknown/Personal Style(Employing Special Green Flames)
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and it gets power +5000 until end of turn. If you have two or more cards with "Kyo Kusanagi", "Iori Yagami", or "Chizuru Kagura" in their different card names in your soul, choose three rear-guards instead of one.
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your rear-guards, stand it, and it gets power +5000 until end of turn. If you have two or more grade 3 cards with "Kyo Kusanagi", "Iori Yagami", or "Chizuru Kagura" in their different card names in your soul, choose three rear-guards instead of one.
 
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1], choose a card from your drop, and call it to RC. This unit gets power +10000 until end of turn.
 
@@ -303,12 +306,15 @@ CardStat = 15980
 global.CardName[CardStat] = 'Prideful Purple Flame, Iori Yagami'
 global.CardText[CardStat] = 'The King of Fighters/Fighter/Yagami Style of Ancient Martial Arts + Pure Instinct
 
+(STANDARD CN: You can only run this card if you do not have The Wild Flying Swallow, Yuri Sakazaki in your deck.)
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1], stand one of your rear-guards, that unit and this unit get power +10000 until end of turn. At the end of that turn, retire that rear-guard, and if your opponent’s vanguard is grade 3 or greater, draw a card.
 ACT [VC] 1/Turn: If you have three or more cards in your damage zone, COST [Counter Blast 1 & Soul Blast 1 & discard a card from hand], search your deck or drop for up to two normal units with "Mature" or "Vice" in their card names, reveal them, and put them into hand. If you searched the deck, shuffle the deck.
 ACT [VC] 1/Turn: If you have five or more cards in your damage zone, COST [Energy Blast 3], search your deck for "A Blood Oath Forged in Ancient Times", reveal it and put it into hand, search your deck for up to one "Insane Iori with Blood of Orochi Under the Night of the Moon", discard it, and shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 16
 global.PersonaRide[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -383,11 +389,14 @@ CardStat = 15985
 global.CardName[CardStat] = 'The Wild Flying Swallow, Yuri Sakazaki'
 global.CardText[CardStat] = 'The King of Fighters/Female Fighter /Kyokugenryu Karate + Arrangement of Personal Styles
 
+(STANDARD CN: You can only run this card if you do not have Prideful Purple Flame, Iori Yagami in your deck.)
+
 AUTO: When this unit is placed on RC from hand, you may Soul Charge 1. COST [Counter Blast 1], and draw a card.
 
 AUTO [RC]: When this unit boosts, if your opponent’s vanguard is grade 3 or greater and your soul has a card with the same card name as your vanguard, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 16
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
