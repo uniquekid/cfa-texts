@@ -11490,3 +11490,179 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16749
+{
+global.CardName[CardStat] = 'Tokkoumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16750
+{
+global.CardName[CardStat] = 'Diabol Weapon, Tokkoumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed by riding from "Tokkoumaru", COST [reveal a grade 3 with "Tokkoumaru" in its card name from ride deck], and put a Toy Hangar token in the order zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.TokenSummoner[CardStat] = 16753
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+global.AnotherSide[CardStat] = 16753
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16751
+{
+global.CardName[CardStat] = 'Magnum Weapon, Tokkoumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is rode upon by a grade 3 with "Tokkoumaru" in its card name, search your deck for up to one card with "Combat Beast Machine" in its card name and up to one card with "Overdrive" in its card name, store them in your Toy Hangar, and shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16752
+{
+global.CardName[CardStat] = 'Ultimate Weapon, Tokkoumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+[Overdrive] - ACT [VC]: COST [Counter Blast 1], choose one of your stored cards with "Overdrive" in its card name, and ride it as stand. If you rode, bind this card.
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your stored cards, and call it to RC. If your opponent’s vanguard is grade 3 or greater, that called unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16754
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Kujakumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, choose up to one card with "Combat Beast Machine" or "Overdrive" in its card name from your drop, and store it in your Toy Hangar.
+
+AUTO [RC/Hand]: At the beginning of the guard step of the battle your unit with "Tokkoumaru" in its card name was attacked, COST [bind this card], choose a unit being attacked, and it gets power +10000 until end of that battle. (Performed before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16755
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Gouzoumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, look at the top three cards of your deck, choose up to one card with "Combat Beast Machine" or "Overdrive" in its card name from among them, store it in your Toy Hangar, and shuffle the deck.
+
+CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Tokkoumaru" in its card name, this unit gets power +5000 / shield +5000. (Active on your opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16756
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Seiroumaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Tokkoumaru" in its card name, draw a card, choose up to one card withh "Combat Beast Machine" or "Overdrive" in its card name from your hand, store it in your Toy Hangar, and if you did not store a card, perform "You may Counter Blast 1. If you did not Counter Blast 1, choose a card from your hand, and discard it.".
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Overdrive" in its card name and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16757
+{
+global.CardName[CardStat] = 'Combat Beast Machine, Enjishimaru'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+ACT [Order Zone]: COST [rest a Toy Hangar in your order zone], and call this stored card to RC.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Tokkoumaru" in its card name, this unit gets power +10000 until end of battle. If your vanguard attacked two or more times this turn, or this unit stand by the ability got from your vanguard this turn, it gets power +15000 instead of +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16758
+{
+global.CardName[CardStat] = 'Scramble!!!'
+global.CardText[CardStat] = 'Brandt Gate/Normal Order
+
+Play this if you have a vanguard with "Tokkoumaru" in its card name!
+
+Put this card into soul, perform one of the following, and if you searched the deck, shuffle the deck. If your vanguard is grade 3 or greater, perform two instead of one.
+• Search your deck or drop for up to one card with "Combat Beast Machine" in its card name, and store it in your Toy Hangar.
+• Search your deck or drop for up to one card with "Overdrive" in its card name, and store it in your Toy Hangar.
+• Choose one of your stored cards, and call it to RC.'
+global.UnitGrade[CardStat] = 2
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16759
+{
+global.CardName[CardStat] = 'Tokkoumaru, Overdrive Strike'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+AUTO: When this unit is placed on VC by the [Overdrive] ability, choose one of your rear-guards, until end of turn, it gets "AUTO [RC] 1/Turn: When your vanguard attacks, stand this unit. If you do, at the end of that turn, store this unit in your Toy Hangar." and this unit gets "Triple Drive". If your opponent’s vanguard is grade 3 or greater, all of your front row units get power +5000 until end of turn.
+
+AUTO [VC]: At the end of your turn, choose a card with the [Overdrive] ability from your bind zone, and ride it as rest.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16760
+{
+global.CardName[CardStat] = 'Tokkoumaru, Overdrive Stark'
+global.CardText[CardStat] = 'Brandt Gate/Battleroid
+
+CONT: This card cannot be called, and cannot be ridden except by the [Overdrive] ability.
+AUTO: When this unit is placed on VC by the [Overdrive] ability, perform one of the following.
+• This unit gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, stand this unit, and it gets drive -2 until end of turn." until end of turn.
+• If you persona rode this turn, COST [bind a card with the same name as this unit from hand], and until end of turn, this unit’s drive becomes 1, this unit does not rest when it attacks, and this unit can attack up to three times this turn.
+AUTO [VC]: At the end of your turn, choose a card with the [Overdrive] ability from your bind zone, and ride it as rest. If you rode, bind this card.
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 18000
+global.DefensePowerStat[CardStat] = 0
