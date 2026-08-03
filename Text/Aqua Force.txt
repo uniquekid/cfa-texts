@@ -2555,16 +2555,18 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down.
 
-AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When your unit’s attack hits a vanguard, if you have a heart card with "Trans-core" in its card name, your opponent may choose a card from his or her hand, and discard it. If he or she does not, you draw two cards.
+AUTO [VC] Wave-3rd time or more (This ability is active during the specified battles of each turn): When your unit’s attack hits a vanguard, if you have a heart card with "Trans-core" in its card name, your opponent may choose a card from his or her hand, and discard it. If he or she does not, draw two cards.
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
-global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
 }
+global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 3447
@@ -2789,12 +2791,13 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 G guardian.
 
-AUTO Wave-1st or 4th time or more: When this unit is placed on GC, this unit gets shield +10000.'
+AUTO Wave-1st or 4th time or more: When this unit is placed on GC, this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
 
 
 CardStat = 4305
@@ -2821,12 +2824,13 @@ Stride.
 
 AUTO [VC]: When your rear-guard with "Blue Wave" in its card name attacks, that unit gets power +3000 until end of that battle.
 
-ACT [VC] 1/Turn: [Soul Blast 1-card with "Blue Wave" in its card name] Look at seven cards from the top of your deck, search for up to one grade 3 card with "Blue Wave" in its card name from among them, place it on your VC as a heart, and shuffle your deck. If you placed one or more cards, put all of your heart cards other than the card placed with this effect into your drop zone.'
+ACT [VC] 1/Turn: [Soul Blast 1-card with "Blue Wave" in its card name] Look at seven cards from the top of your deck, search for up to one grade 3 card with "Blue Wave" in its card name from among them, place it on your VC as a heart, and shuffle your deck. If you placed one or more cards, put all of your heart cards other than the cards placed due to this effect into your drop zone.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 4338
@@ -2994,17 +2998,18 @@ global.CardText[CardStat] = 'Aqua Force/Tear Dragon
 
 Stride.
 
-ACT [VC] 1/Turn Generation Break 8: [Counter Blast 1] Until end of turn, this unit gets "AUTO [VC] Wave-2nd to 4th time: When your rear-guard attacks, until end of that battle, that unit gets power +5000, and at the end of that battle, look at four cards from the top of your deck, call one card to the RC with the attacked unit, if the called unit has the wave ability, that unit and this unit gets power +5000 until end of turn. Shuffle your deck.".
+ACT [VC] 1/Turn Generation Break 8: [Counter Blast 1] Until end of turn, this unit gets "AUTO [VC] Wave-2nd to 4th time: When your rear-guard attacks, that unit gets power +5000 until end of that battle, and at the end of that battle, look at four cards from the top of your deck, call a card from among them to the RC of the unit that attacked, and if the called unit has the wave ability, that unit and this unit gets power +5000 until end of turn. Shuffle your deck.".
 
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
-global.UseCounters[CardStat] = 1
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 3
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 5141
