@@ -6592,7 +6592,6 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 global.PersonaRideCardName[CardStat] = 'Love Call, Marlean'
-global.ForbidCrossPersonaRideUpon[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10126,7 +10125,7 @@ CardStat = 14013
 global.CardName[CardStat] = 'Blooming Bop Dragon, Fulblume'
 global.CardText[CardStat] = 'Lyrical Monasterio/Forest Dragon
 
-CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+CONT [RC/GC]: This unit gets "Intercept", and shield +5000.
 
 AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], this unit gets power +5000 until end of that battle, and at the end of that battle, choose one of your rear-guards, and return it to hand. If your damage zone has four or more cards, or you persona rode this turn, choose up to two cards instead of one.'
 global.UnitGrade[CardStat] = 3
@@ -11561,7 +11560,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
  
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, this unit gets power +5000 until end of turn.
 
-AUTO [Back Row RC] 1/Turn: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, COST [put another rear-guard in the same column as this unit on the bottom of your deck], stand this unit, if your soul has a grade 3 or greater card with "Feltyrosa" in its card name, then COST [Energy Blast 3], and draw a card.'
+AUTO [Back Row RC] 1/Turn: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, COST [put another rear-guard in the same column as this unit on the bottom of the deck], stand this unit, if your soul has a grade 3 or greater card with "Feltyrosa" in its card name, COST [Energy Blast 3], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -11702,7 +11701,7 @@ CardStat = 15016
 global.CardName[CardStat] = 'Midwinter Experience, Fruru'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
  
-AUTO: When this unit is placed on RC from hand, if you have a grade 3 or greater vanguard with "Kairi" in its card name, Energy Charge 1.'
+AUTO: When this unit is returned to hand from RC, if you have a grade 3 or greater vanguard with "Kairi" in its card name, Energy Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -11976,7 +11975,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
  
 CONT [RC]: If your vanguard was placed by your card’s ability this turn, this unit gets power +5000.
 
-AUTO [RC]: At the end of the battle this unit boosted, if you persona rode this turn, COST [Counter Blast 1 and retire this unit], choose a card with ", Alk" in its card name from your soul or drop, and put it to hand.'
+AUTO [RC]: At the end of the battle this unit boosted, if you persona rode this turn, COST [Counter Blast 1 &  retire this unit], choose a card with ", Alk" in its card name from your soul or drop, and put it to hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -13194,6 +13193,168 @@ global.CardName[CardStat] = 'To My DearestS, Cherrita'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 AUTO [RC]: When your other unit in the same column as this unit is placed during your battle phase, COST [Energy Blast 3 & put this unit into soul], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16771
+{
+global.CardName[CardStat] = 'Saint Almajestar, Pypis=Mulchie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16772
+{
+global.CardName[CardStat] = 'Saint Almajestar, Schwart=Sparda'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+AUTO: When this unit is placed by riding from "Saint Almajestar, Pypis=Mulchie", COST [reveal a grade 3 with "Astroea" in its card name from ride deck], and put an Almajest Celestage token in your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.AnotherSide[CardStat] = 16775
+global.TokenSummoner[CardStat] = 16775
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16773
+{
+global.CardName[CardStat] = 'Saint Almajestar, Turan=Dyna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+AUTO: When this unit is rode upon by "Saint Almajestar, Astroea=Unica "Fantome"", search your deck or drop for up to one critical trigger, and put it in the order zone. If you searched the deck, shuffle the deck, and if you put a card from deck, draw a card.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16774
+{
+global.CardName[CardStat] = 'Saint Almajestar, Astroea=Unica "Fantome"'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+ACT [VC] 1/turn: COST [Turn any number of critical trigger from the order zone face down], and perform all of the following according to the number of cards turned face down for this cost.
+• One or more - This unit gets power +5000 / critical +1 until end of turn.
+• Three or more - All of your front row units get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +10000 instead of +5000.
+• Five or more - Counter Charge 1, and this unit gets "CONT [VC]: All of your opponent’s critical trigger get shield -5000." until end of turn.
+
+[Fantome Skill] - ACT [VC] 1/turn: COST [Bind a Crimson Moon card from hand, soul, or drop], choose up to three cards from your face down order zone cards, and turn them face up. If you turned three cards face up, choose up to one card from your face down order zone cards, return it to the deck and shuffle it.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16776
+{
+global.CardName[CardStat] = 'Affection Lv. UP^^, Timaete'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf/Fantome
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, search your deck for up to one critical trigger, discard it, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16777
+{
+global.CardName[CardStat] = 'Floral Garden, Culteia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Almajestar" in its card name, this unit gets power +2000 until end of that battle for each critical trigger in your order zone.
+
+(Face down cards do not have information. Only face up cards count.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16778
+{
+global.CardName[CardStat] = 'After Class Starlet, Cuculhu'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Fantome
+
+CONT [GC]: If your order zone has one or more critical trigger, this unit gets shield +5000. If it has three or more critical trigger, it gets shield +10000 instead of +5000.
+
+AUTO [RC]: At the end of the battle this unit attacked or boosted, if you have a vanguard with "Almajestar" in its card name, COST [put this unit into soul], look at the top seven cards of your deck, choose up to one grade 3 card or critical trigger from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit boosts, if your order zone has three or more critical trigger, this unit gets power +5000 until end of that battle.
+
+(Face down cards do not have information. Only face up cards count.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16779
+{
+global.CardName[CardStat] = 'Star+Liner, Fhoras'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Fantome
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, look at the top seven cards of your deck, choose up to one Crimson Moon card or critical trigger from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
+
+CONT [RC/GC]: If you have a vanguard with "Almajestar" in its card name, this unit gets shield +5000. If your opponent’s vanguard is grade 3 or greater, this unit also gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16780
+{
+global.CardName[CardStat] = 'Starlit Opera, Phonograph'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
+
+CONT [RC]: During your turn, if your order zone has three or more critical trigger, this unit gets power +5000.
+(Face down cards do not have information. Only face up cards count.)
+
+AUTO [RC]: At the end of the battle your vanguard with "Almajestar" in its card name attacked, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand this unit.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16781
+{
+global.CardName[CardStat] = 'Star+Liner, Bifrons'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Fantome
+
+AUTO: When this unit is placed on RC from hand, if you have a <Fantome> vanguard, COST [Counter Blast 1], look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it into soul, and discard the rest.
+
+ACT [RC] 1/turn: If you have a vanguard with "Almajestar" in its card name, COST [Soul Blast 1], and perform one of the following.
+• Choose a critical trigger from your drop or face up damage zone cards, and put it in the order zone. If you put a card from the damage zone, put the top card of your deck in the damage zone.
+• COST [Energy Blast 3], choose a non-sentinel card with a different card name from this unit and grade less than or equal to your vanguard from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }

@@ -5211,7 +5211,7 @@ CardStat = 12175
 global.CardName[CardStat] = 'Cerrgaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-(STANDARD JP & EN: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
+(STANDARD JP & EN & CN: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
 
 AUTO [RC]: When this unit boosts, if you have more rear-guards than your opponent, or you played an order this turn, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [retire this unit], look at the top two cards of your deck, choose a card from among them, put it into hand, and put the rest on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
@@ -5282,7 +5282,7 @@ CardStat = 12187
 global.CardName[CardStat] = 'Dragheart, Luard   '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Elf
 
-(STANDARD JP & EN: You can only run this card if you do not have Cerrgaon in your deck.)
+(STANDARD JP & EN & CN: You can only run this card if you do not have Cerrgaon in your deck.)
 
 AUTO [VC] Ritual 3 (Active if there are three or more grade 1 cards in your drop): At the beginning of your ride phase, COST [choose two normal units from drop, and put them on the bottom of the deck in any order], and until end of turn, you may Stride without paying the cost the next time you Stride.
 
@@ -6045,7 +6045,7 @@ CardStat = 12537
 global.CardName[CardStat] = 'Fated One of Miracles, Rezael'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-(STANDARD JP & EN: You can only run this card if you do not have Cerrgaon in your deck.)
+(STANDARD JP & EN & CN: You can only run this card if you do not have Cerrgaon in your deck.)
 
 AUTO [VC]: When this unit attacks a vanguard, COST [Counter Blast 1], choose up to two cards from your drop with different grades and a total grade less than or equal to the number of cards in your damage zone, and call them to RC.
 
@@ -7206,6 +7206,7 @@ ACT [Soul]: If you have a grade 3 or greater vanguard with "Solrairon" in its ca
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Academic of Records, Writin'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -8368,8 +8369,7 @@ CardStat = 13590
 global.CardName[CardStat] = '“Gamer Exorcist” Todo Miko'
 global.CardText[CardStat] = 'Keter Sanctuary/CoroCoro Comic
 
-(STANDARD JP: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
-(STANDARD EN: You can only run this card if you do not have D Dragheart, Luard in your deck.)
+(STANDARD JP & EN & CN: You can only run this card if you do not have D Dragheart, Luard and Fated One of Miracles, Rezael in your deck.)
 
 CONT: This card is regarded as "Cerrgaon".
 
@@ -9214,7 +9214,7 @@ CardStat = 14010
 global.CardName[CardStat] = 'Knight Armor Dragon, Chivalzerd'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+CONT [RC/GC]: This unit gets "Intercept", and shield +5000.
 
 AUTO: When this unit is placed on RC other than during the battle phase, if your vanguard is grade 3 or greater, COST [Energy Blast 3], and until end of turn, this unit gets "Boost", and power +5000. If your damage zone has four or more cards, or you persona rode this turn, look at the top three cards of your deck, choose up to one grade 3 or less normal unit from among them, call it to RC, and it gets power +5000 until end of turn. Put the rest of the cards on the bottom of the deck in any order.'
 global.UnitGrade[CardStat] = 3
@@ -13880,3 +13880,23 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 18000
 global.DefensePowerStat[CardStat] = 0
 global.ExtendedTextBox[CardStat] = 1
+
+
+CardStat = 16770
+{
+global.CardName[CardStat] = 'Sage of Inspiration, Panachea'
+global.CardText[CardStat] = 'Keter Sanctuary/Elf
+
+CONT: This card is also regarded as "Academic of Records, Writin".
+
+AUTO [RC]: When this unit attacks, if a normal unit was revealed by the ability of your vanguard with "Solrairon" in its card name this turn, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, put this unit into soul.
+
+ACT [Soul]: If you have a grade 3 or greater vanguard with "Solrairon" in its card name, COST [bind this card], choose a normal unit without sentinel from your drop, and put it on the top of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Academic of Records, Writin'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000

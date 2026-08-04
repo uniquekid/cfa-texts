@@ -8386,7 +8386,7 @@ CardStat = 13999
 global.CardName[CardStat] = 'Fixed Time Dragon, Proieslogia'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-CONT [RC/GC]: This unit gets "Intercept", and it gets shield +5000.
+CONT [RC/GC]: This unit gets "Intercept", and shield +5000.
 
 AUTO [RC] 1/Turn: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, COST [Energy Blast 3], choose one of any player’s rear-guards, put it into soul, until end of that battle, this unit gets power +5000, and if your damage zone has four or more cards, or you persona rode this turn, it also gets "AUTO [RC]: When your opponent’s unit is put on GC, if that unit’s grade is the same as the grade of the card put into soul by this unit’s original AUTO ability this battle, that unit gets shield -5000 until end of that battle.".'
 global.UnitGrade[CardStat] = 3
@@ -11703,7 +11703,7 @@ global.CardName[CardStat] = 'Crimson Disparagement, Emyli'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Alcasal" in its card name, look at the top five cards of your deck, choose up to one card from among them, put it into soul, and shuffle the deck. Then, if your vanguard is grade 3 or greater, perform one of the following.
-• Choose up to 1 Queen’s Order card from your soul or drop, put it on the bottom of the deck, and this unit gets [Power]+5000 until end of turn.
+• Choose up to 1 Queen’s Order card from your soul or drop, put it on the bottom of the deck, and this unit gets power +5000 until end of turn.
 • Reduce the Counter Blast cost of Queen’s Order cards you play by 1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
@@ -11736,3 +11736,20 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16769
+{
+global.CardName[CardStat] = 'Masked Rider Zeztz, Paradigm Gravity'
+global.CardText[CardStat] = 'Dark States/Agent/Over Trigger
+
+CONT: This card is also regarded as "Hades Dragon Deity of Resentment, Gallmageheld"
+
+Additional Effect - You get "During your turn, all of your vanguards get power +10000 / critical +1" until end of this fight!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
