@@ -13252,12 +13252,12 @@ CardStat = 16774
 global.CardName[CardStat] = 'Saint Almajestar, Astroea=Unica "Fantome"'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
 
-ACT [VC] 1/turn: COST [Turn any number of critical trigger from the order zone face down], and perform all of the following according to the number of cards turned face down for this cost.
+ACT [VC] 1/Turn: COST [Turn any number of critical trigger from the order zone face down], and perform all of the following according to the number of cards turned face down for this cost.
 • One or more - This unit gets power +5000 / critical +1 until end of turn.
 • Three or more - All of your front row units get power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, they get power +10000 instead of +5000.
 • Five or more - Counter Charge 1, and this unit gets "CONT [VC]: All of your opponent’s critical trigger get shield -5000." until end of turn.
 
-[Fantome Skill] - ACT [VC] 1/turn: COST [Bind a Crimson Moon card from hand, soul, or drop], choose up to three cards from your face down order zone cards, and turn them face up. If you turned three cards face up, choose up to one card from your face down order zone cards, return it to the deck and shuffle it.'
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul, or drop], choose up to three cards from your face down order zone cards, and turn them face up. If you turned three cards face up, choose up to one card from your face down order zone cards, return it to the deck and shuffle it.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -13352,11 +13352,30 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Demon/Fantome
 
 AUTO: When this unit is placed on RC from hand, if you have a <Fantome> vanguard, COST [Counter Blast 1], look at the top three cards of your deck, choose a card from among them, put it into hand, choose a card from among them, put it into soul, and discard the rest.
 
-ACT [RC] 1/turn: If you have a vanguard with "Almajestar" in its card name, COST [Soul Blast 1], and perform one of the following.
+ACT [RC] 1/Turn: If you have a vanguard with "Almajestar" in its card name, COST [Soul Blast 1], and perform one of the following.
 • Choose a critical trigger from your drop or face up damage zone cards, and put it in the order zone. If you put a card from the damage zone, put the top card of your deck in the damage zone.
 • COST [Energy Blast 3], choose a non-sentinel card with a different card name from this unit and grade less than or equal to your vanguard from your drop, and call it to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16788
+{
+global.CardName[CardStat] = 'Light My Fire! Antouse'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+CONT [Deck]: If you have a vanguard with "Michu" in its card name, this card is also regarded as "Michu&Noqno’s Supporter".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Michu" in its card name, COST [Energy Blast 3], and perform one of the following. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+• Search your deck or drop for up to one Cannonball card, reveal it and put it into hand. If you searched the deck, shuffle the deck.
+• Choose a card with "Michu" in its card name from your soul, and put it into hand.
+
+CONT [RC]: If your order zone has an "All Set Up!", this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
