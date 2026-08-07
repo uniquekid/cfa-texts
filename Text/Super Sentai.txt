@@ -172,8 +172,9 @@ global.CardText[CardStat] = 'Super Sentai/Shinkenger/Over Trigger
 Additional Effect - Choose one of your units, and it gets power +100 Million until end of turn!'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 17
-global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
 }
+global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
 
@@ -515,3 +516,613 @@ global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16789
+{
+global.CardName[CardStat] = 'Warrior of the 35th Sentai, Gokai Red'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+Amass Treasure - ACT [VC]: COST [rest a "Gokai Treanger Box" in your order zone], choose up to one Ranger Key card from hand or drop, and put it into your order zone. If you put from hand, draw a card.
+
+Final Wave - AUTO [VC] 1/Turn: When this unit attacks, choose a Ranger Key card with grade less than or equal to this unit from your order zone, and activate its Greater Power. If your order zone has four or more Ranger Key cards, choose two Ranger Key cards instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 17
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16790
+{
+global.CardName[CardStat] = 'Blazing Lion, GaoRed'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1 & return a rest rear-guard to hand], search your deck for up to one <Gaoranger> unit with a different card name from the unit returned to hand for this ability’s cost, call it to RC, and that unit gets power +5000 until end of turn. Shuffle your deck.
+
+Lion Fang - CONT [VC]: If you persona rode this turn, during the battle that this unit attacks, your opponent cannot play blitz orders from hand.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 17
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16791
+{
+global.CardName[CardStat] = 'GokaiOh'
+global.CardText[CardStat] = 'Super Sentai/Mecha/GokaiGalleon
+
+CONT: Mecha (You may only have up to one card with "CONT: Mecha" in a deck, and you cannot normal ride this card.)
+
+Gokai Star Burst - AUTO [VC]: When this unit attacks, perform all of the following according to the number of Ranger Key cards in your order zone. (This ability is also regarded as Final Wave)
+• 3 or more - During the battle that this unit attacks, your opponent cannot call sentinels from hand to GC, and this unit gets power +10000 until end of turn.
+• 5 or more - Choose a column, stand all of your rear-guards in that chosen column, choose a Ranger Key card in your order zone with grade less than or equal to this unit, and activate its Greater Power.
+AUTO [VC]: At the end of your turn, put this card face up into your ride deck, choose a "Warrior of the 35th Sentai, Gokai Red" from your soul, and ride it as rest.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 17
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromVBuff[CardStat] = 10000
+
+
+CardStat = 16792
+{
+global.CardName[CardStat] = 'GaoKing'
+global.CardText[CardStat] = 'Super Sentai/Mecha/Power Animal
+
+CONT: Mecha (You may only have up to one card with "CONT: Mecha" in a deck, and you cannot normal ride this card.)
+
+Heaven and Earth Roar: Animal Heart - AUTO [VC]: When this unit attacks, choose up to two of your rear-guards, return them to hand, choose two cards from hand, and call them to RC. If you have three or more rear-guards with "Gao" in their different card names, this unit gets critical +1 until end of battle.
+
+AUTO [VC]: At the end of your turn, put this card face up into your ride deck, choose a "Blazing Lion, GaoRed" from your soul, and ride it as rest.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 17
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16793
+{
+global.CardName[CardStat] = 'Iron Bison, GaoBlack'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+CONT: If you have a "Hyakujuu Sentai Gaoranger" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, for each of your opponent’s vanguard’s grade, this unit gets power +2000 until end of turn.
+• AUTO: When this unit is returned from RC to hand by your card’s ability, choose up to one of your vanguards, and that unit gets power +10000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 17
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16794
+{
+global.CardName[CardStat] = 'Ranger Key - Gorenger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Gorenger" in a deck, and you cannot play this card.
+
+Greater Power of Gorenger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [rest this card], discard a card from hand, choose one of your vanguards, and that unit gets drive +1 until end of turn.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16795
+{
+global.CardName[CardStat] = 'Ranger Key - Gaoranger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Gaoranger" in a deck, and you cannot play this card.
+
+Greater Power of Gaoranger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [Counter Blast 1 & rest this card], choose one of your rear-guards, and stand that unit.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16796
+{
+global.CardName[CardStat] = 'Warrior of the 35th Sentai, Gokai Blue'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+CONT: If you have a "Kaizoku Sentai Gokaiger" crest, this card gets all of the following.
+• ACT [RC]: If you did not use the original ACT ability of a card with the same card name as this card during this turn, COST [Counter Blast 1 & put a normal unit from drop on the bottom of your deck], and draw a card. If your vanguard is grade 3 or greater, COST [Soul Blast 1], choose up to one Ranger Key card from drop or hand, and put it into your order zone.
+• Final Wave - AUTO [RC] 1/Turn: When this unit stand by your cards’ ability, this unit gets power +5000 until end of turn. If your order zone has five or more Ranger Key cards, choose a Ranger Key card in your order zone with grade less than or equal to this card, and activate its Greater Power.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16797
+{
+global.CardName[CardStat] = 'Noble Eagle, GaoYellow'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+CONT: If you have a "Hyakujuu Sentai Gaoranger" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top five cards of your deck, choose a grade 2 or less unit with "Gao" in its card name without sentinel, call it to RC as rest, and shuffle your deck. If it is not your battle phase, stand that unit.
+• CONT [RC]: During your turn, if your rear-guard was returned to your hand for your cards’ ability this turn, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16798
+{
+global.CardName[CardStat] = 'Surging Shark, GaoBlue'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+CONT: If you have a "Hyakujuu Sentai Gaoranger" crest, this card gets all of the following.
+• AUTO [RC]: At the end of the battle that this unit attacked a grade 3 or greater unit, if you did not Counter Charge this turn, COST [bind this unit], and Counter Charge 1.
+• AUTO [Drop]: When your grade 3 or greater vanguard is placed during your ride phase, you may call this unit to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16799
+{
+global.CardName[CardStat] = 'Surging Shark, GaoBlue'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers
+
+CONT: If you have a "Avataro Sentai Donbrothers" crest, this card gets all of the following.
+• CONT [Back row center RC]: If your vanguard is grade 3 or greater, this unit gets "Boost", and can intercept from the back row.
+• ACT [Drop]: If your vanguard is grade 3 or greater and you do not have a rear-guard with the same card name as this card, COST [bind a <Donbrothers> normal unit from drop], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16800
+{
+global.CardName[CardStat] = 'Warrior of the 35th Sentai, Gokai Green'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+CONT: If you have a "Kaizoku Sentai Gokaiger" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC, COST [put a card from hand into soul], and draw a card.
+• CONT [RC]: If your order zone has four or more Ranger Key cards, this unit cannot be chosen by your opponent’s card effects, and gets power +5000. (Active during opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16801
+{
+global.CardName[CardStat] = 'Shinken Green, Winter Wind’s Dance'
+global.CardText[CardStat] = 'Super Sentai/Shinkenger
+
+CONT: If you have a "Samurai Sentai Shinkenger" crest, this card gets all of the following.
+• AUTO [RC]: At the end of the battle that this unit attacked, if your vanguard is grade 3 or greater and it is the first battle of this turn, COST [Soul Blast 1], and stand this unit.
+• AUTO [RC] 1 /Turn: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of turn. If your vanguard is armed, this unit gets +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16802
+{
+global.CardName[CardStat] = 'To Become a Manga Master, Onisister'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers
+
+CONT: If you have an "Avataro Sentai Donbothers" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one normal unit with "Don Momotaro", "Sarubrother", "Inubrother", or "Kijibrother", in its card name, or up to one Festival card, from among them, reveal it and put it into hand, and shuffle your deck. If you revealed, perform "You may Counter Blast 1. If you did not Counter Blast 1, choose a card from your hand, and discard it.".
+• AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of turn. If you are in the [Festival] state, this unit gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16803
+{
+global.CardName[CardStat] = 'Ranger Key - Shinkenger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Shinkenger" in a deck, and you cannot play this card.
+
+Greater Power of Shinkenger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [rest this card], choose one of your rear-guards, and that unit gets "CONT [RC]: During the battle that this unit attacks, choose a total of two of your opponent’s VC and RC, and this unit battles all of your opponent’s units on the chosen circles." until end of turn.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16804
+{
+global.CardName[CardStat] = 'This Is A Japanese Macaque, Sarubrother'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers
+
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one order without Sentinel or Regalis Piece, reveal it and put it into hand, and shuffle your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16805
+{
+global.CardName[CardStat] = 'Depths of One’s Secret, Inubrother'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers
+
+AUTO [RC]: When your vanguard’s attack hits your opponent’s vanguard, COST [retire this unit], choose up to one of your rear-guards, and that unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16806
+{
+global.CardName[CardStat] = 'Depths of One’s Secret, Inubrother'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+AUTO: When this unit is placed by riding from "Space Pirate Band, Gokai Red", COST [reveal a grade 3 card with "Gokai Red" in its card name from the ride deck], search your deck for up to three Ranger Key cards, reveal and discard them, shuffle your deck, choose a Ranger Key card from drop, and put it into your order zone. If you went second, choose two Ranger Key cards instead of one.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16807
+{
+global.CardName[CardStat] = 'Warrior of the Blazing Lion, GaoRed'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+AUTO: When this unit is rode upon by a grade 3 unit with "GaoRed" in its card name, COST [Soul Blast 1], look at the top three cards of your deck, choose up to one normal unit from among them, call it to RC, and put the rest on the bottom of your deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16808
+{
+global.CardName[CardStat] = 'Ranger Key - Hurricaneger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Hurricaneger" in a deck, and you cannot play this card.
+
+Greater Power of Gaoranger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [rest this card], choose one of your rear-guards, and that unit gets "CONT [RC]: During the battle that this unit attacks, your opponent cannot play blitz orders from hand." until end of turn.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16809
+{
+global.CardName[CardStat] = 'Warrior of the 35th Sentai, Gokai Yellow'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+CONT: If you have a "Kaizoku Sentai Gokaiger" crest, this card gets all of the following.
+• Final Wave - ACT [RC] 1/Turn: If you did not use the Final Wave ability of a card with the same name as this card during this turn, choose a Ranger Key card in your order zone with grade less than or equal to this card, and activate its Greater Power.
+• CONT [RC]: If your order zone has four or more Ranger Key cards, this unit gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16810
+{
+global.CardName[CardStat] = 'Warrior of the 35th Sentai, Gokai Pink'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+CONT: If you have a "Kaizoku Sentai Gokaiger" crest, this card gets all of the following.
+• AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one Ranger Key card from among them, put it into drop, and shuffle your deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16811
+{
+global.CardName[CardStat] = 'Belle Tiger, GaoWhite'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+CONT: If you have a "Hyakujuu Sentai Gaoranger" crest, this card gets all of the following.
+• ACT [RC]: COST [rest this unit], choose a normal unit with "Gao" in its card name from drop, and put it on the bottom of your deck.
+• CONT [Back Row RC]: During your turn, if your vanguard is grade 3 or greater, all of your other rear-guards in the same column as this unit get power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16812
+{
+global.CardName[CardStat] = 'Shinken Yellow, Earth Character Slash'
+global.CardText[CardStat] = 'Super Sentai/Shinkenger
+
+AUTO: If you persona rode this turn, this cost can be paid with "Counter Blast 1". When this unit is placed on RC, COST [discard a card from your hand], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16813
+{
+global.CardName[CardStat] = 'To Protect with One’s Life'
+global.CardText[CardStat] = 'Super Sentai/Shinkenger
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16814
+{
+global.CardName[CardStat] = 'Space Pirate Band, Gokai Red'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+AUTO: When this unit is placed by riding from "Kaizoku Sentai Gokaiger", COST [say Gokai Change], draw a card, you get a "Kaizoku Sentai Gokaiger" crest, and put a Gokai Treanger Box token into your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)
+
+(SHIFT + left click crest to call tokens.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+global.AnotherSide[CardStat] = 16826
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 16826
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 16815
+{
+global.CardName[CardStat] = 'Chosen by GaoLion, GaoRed'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+AUTO: When this unit is placed by riding from "Hyakujuu Sentai Gaoranger", COST [say Gao Access], draw a card, and you get a "Hyakujuu Sentai Gaoranger" crest.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+global.AnotherSide[CardStat] = 16827
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 16827
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 16816
+{
+global.CardName[CardStat] = 'Ranger Key - Magiranger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Magiranger" in a deck, and you cannot play this card.
+
+Greater Power of Gorenger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [Soul Blast 1 & rest this card], choose one of your opponent’s rear-guards, and bind it.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16817
+{
+global.CardName[CardStat] = 'Ranger Key - Go-Onger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Go-Onger" in a deck, and you cannot play this card.
+
+Greater Power of Gorenger - AUTO [Order Zone]: When this ability is activated by your Final Wave ability, COST [Soul Blast 1 & rest this card], choose one of your units, and that unit gets power +5000 until end of turn.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16818
+{
+global.CardName[CardStat] = 'Professional at the Wheel, Onisister'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers/Heal Trigger
+
+AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle. (Active if this battle is its second attack this turn or more)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16819
+{
+global.CardName[CardStat] = 'Graceful Princess, Gokai Pink'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger/Heal Trigger
+
+AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by an ability other than trigger effect or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 4
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16820
+{
+global.CardName[CardStat] = 'Ranger Key - Gokaiger'
+global.CardText[CardStat] = 'Super Sentai/Normal Order/Ranger Key
+
+CONT: You may only have one "Ranger Key - Gokaiger" in a deck, and you cannot play this card.
+
+Greater Power of Gokaiger - AUTO [Order Zone]: When this ability is activated by the Final Wave ability of your "Kaizoku Sentai Gokaiger" crest, COST [rest this card], look at the top five cards of your deck, choose up to one <Gokaiger> from among them, call that card to RC, and shuffle your deck.
+
+ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck into your damage zone face up.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16821
+{
+global.CardName[CardStat] = 'Stop Right There, Orgs'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger/Front Trigger
+
+CONT: Resolute (You may only have up to four cards with "CONT: Resolute" in a deck.)
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16822
+{
+global.CardName[CardStat] = 'Time for the Finisher!!  '
+global.CardText[CardStat] = 'Super Sentai/Gaoranger/Critical Trigger
+
+CONT: You may have up to eight "Time for the Finisher!!" in a deck.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 2
+global.CardCopies[CardStat] = 8
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16823
+{
+global.CardName[CardStat] = 'It’s Morphin Time!  '
+global.CardText[CardStat] = 'Super Sentai/Gaoranger/Heal Trigger
+
+(You may only have up to four cards with "HEAL" in a deck.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 4
+global.CardCopies[CardStat] = 8
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 16824
+{
+global.CardName[CardStat] = 'Kaizoku Sentai Gokaiger'
+global.CardText[CardStat] = 'Super Sentai/Gokaiger
+
+AUTO [VC]: When you Stand Up!!, you become a Sentai! (When you become a Sentai, put a <Mecha> from your hand or deck face up into your ride deck. If you put from deck, shuffle the deck. If you put from hand, draw a card.)
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16825
+{
+global.CardName[CardStat] = 'Hyakujuu Sentai Gaoranger'
+global.CardText[CardStat] = 'Super Sentai/Gaoranger
+
+AUTO [VC]: When you Stand Up!!, you become a Sentai! (When you become a Sentai, put a <Mecha> from your hand or deck face up into your ride deck. If you put from deck, shuffle the deck. If you put from hand, draw a card.)
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16829
+{
+global.CardName[CardStat] = 'Super Sentai'
+global.CardText[CardStat] = 'Super Sentai/Super Sentai/Over Trigger
+
+Additional Effect - Choose a card from your drop, put it into hand, and one 1/Fight ability of crest can activate twice during this fight.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 17
+global.CardCopies[CardStat] = 1
+}
+global.TriggerUnit[CardStat] = 6
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
