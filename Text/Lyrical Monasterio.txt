@@ -1821,9 +1821,12 @@ CardStat = 8880
 global.CardName[CardStat] = 'Tranquil Affection, Elivira'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
+(STANDARD TH: You can only run this card if you do not have What Color is Your Wish, Valsheblan in your deck.)
+
 AUTO [RC]: When you play "Everlasting Sapphire", if your vanguard is "Prismagica, Wilista", draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -4494,7 +4497,7 @@ CardStat = 10329
 global.CardName[CardStat] = 'Refreshingly Basking, Juut'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
-ACT [RC]: If you have a vanguard with "Mediell" in its card name, COST [Put this unit to your soul], look at the top card of your deck and put it on the top or bottom of your deck. If you put it on the bottom of your deck, choose one of your units and it gets power +5000 until end of turn.'
+ACT [RC]: If you have a vanguard with "Mediell" in its card name, COST [put this unit to your soul], look at the top card of your deck, and put it on the top or bottom of your deck. If you put it on the bottom of your deck, choose one of your units, and it gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -4712,11 +4715,14 @@ CardStat = 10887
 global.CardName[CardStat] = 'What Color is Your Wish, Valsheblan'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
+(STANDARD TH: You can only run this card if you do not have Tranquil Affection, Elivira in your deck.)
+
 AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
 
 AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], choose one of your vanguards, and it gets "CONT [VC]: All of your front row units get power +5000." until end of turn.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -7833,7 +7839,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Angel
 
 AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Alestiel" in its card name, look at the top card of your deck, and put it on the top or bottom of the deck.
 
-White Wings (Active when bind only has odd grades and you have a vanguard with "Alestiel" in its card name) - CONT [RC]: If you have a grade 3 or greater vanguard with "Alestiel" in its card name, this unit gets shield +10000.'
+White Wings (Active when bind only has odd grades and you have a vanguard with "Alestiel" in its card name) - CONT [GC]: If you have a grade 3 or greater vanguard with "Alestiel" in its card name, this unit gets shield +10000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -9418,6 +9424,8 @@ CardStat = 13486
 global.CardName[CardStat] = '"Mysterious Joker" Queen'
 global.CardText[CardStat] = 'Lyrical Monasterio/CoroCoro Comic
 
+(STANDARD TH: You can only run this card if you do not have Tranquil Affection, Elivira in your deck.)
+
 CONT: This card is regarded as "What Color is Your Wish, Valsheblan".
 
 AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
@@ -9425,6 +9433,7 @@ AUTO: When this card is discarded from hand during your ride phase, COST [Soul B
 AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], choose one of your vanguards, and it gets "CONT [VC]: All of your front row units get power +5000." until end of turn.' 
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
