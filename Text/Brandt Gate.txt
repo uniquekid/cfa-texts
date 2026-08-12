@@ -11728,9 +11728,9 @@ CardStat = 16831
 global.CardName[CardStat] = 'Blitz Sales, Liferl'
 global.CardText[CardStat] = 'Brandt Gate/Elf/Fantome
 
-AUTO: When this unit is placed on RC, if you have a <Fantome> vanguard, choose a face up <Genomegel> or Product card from your damage zone, and you may put it into your drop. If you put a card, put the top card of your deck into your damage zone.
+AUTO: When this unit is placed on RC, if you have a <Fantome> vanguard, choose a <Genomegel> or Product card from your face up damage zone cards, and you may put it into drop. If you put a card, put the top card of your deck in the damage zone.
 
-CONT [RC]: If you have a <Fantome> vanguard, this unit gets power +5000. (Active on your opponent’s turn too)'
+CONT [RC]: If you have a <Fantome> vanguard, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -11744,7 +11744,7 @@ CardStat = 16832
 global.CardName[CardStat] = 'Blitz Security, Kluglie'
 global.CardText[CardStat] = 'Brandt Gate/High Beast/Fantome
 
-ACT [RC/Drop]: COST [Soul Blast 1 & put this card on the bottom of your deck], choose a product card or a card with "Regrain Researcher" in its card name from your drop, and add it to your hand.
+ACT [RC/Drop]: COST [Soul Blast 1 & put this card on the bottom of the deck], choose a Product card or a card with "Regrain Researcher" in its card name from your drop, and put it into hand.
 
 CONT [GC]: If your order zone has a "Regrain Biocreation Research Lab" or a Product, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
@@ -11759,9 +11759,9 @@ CardStat = 16833
 global.CardName[CardStat] = 'Blitz Sales, Selwust'
 global.CardText[CardStat] = 'Brandt Gate/Alien/Fantome
 
-AUTO: When this card is discarded from your hand during your turn, look at the top five cards of your deck, choose up to one <Genomegel> or up to one Product card or up to one card with "Regrain Researcher" in its card name from among them, reveal it and add it to your hand, and shuffle your deck.
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one card with "Regrain Researcher" in its card name, <Genomegel>, or Product card from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [Drop]: When your grade 3 or greater <Fantome> vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of battle. You cannot bind cards with the same name as this card from drop until end of turn.'
+AUTO [Drop]: When your grade 3 or greater <Fantome> vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same name as this card from drop until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -11775,9 +11775,10 @@ global.CardName[CardStat] = 'Operator Girl, Aisha'
 global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
 
 AUTO: When this unit is placed on RC, perform one of the following.
-• Look at the top seven cards of your deck, choose up to one <Genomegel> or up to one product card or up to one card with "Regrain Researcher" in its card name from among them, reveal it and add it to your hand, and shuffle your deck.
-• COST [Energy Blast 3], search your deck for a total of up to two cards that are either a <Genomegel>, a product card, or a card with "Regrain Researcher" in its card name, reveal them, choose one of the revealed cards, add it to your hand, discard the other revealed cards. Shuffle your deck.
-AUTO [RC]: When this unit boosts, if your order zone has a "Regrain Biocreation Research Lab" or a Product, this unit gets power +5000 until end of battle, and at the end of that turn, COST [put this unit into your soul], and Counter Charge 1.'
+• Look at the top seven cards of your deck, choose up to one card with "Regrain Researcher" in its card name, <Genomegel>, or Product card from among them, reveal it and put it into hand, and shuffle the deck.
+• COST [Energy Blast 3], search your deck for a total of up to two cards with "Regrain Researcher" in their card names, <Genomegel>, or Product cards in total, reveal them, choose a card from among the revealed cards, put it into hand, and discard the rest of the revealed cards. Shuffle the deck.
+
+AUTO [RC]: When this unit boosts, if your order zone has a "Regrain Biocreation Research Lab" or Product, until end of battle, this unit gets power +5000, at the end of that turn, COST [put this unit into soul], and Counter Charge 1.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
