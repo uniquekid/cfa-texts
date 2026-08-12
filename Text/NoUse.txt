@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 16788
+global.AllCard = 16834
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -1545,7 +1545,7 @@ CONT: You can only ride grade 3 or greater <Donbrothers> or <Hitotsuki> cards.
 
 CONT: During your turn, if you played an Order card this turn, or there are three or more order cards in your bind zone, all of your front row units get power +5000, and you are in the [Festival] state.
 
-Time to Slay the Hitotsuki - ACT [VC] 1/Fight: If you persona rode this turn, or you are in the [Festival] state, COST [say Time to Slay the Hitotsuki], choose a <Hitotsuki> from your ride deck, ride it as stand.'
+Time to Slay the Hitotsuki - ACT 1/Fight: If you persona rode this turn, or you are in the [Festival] state, COST [say Time to Slay the Hitotsuki], choose a <Hitotsuki> from your ride deck, ride it as stand.'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 29
 }
@@ -1678,6 +1678,71 @@ ACT [Order Zone] 1/Turn: If you have a vanguard with "Almajestar" in its card na
 • Draw a card. If you put a card from hand for this cost, draw two cards instead of one.
 • Search your deck for up to one Crimson Moon card, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+// a in Sentai is Cyrillic
+CardStat = 16826
+{
+global.CardName[CardStat] = 'Kaizoku Sentаi Gokaiger'
+global.CardText[CardStat] = 'Crest
+
+CONT: You can only ride grade 3 or greater <Gokaiger> or <GokaiGalleon> cards.
+
+Final Wave - ACT 1/Turn: COST [Discard a card from your hand], choose a "Ranger Key - Gokaiger" in your order zone, and activate its Greater Power.
+
+Pirate Combination - ACT 1/Fight: If your order zone has four or more Ranger Key cards, COST [say Pirate Combination], choose up to one <GokaiGalleon> from your ride deck, and ride that card as stand.
+
+(SHIFT + left click to call tokens.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+global.AnotherSide[CardStat] = 16828
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 16828
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.CardInClan[CardStat] = 29
+global.AnotherSide[CardStat] = 16828
+
+
+// a in Sentai is Cyrillic
+CardStat = 16827
+{
+global.CardName[CardStat] = 'Hyakujuu Sentаi Gaoranger'
+global.CardText[CardStat] = 'Crest
+
+CONT: You can only ride grade 3 or greater <Gaoranger> or <Power Animal> cards.
+
+CONT: During your turn, if your rear-guard has been returned to your hand, all of your front row rear-guards get power +5000. If your opponent’s vanguard is grade 3 or greater, they get +10000 instead of +5000.
+
+Beast Fusion - ACT 1/Fight: If you have three or more rear-guards, and you persona rode this turn, COST [say Beast Fusion], choose up to one <Power Animal> from your ride deck, and ride that card as stand.'
+global.UnitGrade[CardStat] = 0
+global.CardInClan[CardStat] = 29
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16828
+{
+global.CardName[CardStat] = 'Gokai Treanger Box'
+global.CardText[CardStat] = 'Token Set Order
+
+CONT [Order Zone]: You cannot put cards into your order zone other than this card and Ranger Key cards.
+
+CONT [Order Zone]: Perform all of the following according to the number of Ranger Key cards in your order zone.
+• 3 or more - Your vanguard gets power +5000. (Active on opponent’s turn too)
+• 5 or more - During your turn, your front row rear-guards get power +5000.
+• 7 or more - Your rear-guards’ Final Wave ability can choose up to two Ranger Key cards instead of one.'
+global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0

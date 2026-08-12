@@ -8232,7 +8232,7 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 global.TokenSummoner[CardStat] = 14112
 global.TokenSummonerPosition[CardStat] = 'RodeUpon'
-global.TokenSUmmonRodeUponNumber[CardStat] = 14106
+global.TokenSummonRodeUponNumber[CardStat] = 14106
 global.TokenSummonerQuantity[CardStat] = 1
 
 
@@ -9432,7 +9432,7 @@ global.CardText[CardStat] = 'Brandt Gate/Cyber Dragon
 
 CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
-AUTO: When this unit is placed on RC, if you have a "Alter Ego Messiah" crest, COST [Counter Blast 1], draw a card, and Soul Charge 1.'
+AUTO: When this unit is placed on RC, if you have an "Alter Ego Messiah" crest, COST [Counter Blast 1], draw a card, and Soul Charge 1.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10641,7 +10641,7 @@ ACT [VC] 1/Turn: COST [Reveal a grade 3 with "Aelquilibra" in its card name from
 
 AUTO: When this unit is rode upon by a grade 3 with "Aelquilibra" in its card name, COST [put this card into your order zone], search your deck for up to one Product card, reveal it and put it into your hand, and shuffle the deck.
 
-CONT [Order Zone]: This card is treated as a set order, and all of your rear-guards with "Librate Wingman" in their card names get "Intercept" and can intercept from the back row.'
+CONT [Order Zone]: This card is treated as a set order, and all of your rear-guards with "Librate Wingman" in their card names get "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10870,7 +10870,7 @@ AUTO [Drop]: When your product is operated, if you have a vanguard with "Blitz" 
 • If all of your rear-guards have a different card name from this card, call this card to a back row RC.
 • COST [Bind this card], Energy Charge 2, and until end of turn, you cannot pay the cost of the AUTO abilities of a card with the same card name as this card.
 
-CONT [RC]: If you have a vanguard with "Blitz" in its card name, this unit gets "Intercept" and can intercept from the back row.'
+CONT [RC]: If you have a vanguard with "Blitz" in its card name, this unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -11720,4 +11720,67 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16831
+{
+global.CardName[CardStat] = 'Blitz Sales, Liferl'
+global.CardText[CardStat] = 'Brandt Gate/Elf/Fantome
+
+AUTO: When this unit is placed on RC, if you have a <Fantome> vanguard, choose a <Genomegel> or Product card from your face up damage zone cards, and you may put it into drop. If you put a card, put the top card of your deck in the damage zone.
+
+CONT [RC]: If you have a <Fantome> vanguard, this unit gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16832
+{
+global.CardName[CardStat] = 'Blitz Security, Kluglie'
+global.CardText[CardStat] = 'Brandt Gate/High Beast/Fantome
+
+ACT [RC/Drop]: COST [Soul Blast 1 & put this card on the bottom of the deck], choose a Product card or a card with "Regrain Researcher" in its card name from your drop, and put it into hand.
+
+CONT [GC]: If your order zone has a "Regrain Biocreation Research Lab" or a Product, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16833
+{
+global.CardName[CardStat] = 'Blitz Sales, Selwust'
+global.CardText[CardStat] = 'Brandt Gate/Alien/Fantome
+
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one card with "Regrain Researcher" in its card name, <Genomegel>, or Product card from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [Drop]: When your grade 3 or greater <Fantome> vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same name as this card from drop until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16834
+{
+global.CardName[CardStat] = 'Operator Girl, Aisha'
+global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
+
+AUTO: When this unit is placed on RC, perform one of the following.
+• Look at the top seven cards of your deck, choose up to one card with "Regrain Researcher" in its card name, <Genomegel>, or Product card from among them, reveal it and put it into hand, and shuffle the deck.
+• COST [Energy Blast 3], search your deck for a total of up to two cards with "Regrain Researcher" in their card names, <Genomegel>, or Product cards in total, reveal them, choose a card from among the revealed cards, put it into hand, and discard the rest of the revealed cards. Shuffle the deck.
+
+AUTO [RC]: When this unit boosts, if your order zone has a "Regrain Biocreation Research Lab" or Product, until end of battle, this unit gets power +5000, at the end of that turn, COST [put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

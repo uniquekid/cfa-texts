@@ -8439,7 +8439,7 @@ global.TokenSummonerRodeUponNumber[CardStat] = 13866
 
 CardStat = 13866
 {
-global.CardName[CardStat] = 'Legend of Raging Uprising, Estacion'
+global.CardName[CardStat] = 'Legend of the Raging Skies, Estacion'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon/Blast
 
 AUTO: When this unit is placed by riding from "Legend of Chaotic Dance, Estacion", search your deck for up to one "Vital Blaze Blast", reveal it and put it into hand, and shuffle the deck.'
@@ -10635,7 +10635,7 @@ CardStat = 15162
 global.CardName[CardStat] = 'Impassive Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
-AUTO: When this unit is put on GC, if it is the fourth battle this turn or more, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO: When this unit is retired from GC, you may put this card into soul." and it gets shield +10000.'
+AUTO: When this unit is put on GC, if it is the fourth battle this turn or more, COST [Energy Blast 3], until end of that battle, this unit gets "AUTO: When this unit is retired from GC, you may put this card into soul." and shield +10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -10910,7 +10910,7 @@ global.CardText[CardStat] = 'Stoicheia/Elf
 
 AUTO [VC]: When you play a Gran Magick order card or activate the ACT ability of a Magick in the order zone, choose one of your units, and it gets power +5000 until end of turn.
 
-ACT [VC] 1/Turn: COST [Soul Blast 1 and rest a Magick from the order zone], choose one of the ACT abilities of the Magick rest for this cost, and activate it without paying the cost.
+ACT [VC] 1/Turn: COST [Soul Blast 1 & rest a Magick from the order zone], choose one of the ACT abilities of the Magick rest for this cost, and activate it without paying the cost.
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and its drive becomes 0 until end of turn.
 
@@ -10920,10 +10920,10 @@ AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Bla
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 4
 global.PersonaRide[CardStat] = 1
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 15360
@@ -11004,7 +11004,7 @@ global.CardText[CardStat] = 'Stoicheia/Elf
 
 AUTO [Drop]: When you play a Gran Magick, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called, this unit gets power +2000 until end of turn.
 
-CONT [RC]: If you have a grade 3 or greater vanguard with "Berucrea" in its card name, this unit gets "Intercept" and can intercept from the back row.
+CONT [RC]: If you have a grade 3 or greater vanguard with "Berucrea" in its card name, this unit gets "Intercept", and can intercept from the back row.
 
 AUTO: When this unit is put on GC, COST [Energy Blast 3], and this unit gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
@@ -12245,3 +12245,20 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
 global.RequiredVan[CardStat] = 'Magnolia'
+
+
+CardStat = 16830
+{
+global.CardName[CardStat] = 'Primal Beast of the Capital, Voranuch'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+CONT: This card is also regarded as "Love-binding Maiden, Margaret".
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], and your opponent cannot intercept until end of turn. All of your opponent’s front row rear-guards cannot stand during the next stand phase.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
