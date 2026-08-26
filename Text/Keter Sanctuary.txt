@@ -12544,9 +12544,9 @@ CardStat = 15760
 global.CardName[CardStat] = 'High Dog Breeder, Akane  '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Aichi Icon/Human
 
-AUTO: When this unit is placed on RC, if you have a vanguard with an Aichi icon or "Hound Raiser" in its card name, COST [Counter Blast 1], search your deck for up to one grade 1 or less <High Beast>, call it to RC in the same column as this unit, and shuffle the deck.
+AUTO: When this unit is placed on RC, if your vanguard has "Hound Raiser" in its card name or an Aichi icon, COST [Counter Blast 1], search your deck for up to one grade 1 or less <High Beast>, call it to RC in the same column as this unit, and shuffle the deck.
 
-ACT [RC] 1/Turn: COST [Put one of your <High Beast> rear-guards with an Aichi icon that was not placed this turn on the bottom of your deck], and your vanguard gets power +5000 until end of turn.
+ACT [RC] 1/Turn: COST [Put a <High Beast> rear-guard with an Aichi icon that was not placed this turn on the bottom of the deck], and your vanguard gets power +5000 until end of turn.
 
 AUTO [RC]: When this unit is boosted by a <High Beast>, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12723,7 +12723,7 @@ CardStat = 15838
 global.CardName[CardStat] = 'Flash Shard Dragon, Seveneivia'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-ACT [RC]: If you persona rode this turn, COST [put this unit into soul], look at the top five cards of your deck, choose up to one card from among them, and call it to RC. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], look at the top five cards of your deck, choose up to one card from among them, and call it to RC. You cannot pay the cost for ACT abilities of units with the same card name as this unit until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12739,9 +12739,9 @@ CardStat = 15843
 global.CardName[CardStat] = 'Snowy White Magic, Nonomira'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, you have no face up damage zone cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If a card was bound from hand for this cost, draw a card.
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If you bound a card from hand for this cost, draw a card.
 
-CONT [RC]: If you have four or more cards, this unit gets shield +5000.'
+CONT [GC]: If you have four or more rear-guards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -12754,7 +12754,7 @@ CardStat = 15848
 global.CardName[CardStat] = 'Knight of the Allnight, Ethnya'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC from hand or deck, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+AUTO: When this unit is placed on RC from deck or hand, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
 • COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
 • If your vanguard has persona ride, put a Persona Shield ticket into hand.
 
@@ -12766,12 +12766,12 @@ AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15866
@@ -12918,7 +12918,7 @@ CardStat = 15876
 global.CardName[CardStat] = 'Deputize Bear '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/High Beast
 
-AUTO: When this unit is placed on RC, if you have a vanguard with a Shinemon icon, look at the top seven cards of your deck, choose up to one card with a Shinemon icon without sentinel from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and put it into soul.'
+AUTO: When this unit is placed on RC, if your vanguard has a Shinemon icon, look at the top seven cards of your deck, choose up to one non-sentinel card with a Shinemon Icon from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 21
@@ -12932,9 +12932,9 @@ CardStat = 15877
 global.CardName[CardStat] = 'Phosphoros of Auspicious Light '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/Noble
 
-AUTO: When this unit is placed on RC from hand, if you have a vanguard with a Shinemon icon, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a Shinemon icon from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, if your vanguard has a Shinemon icon, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a Shinemon icon from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with Shinemon icon, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
+AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard has a Shinemon icon, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 21

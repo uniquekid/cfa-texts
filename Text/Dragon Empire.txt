@@ -12097,9 +12097,9 @@ CardStat = 15791
 global.CardName[CardStat] = 'Flame of Promise, Aermo '
 global.CardText[CardStat] = 'Dragon Empire/Kagero/Kai Icon/Salamander
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with a Kai icon, COST [put this unit into soul], and draw a card.
+AUTO [RC]: At the end of the battle this unit boosted, if your vanguard has a Kai icon, COST [put this unit into soul], and draw a card.
 
-ACT [Soul]: If you have a grade 3 or greater vanguard with a Kai icon, and your opponent’s vanguard is grade 3 or greater,  COST [bind this card], until end of turn, your vanguard’s original power becomes 18000.'
+ACT [Soul]: If your grade 3 or greater vanguard has a Kai icon, and your opponent’s vanguard is grade 3 or greater,  COST [bind this card], until end of turn, your vanguard’s original power becomes 18000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 12
@@ -12128,7 +12128,7 @@ CardStat = 15830
 global.CardName[CardStat] = 'Illusory Tunes Nymph, Keishou'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and bind it. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and bind it. You cannot pay the cost for ACT abilities of units with the same card name as this unit until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12239,9 +12239,9 @@ CardStat = 15840
 global.CardName[CardStat] = 'Stealth Dragon, Souzan'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, you have no face up damage zone cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If a card was bound from hand for this cost, draw a card.
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If you bound a card from hand for this cost, draw a card.
 
-CONT [RC]: If your opponent’s drop has five or more cards, this unit gets shield +5000.'
+CONT [GC]: If your opponent’s drop has five or more cards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -12254,7 +12254,7 @@ CardStat = 15845
 global.CardName[CardStat] = 'Dragritter, Nasrudin'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-AUTO: When this unit is placed on RC from hand or deck, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+AUTO: When this unit is placed on RC from deck or hand, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
 • COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
 • If your vanguard has persona ride, put a Persona Shield ticket into hand.
 
@@ -12266,12 +12266,12 @@ AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15883
