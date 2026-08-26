@@ -11075,7 +11075,7 @@ global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Alphard" in its card name, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, and this unit gets power +5000 until end of turn.
 
-AUTO: When this unit attacks, if you have a grade 3 or greater vanguard with "Alphard" in its card name, and your damage zone has three or more cards, this unit gets power +5000 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Alphard" in its card name, and your damage zone has three or more cards, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -11850,6 +11850,7 @@ global.CardName[CardStat] = 'Lau Ka Long'
 global.CardText[CardStat] = 'Dragon Empire/Yakuza
 
 CONT [RC]: If you have a unit with "Ryuji Goda" in its card name in the same column as this unit, this unit gets "Boost".
+
 AUTO [RC]: When this unit attacks or boosts, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
@@ -13032,3 +13033,31 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16880
+{
+global.CardName[CardStat] = 'Brandishing Bullet of Dust Storm, Flashes'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+CONT [RC]: During your turn, if the number of your rear-guards is greater than your opponent’s, this unit gets "Boost", and if your opponent’s vanguard is grade 3 or greater, it also gets power +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16881
+{
+global.CardName[CardStat] = 'Decisive Action Dragon, Spinoventure'
+global.CardText[CardStat] = 'Dragon Empire/Dinodragon
+
+AUTO [RC]: When this unit boosts a <Dinodragon>, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+CONT [GC]: If you have a <Dinodragon> vanguard, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
