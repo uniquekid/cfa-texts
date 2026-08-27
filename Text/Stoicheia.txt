@@ -11069,18 +11069,18 @@ CardStat = 15471
 global.CardName[CardStat] = 'Onslaught Surf Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
-AUTO: When this unit is placed on RC, choose a grade 3 card with "Maelstrom" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one Blue Storm Armada card from among them and up to one unit card with only «Aqua Force» for its clan or up to one <Tear Dragon> with a different card name from this unit, reveal them and put them into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC, choose a grade 3 card with "Maelstrom" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Maelstrom" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one Blue Storm Armada card from among them and up to one unit card with only «Aqua Force» for its clan or <Tear Dragon> with a different card name from this unit, reveal them and put them into hand, and shuffle the deck.
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Maelstrom" in its card name, this unit gets power +5000 until end of turn. Then, if it is the fourth battle of that turn or more and no drive checks were performed for the battle your rear-guard attacked this turn, COST [put a card from hand into soul], and this unit performs drive checks until end of that battle.
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
+global.ExtendedTextBox = 1
 
 
 CardStat = 15488
@@ -11560,7 +11560,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15895
 {
-global.CardName[CardStat] = 'Grame the Ghostie'
+global.CardName[CardStat] = 'Graeme the Ghostie'
 global.CardText[CardStat] = 'Stoicheia/Ghost
 
 AUTO [Drop]: When your vanguard with "Ghostie" in its card name is placed, if all of your rear-guards have a different card name from this card, you may call this card to RC.
@@ -11629,17 +11629,17 @@ global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 30
 global.CardCopies[CardStat] = 2
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 16055
 {
-global.CardName[CardStat] = 'Glozaria Baytes'
+global.CardName[CardStat] = 'Grosalia Betes'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 AUTO [Front Row RC]: When your vanguard attacks, COST [retire this unit], and that unit gets power +5000 until end of that battle. If your drop has two or more cards with the same card name as this card, it gets power +10000 instead of +5000.'
@@ -11653,10 +11653,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16077
 {
-global.CardName[CardStat] = 'Lignigrowth Dragon'
+global.CardName[CardStat] = 'Ligni Growth Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
-AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +15000 instead of +5000.'
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and your front row has no rear-guards, this unit gets shield +5000 until end of that battle. If your back row has no rear-guards, it gets shield +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11666,7 +11666,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16173
 {
-global.CardName[CardStat] = 'Megacolony Battler+ "Type.A"'
+global.CardName[CardStat] = 'Megacolony Battler⁺ “Type.A”'
 global.CardText[CardStat] = 'Stoicheia/Insect
 
 CONT [Back Row RC]: During your turn, if your vanguard is grade 3 or greater, this unit gets power +5000 for each of your other back row rear-guards with "Megacolony Battler+" in their card names.'
@@ -11679,40 +11679,41 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16185
 {
-global.CardName[CardStat] = 'Argo Siren, Asphaliya'
+global.CardName[CardStat] = 'Argo Siren, Asfaleia'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Argo Siren" in its card name, COST [put a <Tear Dragon> normal unit without sentinel from drop on the bottom of the deck], and Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, if you have a vanguard with "Argo Siren" in its card name, COST [put a non-sentinel <Tear Dragon> normal unit from drop on the bottom of the deck], and Soul Charge 1. If your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 16186
 {
-global.CardName[CardStat] = 'Argo Siren, Ripory'
+global.CardName[CardStat] = 'Argo Siren, Ripoly'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
-AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Argo Siren" in its card name, look at the top five cards of your deck, choose up to one <Mermaid> non-sentinel normal unit from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.'
+AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Argo Siren" in its card name, look at the top five cards of your deck, choose up to one non-sentinel <Mermaid> normal unit from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 16187
 {
-global.CardName[CardStat] = 'Blue Storm Karma Dragon, Maelstrom "Яeverse"   '
+global.CardName[CardStat] = 'Blue Storm Karma Dragon, Maelstrom "Яeverse"  '
 global.CardText[CardStat] = 'Stoicheia/Aqua Force/Tear Dragon
+
 AUTO [VC]: During your turn, for each of your locked cards, all of your units get power +5000.
-ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Tear Dragon> or «Aqua Force» rear-guards, and it gets "AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of that turn, COST [Counter Blast 1 or Soul Blast 1 card with "Maelstrom" in its card name], choose one of your rear-guards, and swap that unit’s position with this unit’s." until end of turn.
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your rear-guards with only «Aqua Force» for its clan or  one of your <Tear Dragon> rear-guards, and it gets "AUTO [RC]: At the end of the battle this unit attacked, if it is the first battle of this turn, COST [Soul Blast 1 card with "Maelstrom" in its card name or Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit." until end of turn.
 AUTO [VC]: At the end of the battle your rear-guard attacked, you may lock that unit.
-AUTO [VC]: When this unit attacks, if it is the fourth battle of that turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it. Then, if your damage zone has four or more cards or you persona rode this turn, this unit gets critical +1 until end of that battle.
+AUTO [VC]: When this unit attacks, if it is the fourth battle of this turn or more, draw a card, choose one of your opponent’s rear-guards, and retire it. Then, if your damage zone has four or more cards or you persona rode this turn, this unit gets critical +1 until end of that battle.
 (SHIFT + left click to count up attacks.)
 (SHIFT + right click to count down attacks.)
 (Middle click or hover and press SPACE to set number of attacks.)'
@@ -11724,11 +11725,12 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.UseCounters[CardStat] = 1
+global.ExtendedTextBox = 1
 
 
 CardStat = 16188
 {
-global.CardName[CardStat] = 'Tear Knight, Strophy'
+global.CardName[CardStat] = 'Tear Knight, Strophi'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Maelstrom" in its card name and it is the fourth battle of that turn or more, COST [Soul Blast 1], choose one of your opponent’s front row rear-guards, and retire it.
@@ -11738,10 +11740,10 @@ AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater v
 (Middle click or hover and press SPACE to set number of attacks.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 16189
@@ -11763,11 +11765,11 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16190
 {
-global.CardName[CardStat] = 'Vigorous Brave Shooter'
+global.CardName[CardStat] = 'Exemplary Vigorous Brave Shooter'
 global.CardText[CardStat] = 'Stoicheia/Aquaroid
 
 CONT: If you have a vanguard with only «Aqua Force» for its clan, this card is only from «Aqua Force». Then, if your vanguard is "Blue Storm Karma Dragon, Maelstrom "Яeverse"", this card gets all of the following.
-• AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle, and at the end of that battle, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit’s.'
+• AUTO [RC]: When this unit attacks, until end of that battle, this unit gets power +5000, at the end of that battle, COST [Counter Blast 1], choose one of your rear-guards, and swap that unit’s position with this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -11778,11 +11780,11 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 16191
 {
-global.CardName[CardStat] = 'Armored Gash Dragon'
+global.CardName[CardStat] = 'Armadogush Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 AUTO: When this unit is placed on RC, choose a "Blue Storm Karma Dragon, Maelstrom "Яeverse"" from your ride deck, and you may reveal it. If you revealed a card or your vanguard is "Blue Storm Karma Dragon, Maelstrom "Яeverse"", COST [Energy Blast 3], and perform one of the following.
-• Choose a <Tear Dragon> or unit card with only «Aqua Force» for its clan with grade less than or equal to your vanguard from your drop, and call it to RC.
+• Choose a unit card with only «Aqua Force» for its clan with grade less than or equal to your vanguard or a <Tear Dragon> unit card with grade less than or equal to your vanguard from your drop, and call it to RC.
 • Choose a Blue Storm Armada card from your drop, and put it into hand.
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Maelstrom" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -11796,7 +11798,7 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 16274
 {
-global.CardName[CardStat] = 'Vernal Twig Dragon'
+global.CardName[CardStat] = 'Vernaltwig Dragon'
 global.CardText[CardStat] = 'Stoicheia/Forest Dragon
 
 AUTO: When this card is discarded from hand during your ride phase, choose a grade 3 card with "Claudine" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Claudine" in its card name, look at the top five cards of your deck, choose up to one normal order without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
@@ -11811,7 +11813,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16275
 {
-global.CardName[CardStat] = 'Flowers of Union'
+global.CardName[CardStat] = 'Flowers of Reminiscence'
 global.CardText[CardStat] = 'Stoicheia/Normal Order
 
 Choose a grade 3 card with "Claudine" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Claudine" in its card name, perform one of the following.
@@ -11830,10 +11832,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16276
 {
-global.CardName[CardStat] = 'Folliage Hunter, Sfrinze'
+global.CardName[CardStat] = 'Sylvan Sea Hunter, Spinze'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-CONT: If you have a vanguard with "Claudine" in its card name, this card gets all of the following.
+CONT: If you have a grade 3 or greater vanguard with "Claudine" in its card name, this card gets all of the following.
 • AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, COST [Counter Blast 1], retire this unit, and call a Plant token to the RC this unit was on.
 • ACT [Drop]: COST [Bind this card], and call a Plant token to RC.
 
@@ -11865,7 +11867,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16329
 {
-global.CardName[CardStat] = 'Argo Siren, Neoklyute'
+global.CardName[CardStat] = 'Argo Siren, Nioklyd'
 global.CardText[CardStat] = 'Stoicheia/Mermaid
 
 AUTO: When this unit is placed on RC, COST [put a Tiding card from your bind zone into drop], and this unit gets power +5000 until end of turn.
@@ -11880,12 +11882,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16330
 {
-global.CardName[CardStat] = 'Bathymetraminer Dragon'
+global.CardName[CardStat] = 'Bathymelaminar Dragon'
 global.CardText[CardStat] = 'Stoicheia/Tear Dragon
 
 AUTO [Drop]: When a Tiding card is put into the order zone, if all of your rear-guards have a different name from this card, COST [Counter Blast 1], call this card to RC, and it gets power +5000 until end of turn.
 
-AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name and your order zone has a Tiding card, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, power +10000 instead of +5000.'
+AUTO [RC] 1/Turn: When this unit attacks, if you have a grade 3 or greater vanguard with "Argo Siren" in its card name and your order zone has a Tiding, this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
