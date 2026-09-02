@@ -13411,8 +13411,160 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 AUTO: When this unit is placed on RC from hand, perform one of the following.
 • If it is the main phase, you may Soul Charge 1.
 • If it is the battle phase, COST [Soul Blast 1], choose one of your other units, and that unit and this unit get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16895
+{
+global.CardName[CardStat] = 'Fledgling Idol With a Dream, Myun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16896
+{
+global.CardName[CardStat] = 'This Angle Serves, Myun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is rode upon by a grade 2 with "Myun" in its card name, COST [reveal a grade 3 with "Myun" in its card name from ride deck], choose up to one grade 2 or less unit card from your hand, and call it to RC. If you called a card, draw a card, and until end of turn, that called unit gets "AUTO [RC]: At the end of your turn, put this unit on the bottom of the deck.", and power +5000.
+
+AUTO: When this card is discarded from hand by the ability of a card with "Myun" in its card name, COST [Counter Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16897
+{
+global.CardName[CardStat] = 'Invitation Into the Alleyway, Myun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO: When this unit is rode upon by a grade 3 with "Myun" in its card name, choose up to one unit card from your drop, call it to RC, and it gets "AUTO [RC]: At the end of your turn, put this unit on the bottom of the deck." until end of turn.
+
+CONT [RC/GC]: If you have a vanguard with "Myun" in its card name, this unit gets shield +5000. Then, if your vanguard is grade 3 or greater, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+ACT [Drop]: COST [Put three grade 2 or less cards with "Myun" in their card names from drop that were in the ride deck into ride deck face up], choose a grade 2 or less card with "Myun" in its card name from your drop, and put it into hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16898
+{
+global.CardName[CardStat] = 'Secret Great Sin Heroine, Myun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+ACT [VC] 1/Turn: Use this unit’s Sinastery. (If an ACT has no cost, the cost is paid when declaring that you are playing it)
+AUTO [VC] 1/Turn: When your card with "Myun" in its card name is discarded by this unit’s ability during your turn, draw a card, and this unit gets power +5000 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit also gets critical +1.
+AUTO [VC] 1/Turn: When this unit attacks, COST [discard a card from hand], choose a normal unit on your RC, stand it, and it gets "AUTO [RC]: When this unit attacks, until end of that battle, this unit gets power +10000, and at the end of that turn, put this unit on the bottom of the deck." until end of turn.
+Sinastery - COST [Energy Blast 3], choose one of your opponent’s rear-guards, until end of turn, that unit loses all of its abilities, and gets power +5000 for each of your opponent’s vanguard’s grade. stand that chosen unit, attack your opponent’s vanguard, and at the end of that battle, put the unit that attacked on the bottom of the deck.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.ExtendedTextBox[CardStat] = 1
+
+
+CardStat = 16899
+{
+global.CardName[CardStat] = 'Let My Heart Reach, Wepp'
+global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
+
+AUTO [RC]: When this unit boosts, if you have a grade 3 or greater vanguard with "Myun" in its card name, COST [Soul Blast 1], and this unit gets power +2000 until end of that battle. If it boosted a rear-guard, at the end of that battle, return that boosted unit into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16900
+{
+global.CardName[CardStat] = 'Absolute Heart Proclamation, Floun'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [Back Row RC/Hand]: At the beginning of the guard step of the battle your vanguard with "Myun" in its card name was attacked, COST [put this card into drop], and that unit gets power +10000 until end of that battle. (Performed before calling guardians and intercepting)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16901
+{
+global.CardName[CardStat] = 'Thoughts Take Flight Afar, Flar'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [RC] 1/Turn: If you have a vanguard with "Myun" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1 & Soul Blast 1], choose one of your opponent’s rear-guards, and until end of turn, that unit and this unit get power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16902
+{
+global.CardName[CardStat] = 'Nothing But Sweetness, Cadyla'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one card with "Myun" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Myun" in its card name is placed, if all of your rear-guards have different card names from this card, you may call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16903
+{
+global.CardName[CardStat] = 'To Be Together Forever, Quilty'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is placed on RC, look at the top seven cards of your deck, choose up to one card with "Myun" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks during your turn, or a unit on your opponent’s RC attacks during your turn, if you have a grade 3 or greater vanguard with "Myun" in its card name, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16904
+{
+global.CardName[CardStat] = 'Dyeing Hearts With Love, Caeblish'
+global.CardText[CardStat] = 'Lyrical Monasterio/Succubus
+
+AUTO: When this unit is placed on RC other than during the battle phase, if you have a grade 3 or greater vanguard with "Myun" in its card name, COST [Counter Blast 1], choose a non-sentinel normal unit with a different card name from this unit from your drop, call it to RC, and perform one of the following.
+• Choose a non-sentinel normal unit from your opponent’s drop, and your opponent calls that card to RC.
+• Choose up to one card with "Myun" in its card name from your drop, and put it into hand.
+
+CONT [RC/GC]: If you have a vanguard with "Myun" in its card name, this unit gets "Intercept", and power +5000 / shield +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0

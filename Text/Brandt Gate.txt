@@ -8254,7 +8254,7 @@ CardStat = 14107
 global.CardName[CardStat] = 'World Savior, Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-ACT [VC]: D-LEGION "Brother-in-Arms, Superbia(Deathdrives)" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
+ACT [VC]: D-LEGION "Brother-in-Arms, Superbia (Deathdrives)" or "Super Dimensional Robo, Daikaiser" (If your opponent’s vanguard is grade 3 or greater, this unit may return up to 2 trigger units other than "HEAL" and over trigger along with non-trigger cards for a total of 4 cards from your drop into your deck once, search your deck for the specified card, D-LEGION and while in D-LEGION, both units lose Persona Ride)
 
 AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if this unit is D-LEGION, and your soul has a card with "Isami Ao" in its card name, COST [discard a card from hand & Counter Blast 1], stand this unit, and this unit gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
@@ -8295,7 +8295,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 14110
 {
-global.CardName[CardStat] = 'Brother-in-Arms, Superbia(Deathdrives)'
+global.CardName[CardStat] = 'Brother-in-Arms, Superbia (Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO [VC/RC]: When this unit attacks, if your order zone has an "Brave Knights Assemble!" or "Soul-Stirring Clash", COST [Counter Blast 1], draw a card, and if your opponent’s vanguard is grade 3 or greater, you get "All of your front row units get power +5000." until end of turn.
@@ -8313,7 +8313,7 @@ CardStat = 14111
 global.CardName[CardStat] = 'Beyond Bang Brave!! Bang Brave Big Bravern'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-CONT: This card cannot be ridden other than by the ability of "Brother-in-Arms, Superbia(Deathdrives)".
+CONT: This card cannot be ridden other than by the ability of "Brother-in-Arms, Superbia (Deathdrives)".
 
 AUTO: When this unit is placed on VC, this unit gets all of the following until end of turn. At the end of that turn, choose a "World Savior, Bravern" from you soul, and ride it as rest.
 • CONT [VC]: All of your front row units get power +10000.
@@ -8508,7 +8508,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14125
 {
-global.CardName[CardStat] = 'Alien Mechanical Lifeform, Superbia(Deathdrives)'
+global.CardName[CardStat] = 'Alien Mechanical Lifeform, Superbia (Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 AUTO: When this unit is placed on VC, COST [reveal a grade 3 card with "Superbia" in its card name from the ride deck], choose an "Organic Lifeform, Lulu" from your soul, put it into hand, and Soul Charge 1 .
@@ -8523,10 +8523,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 14126
 {
-global.CardName[CardStat] = 'Brandished Passion, Superbia(Deathdrives)'
+global.CardName[CardStat] = 'Brandished Passion, Superbia (Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
-AUTO: When this unit is placed by riding from "Invasive Mechanical Lifeform, Superbia(Deathdrives)", COST [put an "Organic Lifeform, Lulu" from RC or hand into soul], search your deck for up to one "Hero of the Future, Lulu", reveal it and put it into hand, shuffle the deck, and If you revealed a card, put a Soul-Stirring Clash token into your order zone.
+AUTO: When this unit is placed by riding from "Invasive Mechanical Lifeform, Superbia (Deathdrives)", COST [put an "Organic Lifeform, Lulu" from RC or hand into soul], search your deck for up to one "Hero of the Future, Lulu", reveal it and put it into hand, shuffle the deck, and If you revealed a card, put a Soul-Stirring Clash token into your order zone.
 
 (You will be prompted to get the token upon ride.)
 
@@ -8544,7 +8544,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 14127
 {
-global.CardName[CardStat] = 'Lone Warrior, Superbia(Deathdrives)'
+global.CardName[CardStat] = 'Lone Warrior, Superbia (Deathdrives)'
 global.CardText[CardStat] = 'Brandt Gate/Brave Bang Bravern!
 
 CONT [VC]: If your opponent’s vanguard is grade 3 or greater, and your soul has a "Hero of the Future, Lulu", this unit gets power +5000. (Active on opponent’s turn too)
@@ -11967,6 +11967,36 @@ global.CardName[CardStat] = 'Dark Arts Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Malefics" in its card name, choose a trigger card from your face up damage zone cards, and put it into drop. If you put a card, choose a card from your drop, and put it in the damage zone.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16894
+{
+global.CardName[CardStat] = 'Thwarter of Star Path'
+global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
+
+CONT [RC]: If you have more rear-guards than your opponent, all of your rear-guards in the same column as this unit cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16908
+{
+global.CardName[CardStat] = 'Empress of Ordinance, Kaiser'
+global.CardText[CardStat] = 'Brandt Gate/Warbeast
+
+CONT: This card is also regarded as "Blitz Staff, Muna".
+
+CONT [RC]: If your order zone has three or more cards, this unit cannot be chosen by your opponent’s card’s effects, and gets power +5000. (Includes opponent’s cards. Active on opponent’s turn too)
+
+AUTO [RC] 1/Turn: When any player’s unit is placed on RC from your order zone during any player’s main phase, COST [Soul Blast 1], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
