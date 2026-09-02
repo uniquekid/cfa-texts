@@ -6233,6 +6233,7 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1], choose one of your gr
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Beyond the Star, Vyrgilla'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -13069,17 +13070,40 @@ global.CardName[CardStat] = 'Beyond the Star, Vyrgilla'
 global.CardText[CardStat] = 'Dragon Empire/Cyber Dragon
 
 CONT: This card can only be ridden from a grade 3 with "Vyrgilla" in its card name.
-
 AUTO: When this unit is placed by riding, perform all of the following, and this unit is in the [Skyride] state until end of turn.
 • If persona ride was not activated by this ride, activate persona ride.
 • Search your deck or drop for up to one unit card with "Ezerwur" in its card name, and call it to RC. If you searched the deck, shuffle the deck.
-ACT [VC] 1/Turn: COST [Energy Blast 3], choose one of your opponent’s rear-guards, bind it, choose a grade 2 or less unit card from your drop, and call it to RC.
-AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your grade 2 or less rear-guards, and stand it. If this unit is in the [Skyride] state, at the end of that battle, stand this unit, and it gets drive -1 until end of turn.
-(SHIFT + left click to activate persona ride)'
+ACT [VC] 1/Turn: COST [Energy Blast 3], choose one of your opponent’s rear-guards, bind it, choose a grade 2 unit card from your drop, and call it to RC.
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose one of your grade 2 rear-guards, and stand it. If this unit is in the [Skyride] state, at the end of that battle, stand this unit, and it gets drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.PersonaRideAct[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16892
+{
+global.CardName[CardStat] = 'Venatiol, Lativati'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this unit is retired from RC by the ability of your grade 3 or greater vanguard, you may Soul Charge 1 or Energy Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16893
+{
+global.CardName[CardStat] = 'Dancing Princess of Elegant Flames, Farval'
+global.CardText[CardStat] = 'Dragon Empire/Human/Fantome
+
+AUTO [RC]: When you play a blitz order, COST [put this unit into soul], and your vanguard gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
