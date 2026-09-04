@@ -13568,3 +13568,144 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16909
+{
+global.CardName[CardStat] = 'Autumn Sunlit Bookroom, Nostilia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO [RC] 1/Turn: When your other rear-guard in the same column as this unit is retired, you may put that card into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16910
+{
+global.CardName[CardStat] = 'Aiming to be Idols! Rubuna&Santy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost/Dragoroid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16911
+{
+global.CardName[CardStat] = 'Days of Lessons, Santy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO: When this unit is rode upon by "Road to a Live Concert, Rubuna", choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card.
+
+ACT [Soul/Drop]: If you have a grade 3 vanguard with "Rubuna" in its card name, and you did not ride this turn, COST [Counter Blast 1 & bind this card], search your deck for up to one grade 3 card with "Rubuna" in its card name, ride it as stand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16912
+{
+global.CardName[CardStat] = 'Road to a Live Concert, Rubuna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO: When this unit is placed by riding from a card with "Santy" in its card name, draw a card.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 vanguard with "Rubuna" in its card name, this unit gets power +5000 until end of that battle, and at the end of that battle, put this unit into soul. (This effect is mandatory)
+
+AUTO [Soul]: When your vanguard with "Rubuna" in its card name is attacked, COST [put this card on the bottom of the deck], and that unit gets power +10000 until end of that battle. You cannot pay the cost of the AUTO abilities of a card with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16913
+{
+global.CardName[CardStat] = '( ’>Д<`;)Ghost meets Gal(oV<„) Rubuna'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+ACT [VC]: D-LEGION "( ’>Д<`;)Ghost meets Gal(oV<„) Santy" (If your opponent’s vanguard is grade 3 or greater, this unit may choose up to two trigger units other than "HEAL" and over trigger, and cards other than trigger units for a total of four cards from drop once, return them to the deck, search your deck for the specified card, D-LEGION, and those cards lose their persona ride icons while they are D-LEGION)
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and its drive becomes 1 until end of turn.
+AUTO [Soul]: When your vanguard with "Rubuna" in its card name is attacked, COST [put this card on the bottom of the deck], and that unit gets power +20000 until end of that battle. You cannot pay the cost of the AUTO abilities of a card with the same card name as this card until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+//Slight Adjustment to 1st skill to fit text
+//Keep in mind for EN translation
+CardStat = 16914
+{
+global.CardName[CardStat] = '( ’>Д<`;)Ghost meets Gal(oV<„) Santy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
+
+AUTO: When placed on VC or RC, if you have a vanguard with "Rubuna" in its card name, COST [Counter Blast 1], and perform one of the following. If this unit is on VC, this cost is lost.
+• Choose one of your opponent’s rear-guards, and retire it.
+• If this unit was not placed during the battle phase, look at the top seven cards of your deck, choose up to one card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck.
+AUTO [VC]: When this unit attacks, if your vanguard is D-LEGION, all of your front row rear-guards get power +5000 until end of turn. Then, if it is the second battle this unit performed this turn, COST [Energy Blast 3], choose a card from your hand, call it to a front row RC, and that unit gets power +10000 until end of turn. If this unit D-LEGION this turn, choose one of your units in the same column as that called unit, and stand it.
+CONT [RC]: If you have a grade 3 or greater vanguard with "Rubuna" in its card name, this unit gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16915
+{
+global.CardName[CardStat] = 'Searching for Scoops! Aido'
+global.CardText[CardStat] = 'Lyrical Monasterio/Succubus
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Rubuna" or "Santy" in its card name, look at the top card of your deck, and put it on the top or bottom of the deck.
+
+CONT [RC]: If you have a vanguard with "Rubuna" or "Santy" in its card name, this unit gets "Boost", and can intercept from the back row.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16916
+{
+global.CardName[CardStat] = 'Deadly Bootcamp, Sergeant Serjan'
+global.CardText[CardStat] = 'Lyrical Monasterio/Demon
+
+AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one order card without Regalis Piece, or up to one card with "Rubuna" or "Santy" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If your vanguard is grade 3 or greater, choose one of your units with "Rubuna" or "Santy" in its card name, and it gets power +5000 until end of turn.
+
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16917
+{
+global.CardName[CardStat] = 'Tiny Famous Instructor, Miss Pechy'
+global.CardText[CardStat] = 'Lyrical Monasterio/Sylph
+
+AUTO [RC]: When this unit boosts, if you have a vanguard with "Rubuna" or "Santy" in its card name, your order zone has a set order, or you played an order this turn, this unit gets power +5000 until end of that battle, at the end of that battle, perform one the following, and you cannot perform an effect chosen by the ability of a unit with the same card name as this unit this turn.
+• Energy Charge 2 .
+• COST [Put this unit into soul], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
