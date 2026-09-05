@@ -1042,7 +1042,7 @@ CardStat = 16821
 global.CardName[CardStat] = 'Stop Right There, Orgs'
 global.CardText[CardStat] = 'Super Sentai/Gaoranger/Front Trigger
 
-CONT: Resolute (You may only have up to four cards with "CONT: Resolute" in a deck.)
+CONT: Stronghold (You may only have up to four cards with "CONT: Stronghold" in a deck.)
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -1287,7 +1287,7 @@ CardStat = 16851
 global.CardName[CardStat] = 'We Are Space Pirate Band, Gokaiger!'
 global.CardText[CardStat] = 'Super Sentai/Gokaiger/Draw Trigger
 
-CONT: Enhance (You may only have up to four cards with "CONT: Enhance" in a deck.)
+CONT: Supplement (You may only have up to four cards with "CONT: Supplement" in a deck.)
 
 CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 0
@@ -1303,7 +1303,7 @@ CardStat = 16852
 global.CardName[CardStat] = 'Don Momotaro, Frenzied Peach: LAST PARTY'
 global.CardText[CardStat] = 'Super Sentai/Donbrothers/Critical Trigger
 
-CONT: Fatal (You may only have up to four cards with "CONT: Fatal" in a deck.)
+CONT: Strikeout (You may only have up to four cards with "CONT: Strikeout" in a deck.)
 
 AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power+2000 until end of turn.'
 global.UnitGrade[CardStat] = 0
@@ -1389,6 +1389,20 @@ global.CardText[CardStat] = 'Super Sentai/Shinkenger
 AUTO: When this unit is placed on RC from hand, if you have a "Samurai Sentai Shinkenger" crest, COST [Soul Blast 1], and choose one of the following.
 • Choose up to one Arms card from drop, put that card into hand, and this unit gets power +5000 until end of turn.
 • If your vanguard is armed and you did not Counter Charge this turn, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 17
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16907
+{
+global.CardName[CardStat] = 'A Multifaceted Man, Kijibrother'
+global.CardText[CardStat] = 'Super Sentai/Donbrothers
+
+CONT: If you have an "Avataro Sentai Donbothers" crest, this card gets all of the following.
+• AUTO [RC]: When this unit boosts, if you are in the [Festival] state, this unit gets power +5000 until end of that battle. At the end of the battle, return this unit to hand. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 17
 }
