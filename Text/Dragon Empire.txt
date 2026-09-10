@@ -3126,7 +3126,7 @@ CardStat = 10587
 global.CardName[CardStat] = 'Frying Shot Dragon, Crumstego'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If three cards were not bound, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If they could not bind three cards, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -13106,4 +13106,20 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16930
+{
+global.CardName[CardStat] = 'Bloodstained Bride'
+global.CardText[CardStat] = 'Dragon Empire/Ghost/Draw Trigger
+
+CONT: This card is also regarded as "Flare Veil Dragon"
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 4000
 global.DefensePowerStat[CardStat] = 5000
