@@ -49,6 +49,9 @@ jobs:
       - name: Checkout files at the tag
         run: git checkout "${{ steps.resolve.outputs.tag }}" -- .
 
+      - name: Wait for bump-version workflow Version change to be registered
+        run: sleep 60
+
       - name: Wait for jsdelivr to see the tag
         env:
           TAG: ${{ steps.resolve.outputs.tag }}

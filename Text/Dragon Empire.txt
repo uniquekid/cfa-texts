@@ -3126,7 +3126,7 @@ CardStat = 10587
 global.CardName[CardStat] = 'Frying Shot Dragon, Crumstego'
 global.CardText[CardStat] = 'Dragon Empire/Dinodragon
 
-AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If three cards were not bound, this unit gets power +10000 until end of that battle.'
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], your opponent chooses three cards from their drop, and binds them. If they could not bind three cards, this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
@@ -11285,7 +11285,7 @@ global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Shojodoji" in its card name, choose a normal unit with "Stealth" in its card name from your drop, and you may put it into soul.
 
-AUTO: When this unit is put into soul from RC during the battle phase, COST [Counter Blast 1 or Energy Blast 2], and until end of turn, you get "All of your units with "Stealth" in their card names that were placed from bind zone this turn on RC or GC get power +5000 / shield +5000." and you cannot pay the cost of an AUTO ability with the same card name as this card.'
+AUTO: When this unit is put from RC into soul during the battle phase, COST [Counter Blast 1 or Energy Blast 2], and until end of turn, you get "All of your units with "Stealth" in their card names placed on RC or GC from the bind zone this turn get power +5000 / shield +5000." and you cannot pay the cost of the AUTO abilities of a card with the same card name as this card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -12098,9 +12098,9 @@ CardStat = 15791
 global.CardName[CardStat] = 'Flame of Promise, Aermo '
 global.CardText[CardStat] = 'Dragon Empire/Kagero/Kai Icon/Salamander
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a vanguard with a Kai icon, COST [put this unit into soul], and draw a card.
+AUTO [RC]: At the end of the battle this unit boosted, if your vanguard has a Kai icon, COST [put this unit into soul], and draw a card.
 
-ACT [Soul]: If you have a grade 3 or greater vanguard with a Kai icon, and your opponent’s vanguard is grade 3 or greater,  COST [bind this card], until end of turn, your vanguard’s original power becomes 18000.'
+ACT [Soul]: If your grade 3 or greater vanguard has a Kai icon, and your opponent’s vanguard is grade 3 or greater,  COST [bind this card], until end of turn, your vanguard’s original power becomes 18000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 12
@@ -12129,7 +12129,7 @@ CardStat = 15830
 global.CardName[CardStat] = 'Illusory Tunes Nymph, Keishou'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
-ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and bind it. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and bind it. You cannot pay the cost for ACT abilities of units with the same card name as this unit until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12240,9 +12240,9 @@ CardStat = 15840
 global.CardName[CardStat] = 'Stealth Dragon, Souzan'
 global.CardText[CardStat] = 'Dragon Empire/Abyss Dragon
 
-AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, you have no face up damage zone cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If a card was bound from hand for this cost, draw a card.
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If you bound a card from hand for this cost, draw a card.
 
-CONT [RC]: If your opponent’s drop has five or more cards, this unit gets shield +5000.'
+CONT [GC]: If your opponent’s drop has five or more cards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -12255,7 +12255,7 @@ CardStat = 15845
 global.CardName[CardStat] = 'Dragritter, Nasrudin'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-AUTO: When this unit is placed on RC from hand or deck, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+AUTO: When this unit is placed on RC from deck or hand, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
 • COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
 • If your vanguard has persona ride, put a Persona Shield ticket into hand.
 
@@ -12267,12 +12267,12 @@ AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15883
@@ -12295,7 +12295,7 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 16025
 {
-global.CardName[CardStat] = 'Elegant Flames Sword Dance "Sairei"'
+global.CardName[CardStat] = 'Elegant Flames Sword Dance, "Sairei"'
 global.CardText[CardStat] = 'Dragon Empire/Blitz Order
 
 CONT: You may only have up to two "Elegant Flames Sword Dance "Sairei"" in a deck.
@@ -12311,20 +12311,20 @@ global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.CardCopies[CardStat] = 2
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 16058
 {
-global.CardName[CardStat] = 'Tectonigravel Dragon'
+global.CardName[CardStat] = 'Tectonic Gravel Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
 
-AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +10000 instead of +5000.'
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and your front row has no rear-guards, this unit gets shield +5000 until end of that battle. If your back row has no rear-guards, it gets shield +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
@@ -12334,7 +12334,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16059
 {
-global.CardName[CardStat] = 'Demonic Dragon Berserker, Ritekkai'
+global.CardName[CardStat] = 'Demonic Dragon Berserker, Litekkai'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 AUTO: When this unit is put on GC, COST [Counter Blast 1], choose one of your opponent’s attacking units, and it gets power -10000 until end of that battle. If your damage zone has four or more cards, it gets power -15000 instead of -10000.'
@@ -12347,7 +12347,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16065
 {
-global.CardName[CardStat] = 'Dragritter, Raihanna'
+global.CardName[CardStat] = 'Dragritter, Raihaana'
 global.CardText[CardStat] = 'Dragon Empire/Human
 
 CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets "Intercept", and can intercept from the back row. Then, if your opponent’s drive check revealed a trigger unit this turn, this unit gets shield +5000.'
@@ -12360,7 +12360,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16066
 {
-global.CardName[CardStat] = 'Fracdraft Dragon'
+global.CardName[CardStat] = 'Fractdraft Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
 
 AUTO [RC]: When your opponent’s rear-guard is retired by your card’s effect, COST [retire this unit], and draw a card.'
@@ -12373,12 +12373,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16080
 {
-global.CardName[CardStat] = 'Hellfire Dragon Emperor, Wirbel Konig'
+global.CardName[CardStat] = 'Hellfire Dragon Emperor, Wirbel Kenig'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT: During this fight, this card is also regarded as "Hellfire Dragon, Wirbel Dragon", and this card can only be ridden from a grade 3 with "Wirbel" in its card name.
-CONT [VC]: The amount of energy you may have from the CONT ability of the "Energy Generator" in your crest zone is increased by 5.
-AUTO: When this unit is placed on VC, Energy Charge 3. Choose a card with original card name "Hellfire Dragon, Wirbel Dragon" from your soul or drop, and this unit gets all of that card’s original abilities until end of this fight.
+CONT [VC]: The maximum energy you may have in the CONT ability of the "Energy Generator" in your crest zone gets +5.
+AUTO: When this unit is placed on VC, Energy Charge 3. Choose a card with original card name "Hellfire Dragon, Wirbel Dragon" from your soul or drop, and until end of this fight, this unit gets all of the original abilities of that card.
 ACT [VC] 1/Turn: COST [Energy Blast 10], retire all of your opponent’s rear-guards, and perform one of the following according to the number of cards in your opponent’s damage zone.
 • Four or less - Choose one of your opponent’s vanguards, and deal one damage.
 • Five or more - This unit gets power +10000 until end of turn.'
@@ -12393,7 +12393,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16081
 {
-global.CardName[CardStat] = 'Cremate Vars Dragon'
+global.CardName[CardStat] = 'Crematevulse Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Wirbel" in its card name, and you Energy Blast 10 or more in total this turn, this unit gets power +10000.'
@@ -12406,10 +12406,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16082
 {
-global.CardName[CardStat] = 'Dragritter, Sufyan'
+global.CardName[CardStat] = 'Dragritter, Sufyaan'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-AUTO [Drop]: When your grade 3 or greater vanguard with "Wirbel" in its card name is placed, if all of your rear-guards have a different card name from this card, you may call this card to RC. If you do, at the end of that turn, put this unit into soul.'
+AUTO [Drop]: When your grade 3 or greater vanguard with "Wirbel" in its card name is placed, if all of your rear-guards have a different card name from this card, you may call this card to RC. If you called a card, put this unit into soul at the end of that turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -12419,7 +12419,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16083
 {
-global.CardName[CardStat] = 'Dragritter, Azahara'
+global.CardName[CardStat] = 'Dragritter, Asaala'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Wirbel" in its card name, COST [Soul Blast 2], call this card to RC, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
@@ -12434,12 +12434,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16084
 {
-global.CardName[CardStat] = 'Dragritter, Najla'
+global.CardName[CardStat] = 'Dragritter, Najuura'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
 AUTO [RC]: At the end of the battle this unit boosted, choose a grade 3 card with "Wirbel" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Wirbel" in its card name, COST [put this unit into soul], and draw a card.
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Wirbel" in its card name, COST [bind this card], Energy Charge 3, and you cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.'
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Wirbel" in its card name, COST [bind this card], Energy Charge 3, and you cannot pay the cost for ACT abilities of a card with the same card name as this card until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -12486,7 +12486,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16176
 {
-global.CardName[CardStat] = 'Geologic Rammer Dragon'
+global.CardName[CardStat] = 'Geology Clamor Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
 
 AUTO [Drop]: When two or more of your rear-guards with "Grhy" or "Aundra" in their card names are put into soul at the same time during your battle phase, if all of your rear-guards have a different card name from this card, you may call this card to an open back row RC. If you do, put this unit into soul at the end of that turn.'
@@ -12499,7 +12499,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16192
 {
-global.CardName[CardStat] = 'Stealth Rogue of Heavy Sakura, Kazaki'
+global.CardName[CardStat] = 'Stealth Rogue of Layered Blossoms, Kazaki'
 global.CardText[CardStat] = 'Dragon Empire/Demon
 
 AUTO [RC]: At the end of the battle this unit attacked, if two or more of your rear-guards were put into soul at the same time by your vanguard’s ability this turn, COST [put this unit into soul], and draw a card.'
@@ -12512,7 +12512,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16193
 {
-global.CardName[CardStat] = 'Adast Flack Dragon'
+global.CardName[CardStat] = 'Adust Flux Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
 
 AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater <Flame Dragon> vanguard, COST [put this unit into soul], choose one of your opponent’s rear-guards, and retire it.'
@@ -12604,7 +12604,7 @@ global.AttackFromRBuff[CardStat] = 100000
 
 CardStat = 16287
 {
-global.CardName[CardStat] = 'Stealth Fiend, Folliage Marmie'
+global.CardName[CardStat] = 'Stealth Fiend, Foligemami'
 global.CardText[CardStat] = 'Dragon Empire/Warbeast
 
 AUTO: If you have a vanguard with "Grhy" in its card name, this cost may be paid with "Energy Blast 3". When this unit is placed on RC, if you have a vanguard with "Aundra" in its card name, COST [Counter Blast 1], look at the top five cards of your deck, choose up to one card with grade less than or equal to your vanguard in its different card name from this unit from among them, call it to RC, and shuffle the deck.
@@ -13106,4 +13106,35 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16930
+{
+global.CardName[CardStat] = 'Bloodstained Bride'
+global.CardText[CardStat] = 'Dragon Empire/Ghost/Draw Trigger
+
+CONT: This card is also regarded as "Flare Veil Dragon"
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16942
+{
+global.CardName[CardStat] = 'Dragritter, Mutawali'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO [Drop]: When your opponent’s unit is retired from RC by your card’s ability during your turn, COST [Soul Blast 1 & bind this card], choose one of your opponent’s rear-guards in the same column as that retired unit, and retire it. You cannot bind cards with the same card name as this card from drop until end of turn.
+
+CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000, and if your opponent’s drop has eight or more cards, it also gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

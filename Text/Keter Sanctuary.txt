@@ -2911,10 +2911,13 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on VC by the RevolDress ability, all of your front row units get power +5000 until end of turn. Then, COST [Counter Blast 1], reveal the top two cards of your deck, choose one of your opponent’s rear-guards with the same grade as any of the cards from among them, and put it on the bottom of their deck. Put all of the revealed cards into your hand.
 
-AUTO [VC]: At the end of your turn, choose a card with the RevolDress ability from your soul, and ride it as rest.'
+AUTO [VC]: At the end of your turn, choose a card with the RevolDress ability from your soul, and ride it as rest.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
+global.RevealTopX[CardStat] = 2
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -12544,9 +12547,9 @@ CardStat = 15760
 global.CardName[CardStat] = 'High Dog Breeder, Akane  '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Aichi Icon/Human
 
-AUTO: When this unit is placed on RC, if you have a vanguard with an Aichi icon or "Hound Raiser" in its card name, COST [Counter Blast 1], search your deck for up to one grade 1 or less <High Beast>, call it to RC in the same column as this unit, and shuffle the deck.
+AUTO: When this unit is placed on RC, if your vanguard has "Hound Raiser" in its card name or an Aichi icon, COST [Counter Blast 1], search your deck for up to one grade 1 or less <High Beast>, call it to RC in the same column as this unit, and shuffle the deck.
 
-ACT [RC] 1/Turn: COST [Put one of your <High Beast> rear-guards with an Aichi icon that was not placed this turn on the bottom of your deck], and your vanguard gets power +5000 until end of turn.
+ACT [RC] 1/Turn: COST [Put a <High Beast> rear-guard with an Aichi icon that was not placed this turn on the bottom of the deck], and your vanguard gets power +5000 until end of turn.
 
 AUTO [RC]: When this unit is boosted by a <High Beast>, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12723,7 +12726,7 @@ CardStat = 15838
 global.CardName[CardStat] = 'Flash Shard Dragon, Seveneivia'
 global.CardText[CardStat] = 'Keter Sanctuary/Cosmo Dragon
 
-ACT [RC]: If you persona rode this turn, COST [put this unit into soul], look at the top five cards of your deck, choose up to one card from among them, and call it to RC. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], look at the top five cards of your deck, choose up to one card from among them, and call it to RC. You cannot pay the cost for ACT abilities of units with the same card name as this unit until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12739,9 +12742,9 @@ CardStat = 15843
 global.CardName[CardStat] = 'Snowy White Magic, Nonomira'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, you have no face up damage zone cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If a card was bound from hand for this cost, draw a card.
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If you bound a card from hand for this cost, draw a card.
 
-CONT [RC]: If you have four or more cards, this unit gets shield +5000.'
+CONT [GC]: If you have four or more rear-guards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -12754,7 +12757,7 @@ CardStat = 15848
 global.CardName[CardStat] = 'Knight of the Allnight, Ethnya'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-AUTO: When this unit is placed on RC from hand or deck, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+AUTO: When this unit is placed on RC from deck or hand, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
 • COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
 • If your vanguard has persona ride, put a Persona Shield ticket into hand.
 
@@ -12766,12 +12769,12 @@ AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15866
@@ -12918,7 +12921,7 @@ CardStat = 15876
 global.CardName[CardStat] = 'Deputize Bear '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/High Beast
 
-AUTO: When this unit is placed on RC, if you have a vanguard with a Shinemon icon, look at the top seven cards of your deck, choose up to one card with a Shinemon icon without sentinel from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and put it into soul.'
+AUTO: When this unit is placed on RC, if your vanguard has a Shinemon icon, look at the top seven cards of your deck, choose up to one non-sentinel card with a Shinemon Icon from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 21
@@ -12932,9 +12935,9 @@ CardStat = 15877
 global.CardName[CardStat] = 'Phosphoros of Auspicious Light '
 global.CardText[CardStat] = 'Keter Sanctuary/Genesis/Shinemon Icon/Noble
 
-AUTO: When this unit is placed on RC from hand, if you have a vanguard with a Shinemon icon, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a Shinemon icon from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, if your vanguard has a Shinemon icon, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to one grade 3 or greater card with a Shinemon icon from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with Shinemon icon, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
+AUTO [RC]: When this unit attacks, if your grade 3 or greater vanguard has a Shinemon icon, and your opponent’s vanguard is grade 3 or greater, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 21
@@ -13045,10 +13048,10 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16022
 {
-global.CardName[CardStat] = 'Knight of Dark Arrow, Edaskelle'
+global.CardName[CardStat] = 'Knight of Hades Arrow, Edascele'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +10000 instead of +5000.'
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and your front row has no rear-guards, this unit gets shield +5000 until end of that battle. If your back row has no rear-guards, it gets shield +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
@@ -13074,12 +13077,12 @@ global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 30
 global.CardCopies[CardStat] = 2
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 16033
@@ -13142,8 +13145,8 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/High Beast
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
@@ -13157,8 +13160,8 @@ AUTO: When this unit is placed by riding from "Fullbau" with a Ren icon, COST [r
 
 ACT [Soul/Drop]: COST [Counter Blast 1, and put this card that started the game in your ride deck into your ride deck face up], search your deck or drop for up to one "Blaster Dark" with a Ren icon, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -13169,9 +13172,9 @@ CardStat = 16038
 global.CardName[CardStat] = 'Blaster Dark    '
 global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Human
 
-AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COST [Counter Blast 1 or Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and if this unit was placed on VC, draw a card. You cannot ride units that do not have a Ren icon until end of this fight.
+AUTO: When this unit is placed on VC or RC, if your vanguard has a Ren icon, COST [Counter Blast 1 or Energy Blast 3], choose one of your opponent’s rear-guards, retire it, and if this unit was placed on VC, draw a card. You cannot ride units without a Ren icon until end of this fight.
 
-AUTO [RC]: When your grade 3 or greater vanguard with a Ren icon attacks, if your rear-guard has not stand this battle phase, COST [Soul Blast 1], and stand this unit. If you stand and two or more of either player’s unit was retired by your vanguard’s ability this turn, perform drive checks for the battle this unit attacked until end of turn.
+AUTO [RC]: When your grade 3 or greater vanguard with a Ren icon attacks, if your rear-guard has not stand this battle phase, COST [Soul Blast 1], and stand this unit. If you stand and two or more of any player’s unit were retired by your vanguard’s ability this turn, this unit performs drive checks for the battle this unit attacked until end of turn.
 
 AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if your vanguard has a Ren icon, this unit gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
@@ -13211,8 +13214,8 @@ AUTO: When this unit is placed on RC, you may draw a card. If you drew, choose a
 
 CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with a Ren icon, it may be regarded as retiring two rear-guards.'
 global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -13301,8 +13304,8 @@ CONT [RC]: If you have a vanguard with a Ren icon, this unit gets power +5000. T
 
 CONT [RC]: When this unit would be retired for the cost of the ability of your vanguard with a Ren icon, it may be regarded as retiring two rear-guards.'
 global.UnitGrade[CardStat] = 2
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
@@ -13317,8 +13320,8 @@ CONT: Sentinel. (You may only have up to four cards with "CONT: Sentinel" in a d
 
 AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
 global.UnitGrade[CardStat] = 1
-global.CardInClan[CardStat] = 1
 global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 0
@@ -13331,8 +13334,8 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Demon/Criti
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
-}
 global.TriggerUnit[CardStat] = 2
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
@@ -13344,8 +13347,8 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Angel/Criti
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
-}
 global.TriggerUnit[CardStat] = 2
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
@@ -13359,8 +13362,8 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/Angel/Heal 
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
-}
 global.TriggerUnit[CardStat] = 4
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 15000
 
@@ -13372,18 +13375,18 @@ global.CardText[CardStat] = 'Keter Sanctuary/Shadow Paladin/Ren Icon/High Beast/
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 3
 global.CardInClan[CardStat] = 1
-}
 global.TriggerUnit[CardStat] = 1
+}
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 16062
 {
-global.CardName[CardStat] = 'Reku Gaon'
+global.CardName[CardStat] = 'Reclgaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
-AUTO: When this unit is placed on RC, choose up to one <High Beast> normal unit without sentinel from your drop, and put it on the bottom of the deck or into soul.'
+AUTO: When this unit is placed on RC, choose up to one non-sentinel <High Beast> normal unit from your drop, and put it on the bottom of the deck or into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -13488,15 +13491,15 @@ AUTO: When this unit is placed on RC, if you have a vanguard with "Hound Raiser"
 CONT [RC]: If you have a grade 3 or greater vanguard with "Hound Raiser" in its card name, and you have a <High Beast> in the same column as this unit, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.EnableAttackFromBackRow[CardStat] = 1
 
 
 CardStat = 16334
 {
-global.CardName[CardStat] = 'Vargaon'
+global.CardName[CardStat] = 'Valrogaon'
 global.CardText[CardStat] = 'Keter Sanctuary/High Beast
 
 AUTO [RC]: When this unit attacks a vanguard, if you have a vanguard with "Hound Raiser" in its card name, this unit gets power +5000 until end of that battle. Then, if your opponent’s vanguard is grade 3 or greater, COST [Soul Blast 1], choose one of your units with "Hound Raiser" in its card name in the same column as this unit, and that unit and this unit get power +5000 until end of turn.
@@ -13958,3 +13961,21 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16931
+{
+global.CardName[CardStat] = 'Formulights Sign: Round Down'
+global.CardText[CardStat] = 'Keter Sanctuary/Normal Order
+
+This card can be played while ignoring the order limit if the order you played this turn is "Formulights Sign: Index".
+
+Play this if you have a vanguard with "Formulights" in its card name!
+
+Your opponent cannot intercept until end of turn. Choose one of your vanguards with "Formulights" in its card name, and until end of turn, when that unit would attack, it battles all of your opponent’s front row units.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0

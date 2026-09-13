@@ -10308,12 +10308,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15474
 {
-global.CardName[CardStat] = 'Encyclopedic Mage, Reduas'
+global.CardName[CardStat] = 'Great Ceremony Mage, Reduas'
 global.CardText[CardStat] = 'Dark States/Human
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Sacrifice Glass" in its card name, COST [Soul Blast 2], call this card to RC, and both this unit and your vanguard get power +5000 until end of turn.
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Sacrifice Glass" in its card name, COST [Soul Blast 2], call this card to RC, and your vanguard and this unit get power +5000 until end of turn.
 
-AUTO [RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name is palced, if your opponent’s vanguard is grade 3 or greater, COST [put a card from hand into soul], and increase or decrease your vanguard’s drive to 1 until end of turn. At the end of that turn, bind this unit.'
+AUTO [RC]: When your grade 3 or greater vanguard with "Grandogma" in its card name is placed, if your opponent’s vanguard is grade 3 or greater, COST [put a card from hand into soul], and your vanguard’s drive becomes 1 until end of turn. At the end of that turn, bind this unit.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -10703,7 +10703,7 @@ CardStat = 15829
 global.CardName[CardStat] = 'Festive Trapezist'
 global.CardText[CardStat] = 'Dark States/Warbeast
 
-ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and put it into soul. You cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn.
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose one of your opponent’s rear-guards, and put it into soul. You cannot pay the cost for ACT abilities of units with the same card name as this unit until end of turn.
 
 AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -10719,9 +10719,9 @@ CardStat = 15841
 global.CardName[CardStat] = 'Abyss Piercing Demonic Spearman, Criminatles'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, you have no face up damage zone cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If a card was bound from hand for this cost, draw a card.
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck into damage zone. If you bound a card from hand for this cost, draw a card.
 
-CONT [RC]: If your soul has five or more cards, this unit gets shield +5000.'
+CONT [GC]: If your soul has five or more cards, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10734,7 +10734,7 @@ CardStat = 15846
 global.CardName[CardStat] = 'Fiendish Misfortune Dragon, Miderotgd'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
-AUTO: When this unit is placed on RC from hand or deck, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+AUTO: When this unit is placed on RC from deck or hand, if you did not put a Persona Shield ticket into hand this turn, perform one of the following.
 • COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
 • If your vanguard has persona ride, put a Persona Shield ticket into hand.
 
@@ -10746,12 +10746,12 @@ AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15850
@@ -11084,18 +11084,18 @@ CardStat = 15902
 global.CardName[CardStat] = 'Demon World Marquis, Amon  '
 global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
 
-CONT [VC]: During your turn, this unit gets power +1000 for each card in your soul.
+CONT [VC]: During your turn, for each card in your soul, this unit gets power +1000.
 
-AUTO [VC]: When your unit with only «Dark Irregulars» for its clan is placed on RC, choose a card from your drop, and put it into soul.
+AUTO [VC]: When your rear-guard with only «Dark Irregulars» for its clan is placed, choose up to one card from your drop, and put it into soul.
 
 ACT [VC] 1/Turn: COST [Counter Blast 1], and perform all of the following according to the number of cards in your soul.
-• Ten or more - This unit gets drive +1.
+• Ten or more - This unit gets drive +1 until end of turn.
 • Fifteen or more - Your opponent chooses a card from their hand, and discards it.
-• Twenty or more - All of your front row rear-guards get power +1000 until end of turn for each card in your soul.'
+• Twenty or more - For each card in your soul, all of your front row rear-guards get power +1000 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
-global.PersonaRide[CardStat] = 1
 global.CardInClan[CardStat] = 11
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11127,7 +11127,7 @@ global.CardText[CardStat] = 'Dark States/Dark Irregulars/Demon
 CONT: This card cannot be ridden.
 CONT [VC/RC]: Restraint (This unit cannot attack)
 AUTO: When this unit is placed on RC, if you have a vanguard with only «Dark Irregulars» for its clan, and all of your other rear-guards have a different card name from this unit, draw a card.
-ACT [RC]: COST [Energy Blast 3], until end of this fight, this unit loses "Restraint", and gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Amon" in its card name attacks, if your opponent’s vanguard was grade 3 or greater at the beginning of this turn, and your rear-guard did not stand during this battle phase, COST [Counter Blast 1], and stand this unit.".
+ACT [RC]: COST [Energy Blast 3], until end of this fight, this unit loses "Restraint", and gets "AUTO [RC] 1/Turn: When your grade 3 or greater vanguard with "Amon" in its card name attacks, if your opponent’s vanguard is grade 3 or greater at the beginning of this turn, and your rear-guard did not stand during this battle phase, COST [Counter Blast 1], and stand this unit.".
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Amon" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
@@ -11144,11 +11144,11 @@ global.CardText[CardStat] = 'Dark States/Dark Irregulars/Vampire
 
 AUTO: When this unit is placed on RC, you may Soul Charge 1. If you have a grade 3 or greater vanguard with "Amon" in its card name, COST [Energy Blast 3], choose a card with grade less than or equal to your vanguard from your soul, and call it to RC.
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "Amon" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind a card with the same card name as this unit from soul or drop], choose one of your opponent’s non-token rear-guards, put it on VC as rest, and you cannot pay the cost for ACT abilities of cards with the same card name as this card until end of turn. If you put a card, at the end of that turn, your opponent chooses a card from their soul with the same card name as a card put into soul from their VC this turn, and ride it as rest while ignoring its abilities. (Placed abilities activate)'
+ACT [RC]: If you have a grade 3 or greater vanguard with "Amon" in its card name, and your opponent’s vanguard is grade 3 or greater, COST [bind a card with the same card name as this unit from soul or drop], choose one of your opponent’s rear-guards other than token units, put it on VC as rest, and you cannot activate the ACT abilities of a card with the same card name as this card until end of turn. If you put a card, at the end of that turn, your opponent chooses a card from their soul with the same card name as a card that was put from their VC into soul this turn, and ride it as rest while ignoring its abilities. ("When placed" abilities will activate)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
-global.PersonaRide[CardStat] = 1
 global.CardInClan[CardStat] = 11
+global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -11162,7 +11162,6 @@ global.CardText[CardStat] = 'Dark States/Blitz Order
 CONT: You may only have up to two "Mystery Creepy Artillery" in a deck.
 
 If your vanguard’s grade is less than your opponent’s vanguard’s grade, this ability can be played while ignoring grade.
-
 Remove this card, choose a unit being attacked, until end of that battle, it gets power +15000, and perform all of the following.
 • If you went second, and you did not put a Persona Shield ticket into hand by the ability of a card with the same card name as this card this fight, put a Persona Shield ticket into hand, and until end of turn, you can play an additional order, and cannot play orders other than Persona Shield tickets.
 • If your opponent persona rode this turn, choose a unit being attacked, and it gets power +5000 until end of that battle.
@@ -11173,12 +11172,12 @@ global.DCards[CardStat] = 2
 global.CardInClan[CardStat] = 30
 global.CardCopies[CardStat] = 2
 global.AnotherSide[CardStat] = 13708
-global.TokenSummoner[CardStat] = 13708
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 16027
@@ -11204,7 +11203,7 @@ CardStat = 16028
 global.CardName[CardStat] = 'Spike Wildmaster, Farnchit'
 global.CardText[CardStat] = 'Dark States/Elf
 
-AUTO: When this unit is placed on RC, if you have a "Masked Magician, Harri" crest, COST [Counter Blast 1 or put a card from hand to soul], and draw a card.
+AUTO: When this unit is placed on RC, if you have a "Masked Magician, Harri" crest, COST [Counter Blast 1 or put a card from hand into soul], and draw a card.
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Harri" in its card name, this unit gets "Boost".
 
@@ -11225,7 +11224,7 @@ global.CardText[CardStat] = 'Dark States/Pale Moon/Human
 
 Stride
 
-Magia - ACT [VC] 1/Turn: COST [Soul Blast up to two cards & turn a card with the same card name as this unit from G zone face up], choose up to the same number of unit cards according to the number of cards Soul Blast for this cost with different card names from your soul, call them to RC, they get power +5000, and perform all of the following.
+Magia - ACT [VC] 1/Turn: COST [Soul Blast up to two cards & turn a card with the same card name as this unit from G zone face up], choose up to the same number of unit cards as the number of cards Soul Blast for this cost with different card names from your soul, call them to RC, they get power +5000, and perform all of the following.
 • If your G zone has three or more face up cards, choose a unit called by this effect, and it gets power +10000 / critical +1 until end of turn.
 • At the end of that turn, put all units that were called by this ability into soul.'
 global.UnitGrade[CardStat] = 4
@@ -11239,7 +11238,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16051
 {
-global.CardName[CardStat] = 'Timely Arrival Colossus'
+global.CardName[CardStat] = 'Juncture Colossus'
 global.CardText[CardStat] = 'Dark States/Gear Colossus
 
 CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets "Intercept", and can intercept from the back row. Then, if your opponent’s drive check revealed a trigger unit this turn, this unit gets shield +5000.'
@@ -11255,7 +11254,7 @@ CardStat = 16052
 global.CardName[CardStat] = 'Ratchet Passage Dracokid'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
 
-AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and you have no front row rear-guards, this unit gets shield +5000 until end of that battle. If you have no back row rear-guards, it gets shield +10000 instead of +5000.'
+AUTO: When this unit intercepts, if your opponent’s vanguard is grade 3 or greater, and your front row has no rear-guards, this unit gets shield +5000 until end of that battle. If your back row has no rear-guards, it gets shield +15000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -11278,7 +11277,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16089
 {
-global.CardName[CardStat] = 'Steam Gunner, Pyuschti'
+global.CardName[CardStat] = 'Steam Gunner, Pyshuti'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
 AUTO [Soul]: When you play a normal order, COST [Energy Blast 2], and call this card to RC.'
@@ -11291,7 +11290,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16277
 {
-global.CardName[CardStat] = 'Mischievous Smile, Marcerie'
+global.CardName[CardStat] = 'Manipulative Smile, Maserie'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [RC/Soul]: When your grade 3 or greater vanguard with "Amon" in its card name is attacked, COST [Soul Blast 1 card other than this card & bind this card], and that unit gets power +10000 until end of that battle. You cannot activate AUTO abilities of cards with the same card name as this card until end of turn.
@@ -11306,7 +11305,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16278
 {
-global.CardName[CardStat] = 'Multidirectional Steerer'
+global.CardName[CardStat] = 'Multidirectional Starer'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [Soul]: When your grade 3 or greater vanguard with "Amon" in its card name is placed, if all of your rear-guards have different card names from this card, you may call this card to RC.
@@ -11338,7 +11337,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16423
 {
-global.CardName[CardStat] = 'Purgatory Thorn Retainer, Mercis'
+global.CardName[CardStat] = 'Purgatory Thorn Retainer, Mirmes'
 global.CardText[CardStat] = 'Dark States/Human
 
 CONT [VC]: When you would ride a grade 2 with "Purgatory" in its card name from the ride deck, you can ride with "Soul Blast 1" instead of "choose a card from hand, and discard it".
@@ -11366,14 +11365,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16425
 {
-global.CardName[CardStat] = 'Gunidal Haze Chimera'
+global.CardName[CardStat] = 'Gnidalheiz Chimera'
 global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Purgatory" in its card name, you may put this card into soul.
 
 ACT [Soul]: If you have a grade 3 vanguard with "Favrneel" in its card name, COST [bind this card], and perform one of the following.
 • Search your deck for up to one "Purgatory Great Dragon Emperor, Favrneel Rheingold", ride it as stand, and shuffle the deck.
-• If your vanguard is "Purgatory Great Dragon Emperor, Favrneel Rheingold", and you did not normal ride or persona ride this turn, activate persona ride, and you cannot activate persona ride with other card effects until end of turn.
+• If your vanguard is "Purgatory Great Dragon Emperor, Favrneel Rheingold", and you did not normal ride or persona ride this turn, activate persona ride, and until end of turn, you cannot activate persona ride with other card effects.
 
 (SHIFT + left click to activate persona ride)'
 global.UnitGrade[CardStat] = 2
@@ -11386,14 +11385,14 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16426
 {
-global.CardName[CardStat] = 'Life-stealing Demonic Spearman, Margaras'
+global.CardName[CardStat] = 'Fatale Demonic Spearman, Margars'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Favrneel" in its card name, this unit gets power +5000 until end of that battle.
 
 AUTO [RC]: At the end of the battle this unit attacked, if you have a vanguard with "Purgatory" in its card name, COST [put this unit into soul], and draw a card.
 
-AUTO [Soul]: When your grade 3 or greater vanguard with "Favrneel" in its card name is attacked, if the sum of the grades of «Dark States» cards in your soul is thirteen or more, COST [bind this card], choose one of your opponent’s rear-guards, and it gets power -10000 until end of that battle. You cannot bind cards with the same card name as this card until end of turn.'
+AUTO [Soul]: When your grade 3 or greater vanguard with "Favrneel" in its card name is attacked, if the sum of the grades of «Dark States» cards in your soul is thirteen or greater, COST [bind this card], choose one of your opponent’s rear-guards, and it gets power -10000 until end of that battle. You cannot bind cards with the same card name as this card until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -11404,12 +11403,12 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 16427
 {
-global.CardName[CardStat] = 'Eigisvelm Dragon'
+global.CardName[CardStat] = 'Aegisvelm Dragon'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon
 
 CONT: If you have a grade 3 or greater vanguard with "Favrneel" in its card name, this card gets all of the following.
-• ACT [Soul]: COST [Bind this card], choose a card with grade less than or equal to your vanguard from your drop, and call it to RC. You cannot activate the ACT ability of cards with the same card name as this card until end of turn.
-• AUTO [RC]: When this unit attacks, if the sum of the grades of «Dark States» cards in your soul is thirteen or more, the original power of your vanguard and this unit becomes 18000 until end of turn. Then, at the end of that battle, COST [put this unit into soul], choose one of your opponent’s rear-guards, retire it, and Counter Charge 1.'
+• ACT [Soul]: COST [Bind this card], choose a card with grade less than or equal to your vanguard from your drop, and call it to RC. You cannot activate the ACT ability of a card with the same card name as this card until end of turn.
+• AUTO [RC]: When this unit attacks, if the sum of the grades of «Dark States» cards in your soul is thirteen or greater, the original power of your vanguard and this unit becomes 18000 until end of turn. Then, at the end of that battle, COST [put this unit into soul], choose one of your opponent’s rear-guards, retire it, and Counter Charge 1.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -11837,6 +11836,215 @@ global.CardName[CardStat] = 'Gathering Arts Mage, Glowsary'
 global.CardText[CardStat] = 'Dark States/Human
 
 ACT [RC] 1/Turn: COST [Soul Blast 1 normal unit], choose a trigger unit from your soul, and call it to RC. At the end of that turn, put that called unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16926
+{
+global.CardName[CardStat] = 'Deformative Affirmer'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO [RC]: When this unit attacks, COST [Soul Blast 1], and this unit gets power +5000 until end of that battle. Then, if a card with the same card name as your vanguard was Soul Blast for this cost, COST [Soul Blast 1], and it gets power +15000 instead of +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16927
+{
+global.CardName[CardStat] = 'Barbed Carnager'
+global.CardText[CardStat] = 'Dark States/Demon
+
+AUTO: When this unit is put on GC, COST [Soul Blast up to two cards], and this unit gets shield +5000 until end of that battle for each card Soul Blast for this cost.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16932
+{
+global.CardName[CardStat] = 'Great Sin Rulebreaker, Seza'
+global.CardText[CardStat] = 'Dark States/Human
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16933
+{
+global.CardName[CardStat] = 'A Determined Swing, Seza'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO: When this unit is rode upon by a grade 2 [Prisoner] with "Seza" in its card name, if your soul has a "Great Sin Rulebreaker, Seza", put the card that was discarded while riding from the ride deck this turn from your drop into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16934
+{
+global.CardName[CardStat] = 'Hidden Intentions, Seza'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO: When this unit is rode upon by a grade 3 [Prisoner] with "Seza" in its card name, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to two [Prisoner] with different card names from your vanguard, unit cards with "Pasia" in its card name, or "Fragment of Utopia, Ima" in total from among them, reveal them, choose a card from the revealed cards, put it into hand, put the rest of the revealed cards into soul, and shuffle the deck. If you did not reveal a card, Energy Charge 3.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16935
+{
+global.CardName[CardStat] = 'Torrent of Great Sin, Seza'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+CONT [VC]: [Prisoner] cards put into soul by your card’s abilities are also regarded as cards put by Soul Charge .
+
+ACT [VC] 1/Turn: COST [Put a [Prisoner] rear-guard into soul], and draw two cards.
+
+AUTO [VC] :When this unit attacks, you may use this unit’s Sinastery.
+
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn.
+
+Sinastery - COST [Soul Blast 1], and this unit gets power +5000 until end of that battle. If a [Prisoner] with a different card name from this unit was Soul Blast for this cost, use that card’s Sinastery.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromVBuff[CardStat] = 5000
+
+
+CardStat = 16936
+{
+global.CardName[CardStat] = 'Encaro of Crushing Sin'
+global.CardText[CardStat] = 'Dark States/Demon
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO [RC]: When this unit attacks or boosts, if you have a [Prisoner] vanguard, you may use this unit’s Sinastery.
+
+ACT [Drop]: COST [Soul Blast 1], and put this card into soul. You cannot activate the ACT abilities of cards with the same card name as this card until end of turn.
+
+Sinastery - If your vanguard is grade 3 or greater, COST [Energy Blast 2], and this unit gets power +10000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 16937
+{
+global.CardName[CardStat] = 'Chentoro of Judgement Sin'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO: When this unit is placed on RC, if you have a [Prisoner] vanguard, you may use this unit’s Sinastery.
+
+CONT [GC]: If your vanguard is a [Prisoner], this unit gets shield +5000.
+
+Sinastery - Perform one of the following.
+• Energy Charge 2.
+• If your damage zone has no face up cards, and you did not Counter Charge this turn, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16938
+{
+global.CardName[CardStat] = 'Terigino of Scraping Void Sin'
+global.CardText[CardStat] = 'Dark States/Demon
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO [RC]: When this unit attacks, if you have a [Prisoner] vanguard, you may use this unit’s Sinastery.
+
+Sinastery - COST [Energy Blast 1], and your opponent cannot intercept until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16939
+{
+global.CardName[CardStat] = 'Mamen of Striking Whip Sin'
+global.CardText[CardStat] = 'Dark States/Human
+
+[Prisoner] (This card is a prisoner of Gehenasia)
+
+AUTO: When this is placed on RC, if you have a [Prisoner] vanguard, Soul Charge 1, COST [Counter Blast 1], and draw a card.
+
+AUTO [RC]: When this unit attacks, if you have a [Prisoner] vanguard, you may use this unit’s Sinastery. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+
+Sinastery - COST [Energy Blast 3], choose one of your opponent’s rear-guards, and retire it.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16940
+{
+global.CardName[CardStat] = 'Novice Jailer, Pasia'
+global.CardText[CardStat] = 'Dark States/Succubus
+
+AUTO: When this unit is placed on RC, if you have a [Prisoner] vanguard with "Seza" in its card name, perform one of the following.
+• COST [Counter Blast 1], draw a card, and Energy Charge 1.
+• If it is not the battle phase, COST [Soul Blast 2], choose a [Prisoner] from your drop, and call it to RC. At the end of that turn, put that called unit into soul.
+
+ACT [RC] 1/Turn: COST [Soul Blast 1], until end of turn, this unit gets power +5000, choose one of your opponent’s rear-guards, and it gets shield -5000.
+
+CONT [RC]: If you have a [Prisoner] vanguard with "Seza" in its card name, this unit cannot be retired by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16941
+{
+global.CardName[CardStat] = 'Fragment of Utopia, Ima'
+global.CardText[CardStat] = 'Dark States/Ghost
+
+ACT [Drop]: If you have a [Prisoner] vanguard with "Seza" in its card name, COST [bind two cards with "Seza" in their card names from drop], and call this card to RC.
+
+AUTO [RC]: When your grade 3 or greater [Prisoner] vanguard with "Seza" in its card name stand by that unit’s original card ability, COST [put this unit into soul], and that unit’s drive becomes 1 until end of turn.
+
+CONT [GC]: For each grade of your [Prisoner] vanguard with "Seza" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }

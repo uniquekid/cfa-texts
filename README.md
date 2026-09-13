@@ -429,7 +429,7 @@ Cards with this parametre stay revealed to the opponent while in the player's ha
 ### :page_facing_up::arrow_up_down: Extended text box
 
 ```
-global.ExtendedTextBox = 1
+global.ExtendedTextBox[CardStat] = 1
 ```
 
 Should only be used as last resort in situations when the text can absolutely not fit inside the normal text box even by removing extra line breaks.
