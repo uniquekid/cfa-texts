@@ -7897,7 +7897,7 @@ CardStat = 13614
 global.CardName[CardStat] = 'Participate Elf'
 global.CardText[CardStat] = 'Stoicheia/Elf
 
-ACT [RC] 1/Turn: COST [Energy Blast 3], until end of turn, this unit gets "Boost" and power +5000.'
+ACT [RC] 1/Turn: COST [Energy Blast 3], until end of turn, this unit gets "Boost", and power +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -12434,6 +12434,21 @@ global.CardName[CardStat] = 'Stroll Strawberry'
 global.CardText[CardStat] = 'Stoicheia/Dryad
 
 AUTO: When this unit is placed on RC, look at the top five cards of your deck, choose up to one <Dryad> with a different card name from all of your rear-guards, reveal it and put it into hand, and shuffle the deck. If you revealed a card, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 4
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16943
+{
+global.CardName[CardStat] = 'Plush Unrouser'
+global.CardText[CardStat] = 'Stoicheia/High Beast
+
+AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one order card from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul.
+
+AUTO [RC]: When your vanguard is attacked, if you have two or more order cards in your drop and bind zone in total, COST [retire this unit], and that unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }

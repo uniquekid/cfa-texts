@@ -5815,7 +5815,7 @@ AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], ret
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Unparalleled Drekasleif, Varga Dragres "Rakshasa"' //Activate persona when rode upon
+global.PersonaRideCardName[CardStat] = 'Varga'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -7450,7 +7450,7 @@ AUTO [VC] 1/Turn: When this unit in the [Malwyrm] state attacks a vanguard, reti
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.ForbidCrossPersonaRideUpon[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Varga'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -13133,6 +13133,105 @@ global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 AUTO [Drop]: When your opponent’s unit is retired from RC by your card’s ability during your turn, COST [Soul Blast 1 & bind this card], choose one of your opponent’s rear-guards in the same column as that retired unit, and retire it. You cannot bind cards with the same card name as this card from drop until end of turn.
 
 CONT [RC/GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000, and if your opponent’s drop has eight or more cards, it also gets power +5000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16945
+{
+global.CardName[CardStat] = 'Blazembar Dragon, "Touen"'
+global.CardText[CardStat] = 'Dragon Empire/Flame Dragon
+
+AUTO: When this unit is rode upon by "Boulder Axe Dragon, "Fugen"", call this card to RC, and Soul Charge 1 .
+
+CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Varga" in its card name, this unit gets power +2000.
+
+AUTO: When this unit is retired from RC by the ability of your vanguard with "Varga" in its card name, COST [Soul Blast 1], and put this card into hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16946
+{
+global.CardName[CardStat] = 'Boulder Axe Dragon, "Fugen"'
+global.CardText[CardStat] = 'Dragon Empire/Earth Dragon
+
+AUTO: When this unit is rode upon by a grade 3 with "Varga" in its card name, call this card to RC, choose one of your vanguard’s original AUTO abilities, and reduce its next Counter Blast cost you pay by 1 until end of turn.
+
+AUTO [RC]: When this unit attacks a vanguard, if you have a grade 3 or greater vanguard with "Varga" in its card name, this unit gets power +5000 until end of that battle, at the end of that battle, retire this unit, and draw a card. (This effect is mandatory)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 16947
+{
+global.CardName[CardStat] = 'Unparalleled Rakshasa Dragon, Varga Dragres "Heavenwake"'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+CONT: The normal ride from this card by, or by this card on, a grade 3 card with "Varga" in its different card name also becomes a persona ride.
+ACT [VC] 1/Turn: COST [Bind a card with "Varga" in its card name from hand or soul], choose up to two non-sentinel cards from your drop with different grades and total grade less than or equal to the number of cards in your damage zone, and call them to RC.
+AUTO [VC] 1/Turn: When this unit attacks a vanguard, COST [Counter Blast 1], retire all front row rear-guards, and this unit gets power +10000 until end of turn.At the end of that battle , stand this unit, until end of turn, it gets power +5000 / drive -2, if your opponent’s vanguard is grade 3 or greater, all of your front row rear-guards get power +5000 until end of turn.
+[Divine Skill] - AUTO [VC]: At the end of the battle this unit attacked a grade 3 or greater unit, if this unit attacked two or more times this turn, and your or your opponent’s damage zone has four or more cards, or you persona rode this turn, COST [Counter Blast 1], stand this unit, and its drive becomes 2 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Varga'
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16948
+{
+global.CardName[CardStat] = 'Dragritter, Nabilla'
+global.CardText[CardStat] = 'Dragon Empire/Dragoroid
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Varga" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. You cannot bind cards with the same card name as this card from drop until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16949
+{
+global.CardName[CardStat] = 'Aero Halberd Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
+
+AUTO: When this unit is placed on RC from drop, COST [Energy Blast 3], choose one of your opponent’s back row rear-guards, and retire it.
+
+AUTO [Back Row RC] 1/Turn: When any player’s unit is retired from a front row (RC) in the same column as this unit during your turn, you may stand this unit. If you stand it, at the end of that turn, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16950
+{
+global.CardName[CardStat] = 'Dragritter of Ashen Flower, Shuura'
+global.CardText[CardStat] = 'Dragon Empire/Human
+
+AUTO: When this card is discarded from hand during your turn, choose a grade 3 with "Varga" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Varga" in its card name, COST [Soul Blast 1 or Energy Blast 3], and draw a card.
+
+CONT [RC]: If you have a grade 3 or greater vanguard with "Varga" in its card name, this unit gets power +5000. (Active on opponent’s turn too)
+
+AUTO: When this unit is retired from RC by the ability of your grade 3 or greater vanguard with "Varga" in its card name, if your opponent’s vanguard is grade 3 or greater, and all of your rear-guards have different card names from this card, COST [Counter Blast 1 or Energy Blast 3], call this card to RC, and it gets power +10000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 }
