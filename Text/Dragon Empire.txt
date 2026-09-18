@@ -13214,7 +13214,7 @@ global.CardText[CardStat] = 'Dragon Empire/Wind Dragon
 
 AUTO: When this unit is placed on RC from drop, COST [Energy Blast 3], choose one of your opponent’s back row rear-guards, and retire it.
 
-AUTO [Back Row RC] 1/Turn: When any player’s unit is retired from a front row (RC) in the same column as this unit during your turn, you may stand this unit. If you stand it, at the end of that turn, put this unit into soul.'
+AUTO [Back Row RC] 1/Turn: When any player’s unit is retired from a front row RC in the same column as this unit during your turn, you may stand this unit. If you stand it, at the end of that turn, put this unit into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 1
 }
@@ -13251,4 +13251,61 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16966
+{
+global.CardName[CardStat] = 'Moonflower Stealth Fiend, Lurubell'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast/Fantome
+
+AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
+
+AUTO [RC] 1/Turn: When this unit boosts, if your opponent’s vanguard is grade 3 or greater, COST [put a unit card with "Moonflower" in its card name from drop on the bottom of the deck], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16967
+{
+global.CardName[CardStat] = 'Moonflower Stealth Fiend, Mifa'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast/Fantome
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [put up to two unit card swith "Moonflower" in their card names from drop on the bottom of the deck in any order], and this unit gets power +5000 until end of that battle for each card put on the bottom of the deck for this cost.
+
+CONT [RC]: If you have a vanguard with "Moonflower" in its card name, this unit gets shield +10000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 1
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 16968
+{
+global.CardName[CardStat] = 'Moonflower Stealth Fiend, Revolett'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast/Fantome
+
+AUTO: When this unit is put on GC by the ability of your vanguard, COST [discard a card from hand], and this unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 16969
+{
+global.CardName[CardStat] = 'Moonflower Stealth Fiend, Kegejyorou'
+global.CardText[CardStat] = 'Dragon Empire/Warbeast/Fantome
+
+AUTO: When this unit is put into soul from RC by the ability of your vanguard, COST [Energy Blast 2], choose a unit card with "Moonflower" in its card name from your drop, and put it into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
