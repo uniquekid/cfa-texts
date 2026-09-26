@@ -1,35 +1,26 @@
 n = x
 
-global.AllCard = 16992
+global.AllCard = 17058
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
-- Public Zone Trigger Tracker (toggle in settings)
-- Unlimited Deck Building Size in Deck Editor (toggle in settings)
-- Load default cardback in place of missing sprites to avoid crashing
-- Player Status button added. Set a status for the type of game you are looking for, hover over players to view their conditions on the top of the screen.
-- Deck Building and Solo Testing overworld player status
-- Special Move & G-Zone Separation
-- Scrollable Q logs
-- Crest auto-increase base power for *most* relevant cards
-- Default bind from hand face down, default bind otherwise face up
-- Added a Dragon Race tag-filter for Youthberk Fantome when Deckbuilding
-- XceedNet + Kinzo Gold Marker added
-- Pop-up button to apply power to RC continuously for turn
-- Bind Zone Zeroth Counter
-- Shift + Click cards in G Zone to reveal or activate abilities
-- Fix rear-guard RC mirroring
-- In Test Room, Player End Phase sets opponent to Battle Phase to auto-perform damage checks
-- Rainbow power visual for OT
-- Automate Death Tallica skill
-- Hover on Cardtext box to make it pop-up over hand cards
-- Right click in deck to mill
-+ Other miscellaneous improvements
+- Swap button for units on RC. Will exchange positions in the same column. It will replace the "To G Zone" button when applicable. You may also drag an already selected unit over an occupied RC. Will not work if both the selected and occupying unit have originalDress under them
+- Infinity Lense marker added
+- Opponent damage and GC cards can now be highlighted
+- Deck Editor alternating animation for dual world Buddyfight cards and cards with both the "Banned" and "Restricted" tags
+- New intro screen
+- Removed default player status, and instead only shows up if directly set (the default one, if set, will still show when hovering over players)
+
 BUG FIXES:
-- Cards that move drop to originalDress automatically no longer create duplicates
-- Hovering over deck editor cards behind the decklist or dropdown menu no longer displays them
-- Fixed opponent bind zone / prison cards not flip
-- Fixed slowdown for resting units with large originalDress stack'
+- Fixed gradual lag build-up on the overworld map
+- Searching "Reverse", "Re-birth" and "Flamme" will now bring up deck editor results that include special name characters
+- Fixed prevous fight chat logs appearing in new fight chat
+- Adding 1 power to units no longer creates decimal power value
+- Fixed off-by-one G Zone preview
+- Legion button now selectable for units in drop
+- Fixed opponent gauges being applied to the wrong RC
+- Adjusted legion pair rested positions
+- Custom player status, if set, now automatically applies on login instead of needing to be set'
 
 global.VolundKeyword = "Volundr"
 global.XoverDressKeyword = "X-overDress"
