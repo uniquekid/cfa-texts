@@ -14235,9 +14235,18 @@ CardStat = 17063
 global.CardName[CardStat] = 'Knight of True Courage, Ascensior'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel
 
-AUTO: When this unit is rode upon by a grade 3, if that unit’s original name is "Fated One of Miracles, Rezael", put a Moon Gate token in your order zone.'
+AUTO: When this unit is rode upon by a grade 3, if that unit’s original name is "Fated One of Miracles, Rezael", put a Moon Gate token in your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
+global.AnotherSide[CardStat] = 17065
+global.TokenSummoner[CardStat] = 17065
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSummonerRodeUponNumber[CardStat] = 12537
+global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -14255,9 +14264,6 @@ CONT [VC]: During your turn, all of your units get power +5000, and if your soul
 AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose up to two grade 2 or greater cards with different card names from your drop, and call them to RC. Then, COST [discard a card with the same card name as this unit or with "Mythisch" in its card name from hand], choose a grade 3 or less card from your drop, call it to RC, and all of the units called by this effect get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 3
-global.TokenSummoner[CardStat] = 17065
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -14311,3 +14317,4 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
