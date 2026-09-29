@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 17058
+global.AllCard = 17068
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -2414,6 +2414,24 @@ CONT: During your turn, the unit with this card as its persona gauge gets power 
 
 [Skill] Megidolaon - COST [Energy Blast 3], this unit gets power +10000 / critical +1 until end of that battle.'
 global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 17065
+{
+global.CardName[CardStat] = 'Moon Gate '
+global.CardText[CardStat] = 'Token Set Order
+
+CONT [Order Zone]: You can only ride "Miracles of the Moon, Rezael Veritas".
+
+ACT [Order Zone] 1/Turn: COST [Soul Blast 2 or Energy Blast 3], search your deck for up to one card with "Mythisch" in its card name, call it to RC, and shuffle the deck.
+
+CONT [Order Zone]: During your turn, all rear-guards with "Mythisch" in their card names placed by your card’s ability this turn get power +5000.'
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
 }
 global.PowerStat[CardStat] = 0
