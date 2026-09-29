@@ -357,7 +357,7 @@ CardStat = 17049
 global.CardName[CardStat] = 'Necronomicon'
 global.CardText[CardStat] = 'Persona Series/Persona/Trigger Order/Heal Trigger
 
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if the attacking unit’s critical is 2 or greater, and its critical is increased by a non-trigger effect ability or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.".'
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if you have a <P5> vanguard, and the attacking unit’s critical is 2 or greater, and its critical is increased by a non-trigger effect ability or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 19
 global.TriggerUnit[CardStat] = 4
@@ -371,7 +371,7 @@ CardStat = 17050
 global.CardName[CardStat] = 'Al Azif'
 global.CardText[CardStat] = 'Persona Series/Persona/Trigger Order/Heal Trigger
 
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle.".'
+CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if you have a <P5> vanguard, and your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle.".'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 19
 global.TriggerUnit[CardStat] = 4
@@ -464,7 +464,7 @@ AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagon
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Death" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
 • Two or more - CONT [RC]: This unit gets shield +5000.
-• Three or more - AUTO [RC]: The cost of this unit’s AUTO ability is lost.
+• Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
@@ -545,4 +545,71 @@ global.DCards[CardStat] = 19
 global.CardCopies[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17059
+{
+global.CardName[CardStat] = 'Guardian of Freeloaders, Sojiro Sakura'
+global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
+
+Arcana: V Hierophant
+AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1 .
+CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hierophant" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]:This unit gets shield +5000.
+• Three or more - AUTO [RC]: When you Energy Charge 1 by this unit’s AUTO ability, choose a card from your drop, and put it into soul.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17003
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17060
+{
+global.CardName[CardStat] = 'Defective Weapon Provisioner, Munehisa Iwai'
+global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
+
+Arcana: XII Hanged Man
+AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn,  COST [Soul Blast 1], choose one of your <Phantom Thieves of Hearts> units, and it gets power +10000 until end of turn.
+CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hanged Man" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]:This unit gets shield +5000.
+• Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17010
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17061
+{
+global.CardName[CardStat] = 'Interrogation Room’s Female Prosecutor, Sae Niijima'
+global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
+
+Arcana: XX Judgement
+AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn,  COST [Counter Blast 1], search your deck for up to one card with "Goro Akechi" in its card name, reveal it and put it into hand, and shuffle the deck.
+CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Judgement" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]:This unit gets shield +5000.
+• Three or more - CONT [RC]: When you would pay the cost for this unit’s AUTO ability, you may search for a <P5> unit card with "Protagonist" in its card name instead of a card with "Goro Akechi" in its card name.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17018
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000

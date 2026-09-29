@@ -14216,3 +14216,105 @@ global.DCards[CardStat] = 3
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
+
+CardStat = 17062
+{
+global.CardName[CardStat] = 'Patrol of Truths, Venesta'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon by "Knight of True Courage, Ascensior", look at the top seven cards of your deck, choose up to one card with "Rezael" or "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, you may call this card to RC. If you called a card, Soul Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17063
+{
+global.CardName[CardStat] = 'Knight of True Courage, Ascensior'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is rode upon by a grade 3, if that unit’s original name is "Fated One of Miracles, Rezael", put a Moon Gate token in your order zone.
+
+(You will be prompted to get the token upon ride.)
+
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+global.AnotherSide[CardStat] = 17065
+global.TokenSummoner[CardStat] = 17065
+global.TokenSummonerPosition[CardStat] = 'RodeUpon'
+global.TokenSummonerRodeUponNumber[CardStat] = 12537
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17064
+{
+global.CardName[CardStat] = 'Miracles of the Moon, Rezael Veritas'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+CONT: This card can only ride from a card with "Rezael" in its card name.
+
+CONT [VC]: During your turn, all of your units get power +5000, and if your soul or drop has a "Fated One of Miracles, Rezael", this unit gets all of its <Divine Skill>.
+
+AUTO [VC] 1/Turn: When this unit attacks, COST [Counter Blast 1], choose up to two grade 2 or greater cards with different card names from your drop, and call them to RC. Then, COST [discard a card with the same card name as this unit or with "Mythisch" in its card name from hand], choose a grade 3 or less card from your drop, call it to RC, and all of the units called by this effect get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17066
+{
+global.CardName[CardStat] = 'Patrol of Forefront, Thredda'
+global.CardText[CardStat] = 'Keter Sanctuary/Human
+
+AUTO: When this unit is put on GC, choose a grade 3 with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, until end of that battle, this unit gets shield +5000, and when this unit would be retired from GC, put it into soul instead.
+
+CONT [Soul]: When this card would be Soul Blast for the cost of the ability of your "Moon Gate", you may Soul Blast it as two cards.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17067
+{
+global.CardName[CardStat] = 'Flower Rain Angel'
+global.CardText[CardStat] = 'Keter Sanctuary/Angel
+
+AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Rezael" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Rezael" in its card name, COST [Counter Blast 1], and perform one of the following.
+• Draw a card.
+• If its not the battle phase, and your order zone has Moon Gate, choose a grade 2 or greater card from your drop, and call it to RC.
+
+CONT [RC]: If your order zone has Moon Gate, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17068
+{
+global.CardName[CardStat] = 'Mythisch of Twin Skies, Freyvuls'
+global.CardText[CardStat] = 'Keter Sanctuary/Mythisch
+
+CONT [RC/GC]: This unit gets shield +10000, and if your order zone has Moon Gate, it also gets "Intercept".
+
+CONT: If your order zone has Moon Gate, this card gets all of the following.
+• AUTO [RC]: When this unit attacks, if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.
+• AUTO [Front Row RC] 1/Turn: At the end of the battle "Miracles of the Moon, Rezael Veritas" on your VC attacked, if this unit was placed by your vanguard’s ability this turn, and your vanguard did not stand during this battle phase, COST [rest this unit and put two cards with "Mythisch" in their card names from drop on the bottom of the deck in any order], stand your vanguard, and until end of turn, that unit gets drive -3, and increase its power  by this unit’s power.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 3
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
