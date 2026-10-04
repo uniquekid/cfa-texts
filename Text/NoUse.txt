@@ -1,6 +1,6 @@
 n = x
 
-global.AllCard = 17073
+global.AllCard = 17082
 
 global.Versia = 408
 global.GameUpdateText = 'NEW FEATURES:
@@ -2431,6 +2431,26 @@ CONT [Order Zone]: You can only ride "Miracles of the Moon, Rezael Veritas".
 ACT [Order Zone] 1/Turn: COST [Soul Blast 2 or Energy Blast 3], search your deck for up to one card with "Mythisch" in its card name, call it to RC, and shuffle the deck.
 
 CONT [Order Zone]: During your turn, all rear-guards with "Mythisch" in their card names placed by your card’s ability this turn get power +5000.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 8
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+global.RemoveFromDrop[CardStat] = 1
+
+
+CardStat = 17078
+{
+global.CardName[CardStat] = 'Erosion Fantome Cage'
+global.CardText[CardStat] = 'Token Set Order
+
+CONT [Order Zone]: You cannot ride grade 3 or greater cards other than "Great Magick Caster of the Crimson Moon, Zerith "Mirazh"".
+
+CONT [Order Zone]: All of your <Fantome> normal units other than "Great Magick Caster of the Crimson Moon, Zerith "Mirazh"" get "Intercept" and "Boost", and can intercept from the back row.
+
+CONT [Order Zone]: All of your grade 3 or greater <Fantome> with "Fantome" in their card names get shield +10000.
+
+CONT [Order Zone]: All of the grade 3 units with "Fantome" in their card names on RC with your Fantome markers cannot be affected by your opponent’s cards, and get power +5000.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 8
 }
