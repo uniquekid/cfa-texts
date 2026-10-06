@@ -10277,7 +10277,7 @@ CardStat = 15304
 global.CardName[CardStat] = 'Luminant Breach Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon
 
-AUTO [RC]: The cost for this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: The Energy Blast you pay for this cost is reduced by 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -10317,7 +10317,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15348
 {
-global.CardName[CardStat] = 'An Bilterville'
+global.CardName[CardStat] = 'Un Bealtabel'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
@@ -10330,12 +10330,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15372
 {
-global.CardName[CardStat] = 'Hute Rystique'
+global.CardName[CardStat] = 'Feuto Ristic'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
 AUTO [Gauge Zone]: When your grade 3 or greater vanguard with "Impauldio" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, and this card is an AutoMOD gauge, you may call this card to RC. If you called a card, choose a card from your drop, and put it face up as your AutoMOD gauge.
 
-AUTO [RC]: When this unit attacks, if you have three or more AutoMOD gauges, this unit gets power +5000 until end of that battle. If there are five or more, it gets power +10000 instead of +5000.'
+AUTO [RC]: When this unit attacks, if you have three or more AutoMOD gauges, this unit gets power +5000 until end of that battle. If you hav five or more AutoMOD gauges, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10345,7 +10345,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15373
 {
-global.CardName[CardStat] = 'Aurora Battle Princess, Picot Cadnim'
+global.CardName[CardStat] = 'Aurora Battle Princess, Picott Cadnim'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
 AUTO: When this card is discarded from hand during your turn, you may put this card into soul.
@@ -10363,7 +10363,7 @@ CardStat = 15374
 global.CardName[CardStat] = 'Aurora Battle Princess, Shocking Capucine'
 global.CardText[CardStat] = 'Brandt Gate/Human
 
-AUTO [RC]: When this unit attacks, COST [Energy Blast 2], choose one of your opponent’s cards imprisoned in your Prison, put it into drop, and increase this unit’s power by the original power of the card put into drop by this effect.'
+AUTO [RC]: When this unit attacks, COST [Energy Blast 2], choose one of your opponent’s cards imprisoned in your Prison, put it into drop, and increase this unit’s power by the original power of the card put into drop by this effect until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
@@ -10390,7 +10390,7 @@ CardStat = 15376
 global.CardName[CardStat] = 'Regrain Security, Rancor Chain'
 global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
 
-AUTO: When this unit is placed by riding from a grade 0, COST [reveal a grade 3 card with "Zorga" in its card name from ride deck], and put a Regrain Biocreation Research Lab token into order zone.
+AUTO: When this unit is placed by riding from a grade 0 unit, COST [reveal a grade 3 card with "Zorga" in its card name from ride deck], and put a Regrain Biocreation Research Lab token in order zone.
 
 (You will be prompted to get the token upon ride.)
 
@@ -10398,12 +10398,12 @@ AUTO: When this unit is placed by riding from a grade 0, COST [reveal a grade 3 
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 global.AnotherSide[CardStat] = 15379
-global.TokenSummoner[CardStat] = 15379
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 15379
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15377
@@ -10411,7 +10411,7 @@ CardStat = 15377
 global.CardName[CardStat] = 'Regrain Creature, Black Tears Husk Dragon'
 global.CardText[CardStat] = 'Brandt Gate/Space Dragon/Fantome
 
-AUTO: When this unit is rode upon by a grade 3 card with "Zorga" in its card name, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to two cards without Sentinel from among them, choose one of the revealed cards, put it into hand, discard the rest of the revealed cards, and if you did not discard a card, search your deck for up to one Crimson Moon card, and discard it. Shuffle the deck.'
+AUTO: When this unit is rode upon by a grade 3 card with "Zorga" in its card name, COST [Energy Blast 3], look at the top seven cards of your deck, choose up to two non-sentinel cards from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and if you did not discard a card, search your deck for up to one Crimson Moon card, and discard it. Shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10424,7 +10424,7 @@ CardStat = 15378
 global.CardName[CardStat] = 'Savant of Taboo, Zorga "Fantome"'
 global.CardText[CardStat] = 'Brandt Gate/Human/Fantome
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and choose any number of your <Genomegel> rear-guards with different card names. If you chose two or more, choose a Demonic Beast Alchemix Body, Ubermensch token on your RC, and Alchemix all of the <Genomegel> chosen by this effect. If your bind zone has one or more Crimson Moon cards, until end of turn, that Demonic Beast Alchemix Body, Ubermensch token and this unit get power +5000, and if it has three or more Crimson Moon cards, they get power +10000 instead of +5000. (Stack the <Genomegel> under the token)
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1], and choose any number of your <Genomegel> rear-guards with different card names. If you chose two or more, choose a Demonic Beast Alchemix Body, Ubermensch token on your RC, and Alchemix all of the <Genomegel> chosen by this effect. If your bind zone has one or more Crimson Moon cards, until end of turn, that Demonic Beast Alchemix Body, Ubermensch token and this unit get power +5000, and if it has three or more Crimson Moon cards, they get power +10000 instead of +5000. (Stack all of the <Genomegel> under the token)
 [Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul or drop], choose up to the same number of <Genomegel> from your drop as the number of Crimson Moon cards in your bind zone, and call them to RC.
 
 (Use the Overdress button to Alchemix)'
@@ -10443,7 +10443,7 @@ global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 ACT [Drop]: If your RC has a Demonic Beast Alchemix Body, Ubermensch token and you do not have a rear-guard with the same card name as this card, COST [Energy Blast 3], call this card to RC, and this unit gets power +5000 until end of turn.
 
-AUTO: When this card is Alchemixed, choose one of the Demonic Beast Alchemix Body, Ubermensch tokens this card is Alchemixed to, and it gets power +10000 until end of turn.
+AUTO: When this card is Alchemix, choose a Demonic Beast Alchemix Body, Ubermensch token Alchemix with this card, and it gets power +10000 until end of turn.
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
@@ -10461,7 +10461,7 @@ global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
 AUTO [Drop]: When your Demonic Beast Alchemix Body, Ubermensch token is placed on RC, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called by this effects, if you have a grade 3 or greater vanguard with "Zorga" in its card name, this unit gets power +5000 until end of turn.
 
-AUTO: When this card is Alchemixed, choose one of the Demonic Beast Alchemix Body, Ubermensch tokens this card is Alchemixed to, and it gets critical +1 until end of turn.
+AUTO: When this card is Alchemix, choose a Demonic Beast Alchemix Body, Ubermensch token this card is Alchemix with, and it gets critical +1 until end of turn.
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
@@ -10477,9 +10477,9 @@ CardStat = 15383
 global.CardName[CardStat] = 'Creation Demonic Beast, Shadoweater Running Dog'
 global.CardText[CardStat] = 'Brandt Gate/Genomegel/Fantome
 
-AUTO: When this unit is placed on RC from hand, if your order zone has a "Regrain Biocreation Research Lab" token, COST [Soul Blast 1], search your deck for up to one normal unit, discard it, and shuffle the deck.
+AUTO: When this unit is placed on RC from hand, if your order zone has a "Regrain Biocreation Research Lab" , COST [Soul Blast 1], search your deck for up to one normal unit, discard it, and shuffle the deck.
 
-AUTO: When this card is Alchemixed, draw a card, COST [Counter Blast 1], and draw a card.
+AUTO: When this card is Alchemix, draw a card, COST [Counter Blast 1], and draw a card.
 
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 1
@@ -10507,10 +10507,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15385
 {
-global.CardName[CardStat] = 'Regrain Security, Grudge Breaking'
+global.CardName[CardStat] = 'Regrain Security, Security Break'
 global.CardText[CardStat] = 'Brandt Gate/Alien/Fantome
 
-CONT [GC]: If your order zone has a "Regrain Biocreation Research Lab" token, this unit gets shield +5000. If your bind zone has a Crimson Moon card, shield +10000 instead of +5000.'
+CONT [GC]: If your order zone has a "Regrain Biocreation Research Lab", this unit gets shield +5000. If your bind zone has a Crimson Moon card, shield +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
 }
@@ -10520,12 +10520,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15386
 {
-global.CardName[CardStat] = 'Regrain Researcher, Vortex Prober'
+global.CardName[CardStat] = 'Regrain Researcher, Eddy Probe'
 global.CardText[CardStat] = 'Brandt Gate/Elf/Fantome
 
-ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab" token, and you did not put a card into your order zone this turn, COST [put this card into order zone], and draw a card.
+ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab", and you did not put a card into your order zone this turn, COST [put this card into order zone], and draw a card.
 
-ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Zorga" in its card name and you did not bind a card with the same card name as this card this turn, COST [bind this card], choose up to the same number of your units as the number of Crimson Moon cards in your bind zone, and they get power +5000 until end of turn.'
+ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Zorga" in its card name and your card with the same card name as this card was not bound this turn, COST [bind this card], choose up to the same number of your units as the number of Crimson Moon cards in your bind zone, and they get power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 }
@@ -10538,8 +10538,8 @@ CardStat = 15387
 global.CardName[CardStat] = 'Regrain Researcher, Hendrina'
 global.CardText[CardStat] = 'Brandt Gate/Elf/Fantome
 
-ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab" token, and you did not put a card into your order zone this turn, COST [put this card into order zone], and draw a card.
-AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Zorga" in its card name, this unit gets power +5000 until end of that battle. COST [Soul Blast 1], look at the top three cards of your deck, choose a card from among them, discard it, shuffle the deck, and this unit gets an additional power +2000 until end of that battle.
+ACT [Hand]: If your order zone does not have a card with the same card name as this card, has a "Regrain Biocreation Research Lab", and you did not put a card into your order zone this turn, COST [put this card into order zone], and draw a card.
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Zorga" in its card name, this unit gets power +5000 until end of that battle. COST [Soul Blast 1], look at the top three cards of your deck, choose a card from among them, discard it, shuffle the deck, and it also gets power +2000.
 ACT [Order Zone] 1/Turn: If you have a grade 3 or greater vanguard with "Zorga" in its card name, if your bind zone has two or more Crimson Moon cards, COST [discard a card from hand], and your vanguards gets "Triple Drive" until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 5
