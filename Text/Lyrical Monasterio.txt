@@ -13811,3 +13811,155 @@ global.DCards[CardStat] = 6
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17118
+{
+global.CardName[CardStat] = 'Morning Lavender, Ursule'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17119
+{
+global.CardName[CardStat] = 'Leaping Navy, Tiphaine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is rode upon by a card named "Pulsing Aqua, Musette", look at the top five cards of your deck, choose up to one non-sentinel grade 2 or less normal unit from among them, reveal it and put it into hand, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17120
+{
+global.CardName[CardStat] = 'Pulsing Aqua, Musette'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is rode upon by a grade 3 card with "Krysrain" in its card name, draw a card. You may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17121
+{
+global.CardName[CardStat] = 'Kaleidoscope Principal, Krysrain'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+CONT [VC]: If there is a card named "Kaleidoscope Principal, Krysrain" or "Ornate Silver, Faustine" in your soul, this unit gets power +5000. (Active on opponent’s turn too)
+
+ACT [VC] 1/Turn: COST [Soul Blast 1], choose a non-sentinel normal unit with the same race as the card Soul Blast for this cost from your drop, and call it to a back row center RC.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose any number of your units, and perform one of the following. If you chose four units, and all of the chosen units have different card names, perform two instead of one, and if you chose five or more units, and all of the chosen units have different card names, perform all instead of one.
+• Choose one of your rear-guards, and it gets power +10000 until end of turn.
+• Choose one of your rear-guards, and it gets "CONT [Back Row Center RC]: This unit can attack from the back row." until end of turn, and if your opponent’s vanguard is grade 3 or greater, it also power +10000 until end of turn.
+• Choose one of your rear-guards, and it gets "AUTO [RC]: At the end of your turn, you may return this unit to your hand." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17122
+{
+global.CardName[CardStat] = 'Coquettish Violet, Armie'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this card is discarded from hand during your ride phase, if you have a <Mermaid> vanguard, you may call this card to RC as rest. If you have a grade 3 or greater vanguard with "Krysrain" in its card name, when you would call, you may call as stand instead of rest.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17123
+{
+global.CardName[CardStat] = 'Classy Terracota, Yuaritt'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit attacks, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, COST [discard a card from hand], perform one of the following, and this unit gets power +5000 until end of turn.
+• Draw a card.
+• Choose one of your rear-guards, and it gets "AUTO [RC]: At the end of your turn, you may return this unit to your hand." until end of turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17124
+{
+global.CardName[CardStat] = 'Proud Indigo, Sunsail'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC] 1/Turn: When this unit’s power is increased by the ACT ability of your grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets "CONT [Back Row Center RC]: During the battle this unit attacked, your opponent cannot intercept and this unit gets power +5000." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17125
+{
+global.CardName[CardStat] = 'Kelvic Jade, Angelle'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO [RC]: When this unit attacks or boosts, choose a grade 3 with "Krysrain" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Krysrain" in its card name, choose any number of your units. If you chose at four or more, and all of the chosen units have different card names, at the end of that turn, COST [put this unit into soul], choose up to one of your rear-guards, and return it to your hand.
+
+AUTO [Drop]: When your grade 3 or greater vanguard with "Krysrain" in its card name is attacked, COST [bind this card], and that unit gets power +10000 until end of battle. You cannot bind cards with the same card name as this card from your drop until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17126
+{
+global.CardName[CardStat] = 'Sunny Strawberry, Ecruise'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+AUTO: When this unit is placed on RC, choose a grade 3 with "Krysrain" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Krysrain" in its card name, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one non-sentinel unit card with grade less than or equal to your vanguard from among them, call it to RC, and shuffle the deck. If you did not call a card, Counter Charge 1 .
+
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you have a grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets power +10000 until end of battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 17127
+{
+global.CardName[CardStat] = 'Ornate Silver, Faustine'
+global.CardText[CardStat] = 'Lyrical Monasterio/Mermaid
+
+CONT [RC/GC]: If you have a <Mermaid> vanguard, this unit gets shield +10000. Then, if your vanguard is grade 3 or greater, it also gets power +5000. (Active on opponent’s turn too)
+
+AUTO [RC] 1/Turn: When this unit’s power is increased by the ACT ability of your grade 3 or greater vanguard with "Krysrain" in its card name, this unit gets "AUTO [RC]: At the end of the battle this unit attacked, COST [put this unit into soul], and draw a card." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 5000
