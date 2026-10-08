@@ -707,7 +707,7 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 17083
 {
-global.CardName[CardStat] = 'The Beginning of the Incident, Protagonist, Protagonist {P4}'
+global.CardName[CardStat] = 'Beginning of the Incident, Protagonist, Protagonist {P4}'
 global.CardText[CardStat] = 'Persona Series/P4/Investigation Team
 
 AUTO: When rode upon, if you went second, draw a card.'
@@ -720,7 +720,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17084
 {
-global.CardName[CardStat] = 'Adventuring to Another World Inside the Television, Protagonist {P4}'
+global.CardName[CardStat] = 'Venturing Into the World Inside the TV, Protagonist {P4}'
 global.CardText[CardStat] = 'Persona Series/P4/Investigation Team
 
 AUTO: When this unit is placed by riding from "The Beginning of the Incident, Protagonist {P4}", COST [reveal a card named "One Who Chases After the Truth, Protagonist {P4}" from your ride deck], draw a card, put an Investigation Team token into your order zone, and put an Izanagi token as this unit’s Persona gauge.
@@ -765,14 +765,17 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17089
 {
-global.CardName[CardStat] = 'One Who Chases After The Truth, Protagonist {P4}'
+global.CardName[CardStat] = 'Seeker of Truth, Protagonist {P4}'
 global.CardText[CardStat] = 'Persona Series/P4/Investigation Team
 
 Arcana: 0 Fool
+
 ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Investigation Team> and up to one card with <P4> and <Social Link> or <Velvet Room Resident> from among them, call them to RC, and shuffle the deck. Until end of your opponent’s next turn, this unit gets "AUTO: Your back row center <Investigation Team> unit can attack and intercept from the back row, and if you persona rode this turn, it also gets power +10000.".
+
 ACT [VC] 1/Turn: If you persona rode this turn, COST [say Persona], and this unit gets [Power]+5000/drive+1 until end of turn.
  
 (SHIFT + left click to create tokens)
+
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 19
@@ -828,13 +831,9 @@ global.CardName[CardStat] = 'Kung-Fu Mania, Chie Satonaka'
 global.CardText[CardStat] = 'Persona Series/P4/Investigation Team/Social Link
 
 Arcana: VII Chariot
-
 Persona - AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, retire all of your other rear-guards with "Chie Satonaka" in their card names, and put a Tomoe token as this unit’s persona gauge.
-
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, look at the top seven cards of your deck, choose up to one <Investigation Team> with a different name from this unit from among them, reveal it and add it to your hand, and shuffle your deck. If you revealed, perform "You may Counter Blast 1. If you did not Counter Blast 1, choose a card from your hand, and put it into your soul".
-
 (SHIFT + left click to create tokens)
-
 (Hold TAB to view the related card.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 19
@@ -855,7 +854,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17096
 {
-global.CardName[CardStat] = 'The Next In Line Manager of Amagi Inn, Yukiko Amagi'
+global.CardName[CardStat] = 'Succeeding Proprietress to the Amagi Inn, Yukiko Amagi'
 global.CardText[CardStat] = 'Persona Series/P4/Investigation Team/Social Link
 
 Arcana: II Priestess
@@ -1002,8 +1001,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17109
 {
-global.CardName[CardStat] = 'My Younger Sister, Nanako Dojima'
-global.CardText[CardStat] = 'Persona Series/P4/Collaborator/Social Link
+global.CardName[CardStat] = 'Genuine Younger Sister, Nanako Dojima'
+global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
 
 Arcana: VIII Justice
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top seven cards of your deck, choose up to one <P4> unit card with either "Protagonist", "Yosuke Hanamura", or "Teddie" in its card name, reveal it and add it to your hand, and shuffle your deck.
@@ -1017,6 +1016,7 @@ global.DCards[CardStat] = 19
 global.TokenSummoner[CardStat] = 17006
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1024,7 +1024,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17110
 {
-global.CardName[CardStat] = 'Velvet Room Trainee Resident, Marie'
+global.CardName[CardStat] = 'Velvet Room Apprentice Resident, Marie'
 global.CardText[CardStat] = 'Persona Series/P4/Velvet Room Resident/Social Link
 
 Arcana: XX Aeon
@@ -1039,6 +1039,7 @@ global.DCards[CardStat] = 19
 global.TokenSummoner[CardStat] = 17111
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1046,37 +1047,8 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17112
 {
-global.CardName[CardStat] = 'Himiko'
-global.CardText[CardStat] = 'Persona Series/Persona/Trigger Order/Heal Trigger
-
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if you have a <P4> vanguard, and the attacking unit’s critical is 2 or greater, and its critical is increased by a non-trigger effect ability or its original critical is 2 or greater, this unit gets shield +15000 until end of that battle.".'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 19
-global.TriggerUnit[CardStat] = 4
-}
-global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 10000
-
-
-CardStat = 17113
-{
-global.CardName[CardStat] = 'Kouzeon'
-global.CardText[CardStat] = 'Persona Series/Persona/Trigger Order/Heal Trigger
-
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 10000 guardian, and it gets "AUTO: When this unit is put on GC, if you have a <P5> vanguard, and your opponent’s attacking unit has attacked two or more times this turn, this unit gets shield +15000 until end of that battle.".'
-global.UnitGrade[CardStat] = 0
-global.DCards[CardStat] = 19
-global.TriggerUnit[CardStat] = 4
-}
-global.PowerStat[CardStat] = 0
-global.DefensePowerStat[CardStat] = 10000
-
-
-CardStat = 17114
-{
 global.CardName[CardStat] = 'Drama Club Classmate, Yumi Ozawa'
 global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
-
 Arcana: XIX Sun
 AUTO: When this unit is placed on RC, until end of this fight, you become "Drama Club", and you cannot call unit cards with "Ayane Matsunaga" in their card names.
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1.
@@ -1095,11 +1067,10 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 17115
+CardStat = 17113
 {
 global.CardName[CardStat] = 'Symphonic Band Junior, Ayane Matsunaga'
 global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
-
 Arcana: XIX Sun
 AUTO: When this unit is placed on RC, until end of this fight, you become "Symphonic Band", and you cannot call unit cards with "Yumi Ozawa" in their card names.
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1.
@@ -1118,13 +1089,13 @@ global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
-CardStat = 17116
+CardStat = 17114
 {
 global.CardName[CardStat] = 'Double-faced Teacher, Sadayo Kawakami'
 global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
 
 Arcana: XIV Temperance
-AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn,  COST [Soul Blast 1], choose one of your vanguards, and until end of turn, reduce the next Counter Blast cost you pay for that unit’s ACT ability by 1.
+AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Soul Blast 1], choose one of your vanguards, and until end of turn, reduce the next Counter Blast cost you pay for that unit’s ACT ability by 1.
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Temperance" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
 • Two or more - CONT [GC]: This unit gets shield +5000.
@@ -1140,13 +1111,13 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
 
 
-CardStat = 17117
+CardStat = 17115
 {
 global.CardName[CardStat] = 'Twin Wardens, Justine & Caroline'
-global.CardText[CardStat] = 'Persona Series/P5/Velvet Room Resident/Confidant
-
+global.CardText[CardStat] = 'Persona Series/P5/Velvet Room Resident /Confidant
 Arcana: XI Strength
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your units with persona gauges, and it gets power +5000 until end of turn.
+CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Strength" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
 • Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would choose your unit with persona gauges by this unit’s AUTO ability, choose up to two instead of one.
@@ -1161,15 +1132,45 @@ global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
 
 
-CardStat = 17118
+CardStat = 17116
 {
-global.CardName[CardStat] = 'GO! Kintoki-Douji!'
-global.CardText[CardStat] = 'Persona Series/Persona/Trigger Order/Draw Trigger
-
-CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, it becomes a Grade 0 / shield 5000.'
-global.UnitGrade[CardStat] = 0
+global.CardName[CardStat] = 'Basketball Club Classmate, Kou Ichijo'
+global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
+Arcana: XI Strength
+AUTO: When this unit is placed on RC, until end of this fight, you become "Basketball Club", and you cannot call unit cards with "Daisuke Nagase" in their card names.
+AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1.
+CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Strength" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [RC]: This unit gets shield +5000.
+• Three or more - CONT [RC]: When you would Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 instead.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TriggerUnit[CardStat] = 1
+global.TokenSummoner[CardStat] = 17009
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 }
-global.PowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17117
+{
+global.CardName[CardStat] = 'Soccer Club Classmate, Daisuke Nagase'
+global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
+Arcana: XI Strength
+AUTO: When this unit is placed on RC, until end of this fight, you become "Basketball Club", and you cannot call unit cards with "Kou Ichijo" in their card names.
+AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1.
+CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Strength" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [RC]: This unit gets shield +5000.
+• Three or more - CONT [RC]: When you would Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 instead.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17009
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
