@@ -1731,9 +1731,51 @@ AUTO: When this card is discarded from hand while riding from the ride deck, loo
 
 ACT [RC/Hand]: COST [Put this card into your soul], and either Counter Charge 1 or Energy Charge 3. You cannot activate ACT abilities of cards with the same name as this card until end of turn.
 
-CONT [Back Row Center RC]: If you have a grade 3 or greater <P3> vanguard with "Protagonist" in its card name, this unit's original power becomes 18001, and it gets "I bring you, Megidolaon - AUTO [RC]: When this unit attacks, if you persona rode this turn, COST [Energy Blast 2], and this unit gets power +9999 / critical +1 until end of battle.".'
+CONT [Back Row Center RC]: If you have a grade 3 or greater <P3> vanguard with "Protagonist" in its card name, this unit’s original power becomes 18001, and it gets "I bring you, Megidolaon - AUTO [RC]: When this unit attacks, if you persona rode this turn, COST [Energy Blast 2], and this unit gets power +9999 / critical +1 until end of battle.".'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17169
+{
+global.CardName[CardStat] = 'Young Detective, Tohru Adachi'
+global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
+Arcana: 0 Jester
+AUTO [Drop]: When your unit with "Ryotaro Dojima" in its card name is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name and you have not resolved the AUTO ability of a card with the same name as this unit this turn, COST [Soul Blast 1], and call this card to RC.
+CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Jester" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [RC]: This unit gets shield +5000.
+• Three or more - ACT [RC]: If this unit was placed on RC by the effect of a card with the same name as this unit this turn, choose a card from your opponent’s hand at random, and discard it. You cannot activate the ACT ability of cards with the same name as this unit until end of fight.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17170
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17171
+{
+global.CardName[CardStat] = 'Inaba Police Department Detective, Ryotaro Dojima'
+global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
+Arcana: V Hierophant
+AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn,  look at the top 5 cards of your deck, choose up to 1 card with "Nanako Dojima" in its card name, reveal it and add it to your hand, and shuffle your deck. If you revealed a card, put this unit on the bottom of your deck
+CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hierophant" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [RC]: This unit gets shield +5000.
+• Three or more - CONT [RC]: This unit will not be put on the bottom of your deck by this unit’s ability.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+global.TokenSummoner[CardStat] = 17003
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
