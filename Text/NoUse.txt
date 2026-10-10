@@ -3001,6 +3001,8 @@ CONT: During your turn, the unit with this card as its Persona gauge gets power 
 [Skill] Ghastly Wail - COST [Energy Blast 2], choose one of your opponent’s rear-guards not being attacked, and retire it.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 8
+global.Arms[CardStat] = 1
+global.LeftArms[CardStat] = 1 //Separate Gauges from Soul by making it armable
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -3018,6 +3020,7 @@ CONT: During your turn, the unit with this card as its Persona gauge gets power 
 [Skill] Megidolaon - COST [Energy Blast 2], and this unit gets critical +1 until end of battle.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 8
+global.Arms[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
@@ -3323,7 +3326,7 @@ global.TokenInHand[CardStat] = 1
 global.RemoveFromDrop[CardStat] = 1
 
 
-CardStat = 16170
+CardStat = 17170
 {
 global.CardName[CardStat] = 'Jester'
 global.CardText[CardStat] = 'Order
