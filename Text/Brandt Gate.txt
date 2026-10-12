@@ -4632,15 +4632,16 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 11871
 {
-global.CardName[CardStat] = 'Blue Deathster "Skyrendriver" Avantgarda Richter'
+global.CardName[CardStat] = 'Blue Deathster, "Skyrendriver" Avantgarda Richter'
 global.CardText[CardStat] = 'Brandt Gate/Battleroid
 
-ACT [Hand]: If your opponent’s vanguard is grade 3 or greater, COST [reveal this card, and bind a "Blue Deathster "Skyrender" Avantgarda" on VC], ride this card as stand, and until end of turn, it gets all of the original ACT abilities of the card bound for this cost.
+ACT [Hand]: If your opponent’s vanguard is grade 3 or greater, COST [reveal this card & bind a "Blue Deathster "Skyrender" Avantgarda" from VC], ride this card as stand, and until end of turn, it gets all of the original ACT abilities of the card bound for this cost.
 
 AUTO [VC]: At the end of the battle this unit attacked, if your soul has a "Blue Deathster, Sora Period", COST [discard two cards from hand], choose a "Blue Deathster "Skyrender" Avantgarda" from your bind zone, ride it as stand, and it gets power +10000 / drive -1 until end of turn.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 5
 global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Blue Deathster, Skyrendriver Avantgarda Richter'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -12037,3 +12038,303 @@ global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17176
+{
+global.CardName[CardStat] = '[Start up] Masked Rider Faiz, Axel Form'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Blue Deathster, "Skyrendriver" Avantgarda Richter".
+
+ACT [Hand]: If your opponent’s vanguard is grade 3 or greater, COST [reveal this card & bind a "Blue Deathster "Skyrender" Avantgarda" from VC], ride this card as stand, and until end of turn, it gets all of the original ACT abilities of the card bound for this cost.
+
+AUTO [VC]: At the end of the battle this unit attacked, if your soul has a "Blue Deathster, Sora Period", COST [discard two cards from hand], choose a "Blue Deathster "Skyrender" Avantgarda" from your bind zone, ride it as stand, and it gets power +10000 / drive -1 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Blue Deathster, Skyrendriver Avantgarda Richter'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17177
+{
+global.CardName[CardStat] = '[Complete] Masked Rider Faiz'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Blue Deathster, "Skyrender" Avantgarda".
+
+ACT [VC] 1/Turn: If your soul has a "Blue Deathster, Sora Period", COST [put a Strategy card from your order zone into your soul], draw a card, and until end of turn, this unit gets power +5000, and gets "AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if that attack hit a vanguard, or you persona rode this turn, COST [Counter Blast 1 & discard a card from hand], stand this unit, and it gets drive -1 until end of turn.".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Blue Deathster, Skyrender Avantgarda'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17178
+{
+global.CardName[CardStat] = 'Masked Rider Kaixa'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Sickle Blade of Inquest, Habitable Zone".
+
+AUTO: When this card is discarded from hand during your ride phase, COST [Soul Blast 1 & put this card on the bottom of deck], and draw a card.
+
+AUTO: When this unit is placed on RC, if you persona rode this turn, COST [Counter Blast 1], search your deck for up to one set order, reveal it and put it into your hand, and shuffle your deck. Until end of turn, you may play up to a total of two orders, and the next set order you play can be played without paying its cost.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17181
+{
+global.CardName[CardStat] = 'Masked Rider Faiz : Exceed Charge, Crimson Smash'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Over Trigger
+
+CONT: This card is also regarded as "Star Dragon Deity of Infinitude, Eldobreath".
+
+Additional Effect - Double the power and critical of all of your front row units until end of turn! (Increase to double its power and critical when activated.)'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 17182
+{
+global.CardName[CardStat] = '[Complete] Masked Rider Kaixa'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Ala Dargente".
+
+AUTO [RC]: When your vanguard with "Avantgarda" in its card name attacks, this unit gets power +5000 until end of turn.
+
+AUTO: When this unit is placed on RC, if your Strategy card was put from order zone into soul this turn, COST [Soul Blast 1], search your deck or drop for up to one Strategy card with a different card name as the card put from order zone into soul this turn, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17183
+{
+global.CardName[CardStat] = 'Masked Rider Delta'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Blue Deathster, Hanada Halfway".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Blue Deathster" in its card name, COST [Counter Blast 1], and draw a card.
+
+AUTO [RC]: When this unit boosts, if your Strategy card was put into order zone this turn, this unit gets power +2000 until end of that battle, and if this unit is in the back row center column, Counter Charge 1.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17184
+{
+global.CardName[CardStat] = 'Exceed Charge : Crimson Smash'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+(After a set order is played, put it into your order zone)
+
+CONT: This card is also regarded as "Shock Strategy: Death Winds".
+
+AUTO: When this card is put into your soul from order zone, if your opponent’s vanguard is grade 3 or greater, choose one of your vanguards, and it gets "AUTO [VC]: When this unit attacks, all of your front row unit gets power +5000 until end of turn." until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17191
+{
+global.CardName[CardStat] = 'Auto Vajin'
+global.CardText[CardStat] = 'Brandt Gate/Machine
+
+CONT: This card is also regarded as "Planet Wall Dragon".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17192
+{
+global.CardName[CardStat] = 'Masked Rider Faiz, Axel Form'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Front Trigger
+
+CONT: This card is also regarded as "Cardinal Draco, Enpyro".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 17193
+{
+global.CardName[CardStat] = 'Masked Rider Faiz, Blaster Form, Photon Blaster'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Critical Trigger
+
+CONT: This card is also regarded as "Patrol Robo, Dekarcop".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 17194
+{
+global.CardName[CardStat] = 'Masked Rider Faiz, Blaster Form'
+global.CardText[CardStat] = 'Brandt Gate/Hero/Draw Trigger
+
+CONT: This card is also regarded as "Ameliorate Connector".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17195
+{
+global.CardName[CardStat] = '[Standing By] Masked Rider Faiz'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Blue Deathster, "Heavenly Death Ray" Stelvane".
+
+AUTO: When this unit is rode upon by a grade 3 unit with "Avantgarda" in its card name, if your soul has a "Blue Deathster, Sora Period", search your deck for up to one grade 2 Strategy card, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, you may call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17196
+{
+global.CardName[CardStat] = 'Masked Rider Faiz'
+global.CardText[CardStat] = 'Brandt Gate/Hero
+
+CONT: This card is also regarded as "Blue Deathster, "Heavenly Death Ray" Stelvane".
+
+AUTO: When this unit is rode upon by "Blue Deathster, "Heavenly Death Ray" Stelvane", if your soul has a "Blue Deathster, Sora Period", search your deck for up to one grade 1 Strategy card, reveal it and put it into your hand, and shuffle your deck. If you did not reveal a card, you may call this card to RC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17197
+{
+global.CardName[CardStat] = 'Wolf Orphnoch'
+global.CardText[CardStat] = 'Brandt Gate/Orphnoch
+
+CONT: This card is also regarded as "Blue Deathster, Sora Period".
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17198
+{
+global.CardName[CardStat] = 'Horse Orphnoch'
+global.CardText[CardStat] = 'Brandt Gate/Orphnoch
+
+CONT: This card is also regarded as "Blue Deathster, Asagi Milestone".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Blue Deathster" in its card name, COST [Counter Blast 1], choose a grade 3 or greater card with "Avantgarda" in its card name from your drop, and put it into hand.
+
+CONT [RC]: If your Strategy card was put from order zone into soul this turn, this unit gets power +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17199
+{
+global.CardName[CardStat] = 'Crane Orphnoch'
+global.CardText[CardStat] = 'Brandt Gate/Orphnoch
+
+CONT: This card is also regarded as "Blue Deathster, Ruri Turning".
+
+ACT [RC] 1/Turn: COST [Soul Blast 1 & Discard a card from hand], choose a grade 1 Strategy card from your drop, and put it into your hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17200
+{
+global.CardName[CardStat] = 'Exceed Charge : Sparkle Cut'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+(After a set order is played, put it into your order zone)
+
+CONT: This card is also regarded as "Bomber Strategy: Dusting".
+
+AUTO: When this card is put into your soul from order zone, choose one of your vanguards, and until end of turn, it gets power +10000, and your opponent cannot intercept or play blitz orders from hand.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17201
+{
+global.CardName[CardStat] = 'Exceed Charge : Grand Impact'
+global.CardText[CardStat] = 'Brandt Gate/Set Order/Strategy
+
+(After a set order is played, put it into your order zone)
+
+CONT: This card is also regarded as "Disruption Strategy: Killshroud".
+
+AUTO: When this card is put into your soul from order zone, choose one of your opponent’s rear-guards, retire it, choose one of your vanguards, and it gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 5
+global.CardInClan[CardStat] = 30
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
