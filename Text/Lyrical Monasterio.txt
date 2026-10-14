@@ -12325,7 +12325,7 @@ CardStat = 15298
 global.CardName[CardStat] = 'Tempt Smirk, Tsadamua'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-AUTO: When this unit is placed on RC from hand, if you have a token unit on your RC, COST [Counter Blast 1], and draw a card.
+AUTO: When this unit is placed on RC from hand, if your your RC has a Plant token, COST [Counter Blast 1], and draw a card.
 
 CONT [RC/GC]: If you have a vanguard with "Juicy-Fruity" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
@@ -12365,7 +12365,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15313
 {
-global.CardName[CardStat] = 'Prepared for the Light, Shulmun'
+global.CardName[CardStat] = 'Perfect Shade, Schirmun'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
 CONT: Sentinel.
@@ -12380,7 +12380,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15314
 {
-global.CardName[CardStat] = 'Sparky Gyroball, Joane'
+global.CardName[CardStat] = 'Sparky Gyro Ball, Gione'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
 AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
@@ -12393,10 +12393,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15315
 {
-global.CardName[CardStat] = 'Hearty Spot, Storia'
+global.CardName[CardStat] = 'Hearty Spot, Streia'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
  
-AUTO [RC]: The cost for this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: The Energy Blast you pay for this cost is reduced by 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
@@ -12423,7 +12423,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15368
 {
-global.CardName[CardStat] = 'Teardrop Score, Samoetta'
+global.CardName[CardStat] = 'Teardrop Score, Samoyetta'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast
 
 CONT [RC/GC]: If you have a grade 3 or greater vanguard with "Marlean" in its card name, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
@@ -12436,10 +12436,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15369
 {
-global.CardName[CardStat] = 'Teardrop Score, Samoetta'
+global.CardName[CardStat] = 'Lustered Memory, Sekarina'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
-AUTO [RC]: At the end of the battle this unit boosted, if your vanguard is grade 3 or greater, and you played a normal order this turn, COST [Soul Blast 1], and return this unit to hand.'
+AUTO [RC]: At the end of the battle this unit boosted, if your vanguard is grade 3 or greater, and you played an order this turn, COST [Soul Blast 1], and return this unit to hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12480,7 +12480,7 @@ CardStat = 15409
 global.CardName[CardStat] = 'LettiaMateS, Charis'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO: When this unit is rode upon by "LettiaMateS, Lattice", look at the top seven cards of the deck, choose up to one unit card with "LettiaMateS" in its card name and normal order each, discard them, and shuffle the deck.
+AUTO: When this unit is rode upon by "LettiaMateS, Lattice", look at the top seven cards of your deck, choose up to one unit card with "LettiaMateS" in its card name and up to one normal order each from among them, discard them, and shuffle the deck.
 
 CONT [RC]: During your turn, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets power +2000.'
 global.UnitGrade[CardStat] = 1
@@ -12495,7 +12495,7 @@ CardStat = 15410
 global.CardName[CardStat] = 'LettiaMateS, Lattice'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO: When this unit is rode upon by a grade 3 card with "Magnolia" in its card name, choose up to one grade 2 or less unit card with "LettiaMateS" in its card name from your drop, and call it to RC. If you did not call, call this card to RC, and Soul Charge 1 .
+AUTO: When this unit is rode upon by a grade 3 card with "Magnolia" in its card name, choose up to one grade 2 or less unit card with "LettiaMateS" in its card name from your drop, and call it to RC. If you did not call a card, call this card to RC, and Soul Charge 1 .
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 2
@@ -12530,7 +12530,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Normal Order
  
 This card can be played from drop if you have a grade 3 or greater vanguard with "Magnolia" in its card name, and play this with COST [Soul Blast 1] if you have a vanguard with "LettiaMateS" in its card name!
 
-Bind this card, and until end of turn, you can play an additional order, but you cannot play orders other than Crimson Moon orders. Look at the top three cards of the deck, choose any number from among them, discard them, and shuffle the deck. Choose up to one card from your drop, call it to RC if it is a unit card with "LettiaMateS" in its card name with grade less than or equal to your vanguard, or put it into hand if it is a normal order. If you have a grade 3 or greater vanguard with "Magnolia" in its card name, choose two of your rear-guards, and they get power +5000 until end of turn. If you persona rode this turn, choose four instead of two.'
+Bind this card, and until end of turn, you can play an additional order, but you cannot play orders other than Crimson Moon orders. Look at the top three cards of the deck, choose any number of cards from among them, discard them, and shuffle the deck. Choose up to one card from your drop, call it to RC if it is a unit card with "LettiaMateS" in its card name and grade less than or equal to your vanguard, and put it into hand if it is a normal order. If you have a grade 3 or greater vanguard with "Magnolia" in its card name, choose two of your rear-guards, and they get power +5000 until end of turn. If you persona rode this turn, choose four of your rear-guards instead of two.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 30
@@ -12556,10 +12556,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15414
 {
-global.CardName[CardStat] = 'LettiaMateS, Tanuu'
+global.CardName[CardStat] = 'LettiaMateS, Tarnu'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
-AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called, this unit gets power +5000 until end of turn.
+AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you called a card, this unit gets power +5000 until end of turn.
 
 CONT [RC]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, this unit gets "Intercept", and can intercept from the back row.'
 global.UnitGrade[CardStat] = 1
@@ -12571,7 +12571,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15415
 {
-global.CardName[CardStat] = 'LettiaMateS, Simias'
+global.CardName[CardStat] = 'LettiaMateS, Simiess'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 ACT [Drop]: If you have a grade 3 or greater vanguard with "Magnolia" in its card name, COST [Energy Blast 2], and call this card to RC.
@@ -12670,7 +12670,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15547
 {
-global.CardName[CardStat] = 'After Class Practice, Ablita'
+global.CardName[CardStat] = 'After Class Special Training, Abilita'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
 CONT [RC]: If your bind zone has a normal order, this unit cannot be retired by your opponent’s card effects, and gets power +5000. (Active on opponent’s turn too)'
@@ -12684,7 +12684,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15548
 {
-global.CardName[CardStat] = 'I’ll Make It Look Sharp! Saliture'
+global.CardName[CardStat] = 'Finish in Style! Zairicua'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, if you played an order this turn, COST [Soul Blast 1], and this unit gets power +10000 until end of that battle.'
@@ -12713,7 +12713,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15660
 {
-global.CardName[CardStat] = 'Conflicted, Willery'
+global.CardName[CardStat] = 'Paradoxical Heart, Wiereli'
 global.CardText[CardStat] = 'Lyrical Monasterio/Elf
 
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [Counter Blast 1], this unit gets power +5000 until end of that battle, and at the end of that battle, return this unit to hand.'
@@ -12729,7 +12729,7 @@ CardStat = 15778
 global.CardName[CardStat] = 'Shred Player, Timonie'
 global.CardText[CardStat] = 'Lyrical Monasterio/Demon
 
-ACT [RC]: If you have a grade 3 or greater vanguard with "FLДMMe-Glam" in its card name, COST [Counter Blast 1 & put this card in your damage zone], draw a card, and until end of turn,  the number of cards in your damage zone for you to lose becomes seven, and you get "All of your units with "FLДMMe-Glam" in their card names get power +5000.". At the end of that turn, choose a face up card with the same card name as this card from your damage zone, and bind it.'
+ACT [RC]: If you have a grade 3 or greater vanguard with "FLДMMe-Glam" in its card name, COST [Counter Blast 1 & put this card in your damage zone], draw a card, and until end of turn,  the number of cards in your damage zone for you to lose becomes seven, and you get "All of your units with "FLДMMe-Glam" in their card names get power +5000.". At the end of that turn, choose a face up card with the same card name as this card from your face up damage zone cards, and bind it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12739,10 +12739,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15779
 {
-global.CardName[CardStat] = 'Relaxing Time at Midnight, Perchute'
+global.CardName[CardStat] = 'After Midnight Tea, Belsti'
 global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
 
-AUTO [RC]: When your vanguard is attacked, if the attacking unit has power 33000 or greater, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
+AUTO [RC]: When your vanguard is attacked, if the attacking unit’s power 33000 or more, COST [Energy Blast 3], move this unit to GC, and it gets shield +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12851,16 +12851,16 @@ CardStat = 15799
 global.CardName[CardStat] = 'X-CeeDaNCe, Inno Progrett'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
-AUTO: When this unit is placed by riding from "X-CeeDaNCe, Falstather", COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE: X-ceed token into your order zone.'
+AUTO: When this unit is placed by riding from "X-CeeDaNCe, Falstather", COST [reveal a grade 3 card with "Impauldio" in its card name from ride deck], and put a SYSTEM CODE: X-ceed token in your order zone.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
-global.TokenSummoner[CardStat] = 13149
-global.TokenSummonerPosition[CardStat] = 'V'
-global.TokenSummonerQuantity[CardStat] = 1
 global.AnotherSide[CardStat] = 13149
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13149
+global.TokenSummonerPosition[CardStat] = 'V'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 15800
@@ -12893,7 +12893,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card from your drop, put it face up as your AutoMOD gauge, choose one of your RC without any X-ceed NET markers, and put an X-ceed NET marker.
 
-[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind one or more Crimson Moon cards from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each effect can only be chosen once)
+[Fantome Skill] - ACT [VC] 1/Turn: COST [Bind one or more Crimson Moon cards in total from hand, soul, or drop], and perform one of the following for each Crimson Moon card in your bind zone.  (Each can only be chosen once)
 • This unit gets drive +1 until end of turn.
 • This unit gets critical +1 until end of turn.
 • Until end of your opponent’s next turn, your rear-guard can attack and intercept from the back row center column with an X-ceed NET marker.
@@ -12903,10 +12903,10 @@ global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
 global.AnotherSide[CardStat] = 15808
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
 global.TokenSummoner[CardStat] = 15808
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
@@ -12914,10 +12914,10 @@ global.TokenSummonerQuantity[CardStat] = 1
 
 CardStat = 15802
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Tran Diebe'
+global.CardName[CardStat] = 'X-CeeDaNCe, Tran Deeve'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
-AUTO: When this card is placed on RC, or put as an AutoMOD gauge during your turn, if you have an AutoMOD gauge, Energy Charge 2.'
+AUTO: When this card is put as an AutoMOD gauge during your turn or placed on RC, if you have an AutoMOD gauge, Energy Charge 2.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
 }
@@ -12944,7 +12944,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15804
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Nui Erras'
+global.CardName[CardStat] = 'X-CeeDaNCe, Neui Erras'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this card is put as an AutoMOD gauge during your turn, if you have two or more AutoMOD gauges, and your other card with the same card name as this card was not put as an AutoMOD gauge this turn, perform one of the following. If you have four or more AutoMOD gauges, perform all of the following instead of one.
@@ -12959,7 +12959,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15805
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Leda Tispur'
+global.CardName[CardStat] = 'X-CeeDaNCe, Rada Tisple'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this card is put as an AutoMOD gauge during your turn, choose one of your units, and it gets power +5000 until end of turn.
@@ -12974,12 +12974,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15806
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Lapi Glossa'
+global.CardName[CardStat] = 'X-CeeDaNCe, Rapi Grossa'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
 AUTO: When this unit is placed on RC, if you have AutoMOD gauges, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card from among them, reveal it, call it to RC if it is a card with "X-CeeDaNCe" in its card name and grade less than or equal to your vanguard, and put it into hand if it is a Crimson Moon card. Shuffle the deck. If your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 
-AUTO: When this unit is put on GC, if you have two or more AutoMOD gauges, this unit gets shield +5000 until end of that battle. If you have four or more, COST [Soul Blast 1], and it also gets shield +5000.'
+AUTO: When this unit is put on GC, if you have two or more AutoMOD gauges, this unit gets shield +5000 until end of that battle. If you have four or more AutoMOD gauge, COST [Soul Blast 1], and it also gets shield +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -12989,10 +12989,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15807
 {
-global.CardName[CardStat] = 'X-CeeDaNCe, Precci Forwatt'
+global.CardName[CardStat] = 'X-CeeDaNCe, Precee Forwatt'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human/Fantome
  
-ACT [RC]: If you have an AutoMOD gauge with "X-CeeDaNCe" in its different name from this unit, COST [put this unit face up as an AutoMOD gauge], choose one of your AutoMOD gauges with "X-CeeDaNCe" in its different card name from this card, and call it to the RC this unit was on.
+ACT [RC]: If you have an AutoMOD gauge with "X-CeeDaNCe" in its different name from this unit, COST [put this unit face up as an AutoMOD gauge], choose a card with "X-CeeDaNCe" in its different card name from this card from your AutoMOD gauge, and call it to the RC this unit was on.
 
 AUTO: When this card is put as an AutoMOD gauge during your turn, COST [Soul Blast 2], and draw a card.'
 global.UnitGrade[CardStat] = 2
@@ -13004,7 +13004,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15809
 {
-global.CardName[CardStat] = 'LettiaMateS, Ancisella'
+global.CardName[CardStat] = 'LettiaMateS, Uncizera'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 AUTO [Drop]: When your grade 3 or greater vanguard with "Magnolia" in its card name is placed during your ride phase, if all of your rear-guards have different card names from this card, you may call this card to RC.
@@ -13021,7 +13021,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15810
 {
-global.CardName[CardStat] = 'LettiaMateS, Marfelle'
+global.CardName[CardStat] = 'LettiaMateS, Marfel'
 global.CardText[CardStat] = 'Lyrical Monasterio/Warbeast/Fantome
 
 AUTO: When this unit is put on GC from hand, COST [Counter Blast 1], choose one of your guardians with "LettiaMateS" in its different card name from this unit, and until end of turn, it gets "AUTO: When this unit is retired from GC, put this card into hand.", and shield +5000.'
@@ -13963,3 +13963,251 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17209
+{
+global.CardName[CardStat] = 'ForeverSparkle, Entier'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+ACT [RC]: If you persona rode this turn, COST [put this unit into soul], choose two of your rear-guards, and they get "AUTO [RC]: At the end of your turn, you may return this unit to hand." until end of turn. You cannot pay the cost of ACT abilities of units with the same card name as this card until end of turn.
+
+AUTO [RC]: When this unit attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17210
+{
+global.CardName[CardStat] = 'SteezyStepS, Fesfijnd'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+
+AUTO [RC/Hand/Drop]: At the beginning of your ride phase, if your and your opponent’s vanguards are grade 3 or greater, your damage zone has no face up cards, and your vanguard was not attacked by a unit with power 13000 or greater during your opponent’s preceding turn, COST [bind this card], and put the top card of your deck in the damage zone. If you bound a card from hand for this cost, draw a card.
+
+CONT [GC]: If you have zero or four or more rear-guards, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17211
+{
+global.CardName[CardStat] = 'I Won What I Wanted!'
+global.CardText[CardStat] = 'Lyrical Monasterio/Blitz Order
+
+CONT: You may only have up to two "I Won What I Wanted!" in a deck.
+
+If your vanguard’s grade is less than your opponent’s vanguard’s grade, this ability can be played while ignoring grade.
+Remove this card, choose a unit being attacked, until end of that battle, it gets power +15000, and perform all of the following.
+• If you went second, and you did not put a Persona Shield ticket into hand by the ability of a card with the same card name as this card this fight, put a Persona Shield ticket into hand, and until end of turn, you can play an additional order, and cannot play orders other than Persona Shield tickets.
+• If your opponent persona rode this turn, choose a unit being attacked, and it gets power +5000 until end of that battle.
+(SHIFT + left click to get a Persona Shield ticket)
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 30
+global.CardCopies[CardStat] = 2
+global.AnotherSide[CardStat] = 13708
+}
+global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 15000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17212
+{
+global.CardName[CardStat] = 'Cutest Girl in the World, Reame'
+global.CardText[CardStat] = 'Lyrical Monasterio/Human
+
+AUTO: When this unit is placed on RC from deck or hand, and you did not put a Persona Shield ticket into hand this turn, perform one of the following.
+• COST [Reveal a card with persona ride from ride deck], and put a Persona Shield ticket into hand.
+• If you have a vanguard with persona ride, put a Persona Shield ticket into hand.
+
+AUTO [RC]: When you play a Persona Shield ticket, COST [Soul Blast 1], and move this unit to GC.
+
+(SHIFT + left click to get a Persona Shield ticket)
+(Hold TAB to view the related card.)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.AnotherSide[CardStat] = 13708
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 13708
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17213
+{
+global.CardName[CardStat] = 'Fated Encounter, ～Colorful Pastorale～'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17214
+{
+global.CardName[CardStat] = 'Surprising & Exciting Screening, ～Colorful Pastorale～'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+AUTO: When this unit is placed by riding from "Fated Encounter, ～Colorful Pastorale～", if you discarded a card with a clan icon while riding from ride deck this turn, put that card into soul, and draw a card.
+
+CONT [RC]: During your opponent’s turn, all of your units with [Colorful Melody] get shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17215
+{
+global.CardName[CardStat] = 'Letter from Atlantia, ～Colorful Pastorale～'
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+
+[Colorful Melody]
+ 
+AUTO: When this unit is placed by riding from "Surprising & Exciting Screening, ～Colorful Pastorale～", look at the top seven cards of your deck, choose up to one card with [Colorful Melody] from among them, call it to RC, and shuffle the deck. If you did not call a card, draw a card.
+
+CONT [VC]: During your turn, you can normal call cards with [Colorful Melody] from your hand while ignoring grade. During your opponent’s turn, all of your units with [Colorful Melody] get shield +5000. '
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17216
+{
+global.CardName[CardStat] = 'Colorful Pastorale, Sonata '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+[Colorful Melody]
+CONT [VC]: All of your units with [Colorful Melody] get "CONT [VC/RC/GC]: During your turn, this unit gets power +5000. During your opponent’s turn, this unit gets shield +5000.".
+AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one card with [Colorful Melody] from among them, reveal it and put it into hand, and shuffle the deck.
+ACT [VC] 1/Turn: COST [Soul Blast 2], search your deck for up to one card with "Colorful Pastorale" in its card name, call it to RC, and shuffle the deck.
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards with [Colorful Melody], and it gets "CONT [Back Row RC]: This unit can attack from the back row, and if you persona rode this turn, it also gets power +10000." until end of turn. If your opponent’s vanguard is grade 3 or greater, choose two rear-guards instead of one.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+global.EnableAttackFromBackRow[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17217
+{
+global.CardName[CardStat] = 'Colorful Pastorale, Caro '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+[Colorful Melody]
+
+CONT [VC]: All of your units with [Colorful Melody] get "CONT [VC/RC/GC]: During your turn, if your vanguard is grade 3 or greater, this unit gets power +5000. More of this ability cannot be got.".
+
+AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with [Colorful Melody] from among them, reveal it and put it into hand, shuffle the deck, and this unit gets power +5000 until end of turn.
+
+ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [put a card with the same card name as this unit from drop on the bottom of the deck & Soul Blast 1], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17218
+{
+global.CardName[CardStat] = 'Colorful Pastorale, Fina '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+[Colorful Melody]
+
+CONT [VC]: All of your units with [Colorful Melody] get "CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000. More of this ability cannot be got.".
+
+AUTO: When this unit is put on GC, if you have a vanguard with "Colorful Pastorale" in its card name, this unit gets shield +5000 until end of that battle.
+
+ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [put a card with the same card name as this unit from drop on the bottom of the deck & Soul Blast 1], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17219
+{
+global.CardName[CardStat] = 'Colorful Pastorale, Serena '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+[Colorful Melody]
+
+CONT [VC]: All of your units with [Colorful Melody] get "CONT [RC]: This unit gets "Intercept", and can intercept from the back row. More of this ability cannot be got.".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Colorful Pastorale" in its card name, COST [Counter Blast 1 or put a card from hand into soul], and draw a card.
+
+ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [put a card with the same card name as this unit from drop on the bottom of the deck & Soul Blast 1], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17220
+{
+global.CardName[CardStat] = 'Colorful Pastorale, Canon '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+[Colorful Melody]
+
+CONT [VC]: All of your units with [Colorful Melody] get "CONT [RC/GC]: This unit cannot be retired by your opponent’s card effects. More of this ability cannot be got.".
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Colorful Pastorale" in its card name, choose up to one card from your drop, and put it into soul.
+
+ACT [RC] 1/Turn: If your opponent’s vanguard is grade 3 or greater, COST [put a card with the same card name as this unit from drop on the bottom of the deck & Soul Blast 1], and this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17221
+{
+global.CardName[CardStat] = 'Top Star, Cier '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+ 
+CONT [Deck]: When you would search or choose a card with [Colorful Melody] from the deck, you may search or choose this card.
+
+AUTO [RC]: When this unit boosts a grade 3 or greater vanguard with "Colorful Pastorale" in its card name, if your opponent’s vanguard is grade 3 or greater, choose one of your vanguards, and you may have it get "Triple Drive" until end of that battle. If you do, at the end of that battle, put this unit into soul.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000

@@ -9764,7 +9764,7 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 15276
 {
-global.CardName[CardStat] = 'Desire Devil, Shuchak'
+global.CardName[CardStat] = 'Desire Devil, Shuchakku'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [RC]: At the end of the battle this unit boosted, if it is the first battle of the turn and you have a grade 3 or greater vanguard with "Greedon" in its card name, stand this unit.
@@ -9779,18 +9779,15 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15277
 {
-global.CardName[CardStat] = 'Axis Transformation Gear Wolf'
+global.CardName[CardStat] = 'Gear Wolf of Axis Change'
 global.CardText[CardStat] = 'Dark States/Gear Beast
 
-ACT [Drop]: COST [Put a face up grade 4 card from your damage zone on the bottom of the deck], put the top card of your deck into your damage zone, and bind this card.'
+ACT [Drop]: COST [Put a face up grade 4 on the bottom of the deck from face up damage zone cards], put the top card of your deck into your damage zone, and bind this card.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
-//Slightly altered wording on last effect to fit
 CardStat = 15278
 {
 global.CardName[CardStat] = 'All-crushing Revolution Colossus'
@@ -9798,7 +9795,7 @@ global.CardText[CardStat] = 'Dark States/Gear Colossus
 
 AUTO: When this unit is placed on RC, choose a grade 3 <Gear Dragon> from your ride deck, and reveal it. If you revealed a card, or you have a grade 3 or greater <Gear Dragon> vanguard, COST [Counter Blast 1], draw a card, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 AUTO: When this unit is placed on GC from hand, if you have a <Gear Dragon> vanguard, choose up to one «Dark States» from your bind zone, and put it on the bottom of the deck. If you chose a card, COST [Energy Blast 3 or Soul Blast 1 card with the same card name as your vanguard], and this unit gets shield +5000 until end of that battle for each grade of the card chosen by this effect.
-AUTO: When this unit is put on deck or in bind zone from RC by your card’s ability, if you have a <Gear Dragon> vanguard, choose one of your rear-guards, and the next cost you pay for that unit’s ability is reduced by Counter Blast 1 until end of turn.'
+AUTO: When this unit is put on deck or in bind zone from RC by your card’s ability, if you have a <Gear Dragon> vanguard, choose one of your rear-guards, and reduce the next Counter Blast cost you pay for that unit’s ability by 1 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -9823,7 +9820,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15294
 {
-global.CardName[CardStat] = 'Mage of Enlightenment, Elquil'
+global.CardName[CardStat] = 'Mage of Flaming Will, Elkwil'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO [RC]: When your unit with "Demonic Stone Dragon" or "Demonic Jewel Dragon" in its card name stand during your battle phase, COST [put this unit into your soul], and that unit gets power +5000 until end of turn.'
@@ -9879,7 +9876,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15330
 {
-global.CardName[CardStat] = 'Strife Tigarude'
+global.CardName[CardStat] = 'Strife Tigarudo'
 global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO [RC]: When the attack this unit boosted hits, if you played a normal order this turn, COST [Soul Blast 1 & retire this unit], and draw a card.'
@@ -9895,7 +9892,7 @@ CardStat = 15331
 global.CardName[CardStat] = 'Mischief Sticker'
 global.CardText[CardStat] = 'Dark States/Elf
 
-AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, if the attack did not hit, put this unit into soul. (This effect is mandatory)'
+AUTO [RC]: When this unit attacks, this unit gets power +5000 until end of that battle. At the end of that battle, if the attack did not hit this battle, put this unit into soul. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -9934,7 +9931,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15393
 {
-global.CardName[CardStat] = 'Mysterious Eternal Count, Arokes'
+global.CardName[CardStat] = 'Viscount of Mystery Time, Allocaes'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO [Drop]: When your grade 3 or greater vanguard with "Oselargest" in its card name is placed during your ride phase, if you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1], and call this card to RC.
@@ -10055,15 +10052,15 @@ CardStat = 15440
 global.CardName[CardStat] = 'A Passing-Through Masked Rider, Masked Rider Decade'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Avaricious Demonic Dragon, Greedon"
+CONT: This card is also regarded as "Demonic Jewel Dragon, Drajeweled"
 
-CONT [VC]: If your soul has an "Avaricious Demonic Dragon, Greedon", the number of cards in your damage zone for you to lose becomes seven.
+ACT [VC] 1/Turn: COST [Counter Blast 1], and Soul Charge 2. If all of the cards Soul Charge have different grades, you may draw a card.
 
-AUTO [VC]: At the end of the battle this unit attacked, COST [Soul Blast 2 & put four stand rear-guards into your soul], and stand this unit. If your soul has ten or more cards, this unit gets power +15000 until end of turn.'
+AUTO [VC]: When this unit attacks a vanguard, COST [Soul Blast 4 cards with different grades], choose one of your opponent’s vanguards, until end of turn, increase or decrease its power to 1, and if your opponent’s vanguard is grade 3 or greater, this unit gets critical +1. (power at that time becomes 1, and can increase or decrease afterwards)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Avaricious Demonic Dragon, Greedon'
+global.PersonaRideCardName[CardStat] = 'Demonic Jewel Dragon, Drajeweled'
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -10074,11 +10071,11 @@ CardStat = 15441
 global.CardName[CardStat] = 'One Who Crosses Through Rider Dimensions, Masked Rider Decade'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Boshokku"
+CONT: This card is also regarded as "Demonic Stone Dragon, Jewelneel"
 
-AUTO: When this unit is rode upon by "Avaricious Demonic Dragon, Greedon", COST [put a card from your hand into your soul], search your deck for a card with the same card name as this card, reveal it and put it into your hand, and shuffle your deck.
+AUTO [VC/RC]: When this unit’s attack hits a vanguard, Soul Charge 1.
 
-CONT [Soul]: During your turn, if your damage zone has four or more cards, the "Avaricious Demonic Dragon, Greedon" on your VC gets power +5000.'
+AUTO: When this unit is rode upon by a unit with "Drajeweled" in its card name, Soul Charge 1, and if your soul has three or more cards with different grades, draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -10091,16 +10088,17 @@ CardStat = 15442
 global.CardName[CardStat] = 'One Who Observes the World, Masked Rider Decade'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Gouman"
+CONT: This card is also regarded as "Jewel Core Dragon"
 
-AUTO: When this unit is rode upon by "Desire Devil, Boshokku", COST [reveal an "Avaricious Demonic Dragon, Greedon" from your ride deck], and draw a card.
+AUTO: When this unit is rode upon by "Demonic Stone Dragon, Jewelneel", call this card to RC.
 
-AUTO: When this unit is put from RC into your soul by your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and until end of turn, when your opponent would call cards from hand to GC, they must call two or more at the same time.'
+AUTO [RC]: When this unit attacks or boosts, this unit gets power +5000 until end of that battle. At the end of that battle, put this unit into your soul. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 15443
@@ -10108,7 +10106,7 @@ CardStat = 15443
 global.CardName[CardStat] = 'Masked Rider Decade'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Taida"
+CONT: This card is also regarded as "Jewelias Dracokid"
 
 AUTO: When this unit is rode upon, if you went second, draw a card.'
 global.UnitGrade[CardStat] = 0
@@ -10123,18 +10121,14 @@ CardStat = 15444
 global.CardName[CardStat] = 'Masked Rider Diend'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Dofund"
+CONT: This card is also regarded as "Flower of Ruined Castle, Empousa"
 
-AUTO: When this unit is placed on RC from hand, if your vanguard is "Avaricious Demonic Dragon, Greedon", you may Soul Charge 2.
-
-AUTO [RC]: When this unit attacks, if your soul has two or more "Avaricious Demonic Dragon, Greedon", COST [Counter Blast 1], and this unit gets critical +1 until end of that battle.'
-global.UnitGrade[CardStat] = 3
+AUTO [Front Row RC]: When you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability, if your unit did not stand by a card’s ability this turn, you may stand this unit. If you stand this unit, at the end of that turn, COST [retire this unit], choose a grade 2 or greater unit card from your soul, and put it into your hand.'
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
-global.PersonaRide[CardStat] = 1
-global.PersonaRideCardName[CardStat] = 'Desire Devil, Dofund'
 }
-global.PowerStat[CardStat] = 13000
-global.DefensePowerStat[CardStat] = 0
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 15445
@@ -10142,16 +10136,16 @@ CardStat = 15445
 global.CardName[CardStat] = 'Masked Rider Decade, Ryuki'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Mucca"
+CONT: This card is also regarded as "Demonic Jewel Dragon, Rystal Galer"
 
-AUTO: When this unit is placed on RC from hand, if your vanguard is "Avaricious Demonic Dragon, Greedon", COST [Counter Blast 1 & Soul Blast 2], choose a card from your soul, and call it to RC.
-
-AUTO [RC]: When your vanguard attacks, if you persona rode this turn, choose one of your vanguards, and it gets power +5000 until end of turn.'
-global.UnitGrade[CardStat] = 2
+AUTO [RC]: When this unit attacks a vanguard, if you Soul Blast 4 or more at the same time for the cost of your vanguard’s ability this turn, COST [put a card from your hand into your soul], draw a card, choose one of your opponent’s rear-guards, and retire it. (Can only be used if you Soul Blast 4 or more cards at the same time)'
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Demonic Jewel Dragon, Rystal Galer'
 }
-global.PowerStat[CardStat] = 10000
-global.DefensePowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 15446
@@ -10159,16 +10153,16 @@ CardStat = 15446
 global.CardName[CardStat] = 'Masked Rider Decade, Den-O Sword Form'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Crimson Igspeller"
+CONT: This card is also regarded as "Merciless Count, Botis"
 
-AUTO [RC]: When this unit attacks a vanguard, Soul Charge 1.
-
-ACT [Soul]: COST [Counter Blast 1 & put this card into drop], Soul Charge 1, choose one of your vanguards, and it gets power +10000 until end of turn.'
-global.UnitGrade[CardStat] = 2
+AUTO [RC]: When you Soul Blast 2 or more at the same time for your card’s ability’s cost, this unit gets power +5000 until end of turn. If you Soul Blast 3 or more at the same time, COST [Counter Blast 1], choose a card from your drop, put it into your soul, choose up to one of your opponent’s rear-guards with the same grade as that card, and retire it. (Count the number of Soul Blast for one cost)'
+global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Merciless Count, Botis'
 }
-global.PowerStat[CardStat] = 10000
-global.DefensePowerStat[CardStat] = 5000
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 15447
@@ -10194,16 +10188,17 @@ global.CardLimidet[CardStat] = 1
 CardStat = 15448
 {
 global.CardName[CardStat] = 'Masked Rider Decade, Hibiki'
-global.CardText[CardStat] = 'Dark States/Demon
+global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Yaaba"
+CONT: This card is also regarded as "Cranium Burner"
 
-ACT [Soul]: If your vanguard is "Avaricious Demonic Dragon, Greedon", COST [put this card into your drop], choose one of your vanguards, and it gets power +5000 until end of turn.'
-global.UnitGrade[CardStat] = 1
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Drajeweled" in its card name, this unit gets power +2000 until end of that battle. At the end of that battle, if you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability this turn, COST [retire this unit], and Counter Charge 1.'
+global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
-global.PowerStat[CardStat] = 8000
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 2000
 
 
 CardStat = 15449
@@ -10211,11 +10206,9 @@ CardStat = 15449
 global.CardName[CardStat] = 'Masked Rider Decade, Faiz'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Incane"
+CONT: This card is also regarded as "One Who Calls Upon Raging Thunder, Furgres"
 
-AUTO: When this unit is placed on RC, if you persona rode this turn, Soul Charge 1.
-
-AUTO: When this unit is put from RC into your soul by your vanguard’s ability, COST [Counter Blast 2], choose one of your vanguards, and it gets power +5000 / drive +1 until end of turn.'
+AUTO: When this unit is placed on RC, if you have a vanguard with "Drajeweled" in its card name, COST [Soul Blast 1], choose a card from your drop and put it into your soul, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10228,9 +10221,9 @@ CardStat = 15450
 global.CardName[CardStat] = 'Masked Rider Decade, Kabuto'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Bubetsuu"
+CONT: This card is also regarded as "Twin Marvel Dragon"
 
-AUTO [RC] 1/Turn: When your other rear-guard is put into your soul by your vanguard’s ability during your turn, COST [Counter Blast 1], choose a card from your hand, call it to an open RC, and if your soul has ten or more cards, draw a card. (May be used even if this unit is put into your soul at the same time as other units.)'
+AUTO [RC] 1/Turn: When you Soul Blast 3 or more cards at the same time for the cost of your vanguard’s ability, look at the top card of your deck, put it on the top of the deck or into the soul, and this unit gets power +2000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10260,11 +10253,11 @@ CardStat = 15457
 global.CardName[CardStat] = 'Masked Rider Decade, Kuuga'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Saasyou"
+CONT: This card is also regarded as "Famed Blazing Demonic Lady, Oriens"
 
-CONT [Deck]: If you have a vanguard with "Greedon" in its card name, this card is also regarded as having the same card name as all cards with "Desire Devil" in their card names in your soul.
+AUTO: When this unit is placed on RC other than by a unit card’s ability, if you played a normal order this turn, COST [Soul Blast 1], look at the top five cards of your deck, choose and reveal up to one card with grade less than or equal to your vanguard’s from among them, call it to RC if it is a unit card, and put it into hand if it is a normal order. Shuffle the deck.
 
-CONT [RC/GC]: If your soul has three or more cards with "Desire Devil" in their card names, this unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
+AUTO [RC]: When this unit attacks a grade 3 or greater unit, COST [Soul Blast 3], draw a card, and this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -10277,15 +10270,15 @@ CardStat = 15458
 global.CardName[CardStat] = 'Masked Rider Decade, Agito'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Fuujo"
+CONT: This card is also regarded as "Purple Jeweled Beast, Almethys"
 
-AUTO: When this unit is put into your soul from RC by the ability of your vanguard with "Greedon" in its card name, choose one of your opponent’s rear-guards, and you may retire it.
-
-AUTO [Soul]: When your vanguard with "Greedon" in its card name attacks, COST [bind this card], and until end of that battle, when your opponent would call cards from their hand to GC, they must call two or more at the same time.'
-global.UnitGrade[CardStat] = 2
+AUTO: When this unit is placed on RC or put on GC, COST [put a total of two cards from soul or drop that were in the ride deck into ride deck face up], and perform either of the following according to the circle this unit is on.
+• RC - Counter Charge 1.
+• GC - This unit gets shield +15000 until end of that battle.'
+global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
-global.PowerStat[CardStat] = 10000
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
 
 
@@ -10294,16 +10287,24 @@ CardStat = 15459
 global.CardName[CardStat] = 'Masked Rider Decade, Kiva'
 global.CardText[CardStat] = 'Dark States/Hero
 
-CONT: This card is also regarded as "Desire Devil, Kuvisgee"
+(STANDARD TH: You can only run this card if you do not have D Steam Scara, Gigi in your deck.)
 
-AUTO: When this unit is put into your soul from RC by the ability of your "Avaricious Demonic Dragon, Greedon", if you did not Counter Charge this turn, Counter Charge 1.
+CONT: This card is also regarded as "Brainwash Swirler"
 
-AUTO [Soul]: When your rear-guard is placed by a card’s ability, if your vanguard is "Avaricious Demonic Dragon, Greedon", and your damage zone has four or more cards, that called unit gets power +5000 until end of turn.'
+AUTO: When this unit is placed on RC, Soul Charge 1 .
+
+AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn. (+10000 if Soul Charge 2 )
+
+(SHIFT + left click to count up activations.)
+(SHIFT + right click to count down activations.)
+(Middle click or hover and press SPACE to set number of activations.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 15474
@@ -10326,7 +10327,7 @@ CardStat = 15495
 global.CardName[CardStat] = 'Suffer Devourer'
 global.CardText[CardStat] = 'Dark States/Demon
 
-AUTO [RC]: The cost for this card’s ability is reduced by Energy Blast 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
+AUTO [RC]: The Energy Blast you pay for this cost is reduced by 1 for each card in your damage zone. When this unit attacks, COST [Energy Blast 5], and this unit gets power +10000 until end of that battle.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
@@ -10352,7 +10353,7 @@ global.AttackFromRBuff[CardStat] = 5000
 
 CardStat = 15549
 {
-global.CardName[CardStat] = 'Monmegantic Chimaera'
+global.CardName[CardStat] = 'Montmegantiec Chimaera'
 global.CardText[CardStat] = 'Dark States/Chimera
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Almajestar" in its card name, choose up to one card with "Astroea" in its card name or up to one critical trigger from your drop, and put it into soul.
@@ -10370,7 +10371,7 @@ CardStat = 15550
 global.CardName[CardStat] = 'Adoring Dragon'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Fantome
 
-ACT [Drop]: COST [Bind a card with the same card name as this card from drop], and call this card to RC.'
+ACT [Drop]: COST [Bind another card with the same card name as this card from drop], and call this card to RC.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10436,7 +10437,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15576
 {
-global.CardName[CardStat] = 'Demonic Dragon Lord, Gabwelius "Fantome"'
+global.CardName[CardStat] = 'Demonic Lord Dragon, Gabwelius "Fantome"'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Fantome
 AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put two rear-guards into soul], choose up to two grade 3 or less cards from your drop, call them each to a RC in the same column, and at the end of that turn, put all of the called units into soul.
 [Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul, or drop], and perform all of the following.
@@ -10446,10 +10447,10 @@ AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & put two rear-guards i
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 2
 global.PersonaRide[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.ExtendedTextBox[CardStat] = 1
 
 
 CardStat = 15577
@@ -10489,7 +10490,7 @@ CardStat = 15579
 global.CardName[CardStat] = 'Devotion Dragon'
 global.CardText[CardStat] = 'Dark States/Abyss Dragon/Fantome
 
-AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Gabwelius" in its card name, choose one of your units, and it gets power +5000 until end of turn. If your bind zone has two or more Crimson Moon cards, choose two units instead of one.'
+AUTO: When this unit is put into soul from RC by the ability of your grade 3 or greater vanguard with "Gabwelius" in its card name, choose one of your units, and it gets power +5000 until end of turn. If your bind zone has two or more Crimson Moon cards, choose two of your units instead of one.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
@@ -10609,12 +10610,12 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15708
 {
-global.CardName[CardStat] = 'Freed Suffocator'
+global.CardName[CardStat] = 'Fluid Suffocator'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of the following.
 • Choose a grade 3 card with "Baromagnes" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Baromagnes" in its card name, draw a card.
-• If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, and this unit was placed other than during the battle phase, reveal the top three cards of your deck, choose up to any number of cards from among them, put them into soul, and shuffle the deck. Then, you may draw a card.
+• If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, and this unit was placed other than during the battle phase, reveal the top three cards of your deck, choose any number of cards from among them, put them into soul, and shuffle the deck. Then, you may draw a card.
 
 CONT [GC]: If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 2
@@ -10626,7 +10627,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15709
 {
-global.CardName[CardStat] = 'Mournful Eye Kyokotsu, Zolneiron'
+global.CardName[CardStat] = 'Frenzied Bones of Mourning Eyes, Zolneillon'
 global.CardText[CardStat] = 'Dark States/Demon
 
 AUTO: When this unit is placed on RC from hand, choose a grade 3 card with "Baromagnes" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Baromagnes" in its card name, Soul Charge 3.
@@ -10641,7 +10642,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 15710
 {
-global.CardName[CardStat] = 'Floating Entertainment Mage, Leditte'
+global.CardName[CardStat] = 'Float Mage, Levitte'
 global.CardText[CardStat] = 'Dark States/Human
 
 AUTO: When this unit is placed on RC from hand, Soul Charge 1, and if a trigger card was Soul Charge, Energy Charge 1.'
@@ -10659,7 +10660,7 @@ global.CardText[CardStat] = 'Dark States/Workeroid
 
 CONT [GC]: If you have a vanguard with "Direful Doll" in its card name, this unit gets shield +5000.
 
-ACT [Soul/Drop]: If you have a grade 3 or greater vanguard with "Direful Doll" in its card name, COST [Counter Blast 1, and put this card on the bottom of the deck], choose up to one card with "Direful Doll" in its card name from your drop, put it into soul, and you get "All of your front row units with "Direful Doll" in their card names get power +5000." until end of turn. You cannot pay the cost for the ACT ability of cards with the same card name as this card until end of turn.'
+ACT [Soul/Drop]: If you have a grade 3 or greater vanguard with "Direful Doll" in its card name, COST [Counter Blast 1, and put this card on the bottom of the deck], choose up to one card with "Direful Doll" in its card name from your drop, put it into soul, and you get "All of your front row units with "Direful Doll" in their card names get power +5000." until end of turn. You cannot pay the cost of the ACT abilities of a card with the same card name as this card until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10672,7 +10673,7 @@ CardStat = 15787
 global.CardName[CardStat] = 'Direful Doll, Giliola'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
-AUTO: When this unit is placed on RC, if you have a vanguard with "Direful Doll" in its card name, look at the top seven cards of your deck, choose up to one card with "Direful Doll" in its card name or up to one "For Now, Forget the Passage of Time" from among them, reveal it and put it into hand, and shuffle the deck. If you revealed, choose a card from your hand, and put it into soul.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Direful Doll" in its card name, look at the top seven cards of your deck, choose up to one card with "Direful Doll" in its card name or up to one "For Now, Forget the Passage of Time" from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul.
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Direful Doll" in its card name, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, bind this unit.'
 global.UnitGrade[CardStat] = 2
@@ -12098,4 +12099,190 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17172
+{
+global.CardName[CardStat] = 'Masked Rider Decade, Complete Form'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Demonic Jewel True Dragon, Drajeweled Ignis".
+
+CONT: This card can only be ridden from a unit with "Drajeweled" in its card name.
+
+AUTO [VC]: At the beginning of your battle phase, choose two cards from your drop, and put them into soul. Then, if your soul has four or more cards with different grades, all of your front row units gets power +15000 until end of turn.
+
+AUTO [VC]: While you are paying the cost for this ability, you may Soul Blast cards with "Drajeweled" in their card names from your soul as any grade from 0 to 4. When this unit attacks, COST [Soul Blast 5 cards with different grades], retire all of your opponent’s back row rear-guards, and until end of turn, this unit gets critical +1, and increase or decrease all of your opponent’s front row units’ power to 0.'
+global.UnitGrade[CardStat] = 4
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17173
+{
+global.CardName[CardStat] = 'Daiki Kaito, Masked Rider Diend'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Demonic Stone Dragon, Rockargour".
+
+AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, if your soul has four or more cards with different grades, this unit gets power +10000 until end of turn.
+
+AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability, if your opponent’s vanguard is grade 3 or greater, COST [Counter Blast 1], and stand this unit. (Can only be used if you Soul Blast 4 or more cards at the same time)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17174
+{
+global.CardName[CardStat] = 'Agito’s Dimension, Masked Rider Decade, Agito'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Soul Funeral Dragon, Noctursio".
+
+AUTO: When this unit is placed on RC or put on GC, choose up to one grade 4 card from your hand, and reveal it. If you revealed a card, or your vanguard is grade 4, perform one of the following according to the circle this unit is on
+• RC - COST [Counter Blast 1], draw a card, choose two cards from your drop, and put them into soul.
+• GC - This unit gets shield +15000 until end of that battle.
+
+AUTO: When this card is discarded from hand while riding a grade 3 from the ride deck or paying the cost for Stride, draw a card.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Soul Funeral Dragon, Noctursio'
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17175
+{
+global.CardName[CardStat] = 'Kabuto’s Dimension, Masked Rider Decade, Kabuto'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Wise Demonic Lordling, Varpula".
+
+AUTO [RC]: When you Soul Blast 4 or more cards at the same time for the cost of your vanguard’s ability, COST [put this unit into soul], and draw a card. Then, choose up to one grade 4 card from your hand, reveal it. If you revealed a card, or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, choose one of your rear-guards, and if your rear-guards did not stand by a card’s ability this turn, stand it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17179
+{
+global.CardName[CardStat] = 'Masked Rider Decade, Dimension Kick!'
+global.CardText[CardStat] = 'Dark States/Hero/Over Trigger
+
+CONT: This card is also regarded as "Hades Dragon Deity of Resentment, Gallmageheld"
+
+Additional Effect - You get "During your turn, all of your vanguards get power +10000 / critical +1" until end of this fight!'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.TriggerUnit[CardStat] = 6
+global.CardCopies[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 50000
+
+
+CardStat = 17180
+{
+global.CardName[CardStat] = 'Ryuki’s Dimension, Masked Rider Decade, Ryuki'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Soul Severing Demonic Spear Knight, Zagan".
+
+AUTO: When this unit is placed on RC during your main phase, you may Soul Charge 1. Choose up to one grade 4 card from your hand, and reveal it. If your revealed a card, or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, choose up to one card from your soul with a different card name from this unit and grade less than or equal to your vanguard, and call it to RC. At the end of that turn, put that called unit into soul.
+
+CONT [RC]: If you have a vanguard with "Drajeweled" in its card name, this unit gets "Boost".'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17186
+{
+global.CardName[CardStat] = 'Masked Rider Diend, AttackRide Blast'
+global.CardText[CardStat] = 'Dark States/AttackRide
+
+CONT: This card is also regarded as "Repelled Malice Dragon".
+
+CONT: Sentinel.
+
+AUTO: When this unit is put on GC, choose one of your units, and it cannot be hit until end of that battle. If your hand has two or more cards, choose a card from your hand, and discard it.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17187
+{
+global.CardName[CardStat] = 'Hibiki’s Dimension, Masked Rider Decade, Hibiki'
+global.CardText[CardStat] = 'Dark States/Hero/Front Trigger
+
+CONT: This card is also regarded as "Diabolos Girls, Natalia".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.TriggerUnit[CardStat] = 5
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 17188
+{
+global.CardName[CardStat] = 'I’ve Arrived, Masked Rider Decade, Den-O'
+global.CardText[CardStat] = 'Dark States/Hero/Critical Trigger
+
+CONT: This card is also regarded as "Stem Deviate Dragon".
+
+AUTO [RC]: At the end of the battle this unit boosted, COST [put this unit into your soul], choose one of your units, and it gets power +2000 until end of turn.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.TriggerUnit[CardStat] = 2
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 15000
+
+
+CardStat = 17189
+{
+global.CardName[CardStat] = 'Masked Rider Decade, Blade, Final AttackRide'
+global.CardText[CardStat] = 'Dark States/AttackRide/Draw Trigger
+
+CONT: This card is also regarded as "Rouse Wildmaster, Riley".
+
+CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 2
+global.TriggerUnit[CardStat] = 1
+}
+global.PowerStat[CardStat] = 4000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17190
+{
+global.CardName[CardStat] = 'Kiva’s Dimension, Masked Rider Decade, Kiva'
+global.CardText[CardStat] = 'Dark States/Hero
+
+CONT: This card is also regarded as "Hoardslash Dracokid".
+
+AUTO: When this unit is placed on RC, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one grade 4 card with "Drajeweled" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, choose up to one grade 4 card from your hand, reveal it. If you revealed a card from hand, or you have a grade 4 or greater vanguard with "Drajeweled" in its card name, draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 2
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
