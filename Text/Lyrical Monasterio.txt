@@ -14120,7 +14120,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 [Colorful Melody]
 
-CONT [VC]: All of your units with [Colorful Melody] get "CONT [VC/RC/GC]: During your turn, if your vanguard is grade 3 or greater, this unit gets power +5000. More of this ability cannot be got.".
+CONT [RC]: All of your units with [Colorful Melody] get "CONT [VC/RC]: During your turn, if your vanguard is grade 3 or greater, this unit gets power +5000. More of this ability cannot be got.".
 
 AUTO: When this unit is placed on RC, if your vanguard is grade 3 or greater, COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one card with [Colorful Melody] from among them, reveal it and put it into hand, shuffle the deck, and this unit gets power +5000 until end of turn.
 
@@ -14141,7 +14141,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 [Colorful Melody]
 
-CONT [VC]: All of your units with [Colorful Melody] get "CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000. More of this ability cannot be got.".
+CONT [RC/GC]: All of your units with [Colorful Melody] get "CONT [GC]: If your opponent’s vanguard is grade 3 or greater, this unit gets shield +5000. More of this ability cannot be got.".
 
 AUTO: When this unit is put on GC, if you have a vanguard with "Colorful Pastorale" in its card name, this unit gets shield +5000 until end of that battle.
 
@@ -14162,7 +14162,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 [Colorful Melody]
 
-CONT [VC]: All of your units with [Colorful Melody] get "CONT [RC]: This unit gets "Intercept", and can intercept from the back row. More of this ability cannot be got.".
+CONT [RC/GC]: All of your units with [Colorful Melody] get "CONT [RC]: This unit gets "Intercept", and can intercept from the back row. More of this ability cannot be got.".
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Colorful Pastorale" in its card name, COST [Counter Blast 1 or put a card from hand into soul], and draw a card.
 
@@ -14183,7 +14183,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 [Colorful Melody]
 
-CONT [VC]: All of your units with [Colorful Melody] get "CONT [RC/GC]: This unit cannot be retired by your opponent’s card effects. More of this ability cannot be got.".
+CONT [RC/GC]: All of your units with [Colorful Melody] get "CONT [RC/GC]: This unit cannot be retired by your opponent’s card effects. More of this ability cannot be got.".
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Colorful Pastorale" in its card name, choose up to one card from your drop, and put it into soul.
 
@@ -14210,4 +14210,183 @@ global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
 }
 global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17238
+{
+global.CardName[CardStat] = 'SweetLinker, Relkel'
+global.CardText[CardStat] = 'Lyrical Monasterio/Elf
+ 
+SweetLink - CONT: If your soul has another card with the same card name as this card, this card is in the SweetLink state.
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "SweetLinker" in its card name, look at the top three cards of your deck, choose up to one card from among them, discard it, and shuffle the deck. If this unit is in the SweeLink state, look at five cards instead of three.
+
+AUTO [RC]: At the end of your turn, if you have a grade 3 or greater vanguard with "SweetLinker" in its card name, COST [put this unit into soul], choose up to one of your rear-guards, and return it to hand.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17239
+{
+global.CardName[CardStat] = 'Past Twilight, Feltyrosa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17240
+{
+global.CardName[CardStat] = 'Invitation to the Soiree, Feltyrosa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
+
+AUTO: When this unit is placed by riding from "Past Twilight, Feltyrosa", COST [reveal a "Rondo of Moonlit Shadow, Feltyrosa" from ride deck], look at the top seven cards of your deck, choose up to one non-sentinel <Ghost> unit card from among them, reveal it and put it into hand, and shuffle the deck.
+
+CONT [RC]: If you have a vanguard with "Feltyrosa" in its card name, this unit gets power +2000. (Active on opponent’s turn too)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17241
+{
+global.CardName[CardStat] = 'Secluded Beauty, Feltyrosa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
+
+AUTO: When this unit is placed by riding from "Invitation to the Soiree, Feltyrosa", COST [reveal a "Rondo of Moonlit Shadow, Feltyrosa" from ride deck], choose up to one grade 2 or less non-sentinel <Ghost> unit card from your drop, and call it to RC.
+
+CONT [GC]: If you have a vanguard with "Feltyrosa" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17242
+{
+global.CardName[CardStat] = 'Rondo of Moonlit Shadow, Feltyrosa'
+global.CardText[CardStat] = 'Lyrical Monasterio/Vampire
+
+CONT [VC]: During your turn, all of your front row <Vampire> and <Ghost> get power +5000.
+
+ACT [VC] 1/Turn: COST [Counter Blast 1], and until end of turn, this unit gets "AUTO [VC] 1/Turn: When your drive check reveals a <Ghost> normal unit or a grade 3 card with "Feltyrosa" in its card name, you may call that card to an open RC. If you called a card, that unit gets power +5000 until end of turn. Then, if the number of cards called by this unit’s abilities this turn is two or less, this unit gets drive+1 until end of turn." thrice.
+
+AUTO: When this unit is placed on RC by the ability of a unit with "Feltyrosa" in its card name during your battle phase, COST [Soul Blast 1], and return this unit to hand.
+(SHIFT + left click to count up drives.)
+(SHIFT + right click to count down drives.)
+(Middle click or hover and press SPACE to set drive count.)'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+global.UseCounters[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17243
+{
+global.CardName[CardStat] = 'Resolute Voice, Cordula'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+AUTO: When this card is discarded from hand during your ride phase, if you have a vanguard with "Feltyrosa" in its card name, look at the top five cards of your deck, choose up to two <Ghost> from among them, discard them, and shuffle the deck.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17244
+{
+global.CardName[CardStat] = 'Carefully Finish Knitting, Daniella'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, COST [bind this card], choose up to two grade 1 or greater cards with "Feltyrosa" in their card names and the sum of their grades being 3 or less from your drop, and put them into soul. If your opponent’s vanguard is grade 3 or greater, your vanguard gets power +5000 until end of turn. You cannot bind cards with the same card name as this card from drop until end of turn. 
+
+CONT [GC]: If you have a vanguard with "Feltyrosa" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17245
+{
+global.CardName[CardStat] = 'Happiness Is Nearby, Atonia'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+
+AUTO: When this card is revealed during your drive check, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, choose up to one of your grade 1 or less front row <Ghost>, and move it to an open RC in the same column as that unit.
+
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, you may have this unit get power +10000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom of the deck. '
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+global.AttackFromRBuff[CardStat] = 10000
+
+
+CardStat = 17246
+{
+global.CardName[CardStat] = 'Dead of Night March, Herta'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+AUTO: When this unit is placed on a front row RC by the ability of your vanguard with "Feltyrosa" in its card name during your battle phase, this unit gets power +10000 until end of turn.
+
+AUTO [RC]: At the end of the battle this unit boosted a <Ghost> rear-guard, if you have a vanguard with "Feltyrosa" in its card name, COST [retire two rear-guards in the same column as this unit], and draw a card.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17247
+{
+global.CardName[CardStat] = 'Love-scattering Aria, Feene'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+CONT: If you do not have a vanguard with "Feltyrosa" in its card name, this card cannot be called. (Including GC)
+
+CONT [RC/GC]: This unit gets power +5000 / shield +5000. (Active on opponent’s turn too)
+
+AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, retire this unit.
+
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Feltyrosa" in its card name, and you do not have a rear-guard with the same card name as this card, COST [Soul Blast 1 card with "Feltyrosa" in its card name], and call this card to RC.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17248
+{
+global.CardName[CardStat] = 'Postlude Walking With You, Kreszenz'
+global.CardText[CardStat] = 'Lyrical Monasterio/Ghost
+ 
+AUTO: When this unit is placed on RC, if you have a vanguard with "Feltyrosa" in its card name, COST [Counter Blast 1], look at the top card of your deck, and perform one of the following. If your vanguard is grade 3 or greater, this cost may be paid with "Energy Blast 3".
+• Put that card into hand.
+• Put that card on the top of the deck, and this unit gets "AUTO [RC]: At the end of the battle this unit attacked, put this unit on the bottom of the deck, and at the end of that turn, draw a card." until end of turn.
+
+AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, retire this unit. If this unit was placed from deck this turn, it gets power +10000 instead of +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
