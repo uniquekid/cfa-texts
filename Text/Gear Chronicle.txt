@@ -1734,11 +1734,15 @@ CardStat = 4121
 global.CardName[CardStat] = 'Steam Fighter, Agar'
 global.CardText[CardStat] = 'Gear Chronicle/Gearoid
 
-AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, reveal the top four cards of your deck, search for up to one card with the Legion ability from among them, put it into your hand, and put the rest into your drop zone.'
+AUTO: [Soul Blast 1] When this unit is placed on RC, you may pay the cost. If you do, reveal the top four cards of your deck, search for up to one card with the Legion ability from among them, put it into your hand, and put the rest into your drop zone.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 5000
+global.RevealTopX[CardStat] = 4
 
 
 CardStat = 4122
@@ -2821,11 +2825,15 @@ global.CardText[CardStat] = 'Gear Chronicle/Gear Colossus/Zodiac Time Beast
 
 AUTO: [Choose a card from your hand, and discard it] When this unit is placed on VC, you may pay the cost. If you do, reveal three cards from the top of your deck, choose up to two <Gear Colossus> or <Zodiac Time Beast> from among them, put one of those cards in your hand, bind one of those cards face up, and put the rest into your drop zone.
 
-AUTO [VC]: When your G unit Stride, you may draw a card. If you do, choose a card from your hand, bind it face up, choose one of your vanguards, and it gets power +1000 for each card in your bind zone until end of turn.'
+AUTO [VC]: When your G unit Stride, you may draw a card. If you do, choose a card from your hand, bind it face up, choose one of your vanguards, and it gets power +1000 for each card in your bind zone until end of turn.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 11000
+global.DefensePowerStat[CardStat] = 0
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 4814

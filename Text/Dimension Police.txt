@@ -2335,11 +2335,15 @@ global.CardText[CardStat] = 'Dimension Police/Human
 
 AUTO: Forerunner.
 
-ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Reveal three cards from the top of your deck, if all of those cards have "Dimensional Robo" in their card names, put one card of the greater power with "Dimensional Robo" in its card name among them into your hand, and if that card is grade 3, Counter Charge 1. Put the rest of the revealed cards into your drop zone.'
+ACT [RC]: [Counter Blast 1 & Put this unit into your soul] Reveal three cards from the top of your deck, if all of those cards have "Dimensional Robo" in their card names, put one card of the greater power with "Dimensional Robo" in its card name among them into your hand, and if that card is grade 3, Counter Charge 1. Put the rest of the revealed cards into your drop zone.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 0
 global.CardInClan[CardStat] = 6
 }
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 10000
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 5392
@@ -2553,12 +2557,16 @@ global.CardText[CardStat] = 'Dimension Police/Battleroid
 
 Stride.
 
-ACT [VC] 1/Turn: [Choose a face down card from your G zone with the same card name as this unit, and turn it face up] This unit gets "AUTO [VC]: [Soul Blast 1] When your opponent’s guardian is placed, you may pay the cost. If you do, reveal three cards from the top of your deck, if all of those cards have "Dimensional Robo" in their card names, put up to one grade 3 card from among them into your hand, if you put a card into your hand, choose one of your opponent’s guardians, and retire it. Shuffle your deck.".'
+ACT [VC] 1/Turn: [Choose a face down card from your G zone with the same card name as this unit, and turn it face up] This unit gets "AUTO [VC]: [Soul Blast 1] When your opponent’s guardian is placed, you may pay the cost. If you do, reveal three cards from the top of your deck, if all of those cards have "Dimensional Robo" in their card names, put up to one grade 3 card from among them into your hand, if you put a card into your hand, choose one of your opponent’s guardians, and retire it. Shuffle your deck.".
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 6
 global.ExtraDeck[CardStat] = 1
 }
 global.PowerStat[CardStat] = 15000
+global.DefensePowerStat[CardStat] = 0
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 5448

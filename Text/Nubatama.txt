@@ -1761,12 +1761,13 @@ global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
 AUTO [VC/RC]: When placed, until end of turn, your opponent cannot intercept, and this unit gets power +3000.
 
-AUTO [VC/RC]: At the end of the battle it attacked, COST [Counter Blast 1], choose one of your or your opponent’s rear-guards, and return it to the hand.'
+AUTO [VC/RC]: At the end of the battle it attacked, COST [Counter Blast 1], choose one of your or your opponent’s rear-guards, and return it to hand.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
-}
 global.GreenTokenAdd[CardStat] = 1
+}
 global.PowerStat[CardStat] = 12000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 6368
@@ -1933,11 +1934,12 @@ CardStat = 6822
 global.CardName[CardStat] = 'Stealth Dragon, Antenbrand'
 global.CardText[CardStat] = 'Nubatama/Abyss Dragon
 
-ACT [RC] 1/Turn: COST [Rest this unit], your opponent chooses one of his or her rear-guards in the same column as this unit, and returns it to the hand. If he or she returned, stand this unit, and it gets power +3000 until end of turn.'
+ACT [RC] 1/Turn: COST [Rest this unit], your opponent chooses one of his or her rear-guards in the same column as this unit, and returns it to their hand. If a unit was returned, stand this unit, and it gets power +3000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
 }
 global.PowerStat[CardStat] = 7000
+global.DefensePowerStat[CardStat] = 10000
 
 
 CardStat = 6838
@@ -2027,13 +2029,14 @@ CardStat = 6869
 global.CardName[CardStat] = 'Stealth Beast, Tamahagane '
 global.CardText[CardStat] = 'Nubatama/Warbeast
 
-AUTO [RC]: When placed, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and return it to the hand. If you returned, your opponent chooses a card from his or her hand, and discards it.
+AUTO [RC]: When placed, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and return it to hand. If it was returned, your opponent chooses a card from his or her hand, and discards it.
 
 CONT [RC]: If your opponent’s hand has four or less cards, this unit gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 23
 }
 global.PowerStat[CardStat] = 9000
+global.DefensePowerStat[CardStat] = 5000
 
 
 CardStat = 6871
@@ -2495,7 +2498,7 @@ CardStat = 7935
 global.CardName[CardStat] = 'Stealth Beast, Zokuhihi'
 global.CardText[CardStat] = 'Nubatama/Warbeast
 
-AUTO [VC]: When it attacks a vanguard, COST [Counter Blast 1], choose two each of your and your opponent’s rear-guards, and return them to the hand. If four or more cards were returned, your opponent chooses two cards from his or her hand, and discards them.'
+AUTO [VC]: When it attacks a vanguard, COST [Counter Blast 1], choose two each of your and your opponent’s rear-guards, and return them to hand. If a total of four cards were returned, your opponent chooses two cards from his or her hand, and discards them.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 23
 }
@@ -2508,7 +2511,7 @@ CardStat = 7936
 global.CardName[CardStat] = 'Stealth Beast, Ibudanuki'
 global.CardText[CardStat] = 'Nubatama/Warbeast
 
-AUTO [RC]: When the attack it boosted hits a vanguard, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and return it to the hand. If a card was returned, your opponent chooses a card from his or her hand, and discards it.'
+AUTO [RC]: When the attack it boosted hits a vanguard, COST [Soul Blast 1], choose one of your opponent’s rear-guards, and return it to  hand. If it was returned, your opponent chooses a card from his or her hand, and discards it.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 23
 }
