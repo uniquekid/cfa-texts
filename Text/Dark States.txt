@@ -5927,13 +5927,16 @@ global.CardText[CardStat] = 'Dark States/Gearoid
 
 AUTO: When this unit is placed on RC, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, COST [Counter Blast 1], reveal the top three cards of your deck, put any number of cards into soul from among them, and shuffle the deck. If you put one or more cards into soul, you may draw a card.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and this unit’s critical is 1 or less, COST [Energy Blast 3], and this unit gets power +5000 / critical +1 until end of that battle.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Blangdmire" in its card name, and this unit’s critical is 1 or less, COST [Energy Blast 3], and this unit gets power +5000 / critical +1 until end of that battle.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 global.AttackFromRBuff[CardStat] = 5000
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 12702
@@ -7432,7 +7435,7 @@ CardStat = 13544
 global.CardName[CardStat] = 'Bunny-eared Dancer, Ulanova'
 global.CardText[CardStat] = 'Dark States/Elf
 
-AUTO [RC]: At the end of the battle this unit boosted, if your soul has ten or more cards, COST [put his unit into soul], choose one of your opponent’s back row rear-guards, and retire it.'
+AUTO [RC]: At the end of the battle this unit boosted, if your soul has ten or more cards, COST [put this unit into soul], choose one of your opponent’s back row rear-guards, and retire it.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
@@ -10617,12 +10620,15 @@ AUTO: When this unit is placed on RC, COST [Counter Blast 1], and perform one of
 • Choose a grade 3 card with "Baromagnes" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Baromagnes" in its card name, draw a card.
 • If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, and this unit was placed other than during the battle phase, reveal the top three cards of your deck, choose any number of cards from among them, put them into soul, and shuffle the deck. Then, you may draw a card.
 
-CONT [GC]: If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, this unit gets shield +5000.'
+CONT [GC]: If you have a grade 3 or greater vanguard with "Baromagnes" in its card name, this unit gets shield +5000.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 15709
@@ -12055,7 +12061,7 @@ global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
-global.DefensePowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 0
 
 
 CardStat = 16990

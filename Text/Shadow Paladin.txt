@@ -2400,12 +2400,15 @@ CardStat = 4294
 global.CardName[CardStat] = 'Detecting Revenger, Aife'
 global.CardText[CardStat] = 'Shadow Paladin/Elf
 
-ACT [RC]: COST [Rest this unit], reveal the top five cards of your deck, choose a "Revenger, Raging Form Dragon" from among them, put it into hand, and shuffle the deck. If you did not put it into hand, choose one of your other units, and it gets power +2000 until end of turn.'
+ACT [RC]: COST [Rest this unit], reveal the top five cards of your deck, choose a "Revenger, Raging Form Dragon" from among them, put it into hand, and shuffle the deck. If you did not put it into hand, choose one of your other units, and it gets power +2000 until end of turn.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+global.RevealTopX[CardStat] = 5
 
 
 CardStat = 4308
@@ -2719,12 +2722,15 @@ CardStat = 4570
 global.CardName[CardStat] = 'Knight of Selection, Fergus'
 global.CardText[CardStat] = 'Shadow Paladin/Human
 
-AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, reveal three cards from the top of your deck, choose one of the cards with the lowest grade from among them, put it into your hand, and put the rest into your drop zone.'
+AUTO: [Choose a grade 1 or less card from your hand, and discard it] When this unit is placed on RC, you may pay the cost. If you do, reveal three cards from the top of your deck, choose one of the cards with the lowest grade from among them, put it into your hand, and put the rest into your drop zone.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.RevealTopX[CardStat] = 3
 
 
 CardStat = 4571

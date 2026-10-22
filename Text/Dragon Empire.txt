@@ -3591,13 +3591,16 @@ AUTO [VC]: When your opponent’s rear-guard is retired during your turn, choose
 
 CONT [VC]: During your turn, all of your front row unit gets power +2000 for each face down card in your bind zone. If there are five or more, this unit gets critical +1.
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], and choose five of your opponent’s rear-guards with different grades. Reveal the top five cards of your deck, retire all of the chosen units with the same grade as any of the revealed cards, shuffle your deck, and if the number of units retired is one or less, draw a card, choose a card from your drop, and bind it face down.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], and choose five of your opponent’s rear-guards with different grades. Reveal the top five cards of your deck, retire all of the chosen units with the same grade as any of the revealed cards, shuffle your deck, and if the number of units retired is one or less, draw a card, choose a card from your drop, and bind it face down.
+
+(SHIFT + left click to reveal from top deck automatically.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.RevealTopX[CardStat] = 5
 
 
 CardStat = 10822

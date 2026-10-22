@@ -64,7 +64,7 @@ global.CardName[CardStat] = 'TAKE YouR hEaRT, Protagonist {P5} as JOKER'
 global.CardText[CardStat] = 'Persona Series/P5/Phantom Thieves of Hearts
 
 Arcana: 0 Fool
-ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Phantom Thieves of Hearts> and up to one card with <P5> and <Cooperato> or <Velvet Room Resident> from among them, call them to RC, and shuffle the deck. Until end of your opponent’s next turn, this unit gets "AUTO: Your back row center <Phantom Thieves of Hearts> unit can attack and intercept from the back row, and if you persona rode this turn, it also gets power +10000.".
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Phantom Thieves of Hearts> and up to one card with <P5> and <Cooperator> or up to one <Velvet Room Resident> from among them, call them to RC, and shuffle the deck. Until end of your opponent’s next turn, this unit gets "CONT [VC]: Your back row center <Phantom Thieves of Hearts> unit can attack and intercept from the back row, and if you persona rode this turn, it also gets power +10000.".
 ACT [VC] 1/Turn: If you persona rode this turn, COST [say Persona], choose one of your back row center rear-guards with persona gauge, and it gets "AUTO [RC]: When this unit attacks a vanguard, until end of that battle, this unit’s drive becomes 1, and can perform drive checks." until end of turn. 
 (SHIFT + left click to create tokens)
 (Hold TAB to view the related card.)'
@@ -332,7 +332,7 @@ global.DefensePowerStat[CardStat] = 5000
 CardStat = 17048
 {
 global.CardName[CardStat] = 'The Phantom Hacker, Futaba Sakura as NAVI'
-global.CardText[CardStat] = 'Persona Series/P5/Phantom Thieves of Hearts
+global.CardText[CardStat] = 'Persona Series/P5/Phantom Thieves of Hearts/Confidant
 
 Arcana: IX Hermit
 
@@ -387,48 +387,44 @@ global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
 
 Arcana: XV Devil
 (You will be prompted to get the Arcana marker upon calling.)
-
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top card of your opponent’s deck.
 (SHIFT + left click to activate this ability.)
 
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Devil" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: When you look at your opponent’s deck by this unit’s AUTO ability, you may put the top card of your opponent’s deck on the bottom of the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17013
-global.TokenSummonerPosition[CardStat] = 'R'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17013
+global.TokenSummonerPosition[CardStat] = 'R'
+global.TokenSummonerQuantity[CardStat] = 1
 global.Reveal[CardStat] = 1
-
-
 //hEa-RT turns to hEa-rest icon, so please keep that in mind when localising
 CardStat = 17052
 {
 global.CardName[CardStat] = 'Self-appointed Public Relations Officer, Yuuki Mishima'
 global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
-
 Arcana: XVIII Moon
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top seven cards of your deck, choose up to one "TAKE YouR hEaRt, Protagonist {P5} as JOKER" from among them, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul.
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Moon" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: When you would put a card into hand by unit’s AUTO ability, you may Energy Blast 3. If you do, the number of cards put into soul from hand by that ability becomes 0.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17016
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17016
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17053
@@ -440,18 +436,18 @@ Arcana: XVII Stars
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [put a grade 2 <Phantom Thieves of Hearts> from RC into soul], search your deck for up to one grade 2 <Phantom Thieves of Hearts> with a different card name from the card put into soul for this cost, call it to RC, and shuffle the deck.
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Stars" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: During the turn this unit was placed, the unit called by this unit’s AUTO ability gets power +5000.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17015
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17015
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17054
@@ -463,17 +459,17 @@ Arcana: XIII Death
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Soul Blast 1], choose a non-sentinel <Phantom Thieves of Hearts> with grade less than or equal to your vanguard from your drop, and call it to RC.
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Death" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17011
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17011
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17055
@@ -666,7 +662,7 @@ CardStat = 17076
 global.CardName[CardStat] = 'Unyielding Politician, Toranosuke Yoshida'
 global.CardText[CardStat] = 'Persona Series/P5/Cooperator/Confidant
 
-Arcana: XX Sun
+Arcana: XIX Sun
 AUTO: When this unit is placed on RC, if you have a <P5> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, draw a card, choose a card from your hand, and put it into soul.
 CONT: If you have a <P5> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
@@ -770,9 +766,9 @@ global.CardText[CardStat] = 'Persona Series/P4/Investigation Team
 
 Arcana: 0 Fool
 
-ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Investigation Team> and up to one card with <P4> and <Social Link> or <Velvet Room Resident> from among them, call them to RC, and shuffle the deck. Until end of your opponent’s next turn, this unit gets "AUTO: Your back row center <Investigation Team> unit can attack and intercept from the back row, and if you persona rode this turn, it also gets power +10000.".
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to one <Investigation Team> and up to one card with <P4> and <Social Link> or <Velvet Room Resident> from among them, call them to RC, and shuffle the deck. Until end of your opponent’s next turn, this unit gets "CONT [VC]: Your back row center <Investigation Team> unit can attack and intercept from the back row, and if you persona rode this turn, it also gets power +10000.".
 
-ACT [VC] 1/Turn: If you persona rode this turn, COST [say Persona], and this unit gets [Power]+5000/drive+1 until end of turn.
+ACT [VC] 1/Turn: If you persona rode this turn, COST [say Persona], and this unit gets power +5000 / drive+1 until end of turn.
  
 (SHIFT + left click to create tokens)
 
@@ -780,18 +776,18 @@ ACT [VC] 1/Turn: If you persona rode this turn, COST [say Persona], and this uni
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 19
 global.PersonaRide[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
 global.AnotherSide[CardStat] = 17086
-global.TokenSummoner[CardStat] = 16998
-global.TokenSummoner2[CardStat] = 17086
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
-global.TokenSummoner2Button1[CardStat] = "Arcana"
-global.TokenSummoner2Button2[CardStat] = "Izanagi-no-Okami"
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+global.TokenSummoner[CardStat] = 16998
+global.TokenSummoner2[CardStat] = 17086
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
+global.TokenSummoner2Button1[CardStat] = "Arcana"
+global.TokenSummoner2Button2[CardStat] = "Izanagi-no-Okami"
 
 
 CardStat = 17090
@@ -1008,18 +1004,18 @@ Arcana: VIII Justice
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top seven cards of your deck, choose up to one <P4> unit card with either "Protagonist", "Yosuke Hanamura", or "Teddie" in its card name, reveal it and add it to your hand, and shuffle your deck.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Justice" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - ACT [Drop]: If you have a rear-guard with "Teddie" in its card name and all of your rear-guards have different names from this card, COST [Soul Blast 1], and call this card to RC.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17006
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17006
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17110
@@ -1031,18 +1027,18 @@ Arcana: XX Aeon
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, choose one of your rear-guards with Persona gauge, and put an Arcana marker corresponding to that unit’s Arcana into your order zone.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Aeon" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - ACT [RC]: If your vanguard has 2 or more Persona gauges, and all of the cards in your bind zone have different names from this unit, COST [bind this unit], and activate persona ride.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17111
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17111
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17112
@@ -1054,17 +1050,17 @@ AUTO: When this unit is placed on RC, until end of this fight, you become "Drama
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Energy Charge 1 by this unit’s AUTO ability, Energy Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17017
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17017
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17113
@@ -1076,17 +1072,17 @@ AUTO: When this unit is placed on RC, until end of this fight, you become "Symph
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Energy Charge 1 by this unit’s AUTO ability, Energy Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17017
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17017
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17114
@@ -1141,17 +1137,17 @@ AUTO: When this unit is placed on RC, until end of this fight, you become "Baske
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Strength" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17009
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17009
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17117
@@ -1163,17 +1159,17 @@ AUTO: When this unit is placed on RC, until end of this fight, you become "Baske
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Strength" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17009
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17009
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17128
@@ -1360,22 +1356,22 @@ AUTO [RC]: At the end of the battle this unit boosted a <P3> unit, COST [put thi
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name that does not have a card named "Thanatos" in its Persona gauge, if there are three "Death" Arcana markers in your order zone, put a Thanatos token as your vanguard’s Persona gauge.
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Death" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: When this unit boosts, this unit gets power +5000 until end of battle.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17011
-global.TokenSummoner2[CardStat] = 17140
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
-global.TokenSummoner2Button1[CardStat] = "Death"
-global.TokenSummoner2Button2[CardStat] = "Thanatos"
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17011
+global.TokenSummoner2[CardStat] = 17140
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
+global.TokenSummoner2Button1[CardStat] = "Death"
+global.TokenSummoner2Button2[CardStat] = "Thanatos"
 
 
 CardStat = 17142
@@ -1651,22 +1647,22 @@ global.CardName[CardStat] = 'Student Council Treasurer, Chihiro Fushimi'
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 
 CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: VIII Justice".
-AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [put a card from your hand into your soul], and draw a card.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [put a card from your hand into your soul], and draw a card.
 CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Justice" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: If your vanguard is grade 3 or greater, this unit’s AUTO ability effect of "draw a card" is changed to "your vanguard gets "Triple Drive" until end of turn".
 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17006
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17006
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17166
@@ -1678,23 +1674,22 @@ CONT [RC]: If you have a vanguard with "Protagonist {P3P}" in its card name, thi
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [bind a unit card with "Pharos" in its card name from your soul or drop], put a "Death" Arcana marker into your order zone, and Energy Charge 1 .
 CONT: If you have a vanguard with "Protagonist {P3P}" in its card name, this card gets all of the following according to the number of "Fortune" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Energy Charge 1 by this unit’s AUTO ability, Energy Charge 2 instead.
-
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17008
-global.TokenSummoner2[CardStat] = 17011
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
-global.TokenSummoner2Button1[CardStat] = "Fortune"
-global.TokenSummoner2Button2[CardStat] = "Death"
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17008
+global.TokenSummoner2[CardStat] = 17011
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.TokenSummoner2Text[CardStat] = "Which token do you want to create?"
+global.TokenSummoner2Button1[CardStat] = "Fortune"
+global.TokenSummoner2Button2[CardStat] = "Death"
 
 
 CardStat = 17167
@@ -1708,17 +1703,17 @@ AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagon
 
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: This unit’s AUTO ability cost is lost.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17017
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17017
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17168
@@ -1747,18 +1742,18 @@ Arcana: 0 Jester
 AUTO [Drop]: When your unit with "Ryotaro Dojima" in its card name is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name and you have not resolved the AUTO ability of a card with the same name as this unit this turn, COST [Soul Blast 1], and call this card to RC.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Jester" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - ACT [RC]: If this unit was placed on RC by the effect of a card with the same name as this unit this turn, choose a card from your opponent’s hand at random, and discard it. You cannot activate the ACT ability of cards with the same name as this unit until end of fight.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17170
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17170
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17171
@@ -1770,19 +1765,18 @@ Arcana: V Hierophant
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top 5 cards of your deck, choose up to 1 card with "Nanako Dojima" in its card name, reveal it and add it to your hand, and shuffle your deck. If you revealed a card, put this unit on the bottom of your deck.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hierophant" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: This unit will not be put on the bottom of your deck by this unit’s ability.
-
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17003
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17003
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17205
@@ -1794,17 +1788,17 @@ Arcana: XVI Tower
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, your opponent chooses a card from their hand, and reveals it.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Tower" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When your opponent would choose cards from hand by this unit’s AUTO ability, choose all cards instead of one. 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17014
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17014
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17206
@@ -1816,17 +1810,17 @@ Arcana: XIV Temperance
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Temperance" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17012
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17012
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17207
@@ -1834,21 +1828,21 @@ CardStat = 17207
 global.CardName[CardStat] = 'Mature Schoolgirl, Saori Hasegawa'
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 CONT [RC]: If you have a vanguard with "Protagonist {P3P}" in its card name, this unit gets "Arcana: IX Hermit".
-AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, until end of this fight, its shield becomes 0, and it gets "AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)".
-CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3P}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, until end of this fight, its shield becomes 0, and it gets "AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)".
+CONT: If you have a vanguard with "Protagonist {P3P}" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would choose your opponent’s rear-guards by this unit’s AUTO ability, choose up to two instead of one.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17007
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17007
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17208
@@ -1856,21 +1850,21 @@ CardStat = 17208
 global.CardName[CardStat] = 'Internet, Maya'
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: IX Hermit".
-AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, until end of this fight, its shield becomes 0, and it gets "AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)".
-CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, until end of this fight, its shield becomes 0, and it gets "AUTO [RC]: At the end of your turn, retire this unit. (This effect is mandatory)".
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Sun" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would choose your opponent’s rear-guards by this unit’s AUTO ability, choose up to two instead of one.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17007
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17007
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17222
@@ -1881,17 +1875,17 @@ Arcana: XV Devil
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, choose a card from your drop, and put it into soul.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Devil" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - ACT [RC]: If all of the cards in your bind zone have different card names from this unit, COST [bind this unit], choose a non-sentinel <P4> normal unit from your drop, and call it to RC.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17013
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17013
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17223
@@ -1902,17 +1896,17 @@ Arcana: XIII Death
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, draw a card, choose a card from your hand, and discard it.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Death" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: If all of the cards in your bind zone have different card names from this unit, when you would discard a card from hand by this unit’s AUTO ability, you may bind this unit instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17011
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17011
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17224
@@ -1923,18 +1917,18 @@ Arcana: XIV Temperance
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during the stand phase.
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Temperance" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC] 1/Turn: When you Energy Blast 1 by this unit’s AUTO ability, COST [Energy Blast 1], choose a critical trigger from your drop, and return it to deck and shuffle it.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17012
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17012
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17225
@@ -1948,18 +1942,18 @@ AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagon
 
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Tower" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: When you Soul Charge 1 by this unit’s AUTO ability, your vanguard gets power +5000 until end of turn.
 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17014
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17014
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17226
@@ -1968,20 +1962,22 @@ global.CardName[CardStat] = 'Aiming for the Restoration of the Shrine, Fox'
 global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
 
 Arcana: IX Hermit
+
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Counter Blast 1], and Energy Charge 3 .
+
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hermit" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost. 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17007
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17007
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17227
@@ -1990,20 +1986,21 @@ global.CardName[CardStat] = 'Son of the Liquor Store, Naoki Konishi'
 global.CardText[CardStat] = 'Persona Series/P4/Cooperator/Social Link
 
 Arcana: XII Hanged Man
+
 AUTO: When this unit is placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1 .
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hanged Man" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - AUTO [RC]: When you Energy Charge 1 by this unit’s AUTO ability, your vanguard gets power +5000 until end of turn. 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17010
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17010
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17228
@@ -2012,20 +2009,22 @@ global.CardName[CardStat] = 'Gourmet King, Nozomi Suemitsu'
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 
 Arcana: XVIII Moon
+
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 2], and Counter Charge 1 .
+
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Moon" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17016
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17016
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17229
@@ -2034,20 +2033,22 @@ global.CardName[CardStat] = 'Female Manager, Yuko Nishiwaki'
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 
 CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: XI Strength".
-AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, put this card into soul.
-CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Moon" Arcana markers in your order zone.
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, put this card into soul.
+
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Moon" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [GC]: This unit gets shield +5000. 
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17009
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17009
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17230
@@ -2056,20 +2057,22 @@ global.CardName[CardStat] = 'Elderly Couple of the Second-hand Bookstore, Bunkic
 global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
 
 Arcana: V Hierophant
+
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Energy Charge 1 .
+
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hierophant" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more -  CONT [RC]: When you Energy Charge 1 by this unit’s AUTO ability, Energy Charge 2 instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17003
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17003
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 
 
 CardStat = 17231
@@ -2080,20 +2083,19 @@ Arcana: IV Emperor
 AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 1], choose one of your opponent’s rear-guards, and until end of your opponent’s next turn, that unit cannot intercept, and cannot stand during the stand phase.
 CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Emperor" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more -  CONT [RC]: When you Energy Blast 1 for the cost of this unit’s AUTO ability, Energy Charge 2 .
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
-global.TokenSummoner[CardStat] = 17002
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-
-
+global.TokenSummoner[CardStat] = 17002
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
 //First skill abbrevaited for text room, keep in mind when translating
+
 CardStat = 17232
 {
 global.CardName[CardStat] = 'Sports Team Manager, Ai Ebihara'
@@ -2102,15 +2104,203 @@ Arcana: XVIII Moon
 AUTO: When placed on RC, if you have a <P4> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, look at the top 7 cards of your deck, choose up to one <P4> with "Protagonist" in its card name, reveal it, put it into hand, and shuffle the deck. If you revealed a card, choose a card from hand, and put it into soul. If you put a card into soul by this effect, and your order zone has 2 or less "Moon" Arcana markers, you get "You cannot put "Moon" Arcana markers in the order zone" until end of fight.
 CONT: If you have a <P4> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Moon" Arcana markers in your order zone.
 • One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
-• Two or more - CONT [RC]: This unit gets shield +5000.
+• Two or more - CONT [GC]: This unit gets shield +5000.
 • Three or more - CONT [RC]: When you would choose a card from hand by this unit’s AUTO ability, you may choose from drop instead.
 (SHIFT + left click to create Arcana marker)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
 global.TokenSummoner[CardStat] = 17016
 global.TokenSummonerPosition[CardStat] = 'SHIFT'
 global.TokenSummonerQuantity[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
+
+
+CardStat = 17259
+{
+global.CardName[CardStat] = 'Cultures Club, Keisuke Hiraga'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+
+CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: X Fortune".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, Soul Charge 1 .
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Fortune" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more -  CONT [RC]: When you Soul Charge 1 by this unit’s AUTO ability, Soul Charge 2 .
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
 }
 global.PowerStat[CardStat] = 8000
-global.DefensePowerStat[CardStat] = 5007 
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17008
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17260
+{
+global.CardName[CardStat] = 'Girl at the Shrine, Maiko Oohashi'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+
+Arcana: XII Hanged Man
+AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Counter Blast 1], and this unit gets "AUTO [RC]: At the end of your turn, return this unit to hand." until end of turn.
+CONT: If you have a <P3> vanguard with "Protagonist" in its card name, this card gets all of the following according to the number of "Hanged Man" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more -  CONT [RC]: When you Counter Blast 1 by this unit’s AUTO ability, your vanguard’s critical becomes 2 until end of turn.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17010
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17261
+{
+global.CardName[CardStat] = 'Velvet Room Master, Igor'
+global.CardText[CardStat] = 'Persona Series/P3/Velvet Room Resident
+
+AUTO: When this card is discarded from hand during your ride phase, look at the top seven cards of your deck, choose up to one <Velvet Room Resident> from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO: When this card is revealed during your damage check, if your damage zone has five cards, reveal the top card of your deck. If the revealed card has the same card name as your vanguard, choose a card from your damage zone, heal it, and you cannot heal with the ability of a card with the same card name as this card until end of this fight.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17262
+{
+global.CardName[CardStat] = 'Velvet Room Bellboy, Theodore'
+global.CardText[CardStat] = 'Persona Series/P3/Velvet Room Resident
+
+AUTO [Drop]: When your <Velvet Room Resident> with a different card name from this card is placed on RC, COST [Counter Blast 1 or Energy Blast 3], and call this card to RC.
+
+CONT [RC]: During your opponent’s turn, when your unit with "Elizabeth" or "Margaret" in its card name would be retired from RC, you may retire this unit. If you do, that unit stays on RC.
+
+CONT [GC]: If you have a vanguard with "Protagonist {P3P}" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17263
+{
+global.CardName[CardStat] = 'The Other School’s Ace, Mamoru Hayase'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: XVII Stars".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, choose one of your vanguards, and until end of your opponent’s next turn, it gets "CONT [VC]: This unit cannot be chosen by your opponent’s card effects.".
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Stars" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more - AUTO [RC]: When your vanguard is chosen by this unit’s AUTO ability, that unit gets "AUTO [VC]: At the end of the battle this unit attacked, Soul Charge 1 / Energy Charge 1." until end of turn. 
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 17015
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17264
+{
+global.CardName[CardStat] = 'Athletics Club, Kazushi Miyamoto'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+
+CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: VII Chariot".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Counter Blast 1], and this unit gets power +5000 until end of turn.
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Chariot" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost. 
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17005
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17265
+{
+global.CardName[CardStat] = 'TV Mail Order President, President Tanaka'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+
+Arcana: XV Devil
+
+AUTO: When this unit is placed on RC, if you have a <P3> vanguard with "Protagonist" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Energy Blast 3], choose one of your opponent’s rear-guards, and retire it.
+
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Devil" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more - AUTO [RC]: When you Energy Blast 3 by this unit’s AUTO ability, your vanguard gets power +10000 until end of turn.
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17013
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17266
+{
+global.CardName[CardStat] = 'Classmate, Kenji Tomochika'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+CONT [RC]: If you have a vanguard with "Protagonist {P3}" in its card name, this unit gets "Arcana: I Magician".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, choose one of your rear-guards, and until end of your opponent’s next turn, it gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects.".
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Magician" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more - AUTO [RC]: When your rear-guard is chosen by this unit’s AUTO ability, until end of your opponent’s next turn, that unit gets "CONT [RC]: This unit cannot be affected by your opponent’s card effects.". 
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
+global.TokenSummoner[CardStat] = 16999
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+
+
+CardStat = 17267
+{
+global.CardName[CardStat] = 'Athletics Club Classmate, Rio Iwasaki'
+global.CardText[CardStat] = 'Persona Series/P3/Cooperator/Social Link
+
+CONT [RC]: If you have a vanguard with "Protagonist {P3P}" in its card name, this unit gets "Arcana: VII Chariot".
+AUTO: When this unit is placed on RC, if you have a vanguard with "Protagonist {P3}" in its card name, and you did not resolve the AUTO ability of a card with the same card name as this unit this turn, COST [Counter Blast 1], and this unit gets power +5000 until end of turn.
+CONT: If you have a vanguard with "Protagonist {P3}" in its card name, this card gets all of the following according to the number of "Chariot" Arcana markers in your order zone.
+• One or more - CONT [RC]: This unit gets "Intercept", and can intercept from the back row.
+• Two or more - CONT [GC]: This unit gets shield +5000.
+• Three or more - CONT [RC]: The cost of this unit’s AUTO ability is lost. 
+(SHIFT + left click to create Arcana marker)'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 19
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+global.TokenSummoner[CardStat] = 17005
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
