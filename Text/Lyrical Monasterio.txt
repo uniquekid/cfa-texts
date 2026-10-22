@@ -14111,7 +14111,7 @@ global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
 CONT [VC]: All of your units with [Colorful Melody] get "CONT [VC/RC/GC]: During your turn, this unit gets power +5000. During your opponent’s turn, this unit gets shield +5000.".
 AUTO: When this unit is placed on VC, look at the top seven cards of your deck, choose up to one card with [Colorful Melody] from among them, reveal it and put it into hand, and shuffle the deck.
 ACT [VC] 1/Turn: COST [Soul Blast 2], search your deck for up to one card with "Colorful Pastorale" in its card name, call it to RC, and shuffle the deck.
-ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards with [Colorful Melody], and it gets "CONT  [Back Row RC]: This unit can attack from the back row, and if you persona rode this turn, it also gets power +10000."  until end of turn. If your opponent’s vanguard is grade 3 or greater, choose two rear-guards instead of one.'
+ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards with [Colorful Melody], and it gets "CONT [Back Row RC]: This unit can attack from the back row, and if you persona rode this turn, it also gets power +10000." until end of turn. If your opponent’s vanguard is grade 3 or greater, choose two rear-guards instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.CardInClan[CardStat] = 13
@@ -14393,7 +14393,7 @@ AUTO: When this unit is placed on RC, if you have a vanguard with "Feltyrosa" in
 • Put that card into hand.
 • Put that card on the top of the deck, and this unit gets "AUTO [RC]: At the end of the battle this unit attacked, put this unit on the bottom of the deck, and at the end of that turn, draw a card." until end of turn.
 
-AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, retire this unit. If this unit was placed from deck this turn, it gets power +10000 instead of +5000.'
+AUTO [RC]: When this unit attacks, you may have this unit get power +5000 until end of that battle. If you do, at the end of that battle, put this unit on the bottom fo the deck. If this unit was placed from deck this turn, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
@@ -14437,11 +14437,8 @@ global.CardName[CardStat] = 'Overcoming the Boundary, Aileina'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mathroid
 
 ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your rear-guards, and until the end of your opponent’s next turn, collab with it.
-
 AUTO: When this unit is rode upon by a grade 3 card with "Aileina" in its card name, look at the top seven cards of your deck, choose up to three cards with "Aileina" in their card names, put them in the order zone, and shuffle the deck. If you put one or less cards, draw a card.
-
 AUTO: When this card is discarded from hand during your turn, if you have a vanguard with "Aileina" in its card name, put this card in the order zone.
-
 ACT [Order Zone]: If you have a grade 3 or greater vanguard with "Aileina" in its card name, COST [return this card to hand], choose a non-sentinel grade 2 or less normal unit from your drop, and call it to RC. You cannot return cards with "Aileina" in their card names to hand from order zone until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
@@ -14450,24 +14447,24 @@ global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
 
 
+//Numbers over letters to fit in text
 CardStat = 17252
 {
-global.CardName[CardStat] = 'Virtua⇔Real§ensation, Aileina'
+global.CardName[CardStat] = 'Virtua<=>RealSensation, Aileina'
 global.CardText[CardStat] = 'Lyrical Monasterio/Mathroid
-
 AUTO [Order Zone]: At the beginning of your ride phase, if you have a vanguard with the same card name as this card, COST [discard a card from hand], and ride this card as stand. If you rode a card, activate persona ride, and you cannot ride until end of turn.
-
 CONT [VC]: If your order zone has seven or more cards with "Aileina" in their card names, this unit gets power +5000.
-
 CONT [VC]: During your turn, all of your rear-guards in collabs get power +5000.
-
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose one of your rear-guards for each card with "Aileina" in its card name in your order zone, and collab with them until the end of your opponent’s next turn. This unit gets all of the following according to the number of cards in a collab by this ability until end of turn.
-• One or more - CONT [VC]: All of your front row rear-guards in collabs get the power this unit had got from trigger effects.
-• Three or more - CONT [VC]: This unit gets drive +1.
-• Five or more - AUTO [VC] 1/Turn: When this unit attacks, choose one of your rear-guards, and stand it.'
+• 1 or more - CONT [VC]: All of your front row rear-guards in collabs get the power this unit had got from trigger effects.
+• 3 or more - CONT [VC]: This unit gets drive +1.
+• 5 or more - AUTO [VC] 1/Turn: When this unit attacks, choose one of your rear-guards, and stand it.
+(SHIFT + left click to activate persona ride.)'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 6
 global.PersonaRide[CardStat] = 1
+global.PersonaRideAct[CardStat] = 1
+global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -14537,6 +14534,7 @@ global.CardName[CardStat] = 'New MV Watch Party! Wolkar'
 global.CardText[CardStat] = 'Lyrical Monasterio/Human
 
 AUTO: When this unit is placed on RC, if you have a vanguard with "Aileina" in its card name, search your deck for up to one card with the same card name as your vanguard, put it in the order zone, and shuffle the deck.
+
 AUTO [RC]: When your other rear-guard in a collab in the same column as this unit attacks while not boosted, that unit gets power +5000 until end of that battle.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
