@@ -13529,10 +13529,10 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16569
 {
-global.CardName[CardStat] = 'Knight of Heavy Mace, Yuthra'
+global.CardName[CardStat] = 'Knight of Intense Hammer, Yusrah'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
-AUTO: When this unit is placed on RC from deck or hand, if you have a <Fantome> vanguard, and you did not put a card into hand by the ability of a card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one card with "Colgaflan" in its card name or up to one grade 3 or greater card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
+AUTO: When this unit is placed on RC from deck or hand, if you have a <Fantome> vanguard, and you did not put a card into hand by the ability of a card with the same card name as this unit this turn, look at the top five cards of your deck, choose up to one card with "Colgaflan" in its card name or up to one grade 3 card without Regalis Piece from among them, reveal it and put it into hand, and shuffle the deck.
 
 CONT [RC]: If you have a <Fantome> vanguard, this unit gets "Intercept", and can intercept from the back row.
 
@@ -13563,7 +13563,7 @@ global.DefensePowerStat[CardStat] = 50000
 
 CardStat = 16647
 {
-global.CardName[CardStat] = 'Sage of Index, Indiron'
+global.CardName[CardStat] = 'Sage of Index, Ideron'
 global.CardText[CardStat] = 'Keter Sanctuary/Giant/Draw Trigger
 
 AUTO: When this unit is put on GC, COST [Soul Blast 1 or Energy Blast 2], and this unit gets shield +10000 until end of that battle. If your vanguard’s grade is less than your opponent’s vanguard’s grade, or your opponent’s vanguard is grade 3 or greater, it gets shield +15000 instead of +10000.'
@@ -13629,29 +13629,26 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-//2nd skill heavily abbreviated for space, keep in mind when translating
+CardStat = 16717
+{
+global.CardName[CardStat] = 'Seraphic Notes, Lianorn "Fantome"'
 CardStat = 16717
 {
 global.CardName[CardStat] = 'Seraphic Notes, Lianorn "Fantome"'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 CONT [VC]: All of your units with "Seraphic Notes" in their card names get "Boost", and can intercept from the back row.
-AUTO [VC]: When this unit attacks, if all your rear-guards are rest, COST [Counter Blast 1], choose one of your units with "Seraphic Notes" in its card name other than the center column, stand it, and increase that unit’s power by the power of your other <Fantome> rear-guard in that column until end of turn. Until end of your opponent’s next turn, the chosen unit gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects, and can attack from the back row.". If your opponent’s vanguard is grade 3 or greater, you may choose up to one unit with "Seraphic Notes" in its card name each in your right and left columns for this ability instead.
+AUTO [VC]: When this unit attacks, if all your rear-guards are rest, COST [Counter Blast 1], choose one of your units with "Seraphic Notes" in its card name other than the center column, stand it, and increase that unit’s power by the power of your other <Fantome> rear-guard in that column until end of turn. Until end of your opponent’s next turn, the chosen unit gets "CONT [RC]: This unit cannot be chosen by your opponent’s card effects, and can attack from the back row.". If your opponent’s vanguard is grade 3 or greater, you may choose up to one unit each with "Seraphic Notes" in its card name each from the left and right columns for this ability instead.
 [Fantome Skill] - ACT [VC] 1/Turn: COST [Bind a Crimson Moon card from hand, soul, or drop], search your deck or drop for up to one unit card with "Seraphic Notes" in its card name for each Crimson Moon card in your bind zone. Call the searched cards to RC, and they get power +5000 until end of turn. If you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 3
 global.PersonaRide[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
-global.ExtendedTextBox[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-
-
-CardStat = 16718
+global.EnableAttackFromBackRow[CardStat] = 1
+global.ExtendedTextBox = 1
 {
-global.CardName[CardStat] = 'Seraphic Notes, Tiribott'
+global.CardName[CardStat] = 'Seraphic Notes, Telibeaut'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
 AUTO [Back Row Center RC]: When your unit with "Lianorn" in its card name is attacked, COST [retire this unit], and that unit gets power +15000 until end of battle.'
@@ -13664,7 +13661,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16719
 {
-global.CardName[CardStat] = 'Seraphic Notes, Bertiena'
+global.CardName[CardStat] = 'Seraphic Notes, Vertiena'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
 AUTO [Back Row Left RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, your vanguard gets drive +1 until end of that battle.
@@ -13679,7 +13676,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16720
 {
-global.CardName[CardStat] = 'Seraphic Notes, Ferktes'
+global.CardName[CardStat] = 'Seraphic Notes, Feructess'
 global.CardText[CardStat] = 'Keter Sanctuary/Angel/Fantome
 
 AUTO [Front Row Left RC]: When this unit stand by the ability of your grade 3 or greater vanguard with "Lianorn" in its card name, your vanguard gets critical +1 until end of turn.
@@ -13879,7 +13876,7 @@ global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 18000
 global.DefensePowerStat[CardStat] = 0
-global.ExtendedTextBox[CardStat] = 1
+global.ExtendedTextBox = 1
 
 
 CardStat = 16770
