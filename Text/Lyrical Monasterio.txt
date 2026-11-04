@@ -11134,7 +11134,7 @@ CardStat = 14972
 global.CardName[CardStat] = 'Earnescorrect Follower, Fielne'
 global.CardText[CardStat] = 'Lyrical Monasterio/Dragoroid
 
-ACT: If you have a grade 3 or greater vanguard with "Clarissa" in its card name, COST [retire this unit], and perform one of the following.
+ACT [RC]: If you have a grade 3 or greater vanguard with "Clarissa" in its card name, COST [retire this unit], and perform one of the following.
 • Choose a normal unit with "Earnescorrect" in its different card name from this unit from your drop, and call it to RC.
 • Choose an "Aim to be the Strongest Idol!" from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
@@ -15021,7 +15021,7 @@ global.CardName[CardStat] = 'Rainy Tear, Stezza '
 global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
  
 CONT: If you have a <Mermaid> vanguard, this card gets all of the following.
-• AUTO: When this unit is placed on RC, choose a non-sentinel <Mermaid> from your drop, and you may put it on the bottom of the deck.
+• AUTO: When this unit is placed on RC, choose a non-sentinel <Mermaid> normal unit from your drop, and you may put it on the bottom of the deck.
 • AUTO [RC]: At the end of the battle this unit boosted, choose a grade 3 <Mermaid> from your ride deck, and you may reveal it. If you revealed a card, or if you have a grade 3 or greater <Mermaid> vanguard, COST [Counter Blast 1 & put this unit into soul], search your deck for up to one card with the same card name as your vanguard, reveal it and put it into hand, and shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 6
@@ -15162,7 +15162,7 @@ global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.AttackFromRBuff[CardStat] = 1
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 17365
@@ -15177,4 +15177,172 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 6
 }
 global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17377
+{
+global.CardName[CardStat] = 'Girls’ Rock, Rio '
+global.CardText[CardStat] = 'Lyrical Monasterio/Bermuda Triangle/Mermaid
+
+CONT [RC/GC]: If you have a <Mermaid> vanguard, this unit gets shield +5000. Then, if your vanguard is grade 3 or greater, this unit also gets power +5000. (Active on opponent’s turn too)
+
+AUTO: When this unit is returned to hand from RC, if you have a <Mermaid> vanguard, COST [Counter Blast 1], and draw a card. You may Soul Charge 1.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+global.CardInClan[CardStat] = 13
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17378
+{
+global.CardName[CardStat] = 'Mofu Friends! Cielle'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is rode upon, if you went second, draw a card.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17379
+{
+global.CardName[CardStat] = 'Mofu Friends! Restless Cielle'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed by riding from "Mofu Friends! Cielle", look at the top seven cards of your deck, choose up to one card with "Mofu Friends!" in its card name, reveal it and put it into hand, and shuffle the deck. Until end of this fight, your drop is also regarded as Mofu Farm, and you cannot ride cards without "Mofu Friends!" in their card names.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17380
+{
+global.CardName[CardStat] = 'Mofu Friends! Snoozing Cielle'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed by riding from "Mofu Friends! Restless Cielle", choose a card from your Mofu Farm, and call it to RC.
+
+AUTO: When this unit is placed on RC or GC, if you have a vanguard with "Mofu Friends!" in its card name, until the end of your opponent’s next turn, this unit gets power +5000 / shield +5000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17381
+{
+global.CardName[CardStat] = 'Mofu Friends! Lovely Cielle'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+CONT [VC]: During your turn, this unit gets power +1000 for each of your rear-guards with "Mofu Friends!" in their card names.
+ACT [VC]: COST [Energy Blast 3], choose a card with "Mofu Friends!" in its card name from your Mofu Farm, and call it to RC.
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, COST [Counter Blast 1], stand this unit, and it gets drive -2 until end of turn. If your opponent’s vanguard is grade 3 or greater, this unit gets drive +1 until end of turn.
+CONT [VC]: All of your cards with "Mofu Friends!" in their card names get "AUTO: When this unit is put on GC, COST [Energy Blast 2], choose up to one normal unit with "Mofu Friends!" in its card name from your RC or Mofu Farm, put it on GC, and until end of that battle, when that unit would be retired from GC, put it on the bottom of the deck instead.".'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 6
+global.PersonaRide[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17382
+{
+global.CardName[CardStat] = 'Mofu Friends! Corkey'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed on RC, COST [Soul Blast 1], Energy Charge 1, and if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17383
+{
+global.CardName[CardStat] = 'Mofu Friends! Shepress'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO [RC]: When this unit boosts a unit with "Mofu Friends!" in its card name, Energy Charge 1 .
+
+AUTO [RC]: When your unit with "Mofu Friends!" in its card name is put on GC, COST [Soul Blast 1], and move this unit to GC.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17384
+{
+global.CardName[CardStat] = 'Mofu Friends! Munese'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed on RC, if you did not look at the deck by the ability of a card with the same card name as this unit this turn, search your deck for up to one card with "Mofu Friends!" in its card name, put it in the Mofu Farm, and shuffle the deck.
+
+AUTO [RC]: When this unit attacks, if you have a vanguard with "Mofu Friends!" in its card name, Energy Charge 1. Then, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of that battle.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17385
+{
+global.CardName[CardStat] = 'Mofu Friends! Polme'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this card is discarded from hand during your turn, look at the top five cards of your deck, choose up to one grade 2 or less card with "Mofu Friends!" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Energy Charge 1 .
+
+ACT [Hand]: COST [Soul Blast 1 & reveal this card & put it on the bottom of the deck], until the end of your opponent’s next turn, all of your rear-guards with "Mofu Friends!" in their card names cannot be chosen by your opponent’s card effects.'
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17386
+{
+global.CardName[CardStat] = 'Mofu Friends! Luchino'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed on RC, if you have a vanguard with "Mofu Friends!" in its card name, COST [Counter Blast 1], draw a card, and Energy Charge 1 .
+
+AUTO [RC]: When your other unit with "Mofu Friends!" in its card name attacks, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
+
+(SHIFT + left click to count up attacks.)
+(SHIFT + right click to count down attacks.)
+(Middle click or hover and press SPACE to set number of attacks.)'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+global.UseCounters[CardStat] = 1
+
+
+CardStat = 17387
+{
+global.CardName[CardStat] = 'Mofu Friends! Rotrey'
+global.CardText[CardStat] = 'Lyrical Monasterio/High Beast
+
+AUTO: When this unit is placed on RC from hand, COST [Soul Blast 1], look at the top five cards of your deck, choose up to one card with "Mofu Friends!" in its card name from among them, reveal it and put it into hand, and shuffle the deck. If you did not reveal a card, Energy Charge 2 .
+
+CONT [RC]: During your turn, if your Mofu Farm has ten or more cards with "Mofu Friends!" in their card names, this unit gets power +10000. '
+global.UnitGrade[CardStat] = 1
+global.DCards[CardStat] = 6
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
