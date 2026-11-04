@@ -1043,17 +1043,18 @@ CardStat = 9064
 global.CardName[CardStat] = 'Steam Mage, Ashur-da'
 global.CardText[CardStat] = 'Dark States/Gearoid
 
-(PREMIUM JP & EN & TH: You can only run this card if you do not have V King of Masks, Dantarian in your deck.)
+(PREMIUM JP & EN: You can only run this card if you do not have V King of Masks, Dantarian in your deck.)
+(PREMIUM TH: Restricted to 1.)
 
 CONT [GC]: If your soul has seven or more cards, this unit gets shield +5000.
 
 AUTO: When this unit is retired from GC, you may put this card into your soul.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 9065
@@ -1465,8 +1466,6 @@ CardStat = 9324
 global.CardName[CardStat] = 'Brainwash Swirler'
 global.CardText[CardStat] = 'Dark States/Human
 
-(STANDARD TH: You can only run this card if you do not have D Steam Scara, Gigi in your deck.)
-
 AUTO: When this unit is placed on RC, Soul Charge 1 .
 
 AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of turn. (+10000 if Soul Charge 2 )
@@ -1476,11 +1475,10 @@ AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard
 (Middle click or hover and press SPACE to set number of activations.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
-global.UseCounters[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-global.CardLimidet[CardStat] = 1
+global.UseCounters[CardStat] = 1
 
 
 CardStat = 9325
@@ -2874,8 +2872,6 @@ CardStat = 10488
 global.CardName[CardStat] = 'Steam Scara, Gigi  '
 global.CardText[CardStat] = 'Dark States/Gear Chronicle/Gearoid
 
-(STANDARD TH: You can only run this card if you do not have Brainwash Swirler in your deck.)
-
 AUTO: When this unit is placed on RC, if you have a "Chronojet Dragon" crest, COST [Soul Blast 2], draw a card, and if this unit was placed by your card’s ability, this unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
@@ -2883,7 +2879,6 @@ global.CardInClan[CardStat] = 26
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 10489
@@ -4796,11 +4791,14 @@ CardStat = 11889
 global.CardName[CardStat] = 'Servant Falcracia'
 global.CardText[CardStat] = 'Dark States/Workeroid
 
+(PREMIUM TH: Banned.)
+
 AUTO [RC]: When this unit attacks a grade 3 or greater unit, choose up to one «Dark States» card from your drop, and this unit gets power +5000 until end of that battle for each of its grade. Put that chosen card into soul.
 
 AUTO [RC]: At the end of your turn, if your vanguard is grade 4 or greater, COST [put this unit into soul], and draw a card.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 2
+global.CardBanned[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -7388,8 +7386,6 @@ CardStat = 13513
 global.CardName[CardStat] = '"100% Pascal-sensei" Pascal-sensei'
 global.CardText[CardStat] = 'Dark States/CoroCoro Comic
 
-(STANDARD TH: You can only run this card if you do not have D Steam Scara, Gigi in your deck.)
-
 CONT: This card is regarded as "Brainwash Swirler".
 
 AUTO: When this unit is placed on RC, Soul Charge 1.
@@ -7400,7 +7396,6 @@ global.DCards[CardStat] = 2
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 13542
@@ -10290,8 +10285,6 @@ CardStat = 15459
 global.CardName[CardStat] = 'Masked Rider Decade, Kiva'
 global.CardText[CardStat] = 'Dark States/Hero
 
-(STANDARD TH: You can only run this card if you do not have D Steam Scara, Gigi in your deck.)
-
 CONT: This card is also regarded as "Brainwash Swirler"
 
 AUTO: When this unit is placed on RC, Soul Charge 1 .
@@ -10303,7 +10296,6 @@ AUTO [RC]: When your card is put into your soul by Soul Charge, if your vanguard
 (Middle click or hover and press SPACE to set number of activations.)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 2
-global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -12313,7 +12305,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17373
 {
-global.CardName[CardStat] = 'Kamen Rider Geats Physicam Wing'
+global.CardName[CardStat] = 'Masked Rider Zeztz, Physicam Wing'
 global.CardText[CardStat] = 'Dark States/Normal Order
 
 CONT: This card is regarded as "Cage of Furious Star".
