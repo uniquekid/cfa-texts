@@ -13446,7 +13446,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Human
 
 AUTO: When this unit is placed on RC, choose a grade 3 card with "Gramgrace" in its card name from your ride deck, and you may reveal it. If you revealed a card, or you have a grade 3 or greater vanguard with "Gramgrace" in its card name, look at the top five cards of your deck, choose up to one grade 3 card from among them, reveal it and put it into hand, and shuffle the deck.
 
-AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Gramgrace" in its name, COST [put this unit intoo soul], and Counter Charge 1 or Energy Charge 3. '
+AUTO [RC]: At the end of the battle this unit boosted, if you have a grade 3 or greater vanguard with "Gramgrace" in its name, COST [put this unit into soul], and Counter Charge 1 or Energy Charge 3. '
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 3
 }
@@ -14410,8 +14410,8 @@ CardStat = 17391
 {
 global.CardName[CardStat] = 'Absolute Blade Knight, Livarot  '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
-AUTO: When this unit is rode upon by a grade 3 with "Altmile" in its card name, COST [Soul Blast 1], search your deck for up to one grade 2 card with only <Royal Paladin> for its clan, reveal it and put it into hand, and shuffle the deck.
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Altmile" in its card name, you did not call a unit by the ability of your rear-guard this turn, and you did not Stride this turn or your G Zone has two or more face up cards, COST [Counter Blast 1], search your deck for up to one grade 2 card with only <Royal Paladin> for its clan, call it to RC, and shuffle the deck.
+AUTO: When this unit is rode upon by a grade 3 with "Altmile" in its card name, COST [Soul Blast 1], search your deck for up to one grade 2 card with only «Royal Paladin» for its clan, reveal it and put it into hand, and shuffle the deck.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Altmile" in its card name, you did not call a unit by the ability of your rear-guard this battle phase, and you did not Stride this turn or your G Zone has two or more face up cards, COST [Counter Blast 1], search your deck for up to one grade 2 card with only «Royal Paladin» for its clan and  different card name from this unit, call it to RC, and shuffle the deck.
 AUTO [Soul/Drop]: When your G unit Stride, COST [put this card on the bottom of your deck], choose one of your hearts with "Altmile" in its card name, and reduce the next Counter Blast you pay for that card’s abilities by 1 until end of turn.
 CONT [RC]: If your G Zone has two or more face up cards, this unit gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
@@ -14445,7 +14445,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them], and Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up], search your deck for up to one grade 2 or greater card with only <Royal Paladin> for its clan, call it to RC, and it gets power +5000 until end of turn. Shuffle the deck.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up], search your deck for up to one grade 2 or greater card with only «Royal Paladin» for its clan, call it to RC, and it gets power +5000 until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.CardInClan[CardStat] = 15
 global.DCards[CardStat] = 3
@@ -14507,7 +14507,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 AUTO: When this unit is placed on RC, if you have a "Blue Sky Knight, Altmile" crest, COST [Counter Blast 1 or Soul Blast 2], and draw a card.
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Altmile" in its card name, and you did not call a unit by the ability of your rear-guard this turn, and you did not Stride this turn or your G Zone has three or more face up cards, COST [Counter Blast 1], search your deck for up to one grade 2 card with only <Royal Paladin> for its clan, call it to RC, and shuffle the deck.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Altmile" in its card name, and you did not call a unit by the ability of your rear-guard this battle phase, and either you did not Stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], search your deck for up to one grade 2 card with only «Royal Paladin» for its clan, call it to RC, and shuffle the deck.
 
 CONT [RC/GC]: If you have a "Blue Sky Knight, Altmile" crest, this unit gets shield +5000. Then, if your G Zone has two or more face up cards, it also gets power +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
@@ -14523,7 +14523,7 @@ CardStat = 17398
 global.CardName[CardStat] = 'Soaring Knight, Whitfred'
 global.CardText[CardStat] = 'Keter Sanctuary/Human
 
-CONT: If you have a vanguard with only <Royal Paladin> for its clan, this card is only from <Royal Paladin>.
+CONT: If you have a vanguard with only «Royal Paladin» for its clan, this card is only from «Royal Paladin».
 
 AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Altmile" in its card name, this unit gets power +5000 until end of battle. If this unit was placed by your card’s ability this turn, it gets power +10000 instead of +5000.
 
@@ -14600,7 +14600,7 @@ global.CardText[CardStat] = 'Keter Sanctuary/Elf
 [Vanguard]: "Liael" (If you have a grade 3 or greater vanguard with "Liael" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Liael" in its card name, the following abilities are active)
 CONT [RC/Deck/Drop/Bind Zone]: This card is also regarded as "Knight of Bright Blade, Religial".
 AUTO: When this card is discarded from hand during your turn, COST [Counter Blast 1 or Energy Blast 3], and draw a card.
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard, this unit gets power +5000 until end of battle. If you have a "Blest Dragon, Gabwelius" or a "Knight of Bright Blade, Religial" on your RC or in your bind zone, it gets power +10000 instead of +5000, and COST [discard a card with "Liael" in its card name from your hand & put two cards from your bind zone on the bottom of your deck], draw a card, then this unit also gets power +5000 / critical +1 until end of battle. You cannot pay the cost for AUTO abilities of "Bright Blade to Open the Future, Religial" until end of turn.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard, this unit gets power +5000 until end of battle. If there is either a card named "Blest Dragon, Gabwelius" or another card named "Knight of Bright Blade, Religial" on either your RC or in your bind zone, power +10000 instead of +5000, and COST [discard a card with "Liael" in its card name from your hand & put two cards from your bind zone on the bottom of your deck], draw a card, then this unit also gets power +5000 / critical +1 until end of battle. You cannot pay the cost for AUTO abilities of "Bright Blade to Open the Future, Religial" until end of turn.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 }
