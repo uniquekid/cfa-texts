@@ -12685,16 +12685,15 @@ CardStat = 17408
 global.CardName[CardStat] = 'Ranunculus Flower Maiden, Ahsha  '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-CONT [VC] 1/Turn Generation Break 2: All of your units get "CONT [VC/RC]: During your turn, if there is another unit with the same card name as this unit on your VC or RC, this unit gets power +5000.".
+CONT [VC] Generation Break 2: All of your units get "CONT [VC/RC]: During your turn, if you have another unit with the same card name as this unit on your VC or RC, this unit gets power +5000.".
 
-AUTO [VC]: When your G Unit stride during your turn, COST [Counter Blast 1], choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and it gets power +2000 until end of turn. Shuffle your deck.'
+AUTO [VC]: When your G unit Stride during your turn, COST [Counter Blast 1], choose one of your rear-guards, search your deck for up to one card with the same card name as that unit, call it to RC, and that called unit gets power +2000 until end of turn. Shuffle your deck.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 11000
 global.DefensePowerStat[CardStat] = 0
-global.CardLimidet[CardStat] = 1
 
 
 CardStat = 17409
@@ -12719,7 +12718,7 @@ CardStat = 17410
 global.CardName[CardStat] = 'Valkyrie of Reclamation, Padmini  '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-CONT [Hand]: While you are paying the cost for stride, this card may be discarded as a grade 3.
+CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
 ACT [Hand]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Ahsha" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
 global.UnitGrade[CardStat] = 1
@@ -12781,7 +12780,7 @@ global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
 AUTO: When this unit is placed on RC, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [either Counter Blast 1 or Soul Blast 2], and draw a card.
 
-AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, and you did not call a unit by the ability of your rear-guard this battle phase, and either you did not stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, and you did not call a unit by the ability of your rear-guard this battle phase, and either you did not Stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
 
 CONT [RC/GC]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, this unit gets shield +5000. Then if there are at least two face up cards in your G zone, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
@@ -12797,9 +12796,9 @@ CardStat = 17415
 global.CardName[CardStat] = 'Maiden of Frilldrod '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of battle. Then, at the end of that battle, if you did not call a unit by the ability of your rear-guard this battle phase and either you did not stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of battle. Then, at the end of that battle, if you did not call a unit by the ability of your rear-guard this battle phase and either you did not Stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
 
-AUTO: When this card is discarded from hand while paying the cost for stride, draw a card.'
+AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
 global.CardInClan[CardStat] = 9
 global.DCards[CardStat] = 4
