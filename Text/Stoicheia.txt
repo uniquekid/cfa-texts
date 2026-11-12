@@ -12665,11 +12665,11 @@ CardStat = 17407
 global.CardName[CardStat] = 'Blossoming Maiden, Cela  '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-AUTO: When this unit is rode upon by a grade 3 with "Ahsha" in its card name, you may call this card to RC. If you called, Soul Charge 1.
+AUTO: When this unit is rode upon by a grade 3 with "Ahsha" in its card name, you may call this card to RC. If you called, Soul Charge 1 .
 
 AUTO: When this unit is placed on RC, choose one of your vanguards with "Ahsha" in its card name, and reduce the next Counter Blast you pay for that card’s abilities by 1 until end of turn. This ability may only be used by a card with the same card name once a turn.
 
-CONT [RC]: If you have a vanguard with "Ahsha" in its card name, this unit cannot be chosen by your opponent’s card effects. Then if you have two or more rear-guards with the same name as each other, this unit gets "Boost".
+CONT [RC]: If you have a vanguard with "Ahsha" in its card name, this unit cannot be chosen by your opponent’s card effects. Then, if you have two or more rear-guards with the same card name as each other, this unit gets "Boost".
 
 AUTO [RC] Generation Break 3: When this unit attacks, this unit gets power +10000 until end of battle.'
 global.UnitGrade[CardStat] = 2
@@ -12678,6 +12678,7 @@ global.DCards[CardStat] = 4
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 10000
 
 
 CardStat = 17408
@@ -12703,7 +12704,7 @@ global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
 Stride COST [Choose one or more cards with the sum of their grades being 3 or greater from your hand, and discard them] Stride this card on your VC from face down. (When you Stride, your original vanguard becomes a heart card, and this unit gets that card’s power and card name. At the end of the turn, return this unit face up)
 
-AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up], choose one of your rear-guards, search your deck for up to one card with the same name as that rear-guard, call it to RC, and it gets power +5000 until end of turn. Shuffle your deck.'
+AUTO [VC]: When this unit attacks, COST [Counter Blast 1 & turn a card from your G zone face up], choose one of your rear-guards, search your deck for up to one card with the same name as that rear-guard, call it to RC, and it gets power +5000 until end of turn. Shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 9
@@ -12720,7 +12721,7 @@ global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
 CONT [Hand]: While you are paying the cost for Stride, this card may be discarded as a grade 3.
 
-ACT [Hand]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Ahsha" in its card name, reveal it and put it into your hand, and if you searched your deck, shuffle your deck.'
+ACT [Hand]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [discard this card], search your deck or drop for up to one grade 3 card with "Ahsha" in its card name, reveal it and put it into hand, and if you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 global.DCards[CardStat] = 4
@@ -12734,7 +12735,7 @@ CardStat = 17411
 global.CardName[CardStat] = 'Early-flowering Maiden, Pia '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-AUTO [RC]: When this unit boosts a normal unit without sentinel, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [put a card with the same name as the boosted unit from your drop on the bottom of your deck], and this unit gets power +5000 until end of battle. Then, at the end of that battle, COST [put this unit into your soul], and draw a card.'
+AUTO [RC]: When this unit boosts a normal unit without sentinel, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [put a card with the same card name as the boosted unit from drop on the bottom of your deck], and this unit gets power +5000 until end of battle. Then, at the end of that battle, COST [put this unit into soul], and draw a card.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 9
 global.DCards[CardStat] = 4
@@ -12750,7 +12751,7 @@ global.CardText[CardStat] = 'Stoicheia/Sylph
 
 AUTO [Drop]: When your grade 3 or greater vanguard is placed during your ride phase, if you have a "Ranunculus Flower Maiden, Ahsha" crest and you do not have a rear-guard with the same name as this card, COST [Energy Blast 3], call this card to RC, and it gets power +2000 until end of turn.
 
-CONT [RC/GC]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, this unit gets "Intercept" and can intercept from the back row. Then if your vanguard is grade 3 or greater, this unit gets shield +5000.'
+CONT [RC/GC]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, this unit gets "Intercept", and can intercept from the back row. Then, if your vanguard is grade 3 or greater, this unit gets shield +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 4
 }
@@ -12765,7 +12766,7 @@ global.CardText[CardStat] = 'Stoicheia/Bioroid
 
 AUTO: When this unit is placed on RC other than during your battle phase, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [Counter Blast 1], choose a <Bioroid> from your drop, and call it to RC. If you have a vanguard with "Ahsha" in its card name, this cost can be paid with "Energy Blast 3".
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of battle. If this unit was placed from your deck this turn, power +10000 instead of +5000.'
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of that battle. If this unit was placed from deck this turn, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 4
 }
@@ -12778,11 +12779,11 @@ CardStat = 17414
 global.CardName[CardStat] = 'Maiden of Gladiolus '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-AUTO: When this unit is placed on RC, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [either Counter Blast 1 or Soul Blast 2], and draw a card.
+AUTO: When this unit is placed on RC, if you have a "Ranunculus Flower Maiden, Ahsha" crest, COST [Counter Blast 1 or Soul Blast 2], and draw a card.
 
-AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, and you did not call a unit by the ability of your rear-guard this battle phase, and either you did not Stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
+AUTO [RC]: At the end of the battle this unit attacked, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, and you did not call a unit by the ability of your rear-guard this battle phase, and you did not Stride this turn or your G Zone has two or more face up cards, COST [Counter Blast 1], choose one of your rear-guards with a different card name from this unit, search your deck for up to one card with the same card name as that unit, call it to RC, and shuffle the deck.
 
-CONT [RC/GC]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, this unit gets shield +5000. Then if there are at least two face up cards in your G zone, it also gets power +5000.'
+CONT [RC/GC]: If you have a "Ranunculus Flower Maiden, Ahsha" crest, this unit gets shield +5000. Then, if your G Zone has two or more face up cards, it also gets power +5000.'
 global.UnitGrade[CardStat] = 2
 global.CardInClan[CardStat] = 9
 global.DCards[CardStat] = 4
@@ -12796,7 +12797,7 @@ CardStat = 17415
 global.CardName[CardStat] = 'Maiden of Frilldrod '
 global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
-AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of battle. Then, at the end of that battle, if you did not call a unit by the ability of your rear-guard this battle phase and either you did not Stride this turn or there are at least two face up cards in your G zone, COST [Counter Blast 1], choose one of your rear-guards with a different name from this unit, search your deck for up to one card with the same name as that unit, call it to RC, and shuffle your deck.
+AUTO [RC]: When this unit attacks, if you have a grade 3 or greater vanguard with "Ahsha" in its card name, this unit gets power +5000 until end of that battle. Then, at the end of that battle, if you did not call a unit by the ability of your rear-guard this battle phase, and you did not Stride this turn or your G Zone has two or more face up cards, COST [Counter Blast 1], choose one of your rear-guards with a different card name from this unit, search your deck for up to one card with the same card name as that unit, call it to RC, and shuffle the deck.
 
 AUTO: When this card is discarded from hand while paying the cost for Stride, draw a card.'
 global.UnitGrade[CardStat] = 3
@@ -12815,9 +12816,9 @@ global.CardText[CardStat] = 'Stoicheia/Neo Nectar/Bioroid
 
 Stride COST [Discard a grade 3 card with "Ahsha" in its card name from hand]
 
-CONT [VC] Generation Break 2: If you have at least two or more rear-guards with the same name as each other, all of your front row units get power +5000.
+CONT [VC] Generation Break 2: If you have two or more rear-guards with the same card name as each other, all of your front row units get power +5000.
 
-AUTO [VC] Generation Break 2: When this unit attacks, COST [Counter Blast 1], choose two of your rear-guards, search your deck for up to one card each with the same name as those units, call them to RC, and shuffle your deck.'
+AUTO [VC] Generation Break 2: When this unit attacks, COST [Counter Blast 1], choose two of your rear-guards, search your deck for up to one card with the same name as the chosen units each, call them to RC, and shuffle the deck.'
 global.UnitGrade[CardStat] = 4
 global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 9
@@ -12840,4 +12841,24 @@ global.DCards[CardStat] = 4
 global.CardInClan[CardStat] = 9
 }
 global.PowerStat[CardStat] = 6000
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17421
+{
+global.CardName[CardStat] = 'Seraphic Harmony'
+global.CardText[CardStat] = 'Stoicheia/Keter Sanctuary/Normal Order
+[Vanguard]: "Lianorn" (If you have a grade 3 or greater vanguard with "Lianorn" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Lianorn" in its card name, the following abilities are active)
+
+This card can be played from drop.
+Bind this card, and perform one of the following.
+• Look at the top seven cards of your deck, choose up to one card from among them, reveal it, put it into hand if it has "Lianorn" in its card name, and call it to RC if it does not have "Lianorn" in its card name and has grade less than or equal to your vanguard. Shuffle the deck.
+• If your vanguard is grade 3 or greater, choose one of your rear-guards, and it gets power +5000 until end of turn for each of your grade 1 or less rear-guards.
+• If your vanguard is grade 3 or greater, choose one of your rear-guards, and it gets power +5000 until end of turn for each of your rear-guards with "Seraphic Notes" in their card names.'
+global.UnitGrade[CardStat] = 1
+global.CardInClan[CardStat] = 30
+global.DCards[CardStat] = 4
+global.DCards2[CardStat] = 3
+}
+global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
