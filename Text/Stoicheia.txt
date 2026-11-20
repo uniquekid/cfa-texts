@@ -12848,17 +12848,35 @@ CardStat = 17421
 {
 global.CardName[CardStat] = 'Seraphic Harmony'
 global.CardText[CardStat] = 'Stoicheia/Keter Sanctuary/Normal Order
-[Vanguard]: "Lianorn" (If you have a grade 3 or greater vanguard with "Lianorn" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Lianorn" in its card name, the following abilities are active)
+[My Vanguard]: "Lianorn" (If you have a grade 3 or greater vanguard with "Lianorn" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Lianorn" in its card name, the following abilities are active)
 
 This card can be played from drop.
 Bind this card, and perform one of the following.
 • Look at the top seven cards of your deck, choose up to one card from among them, reveal it, put it into hand if it has "Lianorn" in its card name, and call it to RC if it does not have "Lianorn" in its card name and has grade less than or equal to your vanguard. Shuffle the deck.
 • If your vanguard is grade 3 or greater, choose one of your rear-guards, and it gets power +5000 until end of turn for each of your grade 1 or less rear-guards.
-• If your vanguard is grade 3 or greater, choose one of your rear-guards, and it gets power +5000 until end of turn for each of your rear-guards with "Seraphic Notes" in their card names.'
+• If your vanguard is grade 3 or greater, choose one of your rear-guards, and it gets power +5000 until end of turn for each of your rear-guards with "Seraphic Notes" in their different card names.'
 global.UnitGrade[CardStat] = 1
 global.CardInClan[CardStat] = 30
 global.DCards[CardStat] = 4
 global.DCards2[CardStat] = 3
 }
 global.PowerStat[CardStat] = 0
+global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17427
+{
+global.CardName[CardStat] = 'Researching Prison Dragon'
+global.CardText[CardStat] = 'Stoicheia/Brandt Gate/Genomegel/Fantome
+[My Vanguard]: "Zorga" (If you have a grade 3 or greater vanguard with "Zorga" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Zorga" in its card name, the following abilities are active)
+AUTO [Drop]: When you play a normal order, you may call this card to RC. If you do, this unit gets power +5000 until end of turn for each grade of your opponent’s vanguard. If you did Alchemagic, this unit gets critical +1 until end of turn.
+AUTO [Drop]: When you Alchemix, if you have a Demonic Beast Alchemix Body, Ubermensch token on your front row RC, and you do not have a rear-guard with the same card name as this card, you may call this card to RC. If you do, this unit gets power +15000 until end of turn.
+AUTO [RC]: At the end of your turn, if your vanguard is grade 3 or greater, COST [bind this unit & retire another rear-guard], choose up to one normal order or up to one card with "Regrain Researcher" in its card name from your drop, and put it into hand.
+CONT [GC]: This unit gets shield +5000 for each grade of your vanguard.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 4
+global.DCards2[CardStat] = 5
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 0
