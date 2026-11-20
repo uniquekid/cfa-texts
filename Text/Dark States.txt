@@ -12357,7 +12357,7 @@ CardStat = 17403
 {
 global.CardName[CardStat] = 'Time-Quaking Dragon, Anachronous Dragon'
 global.CardText[CardStat] = 'Dark States/Gear Dragon
-[Vanguard]: "Liael" (If you have a grade 3 or greater vanguard with "Liael" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Liael" in its card name, the following abilities are active)
+[My Vanguard]: "Liael" (If you have a grade 3 or greater vanguard with "Liael" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Liael" in its card name, the following abilities are active)
 AUTO [Gauge Zone]: At the beginning of your battle phase, if this card is a regress gauge, COST [Counter Blast 1], choose a card from your drop, and put it face up as a regress gauge. If you put a card, call this card to RC. Then, if your opponent’s vanguard is grade 2 or greater, COST [Soul Blast 2], draw a card, and if your opponent’s vanguard is grade 3 or greater, this unit gets power +5000 until end of turn.
 AUTO [RC]: When this unit attacks a vanguard, if your vanguard is grade 3 or greater, this unit gets power +5000 until end of battle, and if you have three or more regress gauges, or your opponent’s vanguard is grade 3 or greater, COST [Energy Blast 2], choose one of your opponent’s rear-guards, and retire it.
 CONT [GC]:This unit gets shield +10000.'
@@ -12368,3 +12368,23 @@ global.PersonaRide[CardStat] = 1
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 10000 //For convenience
 global.AttackFromRBuff[CardStat] = 5000
+
+
+CardStat = 17426
+{
+global.CardName[CardStat] = 'Avaricious Demonic Dragon, Greedon '
+global.CardText[CardStat] = 'Dark States/Abyss Dragon
+
+CONT [VC]: The number of cards in your damage zone for you to lose becomes seven.
+CONT [VC/Deck]: This card is also regarded as having the same card name as all of the cards with "Greedon" or "Desire Devil" in their card names without the original card name "Avaricious Demonic Dragon, Greedon" on your VC or in your soul.
+ACT [VC] 1/Turn: COST [Counter Blast 1], look at the top seven cards of your deck, choose up to two cards with "Desire Devil" or "Dragontree" in their card names from among them, call them to RC, and shuffle the deck.
+AUTO [VC/RC]: When this unit attacks, COST [Soul Blast 1 card with "Greedon" or "Desire Devil" in its card name], and increase this unit’s power by the power of the card Soul Blast for this cost until end of that battle.
+AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your soul has three or more cards with "Greedon" or "Desire Devil" in their card names, COST [put three Stand rear-guards into soul], Stand this unit, and all of your front row units get power +5000 until end of turn.'
+global.UnitGrade[CardStat] = 3
+global.DCards[CardStat] = 2
+global.PersonaRide[CardStat] = 1
+global.PersonaRideCardName[CardStat] = 'Avaricious Demonic Dragon, Greedon'
+global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 13000
+global.DefensePowerStat[CardStat] = 0
