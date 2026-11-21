@@ -3608,13 +3608,10 @@ CardStat = 10822
 global.CardName[CardStat] = 'Scarlet Flame Bow General, Stirgna'
 global.CardText[CardStat] = 'Dragon Empire/Dragoroid
 
-(STANDARD TH: Restricted to 2.)
-
 AUTO: When this unit is placed on RC, if you have a vanguard with "Gandeeva" in its card name, COST [Soul Blast 1 & bind one other rear-guards face down], choose one of your opponent’s rear-guards, and retire it. If you did not retire a card, draw a card, choose a card from your drop, and bind it face down.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 1
 global.PersonaRide[CardStat] = 1
-global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
@@ -13329,3 +13326,42 @@ global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+
+
+CardStat = 17423
+{
+global.CardName[CardStat] = 'Ermutigen Dragon'
+global.CardText[CardStat] = 'Dragon Empire/Brandt Gate/Flame Dragon/Fantome
+
+[My Vanguard]: "Aelquilibra" (If you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Aelquilibra" in its card name, the following abilities are active)
+
+CONT: This card is also regarded as a Product card.
+AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [retire this unit], and perform "draw a card" or "choose an order card without Regalis Piece from your drop, and put it into hand".
+Overcharge - CONT [RC]: If this unit was chosen by the ability of your vanguard with "Aelquilibra" in its card name this turn, this unit gets "Boost" and "AUTO: When this unit is retired from RC by this unit’s ability, Counter Charge 1 or Energy Charge 3", and power +10000.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+global.DCards2[CardStat] = 5
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17425
+{
+global.CardName[CardStat] = 'Bond that Transcends Despair, Trickmoon'
+global.CardText[CardStat] = 'Dragon Empire/Talisman
+
+CONT [RC/Deck/Drop]: This card is also regarded as "Trickmoon".
+
+AUTO: When this unit is placed on RC from drop, perform one of the following. If it was placed on a back row center RC, Energy Charge 2.
+• You may draw a card. If you drew a card, choose a card from your hand, and put it into soul or discard it.
+• Search your deck for up to one "Vairlord", discard it, and shuffle the deck.
+
+DressBoost - AUTO [RC]: When this unit attacks or boosts, this unit gets power +5000 until end of that battle for each card your "Sealed Blaze Maiden, Bavsargra" is Armed with.
+
+CONT [GC]: If you have a vanguard with "Sealed Blaze" in its card name, this unit gets shield +5000.'
+global.UnitGrade[CardStat] = 0
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
