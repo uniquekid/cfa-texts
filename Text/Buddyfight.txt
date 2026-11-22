@@ -3107,7 +3107,7 @@ CardStat = 16522
 global.CardName[CardStat] = 'Legend World'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Flag
 
-AUTO [VC]: When you Stand Up!!, COST [say "Raise the Flag!"], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into the order zone)
+AUTO [VC]: When you Stand Up!!, COST [say "Raise the Flag!"], and you become a Buddyfighter! (When you become a Buddyfighter, put a Buddy Monster from the ride deck into your order zone)
 
 CONT: You may only have one <Flag> in a deck.
 
@@ -3125,35 +3125,35 @@ global.BuddyWorld[CardStat] = 3
 
 CardStat = 16523
 {
-global.CardName[CardStat] = 'Aibo Academy, Sofia Sakharov'
+global.CardName[CardStat] = 'Aibo Academy, Sophia Sakharov'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 AUTO: When this unit is place by riding from "Legend World", draw a card, choose a card from your hand, and discard it. If you went second, you may draw a card. If you drew a card, choose a card from your hand, and discard it.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16524
 {
-global.CardName[CardStat] = 'Mysterious Vice President, Sofia Sakharov'
+global.CardName[CardStat] = 'Enigmatic Vice President, Sophia Sakharov'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
-AUTO: When this unit is placed by riding from "Aibo Academy, Sofia Sakharov", look at the top seven cards of your deck, choose up to two <Star> from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
-global.BuddyWorld[CardStat] = 3
+AUTO: When this unit is placed by riding from "Aibo Academy, Sophia Sakharov", look at the top seven cards of your deck, choose up to two <Star> from among them, reveal them, choose a card from among the revealed cards, put it into hand, discard the rest of the revealed cards, and shuffle the deck.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16525
 {
-global.CardName[CardStat] = 'To Realize Her Ambitions, Sofia Sakharov'
+global.CardName[CardStat] = 'Realizing Ambitions, Sophia Sakharov'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 CONT [VC]: During your turn, all of your front row <Star> rear-guards and this unit gets power +1000 for each <Star> in your drop.
@@ -3161,14 +3161,14 @@ CONT [VC]: During your turn, all of your front row <Star> rear-guards and this u
 ACT [VC] 1/Turn: COST [Discard a card from hand], and draw a card.
 
 Chosen Being - ACT [VC] 1/Turn: COST [Soul Blast 1], choose one of your <Star> rear-guards, and it gets "Double Attack - AUTO [VC] 1/Turn: At the end of the battle this unit attacked, if your grade 3 or greater vanguard is stand, COST [Counter Blast 1], and stand this unit." until end of turn.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16526
@@ -3180,30 +3180,27 @@ Call Cost [Pay two gauges]
 
 CONT [RC]: All of your front row <Star> rear-guards cannot be retired by any player’s card abilities, and if they are hit, they do not retire.
 
-CONT [Front Row RC]: If your opponent’s vanguard is grade 3 or greater, and you have one or more <Star> units each on your front row left RC and front row right RC, this unit’s original power becomes 15000. Then, if you have two front row rear-guards with the same card name as this unit, all of your <Star> units’ original shield become 10000.'
-global.BuddyWorld[CardStat] = 3
+CONT [Front Row RC]: If your opponent’s vanguard is grade 3 or greater, and you have one or more <Star> units on each of your front row left RC and front row right RC, this unit’s original power becomes 15000. Then, if you have two front row rear-guards with the same card name as this unit, the original shield of all of your <Star> units becomes 10000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
-
-
-//Including "perform" to make the text red
+global.BuddyWorld[CardStat] = 3
 CardStat = 16527
 {
 global.CardName[CardStat] = 'Colossal Deity of Phantom Star, Astraeus'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, COST [pay a gauge], call this card to the back row center RC, and it gets power +5000 until end of turn.
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Sophia" in its card name, COST [pay a gauge], call this card to the back row center RC, and it gets power +5000 until end of turn.
 
-AUTO [Back Row Center RC]: At the beginning of your battle phase, if you have one or more <Star> units each on your front row left RC and front row right RC, you may perform "Draw a card, and this unit gets power +1000 for each <Star> in your drop.". If you do, at the end of that turn, put this unit on the bottom of the deck.'
-global.BuddyWorld[CardStat] = 3
+AUTO [Back Row Center RC]: At the beginning of your battle phase, if you have one or more <Star> units on each of your front row left RC and front row right RC, you may perform "Draw a card, and this unit gets power +1000 for each <Star> in your drop.". If you do, put this unit on the bottom of the deck at the end of that turn.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16528
@@ -3215,16 +3212,16 @@ Arms - Vanguard (After being played, the vanguard arms it. If a new Item is arme
 
 Play this with COST [pay a gauge]!
 
-CONT [VC]: During your turn, if your opponent’s vanguard is grade 3 or greater, your <Star> unit can attack from the back row center column.'
-global.BuddyWorld[CardStat] = 3
+CONT [VC]: During your turn, if your opponent’s vanguard is grade 3 or greater, your <Star> unit can attack from back row center.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
-global.Arms[CardStat] = 1
-global.EnableAttackFromBackRow[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.EnableAttackFromBackRow[CardStat] = 1
+global.Arms[CardStat] = 1
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16529
@@ -3269,13 +3266,13 @@ CardStat = 16531
 global.CardName[CardStat] = 'Capella Origar'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
 
-AUTO [Drop]: When your vanguard with "Sofia" in its card name is attacked, if your card with the same card name as this card was not put into deck from drop this turn, COST [put this card on the bottom of the deck], and that unit gets power +5000 until end of that battle. If you have one or more <Star> units each on your front row left RC and front row right RC, it gets power +10000 instead of +5000.'
-global.BuddyWorld[CardStat] = 3
+AUTO [Drop]: When your unit with "Sophia" in its card name is attacked, if you did not put a card with the same card name as this card from drop into deck this turn, COST [put this card on the bottom of the deck], and that unit gets power +5000 until end of that battle. If you have one or more <Star> units on each of your front row left RC and front row right RC, it gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16532
@@ -3354,16 +3351,16 @@ global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Star
 
 Play this with COST [pay two gauges]!
 CONT: You can only put one "Great Fate, Frozen Stars" in your order zone.
-CONT: This card’s ability cannot be nullified by abilities other than this card’s.
-CONT [Order Zone]: During your turn, if you have a grade 3 or greater vanguard with "Sofia" in its card name, and you have one or more <Star> units each on your front row left RC and front row right RC, your opponent cannot intercept, the abilities of all of your opponent’s non-sentinel cards on their VC, RC, GC, and soul other than order cards are nullified, and they cannot gain abilities.
-CONT [Order Zone]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, and you persona rode this turn, the abilities of all your opponent’s unit cards with sentinel are nullified.'
-global.BuddyWorld[CardStat] = 3
+CONT: This card’s abilities cannot be nullified by the abilities of cards other than this card.
+CONT [Order Zone]: During your turn, if you have a grade 3 or greater vanguard with "Sophia" in its card name, and you have one or more <Star> units on each of your front row left RC and front row right RC, your opponent cannot intercept, all of the abilities of all of your opponent’s non-sentinel cards other than order cards on VC, RC, GC, and soul  are nullified, and they cannot get abilities.
+CONT [Order Zone]: If you have a grade 3 or greater vanguard with "Sophia" in its card name, and you persona rode this turn, all of the abilities of all your opponent’s sentinel unit cards are nullified.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16537
@@ -3373,13 +3370,13 @@ global.CardText[CardStat] = 'Buddyfight/Legend World/Olympus/Star
 
 AUTO: When this card is discarded from hand during your turn, you may Soul Charge 1 .
 
-ACT [Drop]: If you have a grade 3 or greater vanguard with "Sofia" in its card name, COST [Soul Blast 1], and call this card to RC.'
-global.BuddyWorld[CardStat] = 3
+ACT [Drop]: If you have a grade 3 or greater vanguard with "Sophia" in its card name, COST [Soul Blast 1], and call this card to RC.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16538
@@ -3506,10 +3503,9 @@ CardStat = 16574
 global.CardName[CardStat] = 'Sulizers Gard'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Trigger Order/Front Trigger/Rune
 
-Choose one of your rear-guards, until end of turn, it gets "AUTO [RC] 1/Turn: When this unit’s attack hits a rear-guard, choose one of your opponent’s vanguards, and deal one damage.", and it gets power  +2000.
+Choose one of your rear-guards, it gets "AUTO [RC] 1/Turn: When this unit’s attack hits a rear-guard, choose one of your opponent’s vanguards, and deal one damage." and power  +2000 until end of turn.
 
 CONT: During your opponent’s turn’s guard step, this card can be called to GC as a trigger unit, and it becomes a Grade 0 / shield 15000 guardian.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
@@ -3517,6 +3513,7 @@ global.TriggerUnit[CardStat] = 5
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 15000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16575
@@ -3556,35 +3553,35 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 16590
 {
-global.CardName[CardStat] = 'Wanting to Become Stronger, Kiri Hyoryu'
+global.CardName[CardStat] = 'Want To Be Stronger, Kiri Hyoryu'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 ACT [VC] 1/Turn: COST [Discard a card from hand], and draw two cards.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16591
 {
-global.CardName[CardStat] = 'Beyond the Pursuit of Power, Kiri Hyoryu'
+global.CardName[CardStat] = 'Pursuit of Power, Kiri Hyoryu'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Buddyfighter /Disaster
 
 CONT [VC]: On each turn, you can play two orders, and you cannot play an order with the same card name as an order you played this turn.
 
 AUTO [VC]: When this unit attacks, if you played an order this turn, COST [Counter Blast 1], choose one of your rear-guards, and stand it. If that order has "Great Spell" in its card name, choose one of your rear-guards in the same column as that chosen rear-guard, and stand it.
 
-Horn of Demise, Gjallarhorn - ACT [VC] 1/Turn: COST [Pay a gauge], search your deck or drop for up to one card with "Great Spell" or "Gleipnir" in its card name, reveal it and put it into hand, and shuffle the deck. Then! If you are! An elementary school student, or you persona rode this turn! Search for up to a total of two cards with different card names instead of one.'
-global.BuddyWorld[CardStat] = 3
+Horn of Demise, Gjallarhorn - ACT [VC] 1/Turn: COST [Pay a gauge], search your deck or drop for up to one card with "Great Spell" or "Gleipnir" in its card name, reveal it and put it into hand, and shuffle the deck. Then! If you are! An elementary student, or you persona rode this turn! Search for up to a total of two cards each with different card names instead of one.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16592
@@ -3611,23 +3608,23 @@ global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order/Spell/Asgard
 Play this if you have a vanguard with "Kiri" in its card name!
 
 AUTO: When this card is put in the order zone, perform one of the following.
-• Choose a normal unit other than <Buddyfighter> from your drop, and put it in this card’s Buddy Soul.
+• Choose a normal unit other than <Buddyfighter> from your drop, and put it into this card’s Buddy Soul.
 • Put a Demon Wolf, Fenrir token in this card’s Buddy Soul.
 
 CONT: When this card would be put into drop from order zone, choose up to one card from this card’s Buddy Soul, and call it to RC without paying its Call Cost. If you called a card, that unit gets "CONT [RC]: This unit cannot attack." until end of turn.
 
 (SHIFT + left click to call tokens.)'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 global.AnotherSide[CardStat] = 16595
-global.TokenSummoner[CardStat] = 16595
-global.TokenSummonerPosition[CardStat] = 'SHIFT'
-global.TokenSummonerQuantity[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.TokenSummoner[CardStat] = 16595
+global.TokenSummonerPosition[CardStat] = 'SHIFT'
+global.TokenSummonerQuantity[CardStat] = 1
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16594
@@ -3637,16 +3634,16 @@ global.CardText[CardStat] = 'Buddyfight/Legend World/Normal Order /Spell/Asgard
 
 Play this with COST [pay two gauges & put the top card of the deck in the damage zone] if your order zone has a "Great Spell, Fimbulwinter" with no cards in its Buddy Soul!
 
-During this turn’s main phase, the abilities of all of your opponent’s rear-guards are nullified. Then, retire all of them, and put all cards from your order zone into drop.
+During this turn’s main phase, the abilities of all of your opponent’s rear-guards are nullified. Retire all of them, and put all cards in your order zone into drop.
 
 ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16596
@@ -3654,22 +3651,20 @@ CardStat = 16596
 global.CardName[CardStat] = 'Great Spell, Fimbulwinter'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Set Order /Spell/Asgard
 
-Play this if you have a vanguard with "Kiri" in its card name!
-
 AUTO: When this card is put in the order zone, search your deck for up to two <Asgard> cards, put them in this card’s Buddy Soul, and shuffle the deck. If you did not put two cards, put this card into drop.
 
-AUTO [Order Zone]: At the beginning of your turn, choose a card from this card’s Buddy Soul, and put it into drop.
+AUTO [Order Zone]: At the beginning of your turn, choose one of this card’s Buddy Souls, and put it into drop.
 
 AUTO [Order Zone]: When the number of cards in this card’s Buddy Soul becomes 0, draw a card.
 
 ACT [Damage Zone]: COST [Put this card into drop], and put the top card of your deck in the damage zone.'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16602
@@ -3700,15 +3695,15 @@ Arms - Vanguard (After being played, the vanguard arms it. If a new Item is arme
 
 Play this with COST [pay a gauge]!
 
-CONT [VC]: When you would play an order with "Great Spell" in its card name, that cost is reduced by one gauge, and the number of cards put in the damage zone for that cost is reduced to zero.'
-global.BuddyWorld[CardStat] = 3
+CONT [VC]: When you would play an order with "Great Spell" in its card name, the gauge paid for that cost is reduced by 1, and the number of cards put in the damage zone for that cost becomes 0.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 14
 global.CardInClan[CardStat] = 30
-global.Arms[CardStat] = 1
 }
 global.PowerStat[CardStat] = 0
 global.DefensePowerStat[CardStat] = 0
+global.Arms[CardStat] = 1
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16604
@@ -3732,13 +3727,13 @@ CardStat = 16605
 global.CardName[CardStat] = 'Loki the Ehrgeiz'
 global.CardText[CardStat] = 'Buddyfight/Legend World/Asgard
 
-AUTO: When this unit is placed on RC, choose one of any player’s cards, and put all cards from that card’s Buddy Soul into drop'
-global.BuddyWorld[CardStat] = 3
+AUTO: When this unit is placed on RC, choose one of any player’s cards, and put all of that card’s Buddy Souls into drop'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 6000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16606
@@ -3769,15 +3764,15 @@ Call Cost [Pay two gauges & put the top card of the deck into this card’s Budd
 
 ACT [RC] 1/Turn: COST [Discard a card from hand], choose one of your opponent’s grade 2 or less rear-guards, and retire it.
 
-AUTO: When this unit is moved from RC to GC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
+AUTO: When this unit is moved to GC from RC, until end of that battle, this unit gets shield +5000, and it also gets shield +5000 for each card in this unit’s Buddy Soul.
 
 CONT: Soulguard (When this unit would leave a RC, you can put a card from this unit’s Buddy Soul into drop to have it stay on the RC)'
-global.BuddyWorld[CardStat] = 3
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 3
 
 
 CardStat = 16608
