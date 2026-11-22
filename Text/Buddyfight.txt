@@ -4077,13 +4077,13 @@ global.CardText[CardStat] = 'Buddyfight/Ancient World /Wild Dragon
 
 Call Cost [Pay a gauge]
 
-AUTO: When this unit is placed on RC, choose a grade 4 card from your drop, and put it into hand.'
-global.BuddyWorld[CardStat] = 5
+AUTO: When this unit is placed on RC, choose a grade 4 from your drop, and put it into hand.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 14
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.BuddyWorld[CardStat] = 5
 
 
 CardStat = 16630
@@ -4110,16 +4110,13 @@ global.DefensePowerStat[CardStat] = 0
 
 CardStat = 16631
 {
-global.CardName[CardStat] = 'The World-ending Power of Azi Dahaka, Kyoya Gaen'
+global.CardName[CardStat] = 'The Power of Azi Dahaka that Ends the World, Kyoya Gaen'
 global.CardText[CardStat] = 'Buddyfight/Dragon Ein/Buddyfighter
 
-CONT: This card can only be ridden from "Savior of the World, Kyoya Gaen", and that normal ride also becomes a persona ride.
-
-AUTO: When this unit is placed on VC, choose a "Savior of the World, Kyoya Gaen" from your soul or drop, and this unit gets all of the chosen card’s names and abilities until end of this fight.
-
+CONT: This card can only be ridden from "Savior of the World, Kyoya Gaen", and the normal ride from that card also becomes a persona ride.
+AUTO: When this unit is placed on VC, choose a "Savior of the World, Kyoya Gaen" from your soul or drop, and this unit gets that chosen card’s name and all of its abilities until end of this fight.
 ACT [VC] 1/Turn: COST [Counter Blast 1], choose a card with <Dragon> in its race from your drop, call it to RC if it is a unit card, and put it into hand if it is a normal order other than an Impact card.
-
-ACT [VC] 1/Turn: COST [Pay a gauge & put a card armed to this unit into drop], search your deck or drop for up to one card with "Aqulta Gwaneff" in its different card name from the card put into drop for this cost, and arm it to this unit. If you searched the deck, shuffle the deck.'
+ACT [VC] 1/Turn: COST [Pay a gauge & put a card this unit is armed with into drop], search your deck or drop for up to one card with "Aqulta Gwaneff" in its card name and a different card name from the card put into drop for this cost, and arm it to this unit. If you searched the deck, shuffle the deck.'
 global.UnitGrade[CardStat] = 3
 global.DCards[CardStat] = 14
 global.PersonaRide[CardStat] = 1
