@@ -14537,7 +14537,7 @@ global.DefensePowerStat[CardStat] = 5000
 
 CardStat = 17399
 {
-global.CardName[CardStat] = 'Knight Of Greatspear '
+global.CardName[CardStat] = 'Knight of Greatspear '
 global.CardText[CardStat] = 'Keter Sanctuary/Royal Paladin/Human
 
 CONT [Deck/Drop]: If you have a "Blue Sky Knight, Altmile" crest, this card is regarded as a grade 2.
@@ -14554,7 +14554,7 @@ global.PersonaRide[CardStat] = 1
 }
 global.PowerStat[CardStat] = 13000
 global.DefensePowerStat[CardStat] = 0
-global.AttackFromVBuff[CardStat] = 5000
+global.AttackFromRBuff[CardStat] = 5000
 
 
 CardStat = 17400
@@ -14640,6 +14640,23 @@ CONT [RC]: If you have a vanguard with "Youthberk" in its card name, this unit g
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 3
 global.DCards2[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17431
+{
+global.CardName[CardStat] = 'Disciple of Loyalty, Vento'
+global.CardText[CardStat] = 'Keter Sanctuary/Sylph
+
+[My Vanguard]: "Rezael", "Liael", or "Alden" (If you have a grade 3 or greater vanguard with "Rezael", "Liael", or "Alden" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Rezael", "Liael", or "Alden" in its card name, the following abilities are active)
+
+AUTO: When this card is discarded from hand during your ride phase, look at the top seven cards of your deck, choose up to one grade 3 or greater card without Regalis Piece or up to one card with "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [Drop]: When your grade 3 or greater vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. This ability may only be used by a card with the same card name once a turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 3
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

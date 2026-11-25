@@ -822,7 +822,9 @@ CardStat = 8596
 global.CardName[CardStat] = 'Flame Dragon Bombardment'
 global.CardText[CardStat] = 'Dragon Empire/Normal Order
 
-Choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your units can attack your opponent’s back row rear-guard when they would attack.".'
+Choose one of your vanguards, and until end of turn, it gets "CONT [VC]: All of your units can attack your opponent’s back row rear-guard when they would attack.".
+
+(The back row rear-guard needs to be the original target of the attack performed)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 1
 global.CardInClan[CardStat] = 30
@@ -13337,7 +13339,6 @@ global.CardName[CardStat] = 'Ermutigen Dragon'
 global.CardText[CardStat] = 'Dragon Empire/Brandt Gate/Flame Dragon/Fantome
 
 [My Vanguard]: "Aelquilibra" (If you have a grade 3 or greater vanguard with "Aelquilibra" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Aelquilibra" in its card name, the following abilities are active)
-
 CONT: This card is also regarded as a Product card.
 AUTO [RC]: At the end of the battle this unit attacked or boosted, COST [retire this unit], and perform "draw a card" or "choose an order card without Regalis Piece from your drop, and put it into hand".
 Overcharge - CONT [RC]: If this unit was chosen by the ability of your vanguard with "Aelquilibra" in its card name this turn, this unit gets "Boost" and "AUTO: When this unit is retired from RC by this unit’s ability, Counter Charge 1 or Energy Charge 3", and power +10000.'
@@ -13367,4 +13368,21 @@ global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 1
 }
 global.PowerStat[CardStat] = 5000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17428
+{
+global.CardName[CardStat] = 'Disciple of Quaking Thunder, Ectom'
+global.CardText[CardStat] = 'Dragon Empire/Sylph
+
+[My Vanguard]: "Varga" or "Aelquilibra" (If you have a grade 3 or greater vanguard with "Varga" or "Aelquilibra" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Varga" or "Aelquilibra" in its card name, the following abilities are active)
+
+AUTO: When this card is discarded from hand during your ride phase, look at the top seven cards of your deck, choose up to one grade 3 or greater card without Regalis Piece or up to one card with "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [Drop]: When your grade 3 or greater vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. This ability may only be used by a card with the same card name once a turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000

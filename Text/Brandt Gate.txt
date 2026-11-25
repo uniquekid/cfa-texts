@@ -12359,7 +12359,8 @@ CardStat = 17424
 {
 global.CardName[CardStat] = 'Blitz Security Chief, Phylac'
 global.CardText[CardStat] = 'Brandt Gate/Stoicheia/Aquaroid/Fantome
-[My Vanguard]: "Fated One of Guiding Star" or "Blitz Fleet" (If you have a grade 3 or greater vanguard with "Fated One of Guiding Star" or "Blitz Fleet" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Fated One of Guiding Star" or "Blitz Fleet" in its card name, the following abilities are active)
+
+[My Vanguard]: "Fated One of Guiding Star" or "Blitz Fleet"
 AUTO: When this unit is placed on RC, perform all of the following.
 • Search your deck for up to one card with the same card name as your vanguard, Product card, <Tear Dragon>, or <Aquaroid> with a different card name from this unit, reveal it and put it into hand, and shuffle the deck. If you revealed a card, choose a card from your hand, and put it into soul or discard it.
 • If you have a vanguard with "Welstra" in its card name, choose up to one Product card from your hand, and put it in the order zone.
@@ -12369,6 +12370,23 @@ global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 5
 global.DCards2[CardStat] = 4
 global.ExtendedTextBox[CardStat] = 1
+}
+global.PowerStat[CardStat] = 10000
+global.DefensePowerStat[CardStat] = 5000
+
+
+CardStat = 17430
+{
+global.CardName[CardStat] = 'Disciple of Sterness, Cruderio'
+global.CardText[CardStat] = 'Brandt Gate/Sylph
+
+[My Vanguard]: "Welstra" or "Impauldio" (If you have a grade 3 or greater vanguard with "Welstra" or "Impauldio" in its card name, or your vanguard is grade 2 or less and your ride deck has a grade 3 with "Welstra" or "Impauldio" in its card name, the following abilities are active)
+
+AUTO: When this card is discarded from hand during your ride phase, look at the top seven cards of your deck, choose up to one grade 3 or greater card without Regalis Piece or up to one card with "Mythisch" in its card name from among them, reveal it and put it into hand, and shuffle the deck.
+
+AUTO [Drop]: When your grade 3 or greater vanguard is attacked, COST [bind this card], and that unit gets power +10000 until end of that battle. This ability may only be used by a card with the same card name once a turn.'
+global.UnitGrade[CardStat] = 2
+global.DCards[CardStat] = 5
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
