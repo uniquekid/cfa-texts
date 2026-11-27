@@ -3,6 +3,8 @@ CardStat = 16238
 global.CardName[CardStat] = 'Shinken Red, Shiba Takeru'
 global.CardText[CardStat] = 'Super Sentai/Shinkenger
 
+(STANDARD TH: You can only run this card if you do not have Super Sentai over trigger in your deck.)
+
 ACT [VC] 1/Turn: If this unit is armed, COST [Counter Blast 1], choose one of your opponent’s rear-guards, retire it, and draw a card. If you did not retire, this unit gets power +10000 until end of turn.
 
 Shinkenmaru: Many Fires Profusion - AUTO [VC] 1/Turn: When this unit attacks a grade 3 or greater unit, for each of your opponent’s open RC, choose one of your <Shinkenger> rear-guards, and that unit gets power +5000 until end of turn. If you chose three or more, this unit gets critical +1 until end of that battle.'
@@ -88,6 +90,7 @@ global.CardName[CardStat] = 'Shinken Blue, Ikenami Ryunosuke'
 global.CardText[CardStat] = 'Super Sentai/Shinkenger
 
 (STANDARD TH: Restricted to 2.)
+(STANDARD TH: You can only run this card if you do not have Shinken Green, Winter Wind’s Dance and Combined Strength of Two, Shinken Yellow & Shinken Pink in your deck.)
 
 CONT: If you have a "Samurai Sentai Shinkenger" crest, this card gets all of the following.
 • AUTO: When this unit is placed on RC, COST [Counter Blast 1 or discard an Arms card from hand], and draw a card.
@@ -118,10 +121,13 @@ CardStat = 16246
 global.CardName[CardStat] = 'Shinken Pink, Shiraishi Mako'
 global.CardText[CardStat] = 'Super Sentai/Shinkenger
 
+(STANDARD TH: Banned.)
+
 CONT: If you have a "Samurai Sentai Shinkenger" crest, this card gets all of the following.
 • AUTO: When this unit is placed on RC, choose up to one Arms card from your drop, and put it into hand. If you put a card, choose a card from your hand, and put it into soul.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 17
+global.CardBanned[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -368,10 +374,13 @@ CardStat = 16263
 global.CardName[CardStat] = 'Fleeting Work Leave, Sarubrother'
 global.CardText[CardStat] = 'Super Sentai/Donbrothers
 
+(STANDARD TH: You can only run this card if you do not have To Become a Manga Master, Onisister and A Multifaceted Man, Kijibrother in your deck.)
+
 CONT: If you have an "Avataro Sentai Donbrothers" crest, this card gets all of the following.
 • CONT [RC/GC]: This unit gets power +5000 / shield +5000. (Active on opponent’s turn too)'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 17
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -725,11 +734,15 @@ CardStat = 16801
 global.CardName[CardStat] = 'Shinken Green, Winter Wind’s Dance'
 global.CardText[CardStat] = 'Super Sentai/Shinkenger
 
+(STANDARD TH: Restricted to 2.)
+(STANDARD TH: You can only run this card if you do not have Shinken Blue, Ikenami Ryunosuke and Combined Strength of Two, Shinken Yellow & Shinken Pink in your deck.)
+
 CONT: If you have a "Samurai Sentai Shinkenger" crest, this card gets all of the following.
 • AUTO [RC]: At the end of the battle that this unit attacked, if your vanguard is grade 3 or greater and it is the first battle of this turn, COST [Soul Blast 1], and stand this unit.
 • AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of turn. If your vanguard is armed, this unit gets +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 17
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
@@ -740,14 +753,19 @@ CardStat = 16802
 global.CardName[CardStat] = 'To Become a Manga Master, Onisister'
 global.CardText[CardStat] = 'Super Sentai/Donbrothers
 
+(STANDARD TH: Restricted to 2.)
+(STANDARD TH: You can only run this card if you do not have To Become a Fleeting Work Leave, Sarubrother and A Multifaceted Man, Kijibrother in your deck.)
+
 CONT: If you have an "Avataro Sentai Donbothers" crest, this card gets all of the following.
 • AUTO: When this unit is placed on RC from hand, look at the top five cards of your deck, choose up to one normal unit with "Don Momotaro", "Sarubrother", "Inubrother", or "Kijibrother", in its card name, or up to one Festival card, from among them, reveal it and put it into hand, and shuffle your deck. If you revealed, perform "You may Counter Blast 1. If you did not Counter Blast 1, choose a card from your hand, and discard it.".
 • AUTO [RC] 1/Turn: When this unit attacks a grade 3 or greater unit, this unit gets power +5000 until end of turn. If you are in the [Festival] state, this unit gets power +10000 instead of +5000.'
 global.UnitGrade[CardStat] = 2
 global.DCards[CardStat] = 17
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 10000
 global.DefensePowerStat[CardStat] = 5000
+global.ExtendedTextBox[CardStat] = 1
 
 
 CardStat = 16803
@@ -1120,12 +1138,14 @@ CardStat = 16829
 global.CardName[CardStat] = 'Super Sentai'
 global.CardText[CardStat] = 'Super Sentai/Super Sentai/Over Trigger
 
+(STANDARD TH: You can only run this card if you do not have Shinken Red, Shiba Takeru in your deck.)
+
 Additional Effect - Choose a card from your drop, put it into hand, and one crest 1/Fight ability can activate twice during this fight.'
 global.UnitGrade[CardStat] = 0
 global.DCards[CardStat] = 17
+global.TriggerUnit[CardStat] = 6
 global.CardCopies[CardStat] = 1
 }
-global.TriggerUnit[CardStat] = 6
 global.PowerStat[CardStat] = 5000
 global.DefensePowerStat[CardStat] = 50000
 
@@ -1150,11 +1170,14 @@ CardStat = 16841
 global.CardName[CardStat] = 'Combined Strength of Two, Shinken Yellow & Shinken Pink'
 global.CardText[CardStat] = 'Super Sentai/Shinkenger
 
+(STANDARD TH: You can only run this card if you do not have Shinken Blue, Ikenami Ryunosuke and Shinken Green, Winter Wind’s Dance in your deck.)
+
 CONT: If you have a "Samurai Sentai Shinkenger" crest, this card gets all of the following.
 • AUTO: When this unit is placed on RC, COST [Counter Blast 1], search your deck for up to one Arms card, put it into hand, and shuffle the deck.
 • AUTO [Back Row Center RC]: When the attack that this unit boosted hits, COST [put this unit into soul], choose a normal unit from drop with the same card name as your vanguard, and put that card into hand.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 17
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1195,9 +1218,12 @@ CardStat = 16844
 global.CardName[CardStat] = 'Silly Little Duo, Sarubrother & Onisister'
 global.CardText[CardStat] = 'Super Sentai/Donbrothers
 
+(STANDARD TH: Banned.)
+
 ACT [RC]: COST [Put this unit into soul], choose one of your units, and that unit gets power +5000 until end of turn.'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 17
+global.CardBanned[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
@@ -1404,10 +1430,13 @@ CardStat = 16907
 global.CardName[CardStat] = 'A Multifaceted Man, Kijibrother'
 global.CardText[CardStat] = 'Super Sentai/Donbrothers
 
+(STANDARD TH: You can only run this card if you do not have To Become a Fleeting Work Leave, Sarubrother and To Become a Manga Master, Onisister.)
+
 CONT: If you have an "Avataro Sentai Donbothers" crest, this card gets all of the following.
 • AUTO [RC]: When this unit boosts, if you are in the [Festival] state, this unit gets power +5000 until end of that battle. At the end of the battle, return this unit to hand. (This effect is mandatory)'
 global.UnitGrade[CardStat] = 1
 global.DCards[CardStat] = 17
+global.CardLimidet[CardStat] = 1
 }
 global.PowerStat[CardStat] = 8000
 global.DefensePowerStat[CardStat] = 5000
